@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -93,53 +93,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--night-owl-accent-blue) !important;
   --checkbox-color-hover: var(--night-owl-accent-cyan) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 0px !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--night-owl-bg-tertiary) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: #637777 !important;
-  --code-function: var(--night-owl-accent-blue) !important;
-  --code-important: var(--night-owl-accent-red) !important;
-  --code-keyword: var(--night-owl-accent-purple) !important;
   --code-normal: var(--night-owl-text-primary) !important;
-  --code-operator: var(--night-owl-accent-cyan) !important;
-  --code-property: var(--night-owl-accent-green) !important;
   --code-punctuation: var(--night-owl-text-primary) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: 0.875em !important;
-  --code-string: var(--night-owl-accent-yellow) !important;
-  --code-tag: #caece6 !important;
-  --code-value: var(--night-owl-accent-orange) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--night-owl-border) !important;
   --graph-node: var(--night-owl-accent-blue) !important;
-  --graph-node-attachment: var(--night-owl-accent-orange) !important;
   --graph-node-focused: var(--night-owl-accent-cyan) !important;
-  --graph-node-tag: var(--night-owl-accent-green) !important;
   --graph-node-unresolved: var(--night-owl-text-secondary) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--night-owl-text-secondary) !important;
@@ -148,16 +115,49 @@
   --icon-color-hover: var(--night-owl-text-primary) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 0px !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--night-owl-accent-blue) !important;
+  --code-important: var(--night-owl-accent-red) !important;
+  --code-keyword: var(--night-owl-accent-purple) !important;
+  --code-operator: var(--night-owl-accent-cyan) !important;
+  --code-property: var(--night-owl-accent-green) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: 0.875em !important;
+  --code-string: var(--night-owl-accent-yellow) !important;
+  --code-tag: #caece6 !important;
+  --code-value: var(--night-owl-accent-orange) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--night-owl-border) !important;
+  --graph-node-attachment: var(--night-owl-accent-orange) !important;
+  --graph-node-tag: var(--night-owl-accent-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4273,6 +4273,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4350,6 +4351,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4371,11 +4373,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task=","] {
@@ -4387,6 +4387,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4464,6 +4465,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4485,11 +4487,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task=";"] {
@@ -4501,6 +4501,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4578,6 +4579,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4599,11 +4601,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task=":"] {
@@ -4615,6 +4615,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4692,6 +4693,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4713,11 +4715,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="."] {
@@ -4729,6 +4729,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4806,6 +4807,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4827,11 +4829,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="'"] {
@@ -4843,6 +4843,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -4920,6 +4921,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -4941,11 +4943,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4957,6 +4957,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5034,6 +5035,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5055,11 +5057,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="&"] {
@@ -5071,6 +5071,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5148,6 +5149,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5169,11 +5171,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="#"] {
@@ -5185,6 +5185,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5262,6 +5263,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5283,11 +5285,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="%"] {
@@ -5299,6 +5299,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5376,6 +5377,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5397,11 +5399,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="`"] {
@@ -5413,6 +5413,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5490,6 +5491,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5511,11 +5513,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="+"] {
@@ -5527,6 +5527,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5604,6 +5605,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5625,11 +5627,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="<"] {
@@ -5641,6 +5641,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5718,6 +5719,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5739,11 +5741,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="="] {
@@ -5755,6 +5755,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5832,6 +5833,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5853,11 +5855,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="|"] {
@@ -5869,6 +5869,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -5946,6 +5947,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -5967,11 +5969,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="~"] {
@@ -5983,6 +5983,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6060,6 +6061,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6081,11 +6083,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="$"] {
@@ -6097,6 +6097,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6174,6 +6175,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6195,11 +6197,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="0"] {
@@ -6211,6 +6211,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6288,6 +6289,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6309,11 +6311,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="1"] {
@@ -6325,6 +6325,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6402,6 +6403,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6423,11 +6425,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="2"] {
@@ -6439,6 +6439,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6516,6 +6517,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6537,11 +6539,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="3"] {
@@ -6553,6 +6553,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6630,6 +6631,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6651,11 +6653,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="4"] {
@@ -6667,6 +6667,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6744,6 +6745,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6765,11 +6767,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="5"] {
@@ -6781,6 +6781,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6858,6 +6859,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6879,11 +6881,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="6"] {
@@ -6895,6 +6895,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -6972,6 +6973,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -6993,11 +6995,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="7"] {
@@ -7009,6 +7009,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7086,6 +7087,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7107,11 +7109,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="8"] {
@@ -7123,6 +7123,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7200,6 +7201,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7221,11 +7223,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="9"] {
@@ -7237,6 +7237,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7314,6 +7315,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7335,11 +7337,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="a"] {
@@ -7351,6 +7351,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7428,6 +7429,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7449,11 +7451,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="A"] {
@@ -7465,6 +7465,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7542,6 +7543,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7563,11 +7565,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="B"] {
@@ -7579,6 +7579,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7656,6 +7657,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7677,11 +7679,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="C"] {
@@ -7693,6 +7693,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7770,6 +7771,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7791,11 +7793,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="D"] {
@@ -7807,6 +7807,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7884,6 +7885,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -7905,11 +7907,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="e"] {
@@ -7921,6 +7921,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -7998,6 +7999,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8019,11 +8021,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="E"] {
@@ -8035,6 +8035,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8112,6 +8113,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8133,11 +8135,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="F"] {
@@ -8149,6 +8149,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8226,6 +8227,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8247,11 +8249,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="g"] {
@@ -8263,6 +8263,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8340,6 +8341,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8361,11 +8363,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="G"] {
@@ -8377,6 +8377,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8454,6 +8455,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8475,11 +8477,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="h"] {
@@ -8491,6 +8491,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8568,6 +8569,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8589,11 +8591,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="H"] {
@@ -8605,6 +8605,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8682,6 +8683,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8703,11 +8705,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="j"] {
@@ -8719,6 +8719,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8796,6 +8797,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8817,11 +8819,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="J"] {
@@ -8833,6 +8833,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -8910,6 +8911,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -8931,11 +8933,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="K"] {
@@ -8947,6 +8947,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9024,6 +9025,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9045,11 +9047,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="L"] {
@@ -9061,6 +9061,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9138,6 +9139,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9159,11 +9161,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="m"] {
@@ -9175,6 +9175,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9252,6 +9253,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9273,11 +9275,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="M"] {
@@ -9289,6 +9289,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9366,6 +9367,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9387,11 +9389,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="n"] {
@@ -9403,6 +9403,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9480,6 +9481,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9501,11 +9503,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="N"] {
@@ -9517,6 +9517,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9594,6 +9595,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9615,11 +9617,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="o"] {
@@ -9631,6 +9631,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9708,6 +9709,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9729,11 +9731,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="O"] {
@@ -9745,6 +9745,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9822,6 +9823,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9843,11 +9845,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="P"] {
@@ -9859,6 +9859,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -9936,6 +9937,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -9957,11 +9959,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="q"] {
@@ -9973,6 +9973,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10050,6 +10051,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10071,11 +10073,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -10087,6 +10087,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10164,6 +10165,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10185,11 +10187,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="r"] {
@@ -10201,6 +10201,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10278,6 +10279,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10299,11 +10301,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="R"] {
@@ -10315,6 +10315,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10392,6 +10393,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10413,11 +10415,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="s"] {
@@ -10429,6 +10429,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10506,6 +10507,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10527,11 +10529,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="t"] {
@@ -10543,6 +10543,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10620,6 +10621,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10641,11 +10643,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="T"] {
@@ -10657,6 +10657,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10734,6 +10735,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10755,11 +10757,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="U"] {
@@ -10771,6 +10771,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10848,6 +10849,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10869,11 +10871,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="v"] {
@@ -10885,6 +10885,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -10962,6 +10963,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -10983,11 +10985,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="V"] {
@@ -10999,6 +10999,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11076,6 +11077,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11097,11 +11099,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="W"] {
@@ -11113,6 +11113,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11190,6 +11191,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11211,11 +11213,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="x"] {
@@ -11227,6 +11227,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11304,6 +11305,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11325,11 +11327,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="X"] {
@@ -11341,6 +11341,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11418,6 +11419,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11439,11 +11441,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="y"] {
@@ -11455,6 +11455,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11532,6 +11533,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11553,11 +11555,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -11569,6 +11569,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11646,6 +11647,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11667,11 +11669,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="z"] {
@@ -11683,6 +11683,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11760,6 +11761,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11781,11 +11783,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -11797,6 +11797,7 @@ body {
     --background-modifier-error-hover: #e93147;
     --background-modifier-form-field: #ffffff;
     --background-modifier-form-field-hover: #ffffff;
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success: #08b94e;
     --background-primary: #ffffff;
     --background-primary-alt: #fafafa;
@@ -11874,6 +11875,7 @@ body {
     --tab-text-color-focused-active-current: #222222;
     --tab-text-color-focused-highlighted: hsl(258, 88%, 66%);
     --table-add-button-border-color: #e0e0e0;
+    --table-background: transparent;
     --table-border-color: #e0e0e0;
     --table-drag-handle-background-active: hsl(257, 88.88%, 70.95%);
     --table-drag-handle-color: #ababab;
@@ -11895,11 +11897,9 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --table-background: transparent;
-    --text-on-accent: white;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -16344,6 +16344,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16421,6 +16422,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -16442,11 +16444,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task=","] {
@@ -16458,6 +16458,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16535,6 +16536,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -16556,11 +16558,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task=";"] {
@@ -16572,6 +16572,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16649,6 +16650,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -16670,11 +16672,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task=":"] {
@@ -16686,6 +16686,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16763,6 +16764,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -16784,11 +16786,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="."] {
@@ -16800,6 +16800,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16877,6 +16878,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -16898,11 +16900,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="'"] {
@@ -16914,6 +16914,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -16991,6 +16992,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17012,11 +17014,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="@"] {
@@ -17028,6 +17028,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17105,6 +17106,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17126,11 +17128,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="&"] {
@@ -17142,6 +17142,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17219,6 +17220,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17240,11 +17242,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="#"] {
@@ -17256,6 +17256,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17333,6 +17334,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17354,11 +17356,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="%"] {
@@ -17370,6 +17370,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17447,6 +17448,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17468,11 +17470,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="`"] {
@@ -17484,6 +17484,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17561,6 +17562,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17582,11 +17584,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="+"] {
@@ -17598,6 +17598,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17675,6 +17676,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17696,11 +17698,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="<"] {
@@ -17712,6 +17712,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17789,6 +17790,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17810,11 +17812,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="="] {
@@ -17826,6 +17826,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -17903,6 +17904,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -17924,11 +17926,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="|"] {
@@ -17940,6 +17940,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18017,6 +18018,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18038,11 +18040,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="~"] {
@@ -18054,6 +18054,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18131,6 +18132,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18152,11 +18154,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="$"] {
@@ -18168,6 +18168,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18245,6 +18246,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18266,11 +18268,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="0"] {
@@ -18282,6 +18282,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18359,6 +18360,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18380,11 +18382,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="1"] {
@@ -18396,6 +18396,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18473,6 +18474,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18494,11 +18496,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="2"] {
@@ -18510,6 +18510,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18587,6 +18588,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18608,11 +18610,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="3"] {
@@ -18624,6 +18624,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18701,6 +18702,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18722,11 +18724,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="4"] {
@@ -18738,6 +18738,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18815,6 +18816,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18836,11 +18838,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="5"] {
@@ -18852,6 +18852,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -18929,6 +18930,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -18950,11 +18952,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="6"] {
@@ -18966,6 +18966,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19043,6 +19044,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19064,11 +19066,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="7"] {
@@ -19080,6 +19080,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19157,6 +19158,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19178,11 +19180,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="8"] {
@@ -19194,6 +19194,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19271,6 +19272,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19292,11 +19294,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="9"] {
@@ -19308,6 +19308,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19385,6 +19386,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19406,11 +19408,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="a"] {
@@ -19422,6 +19422,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19499,6 +19500,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19520,11 +19522,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="A"] {
@@ -19536,6 +19536,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19613,6 +19614,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19634,11 +19636,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="B"] {
@@ -19650,6 +19650,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19727,6 +19728,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19748,11 +19750,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="C"] {
@@ -19764,6 +19764,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19841,6 +19842,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19862,11 +19864,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="D"] {
@@ -19878,6 +19878,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -19955,6 +19956,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -19976,11 +19978,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="e"] {
@@ -19992,6 +19992,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20069,6 +20070,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20090,11 +20092,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="E"] {
@@ -20106,6 +20106,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20183,6 +20184,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20204,11 +20206,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="F"] {
@@ -20220,6 +20220,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20297,6 +20298,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20318,11 +20320,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="g"] {
@@ -20334,6 +20334,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20411,6 +20412,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20432,11 +20434,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="G"] {
@@ -20448,6 +20448,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20525,6 +20526,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20546,11 +20548,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="h"] {
@@ -20562,6 +20562,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20639,6 +20640,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20660,11 +20662,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="H"] {
@@ -20676,6 +20676,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20753,6 +20754,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20774,11 +20776,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="j"] {
@@ -20790,6 +20790,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20867,6 +20868,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -20888,11 +20890,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="J"] {
@@ -20904,6 +20904,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -20981,6 +20982,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21002,11 +21004,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="K"] {
@@ -21018,6 +21018,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21095,6 +21096,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21116,11 +21118,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="L"] {
@@ -21132,6 +21132,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21209,6 +21210,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21230,11 +21232,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="m"] {
@@ -21246,6 +21246,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21323,6 +21324,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21344,11 +21346,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="M"] {
@@ -21360,6 +21360,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21437,6 +21438,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21458,11 +21460,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="n"] {
@@ -21474,6 +21474,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21551,6 +21552,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21572,11 +21574,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="N"] {
@@ -21588,6 +21588,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21665,6 +21666,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21686,11 +21688,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="o"] {
@@ -21702,6 +21702,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21779,6 +21780,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21800,11 +21802,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="O"] {
@@ -21816,6 +21816,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -21893,6 +21894,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -21914,11 +21916,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="P"] {
@@ -21930,6 +21930,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22007,6 +22008,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22028,11 +22030,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="q"] {
@@ -22044,6 +22044,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22121,6 +22122,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22142,11 +22144,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="Q"] {
@@ -22158,6 +22158,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22235,6 +22236,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22256,11 +22258,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="r"] {
@@ -22272,6 +22272,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22349,6 +22350,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22370,11 +22372,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="R"] {
@@ -22386,6 +22386,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22463,6 +22464,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22484,11 +22486,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="s"] {
@@ -22500,6 +22500,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22577,6 +22578,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22598,11 +22600,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="t"] {
@@ -22614,6 +22614,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22691,6 +22692,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22712,11 +22714,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="T"] {
@@ -22728,6 +22728,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22805,6 +22806,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22826,11 +22828,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="U"] {
@@ -22842,6 +22842,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -22919,6 +22920,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -22940,11 +22942,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="v"] {
@@ -22956,6 +22956,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23033,6 +23034,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23054,11 +23056,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="V"] {
@@ -23070,6 +23070,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23147,6 +23148,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23168,11 +23170,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="W"] {
@@ -23184,6 +23184,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23261,6 +23262,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23282,11 +23284,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="x"] {
@@ -23298,6 +23298,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23375,6 +23376,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23396,11 +23398,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="X"] {
@@ -23412,6 +23412,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23489,6 +23490,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23510,11 +23512,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="y"] {
@@ -23526,6 +23526,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23603,6 +23604,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23624,11 +23626,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="Y"] {
@@ -23640,6 +23640,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23717,6 +23718,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23738,11 +23740,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="z"] {
@@ -23754,6 +23754,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23831,6 +23832,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23852,11 +23854,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
 
     li.task-list-item[data-task="Z"] {
@@ -23868,6 +23868,7 @@ html[saved-theme="dark"] {
       --background-modifier-error-hover: #fb464c;
       --background-modifier-form-field: #2a2a2a;
       --background-modifier-form-field-hover: #2a2a2a;
+      --background-modifier-message: rgba(0, 0, 0, 0.9);
       --background-modifier-success: #44cf6e;
       --background-primary: #1e1e1e;
       --background-primary-alt: #242424;
@@ -23945,6 +23946,7 @@ html[saved-theme="dark"] {
       --tab-text-color-focused-active-current: #dadada;
       --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
       --table-add-button-border-color: #363636;
+      --table-background: transparent;
       --table-border-color: #363636;
       --table-drag-handle-background-active: hsl(258, 88%, 66%);
       --table-drag-handle-color: #666666;
@@ -23966,11 +23968,9 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
-      --background-modifier-message: rgba(0, 0, 0, 0.9);
-      --table-background: transparent;
-      --text-on-accent: white;
     }
   }
 }

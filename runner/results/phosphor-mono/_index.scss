@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: #eeffcc !important;
   --checkbox-border-color-hover: #bedc7f !important;
   --checkbox-color: #bedc7f !important;
   --checkbox-color-hover: #4d8061 !important;
   --checkbox-marker-color: #4d8061 !important;
-  --checkbox-radius: 2px !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: #2c4938 !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: #4b7a5e !important;
-  --code-function: var(--checkbox-color) !important;
-  --code-important: var(--divider-color-hover) !important;
-  --code-keyword: #b8ee94 !important;
   --code-normal: #acc5a5 !important;
-  --code-operator: var(--h3-color) !important;
-  --code-property: var(--text-normal) !important;
   --code-punctuation: #a9e7ad !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #258727 !important;
-  --code-tag: #2c4111 !important;
-  --code-value: #618b68 !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--blockquote-border-color) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--checkbox-border-color) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 2px !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--checkbox-color) !important;
+  --code-important: var(--divider-color-hover) !important;
+  --code-keyword: #b8ee94 !important;
+  --code-operator: var(--h3-color) !important;
+  --code-property: var(--text-normal) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #258727 !important;
+  --code-tag: #2c4111 !important;
+  --code-value: #618b68 !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -3909,6 +3909,21 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -3925,6 +3940,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -3962,28 +3978,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=","] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4000,6 +4015,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4037,28 +4053,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4075,6 +4090,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4112,28 +4128,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4150,6 +4165,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4187,28 +4203,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="."] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4225,6 +4240,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4262,28 +4278,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4300,6 +4315,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4337,28 +4353,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4375,6 +4390,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4412,28 +4428,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4450,6 +4465,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4487,28 +4503,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4525,6 +4540,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4562,28 +4578,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4600,6 +4615,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4637,28 +4653,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4675,6 +4690,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4712,28 +4728,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4750,6 +4765,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4787,28 +4803,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4825,6 +4840,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4862,28 +4878,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="="] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4900,6 +4915,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -4937,28 +4953,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -4975,6 +4990,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5012,28 +5028,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5050,6 +5065,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5087,28 +5103,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5125,6 +5140,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5162,28 +5178,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5200,6 +5215,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5237,28 +5253,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5275,6 +5290,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5312,28 +5328,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5350,6 +5365,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5387,28 +5403,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5425,6 +5440,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5462,28 +5478,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5500,6 +5515,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5537,28 +5553,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5575,6 +5590,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5612,28 +5628,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5650,6 +5665,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5687,28 +5703,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5725,6 +5740,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5762,28 +5778,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5800,6 +5815,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5837,28 +5853,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5875,6 +5890,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5912,28 +5928,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -5950,6 +5965,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -5987,28 +6003,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6025,6 +6040,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6062,28 +6078,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6100,6 +6115,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6137,28 +6153,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6175,6 +6190,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6212,28 +6228,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6250,6 +6265,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6287,28 +6303,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6325,6 +6340,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6362,28 +6378,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6400,6 +6415,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6437,28 +6453,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6475,6 +6490,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6512,28 +6528,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6550,6 +6565,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6587,28 +6603,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6625,6 +6640,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6662,28 +6678,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6700,6 +6715,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6737,28 +6753,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6775,6 +6790,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6812,28 +6828,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6850,6 +6865,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6887,28 +6903,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -6925,6 +6940,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -6962,28 +6978,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7000,6 +7015,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7037,28 +7053,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7075,6 +7090,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7112,28 +7128,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7150,6 +7165,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7187,28 +7203,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7225,6 +7240,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7262,28 +7278,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7300,6 +7315,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7337,28 +7353,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7375,6 +7390,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7412,28 +7428,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7450,6 +7465,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7487,28 +7503,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7525,6 +7540,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7562,28 +7578,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7600,6 +7615,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7637,28 +7653,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7675,6 +7690,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7712,28 +7728,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7750,6 +7765,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7787,28 +7803,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7825,6 +7840,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7862,28 +7878,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7900,6 +7915,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -7937,28 +7953,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -7975,6 +7990,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8012,28 +8028,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8050,6 +8065,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8087,28 +8103,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8125,6 +8140,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8162,28 +8178,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8200,6 +8215,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8237,28 +8253,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8275,6 +8290,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8312,28 +8328,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8350,6 +8365,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8387,28 +8403,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8425,6 +8440,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8462,28 +8478,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(77, 128, 97);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8500,6 +8515,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8537,28 +8553,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(77, 128, 97);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8575,6 +8590,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8612,28 +8628,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8650,6 +8665,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8687,28 +8703,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8725,6 +8740,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8762,28 +8778,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8800,6 +8815,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8837,28 +8853,27 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgba(238, 255, 204, 0.85);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --button-radius: 5px;
     --callout-radius: 4px;
@@ -8875,6 +8890,7 @@ body {
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-print: "Arial";
     --font-text: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    --font-text-size: 16px;
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-text: #dadada;
     --interactive-hover: #3f3f3f;
@@ -8912,22 +8928,6 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-error: #fb464c;
     --text-selection: hsla(258, 88%, 66%, 0.33);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --font-text-size: 16px;
     letter-spacing: normal;
     text-decoration-line: none;
   }

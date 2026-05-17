@@ -44,7 +44,7 @@ settings:
         title: Show scrollbars 
         description: When activated scrollbars will be visible
         type: class-toggle
-        default: false
+        default: true
     - 
         id: eis-with-icons
         title: Show icons in sidebar
@@ -52,14 +52,8 @@ settings:
         type: class-toggle
         default: true
     - 
-        id: eis-empty-bg
-        title: Show background in empty window
-        description: When activated will show a background in empty windows (new files)
-        type: class-toggle
-        default: false
-    - 
         id: new-note-button-position-bottom
-        title: Enable default position of new note button
+        title: Change the "new note button" to bottom of sidebar
         description: When enable, we put the new note button at the bottom of sidebar
         type: class-toggle
         default: true
@@ -421,6 +415,8 @@ body.theme-light {
   --setting-item-name-color: #373530;
 
   /*** tags ***/
+  --tag-background: rgba(0, 0, 0, .1);
+
   --tag-1-bgcolor: rgb(255, 214, 170);
   --tag-2-bgcolor: rgb(202, 255, 196);
   --tag-3-bgcolor: rgb(255, 173, 174);
@@ -473,7 +469,8 @@ body.theme-dark {
   --color-whitesmoke-rgb: 245, 245, 245;
 
   /*** tags ***/
-  --tag-background: rgba(255, 255, 255, .1) !important;
+  /* --tag-background: rgba(255, 255, 255, 1) !important; */
+  --tag-background: cornsilk;
   --pill-background: var(--tag-background) !important;
 
   --tag-1-bgcolor: rgba(255, 214, 170, .75);
@@ -512,8 +509,6 @@ body.theme-dark {
 .theme-dark .multi-select-pill-remove-button {
   color: rgb(255, 255, 255);
 }
-
-
 
 
 /***
@@ -624,7 +619,7 @@ Tags Styles
   padding-left: 0;
   padding-right: var(--tag-padding-x) !important;
 }
-
+/* 
 .cm-hashtag:nth-of-type(2n + 1),
 .cm-hashtag:nth-of-type(2n + 1) + .cm-hashtag,
 .mk-tag-selector div:nth-child(1) .cm-hashtag {
@@ -632,9 +627,7 @@ Tags Styles
 }
 
 
-
-
-.cm-hashtag:nth-of-type(2n + 3),
+ .cm-hashtag:nth-of-type(2n + 3),
 .cm-hashtag:nth-of-type(2n + 3) + .cm-hashtag,
 .mk-tag-selector div:nth-child(2) .cm-hashtag {
   background-color: var(--tag-2-bgcolor);
@@ -686,7 +679,10 @@ Tags Styles
 .cm-hashtag:nth-of-type(2n + 19) + .cm-hashtag,
 .mk-tag-selector div:nth-child(10) .cm-hashtag {
   background-color: var(--tag-10-bgcolor);
-}
+}  */
+
+
+
 /* ─────────────────────────────────────────────────── */
 /* VIEW CONTENT                                        */
 /* ─────────────────────────────────────────────────── */
@@ -783,13 +779,6 @@ Tags Styles
   z-index: -1;
 }
 
-.HyperMD-header-1 {color: #3e3e3e !important}  
-.HyperMD-header-2, 
-.HyperMD-header-3{color: #505050 !important}   
-.HyperMD-header-4, 
-.HyperMD-header-5, 
-.HyperMD-header-6 {color: #6f6f6f !important} 
-
 .HyperMD-header-1:hover:before {content: "H1";}
 .HyperMD-header-2:hover:before {content: "H2";}
 .HyperMD-header-3:hover:before {content: "H3";}
@@ -854,10 +843,6 @@ Tags Styles
   cursor: pointer;
 }
 
-.nav-file-title.is-active.has-focus {
-  outline: 1px solid red;
-  background-color: var(--acc);
-}
 
 .nav-file-title {
   position: relative;
@@ -1169,7 +1154,12 @@ h5.tasks-group-heading {
   padding-top: 5px;
 }
 
-.task-list-item-checkbox {vertical-align: middle; position: relative; top: 2px !important;}
+.task-list-item-checkbox {
+  vertical-align: middle;
+  position: relative;
+  top: 2px !important;
+}
+
 li.task-list-item.plugin-tasks-list-item {
   /* margin-bottom: 15px; */
   line-height: 1.5;
@@ -1178,12 +1168,19 @@ li.task-list-item.plugin-tasks-list-item {
   vertical-align: middle;
 }
 
-li.task-list-item.plugin-tasks-list-item .task-extras {
-  vertical-align: middle;
-  padding-left: 5px
+li.task-list-item.plugin-tasks-list-item > ul,
+li.task-list-item.plugin-tasks-list-item > ol {
+  flex: 0 0 100%;
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
 }
 
-
+li.task-list-item.plugin-tasks-list-item .task-extras {
+  vertical-align: middle;
+  padding-left: 5px;
+}
 
 ul.plugin-tasks-query-result,
 ol.plugin-tasks-query-result {
@@ -1508,8 +1505,17 @@ body.enable-alternative-checkboxes li[data-task='b'] > p > input:checked {
 .theme-dark .callout[data-callout-metadata] .callout-content {color: rgba(255, 255, 255, .85);}
 
 
+/* ─────────────────────────────────────────────────── */
+/* CUSTOM MAKE MD
+/* ─────────────────────────────────────────────────── */
+.mk-tree-section .mk-tree-text {
+  flex-basis: 100%;
+}
 
-/*** TODOIST PLUGIN ****/
+/* ─────────────────────────────────────────────────── */
+/* CUSTOM TODOIST PLUGIN                             */
+/* ─────────────────────────────────────────────────── */
+
 .todoist-query-title {
   display: inline !important;
 }
@@ -1644,4 +1650,3 @@ body.enable-alternative-checkboxes li[data-task='b'] > p > input:checked {
 .priority-container .priority-4 {
   color: #b4c2f0;
 }
-

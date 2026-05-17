@@ -26,6 +26,18 @@
       "aspect": "images"
     },
     {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude",
+      "aspect": "embeds"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude-inner",
+      "aspect": "embeds"
+    },
+    {
       "property": "--nav-item-background-hover",
       "references": "--folder-color",
       "selector": ".nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title",
@@ -48,6 +60,12 @@
       "references": "--folder-color",
       "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
       "aspect": "explorer"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".canvas-node-content",
+      "aspect": "canvas"
     }
   ]
 }

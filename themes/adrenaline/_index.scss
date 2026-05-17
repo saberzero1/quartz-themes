@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-1_2) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--colored-accent-1) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -109,53 +109,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-3) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -164,16 +131,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4319,42 +4319,6 @@ body {
   }
 
   .callout[data-callout="c"] {
-    --background-primary: hsl(258, 18.1%, 94%);
-    --background-secondary: hsl(258, 9.8%, 96%);
-    --blur-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
-    --bold-weight: 700;
-    --callout-blend-mode: normal;
-    --callout-padding: 0;
-    --callout-title-weight: 700;
-    --canvas-background: hsl(258, 9.8%, 96%);
-    --checkbox-border-color: hsl(258, 88%, 66%);
-    --checkbox-marker-color: hsl(258, 18.1%, 94%);
-    --collapse-icon-color: hsl(258, 88%, 66%);
-    --dropdown-background: hsl(258, 88%, 66%);
-    --flair-background: hsl(258, 88%, 66%);
-    --graph-node-unresolved: hsl(258, 88%, 66%);
-    --heading-formatting: hsl(258, 88%, 66%);
-    --interactive-normal: hsl(258, 88%, 66%);
-    --menu-background: hsl(258, 9.8%, 96%);
-    --pdf-background: hsl(258, 18.1%, 94%);
-    --pdf-page-background: hsl(258, 18.1%, 94%);
-    --pdf-sidebar-background: hsl(258, 18.1%, 94%);
-    --raised-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
-    --scrollbar-thumb-bg: transparent;
-    --search-result-background: hsl(258, 18.1%, 94%);
-    --shiki-code-background: rgb(234, 234, 234);
-    --shiki-code-comment: hsl(258, 88%, 66%);
-    --shiki-gutter-text-color: hsl(258, 88%, 66%);
-    --shiki-terminal-dots-color: hsl(258, 88%, 66%);
-    --suggestion-background: hsl(258, 18.1%, 94%);
-    --tab-background-active: hsl(258, 18.1%, 94%);
-    --tab-outline-color: rgba(200, 200, 200, 0.441);
-    --tab-switcher-background: hsl(258, 9.8%, 96%);
-    --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 9.8%, 96%), transparent);
-    --tab-text-color: hsl(258, 88%, 66%);
-    --table-drag-handle-color: hsl(258, 88%, 66%);
-    --table-header-weight: 700;
-    --text-faint: hsl(258, 88%, 66%);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -4368,9 +4332,20 @@ body {
     --background-3: hsl(258, 48%, 95%, 100%);
     --background-5: hsla(258, 88%, 66%, 90%);
     --background-6: hsla(258, 88%, 66%, 0.2);
+    --background-primary: hsl(258, 18.1%, 94%);
+    --background-secondary: hsl(258, 9.8%, 96%);
+    --blur-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
+    --bold-weight: 700;
+    --callout-blend-mode: normal;
     --callout-content-padding: 5px 10px 5px 10px;
     --callout-content-radius: 0px;
+    --callout-padding: 0;
     --callout-title-padding: 6px 10px;
+    --callout-title-weight: 700;
+    --canvas-background: hsl(258, 9.8%, 96%);
+    --checkbox-border-color: hsl(258, 88%, 66%);
+    --checkbox-marker-color: hsl(258, 18.1%, 94%);
+    --collapse-icon-color: hsl(258, 88%, 66%);
     --color-base-00: hsl(258, 48%, 95%, 100%);
     --color-base-50: hsl(258, 88%, 66%);
     --colored-accent-1: hsl(258, 88%, 66%);
@@ -4379,9 +4354,34 @@ body {
     --colored-accent-i1: hsl(258, 88%, -1700%);
     --colored-accent-i2: hsl(258, 88%, -4600%);
     --custom-accent-bold: hsl(258, 88%, 66%);
+    --dropdown-background: hsl(258, 88%, 66%);
+    --flair-background: hsl(258, 88%, 66%);
+    --graph-node-unresolved: hsl(258, 88%, 66%);
+    --heading-formatting: hsl(258, 88%, 66%);
+    --interactive-normal: hsl(258, 88%, 66%);
     --line-height-normal: 1.5;
+    --menu-background: hsl(258, 9.8%, 96%);
+    --pdf-background: hsl(258, 18.1%, 94%);
+    --pdf-page-background: hsl(258, 18.1%, 94%);
+    --pdf-sidebar-background: hsl(258, 18.1%, 94%);
+    --raised-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
+    --scrollbar-thumb-bg: transparent;
+    --search-result-background: hsl(258, 18.1%, 94%);
     --shadow-1: hsla(258, 88%, 5%, 0.5);
     --shadow-4: hsla(258, 44.1%, 76%, 0.5);
+    --shiki-code-background: rgb(234, 234, 234);
+    --shiki-code-comment: hsl(258, 88%, 66%);
+    --shiki-gutter-text-color: hsl(258, 88%, 66%);
+    --shiki-terminal-dots-color: hsl(258, 88%, 66%);
+    --suggestion-background: hsl(258, 18.1%, 94%);
+    --tab-background-active: hsl(258, 18.1%, 94%);
+    --tab-outline-color: rgba(200, 200, 200, 0.441);
+    --tab-switcher-background: hsl(258, 9.8%, 96%);
+    --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 9.8%, 96%), transparent);
+    --tab-text-color: hsl(258, 88%, 66%);
+    --table-drag-handle-color: hsl(258, 88%, 66%);
+    --table-header-weight: 700;
+    --text-faint: hsl(258, 88%, 66%);
     box-shadow: 0.5px 0.5px 3px 1px var(--shadow-3);
     letter-spacing: 0.1px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
@@ -4607,22 +4607,42 @@ body {
   }
 
   .callout-title {
+    --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, hsl(258, 18.1%, 94%) 50%);
+    font-weight: 350;
+    --background-1-item: #5c5c5c;
+    --background-2: hsl(258, 9.8%, 96%);
+    --background-2_h: 258;
+    --background-3: hsl(258, 48%, 95%, 100%);
+    --background-5: hsla(258, 88%, 66%, 90%);
+    --background-6: hsla(258, 88%, 66%, 0.2);
     --background-primary: hsl(258, 18.1%, 94%);
     --background-secondary: hsl(258, 9.8%, 96%);
     --blur-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
     --bold-weight: 700;
     --callout-blend-mode: normal;
+    --callout-content-padding: 5px 10px 5px 10px;
+    --callout-content-radius: 0px;
     --callout-padding: 0;
+    --callout-title-padding: 6px 10px;
     --callout-title-weight: 700;
     --canvas-background: hsl(258, 9.8%, 96%);
     --checkbox-border-color: hsl(258, 88%, 66%);
     --checkbox-marker-color: hsl(258, 18.1%, 94%);
     --collapse-icon-color: hsl(258, 88%, 66%);
+    --color-base-00: hsl(258, 48%, 95%, 100%);
+    --color-base-50: hsl(258, 88%, 66%);
+    --colored-accent-1: hsl(258, 88%, 66%);
+    --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+    --colored-accent-3: hsla(258, 79.2%, 79.2%, 1);
+    --colored-accent-i1: hsl(258, 88%, -1700%);
+    --colored-accent-i2: hsl(258, 88%, -4600%);
+    --custom-accent-bold: hsl(258, 88%, 66%);
     --dropdown-background: hsl(258, 88%, 66%);
     --flair-background: hsl(258, 88%, 66%);
     --graph-node-unresolved: hsl(258, 88%, 66%);
     --heading-formatting: hsl(258, 88%, 66%);
     --interactive-normal: hsl(258, 88%, 66%);
+    --line-height-normal: 1.5;
     --menu-background: hsl(258, 9.8%, 96%);
     --pdf-background: hsl(258, 18.1%, 94%);
     --pdf-page-background: hsl(258, 18.1%, 94%);
@@ -4630,6 +4650,8 @@ body {
     --raised-background: color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent) linear-gradient(hsl(258, 18.1%, 94%), color-mix(in srgb, hsl(258, 18.1%, 94%) 65%, transparent));
     --scrollbar-thumb-bg: transparent;
     --search-result-background: hsl(258, 18.1%, 94%);
+    --shadow-1: hsla(258, 88%, 5%, 0.5);
+    --shadow-4: hsla(258, 44.1%, 76%, 0.5);
     --shiki-code-background: rgb(234, 234, 234);
     --shiki-code-comment: hsl(258, 88%, 66%);
     --shiki-gutter-text-color: hsl(258, 88%, 66%);
@@ -4640,31 +4662,9 @@ body {
     --tab-switcher-background: hsl(258, 9.8%, 96%);
     --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 9.8%, 96%), transparent);
     --tab-text-color: hsl(258, 88%, 66%);
-    --table-border-color: color-mix(in srgb, rgb(8, 109, 221) 25%, hsl(258, 18.1%, 94%) 50%);
     --table-drag-handle-color: hsl(258, 88%, 66%);
     --table-header-weight: 700;
     --text-faint: hsl(258, 88%, 66%);
-    font-weight: 350;
-    --background-1-item: #5c5c5c;
-    --background-2: hsl(258, 9.8%, 96%);
-    --background-2_h: 258;
-    --background-3: hsl(258, 48%, 95%, 100%);
-    --background-5: hsla(258, 88%, 66%, 90%);
-    --background-6: hsla(258, 88%, 66%, 0.2);
-    --callout-content-padding: 5px 10px 5px 10px;
-    --callout-content-radius: 0px;
-    --callout-title-padding: 6px 10px;
-    --color-base-00: hsl(258, 48%, 95%, 100%);
-    --color-base-50: hsl(258, 88%, 66%);
-    --colored-accent-1: hsl(258, 88%, 66%);
-    --colored-accent-2: hsla(258, 88%, 66%, 0.5);
-    --colored-accent-3: hsla(258, 79.2%, 79.2%, 1);
-    --colored-accent-i1: hsl(258, 88%, -1700%);
-    --colored-accent-i2: hsl(258, 88%, -4600%);
-    --custom-accent-bold: hsl(258, 88%, 66%);
-    --line-height-normal: 1.5;
-    --shadow-1: hsla(258, 88%, 5%, 0.5);
-    --shadow-4: hsla(258, 44.1%, 76%, 0.5);
     letter-spacing: 0.1px;
     background-color: rgba(0, 0, 0, 0);
     border-bottom-left-radius: 3px;
@@ -4900,6 +4900,8 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4909,11 +4911,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -4930,16 +4935,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4949,11 +4951,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -4970,16 +4975,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4989,11 +4991,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5010,16 +5015,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5029,11 +5031,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5050,16 +5055,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5069,11 +5071,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5090,16 +5095,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5109,11 +5111,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5130,16 +5135,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5149,11 +5151,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5170,16 +5175,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5189,11 +5191,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5210,16 +5215,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5229,11 +5231,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5250,16 +5255,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5269,11 +5271,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5290,16 +5295,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5309,11 +5311,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5330,16 +5335,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5349,11 +5351,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5370,16 +5375,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5389,11 +5391,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5410,16 +5415,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5429,11 +5431,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5450,16 +5455,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5469,11 +5471,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5490,16 +5495,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5509,11 +5511,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5530,16 +5535,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5549,11 +5551,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5570,16 +5575,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5589,11 +5591,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5610,16 +5615,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5629,11 +5631,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5650,16 +5655,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5669,11 +5671,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5690,16 +5695,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5709,11 +5711,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5730,16 +5735,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5749,11 +5751,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5770,16 +5775,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5789,11 +5791,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5810,16 +5815,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5829,11 +5831,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5850,16 +5855,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5869,11 +5871,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5890,16 +5895,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5909,11 +5911,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5930,16 +5935,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5949,11 +5951,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -5970,16 +5975,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5989,11 +5991,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6010,16 +6015,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6029,11 +6031,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6050,16 +6055,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6069,11 +6071,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6090,16 +6095,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6109,11 +6111,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6130,16 +6135,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6149,11 +6151,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6170,16 +6175,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6189,11 +6191,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6210,16 +6215,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6229,11 +6231,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6250,16 +6255,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6269,11 +6271,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6290,16 +6295,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6309,11 +6311,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6330,16 +6335,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6349,11 +6351,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6370,16 +6375,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6389,11 +6391,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6410,16 +6415,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6429,11 +6431,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6450,16 +6455,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6469,11 +6471,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6490,16 +6495,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6509,11 +6511,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6530,16 +6535,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6549,11 +6551,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6570,16 +6575,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6589,11 +6591,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6610,16 +6615,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6629,11 +6631,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6650,16 +6655,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6669,11 +6671,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6690,16 +6695,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6709,11 +6711,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6730,16 +6735,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6749,11 +6751,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6770,16 +6775,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6789,11 +6791,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6810,16 +6815,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6829,11 +6831,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6850,16 +6855,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6869,11 +6871,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6890,16 +6895,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6909,11 +6911,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6930,16 +6935,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6949,11 +6951,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -6970,16 +6975,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6989,11 +6991,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7010,16 +7015,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7029,11 +7031,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7050,16 +7055,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7069,11 +7071,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7090,16 +7095,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7109,11 +7111,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7130,16 +7135,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7149,11 +7151,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7170,16 +7175,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7189,11 +7191,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7210,16 +7215,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7229,11 +7231,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7250,16 +7255,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7269,11 +7271,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7290,16 +7295,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7309,11 +7311,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7330,16 +7335,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7349,11 +7351,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7370,16 +7375,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7389,11 +7391,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7410,16 +7415,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7429,11 +7431,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7450,16 +7455,13 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(25, 25, 25);
+    font-weight: 400;
+    margin-left: 0px;
     --background-primary: #ffffff;
     --background-secondary: #f6f6f6;
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7469,11 +7471,14 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --dropdown-background: #ffffff;
     --flair-background: #ffffff;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
     --interactive-normal: #ffffff;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
@@ -7490,11 +7495,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    font-weight: 400;
-    margin-left: 0px;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
     letter-spacing: normal;
   }
 
@@ -11959,42 +11959,6 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c"] {
-      --background-primary: hsl(258, 0.98%, 10%);
-      --background-secondary: hsl(258, 0.98%, 15%);
-      --blur-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
-      --bold-weight: 700;
-      --callout-blend-mode: normal;
-      --callout-padding: 0;
-      --callout-title-weight: 700;
-      --canvas-background: hsl(258, 0.98%, 15%);
-      --checkbox-border-color: hsl(258, 88%, 66%);
-      --checkbox-marker-color: hsl(258, 0.98%, 10%);
-      --collapse-icon-color: hsl(258, 88%, 66%);
-      --dropdown-background: hsl(258, 88%, 66%);
-      --flair-background: hsl(258, 88%, 66%);
-      --graph-node-unresolved: hsl(258, 88%, 66%);
-      --heading-formatting: hsl(258, 88%, 66%);
-      --interactive-normal: hsl(258, 88%, 66%);
-      --menu-background: hsl(258, 0.98%, 15%);
-      --pdf-background: hsl(258, 0.98%, 10%);
-      --pdf-page-background: hsl(258, 0.98%, 10%);
-      --pdf-sidebar-background: hsl(258, 0.98%, 10%);
-      --raised-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
-      --scrollbar-thumb-bg: transparent;
-      --search-result-background: hsl(258, 0.98%, 10%);
-      --shiki-code-background: hsl(258, -7%, 10%, 100%);
-      --shiki-code-comment: hsl(258, 88%, 66%);
-      --shiki-gutter-text-color: hsl(258, 88%, 66%);
-      --shiki-terminal-dots-color: hsl(258, 88%, 66%);
-      --suggestion-background: hsl(258, 0.98%, 10%);
-      --tab-background-active: hsl(258, 0.98%, 10%);
-      --tab-outline-color: rgba(105, 105, 105, 0.441);
-      --tab-switcher-background: hsl(258, 0.98%, 15%);
-      --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 15%), transparent);
-      --tab-text-color: hsl(258, 88%, 66%);
-      --table-drag-handle-color: hsl(258, 88%, 66%);
-      --table-header-weight: 700;
-      --text-faint: hsl(258, 88%, 66%);
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       border-top-left-radius: 5px;
@@ -12009,9 +11973,20 @@ html[saved-theme="dark"] {
       --background-3: hsl(258, -7%, 10%, 100%);
       --background-5: hsla(258, 88%, 66%, 30%);
       --background-6: hsla(258, 8.8%, 66%, 0.2);
+      --background-primary: hsl(258, 0.98%, 10%);
+      --background-secondary: hsl(258, 0.98%, 15%);
+      --blur-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
+      --bold-weight: 700;
+      --callout-blend-mode: normal;
       --callout-content-padding: 5px 10px 5px 10px;
       --callout-content-radius: 0px;
+      --callout-padding: 0;
       --callout-title-padding: 6px 10px;
+      --callout-title-weight: 700;
+      --canvas-background: hsl(258, 0.98%, 15%);
+      --checkbox-border-color: hsl(258, 88%, 66%);
+      --checkbox-marker-color: hsl(258, 0.98%, 10%);
+      --collapse-icon-color: hsl(258, 88%, 66%);
       --color-base-00: hsl(258, -7%, 10%, 100%);
       --color-base-50: hsl(258, 88%, 66%);
       --colored-accent-1: hsl(258, 88%, 66%);
@@ -12020,10 +11995,35 @@ html[saved-theme="dark"] {
       --colored-accent-i1: hsl(258, 88%, -1700%);
       --colored-accent-i2: hsl(258, 88%, -4600%);
       --custom-accent-bold: hsl(258, 88%, 66%);
+      --dropdown-background: hsl(258, 88%, 66%);
+      --flair-background: hsl(258, 88%, 66%);
+      --graph-node-unresolved: hsl(258, 88%, 66%);
+      --heading-formatting: hsl(258, 88%, 66%);
+      --interactive-normal: hsl(258, 88%, 66%);
       --line-height-normal: 1.5;
+      --menu-background: hsl(258, 0.98%, 15%);
+      --pdf-background: hsl(258, 0.98%, 10%);
+      --pdf-page-background: hsl(258, 0.98%, 10%);
+      --pdf-sidebar-background: hsl(258, 0.98%, 10%);
+      --raised-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
+      --scrollbar-thumb-bg: transparent;
+      --search-result-background: hsl(258, 0.98%, 10%);
       --shadow-1: hsla(258, 88%, 5%, 0.5);
       --shadow-2: hsla(258, 0%, 6.6%, 0.4);
       --shadow-4: hsla(258, 44.1%, -5%, 0.5);
+      --shiki-code-background: hsl(258, -7%, 10%, 100%);
+      --shiki-code-comment: hsl(258, 88%, 66%);
+      --shiki-gutter-text-color: hsl(258, 88%, 66%);
+      --shiki-terminal-dots-color: hsl(258, 88%, 66%);
+      --suggestion-background: hsl(258, 0.98%, 10%);
+      --tab-background-active: hsl(258, 0.98%, 10%);
+      --tab-outline-color: rgba(105, 105, 105, 0.441);
+      --tab-switcher-background: hsl(258, 0.98%, 15%);
+      --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 15%), transparent);
+      --tab-text-color: hsl(258, 88%, 66%);
+      --table-drag-handle-color: hsl(258, 88%, 66%);
+      --table-header-weight: 700;
+      --text-faint: hsl(258, 88%, 66%);
       box-shadow: 0.5px 0.5px 3px 1px var(--shadow-3);
       letter-spacing: 0.1px;
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
@@ -12249,22 +12249,43 @@ html[saved-theme="dark"] {
     }
 
     .callout-title {
+      --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, hsl(258, 0.98%, 10%) 50%);
+      font-weight: 350;
+      --background-1-h: hsl(258, 88%, 66%);
+      --background-1-item: #b3b3b3;
+      --background-2: hsl(258, 0.98%, 15%);
+      --background-2_h: 258;
+      --background-3: hsl(258, -7%, 10%, 100%);
+      --background-5: hsla(258, 88%, 66%, 30%);
+      --background-6: hsla(258, 8.8%, 66%, 0.2);
       --background-primary: hsl(258, 0.98%, 10%);
       --background-secondary: hsl(258, 0.98%, 15%);
       --blur-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
       --bold-weight: 700;
       --callout-blend-mode: normal;
+      --callout-content-padding: 5px 10px 5px 10px;
+      --callout-content-radius: 0px;
       --callout-padding: 0;
+      --callout-title-padding: 6px 10px;
       --callout-title-weight: 700;
       --canvas-background: hsl(258, 0.98%, 15%);
       --checkbox-border-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: hsl(258, 0.98%, 10%);
       --collapse-icon-color: hsl(258, 88%, 66%);
+      --color-base-00: hsl(258, -7%, 10%, 100%);
+      --color-base-50: hsl(258, 88%, 66%);
+      --colored-accent-1: hsl(258, 88%, 66%);
+      --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+      --colored-accent-3: hsla(258, 35.2%, 39.6%, 1);
+      --colored-accent-i1: hsl(258, 88%, -1700%);
+      --colored-accent-i2: hsl(258, 88%, -4600%);
+      --custom-accent-bold: hsl(258, 88%, 66%);
       --dropdown-background: hsl(258, 88%, 66%);
       --flair-background: hsl(258, 88%, 66%);
       --graph-node-unresolved: hsl(258, 88%, 66%);
       --heading-formatting: hsl(258, 88%, 66%);
       --interactive-normal: hsl(258, 88%, 66%);
+      --line-height-normal: 1.5;
       --menu-background: hsl(258, 0.98%, 15%);
       --pdf-background: hsl(258, 0.98%, 10%);
       --pdf-page-background: hsl(258, 0.98%, 10%);
@@ -12272,6 +12293,9 @@ html[saved-theme="dark"] {
       --raised-background: color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent) linear-gradient(hsl(258, 88%, 66%), color-mix(in srgb, hsl(258, 88%, 66%) 65%, transparent));
       --scrollbar-thumb-bg: transparent;
       --search-result-background: hsl(258, 0.98%, 10%);
+      --shadow-1: hsla(258, 88%, 5%, 0.5);
+      --shadow-2: hsla(258, 0%, 6.6%, 0.4);
+      --shadow-4: hsla(258, 44.1%, -5%, 0.5);
       --shiki-code-background: hsl(258, -7%, 10%, 100%);
       --shiki-code-comment: hsl(258, 88%, 66%);
       --shiki-gutter-text-color: hsl(258, 88%, 66%);
@@ -12282,33 +12306,9 @@ html[saved-theme="dark"] {
       --tab-switcher-background: hsl(258, 0.98%, 15%);
       --tab-switcher-menubar-background: linear-gradient(to top, hsl(258, 0.98%, 15%), transparent);
       --tab-text-color: hsl(258, 88%, 66%);
-      --table-border-color: color-mix(in srgb, rgb(2, 122, 255) 25%, hsl(258, 0.98%, 10%) 50%);
       --table-drag-handle-color: hsl(258, 88%, 66%);
       --table-header-weight: 700;
       --text-faint: hsl(258, 88%, 66%);
-      font-weight: 350;
-      --background-1-h: hsl(258, 88%, 66%);
-      --background-1-item: #b3b3b3;
-      --background-2: hsl(258, 0.98%, 15%);
-      --background-2_h: 258;
-      --background-3: hsl(258, -7%, 10%, 100%);
-      --background-5: hsla(258, 88%, 66%, 30%);
-      --background-6: hsla(258, 8.8%, 66%, 0.2);
-      --callout-content-padding: 5px 10px 5px 10px;
-      --callout-content-radius: 0px;
-      --callout-title-padding: 6px 10px;
-      --color-base-00: hsl(258, -7%, 10%, 100%);
-      --color-base-50: hsl(258, 88%, 66%);
-      --colored-accent-1: hsl(258, 88%, 66%);
-      --colored-accent-2: hsla(258, 88%, 66%, 0.5);
-      --colored-accent-3: hsla(258, 35.2%, 39.6%, 1);
-      --colored-accent-i1: hsl(258, 88%, -1700%);
-      --colored-accent-i2: hsl(258, 88%, -4600%);
-      --custom-accent-bold: hsl(258, 88%, 66%);
-      --line-height-normal: 1.5;
-      --shadow-1: hsla(258, 88%, 5%, 0.5);
-      --shadow-2: hsla(258, 0%, 6.6%, 0.4);
-      --shadow-4: hsla(258, 44.1%, -5%, 0.5);
       letter-spacing: 0.1px;
       background-color: rgba(0, 0, 0, 0);
       border-bottom-left-radius: 3px;
@@ -12544,6 +12544,8 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="_"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12553,11 +12555,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12574,16 +12579,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12593,11 +12595,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12614,16 +12619,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12633,11 +12635,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12654,16 +12659,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12673,11 +12675,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12694,16 +12699,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12713,11 +12715,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12734,16 +12739,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12753,11 +12755,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12774,16 +12779,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12793,11 +12795,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12814,16 +12819,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12833,11 +12835,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12854,16 +12859,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12873,11 +12875,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12894,16 +12899,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12913,11 +12915,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12934,16 +12939,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12953,11 +12955,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -12974,16 +12979,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12993,11 +12995,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13014,16 +13019,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13033,11 +13035,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13054,16 +13059,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13073,11 +13075,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13094,16 +13099,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13113,11 +13115,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13134,16 +13139,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13153,11 +13155,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13174,16 +13179,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13193,11 +13195,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13214,16 +13219,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13233,11 +13235,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13254,16 +13259,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13273,11 +13275,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13294,16 +13299,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13313,11 +13315,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13334,16 +13339,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13353,11 +13355,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13374,16 +13379,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13393,11 +13395,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13414,16 +13419,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13433,11 +13435,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13454,16 +13459,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13473,11 +13475,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13494,16 +13499,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13513,11 +13515,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13534,16 +13539,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13553,11 +13555,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13574,16 +13579,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13593,11 +13595,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13614,16 +13619,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13633,11 +13635,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13654,16 +13659,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13673,11 +13675,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13694,16 +13699,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13713,11 +13715,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13734,16 +13739,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13753,11 +13755,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13774,16 +13779,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13793,11 +13795,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13814,16 +13819,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13833,11 +13835,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13854,16 +13859,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13873,11 +13875,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13894,16 +13899,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13913,11 +13915,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13934,16 +13939,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13953,11 +13955,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -13974,16 +13979,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13993,11 +13995,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14014,16 +14019,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14033,11 +14035,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14054,16 +14059,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14073,11 +14075,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14094,16 +14099,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14113,11 +14115,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14134,16 +14139,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14153,11 +14155,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14174,16 +14179,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14193,11 +14195,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14214,16 +14219,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14233,11 +14235,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14254,16 +14259,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14273,11 +14275,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14294,16 +14299,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14313,11 +14315,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14334,16 +14339,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14353,11 +14355,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14374,16 +14379,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14393,11 +14395,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14414,16 +14419,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14433,11 +14435,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14454,16 +14459,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14473,11 +14475,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14494,16 +14499,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14513,11 +14515,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14534,16 +14539,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14553,11 +14555,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14574,16 +14579,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14593,11 +14595,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14614,16 +14619,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14633,11 +14635,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14654,16 +14659,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14673,11 +14675,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14694,16 +14699,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14713,11 +14715,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14734,16 +14739,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14753,11 +14755,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14774,16 +14779,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14793,11 +14795,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14814,16 +14819,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14833,11 +14835,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14854,16 +14859,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14873,11 +14875,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14894,16 +14899,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14913,11 +14915,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14934,16 +14939,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14953,11 +14955,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -14974,16 +14979,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14993,11 +14995,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -15014,16 +15019,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15033,11 +15035,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -15054,16 +15059,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15073,11 +15075,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -15094,16 +15099,13 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(209, 209, 209);
+      font-weight: 400;
+      margin-left: 0px;
       --background-primary: #1e1e1e;
       --background-secondary: #262626;
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15113,11 +15115,14 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --dropdown-background: #363636;
       --flair-background: #363636;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
       --interactive-normal: #363636;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
@@ -15134,11 +15139,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      font-weight: 400;
-      margin-left: 0px;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
       letter-spacing: normal;
     }
   }

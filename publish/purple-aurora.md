@@ -5,7 +5,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <Serice
+- Theme author: andreasstandar
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/purple-aurora/README.md">Install instructions</a>
 

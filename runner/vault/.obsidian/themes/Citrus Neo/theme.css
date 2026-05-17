@@ -534,7 +534,9 @@ body.theme-light .markdown-source-view.mod-cm6 .cm-line.HyperMD-task-line[data-t
 
 body.theme-dark .markdown-rendered .task-list-item.is-checked > .task-list-item-description,
 body.theme-light .markdown-rendered .task-list-item.is-checked > .task-list-item-description {
-	text-decoration: line-through solid var(--citrus-task-done);
+	text-decoration-line: line-through;
+	text-decoration-style: solid;
+	text-decoration-color: var(--citrus-task-done);
 }
 
 body.theme-dark .markdown-rendered pre code .token.keyword,

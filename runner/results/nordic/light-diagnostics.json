@@ -2,12 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--list-marker-color",
-      "references": "--callout-color",
-      "selector": ".callout > .callout-content",
-      "aspect": "callouts"
-    },
-    {
       "property": "--bold-color",
       "references": "--callout-color",
       "selector": ".callout > .callout-content",
@@ -16,7 +10,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"note\"] > .callout-content",
+      "selector": ".callout > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -28,7 +22,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"abstract\"] > .callout-content",
+      "selector": ".callout[data-callout=\"note\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -40,7 +34,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"info\"] > .callout-content",
+      "selector": ".callout[data-callout=\"abstract\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -52,7 +46,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"todo\"] > .callout-content",
+      "selector": ".callout[data-callout=\"info\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -64,7 +58,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"tip\"] > .callout-content",
+      "selector": ".callout[data-callout=\"todo\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -76,7 +70,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"success\"] > .callout-content",
+      "selector": ".callout[data-callout=\"tip\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -88,7 +82,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"question\"] > .callout-content",
+      "selector": ".callout[data-callout=\"success\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -100,7 +94,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"warning\"] > .callout-content",
+      "selector": ".callout[data-callout=\"question\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -112,7 +106,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"danger\"] > .callout-content",
+      "selector": ".callout[data-callout=\"warning\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -124,7 +118,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"failure\"] > .callout-content",
+      "selector": ".callout[data-callout=\"danger\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -136,7 +130,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"bug\"] > .callout-content",
+      "selector": ".callout[data-callout=\"failure\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -148,7 +142,7 @@
     {
       "property": "--list-marker-color",
       "references": "--callout-color",
-      "selector": ".callout[data-callout=\"example\"] > .callout-content",
+      "selector": ".callout[data-callout=\"bug\"] > .callout-content",
       "aspect": "callouts"
     },
     {
@@ -159,12 +153,18 @@
     },
     {
       "property": "--list-marker-color",
+      "references": "--callout-color",
+      "selector": ".callout[data-callout=\"example\"] > .callout-content",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--bold-color",
       "references": "--callout-color",
       "selector": ".callout[data-callout=\"quote\"] > .callout-content",
       "aspect": "callouts"
     },
     {
-      "property": "--bold-color",
+      "property": "--list-marker-color",
       "references": "--callout-color",
       "selector": ".callout[data-callout=\"quote\"] > .callout-content",
       "aspect": "callouts"

@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--kuro-purple-normal-rgb);
-  --callout-default: var(--kuro-blue-dark-rgb);
-  --callout-error: var(--kuro-red-normal-rgb);
-  --callout-example: var(--kuro-magenta-dark-rgb);
-  --callout-fail: var(--kuro-red-dark-rgb);
-  --callout-important: var(--kuro-cyan-normal-rgb);
-  --callout-info: var(--kuro-blue-normal-rgb);
-  --callout-padding: 16px;
-  --callout-question: var(--kuro-orange-dark-rgb);
-  --callout-radius: 8px;
-  --callout-success: var(--kuro-green-normal-rgb);
-  --callout-summary: var(--kuro-purple-light-rgb);
-  --callout-tip: var(--kuro-cyan-dark-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--kuro-blue-light-rgb);
-  --callout-warning: var(--kuro-orange-normal-rgb);
   --checkbox-border-color: var(--kuro-white-dark) !important;
   --checkbox-border-color-hover: var(--kuro-white-light) !important;
   --checkbox-color: var(--kuro-black-light) !important;
   --checkbox-color-hover: var(--kuro-green-dark) !important;
   --checkbox-marker-color: var(--kuro-white-dark) !important;
-  --checkbox-radius: 4px !important;
-  --checkbox-size: 24px !important;
   --code-background: var(--kuro-code-bg) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--kuro-code-comment) !important;
-  --code-function: var(--kuro-code-function) !important;
-  --code-important: var(--kuro-cyan-normal) !important;
-  --code-keyword: var(--kuro-code-keyword) !important;
   --code-normal: var(--kuro-code-fg) !important;
-  --code-operator: var(--kuro-code-operator) !important;
-  --code-property: var(--kuro-code-variable) !important;
   --code-punctuation: var(--kuro-code-punctuation) !important;
-  --code-radius: 12px !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--kuro-code-string) !important;
-  --code-tag: var(--kuro-code-constant) !important;
-  --code-value: var(--kuro-code-variable-other) !important;
   --collapse-icon-color: var(--kuro-white-normal) !important;
   --collapse-icon-color-collapsed: var(--kuro-white-dark) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--kuro-white-normal) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--kuro-yellow-dark) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.45;
   --callout-border-width: 1px;
+  --callout-bug: var(--kuro-purple-normal-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--kuro-blue-dark-rgb);
+  --callout-error: var(--kuro-red-normal-rgb);
+  --callout-example: var(--kuro-magenta-dark-rgb);
+  --callout-fail: var(--kuro-red-dark-rgb);
+  --callout-important: var(--kuro-cyan-normal-rgb);
+  --callout-info: var(--kuro-blue-normal-rgb);
+  --callout-padding: 16px;
+  --callout-question: var(--kuro-orange-dark-rgb);
   --callout-quote: var(--kuro-brown-normal-rgb);
+  --callout-radius: 8px;
+  --callout-success: var(--kuro-green-normal-rgb);
+  --callout-summary: var(--kuro-purple-light-rgb);
+  --callout-tip: var(--kuro-cyan-dark-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--kuro-blue-light-rgb);
+  --callout-warning: var(--kuro-orange-normal-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 4px !important;
+  --checkbox-size: 24px !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--kuro-code-function) !important;
+  --code-important: var(--kuro-cyan-normal) !important;
+  --code-keyword: var(--kuro-code-keyword) !important;
+  --code-operator: var(--kuro-code-operator) !important;
+  --code-property: var(--kuro-code-variable) !important;
+  --code-radius: 12px !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--kuro-code-string) !important;
+  --code-tag: var(--kuro-code-constant) !important;
+  --code-value: var(--kuro-code-variable-other) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4264,6 +4264,20 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4276,6 +4290,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4305,6 +4320,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -4360,48 +4393,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4414,6 +4428,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4443,6 +4458,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -4498,48 +4531,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4552,6 +4566,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4581,6 +4596,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -4636,48 +4669,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4690,6 +4704,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4719,6 +4734,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -4774,48 +4807,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4828,6 +4842,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4857,6 +4872,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -4912,48 +4945,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -4966,6 +4980,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -4995,6 +5010,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5050,48 +5083,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5104,6 +5118,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5133,6 +5148,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5188,48 +5221,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5242,6 +5256,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5271,6 +5286,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5326,48 +5359,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5380,6 +5394,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5409,6 +5424,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5464,48 +5497,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5518,6 +5532,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5547,6 +5562,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5602,48 +5635,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5656,6 +5670,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5685,6 +5700,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5740,48 +5773,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5794,6 +5808,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5823,6 +5838,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -5878,48 +5911,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -5932,6 +5946,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -5961,6 +5976,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6016,48 +6049,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6070,6 +6084,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6099,6 +6114,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6154,48 +6187,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6208,6 +6222,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6237,6 +6252,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6292,48 +6325,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6346,6 +6360,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6375,6 +6390,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6430,48 +6463,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6484,6 +6498,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6513,6 +6528,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6568,48 +6601,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6622,6 +6636,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6651,6 +6666,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6706,48 +6739,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6760,6 +6774,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6789,6 +6804,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6844,48 +6877,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -6898,6 +6912,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -6927,6 +6942,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -6982,48 +7015,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7036,6 +7050,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7065,6 +7080,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7120,48 +7153,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7174,6 +7188,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7203,6 +7218,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7258,48 +7291,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7312,6 +7326,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7341,6 +7356,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7396,48 +7429,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7450,6 +7464,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7479,6 +7494,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7534,48 +7567,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7588,6 +7602,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7617,6 +7632,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7672,48 +7705,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7726,6 +7740,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7755,6 +7770,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7810,48 +7843,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -7864,6 +7878,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -7893,6 +7908,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -7948,48 +7981,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8002,6 +8016,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8031,6 +8046,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8086,48 +8119,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8140,6 +8154,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8169,6 +8184,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8224,48 +8257,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8278,6 +8292,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8307,6 +8322,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8362,48 +8395,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8416,6 +8430,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8445,6 +8460,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8500,48 +8533,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8554,6 +8568,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8583,6 +8598,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8638,48 +8671,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8692,6 +8706,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8721,6 +8736,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8776,48 +8809,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8830,6 +8844,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8859,6 +8874,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -8914,48 +8947,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -8968,6 +8982,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -8997,6 +9012,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9052,48 +9085,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9106,6 +9120,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9135,6 +9150,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9190,48 +9223,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9244,6 +9258,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9273,6 +9288,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9328,48 +9361,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9382,6 +9396,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9411,6 +9426,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9466,48 +9499,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9520,6 +9534,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9549,6 +9564,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9604,48 +9637,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9658,6 +9672,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9687,6 +9702,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9742,48 +9775,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9796,6 +9810,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9825,6 +9840,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -9880,48 +9913,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -9934,6 +9948,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -9963,6 +9978,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10018,48 +10051,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10072,6 +10086,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10101,6 +10116,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10156,48 +10189,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10210,6 +10224,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10239,6 +10254,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10294,48 +10327,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10348,6 +10362,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10377,6 +10392,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10432,48 +10465,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10486,6 +10500,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10515,6 +10530,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10570,48 +10603,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10624,6 +10638,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10653,6 +10668,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10708,48 +10741,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10762,6 +10776,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10791,6 +10806,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10846,48 +10879,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -10900,6 +10914,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -10929,6 +10944,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -10984,48 +11017,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11038,6 +11052,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11067,6 +11082,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11122,48 +11155,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11176,6 +11190,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11205,6 +11220,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11260,48 +11293,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11314,6 +11328,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11343,6 +11358,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11398,48 +11431,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11452,6 +11466,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11481,6 +11496,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11536,48 +11569,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11590,6 +11604,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11619,6 +11634,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11674,48 +11707,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11728,6 +11742,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11757,6 +11772,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11812,48 +11845,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -11866,6 +11880,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -11895,6 +11910,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -11950,48 +11983,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12004,6 +12018,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12033,6 +12048,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12088,48 +12121,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12142,6 +12156,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12171,6 +12186,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12226,48 +12259,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12280,6 +12294,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12309,6 +12324,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12364,48 +12397,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12418,6 +12432,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12447,6 +12462,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12502,48 +12535,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12556,6 +12570,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12585,6 +12600,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12640,48 +12673,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(148, 149, 155);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12694,6 +12708,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12723,6 +12738,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12778,48 +12811,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(148, 149, 155);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12832,6 +12846,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12861,6 +12876,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -12916,48 +12949,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -12970,6 +12984,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -12999,6 +13014,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -13054,48 +13087,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -13108,6 +13122,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13137,6 +13152,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -13192,48 +13225,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -13246,6 +13260,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13275,6 +13290,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -13330,48 +13363,29 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(255, 255, 255);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-primary: #1e1e1e;
     --blockquote-border-color: hsl(258, 88%, 66%);
@@ -13384,6 +13398,7 @@ body {
     --callout-important: 83, 223, 221;
     --callout-info: 2, 122, 255;
     --callout-question: 233, 151, 63;
+    --callout-quote: 158, 158, 158;
     --callout-success: 68, 207, 110;
     --callout-summary: 83, 223, 221;
     --callout-tip: 83, 223, 221;
@@ -13413,6 +13428,24 @@ body {
     --graph-node-focused: hsl(255, 89.76%, 75.9%);
     --graph-node-unresolved: #666666;
     --graph-text: #dadada;
+    --h1-style: normal;
+    --h1-variant: normal;
+    --h1-weight: 700;
+    --h2-style: normal;
+    --h2-variant: normal;
+    --h2-weight: 680;
+    --h3-style: normal;
+    --h3-variant: normal;
+    --h3-weight: 660;
+    --h4-style: normal;
+    --h4-variant: normal;
+    --h4-weight: 640;
+    --h5-style: normal;
+    --h5-variant: normal;
+    --h5-weight: 620;
+    --h6-style: normal;
+    --h6-variant: normal;
+    --h6-weight: 600;
     --heading-formatting: #666666;
     --hr-color: #363636;
     --interactive-accent: hsl(258, 88%, 66%);
@@ -13468,44 +13501,11 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
+    --text-on-accent: white;
+    --text-on-accent-inverted: black;
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    --callout-quote: 158, 158, 158;
-    --h1-style: normal;
-    --h1-variant: normal;
-    --h1-weight: 700;
-    --h2-style: normal;
-    --h2-variant: normal;
-    --h2-weight: 680;
-    --h3-style: normal;
-    --h3-variant: normal;
-    --h3-weight: 660;
-    --h4-style: normal;
-    --h4-variant: normal;
-    --h4-weight: 640;
-    --h5-style: normal;
-    --h5-variant: normal;
-    --h5-weight: 620;
-    --h6-style: normal;
-    --h6-variant: normal;
-    --h6-weight: 600;
-    --text-on-accent: white;
-    --text-on-accent-inverted: black;
   }
 
   html {

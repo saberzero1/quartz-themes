@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--light-purple) !important;
-  --code-important: var(--red) !important;
-  --code-keyword: var(--light-blue) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--pink) !important;
-  --code-property: var(--green) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--orange) !important;
-  --code-tag: var(--blue) !important;
-  --code-value: var(--cyan) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--light-purple) !important;
+  --code-important: var(--red) !important;
+  --code-keyword: var(--light-blue) !important;
+  --code-operator: var(--pink) !important;
+  --code-property: var(--green) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--orange) !important;
+  --code-tag: var(--blue) !important;
+  --code-value: var(--cyan) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -127,53 +127,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--light-purple) !important;
-  --code-important: var(--red) !important;
-  --code-keyword: var(--light-blue) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--pink) !important;
-  --code-property: var(--green) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--orange) !important;
-  --code-tag: var(--blue) !important;
-  --code-value: var(--cyan) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -182,16 +149,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--light-purple) !important;
+  --code-important: var(--red) !important;
+  --code-keyword: var(--light-blue) !important;
+  --code-operator: var(--pink) !important;
+  --code-property: var(--green) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--orange) !important;
+  --code-tag: var(--blue) !important;
+  --code-value: var(--cyan) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4332,6 +4332,7 @@ body {
   }
 
   .callout[data-callout="c1-blue"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -4374,10 +4375,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -4387,6 +4390,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -4394,6 +4403,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -4407,6 +4417,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -4434,6 +4445,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -4476,18 +4488,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -4609,6 +4609,7 @@ body {
   }
 
   .callout[data-callout="c1-cyan"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -4651,10 +4652,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -4664,6 +4667,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -4671,6 +4680,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -4684,6 +4694,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -4711,6 +4722,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -4753,18 +4765,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -4886,6 +4886,7 @@ body {
   }
 
   .callout[data-callout="c1-green"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -4928,10 +4929,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -4941,6 +4944,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -4948,6 +4957,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -4961,6 +4971,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -4988,6 +4999,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -5030,18 +5042,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -5163,6 +5163,7 @@ body {
   }
 
   .callout[data-callout="c1-grey"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -5205,10 +5206,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -5218,6 +5221,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -5225,6 +5234,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -5238,6 +5248,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -5265,6 +5276,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -5307,18 +5319,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -5440,6 +5440,7 @@ body {
   }
 
   .callout[data-callout="c1-light-blue"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -5482,10 +5483,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -5495,6 +5498,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -5502,6 +5511,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -5515,6 +5525,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -5542,6 +5553,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -5584,18 +5596,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -5717,6 +5717,7 @@ body {
   }
 
   .callout[data-callout="c1-light-purple"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -5759,10 +5760,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -5772,6 +5775,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -5779,6 +5788,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -5792,6 +5802,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -5819,6 +5830,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -5861,18 +5873,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -5994,6 +5994,7 @@ body {
   }
 
   .callout[data-callout="c1-orange"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -6036,10 +6037,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -6049,6 +6052,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -6056,6 +6065,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -6069,6 +6079,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -6096,6 +6107,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -6138,18 +6150,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -6271,6 +6271,7 @@ body {
   }
 
   .callout[data-callout="c1-pink"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -6313,10 +6314,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -6326,6 +6329,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -6333,6 +6342,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -6346,6 +6356,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -6373,6 +6384,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -6415,18 +6427,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -6548,6 +6548,7 @@ body {
   }
 
   .callout[data-callout="c1-purple"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -6590,10 +6591,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -6603,6 +6606,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -6610,6 +6619,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -6623,6 +6633,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -6650,6 +6661,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -6692,18 +6704,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -6825,6 +6825,7 @@ body {
   }
 
   .callout[data-callout="c1-red"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -6867,10 +6868,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -6880,6 +6883,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -6887,6 +6896,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -6900,6 +6910,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -6927,6 +6938,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -6969,18 +6981,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -7102,6 +7102,7 @@ body {
   }
 
   .callout[data-callout="c1-yellow"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -7144,10 +7145,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -7157,6 +7160,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -7164,6 +7173,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -7177,6 +7187,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -7204,6 +7215,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -7246,18 +7258,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -7379,6 +7379,7 @@ body {
   }
 
   .callout[data-callout="c2-blue"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -7421,10 +7422,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -7434,6 +7437,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -7441,6 +7450,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -7454,6 +7464,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -7481,6 +7492,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -7523,18 +7535,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -7656,6 +7656,7 @@ body {
   }
 
   .callout[data-callout="c2-cyan"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -7698,10 +7699,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -7711,6 +7714,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -7718,6 +7727,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -7731,6 +7741,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -7758,6 +7769,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -7800,18 +7812,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -7933,6 +7933,7 @@ body {
   }
 
   .callout[data-callout="c2-green"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -7975,10 +7976,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -7988,6 +7991,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -7995,6 +8004,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -8008,6 +8018,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -8035,6 +8046,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -8077,18 +8089,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -8210,6 +8210,7 @@ body {
   }
 
   .callout[data-callout="c2-grey"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -8252,10 +8253,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -8265,6 +8268,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -8272,6 +8281,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -8285,6 +8295,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -8312,6 +8323,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -8354,18 +8366,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -8487,6 +8487,7 @@ body {
   }
 
   .callout[data-callout="c2-light-blue"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -8529,10 +8530,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -8542,6 +8545,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -8549,6 +8558,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -8562,6 +8572,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -8589,6 +8600,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -8631,18 +8643,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -8764,6 +8764,7 @@ body {
   }
 
   .callout[data-callout="c2-light-purple"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -8806,10 +8807,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -8819,6 +8822,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -8826,6 +8835,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -8839,6 +8849,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -8866,6 +8877,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -8908,18 +8920,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -9041,6 +9041,7 @@ body {
   }
 
   .callout[data-callout="c2-orange"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -9083,10 +9084,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -9096,6 +9099,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -9103,6 +9112,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -9116,6 +9126,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -9143,6 +9154,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -9185,18 +9197,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -9318,6 +9318,7 @@ body {
   }
 
   .callout[data-callout="c2-pink"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -9360,10 +9361,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -9373,6 +9376,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -9380,6 +9389,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -9393,6 +9403,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -9420,6 +9431,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -9462,18 +9474,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -9595,6 +9595,7 @@ body {
   }
 
   .callout[data-callout="c2-purple"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -9637,10 +9638,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -9650,6 +9653,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -9657,6 +9666,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -9670,6 +9680,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -9697,6 +9708,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -9739,18 +9751,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -9872,6 +9872,7 @@ body {
   }
 
   .callout[data-callout="c2-red"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -9914,10 +9915,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -9927,6 +9930,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -9934,6 +9943,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -9947,6 +9957,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -9974,6 +9985,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -10016,18 +10028,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -10149,6 +10149,7 @@ body {
   }
 
   .callout[data-callout="c2-yellow"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -10191,10 +10192,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -10204,6 +10207,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -10211,6 +10220,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -10224,6 +10234,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -10251,6 +10262,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -10293,18 +10305,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -10426,6 +10426,7 @@ body {
   }
 
   .callout[data-callout="c3-blue"] {
+    color: rgb(72, 84, 101);
     --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
     --background-modifier-border: #b7bfcd;
     --background-modifier-border-focus: #8d9ab0;
@@ -10468,10 +10469,12 @@ body {
     --color-accent-1: hsl(205, 92.92%, 64.5%);
     --color-accent-2: hsl(203, 93.84%, 69%);
     --color-accent-hsl: 206, 92%, 60%;
+    --current-line-number-color: #dac752;
     --divider-color: #b7bfcd;
     --divider-color-hover: hsl(205, 92.92%, 64.5%);
     --dropdown-background: #f6f7f9;
     --dropdown-background-hover: #e1e4ea;
+    --em-color: #d34fae;
     --flair-background: #f6f7f9;
     --flair-color: #485465;
     --graph-line: #a2acbe;
@@ -10481,6 +10484,12 @@ body {
     --graph-node-tag: #08b94e;
     --graph-node-unresolved: #7886a1;
     --graph-text: #485465;
+    --h1-color: #485465;
+    --h2-color: #485465;
+    --h3-color: #5788d8;
+    --h4-color: #dac752;
+    --h5-color: #d85757;
+    --h6-color: #8956d6;
     --heading-formatting: #7886a1;
     --hr-color: #b7bfcd;
     --interactive-accent: hsl(205, 92.92%, 64.5%);
@@ -10488,6 +10497,7 @@ body {
     --interactive-accent-hsl: 206, 92%, 60%;
     --interactive-hover: #e1e4ea;
     --interactive-normal: #f6f7f9;
+    --line-number-color: #7886a1;
     --link-color: hsl(206, 92%, 60%);
     --link-color-hover: hsl(203, 93.84%, 69%);
     --link-external-color: hsl(206, 92%, 60%);
@@ -10501,6 +10511,7 @@ body {
     --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1);
     --pdf-sidebar-background: #f6f7f9;
     --pdf-thumbnail-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2);
+    --quote-color: #58ca58;
     --raised-background: color-mix(in srgb, #f6f7f9 65%, transparent) linear-gradient(#f6f7f9, color-mix(in srgb, #f6f7f9 65%, transparent));
     --search-clear-button-color: #56647b;
     --search-icon-color: #56647b;
@@ -10528,6 +10539,7 @@ body {
     --shiki-highlight-red: rgba(233, 49, 71, 0.5);
     --shiki-highlight-red-background: rgba(233, 49, 71, 0.1);
     --shiki-terminal-dots-color: #7886a1;
+    --strong-color: #d34fae;
     --suggestion-background: #f6f7f9;
     --sync-avatar-color-1: #e93147;
     --sync-avatar-color-2: #ec7500;
@@ -10570,18 +10582,6 @@ body {
     --text-selection: hsla(206, 92%, 60%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    color: rgb(72, 84, 101);
-    --current-line-number-color: #dac752;
-    --em-color: #d34fae;
-    --h1-color: #485465;
-    --h2-color: #485465;
-    --h3-color: #5788d8;
-    --h4-color: #dac752;
-    --h5-color: #d85757;
-    --h6-color: #8956d6;
-    --line-number-color: #7886a1;
-    --quote-color: #58ca58;
-    --strong-color: #d34fae;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
     --blur-l: blur(16px) saturate(1.5) brightness(1.15);
     --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -24079,6 +24079,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-blue"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -24121,10 +24122,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -24134,6 +24137,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -24141,6 +24150,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -24154,6 +24164,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -24181,6 +24192,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -24223,18 +24235,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -24356,6 +24356,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-cyan"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -24398,10 +24399,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -24411,6 +24414,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -24418,6 +24427,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -24431,6 +24441,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -24458,6 +24469,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -24500,18 +24512,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -24633,6 +24633,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-green"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -24675,10 +24676,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -24688,6 +24691,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -24695,6 +24704,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -24708,6 +24718,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -24735,6 +24746,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -24777,18 +24789,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -24910,6 +24910,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-grey"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -24952,10 +24953,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -24965,6 +24968,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -24972,6 +24981,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -24985,6 +24995,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -25012,6 +25023,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -25054,18 +25066,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -25187,6 +25187,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-light-blue"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -25229,10 +25230,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -25242,6 +25245,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -25249,6 +25258,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -25262,6 +25272,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -25289,6 +25300,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -25331,18 +25343,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -25464,6 +25464,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-light-purple"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -25506,10 +25507,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -25519,6 +25522,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -25526,6 +25535,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -25539,6 +25549,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -25566,6 +25577,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -25608,18 +25620,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -25741,6 +25741,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-orange"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -25783,10 +25784,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -25796,6 +25799,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -25803,6 +25812,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -25816,6 +25826,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -25843,6 +25854,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -25885,18 +25897,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -26018,6 +26018,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-pink"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -26060,10 +26061,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -26073,6 +26076,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -26080,6 +26089,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -26093,6 +26103,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -26120,6 +26131,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -26162,18 +26174,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -26295,6 +26295,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-purple"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -26337,10 +26338,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -26350,6 +26353,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -26357,6 +26366,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -26370,6 +26380,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -26397,6 +26408,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -26439,18 +26451,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -26572,6 +26572,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-red"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -26614,10 +26615,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -26627,6 +26630,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -26634,6 +26643,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -26647,6 +26657,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -26674,6 +26685,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -26716,18 +26728,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -26849,6 +26849,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c1-yellow"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -26891,10 +26892,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -26904,6 +26907,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -26911,6 +26920,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -26924,6 +26934,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -26951,6 +26962,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -26993,18 +27005,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -27126,6 +27126,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-blue"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -27168,10 +27169,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -27181,6 +27184,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -27188,6 +27197,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -27201,6 +27211,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -27228,6 +27239,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -27270,18 +27282,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -27403,6 +27403,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-cyan"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -27445,10 +27446,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -27458,6 +27461,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -27465,6 +27474,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -27478,6 +27488,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -27505,6 +27516,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -27547,18 +27559,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -27680,6 +27680,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-green"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -27722,10 +27723,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -27735,6 +27738,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -27742,6 +27751,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -27755,6 +27765,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -27782,6 +27793,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -27824,18 +27836,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -27957,6 +27957,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-grey"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -27999,10 +28000,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -28012,6 +28015,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -28019,6 +28028,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -28032,6 +28042,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -28059,6 +28070,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -28101,18 +28113,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -28234,6 +28234,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-light-blue"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -28276,10 +28277,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -28289,6 +28292,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -28296,6 +28305,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -28309,6 +28319,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -28336,6 +28347,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -28378,18 +28390,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -28511,6 +28511,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-light-purple"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -28553,10 +28554,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -28566,6 +28569,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -28573,6 +28582,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -28586,6 +28596,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -28613,6 +28624,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -28655,18 +28667,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -28788,6 +28788,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-orange"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -28830,10 +28831,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -28843,6 +28846,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -28850,6 +28859,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -28863,6 +28873,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -28890,6 +28901,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -28932,18 +28944,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -29065,6 +29065,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-pink"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -29107,10 +29108,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -29120,6 +29123,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -29127,6 +29136,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -29140,6 +29150,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -29167,6 +29178,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -29209,18 +29221,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -29342,6 +29342,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-purple"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -29384,10 +29385,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -29397,6 +29400,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -29404,6 +29413,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -29417,6 +29427,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -29444,6 +29455,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -29486,18 +29498,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -29619,6 +29619,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-red"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -29661,10 +29662,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -29674,6 +29677,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -29681,6 +29690,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -29694,6 +29704,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -29721,6 +29732,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -29763,18 +29775,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -29896,6 +29896,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c2-yellow"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -29938,10 +29939,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -29951,6 +29954,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -29958,6 +29967,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -29971,6 +29981,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -29998,6 +30009,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -30040,18 +30052,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);
@@ -30173,6 +30173,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="c3-blue"] {
+      color: rgb(204, 210, 219);
       --background-modifier-active-hover: hsla(206, 92%, 60%, 0.1);
       --background-modifier-border: #455063;
       --background-modifier-border-focus: #647590;
@@ -30215,10 +30216,12 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(203, 93.84%, 69%);
       --color-accent-2: hsl(201, 96.6%, 77.4%);
       --color-accent-hsl: 206, 92%, 60%;
+      --current-line-number-color: #dac752;
       --divider-color: #455063;
       --divider-color-hover: hsl(206, 92%, 60%);
       --dropdown-background: #455063;
       --dropdown-background-hover: #546178;
+      --em-color: #d34fae;
       --flair-background: #455063;
       --flair-color: #ccd2db;
       --graph-line: #546178;
@@ -30228,6 +30231,12 @@ html[saved-theme="dark"] {
       --graph-node-tag: #33a555;
       --graph-node-unresolved: #7b89a3;
       --graph-text: #ccd2db;
+      --h1-color: #ccd2db;
+      --h2-color: #ccd2db;
+      --h3-color: #5788d8;
+      --h4-color: #dac752;
+      --h5-color: #d85757;
+      --h6-color: #8956d6;
       --heading-formatting: #7b89a3;
       --hr-color: #455063;
       --interactive-accent: hsl(206, 92%, 60%);
@@ -30235,6 +30244,7 @@ html[saved-theme="dark"] {
       --interactive-accent-hsl: 206, 92%, 60%;
       --interactive-hover: #546178;
       --interactive-normal: #455063;
+      --line-number-color: #7b89a3;
       --link-color: hsl(203, 93.84%, 69%);
       --link-color-hover: hsl(201, 96.6%, 77.4%);
       --link-external-color: hsl(203, 93.84%, 69%);
@@ -30248,6 +30258,7 @@ html[saved-theme="dark"] {
       --pdf-shadow: 0 0 0 1px #455063;
       --pdf-sidebar-background: #171b21;
       --pdf-thumbnail-shadow: 0 0 0 1px #455063;
+      --quote-color: #58ca58;
       --raised-background: color-mix(in srgb, #455063 65%, transparent) linear-gradient(#455063, color-mix(in srgb, #455063 65%, transparent));
       --search-clear-button-color: #aeb7c7;
       --search-icon-color: #aeb7c7;
@@ -30275,6 +30286,7 @@ html[saved-theme="dark"] {
       --shiki-highlight-red: rgba(192, 60, 64, 0.5);
       --shiki-highlight-red-background: rgba(192, 60, 64, 0.1);
       --shiki-terminal-dots-color: #7b89a3;
+      --strong-color: #d34fae;
       --suggestion-background: #171b21;
       --sync-avatar-color-1: #c03c40;
       --sync-avatar-color-2: #a86f32;
@@ -30317,18 +30329,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(206, 92%, 60%, 0.33);
       --text-success: #33a555;
       --text-warning: #a86f32;
-      color: rgb(204, 210, 219);
-      --current-line-number-color: #dac752;
-      --em-color: #d34fae;
-      --h1-color: #ccd2db;
-      --h2-color: #ccd2db;
-      --h3-color: #5788d8;
-      --h4-color: #dac752;
-      --h5-color: #d85757;
-      --h6-color: #8956d6;
-      --line-number-color: #7b89a3;
-      --quote-color: #58ca58;
-      --strong-color: #d34fae;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
       --blur-l: blur(16px) saturate(1.5) brightness(1.15);
       --blur-m: blur(10px) saturate(1.5) brightness(1.15);

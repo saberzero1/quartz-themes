@@ -504,12 +504,12 @@ body:has(.modal-container.mod-dim):not(.is-phone) .app-container {
 
 body:not(.is-phone) .modal-container.mod-dim .modal,
 body:not(.is-phone) .status-bar {
-	border-radius: var(--radius-xl);
+	border-radius: var(--radius-xxl);
 	background: var(--glass-bg-color);
 	backdrop-filter: blur(15px) saturate(180%);
 	-webkit-backdrop-filter: blur(15px) saturate(180%);
-	border: 0.5px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+	border: 0.5px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2);
 	margin: 0 5px 5px 5px;
 }
 
@@ -2083,6 +2083,7 @@ body:not(.is-mobile) .modal-container.mod-dim .prompt {
 	backdrop-filter: blur(12px);
 	border: 1px solid rgba(255, 255, 255, 0.25);
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+	border-radius: var(--radius-xxl);
 }
 
 body:not(.is-mobile).theme-dark .suggestion-container,
@@ -2091,8 +2092,9 @@ body:not(.is-mobile).theme-dark .suggestion-container.mod-search-suggestion,
 body:not(.is-mobile).theme-dark .modal.float-search-modal,
 body:not(.is-mobile).theme-dark .modal-container.mod-dim .prompt {
 	backdrop-filter: blur(12px);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+	border-radius: var(--radius-xxl);
 }
 
 body:not(.is-mobile) .setting-item-control select,

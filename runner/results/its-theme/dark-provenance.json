@@ -1343,6 +1343,7 @@
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -2147,6 +2148,7 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -2191,6 +2193,7 @@
   "div.tree-item-children": { "--focus-ring-color": ":root *" },
   "body.styled-scrollbars": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -2973,7 +2976,6 @@
   ".metadata-properties": { "--focus-ring-color": ":root *" },
   ".metadata-container .metadata-property": {
     "--focus-ring-color": ":root *",
-    "--input-radius": ".metadata-property",
     "--input-border-width": ".metadata-property",
     "--input-border-width-focus": ".metadata-property"
   },
@@ -3012,6 +3014,7 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",

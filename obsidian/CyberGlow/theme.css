@@ -2,26 +2,26 @@
  * ╔═══════════════════════════════════════════════════════════╗
  * ║                      C Y B E R G L O W                    ║
  * ║              An Obsidian Theme by DevM0nk3y               ║
- * ║                        v1.0.0                              ║
+ * ║                        v1.0.3                             ║
  * ╚═══════════════════════════════════════════════════════════╝
  *
- * Secciones:
+ * Sections:
  *   1.  Style Settings YAML
- *   2.  Variables de Fundación
- *   3.  Navegación
+ *   2.  Foundation Variables
+ *   3.  Navigation
  *   4.  Editor
- *   5.  Bloques de Código (Xcode Midnight)
- *   6.  Componentes UI
- *   7.  Correcciones y Componentes adicionales
- *   8.  Eliminación de bordes (fuera del card layout)
+ *   5.  Code Blocks (Xcode Midnight)
+ *   6.  UI Components
+ *   7.  Fixes and Additional Components
+ *   8.  Border Removal (outside card layout)
  *   9.  Card Layout: Tab header refinements
- *   10. Card Layout: Vault profile en sidebar
- *   11. Card Layout: Graph controls en splits laterales
+ *   10. Card Layout: Vault profile in sidebar
+ *   11. Card Layout: Graph controls in side splits
  */
 
 
 /* ============================================================
-   SECCIÓN 1 — Style Settings YAML
+   SECTION 1 — Style Settings YAML
    ============================================================ */
 
 /* @settings
@@ -201,17 +201,21 @@ settings:
     description: "https://github.com/DevM0nk3y/CyberGlow/issues"
     type: info-text
     markdown: true
-
+  - id: cg-url-donate
+    title: "☕ Buy Me a Coffee via Paypal"
+    description: "<details><summary><b>Choose your support tier</b></summary><br><ul style='list-style:none; padding-left:10px;'><li style='margin-bottom:6px;'>☕ <a href='https://www.paypal.com/paypalme/abellazaro067/3usd'>Tier 1: Donate $3 USD</a></li><li style='margin-bottom:6px;'>☕ ☕ <a href='https://www.paypal.com/paypalme/abellazaro067/5usd'>Tier 2: Donate $5 USD</a></li><li style='margin-bottom:6px;'>☕ ☕ ☕ <a href='https://www.paypal.com/paypalme/abellazaro067/10usd'>Tier 3: Donate $10 USD</a></li></ul></details>"
+    type: info-text
+    markdown: true
 */
 
 
 
-/* Style Settings — Support heading en cian */
+/* Style Settings — Support heading in cyan */
 .style-settings-container .setting-item[data-id="cg-support-header"] .setting-item-name {
   color: var(--cg-primary);
 }
 
-/* Style Settings — gradient bar bajo Colors */
+/* Style Settings — gradient bar below Colors */
 .style-settings-container .setting-item[data-id="cg-colors-header"] .setting-item-name::after {
   content: "";
   display: block;
@@ -222,7 +226,7 @@ settings:
 }
 
 /* ============================================================
-   SECCIÓN 2 — Variables de Fundación
+   SECTION 2 — Foundation Variables
    ============================================================ */
 
 .theme-dark {
@@ -230,12 +234,12 @@ settings:
   --cg-secondary: var(--cg-secondary-color, #FF00FF);
   --cg-active: var(--cg-active-color, #FF00FF);
 
-  /* Variables RGB para uso en rgba() */
+  /* RGB variables for use in rgba() */
   --cg-primary-rgb: 0, 255, 255;
   --cg-secondary-rgb: 255, 0, 255;
   --cg-active-rgb: 255, 0, 255;
 
-  /* Variables para bloques de código */
+  /* Variables for code blocks */
   --cg-code-bg: #000000;
   --cg-code-text: #FFFFFF;
 
@@ -246,7 +250,7 @@ settings:
   --cg-text-muted: #8888a0;
   --cg-text-faint: #555570;
 
-  /* Mapeo a variables de Obsidian — todo el shell usa el mismo fondo */
+  /* Mapping to Obsidian variables — entire shell uses the same background */
   --background-primary: var(--cg-bg-primary);
   --background-primary-alt: var(--cg-bg-primary);
   --background-secondary: var(--cg-bg-primary);
@@ -279,7 +283,7 @@ settings:
   --color-purple: #8B87FF;
   --color-pink: #DE38A5;
 
-  /* Escala base */
+  /* Base scale */
   --color-base-00: #0a0a0f;
   --color-base-05: #0e0e15;
   --color-base-10: #12121a;
@@ -293,7 +297,7 @@ settings:
   --color-base-70: #8888a0;
   --color-base-100: #e0e0e8;
 
-  /* Títulos del sidebar */
+  /* Sidebar titles */
   --nav-item-color: var(--cg-text-muted);
   --nav-item-color-hover: var(--cg-primary);
   --nav-item-color-active: var(--cg-primary);
@@ -303,8 +307,8 @@ settings:
   --nav-item-background-selected: rgba(var(--cg-primary-rgb), 0.1);
 
   /* Tabs */
-  --tab-text-color: var(--cg-text-muted);
-  --tab-text-color-focused: var(--cg-active);
+  --tab-text-color: var(--cg-secondary);
+  --tab-text-color-focused: rgba(var(--cg-primary-rgb), 0.5);
   --tab-text-color-focused-active: var(--cg-primary);
   --tab-text-color-focused-active-current: var(--cg-primary);
 
@@ -314,7 +318,7 @@ settings:
   --scrollbar-active-thumb-bg: rgba(var(--cg-primary-rgb), 0.3);
 }
 
-/* Variantes de intensidad de fondo */
+/* Background intensity variants */
 .cg-bg-abyss.theme-dark {
   --cg-bg-primary: #000000;
   --cg-bg-secondary: #080810;
@@ -329,10 +333,10 @@ settings:
 
 
 /* ============================================================
-   SECCIÓN 3 — Navegación
+   SECTION 3 — Navigation
    ============================================================ */
 
-/* Iconos base */
+/* Base icons */
 .side-dock-ribbon-action svg,
 .nav-action-button svg,
 .tab-header-icon svg,
@@ -348,7 +352,7 @@ settings:
   stroke-width: 2px;
 }
 
-/* Estado activo */
+/* Active state */
 .is-active svg,
 .is-selected svg,
 .is-active .clickable-icon svg,
@@ -362,7 +366,7 @@ settings:
   --icon-color: var(--cg-active);
 }
 
-/* Hover → magenta */
+/* Hover state → magenta */
 .side-dock-ribbon-action:hover svg,
 .nav-action-button:hover svg,
 .view-action:hover svg,
@@ -372,13 +376,13 @@ settings:
   --icon-color: var(--cg-secondary);
 }
 
-/* Archivo activo en explorador */
+/* Active file in file explorer */
 .nav-file-title.is-active,
 .nav-file.is-active .nav-file-title {
   color: var(--cg-primary);
 }
 
-/* Tabs — estilo pill/card con gap */
+/* Tabs — pill/card style with gap */
 .workspace-tabs:not(.mod-stacked) {
   --tab-background: var(--cg-bg-secondary);
   --tab-background-active: var(--cg-bg-primary);
@@ -420,7 +424,7 @@ settings:
   padding: 0 4px 0 8px;
 }
 
-/* Tab activo */
+/* Active tab */
 .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active {
   flex-grow: 1.67;
   max-width: 300px;
@@ -432,12 +436,12 @@ settings:
 }
 
 .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--cg-active);
+  color: rgba(var(--cg-primary-rgb), 0.5);
 }
 
-/* Tabs inactivos */
+/* Inactive tabs */
 .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title {
-  color: rgba(var(--cg-primary-rgb), 0.5);
+  color: var(--cg-secondary);
 }
 
 .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
@@ -446,11 +450,11 @@ settings:
 
 
 /* ============================================================
-   SECCIÓN 4 — Editor
+   SECTION 4 — Editor
    ============================================================ */
 
 
-/* Headings h1-h6 — color normal del texto, sin gradientes */
+/* Headings h1-h6 — normal text color, no gradients */
 .markdown-rendered h1,
 .markdown-rendered h2,
 .markdown-rendered h3,
@@ -469,7 +473,7 @@ settings:
   color: var(--cg-text);
 }
 
-/* HR separadores */
+/* HR separators */
 .cm-line hr,
 .markdown-preview-view hr,
 .markdown-rendered hr {
@@ -524,7 +528,7 @@ settings:
 }
 
 
-/* Tablas */
+/* Tables */
 .markdown-rendered table {
   border-collapse: collapse;
 }
@@ -552,7 +556,7 @@ settings:
   padding-left: 1em;
 }
 
-/* Listas — marcadores */
+/* Lists — markers */
 .list-bullet::after {
   color: var(--cg-text);
 }
@@ -564,10 +568,10 @@ settings:
 
 
 /* ============================================================
-   SECCIÓN 5 — Bloques de Código (Xcode Midnight)
+   SECTION 5 — Code Blocks (Xcode Midnight)
    ============================================================ */
 
-/* --- CodeMirror 6 — Editor — activo siempre por defecto --- */
+/* --- CodeMirror 6 — Editor — always active by default --- */
 .cm-s-obsidian .HyperMD-codeblock {
   background-color: var(--cg-code-bg);
   color: var(--cg-code-text);
@@ -591,7 +595,7 @@ settings:
 .cm-s-obsidian .HyperMD-codeblock .cm-variable,
 .cm-s-obsidian .HyperMD-codeblock .cm-operator { color: var(--cg-code-text); }
 
-/* --- Prism.js — Vista de Lectura --- */
+/* --- Prism.js — Reading View --- */
 .markdown-rendered pre code {
   background-color: var(--cg-code-bg);
   color: var(--cg-code-text);
@@ -651,14 +655,14 @@ pre.code-styler-pre .token.operator,
 pre.code-styler-pre .token.punctuation { color: var(--cg-code-text); }
 pre.code-styler-pre .token.parameter { color: #EB905A; }
 pre.code-styler-pre .token.variable { color: #00B1FF; }
-pre.code-styler-pre .token.parameter.variable { color: #00B1FF \s*; }
+pre.code-styler-pre .token.parameter.variable { color: #00B1FF; }
 
 
 /* ============================================================
-   SECCIÓN 6 — Componentes UI
+   SECTION 6 — UI Components
    ============================================================ */
 
-/* Botones primarios */
+/* Primary buttons */
 .mod-cta {
   background-color: var(--cg-primary);
   color: var(--cg-bg-primary);
@@ -677,13 +681,13 @@ input[type="checkbox"]:checked {
   border-color: var(--cg-primary);
 }
 
-/* Scrollbars delgadas — usa API estándar que respeta auto-hide nativo de macOS */
+/* Slim scrollbars — uses standard API that respects native macOS auto-hide */
 .cg-slim-scrollbars * {
   scrollbar-width: thin;
   scrollbar-color: rgba(var(--cg-primary-rgb), 0.15) transparent;
 }
 
-/* Bordes ocultos — elimina dividers y outlines entre paneles */
+/* Hidden borders — removes dividers and outlines between panels */
 body.cg-hide-borders .workspace-leaf,
 body.cg-hide-borders .workspace-tab-header-container,
 body.cg-hide-borders .workspace-split {
@@ -695,12 +699,17 @@ body.cg-hide-borders.cg-card-layout {
 body.cg-hide-borders.cg-card-layout .menu {
   border: none;
 }
-body.cg-hide-borders.cg-tab-floating .workspace-tab-header {
+body.cg-hide-borders.cg-tab-floating .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+body.cg-hide-borders.cg-tab-floating .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
+  border: none;
+}
+body.cg-hide-borders .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header,
+body.cg-hide-borders .mod-horizontal:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
   border: none;
 }
 
 /* -----------------------------------------------
- *  Card Layout — Variables y estructura base
+ *  Card Layout — Variables and base structure
  * ----------------------------------------------- */
 
 body.cg-card-layout {
@@ -718,14 +727,14 @@ body.cg-card-layout {
   --ribbon-padding: 0;
 }
 
-/* Workspace y container — fondo del "canvas" detrás de las cards */
+/* Workspace and container — background of the "canvas" behind cards */
 body.cg-card-layout .workspace,
 body.cg-card-layout .horizontal-main-container,
 body.cg-card-layout .mod-vertical .workspace-tabs {
   background-color: var(--cg-card-bg);
 }
 
-/* Leaves en splits laterales y root — fondo del canvas */
+/* Leaves in side splits and root — canvas background */
 body.cg-card-layout .mod-left-split .workspace-tabs .workspace-leaf,
 body.cg-card-layout .mod-right-split .workspace-tabs .workspace-leaf,
 body.cg-card-layout .mod-left-split,
@@ -739,7 +748,7 @@ body.cg-card-layout .workspace-ribbon.mod-left:before {
   background-color: var(--cg-card-bg);
 }
 
-/* Padding horizontal en sidebar tab containers */
+/* Horizontal padding in sidebar tab containers */
 body.cg-card-layout .mod-left-split .workspace-tab-container,
 body.cg-card-layout .mod-right-split .workspace-tab-container {
   padding-left: var(--cg-card-padding);
@@ -747,43 +756,43 @@ body.cg-card-layout .mod-right-split .workspace-tab-container {
   background-color: var(--cg-card-bg);
 }
 
-/* Tab header — sin borde inferior */
+/* Tab header — no bottom border */
 body.cg-card-layout .workspace-tab-header-container,
 body.cg-card-layout .workspace-ribbon.mod-left:before {
   border-bottom: none;
 }
 
-/* Padding lateral en workspace-tabs verticales */
+/* Side padding in vertical workspace-tabs */
 body.cg-card-layout:not(.is-phone) .mod-vertical .workspace-tabs {
   padding-left: var(--cg-card-padding);
   padding-right: var(--cg-card-padding);
 }
 
-/* === CARD — workspace-leaf-content principal === */
-/* Todos los leaf-content EXCEPTO file-explorer (a menos que cg-card-filebrowser esté activo) */
+/* === CARD — main workspace-leaf-content === */
+/* All leaf-content EXCEPT file-explorer (unless cg-card-filebrowser is active) */
 body.cg-card-layout .workspace-split .workspace-leaf-content:not([data-type="file-explorer"]),
 body.cg-card-layout.cg-card-filebrowser .workspace-leaf-content[data-type="file-explorer"] {
   background-color: var(--cg-card-fg);
   border: 1px solid var(--cg-card-outline-color);
 }
 
-/* Bordes redondeados + separación inferior — no en móvil */
+/* Rounded corners + bottom gap — not on mobile */
 body.cg-card-layout:not(.is-phone) .workspace-split .workspace-leaf-content:not([data-type="file-explorer"]),
 body.cg-card-layout:not(.is-phone).cg-card-filebrowser .workspace-leaf-content[data-type="file-explorer"] {
   border-radius: var(--cg-card-radius);
   margin-bottom: var(--cg-card-padding);
 }
 
-/* Paneles laterales — canvas (fondo detrás de las cards) */
+/* Side panels — canvas (background behind cards) */
 body.cg-card-layout .mod-left-split .workspace-leaf,
 body.cg-card-layout .mod-right-split .workspace-leaf {
   background-color: var(--cg-card-bg);
   margin-bottom: var(--cg-card-padding);
 }
 
-/* Paneles laterales — sobreescribir variables de Obsidian en el scope del sidebar.
- * Obsidian aplica --background-primary en workspace-leaf-content vía sus CSS base.
- * Al redefinirla aquí, el leaf-content hereda el color de card sin necesitar . */
+/* Side panels — override Obsidian variables in the sidebar scope.
+ * Obsidian applies --background-primary to workspace-leaf-content via its base CSS.
+ * Redefining it here lets leaf-content inherit the card color without extra selectors. */
 body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content:not([data-type="file-explorer"]),
 body.cg-card-layout .workspace-split.mod-right-split .workspace-leaf-content {
   --background-primary: var(--cg-card-fg);
@@ -795,7 +804,7 @@ body.cg-card-layout .workspace-split.mod-right-split .workspace-leaf-content {
   border-radius: var(--cg-card-radius);
 }
 
-/* Sidebars — forzar fondo card en TODOS los hijos */
+/* Sidebars — force card background on ALL children */
 body.cg-card-layout .workspace-split.mod-right-split .workspace-leaf-content .view-content,
 body.cg-card-layout .workspace-split.mod-right-split .workspace-leaf-content .view-header,
 body.cg-card-layout .workspace-split.mod-right-split .workspace-leaf-content .backlink-pane,
@@ -811,14 +820,19 @@ body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content .vie
   border-radius: var(--cg-card-radius) var(--cg-card-radius) 0 0;
 }
 
-/* Stacked tabs — sin radius ni borde (ya hay borde en el stacked tab header) */
+/* Main editor pane — view-header matches card background */
+body.cg-card-layout .mod-root .workspace-leaf-content .view-header {
+  background-color: var(--cg-card-fg);
+}
+
+/* Stacked tabs — no radius or border (the stacked tab header already has a border) */
 body.cg-card-layout .workspace-split .mod-stacked .workspace-leaf-content {
   border-radius: 0;
   border: none;
   margin-bottom: 0;
 }
 
-/* Stacked tabs — header con borde card */
+/* Stacked tabs — header with card border */
 body.cg-card-layout .workspace .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header {
   border-style: solid;
   border-radius: var(--cg-card-radius) 0 0 var(--cg-card-radius);
@@ -844,26 +858,32 @@ body.cg-card-layout .workspace .mod-root .workspace-tabs.mod-stacked .workspace-
   background-color: var(--cg-bg-primary);
 }
 
-/* Horizontal splits */
+/* Horizontal splits — width reset */
 body.cg-card-layout .workspace-split.mod-horizontal > * {
   width: unset;
 }
 
-/* Drop overlay — ajustar al card */
+/* Drop overlay — fit inside card */
 body.cg-card-layout .workspace-drop-overlay:before {
   width: calc(100% - 6px - var(--cg-card-padding) * 2);
   height: calc(100% - 6px - var(--cg-card-padding) * 2);
   margin: auto;
 }
 
-/* Card layout — solo el contenido de cada card tiene fondo más claro (legacy — mantenido para compatibilidad) */
+/* Card layout — only the content area of each card has a lighter background (legacy — kept for compatibility) */
 body.cg-card-layout .workspace-leaf-content {
   overflow: hidden;
 }
 
-/* También el área de texto del editor markdown */
-.workspace-leaf-content[data-type="markdown"] .view-content {
-  background-color: var(--cg-bg-secondary);
+/* Also the markdown editor text area */
+.view-content {
+  border: none;
+  background-color: var(--cg-bg-primary);
+}
+
+/* Card layout — note content area matches the card shell (--cg-card-fg = --cg-bg-secondary) */
+body.cg-card-layout .mod-root .workspace-leaf-content .view-content {
+  background-color: var(--cg-card-fg);
 }
 
 /* Modal */
@@ -873,7 +893,7 @@ body.cg-card-layout .workspace-leaf-content {
   border-radius: 8px;
 }
 
-/* Status bar — oculta por defecto, visible cuando cg-status-bar está activo */
+/* Status bar — hidden by default, visible when cg-status-bar is active */
 .status-bar {
   display: none;
   background-color: color-mix(in srgb, var(--cg-bg-secondary) 80%, black);
@@ -941,7 +961,7 @@ textarea:focus {
   background-color: rgba(var(--cg-primary-rgb), 0.2);
 }
 
-/* Card layout — file browser */
+/* Card layout — file browser pane */
 body.cg-card-filebrowser .nav-files-container {
   padding: 4px;
 }
@@ -952,7 +972,7 @@ body.cg-card-filebrowser .nav-folder-children {
   margin: 2px 0;
 }
 
-/* Card layout — actions panel (ribbon lateral) */
+/* Card layout — actions panel (side ribbon) */
 body.cg-card-layout.cg-card-actions .workspace-ribbon.mod-left {
   margin-right: var(--cg-card-padding);
 }
@@ -970,7 +990,7 @@ body.cg-card-layout.cg-card-actions .side-dock-actions {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(var(--cg-primary-rgb), 0.04);
 }
 
-/* Autohide titlebar — implementación completa (inspirada en AnuPpuccin) */
+/* Autohide titlebar — full implementation (inspired by AnuPpuccin) */
 .cg-autohide-titlebar:not(.is-mobile) {
   --cg-titlebar-delay: 150ms;
   --cg-titlebar-duration: 300ms;
@@ -1016,10 +1036,10 @@ body.cg-card-layout.cg-card-actions .side-dock-actions {
 
 
 /* ============================================================
-   SECCIÓN 7 — Correcciones y Componentes adicionales
+   SECTION 7 — Fixes and Additional Components
    ============================================================ */
 
-/* Panel derecho — backlinks y outgoing links */
+/* Right panel — backlinks and outgoing links */
 .backlink-pane,
 .outgoing-link-pane {
   background-color: var(--cg-bg-primary);
@@ -1042,12 +1062,12 @@ body.cg-card-layout.cg-card-actions .side-dock-actions {
   background-color: rgba(var(--cg-primary-rgb), 0.05);
 }
 
-/* Headers de paneles laterales */
+/* Side panel headers */
 .sidebar-section-header {
   color: var(--cg-primary);
 }
 
-/* Grafo */
+/* Graph */
 .graph-view.color-fill {
   color: var(--cg-primary);
 }
@@ -1076,13 +1096,13 @@ body.cg-card-layout.cg-card-actions .side-dock-actions {
   color: rgba(var(--cg-primary-rgb), 0.3);
 }
 
-/* View header — parte de la card */
-body.cg-card-layout .view-header {
-  background-color: var(--cg-bg-secondary);
+/* View header — matches ribbon and canvas background */
+.view-header {
+  background-color: var(--cg-bg-primary);
   border-bottom: 1px solid rgba(var(--cg-primary-rgb), 0.05);
 }
 
-/* Breadcrumb / vista de título */
+/* Breadcrumb / title view */
 .view-header-title {
   color: var(--cg-text-muted);
 }
@@ -1120,7 +1140,7 @@ body.cg-card-layout .view-header {
   color: var(--cg-text);
 }
 
-/* Sugerencias / Autocomplete */
+/* Suggestions / Autocomplete */
 .suggestion-item {
   color: var(--cg-text);
 }
@@ -1166,23 +1186,23 @@ body.cg-card-layout .view-header {
   border-radius: 3px;
 }
 
-/* Bold y italic — colores base */
+/* Bold and italic — base colors */
 strong, .cm-strong { color: var(--cg-text); }
 em, .cm-em { color: var(--cg-text); }
 
-/* Bold en color primario */
+/* Bold in primary color */
 .cg-colored-bold strong,
 .cg-colored-bold .cm-strong {
   color: var(--cg-primary);
 }
 
-/* Italic en color activo */
+/* Italic in active color */
 .cg-colored-italic em,
 .cg-colored-italic .cm-em {
   color: var(--cg-active);
 }
 
-/* Headings con gradiente neon */
+/* Headings with neon gradient */
 .cg-colored-headings .markdown-rendered h1,
 .cg-colored-headings .cm-header-1 { color: #00FFFF; }
 .cg-colored-headings .markdown-rendered h2,
@@ -1196,7 +1216,7 @@ em, .cm-em { color: var(--cg-text); }
 .cg-colored-headings .markdown-rendered h6,
 .cg-colored-headings .cm-header-6 { color: #FF00FF; }
 
-/* Frontmatter / Properties */
+/* Frontmatter / Note Properties */
 .metadata-container {
   background-color: var(--cg-bg-secondary);
   border: 1px solid rgba(var(--cg-primary-rgb), 0.05);
@@ -1210,10 +1230,10 @@ em, .cm-em { color: var(--cg-text); }
 }
 
 /* -----------------------------------------------
- *  Embeds y File References
+ *  Embeds and File References
  * ----------------------------------------------- */
 
-/* Archivos embebidos / referencias a archivos */
+/* Embedded files / file references */
 .internal-embed,
 .file-embed {
   background-color: var(--cg-bg-tertiary);
@@ -1231,7 +1251,7 @@ em, .cm-em { color: var(--cg-text); }
   color: var(--cg-secondary);
 }
 
-/* Icono del archivo embebido */
+/* Embedded file icon */
 .file-embed-icon svg {
   color: var(--cg-primary);
   stroke: var(--cg-primary);
@@ -1249,7 +1269,7 @@ em, .cm-em { color: var(--cg-text); }
 }
 
 /* -----------------------------------------------
- *  Callouts — colores semánticos (inglés y español)
+ *  Callouts — semantic colors (English and Spanish aliases)
  * ----------------------------------------------- */
 
 .callout {
@@ -1304,7 +1324,7 @@ em, .cm-em { color: var(--cg-text); }
 .callout[data-callout="resumen"] { --callout-color: 0, 177, 255; }
 
 /* -----------------------------------------------
- *  Inline Title
+ *  Inline Title (note filename as heading)
  * ----------------------------------------------- */
 
 .inline-title {
@@ -1312,7 +1332,7 @@ em, .cm-em { color: var(--cg-text); }
 }
 
 /* -----------------------------------------------
- *  Sidebar mejorada
+ *  Enhanced Sidebar
  * ----------------------------------------------- */
 
 /* Vault title */
@@ -1320,7 +1340,7 @@ em, .cm-em { color: var(--cg-text); }
   border-bottom: 1px solid rgba(var(--cg-primary-rgb), 0.05);
 }
 
-/* Folder titles */
+/* Folder titles in nav */
 .nav-folder-title {
   color: var(--cg-text-muted);
 }
@@ -1334,7 +1354,7 @@ em, .cm-em { color: var(--cg-text); }
   color: var(--cg-text-faint);
 }
 
-/* File titles (no activos) */
+/* File titles (inactive) */
 .nav-file-title {
   color: var(--cg-text-muted);
 }
@@ -1345,19 +1365,19 @@ em, .cm-em { color: var(--cg-text); }
 }
 
 /* -----------------------------------------------
- *  Número de línea en bloques de código
+ *  Line numbers in code blocks
  * ----------------------------------------------- */
 
-/* Line numbers del code-styler */
+/* Line numbers for code-styler plugin */
 .code-styler-line-number {
   color: var(--cg-text-faint);
 }
 
 /* -----------------------------------------------
- *  Mejoras de listas de tareas
+ *  Task list improvements
  * ----------------------------------------------- */
 
-/* Checkboxes en listas de tareas */
+/* Checkboxes in task lists */
 .task-list-item-checkbox:checked {
   background-color: var(--cg-primary);
   border-color: var(--cg-primary);
@@ -1367,14 +1387,14 @@ em, .cm-em { color: var(--cg-text); }
   border-color: var(--cg-text-faint);
 }
 
-/* Texto tachado en tareas completadas */
+/* Strikethrough text for completed tasks */
 .task-list-item[data-task="x"] .task-list-item-checkbox ~ * {
   text-decoration: line-through;
   color: var(--cg-text-faint);
 }
 
 /* -----------------------------------------------
- *  Progress bars y sliders
+ *  Progress bars and sliders
  * ----------------------------------------------- */
 
 input[type="range"] {
@@ -1382,7 +1402,7 @@ input[type="range"] {
 }
 
 /* -----------------------------------------------
- *  Notices / Notificaciones
+ *  Notices / Notifications
  * ----------------------------------------------- */
 
 .notice {
@@ -1392,43 +1412,72 @@ input[type="range"] {
 }
 
 /* -----------------------------------------------
- *  Tab header mejorado
+ *  Enhanced tab header
  * ----------------------------------------------- */
 
-/* Barra de tabs — fondo */
+/* Tab bar — background */
 .workspace-tab-header-container {
   background-color: var(--cg-bg-primary);
 }
 
-/* Icono del tab */
+/* Tab icon */
 .workspace-tab-header-inner-icon svg {
   color: var(--cg-primary);
   stroke: var(--cg-primary);
 }
 
-/* Close button del tab */
+/* Tab close button — visibility and color mapping
+ *
+ *  Active tab   → X always visible, cyan
+ *  Inactive tab → X hidden by default
+ *  Inactive tab (hover over the tab) → X dim cyan, visible
+ *  Hover over X itself (any tab) → magenta
+ */
+
+/* Active tab: X always visible in cyan */
+.workspace-tab-header.is-active .workspace-tab-header-inner-close-button svg {
+  color: var(--cg-primary);
+  stroke: var(--cg-primary);
+  opacity: 1;
+}
+
+/* Inactive tab: X hidden by default */
+.workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
+  opacity: 0;
+}
+
+/* Inactive tab — hover over the TAB reveals X in dim cyan */
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button {
+  opacity: 1;
+}
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-close-button svg {
+  color: rgba(var(--cg-primary-rgb), 0.5);
+  stroke: rgba(var(--cg-primary-rgb), 0.5);
+}
+
+/* Hover over the X itself (any tab state) → magenta */
 .workspace-tab-header-inner-close-button:hover svg {
   color: var(--cg-secondary);
   stroke: var(--cg-secondary);
 }
 
 /* -----------------------------------------------
- *  Mejoras del explorador de archivos
+ *  File explorer improvements
  * ----------------------------------------------- */
 
-/* Contador de archivos en carpetas */
+/* File count badge on folders */
 .nav-folder-title .nav-folder-title-content .nav-file-tag {
   color: var(--cg-text-faint);
   background-color: rgba(var(--cg-primary-rgb), 0.05);
 }
 
-/* Indicador de vault en la parte inferior */
+/* Vault indicator at the bottom */
 .nav-header-title {
   color: var(--cg-primary);
 }
 
 /* ============================================================
-   SECCIÓN 8A — Tab Styles: Floating & Minimal
+   SECTION 8A — Tab Styles: Floating & Minimal
    ============================================================ */
 
 /* --- Custom tab height variable --- */
@@ -1470,7 +1519,7 @@ body.cg-tab-floating .mod-horizontal:not(.mod-left-split):not(.mod-right-split) 
   box-shadow: none;
   height: var(--tab-height);
   padding: 0;
-  transition: 400ms, background-color 150ms ease-in-out;
+  transition: flex-grow 400ms ease, max-width 400ms ease, color 400ms ease, opacity 400ms ease, background-color 150ms ease-in-out;
   border: 1px solid rgba(var(--cg-primary-rgb), 0.12);
 }
 
@@ -1484,7 +1533,6 @@ body.cg-tab-floating .mod-root:not(.mod-left-split):not(.mod-right-split) .works
   color: var(--cg-text-muted);
 }
 
-body.cg-tab-floating .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-close-button,
 body.cg-tab-floating .mod-root:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-inner-icon {
   color: var(--cg-text-muted);
 }
@@ -1501,11 +1549,11 @@ body.cg-tab-floating .mod-root .workspace-tabs:not(.mod-stacked).mod-active .wor
 }
 
 body.cg-tab-floating .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
-  color: var(--cg-active);
+  color: rgba(var(--cg-primary-rgb), 0.5);
 }
 
 body.cg-tab-floating .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title {
-  color: rgba(var(--cg-primary-rgb), 0.5);
+  color: var(--cg-secondary);
 }
 
 body.cg-tab-floating .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
@@ -1584,19 +1632,15 @@ body.cg-tab-minimal .workspace-split:not(.mod-left-split):not(.mod-right-split) 
 }
 
 /* ============================================================
-   SECCIÓN 8 — Eliminación de bordes (fuera del card layout)
+   SECTION 8 — Border Removal (outside card layout)
    ============================================================ */
 
-/* Eliminar bordes laterales del contenido — solo cuando NO hay card layout activo */
+/* Remove side content borders — only when card layout is NOT active */
 body:not(.cg-card-layout) .workspace-leaf-content {
   border: none;
 }
 
 body:not(.cg-card-layout) .workspace-leaf {
-  border: none;
-}
-
-.view-content {
   border: none;
 }
 
@@ -1613,7 +1657,7 @@ body:not(.cg-card-layout) .workspace-split.mod-root .workspace-leaf {
   border: none;
 }
 
-/* Quitar focus ring que puede parecer una barra */
+/* Remove focus ring that can look like a border bar */
 body:not(.cg-card-layout) .workspace-leaf.mod-active .workspace-leaf-content {
   border: none;
   box-shadow: none;
@@ -1630,10 +1674,10 @@ body:not(.cg-card-layout) .workspace-leaf.mod-active .workspace-leaf-content {
 }
 
 /* ============================================================
-   SECCIÓN 9 — Card Layout: Tab header refinements
+   SECTION 9 — Card Layout: Tab header refinements
    ============================================================ */
 
-/* Tab header container en card layout — padding y alineación */
+/* Tab header container in card layout — padding and alignment */
 body.cg-card-layout .mod-vertical .workspace-tabs .workspace-tab-header-container {
   padding-left: 8px;
 }
@@ -1642,7 +1686,7 @@ body.cg-card-layout .mod-vertical .workspace-tabs .workspace-tab-header-containe
   z-index: 1;
 }
 
-/* Sidebar tabs activos — fondo highlighted */
+/* Active sidebar tabs — highlighted background */
 body.cg-card-layout .mod-left-split .workspace-tab-header.is-active,
 body.cg-card-layout .mod-right-split .workspace-tab-header.is-active,
 body.cg-card-layout .mod-left-split .workspace-tab-header.has-active-menu,
@@ -1651,7 +1695,7 @@ body.cg-card-layout .mod-right-split .workspace-tab-header.has-active-menu {
   border-radius: 6px;
 }
 
-/* New tab button — empujar a la derecha */
+/* New tab button — push to the right */
 body:not(.cg-card-layout) .workspace-split.mod-vertical .workspace-tab-header-spacer {
   display: none;
 }
@@ -1660,7 +1704,7 @@ body:not(.cg-card-layout) .workspace-split.mod-vertical .workspace-tab-header-ne
 }
 
 /* ============================================================
-   SECCIÓN 10 — Card Layout: Vault profile en sidebar
+   SECTION 10 — Card Layout: Vault profile in sidebar
    ============================================================ */
 
 body.cg-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
@@ -1671,14 +1715,14 @@ body.cg-card-layout .workspace-split.mod-left-split .workspace-sidedock-vault-pr
 }
 
 /* ============================================================
-   SECCIÓN 11 — Card Layout: Graph controls en splits laterales
+   SECTION 11 — Card Layout: Graph controls in side splits
    ============================================================ */
 
 body.cg-card-layout .workspace-split:not(.mod-root) .graph-controls {
   background-color: var(--cg-bg-secondary);
 }
 
-/* Style Settings — contenido de sub-headings como card */
+/* Style Settings — sub-heading content displayed as card */
 .style-settings-heading[data-level="2"] {
   margin-bottom: 4px;
 }

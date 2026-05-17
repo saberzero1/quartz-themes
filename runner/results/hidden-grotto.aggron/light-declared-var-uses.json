@@ -300,8 +300,6 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "display": "var(--grotto-callout-icon)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -320,6 +318,8 @@
     "color": "var(--grotto-callout-color)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "display": "var(--grotto-callout-icon)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -447,29 +447,6 @@
     "color": "var(--text-muted)",
     "font-size": "var(--font-smaller)"
   },
-  "div.multi-select-pill": {
-    "background-color": "var(--grotto-properties-color)",
-    "color": "var(--background-primary)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--grotto-properties-color)",
-    "color": "var(--background-primary)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "color": "var(--grotto-link-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--grotto-link-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "height": "var(--checkbox-size)",
     "width": "var(--checkbox-size)"
@@ -561,18 +538,35 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "pre": {
-    "background-color": "var(--grotto-code-background-color)",
-    "color": "var(--grotto-code-color)",
-    "font-weight": "var(--grotto-code-weight)"
+  "div.multi-select-pill": {
+    "background-color": "var(--grotto-properties-color)",
+    "color": "var(--background-primary)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
   },
-  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
+  ".multi-select-pill": {
+    "background-color": "var(--grotto-properties-color)",
+    "color": "var(--background-primary)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "color": "var(--grotto-link-color)",
     "cursor": "var(--cursor-link)",
     "filter": "var(--link-external-filter)",
     "font-weight": "var(--grotto-link-weight)",
     "text-decoration-line": "var(--link-external-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--grotto-link-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--grotto-link-weight)",
+    "text-decoration-line": "var(--link-decoration)",
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
@@ -590,11 +584,17 @@
     "color": "var(--grotto-italic-color)",
     "font-weight": "var(--grotto-italic-weight)"
   },
+  "pre": {
+    "background-color": "var(--grotto-code-background-color)",
+    "color": "var(--grotto-code-color)",
+    "font-weight": "var(--grotto-code-weight)"
+  },
   "blockquote": {
     "background-color": "var(--grotto-blockquote-background-color)",
     "color": "var(--grotto-blockquote-color)",
     "font-style": "var(--blockquote-font-style)"
   },
+  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   ".canvas-node-content": {
     "background-color": "var(--grotto-embed-background-color)",
     "color": "var(--grotto-embed-color)",

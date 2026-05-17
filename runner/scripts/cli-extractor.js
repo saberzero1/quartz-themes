@@ -641,7 +641,17 @@ function generateFullExtractionScript(selectors) {
         if (val && val.trim()) {
           const trimmed = val.trim();
           if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
-            if (!(isCallout && CALLOUT_PRESERVE_VARS.has(prop))) {
+            if (isCallout && CALLOUT_PRESERVE_VARS.has(prop)) {
+              // Always keep callout-specific vars
+            } else if (el) {
+              // Computed value matches baseline (inherited). But check if
+              // this element has a direct CSSOM rule with a var() reference
+              // — if so, the declared value is meaningful and must be kept.
+              const declared = getDeclaredValue(el, prop);
+              if (!declared || !declared.includes("var(")) {
+                continue;
+              }
+            } else {
               continue;
             }
           }
@@ -1188,7 +1198,10 @@ function generateFullExtractionScript(selectors) {
             const val = pseudoStyle.getPropertyValue(prop);
             if (val && val.trim()) {
               const trimmed = val.trim();
-              if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) continue;
+              if (baseline && baseline[prop] !== undefined && baseline[prop] === trimmed) {
+                const declared = getDeclaredValueForPseudo(el, pseudo, prop);
+                if (!declared || !declared.includes("var(")) continue;
+              }
               extracted[prop] = resolveCssomValueForPseudo(el, pseudo, prop, trimmed);
             }
           }
@@ -1235,14 +1248,20 @@ function generateFullExtractionScript(selectors) {
     extractPseudoStyles(document.documentElement, "html");
     extractPseudoStyles(document.body, "body");
 
-    // Build baseline from html/body CSS vars — child elements will only
-    // keep overrides, preventing inherited vars from bloating every selector.
+    // Build baseline from raw getComputedStyle values on html/body.
+    // Children inherit these computed values verbatim (e.g. resolved data: URIs),
+    // so comparing against computed (not CSSOM-declared) values ensures inherited
+    // properties are correctly deduplicated even when the parent's declared value
+    // used a var() reference (e.g. --file-explorer-decoration: var(--coffee-stain)).
     const cssVarBaseline = {};
-    for (const key of ["html", "body"]) {
-      if (!results[key]) continue;
-      for (const prop of Object.keys(results[key])) {
-        if (prop.startsWith("--") && !(prop in cssVarBaseline)) {
-          cssVarBaseline[prop] = results[key][prop];
+    for (const prop of allVarNames) {
+      const bodyVal = bodyStyle.getPropertyValue(prop)?.trim();
+      if (bodyVal) {
+        cssVarBaseline[prop] = bodyVal;
+      } else {
+        const htmlVal = htmlStyle.getPropertyValue(prop)?.trim();
+        if (htmlVal) {
+          cssVarBaseline[prop] = htmlVal;
         }
       }
     }

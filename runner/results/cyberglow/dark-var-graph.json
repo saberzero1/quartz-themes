@@ -1466,12 +1466,12 @@
   },
   "--tab-text-color": {
     "body": ["--text-faint"],
-    ".theme-dark": ["--cg-text-muted"]
+    ".theme-dark": ["--cg-secondary"]
   },
   "--tab-text-color-active": { "body": ["--text-muted"] },
   "--tab-text-color-focused": {
     "body": ["--text-muted"],
-    ".theme-dark": ["--cg-active"]
+    ".theme-dark": ["--cg-primary-rgb"]
   },
   "--tab-text-color-focused-active": {
     "body": ["--text-muted"],

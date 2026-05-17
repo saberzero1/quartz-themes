@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-green-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-red-rgb);
-  --callout-info: var(--color-cyan-rgb);
-  --callout-padding: 0;
-  --callout-question: var(--color-yellow-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 50% !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-faint) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 1;
   --callout-border-width: 1px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0px 12px;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-green-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-red-rgb);
+  --callout-info: var(--color-cyan-rgb);
+  --callout-padding: 0;
+  --callout-question: var(--color-yellow-rgb);
   --callout-quote: var(--color-purple-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 6px 12px;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -98,53 +98,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-green-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-red-rgb);
-  --callout-info: var(--color-cyan-rgb);
-  --callout-padding: 0;
-  --callout-question: var(--color-yellow-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 50% !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-faint) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -153,16 +120,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 1;
   --callout-border-width: 1px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0px 12px;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-green-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-red-rgb);
+  --callout-info: var(--color-cyan-rgb);
+  --callout-padding: 0;
+  --callout-question: var(--color-yellow-rgb);
   --callout-quote: var(--color-purple-rgb);
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 6px 12px;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4315,6 +4315,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4327,6 +4328,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4336,6 +4338,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4434,9 +4437,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -4445,6 +4445,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4457,6 +4458,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4466,6 +4468,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4564,9 +4567,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -4575,6 +4575,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4587,6 +4588,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4596,6 +4598,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4694,9 +4697,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -4705,6 +4705,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4717,6 +4718,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4726,6 +4728,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4824,9 +4827,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -4835,6 +4835,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4847,6 +4848,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4856,6 +4858,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -4954,9 +4957,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -4965,6 +4965,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -4977,6 +4978,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -4986,6 +4988,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5084,9 +5087,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5095,6 +5095,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5107,6 +5108,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5116,6 +5118,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5214,9 +5217,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5225,6 +5225,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5237,6 +5238,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5246,6 +5248,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5344,9 +5347,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5355,6 +5355,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5367,6 +5368,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5376,6 +5378,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5474,9 +5477,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5485,6 +5485,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5497,6 +5498,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5506,6 +5508,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5604,9 +5607,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5615,6 +5615,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5627,6 +5628,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5636,6 +5638,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5734,9 +5737,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5745,6 +5745,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5757,6 +5758,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5766,6 +5768,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5864,9 +5867,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -5875,6 +5875,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -5887,6 +5888,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -5896,6 +5898,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -5994,9 +5997,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6005,6 +6005,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6017,6 +6018,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6026,6 +6028,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6124,9 +6127,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6135,6 +6135,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6147,6 +6148,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6156,6 +6158,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6254,9 +6257,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6265,6 +6265,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6277,6 +6278,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6286,6 +6288,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6384,9 +6387,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6395,6 +6395,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6407,6 +6408,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6416,6 +6418,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6514,9 +6517,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6525,6 +6525,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6537,6 +6538,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6546,6 +6548,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6644,9 +6647,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6655,6 +6655,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6667,6 +6668,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6676,6 +6678,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6774,9 +6777,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6785,6 +6785,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6797,6 +6798,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6806,6 +6808,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -6904,9 +6907,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -6915,6 +6915,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -6927,6 +6928,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -6936,6 +6938,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7034,9 +7037,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7045,6 +7045,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7057,6 +7058,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7066,6 +7068,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7164,9 +7167,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7175,6 +7175,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7187,6 +7188,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7196,6 +7198,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7294,9 +7297,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7305,6 +7305,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7317,6 +7318,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7326,6 +7328,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7424,9 +7427,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7435,6 +7435,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7447,6 +7448,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7456,6 +7458,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7554,9 +7557,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7565,6 +7565,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7577,6 +7578,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7586,6 +7588,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7684,9 +7687,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7695,6 +7695,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7707,6 +7708,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7716,6 +7718,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7814,9 +7817,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7825,6 +7825,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7837,6 +7838,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7846,6 +7848,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -7944,9 +7947,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -7955,6 +7955,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -7967,6 +7968,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -7976,6 +7978,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8074,9 +8077,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8085,6 +8085,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8097,6 +8098,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8106,6 +8108,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8204,9 +8207,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8215,6 +8215,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8227,6 +8228,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8236,6 +8238,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8334,9 +8337,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8345,6 +8345,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8357,6 +8358,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8366,6 +8368,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8464,9 +8467,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8475,6 +8475,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8487,6 +8488,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8496,6 +8498,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8594,9 +8597,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8605,6 +8605,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8617,6 +8618,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8626,6 +8628,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8724,9 +8727,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8735,6 +8735,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8747,6 +8748,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8756,6 +8758,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8854,9 +8857,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8865,6 +8865,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -8877,6 +8878,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -8886,6 +8888,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -8984,9 +8987,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -8995,6 +8995,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9007,6 +9008,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9016,6 +9018,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9114,9 +9117,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9125,6 +9125,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9137,6 +9138,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9146,6 +9148,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9244,9 +9247,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9255,6 +9255,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9267,6 +9268,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9276,6 +9278,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9374,9 +9377,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9385,6 +9385,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9397,6 +9398,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9406,6 +9408,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9504,9 +9507,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9515,6 +9515,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9527,6 +9528,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9536,6 +9538,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9634,9 +9637,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9645,6 +9645,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9657,6 +9658,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9666,6 +9668,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9764,9 +9767,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9775,6 +9775,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9787,6 +9788,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9796,6 +9798,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -9894,9 +9897,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -9905,6 +9905,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -9917,6 +9918,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -9926,6 +9928,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10024,9 +10027,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10035,6 +10035,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10047,6 +10048,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10056,6 +10058,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10154,9 +10157,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10165,6 +10165,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10177,6 +10178,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10186,6 +10188,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10284,9 +10287,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10295,6 +10295,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10307,6 +10308,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10316,6 +10318,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10414,9 +10417,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10425,6 +10425,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10437,6 +10438,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10446,6 +10448,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10544,9 +10547,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10555,6 +10555,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10567,6 +10568,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10576,6 +10578,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10674,9 +10677,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10685,6 +10685,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10697,6 +10698,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10706,6 +10708,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10804,9 +10807,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10815,6 +10815,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10827,6 +10828,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10836,6 +10838,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -10934,9 +10937,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -10945,6 +10945,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -10957,6 +10958,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -10966,6 +10968,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11064,9 +11067,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11075,6 +11075,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11087,6 +11088,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11096,6 +11098,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11194,9 +11197,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11205,6 +11205,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11217,6 +11218,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11226,6 +11228,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11324,9 +11327,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11335,6 +11335,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11347,6 +11348,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11356,6 +11358,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11454,9 +11457,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11465,6 +11465,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11477,6 +11478,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11486,6 +11488,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11584,9 +11587,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11595,6 +11595,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11607,6 +11608,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11616,6 +11618,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11714,9 +11717,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11725,6 +11725,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11737,6 +11738,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11746,6 +11748,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11844,9 +11847,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11855,6 +11855,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11867,6 +11868,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -11876,6 +11878,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -11974,9 +11977,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -11985,6 +11985,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -11997,6 +11998,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12006,6 +12008,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12104,9 +12107,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12115,6 +12115,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12127,6 +12128,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12136,6 +12138,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12234,9 +12237,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12245,6 +12245,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12257,6 +12258,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12266,6 +12268,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12364,9 +12367,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12375,6 +12375,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12387,6 +12388,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12396,6 +12398,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12494,9 +12497,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12505,6 +12505,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12517,6 +12518,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12526,6 +12528,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12624,9 +12627,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12635,6 +12635,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12647,6 +12648,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12656,6 +12658,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12754,9 +12757,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12765,6 +12765,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12777,6 +12778,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12786,6 +12788,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -12884,9 +12887,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -12895,6 +12895,7 @@ body {
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border: #e0e0e0;
     --background-modifier-border-focus: #bdbdbd;
+    --background-modifier-cover: rgba(220, 220, 220, 0.4);
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-error-rgb: 233, 49, 71;
@@ -12907,6 +12908,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --callout-bug: 233, 49, 71;
     --callout-default: 8, 109, 221;
@@ -12916,6 +12918,7 @@ body {
     --callout-important: 0, 191, 188;
     --callout-info: 8, 109, 221;
     --callout-question: 236, 117, 0;
+    --callout-quote: 158, 158, 158;
     --callout-success: 8, 185, 78;
     --callout-summary: 0, 191, 188;
     --callout-tip: 0, 191, 188;
@@ -13014,9 +13017,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --blockquote-background-color: transparent;
-    --callout-quote: 158, 158, 158;
     text-decoration-line: none;
   }
 
@@ -17473,6 +17473,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -17485,6 +17486,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -17494,6 +17496,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -17592,9 +17595,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -17603,6 +17603,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -17615,6 +17616,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -17624,6 +17626,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -17722,9 +17725,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -17733,6 +17733,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -17745,6 +17746,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -17754,6 +17756,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -17852,9 +17855,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -17863,6 +17863,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -17875,6 +17876,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -17884,6 +17886,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -17982,9 +17985,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -17993,6 +17993,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18005,6 +18006,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18014,6 +18016,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18112,9 +18115,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18123,6 +18123,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18135,6 +18136,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18144,6 +18146,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18242,9 +18245,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18253,6 +18253,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18265,6 +18266,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18274,6 +18276,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18372,9 +18375,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18383,6 +18383,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18395,6 +18396,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18404,6 +18406,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18502,9 +18505,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18513,6 +18513,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18525,6 +18526,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18534,6 +18536,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18632,9 +18635,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18643,6 +18643,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18655,6 +18656,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18664,6 +18666,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18762,9 +18765,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18773,6 +18773,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18785,6 +18786,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18794,6 +18796,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -18892,9 +18895,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -18903,6 +18903,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -18915,6 +18916,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -18924,6 +18926,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19022,9 +19025,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19033,6 +19033,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19045,6 +19046,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19054,6 +19056,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19152,9 +19155,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19163,6 +19163,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19175,6 +19176,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19184,6 +19186,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19282,9 +19285,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19293,6 +19293,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19305,6 +19306,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19314,6 +19316,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19412,9 +19415,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19423,6 +19423,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19435,6 +19436,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19444,6 +19446,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19542,9 +19545,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19553,6 +19553,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19565,6 +19566,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19574,6 +19576,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19672,9 +19675,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19683,6 +19683,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19695,6 +19696,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19704,6 +19706,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19802,9 +19805,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19813,6 +19813,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19825,6 +19826,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19834,6 +19836,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -19932,9 +19935,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -19943,6 +19943,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -19955,6 +19956,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -19964,6 +19966,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20062,9 +20065,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20073,6 +20073,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20085,6 +20086,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20094,6 +20096,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20192,9 +20195,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20203,6 +20203,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20215,6 +20216,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20224,6 +20226,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20322,9 +20325,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20333,6 +20333,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20345,6 +20346,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20354,6 +20356,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20452,9 +20455,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20463,6 +20463,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20475,6 +20476,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20484,6 +20486,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20582,9 +20585,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20593,6 +20593,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20605,6 +20606,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20614,6 +20616,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20712,9 +20715,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20723,6 +20723,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20735,6 +20736,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20744,6 +20746,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20842,9 +20845,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20853,6 +20853,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20865,6 +20866,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -20874,6 +20876,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -20972,9 +20975,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -20983,6 +20983,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -20995,6 +20996,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21004,6 +21006,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21102,9 +21105,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21113,6 +21113,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21125,6 +21126,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21134,6 +21136,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21232,9 +21235,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21243,6 +21243,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21255,6 +21256,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21264,6 +21266,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21362,9 +21365,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21373,6 +21373,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21385,6 +21386,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21394,6 +21396,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21492,9 +21495,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21503,6 +21503,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21515,6 +21516,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21524,6 +21526,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21622,9 +21625,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21633,6 +21633,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21645,6 +21646,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21654,6 +21656,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21752,9 +21755,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21763,6 +21763,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21775,6 +21776,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21784,6 +21786,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -21882,9 +21885,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -21893,6 +21893,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -21905,6 +21906,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -21914,6 +21916,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22012,9 +22015,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22023,6 +22023,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22035,6 +22036,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22044,6 +22046,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22142,9 +22145,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22153,6 +22153,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22165,6 +22166,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22174,6 +22176,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22272,9 +22275,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22283,6 +22283,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22295,6 +22296,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22304,6 +22306,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22402,9 +22405,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22413,6 +22413,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22425,6 +22426,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22434,6 +22436,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22532,9 +22535,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22543,6 +22543,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22555,6 +22556,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22564,6 +22566,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22662,9 +22665,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22673,6 +22673,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22685,6 +22686,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22694,6 +22696,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22792,9 +22795,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22803,6 +22803,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22815,6 +22816,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22824,6 +22826,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -22922,9 +22925,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -22933,6 +22933,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -22945,6 +22946,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -22954,6 +22956,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23052,9 +23055,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23063,6 +23063,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23075,6 +23076,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23084,6 +23086,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23182,9 +23185,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23193,6 +23193,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23205,6 +23206,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23214,6 +23216,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23312,9 +23315,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23323,6 +23323,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23335,6 +23336,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23344,6 +23346,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23442,9 +23445,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23453,6 +23453,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23465,6 +23466,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23474,6 +23476,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23572,9 +23575,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23583,6 +23583,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23595,6 +23596,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23604,6 +23606,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23702,9 +23705,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23713,6 +23713,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23725,6 +23726,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23734,6 +23736,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23832,9 +23835,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23843,6 +23843,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23855,6 +23856,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23864,6 +23866,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -23962,9 +23965,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -23973,6 +23973,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -23985,6 +23986,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -23994,6 +23996,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24092,9 +24095,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24103,6 +24103,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24115,6 +24116,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24124,6 +24126,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24222,9 +24225,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24233,6 +24233,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24245,6 +24246,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24254,6 +24256,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24352,9 +24355,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24363,6 +24363,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24375,6 +24376,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24384,6 +24386,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24482,9 +24485,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24493,6 +24493,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24505,6 +24506,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24514,6 +24516,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24612,9 +24615,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24623,6 +24623,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24635,6 +24636,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24644,6 +24646,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24742,9 +24745,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24753,6 +24753,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24765,6 +24766,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24774,6 +24776,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -24872,9 +24875,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -24883,6 +24883,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -24895,6 +24896,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -24904,6 +24906,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25002,9 +25005,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25013,6 +25013,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25025,6 +25026,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25034,6 +25036,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25132,9 +25135,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25143,6 +25143,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25155,6 +25156,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25164,6 +25166,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25262,9 +25265,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25273,6 +25273,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25285,6 +25286,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25294,6 +25296,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25392,9 +25395,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25403,6 +25403,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25415,6 +25416,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25424,6 +25426,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25522,9 +25525,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25533,6 +25533,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25545,6 +25546,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25554,6 +25556,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25652,9 +25655,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25663,6 +25663,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25675,6 +25676,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25684,6 +25686,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25782,9 +25785,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25793,6 +25793,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25805,6 +25806,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25814,6 +25816,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -25912,9 +25915,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -25923,6 +25923,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -25935,6 +25936,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -25944,6 +25946,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -26042,9 +26045,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
 
@@ -26053,6 +26053,7 @@ html[saved-theme="dark"] {
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border: #363636;
       --background-modifier-border-focus: #555555;
+      --background-modifier-cover: rgba(10, 10, 10, 0.4);
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-error-rgb: 251, 70, 76;
@@ -26065,6 +26066,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --callout-bug: 251, 70, 76;
       --callout-default: 2, 122, 255;
@@ -26074,6 +26076,7 @@ html[saved-theme="dark"] {
       --callout-important: 83, 223, 221;
       --callout-info: 2, 122, 255;
       --callout-question: 233, 151, 63;
+      --callout-quote: 158, 158, 158;
       --callout-success: 68, 207, 110;
       --callout-summary: 83, 223, 221;
       --callout-tip: 83, 223, 221;
@@ -26172,9 +26175,6 @@ html[saved-theme="dark"] {
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --background-modifier-cover: rgba(10, 10, 10, 0.4);
-      --blockquote-background-color: transparent;
-      --callout-quote: 158, 158, 158;
       text-decoration-line: none;
     }
   }

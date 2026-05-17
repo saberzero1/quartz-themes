@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--fp-bg-elevated) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--fp-green-comment) !important;
-  --code-function: var(--fp-yellow-fn) !important;
-  --code-important: var(--fp-coral) !important;
-  --code-keyword: var(--fp-amber) !important;
   --code-normal: var(--fp-fg-primary) !important;
-  --code-operator: var(--fp-fg-primary) !important;
-  --code-property: var(--fp-blue) !important;
   --code-punctuation: var(--fp-fg-primary) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--fp-green-string) !important;
-  --code-tag: var(--fp-amber) !important;
-  --code-value: var(--fp-white) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--fp-border-subtle) !important;
   --graph-node: var(--fp-fg-heading) !important;
-  --graph-node-attachment: var(--fp-yellow) !important;
   --graph-node-focused: var(--fp-phosphor) !important;
-  --graph-node-tag: var(--fp-magenta) !important;
   --graph-node-unresolved: var(--fp-coral) !important;
   --graph-text: var(--fp-fg-primary) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--fp-yellow-fn) !important;
+  --code-important: var(--fp-coral) !important;
+  --code-keyword: var(--fp-amber) !important;
+  --code-operator: var(--fp-fg-primary) !important;
+  --code-property: var(--fp-blue) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--fp-green-string) !important;
+  --code-tag: var(--fp-amber) !important;
+  --code-value: var(--fp-white) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--fp-border-subtle) !important;
+  --graph-node-attachment: var(--fp-yellow) !important;
+  --graph-node-tag: var(--fp-magenta) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4184,11 +4184,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4288,8 +4290,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=","] {
@@ -4301,11 +4301,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4405,8 +4407,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=";"] {
@@ -4418,11 +4418,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4522,8 +4524,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=":"] {
@@ -4535,11 +4535,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4639,8 +4641,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="."] {
@@ -4652,11 +4652,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4756,8 +4758,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="'"] {
@@ -4769,11 +4769,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4873,8 +4875,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4886,11 +4886,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -4990,8 +4992,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="&"] {
@@ -5003,11 +5003,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5107,8 +5109,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="#"] {
@@ -5120,11 +5120,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5224,8 +5226,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="%"] {
@@ -5237,11 +5237,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5341,8 +5343,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="`"] {
@@ -5354,11 +5354,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5458,8 +5460,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="+"] {
@@ -5471,11 +5471,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5575,8 +5577,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="<"] {
@@ -5588,11 +5588,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5692,8 +5694,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="="] {
@@ -5705,11 +5705,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5809,8 +5811,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="|"] {
@@ -5822,11 +5822,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -5926,8 +5928,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="~"] {
@@ -5939,11 +5939,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6043,8 +6045,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="$"] {
@@ -6056,11 +6056,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6160,8 +6162,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="0"] {
@@ -6173,11 +6173,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6277,8 +6279,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="1"] {
@@ -6290,11 +6290,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6394,8 +6396,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="2"] {
@@ -6407,11 +6407,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6511,8 +6513,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="3"] {
@@ -6524,11 +6524,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6628,8 +6630,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="4"] {
@@ -6641,11 +6641,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6745,8 +6747,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="5"] {
@@ -6758,11 +6758,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6862,8 +6864,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="6"] {
@@ -6875,11 +6875,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -6979,8 +6981,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="7"] {
@@ -6992,11 +6992,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7096,8 +7098,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="8"] {
@@ -7109,11 +7109,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7213,8 +7215,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="9"] {
@@ -7226,11 +7226,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7330,8 +7332,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="a"] {
@@ -7343,11 +7343,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7447,8 +7449,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="A"] {
@@ -7460,11 +7460,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7564,8 +7566,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="B"] {
@@ -7577,11 +7577,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7681,8 +7683,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="C"] {
@@ -7694,11 +7694,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7798,8 +7800,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="D"] {
@@ -7811,11 +7811,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -7915,8 +7917,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="e"] {
@@ -7928,11 +7928,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8032,8 +8034,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="E"] {
@@ -8045,11 +8045,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8149,8 +8151,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="F"] {
@@ -8162,11 +8162,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8266,8 +8268,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="g"] {
@@ -8279,11 +8279,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8383,8 +8385,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="G"] {
@@ -8396,11 +8396,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8500,8 +8502,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="h"] {
@@ -8513,11 +8513,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8617,8 +8619,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="H"] {
@@ -8630,11 +8630,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8734,8 +8736,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="j"] {
@@ -8747,11 +8747,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8851,8 +8853,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="J"] {
@@ -8864,11 +8864,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -8968,8 +8970,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="K"] {
@@ -8981,11 +8981,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9085,8 +9087,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="L"] {
@@ -9098,11 +9098,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9202,8 +9204,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="m"] {
@@ -9215,11 +9215,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9319,8 +9321,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="M"] {
@@ -9332,11 +9332,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9436,8 +9438,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="n"] {
@@ -9449,11 +9449,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9553,8 +9555,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="N"] {
@@ -9566,11 +9566,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9670,8 +9672,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="o"] {
@@ -9683,11 +9683,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9787,8 +9789,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="O"] {
@@ -9800,11 +9800,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -9904,8 +9906,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="P"] {
@@ -9917,11 +9917,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10021,8 +10023,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="q"] {
@@ -10034,11 +10034,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10138,8 +10140,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -10151,11 +10151,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10255,8 +10257,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="r"] {
@@ -10268,11 +10268,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10372,8 +10374,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="R"] {
@@ -10385,11 +10385,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10489,8 +10491,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="s"] {
@@ -10502,11 +10502,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10606,8 +10608,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="t"] {
@@ -10619,11 +10619,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10723,8 +10725,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="T"] {
@@ -10736,11 +10736,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10840,8 +10842,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="U"] {
@@ -10853,11 +10853,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -10957,8 +10959,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="v"] {
@@ -10970,11 +10970,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11074,8 +11076,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="V"] {
@@ -11087,11 +11087,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11191,8 +11193,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="W"] {
@@ -11204,11 +11204,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11308,8 +11310,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="x"] {
@@ -11321,11 +11321,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11425,8 +11427,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="X"] {
@@ -11438,11 +11438,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11542,8 +11544,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="y"] {
@@ -11555,11 +11555,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11659,8 +11661,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -11672,11 +11672,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11776,8 +11778,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="z"] {
@@ -11789,11 +11789,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -11893,8 +11895,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -11906,11 +11906,13 @@ body {
     --background-modifier-form-field: #2a2a2a;
     --background-modifier-form-field-hover: #2a2a2a;
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-success-rgb: 68, 207, 110;
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
     --callout-bug: 251, 70, 76;
@@ -12010,8 +12012,6 @@ body {
     --text-normal: #dadada;
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
   }
 
   --current-page-slug: attr(data-slug raw-string);

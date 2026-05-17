@@ -780,12 +780,14 @@
   "--graph-text": {
     "body": ["--text-normal"],
     ".theme-light": ["--accent-h", "--accent-s", "--dynamic-switch-graph"],
-    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
+    ".theme-light.accent-override": ["--color-accent"]
   },
   "--graph-line": {
     "body": ["--color-base-35", "--background-modifier-border-focus"],
     ".theme-light": ["--accent-h", "--accent-s", "--dynamic-switch-graph"],
-    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
+    ".theme-light.accent-override": ["--color-accent"]
   },
   "--graph-node": {
     "body": ["--text-muted"],
@@ -1380,7 +1382,8 @@
   "--metadata-property-corner-shape-hover": { "body": ["--corner-shape"] },
   "--metadata-property-corner-shape-focus": { "body": ["--corner-shape"] },
   "--metadata-property-background": {
-    ".base-toolbar-sort-item": ["--interactive-normal"]
+    ".base-toolbar-sort-item": ["--interactive-normal"],
+    "body": ["--background-primary"]
   },
   "--metadata-property-background-active": {
     "body": ["--background-modifier-hover"]

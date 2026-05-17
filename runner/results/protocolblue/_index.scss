@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--light3) !important;
   --checkbox-border-color-hover: var(--frost0) !important;
   --checkbox-color: var(--frost0) !important;
   --checkbox-color-hover: var(--light3) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 0 !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--dark1) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--frost1) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--dark2) !important;
   --graph-node: var(--teal2) !important;
-  --graph-node-attachment: var(--teal1) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--teal4) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--teal0) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 0 !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--dark2) !important;
+  --graph-node-attachment: var(--teal1) !important;
+  --graph-node-tag: var(--teal4) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4201,6 +4201,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4279,16 +4289,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task=","] {
@@ -4322,6 +4322,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4400,16 +4410,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task=";"] {
@@ -4443,6 +4443,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4521,16 +4531,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task=":"] {
@@ -4564,6 +4564,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4642,16 +4652,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="."] {
@@ -4685,6 +4685,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4763,16 +4773,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="'"] {
@@ -4806,6 +4806,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -4884,16 +4894,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4927,6 +4927,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5005,16 +5015,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="&"] {
@@ -5048,6 +5048,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5126,16 +5136,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="#"] {
@@ -5169,6 +5169,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5247,16 +5257,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="%"] {
@@ -5290,6 +5290,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5368,16 +5378,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="`"] {
@@ -5411,6 +5411,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5489,16 +5499,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="+"] {
@@ -5532,6 +5532,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5610,16 +5620,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="<"] {
@@ -5653,6 +5653,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5731,16 +5741,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="="] {
@@ -5774,6 +5774,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5852,16 +5862,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="|"] {
@@ -5895,6 +5895,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -5973,16 +5983,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="~"] {
@@ -6016,6 +6016,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6094,16 +6104,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="$"] {
@@ -6137,6 +6137,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6215,16 +6225,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="0"] {
@@ -6258,6 +6258,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6336,16 +6346,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="1"] {
@@ -6379,6 +6379,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6457,16 +6467,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="2"] {
@@ -6500,6 +6500,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6578,16 +6588,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="3"] {
@@ -6621,6 +6621,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6699,16 +6709,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="4"] {
@@ -6742,6 +6742,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6820,16 +6830,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="5"] {
@@ -6863,6 +6863,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -6941,16 +6951,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="6"] {
@@ -6984,6 +6984,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7062,16 +7072,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="7"] {
@@ -7105,6 +7105,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7183,16 +7193,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="8"] {
@@ -7226,6 +7226,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7304,16 +7314,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="9"] {
@@ -7347,6 +7347,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7425,16 +7435,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="a"] {
@@ -7468,6 +7468,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7546,16 +7556,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="A"] {
@@ -7589,6 +7589,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7667,16 +7677,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="B"] {
@@ -7710,6 +7710,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7788,16 +7798,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="C"] {
@@ -7831,6 +7831,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -7909,16 +7919,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="D"] {
@@ -7952,6 +7952,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8030,16 +8040,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="e"] {
@@ -8073,6 +8073,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8151,16 +8161,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="E"] {
@@ -8194,6 +8194,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8272,16 +8282,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="F"] {
@@ -8315,6 +8315,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8393,16 +8403,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="g"] {
@@ -8436,6 +8436,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8514,16 +8524,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="G"] {
@@ -8557,6 +8557,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8635,16 +8645,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="h"] {
@@ -8678,6 +8678,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8756,16 +8766,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="H"] {
@@ -8799,6 +8799,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8877,16 +8887,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="j"] {
@@ -8920,6 +8920,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -8998,16 +9008,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="J"] {
@@ -9041,6 +9041,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9119,16 +9129,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="K"] {
@@ -9162,6 +9162,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9240,16 +9250,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="L"] {
@@ -9283,6 +9283,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9361,16 +9371,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="m"] {
@@ -9404,6 +9404,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9482,16 +9492,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="M"] {
@@ -9525,6 +9525,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9603,16 +9613,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="n"] {
@@ -9646,6 +9646,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9724,16 +9734,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="N"] {
@@ -9767,6 +9767,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9845,16 +9855,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="o"] {
@@ -9888,6 +9888,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -9966,16 +9976,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="O"] {
@@ -10009,6 +10009,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10087,16 +10097,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="P"] {
@@ -10130,6 +10130,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10208,16 +10218,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="q"] {
@@ -10251,6 +10251,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10329,16 +10339,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -10372,6 +10372,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10450,16 +10460,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="r"] {
@@ -10493,6 +10493,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10571,16 +10581,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="R"] {
@@ -10614,6 +10614,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10692,16 +10702,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="s"] {
@@ -10735,6 +10735,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10813,16 +10823,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="t"] {
@@ -10856,6 +10856,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -10934,16 +10944,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="T"] {
@@ -10977,6 +10977,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11055,16 +11065,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="U"] {
@@ -11098,6 +11098,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11176,16 +11186,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="v"] {
@@ -11219,6 +11219,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11297,16 +11307,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="V"] {
@@ -11340,6 +11340,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11418,16 +11428,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="W"] {
@@ -11461,6 +11461,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11539,16 +11549,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="x"] {
@@ -11582,6 +11582,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11660,16 +11670,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="X"] {
@@ -11703,6 +11703,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11781,16 +11791,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="y"] {
@@ -11824,6 +11824,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -11902,16 +11912,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -11945,6 +11945,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -12023,16 +12033,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="z"] {
@@ -12066,6 +12066,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -12144,16 +12154,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -12187,6 +12187,16 @@ body {
     --color-accent-1: hsl(255, 89.76%, 75.9%);
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-blue: #027aff;
+    --color-blue-rgb: 2, 122, 255;
+    --color-cyan: #53dfdd;
+    --color-cyan-rgb: 83, 223, 221;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --divider-color: #363636;
     --divider-color-hover: hsl(258, 88%, 66%);
     --flair-color: #dadada;
@@ -12265,16 +12275,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    --color-blue: #027aff;
-    --color-blue-rgb: 2, 122, 255;
-    --color-cyan: #53dfdd;
-    --color-cyan-rgb: 83, 223, 221;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
   }
 
   html {

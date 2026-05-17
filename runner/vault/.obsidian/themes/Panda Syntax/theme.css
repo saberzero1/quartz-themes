@@ -1,0 +1,319 @@
+/* ========================================================= */
+/* 🐼 Panda Syntax – Obsidian Theme                          */
+/* ========================================================= */
+
+:root {
+  /* Base palette – dark mode defaults; .theme-light overrides below */
+  --panda-bg: #1f1f1f;
+  --panda-bg-alt: #191919;
+  --panda-bg-alt-2: #151515;
+  --panda-border: #2a2a2a;
+  --panda-fg: #E6E6E6;
+  --panda-muted: #6B6B6B;
+  --panda-faint: #555555;
+
+  --panda-pink: #FF90D0;
+  --panda-red: #EC2864;
+  --panda-orange: #FFB86C;
+  --panda-cyan: #35FFDC;
+  --panda-blue: #7DC1FF;
+  --panda-purple: #B084EB;
+  --panda-yellow: #FFB86C;
+}
+
+/* ========================================================= */
+/* Light theme — palette                                     */
+/* ========================================================= */
+
+.theme-light {
+  --panda-bg: #FAFAFA;
+  --panda-bg-alt: #F0F0F0;
+  --panda-bg-alt-2: #E4E4E4;
+  --panda-border: #D4D4D4;
+  --panda-fg: #2A2A2A;
+  --panda-muted: #888888;
+  --panda-faint: #B0B0B0;
+
+  /* Darkened accents for readability on light backgrounds */
+  --panda-pink: #BF2982;
+  --panda-red: #C0143C;
+  --panda-orange: #C47800;
+  --panda-cyan: #00A896;
+  --panda-blue: #2B6CB0;
+  --panda-purple: #6B35B0;
+}
+
+/* ========================================================= */
+/* Shared Obsidian variable mappings (dark + light)          */
+/* ========================================================= */
+
+.theme-dark,
+.theme-light {
+  /* Backgrounds */
+  --background-primary: var(--panda-bg);
+  --background-secondary: var(--panda-bg-alt);
+  --background-secondary-alt: var(--panda-bg-alt-2);
+  --background-modifier-active-hover: var(--panda-border);
+  --modal-background: var(--panda-bg-alt);
+  --prompt-background: var(--panda-bg-alt);
+
+  /* Text */
+  --text-normal: var(--panda-fg);
+  --text-muted: var(--panda-muted);
+  --text-faint: var(--panda-faint);
+
+  /* Accent */
+  --interactive-accent: var(--panda-cyan);
+  --interactive-accent-hover: var(--panda-blue);
+
+  /* Borders */
+  --divider-color: var(--panda-border);
+
+  /* Selection + cursor */
+  --text-selection: color-mix(in srgb, var(--panda-cyan) 25%, transparent);
+  --caret-color: var(--panda-pink);
+
+  /* Headings */
+  --h1-color: var(--panda-cyan);
+  --h2-color: var(--panda-pink);
+  --h3-color: var(--panda-orange);
+  --h4-color: var(--panda-blue);
+  --h5-color: var(--panda-purple);
+  --h6-color: var(--panda-fg);
+
+  /* Bold / italic */
+  --bold-color: var(--panda-pink);
+  --italic-color: var(--panda-orange);
+
+  /* Blockquotes */
+  --blockquote-color: var(--panda-fg);
+  --blockquote-background-color: var(--panda-bg-alt);
+  --blockquote-border-color: var(--panda-blue);
+  --blockquote-border-thickness: 3px;
+  --blockquote-font-style: normal;
+
+  /* Links */
+  --link-color: var(--panda-blue);
+  --link-color-hover: var(--panda-cyan);
+  --link-external-color: var(--panda-cyan);
+  --link-external-color-hover: var(--panda-cyan);
+  --link-unresolved-color: var(--panda-muted);
+  --link-unresolved-opacity: 0.8;
+
+  /* Tags */
+  --tag-color: var(--panda-pink);
+  --tag-background: color-mix(in srgb, var(--panda-pink) 12%, transparent);
+  --tag-background-hover: color-mix(in srgb, var(--panda-pink) 22%, transparent);
+  --tag-border-color: color-mix(in srgb, var(--panda-pink) 35%, transparent);
+  --tag-border-width: 1px;
+  --tag-border-radius: 4px;
+  --tag-padding-x: 6px;
+  --tag-padding-y: 2px;
+
+  /* Highlights */
+  --text-highlight-bg: color-mix(in srgb, var(--panda-yellow) 35%, transparent);
+  --text-highlight-bg-active: color-mix(in srgb, var(--panda-yellow) 65%, transparent);
+
+  /* Tables */
+  --table-background: transparent;
+  --table-border-color: var(--panda-border);
+  --table-header-background: var(--panda-bg-alt);
+
+  /* Callouts (RGB triplets used by Obsidian as rgba(var(--callout-color), 0.1)) */
+  --callout-default: 125, 193, 255;
+  --callout-info: 69, 169, 249;
+  --callout-note: 176, 132, 235;
+  --callout-abstract: 69, 169, 249;
+  --callout-summary: 69, 169, 249;
+  --callout-tldr: 69, 169, 249;
+  --callout-tip: 25, 249, 216;
+  --callout-hint: 25, 249, 216;
+  --callout-important: 255, 144, 208;
+  --callout-success: 25, 249, 216;
+  --callout-check: 25, 249, 216;
+  --callout-done: 25, 249, 216;
+  --callout-question: 255, 184, 108;
+  --callout-help: 255, 184, 108;
+  --callout-faq: 255, 184, 108;
+  --callout-warning: 255, 184, 108;
+  --callout-caution: 255, 184, 108;
+  --callout-attention: 255, 184, 108;
+  --callout-danger: 236, 40, 100;
+  --callout-error: 236, 40, 100;
+  --callout-bug: 236, 40, 100;
+  --callout-example: 176, 132, 235;
+  --callout-quote: 107, 107, 107;
+  --callout-cite: 107, 107, 107;
+  --callout-todo: 69, 169, 249;
+
+  /* Graph */
+  --graph-node: var(--panda-blue);
+  --graph-node-focused: var(--panda-pink);
+  --graph-node-tag: var(--panda-cyan);
+  --graph-node-attachment: var(--panda-orange);
+  --graph-line: var(--panda-border);
+  --graph-text: var(--panda-muted);
+
+  /* Tabs */
+  --tab-background-active: var(--panda-bg);
+  --tab-text-color: var(--panda-muted);
+  --tab-text-color-active: var(--panda-fg);
+  --tab-text-color-focused: var(--panda-muted);
+  --tab-text-color-focused-active: var(--panda-fg);
+  --tab-text-color-focused-highlighted: var(--panda-pink);
+}
+
+/* ========================================================= */
+/* Dark theme — specific overrides                           */
+/* ========================================================= */
+
+.theme-dark {
+  --background-modifier-hover: color-mix(in srgb, var(--panda-bg) 90%, white 10%);
+  --text-on-accent: #1f1f1f;
+  --accent-h: 210;
+  --accent-s: 93%;
+  --accent-l: 74%;
+  --h1-color: var(--panda-cyan);
+}
+
+/* ========================================================= */
+/* Light theme — specific overrides                          */
+/* ========================================================= */
+
+.theme-light {
+  --background-modifier-hover: color-mix(in srgb, var(--panda-bg) 92%, black 8%);
+  --text-on-accent: #ffffff;
+  --accent-h: 210;
+  --accent-s: 100%;
+  --accent-l: 40%;
+}
+
+/* ========================================================= */
+/* Code blocks                                               */
+/* ========================================================= */
+
+.markdown-source-view,
+.cm-editor {
+  --code-background: var(--panda-bg-alt);
+  --code-normal: var(--panda-fg);
+  --code-comment: var(--panda-muted);
+  --code-keyword: var(--panda-pink);
+  --code-string: var(--panda-cyan);
+  --code-number: var(--panda-orange);
+  --code-function: var(--panda-blue);
+  --code-variable: var(--panda-fg);
+  --code-operator: var(--panda-pink);
+  --code-property: var(--panda-orange);
+  --code-punctuation: var(--panda-fg);
+}
+
+/* ========================================================= */
+/* Inline code                                               */
+/* ========================================================= */
+
+.cm-s-obsidian .cm-inline-code,
+.markdown-rendered code {
+  background-color: var(--panda-bg-alt);
+  color: var(--panda-cyan);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+/* ========================================================= */
+/* Sidebar                                                   */
+/* ========================================================= */
+
+.workspace-leaf-content {
+  background-color: var(--panda-bg);
+}
+
+/* ========================================================= */
+/* File explorer                                             */
+/* ========================================================= */
+
+.nav-folder-title {
+  &:hover {
+    color: var(--panda-fg) !important;
+    background-color: color-mix(
+      in srgb,
+      var(--panda-pink) 15%,
+      transparent
+    ) !important;
+  }
+}
+
+.nav-file-title {
+  &.is-active {
+    color: var(--panda-fg) !important;
+    background-color: color-mix(
+      in srgb,
+      var(--panda-pink) 25%,
+      transparent
+    ) !important;
+  }
+
+  &.is-active:hover {
+    color: var(--panda-fg) !important;
+    background-color: color-mix(
+      in srgb,
+      var(--panda-pink) 35%,
+      transparent
+    ) !important;
+  }
+
+  &:hover {
+    background-color: color-mix(
+      in srgb,
+      var(--panda-pink) 15%,
+      transparent
+    ) !important;
+  }
+}
+
+/* ========================================================= */
+/* Text selection                                            */
+/* ========================================================= */
+
+::selection {
+  background: color-mix(
+    in srgb,
+    var(--panda-blue) 35%,
+    transparent
+  );
+}
+
+/* ========================================================= */
+/* Frontmatter                                               */
+/* ========================================================= */
+
+.metadata-container {
+  background-color: var(--panda-bg-alt);
+  border-color: var(--panda-border);
+  border-radius: 6px;
+}
+
+.cm-hmd-frontmatter {
+  color: var(--panda-muted);
+}
+
+/* ========================================================= */
+/* Scrollbars                                                */
+/* ========================================================= */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--panda-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--panda-muted);
+}

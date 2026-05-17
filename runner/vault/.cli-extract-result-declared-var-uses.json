@@ -1,6 +1,7 @@
 {
   "div.mod-active.workspace-leaf": {
-    "background-color": "var(--background-primary)"
+    "background-color": "var(--background-primary)",
+    "color": "var(--file-header-color-active)"
   },
   "div.workspace-leaf": {
     "background-color": "var(--background-secondary)"
@@ -23,7 +24,6 @@
     "width": "var(--divider-width-hover)"
   },
   "input[type=\"search\"]": {
-    "background-color": "rgba(var(--background-modifier-form-field), 0.3)",
     "color": "var(--text-normal)",
     "font-size": "var(--font-ui-small)",
     "height": "var(--input-height)"
@@ -34,10 +34,11 @@
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "line-height": "var(--inline-title-line-height)"
+    "line-height": "var(--inline-title-line-height)",
+    "text-align": "var(--inline-title-position)"
   },
   "div.is-clickable.mod-collapsible.tree-item-self": {
-    "color": "var(--nav-item-color)",
+    "color": "var(--folder-open-text-color)",
     "cursor": "var(--cursor)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
@@ -52,8 +53,20 @@
     "font-size": "var(--font-ui-medium)",
     "line-height": "var(--line-height-tight)"
   },
-  "svg.lucide-alert-triangle.svg-icon": {
-    "opacity": "var(--icon-opacity)",
+  "div.callout-title": {
+    "color": "rgb(var(--callout-color))",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)"
+  },
+  "div.callout-title-inner": {
+    "color": "var(--callout-title-color)",
+    "font-weight": "var(--font-weight)"
+  },
+  "div.callout-content": {
+    "background-color": "var(--callout-content-background)"
+  },
+  "svg.lucide-pencil.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -72,30 +85,8 @@
     "transform": "translateX(calc(var(--size-4-1) * -1 * var(--direction)))",
     "max-width": "var(--metadata-max-width)"
   },
-  ".metadata-container .metadata-property": {
-    "background-color": "var(--metadata-property-background)",
-    "box-shadow": "var(--metadata-property-box-shadow)"
-  },
-  ".metadata-property-key": {
-    "background-color": "var(--metadata-label-background)",
-    "font-family": "var(--metadata-label-font)",
-    "min-width": "var(--metadata-label-width)",
-    "width": "var(--metadata-label-width)"
-  },
-  ".metadata-property-value": {
-    "background-color": "var(--metadata-input-background)",
-    "font-family": "var(--metadata-input-font)",
-    "min-height": "var(--input-height)"
-  },
-  "input[type=\"text\"]": {
-    "background-color": "rgba(var(--background-modifier-form-field), 0.3)",
-    "color": "var(--text-normal)",
-    "font-size": "var(--font-ui-small)",
-    "font-weight": "var(--metadata-label-font-weight)",
-    "height": "var(--input-height)"
-  },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
-    "color": "var(--nav-item-color)",
+    "color": "var(--folder-open-text-color)",
     "cursor": "var(--cursor)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
@@ -103,7 +94,7 @@
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]": {
-    "color": "var(--nav-item-color)",
+    "color": "var(--folder-open-text-color)",
     "cursor": "var(--cursor)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
@@ -128,7 +119,7 @@
     "cursor": "var(--cursor)"
   },
   ".nav-file-title": {
-    "color": "var(--nav-item-color)",
+    "color": "var(--file-text-color)",
     "cursor": "var(--cursor)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
@@ -144,6 +135,10 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  ".view-header-breadcrumb": {
+    "color": "var(--file-header-breadcrumb-color)",
+    "font-size": "var(--file-header-breadcrumb-font-size)"
+  },
   ".view-header-breadcrumb-separator": {
     "color": "var(--text-faint)"
   },
@@ -151,7 +146,7 @@
     "color": "var(--text-normal)"
   },
   ".view-content": {
-    "background-color": "var(--background-primary)",
+    "background-color": "var(--pane-background)",
     "padding-bottom": "max(var(--safe-area-inset-bottom), var(--size-4-8))",
     "height": "calc(100% - var(--header-height))"
   },
@@ -169,7 +164,8 @@
     "height": "var(--header-height)"
   },
   ".workspace-leaf.mod-active": {
-    "background-color": "var(--background-primary)"
+    "background-color": "var(--background-primary)",
+    "color": "var(--file-header-color-active)"
   },
   ".inline-title": {
     "color": "var(--inline-title-color)",
@@ -177,6 +173,61 @@
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "line-height": "var(--inline-title-line-height)"
+    "line-height": "var(--inline-title-line-height)",
+    "text-align": "var(--inline-title-position)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"aside\"]": {
+    "background-color": "var(--aside-bg, var(--background-secondary))",
+    "box-shadow": "0.3em 0.3em 0 var(--accent, var(--background-modifier-box-shadow)), 0 0 0 1px var(--accent, var(--background-modifier-box-shadow))"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"blank\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"caption\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"captions\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"cards\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"checks\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"column\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"columns\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"grid\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"infobox\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"kanban\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"kith\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"metadata\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quotes\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"recite\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "0px 0px 10px var(--outline, var(--background-modifier-box-shadow))"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"statblocks\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--shadow-l), 0 0 20px var(--outline, var(--hr-color))"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"timeline\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
   }
 }

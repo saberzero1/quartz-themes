@@ -2,18 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--h5-line-height",
-      "references": "--setting-line-height",
-      "selector": "blockquote",
-      "aspect": "blockquotes"
-    },
-    {
-      "property": "--h6-line-height",
-      "references": "--setting-line-height",
-      "selector": "blockquote",
-      "aspect": "blockquotes"
-    },
-    {
       "property": "--h1-line-height",
       "references": "--setting-line-height",
       "selector": "blockquote",
@@ -33,6 +21,18 @@
     },
     {
       "property": "--h4-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h5-line-height",
+      "references": "--setting-line-height",
+      "selector": "blockquote",
+      "aspect": "blockquotes"
+    },
+    {
+      "property": "--h6-line-height",
       "references": "--setting-line-height",
       "selector": "blockquote",
       "aspect": "blockquotes"

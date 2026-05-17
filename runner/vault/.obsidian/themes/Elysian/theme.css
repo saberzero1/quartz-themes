@@ -148,6 +148,14 @@ body {
 	--inline-title-color: var(--light-theme-white);
 }
 
+.theme-dark .cm-comment{
+	--code-comment: #666666
+}
+
+.theme-light .cm-comment{
+	--code-comment: #ababab
+}
+
 
 
 /*Italic and bold*/

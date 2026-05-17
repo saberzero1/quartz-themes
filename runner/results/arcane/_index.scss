@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-yellow-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--dark-8) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--purple-4) !important;
-  --code-function: var(--pink-1) !important;
-  --code-important: var(--pink-1) !important;
-  --code-keyword: var(--purple-3) !important;
   --code-normal: var(--white-1) !important;
-  --code-operator: var(--pink-1) !important;
-  --code-property: var(--cyan-1) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--yellow-2) !important;
-  --code-tag: var(--pink-1) !important;
-  --code-value: var(--green-1) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--cyan-6) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--text-muted) !important;
   --graph-node-focused: var(--pink-2) !important;
-  --graph-node-tag: var(--tag-color) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--gray-2) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-yellow-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--pink-1) !important;
+  --code-important: var(--pink-1) !important;
+  --code-keyword: var(--purple-3) !important;
+  --code-operator: var(--pink-1) !important;
+  --code-property: var(--cyan-1) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--yellow-2) !important;
+  --code-tag: var(--pink-1) !important;
+  --code-value: var(--green-1) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--cyan-6) !important;
+  --graph-node-attachment: var(--text-muted) !important;
+  --graph-node-tag: var(--tag-color) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4347,10 +4347,13 @@ body {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4367,6 +4370,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4390,6 +4394,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4397,6 +4402,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4410,6 +4416,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4421,24 +4428,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4455,6 +4460,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4478,6 +4484,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4485,6 +4492,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4498,6 +4506,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4509,24 +4518,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4543,6 +4550,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4566,6 +4574,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4573,6 +4582,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4586,6 +4596,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4597,24 +4608,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4631,6 +4640,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4654,6 +4664,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4661,6 +4672,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4674,6 +4686,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4685,24 +4698,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4719,6 +4730,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4742,6 +4754,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4749,6 +4762,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4762,6 +4776,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4773,24 +4788,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4807,6 +4820,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4830,6 +4844,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4837,6 +4852,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4850,6 +4866,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4861,24 +4878,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4895,6 +4910,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -4918,6 +4934,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -4925,6 +4942,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -4938,6 +4956,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -4949,24 +4968,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -4983,6 +5000,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5006,6 +5024,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5013,6 +5032,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5026,6 +5046,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5037,24 +5058,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5071,6 +5090,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5094,6 +5114,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5101,6 +5122,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5114,6 +5136,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5125,24 +5148,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5159,6 +5180,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5182,6 +5204,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5189,6 +5212,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5202,6 +5226,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5213,24 +5238,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5247,6 +5270,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5270,6 +5294,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5277,6 +5302,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5290,6 +5316,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5301,24 +5328,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5335,6 +5360,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5358,6 +5384,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5365,6 +5392,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5378,6 +5406,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5389,24 +5418,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5423,6 +5450,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5446,6 +5474,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5453,6 +5482,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5466,6 +5496,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5477,24 +5508,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5511,6 +5540,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5534,6 +5564,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5541,6 +5572,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5554,6 +5586,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5565,24 +5598,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5599,6 +5630,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5622,6 +5654,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5629,6 +5662,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5642,6 +5676,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5653,24 +5688,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5687,6 +5720,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5710,6 +5744,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5717,6 +5752,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5730,6 +5766,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5741,24 +5778,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5775,6 +5810,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5798,6 +5834,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5805,6 +5842,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5818,6 +5856,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5829,24 +5868,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5863,6 +5900,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5886,6 +5924,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5893,6 +5932,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5906,6 +5946,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -5917,24 +5958,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -5951,6 +5990,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -5974,6 +6014,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -5981,6 +6022,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -5994,6 +6036,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6005,24 +6048,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6039,6 +6080,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6062,6 +6104,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6069,6 +6112,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6082,6 +6126,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6093,24 +6138,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6127,6 +6170,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6150,6 +6194,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6157,6 +6202,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6170,6 +6216,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6181,24 +6228,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6215,6 +6260,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6238,6 +6284,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6245,6 +6292,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6258,6 +6306,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6269,24 +6318,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6303,6 +6350,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6326,6 +6374,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6333,6 +6382,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6346,6 +6396,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6357,24 +6408,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6391,6 +6440,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6414,6 +6464,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6421,6 +6472,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6434,6 +6486,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6445,24 +6498,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6479,6 +6530,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6502,6 +6554,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6509,6 +6562,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6522,6 +6576,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6533,24 +6588,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6567,6 +6620,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6590,6 +6644,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6597,6 +6652,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6610,6 +6666,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6621,24 +6678,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6655,6 +6710,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6678,6 +6734,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6685,6 +6742,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6698,6 +6756,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6709,24 +6768,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6743,6 +6800,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6766,6 +6824,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6773,6 +6832,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6786,6 +6846,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6797,24 +6858,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6831,6 +6890,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6854,6 +6914,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6861,6 +6922,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6874,6 +6936,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6885,24 +6948,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -6919,6 +6980,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -6942,6 +7004,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -6949,6 +7012,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -6962,6 +7026,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -6973,24 +7038,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7007,6 +7070,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7030,6 +7094,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7037,6 +7102,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7050,6 +7116,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7061,24 +7128,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7095,6 +7160,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7118,6 +7184,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7125,6 +7192,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7138,6 +7206,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7149,24 +7218,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7183,6 +7250,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7206,6 +7274,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7213,6 +7282,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7226,6 +7296,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7237,24 +7308,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7271,6 +7340,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7294,6 +7364,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7301,6 +7372,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7314,6 +7386,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7325,24 +7398,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7359,6 +7430,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7382,6 +7454,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7389,6 +7462,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7402,6 +7476,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7413,24 +7488,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7447,6 +7520,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7470,6 +7544,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7477,6 +7552,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7490,6 +7566,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7501,24 +7578,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7535,6 +7610,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7558,6 +7634,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7565,6 +7642,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7578,6 +7656,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7589,24 +7668,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7623,6 +7700,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7646,6 +7724,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7653,6 +7732,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7666,6 +7746,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7677,24 +7758,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7711,6 +7790,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7734,6 +7814,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7741,6 +7822,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7754,6 +7836,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7765,24 +7848,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7799,6 +7880,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7822,6 +7904,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7829,6 +7912,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7842,6 +7926,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7853,24 +7938,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7887,6 +7970,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7910,6 +7994,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -7917,6 +8002,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -7930,6 +8016,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -7941,24 +8028,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -7975,6 +8060,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -7998,6 +8084,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8005,6 +8092,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8018,6 +8106,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8029,24 +8118,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8063,6 +8150,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8086,6 +8174,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8093,6 +8182,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8106,6 +8196,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8117,24 +8208,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8151,6 +8240,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8174,6 +8264,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8181,6 +8272,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8194,6 +8286,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8205,24 +8298,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8239,6 +8330,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8262,6 +8354,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8269,6 +8362,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8282,6 +8376,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8293,24 +8388,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8327,6 +8420,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8350,6 +8444,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8357,6 +8452,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8370,6 +8466,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8381,24 +8478,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8415,6 +8510,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8438,6 +8534,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8445,6 +8542,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8458,6 +8556,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8469,24 +8568,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8503,6 +8600,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8526,6 +8624,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8533,6 +8632,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8546,6 +8646,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8557,24 +8658,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8591,6 +8690,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8614,6 +8714,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8621,6 +8722,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8634,6 +8736,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8645,24 +8748,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8679,6 +8780,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8702,6 +8804,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8709,6 +8812,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8722,6 +8826,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8733,24 +8838,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8767,6 +8870,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8790,6 +8894,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8797,6 +8902,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8810,6 +8916,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8821,24 +8928,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8855,6 +8960,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8878,6 +8984,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8885,6 +8992,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8898,6 +9006,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8909,24 +9018,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -8943,6 +9050,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -8966,6 +9074,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -8973,6 +9082,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -8986,6 +9096,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -8997,24 +9108,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9031,6 +9140,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9054,6 +9164,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9061,6 +9172,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9074,6 +9186,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9085,24 +9198,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9119,6 +9230,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9142,6 +9254,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9149,6 +9262,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9162,6 +9276,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9173,24 +9288,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9207,6 +9320,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9230,6 +9344,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9237,6 +9352,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9250,6 +9366,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9261,24 +9378,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9295,6 +9410,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9318,6 +9434,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9325,6 +9442,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9338,6 +9456,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9349,24 +9468,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9383,6 +9500,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9406,6 +9524,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9413,6 +9532,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9426,6 +9546,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9437,24 +9558,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9471,6 +9590,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9494,6 +9614,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9501,6 +9622,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9514,6 +9636,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9525,24 +9648,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9559,6 +9680,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9582,6 +9704,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9589,6 +9712,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9602,6 +9726,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9613,24 +9738,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9647,6 +9770,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9670,6 +9794,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9677,6 +9802,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9690,6 +9816,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9701,24 +9828,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(110, 107, 126);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9735,6 +9860,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9758,6 +9884,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9765,6 +9892,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9778,6 +9906,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9789,24 +9918,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(110, 107, 126);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9823,6 +9950,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9846,6 +9974,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9853,6 +9982,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9866,6 +9996,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9877,24 +10008,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9911,6 +10040,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -9934,6 +10064,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -9941,6 +10072,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -9954,6 +10086,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -9965,24 +10098,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -9999,6 +10130,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -10022,6 +10154,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10029,6 +10162,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10042,6 +10176,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -10053,24 +10188,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -10087,6 +10220,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -10110,6 +10244,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10117,6 +10252,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10130,6 +10266,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -10141,24 +10278,22 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(114, 195, 213);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(255, 255, 255, 0.067);
+    --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-primary: #1e1e1e;
     --background-primary-alt: #242424;
     --background-secondary: #262626;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
+    --bold-weight: 600;
     --callout-question: 233, 151, 63;
     --canvas-background: #1e1e1e;
     --caret-color: #dadada;
@@ -10175,6 +10310,7 @@ body {
     --color-accent-2: hsl(253, 92.4%, 85.14%);
     --color-accent-hsl: 258, 88%, 66%;
     --divider-color-hover: hsl(258, 88%, 66%);
+    --divider-vertical-height: 100%;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --graph-line: #3f3f3f;
@@ -10198,6 +10334,7 @@ body {
     --pdf-background: #1e1e1e;
     --pdf-page-background: #1e1e1e;
     --pdf-sidebar-background: #1e1e1e;
+    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
     --search-clear-button-color: #b3b3b3;
     --search-icon-color: #b3b3b3;
     --search-result-background: #1e1e1e;
@@ -10205,6 +10342,7 @@ body {
     --setting-items-background: #242424;
     --suggestion-background: #1e1e1e;
     --tab-background-active: #1e1e1e;
+    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tab-switcher-background: #262626;
     --tab-switcher-menubar-background: linear-gradient(to top, #262626, transparent);
     --tab-switcher-preview-shadow-active: 0 0 0 2px hsl(258, 88%, 66%);
@@ -10218,6 +10356,7 @@ body {
     --table-drag-handle-color: #666666;
     --table-drag-handle-color-active: white;
     --table-header-color: #dadada;
+    --table-header-weight: 600;
     --table-selection: hsla(258, 88%, 66%, 0.1);
     --table-selection-border-color: hsl(258, 88%, 66%);
     --tag-border-color: hsla(258, 88%, 66%, 0.15);
@@ -10229,14 +10368,9 @@ body {
     --text-faint: #666666;
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
-    --background-modifier-message: rgba(0, 0, 0, 0.9);
-    --blockquote-background-color: transparent;
-    --divider-vertical-height: 100%;
-    --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
-    --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   html {

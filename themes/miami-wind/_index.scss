@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--cyan) !important;
   --checkbox-border-color-hover: var(--magenta) !important;
   --checkbox-color: var(--magenta) !important;
   --checkbox-color-hover: var(--magenta) !important;
   --checkbox-marker-color: var(--black) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--black) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--blue) !important;
-  --code-function: var(--green) !important;
-  --code-important: var(--magenta) !important;
-  --code-keyword: var(--magenta) !important;
   --code-normal: var(--orange) !important;
-  --code-operator: var(--magenta) !important;
-  --code-property: var(--cyan-bright) !important;
   --code-punctuation: var(--magenta) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--yellow) !important;
-  --code-tag: var(--magenta) !important;
-  --code-value: var(--orange) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--magenta) !important;
-  --graph-node-attachment: var(--cyan) !important;
   --graph-node-focused: var(--yellow) !important;
-  --graph-node-tag: var(--cyan) !important;
   --graph-node-unresolved: var(--yellow) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--cyan) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--magenta) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--green) !important;
+  --code-important: var(--magenta) !important;
+  --code-keyword: var(--magenta) !important;
+  --code-operator: var(--magenta) !important;
+  --code-property: var(--cyan-bright) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--yellow) !important;
+  --code-tag: var(--magenta) !important;
+  --code-value: var(--orange) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--cyan) !important;
+  --graph-node-tag: var(--cyan) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4207,6 +4207,21 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4214,6 +4229,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4224,6 +4240,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4279,35 +4303,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4315,6 +4330,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4325,6 +4341,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4380,35 +4404,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4416,6 +4431,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4426,6 +4442,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4481,35 +4505,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4517,6 +4532,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4527,6 +4543,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4582,35 +4606,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4618,6 +4633,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4628,6 +4644,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4683,35 +4707,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4719,6 +4734,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4729,6 +4745,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4784,35 +4808,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4820,6 +4835,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4830,6 +4846,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4885,35 +4909,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -4921,6 +4936,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -4931,6 +4947,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -4986,35 +5010,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5022,6 +5037,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5032,6 +5048,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5087,35 +5111,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5123,6 +5138,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5133,6 +5149,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5188,35 +5212,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5224,6 +5239,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5234,6 +5250,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5289,35 +5313,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5325,6 +5340,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5335,6 +5351,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5390,35 +5414,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5426,6 +5441,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5436,6 +5452,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5491,35 +5515,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5527,6 +5542,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5537,6 +5553,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5592,35 +5616,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5628,6 +5643,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5638,6 +5654,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5693,35 +5717,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5729,6 +5744,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5739,6 +5755,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5794,35 +5818,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5830,6 +5845,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5840,6 +5856,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5895,35 +5919,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -5931,6 +5946,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -5941,6 +5957,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -5996,35 +6020,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6032,6 +6047,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6042,6 +6058,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6097,35 +6121,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6133,6 +6148,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6143,6 +6159,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6198,35 +6222,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6234,6 +6249,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6244,6 +6260,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6299,35 +6323,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6335,6 +6350,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6345,6 +6361,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6400,35 +6424,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6436,6 +6451,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6446,6 +6462,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6501,35 +6525,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6537,6 +6552,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6547,6 +6563,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6602,35 +6626,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6638,6 +6653,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6648,6 +6664,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6703,35 +6727,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6739,6 +6754,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6749,6 +6765,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6804,35 +6828,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6840,6 +6855,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6850,6 +6866,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -6905,35 +6929,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -6941,6 +6956,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -6951,6 +6967,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7006,35 +7030,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7042,6 +7057,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7052,6 +7068,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7107,35 +7131,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7143,6 +7158,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7153,6 +7169,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7208,35 +7232,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7244,6 +7259,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7254,6 +7270,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7309,35 +7333,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7345,6 +7360,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7355,6 +7371,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7410,35 +7434,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7446,6 +7461,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7456,6 +7472,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7511,35 +7535,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7547,6 +7562,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7557,6 +7573,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7612,35 +7636,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7648,6 +7663,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7658,6 +7674,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7713,35 +7737,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7749,6 +7764,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7759,6 +7775,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7814,35 +7838,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7850,6 +7865,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7860,6 +7876,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -7915,35 +7939,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -7951,6 +7966,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -7961,6 +7977,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8016,35 +8040,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8052,6 +8067,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8062,6 +8078,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8117,35 +8141,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8153,6 +8168,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8163,6 +8179,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8218,35 +8242,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8254,6 +8269,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8264,6 +8280,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8319,35 +8343,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8355,6 +8370,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8365,6 +8381,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8420,35 +8444,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8456,6 +8471,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8466,6 +8482,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8521,35 +8545,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8557,6 +8572,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8567,6 +8583,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8622,35 +8646,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8658,6 +8673,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8668,6 +8684,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8723,35 +8747,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8759,6 +8774,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8769,6 +8785,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8824,35 +8848,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8860,6 +8875,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8870,6 +8886,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -8925,35 +8949,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -8961,6 +8976,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -8971,6 +8987,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9026,35 +9050,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9062,6 +9077,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9072,6 +9088,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9127,35 +9151,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9163,6 +9178,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9173,6 +9189,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9228,35 +9252,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9264,6 +9279,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9274,6 +9290,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9329,35 +9353,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9365,6 +9380,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9375,6 +9391,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9430,35 +9454,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9466,6 +9481,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9476,6 +9492,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9531,35 +9555,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9567,6 +9582,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9577,6 +9593,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9632,35 +9656,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9668,6 +9683,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9678,6 +9694,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9733,35 +9757,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9769,6 +9784,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9779,6 +9795,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9834,35 +9858,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9870,6 +9885,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9880,6 +9896,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -9935,35 +9959,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -9971,6 +9986,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -9981,6 +9997,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10036,35 +10060,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10072,6 +10087,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10082,6 +10098,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10137,35 +10161,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10173,6 +10188,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10183,6 +10199,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10238,35 +10262,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10274,6 +10289,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10284,6 +10300,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10339,35 +10363,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(52, 211, 153);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10375,6 +10390,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10385,6 +10401,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10440,35 +10464,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(52, 211, 153);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10476,6 +10491,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10486,6 +10502,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10541,35 +10565,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10577,6 +10592,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10587,6 +10603,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10642,35 +10666,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10678,6 +10693,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10688,6 +10704,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10743,35 +10767,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10779,6 +10794,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10789,6 +10805,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10844,35 +10868,26 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(205, 214, 244);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    margin-left: 0px;
     --background-modifier-error: #fb464c;
     --background-modifier-error-hover: #fb464c;
     --background-modifier-success: #44cf6e;
@@ -10880,6 +10895,7 @@ body {
     --background-primary-alt: #242424;
     --background-secondary: #262626;
     --background-secondary-alt: #363636;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(258, 88%, 66%);
     --canvas-background: #1e1e1e;
     --canvas-dot-pattern: #363636;
@@ -10890,6 +10906,14 @@ body {
     --checkbox-color-hover: hsl(255, 89.76%, 75.9%);
     --checkbox-marker-color: #1e1e1e;
     --checklist-done-color: #b3b3b3;
+    --color-blue: #027aff;
+    --color-cyan: #53dfdd;
+    --color-green: #44cf6e;
+    --color-orange: #e9973f;
+    --color-pink: #fa99cd;
+    --color-purple: #a882ff;
+    --color-red: #fb464c;
+    --color-yellow: #e0de71;
     --flair-color: #dadada;
     --font-interface: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     --font-mermaid: ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", "Google Sans Flex", Roboto, "Inter Variable", "Inter", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -10945,30 +10969,6 @@ body {
     --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-success: #44cf6e;
     --text-warning: #e9973f;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    margin-left: 0px;
-    --blockquote-background-color: transparent;
-    --color-blue: #027aff;
-    --color-cyan: #53dfdd;
-    --color-green: #44cf6e;
-    --color-orange: #e9973f;
-    --color-pink: #fa99cd;
-    --color-purple: #a882ff;
-    --color-red: #fb464c;
-    --color-yellow: #e0de71;
     text-decoration-line: none;
   }
 

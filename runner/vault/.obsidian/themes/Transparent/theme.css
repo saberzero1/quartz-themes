@@ -259,7 +259,6 @@ div.setting-item[data-id="info-section"] {
   padding-bottom: 0px;
   transform-origin: top center;
   animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  will-change: transform, opacity;
 }
 
 @keyframes st-open {
@@ -512,8 +511,6 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
 body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
   background-image: var(--background-image-base64);
   filter: brightness(0.54) blur(var(--background-blur));
-  -webkit-backdrop-filter: brightness(0.54) blur(var(--background-blur));
-  backdrop-filter: brightness(0.54) blur(var(--background-blur));
 }
 
 /* Light auto: soft gradient */
@@ -521,8 +518,6 @@ body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass)
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
-  -webkit-backdrop-filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
 }
 
 /* === GRADIENT (both modes) === */
@@ -530,8 +525,6 @@ body.bg-gradient .app-container::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
-  -webkit-backdrop-filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
 }
 
 body.theme-dark.bg-gradient .app-container::before {
@@ -543,16 +536,12 @@ body.theme-light.bg-solid .app-container::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 90%);
   filter: blur(var(--background-blur));
-  -webkit-backdrop-filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
 }
 
 body.theme-dark.bg-solid .app-container::before {
   background-image: none;
   background-color: hsl(var(--bg-tint-color-h), 30%, 15%);
   filter: blur(var(--background-blur));
-  -webkit-backdrop-filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
 }
 
 /* === CUSTOM URL (both modes) === */
@@ -561,8 +550,6 @@ body.bg-custom .app-container::before {
   background-size: cover;
   background-position: center;
   filter: blur(var(--background-blur));
-  -webkit-backdrop-filter: blur(var(--background-blur));
-  backdrop-filter: blur(var(--background-blur));
 }
 
 body.theme-dark.bg-custom .app-container::before {
@@ -836,12 +823,6 @@ select,
   box-shadow: none;
 }
 
-.suggestion {
-  background-color: var(--tr);
-  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  /* tasks plugin integration */
-}
 
 /* blur of 80px looks bad there */
 .status-bar {
@@ -910,45 +891,28 @@ select,
   border: 0px solid var(--tr);
 }
 
-/* Make table borders more visible to improve readability */
-.cm-html-embed td,
-.markdown-rendered td,
-.cm-html-embed th,
-.markdown-rendered th {
+/* Table border styling */
+body .markdown-rendered th,
+body .markdown-rendered td,
+body .cm-html-embed th,
+body .cm-html-embed td,
+body .markdown-rendered thead tr>th,
+body .cm-html-embed thead tr>th {
   border: var(--table-border-width) solid rgba(255, 255, 255, var(--border-opacity));
-}
-
-.cm-html-embed thead tr>th,
-.markdown-rendered thead tr>th {
   border-color: rgba(255, 255, 255, var(--border-opacity));
-}
-
-/* Code block styling */
-.cm-s-obsidian div.HyperMD-codeblock-bg {
-  background-color: var(--tr06);
 }
 
 .markdown-source-view.mod-cm6 .cm-indent::before {
   border-inline-end: 0;
 }
 
-.cm-s-obsidian .cm-inline-code:not(.cm-formatting) {
-  background-color: var(--tr06);
-  /* smol */
-}
-
-.markdown-rendered pre {
-  background-color: var(--tr06);
-}
-
-.markdown-rendered code {
-  background-color: var(--tr06);
-  /* both for read mode */
-}
-
+/* Code block and inline code backgrounds */
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.cm-s-obsidian .cm-inline-code:not(.cm-formatting),
+.markdown-rendered pre,
+.markdown-rendered code,
 .cm-s-obsidian span.cm-inline-code {
   background-color: var(--tr06);
-  /* source mode edit */
 }
 
 .checkbox-container:after {
@@ -1042,9 +1006,6 @@ body.hide-canvas-dots svg.canvas-background {
 
 .mk-menu-container {
   width: auto;
-  background-color: var(--tr);
-  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
 /* templater code look better */
@@ -1116,17 +1077,15 @@ body.hide-canvas-dots svg.canvas-background {
 
 .popover,
 .formula-editor .cm-tooltip.cm-tooltip-autocomplete,
-.suggestion-container {
+.suggestion,
+.suggestion-container,
+.combobox .search-input-container,
+.mk-menu-container {
   background-color: var(--tr);
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
 }
 
-.combobox .search-input-container {
-  background-color: var(--tr);
-  -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-  backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
-}
 
 /* ===================== mobile ===================== */
 /* better settings on mobile  */
@@ -1248,19 +1207,6 @@ body.show-scrollbars ::-webkit-scrollbar-thumb {
 
 /* until there thanks Lithou */
 
-body .markdown-rendered th,
-body .markdown-rendered td,
-body .cm-html-embed th,
-body .cm-html-embed td {
-  border: var(--table-border-width) solid rgba(255, 255, 255, var(--border-opacity));
-  border-color: rgba(255, 255, 255, var(--border-opacity));
-}
-
-body .markdown-rendered thead tr>th,
-body .cm-html-embed thead tr>th {
-  border-color: rgba(255, 255, 255, var(--border-opacity));
-}
-
 .markdown-rendered hr {
   border-color: rgba(255, 255, 255, var(--border-opacity));
 }
@@ -1343,13 +1289,9 @@ body.disable-drawer-dimming .workspace-drawer-inner {
 .suggestion-bg,
 .suggestion-container,
 .menu {
-  /* 'all' instead of just opacity, to catch transformation as well */
-  transition: all 3s ease-in-out;
-
-  /* This is crucial: we force the browser to remember the animation 
-       even when Obsidian tries to remove it on close */
   transition-property: opacity, transform, visibility;
   transition-duration: 3s;
+  transition-timing-function: ease-in-out;
 }
 
 /* If Obsidian uses a class to hide it, let's slow it down */
@@ -1497,7 +1439,6 @@ body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-ty
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform, opacity;
 }
 
 /* ===================== Animate Note Opening ===================== */

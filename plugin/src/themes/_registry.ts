@@ -434,6 +434,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  cinderpaper: {
+    name: "cinderpaper",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "citrus-neo": {
     name: "citrus-neo",
     modes: ["dark", "light"],
@@ -886,6 +892,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   firefly: { name: "firefly", modes: ["dark"], variations: [], fonts: [] },
   fjord: { name: "fjord", modes: ["dark", "light"], variations: [], fonts: [] },
+  "flamingo-noir": {
+    name: "flamingo-noir",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   flatcap: { name: "flatcap", modes: ["dark"], variations: [], fonts: [] },
   flexcyon: {
     name: "flexcyon",
@@ -1583,6 +1595,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   mammoth: { name: "mammoth", modes: ["dark"], variations: [], fonts: [] },
+  manuscript: {
+    name: "manuscript",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   maple: {
     name: "maple",
     modes: ["dark", "light"],
@@ -1612,6 +1630,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto"],
+  },
+  "material-3-expressive": {
+    name: "material-3-expressive",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "material-flat": {
     name: "material-flat",
@@ -2249,6 +2273,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   pale: { name: "pale", modes: ["dark", "light"], variations: [], fonts: [] },
+  palenight: {
+    name: "palenight",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "panda-syntax": {
+    name: "panda-syntax",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "panic-mode": {
     name: "panic-mode",
     modes: ["dark"],

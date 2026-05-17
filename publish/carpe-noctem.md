@@ -5,7 +5,7 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: No author provided
+- Theme author: operator-axel
 - Support the author: Author did not provide funding links in `manifest.json`
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/carpe-noctem/README.md">Install instructions</a>
 

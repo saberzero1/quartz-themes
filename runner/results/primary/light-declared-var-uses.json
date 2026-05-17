@@ -210,8 +210,8 @@
     "background-color": "var(--code-background)",
     "box-shadow": "var(--kbd-shadow)",
     "color": "var(--kbd-color)",
-    "font-family": "var(--font-interface)",
-    "font-size": "var(--font-ui-smaller)"
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -447,22 +447,109 @@
     "min-width": "var(--table-column-min-width)"
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--font-text-size)",
+    "width": "var(--font-text-size)"
+  },
+  "div.callout-title": {
+    "box-shadow": "var(--callout-title-shadow)",
+    "color": "rgb(var(--callout-color))",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)"
+  },
+  "div.callout-title-inner": {
+    "color": "var(--callout-title-color)",
+    "font-weight": "var(--font-semibold)"
+  },
+  "div.callout-content": {
+    "background-color": "var(--callout-content-background)",
+    "border-bottom-left-radius": "var(--callout-radius)",
+    "border-bottom-right-radius": "var(--callout-radius)",
+    "box-shadow": "var(--callout-content-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "svg.lucide-help-circle.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--font-text-size)",
+    "width": "var(--font-text-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "svg.lucide-bug.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--font-text-size)",
+    "width": "var(--font-text-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
+    "background-color": "color-mix(in srgb,rgba(var(--callout-color)) var(--callout-color-opacity),var(--editor-bg-color))",
+    "box-shadow": "var(--callout-container-shadow)"
+  },
+  "svg.lucide-quote.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--font-text-size)",
+    "width": "var(--font-text-size)"
+  },
   ".internal-embed": {
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
   },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)"
+  },
+  "progress": {
+    "height": "var(--progress-height)",
+    "width": "var(--progress-width)"
   },
   ".view-header-breadcrumb": { "color": "var(--breadcrumb-color)" },
   ".view-header-breadcrumb-separator": {
     "color": "var(--breadcrumb-separator-color)"
-  },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "var(--cancelled-chbx-text-color)",

@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-1_2) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -99,53 +99,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-3) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -154,16 +121,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4283,25 +4283,52 @@ body {
   }
 
   .callout[data-callout="brainhack"] {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    color: rgb(67, 67, 67);
+    padding: 0px;
+    --background-1-item: #5c5c5c;
+    --background-2_h: 258;
+    --background-5: hsla(258, 88%, 66%, 90%);
+    --background-6: hsla(258, 88%, 66%, 0.2);
     --background-primary: hsl(258, 0.5%, 96%);
     --background-secondary: rgb(255, 255, 255);
     --bold-weight: 700;
     --callout-blend-mode: normal;
+    --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+    --callout-content-radius: 0px;
     --callout-padding: 0;
+    --callout-title-padding: 4px 10px;
     --callout-title-weight: 700;
     --canvas-background: rgb(255, 255, 255);
     --canvas-dot-pattern: rgb(197, 197, 197);
     --checkbox-border-color: hsl(258, 88%, 66%);
     --checkbox-marker-color: hsl(258, 0.5%, 96%);
     --collapse-icon-color: hsl(258, 88%, 66%);
+    --color-base-00: hsl(0, 0%, 98%);
+    --color-base-50: hsl(258, 88%, 66%);
+    --colored-accent-1: hsl(258, 88%, 66%);
+    --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+    --colored-accent-3: hsla(258, 88%, 66%, 0.3);
+    --colored-accent-4: hsla(258, 88%, 66%, 0.1);
+    --colored-accent-5: hsla(258, 88%, 66%, 0.05);
+    --colored-accent-i1: hsl(258, 88%, -1700%);
+    --colored-accent-i2: hsl(258, 88%, -4600%);
+    --custom-accent-bold: hsl(258, 88%, 66%);
     --graph-node-unresolved: hsl(258, 88%, 66%);
     --heading-formatting: hsl(258, 88%, 66%);
+    --line-height-normal: 1.5;
     --menu-background: rgb(255, 255, 255);
     --menu-radius: 1em;
     --pdf-background: hsl(258, 0.5%, 96%);
     --pdf-page-background: hsl(258, 0.5%, 96%);
     --pdf-sidebar-background: hsl(258, 0.5%, 96%);
+    --radius-m: 1em;
     --search-result-background: hsl(258, 0.5%, 96%);
+    --shadow-1: hsla(258, 88%, 5%, 0.5);
+    --shadow-4: hsla(258, 44.1%, 79%, 0.2);
     --shiki-code-background: rgb(234, 234, 234);
     --shiki-code-comment: hsl(258, 88%, 66%);
     --shiki-gutter-text-color: hsl(258, 88%, 66%);
@@ -4315,33 +4342,6 @@ body {
     --table-drag-handle-color: hsl(258, 88%, 66%);
     --table-header-weight: 700;
     --text-faint: hsl(258, 88%, 66%);
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    color: rgb(67, 67, 67);
-    padding: 0px;
-    --background-1-item: #5c5c5c;
-    --background-2_h: 258;
-    --background-5: hsla(258, 88%, 66%, 90%);
-    --background-6: hsla(258, 88%, 66%, 0.2);
-    --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
-    --callout-content-radius: 0px;
-    --callout-title-padding: 4px 10px;
-    --color-base-00: hsl(0, 0%, 98%);
-    --color-base-50: hsl(258, 88%, 66%);
-    --colored-accent-1: hsl(258, 88%, 66%);
-    --colored-accent-2: hsla(258, 88%, 66%, 0.5);
-    --colored-accent-3: hsla(258, 88%, 66%, 0.3);
-    --colored-accent-4: hsla(258, 88%, 66%, 0.1);
-    --colored-accent-5: hsla(258, 88%, 66%, 0.05);
-    --colored-accent-i1: hsl(258, 88%, -1700%);
-    --colored-accent-i2: hsl(258, 88%, -4600%);
-    --custom-accent-bold: hsl(258, 88%, 66%);
-    --line-height-normal: 1.5;
-    --radius-m: 1em;
-    --shadow-1: hsla(258, 88%, 5%, 0.5);
-    --shadow-4: hsla(258, 44.1%, 79%, 0.2);
     box-shadow: inset 0 0 0 0.04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
     letter-spacing: 0.1px;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
@@ -4581,13 +4581,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4598,10 +4602,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4616,13 +4616,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4633,10 +4637,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4651,13 +4651,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4668,10 +4672,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4686,13 +4686,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4703,10 +4707,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4721,13 +4721,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4738,10 +4742,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4756,13 +4756,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4773,10 +4777,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4791,13 +4791,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4808,10 +4812,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4826,13 +4826,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4843,10 +4847,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4861,13 +4861,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4878,10 +4882,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4896,13 +4896,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4913,10 +4917,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4931,13 +4931,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4948,10 +4952,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -4966,13 +4966,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -4983,10 +4987,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5001,13 +5001,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5018,10 +5022,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5036,13 +5036,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5053,10 +5057,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5071,13 +5071,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5088,10 +5092,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5106,13 +5106,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5123,10 +5127,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5141,13 +5141,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5158,10 +5162,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5176,13 +5176,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5193,10 +5197,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5211,13 +5211,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5228,10 +5232,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5246,13 +5246,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5263,10 +5267,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5281,13 +5281,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5298,10 +5302,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5316,13 +5316,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5333,10 +5337,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5351,13 +5351,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5368,10 +5372,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5386,13 +5386,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5403,10 +5407,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5421,13 +5421,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5438,10 +5442,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5456,13 +5456,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5473,10 +5477,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5491,13 +5491,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5508,10 +5512,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5526,13 +5526,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5543,10 +5547,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5561,13 +5561,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5578,10 +5582,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5596,13 +5596,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5613,10 +5617,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5631,13 +5631,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5648,10 +5652,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5666,13 +5666,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5683,10 +5687,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5701,13 +5701,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5718,10 +5722,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5736,13 +5736,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5753,10 +5757,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5771,13 +5771,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5788,10 +5792,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5806,13 +5806,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5823,10 +5827,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5841,13 +5841,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5858,10 +5862,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5876,13 +5876,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5893,10 +5897,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5911,13 +5911,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5928,10 +5932,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5946,13 +5946,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5963,10 +5967,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -5981,13 +5981,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -5998,10 +6002,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6016,13 +6016,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6033,10 +6037,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6051,13 +6051,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6068,10 +6072,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6086,13 +6086,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6103,10 +6107,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6121,13 +6121,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6138,10 +6142,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6156,13 +6156,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6173,10 +6177,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6191,13 +6191,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6208,10 +6212,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6226,13 +6226,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6243,10 +6247,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6261,13 +6261,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6278,10 +6282,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6296,13 +6296,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6313,10 +6317,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6331,13 +6331,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6348,10 +6352,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6366,13 +6366,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6383,10 +6387,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6401,13 +6401,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6418,10 +6422,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6436,13 +6436,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6453,10 +6457,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6471,13 +6471,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6488,10 +6492,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6506,13 +6506,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6523,10 +6527,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6541,13 +6541,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6558,10 +6562,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6576,13 +6576,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6593,10 +6597,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6611,13 +6611,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6628,10 +6632,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6646,13 +6646,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6663,10 +6667,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6681,13 +6681,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6698,10 +6702,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6716,13 +6716,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6733,10 +6737,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6751,13 +6751,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6768,10 +6772,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6786,13 +6786,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6803,10 +6807,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -6821,13 +6821,17 @@ body {
     --checkbox-border-color: #ababab;
     --checkbox-marker-color: #ffffff;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-50: #ababab;
     --graph-node-unresolved: #ababab;
     --heading-formatting: #ababab;
+    --line-height-normal: 1.5;
     --menu-background: #f6f6f6;
     --menu-radius: 8px;
     --pdf-background: #ffffff;
     --pdf-page-background: #ffffff;
     --pdf-sidebar-background: #ffffff;
+    --radius-m: 8px;
     --search-result-background: #ffffff;
     --suggestion-background: #ffffff;
     --tab-background-active: #ffffff;
@@ -6838,10 +6842,6 @@ body {
     --table-drag-handle-color: #ababab;
     --table-header-weight: 600;
     --text-faint: #ababab;
-    --color-base-00: #ffffff;
-    --color-base-50: #ababab;
-    --line-height-normal: 1.5;
-    --radius-m: 8px;
     letter-spacing: normal;
   }
 
@@ -11299,25 +11299,55 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="brainhack"] {
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      color: rgb(194, 194, 194);
+      padding: 0px;
+      --background-1-h: hsl(258, 88%, 66%);
+      --background-1-item: #b3b3b3;
+      --background-2: hsl(258, 0.98%, 12%);
+      --background-2_h: 258;
+      --background-5: hsla(258, 88%, 66%, 30%);
+      --background-6: hsla(258, 8.8%, 66%, 0.2);
       --background-primary: rgb(33, 33, 33);
       --background-secondary: hsl(258, 0.98%, 12%);
       --bold-weight: 700;
       --callout-blend-mode: normal;
+      --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
+      --callout-content-radius: 0px;
       --callout-padding: 0;
+      --callout-title-padding: 4px 10px;
       --callout-title-weight: 700;
       --canvas-background: hsl(258, 0.98%, 12%);
       --canvas-dot-pattern: rgb(70, 70, 70);
       --checkbox-border-color: hsl(258, 88%, 66%);
       --checkbox-marker-color: rgb(33, 33, 33);
       --collapse-icon-color: hsl(258, 88%, 66%);
+      --color-base-00: rgb(33, 33, 33);
+      --color-base-50: hsl(258, 88%, 66%);
+      --colored-accent-1: hsl(258, 88%, 66%);
+      --colored-accent-2: hsla(258, 88%, 66%, 0.5);
+      --colored-accent-3: hsla(258, 88%, 66%, 0.3);
+      --colored-accent-4: hsla(258, 88%, 66%, 0.1);
+      --colored-accent-5: hsla(258, 88%, 66%, 0.05);
+      --colored-accent-i1: hsl(258, 88%, -1700%);
+      --colored-accent-i2: hsl(258, 88%, -4600%);
+      --custom-accent-bold: hsl(258, 88%, 66%);
       --graph-node-unresolved: hsl(258, 88%, 66%);
       --heading-formatting: hsl(258, 88%, 66%);
+      --line-height-normal: 1.5;
       --menu-background: hsl(258, 0.98%, 12%);
       --menu-radius: 1em;
       --pdf-background: rgb(33, 33, 33);
       --pdf-page-background: rgb(33, 33, 33);
       --pdf-sidebar-background: rgb(33, 33, 33);
+      --radius-m: 1em;
       --search-result-background: rgb(33, 33, 33);
+      --shadow-1: hsla(258, 88%, 5%, 0.5);
+      --shadow-2: hsla(258, 0%, 6.6%, 0.4);
+      --shadow-4: hsla(258, 44.1%, -10%, 0.5);
       --shiki-code-background: rgb(33, 33, 33);
       --shiki-code-comment: hsl(258, 88%, 66%);
       --shiki-gutter-text-color: hsl(258, 88%, 66%);
@@ -11331,36 +11361,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: hsl(258, 88%, 66%);
       --table-header-weight: 700;
       --text-faint: hsl(258, 88%, 66%);
-      border-bottom-left-radius: 16px;
-      border-bottom-right-radius: 16px;
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
-      color: rgb(194, 194, 194);
-      padding: 0px;
-      --background-1-h: hsl(258, 88%, 66%);
-      --background-1-item: #b3b3b3;
-      --background-2: hsl(258, 0.98%, 12%);
-      --background-2_h: 258;
-      --background-5: hsla(258, 88%, 66%, 30%);
-      --background-6: hsla(258, 8.8%, 66%, 0.2);
-      --callout-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
-      --callout-content-radius: 0px;
-      --callout-title-padding: 4px 10px;
-      --color-base-00: rgb(33, 33, 33);
-      --color-base-50: hsl(258, 88%, 66%);
-      --colored-accent-1: hsl(258, 88%, 66%);
-      --colored-accent-2: hsla(258, 88%, 66%, 0.5);
-      --colored-accent-3: hsla(258, 88%, 66%, 0.3);
-      --colored-accent-4: hsla(258, 88%, 66%, 0.1);
-      --colored-accent-5: hsla(258, 88%, 66%, 0.05);
-      --colored-accent-i1: hsl(258, 88%, -1700%);
-      --colored-accent-i2: hsl(258, 88%, -4600%);
-      --custom-accent-bold: hsl(258, 88%, 66%);
-      --line-height-normal: 1.5;
-      --radius-m: 1em;
-      --shadow-1: hsla(258, 88%, 5%, 0.5);
-      --shadow-2: hsla(258, 0%, 6.6%, 0.4);
-      --shadow-4: hsla(258, 44.1%, -10%, 0.5);
       box-shadow: inset 0 0 0 0.04em hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.5);
       letter-spacing: 0.1px;
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
@@ -11600,13 +11600,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11617,10 +11621,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11635,13 +11635,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11652,10 +11656,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11670,13 +11670,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11687,10 +11691,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11705,13 +11705,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11722,10 +11726,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11740,13 +11740,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11757,10 +11761,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11775,13 +11775,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11792,10 +11796,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11810,13 +11810,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11827,10 +11831,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11845,13 +11845,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11862,10 +11866,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11880,13 +11880,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11897,10 +11901,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11915,13 +11915,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11932,10 +11936,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11950,13 +11950,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -11967,10 +11971,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -11985,13 +11985,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12002,10 +12006,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12020,13 +12020,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12037,10 +12041,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12055,13 +12055,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12072,10 +12076,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12090,13 +12090,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12107,10 +12111,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12125,13 +12125,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12142,10 +12146,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12160,13 +12160,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12177,10 +12181,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12195,13 +12195,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12212,10 +12216,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12230,13 +12230,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12247,10 +12251,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12265,13 +12265,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12282,10 +12286,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12300,13 +12300,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12317,10 +12321,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12335,13 +12335,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12352,10 +12356,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12370,13 +12370,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12387,10 +12391,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12405,13 +12405,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12422,10 +12426,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12440,13 +12440,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12457,10 +12461,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12475,13 +12475,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12492,10 +12496,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12510,13 +12510,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12527,10 +12531,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12545,13 +12545,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12562,10 +12566,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12580,13 +12580,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12597,10 +12601,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12615,13 +12615,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12632,10 +12636,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12650,13 +12650,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12667,10 +12671,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12685,13 +12685,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12702,10 +12706,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12720,13 +12720,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12737,10 +12741,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12755,13 +12755,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12772,10 +12776,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12790,13 +12790,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12807,10 +12811,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12825,13 +12825,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12842,10 +12846,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12860,13 +12860,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12877,10 +12881,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12895,13 +12895,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12912,10 +12916,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12930,13 +12930,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12947,10 +12951,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -12965,13 +12965,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -12982,10 +12986,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13000,13 +13000,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13017,10 +13021,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13035,13 +13035,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13052,10 +13056,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13070,13 +13070,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13087,10 +13091,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13105,13 +13105,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13122,10 +13126,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13140,13 +13140,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13157,10 +13161,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13175,13 +13175,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13192,10 +13196,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13210,13 +13210,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13227,10 +13231,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13245,13 +13245,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13262,10 +13266,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13280,13 +13280,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13297,10 +13301,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13315,13 +13315,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13332,10 +13336,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13350,13 +13350,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13367,10 +13371,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13385,13 +13385,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13402,10 +13406,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13420,13 +13420,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13437,10 +13441,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13455,13 +13455,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13472,10 +13476,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13490,13 +13490,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13507,10 +13511,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13525,13 +13525,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13542,10 +13546,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13560,13 +13560,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13577,10 +13581,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13595,13 +13595,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13612,10 +13616,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13630,13 +13630,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13647,10 +13651,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13665,13 +13665,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13682,10 +13686,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13700,13 +13700,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13717,10 +13721,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13735,13 +13735,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13752,10 +13756,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13770,13 +13770,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13787,10 +13791,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13805,13 +13805,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13822,10 +13826,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
 
@@ -13840,13 +13840,17 @@ html[saved-theme="dark"] {
       --checkbox-border-color: #666666;
       --checkbox-marker-color: #1e1e1e;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-50: #666666;
       --graph-node-unresolved: #666666;
       --heading-formatting: #666666;
+      --line-height-normal: 1.5;
       --menu-background: #262626;
       --menu-radius: 8px;
       --pdf-background: #1e1e1e;
       --pdf-page-background: #1e1e1e;
       --pdf-sidebar-background: #1e1e1e;
+      --radius-m: 8px;
       --search-result-background: #1e1e1e;
       --suggestion-background: #1e1e1e;
       --tab-background-active: #1e1e1e;
@@ -13857,10 +13861,6 @@ html[saved-theme="dark"] {
       --table-drag-handle-color: #666666;
       --table-header-weight: 600;
       --text-faint: #666666;
-      --color-base-00: #1e1e1e;
-      --color-base-50: #666666;
-      --line-height-normal: 1.5;
-      --radius-m: 8px;
       letter-spacing: normal;
     }
   }

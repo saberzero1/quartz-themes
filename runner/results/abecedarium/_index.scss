@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-faint) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 50% !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -96,53 +96,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-faint) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 50% !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -151,16 +118,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4454,6 +4454,7 @@ body {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4535,13 +4536,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4623,13 +4624,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4711,13 +4712,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4799,13 +4800,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4887,13 +4888,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4975,13 +4976,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5063,13 +5064,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5151,13 +5152,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5239,13 +5240,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5327,13 +5328,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5415,13 +5416,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5503,13 +5504,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5591,13 +5592,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5679,13 +5680,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5767,13 +5768,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5855,13 +5856,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5943,13 +5944,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6031,13 +6032,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6119,13 +6120,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6207,13 +6208,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6295,13 +6296,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6383,13 +6384,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6471,13 +6472,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6559,13 +6560,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6647,13 +6648,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6735,13 +6736,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6823,13 +6824,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6911,13 +6912,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6999,13 +7000,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7087,13 +7088,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7175,13 +7176,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7263,13 +7264,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7351,13 +7352,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7439,13 +7440,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7527,13 +7528,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7615,13 +7616,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7703,13 +7704,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7791,13 +7792,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7879,13 +7880,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7967,13 +7968,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8055,13 +8056,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8143,13 +8144,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8231,13 +8232,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8319,13 +8320,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8407,13 +8408,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8495,13 +8496,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8583,13 +8584,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8671,13 +8672,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8759,13 +8760,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8847,13 +8848,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8935,13 +8936,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9023,13 +9024,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9111,13 +9112,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9199,13 +9200,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9287,13 +9288,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9375,13 +9376,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9463,13 +9464,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9551,13 +9552,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9639,13 +9640,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9727,13 +9728,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9815,13 +9816,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(153, 153, 153);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9903,13 +9904,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(153, 153, 153);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9991,13 +9992,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10079,13 +10080,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10167,13 +10168,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10255,13 +10256,13 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(46, 51, 56);
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10343,7 +10344,6 @@ body {
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
   }
 
   html {
@@ -14972,6 +14972,7 @@ html[saved-theme="dark"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15053,13 +15054,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15141,13 +15142,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15229,13 +15230,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15317,13 +15318,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15405,13 +15406,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15493,13 +15494,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15581,13 +15582,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15669,13 +15670,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15757,13 +15758,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15845,13 +15846,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -15933,13 +15934,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16021,13 +16022,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16109,13 +16110,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16197,13 +16198,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16285,13 +16286,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16373,13 +16374,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16461,13 +16462,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16549,13 +16550,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16637,13 +16638,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16725,13 +16726,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16813,13 +16814,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16901,13 +16902,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -16989,13 +16990,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17077,13 +17078,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17165,13 +17166,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17253,13 +17254,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17341,13 +17342,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17429,13 +17430,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17517,13 +17518,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17605,13 +17606,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17693,13 +17694,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17781,13 +17782,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17869,13 +17870,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17957,13 +17958,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18045,13 +18046,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18133,13 +18134,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18221,13 +18222,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18309,13 +18310,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18397,13 +18398,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18485,13 +18486,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18573,13 +18574,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18661,13 +18662,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18749,13 +18750,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18837,13 +18838,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18925,13 +18926,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19013,13 +19014,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19101,13 +19102,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19189,13 +19190,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19277,13 +19278,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19365,13 +19366,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19453,13 +19454,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19541,13 +19542,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19629,13 +19630,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19717,13 +19718,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19805,13 +19806,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19893,13 +19894,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19981,13 +19982,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20069,13 +20070,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20157,13 +20158,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20245,13 +20246,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20333,13 +20334,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="x"] {
       color: rgb(93, 95, 103);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20421,13 +20422,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="X"] {
       color: rgb(93, 95, 103);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20509,13 +20510,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20597,13 +20598,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20685,13 +20686,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20773,13 +20774,13 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(236, 237, 238);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20861,7 +20862,6 @@ html[saved-theme="dark"] {
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
     }
 
     html {

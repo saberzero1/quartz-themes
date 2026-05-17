@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: 16px 24px 0 24px;
-  --callout-question: 124, 252, 0;
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--imperial-red) !important;
   --checkbox-border-color-hover: var(--malachite) !important;
   --checkbox-color: var(--malachite) !important;
   --checkbox-color-hover: var(--canary) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 50% !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: color-mix(in srgb, var(--yale-blue) 30%, transparent) !important;
   --code-border-color: var(--white-smoke) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--timber-wood) !important;
-  --code-function: var(--azure) !important;
-  --code-important: var(--cinnabar) !important;
-  --code-keyword: var(--imperial-red) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--canary) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--imperial-red) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--malachite) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--violet) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--saffron) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 1;
   --callout-border-width: 2px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: 16px 24px 0 24px;
+  --callout-question: 124, 252, 0;
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 2px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--azure) !important;
+  --code-important: var(--cinnabar) !important;
+  --code-keyword: var(--imperial-red) !important;
+  --code-operator: var(--canary) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--malachite) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--violet) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4220,10 +4220,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4242,8 +4244,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task=","] {
@@ -4300,10 +4300,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4322,8 +4324,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task=";"] {
@@ -4380,10 +4380,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4402,8 +4404,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task=":"] {
@@ -4460,10 +4460,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4482,8 +4484,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="."] {
@@ -4540,10 +4540,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4562,8 +4564,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="'"] {
@@ -4620,10 +4620,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4642,8 +4644,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4700,10 +4700,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4722,8 +4724,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="&"] {
@@ -4780,10 +4780,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4802,8 +4804,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="#"] {
@@ -4860,10 +4860,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4882,8 +4884,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="%"] {
@@ -4940,10 +4940,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -4962,8 +4964,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="`"] {
@@ -5020,10 +5020,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5042,8 +5044,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="+"] {
@@ -5100,10 +5100,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5122,8 +5124,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="<"] {
@@ -5180,10 +5180,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5202,8 +5204,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="="] {
@@ -5260,10 +5260,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5282,8 +5284,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="|"] {
@@ -5340,10 +5340,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5362,8 +5364,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="~"] {
@@ -5420,10 +5420,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5442,8 +5444,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="$"] {
@@ -5500,10 +5500,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5522,8 +5524,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="0"] {
@@ -5580,10 +5580,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5602,8 +5604,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="1"] {
@@ -5660,10 +5660,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5682,8 +5684,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="2"] {
@@ -5740,10 +5740,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5762,8 +5764,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="3"] {
@@ -5820,10 +5820,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5842,8 +5844,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="4"] {
@@ -5900,10 +5900,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -5922,8 +5924,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="5"] {
@@ -5980,10 +5980,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6002,8 +6004,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="6"] {
@@ -6060,10 +6060,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6082,8 +6084,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="7"] {
@@ -6140,10 +6140,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6162,8 +6164,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="8"] {
@@ -6220,10 +6220,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6242,8 +6244,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="9"] {
@@ -6300,10 +6300,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6322,8 +6324,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="a"] {
@@ -6380,10 +6380,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6402,8 +6404,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="A"] {
@@ -6460,10 +6460,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6482,8 +6484,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="B"] {
@@ -6540,10 +6540,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6562,8 +6564,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="C"] {
@@ -6620,10 +6620,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6642,8 +6644,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="D"] {
@@ -6700,10 +6700,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6722,8 +6724,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="e"] {
@@ -6780,10 +6780,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6802,8 +6804,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="E"] {
@@ -6860,10 +6860,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6882,8 +6884,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="F"] {
@@ -6940,10 +6940,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -6962,8 +6964,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="g"] {
@@ -7020,10 +7020,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7042,8 +7044,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="G"] {
@@ -7100,10 +7100,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7122,8 +7124,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="h"] {
@@ -7180,10 +7180,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7202,8 +7204,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="H"] {
@@ -7260,10 +7260,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7282,8 +7284,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="j"] {
@@ -7340,10 +7340,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7362,8 +7364,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="J"] {
@@ -7420,10 +7420,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7442,8 +7444,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="K"] {
@@ -7500,10 +7500,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7522,8 +7524,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="L"] {
@@ -7580,10 +7580,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7602,8 +7604,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="m"] {
@@ -7660,10 +7660,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7682,8 +7684,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="M"] {
@@ -7740,10 +7740,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7762,8 +7764,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="n"] {
@@ -7820,10 +7820,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7842,8 +7844,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="N"] {
@@ -7900,10 +7900,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -7922,8 +7924,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="o"] {
@@ -7980,10 +7980,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8002,8 +8004,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="O"] {
@@ -8060,10 +8060,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8082,8 +8084,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="P"] {
@@ -8140,10 +8140,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8162,8 +8164,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="q"] {
@@ -8220,10 +8220,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8242,8 +8244,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -8300,10 +8300,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8322,8 +8324,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="r"] {
@@ -8380,10 +8380,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8402,8 +8404,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="R"] {
@@ -8460,10 +8460,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8482,8 +8484,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="s"] {
@@ -8540,10 +8540,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8562,8 +8564,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="t"] {
@@ -8620,10 +8620,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8642,8 +8644,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="T"] {
@@ -8700,10 +8700,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8722,8 +8724,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="U"] {
@@ -8780,10 +8780,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8802,8 +8804,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="v"] {
@@ -8860,10 +8860,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8882,8 +8884,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="V"] {
@@ -8940,10 +8940,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -8962,8 +8964,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="W"] {
@@ -9020,10 +9020,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9042,8 +9044,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="x"] {
@@ -9100,10 +9100,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9122,8 +9124,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="X"] {
@@ -9180,10 +9180,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9202,8 +9204,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="y"] {
@@ -9260,10 +9260,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9282,8 +9284,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -9340,10 +9340,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9362,8 +9364,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="z"] {
@@ -9420,10 +9420,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9442,8 +9444,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -9500,10 +9500,12 @@ body {
     --tab-text-color-focused-highlighted: hsl(255, 89.76%, 75.9%);
     --table-add-button-border-color: #363636;
     --table-add-button-border-width: 1px;
+    --table-background: transparent;
     --table-border-color: #363636;
     --table-column-alt-background: transparent;
     --table-column-first-border-width: 1px;
     --table-column-last-border-width: 1px;
+    --table-drag-handle-background: transparent;
     --table-drag-handle-background-active: hsl(258, 88%, 66%);
     --table-drag-handle-color: #666666;
     --table-header-background: transparent;
@@ -9522,8 +9524,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #b3b3b3;
     --text-normal: #dadada;
-    --table-background: transparent;
-    --table-drag-handle-background: transparent;
   }
 
   html {

@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: #000000 !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: #0033b3 !important;
   --code-normal: #080808 !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: #871094 !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #067d17 !important;
-  --code-tag: #0033b3 !important;
-  --code-value: #1750eb !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: #000000 !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: #0033b3 !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: #871094 !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #067d17 !important;
+  --code-tag: #0033b3 !important;
+  --code-value: #1750eb !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -95,53 +95,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: #bcbec4 !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: #cf8e6d !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: #bcbec4 !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #72b67b !important;
-  --code-tag: #c5bf6a !important;
-  --code-value: #4a88cf !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -150,16 +117,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: #bcbec4 !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: #cf8e6d !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: #bcbec4 !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #72b67b !important;
+  --code-tag: #c5bf6a !important;
+  --code-value: #4a88cf !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -3590,6 +3590,7 @@ body {
   }
 
   .callout[data-callout="folder"] {
+    color: rgb(34, 34, 34);
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -3607,6 +3608,12 @@ body {
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
     --flair-color: #222222;
+    --folder-color1: hsl(246 87% 69% / 0.2);
+    --folder-color2: hsl(245 89% 75% / 0.2);
+    --folder-color3: hsl(240 99% 84% / 0.2);
+    --folder-color4: hsl(14 99% 83% / 0.2);
+    --folder-color5: hsl(17 91% 77% / 0.2);
+    --folder-color6: hsl(11 89% 63% / 0.2);
     --graph-node: #5c5c5c;
     --graph-node-focused: #51b385;
     --graph-text: #222222;
@@ -3652,13 +3659,6 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    color: rgb(34, 34, 34);
-    --folder-color1: hsl(246 87% 69% / 0.2);
-    --folder-color2: hsl(245 89% 75% / 0.2);
-    --folder-color3: hsl(240 99% 84% / 0.2);
-    --folder-color4: hsl(14 99% 83% / 0.2);
-    --folder-color5: hsl(17 91% 77% / 0.2);
-    --folder-color6: hsl(11 89% 63% / 0.2);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
@@ -3822,6 +3822,7 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -3878,11 +3879,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -3939,11 +3940,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4000,11 +4001,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4061,11 +4062,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4122,11 +4123,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4183,11 +4184,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4244,11 +4245,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4305,11 +4306,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4366,11 +4367,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4427,11 +4428,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4488,11 +4489,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4549,11 +4550,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4610,11 +4611,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4671,11 +4672,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4732,11 +4733,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4793,11 +4794,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4854,11 +4855,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4915,11 +4916,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4976,11 +4977,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5037,11 +5038,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5098,11 +5099,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5159,11 +5160,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5220,11 +5221,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5281,11 +5282,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5342,11 +5343,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5403,11 +5404,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5464,11 +5465,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5525,11 +5526,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5586,11 +5587,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5647,11 +5648,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5708,11 +5709,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5769,11 +5770,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5830,11 +5831,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5891,11 +5892,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5952,11 +5953,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6013,11 +6014,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6074,11 +6075,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6135,11 +6136,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6196,11 +6197,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6257,11 +6258,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6318,11 +6319,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6379,11 +6380,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6440,11 +6441,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6501,11 +6502,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6562,11 +6563,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6623,11 +6624,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6684,11 +6685,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6745,11 +6746,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6806,11 +6807,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6867,11 +6868,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6928,11 +6929,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6989,11 +6990,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7050,11 +7051,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7111,11 +7112,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7172,11 +7173,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7233,11 +7234,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7294,11 +7295,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7355,11 +7356,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7416,11 +7417,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7477,11 +7478,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7538,11 +7539,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(92, 92, 92);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7599,11 +7600,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(92, 92, 92);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7660,11 +7661,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7721,11 +7722,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7782,11 +7783,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7843,11 +7844,11 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(34, 34, 34);
+    margin-left: 0px;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7904,7 +7905,6 @@ body {
     --table-header-border-color: #e0e0e0;
     --table-header-color: #222222;
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
-    margin-left: 0px;
   }
 
   html {
@@ -11957,6 +11957,7 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="folder"] {
+      color: rgb(222, 222, 222);
       --background-modifier-form-field-hover: rgba(0, 0, 0, 0.3);
       --blockquote-border-color: #4c78cc;
       --blur-background: color-mix(in srgb, #20242b 65%, transparent) linear-gradient(#20242b, color-mix(in srgb, #20242b 65%, transparent));
@@ -11974,6 +11975,12 @@ html[saved-theme="dark"] {
       --dropdown-background-hover: #353b47;
       --flair-background: #20242b;
       --flair-color: #dedede;
+      --folder-color1: hsl(246 87% 69% / 0.2);
+      --folder-color2: hsl(245 75% 70% / 0.2);
+      --folder-color3: hsl(240 35% 73% / 0.2);
+      --folder-color4: hsl(13 84% 89% / 0.2);
+      --folder-color5: hsl(17 51% 66% / 0.2);
+      --folder-color6: hsl(11 59% 54% / 0.2);
       --graph-node: #bbb;
       --graph-node-focused: #51b385;
       --graph-text: #dedede;
@@ -12019,13 +12026,6 @@ html[saved-theme="dark"] {
       --table-header-border-color: #424958;
       --table-header-color: #dedede;
       --table-selection-border-color: #4c78cc;
-      color: rgb(222, 222, 222);
-      --folder-color1: hsl(246 87% 69% / 0.2);
-      --folder-color2: hsl(245 75% 70% / 0.2);
-      --folder-color3: hsl(240 35% 73% / 0.2);
-      --folder-color4: hsl(13 84% 89% / 0.2);
-      --folder-color5: hsl(17 51% 66% / 0.2);
-      --folder-color6: hsl(11 59% 54% / 0.2);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
@@ -12189,6 +12189,7 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="_"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12245,11 +12246,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12306,11 +12307,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12367,11 +12368,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12428,11 +12429,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12489,11 +12490,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12550,11 +12551,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12611,11 +12612,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12672,11 +12673,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12733,11 +12734,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12794,11 +12795,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12855,11 +12856,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12916,11 +12917,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -12977,11 +12978,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13038,11 +13039,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13099,11 +13100,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13160,11 +13161,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13221,11 +13222,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13282,11 +13283,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13343,11 +13344,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13404,11 +13405,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13465,11 +13466,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13526,11 +13527,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13587,11 +13588,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13648,11 +13649,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13709,11 +13710,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13770,11 +13771,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13831,11 +13832,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13892,11 +13893,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -13953,11 +13954,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14014,11 +14015,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14075,11 +14076,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14136,11 +14137,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14197,11 +14198,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14258,11 +14259,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14319,11 +14320,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14380,11 +14381,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14441,11 +14442,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14502,11 +14503,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14563,11 +14564,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14624,11 +14625,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14685,11 +14686,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14746,11 +14747,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14807,11 +14808,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14868,11 +14869,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14929,11 +14930,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -14990,11 +14991,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15051,11 +15052,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15112,11 +15113,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15173,11 +15174,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15234,11 +15235,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15295,11 +15296,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15356,11 +15357,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15417,11 +15418,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15478,11 +15479,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15539,11 +15540,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15600,11 +15601,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15661,11 +15662,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15722,11 +15723,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15783,11 +15784,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15844,11 +15845,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15905,11 +15906,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="x"] {
       color: rgb(187, 187, 187);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -15966,11 +15967,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="X"] {
       color: rgb(187, 187, 187);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -16027,11 +16028,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -16088,11 +16089,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -16149,11 +16150,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -16210,11 +16211,11 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(222, 222, 222);
+      margin-left: 0px;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -16271,7 +16272,6 @@ html[saved-theme="dark"] {
       --table-header-border-color: #363636;
       --table-header-color: #dadada;
       --table-selection-border-color: hsl(258, 88%, 66%);
-      margin-left: 0px;
     }
 
     html {

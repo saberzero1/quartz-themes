@@ -1,7 +1,7 @@
 # Lizardmen Zettelkasten
 
 - Theme: Lizardmen Zettelkasten
-- Author: lizardmenfromspace
+- Author: dogwaddle
 
 ## Preview
 

@@ -1,0 +1,448 @@
+/* ============================================================
+   Manuscript — a quiet, monochrome editorial theme for Obsidian
+   ============================================================ */
+
+/* Fonts — IBM Plex Sans for text and headings (IBM Plex Mono for code).
+   Imported from Google Fonts; system-font fallbacks cover offline use. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+.markdown-rendered h1, .markdown-rendered h2, .markdown-rendered h3,
+.markdown-rendered h4, .markdown-rendered h5, .markdown-rendered h6,
+.cm-header-1, .cm-header-2, .cm-header-3,
+.cm-header-4, .cm-header-5, .cm-header-6,
+.inline-title {
+  font-family: 'IBM Plex Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+/* ============================================================
+   1. FOUNDATION — variable remap
+   ============================================================ */
+
+/* ---- Light "paper" ---- */
+.theme-light {
+  --accent-h: 40; --accent-s: 6%; --accent-l: 18%;
+
+  --background-primary:        #EAE8E3;
+  --background-primary-alt:    #E5E2DC;
+  --background-secondary:      #E2DFD9;
+  --background-secondary-alt:  #E2DFD9;
+  --background-modifier-border:        #D2CFC7;
+  --background-modifier-border-hover:  #C2BEB4;
+  --background-modifier-border-focus:  #8C887E;
+  --background-modifier-hover:         rgba(35, 33, 28, 0.04);
+  --background-modifier-active-hover:  rgba(35, 33, 28, 0.07);
+
+  --text-normal:    #23211C;
+  --text-muted:     #6E6B64;
+  --text-faint:     #A6A39B;
+  --text-on-accent: #EAE8E3;
+  --text-accent:        #23211C;
+  --text-accent-hover:  #000000;
+  --text-selection:     rgba(35, 33, 28, 0.12);
+  --text-highlight-bg:  rgba(35, 33, 28, 0.14);
+
+  --mn-raised:   #F2F0EC;
+  --mn-ink-wash: rgba(35, 33, 28, 0.06);
+}
+
+/* ---- Dark "dark paper" ---- */
+.theme-dark {
+  --accent-h: 40; --accent-s: 5%; --accent-l: 82%;
+
+  --background-primary:        #1B1A17;
+  --background-primary-alt:    #1F1E1A;
+  --background-secondary:      #151412;
+  --background-secondary-alt:  #151412;
+  --background-modifier-border:        #32302B;
+  --background-modifier-border-hover:  #44423B;
+  --background-modifier-border-focus:  #8C887E;
+  --background-modifier-hover:         rgba(255, 253, 247, 0.04);
+  --background-modifier-active-hover:  rgba(255, 253, 247, 0.07);
+
+  --text-normal:    #D8D4CB;
+  --text-muted:     #8C887E;
+  --text-faint:     #5A574E;
+  --text-on-accent: #1B1A17;
+  --text-accent:        #D8D4CB;
+  --text-accent-hover:  #FFFFFF;
+  --text-selection:     rgba(255, 253, 247, 0.13);
+  --text-highlight-bg:  rgba(255, 253, 247, 0.15);
+
+  --mn-raised:   #222120;
+  --mn-ink-wash: rgba(255, 253, 247, 0.07);
+}
+
+/* ---- Shared ---- */
+body {
+  --font-text-theme:      'IBM Plex Sans', 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-interface-theme: 'IBM Plex Mono', 'Source Code Pro', Menlo, Consolas, monospace;
+  --font-monospace-theme: 'IBM Plex Mono', 'Source Code Pro', Menlo, Consolas, monospace;
+
+  --radius-s: 0px;
+  --radius-m: 2px;
+  --radius-l: 2px;
+  --input-radius: 2px;
+  --modal-radius: 2px;
+  --code-radius: 0;
+
+  --line-height-normal: 1.7;
+  --p-spacing: 1.15rem;
+
+  /* Flat tab bar — the active tab matches the bar, marked by an underline */
+  --tab-background-active: var(--background-secondary);
+
+  /* Headings — ink, never colour; separated by size and weight */
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+  /* Heading sizes — set as variables so reading view and Live Preview match */
+  --h1-size: 2.4em;
+  --h2-size: 1.8em;
+  --h3-size: 1.4em;
+  --h4-size: 1.15em;
+  --h5-size: 1em;
+  --h6-size: 0.9em;
+  --h1-weight: 600;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --bold-weight: 600;
+
+  /* Links — ink, distinguished by underline (no colour) */
+  --link-color: var(--text-normal);
+  --link-color-hover: var(--text-accent-hover);
+  --link-external-color: var(--text-normal);
+  --link-external-color-hover: var(--text-accent-hover);
+  --link-decoration: underline;
+  --link-decoration-hover: underline;
+
+  /* Blockquote — a hairline rule, no fill */
+  --blockquote-border-color: var(--background-modifier-border);
+  --blockquote-border-thickness: 1px;
+  --blockquote-background-color: transparent;
+
+  /* Graph — monochrome */
+  --graph-line: var(--background-modifier-border);
+  --graph-node: var(--text-normal);
+  --graph-text: var(--text-normal);
+  --graph-node-focused: var(--text-accent-hover);
+  --graph-node-tag: var(--text-muted);
+  --graph-node-attachment: var(--text-faint);
+  --graph-node-unresolved: var(--text-faint);
+
+  /* Inline title */
+  --inline-title-color: var(--text-normal);
+  --inline-title-weight: 600;
+}
+
+/* ============================================================
+   2. EDITOR — markdown elements
+   ============================================================ */
+
+/* Headings — sizes set via --h*-size in the foundation so reading view and
+   Live Preview match; letter-spacing and h6 colour on top */
+.markdown-rendered h1, .cm-header-1 { letter-spacing: -0.015em; }
+.markdown-rendered h2, .cm-header-2 { letter-spacing: -0.01em; }
+.markdown-rendered h6, .cm-header-6 { color: var(--text-muted); }
+
+/* Paragraph spacing */
+.markdown-rendered p { margin-block-end: var(--p-spacing); }
+
+/* Inline code + code blocks — a flat inset slab, no rounding */
+.markdown-rendered code,
+.cm-inline-code {
+  background: var(--mn-raised);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  padding: 0.05em 0.35em;
+  color: var(--text-normal);
+}
+.markdown-rendered pre {
+  background: var(--mn-raised);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+}
+
+/* Blockquote — one hairline bar, no fill (variables set in foundation) */
+.markdown-rendered blockquote { border-radius: 0; }
+
+/* Tables — hairline cells, small-caps header */
+.markdown-rendered table { border-collapse: collapse; }
+.markdown-rendered th,
+.markdown-rendered td { border: 1px solid var(--background-modifier-border); }
+.markdown-rendered thead th {
+  background: var(--background-modifier-hover);
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+/* Tags — a hairline-bordered ticket, no fill */
+.tag,
+a.tag {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  padding: 0.05em 0.5em;
+  font-weight: 400;
+}
+
+/* Horizontal rule — a clean hairline */
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Text selection */
+::selection { background: var(--text-selection); }
+
+/* ============================================================
+   3. CALLOUTS — uniform, monochrome, hairline-bordered
+   ============================================================ */
+.callout {
+  background: transparent;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  padding: 6px 16px;
+  margin-block: 1em;
+}
+.callout-title {
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--text-normal);
+  padding-block: 6px;
+}
+.callout-content { padding-block: 0 6px; }
+.callout-content > :first-child { margin-top: 0; }
+.callout-content > :last-child { margin-bottom: 0; }
+
+/* Every callout type → the same muted-ink colour (icon/title tint). */
+.callout[data-callout]             { --callout-color: 110, 107, 100; }
+.theme-dark .callout[data-callout] { --callout-color: 140, 136, 126; }
+
+/* Live Preview wraps callouts in .cm-embed-block.cm-callout — square it and
+   drop its rounded hover outline. */
+.cm-embed-block.cm-callout { border-radius: 0; }
+.cm-embed-block.cm-callout:hover {
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ============================================================
+   4. WORKSPACE CHROME
+   ============================================================ */
+
+/* Tabs — flat bar; the active tab is marked only by an ink underline and a
+   bold ink title (no raised panel, no wash) */
+.workspace-tab-header { transition: color 120ms ease; }
+/* Hide Obsidian's curved tab corner-connectors — flat theme, no curves */
+.workspace-tab-header::before,
+.workspace-tab-header::after { display: none; }
+/* Underline only the active editor tab (.mod-root) — not the sidebar
+   Files/Search/Bookmarks tabs */
+.mod-root .workspace-tab-header-container .workspace-tab-header.is-active {
+  box-shadow: inset 0 -2px 0 0 var(--text-normal);
+}
+.workspace-tab-header-container .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+  font-weight: 600;
+}
+
+/* File explorer — active file gets the faint ink wash, no colour */
+.tree-item-self.is-active,
+.nav-file-title.is-active {
+  background: var(--mn-ink-wash);
+  color: var(--text-normal);
+}
+
+/* Status bar + sidebar headers + title bar */
+.status-bar {
+  background: var(--background-secondary);
+  border-top: 1px solid var(--background-modifier-border);
+}
+.status-bar-item { color: var(--text-muted); }
+.nav-header,
+.workspace-tab-header-container { background: var(--background-secondary); }
+.titlebar { background: var(--background-secondary); }
+.titlebar-text { color: var(--text-muted); }
+/* Embedded backlinks ("Linked mentions") header — transparent so the
+   section's border-top reads as a flat hairline, not a banded bar */
+.embedded-backlinks .nav-header { background: transparent; }
+
+/* Sidebar header — hairline divider */
+.nav-header .nav-buttons-container { border-bottom: 1px solid var(--background-modifier-border); }
+
+/* ============================================================
+   5. UI SURFACES
+   ============================================================ */
+
+/* Buttons — square; primary is an ink block */
+button:not(.clickable-icon) {
+  border-radius: 0;
+  border: 1px solid var(--background-modifier-border);
+}
+button.mod-cta {
+  background: var(--text-normal);
+  color: var(--text-on-accent);
+  border-color: var(--text-normal);
+  font-weight: 600;
+}
+
+/* Inputs — square; focused state takes an ink hairline */
+input[type="text"], input[type="search"], textarea, .search-input-container input {
+  border-radius: 2px;
+  border: 1px solid var(--background-modifier-border);
+}
+input:focus, textarea:focus, .search-input-container input:focus {
+  border-color: var(--text-normal);
+  box-shadow: none;
+}
+
+/* Modals + prompts + menus + popovers — borderless, flat */
+.modal, .prompt, .menu, .suggestion-container, .tooltip {
+  border-radius: 2px;
+  border: none;
+  box-shadow: none;
+}
+.modal, .prompt { background: var(--background-primary); }
+
+/* Command palette / suggestions / menus — selected row = ink wash */
+.suggestion-item.is-selected,
+.menu-item.selected {
+  background: var(--mn-ink-wash);
+  color: var(--text-normal);
+  border-radius: 0;
+}
+
+/* ============================================================
+   6. VAULT-SPECIFIC — Bases, Canvas, graph
+   ============================================================ */
+
+/* Bases — hairline rows, small-caps header */
+.bases-tbody .bases-tr:hover { background: var(--background-modifier-hover); }
+.bases-thead .bases-table-header {
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.bases-cards-item {
+  border-radius: 0;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Canvas — square nodes, hairline border */
+.canvas-node-content { border-radius: 0; }
+.canvas-node .canvas-node-container { border-radius: 0; }
+
+/* Graph — controls panel squared (node colours come from --graph-* vars) */
+.graph-controls {
+  border-radius: 2px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* ============================================================
+   7. SYNTAX HIGHLIGHTING — monochrome (weight + italic, no hue)
+   ============================================================ */
+
+/* Reading view (Prism) */
+.token.keyword, .token.tag, .token.selector, .token.atrule,
+.token.important, .token.builtin { color: var(--text-normal); font-weight: 600; }
+.token.function, .token.class-name { color: var(--text-normal); }
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+  color: var(--text-faint); font-style: italic;
+}
+.token.string, .token.char, .token.attr-value, .token.regex { color: var(--text-muted); }
+.token.number, .token.boolean, .token.constant, .token.symbol { color: var(--text-normal); }
+.token.operator, .token.punctuation, .token.entity { color: var(--text-muted); }
+.token.property, .token.attr-name, .token.variable,
+.token.parameter, .token.namespace { color: var(--text-normal); }
+
+/* Live Preview & source mode (CodeMirror) */
+.cm-keyword, .cm-tag, .cm-builtin { color: var(--text-normal); font-weight: 600; }
+.cm-def, .cm-variable-2 { color: var(--text-normal); }
+.cm-comment { color: var(--text-faint); font-style: italic; }
+.cm-string, .cm-string-2 { color: var(--text-muted); }
+.cm-number, .cm-atom, .cm-type { color: var(--text-normal); }
+.cm-operator, .cm-punctuation, .cm-meta { color: var(--text-muted); }
+.cm-variable, .cm-property, .cm-attribute { color: var(--text-normal); }
+
+/* ============================================================
+   8. POLISH — scrollbars, properties, embeds, tags
+   ============================================================ */
+
+/* Scrollbars — thin, square, ink-on-hover */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--background-modifier-border);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+  background-clip: padding-box;
+}
+
+/* Properties (frontmatter) — a flat small-caps metadata block */
+.metadata-properties-heading {
+  font-variant: small-caps; letter-spacing: 0.06em;
+  color: var(--text-faint); font-size: 0.82em;
+}
+.metadata-property-key,
+.metadata-property-key-input {
+  font-variant: small-caps; letter-spacing: 0.04em; color: var(--text-muted);
+}
+/* Flat keys — drop the boxed-input look */
+.metadata-container .metadata-property-key-input {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+.metadata-container .metadata-property-key-input:hover,
+.metadata-container .metadata-property-key-input:focus {
+  background: var(--background-modifier-hover);
+}
+/* Mute the property type icons */
+.metadata-property-icon { color: var(--text-faint); }
+/* Property rows — flat and tight; hover is a plain tint, no rounded ring */
+.metadata-property,
+.metadata-property:hover,
+.metadata-property:active,
+.metadata-property:focus,
+.metadata-property:focus-within {
+  border-radius: 0;
+  padding-block: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 0.9em;
+}
+.metadata-property:hover {
+  background: var(--background-modifier-hover);
+}
+.metadata-property-key,
+.metadata-property-value { min-height: 1.5em; }
+/* Tag / list values — square hairline tickets */
+.workspace .metadata-property .multi-select-pill {
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Live Preview hashtags — match the reading-view tag ticket */
+.cm-hashtag {
+  background: transparent;
+  color: var(--text-muted);
+  border-top: 1px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+.cm-hashtag-begin { border-left: 1px solid var(--background-modifier-border); }
+.cm-hashtag-end { border-right: 1px solid var(--background-modifier-border); }
+
+/* Embeds — a hairline left rule; images squared */
+.markdown-embed { border-left: 1px solid var(--background-modifier-border); }
+.markdown-rendered img,
+.internal-embed.image-embed img { border-radius: 0; }

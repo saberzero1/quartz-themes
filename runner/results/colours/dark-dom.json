@@ -3165,7 +3165,7 @@
                 "attrs": { "tabindex": "0", "data-property-key": "cssclass" },
                 "styles": {
                   "color": "oklch(0.8 0.0645936 268.43 / 0.8)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "backgroundColor": "oklch(0.167493 0.129187 268.43)",
                   "borderColor": "oklch(0.8 0.0645936 268.43 / 0.8)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"

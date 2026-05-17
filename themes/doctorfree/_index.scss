@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -204,53 +204,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -259,16 +226,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4258,6 +4258,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4300,10 +4304,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4323,6 +4323,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4365,10 +4369,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4388,6 +4388,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4430,10 +4434,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4453,6 +4453,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4495,10 +4499,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4518,6 +4518,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4560,10 +4564,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4583,6 +4583,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4625,10 +4629,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4648,6 +4648,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4690,10 +4694,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4713,6 +4713,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4755,10 +4759,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4778,6 +4778,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4820,10 +4824,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4843,6 +4843,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4885,10 +4889,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4908,6 +4908,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -4950,10 +4954,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -4973,6 +4973,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5015,10 +5019,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5038,6 +5038,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5080,10 +5084,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5103,6 +5103,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5145,10 +5149,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5168,6 +5168,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5210,10 +5214,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5233,6 +5233,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5275,10 +5279,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5298,6 +5298,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5340,10 +5344,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5363,6 +5363,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5405,10 +5409,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5428,6 +5428,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5470,10 +5474,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5493,6 +5493,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5535,10 +5539,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5558,6 +5558,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5600,10 +5604,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5623,6 +5623,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5665,10 +5669,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5688,6 +5688,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5730,10 +5734,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5753,6 +5753,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5795,10 +5799,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5818,6 +5818,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5860,10 +5864,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5883,6 +5883,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5925,10 +5929,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -5948,6 +5948,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -5990,10 +5994,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6013,6 +6013,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6055,10 +6059,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6078,6 +6078,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6120,10 +6124,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6143,6 +6143,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6185,10 +6189,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6208,6 +6208,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6250,10 +6254,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6273,6 +6273,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6315,10 +6319,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6338,6 +6338,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6380,10 +6384,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6403,6 +6403,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6445,10 +6449,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6468,6 +6468,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6510,10 +6514,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6533,6 +6533,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6575,10 +6579,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6598,6 +6598,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6640,10 +6644,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6663,6 +6663,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6705,10 +6709,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6728,6 +6728,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6770,10 +6774,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6793,6 +6793,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6835,10 +6839,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6858,6 +6858,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6900,10 +6904,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6923,6 +6923,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -6965,10 +6969,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -6988,6 +6988,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7030,10 +7034,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7053,6 +7053,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7095,10 +7099,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7118,6 +7118,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7160,10 +7164,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7183,6 +7183,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7225,10 +7229,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7248,6 +7248,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7290,10 +7294,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7313,6 +7313,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7355,10 +7359,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7378,6 +7378,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7420,10 +7424,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7443,6 +7443,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7485,10 +7489,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7508,6 +7508,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7550,10 +7554,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7573,6 +7573,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7615,10 +7619,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7638,6 +7638,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7680,10 +7684,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7703,6 +7703,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7745,10 +7749,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7768,6 +7768,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7810,10 +7814,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7833,6 +7833,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7875,10 +7879,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7898,6 +7898,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -7940,10 +7944,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -7963,6 +7963,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8005,10 +8009,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8028,6 +8028,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8070,10 +8074,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8093,6 +8093,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8135,10 +8139,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8158,6 +8158,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8200,10 +8204,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8223,6 +8223,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8265,10 +8269,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8288,6 +8288,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8330,10 +8334,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8353,6 +8353,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8395,10 +8399,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8418,6 +8418,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8460,10 +8464,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8483,6 +8483,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8525,10 +8529,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -8548,6 +8548,10 @@ body {
     --divider-color: #e0e0e0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --flair-color: #222222;
+    --font-text-size: 16px;
+    --font-ui-medium: 15px;
+    --font-ui-small: 13px;
+    --font-ui-smaller: 12px;
     --graph-node: #5c5c5c;
     --graph-node-focused: hsl(258, 88%, 66%);
     --graph-node-unresolved: #ababab;
@@ -8590,10 +8594,6 @@ body {
     --table-selection-border-color: hsl(257, 88.88%, 70.95%);
     --tag-color: hsl(258, 88%, 66%);
     --tag-color-hover: hsl(258, 88%, 66%);
-    --font-text-size: 16px;
-    --font-ui-medium: 15px;
-    --font-ui-small: 13px;
-    --font-ui-smaller: 12px;
     text-decoration-line: none;
   }
 
@@ -12972,6 +12972,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13014,10 +13018,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13037,6 +13037,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13079,10 +13083,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13102,6 +13102,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13144,10 +13148,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13167,6 +13167,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13209,10 +13213,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13232,6 +13232,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13274,10 +13278,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13297,6 +13297,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13339,10 +13343,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13362,6 +13362,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13404,10 +13408,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13427,6 +13427,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13469,10 +13473,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13492,6 +13492,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13534,10 +13538,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13557,6 +13557,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13599,10 +13603,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13622,6 +13622,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13664,10 +13668,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13687,6 +13687,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13729,10 +13733,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13752,6 +13752,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13794,10 +13798,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13817,6 +13817,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13859,10 +13863,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13882,6 +13882,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13924,10 +13928,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -13947,6 +13947,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -13989,10 +13993,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14012,6 +14012,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14054,10 +14058,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14077,6 +14077,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14119,10 +14123,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14142,6 +14142,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14184,10 +14188,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14207,6 +14207,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14249,10 +14253,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14272,6 +14272,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14314,10 +14318,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14337,6 +14337,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14379,10 +14383,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14402,6 +14402,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14444,10 +14448,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14467,6 +14467,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14509,10 +14513,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14532,6 +14532,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14574,10 +14578,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14597,6 +14597,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14639,10 +14643,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14662,6 +14662,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14704,10 +14708,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14727,6 +14727,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14769,10 +14773,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14792,6 +14792,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14834,10 +14838,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14857,6 +14857,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14899,10 +14903,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14922,6 +14922,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -14964,10 +14968,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -14987,6 +14987,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15029,10 +15033,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15052,6 +15052,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15094,10 +15098,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15117,6 +15117,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15159,10 +15163,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15182,6 +15182,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15224,10 +15228,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15247,6 +15247,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15289,10 +15293,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15312,6 +15312,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15354,10 +15358,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15377,6 +15377,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15419,10 +15423,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15442,6 +15442,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15484,10 +15488,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15507,6 +15507,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15549,10 +15553,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15572,6 +15572,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15614,10 +15618,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15637,6 +15637,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15679,10 +15683,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15702,6 +15702,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15744,10 +15748,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15767,6 +15767,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15809,10 +15813,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15832,6 +15832,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15874,10 +15878,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15897,6 +15897,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -15939,10 +15943,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -15962,6 +15962,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16004,10 +16008,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16027,6 +16027,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16069,10 +16073,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16092,6 +16092,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16134,10 +16138,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16157,6 +16157,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16199,10 +16203,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16222,6 +16222,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16264,10 +16268,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16287,6 +16287,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16329,10 +16333,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16352,6 +16352,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16394,10 +16398,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16417,6 +16417,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16459,10 +16463,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16482,6 +16482,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16524,10 +16528,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16547,6 +16547,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16589,10 +16593,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16612,6 +16612,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16654,10 +16658,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16677,6 +16677,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16719,10 +16723,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16742,6 +16742,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16784,10 +16788,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16807,6 +16807,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16849,10 +16853,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16872,6 +16872,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16914,10 +16918,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -16937,6 +16937,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -16979,10 +16983,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -17002,6 +17002,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -17044,10 +17048,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -17067,6 +17067,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -17109,10 +17113,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -17132,6 +17132,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -17174,10 +17178,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -17197,6 +17197,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -17239,10 +17243,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 
@@ -17262,6 +17262,10 @@ html[saved-theme="dark"] {
       --divider-color: #363636;
       --divider-color-hover: hsl(258, 88%, 66%);
       --flair-color: #dadada;
+      --font-text-size: 16px;
+      --font-ui-medium: 15px;
+      --font-ui-small: 13px;
+      --font-ui-smaller: 12px;
       --graph-node: #b3b3b3;
       --graph-node-focused: hsl(255, 89.76%, 75.9%);
       --graph-node-unresolved: #666666;
@@ -17304,10 +17308,6 @@ html[saved-theme="dark"] {
       --table-selection-border-color: hsl(258, 88%, 66%);
       --tag-color: hsl(255, 89.76%, 75.9%);
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
-      --font-text-size: 16px;
-      --font-ui-medium: 15px;
-      --font-ui-small: 13px;
-      --font-ui-smaller: 12px;
       text-decoration-line: none;
     }
 

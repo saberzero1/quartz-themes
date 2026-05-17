@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--interactive-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -93,53 +93,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: #585858 !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: #7cafc2 !important;
   --checkbox-color-hover: #86c1b9 !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: 0px !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: #202020 !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: #585858 !important;
-  --code-function: #7cafc2 !important;
-  --code-important: #f7ca88 !important;
-  --code-keyword: #ba8baf !important;
   --code-normal: #d8d8d8 !important;
-  --code-operator: #86c1b9 !important;
-  --code-property: #f7ca88 !important;
   --code-punctuation: #d8d8d8 !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #a1b56c !important;
-  --code-tag: #ab4642 !important;
-  --code-value: #f7ca88 !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: #383838 !important;
   --graph-node: #7cafc2 !important;
-  --graph-node-attachment: #f7ca88 !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: #a1b56c !important;
   --graph-node-unresolved: #585858 !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -148,16 +115,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: 0px !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: #7cafc2 !important;
+  --code-important: #f7ca88 !important;
+  --code-keyword: #ba8baf !important;
+  --code-operator: #86c1b9 !important;
+  --code-property: #f7ca88 !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #a1b56c !important;
+  --code-tag: #ab4642 !important;
+  --code-value: #f7ca88 !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: #383838 !important;
+  --graph-node-attachment: #f7ca88 !important;
+  --graph-node-tag: #a1b56c !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4269,6 +4269,12 @@ body {
   }
 
   .callout[data-callout="ai"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4341,12 +4347,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -4488,6 +4488,12 @@ body {
   }
 
   .callout[data-callout="bot"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4560,12 +4566,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -4707,6 +4707,12 @@ body {
   }
 
   .callout[data-callout="code"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4779,12 +4785,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -4926,6 +4926,12 @@ body {
   }
 
   .callout[data-callout="contacts"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -4998,12 +5004,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5145,6 +5145,12 @@ body {
   }
 
   .callout[data-callout="documentation"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5217,12 +5223,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5364,6 +5364,12 @@ body {
   }
 
   .callout[data-callout="idea"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5436,12 +5442,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5583,6 +5583,12 @@ body {
   }
 
   .callout[data-callout="image"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5655,12 +5661,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -5802,6 +5802,12 @@ body {
   }
 
   .callout[data-callout="img"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -5874,12 +5880,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6021,6 +6021,12 @@ body {
   }
 
   .callout[data-callout="link"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6093,12 +6099,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6240,6 +6240,12 @@ body {
   }
 
   .callout[data-callout="mind"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6312,12 +6318,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6459,6 +6459,12 @@ body {
   }
 
   .callout[data-callout="mindmap"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6531,12 +6537,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6678,6 +6678,12 @@ body {
   }
 
   .callout[data-callout="my"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6750,12 +6756,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -6897,6 +6897,12 @@ body {
   }
 
   .callout[data-callout="picture"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -6969,12 +6975,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7116,6 +7116,12 @@ body {
   }
 
   .callout[data-callout="toc"] {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7188,12 +7194,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    color: rgb(34, 34, 34);
-    font-weight: 400;
     --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
     --background-modifier-border-focus: #bdbdbd;
     --background-modifier-border-hover: #d4d4d4;
@@ -7336,6 +7336,7 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7393,11 +7394,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7455,11 +7456,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7517,11 +7518,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7579,11 +7580,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7641,11 +7642,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7703,11 +7704,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7765,11 +7766,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7827,11 +7828,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7889,11 +7890,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -7951,11 +7952,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8013,11 +8014,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8075,11 +8076,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8137,11 +8138,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8199,11 +8200,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8261,11 +8262,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8323,11 +8324,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8385,11 +8386,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8447,11 +8448,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8509,11 +8510,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8571,11 +8572,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8633,11 +8634,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8695,11 +8696,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8757,11 +8758,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8819,11 +8820,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8881,11 +8882,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -8943,11 +8944,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9005,11 +9006,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9067,11 +9068,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9129,11 +9130,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9191,11 +9192,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9253,11 +9254,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9315,11 +9316,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9377,11 +9378,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9439,11 +9440,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9501,11 +9502,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9563,11 +9564,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9625,11 +9626,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9687,11 +9688,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9749,11 +9750,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9811,11 +9812,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9873,11 +9874,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9935,11 +9936,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -9997,11 +9998,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10059,11 +10060,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10121,11 +10122,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10183,11 +10184,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10245,11 +10246,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10307,11 +10308,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10369,11 +10370,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10431,11 +10432,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10493,11 +10494,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10555,11 +10556,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10617,11 +10618,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10679,11 +10680,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10741,11 +10742,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10803,11 +10804,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10865,11 +10866,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10927,11 +10928,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -10989,11 +10990,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11051,11 +11052,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11113,11 +11114,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(92, 92, 92);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11175,11 +11176,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(92, 92, 92);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11237,11 +11238,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11299,11 +11300,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11361,11 +11362,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11423,11 +11424,11 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(34, 34, 34);
+    font-weight: 400;
     --background-modifier-form-field-hover: #ffffff;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
@@ -11485,7 +11486,6 @@ body {
     --tag-color-hover: hsl(258, 88%, 66%);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    font-weight: 400;
   }
 
   html {
@@ -15976,6 +15976,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="ai"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -16048,12 +16054,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16195,6 +16195,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bot"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -16267,12 +16273,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16414,6 +16414,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="code"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -16486,12 +16492,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16633,6 +16633,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="contacts"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -16705,12 +16711,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -16852,6 +16852,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="documentation"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -16924,12 +16930,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -17071,6 +17071,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="idea"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -17143,12 +17149,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -17290,6 +17290,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="image"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -17362,12 +17368,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -17509,6 +17509,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="img"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -17581,12 +17587,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -17728,6 +17728,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="link"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -17800,12 +17806,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -17947,6 +17947,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="mind"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -18019,12 +18025,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -18166,6 +18166,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="mindmap"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -18238,12 +18244,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -18385,6 +18385,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="my"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -18457,12 +18463,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -18604,6 +18604,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="picture"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -18676,12 +18682,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -18823,6 +18823,12 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="toc"] {
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      color: rgb(216, 216, 216);
+      font-weight: var(--font-weight-normal);
       --background-modifier-form-field-hover: #181818;
       --blockquote-border-color: #7cafc2;
       --blur-background: color-mix(in srgb, #282828 65%, transparent) linear-gradient(#282828, color-mix(in srgb, #282828 65%, transparent));
@@ -18895,12 +18901,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: #7cafc2;
       --text-success: #a1b56c;
       --text-warning: #dc9656;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      color: rgb(216, 216, 216);
-      font-weight: var(--font-weight-normal);
       --background-modifier-active-hover: hsla(258, 88%, 66%, 0.1);
       --background-modifier-border-focus: #555555;
       --background-modifier-border-hover: #3f3f3f;
@@ -19043,6 +19043,7 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="_"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19100,11 +19101,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19162,11 +19163,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19224,11 +19225,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19286,11 +19287,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19348,11 +19349,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19410,11 +19411,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19472,11 +19473,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19534,11 +19535,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19596,11 +19597,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19658,11 +19659,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19720,11 +19721,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19782,11 +19783,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19844,11 +19845,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19906,11 +19907,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -19968,11 +19969,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20030,11 +20031,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20092,11 +20093,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20154,11 +20155,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20216,11 +20217,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20278,11 +20279,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20340,11 +20341,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20402,11 +20403,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20464,11 +20465,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20526,11 +20527,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20588,11 +20589,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20650,11 +20651,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20712,11 +20713,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20774,11 +20775,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20836,11 +20837,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20898,11 +20899,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -20960,11 +20961,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21022,11 +21023,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21084,11 +21085,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21146,11 +21147,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21208,11 +21209,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21270,11 +21271,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21332,11 +21333,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21394,11 +21395,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21456,11 +21457,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21518,11 +21519,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21580,11 +21581,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21642,11 +21643,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21704,11 +21705,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21766,11 +21767,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21828,11 +21829,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21890,11 +21891,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -21952,11 +21953,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22014,11 +22015,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22076,11 +22077,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22138,11 +22139,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22200,11 +22201,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22262,11 +22263,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22324,11 +22325,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22386,11 +22387,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22448,11 +22449,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22510,11 +22511,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22572,11 +22573,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22634,11 +22635,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22696,11 +22697,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22758,11 +22759,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22820,11 +22821,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="x"] {
       color: rgb(184, 184, 184);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22882,11 +22883,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="X"] {
       color: rgb(184, 184, 184);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -22944,11 +22945,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -23006,11 +23007,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -23068,11 +23069,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -23130,11 +23131,11 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(216, 216, 216);
+      font-weight: 400;
       --background-modifier-form-field-hover: #2a2a2a;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
@@ -23192,7 +23193,6 @@ html[saved-theme="dark"] {
       --tag-color-hover: hsl(255, 89.76%, 75.9%);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      font-weight: 400;
     }
 
     html {

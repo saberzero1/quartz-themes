@@ -1,7 +1,7 @@
 # Gastown
 
 - Theme: Gastown
-- Author: No author provided
+- Author: dogwaddle
 
 ## Preview
 

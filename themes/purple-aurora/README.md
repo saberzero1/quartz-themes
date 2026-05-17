@@ -1,7 +1,7 @@
 # Purple Aurora
 
 - Theme: Purple Aurora
-- Author: <Serice
+- Author: andreasstandar
 
 ## Preview
 

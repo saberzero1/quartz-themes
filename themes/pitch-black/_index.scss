@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: 239, 68, 68;
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--accent-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: 34, 197, 94;
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: 251, 191, 36;
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-primary) !important;
   --checkbox-color: var(--accent-blue) !important;
   --checkbox-color-hover: var(--accent-blue-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: #010101 !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--syntax-comment) !important;
-  --code-function: var(--syntax-function) !important;
-  --code-important: var(--syntax-keyword) !important;
-  --code-keyword: var(--syntax-keyword) !important;
   --code-normal: var(--text-primary) !important;
-  --code-operator: var(--syntax-operator) !important;
-  --code-property: var(--syntax-property) !important;
   --code-punctuation: var(--syntax-punctuation) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--syntax-string) !important;
-  --code-tag: var(--syntax-tag) !important;
-  --code-value: var(--syntax-number) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--border-normal) !important;
   --graph-node: var(--accent-blue) !important;
-  --graph-node-attachment: #fbbf24 !important;
   --graph-node-focused: var(--text-active) !important;
-  --graph-node-tag: #22c55e !important;
   --graph-node-unresolved: #8b5cf6 !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-primary) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: 239, 68, 68;
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--accent-blue);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: 34, 197, 94;
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: 251, 191, 36;
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--syntax-function) !important;
+  --code-important: var(--syntax-keyword) !important;
+  --code-keyword: var(--syntax-keyword) !important;
+  --code-operator: var(--syntax-operator) !important;
+  --code-property: var(--syntax-property) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--syntax-string) !important;
+  --code-tag: var(--syntax-tag) !important;
+  --code-value: var(--syntax-number) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--border-normal) !important;
+  --graph-node-attachment: #fbbf24 !important;
+  --graph-node-tag: #22c55e !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4247,9 +4247,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=","] {
@@ -4332,9 +4332,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=";"] {
@@ -4417,9 +4417,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task=":"] {
@@ -4502,9 +4502,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="."] {
@@ -4587,9 +4587,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="'"] {
@@ -4672,9 +4672,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="@"] {
@@ -4757,9 +4757,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="&"] {
@@ -4842,9 +4842,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="#"] {
@@ -4927,9 +4927,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="%"] {
@@ -5012,9 +5012,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="`"] {
@@ -5097,9 +5097,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="+"] {
@@ -5182,9 +5182,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="<"] {
@@ -5267,9 +5267,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="="] {
@@ -5352,9 +5352,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="|"] {
@@ -5437,9 +5437,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="~"] {
@@ -5522,9 +5522,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="$"] {
@@ -5607,9 +5607,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="0"] {
@@ -5692,9 +5692,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="1"] {
@@ -5777,9 +5777,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="2"] {
@@ -5862,9 +5862,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="3"] {
@@ -5947,9 +5947,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="4"] {
@@ -6032,9 +6032,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="5"] {
@@ -6117,9 +6117,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="6"] {
@@ -6202,9 +6202,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="7"] {
@@ -6287,9 +6287,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="8"] {
@@ -6372,9 +6372,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="9"] {
@@ -6457,9 +6457,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="a"] {
@@ -6542,9 +6542,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="A"] {
@@ -6627,9 +6627,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="B"] {
@@ -6712,9 +6712,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="C"] {
@@ -6797,9 +6797,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="D"] {
@@ -6882,9 +6882,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="e"] {
@@ -6967,9 +6967,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="E"] {
@@ -7052,9 +7052,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="F"] {
@@ -7137,9 +7137,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="g"] {
@@ -7222,9 +7222,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="G"] {
@@ -7307,9 +7307,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="h"] {
@@ -7392,9 +7392,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="H"] {
@@ -7477,9 +7477,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="j"] {
@@ -7562,9 +7562,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="J"] {
@@ -7647,9 +7647,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="K"] {
@@ -7732,9 +7732,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="L"] {
@@ -7817,9 +7817,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="m"] {
@@ -7902,9 +7902,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="M"] {
@@ -7987,9 +7987,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="n"] {
@@ -8072,9 +8072,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="N"] {
@@ -8157,9 +8157,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="o"] {
@@ -8242,9 +8242,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="O"] {
@@ -8327,9 +8327,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="P"] {
@@ -8412,9 +8412,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="q"] {
@@ -8497,9 +8497,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Q"] {
@@ -8582,9 +8582,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="r"] {
@@ -8667,9 +8667,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="R"] {
@@ -8752,9 +8752,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="s"] {
@@ -8837,9 +8837,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="t"] {
@@ -8922,9 +8922,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="T"] {
@@ -9007,9 +9007,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="U"] {
@@ -9092,9 +9092,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="v"] {
@@ -9177,9 +9177,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="V"] {
@@ -9262,9 +9262,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="W"] {
@@ -9347,9 +9347,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="x"] {
@@ -9432,9 +9432,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="X"] {
@@ -9517,9 +9517,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="y"] {
@@ -9602,9 +9602,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Y"] {
@@ -9687,9 +9687,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="z"] {
@@ -9772,9 +9772,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   li.task-list-item[data-task="Z"] {
@@ -9857,9 +9857,9 @@ body {
     --text-accent-hover: hsl(253, 92.4%, 85.14%);
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-normal: #dadada;
-    --text-selection: hsla(258, 88%, 66%, 0.33);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
+    --text-selection: hsla(258, 88%, 66%, 0.33);
   }
 
   html {

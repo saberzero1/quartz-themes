@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: hsl(var(--button-alt-h), calc(var(--accent-s) * 0.8), var(--color-70-l)) !important;
   --checkbox-color-hover: hsl(var(--button-alt-h), var(--accent-s), var(--color-80-l)) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: hsl(var(--button-h), var(--accent-s), var(--color-90-l)) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -96,53 +96,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: hsl(var(--button-alt-h), calc(var(--accent-s) * 0.8), var(--color-70-l)) !important;
   --checkbox-color-hover: hsl(var(--button-alt-h), var(--accent-s), var(--color-80-l)) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -151,16 +118,49 @@
   --icon-color-hover: hsl(var(--button-h), var(--accent-s), var(--color-90-l)) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) 24px;
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4294,6 +4294,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4341,18 +4353,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task=","] {
@@ -4378,6 +4378,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4425,18 +4437,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task=";"] {
@@ -4462,6 +4462,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4509,18 +4521,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task=":"] {
@@ -4546,6 +4546,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4593,18 +4605,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="."] {
@@ -4630,6 +4630,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4677,18 +4689,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="'"] {
@@ -4714,6 +4714,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4761,18 +4773,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4798,6 +4798,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4845,18 +4857,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="&"] {
@@ -4882,6 +4882,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -4929,18 +4941,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="#"] {
@@ -4966,6 +4966,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5013,18 +5025,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="%"] {
@@ -5050,6 +5050,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5097,18 +5109,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="`"] {
@@ -5134,6 +5134,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5181,18 +5193,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="+"] {
@@ -5218,6 +5218,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5265,18 +5277,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="<"] {
@@ -5302,6 +5302,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5349,18 +5361,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="="] {
@@ -5386,6 +5386,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5433,18 +5445,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="|"] {
@@ -5470,6 +5470,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5517,18 +5529,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="~"] {
@@ -5554,6 +5554,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5601,18 +5613,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="$"] {
@@ -5638,6 +5638,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5685,18 +5697,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="0"] {
@@ -5722,6 +5722,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5769,18 +5781,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="1"] {
@@ -5806,6 +5806,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5853,18 +5865,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="2"] {
@@ -5890,6 +5890,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -5937,18 +5949,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="3"] {
@@ -5974,6 +5974,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6021,18 +6033,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="4"] {
@@ -6058,6 +6058,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6105,18 +6117,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="5"] {
@@ -6142,6 +6142,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6189,18 +6201,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="6"] {
@@ -6226,6 +6226,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6273,18 +6285,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="7"] {
@@ -6310,6 +6310,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6357,18 +6369,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="8"] {
@@ -6394,6 +6394,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6441,18 +6453,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="9"] {
@@ -6478,6 +6478,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6525,18 +6537,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="a"] {
@@ -6562,6 +6562,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6609,18 +6621,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="A"] {
@@ -6646,6 +6646,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6693,18 +6705,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="B"] {
@@ -6730,6 +6730,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6777,18 +6789,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="C"] {
@@ -6814,6 +6814,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6861,18 +6873,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="D"] {
@@ -6898,6 +6898,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -6945,18 +6957,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="e"] {
@@ -6982,6 +6982,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7029,18 +7041,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="E"] {
@@ -7066,6 +7066,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7113,18 +7125,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="F"] {
@@ -7150,6 +7150,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7197,18 +7209,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="g"] {
@@ -7234,6 +7234,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7281,18 +7293,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="G"] {
@@ -7318,6 +7318,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7365,18 +7377,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="h"] {
@@ -7402,6 +7402,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7449,18 +7461,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="H"] {
@@ -7486,6 +7486,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7533,18 +7545,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="j"] {
@@ -7570,6 +7570,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7617,18 +7629,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="J"] {
@@ -7654,6 +7654,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7701,18 +7713,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="K"] {
@@ -7738,6 +7738,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7785,18 +7797,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="L"] {
@@ -7822,6 +7822,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7869,18 +7881,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="m"] {
@@ -7906,6 +7906,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -7953,18 +7965,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="M"] {
@@ -7990,6 +7990,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8037,18 +8049,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="n"] {
@@ -8074,6 +8074,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8121,18 +8133,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="N"] {
@@ -8158,6 +8158,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8205,18 +8217,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="o"] {
@@ -8242,6 +8242,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8289,18 +8301,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="O"] {
@@ -8326,6 +8326,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8373,18 +8385,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="P"] {
@@ -8410,6 +8410,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8457,18 +8469,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="q"] {
@@ -8494,6 +8494,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8541,18 +8553,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -8578,6 +8578,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8625,18 +8637,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="r"] {
@@ -8662,6 +8662,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8709,18 +8721,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="R"] {
@@ -8746,6 +8746,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8793,18 +8805,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="s"] {
@@ -8830,6 +8830,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8877,18 +8889,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="t"] {
@@ -8914,6 +8914,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -8961,18 +8973,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="T"] {
@@ -8998,6 +8998,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9045,18 +9057,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="U"] {
@@ -9082,6 +9082,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9129,18 +9141,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="v"] {
@@ -9166,6 +9166,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9213,18 +9225,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="V"] {
@@ -9250,6 +9250,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9297,18 +9309,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="W"] {
@@ -9334,6 +9334,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9381,18 +9393,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="x"] {
@@ -9418,6 +9418,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9465,18 +9477,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="X"] {
@@ -9502,6 +9502,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9549,18 +9561,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="y"] {
@@ -9586,6 +9586,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9633,18 +9645,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -9670,6 +9670,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9717,18 +9729,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="z"] {
@@ -9754,6 +9754,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9801,18 +9813,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -9838,6 +9838,18 @@ body {
     --checkbox-marker-color: #ffffff;
     --checklist-done-color: #5c5c5c;
     --collapse-icon-color: #ababab;
+    --color-base-00: #ffffff;
+    --color-base-05: #fcfcfc;
+    --color-base-10: #fafafa;
+    --color-base-100: #222222;
+    --color-base-20: #f6f6f6;
+    --color-base-25: #e3e3e3;
+    --color-base-30: #e0e0e0;
+    --color-base-35: #d4d4d4;
+    --color-base-40: #bdbdbd;
+    --color-base-50: #ababab;
+    --color-base-60: #707070;
+    --color-base-70: #5c5c5c;
     --divider-color: #e0e0e0;
     --dropdown-background: #ffffff;
     --dropdown-background-hover: #fafafa;
@@ -9885,18 +9897,6 @@ body {
     --text-highlight-bg: rgba(255, 208, 0, 0.4);
     --text-muted: #5c5c5c;
     --text-normal: #222222;
-    --color-base-00: #ffffff;
-    --color-base-05: #fcfcfc;
-    --color-base-10: #fafafa;
-    --color-base-100: #222222;
-    --color-base-20: #f6f6f6;
-    --color-base-25: #e3e3e3;
-    --color-base-30: #e0e0e0;
-    --color-base-35: #d4d4d4;
-    --color-base-40: #bdbdbd;
-    --color-base-50: #ababab;
-    --color-base-60: #707070;
-    --color-base-70: #5c5c5c;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -14358,6 +14358,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14405,18 +14417,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task=","] {
@@ -14442,6 +14442,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14489,18 +14501,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task=";"] {
@@ -14526,6 +14526,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14573,18 +14585,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task=":"] {
@@ -14610,6 +14610,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14657,18 +14669,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="."] {
@@ -14694,6 +14694,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14741,18 +14753,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="'"] {
@@ -14778,6 +14778,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14825,18 +14837,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="@"] {
@@ -14862,6 +14862,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14909,18 +14921,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="&"] {
@@ -14946,6 +14946,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -14993,18 +15005,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="#"] {
@@ -15030,6 +15030,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15077,18 +15089,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="%"] {
@@ -15114,6 +15114,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15161,18 +15173,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="`"] {
@@ -15198,6 +15198,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15245,18 +15257,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="+"] {
@@ -15282,6 +15282,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15329,18 +15341,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="<"] {
@@ -15366,6 +15366,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15413,18 +15425,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="="] {
@@ -15450,6 +15450,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15497,18 +15509,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="|"] {
@@ -15534,6 +15534,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15581,18 +15593,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="~"] {
@@ -15618,6 +15618,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15665,18 +15677,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="$"] {
@@ -15702,6 +15702,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15749,18 +15761,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="0"] {
@@ -15786,6 +15786,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15833,18 +15845,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="1"] {
@@ -15870,6 +15870,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -15917,18 +15929,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="2"] {
@@ -15954,6 +15954,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16001,18 +16013,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="3"] {
@@ -16038,6 +16038,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16085,18 +16097,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="4"] {
@@ -16122,6 +16122,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16169,18 +16181,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="5"] {
@@ -16206,6 +16206,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16253,18 +16265,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="6"] {
@@ -16290,6 +16290,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16337,18 +16349,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="7"] {
@@ -16374,6 +16374,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16421,18 +16433,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="8"] {
@@ -16458,6 +16458,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16505,18 +16517,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="9"] {
@@ -16542,6 +16542,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16589,18 +16601,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="a"] {
@@ -16626,6 +16626,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16673,18 +16685,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="A"] {
@@ -16710,6 +16710,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16757,18 +16769,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="B"] {
@@ -16794,6 +16794,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16841,18 +16853,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="C"] {
@@ -16878,6 +16878,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -16925,18 +16937,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="D"] {
@@ -16962,6 +16962,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17009,18 +17021,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="e"] {
@@ -17046,6 +17046,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17093,18 +17105,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="E"] {
@@ -17130,6 +17130,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17177,18 +17189,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="F"] {
@@ -17214,6 +17214,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17261,18 +17273,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="g"] {
@@ -17298,6 +17298,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17345,18 +17357,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="G"] {
@@ -17382,6 +17382,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17429,18 +17441,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="h"] {
@@ -17466,6 +17466,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17513,18 +17525,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="H"] {
@@ -17550,6 +17550,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17597,18 +17609,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="j"] {
@@ -17634,6 +17634,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17681,18 +17693,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="J"] {
@@ -17718,6 +17718,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17765,18 +17777,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="K"] {
@@ -17802,6 +17802,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17849,18 +17861,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="L"] {
@@ -17886,6 +17886,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -17933,18 +17945,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="m"] {
@@ -17970,6 +17970,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18017,18 +18029,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="M"] {
@@ -18054,6 +18054,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18101,18 +18113,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="n"] {
@@ -18138,6 +18138,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18185,18 +18197,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="N"] {
@@ -18222,6 +18222,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18269,18 +18281,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="o"] {
@@ -18306,6 +18306,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18353,18 +18365,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="O"] {
@@ -18390,6 +18390,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18437,18 +18449,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="P"] {
@@ -18474,6 +18474,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18521,18 +18533,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="q"] {
@@ -18558,6 +18558,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18605,18 +18617,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="Q"] {
@@ -18642,6 +18642,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18689,18 +18701,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="r"] {
@@ -18726,6 +18726,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18773,18 +18785,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="R"] {
@@ -18810,6 +18810,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18857,18 +18869,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="s"] {
@@ -18894,6 +18894,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -18941,18 +18953,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="t"] {
@@ -18978,6 +18978,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19025,18 +19037,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="T"] {
@@ -19062,6 +19062,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19109,18 +19121,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="U"] {
@@ -19146,6 +19146,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19193,18 +19205,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="v"] {
@@ -19230,6 +19230,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19277,18 +19289,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="V"] {
@@ -19314,6 +19314,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19361,18 +19373,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="W"] {
@@ -19398,6 +19398,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19445,18 +19457,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="x"] {
@@ -19482,6 +19482,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19529,18 +19541,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="X"] {
@@ -19566,6 +19566,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19613,18 +19625,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="y"] {
@@ -19650,6 +19650,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19697,18 +19709,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="Y"] {
@@ -19734,6 +19734,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19781,18 +19793,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="z"] {
@@ -19818,6 +19818,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19865,18 +19877,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
 
     li.task-list-item[data-task="Z"] {
@@ -19902,6 +19902,18 @@ html[saved-theme="dark"] {
       --checkbox-marker-color: #1e1e1e;
       --checklist-done-color: #b3b3b3;
       --collapse-icon-color: #666666;
+      --color-base-00: #1e1e1e;
+      --color-base-05: #212121;
+      --color-base-10: #242424;
+      --color-base-100: #dadada;
+      --color-base-20: #262626;
+      --color-base-25: #2a2a2a;
+      --color-base-30: #363636;
+      --color-base-35: #3f3f3f;
+      --color-base-40: #555555;
+      --color-base-50: #666666;
+      --color-base-60: #999999;
+      --color-base-70: #b3b3b3;
       --divider-color: #363636;
       --dropdown-background: #363636;
       --dropdown-background-hover: #3f3f3f;
@@ -19949,18 +19961,6 @@ html[saved-theme="dark"] {
       --text-highlight-bg: rgba(255, 208, 0, 0.4);
       --text-muted: #b3b3b3;
       --text-normal: #dadada;
-      --color-base-00: #1e1e1e;
-      --color-base-05: #212121;
-      --color-base-10: #242424;
-      --color-base-100: #dadada;
-      --color-base-20: #262626;
-      --color-base-25: #2a2a2a;
-      --color-base-30: #363636;
-      --color-base-35: #3f3f3f;
-      --color-base-40: #555555;
-      --color-base-50: #666666;
-      --color-base-60: #999999;
-      --color-base-70: #b3b3b3;
     }
   }
 }

@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--color-base-25) !important;
   --checkbox-color-hover: var(--color-base-25) !important;
   --checkbox-marker-color: var(--color-green) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-yellow) !important;
+  --code-important: var(--color-orange) !important;
+  --code-keyword: var(--color-pink) !important;
+  --code-operator: var(--color-red) !important;
+  --code-property: var(--color-cyan) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-green) !important;
+  --code-tag: var(--color-red) !important;
+  --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -103,53 +103,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--text-faint) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--color-base-25) !important;
   --checkbox-color-hover: var(--color-base-25) !important;
   --checkbox-marker-color: var(--color-green) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--color-dracula-background) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--color-dracula-comment) !important;
-  --code-function: var(--color-dracula-green) !important;
-  --code-important: var(--color-dracula-red) !important;
-  --code-keyword: var(--color-dracula-pink) !important;
   --code-normal: var(--color-dracula-foreground) !important;
-  --code-operator: var(--color-dracula-foreground) !important;
-  --code-property: var(--color-dracula-orange) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-dracula-yellow) !important;
-  --code-tag: var(--color-dracula-red) !important;
-  --code-value: var(--color-dracula-purple) !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: var(--text-muted) !important;
@@ -158,16 +125,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: var(--color-dracula-green) !important;
+  --code-important: var(--color-dracula-red) !important;
+  --code-keyword: var(--color-dracula-pink) !important;
+  --code-operator: var(--color-dracula-foreground) !important;
+  --code-property: var(--color-dracula-orange) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: var(--color-dracula-yellow) !important;
+  --code-tag: var(--color-dracula-red) !important;
+  --code-value: var(--color-dracula-purple) !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -4321,6 +4321,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4364,6 +4365,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -4418,12 +4420,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -4443,6 +4443,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4486,6 +4487,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -4540,12 +4542,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -4565,6 +4565,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4608,6 +4609,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -4662,12 +4664,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -4687,6 +4687,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4730,6 +4731,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -4784,12 +4786,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -4809,6 +4809,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4852,6 +4853,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -4906,12 +4908,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -4931,6 +4931,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -4974,6 +4975,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5028,12 +5030,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5053,6 +5053,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5096,6 +5097,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5150,12 +5152,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5175,6 +5175,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5218,6 +5219,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5272,12 +5274,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5297,6 +5297,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5340,6 +5341,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5394,12 +5396,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5419,6 +5419,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5462,6 +5463,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5516,12 +5518,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5541,6 +5541,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5584,6 +5585,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5638,12 +5640,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5663,6 +5663,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5706,6 +5707,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5760,12 +5762,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5785,6 +5785,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5828,6 +5829,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -5882,12 +5884,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -5907,6 +5907,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -5950,6 +5951,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6004,12 +6006,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6029,6 +6029,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6072,6 +6073,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6126,12 +6128,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6151,6 +6151,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6194,6 +6195,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6248,12 +6250,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6273,6 +6273,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6316,6 +6317,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6370,12 +6372,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6395,6 +6395,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6438,6 +6439,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6492,12 +6494,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6517,6 +6517,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6560,6 +6561,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6614,12 +6616,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6639,6 +6639,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6682,6 +6683,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6736,12 +6738,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6761,6 +6761,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6804,6 +6805,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6858,12 +6860,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -6883,6 +6883,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -6926,6 +6927,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -6980,12 +6982,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7005,6 +7005,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7048,6 +7049,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7102,12 +7104,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7127,6 +7127,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7170,6 +7171,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7224,12 +7226,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7249,6 +7249,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7292,6 +7293,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7346,12 +7348,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7371,6 +7371,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7414,6 +7415,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7468,12 +7470,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7493,6 +7493,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7536,6 +7537,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7590,12 +7592,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7615,6 +7615,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7658,6 +7659,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7712,12 +7714,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7737,6 +7737,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7780,6 +7781,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7834,12 +7836,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7859,6 +7859,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -7902,6 +7903,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -7956,12 +7958,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -7981,6 +7981,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8024,6 +8025,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8078,12 +8080,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8103,6 +8103,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8146,6 +8147,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8200,12 +8202,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8225,6 +8225,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8268,6 +8269,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8322,12 +8324,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8347,6 +8347,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8390,6 +8391,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8444,12 +8446,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8469,6 +8469,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8512,6 +8513,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8566,12 +8568,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8591,6 +8591,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8634,6 +8635,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8688,12 +8690,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8713,6 +8713,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8756,6 +8757,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8810,12 +8812,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8835,6 +8835,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -8878,6 +8879,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -8932,12 +8934,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -8957,6 +8957,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9000,6 +9001,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9054,12 +9056,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9079,6 +9079,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9122,6 +9123,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9176,12 +9178,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9201,6 +9201,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9244,6 +9245,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9298,12 +9300,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9323,6 +9323,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9366,6 +9367,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9420,12 +9422,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9445,6 +9445,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9488,6 +9489,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9542,12 +9544,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9567,6 +9567,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9610,6 +9611,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9664,12 +9666,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9689,6 +9689,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9732,6 +9733,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9786,12 +9788,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9811,6 +9811,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9854,6 +9855,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -9908,12 +9910,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -9933,6 +9933,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -9976,6 +9977,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10030,12 +10032,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10055,6 +10055,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10098,6 +10099,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10152,12 +10154,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10177,6 +10177,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10220,6 +10221,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10274,12 +10276,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10299,6 +10299,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10342,6 +10343,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10396,12 +10398,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10421,6 +10421,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10464,6 +10465,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10518,12 +10520,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10543,6 +10543,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10586,6 +10587,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10640,12 +10642,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10665,6 +10665,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10708,6 +10709,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10762,12 +10764,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10787,6 +10787,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10830,6 +10831,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -10884,12 +10886,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -10909,6 +10909,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -10952,6 +10953,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11006,12 +11008,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11031,6 +11031,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11074,6 +11075,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11128,12 +11130,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11153,6 +11153,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11196,6 +11197,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11250,12 +11252,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11275,6 +11275,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11318,6 +11319,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11372,12 +11374,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11397,6 +11397,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11440,6 +11441,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11494,12 +11496,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11519,6 +11519,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11562,6 +11563,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11616,12 +11618,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11641,6 +11641,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11684,6 +11685,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11738,12 +11740,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -11763,6 +11763,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11806,6 +11807,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11860,12 +11862,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: line-through;
   }
 
@@ -11885,6 +11885,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -11928,6 +11929,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -11982,12 +11984,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: line-through;
   }
 
@@ -12007,6 +12007,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -12050,6 +12051,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -12104,12 +12106,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -12129,6 +12129,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -12172,6 +12173,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -12226,12 +12228,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -12251,6 +12251,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -12294,6 +12295,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -12348,12 +12350,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -12373,6 +12373,7 @@ body {
     --background-primary-alt: #fafafa;
     --background-secondary: #f6f6f6;
     --background-secondary-alt: #fcfcfc;
+    --blockquote-background-color: transparent;
     --blockquote-border-color: hsl(257, 88.88%, 70.95%);
     --blur-background: color-mix(in srgb, #ffffff 65%, transparent) linear-gradient(#ffffff, color-mix(in srgb, #ffffff 65%, transparent));
     --canvas-background: #ffffff;
@@ -12416,6 +12417,7 @@ body {
     --link-external-color-hover: hsl(255, 89.76%, 75.9%);
     --link-unresolved-color: hsl(258, 88%, 66%);
     --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+    --list-bullet-border: none;
     --menu-background: #f6f6f6;
     --menu-border-color: #d4d4d4;
     --pdf-background: #ffffff;
@@ -12470,12 +12472,10 @@ body {
     --text-accent: hsl(258, 88%, 66%);
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
+    --text-on-accent: white;
     --text-selection: hsla(258, 88%, 66%, 0.2);
     --text-success: #08b94e;
     --text-warning: #ec7500;
-    --blockquote-background-color: transparent;
-    --list-bullet-border: none;
-    --text-on-accent: white;
     text-decoration-line: none;
   }
 
@@ -17186,6 +17186,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17229,6 +17230,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17283,12 +17285,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17308,6 +17308,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17351,6 +17352,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17405,12 +17407,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17430,6 +17430,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17473,6 +17474,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17527,12 +17529,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17552,6 +17552,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17595,6 +17596,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17649,12 +17651,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17674,6 +17674,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17717,6 +17718,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17771,12 +17773,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17796,6 +17796,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17839,6 +17840,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -17893,12 +17895,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -17918,6 +17918,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -17961,6 +17962,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18015,12 +18017,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18040,6 +18040,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18083,6 +18084,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18137,12 +18139,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18162,6 +18162,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18205,6 +18206,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18259,12 +18261,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18284,6 +18284,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18327,6 +18328,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18381,12 +18383,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18406,6 +18406,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18449,6 +18450,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18503,12 +18505,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18528,6 +18528,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18571,6 +18572,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18625,12 +18627,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18650,6 +18650,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18693,6 +18694,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18747,12 +18749,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18772,6 +18772,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18815,6 +18816,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18869,12 +18871,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -18894,6 +18894,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -18937,6 +18938,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -18991,12 +18993,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19016,6 +19016,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19059,6 +19060,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19113,12 +19115,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19138,6 +19138,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19181,6 +19182,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19235,12 +19237,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19260,6 +19260,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19303,6 +19304,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19357,12 +19359,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19382,6 +19382,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19425,6 +19426,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19479,12 +19481,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19504,6 +19504,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19547,6 +19548,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19601,12 +19603,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19626,6 +19626,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19669,6 +19670,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19723,12 +19725,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19748,6 +19748,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19791,6 +19792,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19845,12 +19847,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19870,6 +19870,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -19913,6 +19914,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -19967,12 +19969,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -19992,6 +19992,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20035,6 +20036,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20089,12 +20091,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20114,6 +20114,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20157,6 +20158,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20211,12 +20213,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20236,6 +20236,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20279,6 +20280,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20333,12 +20335,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20358,6 +20358,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20401,6 +20402,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20455,12 +20457,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20480,6 +20480,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20523,6 +20524,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20577,12 +20579,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20602,6 +20602,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20645,6 +20646,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20699,12 +20701,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20724,6 +20724,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20767,6 +20768,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20821,12 +20823,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20846,6 +20846,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -20889,6 +20890,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -20943,12 +20945,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -20968,6 +20968,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21011,6 +21012,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21065,12 +21067,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21090,6 +21090,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21133,6 +21134,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21187,12 +21189,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21212,6 +21212,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21255,6 +21256,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21309,12 +21311,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21334,6 +21334,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21377,6 +21378,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21431,12 +21433,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21456,6 +21456,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21499,6 +21500,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21553,12 +21555,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21578,6 +21578,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21621,6 +21622,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21675,12 +21677,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21700,6 +21700,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21743,6 +21744,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21797,12 +21799,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21822,6 +21822,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21865,6 +21866,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -21919,12 +21921,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -21944,6 +21944,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -21987,6 +21988,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22041,12 +22043,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22066,6 +22066,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22109,6 +22110,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22163,12 +22165,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22188,6 +22188,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22231,6 +22232,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22285,12 +22287,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22310,6 +22310,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22353,6 +22354,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22407,12 +22409,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22432,6 +22432,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22475,6 +22476,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22529,12 +22531,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22554,6 +22554,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22597,6 +22598,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22651,12 +22653,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22676,6 +22676,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22719,6 +22720,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22773,12 +22775,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22798,6 +22798,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22841,6 +22842,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -22895,12 +22897,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -22920,6 +22920,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -22963,6 +22964,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23017,12 +23019,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23042,6 +23042,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23085,6 +23086,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23139,12 +23141,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23164,6 +23164,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23207,6 +23208,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23261,12 +23263,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23286,6 +23286,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23329,6 +23330,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23383,12 +23385,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23408,6 +23408,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23451,6 +23452,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23505,12 +23507,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23530,6 +23530,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23573,6 +23574,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23627,12 +23629,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23652,6 +23652,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23695,6 +23696,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23749,12 +23751,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23774,6 +23774,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23817,6 +23818,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23871,12 +23873,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -23896,6 +23896,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -23939,6 +23940,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -23993,12 +23995,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24018,6 +24018,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24061,6 +24062,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24115,12 +24117,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24140,6 +24140,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24183,6 +24184,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24237,12 +24239,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24262,6 +24262,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24305,6 +24306,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24359,12 +24361,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24384,6 +24384,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24427,6 +24428,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24481,12 +24483,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24506,6 +24506,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24549,6 +24550,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24603,12 +24605,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24628,6 +24628,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24671,6 +24672,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24725,12 +24727,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: line-through;
     }
 
@@ -24750,6 +24750,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24793,6 +24794,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24847,12 +24849,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: line-through;
     }
 
@@ -24872,6 +24872,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -24915,6 +24916,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -24969,12 +24971,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -24994,6 +24994,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -25037,6 +25038,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -25091,12 +25093,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -25116,6 +25116,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -25159,6 +25160,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -25213,12 +25215,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
 
@@ -25238,6 +25238,7 @@ html[saved-theme="dark"] {
       --background-primary-alt: #242424;
       --background-secondary: #262626;
       --background-secondary-alt: #363636;
+      --blockquote-background-color: transparent;
       --blockquote-border-color: hsl(258, 88%, 66%);
       --blur-background: color-mix(in srgb, #363636 65%, transparent) linear-gradient(#363636, color-mix(in srgb, #363636 65%, transparent));
       --canvas-background: #1e1e1e;
@@ -25281,6 +25282,7 @@ html[saved-theme="dark"] {
       --link-external-color-hover: hsl(253, 92.4%, 85.14%);
       --link-unresolved-color: hsl(255, 89.76%, 75.9%);
       --link-unresolved-decoration-color: hsla(258, 88%, 66%, 0.3);
+      --list-bullet-border: none;
       --menu-background: #262626;
       --menu-border-color: #3f3f3f;
       --pdf-background: #1e1e1e;
@@ -25335,12 +25337,10 @@ html[saved-theme="dark"] {
       --text-accent: hsl(255, 89.76%, 75.9%);
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
+      --text-on-accent: white;
       --text-selection: hsla(258, 88%, 66%, 0.33);
       --text-success: #44cf6e;
       --text-warning: #e9973f;
-      --blockquote-background-color: transparent;
-      --list-bullet-border: none;
-      --text-on-accent: white;
       text-decoration-line: none;
     }
   }

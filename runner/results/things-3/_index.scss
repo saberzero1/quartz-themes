@@ -7,53 +7,20 @@
 }
 
 :root:root {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: 12px 0px 0px 12px;
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: rgba(128, 128, 128, 0.3) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--color-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--properties-background) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: #cd8c00 !important;
-  --code-important: #e96100 !important;
-  --code-keyword: #ba929e !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: #ba6a6b !important;
-  --code-property: var(--text-muted) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #82ba6a !important;
-  --code-tag: #ba6a6b !important;
-  --code-value: #a86aba !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: #a5a9ae !important;
@@ -62,16 +29,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: 1.9px !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: 12px 0px 0px 12px;
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: #cd8c00 !important;
+  --code-important: #e96100 !important;
+  --code-keyword: #ba929e !important;
+  --code-operator: #ba6a6b !important;
+  --code-property: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #82ba6a !important;
+  --code-tag: #ba6a6b !important;
+  --code-value: #a86aba !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.9px !important;
   --icon-m: 18px !important;
@@ -93,53 +93,20 @@
   --quartz-icon-color: currentColor;
 }
 :root:root[saved-theme="dark"] {
-  --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-bug: var(--color-red-rgb);
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
-  --callout-padding: 12px 0px 0px 12px;
-  --callout-question: var(--color-orange-rgb);
-  --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
-  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
   --checkbox-border-color: var(--div-color) !important;
   --checkbox-border-color-hover: var(--text-muted) !important;
   --checkbox-color: var(--color-accent) !important;
   --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
   --code-background: var(--properties-background) !important;
   --code-border-color: var(--background-modifier-border) !important;
-  --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: var(--text-faint) !important;
-  --code-function: #cd8c00 !important;
-  --code-important: #e96100 !important;
-  --code-keyword: #ba929e !important;
   --code-normal: var(--text-normal) !important;
-  --code-operator: #ba6a6b !important;
-  --code-property: var(--text-muted) !important;
   --code-punctuation: var(--text-muted) !important;
-  --code-radius: var(--radius-s) !important;
-  --code-size: var(--font-smaller) !important;
-  --code-string: #82ba6a !important;
-  --code-tag: #ba6a6b !important;
-  --code-value: #a86aba !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
   --graph-node-unresolved: var(--text-faint) !important;
   --graph-text: var(--text-normal) !important;
   --icon-color: #838a95 !important;
@@ -148,16 +115,49 @@
   --icon-color-hover: var(--text-muted) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: 1.9px !important;
+  --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
+  --callout-padding: 12px 0px 0px 12px;
+  --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
+  --callout-radius: var(--radius-s);
+  --callout-success: var(--color-green-rgb);
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
+  --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-radius: var(--radius-s) !important;
+  --checkbox-size: var(--font-text-size) !important;
   --code-border-width: 0px !important;
+  --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-function: #cd8c00 !important;
+  --code-important: #e96100 !important;
+  --code-keyword: #ba929e !important;
+  --code-operator: #ba6a6b !important;
+  --code-property: var(--text-muted) !important;
+  --code-radius: var(--radius-s) !important;
+  --code-size: var(--font-smaller) !important;
+  --code-string: #82ba6a !important;
+  --code-tag: #ba6a6b !important;
+  --code-value: #a86aba !important;
   --code-white-space: pre-wrap !important;
   --graph-controls-width: 240px !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-tag: var(--color-green) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.9px !important;
   --icon-m: 18px !important;
@@ -4003,6 +4003,7 @@ body {
   }
 
   li.task-list-item[data-task="x"] {
+    margin-left: 0px;
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
@@ -4025,6 +4026,8 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-yellow-rgb: 224, 172, 0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4085,14 +4088,12 @@ body {
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    margin-left: 0px;
-    --color-cyan-rgb: 0, 191, 188;
-    --color-yellow-rgb: 224, 172, 0;
     color: rgb(130, 134, 138);
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="X"] {
+    margin-left: 0px;
     --background-modifier-error: #e93147;
     --background-modifier-error-hover: #e93147;
     --background-modifier-hover: rgba(0, 0, 0, 0.067);
@@ -4115,6 +4116,8 @@ body {
     --color-accent-1: hsl(257, 88.88%, 70.95%);
     --color-accent-2: hsl(255, 89.76%, 75.9%);
     --color-accent-hsl: 258, 88%, 66%;
+    --color-cyan-rgb: 0, 191, 188;
+    --color-yellow-rgb: 224, 172, 0;
     --divider-color-hover: hsl(257, 88.88%, 70.95%);
     --dropdown-background-hover: #fafafa;
     --flair-background: #ffffff;
@@ -4175,9 +4178,6 @@ body {
     --text-accent-hover: hsl(255, 89.76%, 75.9%);
     --text-error: #e93147;
     --text-selection: hsla(258, 88%, 66%, 0.2);
-    margin-left: 0px;
-    --color-cyan-rgb: 0, 191, 188;
-    --color-yellow-rgb: 224, 172, 0;
     color: rgb(130, 134, 138);
     text-decoration-line: none;
   }
@@ -8780,6 +8780,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="x"] {
+      margin-left: 0px;
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
@@ -8802,6 +8803,8 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-yellow-rgb: 224, 222, 113;
       --divider-color-hover: hsl(258, 88%, 66%);
       --dropdown-background-hover: #3f3f3f;
       --flair-background: #363636;
@@ -8862,14 +8865,12 @@ html[saved-theme="dark"] {
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      margin-left: 0px;
-      --color-cyan-rgb: 83, 223, 221;
-      --color-yellow-rgb: 224, 222, 113;
       color: rgb(138, 145, 155);
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="X"] {
+      margin-left: 0px;
       --background-modifier-error: #fb464c;
       --background-modifier-error-hover: #fb464c;
       --background-modifier-hover: rgba(255, 255, 255, 0.067);
@@ -8892,6 +8893,8 @@ html[saved-theme="dark"] {
       --color-accent-1: hsl(255, 89.76%, 75.9%);
       --color-accent-2: hsl(253, 92.4%, 85.14%);
       --color-accent-hsl: 258, 88%, 66%;
+      --color-cyan-rgb: 83, 223, 221;
+      --color-yellow-rgb: 224, 222, 113;
       --divider-color-hover: hsl(258, 88%, 66%);
       --dropdown-background-hover: #3f3f3f;
       --flair-background: #363636;
@@ -8952,9 +8955,6 @@ html[saved-theme="dark"] {
       --text-accent-hover: hsl(253, 92.4%, 85.14%);
       --text-error: #fb464c;
       --text-selection: hsla(258, 88%, 66%, 0.33);
-      margin-left: 0px;
-      --color-cyan-rgb: 83, 223, 221;
-      --color-yellow-rgb: 224, 222, 113;
       color: rgb(138, 145, 155);
       text-decoration-line: none;
     }
