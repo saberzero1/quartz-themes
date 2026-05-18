@@ -389,7 +389,7 @@ body.theme-light {
   --table-border-color: var(--background-modifier-border) !important;
   --text-accent: oklch(
     from var(--color-accent) clamp(0.1, var(--dynamic-switch), 0.95)
-      calc(c * 0.1) h
+      calc(c * 0.1) h / calc(1 * var(--font-brightness))
   ) !important;
   --text-faint: oklch(
     from var(--color-accent) clamp(0.3, var(--dynamic-switch), 0.8)
@@ -626,13 +626,15 @@ body.theme-light {
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: oklch(
-    from var(--code-background) clamp(0.45, calc(1 - l), 0.95) calc(c * 0.5) h
+    from var(--code-background)
+      clamp(0.45, calc(1 - l), 0.95 * var(--font-brightness)) calc(c * 0.5) h
   ) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
   --code-normal: oklch(
-    from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95)
+    from var(--code-background)
+      clamp(0.15, calc(1 - l) + 0.1, 0.95 * var(--font-brightness))
       calc(c * 0.3) h
   ) !important;
   --code-operator: var(--color-red) !important;
@@ -1366,10 +1368,10 @@ body.theme-light {
   --tag-padding-x: 8px !important;
   --tag-padding-y: 1px !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.8em !important;
+  --tag-size: 0.9em !important;
   --text-accent-hover: oklch(
     from var(--color-accent) clamp(0.1, var(--dynamic-switch), 0.9)
-      calc(c * 0.1) h
+      calc(c * 0.1) h / calc(1 * var(--font-brightness))
   ) !important;
   --text-error: var(--color-red) !important;
   --text-highlight-bg: oklch(
@@ -1390,7 +1392,7 @@ body.theme-light {
   ) !important;
   --text-on-accent: oklch(
     from var(--color-accent) clamp(0.2, var(--dynamic-switch), 0.9)
-      calc(c * 0.1) h
+      calc(c * 0.1) h / calc(1 * var(--font-brightness))
   ) !important;
   --text-on-accent-inverted: black !important;
   --text-selection: var(--background-secondary-alt) !important;
@@ -1453,27 +1455,27 @@ body.theme-light {
     var(--shadow-edges) !important;
   --h1-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.95
+      calc(c * 0.3) h / calc(0.95 * var(--font-brightness))
   ) !important;
   --h2-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.95
+      calc(c * 0.3) h / calc(0.95 * var(--font-brightness))
   ) !important;
   --h3-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.9
+      calc(c * 0.3) h / calc(0.9 * var(--font-brightness))
   ) !important;
   --h4-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.8
+      calc(c * 0.3) h / calc(0.8 * var(--font-brightness))
   ) !important;
   --h5-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.7
+      calc(c * 0.3) h / calc(0.7 * var(--font-brightness))
   ) !important;
   --h6-color: oklch(
     from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95)
-      calc(c * 0.3) h / 0.6
+      calc(c * 0.3) h / calc(0.6 * var(--font-brightness))
   ) !important;
   --inline-title-color: var(--h1-color) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: var(
@@ -1552,11 +1554,14 @@ body.theme-light {
   --nn-theme-divider-resize-handle-hover-bg: var(
     --text-highlight-bg
   ) !important;
+  --nn-theme-foreground: var(--ui-normal) !important;
   --readable-line-width: 700px !important;
   --split-comp: oklch(
     from var(--background-primary) l c calc(h + 150)
   ) !important;
   --triadic: oklch(from var(--background-primary) l c calc(h + 120)) !important;
+  --ui-hover: var(--text-muted) !important;
+  --ui-normal: var(--text-normal) !important;
   --workspace-background-translucent-nn: oklch(
     from var(--workspace-background-translucent) l c h / 0
   ) !important;
@@ -1582,16 +1587,19 @@ body.theme-dark {
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: var(--background-modifier-border) !important;
   --text-accent: oklch(
-    from var(--background-primary) clamp(0.1, var(--dynamic-switch), 0.9)
-      calc(c * 0.1) h
+    from var(--background-primary)
+      clamp(0.1, var(--dynamic-switch), 0.9 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --text-faint: oklch(
-    from var(--background-primary) clamp(0.4, var(--dynamic-switch), 0.7)
-      calc(c * 0.5) h / calc(0.7 * var(--font-brightness))
+    from var(--background-primary)
+      clamp(0.4, var(--dynamic-switch), 0.7 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --text-normal: oklch(
-    from var(--background-primary) clamp(0.2, var(--dynamic-switch), 0.9)
-      calc(c * 0.1) h / calc(1 * var(--font-brightness))
+    from var(--background-primary)
+      clamp(0.2, var(--dynamic-switch), 0.9 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --titlebar-background: var(--background-modifier-hover) !important;
   --input-height: 30px !important;
@@ -1817,13 +1825,15 @@ body.theme-dark {
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: oklch(
-    from var(--code-background) clamp(0.45, calc(1 - l), 0.8) calc(c * 0.5) h
+    from var(--code-background)
+      clamp(0.45, calc(1 - l), 0.8 * var(--font-brightness)) calc(c * 0.5) h
   ) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
   --code-normal: oklch(
-    from var(--code-background) clamp(0.2, calc(1 - l) + 0.1, 0.8) calc(c * 0.3)
+    from var(--code-background)
+      clamp(0.2, calc(1 - l) + 0.1, 0.8 * var(--font-brightness)) calc(c * 0.3)
       h
   ) !important;
   --code-operator: var(--color-red) !important;
@@ -2533,7 +2543,7 @@ body.theme-dark {
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-text-size) !important;
   --table-white-space: break-spaces !important;
-  --tag-background: var(--text-normal) !important;
+  --tag-background: var(--text-muted) !important;
   --tag-background-hover: var(--background-modifier-hover) !important;
   --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
   --tag-border-color-hover: hsla(
@@ -2549,28 +2559,35 @@ body.theme-dark {
   --tag-padding-x: 8px !important;
   --tag-padding-y: 1px !important;
   --tag-radius: 2em !important;
-  --tag-size: 0.8em !important;
+  --tag-size: 0.9em !important;
   --text-accent-hover: oklch(
-    from var(--background-primary) clamp(0.1, var(--dynamic-switch), 0.9)
-      calc(c * 0.1) h
+    from var(--background-primary)
+      clamp(0.1, var(--dynamic-switch), 0.9 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --text-error: var(--color-red) !important;
   --text-highlight-bg: oklch(
     from var(--complement)
-      clamp(0.2, calc((var(--dynamic-switch)) * 0.75 + 0.1), 0.75) calc(c * 0.9)
-      h
+      clamp(
+        0.2,
+        calc((var(--dynamic-switch)) * 0.75 + 0.1),
+        0.75 * calc(var(--font-brightness))
+      )
+      calc(c * 0.9) h
   ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: oklch(
-    from var(--background-primary) clamp(0.3, var(--dynamic-switch), 0.8)
-      calc(c * 0.5) h / calc(0.8 * var(--font-brightness))
+    from var(--background-primary)
+      clamp(0.3, var(--dynamic-switch), 0.8 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --text-on-accent: oklch(
-    from var(--background-primary) clamp(0.2, var(--dynamic-switch), 0.85)
-      calc(c * 0.1) h
+    from var(--background-primary)
+      clamp(0.2, var(--dynamic-switch), 0.85 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: oklch(from var(--color-accent) 0.55 c h / 0.35) !important;
+  --text-selection: var(--background-secondary-alt) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
   --titlebar-background-focused: var(--background-primary) !important;
@@ -2624,28 +2641,34 @@ body.theme-dark {
   ) !important;
   --blockquote-color: var(--text-muted) !important;
   --h1-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.95
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.9 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --h2-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.9
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.85 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --h3-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.85
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.8 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --h4-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.8
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.75 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --h5-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.7
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.7 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --h6-color: oklch(
-    from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9)
-      calc(c * 0.3) h / 0.6
+    from var(--background-primary)
+      clamp(0.15, var(--dynamic-switch), 0.6 * var(--font-brightness))
+      var(--text-c) h
   ) !important;
   --inline-title-color: var(--h1-color) !important;
   --nn-theme-mobile-toolbar-button-active-icon-color: var(
@@ -2713,11 +2736,15 @@ body.theme-dark {
   --nn-theme-divider-resize-handle-hover-bg: var(
     --text-highlight-bg
   ) !important;
+  --nn-theme-foreground: var(--ui-normal) !important;
   --readable-line-width: 700px !important;
   --split-comp: oklch(
     from var(--background-primary) l c calc(h + 150)
   ) !important;
+  --text-c: calc(c * 0.6) !important;
   --triadic: oklch(from var(--background-primary) l c calc(h + 120)) !important;
+  --ui-hover: var(--text-faint) !important;
+  --ui-normal: var(--text-muted) !important;
   --workspace-background-translucent-nn: oklch(
     from var(--workspace-background-translucent) l c h / 0
   ) !important;
@@ -5216,9 +5243,9 @@ body body.theme-dark .markdown-rendered a.external-link {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: var(--link-weight);
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: underline;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -5244,8 +5271,8 @@ body body.theme-dark .markdown-rendered a.internal-link {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: var(--link-weight);
-  outline: oklch(80% 0.0645936 268.43deg / 0.8) none 0px;
-  text-decoration: underline wavy oklch(70% 0.0645936 268.43deg / 0.7);
+  outline: oklch(80% 0.0775124 268.43deg) none 0px;
+  text-decoration: underline wavy oklch(70% 0.0775124 268.43deg);
   text-decoration-color: var(--text-faint);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: wavy;
@@ -5272,7 +5299,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: var(--link-weight);
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: underline wavy rgb(255, 0, 0);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
@@ -5313,9 +5340,9 @@ body body.theme-dark .markdown-rendered p {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
-  outline: oklch(80% 0.0645936 268.43deg / 0.8) none 0px;
+  outline: oklch(80% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  text-decoration-color: oklch(80% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5340,9 +5367,9 @@ body body.theme-dark strong {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: calc(var(--font-weight) + var(--bold-modifier));
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5367,9 +5394,9 @@ body body.theme-dark b {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: calc(var(--font-weight) + var(--bold-modifier));
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5394,9 +5421,9 @@ body body.theme-dark em {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5421,9 +5448,9 @@ body body.theme-dark i {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5519,8 +5546,8 @@ body body.theme-dark strong > em {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 600;
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-style: solid;
   transition: all;
   user-select: text;
@@ -5559,7 +5586,7 @@ body body.theme-dark .markdown-rendered mark {
 }
 body body.theme-dark del {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   cursor: grab;
   filter: none;
   backdrop-filter: none;
@@ -5567,9 +5594,9 @@ body body.theme-dark del {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: line-through;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: line-through;
   text-decoration-style: solid;
   transition: all;
@@ -5594,11 +5621,11 @@ body body.theme-dark .suggestion-item.is-selected {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark div.suggestion-item {
   background-color: var(--background-modifier-hover);
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5607,7 +5634,7 @@ body body.theme-dark div.suggestion-item {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark .markdown-rendered hr {
   border-color: rgb(128, 128, 128) oklch(50% 0.129187 268.43deg / 0.5)
@@ -5655,7 +5682,7 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
   color: oklch(16.7493% 0.129187 268.43deg);
 }
 body body.theme-dark .markdown-rendered ul > li {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-align: start;
   list-style-type: "​";
   list-style-position: outside;
@@ -5690,7 +5717,7 @@ body body.theme-dark .markdown-rendered ul > li::marker {
   transform: none;
 }
 body body.theme-dark .markdown-rendered ol > li {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-align: start;
   list-style-type: "​";
   list-style-position: outside;
@@ -5726,7 +5753,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
 }
 body body.theme-dark .markdown-rendered code {
   background-color: var(--code-background);
-  border: 0px solid oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px solid oklch(80% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5790,7 +5817,7 @@ body
   > li.task-list-item
   > .task-list-item-checkbox {
   appearance: auto;
-  border: 1px solid oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 1px solid oklch(80% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5881,7 +5908,7 @@ body body.theme-dark .search-results {
 }
 body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   cursor: auto;
   filter: none;
   backdrop-filter: none;
@@ -5889,9 +5916,9 @@ body body.theme-dark .search-results > * {
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
-  outline: oklch(90% 0.0129187 268.43deg) none 0px;
+  outline: oklch(90% 0.0775124 268.43deg) none 0px;
   text-decoration: rgb(218, 218, 218);
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
   text-decoration-line: none;
   text-decoration-style: solid;
   transition: all;
@@ -5918,10 +5945,10 @@ body body.theme-dark div.search-results {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .search-results .suggestion-item {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark div.search-results .suggestion-item {
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5932,12 +5959,12 @@ body body.theme-dark div.search-results .suggestion-item {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .search-results .suggestion-item.is-selected {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-weight: 400;
   background-color: var(--background-modifier-hover);
 }
 body body.theme-dark div.search-results .suggestion-item.is-selected {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark .published-container .markdown-rendered h1 {
   color: rgb(218, 218, 218);
@@ -6227,13 +6254,13 @@ body body.theme-dark .callout[data-callout="note"] {
   background-image: none;
   background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6262,7 +6289,7 @@ body body.theme-dark .callout > .callout-content {
   background-image: none;
   background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
     border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   padding: 0px 20px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -6275,7 +6302,7 @@ body body.theme-dark .callout[data-callout="abstract"] {
   background-image: none;
   background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(83, 223, 221, 0.5);
   border-top-left-radius: 0px;
@@ -6291,7 +6318,7 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6317,7 +6344,7 @@ body body.theme-dark .callout[data-callout="info"] {
   background-image: none;
   background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(2, 122, 255, 0.5);
   border-top-left-radius: 0px;
@@ -6333,7 +6360,7 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6359,7 +6386,7 @@ body body.theme-dark .callout[data-callout="todo"] {
   background-image: none;
   background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(2, 122, 255, 0.5);
   border-top-left-radius: 0px;
@@ -6375,7 +6402,7 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6401,7 +6428,7 @@ body body.theme-dark .callout[data-callout="tip"] {
   background-image: none;
   background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(83, 223, 221, 0.5);
   border-top-left-radius: 0px;
@@ -6417,7 +6444,7 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6443,7 +6470,7 @@ body body.theme-dark .callout[data-callout="success"] {
   background-image: none;
   background: rgba(68, 207, 110, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(68, 207, 110, 0.5);
   border-top-left-radius: 0px;
@@ -6459,7 +6486,7 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6485,7 +6512,7 @@ body body.theme-dark .callout[data-callout="question"] {
   background-image: none;
   background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(233, 151, 63, 0.5);
   border-top-left-radius: 0px;
@@ -6501,7 +6528,7 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6527,7 +6554,7 @@ body body.theme-dark .callout[data-callout="warning"] {
   background-image: none;
   background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(233, 151, 63, 0.5);
   border-top-left-radius: 0px;
@@ -6543,7 +6570,7 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6569,7 +6596,7 @@ body body.theme-dark .callout[data-callout="danger"] {
   background-image: none;
   background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(251, 70, 76, 0.5);
   border-top-left-radius: 0px;
@@ -6585,7 +6612,7 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6611,7 +6638,7 @@ body body.theme-dark .callout[data-callout="failure"] {
   background-image: none;
   background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(251, 70, 76, 0.5);
   border-top-left-radius: 0px;
@@ -6627,7 +6654,7 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6653,7 +6680,7 @@ body body.theme-dark .callout[data-callout="bug"] {
   background-image: none;
   background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(251, 70, 76, 0.5);
   border-top-left-radius: 0px;
@@ -6669,7 +6696,7 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6695,7 +6722,7 @@ body body.theme-dark .callout[data-callout="example"] {
   background-image: none;
   background: rgba(168, 130, 255, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(168, 130, 255, 0.5);
   border-top-left-radius: 0px;
@@ -6711,7 +6738,7 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6737,7 +6764,7 @@ body body.theme-dark .callout[data-callout="quote"] {
   background-image: none;
   background: rgba(158, 158, 158, 0.25) none repeat scroll 0% 0% / auto
     padding-box border-box;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   mix-blend-mode: normal;
   border: 1px solid rgba(158, 158, 158, 0.5);
   border-top-left-radius: 0px;
@@ -6753,7 +6780,7 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   --callout-color: 2, 122, 255;
   color: var(--text-muted);
   gap: 4px;
-  border: 0px oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px oklch(80% 0.0775124 268.43deg);
   border-bottom: 1px solid rgba(2, 122, 255, 0.3);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6776,7 +6803,7 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
 body body.theme-dark .markdown-rendered table {
   background-color: rgba(0, 0, 0, 0);
   border-collapse: separate;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   table-layout: auto;
@@ -6894,7 +6921,7 @@ body body.theme-dark .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px oklch(90% 0.0387562 268.43deg / 0.95);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6912,7 +6939,7 @@ body body.theme-dark .markdown-rendered img {
 body body.theme-dark .markdown-rendered figure {
   background-color: rgba(0, 0, 0, 0);
   text-align: start;
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6933,7 +6960,7 @@ body body.theme-dark .markdown-rendered figure {
   padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered figcaption {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-size: 16px;
@@ -6956,7 +6983,7 @@ body body.theme-dark .markdown-rendered video {
   filter: none;
   max-width: 100%;
   object-fit: contain;
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6973,7 +7000,7 @@ body body.theme-dark .markdown-rendered video {
 }
 body body.theme-dark .markdown-rendered audio {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6990,9 +7017,9 @@ body body.theme-dark .markdown-rendered audio {
 }
 body body.theme-dark .internal-embed {
   background-color: var(--embed-background);
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   border-radius: 0px;
-  border: 0px solid oklch(90% 0.0129187 268.43deg);
+  border: 0px solid oklch(90% 0.0775124 268.43deg);
   border-left: 2px solid oklch(16.7493% 0.129187 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7003,11 +7030,11 @@ body body.theme-dark .internal-embed {
 }
 body body.theme-dark .markdown-embed {
   background-color: var(--embed-background);
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   border-radius: 0px;
   border-left: solid;
   border-width: 0px;
-  border-color: oklch(90% 0.0129187 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7042,10 +7069,10 @@ body body.theme-dark .metadata-container {
 }
 body body.theme-dark .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-  border-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  border-color: oklch(80% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7056,10 +7083,10 @@ body body.theme-dark .metadata-properties {
 }
 body body.theme-dark .metadata-container .metadata-property {
   background-color: var(--metadata-property-background);
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-  border-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  border-color: oklch(80% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7070,13 +7097,13 @@ body body.theme-dark .metadata-container .metadata-property {
   display: flex;
 }
 body body.theme-dark .metadata-property-key {
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
   font-family: var(--metadata-label-font);
   font-size: 16px;
   font-weight: 400;
 }
 body body.theme-dark .metadata-property-value {
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
   font-family: var(--metadata-input-font);
   font-size: 16px;
 }
@@ -7084,7 +7111,7 @@ body body.theme-dark progress {
   accent-color: auto;
   background-color: rgba(0, 0, 0, 0);
   height: 6px;
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7112,7 +7139,7 @@ body body.theme-dark input[type="text"] {
   color: var(--text-normal);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-  border: 0px solid oklch(80% 0.0645936 268.43deg / 0.8);
+  border: 0px solid oklch(80% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7129,7 +7156,7 @@ body body.theme-dark input[type="text"] {
 }
 body body.theme-dark details {
   background-color: rgba(0, 0, 0, 0);
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7151,7 +7178,7 @@ body body.theme-dark details {
 }
 body body.theme-dark summary {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   cursor: auto;
   font-weight: 400;
   padding: 0px;
@@ -7216,7 +7243,7 @@ body body.theme-dark dl {
   padding-inline-start: 0px;
 }
 body body.theme-dark dt {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-weight: 400;
   margin: 0px;
   margin-block-end: 0px;
@@ -7231,7 +7258,7 @@ body body.theme-dark dt {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7242,7 +7269,7 @@ body body.theme-dark dt {
   border-end-end-radius: 0px;
 }
 body body.theme-dark dd {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-size: 16px;
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
@@ -7256,7 +7283,7 @@ body body.theme-dark dd {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  border: 0px oklch(90% 0.0129187 268.43deg);
+  border: 0px oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7267,55 +7294,55 @@ body body.theme-dark dd {
   border-end-end-radius: 0px;
 }
 body body.theme-dark sub {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-size: 13.3333px;
   vertical-align: sub;
 }
 body body.theme-dark sup {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-size: 13.3333px;
   vertical-align: super;
 }
 body body.theme-dark abbr {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   cursor: auto;
   text-decoration: underline dotted;
   text-decoration-style: dotted;
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
-  color: oklch(70% 0.0645936 268.43deg / 0.7);
-  text-decoration: line-through 1px oklch(70% 0.0645936 268.43deg / 0.7);
-  text-decoration-color: oklch(70% 0.0645936 268.43deg / 0.7);
+  color: oklch(70% 0.0775124 268.43deg);
+  text-decoration: line-through 1px oklch(70% 0.0775124 268.43deg);
+  text-decoration-color: oklch(70% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="/"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="?"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="!"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="*"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="l"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="b"] {
   color: oklch(80% 0.0310049 268.43deg / 0.9);
@@ -7323,54 +7350,54 @@ body body.theme-dark li.task-list-item[data-task="b"] {
   text-decoration-color: oklch(80% 0.0310049 268.43deg / 0.9);
 }
 body body.theme-dark li.task-list-item[data-task="i"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="S"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="I"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="p"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="c"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="f"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="k"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="u"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="d"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark li.task-list-item[data-task="w"] {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   text-decoration: none;
-  text-decoration-color: oklch(90% 0.0129187 268.43deg);
+  text-decoration-color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark .math-block > mjx-container.MathJax {
   display: block;
@@ -7460,7 +7487,7 @@ body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color);
   cursor: var(--cursor);
-  border-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  border-color: oklch(80% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7480,20 +7507,20 @@ body body.theme-dark .site-footer {
   padding-right: var(--size-4-2);
 }
 body body.theme-dark .site-footer a {
-  color: oklch(70% 0.0645936 268.43deg / 0.7);
+  color: oklch(70% 0.0775124 268.43deg);
   font-size: 12px;
   font-weight: 400;
 }
 body body.theme-dark .nav-header {
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   font-weight: 400;
 }
 body body.theme-dark .nav-files-container .tree-item {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(90% 0.0129187 268.43deg);
-  border-color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7504,13 +7531,13 @@ body body.theme-dark .nav-file-title {
   color: var(--nav-item-color);
 }
 body body.theme-dark .nav-file-title-content {
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
   font-family:
     "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
 }
 body body.theme-dark .nav-files-container {
   background-color: rgba(0, 0, 0, 0);
-  border-color: oklch(90% 0.0129187 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7521,7 +7548,7 @@ body body.theme-dark .site-body-left-column-site-theme-toggle {
   background-color: rgba(0, 0, 0, 0);
   color: var(--icon-color);
   cursor: var(--cursor);
-  border-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  border-color: oklch(80% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7529,13 +7556,13 @@ body body.theme-dark .site-body-left-column-site-theme-toggle {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .site-body-left-column-site-theme-toggle svg {
-  stroke: oklch(80% 0.0645936 268.43deg / 0.8);
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
+  stroke: oklch(80% 0.0775124 268.43deg);
+  color: oklch(80% 0.0775124 268.43deg);
 }
 body body.theme-dark .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(80% 0.0645936 268.43deg / 0.8);
-  border-color: oklch(80% 0.0645936 268.43deg / 0.8);
+  color: oklch(80% 0.0775124 268.43deg);
+  border-color: oklch(80% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7559,7 +7586,7 @@ body body.theme-dark .page-header .page-title {
     border-box;
   padding: 0px;
   margin: 0px;
-  border-color: oklch(90% 0.0129187 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7568,8 +7595,8 @@ body body.theme-dark .page-header .page-title {
 }
 body body.theme-dark .math-block {
   background-color: rgba(0, 0, 0, 0);
-  color: oklch(90% 0.0129187 268.43deg);
-  border-color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7578,13 +7605,13 @@ body body.theme-dark .math-block {
 }
 body body.theme-dark .footnotes {
   background-color: rgba(0, 0, 0, 0);
-  border-top-color: oklch(90% 0.0129187 268.43deg);
+  border-top-color: oklch(90% 0.0775124 268.43deg);
   border-top-width: 0px;
-  color: oklch(90% 0.0129187 268.43deg);
+  color: oklch(90% 0.0775124 268.43deg);
 }
 body body.theme-dark .table-wrapper {
   background-color: rgba(0, 0, 0, 0);
-  border-color: oklch(90% 0.0129187 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7592,7 +7619,7 @@ body body.theme-dark .table-wrapper {
   border-bottom-right-radius: 0px;
 }
 body body.theme-dark .view-content {
-  border-color: oklch(90% 0.0129187 268.43deg);
+  border-color: oklch(90% 0.0775124 268.43deg);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;

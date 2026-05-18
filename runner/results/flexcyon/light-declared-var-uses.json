@@ -388,7 +388,6 @@
     "font-size": "var(--table-header-size)",
     "font-weight": "var(--table-header-weight)",
     "line-height": "var(--line-height-tight)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"
@@ -397,7 +396,6 @@
     "border-left-width": "var(--table-column-first-border-width)",
     "color": "var(--table-text-color)",
     "font-size": "var(--table-text-size)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"
@@ -416,7 +414,6 @@
     "font-size": "var(--table-header-size)",
     "font-weight": "var(--table-header-weight)",
     "line-height": "var(--line-height-tight)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"

@@ -3,14 +3,14 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/its-theme.school-days/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/its-theme.school-days/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/its-theme.school-days/its.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/its-theme.school-days/its.woff")
     format("woff");
 }
 body.theme-light {
@@ -1468,11 +1468,11 @@ body.theme-light {
   --toggle-shadow: none !important;
   --tooltip-color: var(--text-dl) !important;
   --icons: #d04e4e !important;
-  --solve-font:
-    "Recursive Sans Linear Static Regular", var(--font-default) !important;
   --answer: #4f904f !important;
   --answer-bg: #dbe8e2 !important;
   --header-solve: #a87643 !important;
+  --solve-font:
+    "Recursive Sans Linear Static Regular", var(--font-default) !important;
 }
 
 body.theme-dark {
@@ -2916,11 +2916,11 @@ body.theme-dark {
   --theme-rainbow-6: var(--deep-dark-accent) !important;
   --toggle-shadow: none !important;
   --tooltip-color: var(--text-dl) !important;
-  --solve-font:
-    "Recursive Sans Linear Static Regular", var(--font-default) !important;
   --answer: darkseagreen !important;
   --answer-bg: #293c33 !important;
   --header-solve: #c7c7c7 !important;
+  --solve-font:
+    "Recursive Sans Linear Static Regular", var(--font-default) !important;
 }
 
 body {

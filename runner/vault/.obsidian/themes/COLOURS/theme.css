@@ -250,7 +250,7 @@ body {
 	--h6-size: 1.1em;
 
 	/* Tag structure */
-	--tag-size: 0.8em;
+	--tag-size: 0.9em;
 	--tag-padding-x: 8px;
 	--tag-padding-y: 1px;
 
@@ -275,6 +275,7 @@ body {
 	--blockquote-color: 					 var(--text-muted);
 
 	/* Notebook Navigator */
+	--nn-theme-foreground: var(--ui-normal);
 	--nn-theme-calendar-day-active-border-color: var(--cursor-line-color);
 	--nn-theme-calendar-day-today-bg: var(--text-highlight-bg);	
 	--nn-theme-calendar-day-today-color: var(--text-highlight);
@@ -285,13 +286,13 @@ body {
 /* --- Highlight Presets (Style Settings) ------------------------- */
 body.highlight-subtle {
 	--text-highlight-bg: oklch(from var(--complement)
-		clamp(0.2, calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1, 0.8)
+		clamp(0.2, calc(var(--dynamic-switch) - var(--dynamic-switch)) * 0.7 + 0.1, 0.8 * var(--font-brightness))
 		c
 		h
 		/ 0.8
 	);
 	--text-highlight: oklch(from var(--complement)
-		clamp(0.5, calc((0.9 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.25), 0.9)
+		clamp(0.5, calc((0.9 - calc(var(--dynamic-switch) - var(--dynamic-switch))) * 0.7 + 0.25), 0.9 * var(--font-brightness))
 		calc(c * 0.8)
 		h
 		/ 0.8
@@ -312,16 +313,13 @@ body.highlight-monochrome-low {
 /* A bit colour */
 .theme-light.heading-colour {
 	--h-l-min: 0.45;
-	--h-l-max: 0.9;
+	--h-l-max: 0.9 * var(--font-brightness);
 }
 .theme-dark.heading-colour {
 	--h-l-min: 0.4;
-	--h-l-max: 0.7;
+	--h-l-max: 0.7 * var(--font-brightness);
 }
 body.heading-colour {
-	--h-l-min: 0.4;
-	--h-l-max: 0.9;
-
 	--h1-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 10) / 1.0);
 	--h2-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 5) / 0.95);
 	--h3-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 0) / 0.90);
@@ -334,14 +332,14 @@ body.heading-colour {
 .theme-light.heading-colourful {
 	--h-l: 0.2;
 	--h-l-min: 0.45;
-	--h-l-max: 0.7;
+	--h-l-max: 0.7 * var(--font-brightness);
 	--h-c: 1.2;
 	--h-c-max: 0.3;
 }
 .theme-dark.heading-colourful {
 	--h-l: 0.0;
 	--h-l-min: 0.4;
-	--h-l-max: 0.7;
+	--h-l-max: 0.7 * var(--font-brightness);
 	--h-c: 0.75;
 	--h-c-max: 0.3;
 }
@@ -490,17 +488,17 @@ svg * {
 		calc(c * 1)
 		h / 0.5
 	);
-	--code-normal:  oklch(from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95) calc(c * 0.3) h);
-	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.95) calc(c * 0.5) h);
+	--code-normal:  oklch(from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95 * var(--font-brightness)) calc(c * 0.3) h);
+	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.95 * var(--font-brightness)) calc(c * 0.5) h);
 
 	/* --- Text colours ----------------------------------------------- */
 
 	--text-normal:       oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.95) calc(c * 0.1) h / calc(1 * var(--font-brightness)));
 	--text-muted:        oklch(from var(--color-accent) clamp(0.25, var(--dynamic-switch), 0.90) calc(c * 0.3) h / calc(0.9  * var(--font-brightness)));
 	--text-faint:        oklch(from var(--color-accent) clamp(0.30, var(--dynamic-switch), 0.80) calc(c * 0.3) h / calc(0.75 * var(--font-brightness)));
-	--text-accent:       oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.95) calc(c * 0.1) h);
-	--text-on-accent:    oklch(from var(--color-accent) clamp(0.20, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
-	--text-accent-hover: oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
+	--text-accent:       oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.95) calc(c * 0.1) h / calc(1 * var(--font-brightness)));
+	--text-on-accent:    oklch(from var(--color-accent) clamp(0.20, var(--dynamic-switch), 0.90) calc(c * 0.1) h / calc(1 * var(--font-brightness)));
+	--text-accent-hover: oklch(from var(--color-accent) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h / calc(1 * var(--font-brightness)));
 	--text-selection: 	 var(--background-secondary-alt);
 
 	--link-color: var(--text-muted);
@@ -509,12 +507,12 @@ svg * {
 	--interactive-accent-hover: var(--background-modifier-border);
 
 	/* --- Headings --------------------------------------------------- */
-	--h1-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.95);
-	--h2-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.95);
-	--h3-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.9);
-	--h4-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.8);
-	--h5-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.7);
-	--h6-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / 0.6);
+	--h1-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.95 * var(--font-brightness)));
+	--h2-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.95 * var(--font-brightness)));
+	--h3-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.90 * var(--font-brightness)));
+	--h4-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.80 * var(--font-brightness)));
+	--h5-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.70 * var(--font-brightness)));
+	--h6-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.60 * var(--font-brightness)));
 
 	/* --- Tags ------------------------------------------------------- */
 	--tag-color:            var(--background-primary);
@@ -546,11 +544,11 @@ svg * {
 .theme-dark {
 
 	/* --- Accent lightness detection --------------------------------- */
-	--dynamic-switch:     1;
+	--dynamic-switch: 1;
 
 	/* --- Highlight system ------------------------------------------- */
 	--text-highlight-bg: oklch(from var(--complement)
-		clamp(0.2, calc((var(--dynamic-switch)) * 0.75 + 0.1), 0.75)
+		clamp(0.2, calc((var(--dynamic-switch)) * 0.75 + 0.1), 0.75 * calc(var(--font-brightness)))
 		calc(c * 0.9)
 		h
 	);
@@ -589,17 +587,18 @@ svg * {
 	--code-background:   oklch(from var(--background-primary) clamp(0.25, l * 0.3, 1.00) calc(c * 0.8) h / 0.9);
 	--code-border:       oklch(from var(--background-primary) clamp(0.40, l * 2, 0.60) calc(c * 1.0) h / 0.9);
 
-	--code-normal: 	oklch(from var(--code-background) clamp(0.20, calc(1 - l) + 0.1, 0.8) calc(c * 0.3) h);
-	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.8) calc(c * 0.5) h);
+	--code-normal: 	oklch(from var(--code-background) clamp(0.20, calc(1 - l) + 0.1, 0.8 * var(--font-brightness)) calc(c * 0.3) h);
+	--code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 			 0.8 * var(--font-brightness)) calc(c * 0.5) h);
 
 	/* --- Text colours ----------------------------------------------- */
-	--text-normal:       oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.90) calc(c * 0.1) h / calc(1   * var(--font-brightness)));
-	--text-muted:        oklch(from var(--background-primary) clamp(0.30, var(--dynamic-switch), 0.80) calc(c * 0.5) h / calc(0.8 * var(--font-brightness)));
-	--text-faint:        oklch(from var(--background-primary) clamp(0.40, var(--dynamic-switch), 0.70) calc(c * 0.5) h / calc(0.7 * var(--font-brightness)));
-	--text-accent:       oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
-	--text-on-accent:    oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.85) calc(c * 0.1) h);
-	--text-accent-hover: oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90) calc(c * 0.1) h);
-	--text-selection:    oklch(from var(--color-accent) 0.55 c h / 0.35);
+	--text-c: calc( c * 0.6);
+	--text-normal:       oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.90 * var(--font-brightness)) var(--text-c) h);
+	--text-muted:        oklch(from var(--background-primary) clamp(0.30, var(--dynamic-switch), 0.80 * var(--font-brightness)) var(--text-c) h);
+	--text-faint:        oklch(from var(--background-primary) clamp(0.40, var(--dynamic-switch), 0.70 * var(--font-brightness)) var(--text-c) h);
+	--text-accent:       oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90 * var(--font-brightness)) var(--text-c) h);
+	--text-on-accent:    oklch(from var(--background-primary) clamp(0.20, var(--dynamic-switch), 0.85 * var(--font-brightness)) var(--text-c) h);
+	--text-accent-hover: oklch(from var(--background-primary) clamp(0.10, var(--dynamic-switch), 0.90 * var(--font-brightness)) var(--text-c) h);
+	--text-selection:    var(--background-secondary-alt);
 
 	--link-color: var(--text-muted);
 
@@ -607,17 +606,17 @@ svg * {
 	--interactive-accent-hover: var(--background-modifier-border);
 
 	/* --- Headings --------------------------------------------------- */
-	--h1-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.95);
-	--h2-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.9);
-	--h3-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.85);
-	--h4-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.8);
-	--h5-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.7);
-	--h6-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.9) calc(c * 0.3) h / 0.6);
+	--h1-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.90 * var(--font-brightness)) var(--text-c) h);
+	--h2-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.85 * var(--font-brightness)) var(--text-c) h);
+	--h3-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.80 * var(--font-brightness)) var(--text-c) h);
+	--h4-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.75 * var(--font-brightness)) var(--text-c) h);
+	--h5-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.70 * var(--font-brightness)) var(--text-c) h);
+	--h6-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.60 * var(--font-brightness)) var(--text-c) h);
 
 	/* --- Tags ------------------------------------------------------- */
-	--tag-color:            var(--background-primary) !important;
-	--tag-background:       var(--text-normal) !important;
-	--tag-background-hover: var(--background-modifier-hover) !important;
+	--tag-color:            var(--background-primary);
+	--tag-background:       var(--text-muted);
+	--tag-background-hover: var(--background-modifier-hover);
 
 	/* --- Graph view (hsl only, oklch breaks rendering) -------------- */
 	--graph-text:            hsl(var(--accent-h),             calc(var(--accent-s) * 0.2), clamp(70%, var(--accent-l) * 1.8, 95%), 90%);
@@ -1333,13 +1332,24 @@ li[data-task="c"] > p > input:checked::after {
 
 /* --- Slider ----------------------------------------------------- */
 input[type="range"]::-webkit-slider-thumb {
-	background: var(--text-normal);
+	background: var(--ui-normal);
 }
 input[type="range"]::-webkit-slider-thumb:hover {
-	background: var(--text-muted);
+	background: var(--ui-hover);
 }
 
 /* --- Buttons: inverted, uppercase ------------------------------- */
+
+
+.theme-light {
+	--ui-normal: var(--text-normal);
+	--ui-hover: var(--text-muted);
+}
+.theme-dark {
+	--ui-normal: var(--text-muted);
+	--ui-hover: var(--text-faint);
+}
+
 .modal button,
 .modal .mod-cta,
 .setting-item button,
@@ -1349,9 +1359,9 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .view-header button,
 .view-actions button,
 .view-action {
-	background: var(--text-normal) !important;
+	background: var(--ui-normal) !important;
 	color: var(--background-primary) !important;
-	border: 1px solid var(--text-normal) !important;
+	border: 1px solid transparent !important;
 	font-family: var(--font-interface);
 	font-size: 0.8em;
 	box-shadow: none;
@@ -1367,11 +1377,12 @@ input[type="range"]::-webkit-slider-thumb:hover {
 .view-action:hover {
 	background: var(--background-primary) !important;
 	color: var(--text-accent) !important;
+	border: 1px solid var(--text-accent) !important;
 }
 
 .markdown-source-view button:not(.clickable-icon),
 .markdown-preview-view button:not(.clickable-icon) {
-	background-color: var(--text-normal);
+	background-color: var(--ui-normal);
 	color: var(--background-primary);
 }
 
@@ -1400,14 +1411,13 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .modal-bg {
-	/*background: hsla(var(--accent-h), calc(var(--accent-s) * 0.6), calc(var(--accent-l) * 0.4), 80%) !important;*/
 	background: oklch(from var(--background-primary) calc(l * 0.8) c h);
 }
 
 /* --- Settings sidebar nav --------------------------------------- */
 .vertical-tab-nav-item.is-active,
 .vertical-tab-nav-item:hover {
-	background: var(--text-normal) !important;
+	background: var(--ui-normal) !important;
 	color: var(--background-primary) !important;
 }
 .vertical-tab-nav-item.is-active .vertical-tab-nav-item-icon,
@@ -1422,7 +1432,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 
 /* --- Dropdown --------------------------------------------------- */
 .dropdown {
-	background-color: var(--text-normal);
+	background-color: var(--ui-normal);
 	color: var(--background-primary);
 	box-shadow: none !important;
 	outline: none !important;
@@ -1474,7 +1484,7 @@ input[type="color"]::-webkit-color-swatch {
 /* --- Toggles ---------------------------------------------------- */
 .checkbox-container.is-enabled {
 	background-color: var(--code-background);
-	--toggle-thumb-color: var(--text-normal);
+	--toggle-thumb-color: var(--ui-normal);
 	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
 }
 .checkbox-container.is-enabled:hover {
@@ -1487,7 +1497,7 @@ input[type="color"]::-webkit-color-swatch {
 	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
 }
 .checkbox-container:hover {
-	--toggle-thumb-color: var(--text-normal);
+	--toggle-thumb-color: var(--ui-normal);
 	box-shadow: inset 0 0 0 1px var(--text-faint);
 }
 
@@ -1508,10 +1518,10 @@ input[type="color"]::-webkit-color-swatch {
 }
 
 .theme-light .cm-line.HyperMD-codeblock {
-		--code-colour-mix: 100%;
+		--code-colour-mix: calc(100%  * var(--font-brightness));
 }
 .theme-dark .cm-line.HyperMD-codeblock {
-		--code-colour-mix: 80%;
+		--code-colour-mix: calc(80% * var(--font-brightness));
 }
 
 .cm-line.HyperMD-codeblock {
@@ -1726,7 +1736,7 @@ body {
 .is-mobile .mobile-navbar.mod-raised,
 .is-mobile .mobile-navbar-actions,
 .is-mobile .mobile-navbar-action {
-	background-color: var(--text-normal) !important;
+	background-color: var(--ui-normal) !important;
 	background-image: none !important;
 	box-shadow: none !important;
 }
@@ -1746,16 +1756,16 @@ body {
 
 /* --- Toolbar ---------------------------------------------------- */
 .mobile-toolbar-options-list {
-	background-color: var(--text-normal) !important;
-	border: 1px solid var(--text-normal) !important;
+	background-color: var(--ui-normal) !important;
+	border: 1px solid var(--ui-normal) !important;
 	background-image: none !important;
 	box-shadow: none !important;
 }
 
 /* --- The floating buttons (keyboard) ---------------------------- */
 .mobile-toolbar-floating-options {
-	background-color: var(--text-normal) !important;
-	border: 1px solid var(--text-normal) !important;
+	background-color: var(--ui-normal) !important;
+	border: 1px solid var(--ui-normal) !important;
 	background-image: none !important;
 	box-shadow: none !important;
 }
@@ -1769,7 +1779,7 @@ body {
 
 /* --- Settings gear icon in left sidebar drawer ------------------ */
 .is-mobile.is-floating-nav .mod-raised {
-	background-color: var(--text-normal) !important;
+	background-color: var(--ui-normal) !important;
 	color: var(--background-primary) !important;
 	background-image: none !important;
 	border-radius: 0 !important;
@@ -1870,6 +1880,7 @@ body {
    ============================================= */
 
 .callout {
+	--callout-blend-mode: normal;
 	background-color: rgba(var(--callout-color), 0.25) !important;
 	border-radius: 0 !important;
 	padding: 0 !important;

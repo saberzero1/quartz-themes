@@ -1,8 +1,7 @@
 {
   "name": "Aubade",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.0.0",
   "author": "DuckTapeKiller",
-  "authorUrl": "https://github.com/DuckTapeKiller",
-  "isDesktopOnly": false
+  "authorUrl": "https://github.com/DuckTapeKiller"
 }

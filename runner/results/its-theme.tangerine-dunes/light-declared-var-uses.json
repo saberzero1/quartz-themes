@@ -364,10 +364,11 @@
     "height": "var(--input-height)"
   },
   "kbd": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "background-color": "var(--code-bg)",
+    "box-shadow": "var(--code-shadow)",
+    "color": "var(--soft-text)",
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "color": "var(--text-normal)",
@@ -514,6 +515,11 @@
   ".internal-embed": {
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
+  },
+  ".file-embed": {
+    "background-color": "var(--outer-bar)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".markdown-embed": {
     "background-color": "var(--embed-background)",

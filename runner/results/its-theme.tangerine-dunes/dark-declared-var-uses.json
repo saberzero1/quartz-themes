@@ -291,9 +291,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": {
     "background-color": "var(--code-background)",
@@ -362,10 +364,11 @@
     "height": "var(--input-height)"
   },
   "kbd": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "background-color": "var(--code-bg)",
+    "box-shadow": "var(--code-shadow)",
+    "color": "var(--soft-text)",
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "color": "var(--text-normal)",
@@ -510,12 +513,14 @@
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   "mjx-math.MJX-TEX": { "color": "var(--latex-color)" },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+    "background-color": "var(--outer-bar)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+  ".file-embed": {
+    "background-color": "var(--outer-bar)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "rgb(var(--chbx-d))",
@@ -541,56 +546,6 @@
   "li.task-list-item[data-task=\"@\"]": { "color": "rgb(var(--chbx-b))" },
   "li.task-list-item[data-task=\"~\"]": { "color": "rgb(var(--chbx-C))" },
   "li.task-list-item[data-task=\"<\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"l\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"b\"]": {
-    "color": "rgb(var(--chbx-b))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"i\"]": {
-    "color": "rgb(var(--chbx-id))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"p\"]": {
-    "color": "rgb(var(--chbx-R))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"c\"]": {
-    "color": "rgb(var(--chbx-c))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"f\"]": {
-    "color": "rgb(var(--chbx-N))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"k\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"u\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"d\"]": {
-    "color": "rgb(var(--chbx-I))",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"w\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"o\"]": { "color": "rgb(var(--chbx-b))" },
-  "li.task-list-item[data-task=\"r\"]": { "color": "rgb(var(--chbx-r))" },
-  "li.task-list-item[data-task=\"s\"]": { "color": "rgb(var(--chbx-d))" },
-  "li.task-list-item[data-task=\"t\"]": { "color": "rgb(var(--chbx-R))" },
   "li.task-list-item[data-task=\"S\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"

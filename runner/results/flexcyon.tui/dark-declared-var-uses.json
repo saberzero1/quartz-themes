@@ -411,7 +411,6 @@
     "font-size": "var(--table-header-size)",
     "font-weight": "var(--table-header-weight)",
     "line-height": "var(--line-height-tight)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"
@@ -420,7 +419,6 @@
     "border-left-width": "var(--table-column-first-border-width)",
     "color": "var(--table-text-color)",
     "font-size": "var(--table-text-size)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"
@@ -439,7 +437,6 @@
     "font-size": "var(--table-header-size)",
     "font-weight": "var(--table-header-weight)",
     "line-height": "var(--line-height-tight)",
-    "text-align": "var(--flexcyon-td-table-alignment)",
     "vertical-align": "var(--table-cell-vertical-alignment)",
     "max-width": "var(--table-column-max-width)",
     "min-width": "var(--table-column-min-width)"
@@ -550,9 +547,9 @@
     "width": "var(--icon-size)"
   },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "background-image": "repeating-linear-gradient(var(--flexcyon-editor-bg-rotation), var(--flexcyon-editor-bg-color), var(--flexcyon-editor-bg-color) 1px, transparent 1px, transparent var(--flexcyon-editor-bg-width)), repeating-linear-gradient(calc(90deg + var(--flexcyon-editor-bg-rotation)), var(--flexcyon-editor-bg-color), var(--flexcyon-editor-bg-color) 1px, transparent 1px, transparent var(--flexcyon-editor-bg-width))",
-    "font-style": "var(--embed-font-style)"
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".markdown-embed": {
     "background-color": "var(--embed-background)",

@@ -409,8 +409,8 @@
   "--bases-group-heading-property-weight": { "body": ["--font-normal"] },
   "--bases-group-heading-property-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--bases-group-heading-value-size": { "body": ["--font-smaller"] },
   "--bases-group-heading-value-weight": { "body": ["--font-semibold"] },
@@ -420,8 +420,8 @@
   "--bases-table-header-weight": { "body": ["--font-weight"] },
   "--bases-table-header-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--bases-table-header-background": {
     "body": ["--background-primary"],
@@ -473,7 +473,7 @@
   "--border-width": {
     ".expressive-code .ec-section summary": ["--ec-cs-closedBrdWd"],
     ".expressive-code .ec-section[open]": ["--ec-cs-openBrdWd"],
-    "body": ["--aubade-thickness"]
+    "body.obsidian-app": ["--aubade-thickness"]
   },
   "--button-radius": { "body": ["--input-radius"] },
   "--button-corner-shape": { "body": ["--corner-shape"] },
@@ -502,7 +502,7 @@
   "--blur-l": {
     "body": ["--blur-radius-l", "--blur-saturation", "--blur-brightness"]
   },
-  "--callout-border-width": { "body": ["--aubade-thickness"] },
+  "--callout-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
   "--callout-padding": {
     "body": ["--size-4-3", "--size-4-3", "--size-4-3", "--size-4-6"],
     ".mod-rtl": ["--size-4-3", "--size-4-6", "--size-4-3", "--size-4-3"]
@@ -526,8 +526,8 @@
   "--canvas-background": { "body": ["--background-primary"] },
   "--canvas-card-label-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--canvas-color-1": { "body": ["--color-red-rgb"] },
   "--canvas-color-2": { "body": ["--color-orange-rgb"] },
@@ -551,8 +551,8 @@
   "--caret-color": {
     "body": ["--text-normal"],
     ".is-mobile": ["--text-accent"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--checkbox-radius": { "body": ["--radius-s"] },
   "--checkbox-size": {
@@ -575,18 +575,18 @@
   },
   "--checkbox-border-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--checkbox-border-color-hover": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--checklist-done-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--code-border-color": { "body": ["--background-modifier-border"] },
   "--code-bracket-background": { "body": ["--background-modifier-hover"] },
@@ -596,8 +596,8 @@
     "body": ["--background-primary-alt"],
     ".expressive-code .frame": ["--ec-frm-edBg"],
     ".expressive-code .frame.is-terminal": ["--ec-frm-trmBg"],
-    "body.theme-dark": ["--raw-code-bg"],
-    "body.theme-light": ["--raw-code-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-code-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-code-bg"]
   },
   "--code-normal": { "body": ["--text-normal"] },
   "--code-comment": { "body": ["--text-faint"] },
@@ -612,8 +612,8 @@
   "--code-value": { "body": ["--color-purple"] },
   "--collapse-icon-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--collapse-icon-color-collapsed": { "body": ["--text-accent"] },
   "--dialog-max-width": {
@@ -631,7 +631,7 @@
   },
   "--divider-color": { "body": ["--background-modifier-border"] },
   "--divider-color-hover": { "body": ["--interactive-accent"] },
-  "--divider-width": { "body": ["--aubade-thickness"] },
+  "--divider-width": { "body.obsidian-app": ["--aubade-thickness"] },
   "--divider-vertical-height": { "body": ["--header-height"] },
   "--dropdown-background-position": {
     "body": ["--inset-end", "--dropdown-icon-inset"]
@@ -650,7 +650,7 @@
   "--embed-block-shadow-hover": {
     "body": ["--background-modifier-border", "--background-modifier-border"]
   },
-  "--file-line-width": { "body": ["--editor-width"] },
+  "--file-line-width": { "body.obsidian-app": ["--editor-width"] },
   "--file-margins": {
     "body": ["--file-margins-y", "--file-margins-x"],
     ".mod-right-split .markdown-preview-view": ["--size-4-5"],
@@ -684,8 +684,8 @@
     ".flair.mod-pop": ["--text-on-accent"],
     ".bases-toolbar .mod-error": ["--text-on-accent"],
     ".bases-toolbar-menu .bases-toolbar-section-header": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--font-ui-smaller": { ".is-mobile": ["--font-text-size"] },
   "--font-ui-small": { ".is-mobile": ["--font-text-size"] },
@@ -717,13 +717,13 @@
   "--footnote-gap": { "body": ["--size-4-1"] },
   "--footnote-id-color-no-occurrences": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--footnote-id-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--footnote-input-background-active": {
     "body": ["--metadata-input-background-active"]
@@ -736,29 +736,29 @@
   "--footnote-size": { "body": ["--font-smaller"] },
   "--graph-text": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--graph-line": {
     "body": ["--color-base-35", "--background-modifier-border-focus"]
   },
   "--graph-node": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--graph-node-unresolved": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--graph-node-focused": { "body": ["--text-accent"] },
   "--graph-node-tag": { "body": ["--color-green"] },
   "--graph-node-attachment": { "body": ["--color-yellow"] },
   "--heading-formatting": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--heading-spacing": { "body": ["--p-spacing"] },
   "--h5-line-height": { "body": ["--line-height-normal"] },
@@ -1011,8 +1011,8 @@
     ".mobile-navbar-actions": ["--text-normal"],
     ".is-mobile .prompt-input-cta": ["--text-muted"],
     ".mobile-tab-switcher-menubar": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--icon-color-hover": {
     "body": ["--text-muted"],
@@ -1026,8 +1026,8 @@
     "body.is-tablet .sidebar-toggle-button": ["--text-normal"],
     ".mobile-navbar-actions": ["--text-normal"],
     ".mobile-tab-switcher-menubar": ["--text-normal"],
-    "body.theme-dark": ["--text-normal"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--text-normal"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--icon-color-active": {
     "body": ["--text-accent"],
@@ -1039,8 +1039,8 @@
   },
   "--icon-color-focused": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--clickable-icon-radius": {
     "body": ["--radius-s"],
@@ -1076,18 +1076,21 @@
     "body": ["--font-normal"],
     ".is-mobile": ["--font-medium"]
   },
-  "--input-border-width": { "body": ["--aubade-thickness"] },
+  "--input-border-width": {
+    "body": ["--border-width"],
+    "body.obsidian-app": ["--aubade-thickness"]
+  },
   "--input-placeholder-color": {
     "body": ["--text-faint"],
     ".bases-table-summary-cell .summary-content": ["--text-faint"],
     ".bases-td .metadata-input.mod-date": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--input-date-separator": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--input-icon-inset": {
     "body": ["--size-4-1"],
@@ -1097,14 +1100,14 @@
     "body": ["--text-accent"],
     ".bases-group-heading": ["--bases-group-heading-value-color"],
     ".bases-cards-property.mod-title": ["--text-normal"],
-    "body.theme-dark": ["--link-color-dark-custom"],
-    "body.theme-light": ["--link-color-light-custom"]
+    "html body.obsidian-app.theme-dark": ["--link-color-dark-custom"],
+    "html body.obsidian-app.theme-light": ["--link-color-light-custom"]
   },
   "--link-color-hover": {
     "body": ["--text-accent-hover"],
     ".bases-group-heading": ["--bases-group-heading-value-color"],
-    "body.theme-dark": ["--text-normal"],
-    "body.theme-light": ["--text-normal"]
+    "html body.obsidian-app.theme-dark": ["--text-normal"],
+    "html body.obsidian-app.theme-light": ["--text-normal"]
   },
   "--link-weight": {
     "body": ["--font-weight"],
@@ -1126,13 +1129,13 @@
   },
   "--link-external-color": {
     "body": ["--text-accent"],
-    "body.theme-dark": ["--link-ext-color-dark-custom"],
-    "body.theme-light": ["--link-ext-color-light-custom"]
+    "html body.obsidian-app.theme-dark": ["--link-ext-color-dark-custom"],
+    "html body.obsidian-app.theme-light": ["--link-ext-color-light-custom"]
   },
   "--link-external-color-hover": {
     "body": ["--text-accent-hover"],
-    "body.theme-dark": ["--text-normal"],
-    "body.theme-light": ["--text-normal"]
+    "html body.obsidian-app.theme-dark": ["--text-normal"],
+    "html body.obsidian-app.theme-light": ["--text-normal"]
   },
   "--link-unresolved-color": {
     "body": ["--text-accent"],
@@ -1145,13 +1148,13 @@
   "--list-indent": { "body": ["--indent-unit", "--indent-size"] },
   "--list-marker-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--list-marker-color-hover": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--list-marker-color-collapsed": { "body": ["--text-accent"] },
   "--nav-item-size": {
@@ -1166,23 +1169,23 @@
   "--nav-item-color": {
     "body": ["--text-muted"],
     ".is-mobile": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-item-color-hover": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-item-color-active": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-item-color-selected": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-item-color-highlighted": { "body": ["--text-accent"] },
   "--nav-item-background-hover": { "body": ["--background-modifier-hover"] },
@@ -1215,52 +1218,52 @@
       "--text-on-accent"
     ],
     ".sync-history-list-item-header .tree-item-flair:hover": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-collapse-icon-color-collapsed": {
     "body": ["--text-faint"],
     ".is-translucent:not(.is-fullscreen)": ["--mono-rgb-100"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-heading-color": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-heading-color-hover": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-heading-color-collapsed": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-heading-color-collapsed-hover": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-heading-weight": { "body": ["--font-medium"] },
   "--nav-heading-weight-hover": { "body": ["--font-medium"] },
   "--nav-tag-radius": { "body": ["--radius-s"] },
   "--nav-tag-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-tag-color-hover": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-tag-color-active": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--nav-tag-weight": { "body": ["--font-semibold"] },
   "--menu-padding": {
@@ -1314,13 +1317,13 @@
   },
   "--metadata-label-text-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--metadata-label-text-color-hover": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--metadata-input-height": {
     "body": ["--font-text-size"],
@@ -1328,8 +1331,8 @@
   },
   "--metadata-input-text-color": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--metadata-input-font": { "body": ["--font-interface"] },
   "--metadata-input-font-size": {
@@ -1385,16 +1388,16 @@
     ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill": [
       "--tag-color"
     ],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--pill-color-hover": {
     "body": ["--text-normal"],
     ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill": [
       "--tag-color-hover"
     ],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--pill-color-remove": {
     "body": ["--text-faint"],
@@ -1404,8 +1407,8 @@
     ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill": [
       "--tag-color"
     ],
-    "body.theme-dark": ["--raw-text-secondary"],
-    "body.theme-light": ["--raw-text-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
   },
   "--pill-color-remove-hover": {
     "body": ["--text-accent"],
@@ -1508,15 +1511,15 @@
   "--scrollbar-thumb-bg": { "body": ["--mono-rgb-100"] },
   "--search-clear-button-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--search-icon-color": {
     "body": ["--text-muted"],
     ".combobox .search-input-container": ["--text-faint"],
     ".bases-toolbar-menu-container .search-input-container": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--search-result-background": {
     "body": ["--background-primary"],
@@ -1525,8 +1528,8 @@
   "--setting-group-heading-color": {
     "body": ["--text-normal"],
     ".is-mobile": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--setting-group-heading-size": {
     "body": ["--font-ui-medium"],
@@ -1570,8 +1573,8 @@
   "--status-bar-font-size": { "body": ["--font-ui-smaller"] },
   "--status-bar-text-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--status-bar-radius": { "body": ["--radius-m"] },
   "--suggestion-background": {
@@ -1594,29 +1597,29 @@
   "--tab-background-active": { "body": ["--background-primary"] },
   "--tab-text-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--tab-text-color-active": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--tab-text-color-focused": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--tab-text-color-focused-active": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--tab-text-color-focused-highlighted": { "body": ["--text-accent"] },
   "--tab-text-color-focused-active-current": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--tab-font-size": {
     "body": ["--font-ui-small"],
@@ -1630,10 +1633,10 @@
   "--tab-divider-color": { "body": ["--background-modifier-border-hover"] },
   "--tab-outline-color": {
     "body": ["--divider-color"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
-  "--tab-outline-width": { "body": ["--aubade-thickness"] },
+  "--tab-outline-width": { "body.obsidian-app": ["--aubade-thickness"] },
   "--tab-radius": { "body": ["--radius-s"] },
   "--tab-switcher-menubar-background": { "body": ["--background-secondary"] },
   "--tab-switcher-background": { "body": ["--background-secondary"] },
@@ -1653,8 +1656,8 @@
   "--table-header-weight": { "body": ["--font-weight", "--bold-modifier"] },
   "--table-header-color": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--table-line-height": { "body": ["--line-height-tight"] },
   "--table-text-size": { "body": ["--font-text-size"] },
@@ -1673,13 +1676,13 @@
   },
   "--table-drag-handle-color": {
     "body": ["--text-faint"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--table-drag-handle-color-active": {
     "body": ["--text-on-accent"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--table-add-button-border-width": { "body": ["--table-border-width"] },
   "--table-add-button-border-color": {
@@ -1696,10 +1699,10 @@
   "--tag-border-color": { "body": ["--interactive-accent-hsl"] },
   "--tag-border-color-hover": {
     "body": ["--interactive-accent-hsl"],
-    "body.theme-dark": ["--raw-text-secondary"],
-    "body.theme-light": ["--raw-interactive"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-interactive"]
   },
-  "--tag-border-width": { "body": ["--aubade-thickness"] },
+  "--tag-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
   "--traffic-lights-offset-x": { "body": ["--header-height"] },
   "--traffic-lights-offset-y": { "body": ["--header-height"] },
   "--titlebar-background": {
@@ -1716,13 +1719,13 @@
   "--titlebar-border-color": { "body": ["--background-modifier-border"] },
   "--titlebar-text-color": {
     "body": ["--text-muted"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--titlebar-text-color-focused": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--titlebar-text-weight": { "body": ["--font-bold"] },
   "--touch-radius-xxs": { "body": ["--touch-size-xxs"] },
@@ -1735,29 +1738,29 @@
   "--vault-profile-font-weight": { "body": ["--font-medium"] },
   "--vault-profile-color": {
     "body": ["--text-normal"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--vault-profile-color-hover": {
     "body": ["--vault-profile-color"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--workspace-background-translucent": { "body": ["--mono-rgb-0"] },
   "--background-primary": {
     "body": ["--color-base-00"],
-    "body.theme-dark": ["--raw-bg-primary"],
-    "body.theme-light": ["--raw-bg-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-primary"]
   },
   "--background-primary-alt": {
     "body": ["--color-base-10"],
-    "body.theme-dark": ["--raw-bg-primary"],
-    "body.theme-light": ["--raw-bg-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-primary"]
   },
   "--background-secondary": {
     "body": ["--color-base-20"],
-    "body.theme-dark": ["--raw-bg-secondary"],
-    "body.theme-light": ["--raw-bg-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-secondary"]
   },
   "--background-modifier-hover": {
     "body": ["--mono-rgb-100"],
@@ -1765,13 +1768,13 @@
   },
   "--background-modifier-active-hover": {
     "body": ["--interactive-accent-hsl"],
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--background-modifier-border": {
     "body": ["--color-base-30"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--background-modifier-border-hover": { "body": ["--color-base-35"] },
   "--background-modifier-border-focus": {
@@ -1794,8 +1797,8 @@
     ".is-mobile": ["--interactive-normal"],
     ".is-mobile.theme-dark": ["--background-modifier-border"],
     ".is-mobile .menu": ["--interactive-normal"],
-    "body.theme-dark": ["--raw-bg-secondary"],
-    "body.theme-light": ["--raw-bg-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-secondary"]
   },
   "--background-modifier-form-field-hover": {
     "body": ["--background-modifier-form-field"],
@@ -1803,23 +1806,23 @@
   },
   "--text-normal": {
     "body": ["--color-base-100"],
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"],
-    "body.theme-dark .modal": ["--raw-text-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-dark .modal": ["--raw-text-secondary"]
   },
   "--text-muted": {
     "body": ["--color-base-70"],
-    "body.theme-dark": ["--raw-text-secondary"],
-    "body.theme-light": ["--raw-text-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
   },
   "--text-faint": {
     "body": ["--color-base-50"],
-    "body.theme-dark": ["--raw-text-secondary"],
-    "body.theme-light": ["--raw-text-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
   },
   "--text-on-accent": {
-    "body.theme-dark": ["--text-normal"],
-    "body.theme-light": ["--text-normal"]
+    "html body.obsidian-app.theme-dark": ["--raw-inverse"],
+    "html body.obsidian-app.theme-light": ["--raw-inverse"]
   },
   "--text-error": { "body": ["--color-red"] },
   "--text-warning": { "body": ["--color-orange"] },
@@ -1827,19 +1830,19 @@
   "--text-selection": {
     "body": ["--color-accent-hsl"],
     ".theme-dark": ["--interactive-accent-hsl"],
-    "body.theme-dark": ["--raw-selection-bg"],
-    "body.theme-light": ["--raw-selection-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-selection-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-selection-bg"]
   },
   "--text-highlight-bg": {
     "body": ["--text-highlight-bg-rgb"],
-    "body.theme-dark": ["--raw-highlight-bg"],
-    "body.theme-light": ["--raw-highlight-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-highlight-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-highlight-bg"]
   },
   "--text-accent": {
     "body": ["--color-accent"],
     ".theme-dark": ["--color-accent-1"],
-    "body.theme-dark": ["--raw-interactive"],
-    "body.theme-light": ["--raw-interactive"]
+    "html body.obsidian-app.theme-dark": ["--raw-interactive"],
+    "html body.obsidian-app.theme-light": ["--raw-interactive"]
   },
   "--text-accent-hover": { "body": ["--color-accent-2"] },
   "--interactive-normal": {
@@ -1849,29 +1852,34 @@
     ".is-mobile.theme-dark": ["--background-modifier-border"],
     ".is-mobile.theme-light .menu": ["--background-primary"],
     ".is-phone .modal .modal:not(.mod-lg)": ["--background-modifier-hover"],
-    "body.theme-dark": ["--background-primary"],
-    "body.theme-light": ["--background-primary"]
+    "html body.obsidian-app.theme-dark": ["--background-primary"],
+    "html body.obsidian-app.theme-light": ["--background-primary"]
   },
   "--interactive-hover": {
     "body": ["--color-base-10"],
     ".theme-dark": ["--color-base-35"],
     ".is-mobile": ["--background-modifier-border"],
     ".is-mobile.theme-dark": ["--background-modifier-border-hover"],
-    "body.theme-dark": ["--background-secondary", "--raw-hover-bg"],
-    "body.theme-light": ["--background-secondary", "--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": [
+      "--background-secondary",
+      "--raw-hover-bg"
+    ],
+    "html body.obsidian-app.theme-light": [
+      "--background-secondary",
+      "--raw-hover-bg"
+    ]
   },
   "--interactive-accent-hsl": { "body": ["--color-accent-hsl"] },
   "--interactive-accent": {
     "body": ["--color-accent-1"],
     ".theme-dark": ["--color-accent"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--interactive-accent-hover": {
     "body": ["--color-accent-2"],
     ".theme-dark": ["--color-accent-1"],
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--dropdown-background": {
     ".theme-light": ["--interactive-normal"],
@@ -1879,8 +1887,8 @@
   },
   "--dropdown-background-hover": { ".theme-light": ["--interactive-hover"] },
   "--color-base-100": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-accent-hsl": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
@@ -1889,8 +1897,8 @@
   "--color-accent": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    "body.theme-dark": ["--raw-interactive"],
-    "body.theme-light": ["--raw-interactive"]
+    "html body.obsidian-app.theme-dark": ["--raw-interactive"],
+    "html body.obsidian-app.theme-light": ["--raw-interactive"]
   },
   "--color-accent-1": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
@@ -1903,19 +1911,30 @@
   "--background-secondary-alt": {
     ".theme-light": ["--color-base-05"],
     ".theme-dark": ["--color-base-30"],
-    "body.theme-dark": ["--raw-bg-secondary"],
-    "body.theme-light": ["--raw-bg-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-secondary"]
   },
   "--shadow-xs": {
     ".theme-light": ["--shadow-edges"],
     ".theme-dark": ["--shadow-edges"]
   },
-  "--font-default": { "body": ["--font-interface-override"] },
-  "--font-interface-override": { "body": ["--user-font-ui"] },
-  "--font-interface": { "body": ["--font-interface-override"] },
-  "--font-text-override": { "body": ["--user-font-body"] },
-  "--font-text-theme": { "body": ["--font-text-override"] },
-  "--font-text": { "body": ["--font-text-override"] },
+  "--font-default": { "body.obsidian-app": ["--font-interface-override"] },
+  "--font-interface-override": { "body.obsidian-app": ["--user-font-ui"] },
+  "--font-interface": {
+    "body": [
+      "--font-interface-override",
+      "--font-interface-theme",
+      "--default-font",
+      "--font-default"
+    ],
+    "body.obsidian-app": ["--font-interface-override"]
+  },
+  "--font-text-override": { "body.obsidian-app": ["--user-font-body"] },
+  "--font-text-theme": { "body.obsidian-app": ["--font-text-override"] },
+  "--font-text": {
+    "body": ["--font-print"],
+    "body.obsidian-app": ["--font-text-override"]
+  },
   "--font-print": {
     "body": [
       "--font-print-override",
@@ -1923,8 +1942,15 @@
       "--font-text-theme"
     ]
   },
-  "--font-monospace-override": { "body": ["--user-font-mono"] },
-  "--font-monospace": { "body": ["--font-monospace-override"] },
+  "--font-monospace-override": { "body.obsidian-app": ["--user-font-mono"] },
+  "--font-monospace": {
+    "body": [
+      "--font-monospace-override",
+      "--font-monospace-theme",
+      "--font-monospace-default"
+    ],
+    "body.obsidian-app": ["--font-monospace-override"]
+  },
   "--font-mermaid": { "body": ["--font-text"] },
   "--table-drag-handle-size": {
     ".markdown-source-view.mod-cm6 .cm-table-widget": ["--size-4-4"],
@@ -2156,8 +2182,8 @@
   "--border-color": {
     ".expressive-code .ec-section summary": ["--ec-cs-closedBrdCol"],
     ".expressive-code .ec-section[open]": ["--ec-cs-openBrdCol"],
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--tmLineBgCol": {
     ".expressive-code .ec-line.mark": ["--ec-tm-markBg"],
@@ -2198,131 +2224,157 @@
   "--tooltip-bg": {
     ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
   },
-  "--font-ui": { "body": ["--font-interface-override"] },
-  "--dashboard-border-width": { "body": ["--aubade-thickness"] },
-  "--settings-border-width": { "body": ["--aubade-thickness"] },
-  "--checkbox-border-width": { "body": ["--aubade-thickness"] },
-  "--drag-border-width": { "body": ["--aubade-thickness"] },
-  "--nav-guide-border-width": { "body": ["--aubade-thickness"] },
-  "--ribbon-border-width": { "body": ["--aubade-thickness"] },
+  "--dashboard-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--settings-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--checkbox-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--drag-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--nav-guide-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--ribbon-border-width": { "body.obsidian-app": ["--aubade-thickness"] },
+  "--font-ui": { "body.obsidian-app": ["--font-interface-override"] },
+  "--top-pattern-img": {
+    "body.obsidian-app": ["--aubade-divider-color", "--aubade-divider-color"],
+    "html body.obsidian-app.pattern-solid": ["--aubade-divider-color"],
+    "html body.obsidian-app.pattern-dotted": ["--aubade-divider-color"],
+    "html body.obsidian-app.pattern-circles": ["--aubade-divider-color"],
+    "html body.obsidian-app.pattern-mesh": [
+      "--aubade-divider-color",
+      "--aubade-divider-color"
+    ]
+  },
   "--tl-dot-color": {
-    ".markdown-preview-view.custom-timeline": ["--aubade-divider-color"]
+    "html body.obsidian-app .markdown-preview-view.custom-timeline": [
+      "--aubade-divider-color"
+    ]
   },
   "--raw-text-primary": {
-    "body.theme-dark": ["--body-font-color-dark"],
-    "body.theme-light": ["--body-font-color-light"],
-    "body.theme-dark.preset-gunmetal": ["--body-font-color-dark"]
+    "html body.obsidian-app.theme-dark": ["--body-font-color-dark"],
+    "html body.obsidian-app.theme-light": ["--body-font-color-light"]
   },
   "--raw-text-secondary": {
-    "body.theme-dark": ["--ui-font-color-dark"],
-    "body.theme-light": ["--ui-font-color-light"]
+    "html body.obsidian-app.theme-dark": ["--ui-font-color-dark"],
+    "html body.obsidian-app.theme-light": ["--ui-font-color-light"]
   },
   "--view-header-background": {
-    "body.theme-dark": ["--raw-bg-primary"],
-    "body.theme-light": ["--raw-bg-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-primary"]
   },
   "--color-dot": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-text-day": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-arrow": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-button": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-text-heading": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-text-title": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-text-today": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--color-text-weeknum": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--background-modifier-selected": {
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--background-modifier-selected-hover": {
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--text-selection-color": {
-    "body.preset-gunmetal": ["--text-normal"],
-    "body.theme-dark.preset-gunmetal": ["--text-normal"]
+    "html body.obsidian-app.theme-dark": ["--text-normal"],
+    "html body.obsidian-app.theme-light": ["--text-normal"]
   },
   "--text-highlight-color": {
-    "body.theme-dark": ["--body-font-color-dark"],
-    "body.theme-dark.preset-warm": ["--body-font-color-dark"],
-    "body.theme-dark.preset-cool": ["--body-font-color-dark"],
-    "body.theme-dark.preset-mono": ["--body-font-color-dark"],
-    "body.theme-dark.preset-ocean": ["--body-font-color-dark"],
-    "body.theme-dark.preset-forest": ["--body-font-color-dark"],
-    "body.theme-dark.preset-lavender": ["--body-font-color-dark"],
-    "body.theme-dark.preset-sunset": ["--body-font-color-dark"],
-    "body.theme-dark.preset-midnight": ["--body-font-color-dark"],
-    "body.theme-dark.preset-solarized": ["--body-font-color-dark"],
-    "body.theme-dark.preset-reader": ["--body-font-color-dark"],
-    "body.theme-dark.preset-amber": ["--body-font-color-dark"]
+    "html body.obsidian-app.theme-dark.preset-warm": ["--body-font-color-dark"],
+    "html body.obsidian-app.theme-dark.preset-cool": ["--body-font-color-dark"],
+    "html body.obsidian-app.theme-dark.preset-mono": ["--body-font-color-dark"],
+    "html body.obsidian-app.theme-dark.preset-ocean": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-forest": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-lavender": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-sunset": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-midnight": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-brutalist": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-solarized": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-reader": [
+      "--body-font-color-dark"
+    ],
+    "html body.obsidian-app.theme-dark.preset-amber": ["--body-font-color-dark"]
   },
   "--aubade-divider-color": {
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
   "--aubade-shadow-color": {
-    "body.theme-dark": ["--raw-border"],
-    "body.theme-light": ["--raw-border"]
+    "html body.obsidian-app.theme-dark": ["--raw-border"],
+    "html body.obsidian-app.theme-light": ["--raw-border"]
   },
-  "--tab-active-bg-sidebar": { "body.theme-light": ["--raw-inverse"] },
+  "--tab-active-bg-sidebar": {
+    "html body.obsidian-app.theme-light": ["--raw-inverse"]
+  },
   "--tab-hover-bg-doc": {
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--tab-hover-bg-ui": {
-    "body.theme-dark": ["--raw-hover-bg"],
-    "body.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-dark": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--tab-hover-text-ui": {
-    "body.theme-dark": ["--raw-text-primary"],
-    "body.theme-light": ["--raw-text-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--mobile-navbar-bg": {
-    "body.theme-dark": ["--raw-bg-primary"],
-    "body.theme-light": ["--raw-bg-primary"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-primary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-primary"]
   },
   "--mobile-active-bg": {
-    "body.theme-dark": ["--raw-bg-secondary"],
-    "body.theme-light": ["--raw-bg-secondary"],
-    "body #calendar-container": ["--text-selection"]
+    "html body.obsidian-app.theme-dark": ["--raw-bg-secondary"],
+    "html body.obsidian-app.theme-light": ["--raw-bg-secondary"],
+    "html body.obsidian-app #calendar-container": ["--text-selection"]
   },
-  "--link-color-dark-custom": { "body.theme-dark": ["--raw-text-secondary"] },
+  "--link-color-dark-custom": {
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"]
+  },
   "--link-ext-color-dark-custom": {
-    "body.theme-dark": ["--raw-text-secondary"]
+    "html body.obsidian-app.theme-dark": ["--raw-text-secondary"]
   },
-  "--link-color-light-custom": { "body.theme-light": ["--raw-text-secondary"] },
+  "--link-color-light-custom": {
+    "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
+  },
   "--link-ext-color-light-custom": {
-    "body.theme-light": ["--raw-text-secondary"]
-  },
-  "--top-pattern-img": {
-    "body": ["--aubade-divider-color", "--aubade-divider-color"],
-    "body.pattern-solid": ["--aubade-divider-color"],
-    "body.pattern-dotted": ["--aubade-divider-color"],
-    "body.pattern-circles": ["--aubade-divider-color"],
-    "body.pattern-mesh": ["--aubade-divider-color", "--aubade-divider-color"]
+    "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
   },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },

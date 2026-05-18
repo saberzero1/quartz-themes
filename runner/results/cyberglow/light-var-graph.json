@@ -1083,28 +1083,36 @@
   "--nav-item-color": {
     "body": ["--text-muted"],
     ".is-mobile": ["--text-normal"],
-    ".theme-dark": ["--cg-text-muted"]
+    ".theme-dark": ["--cg-text-muted"],
+    ".theme-light": ["--cg-text-muted"]
   },
   "--nav-item-color-hover": {
     "body": ["--text-normal"],
-    ".theme-dark": ["--cg-primary"]
+    ".theme-dark": ["--cg-primary"],
+    ".theme-light": ["--cg-text"]
   },
   "--nav-item-color-active": {
     "body": ["--text-normal"],
-    ".theme-dark": ["--cg-primary"]
+    ".theme-dark": ["--cg-primary"],
+    ".theme-light": ["--cg-primary"]
   },
   "--nav-item-color-selected": {
     "body": ["--text-normal"],
     ".theme-dark": ["--cg-primary"]
   },
-  "--nav-item-color-highlighted": { "body": ["--text-accent"] },
+  "--nav-item-color-highlighted": {
+    "body": ["--text-accent"],
+    ".theme-light": ["--cg-primary"]
+  },
   "--nav-item-background-hover": {
     "body": ["--background-modifier-hover"],
-    ".theme-dark": ["--cg-primary-rgb"]
+    ".theme-dark": ["--cg-primary-rgb"],
+    ".theme-light": ["--cg-primary", "--cg-bg-primary"]
   },
   "--nav-item-background-active": {
     "body": ["--background-modifier-hover"],
-    ".theme-dark": ["--cg-primary-rgb"]
+    ".theme-dark": ["--cg-primary-rgb"],
+    ".theme-light": ["--cg-primary", "--cg-bg-primary"]
   },
   "--nav-item-background-selected": {
     "body": ["--color-accent-hsl"],
@@ -1460,22 +1468,36 @@
   "--tab-background-active": {
     "body": ["--background-primary"],
     ".workspace-tabs:not(.mod-stacked)": ["--cg-bg-primary"],
+    ".theme-light .workspace-tabs:not(.mod-stacked)": [
+      "--cg-primary",
+      "--cg-bg-primary"
+    ],
     "body.cg-tab-floating .workspace-tabs:not(.mod-stacked)": [
+      "--cg-bg-primary"
+    ],
+    "body.cg-tab-floating.theme-light .workspace-tabs:not(.mod-stacked)": [
+      "--cg-primary",
       "--cg-bg-primary"
     ]
   },
   "--tab-text-color": {
     "body": ["--text-faint"],
-    ".theme-dark": ["--cg-secondary"]
+    ".theme-dark": ["--cg-secondary"],
+    ".theme-light": ["--cg-text-muted"]
   },
-  "--tab-text-color-active": { "body": ["--text-muted"] },
+  "--tab-text-color-active": {
+    "body": ["--text-muted"],
+    ".theme-light": ["--cg-primary"]
+  },
   "--tab-text-color-focused": {
     "body": ["--text-muted"],
-    ".theme-dark": ["--cg-primary-rgb"]
+    ".theme-dark": ["--cg-primary-rgb"],
+    ".theme-light": ["--cg-text"]
   },
   "--tab-text-color-focused-active": {
     "body": ["--text-muted"],
-    ".theme-dark": ["--cg-primary"]
+    ".theme-dark": ["--cg-primary"],
+    ".theme-light": ["--cg-primary"]
   },
   "--tab-text-color-focused-highlighted": { "body": ["--text-accent"] },
   "--tab-text-color-focused-active-current": {
@@ -1574,6 +1596,7 @@
   "--background-primary": {
     "body": ["--color-base-00"],
     ".theme-dark": ["--cg-bg-primary"],
+    ".theme-light": ["--cg-bg-secondary"],
     "body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content:not([data-type=\"file-explorer\"])": [
       "--cg-card-fg"
     ]
@@ -1581,6 +1604,7 @@
   "--background-primary-alt": {
     "body": ["--color-base-10"],
     ".theme-dark": ["--cg-bg-primary"],
+    ".theme-light": ["--cg-bg-primary"],
     "body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content:not([data-type=\"file-explorer\"])": [
       "--cg-card-fg"
     ]
@@ -1588,6 +1612,7 @@
   "--background-secondary": {
     "body": ["--color-base-20"],
     ".theme-dark": ["--cg-bg-primary"],
+    ".theme-light": ["--cg-bg-primary"],
     "body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content:not([data-type=\"file-explorer\"])": [
       "--cg-card-fg"
     ]
@@ -1601,7 +1626,8 @@
   },
   "--background-modifier-border": {
     "body": ["--color-base-30"],
-    ".theme-dark": ["--cg-primary-rgb"]
+    ".theme-dark": ["--cg-primary-rgb"],
+    ".theme-light": ["--cg-border"]
   },
   "--background-modifier-border-hover": {
     "body": ["--color-base-35"],
@@ -1635,15 +1661,18 @@
   },
   "--text-normal": {
     "body": ["--color-base-100"],
-    ".theme-dark": ["--cg-text"]
+    ".theme-dark": ["--cg-text"],
+    ".theme-light": ["--cg-text"]
   },
   "--text-muted": {
     "body": ["--color-base-70"],
-    ".theme-dark": ["--cg-text-muted"]
+    ".theme-dark": ["--cg-text-muted"],
+    ".theme-light": ["--cg-text-muted"]
   },
   "--text-faint": {
     "body": ["--color-base-50"],
-    ".theme-dark": ["--cg-text-faint"]
+    ".theme-dark": ["--cg-text-faint"],
+    ".theme-light": ["--cg-text-faint"]
   },
   "--text-error": { "body": ["--color-red"] },
   "--text-warning": { "body": ["--color-orange"] },
@@ -1655,11 +1684,13 @@
   "--text-highlight-bg": { "body": ["--text-highlight-bg-rgb"] },
   "--text-accent": {
     "body": ["--color-accent"],
-    ".theme-dark": ["--cg-primary"]
+    ".theme-dark": ["--cg-primary"],
+    ".theme-light": ["--cg-primary"]
   },
   "--text-accent-hover": {
     "body": ["--color-accent-2"],
-    ".theme-dark": ["--cg-secondary"]
+    ".theme-dark": ["--cg-secondary"],
+    ".theme-light": ["--cg-secondary"]
   },
   "--interactive-normal": {
     "body": ["--color-base-00"],
@@ -1667,22 +1698,26 @@
     ".is-mobile": ["--background-secondary"],
     ".is-mobile.theme-dark": ["--background-modifier-border"],
     ".is-mobile.theme-light .menu": ["--background-primary"],
-    ".is-phone .modal .modal:not(.mod-lg)": ["--background-modifier-hover"]
+    ".is-phone .modal .modal:not(.mod-lg)": ["--background-modifier-hover"],
+    ".theme-light": ["--cg-bg-tertiary"]
   },
   "--interactive-hover": {
     "body": ["--color-base-10"],
     ".theme-dark": ["--cg-bg-tertiary"],
     ".is-mobile": ["--background-modifier-border"],
-    ".is-mobile.theme-dark": ["--background-modifier-border-hover"]
+    ".is-mobile.theme-dark": ["--background-modifier-border-hover"],
+    ".theme-light": ["--cg-primary", "--cg-bg-secondary"]
   },
   "--interactive-accent-hsl": { "body": ["--color-accent-hsl"] },
   "--interactive-accent": {
     "body": ["--color-accent-1"],
-    ".theme-dark": ["--cg-primary"]
+    ".theme-dark": ["--cg-primary"],
+    ".theme-light": ["--cg-primary"]
   },
   "--interactive-accent-hover": {
     "body": ["--color-accent-2"],
-    ".theme-dark": ["--cg-secondary"]
+    ".theme-dark": ["--cg-secondary"],
+    ".theme-light": ["--cg-secondary"]
   },
   "--dropdown-background": {
     ".theme-light": ["--interactive-normal"],
@@ -1706,7 +1741,7 @@
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
   },
   "--background-secondary-alt": {
-    ".theme-light": ["--color-base-05"],
+    ".theme-light": ["--cg-bg-tertiary"],
     ".theme-dark": ["--cg-bg-primary"],
     "body.cg-card-layout .workspace-split.mod-left-split .workspace-leaf-content:not([data-type=\"file-explorer\"])": [
       "--cg-card-fg"
@@ -2012,11 +2047,39 @@
   },
   "--cg-primary": { ".theme-dark": ["--cg-primary-color"] },
   "--cg-secondary": { ".theme-dark": ["--cg-secondary-color"] },
-  "--cg-active": { ".theme-dark": ["--cg-active-color"] },
+  "--cg-active": {
+    ".theme-dark": ["--cg-active-color"],
+    ".theme-light": ["--cg-secondary"]
+  },
+  "--cg-active-rgb": { ".theme-light": ["--cg-secondary-rgb"] },
+  "--cg-border-faint": { ".theme-dark": ["--cg-primary-rgb"] },
+  "--cg-border": { ".theme-dark": ["--cg-primary-rgb"] },
+  "--cg-border-strong": { ".theme-dark": ["--cg-primary-rgb"] },
+  "--cg-card-bg": {
+    ".theme-dark": ["--cg-bg-primary"],
+    "body.cg-card-layout": ["--cg-bg-primary"]
+  },
+  "--cg-card-fg": {
+    ".theme-dark": ["--cg-bg-secondary"],
+    "body.cg-card-layout": ["--cg-bg-secondary"],
+    "body.cg-card-layout.theme-light": ["--cg-primary", "--cg-bg-primary"]
+  },
+  "--cg-card-outline-color": {
+    ".theme-dark": ["--cg-primary-rgb"],
+    "body.cg-card-layout": ["--cg-primary-rgb"]
+  },
   "--tab-background": {
     ".workspace-tabs:not(.mod-stacked)": ["--cg-bg-secondary"],
+    ".theme-light .workspace-tabs:not(.mod-stacked)": [
+      "--cg-primary",
+      "--cg-bg-primary"
+    ],
     "body.cg-tab-floating .workspace-tabs:not(.mod-stacked)": [
       "--cg-bg-secondary"
+    ],
+    "body.cg-tab-floating.theme-light .workspace-tabs:not(.mod-stacked)": [
+      "--cg-primary",
+      "--cg-bg-primary"
     ]
   },
   "--tab-height": {
@@ -2024,9 +2087,6 @@
       "--header-height"
     ]
   },
-  "--cg-card-outline-color": { "body.cg-card-layout": ["--cg-primary-rgb"] },
-  "--cg-card-bg": { "body.cg-card-layout": ["--cg-bg-primary"] },
-  "--cg-card-fg": { "body.cg-card-layout": ["--cg-bg-secondary"] },
   "--cg-card-radius": { "body.cg-card-layout": ["--radius-xl"] },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },

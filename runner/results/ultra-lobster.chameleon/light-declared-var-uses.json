@@ -298,7 +298,6 @@
     "color": "var(--text-normal)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -316,6 +315,7 @@
     "box-shadow": "0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b/0.1),\n        inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.65),\n        inset -1px -1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.06),\n        0 0 0 1px rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -430,6 +430,11 @@
     "font-family": "var(--font-monospace)",
     "font-size": "var(--code-size)"
   },
+  ".file-embed": {
+    "background-color": "rgb(from var(--color-base-25) r g b/0.6)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
+  },
   "div.multi-select-pill": {
     "background-color": "var(--pill-background)",
     "color": "var(--text-normal)",
@@ -445,13 +450,6 @@
     "font-weight": "var(--pill-weight)",
     "line-height": "var(--line-height-tight)",
     "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "color": "var(--color-accent)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--link-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "background-color": "rgb(from var(--mono-rgb-100) r g b/0.05)",
@@ -554,6 +552,13 @@
     "filter": "var(--link-external-filter)",
     "font-weight": "var(--link-weight)",
     "text-decoration-line": "var(--link-external-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--color-accent)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--link-weight)",
+    "text-decoration-line": "var(--link-decoration)",
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {

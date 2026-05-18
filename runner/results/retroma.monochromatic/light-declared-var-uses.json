@@ -449,6 +449,7 @@
     "background-color": "rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },

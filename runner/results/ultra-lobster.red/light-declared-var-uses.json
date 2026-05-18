@@ -242,9 +242,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
@@ -494,6 +496,7 @@
     "box-shadow": "0 8px 24px -6px rgb(from var(--mono-rgb-100) r g b/0.05),\n        inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.6),\n        inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.1),\n        0 0 0 1px rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-help-circle.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -541,8 +544,13 @@
     "font-style": "var(--embed-font-style)"
   },
   ".markdown-embed": {
-    "background-color": "var(--embed-background)",
+    "background-color": "rgb(from var(--color-base-25) r g b/0.6)",
     "font-style": "var(--embed-font-style)"
+  },
+  ".file-embed": {
+    "background-color": "rgb(from var(--color-base-25) r g b/0.6)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -599,32 +607,5 @@
   "li.task-list-item[data-task=\"w\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  ".canvas-node-content": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
-  },
-  ".canvas-node-container .markdown-rendered": {
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "calc(var(--font-text-size) * var(--responsive-text, 1em) / 1em)",
-    "font-weight": "var(--ulu-body-weight, 400)",
-    "line-height": "var(--line-height-normal)"
-  },
-  ".canvas-card-menu": {
-    "background-color": "rgba(var(--canvas-card-base), 0.05)",
-    "box-shadow": "0 12px 24px -6px rgb(from var(--mono-rgb-100) r g b/0.15),\n        0 4px 12px -2px rgb(from var(--mono-rgb-100) r g b/0.15),\n        inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),\n        inset -1px -1px 0 0 rgba(var(--canvas-card-base), 0.25),\n        0 0 0 1px rgba(var(--canvas-card-base), 0.4)",
-    "font-size": "var(--font-ui-medium)"
   }
 }

@@ -872,6 +872,7 @@
     "--hue-1": "body",
     "--font-brightness": "body",
     "--readable-line-width": "body",
+    "--nn-theme-foreground": "body",
     "--nn-theme-calendar-day-active-border-color": "body",
     "--nn-theme-calendar-day-today-bg": "body",
     "--nn-theme-calendar-day-today-color": "body",
@@ -897,6 +898,8 @@
     "--lightness-offset": ".theme-light",
     "--dynamic-switch-graph": ".theme-light",
     "--checkbox-marker-color-hover": "body",
+    "--ui-normal": ".theme-light",
+    "--ui-hover": ".theme-light",
     "--internal-link-decoration-style": "body.link-wavy",
     "--bases-embed-width-override": "body",
     "--code-background-mm": "body"
@@ -1350,6 +1353,7 @@
     "--analogous": "body",
     "--hue-2": "body",
     "--hue-1": "body",
+    "--nn-theme-foreground": "body",
     "--nn-theme-calendar-day-active-border-color": "body",
     "--nn-theme-calendar-day-today-bg": "body",
     "--nn-theme-calendar-day-today-color": "body",
@@ -1369,6 +1373,8 @@
     "--lightness-offset": ".theme-light",
     "--dynamic-switch-graph": ".theme-light",
     "--checkbox-marker-color-hover": "body",
+    "--ui-normal": ".theme-light",
+    "--ui-hover": ".theme-light",
     "--code-background-mm": "body"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1899,6 +1905,7 @@
     "--analogous": "body",
     "--hue-2": "body",
     "--hue-1": "body",
+    "--nn-theme-foreground": "body",
     "--nn-theme-calendar-day-active-border-color": "body",
     "--nn-theme-calendar-day-today-bg": "body",
     "--nn-theme-calendar-day-today-color": "body",
@@ -1918,6 +1925,8 @@
     "--lightness-offset": ".theme-light",
     "--dynamic-switch-graph": ".theme-light",
     "--checkbox-marker-color-hover": "body",
+    "--ui-normal": ".theme-light",
+    "--ui-hover": ".theme-light",
     "--code-background-mm": "body"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
@@ -2047,6 +2056,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout",
     "--callout-icon": ".callout"
@@ -2067,6 +2077,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"abstract\"]",
     "--callout-icon": ".callout[data-callout=\"abstract\"]"
@@ -2078,6 +2089,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"info\"]",
     "--callout-icon": ".callout[data-callout=\"info\"]"
@@ -2089,6 +2101,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"todo\"]",
     "--callout-icon": ".callout[data-callout=\"todo\"]"
@@ -2100,6 +2113,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"tip\"]",
     "--callout-icon": ".callout[data-callout=\"tip\"]"
@@ -2111,6 +2125,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"success\"]",
     "--callout-icon": ".callout[data-callout=\"success\"]"
@@ -2122,6 +2137,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"question\"]",
     "--callout-icon": ".callout[data-callout=\"question\"]"
@@ -2133,6 +2149,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"warning\"]",
     "--callout-icon": ".callout[data-callout=\"warning\"]"
@@ -2143,6 +2160,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"danger\"]",
     "--callout-icon": ".callout[data-callout=\"danger\"]"
@@ -2154,6 +2172,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"failure\"]",
     "--callout-icon": ".callout[data-callout=\"failure\"]"
@@ -2164,6 +2183,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"bug\"]",
     "--callout-icon": ".callout[data-callout=\"bug\"]"
@@ -2175,6 +2195,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"example\"]",
     "--callout-icon": ".callout[data-callout=\"example\"]"
@@ -2185,6 +2206,7 @@
     "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
+    "--callout-blend-mode": ".callout",
     "--table-border-color": ".callout",
     "--callout-color": ".callout[data-callout=\"quote\"]",
     "--callout-icon": ".callout[data-callout=\"quote\"]"

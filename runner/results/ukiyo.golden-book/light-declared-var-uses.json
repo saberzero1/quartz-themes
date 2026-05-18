@@ -409,7 +409,6 @@
   },
   "div.callout-content": { "background-color": "var(--background-secondary)" },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },

@@ -2,7 +2,7 @@
  * ╔═══════════════════════════════════════════════════════════╗
  * ║                      C Y B E R G L O W                    ║
  * ║              An Obsidian Theme by DevM0nk3y               ║
- * ║                        v1.0.3                             ║
+ * ║                        v2.0.0                             ║
  * ╚═══════════════════════════════════════════════════════════╝
  *
  * Sections:
@@ -250,6 +250,24 @@ settings:
   --cg-text-muted: #8888a0;
   --cg-text-faint: #555570;
 
+  /* Borders */
+  --cg-border-faint: rgba(var(--cg-primary-rgb), 0.08);
+  --cg-border: rgba(var(--cg-primary-rgb), 0.15);
+  --cg-border-strong: rgba(var(--cg-primary-rgb), 0.25);
+
+  /* Card defaults */
+  --cg-card-bg: var(--cg-bg-primary);
+  --cg-card-fg: var(--cg-bg-secondary);
+  --cg-card-outline-color: rgba(var(--cg-primary-rgb), 0.08);
+
+  /* Heading gradient stops */
+  --cg-h1: #00FFFF;
+  --cg-h2: #00D4FF;
+  --cg-h3: #00AAFF;
+  --cg-h4: #8B87FF;
+  --cg-h5: #CC44CC;
+  --cg-h6: #FF00FF;
+
   /* Mapping to Obsidian variables — entire shell uses the same background */
   --background-primary: var(--cg-bg-primary);
   --background-primary-alt: var(--cg-bg-primary);
@@ -316,6 +334,113 @@ settings:
   --scrollbar-bg: transparent;
   --scrollbar-thumb-bg: rgba(var(--cg-primary-rgb), 0.15);
   --scrollbar-active-thumb-bg: rgba(var(--cg-primary-rgb), 0.3);
+}
+
+.theme-light {
+
+  /* ---- Accents ----------------------------------------- */
+  --cg-primary:             #009FB8;
+  --cg-primary-rgb:         0, 159, 184;
+  --cg-secondary:           #C4119B;
+  --cg-secondary-rgb:       196, 17, 155;
+
+  /* ---- Backgrounds ------------------------------------- */
+  --cg-bg-primary:          #F5F5FA;
+  --cg-bg-secondary:        #FFFFFF;
+  --cg-bg-tertiary:         #FAFAFF;
+  --cg-code-bg:             #0A0A0F;
+  --cg-code-text:           #E0E0E8;
+  --code-background:        #0A0A0F;
+
+  /* ---- Text -------------------------------------------- */
+  --cg-text:                #1A1A25;
+  --cg-text-muted:          #5A5A70;
+  --cg-text-faint:          #9090A8;
+
+  /* ---- Borders ----------------------------------------- */
+  --cg-border-faint:        rgba(0, 159, 184, 0.10);
+  --cg-border:              rgba(0, 159, 184, 0.18);
+  --cg-border-strong:       rgba(0, 159, 184, 0.30);
+
+  /* ---- Cards ------------------------------------------- */
+  --cg-card-bg:             #FFFFFF;
+  --cg-card-fg:             #F5F5FA;
+  --cg-card-outline-color:  rgba(0, 159, 184, 0.15);
+
+  /* ---- Heading gradient stops -------------------------- */
+  --cg-h1: #009FB8;
+  --cg-h2: #1F8AC0;
+  --cg-h3: #4E72C2;
+  --cg-h4: #7C5BBE;
+  --cg-h5: #A33CB1;
+  --cg-h6: #C4119B;
+
+  /* ---- Obsidian core mappings -------------------------- */
+  --background-primary:          var(--cg-bg-secondary);
+  --background-primary-alt:      var(--cg-bg-primary);
+  --background-secondary:        var(--cg-bg-primary);
+  --background-secondary-alt:    var(--cg-bg-tertiary);
+  --background-modifier-border:  var(--cg-border);
+  --text-normal:                 var(--cg-text);
+  --text-muted:                  var(--cg-text-muted);
+  --text-faint:                  var(--cg-text-faint);
+  --text-accent:                 var(--cg-primary);
+  --text-accent-hover:           var(--cg-secondary);
+  --interactive-accent:          var(--cg-primary);
+  --interactive-accent-hover:    var(--cg-secondary);
+
+  /* ---- Active state ------------------------------------ */
+  --cg-active:              var(--cg-secondary);
+  --cg-active-rgb:          var(--cg-secondary-rgb);
+
+  /* ---- Interactive ------------------------------------- */
+  --interactive-normal:     var(--cg-bg-tertiary);
+  --interactive-hover:      color-mix(in srgb, var(--cg-primary) 8%, var(--cg-bg-secondary));
+  --text-on-accent:         #FFFFFF;
+
+  /* ---- Nav items --------------------------------------- */
+  --nav-item-color:                var(--cg-text-muted);
+  --nav-item-color-hover:          var(--cg-text);
+  --nav-item-color-active:         var(--cg-primary);
+  --nav-item-color-highlighted:    var(--cg-primary);
+  --nav-item-background-hover:     color-mix(in srgb, var(--cg-primary) 8%, var(--cg-bg-primary));
+  --nav-item-background-active:    color-mix(in srgb, var(--cg-primary) 12%, var(--cg-bg-primary));
+  --nav-item-weight-hover:         inherit;
+  --nav-item-weight-active:        600;
+
+  /* ---- Tabs -------------------------------------------- */
+  --tab-text-color:                var(--cg-text-muted);
+  --tab-text-color-focused:        var(--cg-text);
+  --tab-text-color-active:         var(--cg-primary);
+  --tab-text-color-focused-active: var(--cg-primary);
+
+  /* ---- Scrollbar --------------------------------------- */
+  --scrollbar-bg:           transparent;
+  --scrollbar-thumb-bg:     rgba(0, 159, 184, 0.25);
+  --scrollbar-active-thumb-bg: rgba(0, 159, 184, 0.45);
+
+  /* ---- Color base scale (light: 00=lightest, 100=darkest) */
+  --color-base-00:  #F5F5FA;
+  --color-base-05:  #EFEFF5;
+  --color-base-10:  #E8E8F0;
+  --color-base-20:  #DCDCE8;
+  --color-base-25:  #D0D0E0;
+  --color-base-30:  #C4C4D8;
+  --color-base-35:  #B0B0C8;
+  --color-base-40:  #9090A8;
+  --color-base-50:  #6B6B85;
+  --color-base-60:  #5A5A70;
+  --color-base-70:  #474760;
+  --color-base-100: #1A1A25;
+
+  /* ---- Accent HSL (Obsidian internal) ------------------ */
+  --accent-h: 190;
+  --accent-s: 100%;
+  --accent-l: 36%;
+
+  .callout .callout-content {
+    color: var(--text-normal);
+  }
 }
 
 /* Background intensity variants */
@@ -389,6 +514,11 @@ settings:
   --tab-font-size: 12px;
   --tab-height: 28px;
   --tab-max-width: 200px;
+}
+
+.theme-light .workspace-tabs:not(.mod-stacked) {
+  --tab-background:        color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+  --tab-background-active: color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
 }
 
 .mod-vertical:not(.mod-left-split):not(.mod-right-split) .workspace-tabs:not(.mod-stacked) .workspace-tab-header-container-inner,
@@ -726,6 +856,10 @@ body.cg-card-layout {
   --tab-container-background: var(--cg-card-bg);
   --ribbon-padding: 0;
 }
+body.cg-card-layout.theme-light {
+  --cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  --cg-card-fg:     color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+}
 
 /* Workspace and container — background of the "canvas" behind cards */
 body.cg-card-layout .workspace,
@@ -899,6 +1033,9 @@ body.cg-card-layout .mod-root .workspace-leaf-content .view-content {
   background-color: color-mix(in srgb, var(--cg-bg-secondary) 80%, black);
   color: var(--cg-text-faint);
 }
+.theme-light .status-bar {
+  background-color: color-mix(in srgb, var(--cg-primary) 12%, var(--cg-bg-primary));
+}
 .cg-status-bar .status-bar {
   display: flex;
 }
@@ -954,6 +1091,11 @@ textarea:focus {
   background-color: var(--cg-bg-tertiary);
   color: var(--cg-text);
   border: 1px solid rgba(var(--cg-primary-rgb), 0.1);
+}
+
+/* Tooltip — light mode overrides */
+.theme-light .tooltip {
+  color: var(--cg-secondary);
 }
 
 /* Selection highlight */
@@ -1204,17 +1346,17 @@ em, .cm-em { color: var(--cg-text); }
 
 /* Headings with neon gradient */
 .cg-colored-headings .markdown-rendered h1,
-.cg-colored-headings .cm-header-1 { color: #00FFFF; }
+.cg-colored-headings .cm-header-1 { color: var(--cg-h1); }
 .cg-colored-headings .markdown-rendered h2,
-.cg-colored-headings .cm-header-2 { color: #33CCFF; }
+.cg-colored-headings .cm-header-2 { color: var(--cg-h2); }
 .cg-colored-headings .markdown-rendered h3,
-.cg-colored-headings .cm-header-3 { color: #6699FF; }
+.cg-colored-headings .cm-header-3 { color: var(--cg-h3); }
 .cg-colored-headings .markdown-rendered h4,
-.cg-colored-headings .cm-header-4 { color: #9966FF; }
+.cg-colored-headings .cm-header-4 { color: var(--cg-h4); }
 .cg-colored-headings .markdown-rendered h5,
-.cg-colored-headings .cm-header-5 { color: #CC33FF; }
+.cg-colored-headings .cm-header-5 { color: var(--cg-h5); }
 .cg-colored-headings .markdown-rendered h6,
-.cg-colored-headings .cm-header-6 { color: #FF00FF; }
+.cg-colored-headings .cm-header-6 { color: var(--cg-h6); }
 
 /* Frontmatter / Note Properties */
 .metadata-container {
@@ -1227,6 +1369,23 @@ em, .cm-em { color: var(--cg-text); }
 }
 .metadata-property-value {
   color: var(--cg-text);
+}
+.theme-light .metadata-container {
+  background-color: color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+  border: 1px solid var(--cg-border-strong);
+}
+
+.theme-light .metadata-property-key input,
+.theme-light .metadata-property-key .metadata-property-key-input {
+  background-color: color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+  border: 1px solid var(--cg-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+.theme-light .metadata-property-icon {
+  background-color: color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+  border-radius: 4px;
 }
 
 /* -----------------------------------------------
@@ -1277,6 +1436,10 @@ em, .cm-em { color: var(--cg-text); }
   background-color: rgba(var(--callout-color), 0.05);
   border-radius: 8px;
   border: none;
+}
+
+.theme-light .callout {
+  --callout-color: 0, 159, 184;
 }
 
 .callout-title {
@@ -1455,8 +1618,13 @@ input[type="range"] {
   stroke: rgba(var(--cg-primary-rgb), 0.5);
 }
 
-/* Hover over the X itself (any tab state) → magenta */
-.workspace-tab-header-inner-close-button:hover svg {
+/* Hover over the X itself (any tab state) → magenta, scoped per theme */
+.theme-dark .workspace-tab-header-inner-close-button:hover svg {
+  color: var(--cg-secondary);
+  stroke: var(--cg-secondary);
+}
+
+.theme-light .workspace-tab-header-inner-close-button:hover svg {
   color: var(--cg-secondary);
   stroke: var(--cg-secondary);
 }
@@ -1496,6 +1664,11 @@ body.cg-tab-floating .workspace-tabs:not(.mod-stacked) {
   --tab-height: calc(var(--header-height) * 0.7);
   --tab-max-width: 200px;
   --tab-max-width-active: 300px;
+}
+
+body.cg-tab-floating.theme-light .workspace-tabs:not(.mod-stacked) {
+  --tab-background:        color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
+  --tab-background-active: color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));
 }
 
 body.cg-tab-floating .workspace-tabs:not(.mod-stacked) .workspace-tab-header::before,
@@ -1656,6 +1829,7 @@ body:not(.cg-card-layout) .workspace-split.mod-root .workspace-leaf {
 .cm-editor {
   border: none;
 }
+
 
 /* Remove focus ring that can look like a border bar */
 body:not(.cg-card-layout) .workspace-leaf.mod-active .workspace-leaf-content {

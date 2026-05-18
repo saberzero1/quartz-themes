@@ -4219,7 +4219,7 @@ body {
   }
 
   .spacer {
-    background-color: var(--surface);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   ul.overflow {
@@ -9066,7 +9066,7 @@ html[saved-theme="dark"] {
     }
 
     .spacer {
-      background-color: var(--surface);
+      background-color: rgba(0, 0, 0, 0);
     }
 
     ul.overflow {

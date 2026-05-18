@@ -3,14 +3,14 @@
   font-family: "AdwaitaSans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/cosmical/adwaitasans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/cosmical/adwaitasans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "AdwaitaSans";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.0/fonts/cosmical/adwaitasans-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/cosmical/adwaitasans-1.woff2")
     format("woff2");
 }
 body.theme-light {

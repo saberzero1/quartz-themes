@@ -44,11 +44,11 @@
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.95) calc(c * 0.5) h) !important;
+  --code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.95 * var(--font-brightness)) calc(c * 0.5) h) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: oklch(from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95) calc(c * 0.3) h) !important;
+  --code-normal: oklch(from var(--code-background) clamp(0.15, calc(1 - l) + 0.1, 0.95 * var(--font-brightness)) calc(c * 0.3) h) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -142,11 +142,11 @@
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.8) calc(c * 0.5) h) !important;
+  --code-comment: oklch(from var(--code-background) clamp(0.45, calc(1 - l), 0.8 * var(--font-brightness)) calc(c * 0.5) h) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: oklch(from var(--code-background) clamp(0.2, calc(1 - l) + 0.1, 0.8) calc(c * 0.3) h) !important;
+  --code-normal: oklch(from var(--code-background) clamp(0.2, calc(1 - l) + 0.1, 0.8 * var(--font-brightness)) calc(c * 0.3) h) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -210,8 +210,8 @@ html[saved-theme="light"] body {
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {
-  --qt-code-header: oklch(0.9 0.0387562 268.43 / 0.95);
-  --qt-code-default: oklch(0.8 0.0645936 268.43 / 0.8);
+  --qt-code-header: oklch(0.9 0.0775124 268.43);
+  --qt-code-default: oklch(0.8 0.0775124 268.43);
   --qt-code-background: oklch(0.25 0.10335 268.43 / 0.9);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
@@ -6253,12 +6253,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.center,
     .page > div#quartz-body footer {
       background-color: var(--background-primary);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .page > div#quartz-body div.sidebar {
       background-color: var(--background-secondary);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     &[data-slug] div#quartz-root.page,
@@ -6266,12 +6266,12 @@ html[saved-theme="dark"] {
     .page > div#quartz-body div.sidebar.left:has(.explorer),
     .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
       background-color: var(--tab-container-background);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .page > div#quartz-body div.sidebar.right {
       background-color: var(--tab-container-background);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-left: 0px oklch(0.5 0.129187 268.43 / 0.5);
     }
 
@@ -6289,9 +6289,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: var(--link-weight);
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: underline;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -6318,8 +6318,8 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: var(--link-weight);
-      outline: oklch(0.8 0.0645936 268.43 / 0.8) none 0px;
-      text-decoration: underline wavy oklch(0.7 0.0645936 268.43 / 0.7);
+      outline: oklch(0.8 0.0775124 268.43) none 0px;
+      text-decoration: underline wavy oklch(0.7 0.0775124 268.43);
       text-decoration-color: var(--text-faint);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: wavy;
@@ -6346,7 +6346,7 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: var(--link-weight);
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: underline wavy rgb(255, 0, 0);
       text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
@@ -6391,9 +6391,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
-      outline: oklch(0.8 0.0645936 268.43 / 0.8) none 0px;
+      outline: oklch(0.8 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      text-decoration-color: oklch(0.8 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6419,9 +6419,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6447,9 +6447,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6475,9 +6475,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6503,9 +6503,9 @@ html[saved-theme="dark"] {
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6606,8 +6606,8 @@ html[saved-theme="dark"] {
       cursor: grab;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 600;
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-style: solid;
       transition: all;
       user-select: text;
@@ -6647,16 +6647,16 @@ html[saved-theme="dark"] {
 
     del {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       cursor: grab;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: line-through;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: line-through;
       text-decoration-style: solid;
       transition: all;
@@ -6684,12 +6684,12 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: var(--background-modifier-hover);
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6698,7 +6698,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     hr {
@@ -6749,7 +6749,7 @@ html[saved-theme="dark"] {
     }
 
     ul > li {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-align: start;
       list-style-type: "​";
       list-style-position: outside;
@@ -6786,7 +6786,7 @@ html[saved-theme="dark"] {
     }
 
     ol > li {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-align: start;
       list-style-type: "​";
       list-style-position: outside;
@@ -6824,7 +6824,7 @@ html[saved-theme="dark"] {
 
     code {
       background-color: var(--code-background);
-      border: 0px solid oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px solid oklch(0.8 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6887,7 +6887,7 @@ html[saved-theme="dark"] {
 
     input[type="checkbox"] {
       appearance: auto;
-      border: 1px solid oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 1px solid oklch(0.8 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6979,7 +6979,7 @@ html[saved-theme="dark"] {
 
     .search > .search-container > .search-space > input {
       background-color: rgba(0, 0, 0, 0);
-      border: 0px inset oklch(0.9 0.0129187 268.43);
+      border: 0px inset oklch(0.9 0.0775124 268.43);
       border-bottom: 1px solid oklch(0.167493 0.129187 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6994,16 +6994,16 @@ html[saved-theme="dark"] {
 
     .search > .search-container > .search-space > * {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       cursor: auto;
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
-      outline: oklch(0.9 0.0129187 268.43) none 0px;
+      outline: oklch(0.9 0.0775124 268.43) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -7033,13 +7033,13 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
@@ -7050,7 +7050,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     h1 {
@@ -7075,7 +7075,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.95);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7108,7 +7108,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.9);
+      border: 0px oklch(0.85 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7141,7 +7141,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.85);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7174,7 +7174,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.8);
+      border: 0px oklch(0.75 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7207,7 +7207,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.7);
+      border: 0px oklch(0.7 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7240,7 +7240,7 @@ html[saved-theme="dark"] {
       margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.6);
+      border: 0px oklch(0.6 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7274,7 +7274,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7697,7 +7697,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7726,7 +7726,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7739,7 +7739,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(2, 122, 255, 0.5);
       border-top-left-radius: 0px;
@@ -7756,7 +7756,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7785,7 +7785,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7798,7 +7798,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(83, 223, 221, 0.5);
       border-top-left-radius: 0px;
@@ -7815,7 +7815,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7844,7 +7844,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7857,7 +7857,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(2, 122, 255, 0.5);
       border-top-left-radius: 0px;
@@ -7874,7 +7874,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7903,7 +7903,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7916,7 +7916,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(2, 122, 255, 0.5);
       border-top-left-radius: 0px;
@@ -7933,7 +7933,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7962,7 +7962,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7975,7 +7975,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(83, 223, 221, 0.5);
       border-top-left-radius: 0px;
@@ -7992,7 +7992,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8021,7 +8021,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8034,7 +8034,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(68, 207, 110, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(68, 207, 110, 0.5);
       border-top-left-radius: 0px;
@@ -8051,7 +8051,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8080,7 +8080,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8093,7 +8093,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(233, 151, 63, 0.5);
       border-top-left-radius: 0px;
@@ -8110,7 +8110,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8139,7 +8139,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8152,7 +8152,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(233, 151, 63, 0.5);
       border-top-left-radius: 0px;
@@ -8169,7 +8169,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8198,7 +8198,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8211,7 +8211,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(251, 70, 76, 0.5);
       border-top-left-radius: 0px;
@@ -8228,7 +8228,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8257,7 +8257,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8270,7 +8270,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(251, 70, 76, 0.5);
       border-top-left-radius: 0px;
@@ -8287,7 +8287,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8316,7 +8316,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8329,7 +8329,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(251, 70, 76, 0.5);
       border-top-left-radius: 0px;
@@ -8346,7 +8346,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8375,7 +8375,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8388,7 +8388,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(168, 130, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(168, 130, 255, 0.5);
       border-top-left-radius: 0px;
@@ -8405,7 +8405,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8434,7 +8434,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8447,7 +8447,7 @@ html[saved-theme="dark"] {
       background-color: rgba(var(--callout-color), 0.25);
       background-image: none;
       background: rgba(158, 158, 158, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
       border: 1px solid rgba(158, 158, 158, 0.5);
       border-top-left-radius: 0px;
@@ -8464,7 +8464,7 @@ html[saved-theme="dark"] {
       --callout-color: 2, 122, 255;
       color: var(--text-muted);
       gap: 4px;
-      border: 0px oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px oklch(0.8 0.0775124 268.43);
       border-bottom: 1px solid rgba(2, 122, 255, 0.3);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8493,7 +8493,7 @@ html[saved-theme="dark"] {
       background-color: var(--callout-content-background);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8504,7 +8504,7 @@ html[saved-theme="dark"] {
     table {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       table-layout: auto;
       text-align: start;
@@ -8626,7 +8626,7 @@ html[saved-theme="dark"] {
       filter: none;
       max-width: 100%;
       object-fit: fill;
-      border: 0px oklch(0.9 0.0387562 268.43 / 0.95);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8645,7 +8645,7 @@ html[saved-theme="dark"] {
     figure {
       background-color: rgba(0, 0, 0, 0);
       text-align: start;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8667,7 +8667,7 @@ html[saved-theme="dark"] {
     }
 
     figcaption {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-size: 16px;
       font-style: normal;
@@ -8690,7 +8690,7 @@ html[saved-theme="dark"] {
       filter: none;
       max-width: 100%;
       object-fit: contain;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8708,7 +8708,7 @@ html[saved-theme="dark"] {
 
     audio {
       background-color: rgba(0, 0, 0, 0);
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8726,9 +8726,9 @@ html[saved-theme="dark"] {
 
     .transclude {
       background-color: var(--embed-background);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-radius: 0px;
-      border: 0px solid oklch(0.9 0.0129187 268.43);
+      border: 0px solid oklch(0.9 0.0775124 268.43);
       border-left: 2px solid oklch(0.167493 0.129187 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8740,11 +8740,11 @@ html[saved-theme="dark"] {
 
     .transclude-inner {
       background-color: var(--embed-background);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-radius: 0px;
       border-left: solid;
       border-width: 0px;
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8781,9 +8781,9 @@ html[saved-theme="dark"] {
 
     .metadata-properties {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8795,9 +8795,9 @@ html[saved-theme="dark"] {
 
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8809,14 +8809,14 @@ html[saved-theme="dark"] {
     }
 
     .metadata-property-key {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: var(--metadata-input-font);
       font-size: 16px;
     }
@@ -8825,7 +8825,7 @@ html[saved-theme="dark"] {
       accent-color: auto;
       background-color: rgba(0, 0, 0, 0);
       height: 6px;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8854,7 +8854,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
-      border: 0px solid oklch(0.8 0.0645936 268.43 / 0.8);
+      border: 0px solid oklch(0.8 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8872,7 +8872,7 @@ html[saved-theme="dark"] {
 
     details {
       background-color: rgba(0, 0, 0, 0);
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8895,7 +8895,7 @@ html[saved-theme="dark"] {
 
     summary {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       cursor: auto;
       font-weight: 400;
       padding: 0px;
@@ -8964,7 +8964,7 @@ html[saved-theme="dark"] {
     }
 
     dt {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-weight: 400;
       margin: 0px;
       margin-block-end: 0px;
@@ -8978,7 +8978,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8990,7 +8990,7 @@ html[saved-theme="dark"] {
     }
 
     dd {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-size: 16px;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       margin: 0px 0px 0px 40px;
@@ -9003,7 +9003,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      border: 0px oklch(0.9 0.0129187 268.43);
+      border: 0px oklch(0.9 0.0775124 268.43);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9015,64 +9015,64 @@ html[saved-theme="dark"] {
     }
 
     sub {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-size: 13.3333px;
       vertical-align: sub;
     }
 
     sup {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-size: 13.3333px;
       vertical-align: super;
     }
 
     abbr {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       cursor: auto;
       text-decoration: underline dotted;
       text-decoration-style: dotted;
     }
 
     li.task-list-item[data-task="-"] {
-      color: oklch(0.7 0.0645936 268.43 / 0.7);
-      text-decoration: line-through 1px oklch(0.7 0.0645936 268.43 / 0.7);
-      text-decoration-color: oklch(0.7 0.0645936 268.43 / 0.7);
+      color: oklch(0.7 0.0775124 268.43);
+      text-decoration: line-through 1px oklch(0.7 0.0775124 268.43);
+      text-decoration-color: oklch(0.7 0.0775124 268.43);
     }
 
     li.task-list-item[data-task=">"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="/"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="?"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="!"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="*"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="l"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="b"] {
@@ -9082,63 +9082,63 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="i"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="S"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="I"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="p"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="c"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="f"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="k"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="u"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="d"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     li.task-list-item[data-task="w"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       text-decoration: none;
-      text-decoration-color: oklch(0.9 0.0129187 268.43);
+      text-decoration-color: oklch(0.9 0.0775124 268.43);
     }
 
     .katex-display > .katex {
@@ -9219,7 +9219,7 @@ html[saved-theme="dark"] {
     }
 
     .explorer .folder-container > div {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 500;
     }
@@ -9245,13 +9245,13 @@ html[saved-theme="dark"] {
 
     .canvas-node {
       background-color: rgba(0, 0, 0, 0);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-radius: 0px;
       border-width: 0px;
     }
 
     .canvas-node-content {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .canvas-node-file {
@@ -9261,13 +9261,13 @@ html[saved-theme="dark"] {
 
     .canvas-sidebar {
       background-color: var(--background-secondary);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       box-shadow: var(--input-shadow);
     }
 
     .canvas-node-group {
       background-color: rgba(0, 0, 0, 0);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
     }
 
@@ -9278,12 +9278,12 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-key {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-weight: 400;
     }
 
     .note-properties-value {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
     }
 
     .note-properties-tags {
@@ -9293,18 +9293,18 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-row {
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
     }
 
     details.toc summary::marker {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9326,21 +9326,21 @@ html[saved-theme="dark"] {
     }
 
     footer ul li a {
-      color: oklch(0.7 0.0645936 268.43 / 0.7);
+      color: oklch(0.7 0.0775124 268.43);
       font-size: 12px;
       font-weight: 400;
     }
 
     .recent-notes > h3 {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
     }
 
     .recent-notes > ul.recent-ul > li {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.9 0.0129187 268.43);
-      border-color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9353,13 +9353,13 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     }
 
     ul.section-ul {
       background-color: rgba(0, 0, 0, 0);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9369,7 +9369,7 @@ html[saved-theme="dark"] {
 
     li.section-li {
       background-color: rgba(0, 0, 0, 0);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9382,7 +9382,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section .meta {
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     }
 
@@ -9390,7 +9390,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9399,14 +9399,14 @@ html[saved-theme="dark"] {
     }
 
     .darkmode svg {
-      stroke: oklch(0.8 0.0645936 268.43 / 0.8);
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
+      stroke: oklch(0.8 0.0775124 268.43);
+      color: oklch(0.8 0.0775124 268.43);
     }
 
     .breadcrumb-container {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.8 0.0645936 268.43 / 0.8);
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      color: oklch(0.8 0.0775124 268.43);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9433,7 +9433,7 @@ html[saved-theme="dark"] {
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       margin: 0px;
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9443,8 +9443,8 @@ html[saved-theme="dark"] {
 
     .katex-display {
       background-color: rgba(0, 0, 0, 0);
-      color: oklch(0.9 0.0129187 268.43);
-      border-color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9454,14 +9454,14 @@ html[saved-theme="dark"] {
 
     .footnotes {
       background-color: rgba(0, 0, 0, 0);
-      border-top-color: oklch(0.9 0.0129187 268.43);
+      border-top-color: oklch(0.9 0.0775124 268.43);
       border-top-width: 0px;
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .table-container {
       background-color: rgba(0, 0, 0, 0);
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9474,7 +9474,7 @@ html[saved-theme="dark"] {
     }
 
     ul.overflow {
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9483,7 +9483,7 @@ html[saved-theme="dark"] {
     }
 
     ol.overflow {
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9567,7 +9567,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"] {
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
       border-radius: 0px;
       border-width: 1px;
       background-color: rgba(0, 0, 0, 0);
@@ -9575,11 +9575,11 @@ html[saved-theme="dark"] {
 
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color);
-      border-color: oklch(0.8 0.0645936 268.43 / 0.8);
+      border-color: oklch(0.8 0.0775124 268.43);
     }
 
     .stacked-page {
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
       background-color: var(--background-secondary);
     }
 
@@ -9588,7 +9588,7 @@ html[saved-theme="dark"] {
     }
 
     .stacked-page.active {
-      border-color: oklch(0.9 0.0129187 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
     }
 
     h1.article-title {
@@ -9598,7 +9598,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="_"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9624,7 +9624,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task=","] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9650,7 +9650,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task=";"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9676,7 +9676,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task=":"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9702,7 +9702,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="."] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9728,7 +9728,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="'"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9754,7 +9754,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="@"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9780,7 +9780,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="&"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9806,7 +9806,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="#"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9832,7 +9832,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="%"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9858,7 +9858,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="`"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9884,7 +9884,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="+"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9910,7 +9910,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="<"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9936,7 +9936,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="="] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9962,7 +9962,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="|"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -9988,7 +9988,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="~"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10014,7 +10014,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="$"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10040,7 +10040,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="0"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10066,7 +10066,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="1"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10092,7 +10092,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="2"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10118,7 +10118,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="3"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10144,7 +10144,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="4"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10170,7 +10170,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="5"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10196,7 +10196,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="6"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10222,7 +10222,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="7"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10248,7 +10248,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="8"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10274,7 +10274,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="9"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10300,7 +10300,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="a"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10326,7 +10326,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="A"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10352,7 +10352,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="B"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10378,7 +10378,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="C"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10404,7 +10404,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="D"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10430,7 +10430,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="e"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10456,7 +10456,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="E"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10482,7 +10482,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="F"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10508,7 +10508,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="g"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10534,7 +10534,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="G"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10560,7 +10560,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="h"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10586,7 +10586,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="H"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10612,7 +10612,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="j"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10638,7 +10638,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="J"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10664,7 +10664,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="K"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10690,7 +10690,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="L"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10716,7 +10716,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="m"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10742,7 +10742,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="M"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10768,7 +10768,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="n"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10794,7 +10794,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="N"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10820,7 +10820,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="o"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10846,7 +10846,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="O"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10872,7 +10872,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="P"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10898,7 +10898,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="q"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10924,7 +10924,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="Q"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10950,7 +10950,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="r"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -10976,7 +10976,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="R"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11002,7 +11002,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="s"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11028,7 +11028,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="t"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11054,7 +11054,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="T"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11080,7 +11080,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="U"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11106,7 +11106,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="v"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11132,7 +11132,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="V"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11158,7 +11158,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="W"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11184,7 +11184,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="x"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11210,7 +11210,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="X"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11236,7 +11236,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="y"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11262,7 +11262,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="Y"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11288,7 +11288,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="z"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,
@@ -11314,7 +11314,7 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="Z"] {
-      color: oklch(0.9 0.0129187 268.43);
+      color: oklch(0.9 0.0775124 268.43);
       border-color: rgb(218, 218, 218);
       font-family:
         ui-sans-serif,

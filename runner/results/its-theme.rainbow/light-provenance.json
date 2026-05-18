@@ -1365,6 +1365,7 @@
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -2082,6 +2083,7 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -2096,14 +2098,18 @@
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
   },
   "div.multi-select-pill-content": { "--focus-ring-color": ":root *" },
-  "li[data-line=\"0\"]": { "--focus-ring-color": ":root *" },
+  "li[data-line=\"0\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
   "code": { "--focus-ring-color": ":root *" },
   "pre": { "--focus-ring-color": ":root *" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "--focus-ring-color": ":root *"
   },
   "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
-    "--focus-ring-color": ":root *"
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
   },
   "blockquote": { "--focus-ring-color": ":root *" },
   "a.footnote-backref.footnote-link": {
@@ -2122,6 +2128,7 @@
   "div.tree-item-children": { "--focus-ring-color": ":root *" },
   "body.styled-scrollbars": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -2803,7 +2810,6 @@
   ".metadata-properties": { "--focus-ring-color": ":root *" },
   ".metadata-container .metadata-property": {
     "--focus-ring-color": ":root *",
-    "--input-radius": ".metadata-property",
     "--input-border-width": ".metadata-property",
     "--input-border-width-focus": ".metadata-property",
     "--metadata-label-text-color": ".metadata-label-text-color .metadata-property",
@@ -2817,8 +2823,14 @@
   "input[type=\"text\"]": { "--focus-ring-color": ":root *" },
   "kbd": { "--focus-ring-color": ":root *" },
   "sup": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\">\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"?\"]": { "--focus-ring-color": ":root *" },
+  "li.task-list-item[data-task=\">\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
     "--focus-ring-color": ":root *",
     "--nav-item-weight": ".nav-folder-title"
@@ -2838,6 +2850,7 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -3445,22 +3458,70 @@
   ".file-embed": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb-separator": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"-\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"/\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"!\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"*\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"l\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"b\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"i\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"p\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"c\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"f\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"k\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"u\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"d\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"w\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"S\"]": { "--focus-ring-color": ":root *" },
-  "li.task-list-item[data-task=\"I\"]": { "--focus-ring-color": ":root *" },
+  "li.task-list-item[data-task=\"-\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"/\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"!\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"*\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"l\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"b\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"i\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"p\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"c\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"f\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"k\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"u\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"d\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"w\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"S\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
+  "li.task-list-item[data-task=\"I\"]": {
+    "--focus-ring-color": ":root *",
+    "--indentation-guide-color": ":is(ul, ol) > li"
+  },
   ".canvas-node": {
     "--focus-ring-color": ":root *",
     "--shadow-border-themed-inset": ".canvas-node",
