@@ -48,6 +48,15 @@ settings:
         - label: Go Crazy
           value: heading-colourful
 
+    - id: heading-hue-rotate
+      title: Heading Hue Rotate
+      description: "Shift the base hue for 'A little bit colour' headings. 0 = accent hue. Positive values rotate warm, negative rotate cool."
+      type: variable-number-slider
+      default: 0
+      min: -180
+      max: 180
+      step: 1
+
     - id: checkbox-coloured
       title: Coloured Alternate Checkboxes
       description: "Apply the Go Crazy hue palette to alternate checkbox backgrounds. Turn off to fall back to the Heading Style setting."
@@ -320,12 +329,13 @@ body.highlight-monochrome-low {
 	--h-l-max: 0.7 * var(--font-brightness);
 }
 body.heading-colour {
-	--h1-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 10) / 1.0);
-	--h2-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 5) / 0.95);
-	--h3-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + 0) / 0.90);
-	--h4-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 5) / 0.85);
-	--h5-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 10) / 0.80);
-	--h6-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h - 15) / 0.75);
+	--heading-hue-rotate: 0;
+	--h1-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) + 10) / 1.0);
+	--h2-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) + 5) / 0.95);
+	--h3-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) + 0) / 0.90);
+	--h4-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) - 5) / 0.85);
+	--h5-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) - 10) / 0.80);
+	--h6-color: oklch(from var(--background-primary) clamp(var(--h-l-min), var(--dynamic-switch), var(--h-l-max)) c calc(h + var(--heading-hue-rotate) - 15) / 0.75);
 }
 
 /* Colourful */

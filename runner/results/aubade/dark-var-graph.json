@@ -1821,8 +1821,7 @@
     "html body.obsidian-app.theme-light": ["--raw-text-secondary"]
   },
   "--text-on-accent": {
-    "html body.obsidian-app.theme-dark": ["--raw-inverse"],
-    "html body.obsidian-app.theme-light": ["--raw-inverse"]
+    "html body.obsidian-app.theme-dark": ["--raw-inverse"]
   },
   "--text-error": { "body": ["--color-red"] },
   "--text-warning": { "body": ["--color-orange"] },
@@ -1879,7 +1878,19 @@
   "--interactive-accent-hover": {
     "body": ["--color-accent-2"],
     ".theme-dark": ["--color-accent-1"],
-    "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
+    "html body.obsidian-app.theme-light": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-warm": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-cool": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-ocean": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-forest": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-lavender": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-sunset": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-midnight": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-brutalist": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-solarized": ["--raw-hover-bg"],
+    "html body.obsidian-app.preset-reader": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-reader": ["--raw-hover-bg"],
+    "html body.obsidian-app.theme-dark.preset-amber": ["--raw-hover-bg"]
   },
   "--dropdown-background": {
     ".theme-light": ["--interactive-normal"],
@@ -2254,6 +2265,9 @@
     "html body.obsidian-app.theme-dark": ["--ui-font-color-dark"],
     "html body.obsidian-app.theme-light": ["--ui-font-color-light"]
   },
+  "--raw-inverse": {
+    "html body.obsidian-app.theme-dark.preset-reader": ["--raw-bg-secondary"]
+  },
   "--view-header-background": {
     "html body.obsidian-app.theme-dark": ["--raw-bg-primary"],
     "html body.obsidian-app.theme-light": ["--raw-bg-primary"]
@@ -2352,7 +2366,6 @@
     "html body.obsidian-app.theme-light": ["--raw-hover-bg"]
   },
   "--tab-hover-text-ui": {
-    "html body.obsidian-app.theme-dark": ["--raw-text-primary"],
     "html body.obsidian-app.theme-light": ["--raw-text-primary"]
   },
   "--mobile-navbar-bg": {

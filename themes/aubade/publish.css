@@ -1199,7 +1199,7 @@ body.theme-light {
   --text-highlight-bg: var(--raw-highlight-bg) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: var(--raw-text-secondary) !important;
-  --text-on-accent: var(--raw-inverse) !important;
+  --text-on-accent: #000000 !important;
   --text-on-accent-inverted: black !important;
   --text-selection: var(--raw-selection-bg) !important;
   --text-success: var(--color-green) !important;
@@ -2366,12 +2366,12 @@ body.theme-dark {
   --tab-active-bg-sidebar: #000000 !important;
   --tab-hover-bg-doc: var(--raw-hover-bg) !important;
   --tab-hover-bg-ui: var(--raw-hover-bg) !important;
-  --tab-hover-text-ui: var(--raw-text-primary) !important;
+  --tab-hover-text-ui: #000000 !important;
   --tab-radius-focused: 0 !important;
   --tab-radius-focused-active: 0 !important;
   --tab-radius-focused-active-current: 0 !important;
   --text-align-mode: left !important;
-  --text-highlight-color: #000000 !important;
+  --text-highlight-color: #ffffff !important;
   --text-selection-color: var(--text-normal) !important;
   --toggle-on-color: #25efa5 !important;
   --toggle-track-radius: 0 !important;

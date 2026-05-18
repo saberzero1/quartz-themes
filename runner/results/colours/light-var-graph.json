@@ -821,7 +821,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--complement",
@@ -845,7 +846,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--hue-4",
@@ -869,7 +871,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--triadic",
@@ -893,7 +896,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--hue-3",
@@ -917,7 +921,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--hue-2",
@@ -941,7 +946,8 @@
       "--background-primary",
       "--h-l-min",
       "--dynamic-switch",
-      "--h-l-max"
+      "--h-l-max",
+      "--heading-hue-rotate"
     ],
     "body.heading-colourful": [
       "--hue-1",
