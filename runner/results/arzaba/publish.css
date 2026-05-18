@@ -107,192 +107,28 @@ body.theme-light {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: #ebe7db !important;
   --table-border-color: #c5c5c5 !important;
-  --background-modifier-border: #c7c7ca !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-primary-alt) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: #8b62b5 !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--background-primary) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--background-primary),
-      color-mix(
-        in srgb,
-        var(--background-primary) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: #1f7a1f !important;
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: #6186ec !important;
-  --checkbox-color-hover: #e9626d !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: #283f42 !important;
-  --code-background: #fefdf6 !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: #091c00 !important;
-  --code-normal: #0c0c0c !important;
-  --code-punctuation: #1a1919 !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: #9a216e !important;
-  --graph-node-focused: #0ca332 !important;
-  --graph-node-unresolved: #e0d058 !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: #5e6b72 !important;
-  --icon-color: #075661 !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: #1ebbd3 !important;
-  --icon-color-hover: #32a732 !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: #9fc593 !important;
-  --interactive-accent-hover: #f5d7d7 !important;
-  --interactive-hover: #f7d7e9 !important;
-  --interactive-normal: #c6def5 !important;
-  --link-color: #016bb8 !important;
-  --link-color-hover: #028e8e !important;
-  --link-external-color: #bfacf1 !important;
-  --link-external-color-hover: #d0839e !important;
-  --link-unresolved-color: #853232 !important;
-  --list-marker-color: #3693c2 !important;
-  --list-marker-color-collapsed: #2a8f2a !important;
-  --list-marker-color-hover: #b338a6 !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: #2f2f30 !important;
-  --metadata-label-text-color-hover: var(--text-muted) !important;
-  --modal-background: var(--background-primary) !important;
-  --nav-collapse-icon-color: #2e6c28 !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: #2c2c2d !important;
-  --nav-item-color-active: #000000 !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: #000000 !important;
-  --nav-item-color-selected: var(--text-normal) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: var(--background-primary) !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--background-primary) !important;
-  --search-clear-button-color: #d64c4c !important;
-  --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: #4a98ac !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: #efefe7 !important;
-  --tab-outline-color: #c4bcd6 !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: #6a7779 !important;
-  --tab-text-color-active: #2c3b3d !important;
-  --tab-text-color-focused: #374547 !important;
-  --tab-text-color-focused-active: #14525a !important;
-  --tab-text-color-focused-active-current: #1a6b73 !important;
-  --tab-text-color-focused-highlighted: #a13563 !important;
-  --table-add-button-border-color: #c5c5c5 !important;
-  --table-drag-handle-background-active: #2a91a1 !important;
-  --table-drag-handle-color: #aa3535 !important;
-  --table-drag-handle-color-active: #9eb000 !important;
-  --table-header-border-color: #d9d9d9 !important;
-  --table-header-color: #2e2f33 !important;
-  --table-selection-border-color: #2a91a1 !important;
-  --tag-color: var(--text-accent) !important;
-  --tag-color-hover: var(--text-accent) !important;
   --text-accent: #007ab3 !important;
   --text-faint: #7b8b8f !important;
-  --text-muted: #5e6978 !important;
   --text-normal: #282828 !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-muted) !important;
-  --titlebar-text-color-focused: var(--text-normal) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 5px !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --background-modifier-border: #c7c7ca !important;
   --background-modifier-form-field: #e3edf4 !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -333,17 +169,21 @@ body.theme-light {
   --background-primary-alt: #f3f3f2 !important;
   --background-secondary: #e6e6dd !important;
   --background-secondary-alt: #ececeb !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -352,18 +192,25 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -376,14 +223,29 @@ body.theme-light {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: #f6f2f6 !important;
+  --blockquote-border-color: #8b62b5 !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -426,6 +288,8 @@ body.theme-light {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -437,24 +301,38 @@ body.theme-light {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: #1f7a1f !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: #6186ec !important;
+  --checkbox-color-hover: #e9626d !important;
   --checkbox-margin-inline-start: 0 !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: 25% !important;
   --checkbox-size: 1.2em !important;
+  --checklist-done-color: #283f42 !important;
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 0 !important;
+  --code-background: #fefdf6 !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: #091c00 !important;
   --code-function: #23800b !important;
   --code-important: #7e6909 !important;
   --code-keyword: #01818f !important;
+  --code-normal: #0c0c0c !important;
   --code-operator: #950007 !important;
   --code-property: #00339f !important;
+  --code-punctuation: #1a1919 !important;
   --code-radius: 0px !important;
   --code-size: 0.8em !important;
   --code-string: #845b02 !important;
   --code-tag: #193164 !important;
   --code-value: #4e1d5f !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -507,12 +385,16 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -522,13 +404,19 @@ body.theme-light {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: none !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: 0.8rem !important;
@@ -538,6 +426,8 @@ body.theme-light {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -584,11 +474,14 @@ body.theme-light {
   --font-ui-medium: 16px !important;
   --font-ui-small: 14px !important;
   --font-ui-smaller: 13px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -603,8 +496,12 @@ body.theme-light {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #1560b3 !important;
+  --graph-node: #9a216e !important;
   --graph-node-attachment: #00b3cc !important;
+  --graph-node-focused: #0ca332 !important;
   --graph-node-tag: #a04a7d !important;
+  --graph-node-unresolved: #e0d058 !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.9em !important;
@@ -642,9 +539,15 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 400 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: darken !important;
+  --hr-color: #5e6b72 !important;
   --hr-thickness: 1px !important;
+  --icon-color: #075661 !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: #1ebbd3 !important;
+  --icon-color-hover: #32a732 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -674,8 +577,10 @@ body.theme-light {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: 400 !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -686,7 +591,11 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: #9fc593 !important;
+  --interactive-accent-hover: #f5d7d7 !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: #f7d7e9 !important;
+  --interactive-normal: #c6def5 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -700,12 +609,17 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.61 !important;
   --line-height-tight: 1.4 !important;
+  --link-color: #016bb8 !important;
+  --link-color-hover: #028e8e !important;
   --link-decoration: none !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 1px !important;
+  --link-external-color: #bfacf1 !important;
+  --link-external-color-hover: #d0839e !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: #853232 !important;
   --link-unresolved-decoration-color: #6aa6d8 !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -719,10 +633,14 @@ body.theme-light {
   --list-indent: 2.8em !important;
   --list-indent-editing: 1em !important;
   --list-indent-source: 1em !important;
+  --list-marker-color: #3693c2 !important;
+  --list-marker-color-collapsed: #2a8f2a !important;
+  --list-marker-color-hover: #b338a6 !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.12em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -735,10 +653,12 @@ body.theme-light {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -753,6 +673,7 @@ body.theme-light {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -760,6 +681,8 @@ body.theme-light {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: 0.8em !important;
+  --metadata-label-text-color: #2f2f30 !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 8.5em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -781,6 +704,7 @@ body.theme-light {
   --metadata-property-radius-hover: 0 !important;
   --metadata-sidebar-input-font-size: 0.8em !important;
   --metadata-sidebar-label-font-size: 0.8em !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: #2a9191 !important;
   --modal-border-width: 2px !important;
   --modal-community-sidebar-width: 290px !important;
@@ -794,6 +718,12 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
+  --nav-collapse-icon-color: #2e6c28 !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: #4266a1 !important;
@@ -806,6 +736,11 @@ body.theme-light {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: #2c2c2d !important;
+  --nav-item-color-active: #000000 !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: #000000 !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -814,13 +749,23 @@ body.theme-light {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 600px !important;
@@ -830,6 +775,7 @@ body.theme-light {
   --popover-width: 800px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: #2a9191 !important;
   --prompt-border-width: 2px !important;
   --prompt-input-height: 40px !important;
@@ -840,6 +786,7 @@ body.theme-light {
   --radius-m: 10px !important;
   --radius-s: 8px !important;
   --radius-xl: 16px !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -854,6 +801,8 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -867,10 +816,16 @@ body.theme-light {
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: #d64c4c !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -880,29 +835,39 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -934,13 +899,18 @@ body.theme-light {
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 14px !important;
   --slider-thumb-y: -5px !important;
+  --slider-track-background: #4a98ac !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 24px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 2px #000001 !important;
@@ -954,10 +924,12 @@ body.theme-light {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: #efefe7 !important;
   --tab-curve: 0 !important;
   --tab-divider-color: #d8c9c9 !important;
   --tab-font-size: 0.85em !important;
   --tab-max-width: 15em !important;
+  --tab-outline-color: #c4bcd6 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 0 !important;
   --tab-radius-active: 0 !important;
@@ -969,12 +941,25 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: #6a7779 !important;
+  --tab-text-color-active: #2c3b3d !important;
+  --tab-text-color-focused: #374547 !important;
+  --tab-text-color-focused-active: #14525a !important;
+  --tab-text-color-focused-active-current: #1a6b73 !important;
+  --tab-text-color-focused-highlighted: #a13563 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: #c5c5c5 !important;
   --table-add-button-border-width: 2px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
@@ -985,9 +970,14 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 3ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: #2a91a1 !important;
+  --table-drag-handle-color: #aa3535 !important;
+  --table-drag-handle-color-active: #9eb000 !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: #e3e3e3 !important;
+  --table-header-border-color: #d9d9d9 !important;
   --table-header-border-width: 1px !important;
+  --table-header-color: #2e2f33 !important;
   --table-header-size: 0.8em !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -999,6 +989,7 @@ body.theme-light {
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.05) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: #2a91a1 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.8em !important;
@@ -1011,6 +1002,8 @@ body.theme-light {
     0.15
   ) !important;
   --tag-border-width: 0px !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -1022,13 +1015,18 @@ body.theme-light {
   --text-error: var(--color-red) !important;
   --text-highlight-bg: #c2e7b4 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: #5e6978 !important;
   --text-on-accent: #1c1f24 !important;
   --text-on-accent-inverted: black !important;
   --text-selection: #b0cbe8 !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1056,6 +1054,8 @@ body.theme-light {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
@@ -1101,190 +1101,28 @@ body.theme-dark {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: #080808 !important;
   --table-border-color: #3a3a3a !important;
-  --background-modifier-border: #3b3b3e !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-primary-alt) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: #bd95e6 !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--interactive-normal) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--interactive-normal),
-      color-mix(
-        in srgb,
-        var(--interactive-normal) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: #6cda6c !important;
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: #6186ec !important;
-  --checkbox-color-hover: #e9626d !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: #283f42 !important;
-  --code-background: #000000 !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: #8a8a8a !important;
-  --code-normal: #fffcfe !important;
-  --code-punctuation: #e2e8ff !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: #9b8c06 !important;
-  --graph-node-focused: #33ff57 !important;
-  --graph-node-unresolved: #9f297b !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: #637884 !important;
-  --icon-color: #58919a !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: #7ad67f !important;
-  --icon-color-hover: #8bb188 !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: #21431a !important;
-  --interactive-accent-hover: #602e2e !important;
-  --interactive-hover: #2c0f23 !important;
-  --interactive-normal: #193755 !important;
-  --link-color: #9ed2fd !important;
-  --link-color-hover: #69d1d1 !important;
-  --link-external-color: #bfacf1 !important;
-  --link-external-color-hover: #d0839e !important;
-  --link-unresolved-color: #f4b2b2 !important;
-  --list-marker-color: #70b5d6 !important;
-  --list-marker-color-collapsed: #35b035 !important;
-  --list-marker-color-hover: #d43dca !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: #e1e1eb !important;
-  --metadata-label-text-color-hover: var(--text-muted) !important;
-  --modal-background: var(--background-primary) !important;
-  --nav-collapse-icon-color: #408b39 !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: #dfdfe0 !important;
-  --nav-item-color-active: #ffffff !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: #ffffff !important;
-  --nav-item-color-selected: var(--text-normal) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: var(--background-primary) !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--background-primary) !important;
-  --search-clear-button-color: #f15b5b !important;
-  --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: #176b80 !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: #050606 !important;
-  --tab-outline-color: #1f1b32 !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: #718183 !important;
-  --tab-text-color-active: #a9bfc2 !important;
-  --tab-text-color-focused: #8fa2a5 !important;
-  --tab-text-color-focused-active: #58919a !important;
-  --tab-text-color-focused-active-current: #85bfc5 !important;
-  --tab-text-color-focused-highlighted: #2c0f23 !important;
-  --table-add-button-border-color: #3a3a3a !important;
-  --table-drag-handle-background-active: #5fa4b0 !important;
-  --table-drag-handle-color: #c64e4e !important;
-  --table-drag-handle-color-active: #ddff1b !important;
-  --table-header-border-color: #171717 !important;
-  --table-header-color: #d6d7dc !important;
-  --table-selection-border-color: #5fa4b0 !important;
-  --tag-color: var(--text-accent) !important;
-  --tag-color-hover: var(--text-accent) !important;
   --text-accent: #72c6ea !important;
   --text-faint: #798a8e !important;
-  --text-muted: #6f7a88 !important;
   --text-normal: #e1e1eb !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-muted) !important;
-  --titlebar-text-color-focused: var(--text-normal) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 5px !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --background-modifier-border: #3b3b3e !important;
   --background-modifier-form-field: #1f2f3d !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1325,17 +1163,21 @@ body.theme-dark {
   --background-primary-alt: #101113 !important;
   --background-secondary: #0a0a0b !important;
   --background-secondary-alt: #1a1d20 !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -1344,18 +1186,25 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1368,14 +1217,29 @@ body.theme-dark {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: #130f12 !important;
+  --blockquote-border-color: #bd95e6 !important;
   --blockquote-border-thickness: 4px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -1418,6 +1282,8 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -1429,24 +1295,38 @@ body.theme-dark {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: #6cda6c !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: #6186ec !important;
+  --checkbox-color-hover: #e9626d !important;
   --checkbox-margin-inline-start: 0 !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: 25% !important;
   --checkbox-size: 1.2em !important;
+  --checklist-done-color: #283f42 !important;
   --checklist-done-decoration: none !important;
   --clickable-icon-radius: 0 !important;
+  --code-background: #000000 !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: #8a8a8a !important;
   --code-function: #96cf70 !important;
   --code-important: #e4d386 !important;
   --code-keyword: #56b6c2 !important;
+  --code-normal: #fffcfe !important;
   --code-operator: #e9626d !important;
   --code-property: #6186ec !important;
+  --code-punctuation: #e2e8ff !important;
   --code-radius: 12px !important;
   --code-size: 0.8em !important;
   --code-string: #e5c07b !important;
   --code-tag: #6186ec !important;
   --code-value: #d66af7 !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1499,12 +1379,16 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -1514,13 +1398,19 @@ body.theme-dark {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: none !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: 0.8rem !important;
@@ -1530,6 +1420,8 @@ body.theme-dark {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -1576,11 +1468,14 @@ body.theme-dark {
   --font-ui-medium: 16px !important;
   --font-ui-small: 14px !important;
   --font-ui-smaller: 13px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -1595,8 +1490,12 @@ body.theme-dark {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: #2979ff !important;
+  --graph-node: #9b8c06 !important;
   --graph-node-attachment: #00e5ff !important;
+  --graph-node-focused: #33ff57 !important;
   --graph-node-tag: #c072a1 !important;
+  --graph-node-unresolved: #9f297b !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.9em !important;
@@ -1634,9 +1533,15 @@ body.theme-dark {
   --h6-variant: normal !important;
   --h6-weight: 400 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: lighten !important;
+  --hr-color: #637884 !important;
   --hr-thickness: 1px !important;
+  --icon-color: #58919a !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: #7ad67f !important;
+  --icon-color-hover: #8bb188 !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1666,8 +1571,10 @@ body.theme-dark {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: 300 !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -1678,7 +1585,11 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: #21431a !important;
+  --interactive-accent-hover: #602e2e !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: #2c0f23 !important;
+  --interactive-normal: #193755 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1692,12 +1603,17 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.61 !important;
   --line-height-tight: 1.4 !important;
+  --link-color: #9ed2fd !important;
+  --link-color-hover: #69d1d1 !important;
   --link-decoration: none !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: 1px !important;
+  --link-external-color: #bfacf1 !important;
+  --link-external-color-hover: #d0839e !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: #f4b2b2 !important;
   --link-unresolved-decoration-color: #9ed2fd !important;
   --link-unresolved-decoration-style: solid !important;
   --link-unresolved-filter: none !important;
@@ -1711,10 +1627,14 @@ body.theme-dark {
   --list-indent: 2.8em !important;
   --list-indent-editing: 1em !important;
   --list-indent-source: 1em !important;
+  --list-marker-color: #70b5d6 !important;
+  --list-marker-color-collapsed: #35b035 !important;
+  --list-marker-color-hover: #d43dca !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.12em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -1727,10 +1647,12 @@ body.theme-dark {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1745,6 +1667,7 @@ body.theme-dark {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -1752,6 +1675,8 @@ body.theme-dark {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: 0.8em !important;
+  --metadata-label-text-color: #e1e1eb !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 8.5em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -1773,6 +1698,7 @@ body.theme-dark {
   --metadata-property-radius-hover: 0 !important;
   --metadata-sidebar-input-font-size: 0.8em !important;
   --metadata-sidebar-label-font-size: 0.8em !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: #4fc0c0 !important;
   --modal-border-width: 2px !important;
   --modal-community-sidebar-width: 290px !important;
@@ -1786,6 +1712,12 @@ body.theme-dark {
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
+  --nav-collapse-icon-color: #408b39 !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: #6386d2 !important;
@@ -1798,6 +1730,11 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: #dfdfe0 !important;
+  --nav-item-color-active: #ffffff !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: #ffffff !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -1806,13 +1743,21 @@ body.theme-dark {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 600px !important;
@@ -1822,6 +1767,7 @@ body.theme-dark {
   --popover-width: 800px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: #4fc0c0 !important;
   --prompt-border-width: 2px !important;
   --prompt-input-height: 40px !important;
@@ -1832,6 +1778,7 @@ body.theme-dark {
   --radius-m: 10px !important;
   --radius-s: 8px !important;
   --radius-xl: 16px !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -1840,6 +1787,8 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1853,10 +1802,16 @@ body.theme-dark {
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: #f15b5b !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -1866,29 +1821,39 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -1920,13 +1885,18 @@ body.theme-dark {
   --slider-thumb-radius: 50% !important;
   --slider-thumb-width: 14px !important;
   --slider-thumb-y: -5px !important;
+  --slider-track-background: #176b80 !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 24px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 2px #000001 !important;
@@ -1940,10 +1910,12 @@ body.theme-dark {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: #050606 !important;
   --tab-curve: 0 !important;
   --tab-divider-color: #352121 !important;
   --tab-font-size: 0.85em !important;
   --tab-max-width: 15em !important;
+  --tab-outline-color: #1f1b32 !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 0 !important;
   --tab-radius-active: 0 !important;
@@ -1955,12 +1927,25 @@ body.theme-dark {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: #718183 !important;
+  --tab-text-color-active: #a9bfc2 !important;
+  --tab-text-color-focused: #8fa2a5 !important;
+  --tab-text-color-focused-active: #58919a !important;
+  --tab-text-color-focused-active-current: #85bfc5 !important;
+  --tab-text-color-focused-highlighted: #2c0f23 !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: #3a3a3a !important;
   --table-add-button-border-width: 2px !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
@@ -1971,9 +1956,14 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 3ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: #5fa4b0 !important;
+  --table-drag-handle-color: #c64e4e !important;
+  --table-drag-handle-color-active: #ddff1b !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: #0f0f0f !important;
+  --table-header-border-color: #171717 !important;
   --table-header-border-width: 1px !important;
+  --table-header-color: #d6d7dc !important;
   --table-header-size: 0.8em !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1985,6 +1975,7 @@ body.theme-dark {
   --table-row-last-border-width: 1px !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.05) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: #5fa4b0 !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: 0.8em !important;
@@ -1997,6 +1988,8 @@ body.theme-dark {
     0.15
   ) !important;
   --tag-border-width: 0px !important;
+  --tag-color: var(--text-accent) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -2008,13 +2001,18 @@ body.theme-dark {
   --text-error: var(--color-red) !important;
   --text-highlight-bg: #246607 !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: #6f7a88 !important;
   --text-on-accent: #dadde4 !important;
   --text-on-accent-inverted: black !important;
   --text-selection: #32537b !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -2042,6 +2040,8 @@ body.theme-dark {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;

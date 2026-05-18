@@ -863,11 +863,6 @@
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
     "--focus-ring-color": ":root *",
-    "--h2-weight": ".theme-light",
-    "--h3-weight": ".theme-light",
-    "--h4-weight": ".theme-light",
-    "--h5-weight": ".theme-light",
-    "--h6-weight": ".theme-light",
     "--bases-header-border-width": "body",
     "--bases-embed-border-color": "body",
     "--bases-embed-border-radius": "body",
@@ -905,7 +900,6 @@
     "--blockquote-color": ".theme-light",
     "--blockquote-background-color": ".theme-light",
     "--bold-color": ".theme-light",
-    "--bold-weight": ".theme-light",
     "--button-radius": ".theme-light",
     "--button-corner-shape": "body",
     "--blur-background": "body",
@@ -989,6 +983,7 @@
     "--header-height": ".theme-light",
     "--flair-background": "body",
     "--flair-color": "body",
+    "--font-weight": "body",
     "--footnote-divider-color-active": "body",
     "--footnote-divider-color": "body",
     "--footnote-divider-width": "body",
@@ -1273,12 +1268,9 @@
     "--color-accent-2": ".theme-light",
     "--background-secondary-alt": ".theme-light",
     "--shadow-xs": ".theme-light",
-    "--font-interface-theme": "body",
     "--font-interface": "body",
-    "--font-text-theme": "body",
     "--font-text": "body",
     "--font-print": "body",
-    "--font-monospace-theme": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
     "--shiki-code-background": "body",
@@ -1321,13 +1313,16 @@
   },
   "hr.workspace-leaf-resize-handle": { "--focus-ring-color": ":root *" },
   "a.external-link[data-tooltip-position=\"top\"]": {
-    "--focus-ring-color": ":root *"
+    "--focus-ring-color": ":root *",
+    "--font-weight": "a"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "--focus-ring-color": ":root *"
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered .internal-link"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
-    "--focus-ring-color": ":root *"
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered .internal-link"
   },
   "p": { "--focus-ring-color": ":root *" },
   "strong": { "--focus-ring-color": ":root *" },
@@ -1348,6 +1343,8 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -1372,7 +1369,10 @@
     "--focus-ring-color": ":root *"
   },
   "blockquote": { "--focus-ring-color": ":root *" },
-  "a.footnote-backref.footnote-link": { "--focus-ring-color": ":root *" },
+  "a.footnote-backref.footnote-link": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": "a"
+  },
   "input[type=\"search\"]": { "--focus-ring-color": ":root *" },
   "div.prompt": { "--focus-ring-color": ":root *" },
   "input.prompt-input[type=\"text\"]": { "--focus-ring-color": ":root *" },
@@ -1384,11 +1384,6 @@
   "div.tree-item-children": { "--focus-ring-color": ":root *" },
   "body.styled-scrollbars": {
     "--focus-ring-color": ":root *",
-    "--h2-weight": ".theme-light",
-    "--h3-weight": ".theme-light",
-    "--h4-weight": ".theme-light",
-    "--h5-weight": ".theme-light",
-    "--h6-weight": ".theme-light",
     "--bases-header-border-width": "body",
     "--bases-embed-border-color": "body",
     "--bases-embed-border-radius": "body",
@@ -1426,7 +1421,6 @@
     "--blockquote-color": ".theme-light",
     "--blockquote-background-color": ".theme-light",
     "--bold-color": ".theme-light",
-    "--bold-weight": ".theme-light",
     "--button-radius": ".theme-light",
     "--button-corner-shape": "body",
     "--blur-background": "body",
@@ -1510,6 +1504,7 @@
     "--header-height": ".theme-light",
     "--flair-background": "body",
     "--flair-color": "body",
+    "--font-weight": "body",
     "--footnote-divider-color-active": "body",
     "--footnote-divider-color": "body",
     "--footnote-divider-width": "body",
@@ -1794,12 +1789,9 @@
     "--color-accent-2": ".theme-light",
     "--background-secondary-alt": ".theme-light",
     "--shadow-xs": ".theme-light",
-    "--font-interface-theme": "body",
     "--font-interface": "body",
-    "--font-text-theme": "body",
     "--font-text": "body",
     "--font-print": "body",
-    "--font-monospace-theme": "body",
     "--font-monospace": "body",
     "--font-mermaid": "body",
     "--shiki-code-background": "body",
@@ -1879,6 +1871,8 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -2145,5 +2139,5 @@
     "--shadow-border-themed-inset": ".canvas-node",
     "--shadow-border-themed": ".canvas-node"
   },
-  ".tag": { "--focus-ring-color": ":root *" }
+  ".tag": { "--focus-ring-color": ":root *", "--font-weight": "a" }
 }

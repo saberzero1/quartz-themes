@@ -247,202 +247,32 @@ body.theme-light {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: var(--text-normal) !important;
-  --background-modifier-border: transparent !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-primary-alt) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: var(--interactive-accent) !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--background-primary) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--background-primary),
-      color-mix(
-        in srgb,
-        var(--background-primary) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--light-accent-custom) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: var(--text-muted) !important;
-  --code-background: #e1e1e1 !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: var(--text-muted) !important;
-  --code-normal: var(--text-normal) !important;
-  --code-punctuation: var(--text-muted) !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: var(--background-modifier-border) !important;
-  --icon-color: var(--ui-font-color-light) !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: color-mix(
-    in srgb,
-    var(--light-accent-custom),
-    black 25%
-  ) !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: var(--light-accent-custom) !important;
-  --interactive-accent-hover: #000000 !important;
-  --interactive-hover: var(--color-base-10) !important;
-  --interactive-normal: var(--color-base-00) !important;
-  --link-color: var(--ui-font-color-light) !important;
-  --link-color-hover: var(--text-accent-hover) !important;
-  --link-external-color: var(--link-ext-color-light-custom, #a34100) !important;
-  --link-external-color-hover: var(--text-accent-hover) !important;
-  --link-unresolved-color: #772e00 !important;
-  --list-marker-color: var(--light-accent-custom) !important;
-  --list-marker-color-collapsed: var(--text-accent) !important;
-  --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: var(--text-muted) !important;
-  --metadata-label-text-color-hover: var(--text-muted) !important;
-  --modal-background: #b0b0b0 !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: var(--text-normal) !important;
-  --nav-item-color-selected: var(--text-normal) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: #b0b0b0 !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--background-primary) !important;
-  --search-clear-button-color: var(--text-muted) !important;
-  --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: #ffffff !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: var(--background-primary) !important;
-  --tab-outline-color: transparent !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: var(--text-faint) !important;
-  --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--text-muted) !important;
-  --tab-text-color-focused-active: var(--text-muted) !important;
-  --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(--background-modifier-border) !important;
-  --table-drag-handle-background-active: var(
-    --table-selection-border-color
-  ) !important;
-  --table-drag-handle-color: var(--text-faint) !important;
-  --table-drag-handle-color-active: var(--text-on-accent) !important;
-  --table-header-border-color: var(--table-border-color) !important;
-  --table-header-color: var(--text-normal) !important;
-  --table-selection-border-color: var(--interactive-accent) !important;
-  --tag-color: var(--body-font-color-light) !important;
-  --tag-color-hover: var(--text-accent) !important;
   --text-accent: var(--light-accent-custom) !important;
   --text-faint: color-mix(
     in srgb,
     var(--text-muted),
     transparent 30%
   ) !important;
-  --text-muted: var(--ui-font-color-light) !important;
   --text-normal: var(--body-font-color-light) !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-muted) !important;
-  --titlebar-text-color-focused: var(--text-normal) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: 0px !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 0 !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --background-modifier-border: transparent !important;
   --background-modifier-form-field: #b0b0b0 !important;
   --icon-size: 20px !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -486,17 +316,21 @@ body.theme-light {
   --background-primary-alt: #b0b0b0 !important;
   --background-secondary: #b0b0b0 !important;
   --background-secondary-alt: #b0b0b0 !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -505,18 +339,25 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -529,14 +370,29 @@ body.theme-light {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -579,6 +435,8 @@ body.theme-light {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: 191, 140, 59;
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -594,24 +452,38 @@ body.theme-light {
     var(--canvas-ink-light),
     transparent 70%
   ) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--light-accent-custom) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: 0 !important;
   --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
+  --code-background: #e1e1e1 !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-muted) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: 0px !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -664,12 +536,16 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -679,13 +555,19 @@ body.theme-light {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -695,6 +577,8 @@ body.theme-light {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -732,11 +616,14 @@ body.theme-light {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -751,8 +638,12 @@ body.theme-light {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--text-faint) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -790,9 +681,19 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: 1.5em !important;
   --highlight-mix-blend-mode: darken !important;
+  --hr-color: var(--background-modifier-border) !important;
   --hr-thickness: 2px !important;
+  --icon-color: var(--ui-font-color-light) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: color-mix(
+    in srgb,
+    var(--light-accent-custom),
+    black 25%
+  ) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -822,13 +723,19 @@ body.theme-light {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: var(--light-accent-custom) !important;
+  --interactive-accent-hover: #000000 !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: var(--color-base-10) !important;
+  --interactive-normal: var(--color-base-00) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -842,12 +749,17 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: var(--line-height-custom, 1.6) !important;
   --line-height-tight: 1.3 !important;
+  --link-color: var(--ui-font-color-light) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
+  --link-external-color: var(--link-ext-color-light-custom, #a34100) !important;
+  --link-external-color-hover: var(--text-accent-hover) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: #772e00 !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -864,10 +776,14 @@ body.theme-light {
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
+  --list-marker-color: var(--light-accent-custom) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -880,10 +796,12 @@ body.theme-light {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -898,6 +816,7 @@ body.theme-light {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -905,6 +824,8 @@ body.theme-light {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -926,6 +847,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
+  --modal-background: #b0b0b0 !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -942,6 +864,12 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -954,6 +882,11 @@ body.theme-light {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -962,13 +895,23 @@ body.theme-light {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 400px !important;
@@ -978,6 +921,7 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: #b0b0b0 !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -991,6 +935,7 @@ body.theme-light {
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -1005,6 +950,8 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1026,10 +973,16 @@ body.theme-light {
     transparent 85%
   ) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -1037,29 +990,39 @@ body.theme-light {
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 15px 30px rgba(0, 0, 0, 0.1) !important;
   --shadow-s: none !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -1093,13 +1056,18 @@ body.theme-light {
   --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
+  --slider-track-background: #ffffff !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
@@ -1113,10 +1081,12 @@ body.theme-light {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: var(--background-primary) !important;
   --tab-curve: 0 !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
+  --tab-outline-color: transparent !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 0 !important;
   --tab-radius-active: 0 !important;
@@ -1128,12 +1098,25 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
@@ -1144,9 +1127,16 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color
+  ) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: var(--table-background) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1158,6 +1148,7 @@ body.theme-light {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-selection-border-radius: 0 !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-text-size) !important;
@@ -1174,6 +1165,8 @@ body.theme-light {
     0.15
   ) !important;
   --tag-border-width: var(--input-border-width) !important;
+  --tag-color: var(--body-font-color-light) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -1185,13 +1178,18 @@ body.theme-light {
   --text-error: var(--color-red) !important;
   --text-highlight-bg: color-mix(in srgb, #ff7700, transparent 55%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: var(--ui-font-color-light) !important;
   --text-on-accent: #ffffff !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(120, 120, 120, 0.2) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1219,6 +1217,8 @@ body.theme-light {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
@@ -1243,26 +1243,19 @@ body.theme-light {
   --h5-color: var(--text-normal) !important;
   --h6-color: var(--text-normal) !important;
   --inline-title-color: var(--h1-color) !important;
+  --callout-note: 84, 122, 155;
   --checkbox-border-width: 0px !important;
   --dashboard-border-width: 1px !important;
-  --drag-border-width: 3px !important;
-  --font-ui: var(--font-interface-override) !important;
-  --mobile-active-bg: #d6d6d6 !important;
-  --nav-guide-border-width: 1px !important;
-  --settings-border-width: 0px !important;
-  --tab-hover-bg-doc: var(--surface-highlight) !important;
-  --tab-hover-bg-ui: color-mix(
-    in srgb,
-    var(--text-muted),
-    transparent 90%
-  ) !important;
-  --tab-hover-text-ui: var(--text-muted) !important;
-  --callout-note: 84, 122, 155;
   --dashboard-col-width: 300px !important;
   --dashboard-gap: 4px !important;
+  --drag-border-width: 3px !important;
   --editor-width: 600px !important;
+  --font-ui: var(--font-interface-override) !important;
   --metadata-content-radius: 0px !important;
+  --mobile-active-bg: #d6d6d6 !important;
+  --nav-guide-border-width: 1px !important;
   --prompt-border-radius: var(--modal-radius) !important;
+  --settings-border-width: 0px !important;
   --shadow-checkbox-inset: none !important;
   --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
   --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
@@ -1273,42 +1266,37 @@ body.theme-light {
     #ffffff,
     transparent 60%
   ) !important;
+  --tab-hover-bg-doc: var(--surface-highlight) !important;
+  --tab-hover-bg-ui: color-mix(
+    in srgb,
+    var(--text-muted),
+    transparent 90%
+  ) !important;
+  --tab-hover-text-ui: var(--text-muted) !important;
   --text-align-mode: left !important;
   --toggle-on-color: #ff7700 !important;
   --toggle-track-radius: 0 !important;
   --callout-abstract: 88, 139, 150;
   --bases-text-color: var(--text-normal) !important;
+  --body-font-color-dark: #b0a589 !important;
+  --body-font-color-light: #000000 !important;
   --button-bg-dynamic: #d0d0d0 !important;
+  --button-bg-hover-dynamic: #ffffff !important;
   --button-text-dynamic: var(--text-normal) !important;
+  --button-text-hover-dynamic: #000000 !important;
+  --calendar-dot-bg: #d10000 !important;
   --calendar-header-color: var(--text-muted) !important;
+  --calendar-today-color: #d10000 !important;
+  --canvas-node-border-color: #232323 !important;
+  --checkbox-bg-unchecked: #a9a9a9 !important;
   --cta-bg-dynamic: var(--interactive-accent) !important;
   --cta-bg-hover-dynamic: #000000 !important;
+  --cta-text-dynamic: #ffffff !important;
   --dark-accent-custom: color-mix(
     in srgb,
     var(--ui-font-color-dark),
     white 20%
   ) !important;
-  --input-bg-std: #cdcdcd !important;
-  --menu-custom-bg: var(--surface-highlight) !important;
-  --mobile-drawer-color-dark: var(--background-primary) !important;
-  --mobile-drawer-color-light: var(--background-secondary) !important;
-  --mobile-navbar-border-color-dark: var(--background-secondary) !important;
-  --mobile-navbar-border-color-light: var(--background-secondary) !important;
-  --mobile-navbar-color-dark: var(--background-secondary) !important;
-  --mobile-navbar-color-light: var(--background-secondary) !important;
-  --settings-icon-fill: var(--ui-font-color-light) !important;
-  --surface-highlight: var(--surface-highlight-light) !important;
-  --vertical-tab-active-color: var(--text-muted) !important;
-  --vertical-tab-header-color: var(--ui-font-color-light) !important;
-  --body-font-color-dark: #b0a589 !important;
-  --body-font-color-light: #000000 !important;
-  --button-bg-hover-dynamic: #ffffff !important;
-  --button-text-hover-dynamic: #000000 !important;
-  --calendar-dot-bg: #d10000 !important;
-  --calendar-today-color: #d10000 !important;
-  --canvas-node-border-color: #232323 !important;
-  --checkbox-bg-unchecked: #a9a9a9 !important;
-  --cta-text-dynamic: #ffffff !important;
   --dashboard-banner-height: 600px !important;
   --dashboard-banner-offset: 150px !important;
   --dashboard-banner-opacity: 1 !important;
@@ -1317,13 +1305,21 @@ body.theme-light {
   --drag-border: none !important;
   --font-text-destructive: #ff4b4b !important;
   --footnote-link-color: #bd4b00 !important;
+  --input-bg-std: #cdcdcd !important;
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
+  --menu-custom-bg: var(--surface-highlight) !important;
   --mobile-drawer-bg: #b0b0b0 !important;
+  --mobile-drawer-color-dark: var(--background-primary) !important;
+  --mobile-drawer-color-light: var(--background-secondary) !important;
+  --mobile-navbar-border-color-dark: var(--background-secondary) !important;
+  --mobile-navbar-border-color-light: var(--background-secondary) !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
   --mobile-navbar-border-width-dark: 0px !important;
   --mobile-navbar-border-width-light: 0px !important;
+  --mobile-navbar-color-dark: var(--background-secondary) !important;
+  --mobile-navbar-color-light: var(--background-secondary) !important;
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
@@ -1331,12 +1327,16 @@ body.theme-light {
   --new-tab-hover-text: #000000 !important;
   --settings-bg-color: #b0b0b0 !important;
   --settings-border-color: #000000 !important;
+  --settings-icon-fill: var(--ui-font-color-light) !important;
   --shadow-floating-card: none !important;
   --status-bar-active-bg: #ff7700 !important;
+  --surface-highlight: var(--surface-highlight-light) !important;
   --surface-highlight-dark: #262626 !important;
   --surface-highlight-light: #d6d6d6 !important;
   --ui-font-color-dark: #c8bc9f !important;
   --ui-font-color-light: #222222 !important;
+  --vertical-tab-active-color: var(--text-muted) !important;
+  --vertical-tab-header-color: var(--ui-font-color-light) !important;
   --canvas-color-arrow: var(--light-accent-custom) !important;
   --canvas-color-edge: var(--light-accent-custom) !important;
   --canvas-ink-light: var(--text-muted) !important;
@@ -1352,212 +1352,32 @@ body.theme-dark {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: var(--text-normal) !important;
-  --background-modifier-border: transparent !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-primary-alt) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: var(--interactive-accent) !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--interactive-normal) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--interactive-normal),
-      color-mix(
-        in srgb,
-        var(--interactive-normal) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--dark-accent-custom) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: var(--text-muted) !important;
-  --code-background: #1f1f1f !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: var(--text-muted) !important;
-  --code-normal: var(--text-normal) !important;
-  --code-punctuation: var(--text-muted) !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: var(--background-modifier-border) !important;
-  --icon-color: var(--ui-font-color-dark) !important;
-  --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: color-mix(
-    in srgb,
-    var(--dark-accent-custom),
-    white 25%
-  ) !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: var(--dark-accent-custom) !important;
-  --interactive-accent-hover: color-mix(
-    in srgb,
-    var(--dark-accent-custom),
-    white 25%
-  ) !important;
-  --interactive-hover: var(--color-base-35) !important;
-  --interactive-normal: #323232 !important;
-  --link-color: var(--ui-font-color-dark) !important;
-  --link-color-hover: var(--text-accent-hover) !important;
-  --link-external-color: var(--link-ext-color-dark-custom, #7bb3c0) !important;
-  --link-external-color-hover: var(--text-accent-hover) !important;
-  --link-unresolved-color: #8da3a8 !important;
-  --list-marker-color: color-mix(
-    in srgb,
-    var(--text-normal),
-    white 25%
-  ) !important;
-  --list-marker-color-collapsed: var(--text-accent) !important;
-  --list-marker-color-hover: var(--text-muted) !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: var(--text-muted) !important;
-  --metadata-label-text-color-hover: var(--text-muted) !important;
-  --modal-background: #323232 !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--text-normal) !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: var(--text-normal) !important;
-  --nav-item-color-selected: var(--text-normal) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: #323232 !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--background-primary) !important;
-  --search-clear-button-color: var(--text-muted) !important;
-  --search-icon-color: var(--text-muted) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: #ffffff !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: var(--background-primary) !important;
-  --tab-outline-color: transparent !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: var(--text-faint) !important;
-  --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--text-muted) !important;
-  --tab-text-color-focused-active: var(--text-muted) !important;
-  --tab-text-color-focused-active-current: var(--text-normal) !important;
-  --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(--background-modifier-border) !important;
-  --table-drag-handle-background-active: var(
-    --table-selection-border-color
-  ) !important;
-  --table-drag-handle-color: var(--text-faint) !important;
-  --table-drag-handle-color-active: var(--text-on-accent) !important;
-  --table-header-border-color: var(--table-border-color) !important;
-  --table-header-color: var(--text-normal) !important;
-  --table-selection-border-color: var(--interactive-accent) !important;
-  --tag-color: color-mix(
-    in srgb,
-    var(--ui-font-color-dark),
-    white 10%
-  ) !important;
-  --tag-color-hover: var(--text-accent) !important;
   --text-accent: var(--dark-accent-custom) !important;
   --text-faint: color-mix(
     in srgb,
     var(--text-muted),
     transparent 30%
   ) !important;
-  --text-muted: var(--ui-font-color-dark) !important;
   --text-normal: var(--body-font-color-dark) !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary-alt) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-muted) !important;
-  --titlebar-text-color-focused: var(--text-normal) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: 0px !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 0 !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --background-modifier-border: transparent !important;
   --background-modifier-form-field: #323232 !important;
   --icon-size: 20px !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -1601,17 +1421,21 @@ body.theme-dark {
   --background-primary-alt: #323232 !important;
   --background-secondary: #323232 !important;
   --background-secondary-alt: #323232 !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-primary-alt) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -1620,18 +1444,25 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -1644,14 +1475,29 @@ body.theme-dark {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -1694,6 +1540,8 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: 212, 163, 85;
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -1705,24 +1553,38 @@ body.theme-dark {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--text-faint) !important;
+  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-color: var(--dark-accent-custom) !important;
+  --checkbox-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: 0 !important;
   --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
+  --code-background: #1f1f1f !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-muted) !important;
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
+  --code-punctuation: var(--text-muted) !important;
   --code-radius: 0px !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h),
     var(--accent-s),
@@ -1775,12 +1637,16 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -1790,13 +1656,19 @@ body.theme-dark {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -1806,6 +1678,8 @@ body.theme-dark {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -1843,11 +1717,14 @@ body.theme-dark {
   --font-ui-medium: 15px !important;
   --font-ui-small: 13px !important;
   --font-ui-smaller: 12px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -1862,8 +1739,12 @@ body.theme-dark {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--text-faint) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--color-green) !important;
+  --graph-node-unresolved: var(--text-faint) !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
   --h1-size: 1.618em !important;
@@ -1901,9 +1782,19 @@ body.theme-dark {
   --h6-variant: normal !important;
   --h6-weight: 600 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: 1.5em !important;
   --highlight-mix-blend-mode: lighten !important;
+  --hr-color: var(--background-modifier-border) !important;
   --hr-thickness: 2px !important;
+  --icon-color: var(--ui-font-color-dark) !important;
+  --icon-color-active: var(--text-accent) !important;
+  --icon-color-focused: var(--text-normal) !important;
+  --icon-color-hover: color-mix(
+    in srgb,
+    var(--dark-accent-custom),
+    white 25%
+  ) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -1937,13 +1828,23 @@ body.theme-dark {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow: none !important;
   --input-shadow-hover: none !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: var(--dark-accent-custom) !important;
+  --interactive-accent-hover: color-mix(
+    in srgb,
+    var(--dark-accent-custom),
+    white 25%
+  ) !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
+  --interactive-hover: var(--color-base-35) !important;
+  --interactive-normal: #323232 !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -1957,12 +1858,17 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: var(--line-height-custom, 1.6) !important;
   --line-height-tight: 1.3 !important;
+  --link-color: var(--ui-font-color-dark) !important;
+  --link-color-hover: var(--text-accent-hover) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
+  --link-external-color: var(--link-ext-color-dark-custom, #7bb3c0) !important;
+  --link-external-color-hover: var(--text-accent-hover) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: #8da3a8 !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -1979,10 +1885,18 @@ body.theme-dark {
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
+  --list-marker-color: color-mix(
+    in srgb,
+    var(--text-normal),
+    white 25%
+  ) !important;
+  --list-marker-color-collapsed: var(--text-accent) !important;
+  --list-marker-color-hover: var(--text-muted) !important;
   --list-numbered-style: decimal !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -1995,10 +1909,12 @@ body.theme-dark {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -2013,6 +1929,7 @@ body.theme-dark {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -2020,6 +1937,8 @@ body.theme-dark {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--text-muted) !important;
+  --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -2041,6 +1960,7 @@ body.theme-dark {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
+  --modal-background: #323232 !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2057,6 +1977,12 @@ body.theme-dark {
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -2069,6 +1995,11 @@ body.theme-dark {
   ) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--text-normal) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -2077,13 +2008,21 @@ body.theme-dark {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 400px !important;
@@ -2093,6 +2032,7 @@ body.theme-dark {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: #323232 !important;
   --prompt-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2106,6 +2046,7 @@ body.theme-dark {
   --radius-m: 0 !important;
   --radius-s: 0 !important;
   --radius-xl: 0 !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -2114,6 +2055,8 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -2135,10 +2078,16 @@ body.theme-dark {
     transparent 85%
   ) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--text-muted) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: var(--size-4-5) !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -2146,29 +2095,39 @@ body.theme-dark {
     0px 1.8px 7.3px rgba(0, 0, 0, 0.071), 0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
     0px 30px 90px rgba(0, 0, 0, 0.2) !important;
   --shadow-s: none !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -2202,13 +2161,18 @@ body.theme-dark {
   --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
+  --slider-track-background: #ffffff !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
@@ -2222,10 +2186,12 @@ body.theme-dark {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: var(--background-primary) !important;
   --tab-curve: 0 !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
+  --tab-outline-color: transparent !important;
   --tab-outline-width: 1px !important;
   --tab-radius: 0 !important;
   --tab-radius-active: 0 !important;
@@ -2237,12 +2203,25 @@ body.theme-dark {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--text-faint) !important;
+  --tab-text-color-active: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-background: transparent !important;
   --table-border-width: 1px !important;
@@ -2253,9 +2232,16 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color
+  ) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: var(--table-background) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--table-text-size) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -2267,6 +2253,7 @@ body.theme-dark {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-selection-border-radius: 0 !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-text-size) !important;
@@ -2283,6 +2270,12 @@ body.theme-dark {
     0.15
   ) !important;
   --tag-border-width: var(--input-border-width) !important;
+  --tag-color: color-mix(
+    in srgb,
+    var(--ui-font-color-dark),
+    white 10%
+  ) !important;
+  --tag-color-hover: var(--text-accent) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: none !important;
@@ -2298,13 +2291,18 @@ body.theme-dark {
   --text-error: var(--color-red) !important;
   --text-highlight-bg: color-mix(in srgb, #38717f, transparent 55%) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: var(--ui-font-color-dark) !important;
   --text-on-accent: #323232 !important;
   --text-on-accent-inverted: black !important;
   --text-selection: rgba(200, 200, 200, 0.15) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-muted) !important;
+  --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -2332,6 +2330,8 @@ body.theme-dark {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
@@ -2351,26 +2351,19 @@ body.theme-dark {
   --h5-color: var(--dark-accent-custom) !important;
   --h6-color: var(--dark-accent-custom) !important;
   --inline-title-color: var(--h1-color) !important;
+  --callout-note: 96, 138, 176;
   --checkbox-border-width: 0px !important;
   --dashboard-border-width: 1px !important;
-  --drag-border-width: 3px !important;
-  --font-ui: var(--font-interface-override) !important;
-  --mobile-active-bg: #505050 !important;
-  --nav-guide-border-width: 1px !important;
-  --settings-border-width: 0px !important;
-  --tab-hover-bg-doc: var(--surface-highlight) !important;
-  --tab-hover-bg-ui: color-mix(
-    in srgb,
-    var(--text-muted),
-    transparent 90%
-  ) !important;
-  --tab-hover-text-ui: var(--text-muted) !important;
-  --callout-note: 96, 138, 176;
   --dashboard-col-width: 300px !important;
   --dashboard-gap: 4px !important;
+  --drag-border-width: 3px !important;
   --editor-width: 600px !important;
+  --font-ui: var(--font-interface-override) !important;
   --metadata-content-radius: 0px !important;
+  --mobile-active-bg: #505050 !important;
+  --nav-guide-border-width: 1px !important;
   --prompt-border-radius: var(--modal-radius) !important;
+  --settings-border-width: 0px !important;
   --shadow-checkbox-inset: none !important;
   --shadow-focus-inset: inset 0 0 0 1px var(--text-normal) !important;
   --shadow-focus-ring: 0 0 0 2px var(--interactive-accent) !important;
@@ -2381,46 +2374,41 @@ body.theme-dark {
     #ffffff,
     transparent 95%
   ) !important;
+  --tab-hover-bg-doc: var(--surface-highlight) !important;
+  --tab-hover-bg-ui: color-mix(
+    in srgb,
+    var(--text-muted),
+    transparent 90%
+  ) !important;
+  --tab-hover-text-ui: var(--text-muted) !important;
   --text-align-mode: left !important;
   --toggle-on-color: #448494 !important;
   --toggle-track-radius: 0 !important;
   --callout-abstract: 109, 163, 174;
   --bases-text-color: var(--body-font-color-dark) !important;
+  --body-font-color-dark: #b0a589 !important;
+  --body-font-color-light: #000000 !important;
   --button-bg-dynamic: var(--light-accent-custom) !important;
+  --button-bg-hover-dynamic: #000000 !important;
   --button-text-dynamic: var(--text-normal) !important;
+  --button-text-hover-dynamic: #ffffff !important;
+  --calendar-dot-bg: #feb43f !important;
   --calendar-header-color: var(--text-muted) !important;
+  --calendar-today-color: #feb43f !important;
+  --canvas-node-border-color: #c0c0c0 !important;
+  --checkbox-bg-unchecked: #2f2f2f !important;
   --cta-bg-dynamic: var(--interactive-accent) !important;
   --cta-bg-hover-dynamic: color-mix(
     in srgb,
     var(--dark-accent-custom),
     white 25%
   ) !important;
+  --cta-text-dynamic: #000000 !important;
   --dark-accent-custom: color-mix(
     in srgb,
     var(--ui-font-color-dark),
     white 20%
   ) !important;
-  --input-bg-std: var(--light-accent-custom) !important;
-  --menu-custom-bg: var(--surface-highlight) !important;
-  --mobile-drawer-color-dark: var(--background-primary) !important;
-  --mobile-drawer-color-light: var(--background-secondary) !important;
-  --mobile-navbar-border-color-dark: var(--background-secondary) !important;
-  --mobile-navbar-border-color-light: var(--background-secondary) !important;
-  --mobile-navbar-color-dark: var(--background-secondary) !important;
-  --mobile-navbar-color-light: var(--background-secondary) !important;
-  --settings-icon-fill: var(--ui-font-color-dark) !important;
-  --surface-highlight: var(--surface-highlight-dark) !important;
-  --vertical-tab-active-color: var(--text-muted) !important;
-  --vertical-tab-header-color: var(--ui-font-color-dark) !important;
-  --body-font-color-dark: #b0a589 !important;
-  --body-font-color-light: #000000 !important;
-  --button-bg-hover-dynamic: #000000 !important;
-  --button-text-hover-dynamic: #ffffff !important;
-  --calendar-dot-bg: #feb43f !important;
-  --calendar-today-color: #feb43f !important;
-  --canvas-node-border-color: #c0c0c0 !important;
-  --checkbox-bg-unchecked: #2f2f2f !important;
-  --cta-text-dynamic: #000000 !important;
   --dashboard-banner-height: 600px !important;
   --dashboard-banner-offset: 150px !important;
   --dashboard-banner-opacity: 1 !important;
@@ -2429,13 +2417,21 @@ body.theme-dark {
   --drag-border: none !important;
   --font-text-destructive: #ff4b4b !important;
   --footnote-link-color: #7bb3c0 !important;
+  --input-bg-std: var(--light-accent-custom) !important;
   --input-border: transparent !important;
   --light-accent-custom: #000000 !important;
+  --menu-custom-bg: var(--surface-highlight) !important;
   --mobile-drawer-bg: #3c3c3c !important;
+  --mobile-drawer-color-dark: var(--background-primary) !important;
+  --mobile-drawer-color-light: var(--background-secondary) !important;
+  --mobile-navbar-border-color-dark: var(--background-secondary) !important;
+  --mobile-navbar-border-color-light: var(--background-secondary) !important;
   --mobile-navbar-border-style-dark: solid !important;
   --mobile-navbar-border-style-light: solid !important;
   --mobile-navbar-border-width-dark: 0px !important;
   --mobile-navbar-border-width-light: 0px !important;
+  --mobile-navbar-color-dark: var(--background-secondary) !important;
+  --mobile-navbar-color-light: var(--background-secondary) !important;
   --mobile-navbar-opacity-dark: 0.7 !important;
   --mobile-navbar-opacity-light: 0.7 !important;
   --mobile-navbar-radius: 20px !important;
@@ -2443,12 +2439,16 @@ body.theme-dark {
   --new-tab-hover-text: #ffffff !important;
   --settings-bg-color: #3c3c3c !important;
   --settings-border-color: #6a6a6a !important;
+  --settings-icon-fill: var(--ui-font-color-dark) !important;
   --shadow-floating-card: none !important;
   --status-bar-active-bg: #798ccf !important;
+  --surface-highlight: var(--surface-highlight-dark) !important;
   --surface-highlight-dark: #262626 !important;
   --surface-highlight-light: #d6d6d6 !important;
   --ui-font-color-dark: #c8bc9f !important;
   --ui-font-color-light: #222222 !important;
+  --vertical-tab-active-color: var(--text-muted) !important;
+  --vertical-tab-header-color: var(--ui-font-color-dark) !important;
 }
 
 body {

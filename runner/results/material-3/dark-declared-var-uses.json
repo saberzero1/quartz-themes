@@ -336,6 +336,7 @@
     "background-color": "rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -532,5 +533,14 @@
     "background-color": "var(--background-secondary)",
     "box-shadow": "var(--input-shadow)",
     "font-size": "var(--font-ui-medium)"
+  },
+  ".tag": {
+    "background-color": "var(--tag-background)",
+    "color": "var(--tag-color)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--tag-size)",
+    "font-weight": "var(--tag-weight)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
   }
 }

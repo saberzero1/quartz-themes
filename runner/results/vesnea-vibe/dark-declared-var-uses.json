@@ -83,9 +83,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
@@ -414,8 +416,9 @@
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".file-embed": {
     "background-color": "var(--background-primary-alt)",
@@ -423,10 +426,6 @@
     "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
-  },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)",
     "padding-bottom": "var(--list-spacing)",
@@ -621,88 +620,6 @@
     "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
   },
   "li.task-list-item[data-task=\"z\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"S\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"A\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"B\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"C\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"D\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"E\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"F\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"G\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"H\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"J\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"K\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"L\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"M\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"N\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"O\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"P\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"Q\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"R\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"T\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"U\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"V\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"W\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  "li.task-list-item[data-task=\"Y\"]": {
-    "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
-  },
-  "li.task-list-item[data-task=\"Z\"]": {
     "color": "hsl(from var(--attribute-psionic) h calc(s + 20) calc(l + 20) / 1)"
   },
   "svg.lucide-pencil.svg-icon": {

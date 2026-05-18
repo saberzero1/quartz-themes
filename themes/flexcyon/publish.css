@@ -387,209 +387,29 @@ body.theme-light {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: #6f768566 !important;
-  --background-modifier-border: var(--color-base-20) !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-secondary) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: var(--interactive-accent) !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--background-primary) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--background-primary),
-      color-mix(
-        in srgb,
-        var(--background-primary) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--flexcyon-blue) !important;
-  --checkbox-border-color-hover: var(--flexcyon-palette-lilac-hover) !important;
-  --checkbox-color: var(--flexcyon-purple-lilac) !important;
-  --checkbox-color-hover: var(--flexcyon-palette-lilac-hover) !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: var(--text-muted) !important;
-  --code-background: var(--flexcyon-base-01-02-mix) !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: var(--text-faint) !important;
-  --code-normal: var(--flexcyon-cyan) !important;
-  --code-punctuation: var(--flexcyon-purple-lilac) !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-unresolved: var(--flexcyon-red-salmon) !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: #393e48 !important;
-  --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--interactive-accent) !important;
-  --icon-color-focused: var(--interactive-accent) !important;
-  --icon-color-hover: var(--text-muted) !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: color-mix(
-    in oklch,
-    var(--text-accent) 80%,
-    transparent 20%
-  ) !important;
-  --interactive-accent-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-accent) 75%,
-    transparent
-  ) !important;
-  --interactive-hover: var(--background-primary) !important;
-  --interactive-normal: var(--color-base-05) !important;
-  --link-color: var(--flexcyon-link-color) !important;
-  --link-color-hover: var(--flexcyon-link-hover) !important;
-  --link-external-color: var(--flexcyon-external-link-color) !important;
-  --link-external-color-hover: var(--flexcyon-external-link-hover) !important;
-  --link-unresolved-color: var(--flexcyon-link-unresolved-color) !important;
-  --list-marker-color: var(--flexcyon-cyan) !important;
-  --list-marker-color-collapsed: var(--flexcyon-lime-green) !important;
-  --list-marker-color-hover: var(--flexcyon-palette-cyan-hover) !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: var(--flexcyon-purple-lilac) !important;
-  --metadata-label-text-color-hover: var(
-    --flexcyon-palette-lilac-hover
-  ) !important;
-  --modal-background: var(--background-primary) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--interactive-accent) !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: var(--text-normal) !important;
-  --nav-item-color-selected: var(--flexcyon-orange) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: var(--background-primary) !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--ribbon-background) !important;
-  --search-clear-button-color: var(--flexcyon-red-salmon) !important;
-  --search-icon-color: var(--flexcyon-accent) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: var(--background-modifier-border) !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: var(--background-primary) !important;
-  --tab-outline-color: var(--divider-color) !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: var(--flexcyon-base-05) !important;
-  --tab-text-color-active: var(--text-accent) !important;
-  --tab-text-color-focused: var(--flexcyon-base-05) !important;
-  --tab-text-color-focused-active: var(--text-accent) !important;
-  --tab-text-color-focused-active-current: var(--text-accent) !important;
-  --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(--background-modifier-border) !important;
-  --table-drag-handle-background-active: var(
-    --table-selection-border-color
-  ) !important;
-  --table-drag-handle-color: var(--text-faint) !important;
-  --table-drag-handle-color-active: var(--text-on-accent) !important;
-  --table-header-border-color: var(--table-border-color) !important;
-  --table-header-color: var(--text-normal) !important;
-  --table-selection-border-color: var(--interactive-accent) !important;
-  --tag-color: var(--flexcyon-cyan) !important;
-  --tag-color-hover: var(--flexcyon-palette-cyan-hover) !important;
   --text-accent: var(--flexcyon-accent) !important;
   --text-faint: var(--flexcyon-text-muted) !important;
-  --text-muted: color-mix(
-    in oklch,
-    var(--flexcyon-text-muted),
-    var(--text-normal)
-  ) !important;
   --text-normal: #080808 !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-faint) !important;
-  --titlebar-text-color-focused: var(--text-muted) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 0px !important;
   --input-padding: var(--flexcyon-input-verti-padding)
     var(--flexcyon-input-horiz-padding) !important;
+  --background-modifier-border: var(--color-base-20) !important;
   --background-modifier-form-field: var(--color-base-00) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: 2px !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -634,17 +454,21 @@ body.theme-light {
   --background-primary-alt: var(--color-base-10) !important;
   --background-secondary: var(--color-base-05) !important;
   --background-secondary-alt: var(--color-base-10) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-secondary) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -653,18 +477,25 @@ body.theme-light {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -677,14 +508,29 @@ body.theme-light {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--background-primary) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--background-primary),
+      color-mix(
+        in srgb,
+        var(--background-primary) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -727,6 +573,8 @@ body.theme-light {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 192, 192, 192 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -738,24 +586,38 @@ body.theme-light {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--flexcyon-blue) !important;
+  --checkbox-border-color-hover: var(--flexcyon-palette-lilac-hover) !important;
+  --checkbox-color: var(--flexcyon-purple-lilac) !important;
+  --checkbox-color-hover: var(--flexcyon-palette-lilac-hover) !important;
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0 !important;
+  --code-background: var(--flexcyon-base-01-02-mix) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--flexcyon-code-function) !important;
   --code-important: var(--flexcyon-code-error) !important;
   --code-keyword: var(--flexcyon-code-keyword) !important;
+  --code-normal: var(--flexcyon-cyan) !important;
   --code-operator: var(--flexcyon-code-operator) !important;
   --code-property: var(--text-muted) !important;
+  --code-punctuation: var(--flexcyon-purple-lilac) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--flexcyon-lime-green) !important;
   --code-tag: var(--flexcyon-base-grey-dark) !important;
   --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h) var(--accent-s) var(--accent-l) / var(--dimmed)
   ) !important;
@@ -804,12 +666,16 @@ body.theme-light {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: var(--flexcyon-base-03) !important;
   --drag-ghost-text-color: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -819,13 +685,19 @@ body.theme-light {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -835,6 +707,8 @@ body.theme-light {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -880,11 +754,14 @@ body.theme-light {
   --font-ui-medium: 16.1803px !important;
   --font-ui-small: 14.5622px !important;
   --font-ui-smaller: 12.9442px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -899,8 +776,12 @@ body.theme-light {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--flexcyon-base-03) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--flexcyon-purple-lilac) !important;
+  --graph-node-unresolved: var(--flexcyon-red-salmon) !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.61 !important;
   --h1-size: 1.818em !important;
@@ -938,9 +819,15 @@ body.theme-light {
   --h6-variant: normal !important;
   --h6-weight: 575 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: darken !important;
+  --hr-color: #393e48 !important;
   --hr-thickness: 2px !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--interactive-accent) !important;
+  --icon-color-focused: var(--interactive-accent) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -970,8 +857,10 @@ body.theme-light {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow:
     inset 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.05),
     0 1px 1.5px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
@@ -982,8 +871,20 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    var(--text-accent) 80%,
+    transparent 20%
+  ) !important;
+  --interactive-accent-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-accent) 75%,
+    transparent
+  ) !important;
   --interactive-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
+  --interactive-hover: var(--background-primary) !important;
+  --interactive-normal: var(--color-base-05) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -997,12 +898,17 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.4 !important;
   --line-height-tight: 1.25 !important;
+  --link-color: var(--flexcyon-link-color) !important;
+  --link-color-hover: var(--flexcyon-link-hover) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
+  --link-external-color: var(--flexcyon-external-link-color) !important;
+  --link-external-color-hover: var(--flexcyon-external-link-hover) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: var(--flexcyon-link-unresolved-color) !important;
   --link-unresolved-decoration-color: var(
     --flexcyon-link-unresolved-color
   ) !important;
@@ -1018,10 +924,14 @@ body.theme-light {
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
+  --list-marker-color: var(--flexcyon-cyan) !important;
+  --list-marker-color-collapsed: var(--flexcyon-lime-green) !important;
+  --list-marker-color-hover: var(--flexcyon-palette-cyan-hover) !important;
   --list-numbered-style: var(--flexcyon-default-ol-style) !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -1034,10 +944,12 @@ body.theme-light {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -1052,6 +964,7 @@ body.theme-light {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -1059,6 +972,10 @@ body.theme-light {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--flexcyon-purple-lilac) !important;
+  --metadata-label-text-color-hover: var(
+    --flexcyon-palette-lilac-hover
+  ) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -1080,6 +997,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(--flexcyon-base-02) !important;
   --modal-border-width: var(--border-width) !important;
   --modal-community-sidebar-width: 280px !important;
@@ -1093,6 +1011,12 @@ body.theme-light {
   --modal-width: 90vw !important;
   --mono-rgb-0: 255, 255, 255 !important;
   --mono-rgb-100: 0, 0, 0 !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -1102,6 +1026,11 @@ body.theme-light {
   --nav-item-background-selected: var(--flexcyon-base-03) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--interactive-accent) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--flexcyon-orange) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -1110,13 +1039,23 @@ body.theme-light {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.2) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 400px !important;
@@ -1126,6 +1065,7 @@ body.theme-light {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(--flexcyon-base-02-03-mix) !important;
   --prompt-border-width: var(--border-width) !important;
   --prompt-input-height: 40px !important;
@@ -1136,6 +1076,7 @@ body.theme-light {
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 16px !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -1150,6 +1091,8 @@ body.theme-light {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--ribbon-background) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 48px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -1163,10 +1106,16 @@ body.theme-light {
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: var(--flexcyon-red-salmon) !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--flexcyon-accent) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 2px 0px !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -1176,29 +1125,39 @@ body.theme-light {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, 0.042),
     0px 15px 30px rgba(0, 0, 0, 0.07) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -1232,13 +1191,18 @@ body.theme-light {
   --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
+  --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: 13.7533px !important;
   --status-bar-position: absolute !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
@@ -1252,10 +1216,12 @@ body.theme-light {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: var(--background-primary) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: var(--titlebar-background) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 0px !important;
   --tab-radius: 0px !important;
   --tab-radius-active: 0px !important;
@@ -1267,12 +1233,25 @@ body.theme-light {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--flexcyon-base-05) !important;
+  --tab-text-color-active: var(--text-accent) !important;
+  --tab-text-color-focused: var(--flexcyon-base-05) !important;
+  --tab-text-color-focused-active: var(--text-accent) !important;
+  --tab-text-color-focused-active-current: var(--text-accent) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-background: var(--background-primary) !important;
   --table-border-width: 1px !important;
@@ -1283,9 +1262,16 @@ body.theme-light {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color
+  ) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: var(--color-base-20) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--font-ui-large) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -1297,6 +1283,7 @@ body.theme-light {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-ui-medium) !important;
@@ -1317,6 +1304,8 @@ body.theme-light {
     0.15
   ) !important;
   --tag-border-width: 0px !important;
+  --tag-color: var(--flexcyon-cyan) !important;
+  --tag-color-hover: var(--flexcyon-palette-cyan-hover) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
@@ -1332,6 +1321,11 @@ body.theme-light {
     transparent
   ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: color-mix(
+    in oklch,
+    var(--flexcyon-text-muted),
+    var(--text-normal)
+  ) !important;
   --text-on-accent: var(--flexcyon-base-03) !important;
   --text-on-accent-inverted: black !important;
   --text-selection: color-mix(
@@ -1341,8 +1335,12 @@ body.theme-light {
   ) !important;
   --text-success: var(--flexcyon-lime-green) !important;
   --text-warning: var(--flexcyon-red-salmon) !important;
+  --titlebar-background-focused: var(--background-secondary) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-faint) !important;
+  --titlebar-text-color-focused: var(--text-muted) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -1370,6 +1368,8 @@ body.theme-light {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
@@ -1395,6 +1395,9 @@ body.theme-light {
   --vault-name-color: var(--interactive-accent) !important;
   --bold-color: var(--flexcyon-red-salmon) !important;
   --italic-color: var(--flexcyon-accent) !important;
+  --bases-border-r: 16px !important;
+  --bases-cards-group-padding: 16px !important;
+  --bases-no-img-str: "No image path could be found for this file" !important;
   --cm-font-size: calc(var(--font-ui-small) + 0.809px) !important;
   --cm-panel-bg: color-mix(
     in srgb,
@@ -2017,97 +2020,6 @@ body.theme-light {
       var(--flexcyon-callout-bg-opacity),
     transparent
   ) !important;
-  --flexcyon-base-01-02-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-01) 70%,
-    var(--flexcyon-base-02) 30%
-  ) !important;
-  --flexcyon-base-02-03-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-02),
-    var(--flexcyon-base-03)
-  ) !important;
-  --flexcyon-base-03-04-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-03),
-    var(--flexcyon-base-04)
-  ) !important;
-  --flexcyon-base-04-05-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-04),
-    var(--flexcyon-base-05)
-  ) !important;
-  --flexcyon-base-grey-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-grey-light),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-bases-card-padding: var(--flexcyon-bases-card-padding-top)
-    var(--flexcyon-bases-card-padding-right)
-    var(--flexcyon-bases-card-padding-bottom)
-    var(--flexcyon-bases-card-padding-left) !important;
-  --flexcyon-code-error: var(--flexcyon-red-salmon) !important;
-  --flexcyon-code-function: var(--flexcyon-yellow) !important;
-  --flexcyon-code-keyword: var(--flexcyon-purple-lilac) !important;
-  --flexcyon-code-operator: var(--flexcyon-orange) !important;
-  --flexcyon-code-variable: var(--flexcyon-base-grey-dark) !important;
-  --flexcyon-editor-bg-color: color-mix(
-    in oklch,
-    var(--color-base-05),
-    var(--color-base-10)
-  ) !important;
-  --flexcyon-editor-bg-color-2: var(--color-base-20) !important;
-  --flexcyon-external-link-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-external-link-color),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-h1-color: var(--color-blue) !important;
-  --flexcyon-h2-color: var(--color-purple) !important;
-  --flexcyon-h3-color: var(--color-cyan) !important;
-  --flexcyon-h4-color: var(--color-pink) !important;
-  --flexcyon-h5-color: var(--color-green) !important;
-  --flexcyon-h6-color: var(--color-yellow) !important;
-  --flexcyon-highlight-colour: var(--color-cyan) !important;
-  --flexcyon-link-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-link-color),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-new-tab-bg-wrapper: linear-gradient(
-    to right,
-    var(--text-accent),
-    var(--color-pink),
-    var(--color-green)
-  ) !important;
-  --flexcyon-new-tab-font-group: var(--font-monospace) !important;
-  --flexcyon-palette-cyan-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-cyan),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-palette-lilac-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-purple-lilac),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --h: tan(atan2(1380px, 1px)) !important;
-  --oz-fta-file-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
-  --oz-fta-folder-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
-  --r-background-color: var(--color-base-05) !important;
-  --r-heading-color: var(--text-normal) !important;
-  --r-heading-font: var(--font-text) !important;
-  --r-heading1-size: var(--h1-size) !important;
-  --r-heading2-size: var(--h2-size) !important;
-  --r-heading3-size: var(--h3-size) !important;
-  --r-heading4-size: var(--h4-size) !important;
-  --r-link-color: var(--color-accent-2) !important;
-  --r-main-font: var(--font-text) !important;
-  --settings-background: var(--color-base-05) !important;
-  --w: tan(atan2(2538px, 1px)) !important;
-  --bases-border-r: 16px !important;
-  --bases-cards-group-padding: 16px !important;
-  --bases-no-img-str: "No image path could be found for this file" !important;
   --dimmed: 0.55 !important;
   --expand: 110% !important;
   --flexcyon-accent: #5770b9 !important;
@@ -2136,17 +2048,46 @@ body.theme-light {
   --flexcyon-ascii-max-width: 50rem !important;
   --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #faf7ef !important;
+  --flexcyon-base-01-02-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-01) 70%,
+    var(--flexcyon-base-02) 30%
+  ) !important;
   --flexcyon-base-02: #edebe5 !important;
+  --flexcyon-base-02-03-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-02),
+    var(--flexcyon-base-03)
+  ) !important;
   --flexcyon-base-03: #dddcd6 !important;
+  --flexcyon-base-03-04-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-03),
+    var(--flexcyon-base-04)
+  ) !important;
   --flexcyon-base-04: #d3d3ce !important;
+  --flexcyon-base-04-05-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-04),
+    var(--flexcyon-base-05)
+  ) !important;
   --flexcyon-base-05: #b4b3af !important;
   --flexcyon-base-grey-dark: #797876 !important;
   --flexcyon-base-grey-light: #080808 !important;
+  --flexcyon-base-grey-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-grey-light),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-base-grey-scroll: #3f495e !important;
   --flexcyon-base-grey-scroll-hover: #5c6782 !important;
   --flexcyon-base-grey-tab: #71777f !important;
   --flexcyon-bases-card-delay-factor: 12.5 !important;
   --flexcyon-bases-card-flex-grow: 0.55 !important;
+  --flexcyon-bases-card-padding: var(--flexcyon-bases-card-padding-top)
+    var(--flexcyon-bases-card-padding-right)
+    var(--flexcyon-bases-card-padding-bottom)
+    var(--flexcyon-bases-card-padding-left) !important;
   --flexcyon-bases-card-padding-bottom: 0px !important;
   --flexcyon-bases-card-padding-left: 2px !important;
   --flexcyon-bases-card-padding-right: 0px !important;
@@ -2178,8 +2119,13 @@ body.theme-light {
   --flexcyon-callouts-flashcard-height: 250px !important;
   --flexcyon-callouts-flashcard-width: 250px !important;
   --flexcyon-canvas-blur-intensity: 1px !important;
+  --flexcyon-code-error: var(--flexcyon-red-salmon) !important;
   --flexcyon-code-file-ext-font-w: 500 !important;
   --flexcyon-code-file-ext-prefix: "." !important;
+  --flexcyon-code-function: var(--flexcyon-yellow) !important;
+  --flexcyon-code-keyword: var(--flexcyon-purple-lilac) !important;
+  --flexcyon-code-operator: var(--flexcyon-orange) !important;
+  --flexcyon-code-variable: var(--flexcyon-base-grey-dark) !important;
   --flexcyon-codeblock-fmt-ext: lowercase !important;
   --flexcyon-comm-item-opacity: 0.89 !important;
   --flexcyon-comm-text-padding: 3px 16px !important;
@@ -2193,6 +2139,12 @@ body.theme-light {
   --flexcyon-cyan: #3b9ba1 !important;
   --flexcyon-dataview-horizontal-padding: 8px !important;
   --flexcyon-default-ol-style: decimal !important;
+  --flexcyon-editor-bg-color: color-mix(
+    in oklch,
+    var(--color-base-05),
+    var(--color-base-10)
+  ) !important;
+  --flexcyon-editor-bg-color-2: var(--color-base-20) !important;
   --flexcyon-editor-bg-rotation: 0deg !important;
   --flexcyon-editor-bg-width: 15px !important;
   --flexcyon-editor-dot-size: 2.5px !important;
@@ -2200,7 +2152,18 @@ body.theme-light {
   --flexcyon-editor-writing-indentation: 16px !important;
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5c9fe4 !important;
+  --flexcyon-external-link-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-external-link-color),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
+  --flexcyon-h1-color: var(--color-blue) !important;
+  --flexcyon-h2-color: var(--color-purple) !important;
+  --flexcyon-h3-color: var(--color-cyan) !important;
+  --flexcyon-h4-color: var(--color-pink) !important;
+  --flexcyon-h5-color: var(--color-green) !important;
+  --flexcyon-h6-color: var(--color-yellow) !important;
   --flexcyon-heading-1-alignment: left !important;
   --flexcyon-heading-2-alignment: left !important;
   --flexcyon-heading-3-alignment: left !important;
@@ -2209,6 +2172,7 @@ body.theme-light {
   --flexcyon-heading-6-alignment: left !important;
   --flexcyon-highlight-active-line-opacity: 7.5% !important;
   --flexcyon-highlight-border-radius: 4px !important;
+  --flexcyon-highlight-colour: var(--color-cyan) !important;
   --flexcyon-highlight-horiz-padding: 2.5px !important;
   --flexcyon-highlight-opacity: 22.5% !important;
   --flexcyon-highlight-verti-padding: 1px !important;
@@ -2217,6 +2181,11 @@ body.theme-light {
   --flexcyon-l-spacing: 0px !important;
   --flexcyon-lime-green: #689523 !important;
   --flexcyon-link-color: #6f49ae !important;
+  --flexcyon-link-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-link-color),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-link-unresolved-color: #6f49ae !important;
   --flexcyon-media-embed-vertical-margin: 8px !important;
   --flexcyon-meta-container-padding-left: 14px !important;
@@ -2230,10 +2199,27 @@ body.theme-light {
   --flexcyon-modal-image-size: cover !important;
   --flexcyon-mode-view-header-title-horiz-padding: 12px !important;
   --flexcyon-mode-view-header-title-verti-padding: 4px !important;
+  --flexcyon-new-tab-bg-wrapper: linear-gradient(
+    to right,
+    var(--text-accent),
+    var(--color-pink),
+    var(--color-green)
+  ) !important;
+  --flexcyon-new-tab-font-group: var(--font-monospace) !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #ed8126 !important;
   --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 8px !important;
+  --flexcyon-palette-cyan-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-cyan),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
+  --flexcyon-palette-lilac-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-purple-lilac),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-pink: #e389ca !important;
   --flexcyon-purple-lilac: #6f49ae !important;
   --flexcyon-quote-credit: "bladeacer" !important;
@@ -2288,14 +2274,28 @@ body.theme-light {
   --flexyon-base-grey-token: #586582 !important;
   --graph-control-horiz-padding: 12px !important;
   --graph-control-verti-padding: 6px !important;
+  --h: tan(atan2(1380px, 1px)) !important;
   --less-letter-spacing: -3px !important;
   --oz-fta-all-panes-active-text-color: #080808 !important;
+  --oz-fta-file-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
+  --oz-fta-folder-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
   --oz-fta-folder-panes-file-name-color: #080808 !important;
+  --r-background-color: var(--color-base-05) !important;
+  --r-heading-color: var(--text-normal) !important;
+  --r-heading-font: var(--font-text) !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
+  --r-heading1-size: var(--h1-size) !important;
+  --r-heading2-size: var(--h2-size) !important;
+  --r-heading3-size: var(--h3-size) !important;
+  --r-heading4-size: var(--h4-size) !important;
+  --r-link-color: var(--color-accent-2) !important;
+  --r-main-font: var(--font-text) !important;
   --r-main-font-size: max-content !important;
   --radius-x1: 8px !important;
+  --settings-background: var(--color-base-05) !important;
   --upsize: 103% !important;
+  --w: tan(atan2(2538px, 1px)) !important;
 }
 
 body.theme-dark {
@@ -2308,207 +2308,29 @@ body.theme-dark {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: #6f768566 !important;
-  --background-modifier-border: var(--color-base-20) !important;
-  --bases-cards-background: var(--background-primary) !important;
-  --bases-cards-cover-background: var(--background-secondary) !important;
-  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --bases-group-heading-property-color: var(--text-muted) !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
-  --bases-table-cell-background-disabled: var(
-    --background-primary-alt
-  ) !important;
-  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
-  --bases-table-header-color: var(--text-muted) !important;
-  --bases-table-summary-background: var(--background-primary) !important;
-  --blockquote-border-color: var(--interactive-accent) !important;
-  --blur-background: color-mix(
-      in srgb,
-      var(--interactive-normal) var(--blur-opacity-s),
-      transparent
-    )
-    linear-gradient(
-      var(--interactive-normal),
-      color-mix(
-        in srgb,
-        var(--interactive-normal) var(--blur-opacity-s),
-        transparent
-      )
-    ) !important;
-  --canvas-background: var(--background-primary) !important;
-  --canvas-card-label-color: var(--text-faint) !important;
-  --caret-color: var(--text-normal) !important;
-  --checkbox-border-color: var(--flexcyon-blue) !important;
-  --checkbox-border-color-hover: var(--flexcyon-palette-lilac-hover) !important;
-  --checkbox-color: var(--flexcyon-purple-lilac) !important;
-  --checkbox-color-hover: var(--flexcyon-palette-lilac-hover) !important;
-  --checkbox-marker-color: var(--background-primary) !important;
-  --checklist-done-color: var(--text-muted) !important;
-  --code-background: var(--flexcyon-base-01) !important;
-  --code-border-color: var(--background-modifier-border) !important;
-  --code-comment: var(--text-faint) !important;
-  --code-normal: var(--flexcyon-cyan) !important;
-  --code-punctuation: var(--flexcyon-purple-lilac) !important;
-  --collapse-icon-color: var(--text-faint) !important;
-  --collapse-icon-color-collapsed: var(--text-accent) !important;
-  --divider-color: var(--background-modifier-border) !important;
-  --divider-color-hover: var(--interactive-accent) !important;
-  --dropdown-background: var(--interactive-normal) !important;
-  --dropdown-background-hover: var(--interactive-hover) !important;
-  --embed-block-shadow-hover:
-    0 0 0 1px var(--background-modifier-border),
-    inset 0 0 0 1px var(--background-modifier-border) !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
-  --flair-background: var(--interactive-normal) !important;
-  --flair-color: var(--text-normal) !important;
-  --footnote-divider-color: var(--metadata-divider-color) !important;
-  --footnote-id-color: var(--text-muted) !important;
-  --footnote-id-color-no-occurrences: var(--text-faint) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-unresolved: var(--flexcyon-red-salmon) !important;
-  --graph-text: var(--text-normal) !important;
-  --heading-formatting: var(--text-faint) !important;
-  --hr-color: #393e48 !important;
-  --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--interactive-accent) !important;
-  --icon-color-focused: var(--interactive-accent) !important;
-  --icon-color-hover: var(--text-muted) !important;
-  --input-date-separator: var(--text-faint) !important;
-  --input-placeholder-color: var(--text-faint) !important;
-  --interactive-accent: color-mix(
-    in oklch,
-    var(--text-accent) 80%,
-    transparent 20%
-  ) !important;
-  --interactive-accent-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-accent) 75%,
-    transparent
-  ) !important;
-  --interactive-hover: var(--background-primary) !important;
-  --interactive-normal: var(--color-base-05) !important;
-  --link-color: var(--flexcyon-link-color) !important;
-  --link-color-hover: var(--flexcyon-link-hover) !important;
-  --link-external-color: var(--flexcyon-external-link-color) !important;
-  --link-external-color-hover: var(--flexcyon-external-link-hover) !important;
-  --link-unresolved-color: var(--flexcyon-link-unresolved-color) !important;
-  --list-marker-color: var(--flexcyon-purple-lilac) !important;
-  --list-marker-color-collapsed: var(--flexcyon-lime-green) !important;
-  --list-marker-color-hover: var(--flexcyon-palette-lilac-hover) !important;
-  --menu-background: var(--background-secondary) !important;
-  --metadata-border-color: var(--background-modifier-border) !important;
-  --metadata-divider-color: var(--background-modifier-border) !important;
-  --metadata-input-text-color: var(--text-normal) !important;
-  --metadata-label-text-color: var(--flexcyon-purple-lilac) !important;
-  --metadata-label-text-color-hover: var(
-    --flexcyon-palette-lilac-hover
-  ) !important;
-  --modal-background: var(--background-primary) !important;
-  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
-  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color: var(--text-normal) !important;
-  --nav-heading-color-collapsed: var(--text-faint) !important;
-  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
-  --nav-heading-color-hover: var(--text-normal) !important;
-  --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--interactive-accent) !important;
-  --nav-item-color-highlighted: var(--text-accent) !important;
-  --nav-item-color-hover: var(--text-normal) !important;
-  --nav-item-color-selected: var(--flexcyon-orange) !important;
-  --nav-tag-color: var(--text-faint) !important;
-  --nav-tag-color-active: var(--text-muted) !important;
-  --nav-tag-color-hover: var(--text-muted) !important;
-  --pdf-background: var(--background-primary) !important;
-  --pdf-page-background: var(--background-primary) !important;
-  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pdf-sidebar-background: var(--background-primary) !important;
-  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
-  --pill-border-color: var(--background-modifier-border) !important;
-  --pill-color: var(--text-muted) !important;
-  --pill-color-hover: var(--text-normal) !important;
-  --pill-color-remove: var(--text-faint) !important;
-  --pill-color-remove-hover: var(--text-accent) !important;
-  --prompt-background: var(--background-primary) !important;
-  --raised-background: var(--blur-background) !important;
-  --ribbon-background: var(--background-secondary) !important;
-  --ribbon-background-collapsed: var(--ribbon-background) !important;
-  --search-clear-button-color: var(--flexcyon-red-salmon) !important;
-  --search-icon-color: var(--flexcyon-accent) !important;
-  --search-result-background: var(--background-primary) !important;
-  --setting-group-heading-color: var(--text-normal) !important;
-  --setting-items-background: var(--background-primary-alt) !important;
-  --setting-items-border-color: var(--background-modifier-border) !important;
-  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
-  --shiki-code-background: var(--code-background) !important;
-  --shiki-code-comment: var(--text-faint) !important;
-  --shiki-code-normal: var(--text-muted) !important;
-  --shiki-code-punctuation: var(--text-muted) !important;
-  --shiki-gutter-border-color: var(--background-modifier-border) !important;
-  --shiki-gutter-text-color: var(--text-faint) !important;
-  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
-  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
-  --shiki-terminal-dots-color: var(--text-faint) !important;
-  --slider-track-background: var(--background-modifier-border) !important;
-  --status-bar-background: var(--background-secondary) !important;
-  --status-bar-border-color: var(--divider-color) !important;
-  --status-bar-text-color: var(--text-muted) !important;
-  --suggestion-background: var(--background-primary) !important;
-  --tab-background-active: var(--background-primary) !important;
-  --tab-outline-color: var(--divider-color) !important;
-  --tab-switcher-background: var(--background-secondary) !important;
-  --tab-switcher-menubar-background: linear-gradient(
-    to top,
-    var(--background-secondary),
-    transparent
-  ) !important;
-  --tab-text-color: var(--flexcyon-base-05) !important;
-  --tab-text-color-active: var(--text-accent) !important;
-  --tab-text-color-focused: var(--flexcyon-base-05) !important;
-  --tab-text-color-focused-active: var(--text-accent) !important;
-  --tab-text-color-focused-active-current: var(--text-accent) !important;
-  --tab-text-color-focused-highlighted: var(--text-accent) !important;
-  --table-add-button-border-color: var(--background-modifier-border) !important;
-  --table-drag-handle-background-active: var(
-    --table-selection-border-color
-  ) !important;
-  --table-drag-handle-color: var(--text-faint) !important;
-  --table-drag-handle-color-active: var(--text-on-accent) !important;
-  --table-header-border-color: var(--table-border-color) !important;
-  --table-header-color: var(--text-normal) !important;
-  --table-selection-border-color: var(--interactive-accent) !important;
-  --tag-color: var(--flexcyon-cyan) !important;
-  --tag-color-hover: var(--flexcyon-palette-cyan-hover) !important;
   --text-accent: var(--flexcyon-accent) !important;
   --text-faint: var(--flexcyon-text-muted) !important;
-  --text-muted: color-mix(
-    in oklch,
-    var(--flexcyon-text-muted),
-    var(--text-normal)
-  ) !important;
   --text-normal: #d3d5d3 !important;
   --titlebar-background: var(--background-secondary) !important;
-  --titlebar-background-focused: var(--background-secondary) !important;
-  --titlebar-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color: var(--text-faint) !important;
-  --titlebar-text-color-focused: var(--text-muted) !important;
-  --vault-profile-color: var(--text-normal) !important;
-  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 0px !important;
   --input-padding: var(--flexcyon-input-verti-padding)
     var(--flexcyon-input-horiz-padding) !important;
+  --background-modifier-border: var(--color-base-20) !important;
   --background-modifier-form-field: var(--color-base-20) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: 2px !important;
   --pill-background: transparent !important;
   --pill-background-hover: transparent !important;
+  --pill-border-color: var(--background-modifier-border) !important;
   --pill-border-color-hover: var(--background-modifier-border-hover) !important;
   --pill-border-width: var(--border-width) !important;
+  --pill-color: var(--text-muted) !important;
+  --pill-color-hover: var(--text-normal) !important;
+  --pill-color-remove: var(--text-faint) !important;
+  --pill-color-remove-hover: var(--text-accent) !important;
   --pill-decoration: none !important;
   --pill-decoration-hover: none !important;
   --pill-focus-left-adjust: -4px !important;
@@ -2553,17 +2375,21 @@ body.theme-dark {
   --background-primary-alt: var(--color-base-25) !important;
   --background-secondary: var(--color-base-00) !important;
   --background-secondary-alt: var(--color-base-20) !important;
+  --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
   --bases-cards-corner-shape: var(--corner-shape) !important;
+  --bases-cards-cover-background: var(--background-secondary) !important;
   --bases-cards-font-size: var(--font-smaller) !important;
   --bases-cards-line-height: 24px !important;
   --bases-cards-radius: var(--radius-m) !important;
   --bases-cards-scale: 1 !important;
+  --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
   --bases-embed-border-radius: var(--radius-s) !important;
   --bases-embed-border-width: 0px !important;
   --bases-filter-menu-width: 520px !important;
+  --bases-group-heading-property-color: var(--text-muted) !important;
   --bases-group-heading-property-display: block !important;
   --bases-group-heading-property-size: var(--font-ui-smaller) !important;
   --bases-group-heading-property-weight: var(--font-normal) !important;
@@ -2572,18 +2398,25 @@ body.theme-dark {
   --bases-header-height: 40px !important;
   --bases-header-padding-end: 2px !important;
   --bases-header-padding-start: 2px !important;
+  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-table-cell-background-disabled: var(
+    --background-primary-alt
+  ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
   --bases-table-cell-shadow-active: 0 0 0 2px
     var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
   --bases-table-column-border-width: var(--border-width) !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
   --bases-table-container-border-radius: var(--radius-s) !important;
   --bases-table-container-border-width: var(--border-width) !important;
   --bases-table-font-size: var(--font-smaller) !important;
+  --bases-table-group-background: var(--background-primary-alt) !important;
   --bases-table-group-gap: 10px !important;
+  --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
   --bases-table-header-sort-mask: linear-gradient(
     to left,
@@ -2596,14 +2429,29 @@ body.theme-dark {
   ) !important;
   --bases-table-row-border-width: var(--border-width) !important;
   --bases-table-row-height: 30px !important;
+  --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
     --background-modifier-hover
   ) !important;
   --bases-toolbar-badge-display: none !important;
   --bases-toolbar-label-display: block !important;
   --blockquote-background-color: transparent !important;
+  --blockquote-border-color: var(--interactive-accent) !important;
   --blockquote-border-thickness: 2px !important;
   --blockquote-font-style: normal !important;
+  --blur-background: color-mix(
+      in srgb,
+      var(--interactive-normal) var(--blur-opacity-s),
+      transparent
+    )
+    linear-gradient(
+      var(--interactive-normal),
+      color-mix(
+        in srgb,
+        var(--interactive-normal) var(--blur-opacity-s),
+        transparent
+      )
+    ) !important;
   --blur-brightness: 1.15 !important;
   --blur-l: blur(var(--blur-radius-l)) saturate(var(--blur-saturation))
     brightness(var(--blur-brightness)) !important;
@@ -2646,6 +2494,8 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue-rgb);
   --callout-warning: var(--color-orange-rgb);
+  --canvas-background: var(--background-primary) !important;
+  --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 126, 126, 126 !important;
   --canvas-color-1: var(--color-red-rgb) !important;
   --canvas-color-2: var(--color-orange-rgb) !important;
@@ -2657,24 +2507,38 @@ body.theme-dark {
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
   --canvas-dot-pattern: var(--color-base-30) !important;
+  --caret-color: var(--text-normal) !important;
+  --checkbox-border-color: var(--flexcyon-blue) !important;
+  --checkbox-border-color-hover: var(--flexcyon-palette-lilac-hover) !important;
+  --checkbox-color: var(--flexcyon-purple-lilac) !important;
+  --checkbox-color-hover: var(--flexcyon-palette-lilac-hover) !important;
   --checkbox-margin-inline-start: 0.85em !important;
+  --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
+  --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: 0 !important;
+  --code-background: var(--flexcyon-base-01) !important;
+  --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
+  --code-comment: var(--text-faint) !important;
   --code-function: var(--flexcyon-code-function) !important;
   --code-important: var(--flexcyon-code-error) !important;
   --code-keyword: var(--flexcyon-code-keyword) !important;
+  --code-normal: var(--flexcyon-cyan) !important;
   --code-operator: var(--flexcyon-code-operator) !important;
   --code-property: var(--text-muted) !important;
+  --code-punctuation: var(--flexcyon-purple-lilac) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
   --code-string: var(--flexcyon-lime-green) !important;
   --code-tag: var(--flexcyon-base-grey-dark) !important;
   --code-value: var(--color-purple) !important;
   --code-white-space: pre-wrap !important;
+  --collapse-icon-color: var(--text-faint) !important;
+  --collapse-icon-color-collapsed: var(--text-accent) !important;
   --color-accent: hsl(
     var(--accent-h) var(--accent-s) var(--accent-l) / var(--dimmed)
   ) !important;
@@ -2723,12 +2587,16 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
+  --divider-color: var(--background-modifier-border) !important;
+  --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: var(--flexcyon-base-03) !important;
   --drag-ghost-text-color: var(--interactive-accent) !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
+  --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
     var(--inset-end) var(--dropdown-icon-inset) top 50%, 0 0 !important;
   --dropdown-background-size: var(--dropdown-icon-width) auto, 100% !important;
@@ -2738,13 +2606,19 @@ body.theme-dark {
     var(--dropdown-padding-start) !important;
   --dropdown-padding-end: 1.9em !important;
   --dropdown-padding-start: 0.8em !important;
+  --embed-block-shadow-hover:
+    0 0 0 1px var(--background-modifier-border),
+    inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
+  --embed-border-start: 2px solid var(--interactive-accent) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
+  --file-header-background: var(--background-primary) !important;
+  --file-header-background-focused: var(--background-primary) !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -2754,6 +2628,8 @@ body.theme-dark {
   --file-margins: var(--file-margins-y) var(--file-margins-x) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
+  --flair-background: var(--interactive-normal) !important;
+  --flair-color: var(--text-normal) !important;
   --focus-ring-outline: 2px solid light-dark(#0060df, #0df) !important;
   --font-black: 900 !important;
   --font-bold: 700 !important;
@@ -2799,11 +2675,14 @@ body.theme-dark {
   --font-ui-medium: 16.1803px !important;
   --font-ui-small: 14.5622px !important;
   --font-ui-smaller: 12.9442px !important;
+  --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
   ) !important;
   --footnote-divider-width: var(--border-width) !important;
   --footnote-gap: var(--size-4-1) !important;
+  --footnote-id-color: var(--text-muted) !important;
+  --footnote-id-color-no-occurrences: var(--text-faint) !important;
   --footnote-id-delimiter: "." !important;
   --footnote-input-background: var(--metadata-input-background) !important;
   --footnote-input-background-active: var(
@@ -2818,8 +2697,12 @@ body.theme-dark {
   --frame-right-space: 126px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--flexcyon-base-03) !important;
+  --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
+  --graph-node-focused: var(--text-accent) !important;
   --graph-node-tag: var(--flexcyon-purple-lilac) !important;
+  --graph-node-unresolved: var(--flexcyon-red-salmon) !important;
+  --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.61 !important;
   --h1-size: 1.818em !important;
@@ -2857,9 +2740,15 @@ body.theme-dark {
   --h6-variant: normal !important;
   --h6-weight: 575 !important;
   --header-height: 40px !important;
+  --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: lighten !important;
+  --hr-color: #393e48 !important;
   --hr-thickness: 2px !important;
+  --icon-color: var(--text-muted) !important;
+  --icon-color-active: var(--interactive-accent) !important;
+  --icon-color-focused: var(--interactive-accent) !important;
+  --icon-color-hover: var(--text-muted) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -2889,8 +2778,10 @@ body.theme-dark {
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
   --input-corner-shape: var(--corner-shape) !important;
+  --input-date-separator: var(--text-faint) !important;
   --input-font-weight: var(--font-normal) !important;
   --input-icon-inset: var(--size-4-1) !important;
+  --input-placeholder-color: var(--text-faint) !important;
   --input-shadow:
     inset 0 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.09),
     0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 1px 1.5px 0 rgba(0, 0, 0, 0.1),
@@ -2901,8 +2792,20 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
+  --interactive-accent: color-mix(
+    in oklch,
+    var(--text-accent) 80%,
+    transparent 20%
+  ) !important;
+  --interactive-accent-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-accent) 75%,
+    transparent
+  ) !important;
   --interactive-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
+  --interactive-hover: var(--background-primary) !important;
+  --interactive-normal: var(--color-base-05) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -2916,12 +2819,17 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.4 !important;
   --line-height-tight: 1.25 !important;
+  --link-color: var(--flexcyon-link-color) !important;
+  --link-color-hover: var(--flexcyon-link-hover) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
+  --link-external-color: var(--flexcyon-external-link-color) !important;
+  --link-external-color-hover: var(--flexcyon-external-link-hover) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
+  --link-unresolved-color: var(--flexcyon-link-unresolved-color) !important;
   --link-unresolved-decoration-color: var(
     --flexcyon-link-unresolved-color
   ) !important;
@@ -2937,10 +2845,14 @@ body.theme-dark {
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
+  --list-marker-color: var(--flexcyon-purple-lilac) !important;
+  --list-marker-color-collapsed: var(--flexcyon-lime-green) !important;
+  --list-marker-color-hover: var(--flexcyon-palette-lilac-hover) !important;
   --list-numbered-style: var(--flexcyon-default-ol-style) !important;
   --list-spacing: 0.075em !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
+  --menu-background: var(--background-secondary) !important;
   --menu-border-color: var(--background-modifier-border-hover) !important;
   --menu-border-width: var(--border-width) !important;
   --menu-corner-shape: var(--corner-shape) !important;
@@ -2953,10 +2865,12 @@ body.theme-dark {
   ) !important;
   --menu-shadow: var(--shadow-s) !important;
   --metadata-background: transparent !important;
+  --metadata-border-color: var(--background-modifier-border) !important;
   --metadata-border-radius: 0 !important;
   --metadata-border-width: 0 !important;
   --metadata-display-editing: block !important;
   --metadata-display-reading: block !important;
+  --metadata-divider-color: var(--background-modifier-border) !important;
   --metadata-divider-color-focus: transparent !important;
   --metadata-divider-color-hover: transparent !important;
   --metadata-divider-width: 0 !important;
@@ -2971,6 +2885,7 @@ body.theme-dark {
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
+  --metadata-input-text-color: var(--text-normal) !important;
   --metadata-label-background: transparent !important;
   --metadata-label-background-active: var(
     --background-modifier-hover
@@ -2978,6 +2893,10 @@ body.theme-dark {
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
   --metadata-label-font-size: var(--font-smaller) !important;
+  --metadata-label-text-color: var(--flexcyon-purple-lilac) !important;
+  --metadata-label-text-color-hover: var(
+    --flexcyon-palette-lilac-hover
+  ) !important;
   --metadata-label-width: 9em !important;
   --metadata-max-width: none !important;
   --metadata-padding: var(--size-4-2) 0 !important;
@@ -2999,6 +2918,7 @@ body.theme-dark {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
+  --modal-background: var(--background-primary) !important;
   --modal-border-color: var(--flexcyon-base-02) !important;
   --modal-border-width: var(--border-width) !important;
   --modal-community-sidebar-width: 280px !important;
@@ -3012,6 +2932,12 @@ body.theme-dark {
   --modal-width: 90vw !important;
   --mono-rgb-0: 0, 0, 0 !important;
   --mono-rgb-100: 255, 255, 255 !important;
+  --nav-collapse-icon-color: var(--collapse-icon-color) !important;
+  --nav-collapse-icon-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color: var(--text-normal) !important;
+  --nav-heading-color-collapsed: var(--text-faint) !important;
+  --nav-heading-color-collapsed-hover: var(--text-muted) !important;
+  --nav-heading-color-hover: var(--text-normal) !important;
   --nav-heading-weight: var(--font-medium) !important;
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
@@ -3021,6 +2947,11 @@ body.theme-dark {
   --nav-item-background-selected: var(--flexcyon-base-03) !important;
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
+  --nav-item-color: var(--text-muted) !important;
+  --nav-item-color-active: var(--interactive-accent) !important;
+  --nav-item-color-highlighted: var(--text-accent) !important;
+  --nav-item-color-hover: var(--text-normal) !important;
+  --nav-item-color-selected: var(--flexcyon-orange) !important;
   --nav-item-margin-bottom: var(--size-2-1) !important;
   --nav-item-padding: var(--size-4-1) var(--size-4-2) var(--size-4-1)
     var(--size-4-6) !important;
@@ -3029,13 +2960,21 @@ body.theme-dark {
   --nav-item-size: var(--font-ui-small) !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
+  --nav-tag-color: var(--text-faint) !important;
+  --nav-tag-color-active: var(--text-muted) !important;
+  --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
   --p-spacing: 1rem !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
+  --pdf-background: var(--background-primary) !important;
+  --pdf-page-background: var(--background-primary) !important;
+  --pdf-shadow: 0 0 0 1px var(--background-modifier-border) !important;
+  --pdf-sidebar-background: var(--background-primary) !important;
   --pdf-spread-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  --pdf-thumbnail-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --pdfViewer-padding-bottom: 0 !important;
   --popover-font-size: var(--font-text-size) !important;
   --popover-height: 400px !important;
@@ -3045,6 +2984,7 @@ body.theme-dark {
   --popover-width: 450px !important;
   --preferred-text-scale: 1 !important;
   --prompt-backdrop-filter: none !important;
+  --prompt-background: var(--background-primary) !important;
   --prompt-border-color: var(--flexcyon-base-02-03-mix) !important;
   --prompt-border-width: var(--border-width) !important;
   --prompt-input-height: 40px !important;
@@ -3055,6 +2995,7 @@ body.theme-dark {
   --radius-m: 4px !important;
   --radius-s: 2px !important;
   --radius-xl: 16px !important;
+  --raised-background: var(--blur-background) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
     linear-gradient(white, white) padding-box,
@@ -3063,6 +3004,8 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--ribbon-background) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 48px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -3076,10 +3019,16 @@ body.theme-dark {
   --scrollbar-radius: var(--radius-l) !important;
   --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1) !important;
   --scrollbar-width: 12px !important;
+  --search-clear-button-color: var(--flexcyon-red-salmon) !important;
   --search-clear-button-size: 13px !important;
+  --search-icon-color: var(--flexcyon-accent) !important;
   --search-icon-size: 18px !important;
+  --search-result-background: var(--background-primary) !important;
+  --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
   --setting-group-heading-weight: var(--font-semibold) !important;
+  --setting-items-background: var(--background-primary-alt) !important;
+  --setting-items-border-color: var(--background-modifier-border) !important;
   --setting-items-border-width: 0 !important;
   --setting-items-padding: 2px 0px !important;
   --setting-items-radius: var(--radius-l) !important;
@@ -3089,29 +3038,39 @@ body.theme-dark {
   --shadow-s:
     0px 1px 2px rgba(0, 0, 0, 0.121), 0px 3.4px 6.7px rgba(0, 0, 0, 0.179),
     0px 15px 30px rgba(0, 0, 0, 0.3) !important;
+  --shiki-active-tab-border-color: var(--shiki-highlight-neutral) !important;
   --shiki-active-tab-border-width: 2px !important;
+  --shiki-code-background: var(--code-background) !important;
   --shiki-code-block-border-color: transparent !important;
   --shiki-code-block-border-radius: var(--code-radius) !important;
   --shiki-code-block-border-width: 0px !important;
   --shiki-code-block-spacing: var(--p-spacing) !important;
+  --shiki-code-comment: var(--text-faint) !important;
   --shiki-code-function: var(--color-green) !important;
   --shiki-code-important: var(--color-orange) !important;
   --shiki-code-keyword: var(--color-pink) !important;
+  --shiki-code-normal: var(--text-muted) !important;
   --shiki-code-property: var(--color-cyan) !important;
+  --shiki-code-punctuation: var(--text-muted) !important;
   --shiki-code-string: var(--color-yellow) !important;
   --shiki-code-value: var(--color-purple) !important;
+  --shiki-gutter-border-color: var(--background-modifier-border) !important;
   --shiki-gutter-border-width: var(--border-width) !important;
+  --shiki-gutter-text-color: var(--text-faint) !important;
+  --shiki-gutter-text-color-highlight: var(--shiki-code-normal) !important;
   --shiki-highlight-green: rgba(var(--color-green-rgb), 0.5) !important;
   --shiki-highlight-green-background: rgba(
     var(--color-green-rgb),
     0.1
   ) !important;
+  --shiki-highlight-neutral: var(--shiki-code-normal) !important;
   --shiki-highlight-neutral-background: rgba(
     var(--mono-rgb-100),
     0.05
   ) !important;
   --shiki-highlight-red: rgba(var(--color-red-rgb), 0.5) !important;
   --shiki-highlight-red-background: rgba(var(--color-red-rgb), 0.1) !important;
+  --shiki-terminal-dots-color: var(--text-faint) !important;
   --shiki-tooltip-background: var(--background-modifier-message) !important;
   --shiki-tooltip-text-color: #fafafa !important;
   --sidebar-left-toggle-inner-width: 8.33% !important;
@@ -3145,13 +3104,18 @@ body.theme-dark {
   --slider-thumb-radius: var(--slider-thumb-height) !important;
   --slider-thumb-width: 18px !important;
   --slider-thumb-y: -6px !important;
+  --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
+  --status-bar-background: var(--background-secondary) !important;
+  --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: 13.7533px !important;
   --status-bar-position: absolute !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
+  --suggestion-background: var(--background-primary) !important;
   --swatch-height: 22px !important;
   --swatch-radius: 14px !important;
   --swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.15) !important;
@@ -3165,10 +3129,12 @@ body.theme-dark {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
+  --tab-background-active: var(--background-primary) !important;
   --tab-curve: 0px !important;
   --tab-divider-color: var(--titlebar-background) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
+  --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 0px !important;
   --tab-radius: 0px !important;
   --tab-radius-active: 0px !important;
@@ -3180,12 +3146,25 @@ body.theme-dark {
   --tab-stacked-text-align: start !important;
   --tab-stacked-text-transform: rotate(0deg) !important;
   --tab-stacked-text-writing-mode: vertical-lr !important;
+  --tab-switcher-background: var(--background-secondary) !important;
+  --tab-switcher-menubar-background: linear-gradient(
+    to top,
+    var(--background-secondary),
+    transparent
+  ) !important;
   --tab-switcher-preview-background-shadow: 0 4px 30px 2px rgba(0, 0, 0, 0.2) !important;
   --tab-switcher-preview-radius: var(--radius-xl) !important;
   --tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100), 0.05) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
+  --tab-text-color: var(--flexcyon-base-05) !important;
+  --tab-text-color-active: var(--text-accent) !important;
+  --tab-text-color-focused: var(--flexcyon-base-05) !important;
+  --tab-text-color-focused-active: var(--text-accent) !important;
+  --tab-text-color-focused-active-current: var(--text-accent) !important;
+  --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
+  --table-add-button-border-color: var(--background-modifier-border) !important;
   --table-add-button-border-width: var(--table-border-width) !important;
   --table-background: var(--background-primary) !important;
   --table-border-width: 1px !important;
@@ -3196,9 +3175,16 @@ body.theme-dark {
   --table-column-max-width: none !important;
   --table-column-min-width: 6ch !important;
   --table-drag-handle-background: transparent !important;
+  --table-drag-handle-background-active: var(
+    --table-selection-border-color
+  ) !important;
+  --table-drag-handle-color: var(--text-faint) !important;
+  --table-drag-handle-color-active: var(--text-on-accent) !important;
   --table-drop-indicator-half-width: 2px !important;
   --table-header-background: var(--color-base-20) !important;
+  --table-header-border-color: var(--table-border-color) !important;
   --table-header-border-width: var(--table-border-width) !important;
+  --table-header-color: var(--text-normal) !important;
   --table-header-size: var(--font-ui-large) !important;
   --table-header-weight: calc(
     var(--font-weight) + var(--bold-modifier)
@@ -3210,6 +3196,7 @@ body.theme-dark {
   --table-row-last-border-width: var(--table-border-width) !important;
   --table-selection: hsla(var(--color-accent-hsl), 0.1) !important;
   --table-selection-blend-mode: var(--highlight-mix-blend-mode) !important;
+  --table-selection-border-color: var(--interactive-accent) !important;
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-ui-medium) !important;
@@ -3230,6 +3217,8 @@ body.theme-dark {
     0.15
   ) !important;
   --tag-border-width: 0px !important;
+  --tag-color: var(--flexcyon-cyan) !important;
+  --tag-color-hover: var(--flexcyon-palette-cyan-hover) !important;
   --tag-corner-shape: round !important;
   --tag-decoration: none !important;
   --tag-decoration-hover: underline !important;
@@ -3245,6 +3234,11 @@ body.theme-dark {
     transparent
   ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
+  --text-muted: color-mix(
+    in oklch,
+    var(--flexcyon-text-muted),
+    var(--text-normal)
+  ) !important;
   --text-on-accent: var(--flexcyon-base-03) !important;
   --text-on-accent-inverted: black !important;
   --text-selection: color-mix(
@@ -3254,8 +3248,12 @@ body.theme-dark {
   ) !important;
   --text-success: var(--flexcyon-lime-green) !important;
   --text-warning: var(--flexcyon-red-salmon) !important;
+  --titlebar-background-focused: var(--background-secondary) !important;
+  --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
+  --titlebar-text-color: var(--text-faint) !important;
+  --titlebar-text-color-focused: var(--text-muted) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
   --toggle-radius: 18px !important;
@@ -3283,6 +3281,8 @@ body.theme-dark {
   --traffic-lights-offset-x: var(--header-height) !important;
   --traffic-lights-offset-y: var(--header-height) !important;
   --vault-profile-actions-display: flex !important;
+  --vault-profile-color: var(--text-normal) !important;
+  --vault-profile-color-hover: var(--vault-profile-color) !important;
   --vault-profile-display: flex !important;
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
@@ -3303,6 +3303,9 @@ body.theme-dark {
   --vault-name-color: var(--interactive-accent) !important;
   --bold-color: var(--flexcyon-red-salmon) !important;
   --italic-color: var(--flexcyon-accent) !important;
+  --bases-border-r: 16px !important;
+  --bases-cards-group-padding: 16px !important;
+  --bases-no-img-str: "No image path could be found for this file" !important;
   --cm-font-size: calc(var(--font-ui-small) + 0.809px) !important;
   --cm-panel-bg: var(--color-base-00) !important;
   --color-blue-cyan-mix: color-mix(
@@ -3921,97 +3924,6 @@ body.theme-dark {
       var(--flexcyon-callout-bg-opacity),
     transparent
   ) !important;
-  --flexcyon-base-01-02-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-01),
-    var(--flexcyon-base-02)
-  ) !important;
-  --flexcyon-base-02-03-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-02),
-    var(--flexcyon-base-03)
-  ) !important;
-  --flexcyon-base-03-04-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-03),
-    var(--flexcyon-base-04)
-  ) !important;
-  --flexcyon-base-04-05-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-04),
-    var(--flexcyon-base-05)
-  ) !important;
-  --flexcyon-base-grey-mix: color-mix(
-    in oklch,
-    var(--flexcyon-base-grey-light),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-bases-card-padding: var(--flexcyon-bases-card-padding-top)
-    var(--flexcyon-bases-card-padding-right)
-    var(--flexcyon-bases-card-padding-bottom)
-    var(--flexcyon-bases-card-padding-left) !important;
-  --flexcyon-code-error: var(--flexcyon-red-salmon) !important;
-  --flexcyon-code-function: var(--flexcyon-yellow) !important;
-  --flexcyon-code-keyword: var(--flexcyon-purple-lilac) !important;
-  --flexcyon-code-operator: var(--flexcyon-orange) !important;
-  --flexcyon-code-variable: var(--flexcyon-base-grey-dark) !important;
-  --flexcyon-editor-bg-color: color-mix(
-    in oklch,
-    var(--color-base-05) 70%,
-    var(--color-base-10) 30%
-  ) !important;
-  --flexcyon-editor-bg-color-2: var(--color-base-20) !important;
-  --flexcyon-external-link-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-external-link-color),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-h1-color: var(--color-blue) !important;
-  --flexcyon-h2-color: var(--color-purple) !important;
-  --flexcyon-h3-color: var(--color-cyan) !important;
-  --flexcyon-h4-color: var(--color-pink) !important;
-  --flexcyon-h5-color: var(--color-green) !important;
-  --flexcyon-h6-color: var(--color-yellow) !important;
-  --flexcyon-highlight-colour: var(--color-cyan) !important;
-  --flexcyon-link-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-link-color),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-new-tab-bg-wrapper: linear-gradient(
-    to right,
-    var(--text-accent),
-    var(--color-blue),
-    var(--color-cyan)
-  ) !important;
-  --flexcyon-new-tab-font-group: var(--font-monospace) !important;
-  --flexcyon-palette-cyan-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-cyan),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --flexcyon-palette-lilac-hover: color-mix(
-    in oklch shorter hue,
-    var(--flexcyon-purple-lilac),
-    var(--flexcyon-base-grey-dark)
-  ) !important;
-  --h: tan(atan2(1380px, 1px)) !important;
-  --oz-fta-file-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
-  --oz-fta-folder-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
-  --r-background-color: var(--color-base-05) !important;
-  --r-heading-color: var(--text-normal) !important;
-  --r-heading-font: var(--font-text) !important;
-  --r-heading1-size: var(--h1-size) !important;
-  --r-heading2-size: var(--h2-size) !important;
-  --r-heading3-size: var(--h3-size) !important;
-  --r-heading4-size: var(--h4-size) !important;
-  --r-link-color: var(--color-accent-2) !important;
-  --r-main-font: var(--font-text) !important;
-  --settings-background: var(--color-base-05) !important;
-  --w: tan(atan2(2538px, 1px)) !important;
-  --bases-border-r: 16px !important;
-  --bases-cards-group-padding: 16px !important;
-  --bases-no-img-str: "No image path could be found for this file" !important;
   --dimmed: 0.55 !important;
   --expand: 110% !important;
   --flexcyon-accent: #92a871 !important;
@@ -4040,17 +3952,46 @@ body.theme-dark {
   --flexcyon-ascii-max-width: 50rem !important;
   --flexcyon-ascii-scaling-factor: 1 !important;
   --flexcyon-base-01: #14161c !important;
+  --flexcyon-base-01-02-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-01),
+    var(--flexcyon-base-02)
+  ) !important;
   --flexcyon-base-02: #191d28 !important;
+  --flexcyon-base-02-03-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-02),
+    var(--flexcyon-base-03)
+  ) !important;
   --flexcyon-base-03: #24262c !important;
+  --flexcyon-base-03-04-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-03),
+    var(--flexcyon-base-04)
+  ) !important;
   --flexcyon-base-04: #4d566b !important;
+  --flexcyon-base-04-05-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-04),
+    var(--flexcyon-base-05)
+  ) !important;
   --flexcyon-base-05: #6f7685 !important;
   --flexcyon-base-grey-dark: #898c93 !important;
   --flexcyon-base-grey-light: #d3d5d3 !important;
+  --flexcyon-base-grey-mix: color-mix(
+    in oklch,
+    var(--flexcyon-base-grey-light),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-base-grey-scroll: #3f495e !important;
   --flexcyon-base-grey-scroll-hover: #5c6782 !important;
   --flexcyon-base-grey-tab: #71777f !important;
   --flexcyon-bases-card-delay-factor: 12.5 !important;
   --flexcyon-bases-card-flex-grow: 0.55 !important;
+  --flexcyon-bases-card-padding: var(--flexcyon-bases-card-padding-top)
+    var(--flexcyon-bases-card-padding-right)
+    var(--flexcyon-bases-card-padding-bottom)
+    var(--flexcyon-bases-card-padding-left) !important;
   --flexcyon-bases-card-padding-bottom: 0px !important;
   --flexcyon-bases-card-padding-left: 2px !important;
   --flexcyon-bases-card-padding-right: 0px !important;
@@ -4082,8 +4023,13 @@ body.theme-dark {
   --flexcyon-callouts-flashcard-height: 250px !important;
   --flexcyon-callouts-flashcard-width: 250px !important;
   --flexcyon-canvas-blur-intensity: 1px !important;
+  --flexcyon-code-error: var(--flexcyon-red-salmon) !important;
   --flexcyon-code-file-ext-font-w: 500 !important;
   --flexcyon-code-file-ext-prefix: "." !important;
+  --flexcyon-code-function: var(--flexcyon-yellow) !important;
+  --flexcyon-code-keyword: var(--flexcyon-purple-lilac) !important;
+  --flexcyon-code-operator: var(--flexcyon-orange) !important;
+  --flexcyon-code-variable: var(--flexcyon-base-grey-dark) !important;
   --flexcyon-codeblock-fmt-ext: lowercase !important;
   --flexcyon-comm-item-opacity: 0.89 !important;
   --flexcyon-comm-text-padding: 3px 16px !important;
@@ -4097,6 +4043,12 @@ body.theme-dark {
   --flexcyon-cyan: #3cb9c2 !important;
   --flexcyon-dataview-horizontal-padding: 8px !important;
   --flexcyon-default-ol-style: decimal !important;
+  --flexcyon-editor-bg-color: color-mix(
+    in oklch,
+    var(--color-base-05) 70%,
+    var(--color-base-10) 30%
+  ) !important;
+  --flexcyon-editor-bg-color-2: var(--color-base-20) !important;
   --flexcyon-editor-bg-rotation: 0deg !important;
   --flexcyon-editor-bg-width: 15px !important;
   --flexcyon-editor-dot-size: 2.5px !important;
@@ -4104,7 +4056,18 @@ body.theme-dark {
   --flexcyon-editor-writing-indentation: 16px !important;
   --flexcyon-exp-dimmed-nav-size: 13.3623px !important;
   --flexcyon-external-link-color: #5a8fcd !important;
+  --flexcyon-external-link-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-external-link-color),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-fc-dimmed-items-opacity: 0.89 !important;
+  --flexcyon-h1-color: var(--color-blue) !important;
+  --flexcyon-h2-color: var(--color-purple) !important;
+  --flexcyon-h3-color: var(--color-cyan) !important;
+  --flexcyon-h4-color: var(--color-pink) !important;
+  --flexcyon-h5-color: var(--color-green) !important;
+  --flexcyon-h6-color: var(--color-yellow) !important;
   --flexcyon-heading-1-alignment: left !important;
   --flexcyon-heading-2-alignment: left !important;
   --flexcyon-heading-3-alignment: left !important;
@@ -4113,6 +4076,7 @@ body.theme-dark {
   --flexcyon-heading-6-alignment: left !important;
   --flexcyon-highlight-active-line-opacity: 7.5% !important;
   --flexcyon-highlight-border-radius: 4px !important;
+  --flexcyon-highlight-colour: var(--color-cyan) !important;
   --flexcyon-highlight-horiz-padding: 2.5px !important;
   --flexcyon-highlight-opacity: 22.5% !important;
   --flexcyon-highlight-verti-padding: 1px !important;
@@ -4121,6 +4085,11 @@ body.theme-dark {
   --flexcyon-l-spacing: 0px !important;
   --flexcyon-lime-green: #a1c05c !important;
   --flexcyon-link-color: #a461c8 !important;
+  --flexcyon-link-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-link-color),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-link-unresolved-color: #a461c8 !important;
   --flexcyon-media-embed-vertical-margin: 8px !important;
   --flexcyon-meta-container-padding-left: 14px !important;
@@ -4134,10 +4103,27 @@ body.theme-dark {
   --flexcyon-modal-image-size: cover !important;
   --flexcyon-mode-view-header-title-horiz-padding: 12px !important;
   --flexcyon-mode-view-header-title-verti-padding: 4px !important;
+  --flexcyon-new-tab-bg-wrapper: linear-gradient(
+    to right,
+    var(--text-accent),
+    var(--color-blue),
+    var(--color-cyan)
+  ) !important;
+  --flexcyon-new-tab-font-group: var(--font-monospace) !important;
   --flexcyon-omnisearch-body-margin-left: 1.45rem !important;
   --flexcyon-orange: #cc8449 !important;
   --flexcyon-os-detail-padding-l: 12px !important;
   --flexcyon-os-detail-padding-r: 8px !important;
+  --flexcyon-palette-cyan-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-cyan),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
+  --flexcyon-palette-lilac-hover: color-mix(
+    in oklch shorter hue,
+    var(--flexcyon-purple-lilac),
+    var(--flexcyon-base-grey-dark)
+  ) !important;
   --flexcyon-pink: #d458a3 !important;
   --flexcyon-purple-lilac: #a461c8 !important;
   --flexcyon-quote-credit: "bladeacer" !important;
@@ -4192,14 +4178,28 @@ body.theme-dark {
   --flexyon-base-grey-token: #586582 !important;
   --graph-control-horiz-padding: 12px !important;
   --graph-control-verti-padding: 6px !important;
+  --h: tan(atan2(1380px, 1px)) !important;
   --less-letter-spacing: -3px !important;
   --oz-fta-all-panes-active-text-color: #d3d5d3 !important;
+  --oz-fta-file-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
+  --oz-fta-folder-font-size: calc(var(--font-ui-medium) - 0.1rem) !important;
   --oz-fta-folder-panes-file-name-color: #d3d5d3 !important;
+  --r-background-color: var(--color-base-05) !important;
+  --r-heading-color: var(--text-normal) !important;
+  --r-heading-font: var(--font-text) !important;
   --r-heading-margin: 16px 0px !important;
   --r-heading-text-transform: capitalize !important;
+  --r-heading1-size: var(--h1-size) !important;
+  --r-heading2-size: var(--h2-size) !important;
+  --r-heading3-size: var(--h3-size) !important;
+  --r-heading4-size: var(--h4-size) !important;
+  --r-link-color: var(--color-accent-2) !important;
+  --r-main-font: var(--font-text) !important;
   --r-main-font-size: max-content !important;
   --radius-x1: 8px !important;
+  --settings-background: var(--color-base-05) !important;
   --upsize: 103% !important;
+  --w: tan(atan2(2538px, 1px)) !important;
 }
 
 body {

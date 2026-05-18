@@ -78,9 +78,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": {
     "background-color": "var(--code-background)",
@@ -195,8 +197,8 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -388,6 +390,7 @@
     "color": "var(--sg-text)"
   },
   "svg.lucide-help-circle.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -482,13 +485,14 @@
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "color": "var(--sg-text)",
-    "font-style": "var(--embed-font-style)"
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"-\"]": {
@@ -558,29 +562,13 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  ".canvas-node": {
-    "background-color": "var(--canvas-color-node)",
-    "box-shadow": "0 12px 30px var(--sg-shadow)"
-  },
-  ".canvas-node-content": {
-    "background-color": "var(--embed-background)",
-    "color": "var(--sg-text)",
-    "font-style": "var(--embed-font-style)"
-  },
-  ".canvas-node-container .markdown-rendered": {
-    "background-color": "var(--sg-bg)",
-    "color": "var(--sg-text)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)"
-  },
-  ".canvas-card-menu": {
-    "background-color": "color-mix(in srgb, var(--sg-card) 88%, var(--sg-bg-soft))",
-    "box-shadow": "0 10px 28px var(--sg-shadow)",
-    "font-size": "var(--font-ui-medium)"
-  },
-  ".canvas-node-group": {
-    "background-color": "var(--canvas-color-node)",
-    "box-shadow": "0 12px 30px var(--sg-shadow)"
+  ".tag": {
+    "background-color": "var(--tag-background)",
+    "color": "var(--sg-signal-cyan)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--tag-size)",
+    "font-weight": "var(--tag-weight)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
   }
 }

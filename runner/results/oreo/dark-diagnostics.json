@@ -2,6 +2,18 @@
   "conflicts": [],
   "brokenBridges": [
     {
+      "property": "--pill-weight",
+      "references": "--tag-weight",
+      "selector": ".note-properties-tags",
+      "aspect": "properties"
+    },
+    {
+      "property": "--pill-weight",
+      "references": "--tag-weight",
+      "selector": "a.internal-link.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
+      "aspect": "search"
+    },
+    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

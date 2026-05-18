@@ -126,10 +126,8 @@
   "code": {
     "background-color": "var(--code-background)",
     "color": "var(--ion-color)",
-    "font-family": "var(--ec-codeFontFml)",
-    "font-size": "var(--ec-codeFontSize)",
-    "font-weight": "var(--ec-codeFontWg)",
-    "line-height": "var(--ec-codeLineHt)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)",
     "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
   },
   "pre": {
@@ -606,6 +604,174 @@
     "color": "var(--ion-color)",
     "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
   },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout-title": {
+    "color": "var(--ion-color)",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "div.callout-title-inner": {
+    "color": "var(--ion-color)",
+    "font-weight": "var(--font-weight)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "div.callout-content": {
+    "background-color": "var(--callout-content-background)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-pencil.svg-icon": {
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-clipboard-list.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-info.svg-icon": {
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-check-circle-2.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-flame.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-check.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-help-circle.svg-icon": {
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-zap.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-bug.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)",
+    "box-shadow": "var(--border-bloom)",
+    "color": "var(--ion-color)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  "svg.lucide-quote.svg-icon": {
+    "color": "var(--ion-color)",
+    "filter": "var(--icon-bloom)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
   "mjx-container.MathJax": {
     "color": "var(--ion-color)",
     "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
@@ -697,81 +863,6 @@
   "li.task-list-item[data-task=\"8\"]": { "color": "var(--ion-color)" },
   "li.task-list-item[data-task=\"9\"]": { "color": "var(--ion-color)" },
   "li.task-list-item[data-task=\"0\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"l\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"b\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"i\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"p\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"c\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"f\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"k\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"u\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"d\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"w\"]": {
-    "color": "var(--ion-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
-  },
-  "li.task-list-item[data-task=\"a\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"e\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"g\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"h\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"j\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"m\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"n\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"o\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"q\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"r\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"s\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"t\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"v\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"y\"]": { "color": "var(--ion-color)" },
-  "li.task-list-item[data-task=\"z\"]": { "color": "var(--ion-color)" },
   "li.task-list-item[data-task=\"S\"]": {
     "color": "var(--ion-color)",
     "padding-bottom": "var(--list-spacing)",
@@ -808,26 +899,38 @@
   "li.task-list-item[data-task=\"X\"]": { "color": "var(--ion-color)" },
   "li.task-list-item[data-task=\"Y\"]": { "color": "var(--ion-color)" },
   "li.task-list-item[data-task=\"Z\"]": { "color": "var(--ion-color)" },
-  "svg.lucide-pencil.svg-icon": {
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
     "color": "var(--ion-color)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+    "font-style": "var(--embed-font-style)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
   },
-  "svg.lucide-info.svg-icon": {
+  ".canvas-node": {
     "color": "var(--ion-color)",
-    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
   },
-  ".tag": {
-    "background-color": "var(--tag-background)",
+  ".canvas-node-content": {
+    "background-color": "var(--embed-background)",
     "color": "var(--ion-color)",
-    "cursor": "var(--cursor-link)",
-    "font-size": "var(--tag-size)",
-    "font-weight": "var(--tag-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)",
+    "font-style": "var(--embed-font-style)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  ".canvas-node-container .markdown-rendered": {
+    "color": "var(--ion-color)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  ".canvas-card-menu": {
+    "background-color": "var(--background-secondary)",
+    "box-shadow": "var(--input-shadow)",
+    "color": "var(--ion-color)",
+    "font-size": "var(--font-ui-medium)",
+    "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
+  },
+  ".canvas-node-group": {
+    "color": "var(--ion-color)",
     "text-shadow": "0 0 var(--bloom-size) var(--bloom-color), 0 0 min(calc(var(--bloom-size) / 2), 1em) var(--bloom-color)"
   }
 }

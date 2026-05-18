@@ -558,45 +558,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"-\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\">\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "caret-color": "var(--mu-caret-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "var(--checkbox-color)",
-    "caret-color": "var(--mu-caret-color)",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "li.task-list-item[data-task=\"l\"]": {
     "caret-color": "var(--mu-caret-color)",
     "padding-bottom": "var(--list-spacing)",
@@ -647,6 +608,15 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "var(--checkbox-color)",
+    "caret-color": "var(--mu-caret-color)",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
+  },
   "li.task-list-item[data-task=\"S\"]": {
     "caret-color": "var(--mu-caret-color)",
     "padding-bottom": "var(--list-spacing)",
@@ -682,25 +652,6 @@
     "font-family": "var(--metadata-input-font)",
     "min-height": "var(--input-height)"
   },
-  "div.multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "caret-color": "var(--mu-caret-color)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill-content": { "caret-color": "var(--mu-caret-color)" },
-  ".multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "caret-color": "var(--mu-caret-color)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "caret-color": "var(--mu-caret-color)",
     "color": "var(--link-external-color)",
@@ -726,6 +677,16 @@
     "caret-color": "var(--mu-caret-color)",
     "color": "var(--italic-color)"
   },
+  "div.multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "caret-color": "var(--mu-caret-color)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill-content": { "caret-color": "var(--mu-caret-color)" },
   "blockquote": {
     "background-color": "var(--blockquote-background-color)",
     "caret-color": "var(--mu-caret-color)",
@@ -752,6 +713,15 @@
     "font-size": "var(--font-ui-medium)"
   },
   ".canvas-node-group": { "caret-color": "var(--mu-caret-color)" },
+  ".multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "caret-color": "var(--mu-caret-color)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
   ".tag": {
     "background-color": "var(--tag-background)",
     "caret-color": "var(--mu-caret-color)",

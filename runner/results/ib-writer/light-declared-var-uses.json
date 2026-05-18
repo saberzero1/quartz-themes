@@ -109,9 +109,11 @@
   "code": {
     "background-color": "var(--code-background)",
     "caret-color": "var(--indicator-color)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": {
     "background-color": "var(--code-block-background-color)",
@@ -250,8 +252,8 @@
     "background-color": "var(--code-background)",
     "caret-color": "var(--indicator-color)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-interface)",
-    "font-size": "var(--font-ui-smaller)"
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "sup": { "caret-color": "var(--indicator-color)" },
   "li.task-list-item[data-task=\">\"]": {
@@ -515,20 +517,25 @@
   "mjx-container.MathJax": { "caret-color": "var(--indicator-color)" },
   "mjx-math.MJX-TEX": { "caret-color": "var(--indicator-color)" },
   ".math-block": { "caret-color": "var(--indicator-color)" },
-  "video": { "caret-color": "var(--indicator-color)" },
-  "audio": { "caret-color": "var(--indicator-color)" },
   ".internal-embed": {
-    "background-color": "var(--background-primary-alt)",
+    "background-color": "var(--embed-background)",
     "caret-color": "var(--indicator-color)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
+    "font-style": "var(--embed-font-style)"
   },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
     "caret-color": "var(--indicator-color)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
+    "font-style": "var(--embed-font-style)"
   },
+  "progress": { "caret-color": "var(--indicator-color)" },
+  "details": { "caret-color": "var(--indicator-color)" },
+  "summary": { "caret-color": "var(--indicator-color)" },
+  "dl": { "caret-color": "var(--indicator-color)" },
+  "dt": { "caret-color": "var(--indicator-color)" },
+  "dd": { "caret-color": "var(--indicator-color)" },
+  "sub": { "caret-color": "var(--indicator-color)" },
+  "abbr": { "caret-color": "var(--indicator-color)" },
+  "details summary": { "caret-color": "var(--indicator-color)" },
   ".view-header-breadcrumb": { "caret-color": "var(--indicator-color)" },
   ".view-header-breadcrumb-separator": {
     "caret-color": "var(--indicator-color)",
@@ -550,56 +557,6 @@
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"*\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"l\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"b\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"i\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"p\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"c\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"f\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"k\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"u\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"d\"]": {
-    "caret-color": "var(--indicator-color)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"w\"]": {
     "caret-color": "var(--indicator-color)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"

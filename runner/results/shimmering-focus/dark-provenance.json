@@ -1419,10 +1419,12 @@
   "div.multi-select-pill": {
     "--focus-ring-color": ":root *",
     "--icon-size": ".multi-select-pill",
+    "--icon-stroke": ".multi-select-pill",
     "--pill-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -1431,6 +1433,7 @@
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -1984,10 +1987,12 @@
   ".multi-select-pill": {
     "--focus-ring-color": ":root *",
     "--icon-size": ".multi-select-pill",
+    "--icon-stroke": ".multi-select-pill",
     "--pill-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -1996,6 +2001,7 @@
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"

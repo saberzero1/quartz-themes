@@ -489,6 +489,31 @@
     "color": "var(--text-muted)",
     "font-size": "var(--font-smaller)"
   },
+  "div.multi-select-pill": {
+    "background-color": "var(--accent-primary-subtle)",
+    "color": "var(--accent-primary-text)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--ui-text-2xs)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  ".multi-select-pill": {
+    "background-color": "var(--accent-primary-subtle)",
+    "color": "var(--accent-primary-text)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--ui-text-2xs)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--accent-primary)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--link-weight)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "background-color": "var(--bg-surface)",
     "height": "var(--checkbox-size)",
@@ -501,83 +526,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"-\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\">\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "color": "var(--text-primary)",
-    "line-height": "var(--leading-snug)",
-    "margin-bottom": "var(--space-1)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "var(--checkbox-color)",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  "li.task-list-item[data-task=\"_\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"+\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"=\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"&\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"@\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"$\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"'\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\":\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\";\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"|\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"~\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"`\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"#\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\".\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\",\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"<\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"%\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"1\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"2\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"3\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"4\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"5\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"6\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"7\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"8\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"9\"]": { "color": "var(--text-primary)" },
-  "li.task-list-item[data-task=\"0\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"l\"]": {
     "color": "var(--text-primary)",
     "line-height": "var(--leading-snug)",
@@ -648,6 +596,11 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "var(--checkbox-color)",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
   "li.task-list-item[data-task=\"a\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"e\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"g\"]": { "color": "var(--text-primary)" },
@@ -661,6 +614,9 @@
   "li.task-list-item[data-task=\"s\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"t\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"v\"]": { "color": "var(--text-primary)" },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
+  },
   "li.task-list-item[data-task=\"y\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"z\"]": { "color": "var(--text-primary)" },
   "li.task-list-item[data-task=\"S\"]": {
@@ -722,13 +678,6 @@
     "text-decoration-line": "var(--link-external-decoration)",
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
-  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "color": "var(--accent-primary)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--link-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
     "color": "var(--text-muted)",
     "cursor": "var(--cursor-link)",
@@ -741,15 +690,6 @@
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "strong > em": { "color": "var(--italic-color)" },
-  "div.multi-select-pill": {
-    "background-color": "var(--accent-primary-subtle)",
-    "color": "var(--accent-primary-text)",
-    "cursor": "var(--cursor-link)",
-    "font-size": "var(--ui-text-2xs)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
   "blockquote": {
     "background-color": "var(--bg-subtle)",
     "color": "var(--blockquote-color)",
@@ -772,15 +712,6 @@
     "background-color": "var(--background-primary)",
     "box-shadow": "var(--input-shadow)",
     "font-size": "var(--font-ui-medium)"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--accent-primary-subtle)",
-    "color": "var(--accent-primary-text)",
-    "cursor": "var(--cursor-link)",
-    "font-size": "var(--ui-text-2xs)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
   },
   ".tag": {
     "background-color": "var(--tag-background)",

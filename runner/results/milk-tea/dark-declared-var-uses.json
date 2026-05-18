@@ -402,9 +402,8 @@
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   ".internal-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)"
   },
   ".file-embed": {
     "background-color": "var(--background-primary-alt)",
@@ -412,6 +411,10 @@
     "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)"
+  },
   "li.task-list-item[data-task=\"-\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
@@ -479,19 +482,10 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "svg.lucide-pencil.svg-icon": {
-    "color": "var(--text-muted)",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
   "svg.lucide-help-circle.svg-icon": {
     "color": "var(--text-muted)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
-  },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
   },
   ".canvas-node-content": {
     "background-color": "var(--embed-background)",

@@ -82,10 +82,12 @@
     "padding-top": "var(--list-spacing)"
   },
   "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--inline-code)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "background-color": "var(--pre-code-bg)",
+    "color": "var(--code-block)",
+    "font-family": "var(--font-family-code)",
+    "font-size": "var(--font-size-code)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {

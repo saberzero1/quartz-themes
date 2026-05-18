@@ -431,7 +431,6 @@
   },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -447,22 +446,5 @@
     "font-weight": "var(--tag-weight)",
     "text-decoration-line": "var(--link-decoration)",
     "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "div.callout-title": {
-    "color": "rgb(var(--callout-color))",
-    "font-size": "var(--callout-title-size)",
-    "line-height": "var(--line-height-tight)"
-  },
-  "div.callout-title-inner": {
-    "color": "var(--callout-title-color)",
-    "font-weight": "var(--font-weight)"
-  },
-  "div.callout-content": {
-    "background-color": "var(--callout-content-background)",
-    "border-bottom-left-radius": "var(--radius-m)",
-    "border-bottom-right-radius": "var(--radius-m)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note-toolbar\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)"
   }
 }

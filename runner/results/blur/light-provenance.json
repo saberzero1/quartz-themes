@@ -1324,11 +1324,16 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -1831,11 +1836,16 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -1897,7 +1907,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1917,7 +1926,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1928,7 +1936,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1939,7 +1946,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1950,7 +1956,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1961,7 +1966,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1972,7 +1976,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1983,7 +1986,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -1993,7 +1995,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -2004,7 +2005,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -2014,7 +2014,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -2025,7 +2024,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",
@@ -2035,7 +2033,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
-    "--bases-table-header-background": ".callout",
     "--bases-table-header-background-hover": ".callout",
     "--bases-table-border-color": ".callout",
     "--table-border-color": ".callout",

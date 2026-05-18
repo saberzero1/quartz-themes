@@ -43,10 +43,10 @@
   },
   "p": { "color": "var(--text-muted)" },
   "strong": {
-    "color": "var(--txt-bold)",
+    "color": "var(--bold-color)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
   },
-  "em": { "color": "var(--txt-em)" },
+  "em": { "color": "var(--italic-color)" },
   "strong > em": { "color": "var(--txt-em)" },
   "mark": {
     "background-color": "var(--text-highlight-bg)",
@@ -82,9 +82,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--code-txt)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "color": "var(--ec-codeFg)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
@@ -197,8 +199,8 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "color": "var(--txt-norm)",
@@ -400,12 +402,14 @@
   },
   "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"-\"]": {
@@ -459,81 +463,6 @@
   "li.task-list-item[data-task=\"8\"]": { "color": "var(--txt-norm)" },
   "li.task-list-item[data-task=\"9\"]": { "color": "var(--txt-norm)" },
   "li.task-list-item[data-task=\"0\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"l\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"b\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"i\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"p\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"c\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"f\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"k\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"u\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"d\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"w\"]": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"a\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"e\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"g\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"h\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"j\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"m\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"n\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"o\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"q\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"r\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"s\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"t\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"v\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"y\"]": { "color": "var(--txt-norm)" },
-  "li.task-list-item[data-task=\"z\"]": { "color": "var(--txt-norm)" },
   "li.task-list-item[data-task=\"S\"]": {
     "color": "var(--txt-norm)",
     "font-family": "var(--font-body)",
@@ -576,24 +505,9 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  "svg.lucide-help-circle.svg-icon": {
+  "svg.lucide-info.svg-icon": {
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
-  },
-  ".canvas-node-content": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
-  },
-  ".canvas-node-container .markdown-rendered": {
-    "color": "var(--txt-norm)",
-    "font-family": "var(--font-body)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)"
-  },
-  ".canvas-card-menu": {
-    "background-color": "var(--background-secondary)",
-    "box-shadow": "var(--input-shadow)",
-    "font-size": "var(--font-ui-medium)"
   },
   ".tag": {
     "background-color": "var(--tag-background)",

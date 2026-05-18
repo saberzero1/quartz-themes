@@ -96,9 +96,11 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--inline-code)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--font-size-code)"
+    "color": "var(--code-block)",
+    "font-family": "var(--font-family-code)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
@@ -473,43 +475,13 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "svg.lucide-pencil.svg-icon": {
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  "svg.lucide-help-circle.svg-icon": {
+  "svg.lucide-info.svg-icon": {
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
-  },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
-  },
-  ".canvas-node-content": {
-    "background-color": "var(--embed-background)",
-    "font-style": "var(--embed-font-style)"
-  },
-  ".canvas-node-container .markdown-rendered": {
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-family-preview)",
-    "font-size": "var(--font-size-normal)",
-    "line-height": "var(--line-height-normal)"
-  },
-  ".canvas-card-menu": {
-    "background-color": "var(--background-primary)",
-    "box-shadow": "var(--input-shadow)",
-    "font-size": "var(--font-ui-medium)"
   },
   ".tag": {
     "background-color": "var(--tag-background)",

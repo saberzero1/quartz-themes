@@ -1302,7 +1302,6 @@
     "--font-print": "body",
     "--font-monospace-theme": "body",
     "--font-monospace": "body",
-    "--font-text-size": "body",
     "--font-mermaid": "body",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
@@ -1415,6 +1414,8 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -1422,6 +1423,7 @@
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -1877,7 +1879,6 @@
     "--font-print": "body",
     "--font-monospace-theme": "body",
     "--font-monospace": "body",
-    "--font-text-size": "body",
     "--font-mermaid": "body",
     "--shiki-code-background": "body",
     "--shiki-code-normal": "body",
@@ -1967,6 +1968,8 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
@@ -1974,6 +1977,7 @@
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -2000,41 +2004,6 @@
   ".workspace-tab-header-container": { "--focus-ring-color": ":root *" },
   ".workspace-leaf.mod-active": { "--focus-ring-color": ":root *" },
   ".inline-title": { "--focus-ring-color": ":root *" },
-  "h1[data-heading=\"This is a heading 1\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h1"
-  },
-  "h2[data-heading=\"This is a heading 2\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h2"
-  },
-  "h3[data-heading=\"This is a heading 3\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h3"
-  },
-  "h4[data-heading=\"This is a heading 4\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h4"
-  },
-  "h5[data-heading=\"This is a heading 5\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h5"
-  },
-  "h6[data-heading=\"This is a heading 6\"]": {
-    "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered h6"
-  },
-  "table": { "--focus-ring-color": ":root *" },
-  "thead": { "--focus-ring-color": ":root *" },
-  "tbody": { "--focus-ring-color": ":root *" },
-  "th": { "--focus-ring-color": ":root *" },
-  "td": { "--focus-ring-color": ":root *" },
-  "tr": { "--focus-ring-color": ":root *" },
-  "tbody tr:nth-child(even)": { "--focus-ring-color": ":root *" },
-  "tbody tr:nth-child(odd)": { "--focus-ring-color": ":root *" },
-  "thead th": { "--focus-ring-color": ":root *" },
-  "tbody tr": { "--focus-ring-color": ":root *" },
-  ".table-wrapper": { "--focus-ring-color": ":root *" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
     "--focus-ring-color": ":root *",
     "--bases-embed-border-color": ".callout",
@@ -2369,6 +2338,17 @@
   "mjx-container.MathJax": { "--focus-ring-color": ":root *" },
   "mjx-math.MJX-TEX": { "--focus-ring-color": ":root *" },
   ".math-block": { "--focus-ring-color": ":root *" },
+  "table": { "--focus-ring-color": ":root *" },
+  "thead": { "--focus-ring-color": ":root *" },
+  "tbody": { "--focus-ring-color": ":root *" },
+  "th": { "--focus-ring-color": ":root *" },
+  "td": { "--focus-ring-color": ":root *" },
+  "tr": { "--focus-ring-color": ":root *" },
+  "tbody tr:nth-child(even)": { "--focus-ring-color": ":root *" },
+  "tbody tr:nth-child(odd)": { "--focus-ring-color": ":root *" },
+  "thead th": { "--focus-ring-color": ":root *" },
+  "tbody tr": { "--focus-ring-color": ":root *" },
+  ".table-wrapper": { "--focus-ring-color": ":root *" },
   ".internal-embed": { "--focus-ring-color": ":root *" },
   ".markdown-embed": { "--focus-ring-color": ":root *" },
   "progress": { "--focus-ring-color": ":root *" },
@@ -2385,6 +2365,26 @@
   ".file-embed": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb": { "--focus-ring-color": ":root *" },
   ".view-header-breadcrumb-separator": { "--focus-ring-color": ":root *" },
+  "h2[data-heading=\"This is a heading 2\"]": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered h2"
+  },
+  "h3[data-heading=\"This is a heading 3\"]": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered h3"
+  },
+  "h4[data-heading=\"This is a heading 4\"]": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered h4"
+  },
+  "h5[data-heading=\"This is a heading 5\"]": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered h5"
+  },
+  "h6[data-heading=\"This is a heading 6\"]": {
+    "--focus-ring-color": ":root *",
+    "--font-weight": ".markdown-rendered h6"
+  },
   "li.task-list-item[data-task=\"-\"]": { "--focus-ring-color": ":root *" },
   "li.task-list-item[data-task=\"/\"]": { "--focus-ring-color": ":root *" },
   "li.task-list-item[data-task=\"!\"]": { "--focus-ring-color": ":root *" },

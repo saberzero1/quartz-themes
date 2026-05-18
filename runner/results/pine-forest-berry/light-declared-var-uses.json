@@ -324,7 +324,6 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -340,6 +339,7 @@
     "background-color": "rgba(var(--callout-color), 0.1)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -455,6 +455,27 @@
     "font-style": "var(--embed-font-style)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
+  "li.task-list-item[data-task=\"-\"]": {
+    "color": "var(--text-faint)",
+    "line-height": "var(--line-height)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"/\"]": {
+    "line-height": "var(--line-height)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"!\"]": {
+    "line-height": "var(--line-height)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"*\"]": {
+    "line-height": "var(--line-height)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
   "li.task-list-item[data-task=\"l\"]": {
     "line-height": "var(--line-height)",
     "padding-bottom": "var(--list-spacing)",

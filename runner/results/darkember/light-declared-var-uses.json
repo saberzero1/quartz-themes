@@ -255,8 +255,8 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "sup": { "font-family": "var(--text-normal, var(--base-font-face))" },
   "li.task-list-item[data-task=\">\"]": {
@@ -519,138 +519,6 @@
   ".table-wrapper": {
     "font-family": "var(--text-normal, var(--base-font-face))"
   },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout-title": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "font-size": "var(--callout-title-size)",
-    "line-height": "var(--line-height-tight)"
-  },
-  "div.callout-title-inner": {
-    "color": "var(--callout-title-color)",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "font-weight": "var(--font-weight)"
-  },
-  "div.callout-content": {
-    "background-color": "var(--callout-content-background)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-clipboard-list.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-info.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-check-circle-2.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-flame.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-check.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-help-circle.svg-icon": {
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-zap.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-bug.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
-    "background-color": "rgba(var(--callout-color), 0.1)",
-    "font-family": "var(--text-normal, var(--base-font-face))"
-  },
-  "svg.lucide-quote.svg-icon": {
-    "color": "rgb(var(--callout-color))",
-    "font-family": "var(--text-normal, var(--base-font-face))",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
   "mjx-container.MathJax": {
     "font-family": "var(--text-normal, var(--base-font-face))"
   },
@@ -658,26 +526,18 @@
     "font-family": "var(--text-normal, var(--base-font-face))"
   },
   ".math-block": { "font-family": "var(--text-normal, var(--base-font-face))" },
+  "video": { "font-family": "var(--text-normal, var(--base-font-face))" },
+  "audio": { "font-family": "var(--text-normal, var(--base-font-face))" },
   ".internal-embed": {
     "background-color": "var(--embed-background)",
     "font-family": "var(--text-normal, var(--base-font-face))",
     "font-style": "var(--embed-font-style)"
   },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
     "font-family": "var(--text-normal, var(--base-font-face))",
-    "font-style": "var(--embed-font-style)"
-  },
-  "progress": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "details": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "summary": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "dl": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "dt": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "dd": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "sub": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "abbr": { "font-family": "var(--text-normal, var(--base-font-face))" },
-  "details summary": {
-    "font-family": "var(--text-normal, var(--base-font-face))"
+    "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb": {
     "font-family": "var(--text-normal, var(--base-font-face))"
@@ -685,6 +545,11 @@
   ".view-header-breadcrumb-separator": {
     "color": "var(--text-faint)",
     "font-family": "var(--text-normal, var(--base-font-face))"
+  },
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-family": "var(--text-normal, var(--base-font-face))",
+    "font-style": "var(--embed-font-style)"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "font-family": "var(--text-normal, var(--base-font-face))",
@@ -769,6 +634,11 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
+  "svg.lucide-help-circle.svg-icon": {
+    "font-family": "var(--text-normal, var(--base-font-face))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
   ".canvas-node": {
     "font-family": "var(--text-normal, var(--base-font-face))"
   },
@@ -791,6 +661,11 @@
   },
   ".canvas-node-group": {
     "font-family": "var(--text-normal, var(--base-font-face))"
+  },
+  "svg.lucide-info.svg-icon": {
+    "font-family": "var(--text-normal, var(--base-font-face))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
   },
   ".tag": {
     "background-color": "var(--tag-background)",

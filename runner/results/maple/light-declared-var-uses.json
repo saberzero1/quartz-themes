@@ -428,18 +428,6 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--inline-code)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
-  },
-  "pre": {
-    "background-color": "var(--code-background)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "line-height": "calc(var(--line-height-normal) - 0.2)"
-  },
   "strong": {
     "color": "var(--bold-color)",
     "font-family": "var(--setting-text-bold-font, inherit)",
@@ -457,6 +445,13 @@
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
   },
   "del": { "letter-spacing": "var(--setting-editor-letter-spacing, 0)" },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--inline-code)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
+  },
   "li[data-line=\"0\"]": {
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
     "padding-bottom": "var(--list-spacing)",
@@ -496,6 +491,38 @@
     "color": "var(--text-muted)",
     "font-size": "var(--font-smaller)"
   },
+  "div.multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "line-height": "var(--line-height-tight)",
+    "height": "calc(var(--line-height-normal) / 1.5)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill-content": {
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
+  },
+  ".multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "line-height": "var(--line-height-tight)",
+    "height": "calc(var(--line-height-normal) / 1.5)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "color": "rgba(var(--link-color-rgb), var(--color-opacity))",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--link-weight)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "text-decoration-color": "var(--link-color-underline)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
     "height": "var(--checkbox-size)",
@@ -505,47 +532,6 @@
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"-\"]": {
-    "color": "var(--text-faint)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\">\"]": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "var(--checkbox-color)",
-    "color": "var(--color-orange)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
   },
   "li.task-list-item[data-task=\"l\"]": {
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
@@ -597,34 +583,38 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "var(--checkbox-color)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
+  },
+  "li.task-list-item[data-task=\"S\"]": {
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"I\"]": {
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"X\"]": {
+    "color": "var(--checklist-done-color)"
+  },
+  "pre": {
+    "background-color": "var(--code-background)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "line-height": "calc(var(--line-height-normal) - 0.2)"
+  },
   "figure": {
     "box-shadow": "var(--ec-frm-frameBoxShdCssVal)",
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
   },
   "figcaption": { "letter-spacing": "var(--setting-editor-letter-spacing, 0)" },
-  "div.multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "line-height": "var(--line-height-tight)",
-    "height": "calc(var(--line-height-normal) / 1.5)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill-content": {
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "line-height": "var(--line-height-tight)",
-    "height": "calc(var(--line-height-normal) / 1.5)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "color": "rgba(var(--link-external-color-rgb), var(--color-opacity))",
     "cursor": "var(--cursor-link)",
@@ -633,15 +623,6 @@
     "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
     "text-decoration-color": "var(--link-external-color-underline)",
     "text-decoration-line": "var(--link-external-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "color": "rgba(var(--link-color-rgb), var(--color-opacity))",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--link-weight)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "text-decoration-color": "var(--link-color-underline)",
-    "text-decoration-line": "var(--link-decoration)",
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
@@ -682,5 +663,15 @@
     "background-color": "var(--background-primary)",
     "box-shadow": "var(--input-shadow)",
     "font-size": "var(--font-ui-medium)"
+  },
+  ".tag": {
+    "background-color": "var(--tag-background)",
+    "color": "var(--tag-color)",
+    "cursor": "var(--cursor-link)",
+    "font-size": "var(--tag-size)",
+    "font-weight": "var(--tag-weight)",
+    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
   }
 }

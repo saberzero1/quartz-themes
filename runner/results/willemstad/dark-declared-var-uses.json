@@ -368,6 +368,13 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
+  },
+  "pre": { "background-color": "var(--code-background)" },
   "strong": {
     "color": "var(--bold-color)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
@@ -377,12 +384,6 @@
     "background-color": "var(--col-highlight-0)",
     "box-shadow": "var(--padding-highlight-LR) 0 0 var(--col-highlight-col), calc(-1 * var(--padding-highlight-LR)) 0 0 var(--col-highlight-col), 0 var(--padding-highlight-TB) 0 var(--col-highlight-col), 0 calc(-1 * var(--padding-highlight-TB)) 0 var(--col-highlight-col), var(--padding-highlight-LR) var(--padding-highlight-TB) 0 var(--col-highlight-col), calc(-1 * var(--padding-highlight-LR)) var(--padding-highlight-TB) 0 var(--col-highlight-col), var(--padding-highlight-LR) calc(-1 * var(--padding-highlight-TB)) 0 var(--col-highlight-col), calc(-1 * var(--padding-highlight-LR)) calc(-1 * var(--padding-highlight-TB)) 0 var(--col-highlight-col)",
     "color": "var(--col-highlight-text)"
-  },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
   },
   "li[data-line=\"0\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -537,18 +538,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  "pre": { "background-color": "var(--code-background)" },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "color": "var(--link-external-color)",

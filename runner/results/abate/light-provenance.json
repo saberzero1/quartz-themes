@@ -866,6 +866,7 @@
   "div.quartz-icon-selector": { "--focus-ring-color": ":root *" },
   "body": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -1297,7 +1298,8 @@
     "--shiki-gutter-border-width": "body",
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
-    "--shiki-active-tab-border-color": "body"
+    "--shiki-active-tab-border-color": "body",
+    "--heading-color": "body"
   },
   "div.mod-active.workspace-leaf": { "--focus-ring-color": ":root *" },
   "div.workspace-leaf": { "--focus-ring-color": ":root *" },
@@ -1341,11 +1343,16 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
@@ -1376,6 +1383,7 @@
   "div.tree-item-children": { "--focus-ring-color": ":root *" },
   "body.styled-scrollbars": {
     "--focus-ring-color": ":root *",
+    "--h1-weight": "body",
     "--h2-weight": "body",
     "--h3-weight": "body",
     "--h4-weight": "body",
@@ -1807,7 +1815,8 @@
     "--shiki-gutter-border-width": "body",
     "--shiki-gutter-text-color": "body",
     "--shiki-gutter-text-color-highlight": "body",
-    "--shiki-active-tab-border-color": "body"
+    "--shiki-active-tab-border-color": "body",
+    "--heading-color": "body"
   },
   "svg.lucide-alert-triangle.svg-icon": { "--focus-ring-color": ":root *" },
   "svg.lucide-x.svg-icon": { "--focus-ring-color": ":root *" },
@@ -1858,11 +1867,16 @@
     "--pill-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-color-remove-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-decoration-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-background-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-color-hover": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-border-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-x": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-padding-y": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
+    "--pill-radius": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-width": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-focus-left-adjust": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill",
     "--pill-corner-shape": ".metadata-property-value[data-property-type=\"tags\"] .multi-select-pill"
