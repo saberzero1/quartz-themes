@@ -1558,6 +1558,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   lorens: { name: "lorens", modes: ["dark"], variations: [], fonts: [] },
+  lumen: { name: "lumen", modes: ["dark", "light"], variations: [], fonts: [] },
   lumines: {
     name: "lumines",
     modes: ["dark", "light"],
@@ -3120,6 +3121,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   "synthwave-84": {
     name: "synthwave-84",
     modes: ["dark"],
+    variations: [],
+    fonts: [],
+  },
+  "synthwave-pro": {
+    name: "synthwave-pro",
+    modes: ["dark", "light"],
     variations: [],
     fonts: [],
   },

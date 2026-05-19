@@ -891,6 +891,7 @@
     "--cn-lifted-tint": ".theme-light",
     "--cn-modal-backdrop": ".theme-light",
     "--cn-modal-shadow": ".theme-light",
+    "--cn-amber-warning": ".theme-light",
     "--cn-tint-alpha": ".theme-light",
     "--text-highlight-bg-active": ".theme-light"
   },

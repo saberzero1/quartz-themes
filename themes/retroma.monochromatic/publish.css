@@ -3,35 +3,35 @@
   font-family: "W95font";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroma.monochromatic/w95font.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroma.monochromatic/w95font.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cascadia Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroma.monochromatic/cascadia-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroma.monochromatic/cascadia-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroma.monochromatic/ia-writer-mono-s.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroma.monochromatic/ia-writer-mono-s.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Excalifont";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroma.monochromatic/excalifont.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroma.monochromatic/excalifont.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroma.monochromatic/caveat.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroma.monochromatic/caveat.woff2")
     format("woff2");
 }
 body.theme-light {

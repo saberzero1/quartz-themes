@@ -78,6 +78,9 @@
     "disable-drawer-dimming": {
       "general": "body.disable-drawer-dimming .workspace-drawer-inner {\n-webkit-backdrop-filter: none;\nbackdrop-filter: none;\n}"
     },
+    "default-sync-error": {
+      "general": "body.default-sync-error .sync-status-icon.mod-error {\ncolor: var(--text-error);\n}"
+    },
     "accent-everywhere": {
       "general": "body.accent-everywhere .vertical-tab-header-group-title {\ncolor: var(--color-accent);\n}\n\nbody.accent-everywhere:not(.is-grabbing) .tree-item-self.is-active:hover, body.accent-everywhere .tree-item-self.is-active {\nbackground-color: var(--color-accent-tr-20);\n}\n\nbody.accent-everywhere hr {\nborder-color: var(--hr-color);\n}",
       "dark": "body.theme-dark, body.theme-light {\n--text-muted: var(--color-accent-2);\n--titlebar-text-color: var(--color-accent);\n--titlebar-text-color-focused: var(--color-accent);\n--color-accent-tr-20: hsla(var(--color-accent-hsl), 0.2);\n--color-accent-tr-50: hsla(var(--color-accent-hsl), 0.5);\n--color-accent-tr-85: hsla(var(--color-accent-hsl), 0.85);\n--text-faint: var(--color-accent-tr-85);\n--slider-track-background: var(--color-accent-tr-50);\n--hr-color: var(--color-accent);\n--h1-color: var(--color-accent);\n--h2-color: var(--color-accent);\n--h3-color: var(--text-muted);\n--h4-color: var(--text-muted);\n--h5-color: var(--text-faint);\n--h6-color: var(--text-faint);\n--h1-weight: 800;\n--h2-weight: 700;\n--h3-weight: 600;\n--h4-weight: 500;\n--h5-weight: 400;\n--h6-weight: 400;\n}",

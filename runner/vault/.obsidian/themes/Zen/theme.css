@@ -770,13 +770,13 @@ body:not(.is-mobile) .workspace-split.mod-left-split .nav-files-container {
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-header {
-	justify-content: flex-start;
+	/* justify-content: flex-start; */
 	padding: 10px 12px 12px;
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container,
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-header .nav-action-button {
-	display: none;
+	/* display: none; */
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container {
@@ -2115,7 +2115,7 @@ body.theme-dark button:not(.clickable-icon),
 body:not(.is-mobile).theme-dark input.prompt-input,
 body:not(.is-mobile).theme-dark .suggestion-item.is-selected {
 	border: 1px solid rgba(255, 255, 255, 0.15);
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	/* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 body:not(.is-mobile) input.prompt-input {

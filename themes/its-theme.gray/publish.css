@@ -3,14 +3,14 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/its-theme.gray/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.gray/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/its-theme.gray/its.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.gray/its.woff")
     format("woff");
 }
 body.theme-light {

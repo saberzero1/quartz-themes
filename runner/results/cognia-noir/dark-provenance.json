@@ -888,6 +888,7 @@
     "--cn-lifted-tint": ".theme-dark",
     "--cn-modal-backdrop": ".theme-dark",
     "--cn-modal-shadow": ".theme-dark",
+    "--cn-amber-warning": ".theme-dark",
     "--cn-tint-alpha": ".theme-dark.cn-translucent-medium",
     "--text-highlight-bg-active": ".theme-dark"
   },

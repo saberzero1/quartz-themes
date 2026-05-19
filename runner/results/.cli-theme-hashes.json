@@ -96,7 +96,7 @@
   "Cocoa Nook": { "_default": "0a83167e5deea8c20df14ce166169f6b" },
   "CodeAzur": { "_default": "39c1d0e97f3e5917bd2830914b62d80b" },
   "Coffee": { "_default": "031347e222313d1480d3489a253d25b8" },
-  "Cognia Noir": { "_default": "1615a7a1831871826d4230b7da606fe8" },
+  "Cognia Noir": { "_default": "8d93bc36f98a90071dd9fc32382f1688" },
   "Colored Candy": { "_default": "3f414f56aa9cfc035646421ad6fd992a" },
   "COLOURS": { "_default": "6358bb017735a14e0628fade46ff74b8" },
   "Comfort": { "_default": "12a9c966017753044a5864326d73726b" },
@@ -308,6 +308,7 @@
   "Litos": { "_default": "488121becc4c14eac33bcd244448360a" },
   "Lizardmen Zettelkasten": { "_default": "9498dd8828784c08667796a50bbe98f4" },
   "Lorens": { "_default": "c9ae797cd236bc3a877c75d6304a3085" },
+  "Lumen": { "_default": "e39863388f14fb8dea0fd8818cda6df8" },
   "Lumines": { "_default": "423dd3e0ba10063e1f9094dc3c46aa1e" },
   "LYT Mode": { "_default": "4bddc5b750c988fb056e48c069a62ae9" },
   "Mado 11": { "_default": "c6aff4e5d2a821b7530f4c19d725963b" },
@@ -625,6 +626,7 @@
   "Sunbather": { "_default": "0226182c096d3af2a2163755eb4d61cc" },
   "SynthWave": { "_default": "baeae79af52945a64fdf1a7c2dedff1a" },
   "Synthwave '84": { "_default": "f6d730e4be7a6d9ef9e36793e754d2de" },
+  "Synthwave Pro": { "_default": "d4d9259aab0532990e3c9723a00d9a19" },
   "Tech001": { "_default": "612190ce5e6a4881b399f822da66a557" },
   "Terminal": { "_default": "d133f11a55115de61c5d267e6ea17662" },
   "Terminal2K": { "_default": "730abc33099b5c2d361e22ef227108ee" },
@@ -771,6 +773,6 @@
   "Yin and Yang": { "_default": "96c16fbac299c8a80cec3544941c1337" },
   "Yue": { "_default": "1c407371b6850cfa27917cc58f6ae841" },
   "Zario": { "_default": "89f1059c6afa190e65fa978b1424690d" },
-  "Zen": { "_default": "281897368ec668a179e25d729e4a2484" },
+  "Zen": { "_default": "9e8238e6326f11f992391800b8df2539" },
   "Zenburn": { "_default": "e36f66814a06b7cc6f7704d10507b889" }
 }

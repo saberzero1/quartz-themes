@@ -235,7 +235,7 @@ html {
   font-family: "number-font";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/zen/number-font.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/zen/number-font.woff") format("woff");
 }
 
 body {
@@ -5989,7 +5989,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 5px 0px;
+      box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 5px 0px;
     }
 
     .search > .search-container > .search-space > * {

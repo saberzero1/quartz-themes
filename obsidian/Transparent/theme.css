@@ -178,11 +178,17 @@ settings:
         level: 1
         collapsed: false
     -
-        id: animate-modal-open
-        title: "Animate Settings / Modal Opening"
-        description: "Smooth scale + fade when opening any modal or settings window."
+        id: disable-modal-animation
+        title: "Disable Settings / Modal Animation"
+        description: "Turn off smooth scale + fade when opening any modal or settings window."
         type: class-toggle
-        default: true
+        default: false
+    -
+        id: disable-splash-screen
+        title: "Disable Startup Animation (Splash Screen)"
+        description: "Turn off the fade-in and scale-up reveal of the vault workspace on startup."
+        type: class-toggle
+        default: false
     -
         id: animate-note-open
         title: "Animate Note Opening (beta)"
@@ -238,6 +244,12 @@ settings:
         title: "Accent Color Everywhere"
         description: "Apply your accent color to headings, icons, and sliders throughout the UI."
         type: class-toggle
+    -
+        id: default-sync-error
+        title: "Default Sync Error Color"
+        description: "Use the default red color (var(--text-error)) for sync status errors instead of the theme's muted color."
+        type: class-toggle
+        default: false
 */
 /* ===================== Style Settings UI Premium Styling ===================== */
 
@@ -327,11 +339,11 @@ body.preset-orange svg.canvas-background {
   display: none;
 }
 
-body.preset-orange .modal {
+body.preset-orange:not(.disable-modal-animation) .modal {
   animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
-body.preset-orange .modal-bg {
+body.preset-orange:not(.disable-modal-animation) .modal-bg {
   animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
@@ -1313,6 +1325,15 @@ div.suggestion-bg {
   padding: var(--size-4-1) 5px;
 }
 
+/* syncs */
+.sync-status-icon.mod-error {
+  color: #dadada90;
+}
+
+body.default-sync-error .sync-status-icon.mod-error {
+  color: var(--text-error);
+}
+
 /* ===================== settings open animation ===================== */
 @keyframes modal-open {
   from {
@@ -1336,13 +1357,13 @@ div.suggestion-bg {
   }
 }
 
-/* Settings Modal Open Animation – controlled by Style Settings toggle */
-body.animate-modal-open .modal {
+/* Settings Modal Open Animation – enabled by default, can be disabled via Style Settings */
+body:not(.disable-modal-animation) .modal {
   animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
 /* Modal Background Dimming */
-body.animate-modal-open .modal-bg {
+body:not(.disable-modal-animation) .modal-bg {
   animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
@@ -1452,6 +1473,57 @@ body.no-animation *::after {
 }
 
 /* ===================== No animations ===================== */
+
+/* ===================== Startup Animation (Splash Screen) ===================== */
+/* as for 18 may 2026 this code works on mobile and computer */
+/* this is not my code in general it is inspired by */
+/* Benjamin Fernandez - github.com/benfernandezmedia */
+
+body:not(.disable-splash-screen):not(.no-animation)::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background-color: var(--background-primary);
+  animation: splashFade 2.5s ease forwards;
+}
+
+body:not(.disable-splash-screen):not(.no-animation) .workspace {
+  opacity: 0;
+  animation: vaultReveal 1.2s ease forwards;
+  /* delay to hide that the theme is not fully loaded yet  */
+  animation-delay: 1.2s;
+}
+
+@keyframes vaultReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes splashFade {
+  0% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* ===================== Startup Animation (Splash Screen) ===================== */
 
 /* ===================== iOS Fixes ===================== */
 body.is-ios .app-container .workspace,

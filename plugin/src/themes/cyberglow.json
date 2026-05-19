@@ -71,7 +71,8 @@
       "general": "body.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-card-layout .menu {\nborder: none;\n}"
     },
     "cg-card-layout": {
-      "general": "body.cg-hide-borders.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-hide-borders.cg-card-layout .menu {\nborder: none;\n}\n\nbody.cg-card-layout {\n--cg-card-bg: var(--cg-bg-primary);\n--cg-card-fg: var(--cg-bg-secondary);\n--cg-card-outline-color: rgba(var(--cg-primary-rgb), 0.08);\n--cg-card-radius: var(--radius-xl, 12px);\n--cg-card-padding: 8px;\n--cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);\n--divider-color: transparent;\n--divider-color-hover: rgba(var(--cg-primary-rgb), 0.1);\n--divider-width: 4px;\n--divider-width-hover: 4px;\n--tab-container-background: var(--cg-card-bg);\n--ribbon-padding: 0;\n}\n\nbody.cg-card-layout .workspace-drop-overlay:before {\nwidth: calc(100% - 6px - var(--cg-card-padding) * 2);\nheight: calc(100% - 6px - var(--cg-card-padding) * 2);\nmargin: auto;\n}"
+      "general": "body.cg-hide-borders.cg-card-layout {\n--cg-card-outline-color: transparent;\n}\n\nbody.cg-hide-borders.cg-card-layout .menu {\nborder: none;\n}\n\nbody.cg-card-layout {\n--cg-card-bg: var(--cg-bg-primary);\n--cg-card-fg: var(--cg-bg-secondary);\n--cg-card-outline-color: rgba(var(--cg-primary-rgb), 0.08);\n--cg-card-radius: var(--radius-xl, 12px);\n--cg-card-padding: 8px;\n--cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);\n--divider-color: transparent;\n--divider-color-hover: rgba(var(--cg-primary-rgb), 0.1);\n--divider-width: 4px;\n--divider-width-hover: 4px;\n--tab-container-background: var(--cg-card-bg);\n--ribbon-padding: 0;\n}\n\nbody.cg-card-layout .workspace-drop-overlay:before {\nwidth: calc(100% - 6px - var(--cg-card-padding) * 2);\nheight: calc(100% - 6px - var(--cg-card-padding) * 2);\nmargin: auto;\n}",
+      "light": "body.theme-light {\n--cg-card-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);\n--cg-card-fg:     color-mix(in srgb, var(--cg-primary) 6%, var(--cg-bg-primary));\n}"
     },
     "cg-tab-floating": {
       "general": "body.cg-tab-floating {\n--cg-custom-tab-height: 40px;\n--header-height: var(--cg-custom-tab-height, 40px);\n}"
@@ -92,7 +93,7 @@
       "general": ".cg-colored-italic em, .cg-colored-italic .cm-em {\ncolor: var(--cg-active);\n}"
     },
     "cg-colored-headings": {
-      "general": ".cg-colored-headings .markdown-rendered h1 {\ncolor: #00FFFF;\n}\n\n.cg-colored-headings .markdown-rendered h2 {\ncolor: #33CCFF;\n}\n\n.cg-colored-headings .markdown-rendered h3 {\ncolor: #6699FF;\n}\n\n.cg-colored-headings .markdown-rendered h4 {\ncolor: #9966FF;\n}\n\n.cg-colored-headings .markdown-rendered h5 {\ncolor: #CC33FF;\n}\n\n.cg-colored-headings .markdown-rendered h6 {\ncolor: #FF00FF;\n}"
+      "general": ".cg-colored-headings .markdown-rendered h1 {\ncolor: var(--cg-h1);\n}\n\n.cg-colored-headings .markdown-rendered h2 {\ncolor: var(--cg-h2);\n}\n\n.cg-colored-headings .markdown-rendered h3 {\ncolor: var(--cg-h3);\n}\n\n.cg-colored-headings .markdown-rendered h4 {\ncolor: var(--cg-h4);\n}\n\n.cg-colored-headings .markdown-rendered h5 {\ncolor: var(--cg-h5);\n}\n\n.cg-colored-headings .markdown-rendered h6 {\ncolor: var(--cg-h6);\n}"
     },
     "cg-tab-minimal": {
       "general": "body.cg-tab-minimal {\n--cg-custom-tab-height: 40px;\n--header-height: var(--cg-custom-tab-height, 40px);\n}\n\nbody.cg-tab-minimal {\n--tab-stacked-header-width: 40px;\n}"

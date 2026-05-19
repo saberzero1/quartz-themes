@@ -1,4 +1,5 @@
 {
   "defaultViewMode": "preview",
-  "spellcheck": false
+  "spellcheck": false,
+  "vimMode": true
 }

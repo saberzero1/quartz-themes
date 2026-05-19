@@ -1570,6 +1570,7 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --cn-accent: #3a5fc7 !important;
   --cn-accent-hover: #2c4eb0 !important;
+  --cn-amber-warning: #ffd54f !important;
   --cn-bg-elevated: #e8e7e5 !important;
   --cn-bg-note-tray: #d8d6d1 !important;
   --cn-bg-primary: #ffffff !important;
@@ -2600,6 +2601,7 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --cn-accent: #5b8def !important;
   --cn-accent-hover: #7aa3ff !important;
+  --cn-amber-warning: #ffd54f !important;
   --cn-bg-elevated: #282828 !important;
   --cn-bg-note-tray: #131313 !important;
   --cn-bg-primary: #1d1d1d !important;

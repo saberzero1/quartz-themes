@@ -3,7 +3,7 @@
   font-family: "Win95Font";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.1/fonts/retroos-98/win95font.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/retroos-98/win95font.woff2")
     format("woff2");
 }
 body.theme-light {

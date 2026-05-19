@@ -90,6 +90,77 @@
             workspace-tabs) both work. Tab-container trays opt out of
             opaque paint in dark translucent mode so vibrancy still
             shows through.)
+   v1.10.20 (docs cleanup of v1.10.19. Rewrote the rationale
+            comment on the vault-profile border-top rule so it
+            describes the current no-!important state instead of
+            the pre-cleanup state, and added retroactive version-
+            log entries for 1.10.19 and 1.10.20. No CSS behavior
+            change.)
+   v1.10.19 (Obsidian community theme lint cleanup. Dropped 5
+            redundant !important flags whose selector specificity
+            already outranks Obsidian core: vault profile
+            border-top, and the four resize-handle
+            border-inline-end-color declarations (dark/light at
+            rest and on :hover). Visually verified in both
+            themes; divider remains visible at the documented
+            rgba values and hover still brightens. Declaration
+            count drops from 33 to 28. Remaining 28 are each
+            paired with a rationale comment explaining the
+            Obsidian-core override they counter.)
+   v1.10.18 (mobile drawer fix + audit cleanup. (1) MOBILE BUG:
+            on iPhone, tapping the bottom-of-drawer view-picker
+            chevron (Files / Search / Tags / Bookmarks / All
+            properties / Recent files) opened a transparent popup
+            -- the file-explorer leaf behind it bled through and
+            both layers were simultaneously legible. Stock
+            Obsidian mobile doesn't paint .workspace-drawer-tab-
+            options or .workspace-drawer-tab-options-list; it
+            expects the theme to. Cognia Noir was missing both
+            paints. Added section-21 rule painting both with
+            --cn-bg-secondary. Verified live with a red-paint
+            diagnostic that CSS updates were reaching the device
+            before shipping the dark-gray paint. Velocity's
+            additional .workspace-drawer-inner paint was
+            considered and rejected: it tints the iOS status bar
+            safe-area, unwanted side effect.
+            (2) DEAD CSS: .workspace selector removed from the
+            section-4 translucent-force-transparent multi-
+            selector list -- it was immediately overridden one
+            rule below by the workspace-wash that sets it to
+            var(--workspace-background-translucent). Including it
+            in the transparent list was dead code at equal
+            specificity. Comment added in its place to prevent
+            re-adding.
+            (3) MOBILE GUARD: cn-sidebar-border rules
+            (.theme-{dark,light}.cn-sidebar-border .workspace-
+            split.mod-{left,right}-split) now scoped with
+            body:not(.is-mobile). On mobile, .workspace-split.mod-
+            {left,right}-split is the drawer container; a border
+            there draws a line on the drawer's inner edge. Same
+            scope-decision pattern as v1.8.7 / v1.9.9 for other
+            chrome.
+            (4) TOKEN EXTRACTION: --cn-amber-warning added to
+            both .theme-dark and .theme-light blocks (solid hex
+            #ffd54f). Three hardcoded #ffd54f uses on
+            .sync-status-icon replaced with var() references.
+            Comment on the sync rule rewritten to clarify that
+            the sync amber and callout amber (RGB triplet via
+            --callout-color) are intentionally different shades
+            and serve different purposes (solid status indicator
+            vs alpha-composable callout tint).
+            (5) TOKEN USE: .modal button.mod-cta hardcoded
+            color: #ffffff replaced with var(--text-on-accent),
+            matching the rest of the theme's token discipline.
+            (6) DOC DRIFT: two stale line-number references in
+            historical changelog entries (v1.10.3 and v1.10.11)
+            now point to section/comment names instead of
+            specific lines -- sections are stable, line numbers
+            drift on every edit.
+            (7) SECTION HEADER: section 21 renamed from "MOBILE
+            SETTINGS -- card contrast + button visibility" to
+            "MOBILE -- settings card contrast, button visibility,
+            and drawer view-picker opacity" to reflect the new
+            drawer block.)
    v1.10.16 (audit pass: bugs, dead CSS, and performance. (1) BUG: Pure
             Black dark variant -- --cn-bg-note-tray was inheriting
             #131313 from .theme-dark while --cn-bg-primary is #0d0d0d,
@@ -247,9 +318,9 @@
             Canvas's own grid, cards, and edges should win. (3) Smart
             Connections reference comments corrected: the data-type
             "smart-connections-view" is the related-notes view, not a
-            graph canvas. The header comment on line 7 and the rule
-            comment near line 1926 now agree with the section 19 head
-            comment about what that view actually is.)
+            graph canvas. The file-header comment and the section-19
+            head comment for the smart-connections rule now agree
+            about what that view actually is.)
    v1.10.10 (resize + transition fixes. (1) Removed the
             .workspace-split.mod-left-split > hr /
             hr.workspace-leaf-resize-handle display:none rule that
@@ -333,7 +404,8 @@
             section 19b -electron-corner-smoothing chain and pill-
             shaped clickable-icon rule were missing the :not(.is-
             phone) guard that every other section 19b rule
-            carries (lock-comment at lines 2075-2088). 32px min-
+            carries (see the "Mobile scope decision (locked v1.9.9)"
+            block comment in section 19b). 32px min-
             height + 10px horizontal padding in the tight mobile
             view-header was clipping the + icon. Both rules now
             scoped to body:not(.is-phone). iPad keeps the desktop
@@ -905,6 +977,13 @@ settings:
   --cn-modal-backdrop: rgba(0, 0, 0, 0.65);
   --cn-modal-shadow: rgba(0, 0, 0, 0.55);
 
+  /* Status / in-progress amber. Used for Obsidian Sync's syncing
+     state and reusable for other warning-state indicators. Solid
+     hex (not RGB triplet) because it does not need alpha
+     composition; for tinted backgrounds use --callout-color
+     pattern instead. */
+  --cn-amber-warning: #ffd54f;
+
   /* Translucency tint over macOS vibrancy. The vibrancy itself comes from
      Obsidian's Translucent Window setting (Electron NSVisualEffectView at
      the window level). The theme's job is purely to make every workspace
@@ -1015,6 +1094,10 @@ settings:
   /* Modal chrome — Notion-style: ~30% backdrop dim, soft 10% shadow. */
   --cn-modal-backdrop: rgba(15, 15, 15, 0.30);
   --cn-modal-shadow: rgba(15, 15, 15, 0.10);
+
+  /* Status / in-progress amber. Same value as dark mode -- status
+     indicators should be brand-consistent across modes. */
+  --cn-amber-warning: #ffd54f;
 
   /* Translucency vars set as no-ops — light mode is opaque. The wash on
      .workspace still exists but doesn't show through opaque surfaces.
@@ -1147,10 +1230,13 @@ settings:
    the window frame (no adjacent content), so a border there is noise.
    The panel boxes in section 19b provide their own inner border; this
    option adds a separator at the split level for users who want it. */
-.theme-dark.cn-sidebar-border .workspace-split.mod-left-split {
+/* :not(.is-mobile) guard: on mobile, .workspace-split.mod-{left,right}-split
+   is the drawer container; a border there would draw a line on the
+   drawer's inner edge. Desktop split panes only. */
+body:not(.is-mobile).theme-dark.cn-sidebar-border .workspace-split.mod-left-split {
   border-right: 1px solid var(--cn-border-subtle);
 }
-.theme-dark.cn-sidebar-border .workspace-split.mod-right-split {
+body:not(.is-mobile).theme-dark.cn-sidebar-border .workspace-split.mod-right-split {
   border-left: 1px solid var(--cn-border-subtle);
 }
 
@@ -1164,10 +1250,10 @@ settings:
 
 /* Sidebar contrast variants — light */
 /* Same inner-edge-only rule for light mode. */
-.theme-light.cn-sidebar-border .workspace-split.mod-left-split {
+body:not(.is-mobile).theme-light.cn-sidebar-border .workspace-split.mod-left-split {
   border-right: 1px solid var(--cn-border-subtle);
 }
-.theme-light.cn-sidebar-border .workspace-split.mod-right-split {
+body:not(.is-mobile).theme-light.cn-sidebar-border .workspace-split.mod-right-split {
   border-left: 1px solid var(--cn-border-subtle);
 }
 
@@ -1362,7 +1448,10 @@ body.cn-heading-georgia { --cn-heading-font: Georgia, serif; }
 
 body.is-translucent.theme-dark { background-color: transparent; }
 
-body.is-translucent.theme-dark:not(.is-fullscreen) .workspace,
+/* .workspace itself is NOT in this list -- it gets painted with
+   the translucent tint wash a few rules below, not forced
+   transparent. Including it here would be dead code (immediately
+   overridden by the wash rule at equal specificity). */
 body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-ribbon.mod-left,
 body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-ribbon.mod-left::before,
 body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs,
@@ -1806,7 +1895,7 @@ hr {
 
 .modal button.mod-cta {
   background: var(--cn-accent);
-  color: #ffffff;
+  color: var(--text-on-accent);
   border: none;
 }
 
@@ -2038,19 +2127,22 @@ body:not(.is-mobile) .status-bar > * {
    error state (.mod-error) keep their defaults. Targeting
    .sync-status-icon without those modifiers covers the in-progress
    state regardless of which exact class name the plugin uses
-   (.mod-syncing, .mod-progress, etc). Color matches the theme's amber
-   highlight tokens. */
+   (.mod-syncing, .mod-progress, etc). Uses --cn-amber-warning, a
+   dedicated solid-color token for in-progress status. Note that
+   callouts use a separate amber RGB triplet (--callout-color) so
+   they can compose alpha for tinted backgrounds; the two amber
+   shades are intentionally distinct in shade and purpose. */
 /* !important needed because the Obsidian Sync plugin paints the
    status icon via inline currentColor on the SVG and a status-
    class color on the parent; without !important the amber tint
    loses to those higher-specificity / inline values. */
 .sync-status-icon:not(.mod-success):not(.mod-error) {
-  color: #ffd54f !important;
+  color: var(--cn-amber-warning) !important;
 }
 
 .sync-status-icon:not(.mod-success):not(.mod-error) svg {
-  color: #ffd54f !important;
-  stroke: #ffd54f !important;
+  color: var(--cn-amber-warning) !important;
+  stroke: var(--cn-amber-warning) !important;
 }
 
 /* ============================================================
@@ -2745,16 +2837,16 @@ body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-
    not appear in the current DOM; if it returns, scope by a more
    specific selector that excludes the boundary handle. */
 
-/* Defensive: zero any top border on the vault profile. !important
-   is here because Obsidian has historically set a 1px top border
-   on this element via internal CSS, and removing it without
-   !important left a thin line above the vault box in some builds.
-   If a future audit confirms current Obsidian no longer paints
-   that border, the !important (and the rule itself) can be
-   dropped — verify by toggling display:none on this rule and
-   inspecting for a stray top border in DevTools. */
+/* Defensive: zero any top border on the vault profile. Obsidian
+   has historically painted a 1px top border on this element via
+   internal CSS; the rule is kept as a harmless no-op safeguard
+   against that returning. v1.10.19 audit confirmed current
+   Obsidian no longer paints it, and the selector specificity
+   already outranks core, so !important was dropped. If a future
+   audit confirms the rule itself is unnecessary, the whole
+   block can be deleted. */
 .workspace-split.mod-left-split > .workspace-sidedock-vault-profile {
-  border-top: none !important;
+  border-top: none;
 }
 
 /* v1.10.15  Split-pane resize divider visibility.
@@ -2768,18 +2860,18 @@ body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-
    (0.22 opacity) was a v1.10.16 regression: on Pure Black it rendered
    at ~2:1 contrast, below the 3:1 interactive-element minimum. */
 .theme-dark .workspace-split.mod-root .workspace-leaf-resize-handle {
-  border-inline-end-color: rgba(255, 255, 255, 0.35) !important;
+  border-inline-end-color: rgba(255, 255, 255, 0.35);
   transition: border-inline-end-color var(--cn-transition-fast);
 }
 .theme-dark .workspace-split.mod-root .workspace-leaf-resize-handle:hover {
-  border-inline-end-color: rgba(255, 255, 255, 0.55) !important;
+  border-inline-end-color: rgba(255, 255, 255, 0.55);
 }
 .theme-light .workspace-split.mod-root .workspace-leaf-resize-handle {
-  border-inline-end-color: rgba(55, 53, 47, 0.28) !important;
+  border-inline-end-color: rgba(55, 53, 47, 0.28);
   transition: border-inline-end-color var(--cn-transition-fast);
 }
 .theme-light .workspace-split.mod-root .workspace-leaf-resize-handle:hover {
-  border-inline-end-color: rgba(55, 53, 47, 0.50) !important;
+  border-inline-end-color: rgba(55, 53, 47, 0.50);
 }
 
 /* ============================================================
@@ -2824,7 +2916,8 @@ body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-
 }
 
 /* ============================================================
-   21. MOBILE SETTINGS — card contrast + button visibility
+   21. MOBILE — settings card contrast, button visibility,
+       and drawer view-picker opacity
    ============================================================
    On iPhone, Obsidian groups the Settings screen content into
    stacked cards (Account, Catalyst license, Help, etc.) that
@@ -2855,6 +2948,26 @@ body.is-phone.theme-dark .modal.mod-settings .modal-content {
 body.is-phone .modal.mod-settings button:not(.mod-cta) {
   background-color: var(--cn-bg-tertiary);
   border: 1px solid var(--cn-border-subtle);
+}
+
+/* ----------------------------------------------------------------
+   Mobile drawer view-picker popup. The dropdown that opens from
+   the bottom-of-drawer chevron lists Files / Search / Tags /
+   Bookmarks / All properties / Recent files. Stock Obsidian mobile
+   does not paint this popup -- it expects the theme to. Without an
+   opaque fill the file-explorer leaf behind it shows through and
+   both layers become simultaneously legible. Paint both the
+   container (.workspace-drawer-tab-options) and the list
+   (.workspace-drawer-tab-options-list) defensively: one or both
+   carries the visible surface depending on Obsidian build and
+   device class, and painting both costs nothing. Scoped to
+   .is-mobile so iPhone and iPad both pick it up.
+   Velocity additionally paints the whole .workspace-drawer-inner
+   for cohesive chrome; that approach tints the iOS status bar
+   safe area, which we don't want here, so we stop at the picker. */
+body.is-mobile .workspace-drawer-tab-options,
+body.is-mobile .workspace-drawer-tab-options-list {
+  background-color: var(--cn-bg-secondary);
 }
 
 /* ============================================================

@@ -1,7 +1,7 @@
 /* ============================================================
    Green Holiday — Obsidian Theme
    A lime green tinted theme for focused writing.
-   Version: 0.2.1
+   Version: 0.2.2
    ============================================================ */
 
 /* ── Dark Mode ─────────────────────────────────────────────── */
@@ -54,6 +54,9 @@
   --code-punctuation: #7aaa7c;
   --code-important: #ff9e7a;
   --code-value: #ffd27a;
+
+  --inline-code-background: rgba(255, 255, 255, 0.1);
+  --inline-code-color: #d4f0d4;
 }
 
 /* ── Light Mode ─────────────────────────────────────────────── */
@@ -86,6 +89,9 @@
   --tag-border-color: rgba(8, 68, 8, 0.28);
 
   --hr-color: rgba(0, 80, 0, 0.2);
+
+  --inline-code-background: rgba(255, 255, 255, 0.75);
+  --inline-code-color: #1a3a1a;
 
   --code-background: #1a351a;
   --code-normal: #d4f0d4;
@@ -178,14 +184,6 @@ body {
 }
 
 /* ── Inline code (GitHub-style) ────────────────────────────── */
-.theme-light {
-  --inline-code-background: rgba(255, 255, 255, 0.75);
-  --inline-code-color: #1a3a1a;
-}
-.theme-dark {
-  --inline-code-background: rgba(255, 255, 255, 0.1);
-  --inline-code-color: #d4f0d4;
-}
 
 /* Reading mode */
 .markdown-preview-view :not(pre) > code,
