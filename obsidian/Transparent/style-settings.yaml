@@ -144,11 +144,16 @@ sections:
         type: heading
         level: 1
         collapsed: false
-      - id: animate-modal-open
-        title: Animate Settings / Modal Opening
-        description: Smooth scale + fade when opening any modal or settings window.
+      - id: disable-modal-animation
+        title: Disable Settings / Modal Animation
+        description: Turn off smooth scale + fade when opening any modal or settings window.
         type: class-toggle
-        default: true
+        default: false
+      - id: disable-splash-screen
+        title: Disable Startup Animation (Splash Screen)
+        description: Turn off the fade-in and scale-up reveal of the vault workspace on startup.
+        type: class-toggle
+        default: false
       - id: animate-note-open
         title: Animate Note Opening (beta)
         description: Slide-up + fade when opening or switching notes.
@@ -195,6 +200,16 @@ sections:
         title: Accent Color Everywhere
         description: Apply your accent color to headings, icons, and sliders throughout the UI.
         type: class-toggle
+      - id: default-sync-error
+        title: Default Sync Error Color
+        description: Use the default red color (var(--text-error)) for sync status errors instead of the theme's muted color.
+        type: class-toggle
+        default: false
+      - id: animate-modal-open
+        title: Animate Settings / Modal Opening
+        description: Smooth scale + fade when opening any modal or settings window.
+        type: class-toggle
+        default: true
       - id: main-section
         title: Adjust Obsidian Theme
         type: heading

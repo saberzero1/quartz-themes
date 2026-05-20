@@ -1,4 +1,6 @@
 import { defineConfig } from "tsup";
+import { cpSync, mkdirSync, readdirSync, statSync } from "node:fs";
+import { resolve, join, extname } from "node:path";
 
 export default defineConfig({
   entry: { index: "src/index.ts", types: "src/types.ts" },
@@ -10,6 +12,14 @@ export default defineConfig({
   target: "es2022",
   splitting: false,
   outDir: "dist",
-  onSuccess:
-    "mkdir -p dist/themes && cp src/themes/*.json dist/themes/ 2>/dev/null || true",
+  async onSuccess() {
+    const src = resolve("src", "themes");
+    const dest = resolve("dist", "themes");
+    mkdirSync(dest, { recursive: true });
+    for (const file of readdirSync(src)) {
+      if (extname(file) === ".json") {
+        cpSync(join(src, file), join(dest, file));
+      }
+    }
+  },
 });

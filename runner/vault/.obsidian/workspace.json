@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "media.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "syntax-samples"
+              "title": "media"
             }
           }
         ]
@@ -84,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 298.5
   },
   "right": {
     "id": "ceb3c6837a446c36",
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "specimen.md",
+                "file": "media.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for specimen"
+              "title": "Backlinks for media"
             }
           },
           {
@@ -148,17 +148,30 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "general.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of syntax-samples"
+              "title": "Outline of general"
+            }
+          },
+          {
+            "id": "66a9f621be38f408",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "cf38a29ab8834d5d",
@@ -189,37 +202,38 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "sample-plugin:Extended Cache: Inspect": false
     }
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
+    "theme-canvas/test-canvas.canvas",
+    "media.md",
+    "general.md",
+    "embeds.md",
+    "headings.md",
+    "specimen.md",
+    "theme-embeds/note-embeds.md",
+    "theme-embeds/frontmatter.md",
+    "theme-embeds/tooltips.md",
+    "theme-extras/its-theme/callouts/statblocks.md",
+    "theme-extras/its-theme/checkboxes.md",
+    "theme-properties/note-properties.md",
+    "backlinks.md",
+    "callouts.md",
+    "theme-extras/its-theme/callouts/infoboxes.md",
+    "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
-    "theme-canvas/test-canvas.canvas",
-    "theme-properties/note-properties.md",
-    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
-    "theme-embeds/tooltips.md",
-    "theme-embeds/note-embeds.md",
-    "theme-embeds/frontmatter.md",
-    "backlinks.md",
-    "embeds.md",
-    "media.md",
     "tables.md",
     "integrations.md",
-    "callouts.md",
-    "headings.md",
-    "general.md",
     "theme-callouts/velocity.md",
     "theme-callouts/vauxhall.md",
-    "theme-callouts/ukiyo.md",
-    "theme-callouts/sanctum-reborn.md",
-    "theme-callouts/sanctum.md",
-    "theme-callouts/origami.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

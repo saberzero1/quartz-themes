@@ -1,0 +1,38 @@
+.extended-cache-inspector {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.extended-cache-inspector table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 8px 0;
+	font-size: 0.85em;
+}
+
+.extended-cache-inspector th,
+.extended-cache-inspector td {
+	padding: 4px 8px;
+	border: 1px solid var(--background-modifier-border);
+	text-align: left;
+}
+
+.extended-cache-inspector th {
+	font-weight: 600;
+	background: var(--background-secondary);
+}
+
+.extended-cache-inspector details {
+	margin: 12px 0;
+}
+
+.extended-cache-inspector summary {
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.05em;
+}
+
+.extended-cache-inspector .error {
+	color: var(--text-error);
+	font-weight: 600;
+}

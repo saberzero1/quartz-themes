@@ -1,0 +1,449 @@
+mode: replace
+sections:
+  - name: Monkey King Theme
+    id: monkey-king-theme
+    collapsed: false
+    settings:
+      - id: h-sec-stage
+        title: 短诗定场
+        description: 仙山灵石，久孕猿猴，碎开新篇。
+        type: heading
+        level: 1
+        collapsed: false
+      - id: h-note-fontpack-quick
+        title: 必读：预设字体
+        type: info-text
+        markdown: true
+        description: 本主题搭配了多款免费字体，预设字体缺失会**明显影响观感**。请先下载安装字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv)。安装后建议*重启 Obsidian*。
+      - id: h-note-mode-huaguo
+        title: 一条涧壑藤萝密，四面原堤草色新。
+        type: info-text
+      - id: h-note-mode-hall
+        title: 金钉攒玉户，彩凤舞朱门。
+        type: info-text
+      - id: u-font-theme-zh
+        title: ③ 念白开场
+        description: 最后确定正文的字体
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: h-sec-optimize
+        title: 看桃放马
+        description: 恭恭敬敬，规规矩矩，小打小闹。
+        type: heading
+        level: 1
+        collapsed: true
+      - id: bg-tune-override
+        title: 亲调天光
+        type: class-toggle
+        default: false
+        description: 关闭时跟随默认背景；开启后使用滑块微调背景。
+      - id: u-bg-tune
+        title: 天光偏移
+        type: variable-number-slider
+        default: 0
+        min: -20
+        max: 20
+        step: 1
+        description: 微调背景与文字的对比度，0 为不偏移。
+      - id: h-sec-advance
+        title: 大闹天宫
+        type: heading
+        level: 1
+        collapsed: true
+        description: 踢丹炉，碎金匾，铁棒到处生烟。
+      - id: h-group-editor
+        title: 编辑器
+        type: heading
+        level: 2
+        collapsed: true
+      - id: h-note-limitation
+        title: 注意
+        type: info-text
+        description: 目前只实现了对元素的字体调整。
+      - id: h-note-fontpack-advanced
+        title: 预设字库下载
+        type: info-text
+        markdown: true
+        description: 若风格与预期不符，请先安装预设字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv) 。
+      - id: h-group-font-base
+        title: 正文与代码
+        type: heading
+        level: 3
+        collapsed: true
+      - id: cancel-font-override
+        title: 回归原本
+        type: class-toggle
+        default: false
+        description: 关闭：在style-setting设置正文和代码字体。开启：改用你在设置面板中设置的字体。
+      - id: h-sub-font-theme
+        title: 正文
+        type: heading
+        level: 4
+        collapsed: true
+      - id: u-font-theme-west
+        title: 正文西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 衬线
+            value: var(--stack-serif)
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: font-stack-override-theme
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-theme
+        title: 字体栈（CSS）
+        type: variable-text
+        default: initial
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-theme-weight
+        title: 正文字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-sub-font-mono
+        title: 代码
+        type: heading
+        level: 4
+        collapsed: true
+      - id: u-font-mono-west
+        title: 代码西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 衬线
+            value: var(--stack-serif)
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-mono-zh
+        title: 代码中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: font-stack-override-mono
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-mono
+        title: 字体栈（CSS）
+        type: variable-text
+        default: var(--res-font-mono-west), var(--res-font-mono-zh)
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-mono-weight
+        title: 代码字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-font-headings
+        title: 标题
+        type: heading
+        level: 3
+        collapsed: true
+      - id: u-font-headings-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-headings-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: font-stack-override-headings
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-headings
+        title: 字体栈（CSS）
+        type: variable-text
+        default: var(--res-font-headings-west), var(--res-font-headings-zh)
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-headings-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-font-quote
+        title: 引用块
+        type: heading
+        level: 3
+        collapsed: true
+      - id: u-font-quote-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-quote-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: font-stack-override-quote
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-quote
+        title: 字体栈（CSS）
+        type: variable-text
+        default: var(--res-font-quote-west), var(--res-font-quote-zh)
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-quote-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-font-em
+        title: 强调块（*text*）
+        type: heading
+        level: 3
+        collapsed: true
+      - id: u-font-em-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-em-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: font-stack-override-em
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-em
+        title: 字体栈（CSS）
+        type: variable-text
+        default: var(--res-font-em-west), var(--res-font-em-zh)
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-em-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-font-strong
+        title: 加重块（**text**）
+        type: heading
+        level: 3
+        collapsed: true
+      - id: u-font-strong-west
+        title: 西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-strong-zh
+        title: 中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: font-stack-override-strong
+        title: 自定义字体栈
+        type: class-toggle
+        default: false
+        description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+      - id: u-font-stack-strong
+        title: 字体栈（CSS）
+        type: variable-text
+        default: var(--res-font-strong-west), var(--res-font-strong-zh)
+        description: 直接填写完整 font-family 字体栈。
+      - id: u-font-strong-weight
+        title: 字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-font-table
+        title: 表格表头
+        type: heading
+        level: 3
+        collapsed: true
+      - id: u-font-th-west
+        title: 表头西文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 衬线
+            value: var(--stack-serif)
+          - label: 非衬线
+            value: var(--stack-sans)
+          - label: 手写体
+            value: var(--stack-hand)
+          - label: 系统衬线斜体
+            value: var(--stack-serif-i)
+          - label: 系统非衬线斜体
+            value: var(--stack-sans-i)
+      - id: u-font-th-zh
+        title: 表头中文
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+          - label: 黑体
+            value: var(--stack-hei)
+          - label: 宋体
+            value: var(--stack-song)
+          - label: 楷体
+            value: var(--stack-kai)
+          - label: 仿宋
+            value: var(--stack-fang)
+      - id: u-font-th-weight
+        title: 表头字重
+        type: variable-select
+        default: initial
+        options:
+          - label: 顺应场景
+            value: initial
+      - id: h-group-navigation
+        title: 导航栏
+        type: heading
+        description: 针对文件夹，书签，搜索，链接，标签等导航栏的样式。
+        level: 2
+        collapsed: true
+      - id: cancel-nav-item-rotate
+        title: 取消导航项悬停动效
+        type: class-toggle
+        default: false
+        description: 关闭：导航项在悬停时会有旋转的动效。开启：取消悬停动效，回归默认静态样式。
+      - id: cancel-nav-item-color
+        title: 取消导航项强调色
+        type: class-toggle
+        default: false
+        description: 关闭：导航项使用主题强调色。开启：回归阴影颜色。

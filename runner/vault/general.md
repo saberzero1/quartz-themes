@@ -30,7 +30,7 @@ console.log("code block text with language");
 - [ ] unchecked text
 - [x] checkex text
 - [?] question text
-- [>] greater than text
+- [>] greater than text ^block-id
 
 ```dataviewjs
 function renderGraph() {

@@ -30,19 +30,14 @@ sections:
         title: Show scrollbars
         description: When activated scrollbars will be visible
         type: class-toggle
-        default: false
+        default: true
       - id: eis-with-icons
         title: Show icons in sidebar
         description: When activated files and folders icons will be visible
         type: class-toggle
         default: true
-      - id: eis-empty-bg
-        title: Show background in empty window
-        description: When activated will show a background in empty windows (new files)
-        type: class-toggle
-        default: false
       - id: new-note-button-position-bottom
-        title: Enable default position of new note button
+        title: Change the "new note button" to bottom of sidebar
         description: When enable, we put the new note button at the bottom of sidebar
         type: class-toggle
         default: true
@@ -151,3 +146,8 @@ sections:
         default-light: '#F7F7F5'
         default-dark: '#202020'
         alt-format: []
+      - id: eis-empty-bg
+        title: Show background in empty window
+        description: When activated will show a background in empty windows (new files)
+        type: class-toggle
+        default: false

@@ -124,3 +124,8 @@ sections:
         description: https://github.com/DevM0nk3y/CyberGlow/issues
         type: info-text
         markdown: true
+      - id: cg-url-donate
+        title: ☕ Buy Me a Coffee via Paypal
+        description: '<details><summary><b>Choose your support tier</b></summary><br><ul style=''list-style:none; padding-left:10px;''><li style=''margin-bottom:6px;''>☕ <a href=''https://www.paypal.com/paypalme/abellazaro067/3usd''>Tier 1: Donate $3 USD</a></li><li style=''margin-bottom:6px;''>☕ ☕ <a href=''https://www.paypal.com/paypalme/abellazaro067/5usd''>Tier 2: Donate $5 USD</a></li><li style=''margin-bottom:6px;''>☕ ☕ ☕ <a href=''https://www.paypal.com/paypalme/abellazaro067/10usd''>Tier 3: Donate $10 USD</a></li></ul></details>'
+        type: info-text
+        markdown: true

@@ -11,8 +11,10 @@ sections:
         allowEmpty: false
         default: preset-default
         options:
-          - label: Default (Brutalist)
+          - label: Default (Gunmetal)
             value: preset-default
+          - label: Brutalist
+            value: preset-brutalist
           - label: Solarized (Classic)
             value: preset-solarized
           - label: Warm (Amber/Cream)
@@ -35,8 +37,6 @@ sections:
             value: preset-reader
           - label: Amber (IBM Terminal)
             value: preset-amber
-          - label: Gunmetal/Ice
-            value: preset-gunmetal
   - name: Aubade Editor Layout
     id: aubade-layout
     collapsed: false

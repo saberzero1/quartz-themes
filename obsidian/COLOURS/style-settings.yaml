@@ -24,6 +24,14 @@ sections:
         default-light: '#0d0d73'
         default-dark: '#0f0f3d'
         alt-format: []
+      - id: heading-hue-rotate
+        title: Heading Hue Rotate
+        description: Shift the base hue for 'A little bit colour' headings. 0 = accent hue. Positive values rotate warm, negative rotate cool.
+        type: variable-number-slider
+        default: 0
+        min: -180
+        max: 180
+        step: 1
       - id: checkbox-coloured
         title: Coloured Alternate Checkboxes
         description: Apply the Go Crazy hue palette to alternate checkbox backgrounds. Turn off to fall back to the Heading Style setting.

@@ -1,0 +1,116 @@
+mode: replace
+sections:
+  - name: Synthwave Pro
+    id: synthwave-pro
+    collapsed: false
+    settings:
+      - id: swp-header-info
+        title: Synthwave Pro
+        description: VaporWave / RetroWave theme — readable, low eye-strain. Toggle palette and effects below.
+        type: heading
+        level: 2
+        collapsed: false
+      - id: swp-palette
+        title: Palette
+        description: Choose the color scheme. "Soft Reading" desaturates accents for long sessions.
+        type: class-select
+        default: swp-palette-synthwave
+        allowEmpty: false
+        options:
+          - label: Synthwave (default — magenta + cyan on indigo)
+            value: swp-palette-synthwave
+          - label: Outrun (orange + pink sunset)
+            value: swp-palette-outrun
+          - label: Miami (teal + hot pink)
+            value: swp-palette-miami
+          - label: Tokyo Night (muted purple + blue)
+            value: swp-palette-tokyo
+          - label: Soft Reading (desaturated, eye-comfort)
+            value: swp-palette-soft
+      - id: swp-bg-depth
+        title: Background depth
+        description: How dark the editor background goes.
+        type: class-select
+        default: swp-bg-medium
+        allowEmpty: false
+        options:
+          - label: Deep (darkest indigo)
+            value: swp-bg-deep
+          - label: Medium (default, balanced)
+            value: swp-bg-medium
+          - label: Soft (lighter, less contrast)
+            value: swp-bg-soft
+      - id: swp-grid
+        title: Retro grid background
+        description: Subtle perspective grid behind the workspace. Off by default.
+        type: class-toggle
+        default: false
+      - id: swp-glow
+        title: Neon glow on headings & links
+        description: Adds a soft text-shadow. Off by default for max readability.
+        type: class-toggle
+        default: false
+      - id: swp-scanlines
+        title: CRT scanlines
+        description: Very subtle horizontal scanlines. Pure aesthetics — leave off if it bothers you.
+        type: class-toggle
+        default: false
+      - id: swp-mono-headings
+        title: Monospace headings
+        description: Use a coding font for headings (programmer vibe).
+        type: class-toggle
+        default: true
+      - id: swp-fonts-heading
+        title: Heading section
+        type: heading
+        level: 3
+        collapsed: true
+      - id: swp-font-text
+        title: Text font
+        description: Body text font family. Comma-separated list, no surrounding quotes.
+        type: variable-text
+        quotes: false
+        default: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+      - id: swp-font-mono
+        title: Monospace / code font
+        description: Used for code blocks and (optionally) headings.
+        type: variable-text
+        quotes: false
+        default: '''JetBrains Mono'', ''Fira Code'', ''SF Mono'', Menlo, Consolas, monospace'
+      - id: swp-font-size
+        title: Base font size (px)
+        type: variable-number-slider
+        default: 16
+        format: '{}px'
+        min: 13
+        max: 22
+        step: 1
+      - id: swp-line-height
+        title: Line height
+        type: variable-number-slider
+        default: 1.65
+        min: 1.3
+        max: 2
+        step: 0.05
+      - id: swp-accent-section
+        title: Custom accents
+        type: heading
+        level: 3
+        collapsed: true
+      - id: swp-accent-primary
+        title: Override primary accent
+        description: Leave empty to use palette default.
+        type: variable-themed-color
+        format: hex
+        default-light: '#ff3ec8'
+        default-dark: '#ff3ec8'
+        opacity: false
+        alt-format: []
+      - id: swp-accent-secondary
+        title: Override secondary accent
+        type: variable-themed-color
+        format: hex
+        default-light: '#36e2ec'
+        default-dark: '#36e2ec'
+        opacity: false
+        alt-format: []

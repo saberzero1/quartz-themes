@@ -46,75 +46,87 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
 ) => {
   const options: ThemeOptions = { ...defaultOptions, ...userOptions };
 
-  const {
-    css: resolvedCSS,
-    effectiveMode,
-    styleSettingsId,
-    classSettings,
-    brokenVarLinks,
-  } = composeCSS(options);
+  let cssResources: CSSResource[] | undefined;
+  let jsResources: JSResource[] | undefined;
 
-  const isSingleMode = effectiveMode !== "both";
+  function buildResources(): { css: CSSResource[]; js: JSResource[] } {
+    if (cssResources && jsResources)
+      return { css: cssResources, js: jsResources };
 
-  const cssResources: CSSResource[] = [];
-  const jsResources: JSResource[] = [];
+    const css: CSSResource[] = [];
+    const js: JSResource[] = [];
 
-  if (resolvedCSS) {
-    cssResources.push({
-      content:
-        `@layer quartz-base, obsidian-theme, quartz-themes-base, obsidian-theme-overrides;\n` +
-        `@layer obsidian-theme {\n${resolvedCSS}\n}`,
-      inline: true,
-    });
+    const {
+      css: resolvedCSS,
+      effectiveMode,
+      styleSettingsId,
+      classSettings,
+      brokenVarLinks,
+    } = composeCSS(options);
 
-    cssResources.push({
-      content: `@layer quartz-themes-base {\n${TEMPLATE_OVERRIDE_CSS}\n}`,
-      inline: true,
-    });
-  }
+    const isSingleMode = effectiveMode !== "both";
 
-  if (isSingleMode) {
-    cssResources.push({
-      content:
-        `button.darkmode { display: none !important; }\n` +
-        `:root { color-scheme: ${effectiveMode}; }\n`,
-      inline: true,
-    });
+    if (resolvedCSS) {
+      css.push({
+        content:
+          `@layer quartz-base, obsidian-theme, quartz-themes-base, obsidian-theme-overrides;\n` +
+          `@layer obsidian-theme {\n${resolvedCSS}\n}`,
+        inline: true,
+      });
 
-    jsResources.push({
-      loadTime: "beforeDOMReady",
-      contentType: "inline",
-      script:
-        `document.documentElement.setAttribute("saved-theme", "${effectiveMode}");\n` +
-        `localStorage.setItem("theme", "${effectiveMode}");`,
-    });
-  }
-
-  if (options.styleSettings) {
-    if (
-      styleSettingsId &&
-      (!Array.isArray(styleSettingsId) || styleSettingsId.length > 0)
-    ) {
-      const settings = loadStyleSettings(options.styleSettings);
-      const { css: overrideCSS } = processStyleSettings(
-        settings,
-        styleSettingsId,
-        classSettings,
-        brokenVarLinks,
-      );
-
-      if (overrideCSS) {
-        cssResources.push({
-          content: `@layer obsidian-theme-overrides {\n${overrideCSS}\n}`,
-          inline: true,
-        });
-      }
-    } else {
-      console.warn(
-        `[QuartzTheme] styleSettings provided but theme "${options.theme}" has no Style Settings id. ` +
-          `Style Settings overrides will be ignored.`,
-      );
+      css.push({
+        content: `@layer quartz-themes-base {\n${TEMPLATE_OVERRIDE_CSS}\n}`,
+        inline: true,
+      });
     }
+
+    if (isSingleMode) {
+      css.push({
+        content:
+          `button.darkmode { display: none !important; }\n` +
+          `:root { color-scheme: ${effectiveMode}; }\n`,
+        inline: true,
+      });
+
+      js.push({
+        loadTime: "beforeDOMReady",
+        contentType: "inline",
+        script:
+          `document.documentElement.setAttribute("saved-theme", "${effectiveMode}");\n` +
+          `localStorage.setItem("theme", "${effectiveMode}");`,
+      });
+    }
+
+    if (options.styleSettings) {
+      if (
+        styleSettingsId &&
+        (!Array.isArray(styleSettingsId) || styleSettingsId.length > 0)
+      ) {
+        const settings = loadStyleSettings(options.styleSettings);
+        const { css: overrideCSS } = processStyleSettings(
+          settings,
+          styleSettingsId,
+          classSettings,
+          brokenVarLinks,
+        );
+
+        if (overrideCSS) {
+          css.push({
+            content: `@layer obsidian-theme-overrides {\n${overrideCSS}\n}`,
+            inline: true,
+          });
+        }
+      } else {
+        console.warn(
+          `[QuartzTheme] styleSettings provided but theme "${options.theme}" has no Style Settings id. ` +
+            `Style Settings overrides will be ignored.`,
+        );
+      }
+    }
+
+    cssResources = css;
+    jsResources = js;
+    return { css, js };
   }
 
   return {
@@ -123,7 +135,8 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
       return src;
     },
     externalResources() {
-      return { css: cssResources, js: jsResources, additionalHead: [] };
+      const { css, js } = buildResources();
+      return { css, js, additionalHead: [] };
     },
   };
 };
