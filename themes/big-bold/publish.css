@@ -4142,11 +4142,12 @@ body body.theme-light .markdown-rendered ul > li {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  margin: 0px 0px 0px 28.8001px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -4177,11 +4178,12 @@ body body.theme-light .markdown-rendered ol > li {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  margin: 0px 0px 0px 28.8001px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -6562,11 +6564,12 @@ body body.theme-dark .markdown-rendered ul > li {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  margin: 0px 0px 0px 28.8001px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ul > li::marker {
   background-color: rgba(0, 0, 0, 0);
@@ -6597,11 +6600,12 @@ body body.theme-dark .markdown-rendered ol > li {
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
-  margin: 0px 0px 0px 28.8001px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
-  margin-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered ol > li::marker {
   background-color: rgba(0, 0, 0, 0);

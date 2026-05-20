@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "media.md",
+                "file": "callouts.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "media"
+              "title": "callouts"
             }
           }
         ]
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "media.md",
+                "file": "callouts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for media"
+              "title": "Backlinks for callouts"
             }
           },
           {
@@ -208,8 +208,8 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-canvas/test-canvas.canvas",
     "media.md",
+    "theme-canvas/test-canvas.canvas",
     "general.md",
     "embeds.md",
     "headings.md",
