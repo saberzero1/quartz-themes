@@ -3,14 +3,14 @@
   font-family: "Lucida Handwriting";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/blue-topaz/lucida-handwriting.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/blue-topaz/lucida-handwriting.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "boxicons";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/blue-topaz/boxicons.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/blue-topaz/boxicons.woff2")
     format("woff2");
 }
 body.theme-light {

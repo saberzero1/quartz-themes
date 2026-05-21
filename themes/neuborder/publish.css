@@ -1434,7 +1434,7 @@ body.theme-light {
   --mix-blend-mode-on-border: normal !important;
   --neumorphic-transition: all 0.15s !important;
   --neumorphic-transition-faster: all 0.1s !important;
-  --on-border: hsl(var(--accent-h), 60%, 50%) !important;
+  --on-border: hsl(var(--accent-h), 60%, 40%) !important;
   --shadow-active:
     4px 4px 8px rgba(0, 0, 0, 0), -4px -4px 8px rgba(255, 255, 255, 0),
     inset 3px 3px 3px rgba(0, 0, 0, 0.5),
@@ -2192,7 +2192,7 @@ body body.theme-light pre[class*="language-"] {
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   overflow-x: visible;
-  padding: 12px 16px;
+  padding: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
   padding-inline-end: 0px;
@@ -4076,7 +4076,7 @@ body body.theme-light .site-footer {
   padding-right: var(--size-4-2);
 }
 body body.theme-light .site-footer a {
-  color: rgb(51, 71, 204);
+  color: rgb(41, 57, 163);
   font-size: 12px;
   font-weight: 400;
 }
@@ -4141,7 +4141,7 @@ body body.theme-light .site-body-left-column-site-theme-toggle {
   background-color: var(--background-tertiary);
   color: var(--icon-color);
   cursor: var(--cursor);
-  border-color: rgb(51, 71, 204);
+  border-color: rgb(41, 57, 163);
   border-width: 0px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
@@ -4149,8 +4149,8 @@ body body.theme-light .site-body-left-column-site-theme-toggle {
   border-bottom-right-radius: 6px;
 }
 body body.theme-light .site-body-left-column-site-theme-toggle svg {
-  stroke: rgb(51, 71, 204);
-  color: rgb(51, 71, 204);
+  stroke: rgb(41, 57, 163);
+  color: rgb(41, 57, 163);
 }
 body body.theme-light .view-header-breadcrumb {
   background-color: rgba(0, 0, 0, 0);

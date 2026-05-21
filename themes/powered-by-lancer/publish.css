@@ -2,14 +2,14 @@
   font-family: "Arimo";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/powered-by-lancer/arimo.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/powered-by-lancer/arimo.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Anonymous Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/powered-by-lancer/anonymous-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/powered-by-lancer/anonymous-pro.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -1018,8 +1018,8 @@ body.theme-light {
   --nav-item-weight-hover: bold !important;
   --tab-font-weight: bold !important;
   --text-white: #ffffff !important;
-  --font-code-blocks: "Anonymous-Pro-Regular", monospace !important;
   --font-headers: var(--font-text-headers) !important;
+  --font-code-blocks: "Anonymous-Pro-Regular", monospace !important;
   --font-text-headers: "Helvetica" !important;
   --font-text-normal: "Arimo", sans-serif !important;
   --text-h1-background: #c11f25 !important;
@@ -2022,13 +2022,13 @@ body.theme-dark {
   --nav-item-weight: normal !important;
   --nav-item-weight-hover: bold !important;
   --tab-font-weight: bold !important;
+  --font-headers: var(--font-text-headers) !important;
   --button-text-color: #d8d8d8 !important;
   --button-bg-color: #915cb2 !important;
   --button-hover-bg-color: #a271c0 !important;
   --button-hover-text-color: #d8d8d8 !important;
   --dropdown-background-color: #c5c5c5 !important;
   --font-code-blocks: "Anonymous-Pro-Regular", monospace !important;
-  --font-headers: var(--font-text-headers) !important;
   --font-text-headers: "Helvetica" !important;
   --font-text-normal: "Arimo", sans-serif !important;
   --text-h1-background: #36ad26 !important;

@@ -3236,7 +3236,7 @@
                         "styles": {
                           "color": "rgb(0, 0, 0)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(0, 0, 0)",
+                          "borderColor": "rgba(0, 0, 0, 0)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },

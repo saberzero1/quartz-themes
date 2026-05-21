@@ -616,7 +616,7 @@ body.theme-light {
   --background-modifier-border-focus: var(--cn-accent) !important;
   --background-modifier-border-hover: var(--cn-border-strong) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
+  --background-modifier-cover: var(--cn-modal-backdrop) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -775,7 +775,7 @@ body.theme-light {
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--cn-bg-tertiary) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -1201,7 +1201,9 @@ body.theme-light {
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width) !important;
-  --nav-item-background-active: var(--background-modifier-hover) !important;
+  --nav-item-background-active: var(
+    --background-modifier-active-hover
+  ) !important;
   --nav-item-background-hover: var(--background-modifier-hover) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
@@ -1210,7 +1212,7 @@ body.theme-light {
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-active: var(--cn-text-primary) !important;
   --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
@@ -1660,7 +1662,7 @@ body.theme-dark {
   --background-modifier-border-focus: var(--cn-accent) !important;
   --background-modifier-border-hover: var(--cn-border-strong) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
+  --background-modifier-cover: var(--cn-modal-backdrop) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -1819,7 +1821,7 @@ body.theme-dark {
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--cn-bg-tertiary) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -2245,7 +2247,9 @@ body.theme-dark {
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width) !important;
-  --nav-item-background-active: var(--background-modifier-hover) !important;
+  --nav-item-background-active: var(
+    --background-modifier-active-hover
+  ) !important;
   --nav-item-background-hover: var(--background-modifier-hover) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
@@ -2254,7 +2258,7 @@ body.theme-dark {
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--text-normal) !important;
+  --nav-item-color-active: var(--cn-text-primary) !important;
   --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;

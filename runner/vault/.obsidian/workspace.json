@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "theme-embeds/frontmatter.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "syntax-samples"
+              "title": "frontmatter"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-code/syntax-samples.md",
+                "file": "theme-embeds/frontmatter.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of syntax-samples"
+              "title": "Outline of frontmatter"
             }
           }
         ],
@@ -183,7 +183,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:Create new base": false,
-      "sample-plugin:Extended Cache: Inspect": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -195,32 +194,33 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-bases/bases-cards.md",
-    "theme-bases/bases-list.md",
+    "theme-embeds/note-embeds.md",
     "theme-bases/bases-table.md",
+    "theme-bases/bases-list.md",
+    "theme-bases/bases-cards.md",
+    "backlinks.md",
+    "callouts.md",
+    "embeds.md",
+    "general.md",
+    "specimen.md",
+    "media.md",
+    "index.md",
+    "theme-code/syntax-samples.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
-    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
     "theme-embeds/tooltips.md",
-    "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
-    "backlinks.md",
-    "embeds.md",
-    "media.md",
     "tables.md",
     "integrations.md",
-    "callouts.md",
     "headings.md",
-    "general.md",
-    "specimen.md",
+    "theme-callouts/brutalist.md",
     "theme-extras/its-theme/callouts/statblocks.md",
     "theme-extras/its-theme/checkboxes.md",
     "theme-extras/its-theme/callouts/infoboxes.md",
     "theme-callouts/velocity.md",
-    "theme-callouts/vauxhall.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

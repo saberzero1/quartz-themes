@@ -2,7 +2,7 @@
   font-family: "Arimo";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/powered-by-lancer-retouched/arimo.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/powered-by-lancer-retouched/arimo.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -1011,8 +1011,8 @@ body.theme-light {
   --nav-item-weight-hover: bold !important;
   --tab-font-weight: bold !important;
   --text-white: #ffffff !important;
-  --font-code-blocks: "Arimo", sans-serif !important;
   --font-headers: var(--font-text-headers) !important;
+  --font-code-blocks: "Arimo", sans-serif !important;
   --font-text-headers: "Helvetica" !important;
   --font-text-normal: "Arimo", sans-serif !important;
   --text-h1-background: #c21f25 !important;
@@ -2013,12 +2013,12 @@ body.theme-dark {
   --inline-title-font: var(--font-text-headers) !important;
   --nav-item-weight: bold !important;
   --tab-font-weight: bold !important;
+  --font-headers: var(--font-text-headers) !important;
   --button-text-color: #d8d8d8 !important;
   --button-bg-color: #915cb2 !important;
   --button-hover-bg-color: #a271c0 !important;
   --button-hover-text-color: #d8d8d8 !important;
   --font-code-blocks: "Arimo", sans-serif !important;
-  --font-headers: var(--font-text-headers) !important;
   --font-text-headers: "Helvetica" !important;
   --font-text-normal: "Arimo", sans-serif !important;
   --text-h1-background: #991e2a !important;

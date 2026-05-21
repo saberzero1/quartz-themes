@@ -606,8 +606,8 @@ button.darkmode {
 
 /* reader mode fixes */
 @media all and (min-width: 1200px) {
-  :root[saved-theme="dark"] body[data-slug] div#quartz-root.page,
-  :root[saved-theme="light"] body[data-slug] div#quartz-root.page {
+  :root[saved-theme="dark"] body[data-slug] div#quartz-root.page:not([page-frame="canvas"]),
+  :root[saved-theme="light"] body[data-slug] div#quartz-root.page:not([page-frame="canvas"]) {
     background-color: var(--tab-container-background);
   }
   .page {

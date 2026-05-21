@@ -2,28 +2,28 @@
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/retronotes.forest-green/ibm-plex-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/retronotes.forest-green/ibm-plex-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/retronotes.forest-green/ibm-plex-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/retronotes.forest-green/ibm-plex-mono-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/retronotes.forest-green/ibm-plex-mono-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/retronotes.forest-green/ibm-plex-mono-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/retronotes.forest-green/ibm-plex-mono-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/retronotes.forest-green/ibm-plex-mono-3.woff2")
     format("woff2");
 }
 body.theme-light {

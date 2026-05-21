@@ -1227,7 +1227,8 @@
     "body": ["--background-primary"],
     ".is-mobile": ["--background-primary"],
     ".is-mobile.theme-dark": ["--background-secondary"],
-    ".is-mobile .mod-community-modal": ["--settings-background"]
+    ".is-mobile .mod-community-modal": ["--settings-background"],
+    "html": ["--background-primary-alt"]
   },
   "--modal-header-height": {
     ".is-phone .modal.mod-settings.mod-sidebar-layout": [
@@ -1459,7 +1460,10 @@
   "--swatch-height": { ".is-mobile": ["--touch-size-s"] },
   "--swatch-width": { ".is-mobile": ["--touch-size-s"] },
   "--swatch-shadow": { "body": ["--mono-rgb-100"] },
-  "--tab-background-active": { "body": ["--background-primary"] },
+  "--tab-background-active": {
+    "body": ["--background-primary"],
+    "html": ["--background-primary-alt"]
+  },
   "--tab-text-color": { "body": ["--text-faint"] },
   "--tab-text-color-active": { "body": ["--text-muted"] },
   "--tab-text-color-focused": { "body": ["--text-muted"] },

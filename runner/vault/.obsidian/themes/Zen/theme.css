@@ -1560,7 +1560,7 @@ body:not(.heading-bottom-line-off) .markdown-rendered h6 {
 
 body:not(.is-mobile) .workspace-tab-header.is-active {
 	box-shadow: none;
-	border-bottom-width: 1.5px;
+	border-bottom-width: .2px;
 	border-bottom-color: var(--text-accent) !important;
 	border-bottom-style: solid;
 	background-color: transparent;

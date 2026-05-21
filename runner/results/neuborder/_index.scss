@@ -1165,7 +1165,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     overflow-x: visible;
-    padding: 12px 16px;
+    padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
     padding-inline-end: 0px;
@@ -3828,7 +3828,7 @@ body {
   }
 
   footer ul li a {
-    color: rgb(51, 71, 204);
+    color: rgb(41, 57, 163);
     font-size: 12px;
     font-weight: 400;
   }
@@ -3931,7 +3931,7 @@ body {
     background-color: var(--background-tertiary);
     color: var(--icon-color);
     cursor: var(--cursor);
-    border-color: rgb(51, 71, 204);
+    border-color: rgb(41, 57, 163);
     border-width: 0px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -3940,8 +3940,8 @@ body {
   }
 
   .darkmode svg {
-    stroke: rgb(51, 71, 204);
-    color: rgb(51, 71, 204);
+    stroke: rgb(41, 57, 163);
+    color: rgb(41, 57, 163);
   }
 
   .breadcrumb-container {

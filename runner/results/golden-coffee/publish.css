@@ -2,21 +2,21 @@
   font-family: "MADE Kenfolg v2";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/golden-coffee/made-kenfolg-v2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/golden-coffee/made-kenfolg-v2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/golden-coffee/jetbrains-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/golden-coffee/jetbrains-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "FA5FS";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/golden-coffee/fa5fs.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/golden-coffee/fa5fs.woff2")
     format("woff2");
 }
 body.theme-dark {

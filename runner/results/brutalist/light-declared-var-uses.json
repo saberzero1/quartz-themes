@@ -289,7 +289,7 @@
     "width": "var(--icon-size)"
   },
   ".view-header-title": {
-    "color": "var(--text-muted)",
+    "color": "var(--text-accent)",
     "font-family": "var(--font-interface-override)"
   },
   ".footnotes": { "font-size": "var(--footnote-size)" },
@@ -327,9 +327,7 @@
     "line-height": "var(--inline-title-line-height)",
     "text-align": "var(--inline-title-align)"
   },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
+  "li.task-list-item[data-task=\"x\"]": { "color": "var(--text-normal)" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
     "background-color": "rgba(var(--callout-color), 0.15)"
   },
@@ -480,7 +478,6 @@
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
   },
-  ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "h2[data-heading=\"This is a heading 2\"]": {
     "color": "var(--text-muted)",
     "font-family": "var(--font-interface-override)",
@@ -526,6 +523,7 @@
     "letter-spacing": "var(--h6-letter-spacing)",
     "line-height": "var(--h6-line-height)"
   },
+  ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "var(--text-normal)",
     "line-height": "var(--line-height-custom, 1.7)",
@@ -685,9 +683,7 @@
   "li.task-list-item[data-task=\"U\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"V\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"W\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
+  "li.task-list-item[data-task=\"X\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"Y\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"Z\"]": { "color": "var(--text-normal)" },
   ".canvas-node-content": {

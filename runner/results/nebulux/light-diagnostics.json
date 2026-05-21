@@ -1,0 +1,35 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--color-nav",
+      "references": "--theme-nav-rgb",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--color-projects",
+      "references": "--theme-projects-rgb",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--color-status",
+      "references": "--theme-status-rgb",
+      "selector": "html",
+      "aspect": "base"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    }
+  ]
+}

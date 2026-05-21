@@ -90,6 +90,36 @@
             workspace-tabs) both work. Tab-container trays opt out of
             opaque paint in dark translucent mode so vibrancy still
             shows through.)
+   v1.10.22 (Republish of 1.10.21 -- no CSS changes; theme.css is
+            byte-identical. The developer-portal CSS scan for 1.10.21
+            ran before the release file assets were attached and
+            linted stale (pre-fix) content; the portal scans once per
+            version, so a new version is needed to trigger a fresh
+            scan. The 1.10.22 release carries theme.css + manifest.json
+            as assets from creation.)
+   v1.10.21 (Obsidian community theme lint cleanup. Removed all 28
+            !important declarations flagged by the linter. Approach
+            verified against Obsidian 1.12.7 app.css: rather than
+            fight selector specificity, set the CSS variable Obsidian
+            already reads. Tree-item active state -> --nav-item-
+            background-active / --nav-item-color-active; CM6 and
+            ::selection -> --text-selection (rule deleted, theme
+            already defines the variable); codeblock background ->
+            --code-background; modal backdrop dim -> --background-
+            modifier-cover. hide-metadata -> --metadata-display-
+            editing/-reading set to none on the opted-in note, so
+            core's own rule resolves to display:none. Sync working
+            state collapsed to one .sync-status-icon.mod-working
+            rule (class-based core rule, theme wins on source
+            order; svg inherits via currentColor). The status-bar
+            visibility force was deleted -- Obsidian no longer dims
+            status-bar items. Section-4 workspace-transparency rules
+            are now wrapped in @media screen, so print/PDF export
+            inherits opaque surfaces and the print block no longer
+            needs to re-paint anything. Reduced-motion redefines
+            --cn-transition/-fast to 0s instead of an !important
+            universal reset; dead `animation: none` deleted (no
+            @keyframes in the theme). Declaration count: 28 -> 0.)
    v1.10.20 (docs cleanup of v1.10.19. Rewrote the rationale
             comment on the vault-profile border-top rule so it
             describes the current no-!important state instead of
@@ -1008,6 +1038,12 @@ settings:
   --background-modifier-hover: var(--cn-bg-tertiary);
   --background-modifier-active-hover: var(--cn-bg-elevated);
   --background-modifier-form-field: var(--cn-bg-tertiary);
+  /* Core paints these surfaces from its own variables; setting the
+     variable is cleaner than overriding the rule with !important. */
+  --background-modifier-cover: var(--cn-modal-backdrop);
+  --nav-item-background-active: var(--background-modifier-active-hover);
+  --nav-item-color-active: var(--cn-text-primary);
+  --code-background: var(--cn-bg-tertiary);
 
   --text-normal: var(--cn-text-primary);
   --text-muted: var(--cn-text-secondary);
@@ -1117,6 +1153,12 @@ settings:
   --background-modifier-hover: var(--cn-soft-overlay);
   --background-modifier-active-hover: var(--cn-medium-overlay);
   --background-modifier-form-field: #ffffff;
+  /* Core paints these surfaces from its own variables; setting the
+     variable is cleaner than overriding the rule with !important. */
+  --background-modifier-cover: var(--cn-modal-backdrop);
+  --nav-item-background-active: var(--background-modifier-active-hover);
+  --nav-item-color-active: var(--cn-text-primary);
+  --code-background: var(--cn-bg-tertiary);
 
   --text-normal: var(--cn-text-primary);
   --text-muted: var(--cn-text-secondary);
@@ -1444,7 +1486,13 @@ body.cn-heading-georgia { --cn-heading-font: Georgia, serif; }
 /* All translucent-mode rules are scoped to .theme-dark. Light mode is
    opaque (Notion-style) and ignores the Translucent Window setting —
    keeping outer-shell containers transparent in light mode would let
-   raw macOS vibrancy show through and look gray over dark wallpapers. */
+   raw macOS vibrancy show through and look gray over dark wallpapers.
+
+   The transparency rules below are wrapped in @media screen: macOS
+   vibrancy is a screen-only effect, and scoping them out of print means
+   PDF/print export inherits opaque surfaces with no override needed. */
+
+@media screen {
 
 body.is-translucent.theme-dark { background-color: transparent; }
 
@@ -1481,6 +1529,8 @@ body.is-translucent.theme-dark:not(.is-fullscreen) .titlebar {
 body.is-translucent.theme-dark:not(.is-fullscreen) .workspace {
   background-color: var(--workspace-background-translucent);
 }
+
+} /* end @media screen — translucency transparency */
 
 /* Stacked tabs need an opaque fallback so text stays readable */
 body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-tabs.mod-stacked .workspace-leaf,
@@ -1637,15 +1687,9 @@ body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-root .wo
 
 .nav-folder-title { font-weight: 500; color: var(--cn-text-primary); }
 
-/* Active-state for tree items in the file explorer, tag pane, and
-   outline. Obsidian sets the active background via internal CSS that
-   uses the same selector at equal specificity; without !important the
-   active state visually flickers when a sibling rule (e.g., hover)
-   loads in a different cascade order. */
-.tree-item-self.is-active {
-  background-color: var(--background-modifier-active-hover) !important;
-  color: var(--cn-text-primary) !important;
-}
+/* Tree-item active state (file explorer, tag pane, outline) is painted
+   by core from --nav-item-background-active / --nav-item-color-active,
+   set in the .theme-dark / .theme-light blocks. */
 
 /* ============================================================
    6. EDITOR CONTENT
@@ -1654,12 +1698,8 @@ body.is-translucent.theme-dark:not(.is-fullscreen) .workspace-split.mod-root .wo
 .markdown-source-view.mod-cm6 .cm-content { caret-color: var(--cn-accent); }
 .markdown-source-view.mod-cm6 .cm-line { padding: 1px 0; }
 
-/* CodeMirror 6 paints .cm-selectionBackground via an internal stylesheet
-   that ships at equal or higher specificity; !important is required to
-   keep the theme's accent-tinted selection from being overwritten on
-   editor focus changes. */
-.cm-selectionBackground,
-::selection { background: var(--text-selection) !important; }
+/* Accent-tinted selection is painted by core from --text-selection,
+   set in the .theme-dark / .theme-light blocks. */
 
 /* Links */
 .cm-link, .cm-hmd-internal-link, a.internal-link, a.external-link {
@@ -1707,15 +1747,9 @@ em, .cm-em { color: var(--cn-text-primary); }
   border: none;
 }
 
-/* Codeblock background: HyperMD applies an inline-equivalent background
-   via Obsidian's internal CodeMirror styling. !important is needed to
-   theme the codeblock surface in Live Preview consistently with reading
-   mode. */
-.markdown-rendered pre,
-.HyperMD-codeblock-bg {
-  background: var(--cn-bg-tertiary) !important;
-}
-
+/* Codeblock surface is painted by core from --code-background (reading
+   mode and Live Preview both), set in the .theme-dark / .theme-light
+   blocks. This rule only adds shape. */
 .markdown-rendered pre {
   border-radius: var(--cn-radius);
   border: none;
@@ -1902,22 +1936,19 @@ hr {
 .modal button.mod-cta:hover { background: var(--cn-accent-hover); }
 
 /* Modals — restore opaque variables inside dialogs so any internal
-   Obsidian rule that paints with --background-primary/-secondary
-   gets a solid surface again. !important is required because the
-   translucent-mode body-level override (body.is-translucent.theme-light)
-   has higher selector specificity than .modal, so without !important
-   the Settings dialog goes see-through and the file explorer ghosts
-   through it. */
+   Obsidian rule that paints with --background-primary/-secondary gets a
+   solid surface. Wins over the .theme-dark/.theme-light variable blocks
+   by equal specificity + later source order. */
 .modal,
 .modal-container,
 .menu,
 .suggestion-container {
-  --background-primary: var(--cn-bg-primary) !important;
-  --background-primary-alt: var(--cn-bg-secondary) !important;
-  --background-secondary: var(--cn-bg-secondary) !important;
-  --background-secondary-alt: var(--cn-bg-tertiary) !important;
-  --background-modifier-hover: var(--cn-bg-tertiary) !important;
-  --background-modifier-active-hover: var(--cn-bg-elevated) !important;
+  --background-primary: var(--cn-bg-primary);
+  --background-primary-alt: var(--cn-bg-secondary);
+  --background-secondary: var(--cn-bg-secondary);
+  --background-secondary-alt: var(--cn-bg-tertiary);
+  --background-modifier-hover: var(--cn-bg-tertiary);
+  --background-modifier-active-hover: var(--cn-bg-elevated);
 }
 
 .modal {
@@ -1944,14 +1975,12 @@ hr {
   background-color: var(--cn-bg-elevated);
 }
 
-/* !important needed because Obsidian sets the modal backdrop's
-   background-color and backdrop-filter via app.css at equal
-   specificity; without !important the cascade order leaves either
-   the dim or the blur from stock styling in place. */
+/* Modal backdrop dim is painted by core from --background-modifier-cover
+   (set in the .theme-dark / .theme-light blocks). This rule only adds the
+   blur, which core does not set, so it is uncontested. */
 .modal-bg {
-  background-color: var(--cn-modal-backdrop) !important;
-  backdrop-filter: blur(6px) !important;
-  -webkit-backdrop-filter: blur(6px) !important;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .modal-title {
@@ -2112,37 +2141,19 @@ body:not(.is-mobile) .status-bar {
   overflow-x: auto;
 }
 
-/* Force every status-bar child fully visible. Obsidian core dims some
-   built-in buttons (the "+" new-tab shortcut, sidebar toggles) until
-   the bar is hovered; in a floating-pill layout that hover-only reveal
-   reads as broken. !important is required because Obsidian's internal
-   stylesheet sets opacity inline at equal specificity. */
-body:not(.is-mobile) .status-bar > * {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
+/* (Removed the status-bar visibility force: Obsidian no longer dims
+   status-bar items, so the rule was a no-op.) */
 
-/* Obsidian Sync — paint the syncing/working state amber so it reads
-   distinct from idle. The "synced" green check (.mod-success) and the
-   error state (.mod-error) keep their defaults. Targeting
-   .sync-status-icon without those modifiers covers the in-progress
-   state regardless of which exact class name the plugin uses
-   (.mod-syncing, .mod-progress, etc). Uses --cn-amber-warning, a
-   dedicated solid-color token for in-progress status. Note that
-   callouts use a separate amber RGB triplet (--callout-color) so
-   they can compose alpha for tinted backgrounds; the two amber
-   shades are intentionally distinct in shade and purpose. */
-/* !important needed because the Obsidian Sync plugin paints the
-   status icon via inline currentColor on the SVG and a status-
-   class color on the parent; without !important the amber tint
-   loses to those higher-specificity / inline values. */
-.sync-status-icon:not(.mod-success):not(.mod-error) {
-  color: var(--cn-amber-warning) !important;
-}
-
-.sync-status-icon:not(.mod-success):not(.mod-error) svg {
-  color: var(--cn-amber-warning) !important;
-  stroke: var(--cn-amber-warning) !important;
+/* Obsidian Sync — paint the working/in-progress state amber so it reads
+   distinct from the synced (.mod-success) and error (.mod-error) states,
+   which keep their defaults. Core colors .sync-status-icon.mod-working
+   via a class rule of equal specificity, so the theme wins on source
+   order with no !important. The icon SVG inherits this color through
+   currentColor, so no separate svg rule is needed. --cn-amber-warning is
+   a dedicated solid status token, intentionally a different shade from
+   the callout amber (--callout-color RGB triplet). */
+.sync-status-icon.mod-working {
+  color: var(--cn-amber-warning);
 }
 
 /* ============================================================
@@ -2193,8 +2204,8 @@ body:not(.is-mobile) .status-bar > * {
    .cm-hashtag) and in the Live Preview hashtag block. The legacy
    .cm-tag-pane .tree-item-self selector was removed: it targeted a
    CodeMirror 5 era class that no longer matches modern Obsidian's tag
-   pane, and it collided with the .tree-item-self.is-active !important
-   rule, causing a jarring fill/overlay swap on click. */
+   pane, and it collided with the .tree-item-self.is-active rule,
+   causing a jarring fill/overlay swap on click. */
 a.tag,
 .tag,
 .cm-hashtag {
@@ -2467,10 +2478,14 @@ body:not(.is-mobile) .clickable-icon:active > .svg-icon {
    Apply via frontmatter:
      cssclasses: [hide-metadata, hide-title, style-justify, style-wide, style-margin-top]
    Each only fires on the note that opts in. */
-/* !important needed because Obsidian sets display on the
-   metadata-container via internal rules at equal specificity;
-   the cssclass opt-in must win regardless of cascade order. */
-.hide-metadata .metadata-container { display: none !important; }
+/* hide-metadata: core computes the properties-block display from
+   --metadata-display-editing / --metadata-display-reading. Setting them
+   to none on the opted-in note makes core's own high-specificity rule
+   resolve to display:none -- no selector battle, no !important. */
+.hide-metadata {
+  --metadata-display-editing: none;
+  --metadata-display-reading: none;
+}
 
 .hide-title .inline-title:not([data-level]) { display: none; }
 .show-title .inline-title:not([data-level]) { display: block; }
@@ -2875,44 +2890,16 @@ body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-
 }
 
 /* ============================================================
-   20. PRINT / PDF EXPORT — force opaque so vibrancy doesn't
-   leave transparent gaps in the exported document.
-   Every !important in this block is needed because the
-   translucent-mode body-level overrides above carry higher
-   specificity than print-scoped rules; without !important the
-   PDF export would inherit transparent backgrounds and clear
-   backdrop-filter would not unset.
+   20. PRINT / PDF EXPORT
+   The workspace-transparency rules in section 4 are scoped to
+   @media screen, so print/PDF export inherits opaque surfaces with
+   no override needed here. This block only strips decorative chrome.
    ============================================================ */
 
 @media print {
-  body,
-  body.is-translucent,
-  body.is-translucent:not(.is-fullscreen) {
-    background-color: var(--cn-bg-primary) !important;
-  }
-
-  .theme-dark,
-  .theme-light {
-    --background-primary: var(--cn-bg-primary);
-    --background-primary-alt: var(--cn-bg-secondary);
-    --background-secondary: var(--cn-bg-secondary);
-    --background-secondary-alt: var(--cn-bg-tertiary);
-  }
-
-  body.is-translucent:not(.is-fullscreen) .workspace,
-  body.is-translucent:not(.is-fullscreen) .workspace-leaf,
-  body.is-translucent:not(.is-fullscreen) .workspace-leaf-content,
-  body.is-translucent:not(.is-fullscreen) .workspace-split.mod-root,
-  body.is-translucent:not(.is-fullscreen) .markdown-preview-view,
-  body.is-translucent:not(.is-fullscreen) .markdown-rendered {
-    background-color: var(--cn-bg-primary) !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-  }
-
   /* Drop shadows and decorative blur in print */
-  .modal, .suggestion-container, .menu { box-shadow: none !important; }
-  .modal-bg { backdrop-filter: none !important; background-color: var(--cn-modal-backdrop) !important; }
+  .modal, .suggestion-container, .menu { box-shadow: none; }
+  .modal-bg { backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
 
 /* ============================================================
@@ -2971,15 +2958,15 @@ body.is-mobile .workspace-drawer-tab-options-list {
 }
 
 /* ============================================================
-   22. REDUCED MOTION -- disable all transitions and animations
-   for users who have enabled Reduce Motion in macOS System
-   Settings > Accessibility > Display. The broad * selector is
-   deliberate: it is free in normal operation because the media
-   query only activates when the OS opt-in fires.
+   22. REDUCED MOTION -- zero the transition-duration tokens for
+   users who enabled Reduce Motion. Every transition in the theme
+   uses these two variables, so redefining them to 0s disables all
+   motion without an !important universal reset. The theme has no
+   @keyframes animations.
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    transition: none !important;
-    animation: none !important;
+  :root {
+    --cn-transition: 0s;
+    --cn-transition-fast: 0s;
   }
 }

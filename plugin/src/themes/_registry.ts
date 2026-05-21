@@ -1852,6 +1852,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["montserrat"],
   },
+  nebulux: {
+    name: "nebulux",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   neo: {
     name: "neo",
     modes: ["dark", "light"],

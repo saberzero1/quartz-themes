@@ -1009,7 +1009,7 @@ body.theme-light {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary) !important;
+  --modal-background: var(--background-primary-alt) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -1234,7 +1234,7 @@ body.theme-light {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: transparent !important;
+  --tab-background-active: var(--background-primary-alt) !important;
   --tab-curve: 10px !important;
   --tab-divider-color: var(--background-secondary-alt) !important;
   --tab-font-size: var(--font-ui-small) !important;
@@ -2024,7 +2024,7 @@ body.theme-dark {
   --metadata-property-radius-hover: 6px !important;
   --metadata-sidebar-input-font-size: var(--font-ui-small) !important;
   --metadata-sidebar-label-font-size: var(--font-ui-small) !important;
-  --modal-background: var(--background-primary) !important;
+  --modal-background: var(--background-primary-alt) !important;
   --modal-border-color: var(
     --color-base-40,
     var(--background-modifier-border-focus)
@@ -2241,7 +2241,7 @@ body.theme-dark {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: transparent !important;
+  --tab-background-active: var(--background-primary-alt) !important;
   --tab-curve: 10px !important;
   --tab-divider-color: var(--background-secondary-alt) !important;
   --tab-font-size: var(--font-ui-small) !important;
