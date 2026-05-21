@@ -1367,9 +1367,6 @@ body {
   ul > li {
     color: rgb(34, 34, 34);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1405,9 +1402,6 @@ body {
   ol > li {
     color: rgb(34, 34, 34);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -2107,7 +2101,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -2276,7 +2270,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -6245,9 +6239,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(218, 218, 218);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -6283,9 +6274,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(218, 218, 218);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -6985,7 +6973,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -7154,7 +7142,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

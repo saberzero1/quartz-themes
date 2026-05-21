@@ -211,37 +211,37 @@ html {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/lexend-deca.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/lexend-deca.woff2") format("woff2");
 }
 @font-face {
   font-family: "Recursive Sn Csl St";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/recursive-sn-csl-st.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/recursive-sn-csl-st.woff2") format("woff2");
 }
 @font-face {
   font-family: "Harlow Solid";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/harlow-solid.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/harlow-solid.woff2") format("woff2");
 }
 @font-face {
   font-family: "Ranille Normal";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/ranille-normal.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/ranille-normal.woff2") format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro V";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/ia-writer-quattro-v.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/ia-writer-quattro-v.woff2") format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro V";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/friendly/ia-writer-quattro-v-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/friendly/ia-writer-quattro-v-1.woff2") format("woff2");
 }
 
 body {
@@ -848,9 +848,6 @@ body {
   ul > li {
     color: rgb(204, 204, 204);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -886,9 +883,6 @@ body {
   ol > li {
     color: rgb(204, 204, 204);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1543,7 +1537,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -1717,7 +1711,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -5680,9 +5674,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(233, 216, 166);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -5718,9 +5709,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(233, 216, 166);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -6388,7 +6376,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -6562,7 +6550,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

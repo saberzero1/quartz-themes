@@ -3,14 +3,14 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.nord/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/its-theme.nord/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.nord/its.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/its-theme.nord/its.woff")
     format("woff");
 }
 body.theme-light {
@@ -3483,9 +3483,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(76, 86, 106);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -3519,9 +3516,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(76, 86, 106);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -6298,9 +6292,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(236, 239, 244);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -6334,9 +6325,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(236, 239, 244);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

@@ -244,6 +244,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  biggs: { name: "biggs", modes: ["dark", "light"], variations: [], fonts: [] },
   black: { name: "black", modes: ["dark"], variations: [], fonts: [] },
   blackbird: { name: "blackbird", modes: ["dark"], variations: [], fonts: [] },
   blobob: {
@@ -2905,6 +2906,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["slasher-film"],
   },
+  scriptorium: {
+    name: "scriptorium",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: ["slasher-film"],
+  },
   "sea-glass": {
     name: "sea-glass",
     modes: ["dark"],
@@ -3116,6 +3123,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["roboto"],
+  },
+  superflat: {
+    name: "superflat",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   synthwave: { name: "synthwave", modes: ["dark"], variations: [], fonts: [] },
   "synthwave-84": {

@@ -1,9 +1,8 @@
-@charset "UTF-8";
 @font-face {
   font-family: "number-font";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/zen/number-font.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/zen/number-font.woff")
     format("woff");
 }
 body.theme-light {
@@ -1010,6 +1009,7 @@ body.theme-light {
   --base-d: 0% !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(255, 255, 255, 0) !important;
+  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgb(0, 121, 172) !important;
   --app-model-bg-color: rgba(248, 248, 248, 0.8) !important;
@@ -1046,7 +1046,6 @@ body.theme-light {
     0 14px 30px rgba(74, 52, 34, 0.14), 0 2px 8px rgba(74, 52, 34, 0.08) !important;
   --mac-window-opacity: 0 !important;
   --model-bg-color: rgba(248, 248, 248, 0.1) !important;
-  --scrollbar-thumb-color: rgba(0, 0, 0, 0.2) !important;
   --side-split-bg-color: rgba(248, 248, 248, 0.3) !important;
   --statusbar-bg-color: rgba(248, 248, 248, 0.7) !important;
   --suggestion-bg-color: rgba(248, 248, 248, 0.1) !important;
@@ -2054,6 +2053,7 @@ body.theme-dark {
   --base-d: 0% !important;
   --floating-toc-background-color: transparent !important;
   --editor-bg-color: rgba(28, 28, 28, 0) !important;
+  --scrollbar-thumb-color: rgba(255, 255, 255, 0.2) !important;
   --radius-xxl: 20px !important;
   --active-border-color: rgba(0, 157, 255, 0.8) !important;
   --app-model-bg-color: rgba(28, 28, 28, 0.8) !important;
@@ -2090,7 +2090,6 @@ body.theme-dark {
     0 14px 28px rgba(0, 0, 0, 0.22), 0 3px 10px rgba(0, 0, 0, 0.16) !important;
   --mac-window-opacity: 0 !important;
   --model-bg-color: rgba(28, 28, 28, 0.1) !important;
-  --scrollbar-thumb-color: rgba(255, 255, 255, 0.2) !important;
   --side-split-bg-color: rgba(28, 28, 28, 0.3) !important;
   --statusbar-bg-color: rgba(28, 28, 28, 0.7) !important;
   --suggestion-bg-color: rgba(28, 28, 28, 0.1) !important;
@@ -2720,9 +2719,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(8, 8, 8);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -2756,9 +2752,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(8, 8, 8);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5575,9 +5568,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(240, 240, 240);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5611,9 +5601,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(240, 240, 240);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

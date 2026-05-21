@@ -1,16 +1,15 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Scifi Title";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/wy-console/scifi-title.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/wy-console/scifi-title.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "ModeSeven Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/wy-console/modeseven-regular.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/wy-console/modeseven-regular.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -2757,9 +2756,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(100, 160, 85);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -2793,9 +2789,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(100, 160, 85);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5178,9 +5171,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(64, 178, 102);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5214,9 +5204,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(64, 178, 102);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

@@ -281,11 +281,24 @@ const ROLE_REGISTRY = {
     obsidian: (sel) => sel === 'li[data-line="0"]' || sel === "li",
     quartzSelector: "ul > li",
     matchBy: "tag",
+    allowDuplicateSelector: true,
   },
   "list:ordered-item": {
     obsidian: (sel) => sel === 'li[data-line="0"]' || sel === "li",
     quartzSelector: "ol > li",
     matchBy: "tag",
+    allowDuplicateSelector: true,
+  },
+  "list:unordered-marker": {
+    obsidian: (sel) => sel.includes("list-bullet") && sel.includes("::after"),
+    quartzSelector: "ul > li::marker",
+    matchBy: "singleton",
+  },
+  "list:ordered-marker": {
+    obsidian: (sel) => sel.includes("list-bullet") && sel.includes("::after"),
+    quartzSelector: "ol > li::marker",
+    matchBy: "singleton",
+    allowDuplicateSelector: true,
   },
 };
 
@@ -381,7 +394,8 @@ export function generateAutoConfig(themeName, options = {}) {
     );
 
     for (const obsSel of obsMatches) {
-      if (matchedSelectors.has(obsSel)) continue;
+      if (matchedSelectors.has(obsSel) && !role.allowDuplicateSelector)
+        continue;
       matchedSelectors.add(obsSel);
 
       let quartzSel;

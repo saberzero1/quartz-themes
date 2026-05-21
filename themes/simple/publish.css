@@ -1,37 +1,36 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 300 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/simple/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/simple/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/simple/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/simple/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBMRegular";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/simple/ibmregular.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/simple/ibmregular.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBMBold";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/simple/ibmbold.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/simple/ibmbold.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iaWriterQuattro";
   font-style: normal;
   font-weight: 100 300 400 600 700 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/simple/iawriterquattro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/simple/iawriterquattro.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -2520,9 +2519,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -2556,9 +2552,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -4956,9 +4949,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -4992,9 +4982,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

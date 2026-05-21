@@ -624,13 +624,13 @@ html {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.nord/fira-code.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/its-theme.nord/fira-code.woff2") format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/its-theme.nord/its.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/its-theme.nord/its.woff") format("woff");
 }
 
 body {
@@ -1260,9 +1260,6 @@ body {
   ul > li {
     color: rgb(76, 86, 106);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1298,9 +1295,6 @@ body {
   ol > li {
     color: rgb(76, 86, 106);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -2003,7 +1997,7 @@ body {
     color: rgb(136, 192, 208);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -2178,7 +2172,7 @@ body {
     color: rgb(136, 192, 208);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -8362,9 +8356,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(236, 239, 244);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -8400,9 +8391,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(236, 239, 244);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -9105,7 +9093,7 @@ html[saved-theme="dark"] {
       color: rgb(136, 192, 208);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -9280,7 +9268,7 @@ html[saved-theme="dark"] {
       color: rgb(136, 192, 208);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

@@ -1,37 +1,36 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/palatinate/source-sans-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/palatinate/source-sans-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/palatinate/libre-baskerville.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/palatinate/libre-baskerville.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/palatinate/merriweather.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/palatinate/merriweather.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Caveat Brush";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/palatinate/caveat-brush.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/palatinate/caveat-brush.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/palatinate/material-icons.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/palatinate/material-icons.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -2640,9 +2639,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 5px;
@@ -2676,9 +2672,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 5px;
@@ -5477,9 +5470,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 5px;
@@ -5513,9 +5503,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 5px;

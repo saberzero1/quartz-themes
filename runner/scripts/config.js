@@ -272,9 +272,10 @@ const sets = {
     //"padding-bottom",
     //"margin-inline-start",
     "text-align",
-    "list-style-type",
-    "list-style-position",
-    "list-style-image",
+    // list-style-type, list-style-position, and list-style-image are intentionally
+    // excluded. Obsidian suppresses native markers (setting list-style-type to a
+    // zero-width space) because it renders bullets via span.list-bullet::after.
+    // Copying those values into Quartz hides native ::marker bullets/numbers.
     ...defaults.padding,
     "margin-top",
     "margin-bottom",
@@ -689,7 +690,7 @@ export const config = [
     obsidianSelector: `span.list-bullet::after`,
     publishSelector: `.markdown-rendered ol > li::marker`,
     quartzSelector: "ol > li::marker",
-    pseudoElement: "::marker",
+    pseudoElement: "::after",
     properties: [
       "background-color",
       //"border",
@@ -1065,7 +1066,7 @@ export const config = [
   {
     obsidianSelector: `div.inline-title::after`,
     publishSelector: null, //TODO
-    quartzSelector: "h2.page-title, h2.page-title a::after",
+    quartzSelector: "h2.page-title::after, h2.page-title a::after",
     pseudoElement: "::after",
     properties: sets.headings.after,
   },
@@ -1114,7 +1115,7 @@ export const config = [
   {
     obsidianSelector: `div.inline-title::before`,
     publishSelector: null, //TODO
-    quartzSelector: "h2.page-title, h2.page-title a::before",
+    quartzSelector: "h2.page-title::before, h2.page-title a::before",
     pseudoElement: "::before",
     properties: sets.headings.after,
   },
@@ -1237,7 +1238,7 @@ export const config = [
     publishSelector: "::-webkit-scrollbar",
     quartzSelector: "::-webkit-scrollbar",
     pseudoElement: "::-webkit-scrollbar",
-    properties: ["background", "background-color"],
+    properties: ["background-color"],
   },
   // Webkit scrollbar thumb - the draggable part
   {
@@ -1246,7 +1247,6 @@ export const config = [
     quartzSelector: "::-webkit-scrollbar-thumb",
     pseudoElement: "::-webkit-scrollbar-thumb",
     properties: [
-      "background",
       "background-color",
       ...expansions.borderRadius,
       ...expansions.borderWidth,
@@ -1261,7 +1261,7 @@ export const config = [
     publishSelector: "::-webkit-scrollbar-thumb:hover",
     quartzSelector: "::-webkit-scrollbar-thumb:hover",
     pseudoElement: "::-webkit-scrollbar-thumb:hover",
-    properties: ["background", "background-color"],
+    properties: ["background-color"],
   },
   // Webkit scrollbar thumb active state
   {
@@ -1269,7 +1269,7 @@ export const config = [
     publishSelector: "::-webkit-scrollbar-thumb:active",
     quartzSelector: "::-webkit-scrollbar-thumb:active",
     pseudoElement: "::-webkit-scrollbar-thumb:active",
-    properties: ["background", "background-color"],
+    properties: ["background-color"],
   },
   // Webkit scrollbar track - the background track
   {
@@ -1277,7 +1277,7 @@ export const config = [
     publishSelector: "::-webkit-scrollbar-track",
     quartzSelector: "::-webkit-scrollbar-track",
     pseudoElement: "::-webkit-scrollbar-track",
-    properties: ["background", "background-color", ...expansions.borderRadius],
+    properties: ["background-color", ...expansions.borderRadius],
   },
   // Webkit scrollbar corner - where horizontal and vertical scrollbars meet
   {
@@ -1285,7 +1285,7 @@ export const config = [
     publishSelector: "::-webkit-scrollbar-corner",
     quartzSelector: "::-webkit-scrollbar-corner",
     pseudoElement: "::-webkit-scrollbar-corner",
-    properties: ["background", "background-color"],
+    properties: ["background-color"],
   },
   // Firefox scrollbar properties (on body/html)
   {
@@ -2387,7 +2387,7 @@ export const config = [
     publishSelector: null,
     quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container::before",
-    pseudoElement: "",
+    pseudoElement: "::before",
     properties: [
       "content",
       "font-family",
@@ -2407,7 +2407,7 @@ export const config = [
     publishSelector: null,
     quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container::before",
-    pseudoElement: "",
+    pseudoElement: "::before",
     properties: [
       "content",
       "font-family",

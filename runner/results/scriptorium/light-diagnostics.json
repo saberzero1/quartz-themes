@@ -1,0 +1,41 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--callout-color",
+      "references": "--callout-question-rgb",
+      "selector": ".callout[data-callout=\"question\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--link-external-color-active",
+      "references": "--text-a-active",
+      "selector": ".canvas-node-file",
+      "aspect": "canvas"
+    },
+    {
+      "property": "--link-external-color-base",
+      "references": "--text-a",
+      "selector": ".canvas-node-file",
+      "aspect": "canvas"
+    },
+    {
+      "property": "--link-external-color-hover",
+      "references": "--text-a-hover",
+      "selector": ".canvas-node-file",
+      "aspect": "canvas"
+    }
+  ]
+}

@@ -751,9 +751,6 @@ body {
   ul > li {
     color: rgb(218, 218, 218);
     text-align: left;
-    list-style-type: disc;
-    list-style-position: outside;
-    list-style-image: none;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -786,9 +783,6 @@ body {
   ol > li {
     color: rgb(218, 218, 218);
     text-align: left;
-    list-style-type: disc;
-    list-style-position: outside;
-    list-style-image: none;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1531,7 +1525,7 @@ body {
     color: rgb(218, 218, 218);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
@@ -1700,7 +1694,7 @@ body {
     color: rgb(218, 218, 218);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;

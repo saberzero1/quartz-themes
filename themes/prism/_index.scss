@@ -497,27 +497,27 @@ html {
   font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 200 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/source-sans-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/source-sans-3.woff2") format("woff2");
   unicode-range: U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F, U+27C0-28FF, U+2980-2AFF, U+2C00-2FFF, U+3040-31FF, U+3300-FFFF, U+10000-1EEFF, U+1F700-1F77F, U+1F800-1F8FF, U+1FB00-10FFFD;
 }
 @font-face {
   font-family: "Source Sans 3";
   font-style: italic;
   font-weight: 200 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/source-sans-3-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/source-sans-3-1.woff2") format("woff2");
   unicode-range: U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F, U+27C0-28FF, U+2980-2AFF, U+2C00-2FFF, U+3040-31FF, U+3300-FFFF, U+10000-1EEFF, U+1F700-1F77F, U+1F800-1F8FF, U+1FB00-10FFFD;
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 100 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/jetbrains-mono.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
   font-weight: 100 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/jetbrains-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/jetbrains-mono-1.woff2") format("woff2");
 }
 
 body {
@@ -1198,9 +1198,6 @@ body {
   ul > li {
     color: rgb(38, 38, 38);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1236,9 +1233,6 @@ body {
   ol > li {
     color: rgb(38, 38, 38);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1919,7 +1913,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -2088,7 +2082,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -6968,9 +6962,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(232, 232, 232);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -7006,9 +6997,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(232, 232, 232);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -7689,7 +7677,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -7858,7 +7846,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

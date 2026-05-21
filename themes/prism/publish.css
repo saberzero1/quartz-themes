@@ -1,9 +1,8 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Source Sans 3";
   font-style: normal;
   font-weight: 200 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/source-sans-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/source-sans-3.woff2")
     format("woff2");
   unicode-range:
     U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F,
@@ -14,7 +13,7 @@
   font-family: "Source Sans 3";
   font-style: italic;
   font-weight: 200 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/source-sans-3-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/source-sans-3-1.woff2")
     format("woff2");
   unicode-range:
     U+0000-1FFF, U+2070-20CF, U+2150-218F, U+2400-245F, U+2500-259F,
@@ -25,14 +24,14 @@
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 100 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/jetbrains-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/jetbrains-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
   font-weight: 100 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/prism/jetbrains-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/prism/jetbrains-mono-1.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -2904,9 +2903,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(38, 38, 38);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -2940,9 +2936,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(38, 38, 38);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5769,9 +5762,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(232, 232, 232);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -5805,9 +5795,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(232, 232, 232);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

@@ -2,14 +2,14 @@
   font-family: "Courgette";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/listive/courgette.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/listive/courgette.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Karla";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/listive/karla.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/listive/karla.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -2722,9 +2722,6 @@ body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: calc(var(--list-spacing) / 2);
   padding-left: 0px;
@@ -2758,9 +2755,6 @@ body body.theme-light .markdown-rendered ul > li::marker {
 body body.theme-light .markdown-rendered ol > li {
   color: rgb(34, 34, 34);
   text-align: start;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: calc(var(--list-spacing) / 2);
   padding-left: 0px;
@@ -5599,9 +5593,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: calc(var(--list-spacing) / 2);
   padding-left: 0px;
@@ -5635,9 +5626,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: calc(var(--list-spacing) / 2);
   padding-left: 0px;

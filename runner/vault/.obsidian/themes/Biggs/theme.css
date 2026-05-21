@@ -1,0 +1,349 @@
+/* @settings
+name: Biggs
+id: biggs
+settings:
+  -
+    id: biggs-colors
+    title: Accent colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: primary-accent-color
+    title: Primary accent
+    type: variable-color
+    format: hex
+    default: '#3eb7e7'
+  -
+    id: secondary-accent-color
+    title: Secondary accent
+    type: variable-color
+    format: hex
+    default: '#ffd000'
+  -
+    id: tertiary-accent-color
+    title: Tertiary accent
+    type: variable-color
+    format: hex
+    default: '#ffab3e'
+  -
+    id: biggs-headings
+    title: Heading colors
+    type: heading
+    level: 2
+    collapsed: true
+  -
+    id: h1-accent-color
+    title: H1 accent
+    type: variable-color
+    format: hex
+    default: '#e85d5d'
+  -
+    id: h2-accent-color
+    title: H2 accent
+    type: variable-color
+    format: hex
+    default: '#d96bd8'
+  -
+    id: h3-accent-color
+    title: H3 accent
+    type: variable-color
+    format: hex
+    default: '#6f83e8'
+  -
+    id: h4-accent-color
+    title: H4 accent
+    type: variable-color
+    format: hex
+    default: '#45b9d0'
+  -
+    id: h5-accent-color
+    title: H5 accent
+    type: variable-color
+    format: hex
+    default: '#55c982'
+  -
+    id: h6-accent-color
+    title: H6 accent
+    type: variable-color
+    format: hex
+    default: '#d2c85a'
+*/
+
+.theme-dark {
+  --background-primary: #161616;
+  --background-secondary: #111111;
+
+  --primary-accent-color: #3eb7e7;
+  --primary-line-color: #22586d;
+  --secondary-accent-color: #ffd000;
+  --tertiary-accent-color: #ffab3e;
+
+  --h1-accent-color: #e85d5d;
+  --h2-accent-color: #d96bd8;
+  --h3-accent-color: #6f83e8;
+  --h4-accent-color: #45b9d0;
+  --h5-accent-color: #55c982;
+  --h6-accent-color: #d2c85a;
+
+  --list-marker-color: var(--tertiary-accent-color);
+  --checkbox-border-color: var(--tertiary-accent-color);
+
+  --h1-size: 3em;
+  --h2-size: 2.6em;
+  --h3-size: 2.2em;
+  --h4-size: 1.8em;
+  --h5-size: 1.6em;
+  --h6-size: 1.4em;
+}
+
+.theme-light {
+  --background-primary: #fbffff;
+  --background-secondary: #e1f3fc;
+
+  --primary-accent-color: #3eb7e7;
+  --primary-line-color: #8fcfe6;
+  --secondary-accent-color: #ff950b;
+  --tertiary-accent-color: #ff950b;
+
+  --h1-accent-color: #b83232;
+  --h2-accent-color: #a2359f;
+  --h3-accent-color: #3f54b5;
+  --h4-accent-color: #08798a;
+  --h5-accent-color: #16844a;
+  --h6-accent-color: #8a7a00;
+
+  --list-marker-color: var(--tertiary-accent-color);
+  --checkbox-border-color: var(--tertiary-accent-color);
+
+  --h1-size: 3em;
+  --h2-size: 2.6em;
+  --h3-size: 2.2em;
+  --h4-size: 1.8em;
+  --h5-size: 1.6em;
+  --h6-size: 1.4em;
+}
+
+body {
+	--radius-s: 0px;
+	--radius-m: 0px;
+	--radius-l: 0px;
+	--input-radius: 0px;
+	--tab-radius-active: 0px;
+	--checkbox-radius: 0px;
+	--toggle-radius: 0px;
+	--toggle-thumb-radius: 0px;
+	--slider-thumb-radius: 0px;
+	--font-text-theme: 'Noto', "Times New Roman", "Times", serif;
+	--font-monospace-theme: "Cascadia Code", "Source Code Pro", Consolas, monospace;
+	--text-highlight-bg: var(--secondary-accent-color);
+	--interactive-accent: var(--primary-accent-color);
+	--text-accent: var(--primary-accent-color);
+	--text-accent-hover: var(--tertiary-accent-color);
+	--background-modifier-border: var(--primary-line-color);
+	--background-modifier-hover: color-mix(in srgb, var(--primary-accent-color) 18%, transparent);
+	--background-modifier-active-hover: color-mix(in srgb, var(--primary-accent-color) 28%, transparent);
+	--text-selection: color-mix(in srgb, var(--primary-accent-color) 35%, transparent);
+	--code-background: var(--background-secondary);
+	--code-normal: var(--tertiary-accent-color);
+}
+
+.cm-header, .inline-title, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Trebuchet MS', Arial, sans-serif !important;
+	font-weight: bold;
+}
+
+.inline-title {
+	font-size: 3em !important;
+	border-bottom: 3px var(--primary-line-color) solid;
+}
+
+.collapse-icon path {
+	stroke: currentColor;
+}
+
+.HyperMD-header .cm-fold-indicator {
+	border-left: 20px var(--primary-line-color) solid;
+	border-radius: 20px 0 0 20px;
+}
+
+.HyperMD-header-1 .cm-fold-indicator, h1 {
+	border-color: var(--h1-accent-color) !important;
+}
+
+.HyperMD-header-2 .cm-fold-indicator, h2 {
+	border-color: var(--h2-accent-color);
+}
+
+.HyperMD-header-3 .cm-fold-indicator, h3 {
+	border-color: var(--h3-accent-color);
+}
+
+.HyperMD-header-4 .cm-fold-indicator, h4 {
+	border-color: var(--h4-accent-color);
+}
+
+.HyperMD-header-5 .cm-fold-indicator, h5 {
+	border-color: var(--h5-accent-color);
+}
+
+.HyperMD-header-6 .cm-fold-indicator, h6 {
+	border-color: var(--h6-accent-color);
+}
+
+.HyperMD-header-4 .collapse-icon path, .HyperMD-header-5 .collapse-icon path, .HyperMD-header-6 .collapse-icon path {
+	stroke: currentColor;
+}
+
+
+.cm-header, h1, h2, h3, h4, h5, h6 {
+	padding-left: .4em;
+}
+
+.cm-strong, strong {
+	font-weight: bold;
+	color: var(--tertiary-accent-color);
+}
+
+.cm-em, em {
+	color: var(--tertiary-accent-color);
+}
+
+.cm-highlight, mark {
+	background-color: var(--secondary-accent-color);
+	color: var(--background-primary) !important;
+}
+
+.cm-inline-code,
+code {
+	border: 1px solid var(--background-modifier-border);
+	background-color: var(--code-background);
+	color: var(--code-normal);
+	font-family: var(--font-monospace-theme);
+	padding: .1em .35em !important;
+}
+
+.HyperMD-codeblock,
+pre,
+pre code {
+	border-color: var(--background-modifier-border);
+	background-color: var(--code-background);
+	color: var(--text-normal);
+	font-family: var(--font-monospace-theme);
+}
+
+pre {
+	border: 1px solid var(--background-modifier-border);
+	padding: var(--size-4-3);
+}
+
+pre code {
+	border: 0;
+	padding: 0 !important;
+}
+
+.cm-formatting-list {
+	color: var(--tertiary-accent-color);
+}
+
+a,
+.cm-hmd-internal-link,
+.cm-link,
+.internal-link,
+.external-link {
+	color: var(--text-accent);
+	text-decoration-thickness: 2px;
+	text-underline-offset: .18em;
+}
+
+a:hover,
+.internal-link:hover,
+.external-link:hover {
+	color: var(--text-accent-hover);
+}
+
+.tag,
+.cm-hashtag {
+	border: 1px solid var(--tertiary-accent-color);
+	background-color: transparent;
+	color: var(--tertiary-accent-color);
+	padding: .05em .35em;
+}
+
+blockquote {
+	border-left: 6px solid var(--primary-line-color);
+	background-color: var(--background-secondary);
+	padding: var(--size-4-2) var(--size-4-4);
+}
+
+.callout {
+	border: 1px solid rgb(var(--callout-color));
+	border-left-width: 8px;
+	border-radius: 0;
+	background-color: color-mix(in srgb, rgb(var(--callout-color)) 10%, var(--background-primary));
+}
+
+.callout-title {
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	font-weight: bold;
+}
+
+.metadata-container,
+.metadata-property {
+	border-color: var(--background-modifier-border);
+}
+
+.task-list-item-checkbox {
+	border-radius: .35em !important;
+}
+
+.table-wrapper, .table-editor, table, thead {
+	width: 100% !important;
+}
+
+thead .table-cell-wrapper, thead th {
+	color: var(--tertiary-accent-color) !important;
+}
+
+
+.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+	display: none;
+}
+
+svg * {
+	stroke-linecap: square;
+	stroke-linejoin: miter;
+	rx: 0;
+	ry: 0;
+}
+
+.menu {
+	padding: var(--size-2-1);
+}
+
+.menu-item {
+	padding: var(--size-4-1) var(--size-4-2);
+}
+
+.menu-separator {
+	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+}
+
+@media (max-width: 600px) {
+	body {
+		--h1-size: 2.2em;
+		--h2-size: 1.9em;
+		--h3-size: 1.65em;
+		--h4-size: 1.45em;
+		--h5-size: 1.25em;
+		--h6-size: 1.1em;
+	}
+
+	.inline-title {
+		font-size: 2.2em !important;
+	}
+
+	.HyperMD-header .cm-fold-indicator {
+		border-left-width: 12px;
+	}
+}

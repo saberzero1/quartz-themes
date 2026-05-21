@@ -271,6 +271,11 @@ body {
 	--link-unresolved-opacity: 60%;
 	--link-external-decoration-hover: none;
 
+	--interactive-normal: var(--code-background) !important;
+	--interactive-hover:  oklch(from var(--code-background) calc(l * 1.1) c h) !important;
+	--interactive-accent: 			var(--background-primary);
+	--interactive-accent-hover: var(--background-modifier-border);
+
 	/* Canvas */
 	--canvas-dot-pattern: var(--text-faint);
 
@@ -285,12 +290,21 @@ body {
 
 	/* Notebook Navigator */
 	--nn-theme-foreground: var(--ui-normal);
+
 	--nn-theme-calendar-day-active-border-color: var(--cursor-line-color);
 	--nn-theme-calendar-day-today-bg: var(--text-highlight-bg);	
 	--nn-theme-calendar-day-today-color: var(--text-highlight);
+
+	--nn-theme-mobile-toolbar-button-icon-color: var(--background-primary);
 	--nn-theme-mobile-toolbar-button-active-icon-color: var(--background-primary);
+
 	--nn-theme-divider-resize-handle-hover-bg: var(--text-highlight-bg);
 }
+
+button.nn-toolbar-visibility-toggle.nn-mobile-toolbar-button:hover {
+	background-color: var(--text-faint) !important;
+}
+
 
 /* --- Highlight Presets (Style Settings) ------------------------- */
 body.highlight-subtle {
@@ -513,9 +527,6 @@ svg * {
 
 	--link-color: var(--text-muted);
 
-	--interactive-accent: 			var(--background-primary);
-	--interactive-accent-hover: var(--background-modifier-border);
-
 	/* --- Headings --------------------------------------------------- */
 	--h1-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.95 * var(--font-brightness)));
 	--h2-color: oklch(from var(--color-accent) clamp(0.15, var(--dynamic-switch), 0.95) calc(c * 0.3) h / calc(0.95 * var(--font-brightness)));
@@ -611,9 +622,6 @@ svg * {
 	--text-selection:    var(--background-secondary-alt);
 
 	--link-color: var(--text-muted);
-
-	--interactive-accent: 			var(--background-primary);
-	--interactive-accent-hover: var(--background-modifier-border);
 
 	/* --- Headings --------------------------------------------------- */
 	--h1-color: oklch(from var(--background-primary) clamp(0.15, var(--dynamic-switch), 0.90 * var(--font-brightness)) var(--text-c) h);
@@ -1693,15 +1701,6 @@ body {
 /* UI Fixes */
 .bases-query-container .filter-group .filter-group-header .conjunction.dropdown {
 	background-color: var(--text-muted);
-}
-.bases-query-container .filter-expression,
-.bases-query-container .filter-row .combobox-button {
-	background-color: var(--background-primary);
-}
-.bases-sort-property-container .bases-sort-property,
-.bases-sort-property-container .bases-sort-direction {
-	background-color: var(--background-primary);
-	color: var(--text-normal);
 }
 
 /* =============================================

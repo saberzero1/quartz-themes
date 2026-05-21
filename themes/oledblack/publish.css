@@ -717,9 +717,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(218, 218, 218);
   text-align: left;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -750,9 +747,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(218, 218, 218);
   text-align: left;
-  list-style-type: disc;
-  list-style-position: outside;
-  list-style-image: none;
   padding: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;

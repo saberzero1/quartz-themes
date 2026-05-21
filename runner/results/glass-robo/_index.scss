@@ -118,31 +118,31 @@ html {
   font-family: "Figtree";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/glass-robo/figtree.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/glass-robo/figtree.woff2") format("woff2");
 }
 @font-face {
   font-family: "Figtree";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/glass-robo/figtree-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/glass-robo/figtree-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "azer";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/glass-robo/azer.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/glass-robo/azer.woff2") format("woff2");
 }
 @font-face {
   font-family: "azer";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/glass-robo/azer-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/glass-robo/azer-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/glass-robo/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/glass-robo/jetbrains-mono.woff2") format("woff2");
 }
 
 body {
@@ -834,9 +834,6 @@ body {
   ul > li {
     color: rgb(199, 199, 199);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -872,9 +869,6 @@ body {
   ol > li {
     color: rgb(199, 199, 199);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1567,7 +1561,7 @@ body {
     color: rgb(155, 180, 196);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
@@ -1742,7 +1736,7 @@ body {
     color: rgb(155, 180, 196);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;

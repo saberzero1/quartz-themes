@@ -44,6 +44,15 @@ settings:
                 label: "True Glass (100% Transparent)"
                 value: preset-true-glass
     -
+        id: glass-opacity
+        title: "True Glass Opacity"
+        description: "Adjust background opacity when True Glass is enabled. 0 = fully transparent."
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.95
+        step: 0.01
+    -
         id: bg-section
         title: "🖼️ Background"
         type: heading
@@ -75,9 +84,6 @@ settings:
             -
                 label: "Custom Image URL"
                 value: bg-custom
-            -
-                label: "True Glass (100% Transparent)"
-                value: bg-glass
     -
         id: bg-custom-url
         title: "Custom Image URL"
@@ -190,6 +196,12 @@ settings:
         type: class-toggle
         default: false
     -
+        id: disable-header-animations
+        title: "Disable Header Animations"
+        description: "Turn off the material pop animation and dynamic padding when focusing headers."
+        type: class-toggle
+        default: false
+    -
         id: animate-note-open
         title: "Animate Note Opening (beta)"
         description: "Slide-up + fade when opening or switching notes."
@@ -294,6 +306,7 @@ div.setting-item[data-id="info-section"] {
   --bg-tint-opacity: 0;
   /* 0 = off, zero GPU cost */
   --border-opacity: 0.063;
+  --glass-opacity: 0;
 
   --tr: #00000000;
 
@@ -443,6 +456,7 @@ body .h-scroll-handle {
 }
 
 .theme-light {
+  --customaccentcolor: #ffe8d2;
   --brightness: 1.3;
   --kolorboku: #1d1d1f;
   /* text color readable black */
@@ -457,6 +471,7 @@ body .h-scroll-handle {
   --background-modifier-border-focus: rgba(0, 0, 0, 0.1);
   --overlay-color: rgba(255, 255, 255, 0.4);
   /* Elegant, delicate white glass for modals */
+  /*  --tab-text-color-focused: #b6ada3;*/
 }
 
 /* ===================== theme-light ===================== */
@@ -468,6 +483,7 @@ body .h-scroll-handle {
 }
 
 .theme-dark {
+  --customaccentcolor: #2e2515;
   --kolorboku: #e2e0dc;
   /* text color readable white */
   --brightness: 0.5;
@@ -483,19 +499,25 @@ body .h-scroll-handle {
   /*     --color-base-40: #555555; but with 60 */
   --overlay-color: #00000080;
   /* 80 = 50% opacity */
+  /*  --tab-text-color-focused: #666666;*/
 }
 
 /* ===================== theme-dark ===================== */
 
 /* ===================== Background System ===================== */
 /*
-   Priority (high wins): bg-glass / preset-true-glass > bg-custom > bg-solid > bg-gradient > bg-auto
+   Priority (high wins): preset-true-glass > bg-custom > bg-solid > bg-gradient > bg-auto
    bg-auto: dark = base64 wallpaper (dimmed), light = soft gradient
    All styles work in both dark and light mode.
 */
 
 /* Conditional UI: hide custom URL input unless bg-custom is selected */
-body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
+body:not(.bg-custom) .setting-item[data-id*="bg-custom-url"] {
+  display: none;
+}
+
+/* Conditional UI: hide glass opacity input unless preset-true-glass is selected */
+body:not(.preset-true-glass) .setting-item[data-id*="glass-opacity"] {
   display: none;
 }
 
@@ -520,13 +542,13 @@ body:not(.bg-custom) .setting-item[data-id="bg-custom-url"] {
 
 /* === AUTO (default) === */
 /* Dark auto: base64 wallpaper, dimmed */
-body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+body.theme-dark:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
   background-image: var(--background-image-base64);
   filter: brightness(0.54) blur(var(--background-blur));
 }
 
 /* Light auto: soft gradient */
-body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.bg-glass):not(.preset-true-glass) .app-container::before {
+body.theme-light:not(.bg-gradient):not(.bg-solid):not(.bg-custom):not(.preset-true-glass) .app-container::before {
   background-image: linear-gradient(var(--gradient-angle), var(--gradient-from) 0%, var(--gradient-to) 100%);
   background-color: unset;
   filter: blur(var(--background-blur));
@@ -569,15 +591,21 @@ body.theme-dark.bg-custom .app-container::before {
 }
 
 /* === GLASS / TRUE GLASS (both modes) === */
-body.bg-glass .app-container::before,
 body.preset-true-glass .app-container::before,
 body.theme-light.preset-true-glass .app-container::before,
 body.theme-dark.preset-true-glass .app-container::before {
   background-image: none;
-  background-color: unset;
   filter: blur(var(--background-blur));
   -webkit-backdrop-filter: blur(var(--background-blur));
   backdrop-filter: blur(var(--background-blur));
+}
+
+body.theme-light.preset-true-glass .app-container::before {
+  background-color: rgba(255, 255, 255, var(--glass-opacity));
+}
+
+body.theme-dark.preset-true-glass .app-container::before {
+  background-color: rgba(0, 0, 0, var(--glass-opacity));
 }
 
 /* ===================== Background Color Tint ===================== */
@@ -639,10 +667,11 @@ body.is-focused .workspace-ribbon.mod-left {
   background-color: var(--tr);
 }
 
-/* Enhance visibility of the active tab for better navigation */
-.is-focused .workspace-tab-header {
+/* Enhance visibility of the active tab for better navigation 
+body.is-focused .workspace-tab-header-container .workspace-tab-header {
   color: #666666;
-}
+}*/
+
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right {
   background-color: var(--tr);
@@ -834,6 +863,12 @@ select,
   background-color: var(--tr06);
   box-shadow: none;
 }
+
+
+select.dropdown option {
+  background-color: var(--background-primary-alt);
+}
+
 
 
 /* blur of 80px looks bad there */
@@ -1524,6 +1559,68 @@ body:not(.disable-splash-screen):not(.no-animation) .workspace {
 }
 
 /* ===================== Startup Animation (Splash Screen) ===================== */
+
+/* ===================== Header Animations ===================== */
+
+/* zdebugowane przy pomocy gemini ponieważ sam nie potrafiłem naprawić specyficznego przechodzenia, gdy naciskało się strzałkę w górę, miało to związek w ogóle z bugiem CodeMirror lecz jakiegos researchu nie robiłem w związku z tym - ważne, że działa. */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
+  position: absolute;
+  top: auto;
+  animation: materialPopHeader 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes materialPopHeader {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0.6) translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-100%) scale(1) translateX(0);
+  }
+}
+
+/* linijka traci fokus */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
+  position: relative;
+  padding-left: 0px;
+  transition: padding-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* linijka zyskuje fokus */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active.HyperMD-header {
+  transition: padding-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hardcoded odsuwanie, pewnie będzie problem podczas zmiany czcionek headerów, lecz to się wydaje być niszowym rozwiązaniem */
+body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active {
+  &.HyperMD-header-1 {
+    padding-left: 20px
+  }
+
+  &.HyperMD-header-2 {
+    padding-left: 30px
+  }
+
+  &.HyperMD-header-3 {
+    padding-left: 40px
+  }
+
+  &.HyperMD-header-4 {
+    padding-left: 50px
+  }
+
+  &.HyperMD-header-5 {
+    padding-left: 60px
+  }
+
+  &.HyperMD-header-6 {
+    padding-left: 70px
+  }
+}
+
+/* ===================== Header Animations ===================== */
 
 /* ===================== iOS Fixes ===================== */
 body.is-ios .app-container .workspace,

@@ -649,61 +649,61 @@ html {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins.woff2") format("woff2");
 }
 @font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins-3.woff2") format("woff2");
 }
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins-4.woff2") format("woff2");
 }
 @font-face {
   font-family: "Poppins";
   font-style: italic;
   font-weight: 800;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/poppins-5.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/poppins-5.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/noto-serif.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/noto-serif.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Serif";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/noto-serif-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/noto-serif-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/noto-sans.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/noto-sans.woff2") format("woff2");
 }
 @font-face {
   font-family: "Noto Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/fancy-a-story/noto-sans-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/fancy-a-story/noto-sans-1.woff2") format("woff2");
 }
 
 body {
@@ -1385,9 +1385,6 @@ body {
   ul > li {
     color: rgb(0, 0, 0);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1423,9 +1420,6 @@ body {
   ol > li {
     color: rgb(0, 0, 0);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -2107,7 +2101,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -2276,7 +2270,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -8553,9 +8547,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(217, 217, 217);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -8591,9 +8582,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(217, 217, 217);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -9275,7 +9263,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -9444,7 +9432,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

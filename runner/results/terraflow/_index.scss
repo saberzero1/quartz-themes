@@ -88,16 +88,16 @@
   --callout-note: 217, 119, 86;
   --callout-danger: 192, 57, 43;
   --callout-cite: 87, 61, 132;
-  --callout-cite-rgb: 87, 61, 132;
   --callout-danger-rgb: 192, 57, 43;
-  --callout-example-rgb: 119, 144, 136;
   --callout-info-rgb: 212, 175, 55;
-  --callout-note-rgb: 217, 119, 86;
   --callout-quote-rgb: 176, 164, 131;
   --callout-success-rgb: 121, 141, 93;
+  --callout-warning-rgb: 230, 126, 34;
+  --callout-cite-rgb: 87, 61, 132;
+  --callout-example-rgb: 119, 144, 136;
+  --callout-note-rgb: 217, 119, 86;
   --callout-video: 166, 124, 82;
   --callout-video-rgb: 166, 124, 82;
-  --callout-warning-rgb: 230, 126, 34;
 
   --custom-accent: #5e7d6e;
   --heading-font: inherit;
@@ -191,16 +191,16 @@
   --callout-note: 242, 168, 130;
   --callout-danger: 231, 76, 60;
   --callout-cite: 162, 155, 254;
-  --callout-cite-rgb: 162, 155, 254;
   --callout-danger-rgb: 231, 76, 60;
-  --callout-example-rgb: 149, 179, 170;
   --callout-info-rgb: 233, 213, 163;
-  --callout-note-rgb: 242, 168, 130;
   --callout-quote-rgb: 232, 220, 198;
   --callout-success-rgb: 168, 196, 122;
+  --callout-warning-rgb: 243, 156, 18;
+  --callout-cite-rgb: 162, 155, 254;
+  --callout-example-rgb: 149, 179, 170;
+  --callout-note-rgb: 242, 168, 130;
   --callout-video: 242, 179, 153;
   --callout-video-rgb: 242, 179, 153;
-  --callout-warning-rgb: 243, 156, 18;
 
   --custom-accent: #5e7d6e;
   --heading-font: inherit;
@@ -1194,9 +1194,6 @@ body {
   ul > li {
     color: rgb(61, 46, 26);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1232,9 +1229,6 @@ body {
   ol > li {
     color: rgb(61, 46, 26);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
@@ -1919,7 +1913,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -2088,7 +2082,7 @@ body {
     color: rgb(34, 34, 34);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(34, 34, 34);
     border-top-left-radius: 0px;
@@ -6171,9 +6165,6 @@ html[saved-theme="dark"] {
     ul > li {
       color: rgb(232, 220, 198);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -6209,9 +6200,6 @@ html[saved-theme="dark"] {
     ol > li {
       color: rgb(232, 220, 198);
       text-align: start;
-      list-style-type: "​";
-      list-style-position: outside;
-      list-style-image: none;
       padding-top: var(--list-spacing);
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
@@ -6896,7 +6884,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::after,
     h2.page-title a::after {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;
@@ -7065,7 +7053,7 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
-    h2.page-title,
+    h2.page-title::before,
     h2.page-title a::before {
       border: 0px rgb(218, 218, 218);
       border-top-left-radius: 0px;

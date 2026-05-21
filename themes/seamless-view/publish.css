@@ -1365,6 +1365,7 @@ body.theme-dark {
   --italic-color: var(--color-yellow) !important;
   --strike-color: var(--text-muted) !important;
   --color-accent-rgb: 110, 148, 56 !important;
+  --highlight-color: var(--color-red-alt2-rgb) !important;
   --canvas-space-x: 20px !important;
   --canvas-space-y: 16px !important;
   --checkbox-end-margin: 1px !important;
@@ -1387,7 +1388,6 @@ body.theme-dark {
   --color-red-alt-rgb: 228, 129, 137 !important;
   --color-red-alt2: hsl(0, 80%, 30%) !important;
   --color-red-alt2-rgb: 138, 15, 15 !important;
-  --highlight-color: var(--color-red-alt2-rgb) !important;
   --lc-bg-bottom-reading: 1px !important;
   --lc-bg-left: 18px !important;
   --lc-bg-left-reading: 19px !important;
@@ -2013,9 +2013,6 @@ body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
 body body.theme-dark .markdown-rendered ul > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;
@@ -2049,9 +2046,6 @@ body body.theme-dark .markdown-rendered ul > li::marker {
 body body.theme-dark .markdown-rendered ol > li {
   color: rgb(218, 218, 218);
   text-align: start;
-  list-style-type: "​";
-  list-style-position: outside;
-  list-style-image: none;
   padding-top: var(--list-spacing);
   padding-bottom: var(--list-spacing);
   padding-left: 0px;

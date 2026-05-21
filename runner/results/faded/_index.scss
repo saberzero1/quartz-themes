@@ -131,43 +131,43 @@ html {
   font-family: "Roboto Condensed";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/roboto-condensed.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/roboto-condensed.woff2") format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/its.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/its.woff") format("woff");
 }
 @font-face {
   font-family: "Font Awesome 6 Free Regular";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/font-awesome-6-free-regular.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/font-awesome-6-free-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Font Awesome 6 Free Solid";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/font-awesome-6-free-solid.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/font-awesome-6-free-solid.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cuprum";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/cuprum.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/cuprum.woff2") format("woff2");
 }
 @font-face {
   font-family: "Gemunu Libre";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/gemunu-libre.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/gemunu-libre.woff2") format("woff2");
 }
 @font-face {
   font-family: "Kreon";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.2/fonts/faded/kreon.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.3/fonts/faded/kreon.woff2") format("woff2");
 }
 
 body {
@@ -822,9 +822,6 @@ body {
   ul > li {
     color: rgb(218, 218, 218);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 5px;
@@ -860,9 +857,6 @@ body {
   ol > li {
     color: rgb(218, 218, 218);
     text-align: start;
-    list-style-type: "​";
-    list-style-position: outside;
-    list-style-image: none;
     padding-top: var(--list-spacing);
     padding-bottom: var(--list-spacing);
     padding-left: 5px;
@@ -1533,7 +1527,7 @@ body {
     color: rgb(218, 218, 218);
   }
 
-  h2.page-title,
+  h2.page-title::after,
   h2.page-title a::after {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
@@ -1709,7 +1703,7 @@ body {
     color: rgb(218, 218, 218);
   }
 
-  h2.page-title,
+  h2.page-title::before,
   h2.page-title a::before {
     border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
