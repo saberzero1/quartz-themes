@@ -10,6 +10,7 @@ aliases:
   - embed-test
 cssclasses:
   - test-class
+  - test-class-2
 ---
 
 # Frontmatter Test

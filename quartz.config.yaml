@@ -233,7 +233,7 @@ plugins:
   - source: github:quartz-community/note-properties
     enabled: true
     options:
-      includeAll: false
+      includeAll: true
       includedProperties:
         - description
         - tags
