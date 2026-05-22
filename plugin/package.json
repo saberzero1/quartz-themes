@@ -95,6 +95,18 @@
       },
       "styleSettings": {
         "type": "object"
+      },
+      "calloutStyle": {
+        "type": "string"
+      },
+      "fonts": {
+        "type": "object"
+      },
+      "aspects": {
+        "type": "object"
+      },
+      "include": {
+        "type": "array"
       }
     }
   },
