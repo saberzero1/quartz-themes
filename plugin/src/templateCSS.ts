@@ -624,13 +624,13 @@ button.darkmode {
   :root[reader-mode="on"][saved-theme="dark"] body[data-slug] div#quartz-root.page:has(div.sidebar.left:hover),
   :root[reader-mode="on"][saved-theme="light"] body[data-slug] div#quartz-root.page:has(div.sidebar.left:hover) {
     background-color: transparent;
-    background-image: linear-gradient(to left, transparent, var(--tab-container-background) 50%);
+    background-image: linear-gradient(270deg, transparent 0%, transparent 50%, var(--tab-container-background) 50%, var(--tab-container-background) 100%);
   }
   /* hovering right sidebar */
   :root[reader-mode="on"][saved-theme="dark"] body[data-slug] div#quartz-root.page:has(div.sidebar.right:hover),
   :root[reader-mode="on"][saved-theme="light"] body[data-slug] div#quartz-root.page:has(div.sidebar.right:hover) {
     background-color: transparent;
-    background-image: linear-gradient(to right, transparent, var(--tab-container-background) 50%);
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, var(--tab-container-background) 50%, var(--tab-container-background) 100%);
   }
 }
 
