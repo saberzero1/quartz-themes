@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Science Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: expanded;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/sciencegothic/v5/CHzuV-7EH1X7aiQh5jPNDTJnVUAvhrL0sQdjzDQhk11iTp6mX-ANuf1d_83dPfZJ7Lvcvg8EGYzuW57mXiXiVX33c92f0Q-o9A.ttf) format('truetype');
+}

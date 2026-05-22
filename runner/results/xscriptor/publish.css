@@ -2,14 +2,14 @@
   font-family: "EB Garamond";
   font-style: normal;
   font-weight: 400 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/xscriptor/eb-garamond.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/xscriptor/eb-garamond.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "EB Garamond";
   font-style: italic;
   font-weight: 400 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/xscriptor/eb-garamond-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/xscriptor/eb-garamond-1.woff2")
     format("woff2");
 }
 body.theme-light {

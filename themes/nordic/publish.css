@@ -2,56 +2,56 @@
   font-family: "Avenir LT Std";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/avenir-lt-std.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/avenir-lt-std.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Avenir LT Std";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/avenir-lt-std-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/avenir-lt-std-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Deadhead Rough";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/deadhead-rough.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/deadhead-rough.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Gentium Book Basic";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/gentium-book-basic.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/gentium-book-basic.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Gentium Book Basic";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/gentium-book-basic-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/gentium-book-basic-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Gentium Book Basic";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/gentium-book-basic-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/gentium-book-basic-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Gentium Book Basic";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/gentium-book-basic-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/gentium-book-basic-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Norwester";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/nordic/norwester.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/nordic/norwester.woff2")
     format("woff2");
 }
 body.theme-light {

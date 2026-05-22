@@ -2,35 +2,35 @@
   font-family: "Source Sans Pro";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/palatinate/source-sans-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/palatinate/source-sans-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Libre Baskerville";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/palatinate/libre-baskerville.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/palatinate/libre-baskerville.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Merriweather";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/palatinate/merriweather.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/palatinate/merriweather.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Caveat Brush";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/palatinate/caveat-brush.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/palatinate/caveat-brush.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/palatinate/material-icons.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/palatinate/material-icons.woff2")
     format("woff2");
 }
 body.theme-light {

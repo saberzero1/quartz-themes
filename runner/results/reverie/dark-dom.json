@@ -1460,11 +1460,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(189, 174, 147)",
+                          "color": "rgb(44, 202, 183)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(189, 174, 147)",
+                          "borderColor": "rgb(44, 202, 183)",
                           "fill": "none",
-                          "stroke": "rgb(189, 174, 147)"
+                          "stroke": "rgb(44, 202, 183)"
                         },
                         "childCount": 1,
                         "children": [
@@ -1473,11 +1473,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(189, 174, 147)",
+                              "color": "rgb(44, 202, 183)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(189, 174, 147)",
+                              "borderColor": "rgb(44, 202, 183)",
                               "fill": "none",
-                              "stroke": "rgb(189, 174, 147)"
+                              "stroke": "rgb(44, 202, 183)"
                             },
                             "childCount": 0,
                             "children": []
@@ -1992,11 +1992,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(189, 174, 147)",
+                          "color": "rgb(44, 202, 183)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(189, 174, 147)",
+                          "borderColor": "rgb(44, 202, 183)",
                           "fill": "none",
-                          "stroke": "rgb(189, 174, 147)"
+                          "stroke": "rgb(44, 202, 183)"
                         },
                         "childCount": 1,
                         "children": [
@@ -2005,11 +2005,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(189, 174, 147)",
+                              "color": "rgb(44, 202, 183)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(189, 174, 147)",
+                              "borderColor": "rgb(44, 202, 183)",
                               "fill": "none",
-                              "stroke": "rgb(189, 174, 147)"
+                              "stroke": "rgb(44, 202, 183)"
                             },
                             "childCount": 0,
                             "children": []
@@ -2289,11 +2289,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(189, 174, 147)",
+                          "color": "rgb(44, 202, 183)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(189, 174, 147)",
+                          "borderColor": "rgb(44, 202, 183)",
                           "fill": "none",
-                          "stroke": "rgb(189, 174, 147)"
+                          "stroke": "rgb(44, 202, 183)"
                         },
                         "childCount": 1,
                         "children": [
@@ -2302,11 +2302,11 @@
                             "classes": [],
                             "attrs": { "d": "M3 8L12 17L21 8" },
                             "styles": {
-                              "color": "rgb(189, 174, 147)",
+                              "color": "rgb(44, 202, 183)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(189, 174, 147)",
+                              "borderColor": "rgb(44, 202, 183)",
                               "fill": "none",
-                              "stroke": "rgb(189, 174, 147)"
+                              "stroke": "rgb(44, 202, 183)"
                             },
                             "childCount": 0,
                             "children": []

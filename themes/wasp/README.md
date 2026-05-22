@@ -1,7 +1,7 @@
 # Wasp
 
 - Theme: Wasp
-- Author: Santi Younger
+- Author: <a href="https://santiyounger.com/" target="_blank" rel="noopener noreferrer">Santi Younger</a>
 
 ## Preview
 

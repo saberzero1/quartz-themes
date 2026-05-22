@@ -1,6 +1,7 @@
 {
-    "name": "Wasp",
-    "version": "0.0.0",
-    "minAppVersion": "0.16.0",
-    "author": "Santi Younger"
+	"name": "Wasp",
+	"version": "1.0.7",
+	"minAppVersion": "1.0.0",
+	"author": "Santi Younger",
+	"authorUrl": "https://santiyounger.com/"
 }

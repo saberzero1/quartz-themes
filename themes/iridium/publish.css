@@ -794,7 +794,7 @@ body.theme-light {
   --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --frame-left-space: 0px !important;
-  --frame-right-space: 81px !important;
+  --frame-right-space: 84px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--color-base-35) !important;
   --graph-node: var(--color-base-70) !important;
@@ -1511,6 +1511,7 @@ body.theme-light {
   --i-s: var(--i-lt-s) !important;
   --i-scrollbar-color: var(--i-5) !important;
   --i-scrollbar-color-active: var(--i-7) !important;
+  --i-scrollbar-radius: 6px !important;
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
   --i-slider-thumb-shadow: 0 0 0 5px
@@ -1541,6 +1542,7 @@ body.theme-light {
     from currentColor l c h / 0.25
   ) !important;
   --i-translucent-floating-nav-opacity: 92% !important;
+  --i-window-controls-position: -16px 16px !important;
   --nn-theme-file-tag-border-radius: var(--tag-radius) !important;
   --nn-theme-navitem-chevron-color: var(--nav-collapse-icon-color) !important;
   --i-lt-border-l: 14% !important;
@@ -1982,7 +1984,7 @@ body.theme-dark {
   --footnote-radius: var(--radius-s) !important;
   --footnote-size: var(--font-smaller) !important;
   --frame-left-space: 0px !important;
-  --frame-right-space: 81px !important;
+  --frame-right-space: 84px !important;
   --graph-controls-width: 240px !important;
   --graph-line: var(--color-base-35) !important;
   --graph-node: var(--color-base-70) !important;
@@ -2703,6 +2705,7 @@ body.theme-dark {
   --i-s: var(--i-dk-s) !important;
   --i-scrollbar-color: var(--i-7) !important;
   --i-scrollbar-color-active: var(--i-8) !important;
+  --i-scrollbar-radius: 6px !important;
   --i-scrollbar-thumb-size: 4px !important;
   --i-scrollbar-track-size: 9px !important;
   --i-slider-thumb-shadow: 0 0 0 5px
@@ -2733,6 +2736,7 @@ body.theme-dark {
     from currentColor l c h / 0.35
   ) !important;
   --i-translucent-floating-nav-opacity: 92% !important;
+  --i-window-controls-position: -16px 16px !important;
   --nn-theme-file-tag-border-radius: var(--tag-radius) !important;
   --nn-theme-navitem-chevron-color: var(--nav-collapse-icon-color) !important;
 }

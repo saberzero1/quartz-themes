@@ -545,7 +545,9 @@
   },
   "--checkbox-marker-color": {
     "body": ["--background-primary"],
-    ".attachments-gallery .download-attachment-item": ["--text-on-accent"]
+    ".attachments-gallery .download-attachment-item": ["--text-on-accent"],
+    ".theme-dark": ["--background-primary"],
+    ".theme-light": ["--background-primary"]
   },
   "--checkbox-color": {
     "body": ["--interactive-accent"],
@@ -595,7 +597,11 @@
       "--safe-area-inset-top"
     ]
   },
-  "--divider-color": { "body": ["--background-modifier-border"] },
+  "--divider-color": {
+    "body": ["--background-modifier-border"],
+    ".theme-dark": ["--background-secondary-alt"],
+    ".theme-light": ["--background-secondary-alt"]
+  },
   "--divider-color-hover": { "body": ["--interactive-accent"] },
   "--divider-vertical-height": { "body": ["--header-height"] },
   "--dropdown-background-position": {
@@ -694,7 +700,11 @@
   },
   "--graph-node": { "body": ["--text-muted"] },
   "--graph-node-unresolved": { "body": ["--text-faint"] },
-  "--graph-node-focused": { "body": ["--text-accent"] },
+  "--graph-node-focused": {
+    "body": ["--text-accent"],
+    ".theme-dark": ["--interactive-accent-rgb"],
+    ".theme-light": ["--interactive-accent-rgb"]
+  },
   "--graph-node-tag": { "body": ["--color-green"] },
   "--graph-node-attachment": { "body": ["--color-yellow"] },
   "--heading-formatting": { "body": ["--text-faint"] },
@@ -961,7 +971,9 @@
     ".workspace-drawer .nav-buttons-container": ["--text-muted"],
     "body.is-tablet .sidebar-toggle-button": ["--text-normal"],
     ".mobile-navbar-actions": ["--text-normal"],
-    ".mobile-tab-switcher-menubar": ["--text-normal"]
+    ".mobile-tab-switcher-menubar": ["--text-normal"],
+    ".theme-dark": ["--text-accent"],
+    ".theme-light": ["--text-accent"]
   },
   "--icon-color-active": {
     "body": ["--text-accent"],
@@ -1076,7 +1088,11 @@
   "--nav-item-color-selected": { "body": ["--text-normal"] },
   "--nav-item-color-highlighted": { "body": ["--text-accent"] },
   "--nav-item-background-hover": { "body": ["--background-modifier-hover"] },
-  "--nav-item-background-active": { "body": ["--background-modifier-hover"] },
+  "--nav-item-background-active": {
+    "body": ["--background-modifier-hover"],
+    ".theme-dark": ["--background-primary-alt"],
+    ".theme-light": ["--background-primary-alt"]
+  },
   "--nav-item-background-selected": { "body": ["--color-accent-hsl"] },
   "--nav-item-padding": {
     "body": ["--size-4-1", "--size-4-2", "--size-4-1", "--size-4-6"],
@@ -1451,7 +1467,11 @@
   },
   "--table-header-background": { "body": ["--table-background"] },
   "--table-header-border-width": { "body": ["--table-border-width"] },
-  "--table-header-border-color": { "body": ["--table-border-color"] },
+  "--table-header-border-color": {
+    "body": ["--table-border-color"],
+    ".theme-dark": ["--background-modifier-border"],
+    ".theme-light": ["--background-modifier-border"]
+  },
   "--table-header-size": { "body": ["--table-text-size"] },
   "--table-header-weight": { "body": ["--font-weight", "--bold-modifier"] },
   "--table-header-color": { "body": ["--text-normal"] },

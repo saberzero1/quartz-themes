@@ -4,11 +4,11 @@
     "color": "rgb(92, 92, 92)"
   },
   "_preBlock": {
-    "backgroundColor": "rgb(231, 231, 231)",
+    "backgroundColor": "rgb(190, 190, 190)",
     "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
-    "color": "rgb(27, 176, 182)",
+    "color": "rgb(6, 53, 48)",
     "fontStyle": "normal",
     "fontWeight": "500",
     "textDecoration": "none"

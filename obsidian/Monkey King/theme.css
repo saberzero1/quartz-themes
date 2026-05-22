@@ -6,89 +6,119 @@ settings:
     -
         id: h-sec-stage
         title: 短诗定场
+        title.en: "Prologue in Verse"
         description: 仙山灵石，久孕猿猴，碎开新篇。
+        description.en: "From immortal stone on cloud-hid peaks, a monkey is born; a new chapter cracks open."
         type: heading
         level: 1
         collapsed: false
     -
+        id: h-group-fontpack-preview
+        title: 字体预览
+        title.en: "Font Preview"
+        type: heading
+        level: 2
+        collapsed: false
+    -
         id: h-note-fontpack-quick
         title: 必读：预设字体
+        title.en: "Read First: Preset Fonts"
         type: info-text
         markdown: true
         description: "本主题搭配了多款免费字体，预设字体缺失会**明显影响观感**。请先下载安装字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv)。安装后建议*重启 Obsidian*。"
+        description.en: "This theme is paired with several free fonts. Missing preset fonts will **noticeably weaken the look**. Download and install the font pack first: [GitHub main link](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) | [123 Cloud mirror](https://www.123865.com/s/b62hTd-lg8Hv). After installing, *restart Obsidian*."
     -
         id: h-note-mode-huaguo
         title: 一条涧壑藤萝密，四面原堤草色新。
+        title.en: "Ravines twined with vines; fresh grass circling every bank."
         type: info-text
     -
         id: h-note-mode-hall
         title: 金钉攒玉户，彩凤舞朱门。
+        title.en: "Golden studs gather at jade doors; painted phoenixes dance before vermilion gates."
         type: info-text
+    -
+        id: h-group-stage-controls
+        title: 登场设定
+        title.en: "Stage Setup"
+        type: heading
+        level: 2
+        collapsed: false
     -
         id: style-mode
         title: ① 搭台布景
+        title.en: "1. Set the Stage"
         type: class-select
         default: 'style-huaguo-mount'
         description: 先定场景：花果山偏灵动，凌霄宝殿偏肃整。
+        description.en: "Choose the realm: Flower-Fruit Mountain moves with wild grace; Heaven Hall stands in solemn order."
         options:
             -
-                label: "花果山"
+                label: "花果山 · Flower-Fruit Mt."
                 value: 'style-huaguo-mount'
             -
-                label: "凌霄宝殿"
+                label: "凌霄宝殿 · Heaven Hall"
                 value: 'style-great-hall'
     -
         id: color-scheme-light
         title: ② 登台亮相
+        title.en: "2. Take the Stage"
         type: class-select
         default: 'scheme-monkey'
         description: 再定昼光下的主色走向。
+        description.en: "Then choose the leading color under daylight."
         options:
             -
-                label: "美猴王"
+                label: "美猴王 · Monkey King"
                 value: 'scheme-monkey'
             -
-                label: "哪吒"
+                label: "哪吒 · Nezha"
                 value: 'scheme-kid'
     -
         id: color-scheme-dark
         title: ② 登台亮相
+        title.en: "2. Take the Stage"
         type: class-select
         default: 'scheme-lord'
         description: 再定夜色下的主色走向。
+        description.en: "Then choose the leading color beneath the night."
         options:
             -
-                label: "太上老君"
+                label: "太上老君 · Laozi"
                 value: 'scheme-lord'
             -
-                label: "李天王"
+                label: "李天王 · Pagoda King"
                 value: 'scheme-pagoda'
     -
         id: u-font-theme-zh
         title: ③ 念白开场
+        title.en: "3. Open with a Monologue"
         description: 最后确定正文的字体
+        description.en: "Finally, choose the voice of the main text."
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: h-sec-optimize
         title: 看桃放马
+        title.en: "Tending Peaches, Grazing Horses"
         description: 恭恭敬敬，规规矩矩，小打小闹。
+        description.en: "Respectful, orderly, and gentle: small adjustments before the riot."
         type: heading
         level: 1
         collapsed: true
@@ -96,720 +126,797 @@ settings:
     -
             id: bg-tune-override
             title: 亲调天光
+            title.en: "Tune the Sky by Hand"
             type: class-toggle
             default: false
             description: 关闭时跟随默认背景；开启后使用滑块微调背景。
+            description.en: "Off: follow the default background. On: use the slider below to temper the light."
     -
             id: u-bg-tune
             title: 天光偏移
+            title.en: "Skylight Offset"
             type: variable-number-slider
             default: 0
             min: -20
             max: 20
             step: 1
             description: 微调背景与文字的对比度，0 为不偏移。
+            description.en: "Fine-tune the contrast between background and text. 0 means no offset."
     -
         id: gap-strategy
         title: 疏密有致
+        title.en: "Measured Breathing Room"
         type: class-select
         default: 'gap-auto'
         description: 调整元素间距。
+        description.en: "Adjust the spacing between elements."
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: 'gap-auto'
             -
-                label: "舒展"
+                label: "舒展 · Loose"
                 value: 'gap-loose'
             -
-                label: "利落"
+                label: "利落 · Compact"
                 value: 'gap-compact'
     -
         id: line-width-strategy
         title: 线条浓淡
+        title.en: "Stroke Weight"
         type: class-select
         default: 'line-width-auto'
         description: 控制分隔线、表格边线、链接下划线等线条强度。
+        description.en: "Control the strength of dividers, table borders, link underlines, and other lines."
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: 'line-width-auto'
             -
-                label: "纤细"
+                label: "纤细 · Thin"
                 value: 'line-width-thin'
             -
-                label: "平衡"
+                label: "平衡 · Regular"
                 value: 'line-width-regular'
             -
-                label: "浓重"
+                label: "浓重 · Bold"
                 value: 'line-width-bold'
     -
         id: h-sec-advance
         title: 大闹天宫
+        title.en: "Havoc in Heaven"
         type: heading
         level: 1
         collapsed: true
         description: 踢丹炉，碎金匾，铁棒到处生烟。
+        description.en: "Kicking over the elixir furnace, shattering golden plaques; smoke rises wherever the iron staff falls."
     -
         id: h-group-editor
         title: 编辑器
+        title.en: "Editor"
         type: heading
         level: 2
         collapsed: true
     -
         id: h-note-limitation
         title: 注意
+        title.en: "Note"
         type: info-text
         description: 目前只实现了对元素的字体调整。
+        description.en: "For now, only element-level font adjustments are implemented."
     -
         id: h-note-fontpack-advanced
         title: 预设字库下载
+        title.en: "Preset Font Download"
         type: info-text
         markdown: true
         description: "若风格与预期不符，请先安装预设字体包：[主链Github](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) ｜ [备用123网盘](https://www.123865.com/s/b62hTd-lg8Hv) 。"
+        description.en: "If the style does not look as intended, install the preset font pack first: [GitHub main link](https://github.com/LeapSurge/Monkey-King/releases/latest/download/font-pack-open.zip) | [123 Cloud mirror](https://www.123865.com/s/b62hTd-lg8Hv)."
     -
         id: h-group-font-base
         title: 正文与代码
+        title.en: "Body & Code"
         type: heading
         level: 3
         collapsed: true
     -
         id: cancel-font-override
         title: 回归原本
+        title.en: "Return to the Original"
         type: class-toggle
         default: false
         description: 关闭：在style-setting设置正文和代码字体。开启：改用你在设置面板中设置的字体。
+        description.en: "Off: set body and code fonts in Style Settings. On: use the fonts from Obsidian's Appearance settings instead."
     -
         id: h-sub-font-theme
         title: 正文
+        title.en: "Body Text"
         type: heading
         level: 4
         collapsed: true
     -
         id: u-font-theme-west
         title: 正文西文
+        title.en: "Body Latin"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "衬线"
+                label: "衬线 · Serif"
                 value: 'var(--stack-serif)'
             -   
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: font-theme-zh-placeholder
         title: 正文中文
+        title.en: "Body Chinese"
         type: variable-text
         default: ""
         description: 已在前方“③ 念白开场”设置，这里不重复提供。
+        description.en: "Already set above in '3. Open with a Monologue'; it is not repeated here."
     -
         id: font-stack-override-theme
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-theme
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: initial
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-theme-weight
         title: 正文字重
+        title.en: "Body Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-sub-font-mono
         title: 代码
+        title.en: "Code"
         type: heading
         level: 4
         collapsed: true
     -
         id: u-font-mono-west
         title: 代码西文
+        title.en: "Code Latin"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "衬线"
+                label: "衬线 · Serif"
                 value: 'var(--stack-serif)'
             -   
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-mono-zh
         title: 代码中文
+        title.en: "Code Chinese"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: font-stack-override-mono
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-mono
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: "var(--res-font-mono-west), var(--res-font-mono-zh)"
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-mono-weight
         title: 代码字重
+        title.en: "Code Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-group-font-headings
         title: 标题
+        title.en: "Headings"
         type: heading
         level: 3
         collapsed: true
     -
         id: u-font-headings-west
         title: 西文
+        title.en: "Latin"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-headings-zh
         title: 中文
+        title.en: "Chinese"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: font-stack-override-headings
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-headings
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: "var(--res-font-headings-west), var(--res-font-headings-zh)"
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-headings-weight
         title: 字重
+        title.en: "Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-group-font-quote
         title: 引用块
+        title.en: "Blockquotes"
         type: heading
         level: 3
         collapsed: true
     -
         id: u-font-quote-west
         title: 西文
+        title.en: "Latin"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-quote-zh
         title: 中文
+        title.en: "Chinese"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: font-stack-override-quote
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-quote
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: "var(--res-font-quote-west), var(--res-font-quote-zh)"
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-quote-weight
         title: 字重
+        title.en: "Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-group-font-em
         title: 强调块（*text*）
+        title.en: "Emphasis (*text*)"
         type: heading
         level: 3
         collapsed: true
     -
         id: u-font-em-west
         title: 西文
+        title.en: "Latin"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-em-zh
         title: 中文
+        title.en: "Chinese"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: font-stack-override-em
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-em
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: "var(--res-font-em-west), var(--res-font-em-zh)"
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-em-weight
         title: 字重
+        title.en: "Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-group-font-strong
         title: 加重块（**text**）
+        title.en: "Strong Emphasis (**text**)"
         type: heading
         level: 3
         collapsed: true
     -
         id: u-font-strong-west
         title: 西文
+        title.en: "Latin"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-strong-zh
         title: 中文
+        title.en: "Chinese"
         type: variable-select
         default: initial
         options:
             - 
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: font-stack-override-strong
         title: 自定义字体栈
+        title.en: "Custom Font Stack"
         type: class-toggle
         default: false
         description: 开启后使用下方文本框覆盖“西文 + 中文”组合。
+        description.en: "When enabled, the field below overrides the \"Latin + Chinese\" pairing."
     -
         id: u-font-stack-strong
         title: 字体栈（CSS）
+        title.en: "Font Stack (CSS)"
         type: variable-text
         default: "var(--res-font-strong-west), var(--res-font-strong-zh)"
         description: 直接填写完整 font-family 字体栈。
+        description.en: "Enter the full CSS font-family stack directly."
     -
         id: u-font-strong-weight
         title: 字重
+        title.en: "Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     -
         id: h-group-font-table
         title: 表格表头
+        title.en: "Table Headers"
         type: heading
         level: 3
         collapsed: true
     -
         id: u-font-th-west
         title: 表头西文
+        title.en: "Header Latin"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "衬线"
+                label: "衬线 · Serif"
                 value: 'var(--stack-serif)'
             -
-                label: "非衬线"
+                label: "非衬线 · Sans"
                 value: 'var(--stack-sans)'
             -
-                label: "手写体"
+                label: "手写体 · Hand"
                 value: 'var(--stack-hand)'
             -
-                label: "系统衬线斜体"
+                label: "系统衬线斜体 · Serif Italic"
                 value: 'var(--stack-serif-i)'
             -
-                label: "系统非衬线斜体"
+                label: "系统非衬线斜体 · Sans Italic"
                 value: 'var(--stack-sans-i)'
     -
         id: u-font-th-zh
         title: 表头中文
+        title.en: "Header Chinese"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "黑体"
+                label: "黑体 · Hei"
                 value: 'var(--stack-hei)'
             -
-                label: "宋体"
+                label: "宋体 · Song"
                 value: 'var(--stack-song)'
             -
-                label: "楷体"
+                label: "楷体 · Kai"
                 value: 'var(--stack-kai)'
             -
-                label: "仿宋"
+                label: "仿宋 · Fangsong"
                 value: 'var(--stack-fang)'
     -
         id: u-font-th-weight
         title: 表头字重
+        title.en: "Header Font Weight"
         type: variable-select
         default: initial
         options:
             -
-                label: "顺应场景"
+                label: "顺应场景 · Auto"
                 value: initial
             -
-                label: "细体 300"
+                label: "细体 300 · Light"
                 value: 300
             -
-                label: "常规 400"
+                label: "常规 400 · Regular"
                 value: 400
             -
-                label: "中等 500"
+                label: "中等 500 · Medium"
                 value: 500
             -
-                label: "半粗 600"
+                label: "半粗 600 · Semibold"
                 value: 600
             -
-                label: "粗体 700"
+                label: "粗体 700 · Bold"
                 value: 700
             -
-                label: "特粗 800"
+                label: "特粗 800 · Extra Bold"
                 value: 800
             -
-                label: "黑体 900"
+                label: "黑体 900 · Black"
                 value: 900
     - 
         id: h-group-navigation
         title: 导航栏
+        title.en: "Navigation"
         type: heading
         description: 针对文件夹，书签，搜索，链接，标签等导航栏的样式。
+        description.en: "Styles for folders, bookmarks, search, links, tags, and other navigation panels."
         level: 2
         collapsed: true
     - 
         id: cancel-nav-item-rotate
         title: 取消导航项悬停动效
+        title.en: "Disable Navigation Hover Motion"
         type: class-toggle
         default: false
         description: 关闭：导航项在悬停时会有旋转的动效。开启：取消悬停动效，回归默认静态样式。
+        description.en: "Off: navigation items rotate slightly on hover. On: remove the hover motion and return to a still, default style."
     - 
         id: cancel-nav-item-color
         title: 取消导航项强调色
+        title.en: "Disable Navigation Accent Color"
         type: class-toggle
         default: false
         description: 关闭：导航项使用主题强调色。开启：回归阴影颜色。
+        description.en: "Off: navigation items use the theme accent color. On: return to the shadow color."
 */
 @font-face {
   font-family: "SystemHei";
@@ -2444,6 +2551,66 @@ a:hover {
   padding-bottom: 0;
   margin-bottom: 0;
 }
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview],
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-stage-controls] {
+  display: none;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container {
+  --mk-fontpack-scene-art: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 108' xmlns='http://www.w3.org/2000/svg'%3E%0A%3Cpath fill='%237FAE65' d='M8 92h164L120 30 88 72 58 46z'/%3E%0A%3Cpath fill='%23557F50' d='M8 92h92L58 46z'/%3E%0A%3Cpath fill='%233E6844' d='M86 92h86l-52-62z'/%3E%0A%3Cpath fill='%23C9D79A' d='M110 42l10-12 10 12z'/%3E%0A%3Cpath fill='%2370BAD0' d='M101 43c-8 16-9 31-7 49h22c-2-18-1-33 9-49-8 3-16 3-24 0z'/%3E%0A%3Cpath fill='%23B8E5E7' d='M106 45c-3 15-3 30-1 47h7c-3-17-1-32 6-47-4 1-8 1-12 0z'/%3E%0A%3Cpath fill='%234F9FBA' d='M66 92c18-8 42-8 66 0z'/%3E%0A%3Ccircle fill='%23D8B45D' cx='42' cy='30' r='13'/%3E%0A%3C/svg%3E");
+  --mk-fontpack-scene-opacity: 0.82;
+  --mk-fontpack-scene-accent: hsl(
+    var(--res-ax0-h) var(--res-ax0-s) var(--res-ax0-l)
+  );
+  --mk-fontpack-scene-accent-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 108' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='%23000' cx='42' cy='30' r='13'/%3E%3C/svg%3E");
+  --mk-fontpack-scene-accent-opacity: 0.82;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 8px 12px;
+  padding-inline-end: max(12px, min(34%, 138px));
+  border: 1px dashed color-mix(in srgb, var(--background-modifier-border) 62%, transparent 38%);
+  border-left: 3px solid color-mix(in srgb, var(--mk-fontpack-scene-accent) 72%, transparent 28%);
+  border-radius: var(--radius-s);
+  background: var(--background-primary);
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container > .setting-item {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 2;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  width: clamp(88px, 28%, 148px);
+  aspect-ratio: 5/3;
+  opacity: var(--mk-fontpack-scene-accent-opacity);
+  background: var(--mk-fontpack-scene-accent);
+  mask: var(--mk-fontpack-scene-accent-mask) center/contain no-repeat;
+  -webkit-mask: var(--mk-fontpack-scene-accent-mask) center/contain no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+[data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  width: clamp(88px, 28%, 148px);
+  aspect-ratio: 5/3;
+  pointer-events: none;
+  opacity: var(--mk-fontpack-scene-opacity);
+  background: var(--mk-fontpack-scene-art) center/contain no-repeat;
+  z-index: 0;
+}
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id^=h-note-] {
   border: 1px dashed color-mix(in srgb, var(--background-modifier-border) 62%, transparent 38%);
   border-left: 3px solid color-mix(in srgb, var(--interactive-accent) 68%, transparent 32%);
@@ -2469,17 +2636,21 @@ a:hover {
   width: 100%;
   min-width: 100%;
   flex: 0 0 100%;
-  border-style: solid;
-  border-left-width: 4px;
-  border-left-color: var(--res-tx-sup);
-  border-color: color-mix(in srgb, var(--res-tx-sup) 45%, transparent 55%);
-  background: color-mix(in srgb, var(--background-primary-alt) 90%, transparent 10%);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+  position: relative;
+  z-index: 1;
 }
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] .setting-item-info,
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] .setting-item-info {
   display: flex;
   align-items: center;
   gap: 0.4em;
+  position: relative;
+  z-index: 1;
+  margin-top: 6px;
 }
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] .setting-item-info::before,
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall] .setting-item-info::before {
@@ -2501,6 +2672,10 @@ a:hover {
   font-size: calc(var(--font-text-size) * 0.85);
   color: var(--res-tx3);
 }
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo]::after,
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-hall]::after {
+  content: none;
+}
 [data-id=monkey-king-theme] + .style-settings-container .style-settings-container > .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] {
   width: 100%;
   min-width: 100%;
@@ -2511,20 +2686,70 @@ a:hover {
   font-weight: var(--res-font-theme-weight, 400);
   font-size: calc(var(--font-text-size) * 0.85);
   line-height: 1.45;
+  color: var(--res-tx2);
 }
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-name {
   font-family: var(--mkk-font-stack-headings);
   font-weight: var(--res-font-headings-weight, 700);
   font-size: calc(var(--font-text-size) * 1);
+  color: var(--res-tx1);
 }
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description strong {
   font-family: var(--mkk-font-stack-strong, var(--mkk-font-stack-theme));
   font-weight: var(--res-font-strong-weight, 700);
+  color: var(--res-tx-strong);
 }
 [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description em {
   font-family: var(--mkk-font-stack-em, var(--mkk-font-stack-theme));
   font-weight: var(--res-font-em-weight, 400);
+  color: var(--res-tx-sup);
   font-style: normal;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description a {
+  color: var(--res-tx-accent);
+  text-decoration-line: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: var(--link-decoration-thickness, 1px);
+  text-underline-offset: var(--mkk-link-underline-offset, 4px);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-description a:hover {
+  color: var(--interactive-accent);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: var(--mkk-link-decoration-thickness-hover, 2px);
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] {
+  position: relative;
+  min-height: 0;
+  margin-bottom: 0;
+}
+[data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-fontpack-quick] .setting-item-info {
+  position: relative;
+  z-index: 1;
+}
+
+body.theme-light.style-huaguo-mount [data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container {
+  --mk-fontpack-scene-art: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 108' xmlns='http://www.w3.org/2000/svg'%3E%0A%3Cpath fill='%237FAE65' d='M8 92h164L120 30 88 72 58 46z'/%3E%0A%3Cpath fill='%23557F50' d='M8 92h92L58 46z'/%3E%0A%3Cpath fill='%233E6844' d='M86 92h86l-52-62z'/%3E%0A%3Cpath fill='%23C9D79A' d='M110 42l10-12 10 12z'/%3E%0A%3Cpath fill='%2370BAD0' d='M101 43c-8 16-9 31-7 49h22c-2-18-1-33 9-49-8 3-16 3-24 0z'/%3E%0A%3Cpath fill='%23B8E5E7' d='M106 45c-3 15-3 30-1 47h7c-3-17-1-32 6-47-4 1-8 1-12 0z'/%3E%0A%3Cpath fill='%234F9FBA' d='M66 92c18-8 42-8 66 0z'/%3E%0A%3Ccircle fill='%23D8B45D' cx='42' cy='30' r='13'/%3E%0A%3C/svg%3E");
+  --mk-fontpack-scene-opacity: 0.76;
+}
+
+body.theme-dark.style-huaguo-mount [data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container {
+  --mk-fontpack-scene-art: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 108' xmlns='http://www.w3.org/2000/svg'%3E%0A%3Cpath fill='%2342654C' d='M8 92h164L120 30 88 72 58 46z'/%3E%0A%3Cpath fill='%23304E3E' d='M8 92h92L58 46z'/%3E%0A%3Cpath fill='%23243D35' d='M86 92h86l-52-62z'/%3E%0A%3Cpath fill='%23747A4B' d='M110 42l10-12 10 12z'/%3E%0A%3Cpath fill='%23347F91' d='M101 43c-8 16-9 31-7 49h22c-2-18-1-33 9-49-8 3-16 3-24 0z'/%3E%0A%3Cpath fill='%2370BBC4' d='M106 45c-3 15-3 30-1 47h7c-3-17-1-32 6-47-4 1-8 1-12 0z'/%3E%0A%3Cpath fill='%23246C83' d='M66 92c18-8 42-8 66 0z'/%3E%0A%3Cpath fill='%23887943' d='M48 18a13 13 0 1 0 0 24 8 13 0 1 1 0-24z'/%3E%0A%3C/svg%3E");
+  --mk-fontpack-scene-accent-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 108' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M48 18a13 13 0 1 0 0 24 8 13 0 1 1 0-24z'/%3E%3C/svg%3E");
+  --mk-fontpack-scene-opacity: 0.82;
+}
+
+body.theme-light.style-great-hall [data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container {
+  --mk-fontpack-scene-art: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'%3E%0A%3Cpath fill='%23D8CAB0' d='M34 88h132v8H34z'/%3E%0A%3Cpath fill='%23BBAE97' d='M24 96h152v8H24z'/%3E%0A%3Cpath fill='%239D8E78' d='M14 104h172v8H14z'/%3E%0A%3Cpath fill='%2391413A' d='M44 62h112v26H44z'/%3E%0A%3Cpath fill='%23AE4B3E' d='M58 58h84v30H58z'/%3E%0A%3Cpath fill='%23653B35' d='M60 64h10v24H60zm18 0h10v24H78zm18 0h10v24H96zm18 0h10v24h-10zm18 0h10v24h-10z'/%3E%0A%3Cpath fill='%23D8B45A' d='M60 24h80l18 16H42z'/%3E%0A%3Cpath fill='%238A5B35' d='M42 40h116l-16 7H58z'/%3E%0A%3Cpath fill='%23C9933F' d='M34 42h132l18 14H16z'/%3E%0A%3Cpath fill='%236F4437' d='M30 56h140v6H30z'/%3E%0A%3Cpath fill='%236F4437' d='M92 44h16v22H92z'/%3E%0A%3Cpath fill='%23C8B079' d='M96 48h8v14h-8z'/%3E%0A%3C/svg%3E");
+  --mk-fontpack-scene-accent-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M92 44h16v22H92z'/%3E%3C/svg%3E");
+  --mk-fontpack-scene-accent-opacity: 0.86;
+  --mk-fontpack-scene-opacity: 0.76;
+}
+
+body.theme-dark.style-great-hall [data-id=monkey-king-theme] + .style-settings-container .style-settings-heading[data-id=h-group-fontpack-preview] + .style-settings-container {
+  --mk-fontpack-scene-art: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'%3E%0A%3Cpath fill='%23736B5D' d='M34 88h132v8H34z'/%3E%0A%3Cpath fill='%235A5349' d='M24 96h152v8H24z'/%3E%0A%3Cpath fill='%23463F38' d='M14 104h172v8H14z'/%3E%0A%3Cpath fill='%236F3430' d='M44 62h112v26H44z'/%3E%0A%3Cpath fill='%23893B34' d='M58 58h84v30H58z'/%3E%0A%3Cpath fill='%233D2A28' d='M60 64h10v24H60zm18 0h10v24H78zm18 0h10v24H96zm18 0h10v24h-10zm18 0h10v24h-10z'/%3E%0A%3Cpath fill='%23B89445' d='M60 24h80l18 16H42z'/%3E%0A%3Cpath fill='%23624732' d='M42 40h116l-16 7H58z'/%3E%0A%3Cpath fill='%239F7A34' d='M34 42h132l18 14H16z'/%3E%0A%3Cpath fill='%234A332E' d='M30 56h140v6H30z'/%3E%0A%3Cpath fill='%234A332E' d='M92 44h16v22H92z'/%3E%0A%3Cpath fill='%239C844E' d='M96 48h8v14h-8z'/%3E%0A%3C/svg%3E");
+  --mk-fontpack-scene-accent-mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M92 44h16v22H92z'/%3E%3C/svg%3E");
+  --mk-fontpack-scene-accent-opacity: 0.9;
+  --mk-fontpack-scene-opacity: 0.84;
 }
 
 body.style-huaguo-mount [data-id=monkey-king-theme] + .style-settings-container .setting-item.style-settings-info-text[data-id=h-note-mode-huaguo] {

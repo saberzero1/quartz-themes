@@ -43,6 +43,11 @@
     --text-muted: var(--muted);
     --text-accent: var(--love);
     --text-accent-hover: var(--foam);
+    --link-color: var(--foam);
+    --link-color-hover: var(--rose);
+    --link-external-color: var(--iris);
+    --link-external-color-hover: var(--rose);
+    --link-unresolved-color: var(--gold);
     --tag-color: var(--iris);
     --tag-background: var(--overlay);
     --h1-color: var(--love);
@@ -69,6 +74,11 @@
     --text-muted: var(--light-muted);
     --text-accent: var(--light-love);
     --text-accent-hover: var(--light-foam);
+    --link-color: var(--light-foam);
+    --link-color-hover: var(--light-rose);
+    --link-external-color: var(--light-iris);
+    --link-external-color-hover: var(--light-rose);
+    --link-unresolved-color: var(--light-gold);
     --tag-color: var(--light-iris);
     --tag-background: var(--light-overlay);
     --h1-color: var(--light-love);

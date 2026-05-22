@@ -528,6 +528,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  compline: {
+    name: "compline",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   composer: {
     name: "composer",
     modes: ["dark", "light"],
@@ -3107,6 +3113,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "standard-plus": {
     name: "standard-plus",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "starlit-abyss": {
+    name: "starlit-abyss",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],

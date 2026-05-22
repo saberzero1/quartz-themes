@@ -2,14 +2,14 @@
   font-family: "Courgette";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/listive/courgette.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/listive/courgette.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Karla";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/listive/karla.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/listive/karla.woff2")
     format("woff2");
 }
 body.theme-light {

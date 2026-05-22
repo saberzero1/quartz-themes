@@ -2360,6 +2360,13 @@
       "--background-primary-alt"
     ]
   },
+  "--mk-fontpack-scene-accent": {
+    "[data-id=\"monkey-king-theme\"] + .style-settings-container .style-settings-heading[data-id=\"h-group-fontpack-preview\"] + .style-settings-container": [
+      "--res-ax0-h",
+      "--res-ax0-s",
+      "--res-ax0-l"
+    ]
+  },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },
   "--ec-brdCol": { ".expressive-code": ["--shiki-code-block-border-color"] },

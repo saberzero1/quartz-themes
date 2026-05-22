@@ -39,6 +39,7 @@ body {
 	--i-pattern-line-width: 1px;
 	--i-pattern-lt-l: 3%;
 	--i-pattern-width: 10px;
+	--i-scrollbar-radius: 6px;
 	--i-scrollbar-thumb-size: 4px;
 	--i-scrollbar-track-size: 9px;
 	--i-spacing-below-headings: 0.3rem;
@@ -380,6 +381,7 @@ body:not(.i-default-layout, .is-mobile) {
 }
 
 .i-border-layout:not(.is-mobile) {
+	--i-window-controls-position: -17px 17px;
 	--ribbon-background: var(--background-primary);
 	--titlebar-background: var(--background-primary);
 	--traffic-lights-offset-x: 58px;
@@ -428,6 +430,7 @@ body:not(.i-default-layout, .is-mobile) {
 
 /* Card layout */
 body:not(.i-border-layout, .i-default-layout, .is-mobile) {
+	--i-window-controls-position: -16px 16px;
 	--ribbon-background: var(--i-layout-color);
 	--ribbon-padding: 8px 0 12px;
 	--titlebar-background: var(--i-0);
@@ -551,6 +554,7 @@ body:not(.i-border-layout, .i-default-layout, .is-mobile) {
 
 /* Default layout */
 .i-default-layout:not(.is-mobile) {
+	--i-window-controls-position: -8px 8px;
 	--titlebar-background: var(--i-2);
 }
 
@@ -687,32 +691,35 @@ button:is(.mod-cta, .mod-warning) {
 
 /* Scrollbars */
 .i-scrollbar:not(.i-scrollbar-phone-off.is-phone) {
+	--scrollbar-active-thumb-bg: var(--i-scrollbar-color-active);
+	--scrollbar-border-width: calc((var(--i-scrollbar-track-size) - var(--i-scrollbar-thumb-size)) / 2);
+	--scrollbar-height: var(--i-scrollbar-track-size);
+	--scrollbar-radius: var(--i-scrollbar-radius);
+	--scrollbar-thumb-bg: var(--i-scrollbar-color);
+	--scrollbar-width: var(--i-scrollbar-track-size);
+
 	::-webkit-scrollbar {
-		width: var(--i-scrollbar-track-size) !important;
-		height: var(--i-scrollbar-track-size) !important;
-		border-radius: 0 !important;
+		width: var(--i-scrollbar-track-size);
+		height: var(--i-scrollbar-track-size);
+		border-radius: 0;
 	}
 
 	::-webkit-scrollbar-thumb {
 		min-width: 45px;
 		min-height: 45px;
+		background-color: var(--i-scrollbar-color);
 		background-clip: padding-box;
-		border: calc((var(--i-scrollbar-track-size) - var(--i-scrollbar-thumb-size)) / 2) solid transparent !important;
-		border-radius: 6px !important;
+		border: calc((var(--i-scrollbar-track-size) - var(--i-scrollbar-thumb-size)) / 2) solid transparent;
+		border-radius: var(--i-scrollbar-radius);
 	}
 
-	&:is(.styled-scrollbars, :not(.native-scrollbars)) ::-webkit-scrollbar-thumb,
+	&:not(.is-mobile, .i-scrollbar-show) :not(:hover) ::-webkit-scrollbar-thumb,
 	::-webkit-scrollbar-corner {
 		background-color: transparent;
 	}
 
-	&.i-scrollbar-square ::-webkit-scrollbar-thumb {
-		border-radius: 0 !important;
-	}
-
-	&:not(.i-scrollbar-show) :hover::-webkit-scrollbar-thumb,
-	&:is(.i-scrollbar-show, .is-mobile) ::-webkit-scrollbar-thumb {
-		background-color: var(--i-scrollbar-color);
+	&.i-scrollbar-square {
+		--i-scrollbar-radius: 0;
 	}
 
 	&.i-scrollbar-hide ::-webkit-scrollbar,
@@ -723,7 +730,7 @@ button:is(.mod-cta, .mod-warning) {
 
 .i-scrollbar:not(.i-scrollbar-phone-off.is-phone) ::-webkit-scrollbar-thumb:hover,
 .i-scrollbar:not(.i-scrollbar-phone-off.is-phone) ::-webkit-scrollbar-thumb:active {
-	background-color: var(--i-scrollbar-color-active) !important;
+	background-color: var(--i-scrollbar-color-active);
 }
 
 
@@ -1075,59 +1082,34 @@ body:not(.is-mobile) input[type=range]:focus-visible::-webkit-slider-thumb {
 
 
 
-/* Window control buttons */
-:is(.mod-windows, .mod-linux).is-hidden-frameless:not(.i-focus-mode-main.i-focus-mode) {
-	--frame-right-space: 81px;
-
+/* Window controls */
+.is-hidden-frameless {
 	.titlebar-button-container.mod-right {
-		top: 7px;
-		right: 7px;
-		height: 26px;
-		overflow: hidden;
-		border: 1px solid var(--background-modifier-border);
-		border-radius: 5px;
+		height: 24px;
+
+		.titlebar-button {
+			padding-inline: 6px;
+			color: var(--text-normal);
+
+			&:hover {
+				background-color: var(--background-modifier-hover);
+			}
+		}
 	}
 
-	&:not(.i-border-layout, .i-default-layout) .titlebar-button-container.mod-right {
-		border: 1px solid var(--i-card-layout-border);
-	}
+	&:not(.i-focus-mode-main.i-focus-mode) .titlebar-button-container.mod-right {
+		gap: 3px;
+		translate: var(--i-window-controls-position);
 
-	&.is-focused .titlebar-button-container.mod-right {
-		background-color: var(--background-primary);
-	}
-
-	.titlebar-button {
-		padding: 0 6px;
-	}
-
-	.workspace-tabs.mod-top-right-space .workspace-tab-header-container::after {
-		top: 7px;
-		right: 7px;
-		width: 74px;
-		height: 26px;
-	}
-
-	&:not(.i-default-layout) .titlebar-button-container.mod-right {
-		top: 16px;
-		right: 16px;
-		height: 25px;
-	}
-
-	&:not(.i-default-layout) .workspace-tabs.mod-top-right-space .workspace-tab-header-container::after {
-		height: 25px;
-	}
-
-	&.is-focused:not(.i-border-layout, .i-default-layout) .titlebar-button-container.mod-right {
-		background-color: var(--i-3);
-	}
-
-	&:not(.i-border-layout, .i-default-layout) .titlebar-button:not(.mod-close):hover {
-		background-color: var(--background-primary);
+		.titlebar-button {
+			border-radius: 24px;
+		}
 	}
 }
 
-.theme-dark:is(.mod-windows, .mod-linux):not(.is-hidden-frameless:not(.i-focus-mode-main.i-focus-mode)):not(.i-default-layout) .titlebar-button:not(.mod-close):hover {
-	background-color: var(--i-2);
+.mod-windows,
+.mod-linux {
+	--frame-right-space: 84px;
 }
 
 
@@ -1395,10 +1377,21 @@ body:not(.i-alternate-checkboxes-off) {
 		}
 	}
 
-	[data-task='7'] {--checkbox-color: var(--color-red);}
-	[data-task='8'] {--checkbox-color: var(--color-orange);}
-	[data-task='9'] {--checkbox-color: var(--color-yellow);}
-	[data-task='0'] {--checkbox-color: var(--color-green);}
+	[data-task='7'] {
+		--checkbox-color: var(--color-red);
+	}
+
+	[data-task='8'] {
+		--checkbox-color: var(--color-orange);
+	}
+
+	[data-task='9'] {
+		--checkbox-color: var(--color-yellow);
+	}
+
+	[data-task='0'] {
+		--checkbox-color: var(--color-green);
+	}
 
 	[data-task='-'],
 	[data-task='>'],
@@ -2815,12 +2808,29 @@ body:not(.i-style-settings-off) {
 	.style-settings-heading {
 		border-bottom: 0;
 
-		&[data-level='1'] .setting-item-name {color: var(--i-style-settings-h1-color);}
-		&[data-level='2'] .setting-item-name {color: var(--i-style-settings-h2-color);}
-		&[data-level='3'] .setting-item-name {color: var(--i-style-settings-h3-color);}
-		&[data-level='4'] .setting-item-name {color: var(--i-style-settings-h4-color);}
-		&[data-level='5'] .setting-item-name {color: var(--i-style-settings-h5-color);}
-		&[data-level='6'] .setting-item-name {color: var(--i-style-settings-h6-color);}
+		&[data-level='1'] .setting-item-name {
+			color: var(--i-style-settings-h1-color);
+		}
+
+		&[data-level='2'] .setting-item-name {
+			color: var(--i-style-settings-h2-color);
+		}
+
+		&[data-level='3'] .setting-item-name {
+			color: var(--i-style-settings-h3-color);
+		}
+
+		&[data-level='4'] .setting-item-name {
+			color: var(--i-style-settings-h4-color);
+		}
+
+		&[data-level='5'] .setting-item-name {
+			color: var(--i-style-settings-h5-color);
+		}
+
+		&[data-level='6'] .setting-item-name {
+			color: var(--i-style-settings-h6-color);
+		}
 	}
 
 	.setting-item + div > .style-settings-heading,
@@ -3316,7 +3326,7 @@ settings:
 		collapsed: true
 	-
 		id: layout-desktop-only
-		title: Layout (desktop only)
+		title: Layout
 		type: class-select
 		default: none
 		options:
@@ -5714,7 +5724,7 @@ settings:
 		collapsed: true
 	-
 		id: i-bases-hide-tab-titlebar
-		title: Hide tab titlebar (desktop only)
+		title: Hide tab titlebar
 		type: class-toggle
 	-
 		id: i-bases-hide-table-header-icons

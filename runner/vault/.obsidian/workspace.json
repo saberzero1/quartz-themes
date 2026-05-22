@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-embeds/frontmatter.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "frontmatter"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -148,13 +148,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-embeds/frontmatter.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of frontmatter"
+              "title": "Outline of syntax-samples"
             }
           }
         ],
@@ -194,33 +194,32 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-embeds/note-embeds.md",
-    "theme-bases/bases-table.md",
-    "theme-bases/bases-list.md",
     "theme-bases/bases-cards.md",
-    "backlinks.md",
-    "callouts.md",
-    "embeds.md",
-    "general.md",
-    "specimen.md",
-    "media.md",
-    "index.md",
-    "theme-code/syntax-samples.md",
+    "theme-bases/bases-list.md",
+    "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
     "theme-embeds/tooltips.md",
+    "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
+    "backlinks.md",
+    "embeds.md",
+    "media.md",
     "tables.md",
     "integrations.md",
+    "callouts.md",
     "headings.md",
+    "general.md",
+    "specimen.md",
+    "index.md",
     "theme-callouts/brutalist.md",
     "theme-extras/its-theme/callouts/statblocks.md",
     "theme-extras/its-theme/checkboxes.md",
     "theme-extras/its-theme/callouts/infoboxes.md",
-    "theme-callouts/velocity.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

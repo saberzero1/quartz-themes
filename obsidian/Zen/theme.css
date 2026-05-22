@@ -516,10 +516,6 @@ body:not(.is-phone) .status-bar {
 
 .is-translucent .workspace-split.mod-root {
 	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 10%, rgb(from var(--glass-bg-color) r g b / 0.5)) !important;
-	/* background-color: var(--glass-bg-color) !important; */
-	/* backdrop-filter: blur(15px) saturate(180%);
-	box-shadow: 0 15px 20px var(--shadow-color);
-	border: 0.05px solid var(--divider-color); */
 }
 
 .tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,
@@ -558,7 +554,7 @@ body:not(.is-mobile) .workspace-tabs.mod-top.mod-top-right-space .workspace-tab-
 }
 
 body:not(.is-mobile) hr.workspace-leaf-resize-handle {
-	opacity: 0 !important;
+	opacity: 0;
 }
 
 
@@ -605,7 +601,7 @@ button:not(.clickable-icon) {
 
 /* 堆叠模式时，隐藏顶部栏 */
 .is-translucent:not(.is-fullscreen) .mod-root .mod-top.mod-stacked .workspace-tab-header-container {
-	background-color: transparent !important;
+	background-color: transparent;
 }
 
 .is-translucent:not(.is-fullscreen) .mod-root .mod-top.mod-stacked .markdown-source-view.mod-cm6 .cm-editor {
@@ -613,9 +609,6 @@ button:not(.clickable-icon) {
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container {
-	/* background: rgba(255, 255, 255, 0.2);
-	backdrop-filter: blur(15px) saturate(180%);
-	-webkit-backdrop-filter: blur(15px) saturate(180%); */
 
 	/* Webkit浏览器的滚动条自定义 */
 	&::-webkit-scrollbar {
@@ -656,7 +649,7 @@ button:not(.clickable-icon) {
 
 /* 移除顶部的下分界线 */
 .mod-top-left-space .workspace-tab-header-container {
-	border-bottom: none !important;
+	border-bottom: none;
 }
 
 .workspace-tab-header-container {
@@ -666,7 +659,7 @@ button:not(.clickable-icon) {
 
 /* 移除设置的分界线 */
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-	border-top: unset !important;
+	border-top: unset;
 }
 
 /* 移除最小划按钮的下分界线 */
@@ -720,13 +713,10 @@ body:not(.is-mobile) .workspace-ribbon.mod-left {
 	height: calc(100% - 10px);
 	align-self: center;
 	padding-top: 30px;
-	/* background: var(--mac-sidebar-panel-bg); */
 	border: 1px solid var(--mac-sidebar-border);
 	border-right: 0;
 	border-radius: var(--mac-sidebar-radius) 0 0 var(--mac-sidebar-radius);
 	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-	/* backdrop-filter: blur(24px) saturate(150%);
-	-webkit-backdrop-filter: blur(24px) saturate(150%); */
 }
 
 body:not(.is-mobile) .workspace-ribbon.mod-left:before {
@@ -741,8 +731,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split {
 	border-left: 0px solid var(--mac-sidebar-divider);
 	border-radius: 0 20px 20px 0;
 	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-	/* backdrop-filter: blur(24px) saturate(150%);
-	-webkit-backdrop-filter: blur(24px) saturate(150%); */
 }
 
 
@@ -760,10 +748,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs .workspace-
 	border-left: 1px solid var(--nav-indentation-guide-color);
 }
 
-body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs .workspace-leaf-content,
-body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs .workspace-tab-header-container {
-	/* background-color: var(--background-primary) !important; */
-}
 
 
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs,
@@ -774,13 +758,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .nav-files-container {
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-header {
-	/* justify-content: flex-start; */
 	padding: 10px 12px 12px;
-}
-
-body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container,
-body:not(.is-mobile) .workspace-split.mod-left-split .nav-header .nav-action-button {
-	/* display: none; */
 }
 
 body:not(.is-mobile) .workspace-split.mod-left-split .nav-buttons-container {
@@ -840,7 +818,7 @@ body.is-tablet .nav-file-title {
 .tree-item-inner.nav-file-title-content,
 .workspace .mod-root .workspace-tab-header-inner-title,
 .tree-item-inner-text {
-	font-size: calc(var(--window-font-size) * 1px) !important;
+	font-size: calc(var(--window-font-size) * 1px);
 	color: var(--tree-item-color);
 }
 
@@ -856,11 +834,11 @@ body.is-tablet .nav-file-title {
  */
 
 .tree-item:not(.nav-folder) .collapse-icon {
-	padding-top: 0 !important;
+	padding-top: 0;
 }
 
 .fn-whitespace-stop-collapsing .collapse-icon {
-	padding-top: 0px !important;
+	padding-top: 0px;
 }
 
 .novel-word-count--active .nav-files-container .nav-folder-title {
@@ -885,7 +863,7 @@ body.is-tablet .nav-file-title {
 	content: "•";
 	padding-right: 5px;
 	color: var(--nav-collapse-icon-color);
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 	font-size: 10px;
 }
 
@@ -948,9 +926,8 @@ body.is-tablet .nav-file-title {
 	width: 8px;
 	text-align: center;
 	display: inline-block;
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 }
-
 
 /* 目录折叠按钮填充为实体按钮 */
 .nn-navitem-chevron svg.svg-icon,
@@ -1052,18 +1029,18 @@ body:not(.heading-bottom-line-off) .inline-title:not(:empty):not(:has(h1)):not(:
 
 /* 分割线样式 */
 hr {
-	border-width: 0.8px !important;
+	border-width: 0.8px;
 }
 
 .cm-line hr {
-	margin-bottom: 15px !important;
+	margin-bottom: 15px;
 }
 
 
 /* 调整内部嵌入块的对齐 */
 .markdown-source-view.mod-cm6 .internal-embed:not(.image-embed),
 .markdown-preview-view .markdown-embed:not(.image-embed) {
-	margin-left: 3px !important;
+	margin-left: 3px;
 	border-left: solid 0.5px var(--blockquote-border-color);
 }
 
@@ -1071,13 +1048,6 @@ hr {
 	border-bottom: solid 0.5px var(--blockquote-border-color);
 	color: var(--text-accent);
 	font-weight: bold;
-}
-
-/* 
-* 大纲栏样式 
-*/
-.workspace-leaf-content[data-type='out-line'] .node-insert-event .tree-item .tree-item-self>.tree-item-inner::before {
-	content: "&";
 }
 
 /* callout style */
@@ -1102,7 +1072,6 @@ hr {
 .cm-s-obsidian .HyperMD-header {
 	padding-inline-start: 0 !important;
 	padding-top: 5px !important;
-	/* padding-bottom: 5px !important; */
 }
 
 body:not(.heading-bottom-line-off) .cm-s-obsidian .HyperMD-header {
@@ -1110,7 +1079,6 @@ body:not(.heading-bottom-line-off) .cm-s-obsidian .HyperMD-header {
 }
 
 .cm-s-obsidian .cm-line.HyperMD-header {
-	/* margin-bottom: 10px !important; */
 	padding-bottom: 0;
 }
 
@@ -1249,7 +1217,6 @@ body:not(.alt-heading-off) .HyperMD-header-6:before {
 
 /* 设置左侧目录折叠箭头,往下移，与标题对齐 */
 .tree-item-self .tree-item-icon {
-	/* margin-top: -4px; */
 	display: flex;
 	align-items: center;
 }
@@ -1349,7 +1316,7 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 	width: var(--editor-list-ol-width);
 	text-align: right;
 	font-size: var(--editor-list-ol-font-size);
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 	padding-right: var(--editor-list-ol-padding-right);
 }
 
@@ -1362,7 +1329,7 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 
 .list-bullet {
 	margin-left: 0.9px;
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 	font-size: 12px;
 }
 
@@ -1392,7 +1359,7 @@ span.cm-formatting.cm-formatting-list.cm-formatting-list-ol {
 	display: inline-block;
 	width: var(--editor-list-ul-width);
 	text-align: center;
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 	transform: translateY(var(--editor-list-ul-translate-y));
 }
 
@@ -1471,7 +1438,7 @@ body.is-mobile .tree-item-self {
 ol>li::marker,
 ul>li::marker {
 	font-size: 20px;
-	font-family: 'number-font' !important;
+	font-family: 'number-font';
 	text-align: right;
 }
 
@@ -1502,7 +1469,7 @@ ul>li::marker {
 }
 
 .markdown-rendered.show-indentation-guide ul>li>ul::before {
-	margin-left: 4px !important;
+	margin-left: 4px;
 }
 
 .markdown-rendered ul.contains-task-list {
@@ -1582,7 +1549,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hm
 
 body.is-mobile .cm-s-obsidian span.cm-inline-code {
 	background-color: rgb(115 112 112 / 15%);
-	padding: 4px 6px !important;
+	padding: 4px 6px;
 }
 
 .is-mobile .workspace-drawer .nav-buttons-container {
@@ -1616,7 +1583,6 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 .is-mobile .view-header-nav-buttons,
 .is-mobile .view-header .view-action {
 	--icon-size: var(--icon-m);
-	/* --icon-l-stroke-width: 1.5px; */
 }
 
 /* 调整有序列表的缩进线 */
@@ -1625,7 +1591,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ul>li>ol {
-	margin-left: 5px !important;
+	margin-left: 5px;
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ul::before {
@@ -1637,7 +1603,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 }
 
 .is-mobile .markdown-rendered.show-indentation-guide ol>li>ul::before {
-	margin-left: -7px !important;
+	margin-left: -7px;
 }
 
 .is-mobile .search-input-container {
@@ -1667,7 +1633,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 
 .is-mobile .workspace-drawer-header-info {
 	font-size: 10px;
-	margin-top: 0px !important;
+	margin-top: 0px;
 }
 
 /* 内联标签样式 */
@@ -1675,7 +1641,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 	background-color: var(--text-accent);
 	color: white;
 	display: inline-block;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 
 .CodeMirror-line span.cm-hashtag-begin {
@@ -1782,7 +1748,7 @@ body.is-mobile .cm-s-obsidian span.cm-inline-code {
 
 /* 移除表格前面的空行  */
 .cm-line[dir="ltr"]:has(+ .cm-table-widget) {
-	display: none !important;
+	display: none;
 }
 
 .markdown-rendered table,
@@ -2033,16 +1999,25 @@ body:not(.is-mobile).is-translucent .view-header {
 .is-translucent .workspace-tabs.mod-stacked .markdown-source-view.cm-s-obsidian.mod-cm6.node-insert-event.is-readable-line-width.is-live-preview.is-folding,
 .is-translucent .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-leaf {
 	background-color: var(--background-primary) !important;
-	/* backdrop-filter: blur(25px) saturate(180%); */
-	/* -webkit-backdrop-filter: blur(25px) saturate(180%); */
 }
 
-.is-translucent .workspace-tabs.mod-stacked.mod-top.mod-active {
+.is-translucent .workspace .mod-root .workspace-tabs.mod-stacked.mod-top {
 	background-color: var(--background-primary) !important;
+
+	height: calc(100% - 20px) !important;
 	border-radius: var(--radius-xxl);
-	/* margin: 10px; */
-	/* overflow: hidden; */
+	overflow: hidden;
 }
+
+.is-translucent .workspace-split.mod-vertical.mod-root:has(.mod-stacked) {
+	padding: 5px;
+}
+
+.is-translucent .workspace .mod-root:has(.mod-stacked) .workspace-split.mod-horizontal.mod-sidedock.mod-right-split
+{
+	border-left: none;
+}
+
 
 .is-translucent .workspace-split.mod-root .workspace-tabs .view-content {
 	background-color: var(--editor-bg-color);
@@ -2126,7 +2101,6 @@ body.theme-dark button:not(.clickable-icon),
 body:not(.is-mobile).theme-dark input.prompt-input,
 body:not(.is-mobile).theme-dark .suggestion-item.is-selected {
 	border: 1px solid rgba(255, 255, 255, 0.15);
-	/* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
 }
 
 body:not(.is-mobile) input.prompt-input {
@@ -2236,8 +2210,6 @@ body:not(.is-mobile) .prompt-input-container {
 .dataview.table-view-table {
 	overflow: hidden;
 	border: dashed 0.5px var(--block-border-color);
-	/* border-radius: 10px; */
-
 }
 
 .dataview.table-view-table tr {
@@ -2463,8 +2435,6 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split 
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-container {
 	background: var(--editor-bg-color) !important;
-	/* backdrop-filter: blur(15px) saturate(180%); */
-	/* -webkit-backdrop-filter: blur(15px) saturate(180%); */
 }
 
 .workspace-ribbon.mod-left:before {
@@ -2472,7 +2442,6 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-tab-co
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-vertical.mod-root {
-	/* background: var(--win-editor-bg-color) !important; */
 	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 10%, rgb(from var(--glass-bg-color) r g b / 0.7)) !important;
 }
 
@@ -2481,7 +2450,6 @@ body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon
 }
 
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace,
-/* body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-split.mod-horizontal, */
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-leaf,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .workspace-ribbon,
 body:not(.win-translucent-off):not(.mod-macos):not(.is-mobile) .sidebar-toggle-button.mod-left,
@@ -2589,7 +2557,6 @@ body:not(.is-mobile):not(.close-left-vault-profile) .workspace-split.mod-left-sp
 	flex-direction: column;
 	gap: 15px;
 	z-index: 999;
-	/* transform: translate(0, -10px); */
 	position: absolute;
 	left: calc(var(--ribbon-width) * -1);
 	bottom: 8px;
@@ -2750,17 +2717,6 @@ body .quiet-outline .n-tree-node-wrapper {
 	backdrop-filter: blur(15px);
 }
 
-body:not(.is-translucent) .workspace-ribbon.mod-left:before,
-body:not(.is-translucent) .workspace-ribbon.mod-left,
-body:not(.is-translucent) .workspace-tabs .workspace-leaf,
-body:not(.is-translucent) .workspace-leaf .view-content,
-body:not(.is-translucent) .workspace-split.mod-right-split .workspace-tabs,
-body:not(.is-translucent) .workspace-tab-container,
-body:not(.is-translucent) .workspace-tab-header-container,
-body:not(.is-translucent) .workspace-sidedock-vault-profile {
-	/* background-color: var(--background-primary) !important; */
-}
-
 body:not(.is-translucent) .workspace-tabs.mod-top .workspace-tab-container .workspace-leaf .workspace-leaf-content .view-header {
 	background-color: transparent !important;
 }
@@ -2797,10 +2753,7 @@ body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 .mod-right-split .workspace-tab-header.has-active-menu,
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-	/* border: none;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-	background-color: rgba(255, 255, 255, 0.15);
-	border-radius: 25px; */
+
 }
 
 .n-tree-node.located p {
@@ -2814,12 +2767,12 @@ body:not(.is-mobile) .mod-root .workspace-tab-header-container-inner {
 /* properties style */
 .metadata-property-value .metadata-input-text,
 .multi-select-pill {
-	font-size: calc(var(--window-font-size) * 0.92px) !important;
+	font-size: calc(var(--window-font-size) * 0.92px);
 }
 
 main.git-view .tree-item-inner.nav-folder-title-content,
 main.git-view .tree-item-inner.nav-file-title-content {
-	font-size: calc(var(--window-font-size) * 1px) !important;
+	font-size: calc(var(--window-font-size) * 1px);
 }
 
 .bases-cards-property {
@@ -2848,16 +2801,11 @@ main.git-view .tree-item-inner.nav-file-title-content {
 }
 
 .is-tablet.theme-dark {
-	/* --mobile-sidebar-background: rgb(48, 48, 48);
-	--background-secondary: rgb(40, 40, 40); */
-	/* --editor-bg-color: #1c1c1c; */
 	--background-setting: rgba(34, 34, 34, 1);
 	--setting-items-background: rgba(48, 48, 48, 0.35);
 }
 
 .is-tablet.theme-light {
-	/* --mobile-sidebar-background: rgb(248, 248, 248);
-	--background-secondary: rgb(255, 255, 255); */
 	--background-setting: rgba(245, 245, 245, 1);
 
 }
@@ -2869,7 +2817,6 @@ main.git-view .tree-item-inner.nav-file-title-content {
 .is-tablet .workspace .workspace-drawer .nav-files-container.node-insert-event,
 .is-tablet .workspace-drawer-tab-container .workspace-drawer-active-tab-content .workspace-leaf-content .view-content.node-insert-event,
 .is-tablet .workspace .workspace-drawer .view-content.node-insert-event {
-	/* background-color: var(--mobile-sidebar-background) !important; */
 	overflow-x: hidden !important;
 }
 
@@ -2887,10 +2834,7 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	overflow-x: hidden !important;
 }
 
-.is-tablet .workspace .workspace-drawer .side-dock-settings {
-	/* display: none; */
-	/* background-color: red; */
-}
+
 
 .is-tablet .workspace-drawer-ribbon .side-dock-actions {
 	padding-top: var(--safe-area-inset-top);
@@ -2907,20 +2851,13 @@ main.git-view .tree-item-inner.nav-file-title-content {
 	background-color: rgb(from var(--glass-bg-color) r g b / 0.5) !important;
 }
 
-.is-tablet .workspace-drawer.mod-left .workspace-drawer-inner .workspace-drawer-tab-container {
-	/* border-left: solid 1px var(--indentation-guide-color); */
-	/* box-shadow: 1px 0px 1px var(--card-border-color); */
-}
-
 .is-tablet .workspace .workspace-drawer.mod-left {
 	box-shadow: 1px 0px 1px var(--card-border-color);
-	/* border-right: 0.1px solid var(--background-modifier-border); */
 	border: 0;
 }
 
 .is-tablet .workspace .workspace-drawer.mod-right {
 	box-shadow: -1px 0px 1px var(--card-border-color);
-	/* border-left: 0.1px solid var(--background-modifier-border); */
 	border: 0;
 }
 
@@ -2953,7 +2890,6 @@ main.git-view .tree-item-inner.nav-file-title-content {
 .is-tablet .list-bullet {
 	font-size: 10px;
 	margin-left: 0px;
-	/* padding-right: 1px; */
 	transform: translateY(-2px);
 }
 
@@ -3059,7 +2995,6 @@ body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .si
 	padding: 8px 8px;
 }
 
-/* body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .sidebar-toggle-button:hover, */
 :not(.is-mobile) .workspace-tab-header-container .workspace-tab-header.is-active:hover {
 	border-radius: var(--radius-xxl) !important;
 	background-color: var(--background-modifier-hover) !important;
@@ -3136,13 +3071,10 @@ body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .si
 }
 
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .selected-day.has-note:after {
-	/* border-bottom: 5px solid var(--text-accent); */
 	content: none;
-
 }
 
 .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
-	/* border-bottom: 5px solid var(--text-faint); */
 	content: none;
 }
 
@@ -3159,11 +3091,6 @@ body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .si
 	display: none;
 }
 
-/* .workspace-leaf-content[data-type="daily-note-calendar"] .dnc .has-note:after {
-	width: 5px;
-	border-radius: 5px;
-} */
-
 .workspace-leaf-content[data-type="daily-note-calendar"] thead>tr>th,
 .workspace-leaf-content[data-type="daily-note-calendar"] tbody>tr>td,
 .workspace-leaf-content[data-type="daily-note-calendar"] .table-cell-wrapper {
@@ -3176,10 +3103,7 @@ body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .si
 	padding-bottom: 0 !important;
 }
 
-.workspace-tabs .workspace-leaf:has([data-type="daily-note-calendar"]) {
-	/* padding-top: 20px;
-	background-color: red; */
-}
+
 
 .omnisearch-input-field {
 	width: 100%;

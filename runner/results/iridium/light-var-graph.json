@@ -1577,10 +1577,39 @@
   },
   "--ribbon-width": { ".is-mobile": ["--touch-size-xl"] },
   "--ribbon-padding": { "body": ["--size-4-2", "--size-4-1", "--size-4-3"] },
-  "--scrollbar-radius": { "body": ["--radius-l"] },
-  "--scrollbar-active-thumb-bg": { "body": ["--mono-rgb-100"] },
+  "--scrollbar-width": {
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": [
+      "--i-scrollbar-track-size"
+    ]
+  },
+  "--scrollbar-height": {
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": [
+      "--i-scrollbar-track-size"
+    ]
+  },
+  "--scrollbar-border-width": {
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": [
+      "--i-scrollbar-track-size",
+      "--i-scrollbar-thumb-size"
+    ]
+  },
+  "--scrollbar-radius": {
+    "body": ["--radius-l"],
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": [
+      "--i-scrollbar-radius"
+    ]
+  },
+  "--scrollbar-active-thumb-bg": {
+    "body": ["--mono-rgb-100"],
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": [
+      "--i-scrollbar-color-active"
+    ]
+  },
   "--scrollbar-bg": { "body": ["--mono-rgb-100"] },
-  "--scrollbar-thumb-bg": { "body": ["--mono-rgb-100"] },
+  "--scrollbar-thumb-bg": {
+    "body": ["--mono-rgb-100"],
+    ".i-scrollbar:not(.i-scrollbar-phone-off.is-phone)": ["--i-scrollbar-color"]
+  },
   "--search-clear-button-color": { "body": ["--text-muted"] },
   "--search-icon-color": {
     "body": ["--text-muted"],

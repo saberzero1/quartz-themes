@@ -2,14 +2,14 @@
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/slytherin/jetbrains-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/slytherin/jetbrains-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "ico";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/slytherin/ico.ttf")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/slytherin/ico.ttf")
     format("ttf");
 }
 body.theme-dark {

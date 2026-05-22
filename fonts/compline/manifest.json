@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-05-22T21:51:42.142Z",
+  "sourceTheme": "Compline",
+  "fonts": [
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "400",
+      "file": "montserrat.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "500",
+      "file": "montserrat-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "600",
+      "file": "montserrat-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Montserrat",
+      "style": "normal",
+      "weight": "700",
+      "file": "montserrat-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

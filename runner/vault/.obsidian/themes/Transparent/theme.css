@@ -202,6 +202,12 @@ settings:
         type: class-toggle
         default: false
     -
+        id: disable-formatting-animations
+        title: "Disable Inline Formatting Animations"
+        description: "Turn off the horizontal push animation for bold, italics, and other inline formatting."
+        type: class-toggle
+        default: false
+    -
         id: animate-note-open
         title: "Animate Note Opening (beta)"
         description: "Slide-up + fade when opening or switching notes."
@@ -350,21 +356,6 @@ body.theme-light.preset-orange {
 
 body.preset-orange svg.canvas-background {
   display: none;
-}
-
-body.preset-orange:not(.disable-modal-animation) .modal {
-  animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
-}
-
-body.preset-orange:not(.disable-modal-animation) .modal-bg {
-  animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
-}
-
-body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
-body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
-body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
-body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
-  animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ===================== Orange ===================== */
@@ -981,40 +972,11 @@ body.hide-canvas-dots svg.canvas-background {
   display: none;
 }
 
-/* Temporary canvas fix */
+/* Canvas export / screenshot background fix */
 .theme-dark .canvas-wrapper.is-screenshotting,
 .theme-light .canvas-wrapper.is-screenshotting {
-  background-color: #24291e;
+  background-color: var(--fakeblur);
   background-image: none;
-}
-
-/* Canvas export / screenshot background fix */
-.theme-dark .canvas-wrapper.is-screenshotting {
-  background-color: #0f0f0c;
-}
-
-.theme-light .canvas-wrapper.is-screenshotting {
-  background-color: #f0f0ee;
-}
-
-.theme-dark .canvas-wrapper.is-screenshotting::before,
-.theme-light .canvas-wrapper.is-screenshotting::before {
-  content: "";
-  position: absolute;
-  inset: calc(-2 * var(--background-blur));
-  background-image: var(--background-image-base64);
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  pointer-events: none;
-}
-
-.theme-dark .canvas-wrapper.is-screenshotting::before {
-  filter: brightness(0.54) blur(var(--background-blur));
-}
-
-.theme-light .canvas-wrapper.is-screenshotting::before {
-  filter: brightness(4) blur(var(--background-blur));
 }
 
 .canvas-control-item {
@@ -1022,12 +984,12 @@ body.hide-canvas-dots svg.canvas-background {
   border-radius: var(--canvas-controls-radius);
 }
 
-.canvas-card-menu {
+.canvas-card-menu,
+.canvas-control-group {
   box-shadow: none;
 }
 
 .canvas-control-group {
-  box-shadow: none;
   background-color: var(--tr);
 }
 
@@ -1136,11 +1098,9 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* ===================== mobile ===================== */
 /* better settings on mobile  */
-.is-phone .vertical-tab-header-group-title,
-
-/*.is-phone .setting-item-heading .setting-item-name {
+.is-phone .vertical-tab-header-group-title {
   color: var(--color-accent);
-}*/
+}
 
 /* tab manager on mobile/ */
 .mobile-tab-preview-empty {
@@ -1489,6 +1449,10 @@ body.accent-everywhere hr {
 }
 
 /* Main note view - mod-root excludes side-panels, '>' excludes embeds */
+body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
+body.preset-orange .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
+body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
+body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
 /* mod-active re-fires animation when switching note from the left file panel */
@@ -1525,10 +1489,7 @@ body:not(.disable-splash-screen):not(.no-animation)::before {
 }
 
 body:not(.disable-splash-screen):not(.no-animation) .workspace {
-  opacity: 0;
-  animation: vaultReveal 1.2s ease forwards;
-  /* delay to hide that the theme is not fully loaded yet  */
-  animation-delay: 1.2s;
+  animation: vaultReveal 1.2s ease 1.2s backwards;
 }
 
 @keyframes vaultReveal {
@@ -1562,7 +1523,6 @@ body:not(.disable-splash-screen):not(.no-animation) .workspace {
 
 /* ===================== Header Animations ===================== */
 
-/* zdebugowane przy pomocy gemini ponieważ sam nie potrafiłem naprawić specyficznego przechodzenia, gdy naciskało się strzałkę w górę, miało to związek w ogóle z bugiem CodeMirror lecz jakiegos researchu nie robiłem w związku z tym - ważne, że działa. */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
   position: absolute;
   top: auto;
@@ -1584,7 +1544,7 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.Hype
 /* linijka traci fokus */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
   position: relative;
-  padding-left: 0px;
+  padding-left: 0;
   transition: padding-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1593,31 +1553,62 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
   transition: padding-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Hardcoded odsuwanie, pewnie będzie problem podczas zmiany czcionek headerów, lecz to się wydaje być niszowym rozwiązaniem */
+/* Hardcoded odsuwanie, pewnie będzie problem podczas zmiany czcionek headerów, lecz to się wydaje być niszowym rozwiązaniem */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active {
   &.HyperMD-header-1 {
-    padding-left: 20px
+    padding-left: 20px;
   }
 
   &.HyperMD-header-2 {
-    padding-left: 30px
+    padding-left: 30px;
   }
 
   &.HyperMD-header-3 {
-    padding-left: 40px
+    padding-left: 40px;
   }
 
   &.HyperMD-header-4 {
-    padding-left: 50px
+    padding-left: 50px;
   }
 
   &.HyperMD-header-5 {
-    padding-left: 60px
+    padding-left: 60px;
   }
 
   &.HyperMD-header-6 {
-    padding-left: 70px
+    padding-left: 70px;
   }
+}
+
+/* ===================== Inline Formatting Animations ===================== */
+/* ogolnie to mega dumny jhestem z tego kawałka kodu :))) */
+
+@keyframes premiumHorizontalPush {
+  0% {
+    margin-inline: -0.25em;
+    /* left right */
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  100% {
+    margin-inline: 0;
+    /* left right */
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animuje znaczniki inline w aktywnej linii.
+  Wyklucza nagłówki (.cm-formatting-header) oraz całkowicie ignoruje wielolinijkowe bloki kodu (.HyperMD-codeblock).
+*/
+body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header) {
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 0;
+  padding-block: 0;
+  /* top down */
+  animation: premiumHorizontalPush 0.3s cubic-bezier(0.25, 1, 0.5, 1.05) forwards;
 }
 
 /* ===================== Header Animations ===================== */

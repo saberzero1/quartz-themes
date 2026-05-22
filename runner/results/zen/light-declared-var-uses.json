@@ -200,8 +200,8 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-interface)",
-    "font-size": "var(--font-ui-smaller)"
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "li.task-list-item[data-task=\">\"]": {
     "line-height": "calc(var(--text-line-height) * 1px)",
@@ -435,7 +435,6 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -521,11 +520,6 @@
   ".internal-embed": {
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
-  },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
   },
   ".markdown-embed": {
     "background-color": "var(--embed-background)",

@@ -893,17 +893,17 @@ body.theme-light {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: var(--text-accent) !important;
-  --link-color-hover: var(--text-accent-hover) !important;
+  --link-color: var(--light-foam) !important;
+  --link-color-hover: var(--light-rose) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: var(--text-accent) !important;
-  --link-external-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--light-iris) !important;
+  --link-external-color-hover: var(--light-rose) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: var(--text-accent) !important;
+  --link-unresolved-color: var(--light-gold) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -1927,17 +1927,17 @@ body.theme-dark {
   --layer-tooltip: 70 !important;
   --line-height-normal: 1.5 !important;
   --line-height-tight: 1.3 !important;
-  --link-color: var(--text-accent) !important;
-  --link-color-hover: var(--text-accent-hover) !important;
+  --link-color: var(--foam) !important;
+  --link-color-hover: var(--rose) !important;
   --link-decoration: underline !important;
   --link-decoration-hover: underline !important;
   --link-decoration-thickness: auto !important;
-  --link-external-color: var(--text-accent) !important;
-  --link-external-color-hover: var(--text-accent-hover) !important;
+  --link-external-color: var(--iris) !important;
+  --link-external-color-hover: var(--rose) !important;
   --link-external-decoration: underline !important;
   --link-external-decoration-hover: underline !important;
   --link-external-filter: none !important;
-  --link-unresolved-color: var(--text-accent) !important;
+  --link-unresolved-color: var(--gold) !important;
   --link-unresolved-decoration-color: hsla(
     var(--interactive-accent-hsl),
     0.3
@@ -2472,9 +2472,9 @@ body body.theme-light .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(180, 99, 122) none 0px;
+  outline: rgb(144, 122, 169) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(180, 99, 122);
+  text-decoration-color: rgb(144, 122, 169);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -2512,9 +2512,9 @@ body body.theme-light .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(180, 99, 122) none 0px;
+  outline: rgb(86, 148, 159) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(180, 99, 122);
+  text-decoration-color: rgb(86, 148, 159);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -2552,7 +2552,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(180, 99, 122) none 0px;
+  outline: rgb(234, 157, 52) none 0px;
   text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
@@ -5305,9 +5305,9 @@ body body.theme-dark .markdown-rendered a.external-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(235, 111, 146) none 0px;
+  outline: rgb(196, 167, 231) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(235, 111, 146);
+  text-decoration-color: rgb(196, 167, 231);
   text-decoration-line: var(--link-external-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -5345,9 +5345,9 @@ body body.theme-dark .markdown-rendered a.internal-link {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(235, 111, 146) none 0px;
+  outline: rgb(156, 207, 216) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(235, 111, 146);
+  text-decoration-color: rgb(156, 207, 216);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -5385,7 +5385,7 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--link-weight);
-  outline: rgb(235, 111, 146) none 0px;
+  outline: rgb(246, 193, 119) none 0px;
   text-decoration: underline rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);

@@ -2,21 +2,21 @@
   font-family: "Inter";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/ak-sky-breeze/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/ak-sky-breeze/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Lexend";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/ak-sky-breeze/lexend.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/ak-sky-breeze/lexend.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/ak-sky-breeze/roboto-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/ak-sky-breeze/roboto-mono.woff2")
     format("woff2");
 }
 body.theme-light {

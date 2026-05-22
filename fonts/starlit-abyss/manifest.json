@@ -1,0 +1,126 @@
+{
+  "extractedAt": "2026-05-22T22:00:09.320Z",
+  "sourceTheme": "Starlit Abyss",
+  "fonts": [
+    {
+      "family": "Science Gothic Bold Extended",
+      "style": "normal",
+      "weight": "400",
+      "file": "science-gothic-bold-extended.ttf",
+      "format": "ttf",
+      "unicodeRange": null,
+      "sourceType": "cdn",
+      "sourceUrl": "https://fonts.googleapis.com/css2?family=Science+Gothic:wdth,wght@125,700&display=swap"
+    },
+    {
+      "family": "Tomorrow",
+      "style": "normal",
+      "weight": "400",
+      "file": "tomorrow.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "italic",
+      "weight": "400",
+      "file": "tomorrow-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "normal",
+      "weight": "500",
+      "file": "tomorrow-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "italic",
+      "weight": "500",
+      "file": "tomorrow-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "normal",
+      "weight": "600",
+      "file": "tomorrow-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "italic",
+      "weight": "600",
+      "file": "tomorrow-5.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "normal",
+      "weight": "700",
+      "file": "tomorrow-6.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Tomorrow",
+      "style": "italic",
+      "weight": "700",
+      "file": "tomorrow-7.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Michroma",
+      "style": "normal",
+      "weight": "400",
+      "file": "michroma.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Kode Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "kode-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Science Gothic",
+      "style": "normal",
+      "weight": "400",
+      "file": "science-gothic.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

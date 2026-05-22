@@ -1,442 +1,275 @@
-/* This Theme is called "Reverie" and Obsidian Theme created by Santi Younger */
+/* Reverie — Obsidian theme by Santi Younger
+ * Follows https://help.obsidian.md/Extending+Obsidian/Themes/App+themes/Theme+guidelines
+ * CSS variables reference: https://docs.obsidian.md/Reference/CSS+variables/CSS+variables
+ */
 
-Last Update:
-2021-03-11 12:06
-
-:root
-{
---font-monospace: "Source Code Pro", monospace;
+/* Shared (light + dark) — use body per Obsidian theme docs */
+body {
+  --font-monospace-theme: "Source Code Pro", monospace;
+  --font-text-size: 16px;
+  --bold-weight: 600;
+  --file-margins: 10px;
+  --file-header-font-weight: 600;
+  --divider-width: 1px;
+  --table-header-weight: 600;
+  --table-header-border-width: 2px;
+  --embed-padding: 10px;
+  /* No official highlight foreground variable; theme-specific */
+  --highlight-text-color: #000000;
 }
 
-.theme-dark
-{
---background-primary:         #1A2023;
---background-primary-alt:     #1A2023;
---background-secondary:       #222B2F;
---background-secondary-alt:   #073334;
---text-normal:                #faf2d6;
---text-faint:                 #bdae93;
---text-title-h1:              #c1dde1;
---text-title-h2:              #8ab8bd;
---text-title-h3:              #56a7b0;
---text-title-h4:              #309093;
---text-title-h5:              #0b797d;
---text-title-h6:              #0b797d;
---text-highlight-bg:          #22a578;
---text-link:                  #83a598; 
---text-a-hover:               #83a598; 
---inline-code:                #83a598; 
---code-block:                 #83a598; 
---text-a:                     #2ccab7; 
---interactive-accent:         #0b797d;
---text-accent:                #2ccab7; 
---text-on-accent:             #fff;
---interactive-accent-rgb:     #2ccab7; 
---vim-cursor:                 #2ccab7; 
-/*  --text-mark:                  add text-mark if needed, this should work together with 'mark' */
---pre-code:                   #073334;
---interactive-before:         #7c6f64;
---background-modifier-border: #95c1bb;
---text-selection:             #16304D;
+.theme-dark {
+  --background-primary: #1a2023;
+  --background-primary-alt: #1a2023;
+  --background-secondary: #222b2f;
+  --background-secondary-alt: #073334;
+  --text-normal: #faf2d6;
+  --text-faint: #bdae93;
+  --text-accent: #2ccab7;
+  --text-accent-hover: #83a598;
+  /* Buttons: dark accent + light label (passes cross-mode checks with light theme) */
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a2023;
+  --text-selection: #16304d;
+  --text-highlight-bg: #c9d86a;
+  --background-modifier-border: #95c1bb;
+  --interactive-normal: #a89984;
+  --interactive-hover: #a89984;
+  /* Darker than link teal so --text-on-accent (#fff) meets WCAG on buttons */
+  --interactive-accent: #0b797d;
+  --interactive-accent-rgb: 11, 121, 125;
+  --h1-color: #c1dde1;
+  --h2-color: #8ab8bd;
+  --h3-color: #56a7b0;
+  --h4-color: #52adb5;
+  --h5-color: #56b5aa;
+  --h6-color: #56b5aa;
+  --h1-size: 20px;
+  --h2-size: 20px;
+  --h3-size: 20px;
+  --h4-size: 20px;
+  --h5-size: 20px;
+  --h6-size: 20px;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --link-color: #2ccab7;
+  --link-color-hover: #83a598;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: #2ccab7;
+  --link-external-color-hover: #83a598;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --code-background: #073334;
+  --code-normal: #83a598;
+  --code-size: 0.9em;
+  --graph-text: #83a598;
+  --graph-node-focused: rgb(var(--interactive-accent-rgb));
+  --nav-item-color-active: #2ccab7;
+  --nav-item-background-active: var(--background-primary-alt);
+  --nav-collapse-icon-color: #2ccab7;
+  --nav-collapse-icon-color-collapsed: #2ccab7;
+  --table-header-border-color: var(--background-modifier-border);
+  --caret-color: #2ccab7;
+  --divider-color: var(--background-secondary-alt);
+  --checkbox-border-color: #a89984;
+  --checkbox-color: #a89984;
+  --checkbox-marker-color: var(--background-primary);
+  --icon-color-hover: var(--text-accent);
 }
 
 .theme-dark .cm-s-obsidian span.obsidian-search-match-highlight {
-color: var(--text-normal);
-background-color: #483699;
+  color: var(--text-normal);
+  background-color: #483699;
 }
 
-.theme-light
-{
---background-primary:         #e7e7e7;
---background-primary-alt:     #e7e7e7;
---background-secondary:       #e3e3e3; /* thick menu border */
---background-secondary-alt:   #bebebe; /* ← ↓  corner */
---text-normal:                #1A2023;
---text-faint:                 #665c54;
---text-title-h1:              #1bb0b6;
---text-title-h2:              #3fa7ab;
---text-title-h3:              #458588;
---text-title-h4:              #4b6667;
---text-title-h5:              #3b4646;
---text-link:                  #458588;
---text-a-hover:               #458588;
---inline-code:                #458588;
-/*  --text-mark:                  add if needed */
---pre-code:                   #bebebe;
-/*  --text-highlight-bg:          add if needed */
---interactive-before:         #a89984;
---background-modifier-border: #1bb0b6;
---text-a:                     #22a578;
---interactive-accent:         #22a578;
---text-accent:                #22a578;
---interactive-accent-rgb:     #22a578;
---vim-cursor:                 #22a578;
-/*  --text-selection:             add if needed */
+.theme-light {
+  --background-primary: #e7e7e7;
+  --background-primary-alt: #e7e7e7;
+  --background-secondary: #e3e3e3;
+  --background-secondary-alt: #bebebe;
+  --text-normal: #1a2023;
+  --text-faint: #534a42;
+  --text-accent: #0c5249;
+  --text-accent-hover: #084540;
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1a2023;
+  --text-highlight-bg: #b8d4a0;
+  --background-modifier-border: #0a4a44;
+  --interactive-normal: #534a42;
+  --interactive-hover: #534a42;
+  --interactive-accent: #0c5249;
+  --interactive-accent-rgb: 12, 82, 73;
+  --h1-color: #063530;
+  --h2-color: #073d38;
+  --h3-color: #084540;
+  --h4-color: #3b4646;
+  --h5-color: #3b4646;
+  --h6-color: #3b4646;
+  --h1-size: 20px;
+  --h2-size: 20px;
+  --h3-size: 20px;
+  --h4-size: 20px;
+  --h5-size: 20px;
+  --h6-size: 20px;
+  --h1-weight: 500;
+  --h2-weight: 500;
+  --h3-weight: 500;
+  --h4-weight: 500;
+  --h5-weight: 500;
+  --h6-weight: 500;
+  --link-color: #0c5249;
+  --link-color-hover: #084540;
+  --link-decoration: none;
+  --link-decoration-hover: none;
+  --link-external-color: #0c5249;
+  --link-external-color-hover: #084540;
+  --link-external-decoration: none;
+  --link-external-decoration-hover: none;
+  --code-background: #bebebe;
+  --code-normal: #3d4f50;
+  --code-size: 0.9em;
+  --graph-text: #084540;
+  --graph-node-focused: rgb(var(--interactive-accent-rgb));
+  --nav-item-color-active: #0c5249;
+  --nav-item-background-active: var(--background-primary-alt);
+  --nav-collapse-icon-color: #0c5249;
+  --nav-collapse-icon-color-collapsed: #0c5249;
+  --table-header-border-color: var(--background-modifier-border);
+  --caret-color: #0c5249;
+  --divider-color: var(--background-secondary-alt);
+  --checkbox-border-color: #534a42;
+  --checkbox-color: #534a42;
+  --checkbox-marker-color: var(--background-primary);
+  --icon-color-hover: var(--text-accent);
 }
 
-.cm-header-1,
-.markdown-preview-section h1
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h1) !important;
-}
-
-.cm-header-2,
-.markdown-preview-section h2
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h2) !important;
-}
-
-.cm-header-3,
-.markdown-preview-section h3
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h3) !important;
-}
-
-.cm-header-4,
-.markdown-preview-section h4
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h4) !important;
-}
-
-.cm-header-5,
-.markdown-preview-section h5
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h5) !important;
-}
-
-.cm-header-6,
-.markdown-preview-section h6
-{
-font-weight: 500;
-font-size: 20px;
-color: var(--text-title-h5) !important;
-}
-
-/* ------------ other basic theme configurations ------------*/
-
+/* Reading view: prism blocks bundled with notes (no network assets) */
 .theme-dark code[class*="language-"],
-     .theme-dark pre[class*="language-"],
-     .theme-light code[class*="language-"],
-     .theme-light pre[class*="language-"]
-     {
-     text-shadow: none !important;
-     background-color: var(--pre-code) !important;
-     }
-
-     .graph-view.color-circle,
-     .graph-view.color-fill-highlight,
-     .graph-view.color-line-highlight
-     {
-     color: var(--interactive-accent-rgb) !important;
-     }
-     .graph-view.color-text
-     {
-     color: var(--text-a-hover) !important;
-     }
-     /*
-     .graph-view.color-fill
-     {
-     color: var(--background-secondary);
-     }
-     .graph-view.color-line
-     {
-     color: var(--background-modifier-border);
-     }
-     */
-
-     html,
-     body
-     {
-     font-size: 16px !important;
-     }
-
-     strong
-     {
-     font-weight: 600 !important;
-     }
-
-     a,
-     .cm-hmd-internal-link
-     {
-     color: var(--text-a) !important;
-     text-decoration: none !important;
-     }
-
-     a:hover,
-     .cm-hmd-internal-link:hover,
-     .cm-url
-     {
-     color: var(--text-a-hover) !important;
-     text-decoration: none !important;
-     }
-
-     mark
-     {
-     background-color: var(--text-mark) !important;
-     color: #E5A200 !important;
-     }
-
-     .view-actions a
-     {
-     color: var(--text-normal) !important;
-     }
-
-     .view-actions a:hover
-     {
-     color: var(--text-a) !important;
-     }
-
-     .HyperMD-codeblock-bg
-     {
-     background-color: var(--pre-code) !important;
-     }
-
-     .HyperMD-codeblock
-     {
-     line-height: 1.4em !important;
-     color: var(--code-block) !important;
-     }
-
-     .HyperMD-codeblock-begin
-     {
-     border-top-left-radius: 4px !important;
-     border-top-right-radius: 4px !important;
-     }
-
-     .HyperMD-codeblock-end
-     {
-     border-bottom-left-radius: 4px !important;
-     border-bottom-right-radius: 4px !important;
-     }
-
-     th
-     {
-     font-weight: 600 !important;
-     }
-
-     thead
-     {
-     border-bottom: 2px solid var(--background-modifier-border) !important;
-     }
-
-     .HyperMD-table-row
-     {
-     line-height: normal !important;
-     padding-left: 4px !important;
-     padding-right: 4px !important;
-/*     background-color: var(--pre-code) !important; */
-     }
-
-     .HyperMD-table-row-0
-     {
-     /* padding-top: 4px !important; */
-     }
-
-     .CodeMirror-foldgutter-folded,
-     .is-collapsed .nav-folder-collapse-indicator
-     {
-     color: var(--text-a) !important;
-     }
-
-     .nav-file-tag
-     {
-     color: var(--text-a) !important;
-     }
-
-     .is-active .nav-file-title
-     {
-     color: var(--text-a) !important;
-     background-color: var(--background-primary-alt) !important;
-     }
-
-     .nav-file-title
-     {
-     border-bottom-left-radius: 0 !important;
-     border-bottom-right-radius: 0 !important;
-     border-top-left-radius: 0 !important;
-     border-top-right-radius: 0 !important;
-     }
-
-     img
-     {
-     display: block !important;
-     margin-left: auto !important;
-     margin-right: auto !important;
-     }
-
-     .HyperMD-list-line
-     {
-     padding-top: 0 !important;
-     }
-
-     .CodeMirror-linenumber,
-     .cm-formatting
-     {
-     font-family: var(--font-monospace) !important;
-     }
-
-     .markdown-preview-section pre code,
-     .markdown-preview-section code
-     {
-     font-size: 0.9em !important;
-     background-color: var(--pre-code) !important;
-     }
-
-     .markdown-preview-section pre code
-     {
-     padding: 4px !important;
-     line-height: 1.4em !important;
-     display: block !important;
-     color: var(--code-block) !important;
-     }
-
-     .markdown-preview-section code
-     {
-     color: var(--inline-code) !important;
-     }
-
-     .cm-s-obsidian,
-     .cm-inline-code
-     {
-     -webkit-font-smoothing: auto !important;
-     }
-
-     .cm-inline-code
-     {
-     color: var(--inline-code) !important;
-     background-color: var(--pre-code) !important;
-     padding: 1px !important;
-     }
-
-     .workspace-leaf-header-title
-     {
-     font-weight: 600 !important;
-     }
-
-     .side-dock-title
-     {
-     padding-top: 15px !important;
-     font-size: 20px !important;
-     }
-
-     .side-dock-ribbon-tab:hover,
-     .side-dock-ribbon-action:hover,
-     .side-dock-ribbon-action.is-active:hover,
-     .nav-action-button:hover,
-     .side-dock-collapse-btn:hover
-     {
-     color: var(--text-a);
-     }
-
-     .side-dock
-     {
-     border-right: 0 !important;
-     }
-
-     .cm-s-obsidian,
-     .markdown-preview-view
-     {
-     padding-left: 10px !important;
-     padding-right: 10px !important;
-     }
-
-     /* vertical resize-handle */
-     .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
-     .workspace-split.mod-left-split > .workspace-leaf-resize-handle, 
-     .workspace-split.mod-right-split > .workspace-leaf-resize-handle
-     {
-     width: 1px !important;
-     background-color: var(--background-secondary-alt);
-     }
-
-     /* horizontal resize-handle */
-     .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle
-     {
-     height: 1px !important;
-     background-color: var(--background-secondary-alt);
-     }
-
-     /* Remove vertical split padding */
-     .workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
-     .workspace-split.mod-vertical > .workspace-split,
-     .workspace-split.mod-vertical > .workspace-leaf,
-     .workspace-tabs
-     {
-     padding-right: 0px;
-     }
-
-     .markdown-embed-title
-     {
-     font-weight: 600 !important;
-     }
-
-     .markdown-embed
-     {
-     padding-left: 10px !important;
-     padding-right: 10px !important;
-     margin-left: 10px !important;
-     margin-right: 10px !important;
-     }
-
-     .suggestion-item.is-selected
-     {
-     background-color: var(--background-secondary);
-     }
-
-     .empty-state-container:hover
-     {
-     background-color: var(--background-secondary-alt);
-     border: 5px solid var(--interactive-accent) !important;
-     }
-
-     .checkbox-container
-     {
-     background-color: var(--interactive-before);
-     }
-
-     .checkbox-container:after
-     {
-     background-color: var(--background-secondary-alt);
-     }
-
-     .mod-cta
-     {
-     color: var(--background-secondary-alt) !important;
-     font-weight: 600 !important;
-     }
-
-     .mod-cta:hover
-     {
-     background-color: var(--interactive-before) !important;
-     font-weight: 600 !important;
-     }
-     input.task-list-item-checkbox {
-     border: 1px solid #7c6f64;
-     appearance: none;
-     -webkit-appearance: none;
-     }
-
-     input.task-list-item-checkbox:checked {
-     background-color: #7c6f64;
-     box-shadow: inset 0 0 0 2px var(--background-primary);
-     }
-
-.cm-fat-cursor .CodeMirror-cursor {
-background-color: #2ccab7 !important;
-opacity: 60% !important;
-width: 9px !important; 
-visibility: visible !important
+.theme-dark pre[class*="language-"],
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"] {
+  text-shadow: none;
+  background-color: var(--code-background);
 }
 
-/*-----------------------------------------*/
-/* End of main theme, extra functionality can be added below */
+/*
+ * Highlights — Live Preview uses different markup than Reading view;
+ * see Code.md “syntax highlighting” note. Minimal selectors only.
+ */
+mark,
+.markdown-preview-view mark,
+.markdown-rendered mark {
+  background-color: var(--text-highlight-bg);
+  color: var(--highlight-text-color);
+  border-radius: var(--radius-s);
+  padding: 0 2px;
+  opacity: 1;
+  filter: none;
+}
+
+.markdown-source-view.mod-cm6 span.cm-highlight,
+.cm-s-obsidian .cm-line span.cm-highlight,
+.cm-s-obsidian .cm-line:not(.cm-active) span.cm-highlight,
+.cm-s-obsidian .cm-line.cm-active span.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--highlight-text-color);
+  -webkit-text-fill-color: var(--highlight-text-color);
+  border-radius: var(--radius-s);
+  opacity: 1;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+.cm-s-obsidian .cm-line:not(.cm-active) span.cm-formatting-highlight {
+  color: var(--highlight-text-color);
+  opacity: 0.75;
+}
+
+/* Live Preview code block chrome (no dedicated variables) */
+.HyperMD-codeblock {
+  line-height: 1.4em;
+}
+
+.HyperMD-codeblock-begin {
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+}
+
+.HyperMD-codeblock-end {
+  border-bottom-left-radius: var(--radius-s);
+  border-bottom-right-radius: var(--radius-s);
+}
+
+.HyperMD-list-line {
+  padding-top: 0;
+}
+
+/* Layout tweaks without a matching CSS variable */
+.markdown-rendered img,
+.markdown-preview-view img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.markdown-embed {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  width: var(--divider-width);
+  background-color: var(--divider-color);
+}
+
+.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
+  height: var(--divider-width);
+  background-color: var(--divider-color);
+}
+
+.workspace-split.mod-root .workspace-split.mod-vertical .workspace-leaf-content,
+.workspace-split.mod-vertical > .workspace-split,
+.workspace-split.mod-vertical > .workspace-leaf,
+.workspace-tabs {
+  padding-right: 0;
+}
+
+.suggestion-item.is-selected {
+  background-color: var(--background-secondary);
+}
+
+.empty-state-container:hover {
+  background-color: var(--background-secondary-alt);
+  border: 5px solid var(--interactive-accent);
+}
+
+.mod-cta {
+  color: var(--text-on-accent);
+  background-color: var(--interactive-accent);
+  font-weight: var(--font-semibold);
+}
+
+.mod-cta:hover {
+  background-color: var(--interactive-normal);
+  filter: brightness(1.06);
+}
+
+/* Vim mode block cursor (editor plugin) */
+.cm-fat-cursor .CodeMirror-cursor,
+.cm-animate-fat-cursor {
+  background-color: var(--caret-color);
+  opacity: 0.6;
+  width: 9px;
+  visibility: visible;
+}
+
+/* End of Reverie theme */

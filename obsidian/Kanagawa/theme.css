@@ -165,6 +165,11 @@
     --text-a:                     var(--dragonBlue);
     --text-a-hover:               var(--peachRed);
     --text-a-url:                 var(--dragonBlue); /*hover internal link, graph view link and standalone links*. External Links no*/
+    --link-color:                 var(--dragonBlue);
+    --link-color-hover:           var(--sakuraPink);
+    --link-external-color:        var(--autumnGreen);
+    --link-external-color-hover:  var(--sakuraPink);
+    --link-unresolved-color:      var(--lotusGreen2);
     --text-mark:                  rgba(34, 50, 73, 0.4); /* waveBlue1 */
     --pre-code:                   var(--sumiInk0);
     --text-highlight-bg:          var(--waveBlue1);
@@ -215,6 +220,11 @@
     --text-a:                     var(--lotusTeal1);
     --text-a-hover:               var(--lotusRed);
     --text-a-url:                 var(--lotusTeal2); /*hover internal link, graph view link and standalone links*. External Links no*/
+    --link-color:                 var(--lotusTeal1);
+    --link-color-hover:           var(--lotusPink);
+    --link-external-color:        var(--lotusGreen);
+    --link-external-color-hover:  var(--lotusPink);
+    --link-unresolved-color:      var(--lotusTeal3);
     --text-mark:                  rgba(183, 208, 174, 0.4); /* lotusGreen3 */
     --pre-code:                   var(--lotusGray);
     --text-highlight-bg:          var(--lotusBlue2);

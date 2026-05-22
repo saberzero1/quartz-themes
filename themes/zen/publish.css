@@ -2,7 +2,7 @@
   font-family: "number-font";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.4/fonts/zen/number-font.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/zen/number-font.woff")
     format("woff");
 }
 body.theme-light {
@@ -4117,7 +4117,7 @@ body body.theme-light .internal-embed {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 0px 0px 0px 3px;
+  margin: 0px;
   padding: 0px;
 }
 body body.theme-light .markdown-embed {
@@ -4147,7 +4147,7 @@ body body.theme-light .file-embed {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin: 0px 0px 0px 3px;
+  margin: 0px;
   padding: 8px;
 }
 body body.theme-light .metadata-container {
@@ -6966,7 +6966,7 @@ body body.theme-dark .internal-embed {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 0px 0px 0px 3px;
+  margin: 0px;
   padding: 0px;
 }
 body body.theme-dark .markdown-embed {
@@ -6996,7 +6996,7 @@ body body.theme-dark .file-embed {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin: 0px 0px 0px 3px;
+  margin: 0px;
   padding: 8px;
 }
 body body.theme-dark .metadata-container {
