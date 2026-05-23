@@ -1656,12 +1656,16 @@ table {
 	width: 100%;
 	font-size: 0.85em;
 }
-th, td {
+.markdown-rendered th,
+.markdown-rendered td,
+.cm-content th,
+.cm-content td {
 	border: 1px solid var(--text-normal);
 	padding: 4px 8px;
 	text-align: left;
 }
-th {
+.markdown-rendered th,
+.cm-content th {
 	background-color: var(--cursor-line-color) !important;
 	font-weight: 700;
 }
@@ -2162,6 +2166,21 @@ body {
 .mermaid svg[aria-roledescription="quadrantChart"] circle {
   fill: var(--text-highlight-bg) !important;
   stroke: var(--text-highlight-bg) !important;
+}
+
+/* =============================================
+   Calendar
+   ============================================= */
+
+.calendar {
+  --background-modifier-border: var(--text-muted);
+	--color-text-today: var(--text-highlight-bg);
+	--color-background-weekend: oklch(from var(--background-primary) calc(l * 1.5) c h);
+	--color-dot: var(--text-highlight-bg);
+}
+
+.year {
+	color: var(--text-muted) !important;
 }
 
 /* =============================================

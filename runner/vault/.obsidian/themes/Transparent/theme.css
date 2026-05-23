@@ -1031,7 +1031,8 @@ body.hide-canvas-dots svg.canvas-background {
 
 .tooltip {
   background-color: var(--fakeblur);
-  /* this color is a fake blur used in places where real blur can't be applied */
+  /* this color is a fake blur used in places where real blur can't be applied or it is soo small so it doesn't make sense to apply it */
+  color: var(--text-normal);
 }
 
 .tooltip .tooltip-arrow {

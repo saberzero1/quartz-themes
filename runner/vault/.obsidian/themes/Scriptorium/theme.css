@@ -69,11 +69,11 @@
        [13] Callouts
        [14] Embedded Notes */
     /* Font Stacks */
-    --scrip-font-mono-stack: "IBM Plex Mono", "霞鹜文楷等宽 GB 屏幕阅读版", "SF Mono", "Consolas", "Monaco", "Menlo", "Roboto Mono", "Courier New", monospace;
-    --scrip-font-cjk-stack: "IBM Plex Sans SC", "霞鹜新晰黑 屏幕阅读版 补全", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
-    --scrip-font-serif-stack: "IBM Plex Serif", "霞鹜新晰黑 屏幕阅读版 补全", "Georgia", "Times New Roman", serif;
+    --scrip-font-mono-stack: "IBM Plex Mono", "SF Mono", "Consolas", "Monaco", "Menlo", "Roboto Mono", "Courier New", monospace;
+    --scrip-font-cjk-stack: "IBM Plex Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+    --scrip-font-serif-stack: "IBM Plex Serif", "Georgia", "Times New Roman", serif;
     /* Heading stack uses a serif-forward system to separate titles from sans body text. */
-    --scrip-font-heading-stack: "Noto Serif SC", "Source Han Serif SC", "IBM Plex Serif", "霞鹜文楷 GB 屏幕阅读版", "Georgia", "Times New Roman", serif;
+    --scrip-font-heading-stack: "Noto Serif SC", "Source Han Serif SC", "IBM Plex Serif", "Georgia", "Times New Roman", serif;
     --scrip-font-mono: var(--font-monospace, var(--scrip-font-mono-stack));
     --scrip-font-text: var(--font-text, var(--scrip-font-cjk-stack));
 
@@ -174,18 +174,6 @@
     --transform-translate-hover: -1px;
     --transform-translate-hidden: -12px;
 
-    /* Position Offsets */
-    --offset-checkbox-marker: -1px;
-    --offset-checkbox-preview: 2px;
-
-    /* Checkbox Marker Position & Size */
-    --scrip-chk-pos-x: 43.75%;
-    /* 7/16 */
-    --scrip-chk-pos-y: 53.125%;
-    /* 17/32 */
-    --scrip-chk-size: 59.375%;
-    /* 19/32 */
-
     /* Spacing Multipliers */
     --multiplier-tight: 0.8;
     --multiplier-relaxed: 1.2;
@@ -260,6 +248,11 @@
     --scrip-vault-mask-mid-alpha: 0.6;
     --scrip-vault-mask-bottom-alpha: 0;
     --scrip-vault-mask-mid-stop: 50%;
+
+    /* Status Bar Dimensions & Opacity */
+    --scrip-chrome-muted-opacity: 0.72;
+    --scrip-status-compact-width: min(13rem, calc(100vw - var(--size-8)));
+    --scrip-status-expanded-width: min(28rem, calc(100vw - var(--size-8)));
 }
 
 
@@ -764,10 +757,6 @@ html {
     --paragraph-spacing: calc(var(--paragraph-spacing-base) * var(--density-modifier));
     --paragraph-spacing-tight: calc(var(--paragraph-spacing-base) * var(--multiplier-tight));
     --paragraph-spacing-relaxed: calc(var(--paragraph-spacing-base) * var(--multiplier-relaxed));
-
-    --scrip-chrome-muted-opacity: 0.72;
-    --scrip-status-compact-width: min(13rem, calc(100vw - var(--size-8)));
-    --scrip-status-expanded-width: min(28rem, calc(100vw - var(--size-8)));
 }
 
 /* 滚动条 hover 宽度过渡 / Scrollbar Hover Width Transition */
@@ -793,7 +782,7 @@ body.styled-scrollbars .cm-scroller:not(:hover)::-webkit-scrollbar-thumb,
 body.styled-scrollbars .markdown-preview-view:not(:hover)::-webkit-scrollbar-thumb,
 body.styled-scrollbars .nav-files-container:not(:hover)::-webkit-scrollbar-thumb,
 body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb {
-    background-color: transparent !important;
+    background-color: transparent;
 }
 
 
@@ -884,11 +873,6 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 /* Keep full justification for prose, but fall back to start alignment for
    structured or technical reading contexts where spacing artifacts are more noticeable. */
 .markdown-preview-view :is(li p, blockquote p, .callout-content p, .markdown-embed p, td p, th p) {
-    text-align: start;
-}
-
-.markdown-preview-view p:has(.tag),
-.markdown-source-view.mod-cm6 .cm-line:has(.cm-hashtag) {
     text-align: start;
 }
 
@@ -1082,13 +1066,13 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
         display: block;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        white-space: nowrap;
         box-shadow: var(--scrip-shadow-ambient);
     }
 
     .markdown-preview-view table th,
     .markdown-preview-view table td {
-        min-width: 9rem;
+        min-width: 5rem;
+        word-break: break-word;
     }
 }
 
@@ -1147,8 +1131,6 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
     background-repeat: no-repeat;
     transition: background-size var(--ease-moderate-smooth);
     border-radius: var(--radius-s);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
 
     &:hover {
         background-size: 100% 100%, 0 .1em;
@@ -1198,40 +1180,38 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
     font-style: var(--link-style);
     text-transform: var(--link-text-transform);
     color: var(--link-color-base);
-    text-decoration: underline;
-    text-decoration-color: var(--link-underline-color-base);
-    text-decoration-thickness: var(--link-underline-thickness-base);
-    text-decoration-style: var(--link-underline-style-base);
-    text-underline-offset: var(--link-underline-offset);
-    text-decoration-skip-ink: auto;
     font-weight: var(--font-medium);
+    --link-underline-current: var(--link-underline-color-base);
+    --link-underline-width: var(--link-underline-thickness-base);
+    background-image: linear-gradient(var(--link-underline-current), var(--link-underline-current));
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% var(--link-underline-width);
+    padding-bottom: 0.04em;
     transition: color var(--ease-fast-smooth),
-        text-decoration-color var(--ease-fast-smooth),
-        text-decoration-thickness var(--ease-fast-smooth);
+        background-size var(--ease-fast-smooth);
 
     &:hover {
         color: var(--link-color-hover);
-        text-decoration: underline;
-        text-decoration-color: var(--link-underline-color-hover);
-        text-decoration-thickness: var(--link-underline-thickness-hover);
+        --link-underline-current: var(--link-underline-color-hover);
+        --link-underline-width: var(--link-underline-thickness-hover);
     }
 
     &:active {
         color: var(--link-color-active);
-        text-decoration-color: var(--link-underline-color-active);
-        text-decoration-thickness: var(--link-underline-thickness-active);
+        --link-underline-current: var(--link-underline-color-active);
+        --link-underline-width: var(--link-underline-thickness-active);
     }
 
     &:visited {
         color: var(--link-visited-color-base);
-        text-decoration-color: var(--link-visited-underline-color-base);
-        text-decoration-thickness: var(--link-underline-thickness-base);
-        text-decoration-style: var(--link-underline-style-visited);
+        --link-underline-current: var(--link-visited-underline-color-base);
+        --link-underline-width: var(--link-underline-thickness-base);
 
         &:hover {
             color: var(--link-visited-color-hover);
-            text-decoration-color: var(--link-visited-underline-color-hover);
-            text-decoration-thickness: var(--link-underline-thickness-hover);
+            --link-underline-current: var(--link-visited-underline-color-hover);
+            --link-underline-width: var(--link-underline-thickness-hover);
         }
     }
 }
@@ -1239,18 +1219,18 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 .markdown-rendered .external-link,
 .markdown-source-view .cm-link:not(.cm-hmd-internal-link) {
     color: var(--link-external-color-base);
-    text-decoration-color: var(--link-external-underline-color-base);
+    --link-underline-current: var(--link-external-underline-color-base);
 
     &:hover {
         color: var(--link-external-color-hover);
-        text-decoration-color: var(--link-external-underline-color-hover);
-        text-decoration-thickness: var(--link-underline-thickness-hover);
+        --link-underline-current: var(--link-external-underline-color-hover);
+        --link-underline-width: var(--link-underline-thickness-hover);
     }
 
     &:active {
         color: var(--link-external-color-active);
-        text-decoration-color: var(--link-external-color-active);
-        text-decoration-thickness: var(--link-underline-thickness-active);
+        --link-underline-current: var(--link-external-color-active);
+        --link-underline-width: var(--link-underline-thickness-active);
     }
 }
 
@@ -1258,7 +1238,6 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 .markdown-source-view.mod-cm6 .is-unresolved {
     color: var(--link-unresolved-color);
     opacity: var(--link-unresolved-opacity);
-    text-decoration: none;
     font-weight: var(--font-bold);
     transition: color var(--ease-moderate-smooth),
         opacity var(--ease-moderate-smooth);
@@ -1266,13 +1245,11 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
     &:hover {
         color: var(--link-unresolved-hover-color);
         opacity: 1;
-        text-decoration: none;
     }
 }
 
 .markdown-source-view .cm-url .cm-underline {
     font-style: var(--link-external-style);
-    text-decoration: none;
 }
 
 /* Restore a gentle emphasis style for Markdown `*emphasis*`,
@@ -1427,13 +1404,13 @@ body:not(.is-phone, .view-header-title-always) .view-header-title-parent {
 }
 
 body:not(.is-phone, .view-header-title-always) .view-header:not(:hover):not(:focus-within) :is(.view-header-left, .view-header-title-container > div, .view-actions):not(:focus-within) {
-    opacity: var(--scrip-chrome-muted-opacity) !important;
+    opacity: var(--scrip-chrome-muted-opacity);
     transform: none;
 }
 
 body:not(.is-phone, .view-header-title-always) .view-header:is(:hover, :focus-within) :is(.view-header-left, .view-header-title-container > div, .view-actions) {
-    opacity: 1 !important;
-    transform: none !important;
+    opacity: 1;
+    transform: none;
 }
 /* [09] Nav Button Container */
 body:not(.is-mobile) {
@@ -1460,80 +1437,176 @@ body:not(.is-mobile) {
 }
 
 /* Workspace Auto-hide ================================================ */
-/* [09a] Status Bar Hover Reveal */
-body:not(.is-mobile) .status-bar {
-    position: relative;
-    z-index: 0;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: var(--scrip-status-expanded-width);
-    min-height: 8px;
-    height: calc-size(auto, size);
+/* [09a] Status Bar Hover Reveal - Option B: Horizontal Capsule Expand */
+body:not(.is-mobile) .app-container .status-bar {
+    position: fixed;
+    bottom: 12px;
+    right: 24px;
+    z-index: var(--layer-status-bar, 99);
+    width: auto;
+    height: 32px;
+    min-width: 36px;
+    max-width: 36px; /* Collapsed to a 36px circular pill */
     overflow: hidden;
     white-space: nowrap;
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the sync icon when collapsed */
+    
+    /* Elegant floating pill design */
+    background-color: var(--layer-1);
+    border: var(--border-width) solid var(--border-subtle-1);
     border-radius: 999px;
-    box-shadow: none;
-    transition:
+    padding: 0; /* No padding when collapsed to center the icon */
+    opacity: 0.65;
+    box-shadow: var(--shadow-tactile);
+    
+    /* Smooth horizontal expansion */
+    transition: 
         max-width var(--ease-moderate-smooth),
-        padding var(--ease-fast-smooth),
+        padding-inline var(--ease-fast-smooth),
         opacity var(--ease-fast-smooth),
-        transform var(--ease-moderate-smooth),
-        background-color var(--ease-fast-smooth),
-        box-shadow var(--ease-fast-smooth);
-    transform-origin: bottom right;
+        box-shadow var(--ease-moderate-smooth);
 }
 
-body:not(.is-mobile) .status-bar::before {
-    transition: var(--ease-moderate-smooth) var(--anim-motion-baseline);
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 150%;
-    height: 200%;
-    z-index: -1;
-    pointer-events: none;
-    background: radial-gradient(farthest-side at right bottom, var(--background-primary), rgba(var(--mono-rgb-0), 0));
-}
-
-body:not(.is-mobile) .status-bar > * {
-    transition:
-        opacity var(--ease-fast-smooth),
-        transform var(--ease-moderate-smooth),
-        filter var(--ease-fast-smooth);
-}
-
-body:not(.is-mobile) .status-bar:not(:hover):not(:focus-within) {
-    max-width: var(--scrip-status-compact-width) !important;
-    min-width: var(--scrip-status-compact-width);
-    padding-inline: var(--size-2) !important;
-    box-shadow: none;
+body:not(.is-mobile) .app-container .status-bar:hover,
+body:not(.is-mobile) .app-container .status-bar:focus-within {
+    /* Hover state: expand horizontally to show all status items */
+    max-width: var(--scrip-status-expanded-width);
     opacity: 1;
-    transform: none;
+    box-shadow: var(--shadow-s);
+    justify-content: flex-start;
+    padding-inline: var(--size-3); /* Restore padding when expanded */
 }
 
-body:not(.is-mobile) .status-bar:not(:hover):not(:focus-within)::before {
+/* Move sync status indicator to the left so it displays when collapsed */
+body:not(.is-mobile) .app-container .status-bar .status-bar-item.plugin-sync,
+body:not(.is-mobile) .app-container .status-bar .status-bar-item[class*="sync"] {
+    order: -1;
+}
+
+/* Hide other status bar items when collapsed to avoid content leakage and ensure centering */
+body:not(.is-mobile) .app-container .status-bar:not(:hover):not(:focus-within) .status-bar-item {
+    display: none;
+}
+
+/* Keep only the sync status item visible when collapsed */
+body:not(.is-mobile) .app-container .status-bar:not(:hover):not(:focus-within) .status-bar-item.plugin-sync,
+body:not(.is-mobile) .app-container .status-bar:not(:hover):not(:focus-within) .status-bar-item[class*="sync"] {
+    display: flex;
+}
+
+/* [09b] Sidebar Settings Group Hover Reveal - Sidedock Vault Profile Layout */
+/* Default collapsed state: hide Vault Switcher and Help button */
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-switcher,
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-actions .clickable-icon:first-child,
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="Help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="帮助"] {
+    opacity: 0;
+    max-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:not(:hover):not(:focus-within) .workspace-drawer-vault-actions {
+    gap: 0;
+}
+
+/* Ensure transition is applied and Help button's display: none is overridden */
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher,
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon:first-child,
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon[aria-label*="Help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon[aria-label*="help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions .clickable-icon[aria-label*="帮助"] {
+    display: inline-flex;
+    transition: 
+        opacity var(--ease-fast-smooth),
+        max-width var(--ease-moderate-smooth),
+        padding var(--ease-moderate-smooth),
+        margin var(--ease-moderate-smooth),
+        gap var(--ease-moderate-smooth);
+}
+
+/* Hover reveal state: expand switcher and Help button */
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:is(:hover, :focus-within) .workspace-drawer-vault-switcher {
+    opacity: 1;
+    max-width: 180px;
+    padding-left: var(--size-2);
+    padding-right: var(--size-2);
+    margin-left: initial;
+    margin-right: initial;
+    pointer-events: auto;
+}
+
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:is(:hover, :focus-within) .workspace-drawer-vault-actions .clickable-icon:first-child,
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:is(:hover, :focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="Help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:is(:hover, :focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="help"],
+body:not(.is-mobile) .app-container .mod-sidedock.mod-left-split .workspace-sidedock-vault-profile:is(:hover, :focus-within) .workspace-drawer-vault-actions .clickable-icon[aria-label*="帮助"] {
+    opacity: 1;
+    max-width: 36px;
+    padding-left: initial;
+    padding-right: initial;
+    margin-left: initial;
+    margin-right: initial;
+    pointer-events: auto;
+}
+
+/* [09d] Sidebar Panel Headers Hover Reveal (Dot Collapsing) */
+/* Default collapsed state: collapse buttons into small indicator dots */
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header:not(:hover):not(:focus-within) .nav-buttons-container {
+    gap: 4px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header:not(:hover):not(:focus-within) .nav-buttons-container .nav-action-button {
+    padding: 2px;
+    width: 4px; /* Small dot width */
+    height: 4px; /* Small dot height */
+    min-width: 0;
+    flex: 0 0 auto;
+    background-color: var(--background-modifier-hover);
+    box-shadow: none;
+    border-radius: 50%; /* Make them round dots */
+    margin: auto 0;
+}
+
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header:not(:hover):not(:focus-within) .nav-buttons-container .nav-action-button svg {
+    width: 0;
+    height: 0;
     opacity: 0;
 }
 
-body:not(.is-mobile) .status-bar:not(:hover):not(:focus-within) > * {
-    opacity: 1;
-    transform: none;
-    filter: none;
+/* Ensure smooth transition for all button properties */
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header .nav-buttons-container,
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header .nav-buttons-container .nav-action-button,
+body:not(.is-mobile) .app-container .mod-sidedock .workspace-leaf-content .nav-header .nav-buttons-container .nav-action-button svg {
+    transition: 
+        opacity var(--ease-fast-smooth),
+        width var(--ease-moderate-smooth),
+        height var(--ease-moderate-smooth),
+        padding var(--ease-moderate-smooth),
+        margin var(--ease-moderate-smooth),
+        background-color var(--ease-fast-smooth),
+        gap var(--ease-moderate-smooth);
 }
 
-body:not(.is-mobile) .status-bar:hover,
-body:not(.is-mobile) .status-bar:focus-within {
-    padding-inline: var(--size-3);
-    box-shadow: var(--shadow-s);
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+        transition-delay: 0ms;
+        scroll-behavior: auto;
+    }
 }
 
-body:not(.is-mobile) .status-bar:hover::before,
-body:not(.is-mobile) .status-bar:focus-within::before {
-    opacity: 1;
-}
 
 body:not(.is-mobile) .mod-sidedock.mod-right-split .workspace-tabs:last-of-type .node-insert-event {
     padding-bottom: 36px;
@@ -1706,93 +1779,6 @@ button.mod-cta,
 }
 
 /* Writing Components ================================================== */
-/* [12] Checkboxes & Tasks */
-input[type=checkbox] {
-    border-radius: var(--radius-s);
-    border: 1.5px solid var(--text-faint);
-    width: 16px;
-    height: 16px;
-    transition: var(--transition-interactive);
-    cursor: pointer;
-    position: relative;
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: var(--layer-1);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
-
-    &:hover {
-        border-color: var(--interactive-accent);
-        box-shadow: var(--scrip-shadow-tactile);
-    }
-
-    &:checked {
-        border-color: var(--interactive-accent);
-        background-color: var(--interactive-accent);
-        box-shadow:
-            inset 0 1px 0 rgba(255, 255, 255, 0.16),
-            0 0 0 1px rgba(var(--color-accent-rgb), var(--opacity-subtle));
-        transform: scale(var(--transform-scale-checked));
-        transition: var(--ease-spring);
-    }
-
-    &:active {
-        transform: scale(var(--transform-scale-pressed));
-    }
-}
-
-.markdown-preview-view input[type=checkbox] {
-    inset-block-start: 2px;
-}
-
-/* [12a] Half-checked Task */
-/* Use a linear gradient to indicate a halfway-progress state. */
-.markdown-preview-view input[type=checkbox][data-task="/"],
-.markdown-source-view.mod-cm6 input[type=checkbox][data-task="/"],
-.markdown-preview-view li[data-task="/"]>input[type=checkbox],
-.markdown-source-view.mod-cm6 li[data-task="/"]>input[type=checkbox] {
-    border-color: var(--interactive-accent);
-    background-color: var(--background-primary);
-    background-image: linear-gradient(to right, var(--interactive-accent) 0, var(--interactive-accent) 50%, transparent 50%, transparent 100%);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.24),
-        0 0 0 1px rgba(var(--color-accent-rgb), var(--opacity-subtle));
-
-    &::after {
-        mask-image: none;
-        background-color: transparent;
-    }
-
-    &:hover {
-        background-image: linear-gradient(to right, var(--interactive-accent-hover) 0, var(--interactive-accent-hover) 50%, transparent 50%, transparent 100%);
-    }
-
-    &:checked {
-        background-color: var(--background-primary);
-        background-image: linear-gradient(to right, var(--interactive-accent) 0, var(--interactive-accent) 50%, transparent 50%, transparent 100%);
-
-        &:hover {
-            background-image: linear-gradient(to right, var(--interactive-accent-hover) 0, var(--interactive-accent-hover) 50%, transparent 50%, transparent 100%);
-        }
-    }
-}
-
-/* [12b] Completed Task */
-/* Remove strikethrough and distinguish completion by fading color. */
-:is(.markdown-preview-view, .markdown-source-view.mod-cm6) :is(ul > li.task-list-item.is-checked, ol > li.task-list-item.is-checked, .HyperMD-task-line[data-task='x'], .HyperMD-task-line[data-task='X'], .HyperMD-task-line[data-task='M']) {
-    text-decoration: none;
-    color: var(--text-faint);
-}
-
-:is(.markdown-preview-view, .markdown-source-view.mod-cm6) :is(ul > li.task-list-item.is-checked, ol > li.task-list-item.is-checked, .HyperMD-task-line[data-task='x'], .HyperMD-task-line[data-task='X'], .HyperMD-task-line[data-task='M']) > input[type=checkbox] {
-    border-color: color-mix(in srgb, var(--interactive-accent) 78%, var(--text-faint));
-    background-color: color-mix(in srgb, var(--interactive-accent) 84%, var(--layer-1));
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.14),
-        0 0 0 1px rgba(var(--color-accent-rgb), var(--opacity-minimal));
-    opacity: 0.9;
-}
 
 
 /* [13] Callouts
@@ -2001,79 +1987,8 @@ input[type=checkbox] {
     border-left-width: var(--indicator-width);
 }
 
-/* Fold animation */
-@media (prefers-reduced-motion: no-preference) {
-    .callout.is-collapsed .callout-title .callout-fold {
-        transform: rotate(-90deg);
-    }
 
-    .callout.is-collapsed .callout-title {
-        border-bottom-color: transparent;
-    }
-}
-
-
-/* [14] Embedded Notes
-   ───────────────────────────────────────────────
-   Consistent with blockquote language: left color bar + soft background.
-   ───────────────────────────────────────────── */
-.markdown-embed {
-    border: var(--border-width) solid color-mix(in srgb, var(--paper-frame-border) 84%, transparent);
-    border-left: var(--border-width) solid var(--scrip-rule-strong);
-    border-radius: var(--radius-m);
-    padding: var(--size-4);
-    background-color: color-mix(in srgb, var(--panel-surface) 94%, var(--background));
-    margin: var(--size-5) 0;
-    transition: border-color var(--ease-fast-smooth),
-        background-color var(--ease-fast-smooth);
-    box-shadow: none;
-}
-
-.markdown-embed:hover {
-    border-color: color-mix(in srgb, var(--scrip-rule-strong) 82%, transparent);
-    background-color: color-mix(in srgb, var(--panel-surface-strong) 86%, var(--background));
-    box-shadow: none;
-}
-
-.markdown-embed .markdown-embed-title {
-    font-family: var(--font-interface);
-    font-weight: var(--font-semibold);
-    color: var(--scrip-ink-soft);
-    font-size: 0.76rem;
-    letter-spacing: 0.04em;
-}
-
-/* Images */
-.markdown-rendered img,
-.image-embed img {
-    border-radius: var(--radius-m);
-    border: var(--border-width) solid var(--paper-frame-border);
-    box-shadow: var(--paper-frame-shadow);
-    background: var(--layer-1);
-}
-
-@media (prefers-reduced-motion: reduce) {
-    body {
-        background-image: none;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-
-    input[type=checkbox]:checked,
-    :where(button, .modal-button-container button, .suggestion-item):hover:not(:disabled) {
-        transform: none;
-    }
-}
-
-.markdown-rendered :is(p, li, blockquote, .callout-content) :is(.internal-link, .external-link) {
-    font-weight: var(--font-normal);
-    text-decoration-thickness: max(1px, 0.05em);
-    text-underline-offset: 0.18em;
+/* [06e-override] Keep alignment scoped to actual prose blocks. */
+.markdown-preview-view :is(li p, blockquote p, .callout-content p, .markdown-embed p, td p, th p) {
+    text-align: start;
 }

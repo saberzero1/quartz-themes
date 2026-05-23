@@ -2,14 +2,14 @@
   font-family: "Cabin";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/carpe-noctem/cabin.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/carpe-noctem/cabin.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cabin";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/carpe-noctem/cabin-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/carpe-noctem/cabin-1.woff2")
     format("woff2");
 }
 body.theme-dark {

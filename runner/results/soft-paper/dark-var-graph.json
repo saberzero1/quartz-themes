@@ -2341,7 +2341,40 @@
     ".nav-folder-children > .nav-folder:nth-child(11n+8)": ["--ctp-mauve"],
     ".nav-folder-children > .nav-folder:nth-child(11n+9)": ["--ctp-mauve"],
     ".nav-folder-children > .nav-folder:nth-child(11n+10)": ["--ctp-mauve"],
-    ".nav-folder-children > .nav-folder:nth-child(11n+11)": ["--ctp-mauve"]
+    ".nav-folder-children > .nav-folder:nth-child(11n+11)": ["--ctp-mauve"],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+2)": [
+      "--sp-rf-red"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+3)": [
+      "--sp-rf-maroon"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+4)": [
+      "--sp-rf-peach"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+5)": [
+      "--sp-rf-yellow"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+6)": [
+      "--sp-rf-green"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+7)": [
+      "--sp-rf-teal"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+8)": [
+      "--sp-rf-sky"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+9)": [
+      "--sp-rf-sapphire"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+10)": [
+      "--sp-rf-blue"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+11)": [
+      "--sp-rf-lavender"
+    ],
+    ".sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n+12)": [
+      "--sp-rf-mauve"
+    ]
   },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },

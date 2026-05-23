@@ -2103,6 +2103,8 @@
   "--table-zebra-dark": { ":root": ["--gray-80", "--opacity-medium"] },
   "--table-hover-light": { ":root": ["--gray-20", "--opacity-half"] },
   "--table-hover-dark": { ":root": ["--gray-80", "--opacity-half"] },
+  "--scrip-status-compact-width": { ":root": ["--size-8"] },
+  "--scrip-status-expanded-width": { ":root": ["--size-8"] },
   "--color-secondary": {
     ".theme-light": ["--color-secondary-rgb-light"],
     ".theme-dark": ["--color-secondary-rgb-dark"]
@@ -2538,8 +2540,6 @@
   "--paragraph-spacing-relaxed": {
     ".workspace": ["--paragraph-spacing-base", "--multiplier-relaxed"]
   },
-  "--scrip-status-compact-width": { ".workspace": ["--size-8"] },
-  "--scrip-status-expanded-width": { ".workspace": ["--size-8"] },
   "--table-border-radius": { ".markdown-preview-view table": ["--radius-l"] },
   "--table-header-bg": { ".markdown-preview-view table": ["--layer-2"] },
   "--link-unresolved-hover-color": {
@@ -2590,6 +2590,19 @@
   "--link-visited-underline-color-hover": {
     ":is(.markdown-rendered, .markdown-source-view)": [
       "--text-secondary-accent-active"
+    ]
+  },
+  "--link-underline-current": {
+    ".markdown-rendered :is(.internal-link, .external-link)": [
+      "--link-underline-color-base"
+    ],
+    ".markdown-rendered .external-link": [
+      "--link-external-underline-color-base"
+    ]
+  },
+  "--link-underline-width": {
+    ".markdown-rendered :is(.internal-link, .external-link)": [
+      "--link-underline-thickness-base"
     ]
   },
   "--callout-default-rgb": { ".callout": ["--gray-60"] },

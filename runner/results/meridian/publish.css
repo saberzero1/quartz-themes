@@ -1444,7 +1444,7 @@ body.theme-dark {
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: transparent !important;
+  --background-primary: #111111 !important;
   --background-primary-alt: var(--color-base-10) !important;
   --background-secondary: #141414 !important;
   --background-secondary-alt: var(--color-base-30) !important;

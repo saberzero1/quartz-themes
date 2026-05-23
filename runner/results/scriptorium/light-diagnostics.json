@@ -2,6 +2,42 @@
   "conflicts": [],
   "brokenBridges": [
     {
+      "property": "--link-underline-current",
+      "references": "--link-external-underline-color-base",
+      "selector": "a.external-link, footer a",
+      "aspect": "links"
+    },
+    {
+      "property": "--link-underline-width",
+      "references": "--link-underline-thickness-base",
+      "selector": "a.external-link, footer a",
+      "aspect": "links"
+    },
+    {
+      "property": "--link-underline-current",
+      "references": "--link-underline-color-base",
+      "selector": "a.internal-link, .breadcrumb-container .breadcrumb-element > a",
+      "aspect": "links"
+    },
+    {
+      "property": "--link-underline-width",
+      "references": "--link-underline-thickness-base",
+      "selector": "a.internal-link, .breadcrumb-container .breadcrumb-element > a",
+      "aspect": "links"
+    },
+    {
+      "property": "--link-underline-current",
+      "references": "--link-underline-color-base",
+      "selector": "a.internal-link.broken",
+      "aspect": "links"
+    },
+    {
+      "property": "--link-underline-width",
+      "references": "--link-underline-thickness-base",
+      "selector": "a.internal-link.broken",
+      "aspect": "links"
+    },
+    {
       "property": "--callout-color",
       "references": "--callout-question-rgb",
       "selector": ".callout[data-callout=\"question\"]",

@@ -2,35 +2,35 @@
   font-family: "Peace Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/gummy-revived/peace-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/gummy-revived/peace-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/gummy-revived/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/gummy-revived/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/gummy-revived/space-grotesk.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/gummy-revived/space-grotesk.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/gummy-revived/source-code-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/gummy-revived/source-code-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Code Pro";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/gummy-revived/source-code-pro-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/gummy-revived/source-code-pro-1.woff2")
     format("woff2");
 }
 body.theme-light {

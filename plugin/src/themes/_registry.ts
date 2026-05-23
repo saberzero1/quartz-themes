@@ -1991,6 +1991,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["lyons-serif", "ia-writer-duospace"],
   },
+  nothing: {
+    name: "nothing",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "notion-style": {
     name: "notion-style",
     modes: ["dark", "light"],

@@ -488,8 +488,8 @@ body {
  * ╰─────────────────────────────────────────────────────────╯
 */
 
-/* Enable transparency on all non-Windows systems (e.g., macOS/Linux) */
-:not(.mod-windows).theme-dark {
+/* Enable transparency on macOS */
+:not(.mod-windows):not(.mod-linux).theme-dark {
   --background-primary: transparent;
 }
 /* @settings

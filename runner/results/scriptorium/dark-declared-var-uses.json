@@ -14,39 +14,38 @@
     "width": "var(--divider-width-hover)"
   },
   "a.external-link[data-tooltip-position=\"top\"]": {
+    "background-image": "linear-gradient(var(--link-underline-current), var(--link-underline-current))",
     "color": "var(--link-external-color-base)",
     "cursor": "var(--cursor-link)",
     "filter": "var(--link-external-filter)",
     "font-style": "var(--link-style)",
-    "font-weight": "var(--font-normal)",
-    "text-decoration-color": "var(--link-external-underline-color-base)",
+    "font-weight": "var(--font-medium)",
     "text-decoration-line": "var(--link-external-decoration)",
-    "text-decoration-style": "var(--link-underline-style-base)",
-    "text-decoration-thickness": "var(--link-underline-thickness-base)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)",
     "text-transform": "var(--link-text-transform)"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "background-image": "linear-gradient(var(--link-underline-current), var(--link-underline-current))",
     "color": "var(--link-color-base)",
     "cursor": "var(--cursor-link)",
     "font-style": "var(--link-style)",
-    "font-weight": "var(--font-normal)",
-    "text-decoration-color": "var(--link-underline-color-base)",
+    "font-weight": "var(--font-medium)",
     "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-style": "var(--link-underline-style-base)",
-    "text-decoration-thickness": "var(--link-underline-thickness-base)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)",
     "text-transform": "var(--link-text-transform)"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
+    "background-image": "linear-gradient(var(--link-underline-current), var(--link-underline-current))",
     "color": "var(--link-unresolved-color)",
     "cursor": "var(--cursor-link)",
     "filter": "var(--link-unresolved-filter)",
     "font-style": "var(--link-style)",
-    "font-weight": "var(--font-normal)",
+    "font-weight": "var(--font-bold)",
     "opacity": "var(--link-unresolved-opacity)",
     "text-decoration-color": "var(--link-unresolved-decoration-color)",
     "text-decoration-line": "var(--link-decoration)",
     "text-decoration-style": "var(--link-unresolved-decoration-style)",
-    "text-decoration-thickness": "var(--link-underline-thickness-base)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)",
     "text-transform": "var(--link-text-transform)"
   },
   "p": { "color": "var(--text-muted)" },
@@ -95,15 +94,12 @@
   },
   "code": {
     "background-color": "var(--code-background)",
-    "color": "var(--ec-codeFg)",
-    "font-family": "var(--ec-codeFontFml)",
-    "font-size": "var(--ec-codeFontSize)",
-    "font-weight": "var(--ec-codeFontWg)",
-    "line-height": "var(--ec-codeLineHt)"
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   "pre": { "background-color": "var(--code-background)" },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
-    "background-color": "var(--layer-1)",
     "font-family": "var(--font-interface)",
     "height": "var(--checkbox-size)",
     "width": "var(--checkbox-size)"
@@ -222,17 +218,15 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)"
   },
   "li.task-list-item[data-task=\">\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"?\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
@@ -277,13 +271,12 @@
     "font-family": "var(--font-interface)"
   },
   ".status-bar": {
-    "background-color": "var(--status-bar-background)",
+    "background-color": "var(--layer-1)",
+    "box-shadow": "var(--shadow-tactile)",
     "color": "var(--status-bar-text-color)",
     "font-size": "var(--status-bar-font-size)",
     "padding-right": "var(--size-4-2)",
-    "position": "var(--status-bar-position)",
-    "max-width": "var(--scrip-status-compact-width)",
-    "min-width": "var(--scrip-status-compact-width)"
+    "position": "var(--status-bar-position)"
   },
   ".status-bar-item": { "cursor": "var(--cursor)" },
   ".nav-header": { "font-family": "var(--font-interface)" },
@@ -321,7 +314,6 @@
     "height": "calc(100% - var(--header-height))"
   },
   "input[type=\"checkbox\"]": {
-    "background-color": "var(--layer-1)",
     "font-family": "var(--font-interface)",
     "height": "var(--checkbox-size)",
     "width": "var(--checkbox-size)"
@@ -352,114 +344,9 @@
     "line-height": "var(--inline-title-line-height)",
     "margin-bottom": "var(--size-3)"
   },
-  "li.task-list-item[data-task=\"x\"]": { "color": "var(--text-faint)" },
-  "h1[data-heading=\"This is a heading 1\"]": {
-    "color": "var(--h1-color)",
-    "font-family": "var(--h1-font)",
-    "font-size": "var(--scrip-type-h1-size)",
-    "font-style": "var(--h1-style)",
-    "font-weight": "var(--font-semibold)",
-    "letter-spacing": "var(--scrip-type-h1-tracking)",
-    "line-height": "var(--scrip-type-h1-leading)",
-    "margin-bottom": "calc(var(--paragraph-spacing) * 0.92)",
-    "margin-top": "calc(var(--paragraph-spacing) * 1.28)",
-    "padding-left": "var(--size-4)"
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
   },
-  "h2[data-heading=\"This is a heading 2\"]": {
-    "color": "var(--h2-color)",
-    "font-family": "var(--h2-font)",
-    "font-size": "var(--scrip-type-h2-size)",
-    "font-style": "var(--h2-style)",
-    "font-weight": "var(--font-semibold)",
-    "letter-spacing": "var(--scrip-type-h2-tracking)",
-    "line-height": "var(--scrip-type-h2-leading)",
-    "margin-bottom": "calc(var(--paragraph-spacing) * 0.84)",
-    "margin-top": "calc(var(--paragraph-spacing) * 1.42)",
-    "padding-bottom": "var(--size-2)"
-  },
-  "h3[data-heading=\"This is a heading 3\"]": {
-    "color": "var(--text-secondary-accent)",
-    "font-family": "var(--font-headings)",
-    "font-size": "var(--scrip-type-h3-size)",
-    "font-style": "var(--h3-style)",
-    "font-weight": "var(--font-semibold)",
-    "letter-spacing": "var(--scrip-type-h3-tracking)",
-    "line-height": "var(--scrip-type-h3-leading)",
-    "margin-bottom": "calc(var(--paragraph-spacing-tight) * 0.9)",
-    "margin-top": "calc(var(--paragraph-spacing) * 1.16)"
-  },
-  "h4[data-heading=\"This is a heading 4\"]": {
-    "color": "var(--h4-color)",
-    "font-family": "var(--h4-font)",
-    "font-size": "var(--h4-size)",
-    "font-style": "var(--h4-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h4-letter-spacing)",
-    "line-height": "var(--h4-line-height)",
-    "margin-bottom": "calc(var(--paragraph-spacing-tight) * 0.72)",
-    "margin-top": "var(--paragraph-spacing)"
-  },
-  "h5[data-heading=\"This is a heading 5\"]": {
-    "color": "var(--h5-color)",
-    "font-family": "var(--h5-font)",
-    "font-size": "var(--h5-size)",
-    "font-style": "var(--h5-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h5-letter-spacing)",
-    "line-height": "var(--h5-line-height)",
-    "margin-bottom": "calc(var(--paragraph-spacing-tight) * 0.72)",
-    "margin-top": "var(--paragraph-spacing)"
-  },
-  "h6[data-heading=\"This is a heading 6\"]": {
-    "color": "var(--h6-color)",
-    "font-family": "var(--h6-font)",
-    "font-size": "var(--h6-size)",
-    "font-style": "var(--h6-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h6-letter-spacing)",
-    "line-height": "var(--h6-line-height)",
-    "margin-bottom": "calc(var(--paragraph-spacing-tight) * 0.72)",
-    "margin-top": "var(--paragraph-spacing)"
-  },
-  "table": { "line-height": "var(--table-line-height)" },
-  "th": {
-    "border-left-width": "var(--table-column-first-border-width)",
-    "border-top-width": "var(--table-header-border-width)",
-    "color": "var(--table-header-color)",
-    "font-family": "var(--table-header-font)",
-    "font-size": "var(--table-header-size)",
-    "font-weight": "var(--table-header-weight)",
-    "line-height": "var(--line-height-tight)",
-    "vertical-align": "var(--table-cell-vertical-alignment)",
-    "max-width": "var(--table-column-max-width)",
-    "min-width": "var(--table-column-min-width)"
-  },
-  "td": {
-    "border-left-width": "var(--table-column-first-border-width)",
-    "color": "var(--table-text-color)",
-    "font-size": "var(--table-text-size)",
-    "vertical-align": "var(--table-cell-vertical-alignment)",
-    "max-width": "var(--table-column-max-width)",
-    "min-width": "var(--table-column-min-width)"
-  },
-  "tr": { "background-color": "var(--table-header-background)" },
-  "tbody tr:nth-child(even)": { "background-color": "var(--table-background)" },
-  "tbody tr:nth-child(odd)": {
-    "background-color": "var(--table-row-alt-background)"
-  },
-  "thead th": {
-    "border-left-width": "var(--table-column-first-border-width)",
-    "border-top-width": "var(--table-header-border-width)",
-    "color": "var(--table-header-color)",
-    "font-family": "var(--table-header-font)",
-    "font-size": "var(--table-header-size)",
-    "font-weight": "var(--table-header-weight)",
-    "line-height": "var(--line-height-tight)",
-    "vertical-align": "var(--table-cell-vertical-alignment)",
-    "max-width": "var(--table-column-max-width)",
-    "min-width": "var(--table-column-min-width)"
-  },
-  "tbody tr": { "background-color": "var(--table-row-alt-background)" },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
     "background-color": "color-mix(in srgb, var(--panel-surface) 95%, rgba(var(--callout-color), var(--callout-bg-opacity)))"
   },
@@ -484,6 +371,7 @@
     "line-height": "var(--line-height-relaxed)"
   },
   "svg.lucide-pencil.svg-icon": {
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
@@ -566,179 +454,145 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  ".internal-embed": {
-    "background-color": "color-mix(in srgb, var(--panel-surface) 94%, var(--background))",
-    "font-style": "var(--embed-font-style)"
+  "table": { "line-height": "var(--table-line-height)" },
+  "th": {
+    "border-left-width": "var(--table-column-first-border-width)",
+    "border-top-width": "var(--table-header-border-width)",
+    "color": "var(--table-header-color)",
+    "font-family": "var(--table-header-font)",
+    "font-size": "var(--table-header-size)",
+    "font-weight": "var(--table-header-weight)",
+    "line-height": "var(--line-height-tight)",
+    "vertical-align": "var(--table-cell-vertical-alignment)",
+    "max-width": "var(--table-column-max-width)",
+    "min-width": "var(--table-column-min-width)"
   },
-  ".markdown-embed": {
-    "background-color": "color-mix(in srgb, var(--panel-surface) 94%, var(--background))",
-    "font-style": "var(--embed-font-style)"
+  "td": {
+    "border-left-width": "var(--table-column-first-border-width)",
+    "color": "var(--table-text-color)",
+    "font-size": "var(--table-text-size)",
+    "vertical-align": "var(--table-cell-vertical-alignment)",
+    "max-width": "var(--table-column-max-width)",
+    "min-width": "var(--table-column-min-width)"
+  },
+  "tr": { "background-color": "var(--table-header-background)" },
+  "tbody tr:nth-child(even)": { "background-color": "var(--table-background)" },
+  "tbody tr:nth-child(odd)": {
+    "background-color": "var(--table-row-alt-background)"
+  },
+  "thead th": {
+    "border-left-width": "var(--table-column-first-border-width)",
+    "border-top-width": "var(--table-header-border-width)",
+    "color": "var(--table-header-color)",
+    "font-family": "var(--table-header-font)",
+    "font-size": "var(--table-header-size)",
+    "font-weight": "var(--table-header-weight)",
+    "line-height": "var(--line-height-tight)",
+    "vertical-align": "var(--table-cell-vertical-alignment)",
+    "max-width": "var(--table-column-max-width)",
+    "min-width": "var(--table-column-min-width)"
+  },
+  "tbody tr": { "background-color": "var(--table-row-alt-background)" },
+  ".internal-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
+  },
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"-\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"/\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"!\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"*\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"_\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"+\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"=\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"&\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"@\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"$\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"'\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\":\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\";\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"|\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"~\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"`\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"#\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\".\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\",\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"<\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"%\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"1\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"2\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"3\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"4\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"5\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"6\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"7\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"8\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"9\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"0\"]": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"l\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"b\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"i\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"p\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"c\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"f\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"k\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"u\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"d\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"w\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"a\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"e\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"g\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"h\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"j\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"m\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"n\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"o\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"q\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"r\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"s\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"t\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"v\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"y\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"z\"]": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"S\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"I\"]": {
-    "color": "var(--text-faint)",
     "line-height": "var(--line-height-normal)",
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"A\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"B\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"C\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"D\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"E\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"F\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"G\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"H\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"J\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"K\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"L\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"M\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"N\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"O\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"P\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"Q\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"R\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"T\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"U\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"V\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"W\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"X\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"Y\"]": { "color": "var(--text-faint)" },
-  "li.task-list-item[data-task=\"Z\"]": { "color": "var(--text-faint)" },
+  "li.task-list-item[data-task=\"X\"]": {
+    "color": "var(--checklist-done-color)"
+  },
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)"
+  },
   ".canvas-node-content": {
-    "background-color": "color-mix(in srgb, var(--panel-surface) 94%, var(--background))",
+    "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
   },
   ".canvas-node-container .markdown-rendered": {

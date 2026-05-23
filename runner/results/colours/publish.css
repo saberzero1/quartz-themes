@@ -4388,7 +4388,7 @@ body body.theme-light .markdown-rendered th {
   background-color: var(--cursor-line-color);
   color: var(--table-header-color);
   font-weight: var(--table-header-weight);
-  text-align: start;
+  text-align: left;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
@@ -4417,13 +4417,13 @@ body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
   color: var(--table-text-color);
   font-weight: 400;
-  text-align: start;
+  text-align: left;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  border: 1px solid oklch(80% 0.161484 268.43deg / 0.2);
+  border: 1px solid oklch(95% 0.0161484 268.43deg);
   border-left: var(--table-column-first-border-width) solid
-    oklch(80% 0.161484 268.43deg / 0.2);
+    oklch(95% 0.0161484 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -6848,7 +6848,7 @@ body body.theme-dark .markdown-rendered th {
   background-color: var(--cursor-line-color);
   color: var(--table-header-color);
   font-weight: var(--table-header-weight);
-  text-align: start;
+  text-align: left;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
@@ -6877,13 +6877,13 @@ body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
   color: var(--table-text-color);
   font-weight: 400;
-  text-align: start;
+  text-align: left;
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  border: 1px solid oklch(50% 0.129187 268.43deg / 0.5);
+  border: 1px solid oklch(90% 0.0775124 268.43deg);
   border-left: var(--table-column-first-border-width) solid
-    oklch(50% 0.129187 268.43deg / 0.5);
+    oklch(90% 0.0775124 268.43deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

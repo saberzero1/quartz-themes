@@ -2,14 +2,14 @@
   font-family: "Nunito Sans 12pt ExtraLight";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/chiaroscuroflow/nunito-sans-12pt-extralight.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/chiaroscuroflow/nunito-sans-12pt-extralight.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manrope ExtraLight";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.5/fonts/chiaroscuroflow/manrope-extralight.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/chiaroscuroflow/manrope-extralight.woff2")
     format("woff2");
 }
 body.theme-light {

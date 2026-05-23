@@ -1,7 +1,7 @@
 /*
  * Soft Paper — An Obsidian Theme
  * by Nick Milo
- * Version 1.0.0
+ * Version 1.2.0
  *
  * Based on AnuPpuccin by Anubis (https://github.com/AnubisNekhet/AnuPpuccin)
  * AnuPpuccin is licensed under GPL-3.0.
@@ -100,6 +100,12 @@ settings:
     id: sp-settings-transparent-80
     title: Make settings more see-through
     description: Settings window at 80% opacity for even more visibility
+    type: class-toggle
+    default: false
+  -
+    id: sp-rainbow-folders
+    title: Rainbow-Colored Folders
+    description: Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
     type: class-toggle
     default: false
 */
@@ -1018,6 +1024,16 @@ body {
   background-color: rgba(var(--ctp-accent), 1);
 }
 
+/* Mobile: remove colorful frame bleed (overscroll, behind keyboard) */
+body.is-mobile {
+  background-color: var(--background-primary);
+}
+body.is-mobile .workspace,
+body.is-mobile .horizontal-main-container,
+body.is-mobile .mod-vertical .workspace-tabs {
+  background-color: var(--background-primary);
+}
+
 /* Sidebar tab header containers: blue background */
 .mod-left-split .workspace-tab-header-container,
 .mod-right-split .workspace-tab-header-container {
@@ -1494,6 +1510,137 @@ body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.
   border-color: rgba(var(--rainbow-folder-color), 0.5);
 }
 
+/*---------------------------------------------------------------
+ * RAINBOW-COLORED FOLDERS (Style Settings toggle: sp-rainbow-folders)
+ * Full 11-color Catppuccin cycle with lighter tinted backgrounds.
+ * Default OFF = ACE-colored (5 hues). Toggle ON = rainbow (11 hues).
+ * By Joel Anderson, integrated 2026-05-23.
+ *---------------------------------------------------------------*/
+
+/* Palette — Catppuccin Latte (light) / Mocha (dark) */
+.sp-rainbow-folders.theme-light {
+  --sp-rf-red: 210,15,57; --sp-rf-maroon: 230,69,83; --sp-rf-peach: 254,100,11;
+  --sp-rf-yellow: 228,147,32; --sp-rf-green: 64,160,43; --sp-rf-teal: 23,146,153;
+  --sp-rf-sky: 4,165,229; --sp-rf-sapphire: 32,159,181; --sp-rf-blue: 42,110,245;
+  --sp-rf-lavender: 114,135,253; --sp-rf-mauve: 136,57,239;
+  --anp-rainbow-folder-bg-opacity: 0.18;
+}
+.sp-rainbow-folders.theme-dark {
+  --sp-rf-red: 243,139,168; --sp-rf-maroon: 235,160,172; --sp-rf-peach: 250,179,135;
+  --sp-rf-yellow: 249,226,175; --sp-rf-green: 166,227,161; --sp-rf-teal: 148,226,213;
+  --sp-rf-sky: 137,220,235; --sp-rf-sapphire: 116,199,236; --sp-rf-blue: 135,176,249;
+  --sp-rf-lavender: 180,190,254; --sp-rf-mauve: 203,166,247;
+  --anp-rainbow-folder-bg-opacity: 0.22;
+}
+
+/* 11-color cycle overrides */
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 2),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 2),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 2)  { --rainbow-folder-color: var(--sp-rf-red); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 3),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 3),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 3)  { --rainbow-folder-color: var(--sp-rf-maroon); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 4),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 4),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 4)  { --rainbow-folder-color: var(--sp-rf-peach); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 5),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 5),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 5)  { --rainbow-folder-color: var(--sp-rf-yellow); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 6),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 6),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 6)  { --rainbow-folder-color: var(--sp-rf-green); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 7),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 7),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 7)  { --rainbow-folder-color: var(--sp-rf-teal); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 8),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 8),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 8)  { --rainbow-folder-color: var(--sp-rf-sky); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 9),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 9),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 9)  { --rainbow-folder-color: var(--sp-rf-sapphire); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 10),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 10),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 10) { --rainbow-folder-color: var(--sp-rf-blue); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 11),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 11),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 11) { --rainbow-folder-color: var(--sp-rf-lavender); }
+
+.sp-rainbow-folders .nav-folder-children > .nav-folder:nth-child(11n + 12),
+.sp-rainbow-folders .nav-files-container > div > .nav-folder:nth-child(11n + 12),
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item:nth-child(11n + 12) { --rainbow-folder-color: var(--sp-rf-mauve); }
+
+/* Folder title emphasis — stronger tint on the header row */
+.sp-rainbow-folders .nav-files-container > div > .nav-folder > .nav-folder-title {
+  background-color: rgba(var(--rainbow-folder-color), calc(var(--anp-rainbow-folder-bg-opacity) + 0.25));
+  border-radius: 6px;
+}
+
+/* Left accent border on folder children */
+.sp-rainbow-folders .nav-files-container > div > .nav-folder > .nav-folder-children {
+  border-left: 2px solid rgba(var(--rainbow-folder-color), 0.55);
+  margin-left: 6px;
+  padding-left: 4px;
+}
+
+/* Bookmarks pane tinting */
+.sp-rainbow-folders [data-type="bookmarks"] .tree-item > .tree-item-self {
+  background-color: rgba(var(--rainbow-folder-color), calc(var(--anp-rainbow-folder-bg-opacity) + 0.15));
+  border-radius: 6px;
+}
+
+/* Readable text — light mode: dark text on lighter tinted backgrounds */
+body.sp-rainbow-folders.theme-light .nav-files-container > div > .nav-folder .nav-folder-title,
+body.sp-rainbow-folders.theme-light .nav-files-container > div > .nav-folder .nav-folder-title-content,
+body.sp-rainbow-folders.theme-light .nav-files-container > div > .nav-folder .nav-file-title,
+body.sp-rainbow-folders.theme-light .nav-files-container > div > .nav-folder .nav-file-title-content,
+body.sp-rainbow-folders.theme-light .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title,
+body.sp-rainbow-folders.theme-light [data-type="bookmarks"] .tree-item-inner {
+  color: rgb(40, 40, 40);
+}
+
+body.sp-rainbow-folders.theme-light .nav-files-container .collapse-icon svg.svg-icon,
+body.sp-rainbow-folders.theme-light .nav-files-container .nav-folder .nav-file-title {
+  color: rgb(40, 40, 40);
+  --icon-color: rgb(40, 40, 40);
+}
+
+body.sp-rainbow-folders.theme-light .nav-files-container .nav-file-title.is-active,
+body.sp-rainbow-folders.theme-light .nav-files-container .nav-file-title.is-active .nav-file-title-content {
+  color: rgb(40, 40, 40);
+  font-weight: 600;
+}
+
+/* Readable text — dark mode: light text on lighter tinted backgrounds */
+body.sp-rainbow-folders.theme-dark .nav-files-container > div > .nav-folder .nav-folder-title,
+body.sp-rainbow-folders.theme-dark .nav-files-container > div > .nav-folder .nav-folder-title-content,
+body.sp-rainbow-folders.theme-dark .nav-files-container > div > .nav-folder .nav-file-title,
+body.sp-rainbow-folders.theme-dark .nav-files-container > div > .nav-folder .nav-file-title-content,
+body.sp-rainbow-folders.theme-dark .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title,
+body.sp-rainbow-folders.theme-dark [data-type="bookmarks"] .tree-item-inner {
+  color: rgb(235, 235, 235);
+}
+
+body.sp-rainbow-folders.theme-dark .nav-files-container .collapse-icon svg.svg-icon,
+body.sp-rainbow-folders.theme-dark .nav-files-container .nav-folder .nav-file-title {
+  color: rgb(235, 235, 235);
+  --icon-color: rgb(235, 235, 235);
+}
+
+body.sp-rainbow-folders.theme-dark .nav-files-container .nav-file-title.is-active,
+body.sp-rainbow-folders.theme-dark .nav-files-container .nav-file-title.is-active .nav-file-title-content {
+  color: rgb(235, 235, 235);
+  font-weight: 600;
+}
+
 /*===============================================================
  * CUSTOM CHECKBOXES
  *===============================================================*/
@@ -1852,6 +1999,26 @@ body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.
 .nav-file .nav-file-title[data-path$=".mov"]::before,
 .nav-file .nav-file-title[data-path$=".mkv"]::before {
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 11v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8H4Z'/%3E%3Cpath d='m4 11-.88-2.87a2 2 0 0 1 1.33-2.5l11.48-3.5a2 2 0 0 1 2.5 1.32l.87 2.87L4 11.01Z'/%3E%3Cpath d='M6.6 4.99l3.38 4.2m1.88-5.81l3.38 4.2'/%3E%3C/svg%3E");
+}
+
+/*===============================================================
+ * PLUGIN COMPATIBILITY FIXES
+ *===============================================================*/
+
+/* Obsidian Git: restore text visibility in the Source Control pane.
+   Rainbow folder text overrides (cream/dark) bleed into the Git
+   plugin's tree items, making filenames invisible. Fix by Azmandios. */
+body.theme-light .git-tools .tree-item-inner,
+body.theme-dark .git-tools .tree-item-inner {
+  color: var(--text-normal);
+  opacity: 1;
+  visibility: visible;
+}
+body .git-tools .clickable-icon {
+  opacity: var(--icon-opacity, 0.7);
+}
+body .git-tools .clickable-icon:hover {
+  opacity: 1;
 }
 
 /*===============================================================

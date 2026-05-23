@@ -1,0 +1,26 @@
+{
+  "extractedAt": "2026-05-23T22:13:49.759Z",
+  "sourceTheme": "Nothing",
+  "fonts": [
+    {
+      "family": "Nothing",
+      "style": "normal",
+      "weight": "normal",
+      "file": "nothing.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lettera Mono",
+      "style": "normal",
+      "weight": "normal",
+      "file": "lettera-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

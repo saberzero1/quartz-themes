@@ -92,11 +92,6 @@
     "--transform-scale-hidden": ":root",
     "--transform-translate-hover": ":root",
     "--transform-translate-hidden": ":root",
-    "--offset-checkbox-marker": ":root",
-    "--offset-checkbox-preview": ":root",
-    "--scrip-chk-pos-x": ":root",
-    "--scrip-chk-pos-y": ":root",
-    "--scrip-chk-size": ":root",
     "--multiplier-tight": ":root",
     "--multiplier-relaxed": ":root",
     "--percentage-color-mix-low": ":root",
@@ -142,6 +137,9 @@
     "--scrip-vault-mask-mid-alpha": ":root",
     "--scrip-vault-mask-bottom-alpha": ":root",
     "--scrip-vault-mask-mid-stop": ":root",
+    "--scrip-chrome-muted-opacity": ":root",
+    "--scrip-status-compact-width": ":root",
+    "--scrip-status-expanded-width": ":root",
     "--panel-shadow-soft": "html",
     "--scrollbar-size": "html",
     "--scrollbar-thumb-color": "html",
@@ -1640,15 +1638,21 @@
   "hr.workspace-leaf-resize-handle": { "--focus-ring-color": ":root *" },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": "a"
+    "--font-weight": "a",
+    "--link-underline-current": ".markdown-rendered .external-link",
+    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered .internal-link"
+    "--font-weight": ".markdown-rendered .internal-link",
+    "--link-underline-current": ".markdown-rendered :is(.internal-link, .external-link)",
+    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered .internal-link"
+    "--font-weight": ".markdown-rendered .internal-link",
+    "--link-underline-current": ".markdown-rendered :is(.internal-link, .external-link)",
+    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
   },
   "p": { "--focus-ring-color": ":root *" },
   "strong": { "--focus-ring-color": ":root *" },
