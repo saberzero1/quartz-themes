@@ -45,13 +45,9 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "@jackyzha0/quartz": "^4.5.2",
     "preact": "^10.0.0"
   },
   "peerDependenciesMeta": {
-    "@jackyzha0/quartz": {
-      "optional": true
-    },
     "preact": {
       "optional": false
     }
