@@ -1633,21 +1633,15 @@
   "hr.workspace-leaf-resize-handle": { "--focus-ring-color": ":root *" },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": "a",
-    "--link-underline-current": ".markdown-rendered .external-link",
-    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
+    "--font-weight": "a"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered .internal-link",
-    "--link-underline-current": ".markdown-rendered :is(.internal-link, .external-link)",
-    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
+    "--font-weight": ".markdown-rendered .internal-link"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
     "--focus-ring-color": ":root *",
-    "--font-weight": ".markdown-rendered .internal-link",
-    "--link-underline-current": ".markdown-rendered :is(.internal-link, .external-link)",
-    "--link-underline-width": ".markdown-rendered :is(.internal-link, .external-link)"
+    "--font-weight": ".markdown-rendered .internal-link"
   },
   "p": { "--focus-ring-color": ":root *" },
   "strong": { "--focus-ring-color": ":root *" },

@@ -863,6 +863,8 @@
     "--translucent-dark-opacity": "body",
     "--tab-text-align": "body",
     "--tab-action-width": "body:not(.is-mobile)",
+    "--setting-items-padding-x": "body:not(.is-phone)",
+    "--setting-items-padding-y": "body:not(.is-phone)",
     "--nn-theme-mobile-nav-bg": "body",
     "--nn-theme-nav-header-bg": "body",
     "--nn-theme-nav-bg": "body",

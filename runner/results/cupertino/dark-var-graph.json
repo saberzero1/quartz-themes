@@ -1886,7 +1886,7 @@
     "body.is-mobile": ["--text-normal"]
   },
   "--tab-text-color-focused": {
-    "body": ["--text-muted"],
+    "body": ["--text-faint"],
     "body.is-mobile": ["--text-normal"]
   },
   "--tab-text-color-focused-active": { "body": ["--text-normal"] },
@@ -2781,7 +2781,10 @@
     "body.is-mobile": ["--header-height"]
   },
   "--view-header-action-radius": { ".is-mobile": ["--view-header-height"] },
-  "--mobile-toolbar-height": { ".is-mobile": ["--touch-size-l"] },
+  "--mobile-toolbar-height": {
+    ".is-mobile": ["--touch-size-l"],
+    "body.is-mobile": ["--touch-size-m"]
+  },
   "--system-status-background": {
     ".is-mobile": ["--background-primary"],
     ".is-tablet": ["--titlebar-background"]
@@ -2912,6 +2915,7 @@
       "--header-height"
     ]
   },
+  "--toolbar-option-width": { "body.is-mobile": ["--mobile-toolbar-height"] },
   "--scroll-fade-offset-right": {
     ".mobile-toolbar-options-container": ["--toolbar-option-width"]
   },

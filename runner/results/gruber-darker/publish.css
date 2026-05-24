@@ -1614,6 +1614,7 @@ body.theme-light {
   --italic-color: #52494e !important;
   --input-focus-border-color: #3a5f8a !important;
   --sidebar-width: var(--gd-sidebar-width) !important;
+  --input-border-color: #c4c0c0 !important;
   --blockquote-background: rgba(220, 218, 218, 0.5) !important;
   --code-line-height: 1.65 !important;
   --code-padding: 1.1em 1.4em !important;
@@ -1651,7 +1652,6 @@ body.theme-light {
   --gd-vim-cursor-color-visual: #9e95c7 !important;
   --gd-wisteria: #9e95c7 !important;
   --gd-yellow: #ffdd33 !important;
-  --input-border-color: #c4c0c0 !important;
   --scrollbar-thumb-radius: 4px !important;
   --table-even-row-background: #efeded !important;
   --table-odd-row-background: #f5f5f5 !important;
@@ -2640,6 +2640,7 @@ body.theme-dark {
   --input-focus-border-color: var(--gd-niagara) !important;
   --folder-color: var(--gd-niagara) !important;
   --sidebar-width: var(--gd-sidebar-width) !important;
+  --input-border-color: var(--gd-bg-match) !important;
   --blockquote-background: rgba(40, 40, 40, 0.5) !important;
   --callout-caution: 244, 56, 65;
   --callout-failure: 244, 56, 65;
@@ -2679,7 +2680,6 @@ body.theme-dark {
   --gd-vim-cursor-color-visual: #9e95c7 !important;
   --gd-wisteria: #9e95c7 !important;
   --gd-yellow: #ffdd33 !important;
-  --input-border-color: var(--gd-bg-match) !important;
   --link-unresolved-decoration: underline dotted !important;
   --pdf-viewer-background: var(--gd-bg) !important;
   --prompt-shadow:

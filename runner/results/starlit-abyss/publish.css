@@ -2,84 +2,84 @@
   font-family: "Science Gothic Bold Extended";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/science-gothic-bold-extended.ttf")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/science-gothic-bold-extended.ttf")
     format("ttf");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-4.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: italic;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-5.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-5.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-6.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-6.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Tomorrow";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/tomorrow-7.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/tomorrow-7.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Michroma";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/michroma.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/michroma.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Kode Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/kode-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/kode-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Science Gothic";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/starlit-abyss/science-gothic.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/starlit-abyss/science-gothic.woff2")
     format("woff2");
 }
 body.theme-light {

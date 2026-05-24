@@ -1338,7 +1338,7 @@ body.theme-light {
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint) !important;
   --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-faint) !important;
   --tab-text-color-focused-active: var(--text-normal) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
@@ -1523,6 +1523,8 @@ body.theme-light {
     --background-modifier-hover
   ) !important;
   --radius-modifier: 1 !important;
+  --setting-items-padding-x: 0px !important;
+  --setting-items-padding-y: 0px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px !important;
@@ -2427,7 +2429,7 @@ body.theme-dark {
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint) !important;
   --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused: var(--text-faint) !important;
   --tab-text-color-focused-active: var(--text-normal) !important;
   --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
@@ -2608,6 +2610,8 @@ body.theme-dark {
     --background-modifier-hover
   ) !important;
   --radius-modifier: 1 !important;
+  --setting-items-padding-x: 0px !important;
+  --setting-items-padding-y: 0px !important;
   --shadow-tactile:
     rgba(0, 0, 0, 0.04) 0px 2px 8px -2px,
     rgba(var(--mono-rgb-100), 0.04) 0px 2px 4px -2px !important;

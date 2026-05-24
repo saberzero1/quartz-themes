@@ -1,0 +1,322 @@
+/* 
+   =========================================================================
+   ** Okudagram **
+   ========================================================================= 
+*/
+
+/* #region Theme Variables */
+
+:root {
+	/* Okudagram palette */
+	--okudagram-black: #000000;
+	--okudagram-panel: #111111;
+	--okudagram-peach: #FF9966;
+	--okudagram-beige: #FFCC99;
+	--okudagram-lavender: #CC99CC;
+	--okudagram-red: #CC6666;
+	--okudagram-amber: #FF9900;
+	--okudagram-blue: #99CCFF;
+	--okudagram-muted: #9999CC;
+
+	/* Fonts */
+	--okudagram-font-interface: 'Antonio', 'Oswald', 'Bahnschrift',
+		'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+	--okudagram-font-text: 'Antonio', 'Oswald', 'Bahnschrift',
+		'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+	--okudagram-font-monospace: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+/* #endregion */
+
+/* #region Dark Theme */
+
+.theme-dark {
+  /* #region Obsidian Variable Overrides */
+
+  /* Fonts */
+  --font-interface: var(--okudagram-font-interface);
+  --font-text: var(--okudagram-font-text);
+  --font-monospace: var(--okudagram-font-monospace);
+
+  /* Backgrounds */
+	--background-primary: var(--okudagram-black);
+	--background-primary-alt: var(--okudagram-panel);
+	--background-secondary: var(--okudagram-black);
+	--background-secondary-alt: var(--okudagram-panel);
+	--background-modifier-border: var(--okudagram-peach);
+	--background-modifier-hover: rgba(255, 153, 102, 0.15);
+	--background-modifier-active-hover: rgba(204, 153, 204, 0.25);
+	--background-modifier-form-field: var(--okudagram-black);
+
+  /* Text */
+	--text-normal: var(--okudagram-amber);
+	--text-muted: var(--okudagram-beige);
+	--text-faint: var(--okudagram-muted);
+	--text-accent: var(--okudagram-lavender);
+	--text-accent-hover: var(--okudagram-beige);
+	--text-on-accent: var(--okudagram-black);
+	--text-error: var(--okudagram-red);
+	--text-success: var(--okudagram-beige);
+
+  /* Interactive */
+	--interactive-normal: var(--okudagram-black);
+	--interactive-hover: var(--okudagram-lavender);
+	--interactive-accent: var(--okudagram-peach);
+	--interactive-accent-hover: var(--okudagram-lavender);
+
+  /* Ribbon Menu */
+	--ribbon-background: var(--okudagram-peach);
+	--ribbon-background-collapsed: var(--okudagram-peach);
+
+  /* Titlebar */
+	--titlebar-background: var(--okudagram-peach);
+	--titlebar-background-focused: var(--okudagram-peach);
+
+  /* Tabs */
+	--tab-background-active: var(--okudagram-lavender);
+	--tab-text-color-focused: var(--okudagram-black);
+	--tab-text-color-focused-active: var(--okudagram-black);
+	--tab-text-color-focused-active-current: var(--okudagram-black);
+  --tab-container-background: var(--okudagram-amber);
+
+  /* Icons */
+	--icon-color-focused: var(--okudagram-black);
+
+  /* Status Bar */
+	--status-bar-background: var(--okudagram-amber);
+  --status-bar-text-color: var(--okudagram-black);
+
+  /* Dividers */
+	--divider-color: var(--okudagram-peach);
+
+  /* Nav Items */
+	--nav-item-color-active: var(--okudagram-black);
+	--nav-item-background-active: var(--okudagram-beige);
+
+  /* Code Blocks */
+	--code-background: #0A0A0A;
+	--code-normal: var(--okudagram-beige);
+
+  /* Dropdowns */
+  --dropdown-background: var(--okudagram-muted);
+
+  /* Callouts */
+  --callout-default: 153, 204, 255; /* blue */
+  --callout-todo: 153, 204, 255; /* blue */
+	--callout-info: 153, 204, 255; /* blue */
+	--callout-tip: 255, 204, 153; /* beige */
+  --callout-summary: 255, 204, 153; /* beige */
+  --callout-important: 255, 204, 153; /* beige */
+	--callout-warning: 255, 153, 0; /* amber */
+  --callout-question: 255, 153, 0; /* amber */
+	--callout-fail: 204, 102, 102; /* red */
+	--callout-error: 204, 102, 102; /* red */
+	--callout-bug: 204, 102, 102; /* red */
+	--callout-example: 204, 153, 204; /* lavender */
+	--callout-quote: 153, 153, 204; /* muted */
+
+  /* Headers */
+	--h1-color: var(--okudagram-peach);
+	--h2-color: var(--okudagram-beige);
+	--h3-color: var(--okudagram-lavender);
+	--h4-color: var(--okudagram-amber);
+	--h5-color: var(--okudagram-blue);
+	--h6-color: var(--okudagram-muted);
+
+  /* #endregion */
+
+  /* #region Titlebar */
+
+  .titlebar {
+    background-color: var(--okudagram-peach);
+
+    .titlebar-button {
+      color: var(--okudagram-black);
+    }
+  }
+
+  /* #endregion */
+
+  /* #region Workspace */
+
+  .workspace {
+    .sidebar-toggle-button {      
+      /* Sidebar Panel Collapse/Expand Toggle Buttons */
+      /* Overrides --icon-color */
+      .clickable-icon {
+        color: var(--okudagram-black);
+      }
+    }
+
+    /* Ribbon Menu */
+    .workspace-ribbon {
+      padding-inline-start: 0;
+      padding-inline-end: 0;
+      border-right: none;
+
+      .side-dock-actions {
+        .side-dock-ribbon-action {
+          /* Add Gaps */
+          margin-inline-start: 0;
+          margin-inline-end: 0;
+          border-radius: 0;
+          border-bottom: none;
+          box-shadow: 0 -6px 0 var(--okudagram-black);
+
+          &:first-child {
+            box-shadow: none;
+          }
+
+          &:last-child {
+            box-shadow: 0 -6px 0 var(--okudagram-black),
+                        0 6px 0 var(--okudagram-black);
+          }
+
+          /* Action Button Alternating Colors */
+          &:nth-child(5n + 1) {
+            background-color: var(--okudagram-peach);
+            color: var(--okudagram-black);
+          }
+
+          &:nth-child(5n + 2) {
+            background-color: var(--okudagram-red);
+            color: var(--okudagram-black);
+          }
+
+          &:nth-child(5n + 3) {
+            background-color: var(--okudagram-lavender);
+            color: var(--okudagram-black);
+          }
+
+          &:nth-child(5n + 4) {
+            background-color: var(--okudagram-amber);
+            color: var(--okudagram-black);
+          }
+
+          &:nth-child(5n + 5) {
+            background-color: var(--okudagram-muted);
+            color: var(--okudagram-black);
+          }
+        }
+      }
+    }
+
+    /* Tabs */
+    .workspace-split {
+      /* Tab Colors, Side Panels */
+      /* Overrides default --tab-background-active */
+      &.mod-sidedock {
+        &.mod-right-split {
+          .workspace-tab-header.is-active .workspace-tab-header-inner {
+            background-color: var(--okudagram-red);
+          }
+        }
+
+        &.mod-left-split {
+          .workspace-tab-header.is-active .workspace-tab-header-inner {
+            background-color: var(--okudagram-muted);
+          }
+        }
+      }
+
+      &.mod-root {
+        .workspace-tabs {
+          .workspace-tab-header-container {
+            .workspace-tab-header-container-inner {
+              .workspace-tab-header.is-active {
+                /* Square Tab, Center */
+                &::before,
+                &::after {
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .workspace-tabs {
+        .workspace-tab-header-container {
+          .workspace-tab-header-container-inner {
+            /* Full Height Tabs, Center and Side Panels */
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .workspace-tab-header {
+              .workspace-tab-header-inner {
+                /* Tab Icons, Side Panels */
+                /* Overrides --icon-color */
+                .workspace-tab-header-inner-icon,
+                .workspace-tab-header-inner-close-button {
+                  color: var(--okudagram-black);
+                }
+              }
+
+              /* Square Tabs, Center and Side Panels */
+              &.is-active,
+              &.is-active .workspace-tab-header-inner {
+                border-radius: 0;
+              }
+            }
+          }
+
+          /* Tab Icons, Center */
+          /* Overrides --icon-color */
+          .workspace-tab-header-new-tab,
+          .workspace-tab-header-tab-list {
+            .clickable-icon {
+              color: var(--okudagram-black);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* #endregion */
+
+  /* #region Misc. Overrides */
+
+  /* Dropdowns */
+  .dropdown {
+    /* Overrides --text-normal */
+    &:not(.conjunction) {
+      color: var(--okudagram-black);
+    }
+
+    /* Overrides above set value */
+    option {
+      color: var(--okudagram-amber);
+    }
+  }
+
+  /* Combo Boxes */
+  .combobox-button,
+  .combobox-button .combobox-button-icon {
+    color: var(--okudagram-black);
+  }
+
+  /* Search */
+  .workspace-workleaf-content[data-type="search"] {
+    /* Overrides .dropdown override and --text-muted */
+    .search-results-info .dropdown {
+      color: var(--okudagram-beige);
+    }
+
+    .search-result-container {
+      .search-results-children {
+        .search-result:not(.is-collapsed) {
+          /* Overrides --nav-item-color-active */
+          .search-result-file-title {
+            color: var(--okudagram-beige);
+          }
+        }
+      }
+    }
+  }
+
+  /* #endregion */
+}
+
+/* #endregion */

@@ -2,35 +2,35 @@
   font-family: "W95font";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/retroma.monochromatic/w95font.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/retroma.monochromatic/w95font.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cascadia Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/retroma.monochromatic/cascadia-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/retroma.monochromatic/cascadia-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/retroma.monochromatic/ia-writer-mono-s.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/retroma.monochromatic/ia-writer-mono-s.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Excalifont";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/retroma.monochromatic/excalifont.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/retroma.monochromatic/excalifont.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Caveat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/retroma.monochromatic/caveat.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/retroma.monochromatic/caveat.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -1117,10 +1117,10 @@ body.theme-light {
   ) !important;
   --settings-background: var(--background-paper) !important;
   --img-border-radius: 0px !important;
+  --button-border-radius: 8px !important;
   --box-shadow:
     inset -2px -2px oklch(from var(--background-secondary) 50% c h),
     inset 2px 2px oklch(from var(--background-secondary) 100% c h) !important;
-  --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
   --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(
@@ -2322,10 +2322,10 @@ body.theme-dark {
   ) !important;
   --settings-background: var(--background-paper) !important;
   --img-border-radius: 0px !important;
+  --button-border-radius: 8px !important;
   --box-shadow:
     inset -2px -2px oklch(from var(--background-secondary) 0% c h),
     inset 2px 2px oklch(from var(--background-secondary) 50% c h) !important;
-  --button-border-radius: 8px !important;
   --window-border-radius: 12px !important;
   --metadata-label-font-weight: var(--font-bold) !important;
   --folder-color-1: oklch(

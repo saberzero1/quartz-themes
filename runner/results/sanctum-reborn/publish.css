@@ -1526,10 +1526,11 @@ body.theme-light {
   --red-50: hsl(11.2deg, 88.7%, 58.4%) !important;
   --yellow-100: hsl(3.5deg, 100%, 10.2%) !important;
   --yellow-50: hsl(42.7deg, 100%, 36.1%) !important;
+  --embed-border-color: var(--interactive-accent) !important;
+  --embed-border-width: 1px !important;
   --background-active: rgba(var(--gray-50), 0.32) !important;
   --background-hover: rgba(var(--gray-50), 0.12) !important;
   --pistachio: var(--pistachio-50) !important;
-  --embed-border-color: var(--interactive-accent) !important;
   --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
   --overlay: rgba(var(--gray-100), 0.5) !important;
@@ -1590,7 +1591,6 @@ body.theme-light {
   --cyan-90: hsl(206.1deg, 100%, 13.5%) !important;
   --elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
   --elevation-2: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
-  --embed-border-width: 1px !important;
   --field-1: rgb(var(--white)) !important;
   --field-hover-1: rgb(var(--gray-20)) !important;
   --focus-inset: rgb(var(--white)) !important;
@@ -2764,10 +2764,11 @@ body.theme-dark {
   --red-50: hsl(11.2deg, 88.7%, 58.4%) !important;
   --yellow-100: hsl(3.5deg, 100%, 10.2%) !important;
   --yellow-50: hsl(42.7deg, 100%, 36.1%) !important;
+  --embed-border-color: var(--interactive-accent) !important;
+  --embed-border-width: 1px !important;
   --background-active: rgba(var(--gray-50), 0.4) !important;
   --background-hover: rgba(var(--gray-50), 0.16) !important;
   --pistachio: var(--pistachio-50) !important;
-  --embed-border-color: var(--interactive-accent) !important;
   --callout-title-background: transparent;
   --focus: var(--cyan-60) !important;
   --overlay: rgba(var(--gray-100), 0.7) !important;
@@ -2828,7 +2829,6 @@ body.theme-dark {
   --cyan-90: hsl(206.1deg, 100%, 13.5%) !important;
   --elevation-1: 0 2px 6px 0 rgba(0, 0, 0, 0.2) !important;
   --elevation-2: 0 2px 6px 0 rgba(0, 0, 0, 0.3) !important;
-  --embed-border-width: 1px !important;
   --field-1: rgb(var(--gray-90)) !important;
   --field-hover-1: rgb(var(--gray-80)) !important;
   --focus-inset: rgb(var(--gray-100)) !important;

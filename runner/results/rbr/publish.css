@@ -1379,6 +1379,7 @@ body.theme-dark {
   --indentation-guide: var(--rbr-overlay-0) !important;
   --indentation-guide-active: var(--rbr-accent) !important;
   --table-row-background: transparent !important;
+  --slider-thumb-background: var(--rbr-text) !important;
   --popover-background: var(--rbr-surface-0) !important;
   --callout-cite: 133, 144, 174;
   --popover-border-color: var(--rbr-surface-2) !important;
@@ -1423,7 +1424,6 @@ body.theme-dark {
   --rbr-text: #c8d0e8 !important;
   --rbr-track-green: #9cc080 !important;
   --rbr-track-line: #e8ecf5 !important;
-  --slider-thumb-background: var(--rbr-text) !important;
   --slider-thumb-border-active: var(--rbr-accent) !important;
   --tab-text-color-active-inactive-current: var(--rbr-subtext-1) !important;
   --titlebar-text-color-blurred: var(--rbr-subtext-1) !important;

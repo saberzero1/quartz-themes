@@ -942,6 +942,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  framer: {
+    name: "framer",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   freecolors: {
     name: "freecolors",
     modes: ["light", "dark"],
@@ -2105,6 +2111,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   oistnb: {
     name: "oistnb",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  okudagram: {
+    name: "okudagram",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],

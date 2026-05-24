@@ -1045,7 +1045,10 @@
   "--link-color-hover": {
     "body": ["--text-accent-hover"],
     ".bases-group-heading": ["--bases-group-heading-value-color"],
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-accent-hover"]
+    ":is(.markdown-rendered, .markdown-source-view)": [
+      "--text-accent-hover",
+      "--text-primary"
+    ]
   },
   "--link-weight": {
     "body": ["--font-weight"],
@@ -1068,13 +1071,16 @@
   "--link-external-color": { "body": ["--text-accent"] },
   "--link-external-color-hover": {
     "body": ["--text-accent-hover"],
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-a-hover"]
+    ":is(.markdown-rendered, .markdown-source-view)": ["--link-color-hover"]
   },
   "--link-unresolved-color": {
     "body": ["--text-accent"],
     ".bases-group-heading": ["--bases-group-heading-value-color"],
     ".bases-cards-property.mod-title": ["--text-normal"],
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-muted"]
+    ":is(.markdown-rendered, .markdown-source-view)": [
+      "--text-accent",
+      "--text-muted"
+    ]
   },
   "--link-unresolved-decoration-color": {
     "body": ["--interactive-accent-hsl"]
@@ -2543,28 +2549,33 @@
   "--table-border-radius": { ".markdown-preview-view table": ["--radius-l"] },
   "--table-header-bg": { ".markdown-preview-view table": ["--layer-2"] },
   "--link-unresolved-hover-color": {
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-secondary"]
+    ":is(.markdown-rendered, .markdown-source-view)": ["--text-accent-hover"]
   },
   "--link-color-base": {
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-accent"]
+    ":is(.markdown-rendered, .markdown-source-view)": [
+      "--text-accent",
+      "--text-primary"
+    ]
   },
   "--link-color-active": {
     ":is(.markdown-rendered, .markdown-source-view)": ["--text-accent-active"]
   },
   "--link-external-color-base": {
-    ":is(.markdown-rendered, .markdown-source-view)": ["--text-a"]
+    ":is(.markdown-rendered, .markdown-source-view)": ["--link-color-base"]
   },
   "--link-external-color-active": {
     ":is(.markdown-rendered, .markdown-source-view)": ["--text-a-active"]
   },
   "--link-visited-color-base": {
     ":is(.markdown-rendered, .markdown-source-view)": [
-      "--text-secondary-accent"
+      "--text-secondary-accent",
+      "--text-primary"
     ]
   },
   "--link-visited-color-hover": {
     ":is(.markdown-rendered, .markdown-source-view)": [
-      "--text-secondary-accent-active"
+      "--text-secondary-accent-active",
+      "--text-primary"
     ]
   },
   "--link-underline-color-base": {
@@ -2590,19 +2601,6 @@
   "--link-visited-underline-color-hover": {
     ":is(.markdown-rendered, .markdown-source-view)": [
       "--text-secondary-accent-active"
-    ]
-  },
-  "--link-underline-current": {
-    ".markdown-rendered :is(.internal-link, .external-link)": [
-      "--link-underline-color-base"
-    ],
-    ".markdown-rendered .external-link": [
-      "--link-external-underline-color-base"
-    ]
-  },
-  "--link-underline-width": {
-    ".markdown-rendered :is(.internal-link, .external-link)": [
-      "--link-underline-thickness-base"
     ]
   },
   "--callout-default-rgb": { ".callout": ["--gray-60"] },

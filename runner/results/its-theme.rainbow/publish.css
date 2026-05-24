@@ -3,14 +3,14 @@
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/its-theme.rainbow/fira-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/its-theme.rainbow/fira-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "its";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/its-theme.rainbow/its.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/its-theme.rainbow/its.woff")
     format("woff");
 }
 body.theme-light {
@@ -1083,6 +1083,8 @@ body.theme-light {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --button-border-radius: var(--radius-m) !important;
+  --embed-border-color: transparent !important;
   --kanban-lane-background: var(--code-bg) !important;
   --kanban-lane-border: var(--box-border-m) !important;
   --ribbon-border-color: var(--outer-bar) !important;
@@ -1106,7 +1108,6 @@ body.theme-light {
   --box-border-s: 1px solid var(--outline) !important;
   --bttn: #c24747 !important;
   --bullet-font: "ITS" !important;
-  --button-border-radius: var(--radius-m) !important;
   --canvas-color-opacity: 0.08 !important;
   --canvas-node-padding: 0 7px !important;
   --checklist-done-weight: 900 !important;
@@ -1129,7 +1130,6 @@ body.theme-light {
   --embed-bg: #f1f5ff !important;
   --embed-border-bottom-color: var(--embed-border-color) !important;
   --embed-border-bottom-color-hover: var(--embed-border-color-hover) !important;
-  --embed-border-color: transparent !important;
   --embed-border-color-hover: var(--outline) !important;
   --embed-border-left-color: var(--headers) !important;
   --embed-border-left-color-hover: var(--embed-border-left-color) !important;
@@ -2552,6 +2552,8 @@ body.theme-dark {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --button-border-radius: var(--radius-m) !important;
+  --embed-border-color: transparent !important;
   --kanban-lane-background: var(--code-bg) !important;
   --kanban-lane-border: var(--box-border-m) !important;
   --ribbon-border-color: var(--outer-bar) !important;
@@ -2575,7 +2577,6 @@ body.theme-dark {
   --box-border-s: 1px solid var(--outline) !important;
   --bttn: #7c2929 !important;
   --bullet-font: "ITS" !important;
-  --button-border-radius: var(--radius-m) !important;
   --canvas-color-opacity: 0.08 !important;
   --canvas-node-padding: 0 7px !important;
   --checklist-done-weight: 900 !important;
@@ -2599,7 +2600,6 @@ body.theme-dark {
   --embed-bg: #10161d !important;
   --embed-border-bottom-color: var(--embed-border-color) !important;
   --embed-border-bottom-color-hover: var(--embed-border-color-hover) !important;
-  --embed-border-color: transparent !important;
   --embed-border-color-hover: var(--outline) !important;
   --embed-border-left-color: var(--headers) !important;
   --embed-border-left-color-hover: var(--embed-border-left-color) !important;

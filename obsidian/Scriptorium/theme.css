@@ -1146,20 +1146,20 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 /* [07e] Link Styles */
 /* [07e-i] Link Tokens */
 :is(.markdown-rendered, .markdown-source-view) {
-    --link-unresolved-opacity: 0.6;
-    --link-unresolved-color: var(--text-muted);
-    --link-unresolved-hover-color: var(--text-secondary);
+    --link-unresolved-opacity: 0.72;
+    --link-unresolved-color: color-mix(in srgb, var(--text-accent) 48%, var(--text-muted));
+    --link-unresolved-hover-color: var(--text-accent-hover);
     --link-style: normal;
     --link-text-transform: none;
     --link-external-style: normal;
-    --link-color-base: var(--text-accent);
-    --link-color-hover: var(--text-accent-hover);
+    --link-color-base: color-mix(in srgb, var(--text-accent) 88%, var(--text-primary));
+    --link-color-hover: color-mix(in srgb, var(--text-accent-hover) 84%, var(--text-primary));
     --link-color-active: var(--text-accent-active);
-    --link-external-color-base: var(--text-a);
-    --link-external-color-hover: var(--text-a-hover);
+    --link-external-color-base: var(--link-color-base);
+    --link-external-color-hover: var(--link-color-hover);
     --link-external-color-active: var(--text-a-active);
-    --link-visited-color-base: var(--text-secondary-accent);
-    --link-visited-color-hover: var(--text-secondary-accent-active);
+    --link-visited-color-base: color-mix(in srgb, var(--text-secondary-accent) 78%, var(--text-primary));
+    --link-visited-color-hover: color-mix(in srgb, var(--text-secondary-accent-active) 84%, var(--text-primary));
     --link-underline-color-base: rgba(var(--color-accent-rgb), 0.42);
     --link-underline-color-hover: var(--text-accent);
     --link-underline-color-active: var(--text-accent-active);
@@ -1180,38 +1180,25 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
     font-style: var(--link-style);
     text-transform: var(--link-text-transform);
     color: var(--link-color-base);
-    font-weight: var(--font-medium);
-    --link-underline-current: var(--link-underline-color-base);
-    --link-underline-width: var(--link-underline-thickness-base);
-    background-image: linear-gradient(var(--link-underline-current), var(--link-underline-current));
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: 100% var(--link-underline-width);
-    padding-bottom: 0.04em;
-    transition: color var(--ease-fast-smooth),
-        background-size var(--ease-fast-smooth);
+    font-weight: var(--font-semibold);
+    text-underline-offset: var(--link-underline-offset);
+    transition:
+        color var(--ease-fast-smooth),
+        opacity var(--ease-fast-smooth);
 
     &:hover {
         color: var(--link-color-hover);
-        --link-underline-current: var(--link-underline-color-hover);
-        --link-underline-width: var(--link-underline-thickness-hover);
     }
 
     &:active {
         color: var(--link-color-active);
-        --link-underline-current: var(--link-underline-color-active);
-        --link-underline-width: var(--link-underline-thickness-active);
     }
 
     &:visited {
         color: var(--link-visited-color-base);
-        --link-underline-current: var(--link-visited-underline-color-base);
-        --link-underline-width: var(--link-underline-thickness-base);
 
         &:hover {
             color: var(--link-visited-color-hover);
-            --link-underline-current: var(--link-visited-underline-color-hover);
-            --link-underline-width: var(--link-underline-thickness-hover);
         }
     }
 }
@@ -1219,18 +1206,13 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 .markdown-rendered .external-link,
 .markdown-source-view .cm-link:not(.cm-hmd-internal-link) {
     color: var(--link-external-color-base);
-    --link-underline-current: var(--link-external-underline-color-base);
 
     &:hover {
         color: var(--link-external-color-hover);
-        --link-underline-current: var(--link-external-underline-color-hover);
-        --link-underline-width: var(--link-underline-thickness-hover);
     }
 
     &:active {
         color: var(--link-external-color-active);
-        --link-underline-current: var(--link-external-color-active);
-        --link-underline-width: var(--link-underline-thickness-active);
     }
 }
 
@@ -1238,7 +1220,7 @@ body.styled-scrollbars .nav-folder-children:not(:hover)::-webkit-scrollbar-thumb
 .markdown-source-view.mod-cm6 .is-unresolved {
     color: var(--link-unresolved-color);
     opacity: var(--link-unresolved-opacity);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-semibold);
     transition: color var(--ease-moderate-smooth),
         opacity var(--ease-moderate-smooth);
 

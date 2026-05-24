@@ -2,21 +2,21 @@
   font-family: "LiberationSerifRegular";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/dune/liberationserifregular.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/dune/liberationserifregular.woff")
     format("woff");
 }
 @font-face {
   font-family: "Louis George Cafe";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/dune/louis-george-cafe.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/dune/louis-george-cafe.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Manuskript Gothisch";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.6/fonts/dune/manuskript-gothisch.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/dune/manuskript-gothisch.woff2")
     format("woff2");
 }
 body.theme-light {

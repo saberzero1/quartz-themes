@@ -1,0 +1,2290 @@
+/* @settings
+name: Framer Theme
+id: framer-theme
+settings:
+    -
+        id: framer-info
+        title: Framer Design System
+        description: A clean black-and-white theme inspired by Framer's design system, with vivid blue accents and smooth transitions.
+        type: info-text
+        markdown: true
+    -
+        id: appearance
+        title: Appearance
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: interface-font
+        title: Interface Font
+        description: Font used for the UI
+        type: variable-text
+        default: Inter
+        options:
+            - Inter
+            - 'SF Pro'
+            - 'JetBrains Mono'
+            - system-ui
+    -
+        id: accent-style
+        title: Accent Style
+        type: class-select
+        allowEmpty: false
+        default: accent-blue
+        options:
+            -
+                label: Classic Blue
+                value: accent-blue
+            -
+                label: Vibrant Cyan
+                value: accent-cyan
+            -
+                label: Purple
+                value: accent-purple
+    -
+        id: animations
+        title: Animations
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: reduce-motion
+        title: Reduce Motion
+        description: Disable smooth transitions
+        type: class-toggle
+        default: false
+    -
+        id: features
+        title: Features
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: framer-tabs
+        title: Framed Tab Headers
+        description: Add subtle border around tab headers
+        type: class-toggle
+        default: true
+    -
+        id: framer-section-highlight
+        title: Section Highlights
+        description: Show colored left border on active sections in settings
+        type: class-toggle
+        default: true
+    -
+        id: framer-quick-actions
+        title: Quick Actions Style
+        description: Enhanced command palette with Framer Quick Actions look
+        type: class-toggle
+        default: true
+    -
+        id: framer-heading-gradient
+        title: Heading Blue (需要 Style Settings 插件)
+        description: 取消勾选可恢复默认白色标题（当前为默认启用，已在 .theme-dark 中内置）
+        type: class-toggle
+        default: true
+    -
+        id: plugins
+        title: Plugins
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: framer-dataview
+        title: Dataview Styling
+        description: Apply Framer styling to Dataview tables
+        type: class-toggle
+        default: true
+    -
+        id: framer-kanban
+        title: Kanban Styling
+        description: Apply Framer styling to Kanban boards
+        type: class-toggle
+        default: true
+    -
+        id: framer-calendar
+        title: Calendar Styling
+        description: Apply Framer styling to Calendar plugin
+        type: class-toggle
+        default: true
+    -
+        id: mobile
+        title: Mobile
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: framer-mobile
+        title: Mobile Adaptation
+        description: Apply 13px panel text and 44px touch targets on mobile
+        type: class-toggle
+        default: true
+    -
+        id: canvas
+        title: Canvas
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: framer-grid
+        title: Editor Canvas Grid
+        description: Show dot grid background in editor (like Framer canvas)
+        type: class-toggle
+        default: true
+    -
+        id: framer-snap-dots
+        title: Snap Point Indicators
+        description: Show larger dots at grid intersections (simulates snap points)
+        type: class-toggle
+        default: false
+    -
+        id: framer-cursor
+        title: Canvas Crosshair Cursor
+        description: Use crosshair cursor in editor (Framer canvas style)
+        type: class-toggle
+        default: false
+    -
+        id: framer-280
+        title: 280px Property Panel
+        description: Fix right sidebar to 280px width (Framer Property Panel spec)
+        type: class-toggle
+        default: true
+    -
+        id: framer-frame-select
+        title: Frame Selection Outlines
+        description: Show blue selection border on images, code blocks, embeds
+        type: class-toggle
+        default: true
+    -
+        id: framer-drag-indicator
+        title: Drag Insertion Indicator
+        description: Show blue line when dragging files between folders
+        type: class-toggle
+        default: true
+    -
+        id: framer-search
+        title: Component Search
+        description: Style file search like Framer Component Browser
+        type: class-toggle
+        default: true
+    -
+        id: framer-panel-groups
+        title: Property Panel Groups
+        description: Style metadata sections as Layout / Style / Effects groups
+        type: class-toggle
+        default: true
+    -
+        id: framer-compact
+        title: Compact 4px Spacing
+        description: Use tighter 4px-base spacing grid (Framer default)
+        type: class-toggle
+        default: false
+    -
+        id: framer-backlinks
+        title: Backlinks Connection Panel
+        description: Style backlinks panel like Framer connection wires
+        type: class-toggle
+        default: true
+    -
+        id: framer-tags-panel
+        title: Tags as Chips
+        description: Display tags as Framer-style chip badges
+        type: class-toggle
+        default: true
+    -
+        id: framer-reading
+        title: Reading Mode Prose
+        description: Optimize reading mode with max-width and comfortable spacing
+        type: class-toggle
+        default: true
+    -
+        id: framer-line-nums
+        title: Code Panel Line Numbers
+        description: Style editor line numbers like Framer code panel
+        type: class-toggle
+        default: true
+    -
+        id: snippets
+        title: Snippets
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: framer-bold-pink
+        title: Bold Pink
+        description: Make bold text pink (#FF69B4) in reading and live preview. Built-in, always active.
+        type: info-text
+        markdown: true
+    -
+        id: framer-immersive-red
+        title: Immersive Translate Red Gradient
+        description: Apply red gradient to Immersive Translate plugin results. Built-in, always active.
+        type: info-text
+        markdown: true
+    -
+        id: framer-table-minimal
+        title: Minimal Tables
+        description: Full-width tables with auto layout and minimal borders. Built-in, always active.
+        type: info-text
+        markdown: true
+    -
+        id: framer-floating-statusbar
+        title: Floating Status Bar
+        description: Status bar slides in from the right on hover. Built-in, always active.
+        type: info-text
+        markdown: true
+*/
+
+.theme-dark {
+  /* ── Brand Colors ── */
+  --color-brand: #0099FF;
+  --color-bg: #000000;
+  --color-text: #FFFFFF;
+  --color-surface: #1A1A1A;
+  --color-gray-900: #1A1A1A;
+  --color-gray-700: #333333;
+  --color-gray-500: #555555;
+  --color-gray-300: #888888;
+
+  --color-success: #0099FF;
+  --color-error: #FF3B30;
+  --color-warning: #FF9500;
+
+  /* ── Semantic Interaction Colors ── */
+  --hover-bg-subtle: rgba(255, 255, 255, 0.03);
+  --hover-bg-medium: rgba(255, 255, 255, 0.04);
+  --hover-bg-strong: rgba(255, 255, 255, 0.08);
+  --hover-bg-scroll: rgba(255, 255, 255, 0.15);
+
+  --hover-brand-subtle: color-mix(in srgb, var(--color-brand) 4%, transparent);
+  --hover-brand-light: color-mix(in srgb, var(--color-brand) 6%, transparent);
+  --hover-brand-medium: color-mix(in srgb, var(--color-brand) 8%, transparent);
+  --hover-brand-strong: color-mix(in srgb, var(--color-brand) 12%, transparent);
+  --hover-brand-bg: color-mix(in srgb, var(--color-brand) 20%, transparent);
+  --hover-brand-bg-strong: color-mix(in srgb, var(--color-brand) 30%, transparent);
+  --hover-brand-border: color-mix(in srgb, var(--color-brand) 30%, transparent);
+  --hover-brand-border-strong: color-mix(in srgb, var(--color-brand) 40%, transparent);
+
+  --grid-line: rgba(255, 255, 255, 0.015);
+  --hover-bg-canvas: rgba(255, 255, 255, 0.02);
+  --hover-bg-active: rgba(255, 255, 255, 0.07);
+  --divider-subtle: rgba(255, 255, 255, 0.06);
+  --shadow-canvas-btn: rgba(0, 0, 0, 0.3);
+
+  /* ── Obsidian Overrides ── */
+  --text-normal: var(--color-text);
+  --text-muted: var(--color-gray-500);
+  --text-faint: var(--color-gray-300);
+  --text-on-accent: #FFFFFF;
+  --text-accent: var(--color-brand);
+  --text-accent-hover: color-mix(in srgb, var(--color-brand) 80%, white);
+
+  --bold-color: var(--color-text);
+  --italic-color: var(--color-text);
+
+  --background-primary: var(--color-bg);
+  --background-primary-alt: #0D0D0D;
+  --background-secondary: var(--color-surface);
+  --background-secondary-alt: #151515;
+
+  --background-modifier-hover: var(--hover-bg-medium);
+  --background-modifier-active-hover: var(--hover-bg-active);
+  --background-modifier-border: var(--color-gray-700);
+  --background-modifier-border-hover: var(--color-gray-500);
+  --background-modifier-border-focus: var(--color-brand);
+  --background-modifier-error: var(--color-error);
+  --background-modifier-error-hover: #E0352B;
+  --background-modifier-success: var(--color-success);
+  --background-modifier-message: var(--color-surface);
+
+  --transition-default: 150ms ease-out;
+
+  --interactive-accent: var(--color-brand);
+  --interactive-accent-hover: color-mix(in srgb, var(--color-brand) 80%, white);
+  --interactive-accent-rgb: 0, 153, 255;
+
+  --divider-color: var(--color-gray-700);
+  --divider-width: 1px;
+  --divider-color-panel: #222222;
+
+  --panel-width: 280px;
+
+  --titlebar-background: var(--color-bg);
+  --titlebar-background-focused: var(--color-bg);
+  --titlebar-text-color: var(--color-text);
+
+  --ribbon-background: var(--color-bg);
+  --ribbon-background-collapsed: var(--color-bg);
+
+  --tab-background-active: var(--color-surface);
+  --tab-background-inactive: var(--color-bg);
+  --tab-text-color: var(--color-gray-500);
+  --tab-text-color-active: var(--color-text);
+  --tab-text-color-focused: var(--color-text);
+  --tab-text-color-focused-active: var(--color-brand);
+  --tab-divider-color: var(--color-gray-700);
+
+  --prompt-border-color: var(--color-gray-700);
+  --prompt-background: var(--color-surface);
+
+  --modal-background: var(--color-surface);
+  --modal-border-color: var(--color-gray-700);
+  --modal-border-width: 1px;
+
+  --nav-item-background-hover: var(--hover-bg-medium);
+  --nav-item-background-active: var(--hover-brand-strong);
+  --nav-item-color: var(--color-text);
+  --nav-item-color-hover: var(--color-text);
+  --nav-item-color-active: var(--color-brand);
+  --nav-item-color-highlighted: var(--color-brand);
+
+  --list-marker-color: var(--color-gray-500);
+  --list-marker-color-hover: var(--color-text);
+
+  --indentation-guide-color: var(--divider-subtle);
+  --indentation-guide-color-active: var(--hover-brand-border);
+
+  --hr-color: var(--color-gray-700);
+
+  --blockquote-border-color: var(--color-brand);
+  --blockquote-background-color: var(--hover-brand-subtle);
+
+  --link-color: var(--color-brand);
+  --link-color-hover: color-mix(in srgb, var(--color-brand) 80%, white);
+  --link-external-color: var(--color-brand);
+  --link-external-color-hover: color-mix(in srgb, var(--color-brand) 80%, white);
+
+  --tag-color: var(--color-gray-300);
+  --tag-background: var(--hover-bg-medium);
+  --tag-background-hover: var(--hover-bg-strong);
+
+  --code-background: #111111;
+  --code-normal: #E4E4E4;
+  --code-comment: var(--color-gray-500);
+  --code-keyword: var(--color-brand);
+  --code-value: #A5D6FF;
+  --code-string: #6FCF97;
+  --code-function: #79C0FF;
+  --code-important: var(--color-error);
+  --code-tag: var(--color-warning);
+  --code-property: #79C0FF;
+  --code-punctuation: var(--color-gray-500);
+  --code-operator: #D2A8FF;
+
+  --table-header-background: #222222;
+  --table-header-background-hover: #2A2A2A;
+  --table-border-color: var(--color-gray-700);
+  --table-row-background-hover: var(--hover-bg-canvas);
+
+  --graph-text: var(--color-text);
+  --graph-line: var(--hover-bg-strong);
+  --graph-node: var(--color-gray-500);
+  --graph-node-unresolved: var(--color-gray-700);
+  --graph-node-focused: var(--color-brand);
+  --graph-node-tag: var(--color-warning);
+  --graph-node-attachment: var(--color-success);
+
+  --canvas-color: 0, 153, 255;
+
+  --inline-title-color: var(--h1-color);
+  --inline-title-font: inherit;
+
+  --checkbox-color: var(--color-gray-500);
+  --checkbox-color-hover: var(--color-gray-300);
+  --checkbox-border-color: var(--color-gray-500);
+  --checkbox-border-color-hover: var(--color-gray-300);
+
+  --checklist-done-color: var(--color-gray-500);
+
+  --metadata-label-text-color: var(--color-gray-500);
+  --metadata-input-text-color: var(--color-text);
+  --metadata-input-background: var(--color-bg);
+  --metadata-input-background-hover: #0D0D0D;
+  --metadata-input-background-active: #0D0D0D;
+  --metadata-input-border-color: var(--color-gray-700);
+  --metadata-input-border-color-hover: var(--color-gray-500);
+  --metadata-input-border-color-active: var(--color-brand);
+  --metadata-dot-color: var(--color-gray-500);
+  --metadata-divider-color: var(--divider-color);
+
+  --embed-background: var(--hover-bg-canvas);
+  --embed-border-color: var(--color-gray-700);
+  --embed-border-width: 1px;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--hover-bg-strong);
+  --scrollbar-active-thumb-bg: var(--hover-bg-scroll);
+
+  --status-bar-background: var(--color-bg);
+  --status-bar-text-color: var(--color-gray-500);
+
+  --sidebar-markdown-font-size: 14px;
+
+  --vault-name-color: var(--color-text);
+
+  --search-result-background: transparent;
+  --search-background-color: var(--color-surface);
+
+  --input-background: var(--color-bg);
+  --input-border-color: var(--color-gray-700);
+  --input-border-width: 1px;
+  --input-radius: 4px;
+
+  --slider-track-background: var(--color-gray-700);
+  --slider-thumb-background: var(--color-brand);
+
+  --toggle-thumb-color: var(--color-text);
+  --toggle-background: var(--color-gray-700);
+
+  --pill-cover-background-color: transparent;
+  --pill-background-color: var(--hover-bg-medium);
+
+  --icon-color: var(--color-gray-500);
+  --icon-color-hover: var(--color-text);
+  --icon-color-active: var(--color-brand);
+  --icon-color-focused: var(--color-text);
+
+  --button-border-radius: 8px;
+
+  --heading-formatting: var(--color-gray-500);
+
+  --h1-color: #0099FF;
+  --h2-color: #2EA8FF;
+  --h3-color: #47B5FF;
+  --h4-color: #66C2FF;
+  --h5-color: #8DD0FF;
+  --h6-color: #B3D9FF;
+
+  --h1-size: 2.5em;
+  --h2-size: 1.75em;
+  --h3-size: 1.25em;
+  --h4-size: 1em;
+  --h5-size: 0.875em;
+  --h6-size: 0.8125em;
+
+  --h1-line-height: 1.1;
+  --h2-line-height: 1.2;
+  --h3-line-height: 1.3;
+  --h4-line-height: 1.4;
+  --h5-line-height: 1.4;
+  --h6-line-height: 1.4;
+}
+
+/* ── Heading Color Toggle (Style Settings: framer-heading-gradient) ── */
+body:not(.framer-heading-gradient) .theme-dark {
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+}
+
+/* ── Base Styles ── */
+body {
+  --font-interface-theme: var(--interface-font, Inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-text-theme: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-monospace-theme: 'JetBrains Mono', 'Fira Code', 'SF Mono', Menlo, Consolas, monospace;
+
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+
+  --size-4-1: 4px;
+  --size-4-2: 8px;
+  --size-4-3: 12px;
+  --size-4-4: 16px;
+  --size-4-5: 20px;
+  --size-4-6: 24px;
+  --size-4-8: 32px;
+  --size-4-9: 36px;
+  --size-4-12: 48px;
+  --size-4-16: 64px;
+}
+
+/* ── Single Transition Rule ── */
+body:not(.reduce-motion) * {
+  transition: background-color var(--transition-default), color var(--transition-default), border-color var(--transition-default), box-shadow var(--transition-default), opacity var(--transition-default), transform var(--transition-default);
+}
+
+body:not(.reduce-motion) .clickable-icon:hover {
+  transform: scale(1.05);
+}
+
+body:not(.reduce-motion) .workspace-leaf-resize-handle {
+  transition: background-color var(--transition-default), opacity var(--transition-default);
+}
+
+body:not(.reduce-motion) .workspace-leaf-resize-handle:hover {
+  background-color: var(--color-brand);
+  opacity: 1;
+}
+
+.workspace-leaf-resize-handle {
+  opacity: 0.3;
+  width: 3px;
+}
+
+/* ── Exact Typography Scale (Framer spec) ── */
+body {
+  --font-ui-size: 13px;
+  --font-panel-label: 11px;
+}
+
+.workspace-leaf-content {
+  --font-ui-size: 13px;
+}
+
+.view-header-title {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.cm-header-1,
+.markdown-rendered h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.cm-header-2,
+.markdown-rendered h2 {
+  font-size: 1.75em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.cm-header-3,
+.markdown-rendered h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.cm-header-4,
+.markdown-rendered h4 {
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cm-header-5,
+.markdown-rendered h5 {
+  font-size: 0.875em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cm-header-6,
+.markdown-rendered h6 {
+  font-size: 0.8125em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller,
+.markdown-reading-view .markdown-preview-view {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── Active frame indicator for workspace leaves ── */
+.workspace-leaf .workspace-leaf-content {
+  border: 1px solid transparent;
+}
+
+.workspace-leaf.mod-active {
+  background-color: var(--hover-bg-canvas);
+}
+
+.workspace-leaf.mod-active .view-header {
+  border-bottom: 1px solid var(--hover-brand-bg);
+}
+
+.workspace-leaf.mod-active .view-header-title {
+  color: var(--color-brand);
+}
+
+/* ── Frame dimension indicator style ── */
+.view-header {
+  border-bottom: 1px solid var(--divider-color);
+  height: 32px;
+}
+
+.view-actions {
+  gap: 0;
+}
+
+.view-action {
+  padding: 4px;
+}
+
+.view-action:hover {
+  color: var(--color-brand);
+}
+
+/* ── Compact 4px Spacing ── */
+body.framer-compact {
+  --size-4-1: 2px;
+  --size-4-2: 4px;
+  --size-4-3: 8px;
+  --size-4-4: 12px;
+  --size-4-5: 16px;
+  --size-4-6: 20px;
+  --size-4-8: 24px;
+  --size-4-9: 28px;
+  --size-4-12: 40px;
+  --size-4-16: 52px;
+}
+
+body.framer-compact .nav-file-title {
+  padding: 2px 6px;
+  margin: 0 2px;
+}
+
+body.framer-compact .nav-folder-title {
+  padding: 2px 6px;
+}
+
+body.framer-compact .tree-item-self {
+  padding: 2px 6px;
+}
+
+body.framer-compact .workspace-tab-header {
+  padding: 2px 6px;
+}
+
+body.framer-compact .metadata-container {
+  padding: 2px 6px;
+  margin-bottom: 8px;
+}
+
+body.framer-compact .status-bar {
+  padding: 2px 8px;
+}
+
+body.framer-compact .setting-item {
+  padding: 4px 0;
+}
+
+body.framer-compact .empty-state-action {
+  padding: 4px 8px;
+}
+
+body.framer-compact .workspace-leaf-content {
+  --size-4-1: 2px;
+  --size-4-2: 4px;
+  --size-4-3: 8px;
+  --size-4-4: 12px;
+}
+
+/* ── Tab Headers ── */
+body.framer-tabs .workspace-tab-header-container {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+body.framer-tabs .workspace-tab-header {
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+body.framer-tabs .workspace-tab-header.is-active {
+  border-color: var(--divider-color);
+  border-bottom-color: var(--tab-background-active);
+  margin-bottom: -1px;
+}
+
+body.framer-tabs .workspace-tab-header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background-color: transparent;
+  border-radius: 1px 1px 0 0;
+  opacity: 0;
+}
+
+body.framer-tabs .workspace-tab-header.is-active::after {
+  background-color: var(--color-brand);
+  opacity: 1;
+}
+
+/* ── Workspace Tab Header Rounded (Framer panel style) ── */
+.workspace-tab-header {
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+  margin: 0 -1px;
+}
+
+.workspace-tab-header.is-active {
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+}
+
+.workspace-tab-header-inner {
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+/* ── 280px Property Panel (right sidebar) ── */
+body.framer-280 .workspace-split.mod-right-split {
+  min-width: 280px;
+  max-width: 280px;
+}
+
+body.framer-280 .workspace-split.mod-right-split .workspace-leaf-content {
+  width: 280px;
+}
+
+body.framer-280 .workspace-split.mod-right-split .view-header {
+  padding: 0 8px;
+}
+
+/* ── Canvas Crosshair Cursor ── */
+body.framer-cursor .markdown-source-view.mod-cm6 .cm-scroller {
+  cursor: crosshair;
+}
+
+body.framer-cursor .markdown-source-view.mod-cm6 .cm-content {
+  cursor: crosshair;
+}
+
+body.framer-cursor .canvas-wrapper {
+  cursor: crosshair;
+}
+
+body.framer-cursor .canvas-wrapper:active {
+  cursor: grabbing;
+}
+
+body.framer-cursor .workspace-leaf-resize-handle {
+  cursor: col-resize;
+}
+
+/* ── Inline Code ── */
+.cm-inline-code,
+.markdown-rendered code {
+  background-color: var(--hover-bg-medium);
+  padding: 1px 4px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+/* ── Highlight ── */
+.cm-highlight,
+mark,
+.markdown-rendered mark {
+  background-color: var(--hover-brand-bg);
+  color: var(--color-text);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* ── Blockquotes ── */
+.markdown-rendered blockquote {
+  border-left-width: 2px;
+  padding: 6px 12px;
+  border-radius: 0 2px 2px 0;
+  border-left-color: var(--color-brand);
+  font-size: 13px;
+}
+
+/* ── Tables ── */
+.markdown-rendered table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+}
+
+.markdown-rendered th {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+}
+
+.markdown-rendered th,
+.markdown-rendered td {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* ── Panel Section Labels (collapsible, 11px) ── */
+.workspace-tab-header-container {
+  font-size: 11px;
+}
+
+.workspace-tab-header {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* ── Callouts ── */
+.callout {
+  border-radius: var(--radius-s);
+  border-left-width: 3px;
+  border-color: var(--color-gray-700);
+}
+
+.callout-title {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.callout-content {
+  font-size: 13px;
+}
+
+.callout[data-callout="note"] .callout-title {
+  color: var(--color-gray-500);
+}
+
+/* ── Buttons ── */
+button:not(.clickable-icon) {
+  border-radius: var(--button-border-radius);
+  font-weight: 500;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+button:not(.clickable-icon):active {
+  transform: scale(0.97);
+}
+
+button.mod-cta {
+  background-color: var(--color-brand);
+  color: var(--text-on-accent);
+  border: none;
+}
+
+button.mod-cta:hover {
+  background-color: color-mix(in srgb, var(--color-brand) 85%, white);
+}
+
+/* ── Inputs ── */
+input:not([type="checkbox"]):not([type="range"]),
+select,
+.dropdown {
+  border-radius: var(--radius-s);
+}
+
+/* ── Popover / Menu ── */
+.popover,
+.suggestion-container {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-m);
+}
+
+/* ── Editor Canvas Grid (like Framer) ── */
+body.framer-grid .markdown-source-view.mod-cm6,
+body.framer-grid .markdown-reading-view {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Snap Point Indicators ── */
+body.framer-snap-dots .markdown-source-view.mod-cm6,
+body.framer-snap-dots .markdown-reading-view {
+  background-image:
+    radial-gradient(circle, var(--hover-bg-medium) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+body.framer-snap-dots.framer-grid .markdown-source-view.mod-cm6,
+body.framer-snap-dots.framer-grid .markdown-reading-view {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(circle, var(--hover-bg-medium) 1.5px, transparent 1.5px);
+  background-size: 24px 24px, 24px 24px, 24px 24px;
+  background-position: 0 0, 0 0, 12px 12px;
+}
+
+/* ── Frame Selection Outlines (Framer blue on hover) ── */
+body.framer-frame-select .image-embed img:hover,
+body.framer-frame-select .markdown-source-view img:hover {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+body.framer-frame-select .markdown-rendered pre:hover {
+  outline: 1px solid var(--color-brand);
+  outline-offset: 1px;
+}
+
+body.framer-frame-select .markdown-embed:hover {
+  outline: 1px solid var(--color-brand);
+  outline-offset: 1px;
+  border-radius: 2px;
+}
+
+body.framer-frame-select .tag:hover {
+  outline: 1px solid var(--color-brand);
+  outline-offset: 1px;
+}
+
+/* ── Drag Insertion Indicator (Framer blue snap line) ── */
+body.framer-drag-indicator .drag-ghost {
+  border: 1px solid var(--color-brand);
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--hover-brand-border);
+}
+
+body.framer-drag-indicator .drop-indicator {
+  background-color: var(--color-brand);
+  height: 2px;
+  border-radius: 1px;
+}
+
+body.framer-drag-indicator .drop-indicator::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+  border: 1px solid #FFFFFF;
+}
+
+body.framer-drag-indicator .drop-indicator::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+  border: 1px solid #FFFFFF;
+}
+
+/* ── Component Browser Search ── */
+body.framer-search .tree-item-self {
+  border-radius: 0;
+  border-left: 2px solid transparent;
+}
+
+body.framer-search .tree-item-self.is-active {
+  border-left-color: var(--color-brand);
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+body.framer-search .search-input-container {
+  margin: 4px;
+}
+
+body.framer-search .search-input-container input {
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: var(--radius-s);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-gray-700);
+}
+
+body.framer-search .search-input-container input:focus {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-brand) 15%, transparent);
+}
+
+body.framer-search .nav-files-container .tree-item-flair {
+  display: none;
+}
+
+body.framer-search .nav-file-tag {
+  font-size: 10px;
+  padding: 0 4px;
+  border-radius: 2px;
+  background-color: var(--color-gray-700);
+  color: var(--color-gray-500);
+}
+
+/* ── Page Preview Popover (Framer component preview) ── */
+.popover.hover-popover {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  background-color: var(--color-surface);
+  min-width: 280px;
+  max-width: 480px;
+}
+
+.popover.hover-popover .popover-title {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-gray-500);
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.popover.hover-popover .popover-content {
+  font-size: 13px;
+  padding: 8px 10px;
+}
+
+/* ── Frame Indicators (blue outlines for selections) ── */
+.cm-active.cm-line {
+  background-color: var(--hover-brand-subtle);
+  border-left: 2px solid var(--hover-brand-border);
+  border-radius: 0;
+  outline: 1px solid var(--hover-brand-medium);
+  outline-offset: -1px;
+}
+
+.cm-active.cm-line .cm-fat-cursor {
+  background-color: var(--color-brand);
+}
+
+.cm-active.cm-gutters {
+  background-color: var(--hover-brand-subtle);
+  border-right: 1px solid color-mix(in srgb, var(--color-brand) 15%, transparent);
+}
+
+/* ── Selection Highlighting ── */
+.cm-s .cm-selectionBackground,
+.markdown-rendered ::selection {
+  background-color: var(--hover-brand-bg);
+}
+
+.cm-s .cm-focused .cm-selectionBackground {
+  background-color: var(--hover-brand-bg-strong);
+}
+
+/* ── Search Highlight ── */
+.search-result-file-matched-text {
+  background-color: var(--hover-brand-bg);
+  border-radius: 2px;
+  border: 1px solid var(--hover-brand-border-strong);
+}
+
+/* ── Graph View ── */
+.graph-view.color-fill {
+  opacity: 0.8;
+}
+
+.graph-view.color-fill.is-active {
+  opacity: 1;
+}
+
+.graph-view.color-circle-fill.is-active {
+  fill: var(--color-brand);
+}
+
+/* ── Canvas — Infinite Workspace ── */
+.canvas-wrapper {
+  background-image:
+    linear-gradient(var(--hover-bg-subtle) 1px, transparent 1px),
+    linear-gradient(90deg, var(--hover-bg-subtle) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.canvas-card-menu {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  background: var(--color-surface);
+}
+
+.canvas-card-menu .canvas-card-menu-button {
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+.canvas-node-container {
+  border-radius: var(--radius-s);
+  border: 1px solid var(--color-gray-700);
+  background-color: var(--color-surface);
+}
+
+.canvas-node.is-selected .canvas-node-container {
+  border-color: var(--color-brand);
+  outline: 2px solid var(--hover-brand-border);
+  outline-offset: 1px;
+}
+
+/* ── Canvas Node Snap Points (size handles) ── */
+.canvas-node.is-selected .canvas-node-container::before,
+.canvas-node.is-selected .canvas-node-container::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-brand);
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.canvas-node.is-selected .canvas-node-container::before {
+  bottom: -4px;
+  right: -4px;
+  cursor: nwse-resize;
+}
+
+.canvas-node.is-selected .canvas-node-container::after {
+  top: -4px;
+  left: -4px;
+  cursor: nwse-resize;
+}
+
+.canvas-node.is-selected .canvas-node-connection-point {
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-brand);
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px var(--shadow-canvas-btn);
+}
+
+.canvas-node.is-selected .canvas-node-connection-point:hover {
+  transform: scale(1.3);
+  background-color: #FFFFFF;
+  border-color: var(--color-brand);
+}
+
+.canvas-node-label {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  font-weight: 500;
+}
+
+.canvas-node.is-selected .canvas-node-label {
+  color: var(--color-brand);
+}
+
+/* ── Canvas Node Color Backgrounds (Framer frame colors) ── */
+.canvas-node:not(.is-editing) .canvas-node-content {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-s);
+}
+
+.canvas-node[data-canvas-color="1"] .canvas-node-container {
+  background-color: var(--hover-brand-light);
+  border-color: var(--hover-brand-bg);
+}
+
+.canvas-node[data-canvas-color="2"] .canvas-node-container {
+  background-color: rgba(0, 188, 212, 0.06);
+  border-color: rgba(0, 188, 212, 0.2);
+}
+
+.canvas-node[data-canvas-color="3"] .canvas-node-container {
+  background-color: rgba(76, 175, 80, 0.06);
+  border-color: rgba(76, 175, 80, 0.2);
+}
+
+.canvas-node[data-canvas-color="4"] .canvas-node-container {
+  background-color: rgba(255, 235, 59, 0.06);
+  border-color: rgba(255, 235, 59, 0.2);
+}
+
+.canvas-node[data-canvas-color="5"] .canvas-node-container {
+  background-color: rgba(255, 87, 34, 0.06);
+  border-color: rgba(255, 87, 34, 0.2);
+}
+
+.canvas-node[data-canvas-color="6"] .canvas-node-container {
+  background-color: rgba(156, 39, 176, 0.06);
+  border-color: rgba(156, 39, 176, 0.2);
+}
+
+/* ── Embedded Note as Framer Frame (blue border + title bar) ── */
+body.framer-backlinks .markdown-embed {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 0;
+  overflow: hidden;
+}
+
+body.framer-backlinks .markdown-embed .markdown-embed-title {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-gray-500);
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--divider-color);
+  background-color: var(--background-primary-alt);
+}
+
+body.framer-backlinks .markdown-embed .markdown-embed-content {
+  padding: 8px 12px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+body.framer-backlinks .markdown-embed .markdown-embed-link {
+  font-size: 10px;
+  color: var(--color-gray-500);
+  top: 4px;
+  right: 8px;
+}
+
+body.framer-backlinks .markdown-embed .markdown-embed-link:hover {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+/* ── Backlinks Panel (Framer connection wire style) ── */
+body.framer-backlinks .backlink-pane {
+  padding: 4px;
+}
+
+body.framer-backlinks .backlink-pane .search-result-container {
+  padding: 0;
+}
+
+body.framer-backlinks .backlink-pane .search-result-file-title {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-left: 2px solid transparent;
+}
+
+body.framer-backlinks .backlink-pane .search-result-file-title:hover {
+  border-left-color: var(--color-brand);
+  background-color: var(--hover-bg-canvas);
+}
+
+body.framer-backlinks .backlink-pane .search-result-file-matches {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  padding: 2px 8px 2px 16px;
+  border-left: 1px solid var(--divider-color);
+  margin-left: 6px;
+}
+
+body.framer-backlinks .backlink-pane .search-result-file-matched-text {
+  background-color: var(--hover-brand-bg);
+  border-radius: 2px;
+  padding: 0 2px;
+  font-weight: 500;
+}
+
+body.framer-backlinks .backlink-pane .tree-item-self {
+  border-left: 2px solid transparent;
+}
+
+body.framer-backlinks .backlink-pane .tree-item-self.is-active {
+  border-left-color: var(--color-brand);
+}
+
+/* ── Tags as Framer Chips ── */
+body.framer-tags-panel .tag {
+  border-radius: 2px;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid var(--color-gray-700);
+  background-color: var(--hover-bg-subtle);
+}
+
+body.framer-tags-panel .tag:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  background-color: var(--hover-brand-light);
+}
+
+body.framer-tags-panel .tag-count {
+  font-size: 10px;
+  color: var(--color-gray-500);
+  margin-left: 2px;
+}
+
+body.framer-tags-panel .tag-pane-tag-count {
+  font-size: 10px;
+  color: var(--color-gray-500);
+  background-color: var(--color-gray-700);
+  border-radius: 2px;
+  padding: 0 4px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.canvas-submenu {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 4px;
+}
+
+.canvas-submenu .canvas-submenu-item {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+/* ── Numeric Input with drag-to-adjust style ── */
+input[type="number"] {
+  -moz-appearance: textfield;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  width: 60px;
+  text-align: right;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 0.5;
+}
+
+/* ── Image Embed ── */
+.image-embed img,
+.markdown-source-view img {
+  border-radius: var(--radius-s);
+}
+
+/* ── Panel Text Size (max 13px per Framer spec) ── */
+.workspace-leaf-content,
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self,
+.search-result-file-title,
+.search-result-file-matches,
+.outline-item,
+.prompt .suggestion-item,
+.prompt .suggestion-hotkey,
+.menu-item,
+.dropdown,
+button:not(.clickable-icon) {
+  font-size: 13px;
+}
+
+.nav-file-title-content,
+.nav-folder-title-content {
+  font-size: 13px;
+}
+
+/* ── Status Bar ── */
+.status-bar {
+  border-top: 1px solid var(--divider-color);
+  padding: 4px 12px;
+  font-size: 11px;
+}
+
+.status-bar .status-bar-item {
+  font-size: 11px;
+}
+
+/* ── Navigation — Component Browser Style ── */
+.nav-folder-title-content {
+  font-weight: 500;
+}
+
+.nav-file-title {
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  padding: 4px 8px;
+}
+
+.nav-file-title.is-active {
+  background-color: var(--hover-brand-strong);
+  border: 1px solid var(--hover-brand-border);
+}
+
+.nav-folder.mod-root > .nav-folder-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 11px;
+}
+
+/* ── Vault Name ── */
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
+/* ── Ribbon ── */
+.workspace-ribbon {
+  border-right: 1px solid var(--divider-color);
+  width: 40px;
+}
+
+.workspace-ribbon .sidebar-toggle-button {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.workspace-ribbon .clickable-icon {
+  padding: 6px;
+}
+
+/* ── Property Panel (right sidebar style) ── */
+.metadata-container {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+  margin-bottom: 12px;
+  background-color: var(--background-secondary);
+}
+
+.metadata-properties-heading {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+  cursor: pointer;
+}
+
+.metadata-properties-heading::before {
+  content: '▾ ';
+  opacity: 0.5;
+}
+
+.metadata-properties-heading:hover {
+  color: var(--color-text);
+}
+
+.metadata-properties-heading:not(.is-collapsed) {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+.metadata-property {
+  padding: 2px 0;
+}
+
+.metadata-property-key {
+  font-size: 11px;
+  color: var(--color-gray-500);
+}
+
+.metadata-property-value {
+  font-size: 11px;
+}
+
+.metadata-input {
+  padding: 2px 4px;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.metadata-input:hover {
+  background-color: var(--hover-bg-medium);
+}
+
+/* ── Property Panel Groups (Layout / Style / Effects) ── */
+body.framer-panel-groups .metadata-container {
+  padding: 0;
+  overflow: hidden;
+}
+
+body.framer-panel-groups .metadata-properties-heading {
+  padding: 6px 8px;
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--background-primary-alt);
+  border-bottom: 1px solid var(--divider-color);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+body.framer-panel-groups .metadata-properties-heading::before {
+  content: '';
+}
+
+body.framer-panel-groups .metadata-properties-heading + .metadata-properties {
+  padding: 4px 8px;
+}
+
+body.framer-panel-groups .metadata-property:not(:last-child) {
+  border-bottom: none;
+}
+
+body.framer-panel-groups .metadata-property .metadata-property-key {
+  width: 40%;
+  font-size: 11px;
+}
+
+body.framer-panel-groups .metadata-property .metadata-property-value {
+  width: 60%;
+}
+
+/* ── Settings — Collapsible Sections ── */
+.horizontal-tab-nav-item,
+.vertical-tab-nav-item {
+  border-radius: var(--radius-s);
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.horizontal-tab-nav-item.is-active,
+.vertical-tab-nav-item.is-active {
+  background-color: var(--hover-brand-strong);
+  color: var(--color-brand);
+}
+
+.setting-item {
+  border-bottom: 1px solid var(--divider-color);
+  padding: 8px 0;
+}
+
+.setting-item-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-500);
+  font-weight: 600;
+  border-bottom: none;
+  padding: 12px 0 4px;
+}
+
+.setting-item-info {
+  font-size: 13px;
+}
+
+.setting-item-description {
+  font-size: 11px;
+  color: var(--color-gray-500);
+}
+
+body.framer-section-highlight .vertical-tab-nav-item.is-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  background-color: var(--color-brand);
+  border-radius: 0 2px 2px 0;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-s);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-bg-scroll);
+}
+
+/* ── Component Browser Style (left panel) ── */
+.nav-files-container {
+  padding: 4px;
+}
+
+.tree-item-self {
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+}
+
+.tree-item-self.is-active {
+  background-color: var(--hover-brand-strong);
+  border: 1px solid var(--hover-brand-border);
+}
+
+.tree-item-self.is-being-dragged {
+  background-color: var(--hover-brand-medium);
+  border: 1px dashed var(--color-brand);
+}
+
+.tree-item-icon {
+  color: var(--color-gray-500);
+}
+
+.tree-item-flair {
+  font-size: 10px;
+  background-color: var(--color-gray-700);
+  color: var(--color-gray-500);
+  border-radius: 2px;
+  padding: 0 4px;
+}
+
+/* ── Empty State ── */
+.empty-state-title {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.empty-state-action {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 6px 12px;
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.empty-state-action:hover {
+  background-color: var(--hover-brand-medium);
+  border-color: var(--color-brand);
+}
+
+/* ── Modal ── */
+.modal {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-m);
+}
+
+/* ── Prompt / Quick Switcher (Framer Quick Actions style) ── */
+body.framer-quick-actions .prompt {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-m);
+  min-width: 480px;
+}
+
+body.framer-quick-actions .prompt .prompt-input {
+  font-size: 13px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+body.framer-quick-actions .prompt .suggestion-item {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-left: 2px solid transparent;
+}
+
+body.framer-quick-actions .prompt .suggestion-item.is-selected {
+  background-color: var(--hover-brand-medium);
+  border-radius: 0;
+  border-left-color: var(--color-brand);
+}
+
+body.framer-quick-actions .prompt .suggestion-hotkey {
+  background-color: var(--hover-bg-medium);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 1px 5px;
+  font-family: var(--font-monospace-theme);
+}
+
+body.framer-quick-actions .prompt .suggestion-title {
+  font-size: 13px;
+}
+
+body.framer-quick-actions .prompt .suggestion-note {
+  font-size: 11px;
+  color: var(--color-gray-500);
+}
+
+/* ── Right-click Context Menu (Framer compact style) ── */
+.menu {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 4px;
+  min-width: 160px;
+}
+
+.menu-item {
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 2px;
+  margin: 1px 0;
+}
+
+.menu-item:hover {
+  background-color: var(--hover-brand-medium);
+}
+
+.menu-item-icon {
+  width: 20px;
+  color: var(--color-gray-500);
+}
+
+.menu-item-title {
+  font-size: 13px;
+}
+
+.menu-item-separator {
+  margin: 3px 8px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.menu-item.is-disabled {
+  color: var(--color-gray-500);
+  opacity: 0.5;
+}
+
+/* ── Framer-style Toast / Notification ── */
+.notice-container {
+  border: 1px solid var(--color-gray-700);
+  border-radius: 6px;
+  background-color: var(--color-surface);
+  box-shadow: none;
+  padding: 8px 14px;
+}
+
+.notice {
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: var(--radius-s);
+  padding: 6px 12px;
+}
+
+.notice.is-warning {
+  border-left: 2px solid var(--color-warning);
+}
+
+.notice.is-error {
+  border-left: 2px solid var(--color-error);
+}
+
+.notice.is-success {
+  border-left: 2px solid var(--color-brand);
+}
+
+/* ── Framer-style Code Block (code panel aesthetic) ── */
+.markdown-rendered pre {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 12px 16px;
+  background-color: var(--code-background);
+}
+
+.markdown-rendered pre code {
+  font-size: 13px;
+  line-height: 1.6;
+  font-family: var(--font-monospace-theme);
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin,
+.cm-s-obsidian .HyperMD-codeblock-end {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin-bg,
+.cm-s-obsidian .HyperMD-codeblock-end-bg {
+  background-color: var(--code-background);
+}
+
+/* ── Plugin: Dataview Tables ── */
+body.framer-dataview .dataview.table-view-table {
+  font-size: 13px;
+}
+
+body.framer-dataview .dataview.table-view-table > thead > tr > th {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-gray-500);
+  border-bottom: 1px solid var(--divider-color);
+  padding: 6px 10px;
+}
+
+body.framer-dataview .dataview.table-view-table > tbody > tr > td {
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--divider-color);
+  font-size: 13px;
+}
+
+body.framer-dataview .dataview.table-view-table > tbody > tr:hover {
+  background-color: var(--hover-bg-canvas);
+}
+
+/* ── Plugin: Kanban ── */
+body.framer-kanban .kanban-plugin__board {
+  padding: 8px;
+}
+
+body.framer-kanban .kanban-plugin__lane {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-gray-700);
+  border-radius: 6px;
+}
+
+body.framer-kanban .kanban-plugin__lane-header-wrapper {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+body.framer-kanban .kanban-plugin__lane-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.framer-kanban .kanban-plugin__lane-header-wrapper .kanban-plugin__title-counter {
+  font-size: 11px;
+  color: var(--color-gray-500);
+  background-color: var(--color-gray-700);
+  border-radius: 2px;
+  padding: 0 5px;
+}
+
+body.framer-kanban .kanban-plugin__item {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 8px 10px;
+  margin: 4px 0;
+  background-color: var(--background-primary);
+}
+
+body.framer-kanban .kanban-plugin__item-title {
+  font-size: 13px;
+}
+
+body.framer-kanban .kanban-plugin__item-metadata {
+  font-size: 11px;
+  color: var(--color-gray-500);
+}
+
+body.framer-kanban .kanban-plugin__item-tags {
+  font-size: 11px;
+}
+
+body.framer-kanban .kanban-plugin__item-tag {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 2px;
+}
+
+body.framer-kanban .kanban-plugin__lane .kanban-plugin__lane-items {
+  padding: 4px 8px;
+}
+
+/* ── Plugin: Calendar ── */
+body.framer-calendar #calendar-container {
+  font-size: 13px;
+  padding: 4px;
+}
+
+body.framer-calendar #calendar-container .year {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.framer-calendar #calendar-container .month {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.framer-calendar #calendar-container .day {
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+body.framer-calendar #calendar-container .day.active {
+  background-color: var(--hover-brand-strong);
+  color: var(--color-brand);
+}
+
+body.framer-calendar #calendar-container .day.today {
+  background-color: transparent;
+  border: 1px solid var(--color-brand);
+  color: var(--color-brand);
+}
+
+body.framer-calendar #calendar-container .day:hover {
+  background-color: var(--hover-bg-medium);
+}
+
+body.framer-calendar #calendar-container .arrow {
+  color: var(--color-gray-500);
+}
+
+body.framer-calendar #calendar-container .arrow:hover {
+  color: var(--color-brand);
+}
+
+body.framer-calendar #calendar-container .dot {
+  background-color: var(--color-brand);
+}
+
+/* ── Plugin: Excalidraw ── */
+.excalidraw-wrapper {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+}
+
+/* ── Notice / Toast ── */
+body.framer-mobile.is-mobile {
+  --font-ui-size: 13px;
+  --sidebar-markdown-font-size: 13px;
+}
+
+body.framer-mobile.is-mobile .workspace-drawer {
+  background-color: var(--color-bg);
+  border-right: 1px solid var(--divider-color);
+}
+
+body.framer-mobile.is-mobile .workspace-drawer-tab-option-item {
+  font-size: 13px;
+  padding: 8px 12px;
+}
+
+body.framer-mobile.is-mobile .nav-file-title,
+body.framer-mobile.is-mobile .nav-folder-title {
+  font-size: 13px;
+  padding: 8px 12px;
+  min-height: 44px;
+}
+
+body.framer-mobile.is-mobile .tree-item-self {
+  min-height: 44px;
+  padding: 8px 12px;
+}
+
+body.framer-mobile.is-mobile .clickable-icon {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+body.framer-mobile.is-mobile button:not(.clickable-icon) {
+  min-height: 44px;
+}
+
+body.framer-mobile.is-mobile .empty-state-action {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.framer-mobile.is-mobile .prompt {
+  width: 90vw;
+  max-width: 480px;
+}
+
+body.framer-mobile.is-mobile .workspace-drawer-header {
+  padding: 8px;
+}
+
+body.framer-mobile.is-mobile .workspace-drawer-header-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.framer-mobile.is-mobile .metadata-container {
+  padding: 4px 8px;
+}
+
+body.framer-mobile.is-mobile .view-header {
+  height: 40px;
+}
+
+body.framer-mobile.is-mobile .view-header-title {
+  font-size: 13px;
+}
+
+/* ── Dropdown menu ── */
+.dropdown {
+  background-color: var(--color-bg);
+  border-color: var(--color-gray-700);
+}
+
+.dropdown:hover {
+  border-color: var(--color-gray-500);
+}
+
+/* ── Accent Variants ── */
+body.accent-cyan {
+  --color-brand: #00BCD4;
+  --interactive-accent: #00BCD4;
+  --interactive-accent-rgb: 0, 188, 212;
+}
+
+body.accent-purple {
+  --color-brand: #BB86FC;
+  --interactive-accent: #BB86FC;
+  --interactive-accent-rgb: 187, 134, 252;
+}
+
+body.accent-cyan .theme-dark {
+  --canvas-color: 0, 188, 212;
+}
+
+body.accent-cyan.framer-heading-gradient .theme-dark {
+  --h1-color: #00BCD4;
+  --h2-color: #26C6DA;
+  --h3-color: #4DD0E1;
+  --h4-color: #80DEEA;
+  --h5-color: #B2EBF2;
+  --h6-color: #E0F7FA;
+}
+
+body.accent-purple .theme-dark {
+  --canvas-color: 187, 134, 252;
+}
+
+body.accent-purple.framer-heading-gradient .theme-dark {
+  --h1-color: #BB86FC;
+  --h2-color: #C99CFD;
+  --h3-color: #D7B3FD;
+  --h4-color: #E5C9FE;
+  --h5-color: #F3E0FE;
+  --h6-color: #F9F0FF;
+}
+
+/* ── Tip / Tooltip ── */
+.tooltip {
+  background-color: var(--divider-color-panel);
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* ── PDF Embed ── */
+.pdf-embed {
+  border: 1px solid var(--color-gray-700);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+/* ── Reduce Motion Override ── */
+body.reduce-motion * {
+  transition: none;
+}
+
+/* ── Selection ── */
+::selection {
+  background-color: var(--hover-brand-border);
+}
+
+/* ── Focus Visible ── */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* ── Frontmatter / Metadata ── */
+.inline-title {
+  border-bottom: 1px solid var(--divider-color);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+/* ── Tag Pills ── */
+.tag {
+  border-radius: 2px;
+  padding: 1px 6px;
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid var(--hover-bg-strong);
+}
+
+.tag:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}
+
+/* ── Collapsible Section Dividers (Panel style) ── */
+.collapsible-item-collapse {
+  color: var(--color-gray-500);
+}
+
+.collapsible-item-children {
+  border-left: 1px solid var(--divider-color);
+  margin-left: 6px;
+  padding-left: 8px;
+}
+
+.outline-item {
+  font-size: 13px;
+}
+
+.outline-item.is-active {
+  color: var(--color-brand);
+  font-weight: 500;
+}
+
+/* ── Image Alt Text ── */
+.cm-image-alt-text {
+  color: var(--color-gray-500);
+}
+
+/* ── Sync / Publish Status ── */
+.sync-status-icon {
+  color: var(--color-gray-500);
+}
+
+/* ── Reading Mode Prose (Framer document style) ── */
+body.framer-reading .markdown-reading-view {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+body.framer-reading .markdown-reading-view .markdown-preview-view {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+body.framer-reading .markdown-rendered p {
+  margin: 0 0 1em;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+body.framer-reading .markdown-rendered ul,
+body.framer-reading .markdown-rendered ol {
+  padding-left: 24px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+body.framer-reading .markdown-rendered li {
+  margin: 4px 0;
+}
+
+body.framer-reading .markdown-rendered h1 {
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+body.framer-reading .markdown-rendered h2 {
+  margin-top: 36px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+body.framer-reading .markdown-rendered h3 {
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+body.framer-reading .markdown-rendered hr {
+  margin: 32px 0;
+  border: none;
+  border-top: 1px solid var(--divider-color);
+}
+
+/* ── Code Panel Line Numbers (Framer style) ── */
+body.framer-line-nums .cm-lineNumbers .cm-gutterElement {
+  font-size: 11px;
+  font-family: var(--font-monospace-theme);
+  color: var(--color-gray-500);
+  padding: 0 8px 0 4px;
+  text-align: right;
+  min-width: 24px;
+}
+
+body.framer-line-nums .cm-lineNumbers .cm-activeLineNumber {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+body.framer-line-nums .cm-gutters {
+  border-right: 1px solid var(--divider-color);
+  background-color: transparent;
+  padding: 4px 0;
+}
+
+body.framer-line-nums .cm-gutter {
+  min-width: 32px;
+}
+
+body.framer-line-nums .cm-foldGutter .cm-gutterElement {
+  color: var(--color-gray-700);
+  font-size: 11px;
+  padding: 0 4px;
+}
+
+body.framer-line-nums .cm-foldGutter .cm-gutterElement:hover {
+  color: var(--color-brand);
+}
+
+/* ── Framer-style fold indicator ── */
+body.framer-line-nums .cm-foldPlaceholder {
+  border: 1px solid var(--color-gray-700);
+  border-radius: 2px;
+  background-color: var(--hover-bg-subtle);
+  color: var(--color-gray-500);
+  font-size: 11px;
+  padding: 0 4px;
+}
+
+/* ══════════════════════════════════════════
+   Snippet: Bold Pink
+   ══════════════════════════════════════════ */
+.markdown-reading-view strong {
+  color: #FF69B4;
+}
+.markdown-source-view .cm-strong {
+  color: #FF69B4;
+}
+
+/* ══════════════════════════════════════════
+   Snippet: Immersive Translate Red Gradient
+   ══════════════════════════════════════════ */
+.immersive-translate-target-wrapper {
+  background: linear-gradient(90deg, #ff6b6b, #ff8e8e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ══════════════════════════════════════════
+   Snippet: Minimal Tables
+   ══════════════════════════════════════════ */
+.markdown-rendered table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+.markdown-rendered th,
+.markdown-rendered td {
+  border: none;
+  border-bottom: 1px solid var(--color-gray-700);
+  padding: 10px 14px;
+  background: transparent;
+  vertical-align: top;
+}
+.markdown-rendered thead th {
+  border-bottom: 1.5px solid var(--color-gray-500);
+  font-weight: 600;
+}
+
+/* ══════════════════════════════════════════
+   Snippet: Floating Status Bar
+   ══════════════════════════════════════════ */
+body {
+  --status-bar-position: absolute;
+  --status-bar-radius: var(--radius-m);
+}
+.status-bar {
+  transform: translateX(calc(100% + 5px));
+  transition: transform 300ms 150ms;
+  bottom: 5px;
+  right: 5px;
+}
+.status-bar::before {
+  width: 100%;
+  min-height: 100%;
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+}
+.status-bar:hover {
+  transform: none;
+  transition: transform 300ms 150ms;
+}

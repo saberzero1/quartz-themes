@@ -1,7 +1,7 @@
 /* ============================================================
    Green Holiday — Obsidian Theme
    A lime green tinted theme for focused writing.
-   Version: 0.2.2
+   Version: 0.3.3
    ============================================================ */
 
 /* ── Dark Mode ─────────────────────────────────────────────── */
@@ -57,6 +57,24 @@
 
   --inline-code-background: rgba(255, 255, 255, 0.1);
   --inline-code-color: #d4f0d4;
+
+  --graph-node: #548e56;
+  --graph-node-focused: #6bfa6e;
+  --graph-node-unresolved: #2b562c;
+  --graph-node-tag: #9cc89e;
+  --graph-node-attachment: #ffd27a;
+  --graph-line: #234824;
+  --graph-muted: #1d3c1e;
+  --graph-text: #9cc89e;
+
+  --h1-color: #e2f5e2;
+  --h2-color: #e2f5e2;
+  --h3-color: #e2f5e2;
+  --h4-color: #e2f5e2;
+  --h5-color: #e2f5e2;
+  --h6-color: #e2f5e2;
+
+  --text-highlight-bg: #aaee2a;
 }
 
 /* ── Light Mode ─────────────────────────────────────────────── */
@@ -92,6 +110,24 @@
 
   --inline-code-background: rgba(255, 255, 255, 0.75);
   --inline-code-color: #1a3a1a;
+
+  --graph-node: #2d8e2d;
+  --graph-node-focused: #031f04;
+  --graph-node-unresolved: #9ae29a;
+  --graph-node-tag: #084408;
+  --graph-node-attachment: #cc7700;
+  --graph-line: #7dd47d;
+  --graph-muted: #bfefbf;
+  --graph-text: #031f04;
+
+  --text-highlight-bg: #e8f200;
+
+  --h1-color: #031f04;
+  --h2-color: #031f04;
+  --h3-color: #031f04;
+  --h4-color: #031f04;
+  --h5-color: #031f04;
+  --h6-color: #031f04;
 
   --code-background: #1a351a;
   --code-normal: #d4f0d4;
@@ -153,6 +189,10 @@ body {
   --font-text-size: 16px;
   --line-height-normal: 1.7;
   --p-spacing: 1em;
+
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 600;
 }
 
 /* ── Inline title (file name) ───────────────────────────────── */
@@ -239,45 +279,41 @@ body {
 .theme-light mark,
 .theme-light .markdown-preview-view mark,
 .theme-light .markdown-rendered mark {
-  background: #c6ff4e !important;
-  color: #0a2a00 !important;
+  color: #1a1a00;
   padding: 0.05em 0.1em;
   border-radius: 2px;
 }
 .theme-light .cm-s-obsidian .cm-highlight {
-  background: #c6ff4e !important;
-  color: #0a2a00 !important;
+  color: #1a1a00;
   border-radius: 2px;
 }
 
 .theme-dark mark,
 .theme-dark .markdown-preview-view mark,
 .theme-dark .markdown-rendered mark {
-  background: #aaee2a !important;
-  color: #061400 !important;
+  color: #061400;
   padding: 0.05em 0.1em;
   border-radius: 2px;
 }
 .theme-dark .cm-s-obsidian .cm-highlight {
-  background: #aaee2a !important;
-  color: #061400 !important;
+  color: #061400;
   border-radius: 2px;
 }
 
 /* ── Tags (#tag) ────────────────────────────────────────────── */
 /* Reading mode + Properties (both use .tag class) */
 .tag {
-  background: var(--tag-background) !important;
-  color: var(--tag-color) !important;
-  border: 1px solid var(--tag-border-color) !important;
+  background: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
   border-radius: 4px;
   padding: 0.1em 0.5em;
   font-size: 85%;
   text-decoration: none;
 }
 .tag:hover {
-  background: var(--tag-background-hover) !important;
-  color: var(--tag-color-hover) !important;
+  background: var(--tag-background-hover);
+  color: var(--tag-color-hover);
 }
 
 /* Live preview (CM6) */
@@ -297,16 +333,11 @@ body {
   padding-left: 0;
 }
 
-/* ── Horizontal Rule (---) ──────────────────────────────────── */
-.markdown-preview-view hr,
-.markdown-rendered hr {
-  border: none;
-  border-top: 1px dotted var(--hr-color);
-  margin: 1.5em 0;
-}
 
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-hr {
-  border-bottom: 1px dotted var(--hr-color);
+/* ── Horizontal Rule (---) ──────────────────────────────────── */
+
+.hr.cm-line hr {
+  border-top: 2px dotted var(--hr-color);
 }
 
 /* ── Code block background (source / live preview mode) ─────── */
@@ -317,10 +348,10 @@ body {
 /* ── Math (inline / block) ──────────────────────────────────── */
 /* light モード: cm-math スパン群をダークで読めるように上書き */
 .theme-light .cm-math {
-  color: #1a4a1a !important;
+  color: #1a4a1a;
 }
 .theme-light .cm-formatting-math {
-  color: #3a8a3e !important;
+  color: #3a8a3e;
   opacity: 0.8;
 }
 
@@ -371,4 +402,24 @@ body {
 :is(.markdown-preview-view, .markdown-rendered) pre {
   border-radius: 6px;
   padding: 1em 1.2em;
+}
+
+/* ── Callouts ────────────────────────────────────────────────── */
+.callout {
+  border-radius: 6px;
+  border-left-width: 3px;
+}
+
+.theme-light .callout {
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.theme-dark .callout {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.callout-title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
