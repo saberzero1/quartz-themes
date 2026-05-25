@@ -520,7 +520,7 @@ body a.internal-link {
       width: 100%;
       max-width: 100%;
       &> .canvas-frame,
-      &> .excalidraw-frame {
+      &> .center.excalidraw-frame {
         padding-left: 0;
         padding-right: 0;
       }
