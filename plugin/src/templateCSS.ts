@@ -520,7 +520,7 @@ body a.internal-link {
       width: 100%;
       max-width: 100%;
       &> .canvas-frame,
-      &> .center.excalidraw-frame {
+      &> .excalidraw-frame {
         padding-left: 0;
         padding-right: 0;
       }
@@ -652,6 +652,24 @@ button.darkmode {
     padding-right: 1.5rem;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+
+:root[saved-theme="light"], :root[saved-theme="dark"] {
+  body {
+    a.external-link, a.internal-link, .breadcrumb-container .breadcrumb-element > a, footer a {
+      text-decoration: none;
+    }
+    div#quartz-root.page[data-frame="canvas"] > div#quartz-body,
+    div#quartz-root.page[data-frame="excalidraw"] > div#quartz-body {
+      width: 100%;
+      max-width: 100%;
+      &> .canvas-frame,
+      &> .excalidraw-frame {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }
 `;
