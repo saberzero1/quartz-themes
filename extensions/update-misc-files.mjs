@@ -7,6 +7,7 @@ import {
   writeFileSync,
 } from "fs";
 import { themes } from "../config.mjs";
+import { parseThemeId } from "./extractor.mjs";
 import {
   generateFundingLinks,
   getFilesUnderDirectoryToStringArray,
@@ -35,7 +36,7 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
   const themeListDark = [];
   const themeListLight = [];
   themeCollection.forEach((manifest) => {
-    const nameValue = manifest.name.split(".")[0];
+    const nameValue = parseThemeId(manifest.name, themes).base;
     const fullName = manifestCollection.find((m) => m.name === nameValue)?.name;
     themeList.push({
       theme: fullName ? fullName : manifest.name,
@@ -54,7 +55,7 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
   themeList.forEach((themeName) => {
     const mode = themeName.mode;
     const manifest = manifestCollection.find(
-      (m) => sanitize(m.name) === themeName.name.split(".")[0],
+      (m) => sanitize(m.name) === parseThemeId(themeName.name, themes).base,
     );
     const authorValue =
       getValueFromDictionary(manifest, "author") !== ""

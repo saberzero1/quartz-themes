@@ -1,6 +1,7 @@
 import * as fs from "fs";
 import * as path from "path";
 import { staticMode, testMode, themes, themeToTest } from "./config.mjs";
+import { parseThemeId } from "./extensions/extractor.mjs";
 import { format } from "./extensions/formatter.mjs";
 import getManifestCollection from "./extensions/manifest.mjs";
 import getThemeCollection from "./extensions/themelist.mjs";
@@ -110,7 +111,7 @@ themeCollection.forEach((manifest) => {
 
 themeCollection.forEach((theme) => {
   const manifest = manifestCollection.find(
-    (m) => sanitize(m.name) === theme.name.split(".")[0],
+    (m) => sanitize(m.name) === parseThemeId(theme.name, themes).base,
   );
   console.log(manifest);
   replaceInFile(
@@ -128,7 +129,7 @@ themeCollection.forEach((manifest) => {
 });
 themeCollection.forEach((theme) => {
   const manifest = manifestCollection.find(
-    (m) => sanitize(m.name) === theme.name.split(".")[0],
+    (m) => sanitize(m.name) === parseThemeId(theme.name, themes).base,
   );
   const authorValue =
     getValueFromDictionary(manifest, "author") !== ""
@@ -150,7 +151,7 @@ themeCollection.forEach((theme) => {
 });
 themeCollection.forEach((theme) => {
   const manifest = manifestCollection.find(
-    (m) => sanitize(m.name) === theme.name.split(".")[0].toLowerCase(),
+    (m) => sanitize(m.name) === parseThemeId(theme.name, themes).base,
   );
   const result = generateFundingLinks(manifest);
   replaceInFile(

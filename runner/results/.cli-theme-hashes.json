@@ -426,7 +426,7 @@
   "Okudagram": { "_default": "7fa1b5c8d8039b797e38e64b424b1de6" },
   "Old World": { "_default": "4bbb4d1a81fbbc3ce76997ff8d6f5929" },
   "Oldsidian Purple": { "_default": "f943aff1011881473d0eab0ccdf9c00c" },
-  "OLED.Black": { "Black": "c29020cee37c1bf7f8b23cb9a1e6ca42" },
+  "OLED.Black": { "_default": "c29020cee37c1bf7f8b23cb9a1e6ca42" },
   "Oliviers Theme": { "_default": "191d29f116fba394878d0f85adc37d0f" },
   "Omega": { "_default": "6bfb94aa717054d37b227446ff813f36" },
   "One Oracle Developer": { "_default": "3e2701fde03659d3339cb2a57258999e" },

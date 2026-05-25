@@ -6,6 +6,7 @@ import {
   writeFileSync,
 } from "fs";
 import { basename, dirname, join, resolve } from "path";
+import { parseThemeId } from "../../extensions/extractor.mjs";
 
 const FONTS_DIR = resolve("./fonts");
 
@@ -549,9 +550,11 @@ async function main() {
       const themesConfig = JSON.parse(readFileSync(themesJsonPath, "utf8"));
       const themeKeys = Object.keys(themesConfig.themes || {});
 
+      const themesMap = themesConfig.themes || {};
       for (const key of themeKeys) {
         if (!key.includes(".")) continue;
-        const baseName = key.split(".")[0];
+        const { base: baseName, variation } = parseThemeId(key, themesMap);
+        if (!variation) continue;
         const baseManifest = join(FONTS_DIR, baseName, "manifest.json");
         if (!existsSync(baseManifest)) continue;
 

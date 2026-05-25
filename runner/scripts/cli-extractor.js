@@ -18,7 +18,7 @@ import {
 import { resolve, join } from "path";
 import { config } from "./config.js";
 import { themes } from "../../config.mjs";
-import { dirToKey } from "../../extensions/extractor.mjs";
+import { dirToKey, parseThemeId } from "../../extensions/extractor.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 import { extractFonts } from "./font-extractor.js";
 
@@ -453,9 +453,7 @@ function resolveThemeFolderName(themeName) {
     return themeName;
   }
 
-  const baseName = themeName.includes(".")
-    ? themeName.split(".")[0]
-    : themeName;
+  const { base: baseName } = parseThemeId(themeName, themes);
 
   const installedThemes = readdirSync(themesDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
@@ -472,9 +470,9 @@ function resolveThemeFolderName(themeName) {
 
 function parseThemeName(themeName) {
   const folderName = resolveThemeFolderName(themeName);
+  const { variation } = parseThemeId(themeName, themes);
 
-  if (themeName.includes(".")) {
-    const variation = themeName.split(".").slice(1).join(".");
+  if (variation) {
     return { base: folderName, variation };
   }
 
@@ -2050,7 +2048,8 @@ async function extractThemeStyles(cli, themeName, baseline, manifest = {}) {
   // Manifest keys are themes.json keys (lowercase-hyphenated), but for base
   // themes themeName is the raw directory name (e.g. "Fancy-a-Story").
   // Dot-variations are already themes.json keys, so we only convert base themes.
-  const manifestKey = themeName.includes(".") ? themeName : dirToKey(themeName);
+  const { variation: hasVariation } = parseThemeId(themeName, themes);
+  const manifestKey = hasVariation ? themeName : dirToKey(themeName);
   const customCalloutTypes = calloutManifest[manifestKey] || [];
   const extraSelectors = buildCustomCalloutSelectors(customCalloutTypes);
   const allSelectors = [...selectors, ...extraSelectors];
@@ -2247,13 +2246,16 @@ function getAllExtractableThemes() {
 
   for (const themeKey of Object.keys(themes)) {
     if (themeKey.includes(".")) {
-      const baseName = themeKey.split(".")[0];
-      const resolvedFolder = resolveThemeFolderName(baseName);
-      const isInstalled = installedThemes.some(
-        (t) => t.toLowerCase() === resolvedFolder.toLowerCase(),
-      );
-      if (isInstalled) {
-        allThemes.push(themeKey);
+      const { base: baseName, variation } = parseThemeId(themeKey, themes);
+      // Only add as a variation entry if it's a genuine variation theme
+      if (variation) {
+        const resolvedFolder = resolveThemeFolderName(baseName);
+        const isInstalled = installedThemes.some(
+          (t) => t.toLowerCase() === resolvedFolder.toLowerCase(),
+        );
+        if (isInstalled) {
+          allThemes.push(themeKey);
+        }
       }
     }
   }

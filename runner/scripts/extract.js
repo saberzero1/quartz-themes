@@ -12,7 +12,10 @@ import {
 } from "fs";
 import { resolve } from "path";
 import getManifestCollection from "../../extensions/manifest.mjs";
-import getThemeCollection from "../../extensions/themelist.mjs";
+import getThemeCollection, {
+  getThemesMap,
+} from "../../extensions/themelist.mjs";
+import { parseThemeId } from "../../extensions/extractor.mjs";
 import {
   isDarkTheme,
   isLightTheme,
@@ -1128,7 +1131,10 @@ async function getStylesFromObsidian(
   browser,
   obsidianPage,
 ) {
-  const [theme, variation] = manifest.name.split(".");
+  const { base: theme, variation } = parseThemeId(
+    manifest.name,
+    getThemesMap(),
+  );
   const fullName =
     manifestCollection.find((m) => sanitize(m.name) === theme)?.name ?? theme;
   console.log(
@@ -1140,9 +1146,9 @@ async function getStylesFromObsidian(
     preset,
   );
   enableSnippets(manifest.snippets ?? []);
-  const folder = `${sanitize(theme)}${
-    variation ? `.${sanitize(variation)}` : ""
-  }`;
+  const folder = variation
+    ? `${sanitize(theme)}.${sanitize(variation)}`
+    : sanitize(theme);
   const extras = manifest.extra_extract_files ?? [];
   mkdirSync(`./runner/results/${folder}`, { recursive: true });
   let lightResult = {
@@ -1796,12 +1802,17 @@ let processedCount = 0;
 let skippedCount = 0;
 
 for (const manifest of manifestTargets) {
-  const [themeName, variation] = manifest.name.split(".");
+  const { base: themeName, variation } = parseThemeId(
+    manifest.name,
+    getThemesMap(),
+  );
   const fullName =
     manifestCollection.find((m) => sanitize(m.name) === themeName)?.name ??
     themeName;
   const variationKey = variation ?? "_default";
-  const resultFolder = `${sanitize(themeName)}${variation ? `.${sanitize(variation)}` : ""}`;
+  const resultFolder = variation
+    ? `${sanitize(themeName)}.${sanitize(variation)}`
+    : sanitize(themeName);
 
   if (
     shouldSkipTheme(fullName, variationKey, resultFolder, manifest, hashCache)

@@ -56,7 +56,7 @@ const STANDARD_CALLOUT_TYPES = new Set([
  */
 export function dirToKey(dirName) {
   let key = dirName;
-  key = key.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // \u00e9 -> e
+  key = key.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // é -> e
   key = key.replace(/[^\x00-\x7F]/g, ""); // remove non-ASCII
   key = key.replace(/[+(),&']/g, ""); // remove +(),'&
   key = key.replace(/(\w)\.(\w)/g, "$1$2"); // OLED.Black -> oledblack
@@ -65,6 +65,42 @@ export function dirToKey(dirName) {
   key = key.replace(/-{2,}/g, "-");
   key = key.replace(/(^-|-$)/g, "");
   return key;
+}
+
+/**
+ * Parses a theme identifier into base name and optional variation.
+ *
+ * Uses themes.json to distinguish real variations (e.g. "catppuccin.frappe"
+ * where "catppuccin" exists as a base theme) from theme names that happen
+ * to contain periods after sanitization (e.g. "oledblack" from "OLED.Black"
+ * which has no base theme "oled").
+ *
+ * @param {string} themeId - The sanitized theme identifier (e.g. "catppuccin.frappe" or "oledblack").
+ * @param {Record<string, unknown>} [themesMap] - Optional map of theme keys from themes.json.
+ *   When provided, the function checks whether the base part before the period
+ *   exists as a standalone theme. If not provided, falls back to naive period splitting.
+ * @returns {{ base: string, variation: string | null }} The parsed theme parts.
+ */
+export function parseThemeId(themeId, themesMap) {
+  if (!themeId.includes(".")) {
+    return { base: themeId, variation: null };
+  }
+
+  const [candidate, ...rest] = themeId.split(".");
+  const variation = rest.join(".");
+
+  // If we have a themes map, only treat as variation when the base exists
+  // as a standalone theme. Otherwise the period is part of the atomic name.
+  if (themesMap) {
+    if (candidate in themesMap) {
+      return { base: candidate, variation };
+    }
+    // Base doesn't exist as a theme — treat the whole id as atomic
+    return { base: themeId, variation: null };
+  }
+
+  // Fallback: naive split (preserves legacy behaviour when no map available)
+  return { base: candidate, variation };
 }
 
 /**

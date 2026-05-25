@@ -22,7 +22,7 @@ import {
 import { resolve, join } from "path";
 import { config } from "./config.js";
 import { themes } from "../../config.mjs";
-import { dirToKey } from "../../extensions/extractor.mjs";
+import { dirToKey, parseThemeId } from "../../extensions/extractor.mjs";
 import { sanitizeFilenamePreservingEmojis as sanitize } from "../../util/util.mjs";
 
 const VAULT_PATH = resolve("./runner/vault");
@@ -323,9 +323,7 @@ function resolveThemeFolderName(themeName) {
   if (!existsSync(themesDir)) return themeName;
   if (existsSync(join(themesDir, themeName))) return themeName;
 
-  const baseName = themeName.includes(".")
-    ? themeName.split(".")[0]
-    : themeName;
+  const { base: baseName } = parseThemeId(themeName, themes);
 
   const installedThemes = readdirSync(themesDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory())
@@ -340,14 +338,8 @@ function resolveThemeFolderName(themeName) {
 }
 
 function getResultDirName(themeName) {
-  const baseName = themeName.includes(".")
-    ? themeName.split(".")[0]
-    : themeName;
-  const variation = themeName.includes(".")
-    ? themeName.split(".").slice(1).join(".")
-    : null;
-
-  const resolvedBase = sanitize(baseName);
+  const { base, variation } = parseThemeId(themeName, themes);
+  const resolvedBase = sanitize(base);
   if (variation) {
     return `${resolvedBase}.${variation}`;
   }

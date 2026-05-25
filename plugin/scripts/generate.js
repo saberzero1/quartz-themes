@@ -913,12 +913,13 @@ function buildCheckboxIconCSS(data, diffData, baseSelector, htmlSelector) {
 
 function resolveThemeKey(themeId, themesMeta) {
   if (!themeId.includes(".")) return themeId;
-  const [base, ...rest] = themeId.split(".");
+  const [candidate, ...rest] = themeId.split(".");
   const variation = rest.join(".");
-  const baseMeta = themesMeta[base];
+  const baseMeta = themesMeta[candidate];
+  if (!baseMeta) return themeId;
   const variations = normalizeVariations(baseMeta?.variations ?? []);
-  if (baseMeta && variations.includes(variation)) {
-    return `${base}-${variation}`;
+  if (variations.includes(variation)) {
+    return `${candidate}-${variation}`;
   }
   return themeId;
 }

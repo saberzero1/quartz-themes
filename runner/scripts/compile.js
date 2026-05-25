@@ -19,7 +19,10 @@ import { compileString } from "sass";
 import * as lucideIcons from "@lucide/icons";
 import { fileURLToPath } from "url";
 import getManifestCollection from "../../extensions/manifest.mjs";
-import getThemeCollection from "../../extensions/themelist.mjs";
+import getThemeCollection, {
+  getThemesMap,
+} from "../../extensions/themelist.mjs";
+import { parseThemeId } from "../../extensions/extractor.mjs";
 import {
   getExtras,
   getFonts,
@@ -65,9 +68,13 @@ initializeDb();
 const singleThemeArg =
   process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : null;
 const fullThemeCollection = getThemeCollection();
+const themesMap = getThemesMap();
 const themeCollection = singleThemeArg
   ? fullThemeCollection.filter((m) => {
-      const key = `${sanitize(m.name.split(".")[0])}${m.name.includes(".") ? `.${sanitize(m.name.split(".").slice(1).join("."))}` : ""}`;
+      const { base, variation } = parseThemeId(m.name, themesMap);
+      const key = variation
+        ? `${sanitize(base)}.${sanitize(variation)}`
+        : sanitize(base);
       return (
         key === singleThemeArg ||
         m.name === singleThemeArg ||
@@ -670,8 +677,10 @@ function getCachedFontString(fontName) {
 const themeDataList = [];
 
 themeCollection.forEach((manifest) => {
-  const [name, variation] = manifest.name.split(".");
-  themeName = `${sanitize(name)}${variation ? `.${sanitize(variation)}` : ""}`;
+  const { base: name, variation } = parseThemeId(manifest.name, themesMap);
+  themeName = variation
+    ? `${sanitize(name)}.${sanitize(variation)}`
+    : sanitize(name);
 
   if (!existsSync(`./runner/results/${themeName}`)) {
     mkdirSync(`./runner/results/${themeName}`);
@@ -1226,7 +1235,7 @@ function buildCSSStrings(themeData) {
   }
 
   // Style Settings default variable declarations
-  const baseSlug = themeName.split(".")[0];
+  const baseSlug = parseThemeId(themeName, themesMap).base;
   const themeJsonEntry = themesJsonData.themes?.[baseSlug];
   const styleSettingsArr = Array.isArray(
     themeJsonEntry?.style_settings?.sections,

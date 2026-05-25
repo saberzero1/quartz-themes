@@ -2133,12 +2133,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
-  "oledblack.Black": {
-    name: "oledblack.Black",
-    modes: ["dark"],
-    variations: [],
-    fonts: [],
-  },
+  oledblack: { name: "oledblack", modes: ["dark"], variations: [], fonts: [] },
   "oliviers-theme": {
     name: "oliviers-theme",
     modes: ["dark", "light"],
