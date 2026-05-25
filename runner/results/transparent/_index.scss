@@ -4295,7 +4295,7 @@ body {
     --gradient-to: #c8e6d4;
     --mobile-sidebar-min-width: 100vw;
     --tr: #00000000;
-    --ui-blur: 60px;
+    --ui-blur: 30px;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8742,7 +8742,7 @@ html[saved-theme="dark"] {
       --gradient-to: #c8e6d4;
       --mobile-sidebar-min-width: 100vw;
       --tr: #00000000;
-      --ui-blur: 60px;
+      --ui-blur: 30px;
     }
   }
 }

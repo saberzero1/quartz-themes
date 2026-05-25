@@ -1,7 +1,7 @@
 /* 
-   =========================================================================
-   ** Okudagram **
-   ========================================================================= 
+@themepadd
+  host: github
+  repo: Jalad25/Okudagram
 */
 
 /* #region Theme Variables */
@@ -31,6 +31,40 @@
 /* #region Dark Theme */
 
 .theme-dark {
+  /* #region Voyager Overrides */
+
+  &.okudagram-voyager {
+    /* Okudagram palette */
+    --okudagram-black:    #000000;
+    --okudagram-panel:    #000810;
+    --okudagram-peach:    #FFCC66;
+    --okudagram-beige:    #CC9966;
+    --okudagram-lavender: #9999CC;
+    --okudagram-red:      #CC6633;
+    --okudagram-amber:    #FF9933;
+    --okudagram-blue:     #6699CC;
+    --okudagram-muted:    #666699;
+  }
+
+  /* #endregion */
+
+  /* #region DS9 Overrides */
+
+  &.okudagram-dsnine {
+    /* Okudagram palette */
+    --okudagram-black:    #000000;
+    --okudagram-panel:    #1A0F0A;
+    --okudagram-peach:    #CC6633;
+    --okudagram-beige:    #CC9933;
+    --okudagram-lavender: #996666;
+    --okudagram-red:      #993333;
+    --okudagram-amber:    #CC9900;
+    --okudagram-blue:     #669966;
+    --okudagram-muted:    #663333;
+  }
+
+  /* #endregion */
+
   /* #region Obsidian Variable Overrides */
 
   /* Fonts */

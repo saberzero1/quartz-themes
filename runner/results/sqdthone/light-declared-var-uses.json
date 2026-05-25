@@ -467,6 +467,12 @@
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
   },
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
+  },
+  ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "h2[data-heading=\"This is a heading 2\"]": {
     "color": "hsl(var(--color-text-h2))",
     "font-family": "var(--font-headings)",
@@ -512,7 +518,6 @@
     "letter-spacing": "var(--h6-letter-spacing)",
     "line-height": "var(--h6-line-height)"
   },
-  ".view-header-breadcrumb-separator": { "color": "var(--text-faint)" },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "var(--text-faint)",
     "padding-bottom": "var(--list-spacing)",

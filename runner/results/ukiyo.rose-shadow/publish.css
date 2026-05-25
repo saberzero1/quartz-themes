@@ -2,14 +2,14 @@
   font-family: "CMU Typewriter Text";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/ukiyo.rose-shadow/cmu-typewriter-text.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/ukiyo.rose-shadow/cmu-typewriter-text.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/ukiyo.rose-shadow/jetbrains-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/ukiyo.rose-shadow/jetbrains-mono.woff2")
     format("woff2");
 }
 body.theme-light {

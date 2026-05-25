@@ -24,24 +24,20 @@
   },
   "input[type=\"search\"]": {
     "color": "var(--text-normal)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
     "height": "var(--input-height)"
   },
   "div.inline-title": {
-    "color": "var(--scrip-ink-strong)",
+    "color": "var(--inline-title-color)",
     "font-family": "var(--inline-title-font)",
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "letter-spacing": "var(--scrip-type-inline-title-tracking)",
-    "line-height": "var(--inline-title-line-height)",
-    "margin-bottom": "var(--size-3)"
+    "line-height": "var(--inline-title-line-height)"
   },
   "div.is-clickable.mod-collapsible.tree-item-self": {
     "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
@@ -49,7 +45,6 @@
   },
   "body.styled-scrollbars": {
     "background-color": "var(--background-primary)",
-    "background-image": "var(--scrip-app-texture)",
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
@@ -93,7 +88,6 @@
   },
   "input[type=\"text\"]": {
     "color": "var(--text-normal)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
     "font-weight": "var(--metadata-label-font-weight)",
     "height": "var(--input-height)"
@@ -101,7 +95,6 @@
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
     "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
@@ -110,28 +103,20 @@
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]": {
     "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
-  ".nav-folder-title-content": {
-    "color": "var(--nav-item-color)",
-    "font-family": "var(--font-interface)"
-  },
   ".nav-files-container": {
-    "font-family": "var(--font-interface)",
     "padding-bottom": "max(var(--safe-area-inset-bottom), var(--size-4-6))"
   },
   ".clickable-icon.graph-controls-button": {
     "color": "var(--icon-color)",
-    "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)"
+    "cursor": "var(--cursor)"
   },
   ".status-bar": {
-    "background-color": "var(--layer-1)",
-    "box-shadow": "var(--shadow-tactile)",
+    "background-color": "var(--status-bar-background)",
     "color": "var(--status-bar-text-color)",
     "font-size": "var(--status-bar-font-size)",
     "padding-right": "var(--size-4-2)",
@@ -140,26 +125,17 @@
   ".status-bar-item": {
     "cursor": "var(--cursor)"
   },
-  ".nav-header": {
-    "font-family": "var(--font-interface)"
-  },
   ".nav-file-title": {
     "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)",
     "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
-  ".nav-file-title-content": {
-    "color": "var(--nav-item-color)",
-    "font-family": "var(--font-interface)"
-  },
   ".clickable-icon": {
     "color": "var(--icon-color)",
-    "cursor": "var(--cursor)",
-    "font-family": "var(--font-interface)"
+    "cursor": "var(--cursor)"
   },
   ".clickable-icon svg": {
     "opacity": "var(--icon-opacity)",
@@ -170,8 +146,7 @@
     "color": "var(--text-faint)"
   },
   ".view-header-title": {
-    "color": "var(--text-normal)",
-    "opacity": "var(--scrip-chrome-muted-opacity)"
+    "color": "var(--text-normal)"
   },
   ".view-content": {
     "background-color": "var(--background-primary)",
@@ -179,7 +154,6 @@
     "height": "calc(100% - var(--header-height))"
   },
   "input[type=\"checkbox\"]": {
-    "font-family": "var(--font-interface)",
     "height": "var(--checkbox-size)",
     "width": "var(--checkbox-size)"
   },
@@ -196,13 +170,11 @@
     "background-color": "var(--background-primary)"
   },
   ".inline-title": {
-    "color": "var(--scrip-ink-strong)",
+    "color": "var(--inline-title-color)",
     "font-family": "var(--inline-title-font)",
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "letter-spacing": "var(--scrip-type-inline-title-tracking)",
-    "line-height": "var(--inline-title-line-height)",
-    "margin-bottom": "var(--size-3)"
+    "line-height": "var(--inline-title-line-height)"
   }
 }

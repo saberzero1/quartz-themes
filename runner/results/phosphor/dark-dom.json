@@ -4,9 +4,9 @@
     "classes": [],
     "attrs": {},
     "styles": {
-      "color": "rgb(138, 134, 144)",
+      "color": "rgb(224, 221, 213)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgb(138, 134, 144)",
+      "borderColor": "rgb(224, 221, 213)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
@@ -17,9 +17,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -59,9 +59,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -90,9 +90,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -132,9 +132,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -163,9 +163,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -205,9 +205,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -306,9 +306,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -348,9 +348,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -449,9 +449,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -491,9 +491,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -648,9 +648,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -690,9 +690,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -703,9 +703,9 @@
                 "classes": ["indent"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(138, 134, 144)",
+                  "color": "rgb(224, 221, 213)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(138, 134, 144)",
+                  "borderColor": "rgb(224, 221, 213)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -819,9 +819,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -861,9 +861,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -892,9 +892,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -934,9 +934,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1077,9 +1077,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -1119,9 +1119,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1132,9 +1132,9 @@
                 "classes": ["indent"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(138, 134, 144)",
+                  "color": "rgb(224, 221, 213)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(138, 134, 144)",
+                  "borderColor": "rgb(224, 221, 213)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1235,9 +1235,9 @@
         "classes": ["ec-line"],
         "attrs": {},
         "styles": {
-          "color": "rgb(138, 134, 144)",
+          "color": "rgb(224, 221, 213)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(138, 134, 144)",
+          "borderColor": "rgb(224, 221, 213)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -1277,9 +1277,9 @@
             "classes": ["code"],
             "attrs": {},
             "styles": {
-              "color": "rgb(138, 134, 144)",
+              "color": "rgb(224, 221, 213)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(138, 134, 144) rgb(138, 134, 144) rgb(138, 134, 144) rgb(42, 42, 51)",
+              "borderColor": "rgb(224, 221, 213) rgb(224, 221, 213) rgb(224, 221, 213) rgb(42, 42, 51)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -1290,9 +1290,9 @@
                 "classes": ["indent"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(138, 134, 144)",
+                  "color": "rgb(224, 221, 213)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(138, 134, 144)",
+                  "borderColor": "rgb(224, 221, 213)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },

@@ -36,6 +36,8 @@
   --background-modifier-active-hover: rgba(255, 255, 255, 0.06);
   --background-modifier-success: #1a2e1a;
   --background-modifier-error:   #2e1a1a;
+  /* Code blocks sit slightly darker than the page for quiet contrast */
+  --code-background:             #0d0d0f;
 
   /* ── Text Palette ── */
   /* #e0ddd5 (warm off-white): reduces glare vs pure white,
@@ -133,6 +135,8 @@
   --background-modifier-active-hover: rgba(0, 0, 0, 0.05);
   --background-modifier-success: #e3f0e3;
   --background-modifier-error:   #f0e3e3;
+  /* Light parchment for code instead of near-black */
+  --code-background:             #f0ede6;
 
   /* ── Text Palette ── */
   /* Warm charcoal instead of pure black — gentler on the eyes,
@@ -144,10 +148,11 @@
   --text-error:         #c44040;
   --text-selection:     rgba(170, 130, 60, 0.16);
   --text-highlight-bg:  rgba(200, 160, 50, 0.18);
-  --text-accent:        #9a7b3c;
+  /* Darkened to #886c35 to meet WCAG AA (4.5:1) for links/tags on the ivory page */
+  --text-accent:        #886c35;
 
   /* ── Interactive Accent ── */
-  --interactive-accent:       #9a7b3c;
+  --interactive-accent:       #886c35;
   --interactive-accent-hover: #876a30;
   --interactive-normal:       #e6e3dc;
   --interactive-hover:        #dcd8d0;
@@ -157,7 +162,7 @@
      against light backgrounds. Each hue is richer and more
      saturated so it carries the same visual weight as its
      dark-mode counterpart. */
-  --h1-color: #9a7214;   /* Deep amber gold */
+  --h1-color: #8f6a13;   /* Deep amber gold — meets WCAG AA (4.5:1) on ivory */
   --h2-color: #9c5828;   /* Deep burnt sienna */
   --h3-color: #8e4242;   /* Deep dusty rose */
   --h4-color: #64548e;   /* Deep lavender */
@@ -199,7 +204,7 @@
   --checklist-done-decoration: line-through;
 
   /* ── Custom Checkbox Palette (deepened for light) ── */
-  --phosphor-amber:    #9a7214;
+  --phosphor-amber:    #8f6a13;
   --phosphor-sienna:   #9c5828;
   --phosphor-rose:     #8e4242;
   --phosphor-lavender: #64548e;
@@ -410,7 +415,7 @@ pre,
 .markdown-source-view pre,
 .markdown-preview-view pre,
 .markdown-rendered pre {
-  background: #0d0d0f !important;
+  background: var(--code-background);
   border: 1px solid var(--background-modifier-border);
   border-radius: 6px;
   padding: 1.2em 1.4em;
@@ -419,10 +424,12 @@ pre,
   line-height: 1.55;
 }
 
-pre code {
-  background: none !important;
-  border: none !important;
-  padding: 0 !important;
+.markdown-source-view pre code,
+.markdown-preview-view pre code,
+.markdown-rendered pre code {
+  background: none;
+  border: none;
+  padding: 0;
   font-size: 0.875rem;
   color: var(--text-normal);
 }
@@ -435,7 +442,7 @@ pre code {
 .markdown-rendered ul,
 .markdown-rendered ol {
   padding-left: 1.6em;
-  margin: 0.5em 0 1em 0;
+  margin: 0.5em 0 1em;
 }
 
 .markdown-preview-view li,
@@ -508,17 +515,17 @@ hr,
 
 /* ─── Tags ─────────────────────────────────────────────────── */
 
-.tag,
-a.tag {
+body .tag,
+body a.tag {
   background: rgba(200, 169, 110, 0.1);
-  color: var(--text-accent) !important;
+  color: var(--text-accent);
   border: 1px solid rgba(200, 169, 110, 0.15);
   border-radius: 3px;
   padding: 0.1em 0.5em;
   font-size: 0.85em;
   font-family: var(--font-interface-theme);
-  text-decoration: none !important;
-  border-bottom: none !important;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .tag:hover {
@@ -558,8 +565,8 @@ a.tag {
 
 /* ─── Callouts ─────────────────────────────────────────────── */
 
-.callout {
-  background: var(--background-secondary) !important;
+body .callout {
+  background: var(--background-secondary);
   border-radius: 6px;
   border: 1px solid var(--background-modifier-border);
   margin: 1.5em 0;
@@ -622,8 +629,8 @@ a.tag {
   background: var(--text-selection);
 }
 
-.markdown-source-view .cm-selectionBackground {
-  background: var(--text-selection) !important;
+.markdown-source-view .cm-editor .cm-selectionBackground {
+  background: var(--text-selection);
 }
 
 
@@ -656,18 +663,18 @@ a.tag {
 
 /* ─── Cursor & Active Line ─────────────────────────────────── */
 
-.cm-cursor,
-.cm-dropCursor {
-  border-left-color: var(--text-accent) !important;
-  border-left-width: 2px !important;
+.cm-editor .cm-cursor,
+.cm-editor .cm-dropCursor {
+  border-left-color: var(--text-accent);
+  border-left-width: 2px;
 }
 
-.cm-activeLine {
-  background: rgba(255, 255, 255, 0.02) !important;
+.cm-editor .cm-activeLine {
+  background: rgba(255, 255, 255, 0.02);
 }
 
-.cm-activeLineGutter {
-  background: rgba(255, 255, 255, 0.02) !important;
+.cm-editor .cm-activeLineGutter {
+  background: rgba(255, 255, 255, 0.02);
 }
 
 
@@ -688,17 +695,24 @@ a.tag {
 /* ─── Print Styles ─────────────────────────────────────────── */
 
 @media print {
-  body {
-    background: white !important;
-    color: #1a1a1a !important;
+  body.theme-dark,
+  body.theme-light {
+    background: white;
+    color: #1a1a1a;
   }
 
-  h1 { color: #8a6b1e !important; }
-  h2 { color: #8a5a2e !important; }
-  h3 { color: #8a4a4a !important; }
-  h4 { color: #5a4a7a !important; }
-  h5 { color: #4a6a7a !important; }
-  h6 { color: #4a7a6a !important; }
+  .markdown-preview-view h1,
+  .markdown-rendered h1 { color: #8a6b1e; }
+  .markdown-preview-view h2,
+  .markdown-rendered h2 { color: #8a5a2e; }
+  .markdown-preview-view h3,
+  .markdown-rendered h3 { color: #8a4a4a; }
+  .markdown-preview-view h4,
+  .markdown-rendered h4 { color: #5a4a7a; }
+  .markdown-preview-view h5,
+  .markdown-rendered h5 { color: #4a6a7a; }
+  .markdown-preview-view h6,
+  .markdown-rendered h6 { color: #4a7a6a; }
 
   .markdown-preview-view {
     max-width: none;
@@ -886,7 +900,8 @@ body:not(.tasks)
   .HyperMD-task-line[data-task]:is([data-task='-']),
 body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
   color: var(--text-faint);
-  text-decoration: line-through solid var(--text-faint) 1px;
+  text-decoration-line: line-through;
+  text-decoration-color: var(--text-faint);
 }
 
 /* ── [*] Star ── */
@@ -1118,15 +1133,8 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
   color: #876a30;
 }
 
-/* Code blocks — light parchment instead of near-black */
-.theme-light pre,
-.theme-light .markdown-source-view pre,
-.theme-light .markdown-preview-view pre,
-.theme-light .markdown-rendered pre {
-  background: #f0ede6 !important;
-  border: 1px solid var(--background-modifier-border);
-}
-
+/* Code block background is handled by --code-background; border adapts
+   via --background-modifier-border in the shared `pre` rule. */
 .theme-light pre code {
   color: var(--text-normal);
 }
@@ -1189,17 +1197,17 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 /* Active line — warm tint instead of white tint */
-.theme-light .cm-activeLine {
-  background: rgba(0, 0, 0, 0.02) !important;
+.theme-light .cm-editor .cm-activeLine {
+  background: rgba(0, 0, 0, 0.02);
 }
 
-.theme-light .cm-activeLineGutter {
-  background: rgba(0, 0, 0, 0.02) !important;
+.theme-light .cm-editor .cm-activeLineGutter {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 /* Selection — warm amber on light */
-.theme-light .markdown-source-view .cm-selectionBackground {
-  background: var(--text-selection) !important;
+.theme-light .markdown-source-view .cm-editor .cm-selectionBackground {
+  background: var(--text-selection);
 }
 
 

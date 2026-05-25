@@ -294,59 +294,109 @@
   "li.task-list-item[data-task=\"x\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "h1[data-heading=\"This is a heading 1\"]": {
-    "color": "var(--h1-color)",
-    "font-family": "var(--h1-font)",
-    "font-size": "var(--h1-size)",
-    "font-style": "var(--h1-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h1-letter-spacing)",
-    "line-height": "var(--h1-line-height)"
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
   },
-  "h2[data-heading=\"This is a heading 2\"]": {
-    "color": "var(--h2-color)",
-    "font-family": "var(--h2-font)",
-    "font-size": "var(--h2-size)",
-    "font-style": "var(--h2-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h2-letter-spacing)",
-    "line-height": "var(--h2-line-height)"
+  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
   },
-  "h3[data-heading=\"This is a heading 3\"]": {
-    "color": "var(--h3-color)",
-    "font-family": "var(--h3-font)",
-    "font-size": "var(--h3-size)",
-    "font-style": "var(--h3-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h3-letter-spacing)",
-    "line-height": "var(--h3-line-height)"
+  "div.callout-title": {
+    "color": "rgb(var(--callout-color))",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)"
   },
-  "h4[data-heading=\"This is a heading 4\"]": {
-    "color": "var(--h4-color)",
-    "font-family": "var(--h4-font)",
-    "font-size": "var(--h4-size)",
-    "font-style": "var(--h4-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h4-letter-spacing)",
-    "line-height": "var(--h4-line-height)"
+  "div.callout-title-inner": {
+    "color": "var(--callout-title-color)",
+    "font-weight": "var(--font-weight)"
   },
-  "h5[data-heading=\"This is a heading 5\"]": {
-    "color": "var(--h5-color)",
-    "font-family": "var(--h5-font)",
-    "font-size": "var(--h5-size)",
-    "font-style": "var(--h5-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h5-letter-spacing)",
-    "line-height": "var(--h5-line-height)"
+  "div.callout-content": {
+    "background-color": "var(--callout-content-background)"
   },
-  "h6[data-heading=\"This is a heading 6\"]": {
-    "color": "var(--h6-color)",
-    "font-family": "var(--h6-font)",
-    "font-size": "var(--h6-size)",
-    "font-style": "var(--h6-style)",
-    "font-weight": "var(--font-weight)",
-    "letter-spacing": "var(--h6-letter-spacing)",
-    "line-height": "var(--h6-line-height)"
+  "svg.lucide-pencil.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-clipboard-list.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-info.svg-icon": {
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-check-circle-2.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-flame.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-check.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-help-circle.svg-icon": {
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-zap.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-bug.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
+    "background-color": "rgba(var(--callout-color), 0.1)"
+  },
+  "svg.lucide-quote.svg-icon": {
+    "color": "rgb(var(--callout-color))",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
   },
   "table": { "line-height": "var(--table-line-height)" },
   "th": {
@@ -412,46 +462,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"l\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"b\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"i\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"p\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"c\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"f\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"k\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"u\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"d\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"w\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
   "li.task-list-item[data-task=\"S\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
@@ -463,21 +473,19 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "svg.lucide-pencil.svg-icon": {
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+  ".canvas-node-content": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)"
   },
-  "svg.lucide-info.svg-icon": {
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
+  ".canvas-node-container .markdown-rendered": {
+    "color": "var(--text-normal)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)"
   },
-  ".tag": {
-    "background-color": "var(--tag-background)",
-    "color": "var(--tag-color)",
-    "cursor": "var(--cursor-link)",
-    "font-size": "var(--tag-size)",
-    "font-weight": "var(--tag-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  ".canvas-card-menu": {
+    "background-color": "var(--background-secondary)",
+    "box-shadow": "var(--input-shadow)",
+    "font-size": "var(--font-ui-medium)"
   }
 }

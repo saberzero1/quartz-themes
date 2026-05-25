@@ -2,14 +2,14 @@
   font-family: "Cascadia Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/kiwi-mono/cascadia-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/kiwi-mono/cascadia-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cascadia Mono";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.7/fonts/kiwi-mono/cascadia-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/kiwi-mono/cascadia-mono-1.woff2")
     format("woff2");
 }
 body.theme-light {

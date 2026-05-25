@@ -5,8 +5,8 @@
     "attrs": {},
     "styles": {
       "color": "rgb(135, 106, 48)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgb(135, 106, 48)",
+      "backgroundColor": "rgba(0, 0, 0, 0.04)",
+      "borderColor": "rgba(0, 0, 0, 0.07)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },

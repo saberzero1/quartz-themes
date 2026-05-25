@@ -1521,19 +1521,19 @@ body.theme-dark {
     --background-modifier-hover
   ) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
-  --tab-container-background: var(--okudagram-amber) !important;
+  --tab-container-background: var(--background-secondary) !important;
   --table-border-color: var(--background-modifier-border) !important;
-  --text-accent: var(--okudagram-lavender) !important;
-  --text-faint: var(--okudagram-muted) !important;
-  --text-normal: var(--okudagram-amber) !important;
-  --titlebar-background: var(--okudagram-peach) !important;
+  --text-accent: var(--color-accent-1) !important;
+  --text-faint: var(--color-base-50) !important;
+  --text-normal: var(--color-base-100) !important;
+  --titlebar-background: var(--background-secondary) !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
   --input-radius: 5px !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
-  --background-modifier-border: var(--okudagram-peach) !important;
-  --background-modifier-form-field: var(--okudagram-black) !important;
+  --background-modifier-border: var(--color-base-30) !important;
+  --background-modifier-form-field: var(--color-base-25) !important;
   --icon-size: var(--icon-m) !important;
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --pill-background: transparent !important;
@@ -1566,7 +1566,10 @@ body.theme-dark {
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1) !important;
-  --background-modifier-active-hover: rgba(204, 153, 204, 0.25) !important;
+  --background-modifier-active-hover: hsla(
+    var(--interactive-accent-hsl),
+    0.1
+  ) !important;
   --background-modifier-border-focus: var(--color-base-40) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
@@ -1577,14 +1580,14 @@ body.theme-dark {
   --background-modifier-form-field-hover: var(
     --background-modifier-form-field
   ) !important;
-  --background-modifier-hover: rgba(255, 153, 102, 0.15) !important;
+  --background-modifier-hover: rgba(var(--mono-rgb-100), 0.067) !important;
   --background-modifier-message: rgba(0, 0, 0, 0.9) !important;
   --background-modifier-success: var(--color-green) !important;
   --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-primary: var(--okudagram-black) !important;
-  --background-primary-alt: var(--okudagram-panel) !important;
-  --background-secondary: var(--okudagram-black) !important;
-  --background-secondary-alt: var(--okudagram-panel) !important;
+  --background-primary: var(--color-base-00) !important;
+  --background-primary-alt: var(--color-base-10) !important;
+  --background-secondary: var(--color-base-20) !important;
+  --background-secondary-alt: var(--color-base-30) !important;
   --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
   --bases-cards-container-background: transparent !important;
@@ -1683,27 +1686,27 @@ body.theme-dark {
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: 204, 102, 102;
+  --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: 153, 204, 255;
-  --callout-error: 204, 102, 102;
-  --callout-example: 204, 153, 204;
-  --callout-fail: 204, 102, 102;
-  --callout-important: 255, 204, 153;
-  --callout-info: 153, 204, 255;
+  --callout-default: var(--color-blue-rgb);
+  --callout-error: var(--color-red-rgb);
+  --callout-example: var(--color-purple-rgb);
+  --callout-fail: var(--color-red-rgb);
+  --callout-important: var(--color-cyan-rgb);
+  --callout-info: var(--color-blue-rgb);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
     var(--size-4-6);
-  --callout-question: 255, 153, 0;
-  --callout-quote: 153, 153, 204;
+  --callout-question: var(--color-orange-rgb);
+  --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
   --callout-success: var(--color-green-rgb);
-  --callout-summary: 255, 204, 153;
-  --callout-tip: 255, 204, 153;
+  --callout-summary: var(--color-cyan-rgb);
+  --callout-tip: var(--color-cyan-rgb);
   --callout-title-padding: 0;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: 153, 204, 255;
-  --callout-warning: 255, 153, 0;
+  --callout-todo: var(--color-blue-rgb);
+  --callout-warning: var(--color-orange-rgb);
   --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: 126, 126, 126 !important;
@@ -1729,7 +1732,7 @@ body.theme-dark {
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: #0a0a0a !important;
+  --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -1737,7 +1740,7 @@ body.theme-dark {
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--okudagram-beige) !important;
+  --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -1801,14 +1804,14 @@ body.theme-dark {
   --dialog-max-width: 80vw !important;
   --dialog-width: 560px !important;
   --direction: 1 !important;
-  --divider-color: var(--okudagram-peach) !important;
+  --divider-color: var(--background-modifier-border) !important;
   --divider-color-hover: var(--interactive-accent) !important;
   --divider-vertical-height: 100% !important;
   --divider-width: 1px !important;
   --divider-width-hover: 3px !important;
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
-  --dropdown-background: var(--okudagram-muted) !important;
+  --dropdown-background: var(--interactive-normal) !important;
   --dropdown-background-blend-mode: hard-light !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
@@ -1853,13 +1856,17 @@ body.theme-dark {
     "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;
   --font-extrabold: 800 !important;
   --font-extralight: 200 !important;
-  --font-interface: var(--okudagram-font-interface) !important;
+  --font-interface:
+    var(--font-interface-override), var(--font-interface-theme),
+    var(--default-font, "??"), var(--font-default) !important;
   --font-interface-override: "??" !important;
   --font-interface-theme: "??" !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: var(--font-text) !important;
-  --font-monospace: var(--okudagram-font-monospace) !important;
+  --font-monospace:
+    var(--font-monospace-override), var(--font-monospace-theme),
+    var(--font-monospace-default) !important;
   --font-monospace-default:
     ui-monospace, SFMono-Regular, "Cascadia Mono", "Roboto Mono",
     "DejaVu Sans Mono", "Liberation Mono", Menlo, Monaco, "Consolas",
@@ -1875,7 +1882,8 @@ body.theme-dark {
   --font-small: 0.933em !important;
   --font-smaller: 0.875em !important;
   --font-smallest: 0.8em !important;
-  --font-text: var(--okudagram-font-text) !important;
+  --font-text:
+    var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
   --font-text-theme: "??" !important;
@@ -1959,7 +1967,7 @@ body.theme-dark {
   --hr-thickness: 2px !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
-  --icon-color-focused: var(--okudagram-black) !important;
+  --icon-color-focused: var(--text-normal) !important;
   --icon-color-hover: var(--text-muted) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
@@ -2004,11 +2012,11 @@ body.theme-dark {
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: var(--okudagram-peach) !important;
-  --interactive-accent-hover: var(--okudagram-lavender) !important;
+  --interactive-accent: var(--color-accent) !important;
+  --interactive-accent-hover: var(--color-accent-1) !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
-  --interactive-hover: var(--okudagram-lavender) !important;
-  --interactive-normal: var(--okudagram-black) !important;
+  --interactive-hover: var(--color-base-35) !important;
+  --interactive-normal: var(--color-base-30) !important;
   --keyboard-height: 0px !important;
   --layer-cover: 5 !important;
   --layer-dragged-item: 80 !important;
@@ -2147,7 +2155,7 @@ body.theme-dark {
   --nav-heading-weight-hover: var(--font-medium) !important;
   --nav-indentation-guide-color: var(--indentation-guide-color) !important;
   --nav-indentation-guide-width: var(--indentation-guide-width) !important;
-  --nav-item-background-active: var(--okudagram-beige) !important;
+  --nav-item-background-active: var(--background-modifier-hover) !important;
   --nav-item-background-hover: var(--background-modifier-hover) !important;
   --nav-item-background-selected: hsla(
     var(--color-accent-hsl),
@@ -2156,7 +2164,7 @@ body.theme-dark {
   --nav-item-children-margin-start: var(--size-4-3) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
-  --nav-item-color-active: var(--okudagram-black) !important;
+  --nav-item-color-active: var(--text-normal) !important;
   --nav-item-color-highlighted: var(--text-accent) !important;
   --nav-item-color-hover: var(--text-normal) !important;
   --nav-item-color-selected: var(--text-normal) !important;
@@ -2215,8 +2223,8 @@ body.theme-dark {
   --raised-mask-border-width: 0 !important;
   --raised-mask-composite: exclude, add !important;
   --raised-mask-display: block !important;
-  --ribbon-background: var(--okudagram-peach) !important;
-  --ribbon-background-collapsed: var(--okudagram-peach) !important;
+  --ribbon-background: var(--background-secondary) !important;
+  --ribbon-background-collapsed: var(--background-primary) !important;
   --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3) !important;
   --ribbon-width: 44px !important;
   --safe-area-inset-bottom: 0px !important;
@@ -2318,13 +2326,13 @@ body.theme-dark {
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
-  --status-bar-background: var(--okudagram-amber) !important;
+  --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
   --status-bar-border-width: var(--border-width) 0 0 var(--border-width) !important;
   --status-bar-font-size: var(--font-ui-smaller) !important;
   --status-bar-position: fixed !important;
   --status-bar-radius: var(--radius-m) 0 0 0 !important;
-  --status-bar-text-color: var(--okudagram-black) !important;
+  --status-bar-text-color: var(--text-muted) !important;
   --suggestion-backdrop-filter: none !important;
   --suggestion-background: var(--background-primary) !important;
   --swatch-height: 22px !important;
@@ -2340,7 +2348,7 @@ body.theme-dark {
   --sync-avatar-color-7: var(--color-purple) !important;
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
-  --tab-background-active: var(--okudagram-lavender) !important;
+  --tab-background-active: var(--background-primary) !important;
   --tab-curve: 6px !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
@@ -2369,9 +2377,9 @@ body.theme-dark {
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
   --tab-text-color: var(--text-faint) !important;
   --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--okudagram-black) !important;
-  --tab-text-color-focused-active: var(--okudagram-black) !important;
-  --tab-text-color-focused-active-current: var(--okudagram-black) !important;
+  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color-focused-active: var(--text-muted) !important;
+  --tab-text-color-focused-active-current: var(--text-normal) !important;
   --tab-text-color-focused-highlighted: var(--text-accent) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
@@ -2429,17 +2437,17 @@ body.theme-dark {
   --tag-padding-y: 0.25em !important;
   --tag-radius: 2em !important;
   --tag-size: var(--font-smaller) !important;
-  --text-accent-hover: var(--okudagram-beige) !important;
-  --text-error: var(--okudagram-red) !important;
+  --text-accent-hover: var(--color-accent-2) !important;
+  --text-error: var(--color-red) !important;
   --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
-  --text-muted: var(--okudagram-beige) !important;
-  --text-on-accent: var(--okudagram-black) !important;
+  --text-muted: var(--color-base-70) !important;
+  --text-on-accent: white !important;
   --text-on-accent-inverted: black !important;
   --text-selection: hsla(var(--interactive-accent-hsl), 0.33) !important;
-  --text-success: var(--okudagram-beige) !important;
+  --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
-  --titlebar-background-focused: var(--okudagram-peach) !important;
+  --titlebar-background-focused: var(--background-secondary-alt) !important;
   --titlebar-border-color: var(--background-modifier-border) !important;
   --titlebar-border-width: 0px !important;
   --titlebar-height: 30px !important;
@@ -2483,12 +2491,12 @@ body.theme-dark {
   --xfa-focus-outline: auto !important;
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13)'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
-  --h1-color: var(--okudagram-peach) !important;
-  --h2-color: var(--okudagram-beige) !important;
-  --h3-color: var(--okudagram-lavender) !important;
-  --h4-color: var(--okudagram-amber) !important;
-  --h5-color: var(--okudagram-blue) !important;
-  --h6-color: var(--okudagram-muted) !important;
+  --h1-color: inherit !important;
+  --h2-color: inherit !important;
+  --h3-color: inherit !important;
+  --h4-color: inherit !important;
+  --h5-color: inherit !important;
+  --h6-color: inherit !important;
   --inline-title-color: var(--h1-color) !important;
   --okudagram-amber: #ff9900 !important;
   --okudagram-beige: #ffcc99 !important;

@@ -513,7 +513,7 @@ body.theme-light {
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --table-border-color: var(--background-modifier-border) !important;
-  --text-accent: #9a7b3c !important;
+  --text-accent: #886c35 !important;
   --text-faint: #a09a90 !important;
   --text-normal: #2c2a26 !important;
   --titlebar-background: var(--background-secondary) !important;
@@ -719,7 +719,7 @@ body.theme-light {
   --checklist-done-color: var(--text-faint) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: #f0ede6 !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -1001,7 +1001,7 @@ body.theme-light {
     0 0 0 0 transparent !important;
   --inset-end: right !important;
   --inset-start: left !important;
-  --interactive-accent: #9a7b3c !important;
+  --interactive-accent: #886c35 !important;
   --interactive-accent-hover: #876a30 !important;
   --interactive-accent-hsl: var(--color-accent-hsl) !important;
   --interactive-hover: #dcd8d0 !important;
@@ -1493,7 +1493,7 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --h1-color: #9a7214 !important;
+  --h1-color: #8f6a13 !important;
   --h2-color: #9c5828 !important;
   --h3-color: #8e4242 !important;
   --h4-color: #64548e !important;
@@ -1508,7 +1508,7 @@ body.theme-light {
   --font-scale-small: 0.875rem !important;
   --line-height-body: 1.72 !important;
   --line-height-heading: 1.25 !important;
-  --phosphor-amber: #9a7214 !important;
+  --phosphor-amber: #8f6a13 !important;
   --phosphor-cyan: #458070 !important;
   --phosphor-lavender: #64548e !important;
   --phosphor-rose: #8e4242 !important;
@@ -1733,7 +1733,7 @@ body.theme-dark {
   --checklist-done-color: var(--text-faint) !important;
   --checklist-done-decoration: line-through !important;
   --clickable-icon-radius: var(--radius-s) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: #0d0d0f !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -2573,9 +2573,9 @@ body body.theme-light .markdown-rendered a.internal-link {
   box-shadow: none;
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: var(--link-weight);
-  outline: rgb(154, 123, 60) none 0px;
+  outline: rgb(136, 108, 53) none 0px;
   text-decoration: underline;
-  text-decoration-color: rgb(154, 123, 60);
+  text-decoration-color: rgb(136, 108, 53);
   text-decoration-line: var(--link-decoration);
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
@@ -2602,7 +2602,7 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   box-shadow: none;
   font-family: "Source Serif 4", Georgia, serif;
   font-weight: var(--link-weight);
-  outline: rgb(154, 123, 60) none 0px;
+  outline: rgb(136, 108, 53) none 0px;
   text-decoration: rgba(138, 92, 245, 0.3);
   text-decoration-color: var(--link-unresolved-decoration-color);
   text-decoration-line: var(--link-decoration);
@@ -3008,7 +3008,7 @@ body body.theme-light div.multi-select-pill {
   border-end-end-radius: 0px;
 }
 body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
-  color: rgb(154, 123, 60);
+  color: rgb(136, 108, 53);
 }
 body body.theme-light .markdown-rendered ul > li {
   color: rgb(44, 42, 38);
@@ -3078,7 +3078,7 @@ body body.theme-light .markdown-rendered ol > li::marker {
 }
 body body.theme-light .markdown-rendered code {
   background-color: var(--code-background);
-  border: 0px solid rgb(135, 106, 48);
+  border: 1px solid rgba(0, 0, 0, 0.07);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4245,7 +4245,7 @@ body body.theme-light .markdown-rendered img {
   filter: none;
   max-width: 100%;
   object-fit: fill;
-  border: 0px rgb(154, 114, 20);
+  border: 0px rgb(143, 106, 19);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4360,7 +4360,7 @@ body body.theme-light .internal-embed {
   color: rgb(44, 42, 38);
   border-radius: 0px;
   border-color: rgb(44, 42, 38);
-  border-left: 2px solid rgb(154, 123, 60);
+  border-left: 2px solid rgb(136, 108, 53);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
@@ -4666,8 +4666,8 @@ body body.theme-light abbr {
 }
 body body.theme-light li.task-list-item[data-task="-"] {
   color: rgb(160, 154, 144);
-  text-decoration: line-through 1px rgb(160, 154, 144);
-  text-decoration-color: rgb(160, 154, 144);
+  text-decoration: line-through rgb(160, 154, 144);
+  text-decoration-color: var(--text-faint);
 }
 body body.theme-light li.task-list-item[data-task=">"] {
   color: rgb(44, 42, 38);
@@ -5126,7 +5126,6 @@ body body.theme-light .tag {
   background-color: var(--tag-background);
   color: var(--text-accent);
   border: 1px solid rgba(154, 123, 60, 0.15);
-  border-bottom: 0px solid rgb(154, 123, 60);
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -5686,7 +5685,7 @@ body body.theme-dark .markdown-rendered ol > li::marker {
 }
 body body.theme-dark .markdown-rendered code {
   background-color: var(--code-background);
-  border: 0px solid rgb(138, 134, 144);
+  border: 0px solid rgb(224, 221, 213);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5695,7 +5694,7 @@ body body.theme-dark .markdown-rendered code {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  color: var(--ec-codeFg);
+  color: var(--text-normal);
   font-family: var(--ec-codeFontFml);
   padding: 0px;
   padding-block-end: 0px;
@@ -7274,8 +7273,8 @@ body body.theme-dark abbr {
 }
 body body.theme-dark li.task-list-item[data-task="-"] {
   color: rgb(92, 88, 98);
-  text-decoration: line-through 1px rgb(92, 88, 98);
-  text-decoration-color: rgb(92, 88, 98);
+  text-decoration: line-through rgb(92, 88, 98);
+  text-decoration-color: var(--text-faint);
 }
 body body.theme-dark li.task-list-item[data-task=">"] {
   color: rgb(224, 221, 213);

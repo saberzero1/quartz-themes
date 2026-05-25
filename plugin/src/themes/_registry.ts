@@ -3716,6 +3716,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  vellum: {
+    name: "vellum",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   velocity: {
     name: "velocity",
     modes: ["dark", "light"],

@@ -1,6 +1,6 @@
 {
   "_codeBlock": {
-    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "backgroundColor": "rgba(0, 0, 0, 0.04)",
     "color": "rgb(135, 106, 48)"
   },
   "_preBlock": {
@@ -8,7 +8,7 @@
     "borderColor": "rgb(213, 208, 200)"
   },
   "header": {
-    "color": "rgb(154, 114, 20)",
+    "color": "rgb(143, 106, 19)",
     "fontStyle": "normal",
     "fontWeight": "700",
     "textDecoration": "none"
