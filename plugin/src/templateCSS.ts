@@ -608,14 +608,11 @@ button.darkmode {
 
 /* reader mode fixes */
 @media all and (min-width: 1200px) {
-  :root[saved-theme="dark"] body[data-slug] div#quartz-root.page:not([data-frame="canvas"]),
-  :root[saved-theme="light"] body[data-slug] div#quartz-root.page:not([data-frame="canvas"]),
-  :root[saved-theme="dark"] body[data-slug] div#quartz-root.page:not([data-frame="excalidraw"]),
-  :root[saved-theme="light"] body[data-slug] div#quartz-root.page:not([data-frame="excalidraw"]) {
+  :root[saved-theme="dark"] body[data-slug] div#quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]),
+  :root[saved-theme="light"] body[data-slug] div#quartz-root.page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
     background-color: var(--tab-container-background);
   }
-  .page:not([data-frame="canvas"]),
-  .page:not([data-frame="excalidraw"]) {
+  .page:not([data-frame="canvas"]):not([data-frame="excalidraw"]) {
     margin: 0;
     padding-left: calc((100% - min(1500px, 100dvw))/2);
     padding-right: calc((100% - min(1500px, 100dvw))/2);
