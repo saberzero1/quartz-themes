@@ -1,0 +1,80 @@
+{
+  "description": "Themes used for visual regression testing. Chosen for diversity of style.",
+  "themes": [
+    {
+      "id": "tokyo-night",
+      "modes": ["dark"],
+      "reason": "Popular, dark-only, clean design"
+    },
+    {
+      "id": "catppuccin",
+      "modes": ["dark", "light"],
+      "reason": "Both modes, style-settings collection"
+    },
+    {
+      "id": "minimal",
+      "modes": ["dark", "light"],
+      "reason": "Complex, heavy explorer/search styling"
+    },
+    {
+      "id": "its-theme",
+      "modes": ["dark", "light"],
+      "reason": "Largest theme, 17K lines, many variations"
+    },
+    {
+      "id": "hidden-grotto",
+      "modes": ["dark", "light"],
+      "reason": "Custom fonts, collection with 20+ variants"
+    },
+    {
+      "id": "aura",
+      "modes": ["dark", "light"],
+      "reason": "Full status, style-settings"
+    },
+    {
+      "id": "80s-neon",
+      "modes": ["dark"],
+      "reason": "Full status, dark-only, distinctive style"
+    },
+    {
+      "id": "abecedarium",
+      "modes": ["dark", "light"],
+      "reason": "Full status, clean"
+    },
+    {
+      "id": "comfort",
+      "modes": ["light"],
+      "reason": "Light-only, partial status"
+    },
+    {
+      "id": "hackthebox",
+      "modes": ["dark"],
+      "reason": "Full status, dark-only, monochrome"
+    },
+    {
+      "id": "everforest",
+      "modes": ["dark", "light"],
+      "reason": "Both modes, popular colorscheme"
+    },
+    {
+      "id": "brutalist",
+      "modes": ["dark", "light"],
+      "reason": "Style-settings, distinctive layout"
+    },
+    {
+      "id": "anuppuccin",
+      "modes": ["dark", "light"],
+      "reason": "Style-settings, catppuccin variant"
+    },
+    {
+      "id": "blue-topaz",
+      "modes": ["dark", "light"],
+      "reason": "Style-settings, extensive customization"
+    },
+    {
+      "id": "obsidian-gruvbox",
+      "modes": ["dark", "light"],
+      "reason": "Both modes, popular colorscheme"
+    }
+  ]
+}

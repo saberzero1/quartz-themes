@@ -225,4 +225,20 @@ coverage-bottom n="20":
 clean-quartz-output:
   rm -rf .quartz-output/
 
+[group('visual'), doc('Capture visual baselines for reference themes')]
+visual-capture-baselines:
+  bun runner/scripts/visual-regression.mjs --capture-baselines
+
+[group('visual'), doc('Compare theme against visual baseline')]
+visual-compare themeName:
+  bun runner/scripts/visual-regression.mjs --compare --theme "{{themeName}}"
+
+[group('visual'), doc('Compare all reference themes against baselines')]
+visual-compare-all:
+  bun runner/scripts/visual-regression.mjs --compare --all-reference
+
+[group('visual'), doc('Update baseline for a theme')]
+visual-update-baseline themeName:
+  bun runner/scripts/visual-regression.mjs --update-baseline --theme "{{themeName}}"
+
 everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated
