@@ -1,0 +1,110 @@
+import { expansions, defaults, sets } from "./shared.js";
+
+export const aspect = "tables";
+
+export const entries = [
+  {
+    obsidianSelector: `table`,
+    publishSelector: `.markdown-rendered table`,
+    quartzSelector: "table",
+    pseudoElement: "",
+    properties: sets.table,
+  },
+  {
+    obsidianSelector: `thead`,
+    publishSelector: `.markdown-rendered thead`,
+    quartzSelector: "thead",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `tbody`,
+    publishSelector: `.markdown-rendered tbody`,
+    quartzSelector: "tbody",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `th`,
+    publishSelector: `.markdown-rendered th`,
+    quartzSelector: "th",
+    pseudoElement: "",
+    properties: sets.tableHeader,
+  },
+  {
+    obsidianSelector: `td`,
+    publishSelector: `.markdown-rendered td`,
+    quartzSelector: "td",
+    pseudoElement: "",
+    properties: sets.tableCell,
+  },
+  {
+    obsidianSelector: `tr`,
+    publishSelector: `.markdown-rendered tr`,
+    quartzSelector: "tr",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `tbody tr:nth-child(even)`,
+    publishSelector: `.markdown-rendered tbody tr:nth-child(even)`,
+    quartzSelector: "tbody tr:nth-child(even)",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `tbody tr:nth-child(odd)`,
+    publishSelector: `.markdown-rendered tbody tr:nth-child(odd)`,
+    quartzSelector: "tbody tr:nth-child(odd)",
+    pseudoElement: "",
+    properties: ["background-color"],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .outline-view`,
+    publishSelector: `.outline-view-outer .outline-view`,
+    quartzSelector: ".toc",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-self`,
+    publishSelector: `.outline-view-outer .tree-item-self`,
+    quartzSelector: "button.toc-header",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      "cursor",
+      "font-family",
+      "font-weight",
+    ],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-self`,
+    publishSelector: `.outline-view-outer .tree-item-self`,
+    quartzSelector: "button.toc-header h3",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight"],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-inner`,
+    publishSelector: `.outline-view-outer .tree-item-inner`,
+    quartzSelector: "ul.toc-content.overflow > li > a",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-weight", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.outline-view-outer .tree-item-inner:hover`,
+    publishSelector: `.outline-view-outer .tree-item-inner:hover`,
+    quartzSelector: "ul.toc-content.overflow > li > a:hover",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.table-wrapper`,
+    publishSelector: `.table-wrapper`,
+    quartzSelector: ".table-container",
+    pseudoElement: "",
+    properties: ["background-color", ...defaults.border],
+  },
+];

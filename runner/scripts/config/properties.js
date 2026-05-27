@@ -1,0 +1,111 @@
+import { expansions, defaults, sets } from "./shared.js";
+
+export const aspect = "properties";
+
+export const entries = [
+  {
+    obsidianSelector: `body`,
+    publishSelector: null,
+    quartzSelector: "div#quartz-root",
+    pseudoElement: "",
+    properties: ["background-color", "color"],
+  },
+  {
+    obsidianSelector: `.frontmatter-container`,
+    publishSelector: `.frontmatter-container`,
+    quartzSelector: ".frontmatter",
+    pseudoElement: "",
+    properties: sets.frontmatter,
+  },
+  {
+    obsidianSelector: `.metadata-container`,
+    publishSelector: `.metadata-container`,
+    quartzSelector: ".metadata",
+    pseudoElement: "",
+    properties: sets.frontmatter,
+  },
+  {
+    obsidianSelector: `.metadata-properties`,
+    publishSelector: `.metadata-properties`,
+    quartzSelector: ".metadata-properties",
+    pseudoElement: "",
+    properties: sets.frontmatter,
+  },
+  {
+    obsidianSelector: `.metadata-container .metadata-property`,
+    publishSelector: `.metadata-container .metadata-property`,
+    quartzSelector: ".metadata-container .metadata-property",
+    pseudoElement: "",
+    properties: [...sets.frontmatter, "gap", "display", "flex-direction"],
+  },
+  {
+    obsidianSelector: `.metadata-property-key`,
+    publishSelector: `.metadata-property-key`,
+    quartzSelector: ".metadata-property-key",
+    pseudoElement: "",
+    properties: [
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "text-transform",
+    ],
+  },
+  {
+    obsidianSelector: `.metadata-property-value`,
+    publishSelector: `.metadata-property-value`,
+    quartzSelector: ".metadata-property-value",
+    pseudoElement: "",
+    properties: ["color", "font-family", "font-size"],
+  },
+  {
+    obsidianSelector: `.metadata-container`,
+    publishSelector: null,
+    quartzSelector: ".note-properties",
+    pseudoElement: "",
+    properties: ["background-color", "border-color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.metadata-property-key`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-key",
+    pseudoElement: "",
+    properties: ["color", "font-weight"],
+  },
+  {
+    obsidianSelector: `.metadata-property-value`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-value",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `.metadata-property-value a`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-link",
+    pseudoElement: "",
+    properties: ["color", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.multi-select-pill`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-tags",
+    pseudoElement: "",
+    properties: ["background-color", "color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.metadata-container .metadata-property`,
+    publishSelector: null,
+    quartzSelector: ".note-properties-row",
+    pseudoElement: "",
+    properties: ["border-color"],
+  },
+  {
+    obsidianSelector: `.view-content`,
+    publishSelector: `.view-content`,
+    quartzSelector: "ol.overflow",
+    pseudoElement: "",
+    properties: [...defaults.border],
+    // properties: ["background-color", ...defaults.border],
+  },
+];

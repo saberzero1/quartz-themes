@@ -152,4 +152,77 @@ tag:
   git tag -a "$TAG" -m "Release version $TAG"
   git push origin tag "$TAG"
 
+[group('testing'), doc('Build Quartz headlessly with a specific theme (requires update-quartz first)')]
+build-quartz themeName="its-theme":
+  #!/usr/bin/env bash
+  if [ ! -d "./runner/quartz/node_modules" ]; then
+    echo "Error: runner/quartz/node_modules not found. Run 'just update-quartz' first." >&2
+    exit 1
+  fi
+  cd runner/quartz && npx quartz plugin remove quartz-themes 2>/dev/null || true
+  cd runner/quartz && npx quartz plugin add ../../plugin --as quartz-themes
+  cd runner/quartz && npx quartz plugin config quartz-themes --set theme={{themeName}}
+  cd runner/quartz && npx quartz build -d ../vault -o ../../.quartz-output/{{themeName}}
+
+[group('testing'), doc('Verify extraction results for a single theme')]
+verify-extraction themeName:
+  bun runner/scripts/verify-extraction.mjs "{{themeName}}"
+
+[group('testing'), doc('Generate plugin data for a single theme (preserves other themes)')]
+generate-plugin-theme themeName:
+  bun --smol ./plugin/scripts/generate.js "{{themeName}}" --auto --no-clear
+
+[group('testing'), doc('Full single-theme pipeline: extract → compile → generate → build')]
+full-theme-pipeline themeName:
+  #!/usr/bin/env bash
+  set -e
+  just cli-extract-force "{{themeName}}"
+  just cli-recompile-theme "{{themeName}}"
+  just generate-plugin-theme "{{themeName}}"
+  just build-quartz "{{themeName}}"
+
+[group('testing'), doc('Test a single mapping for a theme')]
+test-mapping themeName obsidianSelector mode="dark":
+  bun runner/scripts/test-mapping.mjs --theme "{{themeName}}" --obsidian-selector "{{obsidianSelector}}" --mode {{mode}}
+
+[group('testing'), doc('Test all mappings for a theme')]
+test-all-mappings themeName mode="dark":
+  bun runner/scripts/test-mapping.mjs --theme "{{themeName}}" --all --mode {{mode}}
+
+[group('testing'), doc('Test mappings for a specific aspect')]
+test-aspect-mappings themeName aspect mode="dark":
+  bun runner/scripts/test-mapping.mjs --theme "{{themeName}}" --aspect "{{aspect}}" --mode {{mode}}
+
+[group('testing'), doc('Assert structural correctness of a compiled theme')]
+assert-theme themeName:
+  bun runner/scripts/assert-theme-structure.mjs --theme "{{themeName}}"
+
+[group('testing'), doc('Assert all themes and generate report')]
+assert-all-themes:
+  bun runner/scripts/assert-theme-structure.mjs --all --report
+
+[group('agent'), doc('Run agent verification workflow')]
+agent-verify themeName aspect="all" mode="dark":
+  bun runner/scripts/agent-workflow.mjs --theme "{{themeName}}" --aspect "{{aspect}}" --mode {{mode}} --verify
+
+[group('agent'), doc('Run agent workflow with cross-theme regression check')]
+agent-verify-cross themeName aspect="all" mode="dark":
+  bun runner/scripts/agent-workflow.mjs --theme "{{themeName}}" --aspect "{{aspect}}" --mode {{mode}} --verify --cross-theme
+
+[group('reporting'), doc('Generate mapping coverage report')]
+coverage-report:
+  bun runner/scripts/mapping-coverage-report.mjs
+
+[group('reporting'), doc('Show top N themes by mapping coverage')]
+coverage-top n="20":
+  bun runner/scripts/mapping-coverage-report.mjs --top {{n}}
+
+[group('reporting'), doc('Show bottom N themes by mapping coverage')]
+coverage-bottom n="20":
+  bun runner/scripts/mapping-coverage-report.mjs --bottom {{n}}
+
+[group('testing'), doc('Clean up Quartz build outputs')]
+clean-quartz-output:
+  rm -rf .quartz-output/
+
 everything-and-the-kitchen-sink: generate-callout-manifest style-settings cli-extract-baseline cli-extract-all-force drop prepare ingest compile generate-plugin convert format-non-generated

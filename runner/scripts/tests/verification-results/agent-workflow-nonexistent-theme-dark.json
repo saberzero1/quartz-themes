@@ -1,0 +1,7 @@
+{
+  "theme": "nonexistent-theme",
+  "aspect": "all",
+  "mode": "dark",
+  "stages": { "compile": { "status": "fail", "durationMs": 591 } },
+  "overall": "fail"
+}

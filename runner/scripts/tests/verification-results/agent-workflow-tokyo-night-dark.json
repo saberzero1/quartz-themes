@@ -1,0 +1,18 @@
+{
+  "theme": "tokyo-night",
+  "aspect": "all",
+  "mode": "dark",
+  "stages": {
+    "compile": { "status": "pass", "durationMs": 2212 },
+    "generate": { "status": "pass", "durationMs": 583 },
+    "mappings": {
+      "status": "warn",
+      "total": 313,
+      "fullyMapped": 11,
+      "partiallyMapped": 171,
+      "unmapped": 131
+    },
+    "structure": { "status": "pass", "errors": 0, "warnings": 2 }
+  },
+  "overall": "pass"
+}

@@ -1,0 +1,401 @@
+import { expansions, defaults, sets } from "./shared.js";
+
+export const aspect = "search";
+
+export const entries = [
+  {
+    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    publishSelector: `.suggestion-item.is-selected`,
+    quartzSelector:
+      ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      //"border-radius",
+      ...expansions.borderRadius,
+      "color",
+    ],
+  },
+  {
+    obsidianSelector: `div.mod-complex.suggestion-item`,
+    publishSelector: `div.suggestion-item`,
+    quartzSelector:
+      ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      //"border-radius",
+      ...defaults.border,
+      "color",
+    ],
+  },
+  {
+    obsidianSelector: `hr`,
+    publishSelector: `.markdown-rendered hr`,
+    quartzSelector: "hr",
+    pseudoElement: "",
+    properties: [
+      //"border",
+      //"border-color",
+      //"border-style",
+      //"border-top",
+      ...defaults.border,
+      "box-shadow",
+      //"margin",
+      ...defaults.margin,
+    ],
+  },
+  {
+    obsidianSelector: `div.multi-select-pill`,
+    publishSelector: `div.multi-select-pill`,
+    quartzSelector:
+      "a.internal-link.tag-link, .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag",
+    pseudoElement: "",
+    properties: sets.pill,
+  },
+  {
+    obsidianSelector: `div.multi-select-pill-content`,
+    publishSelector: `div.multi-select-pill > div.multi-select-pill-content`,
+    quartzSelector: "a.internal-link.tag-link::before",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `input[type=\"search\"]`,
+    publishSelector: `.site-body-left-column input.search-bar`,
+    quartzSelector: ".search > .search-button",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      //"border",
+      //"border-color",
+      //"border-radius",
+      ...defaults.border,
+      "color",
+      "font-family",
+      //"font-size",
+      //"padding",
+    ],
+  },
+  {
+    obsidianSelector: `div.prompt`,
+    publishSelector: `.search-results`,
+    quartzSelector: ".search > .search-container > .search-space",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      //"border",
+      //"border-radius",
+      ...defaults.border,
+      "box-shadow",
+    ],
+  },
+  {
+    obsidianSelector: `input.prompt-input[type=\"text\"]`,
+    publishSelector: null,
+    quartzSelector: ".search > .search-container > .search-space > input",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      //"border",
+      //"border-bottom",
+      //"border-radius",
+      ...defaults.border,
+      "box-shadow",
+    ],
+  },
+  {
+    obsidianSelector: `div.prompt-results`,
+    publishSelector: `.search-results > *`,
+    quartzSelector: ".search > .search-container > .search-space > *",
+    pseudoElement: "",
+    properties: sets.text,
+  },
+  {
+    obsidianSelector: `div.prompt`,
+    publishSelector: `div.search-results`,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results",
+    pseudoElement: "",
+    properties: [
+      //"border-color"
+      ...defaults.border,
+    ],
+  },
+  {
+    obsidianSelector: `div.mod-complex.suggestion-item`,
+    publishSelector: `.search-results .suggestion-item`,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `div.mod-complex.suggestion-item`,
+    publishSelector: `div.search-results .suggestion-item`,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
+    pseudoElement: "",
+    properties: [
+      //"border-color"
+      ...defaults.border,
+    ],
+  },
+  {
+    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    publishSelector: `.search-results .suggestion-item.is-selected`,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
+    pseudoElement: "",
+    properties: ["color", "font-weight", "background-color"],
+  },
+  {
+    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    publishSelector: `div.search-results .suggestion-item.is-selected`,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description",
+    pseudoElement: "",
+    properties: ["color"],
+  },
+  {
+    obsidianSelector: `.search-view-container`,
+    publishSelector: null,
+    quartzSelector: ".search > .search-container",
+    pseudoElement: "",
+    properties: ["backdrop-filter", "-webkit-backdrop-filter"],
+  },
+  {
+    obsidianSelector: `.search-result-file-matched-text`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout .highlight",
+    pseudoElement: "",
+    properties: ["background-color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.search-result-file-match`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .preview-container",
+    pseudoElement: "",
+    properties: ["color", "background-color", "font-weight"],
+  },
+  {
+    obsidianSelector: `.search-results-container .search-result`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
+    pseudoElement: "",
+    properties: [
+      "background-color",
+      "color",
+      ...defaults.border,
+      ...defaults.padding,
+      "border-radius",
+    ],
+  },
+  {
+    obsidianSelector: `.search-results-container .search-result:hover`,
+    publishSelector: null,
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover",
+    pseudoElement: "",
+    properties: ["background-color", "color", ...defaults.border],
+  },
+  {
+    obsidianSelector: `h1[data-heading=\"This is a heading 1\"]`,
+    publishSelector: `.published-container .markdown-rendered h1`,
+    quartzSelector: "h1",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h2[data-heading=\"This is a heading 2\"]`,
+    publishSelector: `.published-container .markdown-rendered h2`,
+    quartzSelector: "h2",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h3[data-heading=\"This is a heading 3\"]`,
+    publishSelector: `.published-container .markdown-rendered h3`,
+    quartzSelector: "h3",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h4[data-heading=\"This is a heading 4\"]`,
+    publishSelector: `.published-container .markdown-rendered h4`,
+    quartzSelector: "h4",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h5[data-heading=\"This is a heading 5\"]`,
+    publishSelector: `.published-container .markdown-rendered h5`,
+    quartzSelector: "h5",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h6[data-heading=\"This is a heading 6\"]`,
+    publishSelector: `.published-container .markdown-rendered h6`,
+    quartzSelector: "h6",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `div.inline-title`,
+    publishSelector: null, //TODO
+    quartzSelector: "h2.page-title, h2.page-title a",
+    pseudoElement: "",
+    properties: sets.headings.default,
+  },
+  {
+    obsidianSelector: `h1[data-heading=\"This is a heading 1\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h1`,
+    quartzSelector: "h1::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h2[data-heading=\"This is a heading 2\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h2`,
+    quartzSelector: "h2::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h3[data-heading=\"This is a heading 3\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h3`,
+    quartzSelector: "h3::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h4[data-heading=\"This is a heading 4\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h4`,
+    quartzSelector: "h4::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h5[data-heading=\"This is a heading 5\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h5`,
+    quartzSelector: "h5::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h6[data-heading=\"This is a heading 6\"]::after`,
+    publishSelector: `.published-container .markdown-rendered h6`,
+    quartzSelector: "h6::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `div.inline-title::after`,
+    publishSelector: null, //TODO
+    quartzSelector: "h2.page-title::after, h2.page-title a::after",
+    pseudoElement: "::after",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h1[data-heading="This is a heading 1"]::before`,
+    publishSelector: `.published-container .markdown-rendered h1`,
+    quartzSelector: "h1::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h2[data-heading="This is a heading 2"]::before`,
+    publishSelector: `.published-container .markdown-rendered h2`,
+    quartzSelector: "h2::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h3[data-heading="This is a heading 3"]::before`,
+    publishSelector: `.published-container .markdown-rendered h3`,
+    quartzSelector: "h3::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h4[data-heading="This is a heading 4"]::before`,
+    publishSelector: `.published-container .markdown-rendered h4`,
+    quartzSelector: "h4::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h5[data-heading="This is a heading 5"]::before`,
+    publishSelector: `.published-container .markdown-rendered h5`,
+    quartzSelector: "h5::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `h6[data-heading="This is a heading 6"]::before`,
+    publishSelector: `.published-container .markdown-rendered h6`,
+    quartzSelector: "h6::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `div.inline-title::before`,
+    publishSelector: null, //TODO
+    quartzSelector: "h2.page-title::before, h2.page-title a::before",
+    pseudoElement: "::before",
+    properties: sets.headings.after,
+  },
+  {
+    obsidianSelector: `.search-result-file-match`,
+    publishSelector: null,
+    quartzSelector: ".preview-container",
+    pseudoElement: "",
+    properties: ["color", "font-weight", "background-color"],
+  },
+  {
+    obsidianSelector: `.search-result-file-matched-text`,
+    publishSelector: null,
+    quartzSelector: ".highlight",
+    pseudoElement: "",
+    properties: ["background-color", "border-radius"],
+  },
+  {
+    obsidianSelector: `.search-input:focus`,
+    publishSelector: null,
+    quartzSelector: "input:focus",
+    pseudoElement: "",
+    properties: ["border-color", "box-shadow"],
+  },
+  {
+    obsidianSelector: `.inline-title`,
+    publishSelector: null,
+    quartzSelector: "h1.article-title",
+    pseudoElement: "",
+    properties: ["color", "font-size", "font-weight", "text-decoration"],
+  },
+  {
+    obsidianSelector: `.nav-folder-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".nav-folder-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.nav-file-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".nav-file-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+  {
+    obsidianSelector: `.search-result-file-title:hover`,
+    publishSelector: null,
+    quartzSelector: ".search-result-title:hover",
+    pseudoElement: "",
+    properties: ["color", "background-color"],
+  },
+];
