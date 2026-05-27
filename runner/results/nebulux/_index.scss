@@ -211,37 +211,37 @@ html {
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/orbitron.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/orbitron.woff2") format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat.woff2") format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-3.woff2") format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-4.woff2") format("woff2");
 }
 
 body {
@@ -1095,7 +1095,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(90deg, var(--h2-start) 0%, var(--h2-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(37, 99, 235) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%) repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1161,7 +1161,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(90deg, var(--h4-start) 0%, var(--h4-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(185, 28, 28) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%) repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1194,7 +1194,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(90deg, var(--h5-start) 0%, var(--h5-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(109, 40, 217) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%) repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1227,7 +1227,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(90deg, var(--h6-start) 0%, var(--h6-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(71, 85, 105) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%) repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -4938,15 +4938,15 @@ body {
     --font-text-theme: "Montserrat", sans-serif;
     --h1-end: rgba(255, 255, 255, 0.4);
     --h1-start: #ffffff;
-    --h2-end: #2563eb;
+    --h2-end: #5b9cf6;
     --h2-start: #78b4ff;
     --h3-end: #d97706;
     --h3-start: #ffc832;
-    --h4-end: #b91c1c;
+    --h4-end: #eb6060;
     --h4-start: #cd7f32;
-    --h5-end: #6d28d9;
+    --h5-end: #b06ef5;
     --h5-start: #c084fc;
-    --h6-end: #475569;
+    --h6-end: #789ab5;
     --h6-start: #94a3b8;
     --hud-blur: 12px;
     --hud-frame: 1.5px;
@@ -6450,7 +6450,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(90deg, var(--h2-start) 0%, var(--h2-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(37, 99, 235) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%) repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6516,7 +6516,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(90deg, var(--h4-start) 0%, var(--h4-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(185, 28, 28) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%) repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6549,7 +6549,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(90deg, var(--h5-start) 0%, var(--h5-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(109, 40, 217) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%) repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6582,7 +6582,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: linear-gradient(90deg, var(--h6-start) 0%, var(--h6-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(71, 85, 105) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%) repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -10293,15 +10293,15 @@ html[saved-theme="dark"] {
       --font-text-theme: "Montserrat", sans-serif;
       --h1-end: rgba(255, 255, 255, 0.4);
       --h1-start: #ffffff;
-      --h2-end: #2563eb;
+      --h2-end: #5b9cf6;
       --h2-start: #78b4ff;
       --h3-end: #d97706;
       --h3-start: #ffc832;
-      --h4-end: #b91c1c;
+      --h4-end: #eb6060;
       --h4-start: #cd7f32;
-      --h5-end: #6d28d9;
+      --h5-end: #b06ef5;
       --h5-start: #c084fc;
-      --h6-end: #475569;
+      --h6-end: #789ab5;
       --h6-start: #94a3b8;
       --hud-blur: 12px;
       --hud-frame: 1.5px;

@@ -47,7 +47,7 @@
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
   },
   "em": { "color": "var(--italic-color)" },
-  "strong > em": { "color": "var(--italic-color)" },
+  "strong > em": { "color": "var(--color-purple)" },
   "mark": {
     "background-color": "var(--text-highlight-bg)",
     "color": "var(--text-normal)"
@@ -474,7 +474,6 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  "mjx-container.MathJax": { "color": "var(--latex-color)" },
   "mjx-math.MJX-TEX": { "color": "var(--latex-color)" },
   ".internal-embed": {
     "background-color": "var(--embed-background)",

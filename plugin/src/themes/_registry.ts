@@ -1584,6 +1584,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["dm-mono", "dm-sans", "fira-code"],
   },
+  macos: { name: "macos", modes: ["dark", "light"], variations: [], fonts: [] },
   "mado-11": {
     name: "mado-11",
     modes: ["dark", "light"],
@@ -2950,6 +2951,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   sei: { name: "sei", modes: ["dark", "light"], variations: [], fonts: [] },
+  sequoia: {
+    name: "sequoia",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  serendipity: {
+    name: "serendipity",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   serenity: {
     name: "serenity",
     modes: ["dark", "light"],

@@ -2,28 +2,28 @@
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/lumines/jetbrains-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/lumines/jetbrains-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Excalifont";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/lumines/excalifont.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/lumines/excalifont.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cascadia Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/lumines/cascadia-code.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/lumines/cascadia-code.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Cascadia Code";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/lumines/cascadia-code-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/lumines/cascadia-code-1.woff2")
     format("woff2");
 }
 body.theme-light {

@@ -2654,7 +2654,7 @@ body .quiet-outline .n-tree-node-wrapper {
 
 .n-tree .n-tree-node-wrapper:not(:has(.n-tree-node-switcher--expanded)):not(:has(.n-tree-node-switcher--hide)) .n-tree-node .n-tree-node-content,
 .n-tree .n-tree-node-wrapper:has(.n-tree-node-switcher--expanded) .n-tree-node .n-tree-node-content {
-	transform: translateX(-7px);
+	transform: translateX(-4px);
 }
 
 .n-tree .n-tree-node-switcher .n-tree-node-switcher__icon {
@@ -2677,11 +2677,11 @@ body .quiet-outline .n-tree-node-wrapper {
 }
 
 .n-tree .n-tree-node-switcher.n-tree-node-switcher--expanded {
-	margin-left: -0.2rem;
+	/* margin-left: -0.2rem; */
 }
 
 .quiet-outline .n-tree .n-tree-node-indent {
-	margin: -0.2rem;
+	/* margin: -0.2rem; */
 }
 
 /* bases */

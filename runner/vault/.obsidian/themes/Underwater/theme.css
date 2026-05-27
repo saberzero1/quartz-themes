@@ -798,7 +798,7 @@ body:not(.show-ribbon) .workspace {
   margin-top: 7px;
 }
 .side-dock-settings {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 10px;
 }
 .workspace {
   background-color: transparent;
@@ -832,7 +832,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 
 /*Mobile styling*/
-.mobile-navbar, .mobile-toolbar, .mobile-toolbar {
+.mobile-navbar, .mobile-toolbar {
   background-color: var(--uw-background);
   padding-bottom: var(--safe-area-inset-bottom);
   padding-top: 0px;
@@ -930,8 +930,8 @@ body:not(.no-justify) .cm-s-obsidian, body:not(.no-justify) .markdown-preview-vi
 /*margin and gaps for sidebars tabs*/
 .mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner,
 .mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
-  padding: 1px 15px 1px;
-  margin: 6px 0 0 0;
+  padding: 1px 15px;
+  margin: 6px 0 0;
   gap: 5px;
 }
 /*tabs spacing*/
@@ -994,10 +994,6 @@ body:not(.no-pin) .workspace-tab-header:has(.mod-pinned) {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  .internal-link {
-    padding: 0 !important;
-    border: transparent !important;
-  }
 }
 
 /*Search and backlinks styling*/
@@ -1068,9 +1064,9 @@ del, .cm-strikethrough {
 }
 .cm-strong {
   color: var(--bold-color) !important;
-}
-.cm-em.cm-strong, .cm-strong.cm-em, strong em, em strong {
-  color: var(--italic-color) !important;
+}/*Bold + italic*/
+.cm-strong.cm-em, strong em, em strong {
+  color: var(--color-purple) !important;
 }
 
 /*latex color*/
@@ -1080,10 +1076,10 @@ del, .cm-strikethrough {
 .theme-dark {
   --latex-color: var(--gold);
 }
-mjx-container[jax="CHTML"][display="true"], .MJX-TEX, mjx-container[jax="CHTML"] {
+.MJX-TEX {
   color: var(--latex-color);
 }
-th .MJX-TEX { /*no color for table headers*/
+th .MJX-TEX { /*no color inside of table headers*/
   color: var(--table-header-color);
 }
 
@@ -1262,11 +1258,6 @@ img, .markdown-source-view .cm-content .image-embed {
 table, .table-wrapper {
   margin-inline: auto;
 }}
-/*very hacky fix for stacked images
-img + img, .markdown-rendered p:has(img + img) img {
-  margin-inline: 0 !important;
-  display: inline-block !important;
-}*/
 
 /*hover image animation !*/
 body:not(.no-animation) img {
@@ -1304,7 +1295,7 @@ body:not(.no-button) button {
 /*no-title*/
 .no-title {
   .inline-title, .iconize-inline-title-wrapper, .iconic-title-wrapper {
-    display: none !important;
+    display: none;
 }}
 
 /*notebook*/
@@ -1551,15 +1542,13 @@ body {
 }/*Styling*/
 .empty-state-container {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: max-content;
 }
 .empty-state-container:hover {
   transform:scale(1.03);
 }
 .empty-state-title, .empty-state-action:nth-child(3), .empty-state-action.mod-close {
   display: none;
-}
-.empty-state-container {
-  max-width: max-content;
 }
 .empty-state-action {
   background-color: var(--text-selection);
@@ -1946,16 +1935,6 @@ body:not(.no-todoist) {
 	background-color: var(--overlay);
 }
 
-/*Support for https://github.com/HandaArchitect/obsidian-banner-snippet*/
-/*Remove hover image animation from the banner*/
-.banner :is(:is(.markdown-source-view.mod-cm6) :is(.cm-content, .cm-line), .markdown-rendered) :is(img, .external-embed, .internal-embed audio, .internal-embed video, .iframe-external-embed), .banner.banner-fade.markdown-preview-view img[alt='banner']:first-child, .banner.banner-fade.is-live-preview img[alt='banner']:first-child, .banner.markdown-preview-view img[alt='banner']:first-child, .banner.is-live-preview img[alt='banner']:first-child  {
-  transition: none !important;
-  border-radius: 0px !important;
-}
-.banner img:hover {
-  transform: none !important;
-}
-
 /*Excalidraw*/
 .excalidraw-container {
   background-color: var(--surface) !important;
@@ -2043,19 +2022,19 @@ body:not(.no-cardboard) {
 }}
 
 /*Task genius*/
-.task-genius-container {
-  background-color: var(--overlay);
+.task-genius-container, .tg-fluent-container {
   border-top: none;
-
-  .full-calendar-container {
-    --checkbox-border-color: var(--highlight-med);
-  }
-
-  .full-calendar-container .calendar-event.is-completed,  
-  .full-calendar-container .calendar-event:has(input[data-task="-"]) {
-    background-color: var(--text-muted) !important;
-  }
 }
+.tg-calendar {
+  background: transparent;
+}
+.theme-light .fluent-modern, .theme-dark .fluent-modern {
+    --modern-background-secondary: var(--base);
+    --modern-background-primary: var(--background-primary);
+
+    --file-header-border: 0px solid transparent;
+}
+
 
 /*STYLE SETTINGS*/
 .style-settings-info-text .style-settings-markdown {
@@ -2083,7 +2062,7 @@ body:not(.no-cardboard) {
 }
 .style-settings-heading[data-level="1"] + .style-settings-container {
   border: 3px var(--base) solid;
-  border-width: 0 3px 3px 3px;
+  border-width: 0 3px 3px;
   margin-top: 0px;
   padding: 10px 30px;
   border-radius: 0px 0px 10px 10px;
@@ -2138,15 +2117,7 @@ body:not(.no-cardboard) {
     border-color: rgba(var(--callout-color)); 
     background-color: transparent;*/
     page-break-inside: avoid;
-    /* --callout-content-padding: 0px var(--size-4-6);
-    padding: 0px; */
   }
-  /* .callout-title {
-    padding: 7px 20px;
-    border-bottom: 2px rgba(var(--callout-color)) solid;
-    text-align: center !important;
-    background-color: rgba(var(--callout-color), 0.1);
-  } */
   .callout-fold.is-collapsed .svg-icon {
     display: none;
   }
@@ -2171,7 +2142,7 @@ body:not(.no-cardboard) {
 /*Focus mode*/
 .focus-mode {
   .workspace-tab-header-container, .view-header, .status-bar, .metadata-properties-heading, ::-webkit-scrollbar {
-    display: none !important;
+    display: none;
 }}
 .focus-mode .workspace-tab-container {
   margin-top: 14px;
@@ -2284,7 +2255,7 @@ table, .table-wrapper {
   background-color: var(--background-primary);
 }
 .workspace-sidedock-vault-profile {
-  background-color: var(--background-primary) !important; 
+  background-color: var(--background-primary); 
 }
 .workspace-bg .workspace-split.mod-left-split, .workspace-bg .workspace-split.mod-right-split, .workspace-bg .workspace-split.mod-root .view-content, .workspace-bg .workspace-leaf.mod-active .view-header, .view-header {
   background-color: transparent;

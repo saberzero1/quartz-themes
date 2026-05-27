@@ -1,0 +1,1721 @@
+/* @settings
+
+name: macOS Theme
+id: macos-theme
+settings:
+  -
+    id: macos-colors
+    title: Colors
+    type: heading
+    level: 1
+  -
+    id: macos-accent-color
+    title: Accent Color
+    description: Matches macOS system accent colors. Values shift between light and dark mode to match Apple's accessibility-adjusted palette.
+    type: variable-select
+    default: '#007AFF'
+    options:
+      -
+        label: Blue (Default)
+        value: '#007AFF'
+      -
+        label: Purple
+        value: '#AF52DE'
+      -
+        label: Pink
+        value: '#FF2D55'
+      -
+        label: Red
+        value: '#FF3B30'
+      -
+        label: Orange
+        value: '#FF9500'
+      -
+        label: Yellow
+        value: '#FFCC00'
+      -
+        label: Green
+        value: '#28CD41'
+      -
+        label: Graphite
+        value: '#8E8E93'
+  -
+    id: macos-accent-color-dark
+    title: Accent Color (Dark Mode Override)
+    description: Dark mode variant — Apple shifts accent colors brighter for contrast on dark surfaces.
+    type: variable-select
+    default: '#0A84FF'
+    options:
+      -
+        label: Blue (Default)
+        value: '#0A84FF'
+      -
+        label: Purple
+        value: '#BF5AF2'
+      -
+        label: Pink
+        value: '#FF375F'
+      -
+        label: Red
+        value: '#FF453A'
+      -
+        label: Orange
+        value: '#FF9F0A'
+      -
+        label: Yellow
+        value: '#FFD60A'
+      -
+        label: Green
+        value: '#32D74B'
+      -
+        label: Graphite
+        value: '#98989D'
+  -
+    id: macos-typography
+    title: Typography
+    type: heading
+    level: 1
+  -
+    id: macos-mono-font
+    title: Monospace Font
+    type: variable-select
+    default: "'SF Mono', ui-monospace, monospace"
+    options:
+      -
+        label: SF Mono
+        value: "'SF Mono', ui-monospace, monospace"
+      -
+        label: Menlo
+        value: "Menlo, monospace"
+      -
+        label: Monaco
+        value: "Monaco, monospace"
+  -
+    id: macos-appearance
+    title: Appearance
+    type: heading
+    level: 1
+  -
+    id: macos-translucent-panels
+    title: Translucent Panels
+    description: Glass blur effect on sidebar and right panel. Disable for solid opaque panels.
+    type: class-toggle
+    default: true
+  -
+    id: macos-glass-modals
+    title: Glass Modals
+    description: Translucent modals, command palette, and menus. Disable for solid overlays.
+    type: class-toggle
+    default: true
+  -
+    id: macos-wide-callouts
+    title: Full-Width Callouts
+    description: Callouts span the full editor width
+    type: class-toggle
+    default: false
+  -
+    id: macos-colorful-headings
+    title: Colorful Headings
+    description: Tint each heading level with a different system color
+    type: class-toggle
+    default: false
+  -
+    id: macos-accent-icons
+    title: Accent Sidebar Icons
+    description: Tint sidebar and ribbon icons with the accent color, like macOS Finder
+    type: class-toggle
+    default: true
+
+*/
+
+/* ==========================================================================
+   macOS Tahoe Theme for Obsidian
+   Phase 1: Foundations — colors, typography, spacing, radii
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Foundations — shared across light and dark
+   -------------------------------------------------------------------------- */
+
+body {
+  --font-interface-theme: -apple-system, BlinkMacSystemFont, 'SF Pro',
+    'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-text-theme: -apple-system, BlinkMacSystemFont, 'SF Pro',
+    'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-monospace-theme: var(
+    --macos-mono-font,
+    'SF Mono',
+    ui-monospace,
+    monospace
+  );
+
+  --font-ui-smaller: 11px;
+  --font-ui-small: 13px;
+  --font-ui-medium: 15px;
+  --font-ui-large: 20px;
+
+  --font-text-size: 16px;
+
+  --line-height-normal: 1.5;
+  --line-height-tight: 1.35;
+
+  --h1-size: 1.625em;
+  --h2-size: 1.375em;
+  --h3-size: 1.0625em;
+  --h4-size: 0.9375em;
+  --h5-size: 0.8125em;
+  --h6-size: 0.75em;
+
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 600;
+  --h4-weight: 600;
+  --h5-weight: 600;
+  --h6-weight: 600;
+
+  --h1-line-height: 1.23;
+  --h2-line-height: 1.18;
+  --h3-line-height: 1.29;
+  --h4-line-height: 1.33;
+  --h5-line-height: 1.4;
+  --h6-line-height: 1.4;
+
+  --bold-modifier: 200;
+
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --radius-xl: 24px;
+
+  --border-width: 0.5px;
+
+  --button-radius: 8px;
+
+  --tag-radius: 4px;
+  --tag-padding-x: 6px;
+  --tag-padding-y: 4px;
+  --tag-size: 0.85em;
+
+  --callout-radius: 10px;
+  --callout-border-width: 0px;
+  --callout-padding: 12px 16px;
+  --callout-title-weight: 600;
+  --callout-title-size: 0.95em;
+
+  --checkbox-radius: 50%;
+  --checkbox-size: 18px;
+
+  --nav-item-padding: 4px 10px;
+  --nav-indentation-guide-width: 0px;
+  --nav-indentation-guide-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   Heading tracking — Apple's SF Pro letter-spacing values
+   -------------------------------------------------------------------------- */
+
+.HyperMD-header-1,
+.markdown-preview-view h1 {
+  letter-spacing: -0.36px;
+}
+
+.HyperMD-header-2,
+.markdown-preview-view h2 {
+  letter-spacing: -0.26px;
+}
+
+.HyperMD-header-3,
+.markdown-preview-view h3 {
+  letter-spacing: -0.12px;
+}
+
+.HyperMD-header-4,
+.markdown-preview-view h4 {
+  letter-spacing: -0.09px;
+}
+
+.HyperMD-header-5,
+.markdown-preview-view h5 {
+  letter-spacing: -0.03px;
+}
+
+.HyperMD-header-6,
+.markdown-preview-view h6 {
+  letter-spacing: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Light mode — Apple system colors (NSColor, macOS Sonoma/Tahoe)
+   -------------------------------------------------------------------------- */
+
+.theme-light {
+  --macos-accent: var(--macos-accent-color, #007AFF);
+
+  --background-primary: #ffffff;
+  --background-primary-alt: #f5f5f7;
+  --background-secondary: #f5f5f7;
+  --background-secondary-alt: #ebebed;
+
+  --background-modifier-hover: rgba(0, 0, 0, 0.04);
+  --background-modifier-active-hover: rgba(0, 0, 0, 0.06);
+  --background-modifier-border: rgba(0, 0, 0, 0.10);
+  --background-modifier-border-hover: rgba(0, 0, 0, 0.15);
+  --background-modifier-border-focus: var(--macos-accent);
+  --background-modifier-error-rgb: 255, 59, 48;
+  --background-modifier-error: rgba(255, 59, 48, 0.1);
+  --background-modifier-success-rgb: 40, 205, 65;
+  --background-modifier-success: rgba(40, 205, 65, 0.1);
+  --background-modifier-message: #f5f5f7;
+  --background-modifier-form-field: #ffffff;
+
+  --color-base-00: #ffffff;
+  --color-base-05: #fafafa;
+  --color-base-10: #f5f5f7;
+  --color-base-20: #ebebed;
+  --color-base-25: #e0e0e2;
+  --color-base-30: #d1d1d6;
+  --color-base-35: #c7c7cc;
+  --color-base-40: #aeaeb2;
+  --color-base-50: #8e8e93;
+  --color-base-60: #636366;
+  --color-base-70: #48484a;
+  --color-base-100: #1d1d1f;
+
+  --color-red: #ff3b30;
+  --color-orange: #ff9500;
+  --color-yellow: #ffcc00;
+  --color-green: #28cd41;
+  --color-cyan: #55bef0;
+  --color-blue: #007aff;
+  --color-purple: #af52de;
+  --color-pink: #ff2d55;
+
+  --interactive-normal: #ffffff;
+  --interactive-hover: #f5f5f7;
+  --interactive-accent: var(--macos-accent);
+  --interactive-accent-hover: var(--macos-accent);
+
+  --text-normal: rgba(0, 0, 0, 0.85);
+  --text-muted: rgba(0, 0, 0, 0.56);
+  --text-faint: rgba(0, 0, 0, 0.25);
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1d1d1f;
+  --text-accent: var(--macos-accent);
+  --text-accent-hover: var(--macos-accent);
+  --text-error: #ff3b30;
+  --text-success: #28cd41;
+  --text-warning: #ff9500;
+  --text-selection: rgba(0, 122, 255, 0.18);
+  --text-highlight-bg: rgba(255, 255, 0, 0.40);
+  --caret-color: var(--macos-accent);
+
+  --link-color: var(--macos-accent);
+  --link-color-hover: var(--macos-accent);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: var(--macos-accent);
+  --link-external-color-hover: var(--macos-accent);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: var(--macos-accent);
+  --link-unresolved-opacity: 0.6;
+
+  --tag-background: rgba(0, 122, 255, 0.08);
+  --tag-background-hover: rgba(0, 122, 255, 0.14);
+  --tag-color: var(--macos-accent);
+  --tag-color-hover: var(--macos-accent);
+  --tag-border-color: transparent;
+  --tag-border-width: 0;
+
+  --code-background: #f4f5f5;
+  --code-normal: #000000;
+  --code-comment: #5d6c79;
+  --code-function: #326d74;
+  --code-keyword: #9b2393;
+  --code-string: #c41a16;
+  --code-operator: #000000;
+  --code-tag: #3f6e74;
+  --code-value: #1c00cf;
+  --code-property: #5b2698;
+  --code-important: #78492a;
+  --code-punctuation: #000000;
+
+  --callout-default: 142, 142, 147;
+  --callout-info: 0, 122, 255;
+  --callout-todo: 0, 122, 255;
+  --callout-tip: 40, 205, 65;
+  --callout-success: 40, 205, 65;
+  --callout-question: 255, 149, 0;
+  --callout-warning: 255, 149, 0;
+  --callout-error: 255, 59, 48;
+  --callout-fail: 255, 59, 48;
+  --callout-bug: 255, 59, 48;
+  --callout-example: 175, 82, 222;
+  --callout-quote: 142, 142, 147;
+  --callout-summary: 85, 190, 240;
+  --callout-important: 0, 122, 255;
+
+  --nav-item-color: rgba(0, 0, 0, 0.85);
+  --nav-item-color-hover: rgba(0, 0, 0, 0.85);
+  --nav-item-color-active: rgba(0, 0, 0, 0.85);
+  --nav-item-color-selected: var(--text-on-accent);
+  --nav-item-background-hover: rgba(0, 0, 0, 0.04);
+  --nav-item-background-active: rgba(0, 0, 0, 0.06);
+  --nav-item-background-selected: var(--macos-accent);
+
+  --checkbox-color: var(--macos-accent);
+  --checkbox-color-hover: var(--macos-accent);
+  --checkbox-border-color: #c7c7cc;
+  --checkbox-border-color-hover: var(--macos-accent);
+  --checkbox-marker-color: #ffffff;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(0, 0, 0, 0.2);
+  --scrollbar-active-thumb-bg: rgba(0, 0, 0, 0.35);
+
+  --graph-line: rgba(0, 0, 0, 0.12);
+  --graph-node: var(--macos-accent);
+  --graph-node-focused: var(--macos-accent);
+  --graph-node-tag: #af52de;
+  --graph-node-attachment: #28cd41;
+}
+
+/* --------------------------------------------------------------------------
+   Dark mode — Apple dark appearance (brighter accent shifts)
+   -------------------------------------------------------------------------- */
+
+.theme-dark {
+  --macos-accent: var(--macos-accent-color-dark, #0A84FF);
+
+  --background-primary: #1c1c1e;
+  --background-primary-alt: #2c2c2e;
+  --background-secondary: #2c2c2e;
+  --background-secondary-alt: #3a3a3c;
+
+  --background-modifier-hover: rgba(255, 255, 255, 0.06);
+  --background-modifier-active-hover: rgba(255, 255, 255, 0.08);
+  --background-modifier-border: rgba(255, 255, 255, 0.10);
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.15);
+  --background-modifier-border-focus: var(--macos-accent);
+  --background-modifier-error-rgb: 255, 69, 58;
+  --background-modifier-error: rgba(255, 69, 58, 0.15);
+  --background-modifier-success-rgb: 50, 215, 75;
+  --background-modifier-success: rgba(50, 215, 75, 0.15);
+  --background-modifier-message: #2c2c2e;
+  --background-modifier-form-field: #1c1c1e;
+
+  --color-base-00: #1c1c1e;
+  --color-base-05: #242426;
+  --color-base-10: #2c2c2e;
+  --color-base-20: #3a3a3c;
+  --color-base-25: #48484a;
+  --color-base-30: #545456;
+  --color-base-35: #636366;
+  --color-base-40: #6e6e73;
+  --color-base-50: #8e8e93;
+  --color-base-60: #aeaeb2;
+  --color-base-70: #c7c7cc;
+  --color-base-100: #f5f5f7;
+
+  --color-red: #ff453a;
+  --color-orange: #ff9f0a;
+  --color-yellow: #ffd60a;
+  --color-green: #32d74b;
+  --color-cyan: #5ac8f5;
+  --color-blue: #0a84ff;
+  --color-purple: #bf5af2;
+  --color-pink: #ff375f;
+
+  --interactive-normal: #2c2c2e;
+  --interactive-hover: #3a3a3c;
+  --interactive-accent: var(--macos-accent);
+  --interactive-accent-hover: var(--macos-accent);
+
+  --text-normal: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --text-faint: rgba(255, 255, 255, 0.25);
+  --text-on-accent: #ffffff;
+  --text-on-accent-inverted: #1c1c1e;
+  --text-accent: var(--macos-accent);
+  --text-accent-hover: var(--macos-accent);
+  --text-error: #ff453a;
+  --text-success: #32d74b;
+  --text-warning: #ff9f0a;
+  --text-selection: rgba(10, 132, 255, 0.30);
+  --text-highlight-bg: rgba(255, 255, 0, 0.30);
+  --caret-color: var(--macos-accent);
+
+  --link-color: var(--macos-accent);
+  --link-color-hover: var(--macos-accent);
+  --link-decoration: none;
+  --link-decoration-hover: underline;
+  --link-external-color: var(--macos-accent);
+  --link-external-color-hover: var(--macos-accent);
+  --link-external-decoration: none;
+  --link-external-decoration-hover: underline;
+  --link-unresolved-color: var(--macos-accent);
+  --link-unresolved-opacity: 0.6;
+
+  --tag-background: rgba(10, 132, 255, 0.12);
+  --tag-background-hover: rgba(10, 132, 255, 0.20);
+  --tag-color: var(--macos-accent);
+  --tag-color-hover: var(--macos-accent);
+  --tag-border-color: transparent;
+  --tag-border-width: 0;
+
+  --code-background: #1f1f24;
+  --code-normal: #dfdfe0;
+  --code-comment: #6c7986;
+  --code-function: #41a1c0;
+  --code-keyword: #fc5fa3;
+  --code-string: #fc6a5d;
+  --code-operator: #dfdfe0;
+  --code-tag: #5dd8ff;
+  --code-value: #d0bf69;
+  --code-property: #d0a8ff;
+  --code-important: #ffa14f;
+  --code-punctuation: #dfdfe0;
+
+  --callout-default: 142, 142, 147;
+  --callout-info: 10, 132, 255;
+  --callout-todo: 10, 132, 255;
+  --callout-tip: 50, 215, 75;
+  --callout-success: 50, 215, 75;
+  --callout-question: 255, 159, 10;
+  --callout-warning: 255, 159, 10;
+  --callout-error: 255, 69, 58;
+  --callout-fail: 255, 69, 58;
+  --callout-bug: 255, 69, 58;
+  --callout-example: 191, 90, 242;
+  --callout-quote: 142, 142, 147;
+  --callout-summary: 90, 200, 245;
+  --callout-important: 10, 132, 255;
+
+  --nav-item-color: rgba(255, 255, 255, 0.85);
+  --nav-item-color-hover: rgba(255, 255, 255, 0.85);
+  --nav-item-color-active: rgba(255, 255, 255, 0.85);
+  --nav-item-color-selected: var(--text-on-accent);
+  --nav-item-background-hover: rgba(255, 255, 255, 0.06);
+  --nav-item-background-active: rgba(255, 255, 255, 0.08);
+  --nav-item-background-selected: var(--macos-accent);
+
+  --checkbox-color: var(--macos-accent);
+  --checkbox-color-hover: var(--macos-accent);
+  --checkbox-border-color: #636366;
+  --checkbox-border-color-hover: var(--macos-accent);
+  --checkbox-marker-color: #ffffff;
+
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(255, 255, 255, 0.20);
+  --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.35);
+
+  --graph-line: rgba(255, 255, 255, 0.10);
+  --graph-node: var(--macos-accent);
+  --graph-node-focused: var(--macos-accent);
+  --graph-node-tag: #bf5af2;
+  --graph-node-attachment: #32d74b;
+}
+
+/* ==========================================================================
+   Phase 2: Chrome glass — sidebar, toolbar, panels, navigation
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Sidebar — Liquid Glass translucency
+   -------------------------------------------------------------------------- */
+
+body.macos-translucent-panels .mod-left-split {
+  background-color: rgba(246, 246, 246, 0.72);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+}
+
+body.macos-translucent-panels .mod-right-split {
+  background-color: rgba(246, 246, 246, 0.72);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+}
+
+body.theme-dark.macos-translucent-panels .mod-left-split {
+  background-color: rgba(30, 30, 30, 0.72);
+}
+
+body.theme-dark.macos-translucent-panels .mod-right-split {
+  background-color: rgba(30, 30, 30, 0.72);
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar divider — Apple's signature 0.5px edge
+   -------------------------------------------------------------------------- */
+
+.workspace-leaf-resize-handle {
+  border-color: transparent;
+}
+
+.theme-light .mod-left-split .workspace-leaf-resize-handle {
+  border-right: 0.5px solid rgba(0, 0, 0, 0.10);
+}
+
+.theme-light .mod-right-split .workspace-leaf-resize-handle {
+  border-left: 0.5px solid rgba(0, 0, 0, 0.10);
+}
+
+.theme-dark .mod-left-split .workspace-leaf-resize-handle {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+.theme-dark .mod-right-split .workspace-leaf-resize-handle {
+  border-left: 0.5px solid rgba(255, 255, 255, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   Tab header bar — subtle glass with bottom edge
+   -------------------------------------------------------------------------- */
+
+.workspace-tab-header-container {
+  border-bottom: 0.5px solid var(--background-modifier-border);
+}
+
+/* --------------------------------------------------------------------------
+   Titlebar — clean, no border
+   -------------------------------------------------------------------------- */
+
+.titlebar {
+  border-bottom: none;
+}
+
+.titlebar-inner {
+  gap: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Navigation — file explorer (macOS sidebar rows)
+   -------------------------------------------------------------------------- */
+
+.nav-file-title,
+.nav-folder-title {
+  border-radius: var(--radius-s);
+  padding: 4px 10px;
+}
+
+.nav-file-title {
+  font-size: var(--font-ui-small);
+}
+
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+  font-weight: 500;
+}
+
+.nav-folder-title {
+  font-weight: 600;
+  font-size: var(--font-ui-smaller);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+.nav-folder-children .nav-folder-title {
+  font-weight: 500;
+  font-size: var(--font-ui-small);
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--text-normal);
+}
+
+/* --------------------------------------------------------------------------
+   Scrollbar — thin macOS-style overlay
+   -------------------------------------------------------------------------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-active-thumb-bg);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.modal ::-webkit-scrollbar-track {
+  margin-top: var(--radius-l);
+  margin-bottom: var(--radius-l);
+}
+
+.prompt ::-webkit-scrollbar-track {
+  margin-top: var(--radius-l);
+  margin-bottom: var(--radius-l);
+}
+
+/* --------------------------------------------------------------------------
+   Status bar — clean bottom edge
+   -------------------------------------------------------------------------- */
+
+.status-bar {
+  border-top: none;
+  font-size: var(--font-ui-smaller);
+}
+
+/* ==========================================================================
+   Phase 3: Overlays — modals, command palette, menus, tooltips
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Modal — glass with Apple layered shadow
+   -------------------------------------------------------------------------- */
+
+.modal-container .modal {
+  border-radius: var(--radius-l);
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme-dark .modal-container .modal {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+body.macos-glass-modals .modal-container .modal {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+}
+
+body.theme-dark.macos-glass-modals .modal-container .modal {
+  background: rgba(40, 40, 40, 0.78);
+}
+
+/* --------------------------------------------------------------------------
+   Modal backdrop — subtle dimming
+   -------------------------------------------------------------------------- */
+
+.modal-container .modal-bg {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.theme-dark .modal-container .modal-bg {
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   Command palette (prompt) — glass with macOS Spotlight feel
+   -------------------------------------------------------------------------- */
+
+.prompt {
+  border-radius: var(--radius-l);
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.theme-dark .prompt {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+body.macos-glass-modals .prompt {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+}
+
+body.theme-dark.macos-glass-modals .prompt {
+  background: rgba(40, 40, 40, 0.82);
+}
+
+.prompt-input-container {
+  border-bottom: 0.5px solid var(--background-modifier-border);
+  padding: 8px;
+}
+
+.prompt-input {
+  font-size: var(--font-ui-medium);
+  border-radius: 0;
+}
+
+.prompt-results {
+  padding: 6px;
+}
+
+.suggestion-item {
+  border-radius: calc(var(--radius-l) - 6px);
+  padding: 6px 10px;
+  font-size: var(--font-ui-small);
+}
+
+.suggestion-item.is-selected {
+  background: var(--macos-accent);
+  color: var(--text-on-accent);
+}
+
+.suggestion-item .suggestion-hotkey {
+  font-size: var(--font-ui-smaller);
+}
+
+/* --------------------------------------------------------------------------
+   Settings dialog — glass panels
+   -------------------------------------------------------------------------- */
+
+body.macos-glass-modals .modal.mod-settings {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(40px) saturate(200%);
+  -webkit-backdrop-filter: blur(40px) saturate(200%);
+}
+
+body.theme-dark.macos-glass-modals .modal.mod-settings {
+  background: rgba(40, 40, 40, 0.82);
+}
+
+.modal.mod-settings .vertical-tab-header {
+  border-right: 0.5px solid var(--background-modifier-border);
+}
+
+.modal.mod-settings .vertical-tab-nav-item {
+  border-radius: 4px;
+  font-size: var(--font-ui-small);
+  padding: 4px 10px;
+}
+
+.modal.mod-settings .vertical-tab-nav-item.is-active {
+  background: var(--macos-accent);
+  color: var(--text-on-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Context menu — glass with Apple menu styling
+   -------------------------------------------------------------------------- */
+
+.menu {
+  border-radius: var(--radius-m);
+  border: 0.5px solid rgba(0, 0, 0, 0.08);
+  padding: 4px;
+}
+
+.theme-dark .menu {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
+body.macos-glass-modals .menu {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(50px) saturate(200%);
+  -webkit-backdrop-filter: blur(50px) saturate(200%);
+}
+
+body.theme-dark.macos-glass-modals .menu {
+  background: rgba(40, 40, 40, 0.78);
+}
+
+.menu-item {
+  border-radius: calc(var(--radius-m) - 4px);
+  font-size: var(--font-ui-small);
+  padding: 4px 12px;
+}
+
+.menu-item:hover {
+  background: var(--macos-accent);
+  color: var(--text-on-accent);
+}
+
+.menu-separator {
+  margin: 4px 8px;
+  border-color: var(--background-modifier-border);
+}
+
+/* --------------------------------------------------------------------------
+   Tooltip — compact glass
+   -------------------------------------------------------------------------- */
+
+.tooltip {
+  border-radius: var(--radius-s);
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-normal);
+}
+
+.theme-dark .tooltip {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+body.macos-glass-modals .tooltip {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+body.theme-dark.macos-glass-modals .tooltip {
+  background: rgba(50, 50, 50, 0.85);
+}
+
+/* --------------------------------------------------------------------------
+   Notice / toast messages
+   -------------------------------------------------------------------------- */
+
+.notice-container .notice {
+  border-radius: var(--radius-m);
+  border: 0.5px solid rgba(0, 0, 0, 0.06);
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.12),
+    0 0 0 0.5px rgba(0, 0, 0, 0.04);
+  color: var(--text-normal);
+}
+
+body.macos-glass-modals .notice-container .notice {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+}
+
+.theme-dark .notice-container .notice {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.40),
+    0 0 0 0.5px rgba(255, 255, 255, 0.04);
+}
+
+body.theme-dark.macos-glass-modals .notice-container .notice {
+  background: rgba(50, 50, 50, 0.85);
+}
+
+/* --------------------------------------------------------------------------
+   Buttons — macOS Tahoe style
+   -------------------------------------------------------------------------- */
+
+button.mod-cta {
+  border-radius: var(--button-radius);
+  font-weight: 500;
+  box-shadow:
+    0 0.5px 1px rgba(0, 0, 0, 0.10),
+    0 0 0 0.5px rgba(0, 0, 0, 0.05);
+}
+
+button.mod-cta:hover {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.15),
+    0 0 0 0.5px rgba(0, 0, 0, 0.05);
+}
+
+/* --------------------------------------------------------------------------
+   Properties / metadata — icon-to-input spacing
+   -------------------------------------------------------------------------- */
+
+.metadata-property {
+  gap: 8px;
+}
+
+.metadata-property-icon {
+  margin-right: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Inputs — subtle macOS styling
+   -------------------------------------------------------------------------- */
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+textarea {
+  border-radius: var(--radius-s);
+  border: 1px solid var(--background-modifier-border);
+  box-shadow: 0 0.5px 2.5px rgba(0, 0, 0, 0.06);
+  margin-left: 2px;
+}
+
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus {
+  border-color: var(--macos-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--macos-accent) 25%, transparent);
+}
+
+/* ==========================================================================
+   Phase 4: Editor content — headings, code, callouts, tables, lists
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Inline title
+   -------------------------------------------------------------------------- */
+
+.inline-title {
+  font-weight: 700;
+  letter-spacing: -0.36px;
+}
+
+/* --------------------------------------------------------------------------
+   Headings — clean, no decoration
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  margin-top: 1.2em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-preview-view h1 {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   Code blocks — Xcode-inspired, clean container
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view pre,
+.cm-s-obsidian .HyperMD-codeblock-bg {
+  border-radius: 0;
+}
+
+.markdown-preview-view pre {
+  padding: 16px;
+  border: 0.5px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view code,
+.cm-s-obsidian .cm-inline-code {
+  border-radius: 4px;
+  padding: 2px 5px;
+  font-size: 0.88em;
+}
+
+/* --------------------------------------------------------------------------
+   Callouts — borderless, tinted background
+   -------------------------------------------------------------------------- */
+
+.callout {
+  border-radius: var(--callout-radius);
+  border-width: 0;
+  overflow: hidden;
+}
+
+.callout-title {
+  gap: 8px;
+}
+
+.callout-title-inner {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
+   Blockquotes — left accent bar
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view blockquote {
+  border-left: 3px solid var(--macos-accent);
+  padding: 4px 0 4px 16px;
+  margin: 12px 0;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Tables — clean with subtle borders
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-preview-view th {
+  font-weight: 600;
+  font-size: var(--font-ui-small);
+  text-align: left;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view td {
+  border-bottom: 0.5px solid var(--background-modifier-border);
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  padding: 8px 12px;
+}
+
+.markdown-preview-view tr:last-child td {
+  border-bottom: none;
+}
+
+/* --------------------------------------------------------------------------
+   Tags — pill style
+   -------------------------------------------------------------------------- */
+
+.tag,
+.cm-hashtag {
+  border-radius: var(--tag-radius);
+  line-height: 1.4;
+  overflow: visible;
+}
+
+/* --------------------------------------------------------------------------
+   Horizontal rule
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view hr {
+  border: none;
+  border-top: 0.5px solid var(--background-modifier-border);
+  margin: 24px 0;
+}
+
+/* --------------------------------------------------------------------------
+   Lists — comfortable spacing
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view ul,
+.markdown-preview-view ol {
+  padding-inline-start: 24px;
+}
+
+.markdown-preview-view li {
+  margin-bottom: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Embeds — subtle container
+   -------------------------------------------------------------------------- */
+
+.markdown-embed {
+  border: 0.5px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  padding: 16px;
+}
+
+.markdown-embed-title {
+  font-weight: 600;
+  font-size: var(--font-ui-small);
+}
+
+/* --------------------------------------------------------------------------
+   Images — rounded corners
+   -------------------------------------------------------------------------- */
+
+.markdown-preview-view img:not(.emoji) {
+  border-radius: var(--radius-s);
+}
+
+/* --------------------------------------------------------------------------
+   Checkboxes — round macOS-style
+   -------------------------------------------------------------------------- */
+
+input[type='checkbox']:checked {
+  background-color: var(--macos-accent);
+  border-color: var(--macos-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Search results
+   -------------------------------------------------------------------------- */
+
+.search-result-file-title {
+  font-weight: 600;
+  font-size: var(--font-ui-small);
+}
+
+.search-result-file-match {
+  border-radius: var(--radius-s);
+}
+
+/* ==========================================================================
+   Phase 5: Polish — remaining UI details, toggles, graph, mobile
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Full-width callouts toggle
+   -------------------------------------------------------------------------- */
+
+body.macos-wide-callouts .callout {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Colorful headings toggle — each level gets a system color
+   -------------------------------------------------------------------------- */
+
+body.macos-colorful-headings .HyperMD-header-1,
+body.macos-colorful-headings .markdown-preview-view h1 {
+  color: var(--color-blue);
+}
+
+body.macos-colorful-headings .HyperMD-header-2,
+body.macos-colorful-headings .markdown-preview-view h2 {
+  color: var(--color-purple);
+}
+
+body.macos-colorful-headings .HyperMD-header-3,
+body.macos-colorful-headings .markdown-preview-view h3 {
+  color: var(--color-pink);
+}
+
+body.macos-colorful-headings .HyperMD-header-4,
+body.macos-colorful-headings .markdown-preview-view h4 {
+  color: var(--color-orange);
+}
+
+body.macos-colorful-headings .HyperMD-header-5,
+body.macos-colorful-headings .markdown-preview-view h5 {
+  color: var(--color-green);
+}
+
+body.macos-colorful-headings .HyperMD-header-6,
+body.macos-colorful-headings .markdown-preview-view h6 {
+  color: var(--color-cyan);
+}
+
+/* --------------------------------------------------------------------------
+   Accent sidebar icons toggle — Finder-style accent tinting
+   -------------------------------------------------------------------------- */
+
+body.macos-accent-icons .nav-folder-title .nav-folder-collapse-indicator svg,
+body.macos-accent-icons .nav-file-title .nav-file-icon svg {
+  color: color-mix(in srgb, var(--macos-accent) 82%, white);
+}
+
+body.macos-accent-icons .side-dock-ribbon-action svg {
+  color: color-mix(in srgb, var(--macos-accent) 82%, white);
+}
+
+body.macos-accent-icons .workspace-tab-header-inner-icon svg {
+  color: color-mix(in srgb, var(--macos-accent) 82%, white);
+}
+
+body.theme-dark.macos-accent-icons .nav-folder-title .nav-folder-collapse-indicator svg,
+body.theme-dark.macos-accent-icons .nav-file-title .nav-file-icon svg {
+  color: var(--macos-accent);
+}
+
+body.theme-dark.macos-accent-icons .side-dock-ribbon-action svg {
+  color: var(--macos-accent);
+}
+
+body.theme-dark.macos-accent-icons .workspace-tab-header-inner-icon svg {
+  color: var(--macos-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Tab headers — clean styling
+   -------------------------------------------------------------------------- */
+
+.workspace-tab-header {
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-smaller);
+}
+
+.workspace-tab-header.is-active {
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------------
+   Ribbon — left icon bar
+   -------------------------------------------------------------------------- */
+
+.workspace-ribbon {
+  border-right: none;
+}
+
+.side-dock-ribbon-action {
+  border-radius: var(--radius-s);
+  padding: 6px;
+}
+
+/* --------------------------------------------------------------------------
+   Graph view
+   -------------------------------------------------------------------------- */
+
+.graph-view.color-fill {
+  color: var(--macos-accent);
+}
+
+.graph-view.color-line {
+  color: var(--background-modifier-border);
+}
+
+.graph-view.color-text {
+  color: var(--text-muted);
+}
+
+.graph-view.color-fill-highlight {
+  color: var(--macos-accent);
+}
+
+.graph-view.color-fill-tag {
+  color: var(--color-purple);
+}
+
+.graph-view.color-fill-attachment {
+  color: var(--color-green);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--text-faint);
+}
+
+/* --------------------------------------------------------------------------
+   Canvas
+   -------------------------------------------------------------------------- */
+
+.canvas-card {
+  border-radius: var(--radius-m);
+  border: 0.5px solid var(--background-modifier-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   File explorer — vault title
+   -------------------------------------------------------------------------- */
+
+.nav-header {
+  padding: 8px 10px 4px;
+}
+
+.nav-buttons-container {
+  gap: 2px;
+}
+
+.nav-action-button {
+  border-radius: var(--radius-s);
+  padding: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Outline pane
+   -------------------------------------------------------------------------- */
+
+.outline-heading {
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Backlinks pane
+   -------------------------------------------------------------------------- */
+
+.backlink-pane .search-result-file-title {
+  font-weight: 600;
+  font-size: var(--font-ui-small);
+  border-radius: var(--radius-s);
+  padding: 4px 8px;
+}
+
+/* --------------------------------------------------------------------------
+   Empty state
+   -------------------------------------------------------------------------- */
+
+.empty-state-title {
+  font-size: var(--font-ui-large);
+  font-weight: 700;
+  letter-spacing: -0.26px;
+}
+
+.empty-state-action-text {
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   macOS UI simulation — vibrancy, motion, native controls, depth
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Animated micro-interactions — macOS spring/ease motion
+   -------------------------------------------------------------------------- */
+
+.nav-file-title,
+.nav-folder-title {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+button,
+.clickable-icon,
+.nav-action-button,
+.side-dock-ribbon-action {
+  transition: background-color 0.12s ease, transform 0.12s ease, box-shadow 0.15s ease;
+}
+
+button:active,
+.clickable-icon:active,
+.nav-action-button:active,
+.side-dock-ribbon-action:active {
+  transform: scale(0.96);
+}
+
+button.mod-cta {
+  transition: background-color 0.15s ease, box-shadow 0.2s ease, transform 0.12s ease;
+}
+
+button.mod-cta:active {
+  transform: scale(0.97);
+}
+
+.suggestion-item {
+  transition: background-color 0.1s ease;
+}
+
+.menu-item {
+  transition: background-color 0.1s ease;
+}
+
+.modal-container .modal-bg {
+  transition: opacity 0.2s ease;
+}
+
+.outline-heading,
+.search-result-file-title,
+.backlink-pane .search-result-file-title {
+  transition: background-color 0.15s ease;
+}
+
+input[type='text'],
+input[type='search'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.status-bar {
+  transition: opacity 0.25s ease;
+}
+
+/* --------------------------------------------------------------------------
+   Native control styling — accent-colored toggles, sliders, dropdowns
+   -------------------------------------------------------------------------- */
+
+.checkbox-container.is-enabled {
+  background-color: var(--macos-accent);
+}
+
+/* Slider — macOS-style track and thumb */
+input[type='range'] {
+  -webkit-appearance: none;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+
+.theme-dark input[type='range'] {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 0 0 0.5px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), 0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  box-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.18), 0 0 0 3px color-mix(in srgb, var(--macos-accent) 25%, transparent);
+}
+
+/* Dropdown — accent focus ring only */
+.dropdown:focus {
+  border-color: var(--macos-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--macos-accent) 25%, transparent);
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Depth & material layering — elevation system, panel hierarchy
+   -------------------------------------------------------------------------- */
+
+.mod-left-split {
+  box-shadow: inset -1px 0 0 var(--background-modifier-border);
+}
+
+.mod-right-split {
+  box-shadow: inset 1px 0 0 var(--background-modifier-border);
+}
+
+.workspace-split.mod-root {
+  background-color: var(--background-primary);
+}
+
+
+.status-bar {
+  box-shadow: 0 -1px 0 var(--background-modifier-border);
+}
+
+.workspace-ribbon {
+  box-shadow: inset -1px 0 0 var(--background-modifier-border);
+}
+
+.modal-container .modal {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    0 24px 48px rgba(0, 0, 0, 0.16),
+    0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .modal-container .modal {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 0.5px rgba(255, 255, 255, 0.06);
+}
+
+.prompt {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 16px rgba(0, 0, 0, 0.08),
+    0 24px 48px rgba(0, 0, 0, 0.16),
+    0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .prompt {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.08),
+    0 8px 16px rgba(0, 0, 0, 0.2),
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 0.5px rgba(255, 255, 255, 0.06);
+}
+
+.menu {
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    0 8px 20px rgba(0, 0, 0, 0.12),
+    0 0 0 0.5px rgba(0, 0, 0, 0.06);
+}
+
+.theme-dark .menu {
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.12),
+    0 8px 20px rgba(0, 0, 0, 0.3),
+    0 0 0 0.5px rgba(255, 255, 255, 0.06);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile adjustments
+   -------------------------------------------------------------------------- */
+
+body.is-mobile {
+  --font-ui-smaller: 12px;
+  --font-ui-small: 14px;
+  --radius-l: 14px;
+  --radius-xl: 20px;
+}
+
+body.is-mobile .nav-file-title,
+body.is-mobile .nav-folder-title {
+  padding: 8px 12px;
+}
+
+/* --------------------------------------------------------------------------
+   Print — clean output
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .mod-left-split,
+  .mod-right-split,
+  .status-bar,
+  .titlebar,
+  .workspace-ribbon {
+    display: none;
+  }
+
+  .markdown-preview-view {
+    padding: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility — reduced motion
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility — reduced transparency
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-transparency: reduce) {
+  body.macos-translucent-panels .mod-left-split,
+  body.macos-translucent-panels .mod-right-split {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-image: none;
+  }
+
+  body.theme-light.macos-translucent-panels .mod-left-split,
+  body.theme-light.macos-translucent-panels .mod-right-split {
+    background-color: var(--background-secondary);
+  }
+
+  body.theme-dark.macos-translucent-panels .mod-left-split,
+  body.theme-dark.macos-translucent-panels .mod-right-split {
+    background-color: var(--background-secondary);
+  }
+
+  body.macos-glass-modals .modal-container .modal,
+  body.macos-glass-modals .modal.mod-settings,
+  body.macos-glass-modals .prompt,
+  body.macos-glass-modals .menu,
+  body.macos-glass-modals .tooltip,
+  body.macos-glass-modals .notice-container .notice {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background-image: none;
+  }
+
+  body.theme-light.macos-glass-modals .modal-container .modal,
+  body.theme-light.macos-glass-modals .modal.mod-settings,
+  body.theme-light.macos-glass-modals .prompt,
+  body.theme-light.macos-glass-modals .menu,
+  body.theme-light.macos-glass-modals .tooltip,
+  body.theme-light.macos-glass-modals .notice-container .notice {
+    background: var(--background-primary);
+  }
+
+  body.theme-dark.macos-glass-modals .modal-container .modal,
+  body.theme-dark.macos-glass-modals .modal.mod-settings,
+  body.theme-dark.macos-glass-modals .prompt,
+  body.theme-dark.macos-glass-modals .menu,
+  body.theme-dark.macos-glass-modals .tooltip,
+  body.theme-dark.macos-glass-modals .notice-container .notice {
+    background: var(--background-primary);
+  }
+}
+
+/* ==========================================================================
+   Liquid Glass simulation — noise grain, specular highlights, depth
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Sidebar glass simulation — noise grain + specular highlight via backgrounds
+   -------------------------------------------------------------------------- */
+
+body.macos-translucent-panels .mod-left-split,
+body.macos-translucent-panels .mod-right-split {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.08) 2%, transparent 10%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' opacity='0.035'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, auto;
+}
+
+body.theme-dark.macos-translucent-panels .mod-left-split,
+body.theme-dark.macos-translucent-panels .mod-right-split {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(255, 255, 255, 0.03) 2%, transparent 10%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' opacity='0.05'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* --------------------------------------------------------------------------
+   Glass overlays — noise + highlight on modals, command palette, menus
+   -------------------------------------------------------------------------- */
+
+body.macos-glass-modals .modal-container .modal,
+body.macos-glass-modals .prompt,
+body.macos-glass-modals .menu {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.06) 3%, transparent 15%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' opacity='0.03'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 100%, auto;
+}
+
+body.theme-dark.macos-glass-modals .modal-container .modal,
+body.theme-dark.macos-glass-modals .prompt,
+body.theme-dark.macos-glass-modals .menu {
+  background-image:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.02) 3%, transparent 15%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300' opacity='0.05'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* --------------------------------------------------------------------------
+   Inner glow border — subtle light edge on glass panels
+   -------------------------------------------------------------------------- */
+
+body.macos-translucent-panels .mod-left-split {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.2),
+              inset -1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+body.theme-dark.macos-translucent-panels .mod-left-split {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.06),
+              inset -1px 0 0 rgba(255, 255, 255, 0.02);
+}
+
+/* --------------------------------------------------------------------------
+   Obsidian Translucent Window mode (.is-translucent)
+   When the user enables Settings → Appearance → Translucent window,
+   Electron makes the window background transparent and adds .is-translucent.
+   We drop panel opacity so real desktop blur shows through.
+   -------------------------------------------------------------------------- */
+
+body.is-translucent.macos-translucent-panels .mod-left-split {
+  background-color: rgba(246, 246, 246, 0.55);
+}
+
+body.is-translucent.macos-translucent-panels .mod-right-split {
+  background-color: rgba(246, 246, 246, 0.55);
+}
+
+body.is-translucent.theme-dark.macos-translucent-panels .mod-left-split {
+  background-color: rgba(30, 30, 30, 0.55);
+}
+
+body.is-translucent.theme-dark.macos-translucent-panels .mod-right-split {
+  background-color: rgba(30, 30, 30, 0.55);
+}
+
+body.is-translucent.macos-glass-modals .modal-container .modal {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body.is-translucent.macos-glass-modals .prompt {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body.is-translucent.theme-dark.macos-glass-modals .modal-container .modal {
+  background: rgba(40, 40, 40, 0.6);
+}
+
+body.is-translucent.theme-dark.macos-glass-modals .prompt {
+  background: rgba(40, 40, 40, 0.6);
+}
+
+/* Titlebar glass in translucent mode */
+body.is-translucent .titlebar {
+  background-color: transparent;
+}
+

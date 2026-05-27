@@ -1,7 +1,7 @@
 /*
  * Soft Paper — An Obsidian Theme
  * by Nick Milo
- * Version 1.2.0
+ * Version 1.2.1
  *
  * Based on AnuPpuccin by Anubis (https://github.com/AnubisNekhet/AnuPpuccin)
  * AnuPpuccin is licensed under GPL-3.0.
@@ -307,8 +307,6 @@ settings:
   --titlebar-text-color-focused: var(--color-accent);
   --callout-title-padding: var(--size-4-2);
   --embed-block-shadow-hover: none;
-  --tag-radius: 2px;
-  --tag-border-width: 4px;
   --anp-speech-bubble-opacity: 0.5;
   --icon-color-focused: var(--sp-cream-light);
   

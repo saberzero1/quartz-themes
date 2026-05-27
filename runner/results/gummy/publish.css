@@ -2,35 +2,35 @@
   font-family: "Peace Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/gummy/peace-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/gummy/peace-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/gummy/inter.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/gummy/inter.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/gummy/space-grotesk.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/gummy/space-grotesk.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/gummy/source-code-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/gummy/source-code-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Source Code Pro";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/gummy/source-code-pro-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/gummy/source-code-pro-1.woff2")
     format("woff2");
 }
 body.theme-dark {

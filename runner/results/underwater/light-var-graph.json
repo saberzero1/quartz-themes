@@ -2237,6 +2237,12 @@
   "--todoist-p4-border-hover": {
     "body:not(.no-todoist)": ["--checkbox-border-color-hover"]
   },
+  "--modern-background-secondary": {
+    ".theme-light .fluent-modern": ["--base"]
+  },
+  "--modern-background-primary": {
+    ".theme-light .fluent-modern": ["--background-primary"]
+  },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },
   "--ec-brdCol": { ".expressive-code": ["--shiki-code-block-border-color"] },

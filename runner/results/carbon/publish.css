@@ -2,56 +2,56 @@
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-sans.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-sans.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-sans-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-sans-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-sans-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-sans-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-sans-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-sans-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-mono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-mono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-mono-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-mono-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-mono-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/carbon/ibm-plex-mono-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/carbon/ibm-plex-mono-3.woff2")
     format("woff2");
 }
 body.theme-light {

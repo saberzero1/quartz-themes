@@ -1,7 +1,7 @@
 # Soft Paper
 
 - Theme: Soft Paper
-- Author: <a href="https://nickmilo.com" target="_blank" rel="noopener noreferrer">Nick Milo</a>
+- Author: <a href="https://linkingyourthinking.com" target="_blank" rel="noopener noreferrer">Nick Milo</a>
 
 ## Preview
 

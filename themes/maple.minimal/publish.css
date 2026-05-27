@@ -3,14 +3,14 @@
   font-family: "maplemono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/maple.minimal/maplemono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/maple.minimal/maplemono.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "maplemono";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/maple.minimal/maplemono-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/maple.minimal/maplemono-1.woff2")
     format("woff2");
 }
 body.theme-light {

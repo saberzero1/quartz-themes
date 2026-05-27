@@ -1162,7 +1162,7 @@ body {
   .markdown-rendered p > strong > em,
   strong > em {
     background-color: rgba(0, 0, 0, 0);
-    color: var(--italic-color);
+    color: var(--color-purple);
     cursor: grab;
     font-family:
       Lexend,
@@ -1195,8 +1195,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(86, 148, 159) none 0px;
-    text-decoration-color: rgb(86, 148, 159);
+    outline: rgb(144, 122, 169) none 0px;
+    text-decoration-color: rgb(144, 122, 169);
     text-decoration-style: solid;
     transition: all;
     user-select: text;
@@ -4940,6 +4940,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--color-pink-rgb);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -4990,6 +4991,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--callout-default);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5040,6 +5042,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--callout-default);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5090,6 +5093,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--color-yellow-rgb);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5140,6 +5144,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--callout-default);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5190,6 +5195,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--color-cyan-rgb);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5240,6 +5246,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--callout-default);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -5292,6 +5299,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    --text-selection: rgb(180, 99, 122, 0.2);
     --callout-color: var(--color-purple-rgb);
     --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
     background-color: rgba(var(--callout-color), 0.1);
@@ -8034,7 +8042,7 @@ html[saved-theme="dark"] {
     .markdown-rendered p > strong > em,
     strong > em {
       background-color: rgba(0, 0, 0, 0);
-      color: var(--italic-color);
+      color: var(--color-purple);
       cursor: grab;
       font-family:
         Lexend,
@@ -8067,8 +8075,8 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 600;
-      outline: rgb(156, 207, 216) none 0px;
-      text-decoration-color: rgb(156, 207, 216);
+      outline: rgb(196, 167, 231) none 0px;
+      text-decoration-color: rgb(196, 167, 231);
       text-decoration-style: solid;
       transition: all;
       user-select: text;
@@ -11812,6 +11820,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--color-pink-rgb);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -11862,6 +11871,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--callout-default);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -11912,6 +11922,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--callout-default);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -11962,6 +11973,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--color-yellow-rgb);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -12012,6 +12024,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--callout-default);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -12062,6 +12075,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--color-cyan-rgb);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -12112,6 +12126,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--callout-default);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);
@@ -12164,6 +12179,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      --text-selection: rgb(235, 111, 146, 0.2);
       --callout-color: var(--color-purple-rgb);
       --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
       background-color: rgba(var(--callout-color), 0.1);

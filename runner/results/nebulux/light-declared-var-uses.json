@@ -342,7 +342,7 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "font-family": "var(--font-text)",
+    "color": "rgb(var(--callout-color))",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },

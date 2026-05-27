@@ -3014,7 +3014,7 @@ body body.theme-light s {
 }
 body body.theme-light strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color);
+  color: var(--color-purple);
   cursor: grab;
   font-family:
     Lexend,
@@ -3047,8 +3047,8 @@ body body.theme-light strong > em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(86, 148, 159) none 0px;
-  text-decoration-color: rgb(86, 148, 159);
+  outline: rgb(144, 122, 169) none 0px;
+  text-decoration-color: rgb(144, 122, 169);
   text-decoration-style: solid;
   transition: all;
   user-select: text;
@@ -6364,7 +6364,7 @@ body body.theme-dark s {
 }
 body body.theme-dark strong > em {
   background-color: rgba(0, 0, 0, 0);
-  color: var(--italic-color);
+  color: var(--color-purple);
   cursor: grab;
   font-family:
     Lexend,
@@ -6397,8 +6397,8 @@ body body.theme-dark strong > em {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 600;
-  outline: rgb(156, 207, 216) none 0px;
-  text-decoration-color: rgb(156, 207, 216);
+  outline: rgb(196, 167, 231) none 0px;
+  text-decoration-color: rgb(196, 167, 231);
   text-decoration-style: solid;
   transition: all;
   user-select: text;

@@ -1168,7 +1168,7 @@
   },
   "--metadata-label-font": { "body": ["--font-interface"] },
   "--metadata-label-font-size": {
-    "body": ["--default-font-size"],
+    "body": ["--font-smaller"],
     ".workspace > .workspace-split:not(.mod-root) .metadata-container": [
       "--metadata-sidebar-label-font-size"
     ]
@@ -1182,7 +1182,7 @@
   "--metadata-input-text-color": { "body": ["--text-normal"] },
   "--metadata-input-font": { "body": ["--font-interface"] },
   "--metadata-input-font-size": {
-    "body": ["--default-font-size"],
+    "body": ["--font-smaller"],
     ".bases-query-container .filter-expression": ["--font-ui-small"],
     ".bases-table-container": ["--bases-table-font-size"],
     ".workspace > .workspace-split:not(.mod-root) .metadata-container": [
@@ -1919,10 +1919,6 @@
   "--tooltip-bg": {
     ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
   },
-  "--active-line-font-size": { "body": ["--default-font-size"] },
-  "--inline-code-font-size": { "body": ["--default-font-size"] },
-  "--quote-font-size": { "body": ["--default-font-size"] },
-  "--properties-editor-font-size": { "body": ["--default-font-size"] },
   "--table-border-radius": { ":root table": ["--radius-s"] },
   "--folder-1": { "body": ["--normal-folder-1"] },
   "--folder-1-open": { "body": ["--normal-folder-1-open"] },

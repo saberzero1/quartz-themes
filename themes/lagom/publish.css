@@ -3,7 +3,7 @@
   font-family: "Formular";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/lagom/formular.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/lagom/formular.woff")
     format("woff");
 }
 body.theme-light {
@@ -238,7 +238,7 @@ body.theme-light {
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
-  --code-size: 14px !important;
+  --code-size: 0.98em !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
@@ -418,31 +418,31 @@ body.theme-light {
   --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
-  --h1-size: 20px !important;
+  --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 700 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
-  --h2-size: 18px !important;
+  --h2-size: 1.3em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
-  --h3-size: 17px !important;
+  --h3-size: 1.1em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
-  --h4-size: 14px !important;
+  --h4-size: 0.9em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: var(--line-height-normal) !important;
-  --h5-size: 12px !important;
+  --h5-size: 0.8em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
@@ -486,7 +486,7 @@ body.theme-light {
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 20px !important;
+  --inline-title-size: 1.2em !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
@@ -541,7 +541,7 @@ body.theme-light {
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 17px !important;
+  --list-indent: 18px !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: var(--text-faint) !important;
@@ -580,7 +580,7 @@ body.theme-light {
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font: var(--font-interface) !important;
-  --metadata-input-font-size: var(--default-font-size) !important;
+  --metadata-input-font-size: 1em !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
@@ -591,7 +591,7 @@ body.theme-light {
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
-  --metadata-label-font-size: calc(var(--default-font-size) - 1px) !important;
+  --metadata-label-font-size: 1em !important;
   --metadata-label-text-color: var(--text-muted) !important;
   --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 9em !important;
@@ -660,7 +660,7 @@ body.theme-light {
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
-  --nav-item-size: 16.4px !important;
+  --nav-item-size: 0.98em !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: var(--text-faint) !important;
@@ -668,7 +668,7 @@ body.theme-light {
   --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --p-spacing: 8px !important;
+  --p-spacing: 10px !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
@@ -991,7 +991,7 @@ body.theme-light {
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
   --embed-border-left: none !important;
-  --default-font-size: 16px !important;
+  --default-font-size: 0.99em !important;
   --folder-1-open: var(--normal-folder-1-open) !important;
   --folder-2-open: var(--normal-folder-2-open) !important;
   --folder-3-open: var(--normal-folder-3-open) !important;
@@ -1002,53 +1002,47 @@ body.theme-light {
   --normal-folder-2-open: "╔" !important;
   --normal-folder-3-open: "╔" !important;
   --navbar-radius: 11.5px !important;
-  --active-line-font-size: calc(var(--default-font-size) + 1px) !important;
+  --active-line-font-size: 0.98em !important;
   --active-line-indicator: "+ " !important;
-  --callout-font-size-title: 16px;
+  --callout-font-size-title: 0.98em;
   --callouts-align-text: justify !important;
-  --code-size-edit-mode: 13.9px !important;
-  --embed-font-size: 16px !important;
+  --code-size-edit-mode: 0.9em !important;
+  --embed-font-size: 0.98em !important;
   --explorer-bar-position: absolute !important;
   --filename-line-thickness: 1.8px !important;
   --filename-separator-style: dotted !important;
-  --files-bookmarks-search-bar: flex !important;
   --focus-active-line-opacity: 0.8 !important;
   --focus-non-active-line-opacity: 0.55 !important;
   --folder-border-color: #50505088 !important;
   --headers-align: left !important;
-  --headers-space-symmetry: 1.3em !important;
+  --headers-space-symmetry: 1em !important;
   --hide-add-button: none !important;
   --hide-callout-title: none !important;
   --hide-empty-properties: none !important;
   --hide-separator-yaml: none !important;
   --icon-file-indicator: "·" !important;
-  --icon-file-size: 15px !important;
-  --icon-settings: none !important;
+  --icon-file-size: 1.7em !important;
   --icon-ui-opacity: 0.9 !important;
-  --inline-code-font-size: calc(var(--default-font-size) - 1.5px) !important;
-  --letter-spacing-note: 0.1px !important;
-  --line-height-note: 21px !important;
+  --inline-code-font-size: 0.9em !important;
+  --letter-spacing-note: 0px !important;
+  --line-height-note: 25px !important;
   --mac-terminal-shadow:
     rgba(9, 30, 66, 0.1) 0px 4px 8px 5px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px !important;
-  --macos-button-size: 16px !important;
-  --num-of-notes: none !important;
   --padding-default-note-style: 35px !important;
-  --properties-editor-font-size: var(--default-font-size) !important;
-  --quote-font-size: var(--default-font-size) !important;
+  --properties-icon-size: 1.2em !important;
+  --quote-font-size: 0.98em !important;
   --quote-icon: "“" !important;
   --quote-padding: 10px 15px 10px 15px !important;
   --quotes-align: justify !important;
-  --scrollbars: none !important;
+  --safe-place-position: 25px !important;
   --separator-icon: "o0o" !important;
   --separator-icon-color: #6c6c6c6b !important;
   --show-dotted-line: 1px !important;
-  --show-editor-text-bar: none !important;
-  --show-explorer-buttons: none !important;
-  --show-vault-name: none !important;
+  --show-explorer-buttons: flex !important;
   --tabs-height: 300px !important;
   --text-note-align: justify !important;
   --theme-dark-opacity: 0.85 !important;
-  --theme-light-opacity: 0.9 !important;
+  --theme-light-opacity: 1 !important;
 }
 
 body.theme-dark {
@@ -1283,7 +1277,7 @@ body.theme-dark {
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
   --code-radius: var(--radius-s) !important;
-  --code-size: 14px !important;
+  --code-size: 0.98em !important;
   --code-string: var(--color-green) !important;
   --code-tag: var(--color-red) !important;
   --code-value: var(--color-purple) !important;
@@ -1463,31 +1457,31 @@ body.theme-dark {
   --graph-text: var(--text-normal) !important;
   --h1-letter-spacing: -0.015em !important;
   --h1-line-height: 1.2 !important;
-  --h1-size: 20px !important;
+  --h1-size: 1.5em !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
   --h1-weight: 700 !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
-  --h2-size: 18px !important;
+  --h2-size: 1.3em !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
   --h2-weight: 680 !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
-  --h3-size: 17px !important;
+  --h3-size: 1.1em !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
   --h3-weight: 660 !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
-  --h4-size: 14px !important;
+  --h4-size: 0.9em !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
   --h4-weight: 640 !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: var(--line-height-normal) !important;
-  --h5-size: 12px !important;
+  --h5-size: 0.8em !important;
   --h5-style: normal !important;
   --h5-variant: normal !important;
   --h5-weight: 620 !important;
@@ -1531,7 +1525,7 @@ body.theme-dark {
   --indentation-guide-width-active: var(--border-width) !important;
   --inline-title-line-height: var(--h1-line-height) !important;
   --inline-title-margin-bottom: 0.5em !important;
-  --inline-title-size: 20px !important;
+  --inline-title-size: 1.2em !important;
   --inline-title-style: var(--h1-style) !important;
   --inline-title-variant: var(--h1-variant) !important;
   --inline-title-weight: var(--h1-weight) !important;
@@ -1586,7 +1580,7 @@ body.theme-dark {
   --list-bullet-radius: 50% !important;
   --list-bullet-size: 0.3em !important;
   --list-bullet-transform: none !important;
-  --list-indent: 17px !important;
+  --list-indent: 18px !important;
   --list-indent-editing: 0.75em !important;
   --list-indent-source: 0 !important;
   --list-marker-color: var(--text-faint) !important;
@@ -1625,7 +1619,7 @@ body.theme-dark {
   ) !important;
   --metadata-input-background-hover: transparent !important;
   --metadata-input-font: var(--font-interface) !important;
-  --metadata-input-font-size: var(--default-font-size) !important;
+  --metadata-input-font-size: 1em !important;
   --metadata-input-height: calc(var(--font-text-size) * 1.75) !important;
   --metadata-input-longtext-lines: 3 !important;
   --metadata-input-padding: var(--size-4-1) var(--size-4-2) !important;
@@ -1636,7 +1630,7 @@ body.theme-dark {
   ) !important;
   --metadata-label-background-hover: transparent !important;
   --metadata-label-font: var(--font-interface) !important;
-  --metadata-label-font-size: calc(var(--default-font-size) - 1px) !important;
+  --metadata-label-font-size: 1em !important;
   --metadata-label-text-color: var(--text-muted) !important;
   --metadata-label-text-color-hover: var(--text-muted) !important;
   --metadata-label-width: 9em !important;
@@ -1705,7 +1699,7 @@ body.theme-dark {
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
-  --nav-item-size: 16.4px !important;
+  --nav-item-size: 0.98em !important;
   --nav-item-white-space: pre !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: var(--text-faint) !important;
@@ -1713,7 +1707,7 @@ body.theme-dark {
   --nav-tag-color-hover: var(--text-muted) !important;
   --nav-tag-radius: var(--radius-s) !important;
   --nav-tag-weight: var(--font-semibold) !important;
-  --p-spacing: 8px !important;
+  --p-spacing: 10px !important;
   --p-spacing-empty: 0rem !important;
   --page-border: 9px solid transparent !important;
   --page-margin: 1px auto -8px !important;
@@ -2023,7 +2017,7 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --inline-title-align: center !important;
   --embed-border-left: none !important;
-  --default-font-size: 16px !important;
+  --default-font-size: 0.99em !important;
   --folder-1-open: var(--normal-folder-1-open) !important;
   --folder-2-open: var(--normal-folder-2-open) !important;
   --folder-3-open: var(--normal-folder-3-open) !important;
@@ -2034,53 +2028,47 @@ body.theme-dark {
   --normal-folder-2-open: "╔" !important;
   --normal-folder-3-open: "╔" !important;
   --navbar-radius: 11.5px !important;
-  --active-line-font-size: calc(var(--default-font-size) + 1px) !important;
+  --active-line-font-size: 0.98em !important;
   --active-line-indicator: "+ " !important;
-  --callout-font-size-title: 16px;
+  --callout-font-size-title: 0.98em;
   --callouts-align-text: justify !important;
-  --code-size-edit-mode: 13.9px !important;
-  --embed-font-size: 16px !important;
+  --code-size-edit-mode: 0.9em !important;
+  --embed-font-size: 0.98em !important;
   --explorer-bar-position: absolute !important;
   --filename-line-thickness: 1.8px !important;
   --filename-separator-style: dotted !important;
-  --files-bookmarks-search-bar: flex !important;
   --focus-active-line-opacity: 0.8 !important;
   --focus-non-active-line-opacity: 0.55 !important;
   --folder-border-color: #50505088 !important;
   --headers-align: left !important;
-  --headers-space-symmetry: 1.3em !important;
+  --headers-space-symmetry: 1em !important;
   --hide-add-button: none !important;
   --hide-callout-title: none !important;
   --hide-empty-properties: none !important;
   --hide-separator-yaml: none !important;
   --icon-file-indicator: "·" !important;
-  --icon-file-size: 15px !important;
-  --icon-settings: none !important;
+  --icon-file-size: 1.7em !important;
   --icon-ui-opacity: 0.9 !important;
-  --inline-code-font-size: calc(var(--default-font-size) - 1.5px) !important;
-  --letter-spacing-note: 0.1px !important;
-  --line-height-note: 21px !important;
+  --inline-code-font-size: 0.9em !important;
+  --letter-spacing-note: 0px !important;
+  --line-height-note: 25px !important;
   --mac-terminal-shadow:
     rgba(9, 30, 66, 0.1) 0px 4px 8px 5px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px !important;
-  --macos-button-size: 16px !important;
-  --num-of-notes: none !important;
   --padding-default-note-style: 35px !important;
-  --properties-editor-font-size: var(--default-font-size) !important;
-  --quote-font-size: var(--default-font-size) !important;
+  --properties-icon-size: 1.2em !important;
+  --quote-font-size: 0.98em !important;
   --quote-icon: "“" !important;
   --quote-padding: 10px 15px 10px 15px !important;
   --quotes-align: justify !important;
-  --scrollbars: none !important;
+  --safe-place-position: 25px !important;
   --separator-icon: "o0o" !important;
   --separator-icon-color: #6c6c6c6b !important;
   --show-dotted-line: 1px !important;
-  --show-editor-text-bar: none !important;
-  --show-explorer-buttons: none !important;
-  --show-vault-name: none !important;
+  --show-explorer-buttons: flex !important;
   --tabs-height: 300px !important;
   --text-note-align: justify !important;
   --theme-dark-opacity: 0.85 !important;
-  --theme-light-opacity: 0.9 !important;
+  --theme-light-opacity: 1 !important;
 }
 
 body {
@@ -2885,14 +2873,14 @@ body body.theme-light .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 21px;
+  line-height: 25px;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-inline-start: 0px;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: 0.1px;
+  letter-spacing: normal;
 }
 body body.theme-light .footnote-backref {
   color: var(--text-faint);
@@ -3860,7 +3848,7 @@ body body.theme-light .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 8px 0px 0px;
+  margin: 10px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -3894,7 +3882,7 @@ body body.theme-light .markdown-rendered th {
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
-  letter-spacing: 0.1px;
+  letter-spacing: normal;
   border-left: var(--table-column-first-border-width) solid rgb(224, 224, 224);
   border-right: 1px solid rgb(224, 224, 224);
   border-top: var(--table-header-border-width) solid rgb(224, 224, 224);
@@ -4327,14 +4315,14 @@ body body.theme-light kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 1.4553px 3.63825px;
   padding-block-end: 1.3125px;
   padding-block-start: 1.3125px;
   padding-inline-end: 3.28125px;
   padding-inline-start: 3.28125px;
 }
 body body.theme-light dl {
-  margin: 16px 0px;
+  margin: 14.85px 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 0px;
@@ -4353,7 +4341,7 @@ body body.theme-light dt {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  font-size: 16px;
+  font-size: 14.85px;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4385,7 +4373,7 @@ body body.theme-light dt {
 }
 body body.theme-light dd {
   color: rgb(34, 34, 34);
-  font-size: 16px;
+  font-size: 14.85px;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -4422,12 +4410,12 @@ body body.theme-light dd {
 }
 body body.theme-light sub {
   color: rgb(34, 34, 34);
-  font-size: 13.3333px;
+  font-size: 12.375px;
   vertical-align: sub;
 }
 body body.theme-light sup {
   color: rgb(34, 34, 34);
-  font-size: 13.3333px;
+  font-size: 12.375px;
   vertical-align: super;
 }
 body body.theme-light abbr {
@@ -4913,10 +4901,10 @@ body body.theme-light .tag {
   background-color: var(--tag-background);
   color: var(--tag-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
+  border-top-left-radius: 22.7391px;
+  border-top-right-radius: 22.7391px;
+  border-bottom-left-radius: 22.7391px;
+  border-bottom-right-radius: 22.7391px;
 }
 body body.theme-light .search-highlight {
   background-color: rgb(255, 255, 0);
@@ -5714,14 +5702,14 @@ body body.theme-dark .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 21px;
+  line-height: 25px;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-inline-start: 0px;
   margin-inline-start: 40px;
   margin-inline-end: 40px;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: 0.1px;
+  letter-spacing: normal;
 }
 body body.theme-dark .footnote-backref {
   color: var(--text-faint);
@@ -6689,7 +6677,7 @@ body body.theme-dark .markdown-rendered table {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  margin: 8px 0px 0px;
+  margin: 10px 0px 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
@@ -6723,7 +6711,7 @@ body body.theme-dark .markdown-rendered th {
   vertical-align: var(--table-cell-vertical-alignment);
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
-  letter-spacing: 0.1px;
+  letter-spacing: normal;
   border-left: var(--table-column-first-border-width) solid rgb(54, 54, 54);
   border-right: 1px solid rgb(54, 54, 54);
   border-top: var(--table-header-border-width) solid rgb(54, 54, 54);
@@ -7156,14 +7144,14 @@ body body.theme-dark kbd {
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
+  padding: 1.4553px 3.63825px;
   padding-block-end: 1.3125px;
   padding-block-start: 1.3125px;
   padding-inline-end: 3.28125px;
   padding-inline-start: 3.28125px;
 }
 body body.theme-dark dl {
-  margin: 16px 0px;
+  margin: 14.85px 0px;
   margin-block-end: 15px;
   margin-block-start: 15px;
   margin-inline-end: 0px;
@@ -7182,7 +7170,7 @@ body body.theme-dark dt {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  font-size: 16px;
+  font-size: 14.85px;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -7214,7 +7202,7 @@ body body.theme-dark dt {
 }
 body body.theme-dark dd {
   color: rgb(218, 218, 218);
-  font-size: 16px;
+  font-size: 14.85px;
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -7251,12 +7239,12 @@ body body.theme-dark dd {
 }
 body body.theme-dark sub {
   color: rgb(218, 218, 218);
-  font-size: 13.3333px;
+  font-size: 12.375px;
   vertical-align: sub;
 }
 body body.theme-dark sup {
   color: rgb(218, 218, 218);
-  font-size: 13.3333px;
+  font-size: 12.375px;
   vertical-align: super;
 }
 body body.theme-dark abbr {
@@ -7742,10 +7730,10 @@ body body.theme-dark .tag {
   background-color: var(--tag-background);
   color: var(--tag-color);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
+  border-top-left-radius: 22.7391px;
+  border-top-right-radius: 22.7391px;
+  border-bottom-left-radius: 22.7391px;
+  border-bottom-right-radius: 22.7391px;
 }
 body body.theme-dark .search-highlight {
   background-color: rgb(255, 255, 0);

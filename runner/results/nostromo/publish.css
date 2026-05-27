@@ -3,14 +3,14 @@
   font-family: "VT323";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nostromo/vt323.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nostromo/vt323.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Share Tech Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nostromo/share-tech-mono.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nostromo/share-tech-mono.woff2")
     format("woff2");
 }
 body.theme-dark {

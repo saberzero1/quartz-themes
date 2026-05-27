@@ -2,42 +2,42 @@
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/orbitron.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/orbitron.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.8/fonts/nebulux/montserrat-4.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-4.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -1038,15 +1038,15 @@ body.theme-light {
   --font-headers: "Orbitron", sans-serif !important;
   --h1-end: rgba(255, 255, 255, 0.4) !important;
   --h1-start: #ffffff !important;
-  --h2-end: #2563eb !important;
+  --h2-end: #5b9cf6 !important;
   --h2-start: #78b4ff !important;
   --h3-end: #d97706 !important;
   --h3-start: #ffc832 !important;
-  --h4-end: #b91c1c !important;
+  --h4-end: #eb6060 !important;
   --h4-start: #cd7f32 !important;
-  --h5-end: #6d28d9 !important;
+  --h5-end: #b06ef5 !important;
   --h5-start: #c084fc !important;
-  --h6-end: #475569 !important;
+  --h6-end: #789ab5 !important;
   --h6-start: #94a3b8 !important;
   --hud-blur: 12px !important;
   --hud-frame: 1.5px !important;
@@ -2038,15 +2038,15 @@ body.theme-dark {
   --font-headers: "Orbitron", sans-serif !important;
   --h1-end: rgba(255, 255, 255, 0.4) !important;
   --h1-start: #ffffff !important;
-  --h2-end: #2563eb !important;
+  --h2-end: #5b9cf6 !important;
   --h2-start: #78b4ff !important;
   --h3-end: #d97706 !important;
   --h3-start: #ffc832 !important;
-  --h4-end: #b91c1c !important;
+  --h4-end: #eb6060 !important;
   --h4-start: #cd7f32 !important;
-  --h5-end: #6d28d9 !important;
+  --h5-end: #b06ef5 !important;
   --h5-start: #c084fc !important;
-  --h6-end: #475569 !important;
+  --h6-end: #789ab5 !important;
   --h6-start: #94a3b8 !important;
   --hud-blur: 12px !important;
   --hud-frame: 1.5px !important;

@@ -117,7 +117,7 @@ settings:
         title: H2 - End Color
         type: variable-color
         format: hex
-        default: '#2563eb'
+        default: '#5b9cf6'
     - 
         id: h3-start
         title: H3 - Start Color
@@ -141,7 +141,7 @@ settings:
         title: H4 - End Color
         type: variable-color
         format: hex
-        default: '#b91c1c'
+        default: '#eb6060'
     - 
         id: h5-start
         title: H5 - Start Color
@@ -153,7 +153,7 @@ settings:
         title: H5 - End Color
         type: variable-color
         format: hex
-        default: '#6d28d9'
+        default: '#b06ef5'
     - 
         id: h6-start
         title: H6 - Start Color
@@ -165,7 +165,7 @@ settings:
         title: H6 - End Color
         type: variable-color
         format: hex
-        default: '#475569'
+        default: '#789ab5'
 */
 
 /* ============================================================
@@ -238,15 +238,15 @@ settings:
     --h1-start: #ffffff;
     --h1-end: rgba(255, 255, 255, 0.4);
     --h2-start: #78B4FF;
-    --h2-end: #2563eb;
+    --h2-end: #5b9cf6;
     --h3-start: #FFC832;
     --h3-end: #d97706;
     --h4-start: #CD7F32;
-    --h4-end: #b91c1c;
+    --h4-end: #eb6060;
     --h5-start: #c084fc;
-    --h5-end: #6d28d9;
+    --h5-end: #b06ef5;
     --h6-start: #94a3b8;
-    --h6-end: #475569;
+    --h6-end: #789ab5;
 }
 
 /* =================================================================
@@ -1126,5 +1126,3 @@ body .callout[data-callout^="projects"] .callout-icon::before {
     display: block;
     line-height: 1;
 }
-
-/* Trigger GitHub Linguist Cache */
