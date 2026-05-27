@@ -13,6 +13,7 @@ import { buildSelectorImpactGraph } from "../../util/style-settings-selector-imp
 import { normalizeRuntimeEvidenceRecords } from "../../util/style-settings-runtime-evidence.mjs";
 
 const USE_AUTO_CONFIG = process.argv.includes("--auto");
+const NO_CLEAR = process.argv.includes("--no-clear");
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -1536,9 +1537,9 @@ async function main() {
     process.exit(0);
   }
 
-  const { config: manualConfig } = await import(pathToFileURL(configPath).href);
-  const configSource = await fs.readFile(configPath, "utf8");
-  const manualAspectMap = buildAspectMap(configSource, manualConfig.length);
+  const { config: manualConfig, aspectMap: manualAspectMap } = await import(
+    pathToFileURL(configPath).href
+  );
 
   let autoConfigModule = null;
   if (USE_AUTO_CONFIG) {
@@ -1564,8 +1565,9 @@ async function main() {
   const args = process.argv
     .slice(2)
     .flatMap((arg) => arg.split(","))
-    .filter((arg) => arg.trim() !== "--auto");
+    .filter((arg) => arg.trim() !== "--auto" && arg.trim() !== "--no-clear");
   const filter = new Set(args.map((arg) => arg.trim()).filter(Boolean));
+  const isSingleThemeMode = filter.size > 0;
 
   const themeDirs = (await fs.readdir(resultsDir, { withFileTypes: true }))
     .filter((entry) => entry.isDirectory())
@@ -1576,7 +1578,13 @@ async function main() {
     throw new Error("No themes matched the provided filter.");
   }
 
-  await clearOutputDirectory();
+  if (!isSingleThemeMode && !NO_CLEAR) {
+    await clearOutputDirectory();
+  } else {
+    // In single-theme mode or with --no-clear, ensure output directory exists
+    // but don't delete existing theme files
+    await fs.mkdir(outputDir, { recursive: true });
+  }
 
   const themeEntries = [];
   const themeMetas = [];
@@ -1969,15 +1977,17 @@ async function main() {
   themeEntries.sort((a, b) => a.id.localeCompare(b.id));
   themeMetas.sort((a, b) => a[0].localeCompare(b[0]));
 
-  const registryContent = renderRegistry(themeEntries, themeMetas);
-  await fs.writeFile(
-    path.join(outputDir, "_registry.ts"),
-    registryContent,
-    "utf8",
-  );
+  if (!isSingleThemeMode) {
+    const registryContent = renderRegistry(themeEntries, themeMetas);
+    await fs.writeFile(
+      path.join(outputDir, "_registry.ts"),
+      registryContent,
+      "utf8",
+    );
+  }
 
   console.log(
-    `Generated ${themeEntries.length} theme modules and registry in ${path.relative(
+    `Generated ${themeEntries.length} theme module${themeEntries.length === 1 ? "" : "s"}${isSingleThemeMode ? " (registry unchanged)" : " and registry"} in ${path.relative(
       repoRoot,
       outputDir,
     )}`,

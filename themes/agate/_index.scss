@@ -115,31 +115,36 @@ html {
   font-family: "noto-serif-kr-medium";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/noto-serif-kr-medium.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/noto-serif-kr-medium.woff")
+    format("woff");
 }
 @font-face {
   font-family: "noto-serif-kr-black";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/noto-serif-kr-black.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/noto-serif-kr-black.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Pretendard-Regular";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/pretendard-regular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/pretendard-regular.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Pretendard-Bold";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/pretendard-bold.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/pretendard-bold.woff")
+    format("woff");
 }
 @font-face {
   font-family: "ITC Slimbach Std";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/itc-slimbach-std.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/agate/itc-slimbach-std.woff2")
+    format("woff2");
 }
 
 body {
@@ -738,9 +743,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
@@ -753,7 +773,18 @@ body {
     color: rgb(20, 20, 20);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(20, 20, 20);
     border-top-left-radius: 2px;
@@ -768,7 +799,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) rgba(20, 19, 19, 0.173) rgba(20, 19, 19, 0.173);
+    border-color: rgb(128, 128, 128) rgba(20, 19, 19, 0.173)
+      rgba(20, 19, 19, 0.173);
     border-style: solid solid none none;
     border-width: 0px 1px 0px 0px;
     border-top-left-radius: 0px;
@@ -788,7 +820,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1154,24 +1194,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(20, 20, 20);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(20, 20, 20);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(20, 20, 20);
   }
 
@@ -1186,7 +1281,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1219,7 +1315,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1252,7 +1349,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1285,7 +1383,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1318,7 +1417,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1351,7 +1451,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1385,7 +1486,8 @@ body {
     letter-spacing: -0.84px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1835,7 +1937,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1846,7 +1949,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -1859,7 +1963,8 @@ body {
     --callout-color: var(--accent-color);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(55, 0, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(55, 0, 255, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(55, 0, 255);
@@ -1893,7 +1998,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1904,7 +2010,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -1917,7 +2024,8 @@ body {
     --callout-color: 0, 142, 123;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(0, 142, 123);
@@ -1951,7 +2059,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1962,7 +2071,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -1975,7 +2085,8 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(8, 109, 221);
@@ -2009,7 +2120,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2020,7 +2132,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2033,7 +2146,8 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(8, 109, 221);
@@ -2067,7 +2181,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2078,7 +2193,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2091,7 +2207,8 @@ body {
     --callout-color: 0, 142, 123;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 142, 123, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(0, 142, 123);
@@ -2125,7 +2242,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2136,7 +2254,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2149,7 +2268,8 @@ body {
     --callout-color: 0, 124, 37;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 124, 37, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 124, 37, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(0, 124, 37);
@@ -2183,7 +2303,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2194,7 +2315,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2207,7 +2329,8 @@ body {
     --callout-color: 149, 92, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(149, 92, 0);
@@ -2241,7 +2364,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2252,7 +2376,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2265,7 +2390,8 @@ body {
     --callout-color: 149, 92, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(149, 92, 0, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(149, 92, 0);
@@ -2299,7 +2425,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2310,7 +2437,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2323,7 +2451,8 @@ body {
     --callout-color: 149, 0, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(149, 0, 0);
@@ -2357,7 +2486,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2368,7 +2498,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2381,7 +2512,8 @@ body {
     --callout-color: 149, 0, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(149, 0, 0);
@@ -2415,7 +2547,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2426,7 +2559,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2439,7 +2573,8 @@ body {
     --callout-color: 149, 0, 0;
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(149, 0, 0, 0.1) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(149, 0, 0);
@@ -2473,7 +2608,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2484,7 +2620,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2497,7 +2634,8 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(120, 82, 238);
@@ -2531,7 +2669,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2542,7 +2681,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2555,7 +2695,8 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(20, 20, 20);
     mix-blend-mode: normal;
     border: 1px solid rgb(158, 158, 158);
@@ -2589,7 +2730,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2600,7 +2742,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(20, 20, 20);
     padding: 0px;
     padding-block-end: 0px;
@@ -2678,7 +2821,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width) solid rgba(20, 19, 19, 0.173);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(20, 19, 19, 0.173);
     border-right: 1px solid rgba(20, 19, 19, 0.173);
     border-top: var(--table-header-border-width) solid rgba(20, 19, 19, 0.173);
     border-bottom: 1px solid rgba(20, 19, 19, 0.173);
@@ -2706,7 +2850,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgba(20, 19, 19, 0.173);
-    border-left: var(--table-column-first-border-width) solid rgba(20, 19, 19, 0.173);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(20, 19, 19, 0.173);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3827,7 +3972,8 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(20, 20, 20);
@@ -4019,7 +4165,11 @@ body {
     line-height: 32px;
     padding: 15px 20px;
     --callout-color: var(--accent-color);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     background-color: rgba(var(--callout-color), 0.1);
     border: 1px solid rgb(55, 0, 255);
     margin: 0px;
@@ -6077,7 +6227,10 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -6496,9 +6649,17 @@ blockquote.callout {
   }
 
   &[data-callout="callout"] {
-    --color: rgb(var(--callout-callout, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-callout, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-callout, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-callout, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-callout, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-callout, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
 }
 

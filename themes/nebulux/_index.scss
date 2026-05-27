@@ -21,7 +21,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -61,7 +62,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -107,7 +111,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -147,7 +152,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -211,37 +219,43 @@ html {
   font-family: "Orbitron";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/orbitron.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/orbitron.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/nebulux/montserrat-4.woff2")
+    format("woff2");
 }
 
 body {
@@ -674,9 +688,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(var(--color-nav), 0.2);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -689,7 +718,18 @@ body {
     color: rgb(var(--color-nav));
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: rgba(var(--color-nav), 0.2);
     border: 0px rgb(120, 180, 255);
     border-top-left-radius: 4px;
@@ -724,7 +764,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: rgba(var(--color-nav), 0.15);
     color: rgb(var(--color-nav));
@@ -1030,24 +1078,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(var(--color-nav));
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(var(--color-nav));
     font-weight: 400;
     background-color: rgba(var(--color-nav), 0.2);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(var(--color-nav));
   }
 
@@ -1061,8 +1164,18 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h1-start) 0%, var(--h1-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.4) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h1-start) 0%,
+      var(--h1-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(
+        90deg,
+        rgb(255, 255, 255) 0%,
+        rgba(255, 255, 255, 0.4) 100%
+      )
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1094,8 +1207,14 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h2-start) 0%, var(--h2-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h2-start) 0%,
+      var(--h2-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%)
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1127,8 +1246,14 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h3-start) 0%, var(--h3-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(255, 200, 50) 0%, rgb(217, 119, 6) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h3-start) 0%,
+      var(--h3-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(255, 200, 50) 0%, rgb(217, 119, 6) 100%) repeat
+      scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1160,8 +1285,14 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h4-start) 0%, var(--h4-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h4-start) 0%,
+      var(--h4-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%) repeat
+      scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1193,8 +1324,14 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h5-start) 0%, var(--h5-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h5-start) 0%,
+      var(--h5-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%)
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1226,8 +1363,14 @@ body {
     text-decoration: rgb(34, 34, 34);
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(90deg, var(--h6-start) 0%, var(--h6-end) 100%);
-    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%) repeat scroll 0% 0% / auto padding-box text;
+    background-image: linear-gradient(
+      90deg,
+      var(--h6-start) 0%,
+      var(--h6-end) 100%
+    );
+    background: rgba(0, 0, 0, 0)
+      linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%)
+      repeat scroll 0% 0% / auto padding-box text;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1261,7 +1404,8 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1711,7 +1855,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1722,7 +1867,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -1735,7 +1881,8 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(160, 190, 220, 0.5);
@@ -1769,7 +1916,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1780,7 +1928,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -1793,7 +1942,8 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(50, 220, 255, 0.5);
@@ -1827,7 +1977,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1838,7 +1989,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -1851,7 +2003,8 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(80, 160, 255, 0.5);
@@ -1885,7 +2038,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1896,7 +2050,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -1909,7 +2064,8 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(80, 160, 255, 0.5);
@@ -1943,7 +2099,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1954,7 +2111,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -1967,7 +2125,8 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(50, 220, 255, 0.5);
@@ -2001,7 +2160,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2012,7 +2172,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2025,7 +2186,8 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.0863643 0.187158 0.139291 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.0863643 0.187158 0.139291 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(80, 220, 120, 0.5);
@@ -2059,7 +2221,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2070,7 +2233,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2083,7 +2247,8 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(255, 170, 50, 0.5);
@@ -2117,7 +2282,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2128,7 +2294,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2141,7 +2308,8 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(255, 170, 50, 0.5);
@@ -2175,7 +2343,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2186,7 +2355,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2199,7 +2369,8 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(255, 80, 80, 0.5);
@@ -2233,7 +2404,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2244,7 +2416,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2257,7 +2430,8 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(255, 80, 80, 0.5);
@@ -2291,7 +2465,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2302,7 +2477,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2315,7 +2491,8 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(255, 80, 80, 0.5);
@@ -2349,7 +2526,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2360,7 +2538,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2373,7 +2552,8 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.15372 0.119802 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.15372 0.119802 0.23022 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(180, 120, 255, 0.5);
@@ -2407,7 +2587,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2418,7 +2599,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -2431,7 +2613,8 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: color(srgb 0.133513 0.146745 0.172968 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.133513 0.146745 0.172968 / 0.873333) none repeat
+      scroll 0% 0% / auto padding-box border-box;
     color: rgb(224, 230, 237);
     mix-blend-mode: normal;
     border: 1px solid rgba(150, 160, 170, 0.5);
@@ -2465,7 +2648,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2476,7 +2660,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(224, 230, 237);
     padding: 0px;
     padding-block-end: 0px;
@@ -3419,7 +3604,8 @@ body {
     line-height: 16.9px;
     letter-spacing: 1.04px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box text;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      text;
     padding: 0px;
     margin: 0px;
     border-color: rgb(224, 230, 237);
@@ -6029,9 +6215,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(var(--color-nav), 0.2);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6044,7 +6245,18 @@ html[saved-theme="dark"] {
       color: rgb(var(--color-nav));
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: rgba(var(--color-nav), 0.2);
       border: 0px rgb(120, 180, 255);
       border-top-left-radius: 4px;
@@ -6079,7 +6291,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: rgba(var(--color-nav), 0.15);
       color: rgb(var(--color-nav));
@@ -6373,7 +6593,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6385,24 +6608,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(var(--color-nav));
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgb(var(--color-nav));
       font-weight: 400;
       background-color: rgba(var(--color-nav), 0.2);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgb(var(--color-nav));
     }
 
@@ -6416,8 +6696,18 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h1-start) 0%, var(--h1-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.4) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h1-start) 0%,
+        var(--h1-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(
+          90deg,
+          rgb(255, 255, 255) 0%,
+          rgba(255, 255, 255, 0.4) 100%
+        )
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6449,8 +6739,14 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h2-start) 0%, var(--h2-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h2-start) 0%,
+        var(--h2-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(90deg, rgb(120, 180, 255) 0%, rgb(91, 156, 246) 100%)
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6482,8 +6778,14 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h3-start) 0%, var(--h3-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(255, 200, 50) 0%, rgb(217, 119, 6) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h3-start) 0%,
+        var(--h3-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(90deg, rgb(255, 200, 50) 0%, rgb(217, 119, 6) 100%)
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6515,8 +6817,14 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h4-start) 0%, var(--h4-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h4-start) 0%,
+        var(--h4-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(90deg, rgb(205, 127, 50) 0%, rgb(235, 96, 96) 100%)
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6548,8 +6856,14 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h5-start) 0%, var(--h5-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h5-start) 0%,
+        var(--h5-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(90deg, rgb(192, 132, 252) 0%, rgb(176, 110, 245) 100%)
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6581,8 +6895,14 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
-      background-image: linear-gradient(90deg, var(--h6-start) 0%, var(--h6-end) 100%);
-      background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%) repeat scroll 0% 0% / auto padding-box text;
+      background-image: linear-gradient(
+        90deg,
+        var(--h6-start) 0%,
+        var(--h6-end) 100%
+      );
+      background: rgba(0, 0, 0, 0)
+        linear-gradient(90deg, rgb(148, 163, 184) 0%, rgb(120, 154, 181) 100%)
+        repeat scroll 0% 0% / auto padding-box text;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6616,7 +6936,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7066,7 +7387,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -7077,7 +7399,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7090,7 +7413,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(160, 190, 220, 0.5);
@@ -7124,7 +7448,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -7135,7 +7460,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7148,7 +7474,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(50, 220, 255, 0.5);
@@ -7182,10 +7509,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7193,7 +7524,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7206,7 +7538,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(80, 160, 255, 0.5);
@@ -7240,7 +7573,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -7251,7 +7585,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7264,7 +7599,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.0863643 0.146745 0.23022 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(80, 160, 255, 0.5);
@@ -7298,7 +7634,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -7309,7 +7646,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7322,7 +7660,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.0661578 0.187158 0.23022 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(50, 220, 255, 0.5);
@@ -7356,7 +7695,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -7367,7 +7707,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7380,7 +7721,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.0863643 0.187158 0.139291 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.0863643 0.187158 0.139291 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(80, 220, 120, 0.5);
@@ -7414,7 +7756,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -7425,7 +7768,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7438,7 +7782,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 170, 50, 0.5);
@@ -7472,10 +7817,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7483,7 +7832,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7496,7 +7846,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.204236 0.15348 0.0921419 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 170, 50, 0.5);
@@ -7530,7 +7881,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -7541,7 +7893,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7554,7 +7907,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 80, 80, 0.5);
@@ -7588,7 +7942,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -7599,7 +7954,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7612,7 +7968,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 80, 80, 0.5);
@@ -7646,7 +8003,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -7657,7 +8015,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7670,7 +8029,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.204236 0.0928603 0.112348 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 80, 80, 0.5);
@@ -7704,7 +8064,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -7715,7 +8076,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7728,7 +8090,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.15372 0.119802 0.23022 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.15372 0.119802 0.23022 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(180, 120, 255, 0.5);
@@ -7762,7 +8125,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -7773,7 +8137,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -7786,7 +8151,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: color(srgb 0.133513 0.146745 0.172968 / 0.873333) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: color(srgb 0.133513 0.146745 0.172968 / 0.873333) none repeat
+        scroll 0% 0% / auto padding-box border-box;
       color: rgb(224, 230, 237);
       mix-blend-mode: normal;
       border: 1px solid rgba(150, 160, 170, 0.5);
@@ -7820,7 +8186,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -7831,7 +8198,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(224, 230, 237);
       padding: 0px;
       padding-block-end: 0px;
@@ -8541,7 +8909,9 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family: "??";
@@ -8774,7 +9144,8 @@ html[saved-theme="dark"] {
       line-height: 16.9px;
       letter-spacing: 1.04px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box text;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        text;
       padding: 0px;
       margin: 0px;
       border-color: rgb(224, 230, 237);
@@ -11060,7 +11431,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

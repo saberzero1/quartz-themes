@@ -21,7 +21,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -61,7 +62,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -107,7 +111,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -147,7 +152,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -211,27 +219,25 @@ html {
   font-family: "Geist Mono";
   font-style: normal italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist-mono.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Geist Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist-mono-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Geist";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/apex/geist.woff2")
+    format("woff2");
 }
 
 body {
-  div#quartz-root {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-  }
-
   &[data-slug],
   &[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
@@ -261,6 +267,100 @@ body {
 
   .page > div#quartz-body div.sidebar.left {
     border-right: 1px solid rgba(0, 0, 0, 0);
+  }
+
+  div#quartz-root {
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+  }
+
+  .metadata {
+    background-color: var(--metadata-background);
+    color: var(--text-muted);
+    font-family: "Geist Mono", ui-monospace, monospace;
+    border: 0px solid rgb(224, 224, 224);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 0px 32px;
+    padding: 8px 0px;
+  }
+
+  .metadata-properties {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(181, 179, 177);
+    font-family: "Geist Mono", ui-monospace, monospace;
+    border-color: rgb(181, 179, 177);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .metadata-container .metadata-property {
+    background-color: var(--metadata-property-background);
+    color: rgb(181, 179, 177);
+    font-family: "Geist Mono", ui-monospace, monospace;
+    border-color: rgb(181, 179, 177);
+    border-width: 0px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .metadata-property-key {
+    color: rgb(181, 179, 177);
+    font-family: var(--metadata-label-font);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .metadata-property-value {
+    color: rgb(181, 179, 177);
+    font-family: var(--metadata-input-font);
+    font-size: 16px;
+  }
+
+  .note-properties {
+    background-color: var(--metadata-background);
+    border-color: rgb(224, 224, 224);
+    border-radius: 0px;
+  }
+
+  .note-properties-key {
+    color: rgb(181, 179, 177);
+    font-weight: 400;
+  }
+
+  .note-properties-value {
+    color: rgb(181, 179, 177);
+  }
+
+  .note-properties-tags {
+    background-color: var(--pill-background);
+    color: var(--pill-color);
+    border-radius: 28px;
+  }
+
+  .note-properties-row {
+    border-color: rgb(181, 179, 177);
+  }
+
+  ol.overflow {
+    border-color: rgb(26, 26, 26);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   a.external-link,
@@ -669,9 +769,38 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search-highlight {
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+    border: 0px rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -684,7 +813,18 @@ body {
     color: rgb(26, 26, 26);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(26, 26, 26);
     border-top-left-radius: 4px;
@@ -719,7 +859,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -756,202 +904,6 @@ body {
 
   a.internal-link.tag-link::before {
     color: rgb(138, 92, 245);
-  }
-
-  ul > li {
-    color: rgb(26, 26, 26);
-    text-align: start;
-    padding-top: var(--list-spacing);
-    padding-bottom: var(--list-spacing);
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-  }
-
-  ul > li::marker {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: rgb(34, 34, 34);
-    pointer-events: auto;
-    transform: none;
-  }
-
-  ol > li {
-    color: rgb(26, 26, 26);
-    text-align: start;
-    padding-top: var(--list-spacing);
-    padding-bottom: var(--list-spacing);
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-  }
-
-  ol > li::marker {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: rgb(34, 34, 34);
-    pointer-events: auto;
-    transform: none;
-  }
-
-  code {
-    background-color: var(--code-background);
-    border: 0px solid rgb(224, 224, 224);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: var(--code-normal);
-    font-family: var(--font-monospace);
-    padding: 2.1px 4.2px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-
-  pre > code,
-  pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    overflow-x: visible;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
-  }
-
-  pre:has(> code) {
-    background-color: var(--code-background);
-    border: 0px solid rgba(0, 0, 0, 0);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    overflow-x: visible;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
-  }
-
-  input[type="checkbox"] {
-    appearance: auto;
-    border: 0px solid rgb(0, 0, 0);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    padding: 0px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 2px;
-    padding-inline-start: 2px;
-    margin: 0px 8px 0px -24px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    width: var(--checkbox-size);
-    transition: box-shadow 0.15s ease-in-out;
-    position: relative;
-    top: auto;
-  }
-
-  ul > li.task-list-item {
-    text-align: start;
-    display: list-item;
-  }
-
-  input[type="checkbox"]:checked:after {
-    content: normal;
-    top: auto;
-    inset-inline-start: auto;
-    position: static;
-    width: auto;
-    display: list-item;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  blockquote {
-    background-color: var(--blockquote-background-color);
-    color: var(--blockquote-color);
-    font-family: "Geist Mono", ui-monospace, monospace;
-    font-weight: 400;
-    font-style: var(--blockquote-font-style);
-    line-height: 27.2px;
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding-inline-start: 0px;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
-    text-decoration: rgb(34, 34, 34);
-    letter-spacing: normal;
-  }
-
-  .data-footnote-backref {
-    color: var(--text-faint);
-    text-decoration: underline rgb(138, 92, 245);
   }
 
   .search > .search-button {
@@ -1051,24 +1003,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(26, 26, 26);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(26, 26, 26);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(26, 26, 26);
   }
 
@@ -1083,7 +1090,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1116,7 +1124,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1149,7 +1158,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1182,7 +1192,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1215,7 +1226,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1248,7 +1260,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1282,7 +1295,8 @@ body {
     letter-spacing: -0.384px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1642,8 +1656,729 @@ body {
     color: rgb(34, 34, 34);
   }
 
+  h1.article-title {
+    color: var(--inline-title-color);
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+  }
+
+  ul > li {
+    color: rgb(26, 26, 26);
+    text-align: start;
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  ul > li::marker {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: rgb(34, 34, 34);
+    pointer-events: auto;
+    transform: none;
+  }
+
+  ol > li {
+    color: rgb(26, 26, 26);
+    text-align: start;
+    padding-top: var(--list-spacing);
+    padding-bottom: var(--list-spacing);
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  ol > li::marker {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: rgb(34, 34, 34);
+    pointer-events: auto;
+    transform: none;
+  }
+
+  dl {
+    margin: 16px 0px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  dt {
+    color: rgb(26, 26, 26);
+    font-weight: 400;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    font-size: 16px;
+    font-family: "Geist Mono", ui-monospace, monospace;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 0px rgb(26, 26, 26);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  dd {
+    color: rgb(26, 26, 26);
+    font-size: 16px;
+    font-family: "Geist Mono", ui-monospace, monospace;
+    margin: 0px 0px 0px 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 40px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border: 0px rgb(26, 26, 26);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  ul.overflow {
+    border-color: rgb(26, 26, 26);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  code {
+    background-color: var(--code-background);
+    border: 0px solid rgb(224, 224, 224);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    color: var(--code-normal);
+    font-family: var(--font-monospace);
+    padding: 2.1px 4.2px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  pre > code,
+  pre:has(> code) {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  pre:has(> code) {
+    background-color: var(--code-background);
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    overflow-x: visible;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    white-space-collapse: preserve;
+    text-wrap-mode: nowrap;
+  }
+
+  figure[data-rehype-pretty-code-figure] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(34, 34, 34);
+    font-family: monospace;
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  pre > code > [data-line] {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 0px rgb(34, 34, 34);
+  }
+
+  pre > code > [data-line][data-highlighted-line] {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgb(34, 34, 34);
+  }
+
+  pre > code [data-highlighted-chars] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="checkbox"] {
+    appearance: auto;
+    border: 0px solid rgb(0, 0, 0);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 2px;
+    padding-inline-start: 2px;
+    margin: 0px 8px 0px -24px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    width: var(--checkbox-size);
+    transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    top: auto;
+  }
+
+  ul > li.task-list-item {
+    text-align: start;
+    display: list-item;
+  }
+
+  input[type="checkbox"]:checked:after {
+    content: normal;
+    top: auto;
+    inset-inline-start: auto;
+    position: static;
+    width: auto;
+    display: list-item;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item[data-task="-"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task=">"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="/"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="?"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="!"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="*"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="l"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="b"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="i"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="S"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="I"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="p"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="c"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="f"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="k"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="u"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="d"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  li.task-list-item[data-task="w"] {
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    text-decoration-color: rgb(26, 26, 26);
+  }
+
+  blockquote {
+    background-color: var(--blockquote-background-color);
+    color: var(--blockquote-color);
+    font-family: "Geist Mono", ui-monospace, monospace;
+    font-weight: 400;
+    font-style: var(--blockquote-font-style);
+    line-height: 27.2px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-inline-start: 0px;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    text-decoration: rgb(34, 34, 34);
+    letter-spacing: normal;
+  }
+
+  .data-footnote-backref {
+    color: var(--text-faint);
+    text-decoration: underline rgb(138, 92, 245);
+  }
+
+  progress {
+    accent-color: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 6px;
+    border: 0px rgb(26, 26, 26);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="range"] {
+    accent-color: auto;
+    background-color: rgb(255, 255, 255);
+    border: 2px inset rgb(118, 118, 118);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+  }
+
+  input[type="text"] {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--text-normal);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border: 0px solid rgb(181, 179, 177);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 4px 8px;
+    padding-block-end: 1px;
+    padding-block-start: 1px;
+    padding-inline-end: 2px;
+    padding-inline-start: 2px;
+  }
+
+  details {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(26, 26, 26);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  summary {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(26, 26, 26);
+    cursor: auto;
+    font-weight: 400;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  details[open] {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px rgb(34, 34, 34);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-start-start-radius: 0px;
+    border-start-end-radius: 0px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  kbd {
+    background-color: var(--code-background);
+    box-shadow: none;
+    color: var(--code-normal);
+    font-family: var(--font-monospace);
+    font-size: var(--code-size);
+    border: 0px rgb(26, 26, 26);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-start-start-radius: 4px;
+    border-start-end-radius: 4px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+    padding: 1.4px 3.5px;
+    padding-block-end: 1.3125px;
+    padding-block-start: 1.3125px;
+    padding-inline-end: 3.28125px;
+    padding-inline-start: 3.28125px;
+  }
+
+  sub {
+    color: rgb(26, 26, 26);
+    font-size: 13.3333px;
+    vertical-align: sub;
+  }
+
+  sup {
+    color: rgb(26, 26, 26);
+    font-size: 13.3333px;
+    vertical-align: super;
+  }
+
+  abbr {
+    color: rgb(26, 26, 26);
+    cursor: auto;
+    text-decoration: underline dotted;
+    text-decoration-style: dotted;
+  }
+
+  .katex-display > .katex {
+    display: block;
+    text-align: center;
+    white-space-collapse: collapse;
+    text-wrap-mode: wrap;
+    font-family: "Geist Mono", ui-monospace, monospace;
+  }
+
+  .katex-display > .katex > .katex-html {
+    font-family: "Geist Mono", ui-monospace, monospace;
+  }
+
+  .katex > .katex-html {
+    font-family: MJXZERO, MJXTEX;
+  }
+
+  .navigation-progress {
+    background-color: var(--status-bar-background);
+  }
+
+  .page-header h2.page-title {
+    color: var(--text-normal);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.9px;
+    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
+    padding: 0px;
+    margin: 0px;
+    border-color: rgb(26, 26, 26);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .katex-display {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(26, 26, 26);
+    border-color: rgb(26, 26, 26);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .footnotes {
+    background-color: rgba(0, 0, 0, 0);
+    border-top-color: rgb(26, 26, 26);
+    border-top-width: 0px;
+    color: rgb(26, 26, 26);
+  }
+
+  .spacer {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  ul.tags > li {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border: 0px solid rgba(138, 92, 245, 0.15);
+    border-top-left-radius: 24.5px;
+    border-top-right-radius: 24.5px;
+    border-bottom-left-radius: 24.5px;
+    border-bottom-right-radius: 24.5px;
+  }
+
+  li.task-list-item input[type="checkbox"] {
+    border-color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border-width: 0px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  li.task-list-item input[type="checkbox"]:checked {
+    background-color: var(--checkbox-color);
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  footer {
+    opacity: 0.5;
+    background-color: var(--status-bar-background);
+    color: var(--status-bar-text-color);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    font-size: var(--status-bar-font-size);
+    text-align: start;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-right: var(--size-4-2);
+  }
+
   li.depth-0 {
     font-weight: var(--nav-item-weight);
+  }
+
+  details.toc summary::marker {
+    color: rgb(26, 26, 26);
   }
 
   ::-webkit-scrollbar {
@@ -1732,7 +2467,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1743,7 +2479,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -1756,7 +2493,8 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1790,7 +2528,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1801,7 +2540,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -1814,7 +2554,8 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -1848,7 +2589,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1859,7 +2601,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -1872,7 +2615,8 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1906,7 +2650,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1917,7 +2662,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -1930,7 +2676,8 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 109, 221, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 109, 221, 0.25);
@@ -1964,7 +2711,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1975,7 +2723,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -1988,7 +2737,8 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 191, 188, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(0, 191, 188, 0.25);
@@ -2022,7 +2772,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2033,7 +2784,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2046,7 +2798,8 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(8, 185, 78, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(8, 185, 78, 0.25);
@@ -2080,7 +2833,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2091,7 +2845,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2104,7 +2859,8 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2138,7 +2894,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2149,7 +2906,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2162,7 +2920,8 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(236, 117, 0, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(236, 117, 0, 0.25);
@@ -2196,7 +2955,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2207,7 +2967,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2220,7 +2981,8 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2254,7 +3016,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2265,7 +3028,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2278,7 +3042,8 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2312,7 +3077,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2323,7 +3089,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2336,7 +3103,8 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(233, 49, 71, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(233, 49, 71, 0.25);
@@ -2370,7 +3138,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2381,7 +3150,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2394,7 +3164,8 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(120, 82, 238, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(120, 82, 238, 0.25);
@@ -2428,7 +3199,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2439,7 +3211,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2452,7 +3225,8 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: rgb(26, 26, 26);
     mix-blend-mode: normal;
     border: 0px solid rgba(158, 158, 158, 0.25);
@@ -2486,7 +3260,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2497,7 +3272,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(26, 26, 26);
     padding: 0px;
     padding-block-end: 0px;
@@ -2623,6 +3399,16 @@ body {
 
   tbody tr:nth-child(odd) {
     background-color: var(--table-row-alt-background);
+  }
+
+  .table-container {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(26, 26, 26);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   img {
@@ -2788,410 +3574,6 @@ body {
     padding: 8px;
   }
 
-  .metadata {
-    background-color: var(--metadata-background);
-    color: var(--text-muted);
-    font-family: "Geist Mono", ui-monospace, monospace;
-    border: 0px solid rgb(224, 224, 224);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
-    padding: 8px 0px;
-  }
-
-  .metadata-properties {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(181, 179, 177);
-    font-family: "Geist Mono", ui-monospace, monospace;
-    border-color: rgb(181, 179, 177);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .metadata-container .metadata-property {
-    background-color: var(--metadata-property-background);
-    color: rgb(181, 179, 177);
-    font-family: "Geist Mono", ui-monospace, monospace;
-    border-color: rgb(181, 179, 177);
-    border-width: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-  }
-
-  .metadata-property-key {
-    color: rgb(181, 179, 177);
-    font-family: var(--metadata-label-font);
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .metadata-property-value {
-    color: rgb(181, 179, 177);
-    font-family: var(--metadata-input-font);
-    font-size: 16px;
-  }
-
-  progress {
-    accent-color: auto;
-    background-color: rgba(0, 0, 0, 0);
-    height: 6px;
-    border: 0px rgb(26, 26, 26);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  input[type="range"] {
-    accent-color: auto;
-    background-color: rgb(255, 255, 255);
-    border: 2px inset rgb(118, 118, 118);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  input[type="text"] {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--text-normal);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    border: 0px solid rgb(181, 179, 177);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    padding: 4px 8px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 2px;
-    padding-inline-start: 2px;
-  }
-
-  details {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(26, 26, 26);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-
-  summary {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(26, 26, 26);
-    cursor: auto;
-    font-weight: 400;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-
-  details[open] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-
-  kbd {
-    background-color: var(--code-background);
-    box-shadow: none;
-    color: var(--code-normal);
-    font-family: var(--font-monospace);
-    font-size: var(--code-size);
-    border: 0px rgb(26, 26, 26);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-start-start-radius: 4px;
-    border-start-end-radius: 4px;
-    border-end-start-radius: 4px;
-    border-end-end-radius: 4px;
-    padding: 1.4px 3.5px;
-    padding-block-end: 1.3125px;
-    padding-block-start: 1.3125px;
-    padding-inline-end: 3.28125px;
-    padding-inline-start: 3.28125px;
-  }
-
-  dl {
-    margin: 16px 0px;
-    margin-block-end: 15px;
-    margin-block-start: 15px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-  }
-
-  dt {
-    color: rgb(26, 26, 26);
-    font-weight: 400;
-    margin: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
-    font-size: 16px;
-    font-family: "Geist Mono", ui-monospace, monospace;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    border: 0px rgb(26, 26, 26);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  dd {
-    color: rgb(26, 26, 26);
-    font-size: 16px;
-    font-family: "Geist Mono", ui-monospace, monospace;
-    margin: 0px 0px 0px 40px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 40px;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    border: 0px rgb(26, 26, 26);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  sub {
-    color: rgb(26, 26, 26);
-    font-size: 13.3333px;
-    vertical-align: sub;
-  }
-
-  sup {
-    color: rgb(26, 26, 26);
-    font-size: 13.3333px;
-    vertical-align: super;
-  }
-
-  abbr {
-    color: rgb(26, 26, 26);
-    cursor: auto;
-    text-decoration: underline dotted;
-    text-decoration-style: dotted;
-  }
-
-  li.task-list-item[data-task="-"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task=">"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="/"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="?"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="!"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="*"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="l"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="b"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="i"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="S"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="I"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="p"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="c"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="f"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="k"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="u"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="d"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  li.task-list-item[data-task="w"] {
-    color: rgb(26, 26, 26);
-    text-decoration: none;
-    text-decoration-color: rgb(26, 26, 26);
-  }
-
-  .katex-display > .katex {
-    display: block;
-    text-align: center;
-    white-space-collapse: collapse;
-    text-wrap-mode: wrap;
-    font-family: "Geist Mono", ui-monospace, monospace;
-  }
-
-  .katex-display > .katex > .katex-html {
-    font-family: "Geist Mono", ui-monospace, monospace;
-  }
-
-  .katex > .katex-html {
-    font-family: MJXZERO, MJXTEX;
-  }
-
   .nav-files-container .nav-file-title {
     color: rgb(34, 34, 34);
     cursor: auto;
@@ -3345,35 +3727,6 @@ body {
     border-width: 0px;
   }
 
-  .note-properties {
-    background-color: var(--metadata-background);
-    border-color: rgb(224, 224, 224);
-    border-radius: 0px;
-  }
-
-  .note-properties-key {
-    color: rgb(181, 179, 177);
-    font-weight: 400;
-  }
-
-  .note-properties-value {
-    color: rgb(181, 179, 177);
-  }
-
-  .note-properties-tags {
-    background-color: var(--pill-background);
-    color: var(--pill-color);
-    border-radius: 28px;
-  }
-
-  .note-properties-row {
-    border-color: rgb(181, 179, 177);
-  }
-
-  details.toc summary::marker {
-    color: rgb(26, 26, 26);
-  }
-
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
@@ -3384,32 +3737,6 @@ body {
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-  }
-
-  footer {
-    background-color: var(--status-bar-background);
-    color: var(--status-bar-text-color);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: var(--status-bar-font-size);
-    text-align: start;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-    padding-right: var(--size-4-2);
-    opacity: 0.5;
   }
 
   footer ul li a {
@@ -3558,178 +3885,6 @@ body {
       sans-serif;
   }
 
-  .navigation-progress {
-    background-color: var(--status-bar-background);
-  }
-
-  .page-header h2.page-title {
-    color: var(--text-normal);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 16.9px;
-    background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    padding: 0px;
-    margin: 0px;
-    border-color: rgb(26, 26, 26);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .katex-display {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(26, 26, 26);
-    border-color: rgb(26, 26, 26);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .footnotes {
-    background-color: rgba(0, 0, 0, 0);
-    border-top-color: rgb(26, 26, 26);
-    border-top-width: 0px;
-    color: rgb(26, 26, 26);
-  }
-
-  .table-container {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(26, 26, 26);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .spacer {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  ul.overflow {
-    border-color: rgb(26, 26, 26);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  ol.overflow {
-    border-color: rgb(26, 26, 26);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  figure[data-rehype-pretty-code-figure] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(34, 34, 34);
-    font-family: monospace;
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  pre > code > [data-line] {
-    background-color: rgba(0, 0, 0, 0);
-    border-left: 0px rgb(34, 34, 34);
-  }
-
-  pre > code > [data-line][data-highlighted-line] {
-    background-color: rgba(0, 0, 0, 0);
-    border-left-color: rgb(34, 34, 34);
-  }
-
-  pre > code [data-highlighted-chars] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  ul.tags > li {
-    background-color: var(--tag-background);
-    color: var(--tag-color);
-    border: 0px solid rgba(138, 92, 245, 0.15);
-    border-top-left-radius: 24.5px;
-    border-top-right-radius: 24.5px;
-    border-bottom-left-radius: 24.5px;
-    border-bottom-right-radius: 24.5px;
-  }
-
-  .search-highlight {
-    background-color: rgb(255, 255, 0);
-    color: rgb(0, 0, 0);
-    border: 0px rgb(0, 0, 0);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-  }
-
-  li.task-list-item input[type="checkbox"] {
-    border-color: rgb(0, 0, 0);
-    border-radius: 4px;
-    border-width: 0px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  li.task-list-item input[type="checkbox"]:checked {
-    background-color: var(--checkbox-color);
-    border-color: rgba(0, 0, 0, 0);
-  }
-
   .stacked-page {
     border-color: rgb(26, 26, 26);
     background-color: var(--background-secondary);
@@ -3741,12 +3896,6 @@ body {
 
   .stacked-page.active {
     border-color: rgb(26, 26, 26);
-  }
-
-  h1.article-title {
-    color: var(--inline-title-color);
-    font-size: var(--inline-title-size);
-    font-weight: var(--inline-title-weight);
   }
 
   li.task-list-item[data-task="_"] {
@@ -5889,11 +6038,6 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
 
 html[saved-theme="dark"] {
   body {
-    div#quartz-root {
-      background-color: var(--background-primary);
-      color: var(--text-normal);
-    }
-
     &[data-slug],
     &[data-slug] .page > div#quartz-body,
     .page > div#quartz-body div.center,
@@ -5923,6 +6067,100 @@ html[saved-theme="dark"] {
 
     .page > div#quartz-body div.sidebar.left {
       border-right: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    div#quartz-root {
+      background-color: var(--background-primary);
+      color: var(--text-normal);
+    }
+
+    .metadata {
+      background-color: var(--metadata-background);
+      color: var(--text-muted);
+      font-family: "Geist Mono", ui-monospace, monospace;
+      border: 0px solid rgb(54, 54, 54);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin: 0px 0px 32px;
+      padding: 8px 0px;
+    }
+
+    .metadata-properties {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(112, 112, 112);
+      font-family: "Geist Mono", ui-monospace, monospace;
+      border-color: rgb(112, 112, 112);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .metadata-container .metadata-property {
+      background-color: var(--metadata-property-background);
+      color: rgb(112, 112, 112);
+      font-family: "Geist Mono", ui-monospace, monospace;
+      border-color: rgb(112, 112, 112);
+      border-width: 0px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+    }
+
+    .metadata-property-key {
+      color: rgb(112, 112, 112);
+      font-family: var(--metadata-label-font);
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .metadata-property-value {
+      color: rgb(112, 112, 112);
+      font-family: var(--metadata-input-font);
+      font-size: 16px;
+    }
+
+    .note-properties {
+      background-color: var(--metadata-background);
+      border-color: rgb(54, 54, 54);
+      border-radius: 0px;
+    }
+
+    .note-properties-key {
+      color: rgb(112, 112, 112);
+      font-weight: 400;
+    }
+
+    .note-properties-value {
+      color: rgb(112, 112, 112);
+    }
+
+    .note-properties-tags {
+      background-color: var(--pill-background);
+      color: var(--pill-color);
+      border-radius: 28px;
+    }
+
+    .note-properties-row {
+      border-color: rgb(112, 112, 112);
+    }
+
+    ol.overflow {
+      border-color: rgb(204, 204, 204);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     a.external-link,
@@ -6331,9 +6569,38 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search-highlight {
+      background-color: rgb(255, 255, 0);
+      color: rgb(0, 0, 0);
+      border: 0px rgb(0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -6346,7 +6613,18 @@ html[saved-theme="dark"] {
       color: rgb(204, 204, 204);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: var(--background-modifier-hover);
       border: 0px rgb(204, 204, 204);
       border-top-left-radius: 4px;
@@ -6381,7 +6659,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
       color: var(--pill-color);
@@ -6418,202 +6704,6 @@ html[saved-theme="dark"] {
 
     a.internal-link.tag-link::before {
       color: rgb(166, 138, 249);
-    }
-
-    ul > li {
-      color: rgb(204, 204, 204);
-      text-align: start;
-      padding-top: var(--list-spacing);
-      padding-bottom: var(--list-spacing);
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-right: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-    }
-
-    ul > li::marker {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      color: rgb(218, 218, 218);
-      pointer-events: auto;
-      transform: none;
-    }
-
-    ol > li {
-      color: rgb(204, 204, 204);
-      text-align: start;
-      padding-top: var(--list-spacing);
-      padding-bottom: var(--list-spacing);
-      padding-left: 0px;
-      padding-right: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      margin-right: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-    }
-
-    ol > li::marker {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      color: rgb(218, 218, 218);
-      pointer-events: auto;
-      transform: none;
-    }
-
-    code {
-      background-color: var(--code-background);
-      border: 0px solid rgb(54, 54, 54);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      color: var(--code-normal);
-      font-family: var(--font-monospace);
-      padding: 2.1px 4.2px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-    }
-
-    pre > code,
-    pre:has(> code) {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      overflow-x: visible;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      white-space-collapse: preserve;
-      text-wrap-mode: nowrap;
-    }
-
-    pre:has(> code) {
-      background-color: var(--code-background);
-      border: 0px solid rgba(0, 0, 0, 0);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      overflow-x: visible;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      white-space-collapse: preserve;
-      text-wrap-mode: nowrap;
-    }
-
-    input[type="checkbox"] {
-      appearance: auto;
-      border: 0px solid rgb(255, 255, 255);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      padding: 0px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 2px;
-      padding-inline-start: 2px;
-      margin: 0px 8px 0px -24px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
-      width: var(--checkbox-size);
-      transition: box-shadow 0.15s ease-in-out;
-      position: relative;
-      top: auto;
-    }
-
-    ul > li.task-list-item {
-      text-align: start;
-      display: list-item;
-    }
-
-    input[type="checkbox"]:checked:after {
-      content: normal;
-      top: auto;
-      inset-inline-start: auto;
-      position: static;
-      width: auto;
-      display: list-item;
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    blockquote {
-      background-color: var(--blockquote-background-color);
-      color: var(--blockquote-color);
-      font-family: "Geist Mono", ui-monospace, monospace;
-      font-weight: 400;
-      font-style: var(--blockquote-font-style);
-      line-height: 27.2px;
-      padding-bottom: 0px;
-      padding-top: 0px;
-      padding-inline-start: 0px;
-      margin-inline-start: 40px;
-      margin-inline-end: 40px;
-      text-decoration: rgb(218, 218, 218);
-      letter-spacing: normal;
-    }
-
-    .data-footnote-backref {
-      color: var(--text-faint);
-      text-decoration: underline rgb(166, 138, 249);
     }
 
     .search > .search-button {
@@ -6701,7 +6791,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid rgb(85, 85, 85);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6713,24 +6806,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(204, 204, 204);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgb(204, 204, 204);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgb(204, 204, 204);
     }
 
@@ -6745,7 +6895,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6778,7 +6929,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6811,7 +6963,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6844,7 +6997,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6877,7 +7031,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6910,7 +7065,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6944,7 +7100,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.384px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7304,8 +7461,729 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
+    h1.article-title {
+      color: var(--inline-title-color);
+      font-size: var(--inline-title-size);
+      font-weight: var(--inline-title-weight);
+    }
+
+    ul > li {
+      color: rgb(204, 204, 204);
+      text-align: start;
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    ul > li::marker {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      color: rgb(218, 218, 218);
+      pointer-events: auto;
+      transform: none;
+    }
+
+    ol > li {
+      color: rgb(204, 204, 204);
+      text-align: start;
+      padding-top: var(--list-spacing);
+      padding-bottom: var(--list-spacing);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    ol > li::marker {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      color: rgb(218, 218, 218);
+      pointer-events: auto;
+      transform: none;
+    }
+
+    dl {
+      margin: 16px 0px;
+      margin-block-end: 15px;
+      margin-block-start: 15px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    dt {
+      color: rgb(204, 204, 204);
+      font-weight: 400;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      font-size: 16px;
+      font-family: "Geist Mono", ui-monospace, monospace;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      border: 0px rgb(204, 204, 204);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    dd {
+      color: rgb(204, 204, 204);
+      font-size: 16px;
+      font-family: "Geist Mono", ui-monospace, monospace;
+      margin: 0px 0px 0px 40px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 40px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      border: 0px rgb(204, 204, 204);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    ul.overflow {
+      border-color: rgb(204, 204, 204);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    code {
+      background-color: var(--code-background);
+      border: 0px solid rgb(54, 54, 54);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      color: var(--code-normal);
+      font-family: var(--font-monospace);
+      padding: 2.1px 4.2px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    pre > code,
+    pre:has(> code) {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      overflow-x: visible;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      white-space-collapse: preserve;
+      text-wrap-mode: nowrap;
+    }
+
+    pre:has(> code) {
+      background-color: var(--code-background);
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      overflow-x: visible;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      white-space-collapse: preserve;
+      text-wrap-mode: nowrap;
+    }
+
+    figure[data-rehype-pretty-code-figure] {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(218, 218, 218);
+      font-family: monospace;
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    pre > code > [data-line] {
+      background-color: rgba(0, 0, 0, 0);
+      border-left: 0px rgb(218, 218, 218);
+    }
+
+    pre > code > [data-line][data-highlighted-line] {
+      background-color: rgba(0, 0, 0, 0);
+      border-left-color: rgb(218, 218, 218);
+    }
+
+    pre > code [data-highlighted-chars] {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    input[type="checkbox"] {
+      appearance: auto;
+      border: 0px solid rgb(255, 255, 255);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      padding: 0px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 2px;
+      padding-inline-start: 2px;
+      margin: 0px 8px 0px -24px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      width: var(--checkbox-size);
+      transition: box-shadow 0.15s ease-in-out;
+      position: relative;
+      top: auto;
+    }
+
+    ul > li.task-list-item {
+      text-align: start;
+      display: list-item;
+    }
+
+    input[type="checkbox"]:checked:after {
+      content: normal;
+      top: auto;
+      inset-inline-start: auto;
+      position: static;
+      width: auto;
+      display: list-item;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item[data-task="-"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task=">"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="/"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="?"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="!"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="*"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="l"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="b"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="i"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="S"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="I"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="p"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="c"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="f"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="k"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="u"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="d"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    li.task-list-item[data-task="w"] {
+      color: rgb(204, 204, 204);
+      text-decoration: none;
+      text-decoration-color: rgb(204, 204, 204);
+    }
+
+    blockquote {
+      background-color: var(--blockquote-background-color);
+      color: var(--blockquote-color);
+      font-family: "Geist Mono", ui-monospace, monospace;
+      font-weight: 400;
+      font-style: var(--blockquote-font-style);
+      line-height: 27.2px;
+      padding-bottom: 0px;
+      padding-top: 0px;
+      padding-inline-start: 0px;
+      margin-inline-start: 40px;
+      margin-inline-end: 40px;
+      text-decoration: rgb(218, 218, 218);
+      letter-spacing: normal;
+    }
+
+    .data-footnote-backref {
+      color: var(--text-faint);
+      text-decoration: underline rgb(166, 138, 249);
+    }
+
+    progress {
+      accent-color: auto;
+      background-color: rgba(0, 0, 0, 0);
+      height: 6px;
+      border: 0px rgb(204, 204, 204);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    input[type="range"] {
+      accent-color: auto;
+      background-color: rgb(59, 59, 59);
+      border: 2px inset rgb(133, 133, 133);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+    }
+
+    input[type="text"] {
+      background-color: rgba(0, 0, 0, 0);
+      color: var(--text-normal);
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      border: 0px solid rgb(112, 112, 112);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      padding: 4px 8px;
+      padding-block-end: 1px;
+      padding-block-start: 1px;
+      padding-inline-end: 2px;
+      padding-inline-start: 2px;
+    }
+
+    details {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(204, 204, 204);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    summary {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(204, 204, 204);
+      cursor: auto;
+      font-weight: 400;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    details[open] {
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px rgb(218, 218, 218);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-start-start-radius: 0px;
+      border-start-end-radius: 0px;
+      border-end-start-radius: 0px;
+      border-end-end-radius: 0px;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    kbd {
+      background-color: var(--code-background);
+      box-shadow: none;
+      color: var(--code-normal);
+      font-family: var(--font-monospace);
+      font-size: var(--code-size);
+      border: 0px rgb(204, 204, 204);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-start-start-radius: 4px;
+      border-start-end-radius: 4px;
+      border-end-start-radius: 4px;
+      border-end-end-radius: 4px;
+      padding: 1.4px 3.5px;
+      padding-block-end: 1.3125px;
+      padding-block-start: 1.3125px;
+      padding-inline-end: 3.28125px;
+      padding-inline-start: 3.28125px;
+    }
+
+    sub {
+      color: rgb(204, 204, 204);
+      font-size: 13.3333px;
+      vertical-align: sub;
+    }
+
+    sup {
+      color: rgb(204, 204, 204);
+      font-size: 13.3333px;
+      vertical-align: super;
+    }
+
+    abbr {
+      color: rgb(204, 204, 204);
+      cursor: auto;
+      text-decoration: underline dotted;
+      text-decoration-style: dotted;
+    }
+
+    .katex-display > .katex {
+      display: block;
+      text-align: center;
+      white-space-collapse: collapse;
+      text-wrap-mode: wrap;
+      font-family: "Geist Mono", ui-monospace, monospace;
+    }
+
+    .katex-display > .katex > .katex-html {
+      font-family: "Geist Mono", ui-monospace, monospace;
+    }
+
+    .katex > .katex-html {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .navigation-progress {
+      background-color: var(--status-bar-background);
+    }
+
+    .page-header h2.page-title {
+      color: var(--text-normal);
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16.9px;
+      background-color: rgba(0, 0, 0, 0);
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
+      padding: 0px;
+      margin: 0px;
+      border-color: rgb(204, 204, 204);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .katex-display {
+      background-color: rgba(0, 0, 0, 0);
+      color: rgb(204, 204, 204);
+      border-color: rgb(204, 204, 204);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .footnotes {
+      background-color: rgba(0, 0, 0, 0);
+      border-top-color: rgb(204, 204, 204);
+      border-top-width: 0px;
+      color: rgb(204, 204, 204);
+    }
+
+    .spacer {
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    ul.tags > li {
+      background-color: var(--tag-background);
+      color: var(--tag-color);
+      border: 0px solid rgba(138, 92, 245, 0.15);
+      border-top-left-radius: 24.5px;
+      border-top-right-radius: 24.5px;
+      border-bottom-left-radius: 24.5px;
+      border-bottom-right-radius: 24.5px;
+    }
+
+    li.task-list-item input[type="checkbox"] {
+      border-color: rgb(255, 255, 255);
+      border-radius: 4px;
+      border-width: 0px;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    li.task-list-item input[type="checkbox"]:checked {
+      background-color: var(--checkbox-color);
+      border-color: rgba(0, 0, 0, 0);
+    }
+
+    footer {
+      opacity: 0.5;
+      background-color: var(--status-bar-background);
+      color: var(--status-bar-text-color);
+      font-family:
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        "Segoe UI",
+        "Google Sans Flex",
+        Roboto,
+        "Inter Variable",
+        Inter,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+      font-size: var(--status-bar-font-size);
+      text-align: start;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 4px;
+      padding-right: var(--size-4-2);
+    }
+
     li.depth-0 {
       font-weight: var(--nav-item-weight);
+    }
+
+    details.toc summary::marker {
+      color: rgb(204, 204, 204);
     }
 
     ::-webkit-scrollbar {
@@ -7394,7 +8272,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -7405,7 +8284,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7418,7 +8298,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -7452,7 +8333,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -7463,7 +8345,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7476,7 +8359,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(83, 223, 221, 0.25);
@@ -7510,10 +8394,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7521,7 +8409,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7534,7 +8423,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -7568,7 +8458,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -7579,7 +8470,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7592,7 +8484,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(2, 122, 255, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(2, 122, 255, 0.25);
@@ -7626,7 +8519,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -7637,7 +8531,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7650,7 +8545,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(83, 223, 221, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(83, 223, 221, 0.25);
@@ -7684,7 +8580,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -7695,7 +8592,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7708,7 +8606,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(68, 207, 110, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(68, 207, 110, 0.25);
@@ -7742,7 +8641,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -7753,7 +8653,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7766,7 +8667,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(233, 151, 63, 0.25);
@@ -7800,10 +8702,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7811,7 +8717,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7824,7 +8731,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(233, 151, 63, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(233, 151, 63, 0.25);
@@ -7858,7 +8766,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -7869,7 +8778,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7882,7 +8792,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -7916,7 +8827,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -7927,7 +8839,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7940,7 +8853,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -7974,7 +8888,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -7985,7 +8900,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -7998,7 +8914,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(251, 70, 76, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(251, 70, 76, 0.25);
@@ -8032,7 +8949,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8043,7 +8961,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -8056,7 +8975,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(168, 130, 255, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(168, 130, 255, 0.25);
@@ -8090,7 +9010,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -8101,7 +9022,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -8114,7 +9036,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: rgb(204, 204, 204);
       mix-blend-mode: normal;
       border: 0px solid rgba(158, 158, 158, 0.25);
@@ -8148,7 +9071,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -8159,7 +9083,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(204, 204, 204);
       padding: 0px;
       padding-block-end: 0px;
@@ -8285,6 +9210,16 @@ html[saved-theme="dark"] {
 
     tbody tr:nth-child(odd) {
       background-color: var(--table-row-alt-background);
+    }
+
+    .table-container {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(204, 204, 204);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     img {
@@ -8450,410 +9385,6 @@ html[saved-theme="dark"] {
       padding: 8px;
     }
 
-    .metadata {
-      background-color: var(--metadata-background);
-      color: var(--text-muted);
-      font-family: "Geist Mono", ui-monospace, monospace;
-      border: 0px solid rgb(54, 54, 54);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      margin: 0px 0px 32px;
-      padding: 8px 0px;
-    }
-
-    .metadata-properties {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(112, 112, 112);
-      font-family: "Geist Mono", ui-monospace, monospace;
-      border-color: rgb(112, 112, 112);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      margin: 0px;
-      padding: 0px;
-    }
-
-    .metadata-container .metadata-property {
-      background-color: var(--metadata-property-background);
-      color: rgb(112, 112, 112);
-      font-family: "Geist Mono", ui-monospace, monospace;
-      border-color: rgb(112, 112, 112);
-      border-width: 0px;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-      margin: 0px;
-      padding: 0px;
-      display: flex;
-    }
-
-    .metadata-property-key {
-      color: rgb(112, 112, 112);
-      font-family: var(--metadata-label-font);
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    .metadata-property-value {
-      color: rgb(112, 112, 112);
-      font-family: var(--metadata-input-font);
-      font-size: 16px;
-    }
-
-    progress {
-      accent-color: auto;
-      background-color: rgba(0, 0, 0, 0);
-      height: 6px;
-      border: 0px rgb(204, 204, 204);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    input[type="range"] {
-      accent-color: auto;
-      background-color: rgb(59, 59, 59);
-      border: 2px inset rgb(133, 133, 133);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    input[type="text"] {
-      background-color: rgba(0, 0, 0, 0);
-      color: var(--text-normal);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      border: 0px solid rgb(112, 112, 112);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      padding: 4px 8px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 2px;
-      padding-inline-start: 2px;
-    }
-
-    details {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(204, 204, 204);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      margin: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-    }
-
-    summary {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(204, 204, 204);
-      cursor: auto;
-      font-weight: 400;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-    }
-
-    details[open] {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      margin: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-    }
-
-    kbd {
-      background-color: var(--code-background);
-      box-shadow: none;
-      color: var(--code-normal);
-      font-family: var(--font-monospace);
-      font-size: var(--code-size);
-      border: 0px rgb(204, 204, 204);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-start-start-radius: 4px;
-      border-start-end-radius: 4px;
-      border-end-start-radius: 4px;
-      border-end-end-radius: 4px;
-      padding: 1.4px 3.5px;
-      padding-block-end: 1.3125px;
-      padding-block-start: 1.3125px;
-      padding-inline-end: 3.28125px;
-      padding-inline-start: 3.28125px;
-    }
-
-    dl {
-      margin: 16px 0px;
-      margin-block-end: 15px;
-      margin-block-start: 15px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-    }
-
-    dt {
-      color: rgb(204, 204, 204);
-      font-weight: 400;
-      margin: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
-      font-size: 16px;
-      font-family: "Geist Mono", ui-monospace, monospace;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      border: 0px rgb(204, 204, 204);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    dd {
-      color: rgb(204, 204, 204);
-      font-size: 16px;
-      font-family: "Geist Mono", ui-monospace, monospace;
-      margin: 0px 0px 0px 40px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 40px;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      border: 0px rgb(204, 204, 204);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    sub {
-      color: rgb(204, 204, 204);
-      font-size: 13.3333px;
-      vertical-align: sub;
-    }
-
-    sup {
-      color: rgb(204, 204, 204);
-      font-size: 13.3333px;
-      vertical-align: super;
-    }
-
-    abbr {
-      color: rgb(204, 204, 204);
-      cursor: auto;
-      text-decoration: underline dotted;
-      text-decoration-style: dotted;
-    }
-
-    li.task-list-item[data-task="-"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task=">"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="/"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="?"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="!"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="*"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="l"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="b"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="i"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="S"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="I"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="p"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="c"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="f"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="k"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="u"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="d"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    li.task-list-item[data-task="w"] {
-      color: rgb(204, 204, 204);
-      text-decoration: none;
-      text-decoration-color: rgb(204, 204, 204);
-    }
-
-    .katex-display > .katex {
-      display: block;
-      text-align: center;
-      white-space-collapse: collapse;
-      text-wrap-mode: wrap;
-      font-family: "Geist Mono", ui-monospace, monospace;
-    }
-
-    .katex-display > .katex > .katex-html {
-      font-family: "Geist Mono", ui-monospace, monospace;
-    }
-
-    .katex > .katex-html {
-      font-family: MJXZERO, MJXTEX;
-    }
-
     .nav-files-container .nav-file-title {
       color: rgb(218, 218, 218);
       cursor: auto;
@@ -8895,7 +9426,9 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
       font-family:
@@ -9007,35 +9540,6 @@ html[saved-theme="dark"] {
       border-width: 0px;
     }
 
-    .note-properties {
-      background-color: var(--metadata-background);
-      border-color: rgb(54, 54, 54);
-      border-radius: 0px;
-    }
-
-    .note-properties-key {
-      color: rgb(112, 112, 112);
-      font-weight: 400;
-    }
-
-    .note-properties-value {
-      color: rgb(112, 112, 112);
-    }
-
-    .note-properties-tags {
-      background-color: var(--pill-background);
-      color: var(--pill-color);
-      border-radius: 28px;
-    }
-
-    .note-properties-row {
-      border-color: rgb(112, 112, 112);
-    }
-
-    details.toc summary::marker {
-      color: rgb(204, 204, 204);
-    }
-
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
@@ -9046,32 +9550,6 @@ html[saved-theme="dark"] {
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px;
-    }
-
-    footer {
-      background-color: var(--status-bar-background);
-      color: var(--status-bar-text-color);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-size: var(--status-bar-font-size);
-      text-align: start;
-      padding-top: 4px;
-      padding-bottom: 4px;
-      padding-left: 4px;
-      padding-right: var(--size-4-2);
-      opacity: 0.5;
     }
 
     footer ul li a {
@@ -9220,178 +9698,6 @@ html[saved-theme="dark"] {
         sans-serif;
     }
 
-    .navigation-progress {
-      background-color: var(--status-bar-background);
-    }
-
-    .page-header h2.page-title {
-      color: var(--text-normal);
-      font-family:
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-size: 13px;
-      font-weight: 400;
-      line-height: 16.9px;
-      background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      padding: 0px;
-      margin: 0px;
-      border-color: rgb(204, 204, 204);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .katex-display {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(204, 204, 204);
-      border-color: rgb(204, 204, 204);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .footnotes {
-      background-color: rgba(0, 0, 0, 0);
-      border-top-color: rgb(204, 204, 204);
-      border-top-width: 0px;
-      color: rgb(204, 204, 204);
-    }
-
-    .table-container {
-      background-color: rgba(0, 0, 0, 0);
-      border-color: rgb(204, 204, 204);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    .spacer {
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    ul.overflow {
-      border-color: rgb(204, 204, 204);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    ol.overflow {
-      border-color: rgb(204, 204, 204);
-      border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-    }
-
-    figure[data-rehype-pretty-code-figure] {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
-      font-family: monospace;
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    pre > code > [data-line] {
-      background-color: rgba(0, 0, 0, 0);
-      border-left: 0px rgb(218, 218, 218);
-    }
-
-    pre > code > [data-line][data-highlighted-line] {
-      background-color: rgba(0, 0, 0, 0);
-      border-left-color: rgb(218, 218, 218);
-    }
-
-    pre > code [data-highlighted-chars] {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    ul.tags > li {
-      background-color: var(--tag-background);
-      color: var(--tag-color);
-      border: 0px solid rgba(138, 92, 245, 0.15);
-      border-top-left-radius: 24.5px;
-      border-top-right-radius: 24.5px;
-      border-bottom-left-radius: 24.5px;
-      border-bottom-right-radius: 24.5px;
-    }
-
-    .search-highlight {
-      background-color: rgb(255, 255, 0);
-      color: rgb(0, 0, 0);
-      border: 0px rgb(0, 0, 0);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-    }
-
-    li.task-list-item input[type="checkbox"] {
-      border-color: rgb(255, 255, 255);
-      border-radius: 4px;
-      border-width: 0px;
-      background-color: rgba(0, 0, 0, 0);
-    }
-
-    li.task-list-item input[type="checkbox"]:checked {
-      background-color: var(--checkbox-color);
-      border-color: rgba(0, 0, 0, 0);
-    }
-
     .stacked-page {
       border-color: rgb(204, 204, 204);
       background-color: var(--background-secondary);
@@ -9403,12 +9709,6 @@ html[saved-theme="dark"] {
 
     .stacked-page.active {
       border-color: rgb(204, 204, 204);
-    }
-
-    h1.article-title {
-      color: var(--inline-title-color);
-      font-size: var(--inline-title-size);
-      font-weight: var(--inline-title-weight);
     }
 
     li.task-list-item[data-task="_"] {
@@ -11656,7 +11956,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

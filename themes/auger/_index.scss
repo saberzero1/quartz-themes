@@ -21,7 +21,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -61,7 +62,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -113,7 +117,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -153,7 +158,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -225,22 +233,26 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -248,7 +260,8 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -256,47 +269,64 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -304,7 +334,8 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -312,32 +343,46 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -345,8 +390,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
@@ -354,7 +401,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -363,7 +411,8 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiAr0klQmz24O0g.woff2)
+    format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -372,8 +421,10 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
@@ -381,8 +432,21 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A,
+    U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346,
+    U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6,
+    U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043,
+    U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C,
+    U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121,
+    U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2,
+    U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319,
+    U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1,
+    U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB,
+    U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE,
+    U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
 }
 
 @font-face {
@@ -390,8 +454,32 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4,
+    U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3,
+    U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF,
+    U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF,
+    U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0,
+    U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F,
+    U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315,
+    U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382,
+    U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6,
+    U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7,
+    U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444,
+    U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0,
+    U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA,
+    U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB,
+    U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513,
+    U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D,
+    U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC,
+    U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC,
+    U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887,
+    U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B,
+    U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C,
+    U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8,
+    U+1FB00-1FBFF;
 }
 
 @font-face {
@@ -399,8 +487,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
@@ -408,8 +500,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiAr0klQmz24O0g.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
@@ -417,8 +513,12 @@ html {
   font-style: normal;
   font-weight: 400;
   font-stretch: 100%;
-  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAr0klQmz24.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -427,23 +527,28 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
+      format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -451,32 +556,46 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
+    U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
+    format("woff2");
+  unicode-range:
+    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
+    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -491,7 +610,8 @@ html {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.0.woff2)
+    format("woff2");
   unicode-range: U+1F1E6-1F1FF;
 }
 
@@ -499,87 +619,180 @@ html {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2) format("woff2");
-  unicode-range: U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4, U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074, U+E0077, U+E007F;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.1.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2620, U+26A7, U+FE0F, U+1F308, U+1F38C, U+1F3C1, U+1F3F3-1F3F4,
+    U+1F6A9, U+E0062-E0063, U+E0065, U+E0067, U+E006C, U+E006E, U+E0073-E0074,
+    U+E0077, U+E007F;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2) format("woff2");
-  unicode-range: U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122, U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2, U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626, U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663, U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0, U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721, U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764, U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C, U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171, U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F, U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC, U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD, U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515, U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF, U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5, U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E, U+1F9E1, U+1FA75-1FA77, U+1FAAF;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.2.woff2)
+    format("woff2");
+  unicode-range:
+    U+23, U+2A, U+30-39, U+A9, U+AE, U+200D, U+203C, U+2049, U+20E3, U+2122,
+    U+2139, U+2194-2199, U+21A9-21AA, U+23CF, U+23E9-23EF, U+23F8-23FA, U+24C2,
+    U+25AA-25AB, U+25B6, U+25C0, U+25FB-25FE, U+2611, U+2622-2623, U+2626,
+    U+262A, U+262E-262F, U+2638, U+2640, U+2642, U+2648-2653, U+2660, U+2663,
+    U+2665-2666, U+2668, U+267B, U+267E-267F, U+2695, U+269B-269C, U+26A0,
+    U+26A7, U+26AA-26AB, U+26CE, U+26D4, U+2705, U+2714, U+2716, U+271D, U+2721,
+    U+2733-2734, U+2747, U+274C, U+274E, U+2753-2755, U+2757, U+2764,
+    U+2795-2797, U+27A1, U+27B0, U+27BF, U+2934-2935, U+2B05-2B07, U+2B1B-2B1C,
+    U+2B55, U+3030, U+303D, U+3297, U+3299, U+FE0F, U+1F170-1F171,
+    U+1F17E-1F17F, U+1F18E, U+1F191-1F19A, U+1F201-1F202, U+1F21A, U+1F22F,
+    U+1F232-1F23A, U+1F250-1F251, U+1F310, U+1F3A6, U+1F3B5-1F3B6, U+1F3BC,
+    U+1F3E7, U+1F441, U+1F499-1F49C, U+1F49F-1F4A0, U+1F4A2, U+1F4AC-1F4AD,
+    U+1F4B1-1F4B2, U+1F4B9, U+1F4DB, U+1F4F2-1F4F6, U+1F500-1F50A, U+1F515,
+    U+1F518-1F524, U+1F52F-1F53D, U+1F549, U+1F54E, U+1F5A4, U+1F5E8, U+1F5EF,
+    U+1F6AB, U+1F6AD-1F6B1, U+1F6B3, U+1F6B7-1F6BC, U+1F6BE, U+1F6C2-1F6C5,
+    U+1F6D0-1F6D1, U+1F6D7, U+1F6DC, U+1F7E0-1F7EB, U+1F7F0, U+1F90D-1F90E,
+    U+1F9E1, U+1FA75-1FA77, U+1FAAF;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2) format("woff2");
-  unicode-range: U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694, U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709, U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD, U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A, U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA, U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529, U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587, U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4, U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD, U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0, U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC, U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86, U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.3.woff2)
+    format("woff2");
+  unicode-range:
+    U+231A-231B, U+2328, U+23F0-23F3, U+2602, U+260E, U+2692, U+2694,
+    U+2696-2697, U+2699, U+26B0-26B1, U+26CF, U+26D1, U+26D3, U+2702, U+2709,
+    U+270F, U+2712, U+FE0F, U+1F302, U+1F321, U+1F392-1F393, U+1F3A9, U+1F3BD,
+    U+1F3EE, U+1F3F7, U+1F3FA, U+1F451-1F462, U+1F484, U+1F489-1F48A,
+    U+1F48C-1F48E, U+1F4A1, U+1F4A3, U+1F4B0, U+1F4B3-1F4B8, U+1F4BB-1F4DA,
+    U+1F4DC-1F4F1, U+1F4FF, U+1F50B-1F514, U+1F516-1F517, U+1F526-1F529,
+    U+1F52C-1F52E, U+1F550-1F567, U+1F56F-1F570, U+1F576, U+1F587,
+    U+1F58A-1F58D, U+1F5A5, U+1F5A8, U+1F5B1-1F5B2, U+1F5C2-1F5C4,
+    U+1F5D1-1F5D3, U+1F5DC-1F5DE, U+1F5E1, U+1F5F3, U+1F6AA, U+1F6AC, U+1F6BD,
+    U+1F6BF, U+1F6C1, U+1F6CB, U+1F6CD-1F6CF, U+1F6D2, U+1F6E0-1F6E1, U+1F6F0,
+    U+1F97B-1F97F, U+1F9AF, U+1F9BA, U+1F9E2-1F9E6, U+1F9EA-1F9EC,
+    U+1F9EE-1F9F4, U+1F9F7-1F9FF, U+1FA71-1FA74, U+1FA79-1FA7B, U+1FA86,
+    U+1FA91-1FA93, U+1FA96, U+1FA99-1FAA0, U+1FAA2-1FAA7, U+1FAAA-1FAAE;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2) format("woff2");
-  unicode-range: U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF, U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B, U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB, U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9, U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC, U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F, U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85, U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.4.woff2)
+    format("woff2");
+  unicode-range:
+    U+265F, U+26BD-26BE, U+26F3, U+26F8, U+FE0F, U+1F004, U+1F0CF,
+    U+1F380-1F384, U+1F386-1F38B, U+1F38D-1F391, U+1F396-1F397, U+1F399-1F39B,
+    U+1F39E-1F39F, U+1F3A3-1F3A5, U+1F3A7-1F3A9, U+1F3AB-1F3B4, U+1F3B7-1F3BB,
+    U+1F3BD-1F3C0, U+1F3C5-1F3C6, U+1F3C8-1F3C9, U+1F3CF-1F3D3, U+1F3F8-1F3F9,
+    U+1F47E, U+1F4E2, U+1F4F7-1F4FD, U+1F52B, U+1F579, U+1F58C-1F58D, U+1F5BC,
+    U+1F6F7, U+1F6F9, U+1F6FC, U+1F93F, U+1F941, U+1F945, U+1F947-1F94F,
+    U+1F9E7-1F9E9, U+1F9F5-1F9F6, U+1FA70-1FA71, U+1FA80-1FA81, U+1FA83-1FA85,
+    U+1FA87-1FA88, U+1FA94-1FA95, U+1FA97-1FA98, U+1FAA1, U+1FAA9;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2) format("woff2");
-  unicode-range: U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708, U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2, U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6, U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D, U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1, U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC, U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3, U+1FA7C;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.5.woff2)
+    format("woff2");
+  unicode-range:
+    U+2693, U+26E9-26EA, U+26F1-26F2, U+26F4-26F5, U+26FA, U+26FD, U+2708,
+    U+FE0F, U+1F301, U+1F303, U+1F306-1F307, U+1F309, U+1F310, U+1F3A0-1F3A2,
+    U+1F3AA, U+1F3CD-1F3CE, U+1F3D5, U+1F3D7-1F3DB, U+1F3DF-1F3E6,
+    U+1F3E8-1F3ED, U+1F3EF-1F3F0, U+1F488, U+1F492, U+1F4BA, U+1F54B-1F54D,
+    U+1F5FA-1F5FF, U+1F680-1F6A2, U+1F6A4-1F6A8, U+1F6B2, U+1F6D1,
+    U+1F6D5-1F6D6, U+1F6DD-1F6DF, U+1F6E2-1F6E5, U+1F6E9, U+1F6EB-1F6EC,
+    U+1F6F3-1F6F6, U+1F6F8, U+1F6FA-1F6FB, U+1F9BC-1F9BD, U+1F9ED, U+1F9F3,
+    U+1FA7C;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2) format("woff2");
-  unicode-range: U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382, U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB, U+1FAD0-1FADB;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.6.woff2)
+    format("woff2");
+  unicode-range:
+    U+2615, U+FE0F, U+1F32D-1F330, U+1F336, U+1F33D, U+1F345-1F37F, U+1F382,
+    U+1F52A, U+1F942-1F944, U+1F950-1F96F, U+1F99E, U+1F9AA, U+1F9C0-1F9CB,
+    U+1FAD0-1FADB;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2) format("woff2");
-  unicode-range: U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5, U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300, U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C, U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6, U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE, U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940, U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF, U+1FACE-1FACF, U+1FAE7;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.7.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2600-2601, U+2603-2604, U+2614, U+2618, U+26A1, U+26C4-26C5,
+    U+26C8, U+26F0, U+2728, U+2744, U+2B1B, U+2B50, U+FE0F, U+1F300,
+    U+1F304-1F305, U+1F308, U+1F30A-1F30F, U+1F311-1F321, U+1F324-1F32C,
+    U+1F331-1F335, U+1F337-1F33C, U+1F33E-1F344, U+1F3D4, U+1F3D6,
+    U+1F3DC-1F3DE, U+1F3F5, U+1F400-1F43F, U+1F490, U+1F4A7, U+1F4AB, U+1F4AE,
+    U+1F525, U+1F54A, U+1F573, U+1F577-1F578, U+1F648-1F64A, U+1F940,
+    U+1F980-1F9AE, U+1F9BA, U+1FA90, U+1FAA8, U+1FAB0-1FABD, U+1FABF,
+    U+1FACE-1FACF, U+1FAE7;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2) format("woff2");
-  unicode-range: U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F, U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8, U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF, U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F, U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A, U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3, U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931, U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9, U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.8.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2640, U+2642, U+2695-2696, U+26F7, U+26F9, U+2708, U+2764, U+FE0F,
+    U+1F33E, U+1F373, U+1F37C, U+1F384-1F385, U+1F393, U+1F3A4, U+1F3A8,
+    U+1F3C2-1F3C4, U+1F3C7, U+1F3CA-1F3CC, U+1F3EB, U+1F3ED, U+1F3FB-1F3FF,
+    U+1F466-1F478, U+1F47C, U+1F481-1F483, U+1F486-1F487, U+1F48B, U+1F48F,
+    U+1F491, U+1F4BB-1F4BC, U+1F527, U+1F52C, U+1F574-1F575, U+1F57A,
+    U+1F645-1F647, U+1F64B, U+1F64D-1F64E, U+1F680, U+1F692, U+1F6A3,
+    U+1F6B4-1F6B6, U+1F6C0, U+1F6CC, U+1F91D, U+1F926, U+1F930-1F931,
+    U+1F934-1F93A, U+1F93C-1F93E, U+1F977, U+1F9AF-1F9B3, U+1F9B8-1F9B9,
+    U+1F9BC-1F9BD, U+1F9CC-1F9CF, U+1F9D1-1F9DF, U+1FA82, U+1FAC3-1FAC5;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2) format("woff2");
-  unicode-range: U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728, U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389, U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480, U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB, U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3, U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925, U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0, U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1, U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.9.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+261D, U+2620, U+2639-263A, U+2665, U+270A-270D, U+2728,
+    U+2763-2764, U+2B50, U+FE0F, U+1F31A-1F31F, U+1F32B, U+1F383, U+1F389,
+    U+1F3FB-1F3FF, U+1F440-1F450, U+1F463-1F465, U+1F479-1F47B, U+1F47D-1F480,
+    U+1F485, U+1F48B-1F48C, U+1F493-1F49F, U+1F4A4-1F4A6, U+1F4A8-1F4AB,
+    U+1F4AF, U+1F525, U+1F573, U+1F590, U+1F595-1F596, U+1F5A4, U+1F5E3,
+    U+1F600-1F644, U+1F648-1F64A, U+1F64C, U+1F64F, U+1F90C-1F925,
+    U+1F927-1F92F, U+1F932-1F933, U+1F970-1F976, U+1F978-1F97A, U+1F9A0,
+    U+1F9B4-1F9B7, U+1F9BB, U+1F9BE-1F9BF, U+1F9D0, U+1F9E0-1F9E1,
+    U+1FA75-1FA79, U+1FAC0-1FAC2, U+1FAE0-1FAE6, U+1FAE8, U+1FAF0-1FAF8;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2) format("woff2");
-  unicode-range: U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344, U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525, U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE, U+1F9D1-1F9D2;
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.10.woff2)
+    format("woff2");
+  unicode-range:
+    U+200D, U+2194-2195, U+2640, U+2642, U+26D3, U+27A1, U+FE0F, U+1F344,
+    U+1F34B, U+1F3C3, U+1F3FB-1F3FF, U+1F426, U+1F468-1F469, U+1F4A5, U+1F525,
+    U+1F642, U+1F6B6, U+1F7E9, U+1F7EB, U+1F9AF, U+1F9BC-1F9BD, U+1F9CE,
+    U+1F9D1-1F9D2;
 }
 
 @font-face {
   font-family: "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/notocoloremoji/v34/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFabts6diysYTngZPnMC1MfLd4gw.11.woff2)
+    format("woff2");
   unicode-range: U+1FA89, U+1FA8F, U+1FABE, U+1FAC6, U+1FADC, U+1FADF, U+1FAE9;
 }
 body {
@@ -1159,9 +1372,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -1174,7 +1402,18 @@ body {
     color: rgb(58, 54, 51);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px solid rgb(58, 54, 51);
     border-top-left-radius: 4px;
@@ -1209,7 +1448,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1567,24 +1814,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(58, 54, 51);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(58, 54, 51);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgb(58, 54, 51);
   }
 
@@ -1599,7 +1901,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1635,7 +1938,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1671,7 +1975,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1707,7 +2012,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1743,7 +2049,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1779,7 +2086,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1816,7 +2124,8 @@ body {
     letter-spacing: -0.72px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2266,7 +2575,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2277,7 +2587,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2290,7 +2601,8 @@ body {
     --callout-color: var(--callout-default);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2324,7 +2636,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2335,7 +2648,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2348,7 +2662,8 @@ body {
     --callout-color: var(--callout-summary);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2382,7 +2697,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2393,7 +2709,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2406,7 +2723,8 @@ body {
     --callout-color: var(--callout-info);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2440,7 +2758,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2451,7 +2770,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2464,7 +2784,8 @@ body {
     --callout-color: var(--callout-todo);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2498,7 +2819,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2509,7 +2831,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2522,7 +2845,8 @@ body {
     --callout-color: var(--callout-tip);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2556,7 +2880,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2567,7 +2892,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2580,7 +2906,8 @@ body {
     --callout-color: var(--callout-success);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2614,7 +2941,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2625,7 +2953,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2638,7 +2967,8 @@ body {
     --callout-color: var(--callout-question);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2672,7 +3002,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2683,7 +3014,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2696,7 +3028,8 @@ body {
     --callout-color: var(--callout-warning);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2730,7 +3063,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2741,7 +3075,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2754,7 +3089,8 @@ body {
     --callout-color: var(--callout-error);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2788,7 +3124,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2799,7 +3136,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2812,7 +3150,8 @@ body {
     --callout-color: var(--callout-fail);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2846,7 +3185,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2857,7 +3197,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2870,7 +3211,8 @@ body {
     --callout-color: var(--callout-bug);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2904,7 +3246,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2915,7 +3258,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2928,7 +3272,8 @@ body {
     --callout-color: var(--callout-example);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -2962,7 +3307,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2973,7 +3319,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -2986,7 +3333,8 @@ body {
     --callout-color: var(--callout-quote);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(247, 247, 246) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     mix-blend-mode: normal;
     border: 1px solid rgb(229, 228, 227);
@@ -3020,7 +3368,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3031,7 +3380,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(58, 54, 51);
     padding: 0px;
     padding-block-end: 0px;
@@ -4207,7 +4557,8 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border: 0px solid rgb(58, 54, 51);
@@ -5985,8 +6336,12 @@ body {
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    --font-sans:
+      ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-weight-medium: 500;
     --leading-relaxed: 1.625;
     --radius-md: 0.375rem;
@@ -7232,9 +7587,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -7247,7 +7617,18 @@ html[saved-theme="dark"] {
       color: oklch(0.9901 0.0161 95.22);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: var(--background-modifier-hover);
       border: 0px solid oklch(0.9901 0.0161 95.22);
       border-top-left-radius: 4px;
@@ -7282,7 +7663,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--pill-background);
       color: var(--pill-color);
@@ -7628,7 +8017,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid oklch(0.3651 0.0043 67.5809);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -7640,24 +8032,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: oklch(0.9901 0.0161 95.22);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: oklch(0.9901 0.0161 95.22);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: oklch(0.9901 0.0161 95.22);
     }
 
@@ -7672,7 +8121,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7708,7 +8158,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7744,7 +8195,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7780,7 +8232,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7816,7 +8269,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7852,7 +8306,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7889,7 +8344,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.72px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8339,7 +8795,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -8350,7 +8807,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8363,7 +8821,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8397,7 +8856,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -8408,7 +8868,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8421,7 +8882,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8455,10 +8917,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -8466,7 +8932,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8479,7 +8946,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8513,7 +8981,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -8524,7 +8993,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8537,7 +9007,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8571,7 +9042,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -8582,7 +9054,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8595,7 +9068,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8629,7 +9103,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -8640,7 +9115,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8653,7 +9129,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8687,7 +9164,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -8698,7 +9176,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8711,7 +9190,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8745,10 +9225,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -8756,7 +9240,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8769,7 +9254,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8803,7 +9289,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -8814,7 +9301,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8827,7 +9315,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8861,7 +9350,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -8872,7 +9362,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8885,7 +9376,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8919,7 +9411,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -8930,7 +9423,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -8943,7 +9437,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -8977,7 +9472,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8988,7 +9484,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -9001,7 +9498,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -9035,7 +9533,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -9046,7 +9545,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -9059,7 +9559,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.2228 0.0025 67.5819) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.9901 0.0161 95.22);
       mix-blend-mode: normal;
       border: 1px solid rgb(58, 58, 60);
@@ -9093,7 +9594,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -9104,7 +9606,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.9901 0.0161 95.22);
       padding: 0px;
       padding-block-end: 0px;
@@ -9938,7 +10441,9 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--text-normal);
       cursor: var(--cursor);
       font-family:
@@ -10280,7 +10785,8 @@ html[saved-theme="dark"] {
       font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       margin: 0px;
       border: 0px solid oklch(0.9901 0.0161 95.22);
@@ -12058,8 +12564,12 @@ html[saved-theme="dark"] {
       --default-transition-duration: 150ms;
       --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-mono:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+      --font-sans:
+        ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       --font-weight-medium: 500;
       --leading-relaxed: 1.625;
       --radius-md: 0.375rem;
@@ -12838,7 +13348,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

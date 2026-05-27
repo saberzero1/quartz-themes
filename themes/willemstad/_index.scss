@@ -21,7 +21,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -61,7 +62,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -87,14 +91,21 @@
   --icon-xs-stroke-width: 2px !important;
   --callout-gap: 0.5em;
   --checkbox-margin-inline-end: 0.25em !important;
-  --callout-border-base-width: var(--callout-border-base-width-override, var(--callout-border-base-width-preset, 0px));
+  --callout-border-base-width: var(
+    --callout-border-base-width-override,
+    var(--callout-border-base-width-preset, 0px)
+  );
   --callout-border-left-extra: 5px;
-  --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
+  --callout-border-left-width: calc(
+    var(--callout-border-other-width) + var(--callout-border-left-extra)
+  );
   --callout-border-other-width: var(--callout-border-base-width);
   --callout-columns-margin-top: var(--margin-callout);
   --callout-title-gap: 0.75em;
   --icon-diff: calc(var(--header-icon-size) - var(--tab-icon-size)) !important;
-  --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size)) !important;
+  --icon-diff-sidebar: calc(
+    var(--sidebar-icon-size) - var(--header-icon-size)
+  ) !important;
   --icon-width-sidebar: 24% !important;
 
   --shape-roundish: 6px;
@@ -284,7 +295,17 @@
   --gap-callouts-img-grid: 4px;
   --cssc-banner-height: 200px;
   --cssc-banner-residual: 0px;
-  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0 0 0 / 0.8) 75%, oklch(0 0 0 / 0.5) 80%, oklch(0 0 0 / 0.3) 85%, oklch(0 0 0 / 0.15) 90%, oklch(0 0 0 / 0.08) 95%, transparent 100%);
+  --cssc-banner-gradient-mask: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    oklch(0 0 0 / 0.8) 75%,
+    oklch(0 0 0 / 0.5) 80%,
+    oklch(0 0 0 / 0.3) 85%,
+    oklch(0 0 0 / 0.15) 90%,
+    oklch(0 0 0 / 0.08) 95%,
+    transparent 100%
+  );
   --aside-text-align: left;
   --aside-float: right;
   --aside-infobox-float: right;
@@ -332,7 +353,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -372,7 +394,10 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -398,14 +423,21 @@
   --icon-xs-stroke-width: 2px !important;
   --callout-gap: 0.5em;
   --checkbox-margin-inline-end: 0.25em !important;
-  --callout-border-base-width: var(--callout-border-base-width-override, var(--callout-border-base-width-preset, 0px));
+  --callout-border-base-width: var(
+    --callout-border-base-width-override,
+    var(--callout-border-base-width-preset, 0px)
+  );
   --callout-border-left-extra: 5px;
-  --callout-border-left-width: calc(var(--callout-border-other-width) + var(--callout-border-left-extra));
+  --callout-border-left-width: calc(
+    var(--callout-border-other-width) + var(--callout-border-left-extra)
+  );
   --callout-border-other-width: var(--callout-border-base-width);
   --callout-columns-margin-top: var(--margin-callout);
   --callout-title-gap: 0.75em;
   --icon-diff: calc(var(--header-icon-size) - var(--tab-icon-size)) !important;
-  --icon-diff-sidebar: calc(var(--sidebar-icon-size) - var(--header-icon-size)) !important;
+  --icon-diff-sidebar: calc(
+    var(--sidebar-icon-size) - var(--header-icon-size)
+  ) !important;
   --icon-width-sidebar: 24% !important;
 
   --shape-roundish: 6px;
@@ -595,7 +627,17 @@
   --gap-callouts-img-grid: 4px;
   --cssc-banner-height: 200px;
   --cssc-banner-residual: 0px;
-  --cssc-banner-gradient-mask: linear-gradient(to bottom, black 0%, black 50%, oklch(0 0 0 / 0.8) 75%, oklch(0 0 0 / 0.5) 80%, oklch(0 0 0 / 0.3) 85%, oklch(0 0 0 / 0.15) 90%, oklch(0 0 0 / 0.08) 95%, transparent 100%);
+  --cssc-banner-gradient-mask: linear-gradient(
+    to bottom,
+    black 0%,
+    black 50%,
+    oklch(0 0 0 / 0.8) 75%,
+    oklch(0 0 0 / 0.5) 80%,
+    oklch(0 0 0 / 0.3) 85%,
+    oklch(0 0 0 / 0.15) 90%,
+    oklch(0 0 0 / 0.08) 95%,
+    transparent 100%
+  );
   --aside-text-align: left;
   --aside-float: right;
   --aside-infobox-float: right;
@@ -661,103 +703,120 @@ html {
   font-family: "Inter 4.1";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/inter-4-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/inter-4-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Inter 4.1";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/inter-4-1-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/inter-4-1-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/manrope.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/manrope.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-sans.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-sans.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-sans-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-sans-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/crimson-pro.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/crimson-pro.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Crimson Pro";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/crimson-pro-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/crimson-pro-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-4.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "DM Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-5.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/dm-mono-5.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "MathJax Main";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/mathjax-main-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "remixicon";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/remixicon.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/willemstad/remixicon.woff2")
+    format("woff2");
 }
 
 body {
@@ -805,7 +864,10 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: var(--link-weight);
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline;
@@ -834,7 +896,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: var(--link-weight);
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline;
@@ -862,7 +927,10 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: var(--link-weight);
     outline: oklch(0.4014 0.0638 202.51) none 0px;
     text-decoration: underline oklch(0.707 0.1737 155.3 / 0.3);
@@ -907,7 +975,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-weight: 400;
     outline: oklch(0.3 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -935,7 +1005,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -963,7 +1036,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -991,7 +1067,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1019,7 +1098,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1122,7 +1204,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 600;
     outline: oklch(0 0 0) none 0px;
     text-decoration-color: oklch(0 0 0);
@@ -1147,11 +1232,18 @@ body {
       calc(var(--padding-highlight-LR) * -1) 0 0 var(--col-highlight-col),
       0 var(--padding-highlight-TB) 0 var(--col-highlight-col),
       0 calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col),
-      var(--padding-highlight-LR) var(--padding-highlight-TB) 0 var(--col-highlight-col),
-      calc(var(--padding-highlight-LR) * -1) var(--padding-highlight-TB) 0 var(--col-highlight-col),
-      var(--padding-highlight-LR) calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col),
-      calc(var(--padding-highlight-LR) * -1) calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      var(--padding-highlight-LR) var(--padding-highlight-TB) 0
+        var(--col-highlight-col),
+      calc(var(--padding-highlight-LR) * -1) var(--padding-highlight-TB) 0
+        var(--col-highlight-col),
+      var(--padding-highlight-LR) calc(var(--padding-highlight-TB) * -1) 0
+        var(--col-highlight-col),
+      calc(var(--padding-highlight-LR) * -1)
+        calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col);
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: rgb(0, 0, 0) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -1178,7 +1270,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: line-through;
@@ -1198,9 +1293,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -1213,7 +1323,18 @@ body {
     color: oklch(0 0 0);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px oklch(0 0 0);
     border-top-left-radius: 3px;
@@ -1248,12 +1369,22 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--tag-background);
     color: var(--pill-color);
     display: flex;
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-size: 14px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -1452,7 +1583,10 @@ body {
   blockquote {
     background-color: var(--blockquote-background-color);
     color: var(--blockquote-color);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
@@ -1482,7 +1616,9 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--text-normal);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
   }
 
   .search > .search-container > .search-space {
@@ -1521,7 +1657,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     font-weight: 400;
     outline: oklch(0 0 0) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1554,24 +1693,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: oklch(0 0 0);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: oklch(0 0 0);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: oklch(0 0 0);
   }
 
@@ -1586,7 +1780,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: var(--col-h1-bg);
     background-image: none;
-    background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 4.32px 7.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1619,7 +1814,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: var(--col-h2-bg);
     background-image: none;
-    background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 3.84px 6.4px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1652,7 +1848,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: var(--col-h3-bg);
     background-image: none;
-    background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 3.48px 5.8px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1685,7 +1882,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: var(--col-h4-bg);
     background-image: none;
-    background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 3.12px 5.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1718,7 +1916,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: var(--col-h5-bg);
     background-image: none;
-    background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 2.76px 4.6px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1751,7 +1950,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: var(--col-h6-bg);
     background-image: none;
-    background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     padding: 2.52px 4.2px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1785,7 +1985,8 @@ body {
     letter-spacing: -0.432px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2239,7 +2440,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2250,7 +2452,8 @@ body {
   .callout > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2263,7 +2466,8 @@ body {
     --callout-color: 0, 191, 111;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.706977 0.17372 155.298);
@@ -2298,7 +2502,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2309,7 +2514,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2322,7 +2528,8 @@ body {
     --callout-color: 91, 197, 219;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(91, 197, 219, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(91, 197, 219, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.769486 0.101807 213.336);
@@ -2357,7 +2564,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2368,7 +2576,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2381,7 +2590,8 @@ body {
     --callout-color: 0, 170, 199;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.679659 0.12046 215.674);
@@ -2416,7 +2626,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2427,7 +2638,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2440,7 +2652,8 @@ body {
     --callout-color: 0, 170, 199;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.679659 0.12046 215.674);
@@ -2475,7 +2688,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2486,7 +2700,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2499,7 +2714,8 @@ body {
     --callout-color: 34, 148, 1;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(34, 148, 1, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(34, 148, 1, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.581688 0.190619 140.918);
@@ -2534,7 +2750,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2545,7 +2762,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2558,7 +2776,8 @@ body {
     --callout-color: 0, 158, 76;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(0, 158, 76, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 158, 76, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.611776 0.164621 150.979);
@@ -2593,7 +2812,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2604,7 +2824,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2617,7 +2838,8 @@ body {
     --callout-color: 160, 199, 92;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(160, 199, 92, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(160, 199, 92, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.778581 0.14226 126.137);
@@ -2652,7 +2874,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2663,7 +2886,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2676,7 +2900,8 @@ body {
     --callout-color: 255, 182, 26;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(255, 182, 26, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(255, 182, 26, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.823918 0.166913 78.6263);
@@ -2711,7 +2936,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2722,7 +2948,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2735,7 +2962,8 @@ body {
     --callout-color: 241, 0, 34;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.603113 0.245165 26.0478);
@@ -2770,7 +2998,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2781,7 +3010,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2794,7 +3024,8 @@ body {
     --callout-color: 161, 40, 100;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(161, 40, 100, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(161, 40, 100, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.486198 0.165246 354.992);
@@ -2829,7 +3060,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2840,7 +3072,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2853,7 +3086,8 @@ body {
     --callout-color: 164, 103, 80;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.574678 0.0862167 41.3581);
@@ -2888,7 +3122,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2899,7 +3134,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2912,7 +3148,8 @@ body {
     --callout-color: 125, 84, 178;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(125, 84, 178, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(125, 84, 178, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.533426 0.145746 301.824);
@@ -2947,7 +3184,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2958,7 +3196,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -2971,7 +3210,8 @@ body {
     --callout-color: 161, 169, 173;
     background-color: rgb(var(--callout-color), 0.125);
     background-image: none;
-    background: rgba(161, 169, 173, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(161, 169, 173, 0.125) none repeat scroll 0% 0% / auto
+      padding-box border-box;
     color: oklch(0 0 0);
     mix-blend-mode: normal;
     border: 0px solid oklch(0.729638 0.0107493 229.031);
@@ -3006,7 +3246,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3017,7 +3258,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.98 0 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: oklch(0 0 0);
     padding: 6px 8px;
     padding-block-end: 0px;
@@ -3030,7 +3272,10 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     table-layout: auto;
     text-align: start;
     border: 0px rgb(128, 128, 128);
@@ -3193,7 +3438,9 @@ body {
 
   figcaption {
     color: oklch(0 0 0);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -3296,7 +3543,10 @@ body {
   .metadata {
     background-color: var(--background-primary-alt);
     color: var(--text-muted);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     border: 0px solid oklch(0.8 0 0);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -3309,7 +3559,10 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.3 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     border-color: oklch(0.3 0 0);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -3323,7 +3576,10 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: oklch(0.3 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     border-color: oklch(0.3 0 0);
     border-width: 0px;
     border-top-left-radius: 3px;
@@ -3380,7 +3636,9 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     border: 0px solid oklch(0.3 0 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3499,7 +3757,10 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -3519,7 +3780,10 @@ body {
   dd {
     color: oklch(0 0 0);
     font-size: 16px;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3673,11 +3937,17 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
   }
 
   .katex > .katex-html {
@@ -3728,7 +3998,9 @@ body {
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
     cursor: var(--cursor);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
@@ -3736,7 +4008,9 @@ body {
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
     cursor: var(--cursor);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-weight: var(--nav-item-weight);
     text-decoration: rgb(34, 34, 34);
   }
@@ -3747,7 +4021,9 @@ body {
 
   .explorer .folder-container > div {
     color: oklch(0.3 0 0);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-weight: var(--font-weight-nav-folder);
   }
 
@@ -3842,7 +4118,9 @@ body {
   footer {
     background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
@@ -3860,7 +4138,9 @@ body {
 
   .recent-notes > h3 {
     color: oklch(0 0 0);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-weight: 400;
   }
 
@@ -3881,7 +4161,9 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: oklch(0.3 0 0);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
   }
 
   ul.section-ul {
@@ -3910,7 +4192,9 @@ body {
 
   li.section-li > .section .meta {
     color: oklch(0.3 0 0);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
   }
 
   .darkmode {
@@ -3943,7 +4227,9 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
   }
 
   .navigation-progress {
@@ -3952,12 +4238,15 @@ body {
 
   .page-header h2.page-title {
     color: var(--text-normal);
-    font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+      Manrope;
     font-size: 13px;
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border-color: oklch(0 0 0);
@@ -4132,7 +4421,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4146,7 +4438,11 @@ body {
     --enable-bw-table: 0;
     margin-bottom: 0px;
     margin-top: 0px;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin-left: var(--aside-margin-left);
     margin-right: var(--aside-margin-right);
@@ -4162,7 +4458,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4174,7 +4473,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.65404 0.172483 326.575);
@@ -4189,7 +4492,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4201,7 +4507,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0 0 0);
@@ -4216,7 +4526,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4228,7 +4541,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.673118 0.0000334402 23.7551 / 0.25);
@@ -4243,7 +4560,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4255,7 +4575,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -4270,7 +4594,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4282,7 +4609,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.65404 0.172483 326.575);
@@ -4297,7 +4628,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4309,7 +4643,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.627693 0.216838 290.176);
@@ -4324,7 +4662,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4336,7 +4677,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.673118 0.0000334402 23.7551 / 0.25);
@@ -4351,7 +4696,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4363,7 +4711,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.550587 0.189745 256.787);
@@ -4378,7 +4730,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4390,7 +4745,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.550587 0.189745 256.787);
@@ -4405,7 +4764,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4417,7 +4779,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.596486 0.0000297456 23.6885);
@@ -4432,7 +4798,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4444,7 +4813,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -4459,7 +4832,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4471,7 +4847,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 0px;
     border: 0px solid oklch(0.375769 0.143473 27.4677);
@@ -4486,7 +4866,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4498,7 +4881,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.375769 0.143473 27.4677);
@@ -4513,7 +4900,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4525,7 +4915,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
@@ -4539,7 +4933,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4551,7 +4948,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -4566,7 +4967,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4578,7 +4982,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.74187 0.228617 142.828);
@@ -4593,7 +5001,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4605,7 +5016,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.74187 0.228617 142.828);
@@ -4620,7 +5035,10 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     color: oklch(0 0 0);
-    font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+    font-family:
+      "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+      "DM Sans", "Inter 4.1", Manrope;
     padding-bottom: var(--size-2-3);
     padding-left: 0px;
     padding-right: 0px;
@@ -4632,7 +5050,11 @@ body {
     --enable-bw-iframe: 0;
     --enable-bw-pdfembed: 0;
     --enable-bw-table: 0;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(var(--callout-color)) 25%,
+      var(--background-primary) 50%
+    );
     line-height: 24px;
     margin: 12px 0px;
     border: 0px solid oklch(0.596486 0.0000297456 23.6885);
@@ -6727,7 +7149,10 @@ html[saved-theme="dark"] {
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: var(--link-weight);
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline;
@@ -6756,7 +7181,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: var(--link-weight);
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline;
@@ -6784,7 +7212,10 @@ html[saved-theme="dark"] {
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: var(--link-weight);
       outline: oklch(0.707 0.1737 155.3) none 0px;
       text-decoration: underline rgba(138, 92, 245, 0.3);
@@ -6829,7 +7260,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-weight: 400;
       outline: oklch(0.68 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6857,7 +7290,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6885,7 +7321,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6913,7 +7352,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6941,7 +7383,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7044,7 +7489,10 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--italic-color);
       cursor: grab;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 600;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration-color: oklch(0.98 0 0);
@@ -7069,11 +7517,18 @@ html[saved-theme="dark"] {
         calc(var(--padding-highlight-LR) * -1) 0 0 var(--col-highlight-col),
         0 var(--padding-highlight-TB) 0 var(--col-highlight-col),
         0 calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col),
-        var(--padding-highlight-LR) var(--padding-highlight-TB) 0 var(--col-highlight-col),
-        calc(var(--padding-highlight-LR) * -1) var(--padding-highlight-TB) 0 var(--col-highlight-col),
-        var(--padding-highlight-LR) calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col),
-        calc(var(--padding-highlight-LR) * -1) calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+        var(--padding-highlight-LR) var(--padding-highlight-TB) 0
+          var(--col-highlight-col),
+        calc(var(--padding-highlight-LR) * -1) var(--padding-highlight-TB) 0
+          var(--col-highlight-col),
+        var(--padding-highlight-LR) calc(var(--padding-highlight-TB) * -1) 0
+          var(--col-highlight-col),
+        calc(var(--padding-highlight-LR) * -1)
+          calc(var(--padding-highlight-TB) * -1) 0 var(--col-highlight-col);
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: rgb(0, 0, 0) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -7100,7 +7555,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: line-through;
@@ -7120,9 +7578,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -7135,7 +7608,18 @@ html[saved-theme="dark"] {
       color: oklch(0.98 0 0);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: var(--background-modifier-hover);
       border: 0px oklch(0.98 0 0);
       border-top-left-radius: 3px;
@@ -7170,12 +7654,22 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--tag-background);
       color: var(--pill-color);
       display: flex;
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-size: 14px;
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
@@ -7374,7 +7868,10 @@ html[saved-theme="dark"] {
     blockquote {
       background-color: var(--blockquote-background-color);
       color: var(--blockquote-color);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       font-style: var(--blockquote-font-style);
       line-height: 24px;
@@ -7404,7 +7901,9 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: var(--text-normal);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
     }
 
     .search > .search-container > .search-space {
@@ -7443,7 +7942,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       font-weight: 400;
       outline: oklch(0.98 0 0) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7464,7 +7966,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 0px solid oklch(0.38 0 0);
       border-top-left-radius: 9px;
       border-top-right-radius: 9px;
@@ -7476,24 +7981,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: oklch(0.98 0 0);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: oklch(0.98 0 0);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: oklch(0.98 0 0);
     }
 
@@ -7508,7 +8070,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: var(--col-h1-bg);
       background-image: none;
-      background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 4.32px 7.2px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7541,7 +8104,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: var(--col-h2-bg);
       background-image: none;
-      background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 3.84px 6.4px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7574,7 +8138,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: var(--col-h3-bg);
       background-image: none;
-      background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 3.48px 5.8px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7607,7 +8172,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: var(--col-h4-bg);
       background-image: none;
-      background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.4014 0.0638 202.51) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 3.12px 5.2px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7640,7 +8206,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: var(--col-h5-bg);
       background-image: none;
-      background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.707 0.1737 155.3) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 2.76px 4.6px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7673,7 +8240,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: var(--col-h6-bg);
       background-image: none;
-      background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.8277 0.1667 79.6) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       padding: 2.52px 4.2px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7707,7 +8275,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.432px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8161,7 +8730,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -8172,7 +8742,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8183,9 +8754,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] {
       --callout-color: 0, 191, 111;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 191, 111, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.706977 0.17372 155.298);
@@ -8220,7 +8796,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -8231,7 +8808,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8242,9 +8820,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] {
       --callout-color: 91, 197, 219;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(91, 197, 219, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(91, 197, 219, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.769486 0.101807 213.336);
@@ -8279,10 +8862,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--text-normal);
       font-weight: var(--font-weight);
     }
@@ -8290,7 +8877,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8301,9 +8889,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] {
       --callout-color: 0, 170, 199;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.679659 0.12046 215.674);
@@ -8338,7 +8931,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -8349,7 +8943,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8360,9 +8955,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] {
       --callout-color: 0, 170, 199;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 170, 199, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.679659 0.12046 215.674);
@@ -8397,7 +8997,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -8408,7 +9009,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8419,9 +9021,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] {
       --callout-color: 34, 148, 1;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(34, 148, 1, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(34, 148, 1, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.581688 0.190619 140.918);
@@ -8456,7 +9063,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -8467,7 +9075,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8480,7 +9089,8 @@ html[saved-theme="dark"] {
       --callout-color: 0, 158, 76;
       background-color: rgb(var(--callout-color), 0.125);
       background-image: none;
-      background: rgba(0, 158, 76, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 158, 76, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: var(--background-primary-alt);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.611776 0.164621 150.979);
@@ -8515,7 +9125,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -8526,7 +9137,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8537,9 +9149,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] {
       --callout-color: 160, 199, 92;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(160, 199, 92, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(160, 199, 92, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.778581 0.14226 126.137);
@@ -8574,10 +9191,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--text-normal);
       font-weight: var(--font-weight);
     }
@@ -8585,7 +9206,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8596,9 +9218,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] {
       --callout-color: 255, 182, 26;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(255, 182, 26, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 182, 26, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.823918 0.166913 78.6263);
@@ -8633,7 +9260,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -8644,7 +9272,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8655,9 +9284,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] {
       --callout-color: 241, 0, 34;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(241, 0, 34, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.603113 0.245165 26.0478);
@@ -8692,7 +9326,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -8703,7 +9338,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8714,9 +9350,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] {
       --callout-color: 161, 40, 100;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(161, 40, 100, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(161, 40, 100, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.486198 0.165246 354.992);
@@ -8751,7 +9392,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -8762,7 +9404,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8773,9 +9416,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] {
       --callout-color: 164, 103, 80;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(164, 103, 80, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.574678 0.0862167 41.3581);
@@ -8810,7 +9458,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8821,7 +9470,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8832,9 +9482,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] {
       --callout-color: 125, 84, 178;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(125, 84, 178, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(125, 84, 178, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.533426 0.145746 301.824);
@@ -8869,7 +9524,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -8880,7 +9536,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8891,9 +9548,14 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] {
       --callout-color: 161, 169, 173;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       background-image: none;
-      background: rgba(161, 169, 173, 0.125) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(161, 169, 173, 0.125) none repeat scroll 0% 0% / auto
+        padding-box border-box;
       color: oklch(0.98 0 0);
       mix-blend-mode: normal;
       border: 0px solid oklch(0.729638 0.0107493 229.031);
@@ -8928,7 +9590,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -8939,7 +9602,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--background-primary-alt);
       background-image: none;
-      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.17 0 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: oklch(0.98 0 0);
       padding: 6px 8px;
       padding-block-end: 0px;
@@ -8952,7 +9616,10 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       table-layout: auto;
       text-align: start;
       border: 0px rgb(128, 128, 128);
@@ -9115,7 +9782,9 @@ html[saved-theme="dark"] {
 
     figcaption {
       color: oklch(0.98 0 0);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-size: 16px;
       font-style: normal;
       text-align: start;
@@ -9218,7 +9887,10 @@ html[saved-theme="dark"] {
     .metadata {
       background-color: var(--background-primary-alt);
       color: var(--text-muted);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       border: 0px solid oklch(0.3 0 0);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -9231,7 +9903,10 @@ html[saved-theme="dark"] {
     .metadata-properties {
       background-color: rgba(0, 0, 0, 0);
       color: oklch(0.68 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       border-color: oklch(0.68 0 0);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -9245,7 +9920,10 @@ html[saved-theme="dark"] {
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
       color: oklch(0.68 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       border-color: oklch(0.68 0 0);
       border-width: 0px;
       border-top-left-radius: 3px;
@@ -9302,7 +9980,9 @@ html[saved-theme="dark"] {
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       border: 0px solid oklch(0.68 0 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9421,7 +10101,10 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       font-size: 16px;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -9441,7 +10124,10 @@ html[saved-theme="dark"] {
     dd {
       color: oklch(0.98 0 0);
       font-size: 16px;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       margin: 0px 0px 0px 40px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -9595,11 +10281,17 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
     }
 
     .katex-display > .katex > .katex-html {
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
     }
 
     .katex > .katex-html {
@@ -9647,10 +10339,14 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
@@ -9658,7 +10354,9 @@ html[saved-theme="dark"] {
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color);
       cursor: var(--cursor);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-weight: var(--nav-item-weight);
       text-decoration: rgb(218, 218, 218);
     }
@@ -9669,7 +10367,9 @@ html[saved-theme="dark"] {
 
     .explorer .folder-container > div {
       color: oklch(0.68 0 0);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-weight: var(--font-weight-nav-folder);
     }
 
@@ -9764,7 +10464,9 @@ html[saved-theme="dark"] {
     footer {
       background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-size: var(--status-bar-font-size);
       text-align: start;
       padding-top: 4px;
@@ -9782,7 +10484,9 @@ html[saved-theme="dark"] {
 
     .recent-notes > h3 {
       color: oklch(0.98 0 0);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-weight: 400;
     }
 
@@ -9803,7 +10507,9 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .meta {
       color: oklch(0.68 0 0);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
     }
 
     ul.section-ul {
@@ -9832,7 +10538,9 @@ html[saved-theme="dark"] {
 
     li.section-li > .section .meta {
       color: oklch(0.68 0 0);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
     }
 
     .darkmode {
@@ -9865,7 +10573,9 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: var(--text-faint);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
     }
 
     .navigation-progress {
@@ -9874,12 +10584,15 @@ html[saved-theme="dark"] {
 
     .page-header h2.page-title {
       color: var(--text-normal);
-      font-family: Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1",
+        Manrope;
       font-size: 13px;
       font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       margin: 0px;
       border-color: oklch(0.98 0 0);
@@ -10048,13 +10761,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="aside"] {
       --callout-color: 0, 191, 111;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10068,7 +10788,11 @@ html[saved-theme="dark"] {
       --enable-bw-table: 0;
       margin-bottom: 0px;
       margin-top: 0px;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin-left: var(--aside-margin-left);
       margin-right: var(--aside-margin-right);
@@ -10078,13 +10802,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="attachment"] {
       --callout-color: 197, 101, 199;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10096,7 +10827,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.65404 0.172483 326.575);
@@ -10105,13 +10840,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="code"] {
       --callout-color: 0, 0, 0;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10123,7 +10865,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0 0 0);
@@ -10138,7 +10884,10 @@ html[saved-theme="dark"] {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10150,7 +10899,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.673118 0.0000334402 23.7551 / 0.25);
@@ -10159,13 +10912,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="email"] {
       --callout-color: 250, 121, 33;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10177,7 +10937,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -10186,13 +10950,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="file"] {
       --callout-color: 197, 101, 199;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10204,7 +10975,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.65404 0.172483 326.575);
@@ -10213,13 +10988,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="goal"] {
       --callout-color: 140, 102, 255;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10231,7 +11013,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.627693 0.216838 290.176);
@@ -10246,7 +11032,10 @@ html[saved-theme="dark"] {
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10258,7 +11047,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.673118 0.0000334402 23.7551 / 0.25);
@@ -10267,13 +11060,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="infobox"] {
       --callout-color: var(--callout-default);
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10285,7 +11085,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.602893 0.217554 257.503);
@@ -10294,13 +11098,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="kanban"] {
       --callout-color: var(--callout-default);
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10312,7 +11123,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.602893 0.217554 257.503);
@@ -10321,13 +11136,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="link"] {
       --callout-color: 127, 127, 127;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10339,7 +11161,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.596486 0.0000297456 23.6885);
@@ -10348,13 +11174,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="mail"] {
       --callout-color: 250, 121, 33;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10366,7 +11199,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -10375,13 +11212,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="minus"] {
       --callout-color: 124, 13, 14;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10393,7 +11237,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 0px;
       border: 0px solid oklch(0.375769 0.143473 27.4677);
@@ -10402,13 +11250,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="negative"] {
       --callout-color: 124, 13, 14;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10420,7 +11275,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.375769 0.143473 27.4677);
@@ -10429,13 +11288,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note-toolbar"] {
       --callout-color: var(--callout-default);
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10447,7 +11313,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
@@ -10455,13 +11325,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="phone"] {
       --callout-color: 250, 121, 33;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10473,7 +11350,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.715428 0.181466 48.6451);
@@ -10482,13 +11363,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="plus"] {
       --callout-color: 50, 205, 50;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10500,7 +11388,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.74187 0.228617 142.828);
@@ -10509,13 +11401,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="positive"] {
       --callout-color: 50, 205, 50;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10527,7 +11426,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.74187 0.228617 142.828);
@@ -10536,13 +11439,20 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="url"] {
       --callout-color: 127, 127, 127;
-      background-color: color-mix(in lab, black 75%, rgb(var(--callout-color)) 25%);
+      background-color: color-mix(
+        in lab,
+        black 75%,
+        rgb(var(--callout-color)) 25%
+      );
       border-bottom-left-radius: 3px;
       border-bottom-right-radius: 3px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       color: oklch(0.98 0 0);
-      font-family: "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1", "DM Sans", "Inter 4.1", Manrope;
+      font-family:
+        "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", "DM Sans", "Inter 4.1", Manrope, "Inter 4.1",
+        "DM Sans", "Inter 4.1", Manrope;
       padding-bottom: var(--size-2-3);
       padding-left: 0px;
       padding-right: 0px;
@@ -10554,7 +11464,11 @@ html[saved-theme="dark"] {
       --enable-bw-iframe: 0;
       --enable-bw-pdfembed: 0;
       --enable-bw-table: 0;
-      --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(var(--callout-color)) 25%,
+        var(--background-primary) 50%
+      );
       line-height: 24px;
       margin: 12px 0px;
       border: 0px solid oklch(0.596486 0.0000297456 23.6885);
@@ -12710,7 +13624,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
@@ -13129,99 +14046,251 @@ blockquote.callout {
   }
 
   &[data-callout="aside"] {
-    --color: rgb(var(--callout-aside, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-aside, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-aside, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-aside, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-aside, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-aside, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="attachment"] {
-    --color: rgb(var(--callout-attachment, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-attachment, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-attachment, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-attachment, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-attachment, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-attachment, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="code"] {
-    --color: rgb(var(--callout-code, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-code, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-code, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-code, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-code, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-code, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="columns"] {
-    --color: rgb(var(--callout-columns, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-columns, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-columns, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-columns, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-columns, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-columns, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="email"] {
-    --color: rgb(var(--callout-email, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-email, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-email, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-email, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-email, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-email, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="file"] {
-    --color: rgb(var(--callout-file, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-file, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-file, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-file, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-file, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-file, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="goal"] {
-    --color: rgb(var(--callout-goal, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-goal, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-goal, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-goal, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-goal, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-goal, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="images"] {
-    --color: rgb(var(--callout-images, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-images, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-images, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-images, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-images, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-images, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="infobox"] {
-    --color: rgb(var(--callout-infobox, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-infobox, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-infobox, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-infobox, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="kanban"] {
-    --color: rgb(var(--callout-kanban, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-kanban, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-kanban, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-kanban, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-kanban, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-kanban, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="link"] {
-    --color: rgb(var(--callout-link, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-link, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-link, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-link, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-link, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-link, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="mail"] {
-    --color: rgb(var(--callout-mail, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-mail, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-mail, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-mail, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-mail, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-mail, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="minus"] {
-    --color: rgb(var(--callout-minus, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-minus, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-minus, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-minus, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-minus, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-minus, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="negative"] {
-    --color: rgb(var(--callout-negative, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-negative, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-negative, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-negative, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-negative, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-negative, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="note-toolbar"] {
-    --color: rgb(var(--callout-note-toolbar, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-note-toolbar, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-note-toolbar, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-note-toolbar, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-note-toolbar, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-note-toolbar, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="phone"] {
-    --color: rgb(var(--callout-phone, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-phone, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-phone, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-phone, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-phone, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-phone, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="plus"] {
-    --color: rgb(var(--callout-plus, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-plus, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-plus, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-plus, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-plus, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-plus, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="positive"] {
-    --color: rgb(var(--callout-positive, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-positive, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-positive, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-positive, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-positive, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-positive, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
   &[data-callout="url"] {
-    --color: rgb(var(--callout-url, var(--callout-default, 2, 122, 255))) !important;
-    --border: rgba(var(--callout-url, var(--callout-default, 2, 122, 255)), 0.267) !important;
-    --bg: rgba(var(--callout-url, var(--callout-default, 2, 122, 255)), 0.063) !important;
+    --color: rgb(
+      var(--callout-url, var(--callout-default, 2, 122, 255))
+    ) !important;
+    --border: rgba(
+      var(--callout-url, var(--callout-default, 2, 122, 255)),
+      0.267
+    ) !important;
+    --bg: rgba(
+      var(--callout-url, var(--callout-default, 2, 122, 255)),
+      0.063
+    ) !important;
   }
 }
 

@@ -21,7 +21,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -109,7 +110,8 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -215,73 +217,85 @@ html {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-1.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-1.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-2.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-2.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-3.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-3.woff")
+    format("woff");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/ia-writer-duospace-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-4.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-4.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-5.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-5.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-6.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-6.woff")
+    format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-7.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/notation-2/lyon-text-7.woff")
+    format("woff");
 }
 
 body {
@@ -329,7 +343,9 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: var(--link-weight);
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: underline;
@@ -358,7 +374,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: var(--link-weight);
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: underline 1px rgba(55, 53, 47, 0.14);
@@ -386,7 +404,9 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: var(--link-weight);
     outline: rgba(55, 53, 47, 0.7) none 0px;
     text-decoration: underline 1px rgba(55, 53, 47, 0.14);
@@ -431,7 +451,10 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.7) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -459,7 +482,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -487,7 +512,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -515,7 +542,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -543,7 +572,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -646,7 +677,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 600;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration-color: rgba(55, 53, 47, 0.9);
@@ -667,7 +700,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -694,7 +729,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: line-through;
@@ -714,9 +751,24 @@ body {
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -729,7 +781,18 @@ body {
     color: rgba(55, 53, 47, 0.9);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: var(--background-modifier-hover);
     border: 0px rgba(55, 53, 47, 0.9);
     border-top-left-radius: 3px;
@@ -744,7 +807,8 @@ body {
   }
 
   hr {
-    border-color: rgb(128, 128, 128) rgba(55, 53, 47, 0.14) rgba(55, 53, 47, 0.14);
+    border-color: rgb(128, 128, 128) rgba(55, 53, 47, 0.14)
+      rgba(55, 53, 47, 0.14);
     border-style: solid solid none none;
     border-width: 0px 1px 0px 0px;
     border-top-left-radius: 0px;
@@ -764,12 +828,23 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--tag-1-default);
     color: var(--text-normal);
     display: flex;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: var(--font-ui-smaller);
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -968,7 +1043,9 @@ body {
   blockquote {
     background-color: var(--blockquote-background-color);
     color: var(--blockquote-color);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 26.4px;
@@ -998,7 +1075,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--text-normal);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
   }
 
   .search > .search-container > .search-space {
@@ -1037,7 +1117,9 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 400;
     outline: rgba(55, 53, 47, 0.9) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1070,24 +1152,79 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgba(55, 53, 47, 0.9);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgba(55, 53, 47, 0.9);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: rgba(55, 53, 47, 0.9);
   }
 
@@ -1102,7 +1239,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: var(--h1-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1135,7 +1273,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: var(--h2-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1168,7 +1307,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: var(--h3-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1201,7 +1341,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: var(--h4-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1234,7 +1375,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: var(--h5-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1267,7 +1409,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: var(--h6-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1301,7 +1444,8 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 10px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1751,7 +1895,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -1762,7 +1907,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -1775,7 +1921,8 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -1809,7 +1956,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -1820,7 +1968,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -1833,7 +1982,8 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -1867,7 +2017,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -1878,7 +2029,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -1891,7 +2043,8 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -1925,7 +2078,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -1936,7 +2090,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -1949,7 +2104,8 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -1983,7 +2139,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -1994,7 +2151,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2007,7 +2165,8 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2041,7 +2200,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2052,7 +2212,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2065,7 +2226,8 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2099,7 +2261,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2110,7 +2273,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2123,7 +2287,8 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2157,7 +2322,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2168,7 +2334,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2181,7 +2348,8 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2215,7 +2383,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2226,7 +2395,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2239,7 +2409,8 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2273,7 +2444,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2284,7 +2456,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2297,7 +2470,8 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2331,7 +2505,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2342,7 +2517,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2355,7 +2531,8 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2389,7 +2566,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -2400,7 +2578,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2413,7 +2592,8 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2447,7 +2627,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -2458,7 +2639,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2471,7 +2653,8 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     mix-blend-mode: normal;
     border: 1px solid rgba(55, 53, 47, 0.14);
@@ -2505,7 +2688,8 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -2516,7 +2700,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgba(55, 53, 47, 0.9);
     padding: 0px 0px 0px 36.8px;
     padding-block-end: 0px;
@@ -2529,7 +2714,9 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgba(55, 53, 47, 0.9);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     table-layout: auto;
     text-align: left;
     border: 0px rgb(128, 128, 128);
@@ -2579,7 +2766,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width) solid rgba(55, 53, 47, 0.14);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(55, 53, 47, 0.14);
     border-right: 1px solid rgba(55, 53, 47, 0.14);
     border-top: var(--table-header-border-width) solid rgba(55, 53, 47, 0.14);
     border-bottom: 1px solid rgba(55, 53, 47, 0.14);
@@ -2607,7 +2795,8 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     border: 1px solid rgba(55, 53, 47, 0.14);
-    border-left: var(--table-column-first-border-width) solid rgba(55, 53, 47, 0.14);
+    border-left: var(--table-column-first-border-width) solid
+      rgba(55, 53, 47, 0.14);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2692,7 +2881,10 @@ body {
 
   figcaption {
     color: rgba(55, 53, 47, 0.9);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -2797,7 +2989,9 @@ body {
   .metadata {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     border-color: rgba(55, 53, 47, 0.14);
     border-style: solid;
     border-width: 1px 0px;
@@ -2812,7 +3006,9 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: rgba(55, 53, 47, 0.7);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     border-color: rgba(55, 53, 47, 0.7);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -2826,7 +3022,9 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: rgba(55, 53, 47, 0.7);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     border-color: rgba(55, 53, 47, 0.7);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -2883,7 +3081,10 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     border: 0px solid rgba(55, 53, 47, 0.7);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3002,7 +3203,9 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -3022,7 +3225,9 @@ body {
   dd {
     color: rgba(55, 53, 47, 0.9);
     font-size: 16px;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -3176,11 +3381,15 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .katex-display > .katex > .katex-html {
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
   .katex > .katex-html {
@@ -3231,7 +3440,10 @@ body {
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--text-muted);
     cursor: var(--cursor);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-weight: var(--font-bold);
     text-decoration: rgb(34, 34, 34);
   }
@@ -3239,7 +3451,10 @@ body {
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--text-muted);
     cursor: var(--cursor);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-weight: var(--font-bold);
     text-decoration: rgb(34, 34, 34);
   }
@@ -3250,7 +3465,10 @@ body {
 
   .explorer .folder-container > div {
     color: rgba(55, 53, 47, 0.7);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-weight: 500;
   }
 
@@ -3345,7 +3563,10 @@ body {
   footer {
     background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
@@ -3363,7 +3584,10 @@ body {
 
   .recent-notes > h3 {
     color: rgba(55, 53, 47, 0.9);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-weight: 400;
   }
 
@@ -3384,7 +3608,10 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: rgba(55, 53, 47, 0.7);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
   }
 
   ul.section-ul {
@@ -3413,7 +3640,10 @@ body {
 
   li.section-li > .section .meta {
     color: rgba(55, 53, 47, 0.7);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
   }
 
   .darkmode {
@@ -3446,7 +3676,10 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
   }
 
   .navigation-progress {
@@ -3455,12 +3688,16 @@ body {
 
   .page-header h2.page-title {
     color: var(--text-normal);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+      "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+      "Segoe UI Symbol";
     font-size: 41.2832px;
     font-weight: 700;
     line-height: 53.6682px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgba(55, 53, 47, 0.9);
@@ -3629,10 +3866,16 @@ body {
 
   .callout-title {
     --callout-color: 221, 235, 241;
-    --table-border-color: color-mix(in srgb, rgb(221, 235, 241) 25%, hsl(203, 8%, 100%) 50%);
+    --table-border-color: color-mix(
+      in srgb,
+      rgb(221, 235, 241) 25%,
+      hsl(203, 8%, 100%) 50%
+    );
     border-color: rgba(55, 53, 47, 0.9);
     color: rgba(55, 53, 47, 0.9);
-    font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:
+      system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+      Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: rgba(0, 0, 0, 0);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -5609,7 +5852,9 @@ html[saved-theme="dark"] {
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: var(--link-weight);
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: underline;
@@ -5638,7 +5883,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: var(--link-weight);
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: underline 1px rgba(255, 255, 255, 0.14);
@@ -5666,7 +5913,9 @@ html[saved-theme="dark"] {
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: var(--link-weight);
       outline: rgba(255, 255, 255, 0.7) none 0px;
       text-decoration: underline 1px rgba(255, 255, 255, 0.14);
@@ -5711,7 +5960,10 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.7) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5739,7 +5991,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5767,7 +6021,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5795,7 +6051,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5823,7 +6081,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -5926,7 +6186,9 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--italic-color);
       cursor: grab;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 600;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration-color: rgba(255, 255, 255, 0.9);
@@ -5947,7 +6209,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -5974,7 +6238,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: line-through;
@@ -5994,9 +6260,24 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: var(--background-modifier-hover);
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
@@ -6009,7 +6290,18 @@ html[saved-theme="dark"] {
       color: rgba(255, 255, 255, 0.9);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: var(--background-modifier-hover);
       border: 0px rgba(255, 255, 255, 0.9);
       border-top-left-radius: 3px;
@@ -6024,7 +6316,8 @@ html[saved-theme="dark"] {
     }
 
     hr {
-      border-color: rgb(128, 128, 128) rgba(255, 255, 255, 0.14) rgba(255, 255, 255, 0.14);
+      border-color: rgb(128, 128, 128) rgba(255, 255, 255, 0.14)
+        rgba(255, 255, 255, 0.14);
       border-style: solid solid none none;
       border-width: 0px 1px 0px 0px;
       border-top-left-radius: 0px;
@@ -6044,12 +6337,23 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--tag-1-default);
       color: var(--text-normal);
       display: flex;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-size: var(--font-ui-smaller);
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
@@ -6248,7 +6552,9 @@ html[saved-theme="dark"] {
     blockquote {
       background-color: var(--blockquote-background-color);
       color: var(--blockquote-color);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       font-style: var(--blockquote-font-style);
       line-height: 26.4px;
@@ -6278,7 +6584,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: var(--text-normal);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
     }
 
     .search > .search-container > .search-space {
@@ -6317,7 +6626,9 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       font-weight: 400;
       outline: rgba(255, 255, 255, 0.9) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6338,7 +6649,10 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout.display-results {
       border: 1px solid rgb(83, 83, 83);
       border-top-left-radius: 12px;
       border-top-right-radius: 12px;
@@ -6350,24 +6664,81 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgba(255, 255, 255, 0.9);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: rgba(255, 255, 255, 0.9);
       font-weight: 400;
       background-color: var(--background-modifier-hover);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: rgba(255, 255, 255, 0.9);
     }
 
@@ -6382,7 +6753,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: var(--h1-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6415,7 +6787,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: var(--h2-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6448,7 +6821,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: var(--h3-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6481,7 +6855,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: var(--h4-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6514,7 +6889,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: var(--h5-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6547,7 +6923,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: var(--h6-bg);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6581,7 +6958,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 10px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7031,7 +7409,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -7042,7 +7421,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7055,7 +7435,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7089,7 +7470,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -7100,7 +7482,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7113,7 +7496,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7147,10 +7531,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7158,7 +7546,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7171,7 +7560,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7205,7 +7595,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -7216,7 +7607,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7229,7 +7621,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7263,7 +7656,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -7274,7 +7668,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7287,7 +7682,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7321,7 +7717,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -7332,7 +7729,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7345,7 +7743,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7379,7 +7778,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -7390,7 +7790,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7403,7 +7804,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7437,10 +7839,14 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -7448,7 +7854,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7461,7 +7868,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7495,7 +7903,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -7506,7 +7915,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7519,7 +7929,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7553,7 +7964,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -7564,7 +7976,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7577,7 +7990,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7611,7 +8025,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -7622,7 +8037,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7635,7 +8051,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7669,7 +8086,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -7680,7 +8098,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7693,7 +8112,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7727,7 +8147,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -7738,7 +8159,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7751,7 +8173,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: rgba(var(--callout-color), 0.1);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       mix-blend-mode: normal;
       border: 1px solid rgba(255, 255, 255, 0.14);
@@ -7785,7 +8208,8 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -7796,7 +8220,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgba(255, 255, 255, 0.9);
       padding: 0px 0px 0px 36.8px;
       padding-block-end: 0px;
@@ -7809,7 +8234,9 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: rgba(255, 255, 255, 0.9);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       table-layout: auto;
       text-align: left;
       border: 0px rgb(128, 128, 128);
@@ -7859,9 +8286,11 @@ html[saved-theme="dark"] {
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width) solid rgba(255, 255, 255, 0.14);
+      border-left: var(--table-column-first-border-width) solid
+        rgba(255, 255, 255, 0.14);
       border-right: 1px solid rgba(255, 255, 255, 0.14);
-      border-top: var(--table-header-border-width) solid rgba(255, 255, 255, 0.14);
+      border-top: var(--table-header-border-width) solid
+        rgba(255, 255, 255, 0.14);
       border-bottom: 1px solid rgba(255, 255, 255, 0.14);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7887,7 +8316,8 @@ html[saved-theme="dark"] {
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       border: 1px solid rgba(255, 255, 255, 0.14);
-      border-left: var(--table-column-first-border-width) solid rgba(255, 255, 255, 0.14);
+      border-left: var(--table-column-first-border-width) solid
+        rgba(255, 255, 255, 0.14);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7972,7 +8402,10 @@ html[saved-theme="dark"] {
 
     figcaption {
       color: rgba(255, 255, 255, 0.9);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-size: 16px;
       font-style: normal;
       text-align: start;
@@ -8077,7 +8510,9 @@ html[saved-theme="dark"] {
     .metadata {
       background-color: var(--metadata-background);
       color: var(--text-muted);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       border-color: rgba(255, 255, 255, 0.14);
       border-style: solid;
       border-width: 1px 0px;
@@ -8092,7 +8527,9 @@ html[saved-theme="dark"] {
     .metadata-properties {
       background-color: rgba(0, 0, 0, 0);
       color: rgba(255, 255, 255, 0.7);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       border-color: rgba(255, 255, 255, 0.7);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -8106,7 +8543,9 @@ html[saved-theme="dark"] {
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
       color: rgba(255, 255, 255, 0.7);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       border-color: rgba(255, 255, 255, 0.7);
       border-width: 0px;
       border-top-left-radius: 6px;
@@ -8163,7 +8602,10 @@ html[saved-theme="dark"] {
     input[type="text"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       border: 0px solid rgba(255, 255, 255, 0.7);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -8282,7 +8724,9 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       font-size: 16px;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8302,7 +8746,9 @@ html[saved-theme="dark"] {
     dd {
       color: rgba(255, 255, 255, 0.9);
       font-size: 16px;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       margin: 0px 0px 0px 40px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -8456,11 +8902,15 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
     .katex-display > .katex > .katex-html {
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
     }
 
     .katex > .katex-html {
@@ -8508,10 +8958,15 @@ html[saved-theme="dark"] {
       transition-timing-function: ease;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--text-muted);
       cursor: var(--cursor);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-weight: var(--font-bold);
       text-decoration: rgb(218, 218, 218);
     }
@@ -8519,7 +8974,10 @@ html[saved-theme="dark"] {
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--text-muted);
       cursor: var(--cursor);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-weight: var(--font-bold);
       text-decoration: rgb(218, 218, 218);
     }
@@ -8530,7 +8988,10 @@ html[saved-theme="dark"] {
 
     .explorer .folder-container > div {
       color: rgba(255, 255, 255, 0.7);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-weight: 500;
     }
 
@@ -8625,7 +9086,10 @@ html[saved-theme="dark"] {
     footer {
       background-color: var(--status-bar-background);
       color: var(--status-bar-text-color);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-size: var(--status-bar-font-size);
       text-align: start;
       padding-top: 4px;
@@ -8643,7 +9107,10 @@ html[saved-theme="dark"] {
 
     .recent-notes > h3 {
       color: rgba(255, 255, 255, 0.9);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-weight: 400;
     }
 
@@ -8664,7 +9131,10 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .meta {
       color: rgba(255, 255, 255, 0.7);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
     }
 
     ul.section-ul {
@@ -8693,7 +9163,10 @@ html[saved-theme="dark"] {
 
     li.section-li > .section .meta {
       color: rgba(255, 255, 255, 0.7);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
     }
 
     .darkmode {
@@ -8726,7 +9199,10 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: var(--text-faint);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
     }
 
     .navigation-progress {
@@ -8735,12 +9211,16 @@ html[saved-theme="dark"] {
 
     .page-header h2.page-title {
       color: var(--text-normal);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+        "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+        "Segoe UI Symbol";
       font-size: 41.2832px;
       font-weight: 700;
       line-height: 53.6682px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       margin: 0px;
       border-color: rgba(255, 255, 255, 0.9);
@@ -8909,10 +9389,16 @@ html[saved-theme="dark"] {
 
     .callout-title {
       --callout-color: 54, 73, 84;
-      --table-border-color: color-mix(in srgb, rgb(54, 73, 84) 25%, hsl(203, 8%, 20%) 50%);
+      --table-border-color: color-mix(
+        in srgb,
+        rgb(54, 73, 84) 25%,
+        hsl(203, 8%, 20%) 50%
+      );
       border-color: rgba(255, 255, 255, 0.9);
       color: rgba(255, 255, 255, 0.9);
-      font-family: system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family:
+        system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji",
+        Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
       background-color: rgba(0, 0, 0, 0);
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
@@ -10950,7 +11436,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }
