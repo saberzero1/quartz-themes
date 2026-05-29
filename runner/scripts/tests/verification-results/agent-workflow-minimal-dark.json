@@ -1,0 +1,19 @@
+{
+  "theme": "minimal",
+  "aspect": "explorer",
+  "mode": "dark",
+  "stages": {
+    "compile": { "status": "pass", "durationMs": 2116 },
+    "generate": { "status": "pass", "durationMs": 1242 },
+    "mappings": {
+      "status": "warn",
+      "total": 14,
+      "fullyMapped": 0,
+      "partiallyMapped": 6,
+      "unmapped": 8
+    },
+    "structure": { "status": "pass", "errors": 0, "warnings": 2 },
+    "crossTheme": { "status": "pass", "checked": 15, "failed": [] }
+  },
+  "overall": "pass"
+}

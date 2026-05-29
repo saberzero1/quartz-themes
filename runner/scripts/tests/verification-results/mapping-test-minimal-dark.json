@@ -1,0 +1,230 @@
+{
+  "theme": "minimal",
+  "mode": "dark",
+  "timestamp": "2026-05-29T04:06:11.533Z",
+  "summary": {
+    "total": 9,
+    "fullyMapped": 1,
+    "partiallyMapped": 4,
+    "unmapped": 4
+  },
+  "aspects": {
+    "tables": {
+      "total": 9,
+      "fullyMapped": 1,
+      "partiallyMapped": 4,
+      "unmapped": 4,
+      "missing": [
+        "tbody tr:nth-child(even):background-color",
+        "tbody tr:nth-child(odd):background-color",
+        "thead th:background-color",
+        "thead th:color",
+        "thead th:font-weight",
+        "thead th:border-color",
+        "tbody tr:background-color"
+      ]
+    }
+  },
+  "details": [
+    {
+      "configIndex": 236,
+      "obsidianSelector": "table",
+      "quartzSelector": "table",
+      "aspect": "tables",
+      "properties": {
+        "background-color": { "status": "missing" },
+        "border-collapse": { "status": "missing" },
+        "border-spacing": { "status": "missing" },
+        "color": { "status": "found", "value": "rgb(209, 209, 209)" },
+        "font-family": { "status": "missing" },
+        "table-layout": { "status": "missing" },
+        "text-align": { "status": "missing" },
+        "border-left-style": { "status": "missing" },
+        "border-bottom-style": { "status": "missing" },
+        "border-right-style": { "status": "missing" },
+        "border-top-style": { "status": "missing" },
+        "border-left-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-right-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-top-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-bottom-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-left-width": { "status": "missing" },
+        "border-right-width": { "status": "missing" },
+        "border-top-width": { "status": "missing" },
+        "border-bottom-width": { "status": "missing" },
+        "border-top-left-radius": { "status": "missing" },
+        "border-top-right-radius": { "status": "missing" },
+        "border-bottom-left-radius": { "status": "missing" },
+        "border-bottom-right-radius": { "status": "missing" },
+        "border-start-start-radius": { "status": "missing" },
+        "border-start-end-radius": { "status": "missing" },
+        "border-end-start-radius": { "status": "missing" },
+        "border-end-end-radius": { "status": "missing" },
+        "margin-top": { "status": "found", "value": "8px" },
+        "margin-bottom": { "status": "missing" },
+        "margin-left": { "status": "missing" },
+        "margin-right": { "status": "missing" },
+        "margin-block-end": { "status": "missing" },
+        "margin-block-start": { "status": "missing" },
+        "margin-inline-end": { "status": "missing" },
+        "margin-inline-start": { "status": "missing" },
+        "padding-top": { "status": "missing" },
+        "padding-bottom": { "status": "missing" },
+        "padding-left": { "status": "missing" },
+        "padding-right": { "status": "missing" },
+        "padding-block-end": { "status": "missing" },
+        "padding-block-start": { "status": "missing" },
+        "padding-inline-end": { "status": "missing" },
+        "padding-inline-start": { "status": "missing" }
+      }
+    },
+    {
+      "configIndex": 237,
+      "obsidianSelector": "thead",
+      "quartzSelector": "thead",
+      "aspect": "tables",
+      "properties": {
+        "background-color": { "status": "missing" },
+        "color": { "status": "found", "value": "rgb(209, 209, 209)" },
+        "font-family": { "status": "missing" },
+        "border-left-style": { "status": "missing" },
+        "border-bottom-style": { "status": "missing" },
+        "border-right-style": { "status": "missing" },
+        "border-top-style": { "status": "missing" },
+        "border-left-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-right-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-top-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-bottom-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-left-width": { "status": "missing" },
+        "border-right-width": { "status": "missing" },
+        "border-top-width": { "status": "missing" },
+        "border-bottom-width": { "status": "missing" },
+        "border-top-left-radius": { "status": "missing" },
+        "border-top-right-radius": { "status": "missing" },
+        "border-bottom-left-radius": { "status": "missing" },
+        "border-bottom-right-radius": { "status": "missing" },
+        "border-start-start-radius": { "status": "missing" },
+        "border-start-end-radius": { "status": "missing" },
+        "border-end-start-radius": { "status": "missing" },
+        "border-end-end-radius": { "status": "missing" }
+      }
+    },
+    {
+      "configIndex": 238,
+      "obsidianSelector": "tbody",
+      "quartzSelector": "tbody",
+      "aspect": "tables",
+      "properties": {
+        "background-color": { "status": "missing" },
+        "color": { "status": "found", "value": "rgb(209, 209, 209)" },
+        "font-family": { "status": "missing" }
+      }
+    },
+    {
+      "configIndex": 242,
+      "obsidianSelector": "tbody tr:nth-child(even)",
+      "quartzSelector": "tbody tr:nth-child(even)",
+      "aspect": "tables",
+      "properties": { "background-color": { "status": "missing" } }
+    },
+    {
+      "configIndex": 243,
+      "obsidianSelector": "tbody tr:nth-child(odd)",
+      "quartzSelector": "tbody tr:nth-child(odd)",
+      "aspect": "tables",
+      "properties": { "background-color": { "status": "missing" } }
+    },
+    {
+      "configIndex": 244,
+      "obsidianSelector": ".table-wrapper",
+      "quartzSelector": ".table-container",
+      "aspect": "tables",
+      "properties": {
+        "background-color": { "status": "missing" },
+        "border-left-style": { "status": "missing" },
+        "border-bottom-style": { "status": "missing" },
+        "border-right-style": { "status": "missing" },
+        "border-top-style": { "status": "missing" },
+        "border-left-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-right-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-top-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-bottom-color": {
+          "status": "found",
+          "value": "rgb(209, 209, 209)"
+        },
+        "border-left-width": { "status": "missing" },
+        "border-right-width": { "status": "missing" },
+        "border-top-width": { "status": "missing" },
+        "border-bottom-width": { "status": "missing" },
+        "border-top-left-radius": { "status": "missing" },
+        "border-top-right-radius": { "status": "missing" },
+        "border-bottom-left-radius": { "status": "missing" },
+        "border-bottom-right-radius": { "status": "missing" },
+        "border-start-start-radius": { "status": "missing" },
+        "border-start-end-radius": { "status": "missing" },
+        "border-end-start-radius": { "status": "missing" },
+        "border-end-end-radius": { "status": "missing" }
+      }
+    },
+    {
+      "configIndex": 270,
+      "obsidianSelector": "table",
+      "quartzSelector": ".bases-table",
+      "aspect": "tables",
+      "properties": {
+        "border-color": { "status": "found", "value": "rgb(209, 209, 209)" }
+      }
+    },
+    {
+      "configIndex": 271,
+      "obsidianSelector": "thead th",
+      "quartzSelector": ".bases-table thead th",
+      "aspect": "tables",
+      "properties": {
+        "background-color": { "status": "missing" },
+        "color": { "status": "missing" },
+        "font-weight": { "status": "missing" },
+        "border-color": { "status": "missing" }
+      }
+    },
+    {
+      "configIndex": 272,
+      "obsidianSelector": "tbody tr",
+      "quartzSelector": ".bases-table tbody tr:nth-child(even)",
+      "aspect": "tables",
+      "properties": { "background-color": { "status": "missing" } }
+    }
+  ]
+}

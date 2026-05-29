@@ -1,0 +1,70 @@
+mode: replace
+sections:
+  - name: Biggs
+    id: biggs
+    collapsed: false
+    settings:
+      - id: biggs-colors
+        title: Accent colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: primary-accent-color
+        title: Primary accent
+        type: variable-color
+        format: hex
+        default: '#3eb7e7'
+        alt-format: []
+      - id: secondary-accent-color
+        title: Secondary accent
+        type: variable-color
+        format: hex
+        default: '#ffd000'
+        alt-format: []
+      - id: tertiary-accent-color
+        title: Tertiary accent
+        type: variable-color
+        format: hex
+        default: '#ffab3e'
+        alt-format: []
+      - id: biggs-headings
+        title: Heading colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: h1-accent-color
+        title: H1 accent
+        type: variable-color
+        format: hex
+        default: '#e85d5d'
+        alt-format: []
+      - id: h2-accent-color
+        title: H2 accent
+        type: variable-color
+        format: hex
+        default: '#d96bd8'
+        alt-format: []
+      - id: h3-accent-color
+        title: H3 accent
+        type: variable-color
+        format: hex
+        default: '#6f83e8'
+        alt-format: []
+      - id: h4-accent-color
+        title: H4 accent
+        type: variable-color
+        format: hex
+        default: '#45b9d0'
+        alt-format: []
+      - id: h5-accent-color
+        title: H5 accent
+        type: variable-color
+        format: hex
+        default: '#55c982'
+        alt-format: []
+      - id: h6-accent-color
+        title: H6 accent
+        type: variable-color
+        format: hex
+        default: '#d2c85a'
+        alt-format: []

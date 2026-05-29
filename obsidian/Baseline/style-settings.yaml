@@ -2305,18 +2305,6 @@ sections:
         type: heading
         level: 2
         collapsed: true
-      - id: media-muted
-        title: Dim media in dark mode
-        type: class-toggle
-      - id: full-width-media-off
-        title: Disable maximized media
-        type: class-toggle
-      - id: zoom-off
-        title: Disable image zoom
-        type: class-toggle
-      - id: img-radius-off
-        title: Disable rounded media
-        type: class-toggle
       - id: img-grid-gap
         title: Image grids spacing
         type: variable-number-slider
@@ -2325,6 +2313,18 @@ sections:
         max: 16
         step: 1
         format: px
+      - id: img-grid
+        title: Always show image grids
+        type: class-toggle
+      - id: media-muted
+        title: Dim media in dark mode
+        type: class-toggle
+      - id: zoom-off
+        title: Disable image zoom
+        type: class-toggle
+      - id: img-radius-off
+        title: Disable rounded media
+        type: class-toggle
       - id: pdf
         title: PDF
         type: heading
@@ -2458,3 +2458,6 @@ sections:
         default-light: '#'
         default-dark: '#'
         alt-format: []
+      - id: full-width-media-off
+        title: Disable maximized media
+        type: class-toggle

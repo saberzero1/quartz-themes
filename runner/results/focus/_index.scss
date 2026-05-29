@@ -21,8 +21,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -62,10 +61,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -119,8 +115,7 @@ html {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/focus/jetbrains-mono.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/focus/jetbrains-mono.woff2") format("woff2");
 }
 
 body {
@@ -163,9 +158,7 @@ body {
   .metadata {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(34, 34, 34);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -178,9 +171,7 @@ body {
   .metadata-properties {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(112, 112, 112);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(112, 112, 112);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -194,9 +185,7 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: rgb(112, 112, 112);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border-color: rgb(112, 112, 112);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -263,9 +252,7 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: underline;
@@ -294,9 +281,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: underline;
@@ -324,9 +309,7 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--link-weight);
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: underline rgba(165, 230, 147, 0.3);
@@ -371,9 +354,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(112, 112, 112) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -401,9 +382,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(165, 230, 147) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -431,9 +410,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(165, 230, 147) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -461,9 +438,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -491,9 +466,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(234, 169, 255) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -596,9 +569,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--color-cyan);
     cursor: grab;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--font-bold);
     outline: rgb(139, 240, 219) none 0px;
     text-decoration-color: rgb(139, 240, 219);
@@ -619,9 +590,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(255, 255, 255) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -648,9 +617,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(80, 80, 80) none 0px;
     text-decoration: line-through;
@@ -684,24 +651,9 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -714,18 +666,7 @@ body {
     color: rgb(144, 144, 144);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(144, 144, 144);
     border-top-left-radius: 0px;
@@ -760,22 +701,12 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
     display: flex;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 14px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -808,9 +739,7 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: var(--text-normal);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .search > .search-container > .search-space {
@@ -849,9 +778,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     outline: rgb(144, 144, 144) none 0px;
     text-decoration: rgb(218, 218, 218);
@@ -884,79 +811,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(144, 144, 144);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(144, 144, 144);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(144, 144, 144);
   }
 
@@ -971,8 +843,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1005,8 +876,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1039,8 +909,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1073,8 +942,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1107,8 +975,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1141,8 +1008,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1176,8 +1042,7 @@ body {
     letter-spacing: -0.43248px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1635,9 +1500,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1657,9 +1520,7 @@ body {
   dd {
     color: rgb(144, 144, 144);
     font-size: 16px;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -1957,9 +1818,7 @@ body {
   blockquote {
     background-color: var(--blockquote-background-color);
     color: var(--blockquote-color);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
@@ -2009,9 +1868,7 @@ body {
   input[type="text"] {
     background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px solid rgb(112, 112, 112);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2132,15 +1989,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .katex > .katex-html {
@@ -2153,15 +2006,12 @@ body {
 
   .page-header h2.page-title {
     color: var(--text-normal);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 13px;
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(144, 144, 144);
@@ -2220,9 +2070,7 @@ body {
     opacity: 1;
     background-color: var(--status-bar-background);
     color: var(--status-bar-text-color);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 4px;
@@ -2326,8 +2174,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2338,8 +2185,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2352,8 +2198,7 @@ body {
     --callout-color: var(--callout-default);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(151, 192, 243);
@@ -2388,8 +2233,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2400,8 +2244,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2414,8 +2257,7 @@ body {
     --callout-color: var(--callout-summary);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(139, 240, 219, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(139, 240, 219, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(139, 240, 219);
@@ -2450,8 +2292,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2462,8 +2303,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2476,8 +2316,7 @@ body {
     --callout-color: var(--callout-info);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(151, 192, 243);
@@ -2512,8 +2351,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2524,8 +2362,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2538,8 +2375,7 @@ body {
     --callout-color: var(--callout-todo);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(151, 192, 243, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(151, 192, 243);
@@ -2574,8 +2410,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2586,8 +2421,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2600,8 +2434,7 @@ body {
     --callout-color: var(--callout-tip);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(139, 240, 219, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(139, 240, 219, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(139, 240, 219);
@@ -2636,8 +2469,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2648,8 +2480,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2662,8 +2493,7 @@ body {
     --callout-color: var(--callout-success);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(165, 230, 147, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(165, 230, 147, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(165, 230, 147);
@@ -2698,8 +2528,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -2710,8 +2539,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2724,8 +2552,7 @@ body {
     --callout-color: var(--callout-question);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(255, 200, 163, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(255, 200, 163, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(255, 200, 163);
@@ -2760,8 +2587,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -2772,8 +2598,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2786,8 +2611,7 @@ body {
     --callout-color: var(--callout-warning);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(255, 200, 163, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(255, 200, 163, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(255, 200, 163);
@@ -2822,8 +2646,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -2834,8 +2657,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2848,8 +2670,7 @@ body {
     --callout-color: var(--callout-error);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(245, 152, 143);
@@ -2884,8 +2705,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -2896,8 +2716,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2910,8 +2729,7 @@ body {
     --callout-color: var(--callout-fail);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(245, 152, 143);
@@ -2946,8 +2764,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -2958,8 +2775,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -2972,8 +2788,7 @@ body {
     --callout-color: var(--callout-bug);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(245, 152, 143, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(245, 152, 143);
@@ -3008,8 +2823,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3020,8 +2834,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -3034,8 +2847,7 @@ body {
     --callout-color: var(--callout-example);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(172, 157, 242, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(172, 157, 242, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(172, 157, 242);
@@ -3070,8 +2882,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3082,8 +2893,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -3096,8 +2906,7 @@ body {
     --callout-color: var(--callout-quote);
     background-color: rgba(var(--callout-color), 0.1);
     background-image: none;
-    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto
-      padding-box border-box;
+    background: rgba(158, 158, 158, 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     mix-blend-mode: normal;
     border: 0px solid rgb(158, 158, 158);
@@ -3132,8 +2941,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3144,8 +2952,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(144, 144, 144);
     padding: 0px;
     padding-block-end: 0px;
@@ -3158,9 +2965,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(144, 144, 144);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     table-layout: auto;
     text-align: start;
     border: 0px rgb(128, 128, 128);
@@ -3186,6 +2991,8 @@ body {
 
   thead {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(144, 144, 144);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3199,6 +3006,8 @@ body {
 
   tbody {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(144, 144, 144);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   th {
@@ -3256,6 +3065,8 @@ body {
 
   tr {
     background-color: var(--table-header-background);
+    color: rgb(144, 144, 144);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3333,9 +3144,7 @@ body {
 
   figcaption {
     color: rgb(144, 144, 144);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -3438,64 +3247,37 @@ body {
   }
 
   .nav-files-container .nav-file-title {
-    color: rgb(218, 218, 218);
-    cursor: auto;
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--nav-item-color);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
-    text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container .nav-file-title.is-active {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
+    color: var(--nav-item-color);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
+    border-color: rgb(112, 112, 112);
+    border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: rgb(218, 218, 218);
-    cursor: auto;
-    transition-behavior: normal;
-    transition-delay: 0s;
-    transition-duration: 0s;
-    transition-property: all;
-    transition-timing-function: ease;
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
-    cursor: var(--cursor);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--nav-item-weight);
-    text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
-    cursor: var(--cursor);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: var(--nav-item-weight);
-    text-decoration: rgb(218, 218, 218);
+  }
+
+  .nav-files-container .collapse-icon {
+    color: var(--nav-item-color);
+    opacity: 1;
   }
 
   .nav-files-container .tree-item-children {
@@ -3504,14 +3286,14 @@ body {
 
   .explorer .folder-container > div {
     color: var(--nav-item-color);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(144, 144, 144);
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .bases-table {
@@ -3577,9 +3359,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(144, 144, 144);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
     font-weight: 400;
   }
 
@@ -3600,9 +3380,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: var(--nav-item-color);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   ul.section-ul {
@@ -3631,9 +3409,7 @@ body {
 
   li.section-li > .section .meta {
     color: var(--nav-item-color);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .darkmode {
@@ -3666,9 +3442,7 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family:
-      "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono",
-      "Source Code Pro", monospace;
+    font-family: "JetBrains Mono", Menlo, SFMono-Regular, Consolas, "Roboto Mono", "Source Code Pro", monospace;
   }
 
   .stacked-page {
@@ -5706,10 +5480,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

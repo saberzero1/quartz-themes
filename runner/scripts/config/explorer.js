@@ -4,36 +4,31 @@ export const aspect = "explorer";
 
 export const entries = [
   {
-    obsidianSelector: `div.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"callouts.md\"]`,
+    // File title text — .nav-file-title-content has color/font across most themes
+    obsidianSelector: `.nav-file-title-content`,
     publishSelector: `.nav-view-outer .tree-item-self a`,
     quartzSelector: ".nav-files-container .nav-file-title",
     pseudoElement: "",
     properties: [
       "color",
-      "cursor",
       "font-family",
       //"font-size",
       "font-weight",
       //"line-height",
-      "text-decoration",
     ],
   },
   {
-    // active
-    obsidianSelector: `div.is-active.is-clickable.nav-file-title.tappable.tree-item-self[data-path=\"integrations.md\"]`,
+    // File title container — .nav-file-title has color/font-family for some themes
+    obsidianSelector: `.nav-file-title`,
     publishSelector: `.nav-view-outer .tree-item-self.mod-active`,
     quartzSelector: ".nav-files-container .nav-file-title.is-active",
     pseudoElement: "",
-    properties: [
-      "background-color",
-      ...defaults.border,
-      "color",
-      "cursor",
-      ...defaults.transition,
-    ],
+    properties: ["color", "font-family", ...defaults.border],
   },
   {
-    // closed
+    // Folder title — closed state
+    // data-path selector exists in extracted data for some themes (its-theme)
+    // but .nav-folder-title-content has broader coverage
     obsidianSelector: `div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]`,
     publishSelector: `.nav-view-outer .nav-view > .tree-item.is-collapsed > .tree-item-children > .tree-item > .tree-item-self`,
     quartzSelector:
@@ -41,16 +36,14 @@ export const entries = [
     pseudoElement: "",
     properties: [
       "color",
-      "cursor",
       "font-family",
       //"font-size",
       "font-weight",
       //"line-height",
-      "text-decoration",
     ],
   },
   {
-    // open
+    // Folder title — open state
     obsidianSelector: `div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]`,
     publishSelector: `.nav-view-outer .nav-view > .tree-item > .tree-item-children > .tree-item > .tree-item-self`,
     quartzSelector:
@@ -58,20 +51,20 @@ export const entries = [
     pseudoElement: "",
     properties: [
       "color",
-      "cursor",
       "font-family",
       //"font-size",
       "font-weight",
       //"line-height",
-      "text-decoration",
     ],
   },
   {
-    obsidianSelector: `.nav-folder-collapse-indicator.collapse-icon svg.svg-icon`,
+    // Collapse indicator — original selector not extracted, use tree-item-self ::before
+    // which carries the collapse icon styling for themes that customize it
+    obsidianSelector: `div.is-clickable.mod-collapsible.tree-item-self`,
     publishSelector: null,
     quartzSelector: ".nav-files-container .collapse-icon",
     pseudoElement: "",
-    properties: ["color", "stroke", "fill", "opacity"],
+    properties: ["color", "opacity"],
   },
   {
     obsidianSelector: `.tree-item-children`,
@@ -93,41 +86,31 @@ export const entries = [
     properties: ["color", "font-family", "font-weight"],
   },
   {
-    obsidianSelector: `.nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content::before`,
+    obsidianSelector: `.nav-folder-title-content::before`,
     publishSelector: null,
     quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer.open) > .folder-container::before",
     pseudoElement: "::before",
     properties: [
-      "content",
-      "font-family",
-      "font-size",
-      "font-weight",
-      "text-align",
       "color",
-      "width",
-      "height",
       "background-color",
-      "background-repeat",
+      "font-family",
+      "font-weight",
+      "opacity",
     ],
   },
   {
-    obsidianSelector: `.nav-folder-children .nav-folder-title .nav-folder-title-content::before`,
+    obsidianSelector: `.nav-folder-title-content::before`,
     publishSelector: null,
     quartzSelector:
       ".explorer .explorer-content li:has(> .folder-outer:not(.open)) > .folder-container::before",
     pseudoElement: "::before",
     properties: [
-      "content",
-      "font-family",
-      "font-size",
-      "font-weight",
-      "text-align",
       "color",
-      "width",
-      "height",
       "background-color",
-      "background-repeat",
+      "font-family",
+      "font-weight",
+      "opacity",
     ],
   },
   {
@@ -136,16 +119,11 @@ export const entries = [
     quartzSelector: ".explorer .explorer-content ul.explorer-ul li > a::before",
     pseudoElement: "::before",
     properties: [
-      "content",
-      "font-family",
-      "font-size",
-      "font-weight",
-      "text-align",
       "color",
-      "width",
-      "height",
       "background-color",
-      "background-repeat",
+      "font-family",
+      "font-weight",
+      "opacity",
     ],
   },
   {
@@ -153,6 +131,6 @@ export const entries = [
     publishSelector: null,
     quartzSelector: ".nav-files-container",
     pseudoElement: "",
-    properties: ["background-color"],
+    properties: ["background-color", "color", "font-family"],
   },
 ];

@@ -30,6 +30,12 @@
       "references": "--i-lt-folder-weight",
       "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
       "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-weight",
+      "references": "--i-lt-folder-weight",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
     }
   ]
 }

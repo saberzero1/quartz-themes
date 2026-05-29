@@ -28,6 +28,14 @@ sections:
             value: preset-orange
           - label: True Glass (100% Transparent)
             value: preset-true-glass
+      - id: glass-opacity
+        title: True Glass Opacity
+        description: Adjust background opacity when True Glass is enabled. 0 = fully transparent.
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.95
+        step: 0.01
       - id: bg-section
         title: 🖼️ Background
         type: heading
@@ -53,8 +61,6 @@ sections:
             value: bg-solid
           - label: Custom Image URL
             value: bg-custom
-          - label: True Glass (100% Transparent)
-            value: bg-glass
       - id: bg-custom-url
         title: Custom Image URL
         description: 'Paste your image URL. Example: url(''https://example.com/photo.jpg''). Works in both Dark and Light mode.'
@@ -108,7 +114,7 @@ sections:
         title: UI Elements Blur
         description: Blur on panels like Command Palette, Settings, and context menus.
         type: variable-number-slider
-        default: 60
+        default: 30
         min: 0
         max: 100
         step: 1
@@ -144,6 +150,15 @@ sections:
         type: heading
         level: 1
         collapsed: false
+      - id: animationspeed
+        title: Animation Speed
+        description: 'Adjust the overall speed of all transitions and animations. Warning: Very long speeds will cause layout delay or micro-stutters.'
+        type: variable-number-slider
+        default: 500
+        min: 150
+        max: 1500
+        step: 50
+        format: ms
       - id: disable-modal-animation
         title: Disable Settings / Modal Animation
         description: Turn off smooth scale + fade when opening any modal or settings window.
@@ -152,6 +167,16 @@ sections:
       - id: disable-splash-screen
         title: Disable Startup Animation (Splash Screen)
         description: Turn off the fade-in and scale-up reveal of the vault workspace on startup.
+        type: class-toggle
+        default: false
+      - id: disable-header-animations
+        title: Disable Header Animations
+        description: Turn off the material pop animation and dynamic padding when focusing headers.
+        type: class-toggle
+        default: false
+      - id: disable-formatting-animations
+        title: Disable Inline Formatting Animations
+        description: Turn off the horizontal push animation for bold, italics, and other inline formatting.
         type: class-toggle
         default: false
       - id: animate-note-open
@@ -167,10 +192,6 @@ sections:
         title: 🧩 Extras
         type: heading
         level: 1
-      - id: disable-drawer-dimming
-        title: Disable Drawer Dimming (beta)
-        description: Removes the dimming and blur effect from sidebars. This only makes sense on mobile devices, when sliding sidebars are enabled.
-        type: class-toggle
       - id: show-scrollbars
         title: Show Scrollbars
         description: Always show scrollbars instead of hiding them until hover.
@@ -205,6 +226,14 @@ sections:
         description: Use the default red color (var(--text-error)) for sync status errors instead of the theme's muted color.
         type: class-toggle
         default: false
+      - id: mobile-exclusive-section
+        title: 📱 Mobile Exclusive
+        type: heading
+        level: 1
+      - id: disable-drawer-dimming
+        title: Disable Drawer Dimming (beta)
+        description: Removes the dimming and blur effect from sidebars. This only makes sense when sliding sidebars are enabled.
+        type: class-toggle
       - id: animate-modal-open
         title: Animate Settings / Modal Opening
         description: Smooth scale + fade when opening any modal or settings window.

@@ -1,0 +1,63 @@
+mode: replace
+sections:
+  - name: Vellum Theme
+    id: vellum-theme
+    collapsed: false
+    settings:
+      - id: vellum-font-size
+        title: Base Font Size
+        type: variable-number-slider
+        default: 16
+        min: 13
+        max: 22
+        step: 1
+        format: px
+        description: Adjust body text size
+      - id: vellum-line-height
+        title: Line Height
+        type: variable-number-slider
+        default: 1.75
+        min: 1.3
+        max: 2.2
+        step: 0.05
+        description: Adjust reading line spacing
+      - id: vellum-max-width
+        title: Content Width
+        type: variable-number-slider
+        default: 720
+        min: 500
+        max: 1100
+        step: 20
+        format: px
+        description: Maximum width of the reading/writing area
+      - id: vellum-sepia-mode
+        title: Sepia Font Mode (Light theme)
+        type: class-toggle
+        default: false
+        addCommand: true
+        description: Switch light theme font from Navy Blue → Warm Brown
+      - id: vellum-light-bg
+        title: Light Background Color
+        type: variable-themed-color
+        opacity: false
+        format: hex
+        default-light: '#F5F0E8'
+        default-dark: '#2E2E2E'
+        description: Customize the main background color
+        alt-format: []
+      - id: vellum-accent-light
+        title: Accent Color (Light)
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#1B2A4A'
+        description: Accent / heading color for light mode
+        alt-format: []
+      - id: vellum-accent-dark
+        title: Accent Color (Dark)
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#C8BC98'
+        description: Accent / interactive color for dark mode
+        alt-format: []

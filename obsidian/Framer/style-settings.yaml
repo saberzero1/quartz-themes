@@ -1,0 +1,198 @@
+mode: replace
+sections:
+  - name: Framer Theme
+    id: framer-theme
+    collapsed: false
+    settings:
+      - id: framer-info
+        title: Framer Design System
+        description: A clean black-and-white theme inspired by Framer's design system, with vivid blue accents and smooth transitions.
+        type: info-text
+        markdown: true
+      - id: appearance
+        title: Appearance
+        type: heading
+        level: 2
+        collapsed: false
+      - id: interface-font
+        title: Interface Font
+        description: Font used for the UI
+        type: variable-text
+        default: Inter
+        options:
+          - Inter
+          - SF Pro
+          - JetBrains Mono
+          - system-ui
+      - id: accent-style
+        title: Accent Style
+        type: class-select
+        allowEmpty: false
+        default: accent-blue
+        options:
+          - label: Classic Blue
+            value: accent-blue
+          - label: Vibrant Cyan
+            value: accent-cyan
+          - label: Purple
+            value: accent-purple
+      - id: animations
+        title: Animations
+        type: heading
+        level: 2
+        collapsed: false
+      - id: reduce-motion
+        title: Reduce Motion
+        description: Disable smooth transitions
+        type: class-toggle
+        default: false
+      - id: features
+        title: Features
+        type: heading
+        level: 2
+        collapsed: false
+      - id: framer-tabs
+        title: Framed Tab Headers
+        description: Add subtle border around tab headers
+        type: class-toggle
+        default: true
+      - id: framer-section-highlight
+        title: Section Highlights
+        description: Show colored left border on active sections in settings
+        type: class-toggle
+        default: true
+      - id: framer-quick-actions
+        title: Quick Actions Style
+        description: Enhanced command palette with Framer Quick Actions look
+        type: class-toggle
+        default: true
+      - id: framer-heading-gradient
+        title: Heading Blue (需要 Style Settings 插件)
+        description: 取消勾选可恢复默认白色标题（当前为默认启用，已在 .theme-dark 中内置）
+        type: class-toggle
+        default: true
+      - id: plugins
+        title: Plugins
+        type: heading
+        level: 2
+        collapsed: true
+      - id: framer-dataview
+        title: Dataview Styling
+        description: Apply Framer styling to Dataview tables
+        type: class-toggle
+        default: true
+      - id: framer-kanban
+        title: Kanban Styling
+        description: Apply Framer styling to Kanban boards
+        type: class-toggle
+        default: true
+      - id: framer-calendar
+        title: Calendar Styling
+        description: Apply Framer styling to Calendar plugin
+        type: class-toggle
+        default: true
+      - id: mobile
+        title: Mobile
+        type: heading
+        level: 2
+        collapsed: true
+      - id: framer-mobile
+        title: Mobile Adaptation
+        description: Apply 13px panel text and 44px touch targets on mobile
+        type: class-toggle
+        default: true
+      - id: canvas
+        title: Canvas
+        type: heading
+        level: 2
+        collapsed: false
+      - id: framer-grid
+        title: Editor Canvas Grid
+        description: Show dot grid background in editor (like Framer canvas)
+        type: class-toggle
+        default: true
+      - id: framer-snap-dots
+        title: Snap Point Indicators
+        description: Show larger dots at grid intersections (simulates snap points)
+        type: class-toggle
+        default: false
+      - id: framer-cursor
+        title: Canvas Crosshair Cursor
+        description: Use crosshair cursor in editor (Framer canvas style)
+        type: class-toggle
+        default: false
+      - id: framer-280
+        title: 280px Property Panel
+        description: Fix right sidebar to 280px width (Framer Property Panel spec)
+        type: class-toggle
+        default: true
+      - id: framer-frame-select
+        title: Frame Selection Outlines
+        description: Show blue selection border on images, code blocks, embeds
+        type: class-toggle
+        default: true
+      - id: framer-drag-indicator
+        title: Drag Insertion Indicator
+        description: Show blue line when dragging files between folders
+        type: class-toggle
+        default: true
+      - id: framer-search
+        title: Component Search
+        description: Style file search like Framer Component Browser
+        type: class-toggle
+        default: true
+      - id: framer-panel-groups
+        title: Property Panel Groups
+        description: Style metadata sections as Layout / Style / Effects groups
+        type: class-toggle
+        default: true
+      - id: framer-compact
+        title: Compact 4px Spacing
+        description: Use tighter 4px-base spacing grid (Framer default)
+        type: class-toggle
+        default: false
+      - id: framer-backlinks
+        title: Backlinks Connection Panel
+        description: Style backlinks panel like Framer connection wires
+        type: class-toggle
+        default: true
+      - id: framer-tags-panel
+        title: Tags as Chips
+        description: Display tags as Framer-style chip badges
+        type: class-toggle
+        default: true
+      - id: framer-reading
+        title: Reading Mode Prose
+        description: Optimize reading mode with max-width and comfortable spacing
+        type: class-toggle
+        default: true
+      - id: framer-line-nums
+        title: Code Panel Line Numbers
+        description: Style editor line numbers like Framer code panel
+        type: class-toggle
+        default: true
+      - id: snippets
+        title: Snippets
+        type: heading
+        level: 2
+        collapsed: false
+      - id: framer-bold-pink
+        title: Bold Pink
+        description: Make bold text pink (#FF69B4) in reading and live preview. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-immersive-red
+        title: Immersive Translate Red Gradient
+        description: Apply red gradient to Immersive Translate plugin results. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-table-minimal
+        title: Minimal Tables
+        description: Full-width tables with auto layout and minimal borders. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-floating-statusbar
+        title: Floating Status Bar
+        description: Status bar slides in from the right on hover. Built-in, always active.
+        type: info-text
+        markdown: true

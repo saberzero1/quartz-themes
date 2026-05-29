@@ -60,6 +60,12 @@
       "references": "--folder-text-2",
       "selector": ".nav-files-container li:has(> .folder-outer.open) > .nav-folder-title",
       "aspect": "explorer"
+    },
+    {
+      "property": "--nav-collapse-icon-color",
+      "references": "--folder-text-2",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
     }
   ]
 }

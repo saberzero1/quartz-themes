@@ -1,0 +1,19 @@
+{
+  "theme": "catppuccin",
+  "aspect": "tables",
+  "mode": "dark",
+  "stages": {
+    "compile": { "status": "pass", "durationMs": 2201 },
+    "generate": { "status": "pass", "durationMs": 791 },
+    "mappings": {
+      "status": "warn",
+      "total": 9,
+      "fullyMapped": 0,
+      "partiallyMapped": 5,
+      "unmapped": 4
+    },
+    "structure": { "status": "pass", "errors": 0, "warnings": 2 },
+    "crossTheme": { "status": "pass", "checked": 15, "failed": [] }
+  },
+  "overall": "pass"
+}

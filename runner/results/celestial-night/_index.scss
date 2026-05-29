@@ -21,8 +21,7 @@
   --callout-fail: var(--color-red-rgb);
   --callout-important: var(--color-cyan-rgb);
   --callout-info: var(--color-blue-rgb);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange-rgb);
   --callout-quote: 158, 158, 158;
   --callout-radius: 2em;
@@ -62,10 +61,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -122,64 +118,55 @@ html {
   font-family: "Bookerly";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly.woff") format("woff");
 }
 @font-face {
   font-family: "Bookerly";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-1.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-1.woff") format("woff");
 }
 @font-face {
   font-family: "Bookerly";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-2.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-2.woff") format("woff");
 }
 @font-face {
   font-family: "Bookerly";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-3.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-3.woff") format("woff");
 }
 @font-face {
   font-family: "Bookerly";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-4.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-4.woff") format("woff");
 }
 @font-face {
   font-family: "Bookerly";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-5.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/bookerly-5.woff") format("woff");
 }
 @font-face {
   font-family: "Hatolie";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/hatolie.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/hatolie.woff2") format("woff2");
 }
 @font-face {
   font-family: "Merienda";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/merienda.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/merienda.woff2") format("woff2");
 }
 @font-face {
   font-family: "Merienda";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/merienda-1.woff2")
-    format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.9/fonts/celestial-night/merienda-1.woff2") format("woff2");
 }
 
 body {
@@ -325,8 +312,7 @@ body {
 
   .note-properties {
     background-color: var(--background-secondary);
-    border-color: rgb(59, 63, 86) rgb(59, 63, 86) rgb(59, 63, 86)
-      rgb(255, 255, 255);
+    border-color: rgb(59, 63, 86) rgb(59, 63, 86) rgb(59, 63, 86) rgb(255, 255, 255);
     border-radius: 20px;
   }
 
@@ -939,24 +925,9 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: var(--background-modifier-hover);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -969,18 +940,7 @@ body {
     color: rgb(205, 209, 223);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: var(--background-modifier-hover);
     border: 0px rgb(205, 209, 223);
     border-top-left-radius: 20px;
@@ -1015,15 +975,7 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--pill-background);
     color: var(--pill-color);
@@ -1177,79 +1129,24 @@ body {
     border-end-end-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(205, 209, 223);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: rgb(205, 209, 223);
     font-weight: 400;
     background-color: var(--background-modifier-hover);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: rgb(205, 209, 223);
   }
 
@@ -1266,8 +1163,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1302,8 +1198,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1338,8 +1233,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1374,8 +1268,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1410,8 +1303,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1446,8 +1338,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1483,8 +1374,7 @@ body {
     letter-spacing: 5px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2561,8 +2451,7 @@ body {
     font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     margin: 0px;
     border-color: rgb(205, 209, 223);
@@ -2738,8 +2627,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2750,8 +2638,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -2764,8 +2651,7 @@ body {
     --callout-color: var(--callout-default);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -2799,8 +2685,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2811,8 +2696,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -2825,8 +2709,7 @@ body {
     --callout-color: var(--callout-summary);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -2860,8 +2743,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2872,8 +2754,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -2886,8 +2767,7 @@ body {
     --callout-color: var(--callout-info);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -2921,8 +2801,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2933,8 +2812,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -2947,8 +2825,7 @@ body {
     --callout-color: var(--callout-todo);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -2982,8 +2859,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2994,8 +2870,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3008,8 +2883,7 @@ body {
     --callout-color: var(--callout-tip);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3043,8 +2917,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -3055,8 +2928,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3069,8 +2941,7 @@ body {
     --callout-color: var(--callout-success);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3104,8 +2975,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -3116,8 +2986,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3130,8 +2999,7 @@ body {
     --callout-color: var(--callout-question);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3165,8 +3033,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3177,8 +3044,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3191,8 +3057,7 @@ body {
     --callout-color: var(--callout-warning);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3226,8 +3091,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3238,8 +3102,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3252,8 +3115,7 @@ body {
     --callout-color: var(--callout-error);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3287,8 +3149,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3299,8 +3160,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3313,8 +3173,7 @@ body {
     --callout-color: var(--callout-fail);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3348,8 +3207,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3360,8 +3218,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3374,8 +3231,7 @@ body {
     --callout-color: var(--callout-bug);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3409,8 +3265,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3421,8 +3276,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3435,8 +3289,7 @@ body {
     --callout-color: var(--callout-example);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3470,8 +3323,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3482,8 +3334,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3496,8 +3347,7 @@ body {
     --callout-color: var(--callout-quote);
     background-color: var(--background-primary-alt);
     background-image: none;
-    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgb(34, 42, 56) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     mix-blend-mode: normal;
     border: 1px solid rgba(74, 78, 98, 0.984);
@@ -3531,8 +3381,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3543,8 +3392,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(205, 209, 223);
     padding: 0px;
     padding-block-end: 0px;
@@ -3599,6 +3447,24 @@ body {
 
   thead {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(205, 209, 223);
+    font-family:
+      Bookerly,
+      "Source Han Serif",
+      "Noto Serif JP",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3612,6 +3478,24 @@ body {
 
   tbody {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(205, 209, 223);
+    font-family:
+      Bookerly,
+      "Source Han Serif",
+      "Noto Serif JP",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
   }
 
   th {
@@ -3669,6 +3553,24 @@ body {
 
   tr {
     background-color: var(--table-header-background);
+    color: rgb(205, 209, 223);
+    font-family:
+      Bookerly,
+      "Source Han Serif",
+      "Noto Serif JP",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     border: 0px rgb(128, 128, 128);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3863,9 +3765,9 @@ body {
   }
 
   .nav-files-container .nav-file-title {
-    color: rgb(218, 218, 218);
-    cursor: auto;
+    color: rgb(136, 144, 166);
     font-family:
+      "Avenir Next",
       ui-sans-serif,
       -apple-system,
       BlinkMacSystemFont,
@@ -3880,32 +3782,35 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container .nav-file-title.is-active {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(218, 218, 218);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: rgb(218, 218, 218);
-    cursor: auto;
-    transition-behavior: normal;
-    transition-delay: 0s;
-    transition-duration: 0s;
-    transition-property: all;
-    transition-timing-function: ease;
+    color: var(--nav-item-color);
+    font-family:
+      "Avenir Next",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
+    border-color: rgb(136, 144, 166);
+    border-width: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
-    cursor: var(--cursor);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3922,12 +3827,10 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--nav-item-weight);
-    text-decoration: rgb(218, 218, 218);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
-    cursor: var(--cursor);
     font-family:
       "Avenir Next",
       ui-sans-serif,
@@ -3944,7 +3847,11 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--nav-item-weight);
-    text-decoration: rgb(218, 218, 218);
+  }
+
+  .nav-files-container .collapse-icon {
+    color: var(--nav-item-color);
+    opacity: 1;
   }
 
   .nav-files-container .tree-item-children {
@@ -3973,6 +3880,22 @@ body {
 
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(205, 209, 223);
+    font-family:
+      "Avenir Next",
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
   }
 
   .bases-table {
@@ -6483,10 +6406,7 @@ li.task-list-item[data-task="Z"] input[type="checkbox"]::after {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

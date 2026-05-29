@@ -1,19 +1,14 @@
 mode: replace
 sections:
-  - name: Hide & move elements
+  - name: Hide & Move elements
     id: hide-elements
     collapsed: false
     settings:
-      - id: safe-place-position
-        title: Move top buttons
-        description: 'Note: Only in case the top buttons cover the phone status bar'
-        type: variable-number
-        default: 35
-        format: px
       - id: icon-settings
         title: Show icon settings
+        description: Shows or hides the settings gear icon in the sidebar.
         type: variable-select
-        default: none
+        default: unset
         options:
           - label: Hide
             value: none
@@ -21,6 +16,7 @@ sections:
             value: unset
       - id: num-of-notes
         title: Show number of notes
+        description: Shows or hides the note count displayed in the file explorer.
         type: variable-select
         default: none
         options:
@@ -28,10 +24,51 @@ sections:
             value: none
           - label: Show
             value: unset
+      - id: show-explorer-buttons
+        title: Show explorer buttons
+        description: Shows or hides the action buttons (new note, new folder, sort) in the explorer toolbar.
+        type: variable-select
+        default: none
+        options:
+          - label: Hide
+            value: none
+          - label: Show
+            value: flex
+      - id: explorer-bar-position
+        title: Move explorer buttons
+        description: Moves the explorer toolbar to the top or bottom of the panel.
+        type: variable-select
+        default: static
+        options:
+          - label: Up
+            value: static
+          - label: Down
+            value: absolute
+      - id: show-editor-text-bar
+        title: Show editor bar
+        description: Shows or hides the formatting toolbar in the editor.
+        type: variable-select
+        default: unset
+        options:
+          - label: Hide
+            value: none
+          - label: Show
+            value: unset
       - id: hide-navbar
         title: Hide navigation bar
+        description: Shows or hides the bottom navigation bar.
         type: variable-select
-        default: block
+        default: none
+        options:
+          - label: Hide
+            value: none
+          - label: Show
+            value: block
+      - id: files-bookmarks-search-bar
+        title: Show menu files
+        description: Shows or hides the Files / Bookmarks / Search tab bar.
+        type: variable-select
+        default: none
         options:
           - label: Hide
             value: none
@@ -39,6 +76,7 @@ sections:
             value: block
       - id: show-vault-name
         title: Show vault
+        description: Shows or hides the vault name in the sidebar.
         type: variable-select
         default: none
         options:
@@ -48,6 +86,7 @@ sections:
             value: unset
       - id: scrollbars
         title: Show scrollbars
+        description: Shows or hides scrollbars throughout the interface.
         type: variable-select
         default: none
         options:
@@ -55,6 +94,12 @@ sections:
             value: none
           - label: Show
             value: unset
+      - id: safe-place-position
+        title: Move top buttons
+        description: 'Note: Only in case the top buttons cover the phone status bar'
+        type: variable-number
+        default: 35
+        format: px
   - name: Notes & Editor
     id: notes-values
     collapsed: false
@@ -66,36 +111,43 @@ sections:
         collapsed: true
       - id: default-font-size
         title: Font size
+        description: Base font size for note content.
         type: variable-number
-        default: 17.5
-        format: px
+        default: 1.06
+        format: em
       - id: p-spacing
         title: Paragraph spacing
+        description: Vertical space between paragraphs.
         type: variable-number
         default: 24
         format: px
       - id: padding-default-note-style
         title: Padding note
+        description: Left and right padding of the note area.
         type: variable-number
         default: 50
         format: px
       - id: list-indent
         title: List indent
+        description: Horizontal indentation of nested list items.
         type: variable-number
         default: 17
         format: px
       - id: letter-spacing-note
         title: Letter spacing
+        description: Space between individual characters in note text.
         type: variable-number
         default: 0.03
         format: px
       - id: line-height-note
         title: Line height
+        description: Vertical space between lines of text.
         type: variable-number
         default: 24.5
         format: px
       - id: text-note-align
         title: Text align
+        description: Horizontal alignment of note body text.
         type: variable-select
         default: justify
         options:
@@ -109,19 +161,23 @@ sections:
             value: right
       - id: focus-active-line-opacity
         title: Opacity active line
+        description: Opacity of the currently focused line in the editor.
         type: variable-number
         default: 0.8
       - id: focus-non-active-line-opacity
         title: Opacity non-active line
+        description: Opacity of non-active lines when focus mode is enabled.
         type: variable-number
         default: 0.65
       - id: separator-icon
         title: Separator content
+        description: Character or symbol used as a visual content separator.
         type: variable-text
         default: o0o
         quotes: true
       - id: separator-icon-color
         title: Separator color
+        description: Color of the content separator symbol.
         type: variable-color
         opacity: true
         format: rgb
@@ -131,11 +187,13 @@ sections:
         default: '#6C6C6C6B'
       - id: active-line-indicator
         title: Active line indicator
+        description: Symbol shown next to the active line in the editor.
         type: variable-text
         default: —
         quotes: true
       - id: active-line-background
         title: Background
+        description: Background highlight color of the active line.
         type: variable-color
         opacity: true
         format: rgb
@@ -145,6 +203,7 @@ sections:
         default: '#6C6C6C6B'
       - id: show-dotted-line
         title: Show line indicator
+        description: Shows or hides the left indicator line for the active line.
         type: variable-select
         default: 1.5px
         options:
@@ -156,9 +215,10 @@ sections:
         title: Style Page
         type: class-toggle
         description: Turn on the page-like view in reading mode.
-        default: false
+        default: true
       - id: page-style-editor-mode
         title: Style Page (Editor)
+        description: Applies the page-style (centered card with shadow) in editor mode.
         type: class-toggle
         default: false
       - id: padding-note-content
@@ -171,9 +231,10 @@ sections:
         title: Background image (source mode)
         type: variable-text
         description: url(https://example.com/image.jpg)
-        default: None
+        default: none
       - id: background-image-editor-size
         title: Background size
+        description: Size of the background image tile in source mode.
         type: variable-number
         default: 200
         format: px
@@ -189,34 +250,40 @@ sections:
         collapsed: true
       - id: h1-size
         title: Header H1
+        description: Font size for H1 headings.
         type: variable-number
-        default: 20
-        format: px
+        default: 2
+        format: em
       - id: h2-size
         title: Header H2
+        description: Font size for H2 headings.
         type: variable-number
-        default: 18
-        format: px
+        default: 1.7
+        format: em
       - id: h3-size
         title: Header H3
+        description: Font size for H3 headings.
         type: variable-number
-        default: 16
-        format: px
+        default: 1.3
+        format: em
       - id: h4-size
         title: Header H4
+        description: Font size for H4 headings.
         type: variable-number
-        default: 14
-        format: px
+        default: 1
+        format: em
       - id: h5-size
         title: Header H5
+        description: Font size for H5 headings.
         type: variable-number
-        default: 12
-        format: px
+        default: 0.7
+        format: em
       - id: h6-size
         title: Header H6
+        description: Font size for H6 headings.
         type: variable-number
-        default: 10
-        format: px
+        default: 0.5
+        format: em
       - id: headers-others
         title: Others
         type: heading
@@ -224,11 +291,13 @@ sections:
         collapsed: true
       - id: headers-space-simetry
         title: Header space
+        description: Top and bottom margin around all headings.
         type: variable-number
         default: 1.5
         format: em
       - id: headers-align
         title: Align
+        description: Horizontal alignment of all headings.
         type: variable-select
         default: left
         options:
@@ -247,6 +316,7 @@ sections:
         collapsed: true
       - id: enable-inline-title-separator
         title: Inline title separator
+        description: Shows a subtle separator line below the inline title in editor mode.
         type: class-toggle
         default: true
       - id: magazine-style
@@ -256,14 +326,17 @@ sections:
         default: true
       - id: magazine-opacity
         title: Magazine opacity
+        description: Opacity of the white overlay on the magazine-style background image.
         type: variable-number
         default: 0.6
       - id: block-title-read-mode
         title: Block Inline Title
+        description: Displays the inline title as a full-width block in reading mode.
         type: class-toggle
         default: true
       - id: inline-title-align
         title: Title align
+        description: Horizontal alignment of the inline title.
         type: variable-select
         default: justify
         options:
@@ -277,16 +350,18 @@ sections:
             value: right
       - id: inline-title-size
         title: Font size
+        description: Font size of the inline title.
         type: variable-number
-        default: 18.2
-        format: px
+        default: 1.1
+        format: em
       - id: inline-title-bold
         title: Bold
+        description: Font weight of the inline title (400 = normal, 700 = bold).
         type: variable-number
         default: 400
-        format: px
       - id: inline-title-always-uppercase
         title: Uppercase lock
+        description: Forces the inline title to always display in uppercase.
         type: class-toggle
         default: true
       - id: code-block-section
@@ -296,6 +371,7 @@ sections:
         collapsed: true
       - id: wrap-code-blocks
         title: Wrap code (Read mode)
+        description: Wraps long lines in code blocks instead of scrolling horizontally (reading mode only).
         type: variable-select
         default: normal
         options:
@@ -304,15 +380,29 @@ sections:
           - label: Disabled
             value: normal
       - id: code-size
-        title: Font size (Preview)
+        title: Code block - Font size (Read Mode)
+        description: Font size of code blocks in read mode.
         type: variable-number
-        default: 15
-        format: px
+        default: 0.98
+        format: em
       - id: code-size-edit-mode
-        title: Font size (Editor)
+        title: Code block - Font size (Editor)
+        description: Font size of code blocks in editor mode.
         type: variable-number
-        default: 15
-        format: px
+        default: 0.98
+        format: em
+      - id: inline-code-size-editor
+        title: Inline code - Font size (Editor)
+        description: Font size of inline code.
+        type: variable-number
+        default: 0.98
+        format: em
+      - id: inline-code-size-read
+        title: Inline code - Font size (Read Mode)
+        description: Font size of inline code.
+        type: variable-number
+        default: 0.98
+        format: em
       - id: quotes-section
         title: Quotes
         type: heading
@@ -320,11 +410,13 @@ sections:
         collapsed: true
       - id: quote-font-size
         title: Font size
+        description: Font size of blockquote text.
         type: variable-number
-        default: 15.7
-        format: px
+        default: 1.1
+        format: em
       - id: quotes-align
         title: Align text
+        description: Horizontal alignment of text inside blockquotes.
         type: variable-select
         default: justify
         options:
@@ -338,12 +430,72 @@ sections:
             value: right
       - id: quote-padding
         title: Quote padding
+        description: Inner padding of blockquotes (top right bottom left).
         type: variable-text
         default: 10px 15px 10px 15px
       - id: quote-icon
         title: Quote icon
+        description: Decorative character displayed above blockquotes.
         type: variable-text
         default: “
+      - id: quote-hide-top-line
+        title: Hide top line
+        description: Shows or hides the top border of blockquotes.
+        type: variable-select
+        default: 1.5px
+        options:
+          - label: Hide
+            value: 0px
+          - label: Show
+            value: 1.5px
+      - id: quote-hide-down-line
+        title: Hide down line
+        description: Shows or hides the bottom border of blockquotes.
+        type: variable-select
+        default: 1.5px
+        options:
+          - label: Hide
+            value: 0px
+          - label: Show
+            value: 1.5px
+      - id: list-section
+        title: Lists
+        type: heading
+        level: 2
+        collapsed: true
+      - id: main-list-item-weight
+        title: Font weight - Main list item
+        description: Adjust the text weight of list item that contain sublists
+        type: variable-number
+        default: 400
+      - id: main-list-item-style
+        title: Text Style - Main list item
+        description: Adjust the text style of list item that contain sublists
+        type: variable-select
+        default: normal
+        options:
+          - label: Default
+            value: normal
+          - label: Italic
+            value: italic
+      - id: main-list-item-color
+        title: Color - Main list item
+        description: Adjust the text color of list item that contain sublists
+        type: variable-select
+        default: var(--text-accent)
+        options:
+          - label: Muted
+            value: var(--text-muted)
+          - label: Accent
+            value: var(--text-accent)
+          - label: Default
+            value: var(--text-normal)
+      - id: sublist-vertical-line
+        title: Vertical Line
+        description: Adjust the vertical line thickness in sublists
+        type: variable-number
+        format: px
+        default: 1
       - id: callouts-section
         title: Callouts
         type: heading
@@ -351,20 +503,23 @@ sections:
         collapsed: true
       - id: hide-callout-title
         title: Show  title
+        description: Shows or hides the title bar of callout blocks.
         type: variable-select
         default: unset
         options:
           - label: Hide
-            value: None
+            value: none
           - label: Show
             value: unset
       - id: callout-font-size-title
         title: Font size
+        description: Font size of the callout title.
         type: variable-number
-        default: 16
-        format: px
+        default: 1
+        format: em
       - id: callouts-align-text
         title: Align text
+        description: Horizontal alignment of text inside callouts.
         type: variable-select
         default: justify
         options:
@@ -383,13 +538,25 @@ sections:
         collapsed: true
       - id: hide-embed-title
         title: Hide  embed title
+        description: Hides the title bar shown at the top of embedded notes.
         type: class-toggle
         default: true
       - id: embed-font-size
         title: Font size
+        description: Font size of text inside embedded notes.
         type: variable-number
-        default: 16
-        format: px
+        default: 1
+        format: em
+      - id: hide-icon-link-embed-notes
+        title: Show icon
+        description: Shows or hides the external link icon on embedded notes.
+        type: variable-select
+        default: var(--background-modifier-border)
+        options:
+          - label: Hide
+            value: transparent
+          - label: Show
+            value: var(--background-modifier-border)
       - id: images-section
         title: Images
         type: heading
@@ -397,6 +564,7 @@ sections:
         collapsed: true
       - id: enable-shadows-borders-img
         title: Enable shadows and borders
+        description: Adds drop shadows and rounded borders to images.
         type: class-toggle
         default: true
       - id: grayscale-dark-mode
@@ -406,6 +574,7 @@ sections:
         default: true
       - id: opacity-grayscale-images
         title: Opacity
+        description: Opacity of grayscale images in dark mode.
         type: variable-number
         default: 0.9
       - id: links-section
@@ -431,10 +600,12 @@ sections:
     settings:
       - id: pill-style-alias
         title: Pill-style alias
+        description: Displays alias properties as rounded pill-shaped tags.
         type: class-toggle
         default: true
       - id: hide-empty-properties
         title: Show empty properties
+        description: Shows or hides properties with no value in the properties panel.
         type: variable-select
         default: none
         options:
@@ -444,46 +615,69 @@ sections:
             value: unset
       - id: hide-add-button
         title: Show 'add properties' button
+        description: Shows or hides the 'Add property' button in the properties panel.
         type: variable-select
-        default: None
+        default: none
         options:
           - label: Hide
-            value: None
+            value: none
           - label: Show
             value: flex
+      - id: properties-icon-size
+        title: Icon size
+        description: Size of the icons in the properties panel.
+        type: variable-number
+        default: 1
+        format: em
       - id: properties-editor-font-size
         title: YAML font size
+        description: Font size of text in the properties / YAML editor.
         type: variable-number
-        default: 16
-        format: px
+        default: 0.98
+        format: em
+      - id: hide-separator-yaml
+        title: Show separators in Source mode
+        description: Shows or hides separator lines between properties in source mode.
+        type: variable-select
+        default: none
+        options:
+          - label: Hide
+            value: none
+          - label: Show
+            value: unset
   - name: Obsidian UI
     id: others-values
     collapsed: false
     settings:
       - id: radius-s
         title: Radius border
+        description: Border radius applied to panels, modals, and UI elements.
         type: variable-number
         default: 11.2
         format: px
       - id: icon-ui-opacity
         title: Icons opacity
+        description: Opacity of icons throughout the Obsidian interface.
         type: variable-number
-        default: 0.85
-        format: px
+        default: 1
       - id: nav-bar-blur
         title: Glass effect
+        description: Applies a frosted glass blur effect to the navigation bar.
         type: class-toggle
         default: true
       - id: navbar_blur_level
         title: Blur level
+        description: Intensity of the blur effect on the navigation bar.
         type: variable-text
         default: 8px
       - id: theme-light-opacity
         title: Light mode - Opacity
+        description: Background opacity of the main content area in light mode.
         type: variable-number
-        default: 0.85
+        default: 1
       - id: theme-dark-opacity
         title: Dark mode - Opacity
+        description: Background opacity of the main content area in dark mode.
         type: variable-number
         default: 0.75
   - name: Explorer & Files
@@ -492,25 +686,30 @@ sections:
     settings:
       - id: icon-file-indicator
         title: Icon file
+        description: Character displayed before each file name in the explorer.
         type: variable-text
         default: •
         quotes: true
       - id: enable-icon-file
         title: Enable icon file
+        description: Enables or disables the icon shown before file names.
         type: class-toggle
         default: true
+      - id: nav-item-size
+        title: Explorer Font size
+        description: Font size of file and folder names in the explorer.
+        type: variable-number
+        default: 0.99
+        format: em
       - id: icon-file-size
         title: Icon file
+        description: Size of the icon displayed before each file name.
         type: variable-number
-        default: 25
-        format: px
-      - id: nav-item-size
-        title: Font size
-        type: variable-number
-        default: 16
-        format: px
+        default: 1.5
+        format: em
       - id: multiline-files-explorer
         title: Align text
+        description: Horizontal alignment of file names in the explorer.
         type: variable-select
         default: justify
         options:
@@ -524,14 +723,17 @@ sections:
             value: right
       - id: disable-root-file-lines
         title: Hide separator on root files
+        description: Hides the separator line between files at the vault root level.
         type: class-toggle
         default: true
       - id: popup-explorer
         title: Pop-up style
+        description: Displays the file explorer as a floating pop-up panel.
         type: class-toggle
         default: true
       - id: folder-border-color
         title: Border color (folders)
+        description: Border color of folder items in the explorer.
         type: variable-color
         opacity: true
         format: rgb
@@ -541,6 +743,7 @@ sections:
         default: '#6c6c6c6b'
       - id: filename-separator-style
         title: Separator style
+        description: Line style of the separator between file names (dotted, dashed, solid).
         type: variable-select
         default: dotted
         options:
@@ -552,6 +755,7 @@ sections:
             value: solid
       - id: filename-line-thickness
         title: Line thickness
+        description: Thickness of the separator line between file names.
         type: variable-number
         default: 1.8
         format: px
@@ -566,6 +770,7 @@ sections:
     settings:
       - id: tabs-height
         title: Tab height
+        description: Height of the tab switcher panel.
         type: variable-number
         default: 300
         format: px

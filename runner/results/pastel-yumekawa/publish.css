@@ -3555,6 +3555,9 @@ body body.theme-light .markdown-rendered table {
 }
 body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(139, 90, 157);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3567,6 +3570,9 @@ body body.theme-light .markdown-rendered thead {
 }
 body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(139, 90, 157);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
 }
 body body.theme-light .markdown-rendered th {
   background-color: var(--interactive-hover);
@@ -3621,6 +3627,9 @@ body body.theme-light .markdown-rendered td {
 }
 body body.theme-light .markdown-rendered tr {
   background-color: var(--table-header-background);
+  color: rgb(139, 90, 157);
+  font-family:
+    system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3802,8 +3811,7 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .nav-view-outer .tree-item-self a {
-  color: rgb(34, 34, 34);
-  cursor: auto;
+  color: rgb(139, 90, 157);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3819,26 +3827,29 @@ body body.theme-light .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(34, 34, 34);
-  cursor: auto;
-  transition-behavior: normal;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: ease;
+  color: var(--text-normal);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(139, 90, 157);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 body
   body.theme-light
@@ -3849,7 +3860,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3865,7 +3875,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -3876,7 +3885,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--text-normal);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -3892,7 +3900,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);

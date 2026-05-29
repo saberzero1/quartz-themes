@@ -1734,7 +1734,7 @@ sections:
         level: 3
         collapsed: true
       - id: i-bases-hide-tab-titlebar
-        title: Hide tab titlebar (desktop only)
+        title: Hide tab titlebar
         type: class-toggle
       - id: i-bases-hide-table-header-icons
         title: Hide table header icons

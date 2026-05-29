@@ -4889,6 +4889,21 @@ body body.theme-light .markdown-rendered table {
 }
 body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4901,6 +4916,21 @@ body body.theme-light .markdown-rendered thead {
 }
 body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
@@ -4955,6 +4985,21 @@ body body.theme-light .markdown-rendered td {
 }
 body body.theme-light .markdown-rendered tr {
   background-color: var(--table-header-background);
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -5136,8 +5181,7 @@ body body.theme-light .file-embed {
   padding: 8px;
 }
 body body.theme-light .nav-view-outer .tree-item-self a {
-  color: rgb(34, 34, 34);
-  cursor: auto;
+  color: rgb(92, 92, 92);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5153,26 +5197,29 @@ body body.theme-light .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(34, 34, 34);
-  cursor: auto;
-  transition-behavior: normal;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: ease;
+  color: var(--nav-item-color);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(92, 92, 92);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 body
   body.theme-light
@@ -5183,7 +5230,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5199,7 +5245,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -5210,7 +5255,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5226,7 +5270,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -7445,6 +7488,10 @@ body body.theme-dark .markdown-rendered table {
 }
 body body.theme-dark .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 153, 0);
+  font-family:
+    Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
+    sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7457,6 +7504,10 @@ body body.theme-dark .markdown-rendered thead {
 }
 body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 153, 0);
+  font-family:
+    Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
+    sans-serif;
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
@@ -7511,6 +7562,10 @@ body body.theme-dark .markdown-rendered td {
 }
 body body.theme-dark .markdown-rendered tr {
   background-color: var(--table-header-background);
+  color: rgb(255, 153, 0);
+  font-family:
+    Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
+    sans-serif;
   border: 0px rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7681,43 +7736,23 @@ body body.theme-dark .file-embed {
   padding: 8px;
 }
 body body.theme-dark .nav-view-outer .tree-item-self a {
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  color: rgb(255, 204, 153);
   font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
+    Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
-  cursor: auto;
-  transition-behavior: normal;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: ease;
+  color: var(--nav-item-color);
+  font-family:
+    Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
+    sans-serif;
+  border-color: rgb(255, 204, 153);
+  border-width: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 body
   body.theme-dark
@@ -7728,12 +7763,10 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -7744,12 +7777,10 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     Antonio, Oswald, Bahnschrift, "Helvetica Neue Condensed", "Arial Narrow",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);

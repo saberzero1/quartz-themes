@@ -62,6 +62,18 @@
       "aspect": "explorer"
     },
     {
+      "property": "--nav-item-background-hover",
+      "references": "--folder-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
+      "property": "--nav-item-color",
+      "references": "--folder-color",
+      "selector": ".nav-files-container .collapse-icon",
+      "aspect": "explorer"
+    },
+    {
       "property": "--embed-max-height",
       "references": "--card-height",
       "selector": ".canvas-node-content",

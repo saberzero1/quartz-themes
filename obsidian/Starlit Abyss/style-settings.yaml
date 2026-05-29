@@ -1,0 +1,66 @@
+mode: replace
+sections:
+  - name: Starlit Abyss
+    id: starlit-settings
+    collapsed: false
+    settings:
+      - id: oled-background
+        title: Pure black background
+        description: Use a pure black background.
+        type: class-toggle
+      - id: mono-table
+        title: Inverted table style
+        description: Use an inverted style for tables.
+        type: class-toggle
+      - id: retro-emphasis
+        title: Retro emphasis mode
+        description: In Reading view, bolded text and table headers will become ALL CAPS text instead. Does not affect editing view.
+        type: class-toggle
+      - id: font-settings
+        title: Theme Fonts
+        type: heading
+        level: 1
+      - id: fnt-head-p
+        title: Main font
+        description: Select a suitably sci-fi font for most text.
+        type: variable-select
+        default: Tomorrow
+        options:
+          - label: Tomorrow
+            value: Tomorrow
+          - label: Science Gothic
+            value: Science Gothic
+          - label: Kode Mono
+            value: Kode Mono
+          - label: Michroma
+            value: Michroma
+          - label: Segoe UI
+            value: Segoe UI
+      - id: fnt-title
+        title: Title font
+        description: Select a font to be used for note titles.
+        type: variable-select
+        default: Michroma
+        options:
+          - label: Michroma
+            value: Michroma
+          - label: Science Gothic
+            value: Science Gothic
+          - label: Match main font
+            value: var(--fnt-head-p)
+      - id: bright-table-text
+        title: Brighter table text
+        description: Use a different color for text inside tables.
+        type: class-toggle
+      - id: bright-emphasis
+        title: Brighten bold and italic text
+        description: Use a brighter color for bolded and italicized text. Makes them pop. Useful for finding things at a glance.
+        type: class-toggle
+      - id: higher-contrast
+        title: Brighten all text
+        description: For extra contrast across the board. Overrides the "bold and italic" option above.
+        type: class-toggle
+      - id: boxed-callout
+        title: Boxed Callout
+        description: Use an empty box for callouts instead of a card.
+        type: class-toggle

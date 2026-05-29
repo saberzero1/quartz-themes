@@ -73,6 +73,11 @@ sections:
         description: Settings window at 80% opacity for even more visibility
         type: class-toggle
         default: false
+      - id: sp-rainbow-folders
+        title: Rainbow-Colored Folders
+        description: Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
+        type: class-toggle
+        default: false
       - id: sp-settings-transparent
         title: Make settings see-through
         description: Settings window at 90% opacity so you can see changes live

@@ -1,0 +1,148 @@
+mode: replace
+sections:
+  - name: Nebulux
+    id: nebulux-hud
+    collapsed: false
+    settings:
+      - id: ui-title
+        title: 🖥️ Nebulux Interface
+        type: heading
+        level: 1
+      - id: bg-gradient-center
+        title: 🌌 Space Background (Gradient Center)
+        type: variable-color
+        format: hex
+        default: '#1a253a'
+        alt-format: []
+      - id: bg-gradient-edge
+        title: 🌌 Space Background (Edges)
+        type: variable-color
+        format: hex
+        default: '#050505'
+        alt-format: []
+      - id: hud-blur
+        title: 🌫️ HUD Blur (Glassmorphism)
+        type: variable-number
+        default: 12
+        format: px
+      - id: hud-radius
+        title: 🔲 Block Border Radius
+        type: variable-number
+        default: 12
+        format: px
+      - id: hud-frame
+        title: ⚡ Neon Line Thickness (Borders)
+        type: variable-number
+        default: 1.5
+        format: px
+        step: 0.5
+      - id: colors-title
+        title: 🎨 Tactical Palette
+        type: heading
+        level: 1
+      - id: theme-nav
+        title: 🧭 Navigation (Neon Blue)
+        type: variable-color
+        format: hex
+        default: '#78B4FF'
+        alt-format: []
+      - id: theme-status
+        title: 📊 Status (Tactical Gold)
+        type: variable-color
+        format: hex
+        default: '#FFC832'
+        alt-format: []
+      - id: theme-projects
+        title: 🚀 Projects (Tactical Bronze)
+        type: variable-color
+        format: hex
+        default: '#CD7F32'
+        alt-format: []
+      - id: typo-title
+        title: 🔤 Typography
+        type: heading
+        level: 1
+      - id: font-headers
+        title: Header Font (H1-H6)
+        type: variable-text
+        default: '''Orbitron'', sans-serif'
+      - id: font-text-theme
+        title: Body & UI Font
+        type: variable-text
+        default: '''Montserrat'', sans-serif'
+      - id: titles-gradient-settings
+        title: 🔠 Header Gradients (H1-H6)
+        type: heading
+        level: 1
+      - id: h1-start
+        title: H1 - Start Color (Left)
+        type: variable-color
+        format: hex
+        default: '#ffffff'
+        alt-format: []
+      - id: h1-end
+        title: H1 - End Color (Right)
+        type: variable-color
+        format: hex
+        default: '#999999'
+        alt-format: []
+      - id: h2-start
+        title: H2 - Start Color
+        type: variable-color
+        format: hex
+        default: '#78B4FF'
+        alt-format: []
+      - id: h2-end
+        title: H2 - End Color
+        type: variable-color
+        format: hex
+        default: '#5b9cf6'
+        alt-format: []
+      - id: h3-start
+        title: H3 - Start Color
+        type: variable-color
+        format: hex
+        default: '#FFC832'
+        alt-format: []
+      - id: h3-end
+        title: H3 - End Color
+        type: variable-color
+        format: hex
+        default: '#d97706'
+        alt-format: []
+      - id: h4-start
+        title: H4 - Start Color
+        type: variable-color
+        format: hex
+        default: '#CD7F32'
+        alt-format: []
+      - id: h4-end
+        title: H4 - End Color
+        type: variable-color
+        format: hex
+        default: '#eb6060'
+        alt-format: []
+      - id: h5-start
+        title: H5 - Start Color
+        type: variable-color
+        format: hex
+        default: '#c084fc'
+        alt-format: []
+      - id: h5-end
+        title: H5 - End Color
+        type: variable-color
+        format: hex
+        default: '#b06ef5'
+        alt-format: []
+      - id: h6-start
+        title: H6 - Start Color
+        type: variable-color
+        format: hex
+        default: '#94a3b8'
+        alt-format: []
+      - id: h6-end
+        title: H6 - End Color
+        type: variable-color
+        format: hex
+        default: '#789ab5'
+        alt-format: []

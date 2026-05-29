@@ -1,0 +1,98 @@
+mode: replace
+sections:
+  - name: macOS Theme
+    id: macos-theme
+    collapsed: false
+    settings:
+      - id: macos-colors
+        title: Colors
+        type: heading
+        level: 1
+      - id: macos-accent-color
+        title: Accent Color
+        description: Matches macOS system accent colors. Values shift between light and dark mode to match Apple's accessibility-adjusted palette.
+        type: variable-select
+        default: '#007AFF'
+        options:
+          - label: Blue (Default)
+            value: '#007AFF'
+          - label: Purple
+            value: '#AF52DE'
+          - label: Pink
+            value: '#FF2D55'
+          - label: Red
+            value: '#FF3B30'
+          - label: Orange
+            value: '#FF9500'
+          - label: Yellow
+            value: '#FFCC00'
+          - label: Green
+            value: '#28CD41'
+          - label: Graphite
+            value: '#8E8E93'
+      - id: macos-accent-color-dark
+        title: Accent Color (Dark Mode Override)
+        description: Dark mode variant — Apple shifts accent colors brighter for contrast on dark surfaces.
+        type: variable-select
+        default: '#0A84FF'
+        options:
+          - label: Blue (Default)
+            value: '#0A84FF'
+          - label: Purple
+            value: '#BF5AF2'
+          - label: Pink
+            value: '#FF375F'
+          - label: Red
+            value: '#FF453A'
+          - label: Orange
+            value: '#FF9F0A'
+          - label: Yellow
+            value: '#FFD60A'
+          - label: Green
+            value: '#32D74B'
+          - label: Graphite
+            value: '#98989D'
+      - id: macos-typography
+        title: Typography
+        type: heading
+        level: 1
+      - id: macos-mono-font
+        title: Monospace Font
+        type: variable-select
+        default: '''SF Mono'', ui-monospace, monospace'
+        options:
+          - label: SF Mono
+            value: '''SF Mono'', ui-monospace, monospace'
+          - label: Menlo
+            value: Menlo, monospace
+          - label: Monaco
+            value: Monaco, monospace
+      - id: macos-appearance
+        title: Appearance
+        type: heading
+        level: 1
+      - id: macos-translucent-panels
+        title: Translucent Panels
+        description: Glass blur effect on sidebar and right panel. Disable for solid opaque panels.
+        type: class-toggle
+        default: true
+      - id: macos-glass-modals
+        title: Glass Modals
+        description: Translucent modals, command palette, and menus. Disable for solid overlays.
+        type: class-toggle
+        default: true
+      - id: macos-wide-callouts
+        title: Full-Width Callouts
+        description: Callouts span the full editor width
+        type: class-toggle
+        default: false
+      - id: macos-colorful-headings
+        title: Colorful Headings
+        description: Tint each heading level with a different system color
+        type: class-toggle
+        default: false
+      - id: macos-accent-icons
+        title: Accent Sidebar Icons
+        description: Tint sidebar and ribbon icons with the accent color, like macOS Finder
+        type: class-toggle
+        default: true

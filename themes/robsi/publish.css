@@ -2890,6 +2890,103 @@ body {
   --nav-collapse-icon-color: var(--text-muted);
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 }
+body body.theme-light .metadata-container {
+  background-color: var(--metadata-background);
+  color: var(--text-muted);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 10px 0px;
+}
+body body.theme-light .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(75, 85, 95);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(75, 85, 95);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+body body.theme-light .metadata-container .metadata-property {
+  background-color: var(--metadata-property-background);
+  color: rgb(75, 85, 95);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(75, 85, 95);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+body body.theme-light .metadata-property-key {
+  color: rgb(75, 85, 95);
+  font-family: var(--metadata-label-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+body body.theme-light .metadata-property-value {
+  color: rgb(75, 85, 95);
+  font-family: var(--metadata-input-font);
+  font-size: 16px;
+}
+body body.theme-light .view-content {
+  border-color: rgb(30, 35, 42);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 body body.theme-light .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
   color: var(--link-external-color);
@@ -3400,6 +3497,19 @@ body body.theme-light del {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+body body.theme-light .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
 body body.theme-light .suggestion-item.is-selected {
   background-color: hsla(
     var(--accent-h),
@@ -3490,211 +3600,6 @@ body body.theme-light div.multi-select-pill {
 }
 body body.theme-light div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(160, 30, 140);
-}
-body body.theme-light .markdown-rendered ul > li {
-  color: rgb(30, 35, 42);
-  text-align: start;
-  padding-top: var(--list-spacing);
-  padding-bottom: var(--list-spacing);
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-}
-body body.theme-light .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(34, 34, 34);
-  pointer-events: auto;
-  transform: none;
-}
-body body.theme-light .markdown-rendered ol > li {
-  color: rgb(30, 35, 42);
-  text-align: start;
-  padding-top: var(--list-spacing);
-  padding-bottom: var(--list-spacing);
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-}
-body body.theme-light .markdown-rendered ol > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(34, 34, 34);
-  pointer-events: auto;
-  transform: none;
-}
-body body.theme-light .markdown-rendered code {
-  background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: var(--code-normal);
-  font-family: var(--font-monospace);
-  padding: 2.1px 4.2px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-light .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-}
-body body.theme-light :not(pre) > code[class*="language-"],
-body body.theme-light pre[class*="language-"] {
-  background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-}
-body
-  body.theme-light
-  ul.contains-task-list
-  > li.task-list-item
-  > .task-list-item-checkbox {
-  appearance: auto;
-  border: 3px solid rgb(120, 125, 135);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  padding: 0px;
-  padding-block-end: 1px;
-  padding-block-start: 1px;
-  padding-inline-end: 2px;
-  padding-inline-start: 2px;
-  margin: 0px 8px 0px 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  width: var(--checkbox-size);
-  transition: box-shadow 0.15s ease-in-out;
-  position: relative;
-  top: auto;
-}
-body body.theme-light ul.contains-task-list > li.task-list-item {
-  text-align: start;
-  display: list-item;
-}
-body
-  body.theme-light
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
-  content: normal;
-  top: auto;
-  inset-inline-start: auto;
-  position: static;
-  width: auto;
-  display: list-item;
-  background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-light .markdown-rendered blockquote {
-  background-color: var(--blockquote-background-color);
-  color: var(--blockquote-color);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  font-style: var(--blockquote-font-style);
-  line-height: 25.6px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  text-decoration: rgb(34, 34, 34);
-  letter-spacing: normal;
-}
-body body.theme-light .footnote-backref {
-  color: var(--text-faint);
-  text-decoration: underline rgb(138, 92, 245);
 }
 body body.theme-light .site-body-left-column input.search-bar {
   background-color: rgba(var(--background-modifier-form-field), 0.3);
@@ -4034,6 +3939,683 @@ body body.theme-light .published-container .markdown-rendered h6 {
   height: auto;
   content: "▍";
   display: inline;
+}
+body body.theme-light .markdown-rendered ul > li {
+  color: rgb(30, 35, 42);
+  text-align: start;
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+body body.theme-light .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(34, 34, 34);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-light .markdown-rendered ol > li {
+  color: rgb(30, 35, 42);
+  text-align: start;
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+body body.theme-light .markdown-rendered ol > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(34, 34, 34);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-light dl {
+  margin: 16px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-light dt {
+  color: rgb(30, 35, 42);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(30, 35, 42);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light dd {
+  color: rgb(30, 35, 42);
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(30, 35, 42);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light .markdown-rendered code {
+  background-color: var(--code-background);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  padding: 2.1px 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-light .markdown-rendered pre > code {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-light :not(pre) > code[class*="language-"],
+body body.theme-light pre[class*="language-"] {
+  background-color: var(--code-background);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-light figure[data-rehype-pretty-code-figure] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-light
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(34, 34, 34);
+  font-family: monospace;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px rgb(34, 34, 34);
+}
+body body.theme-light pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(34, 34, 34);
+}
+body body.theme-light pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-light
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  appearance: auto;
+  border: 3px solid rgb(120, 125, 135);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+  margin: 0px 8px 0px 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: var(--checkbox-size);
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  top: auto;
+}
+body body.theme-light ul.contains-task-list > li.task-list-item {
+  text-align: start;
+  display: list-item;
+}
+body
+  body.theme-light
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-light li.task-list-item[data-task="-"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task=">"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="/"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="?"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="!"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="*"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="l"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="b"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="i"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="S"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="I"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="p"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="c"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="f"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="k"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="u"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="d"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light li.task-list-item[data-task="w"] {
+  color: rgb(30, 35, 42);
+  text-decoration: none;
+  text-decoration-color: rgb(30, 35, 42);
+}
+body body.theme-light .markdown-rendered blockquote {
+  background-color: var(--blockquote-background-color);
+  color: var(--blockquote-color);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  font-style: var(--blockquote-font-style);
+  line-height: 25.6px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  text-decoration: rgb(34, 34, 34);
+  letter-spacing: normal;
+}
+body body.theme-light .footnote-backref {
+  color: var(--text-faint);
+  text-decoration: underline rgb(138, 92, 245);
+}
+body body.theme-light progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 6px;
+  border: 0px rgb(30, 35, 42);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px inset rgb(118, 118, 118);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light input[type="text"] {
+  background-color: rgba(var(--background-modifier-form-field), 0.3);
+  color: var(--text-normal);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 8px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+}
+body body.theme-light details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(30, 35, 42);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-light summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(30, 35, 42);
+  cursor: auto;
+  font-weight: 400;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-light details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-light kbd {
+  background-color: var(--code-background);
+  box-shadow: none;
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
+  border: 0px rgb(30, 35, 42);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+  padding-block-end: 1.3125px;
+  padding-block-start: 1.3125px;
+  padding-inline-end: 3.28125px;
+  padding-inline-start: 3.28125px;
+}
+body body.theme-light sub {
+  color: rgb(30, 35, 42);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body body.theme-light sup {
+  color: rgb(30, 35, 42);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body body.theme-light abbr {
+  color: rgb(30, 35, 42);
+  cursor: auto;
+  text-decoration: underline dotted;
+  text-decoration-style: dotted;
+}
+body body.theme-light .math-block > mjx-container.MathJax {
+  display: block;
+  text-align: center;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-light div.math-block > mjx-container.MathJax {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
+  font-family: MJXZERO, MJXTEX;
+}
+body body.theme-light .page-header .page-title {
+  color: var(--text-normal);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.9px;
+  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  padding: 0px;
+  margin: 0px;
+  border-color: rgb(30, 35, 42);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(30, 35, 42);
+  border-color: rgb(30, 35, 42);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-light .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgb(30, 35, 42);
+  border-top-width: 0px;
+  color: rgb(30, 35, 42);
+}
+body body.theme-light .tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 0px solid rgba(129, 71, 209, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
 }
 body
   body.theme-light
@@ -4688,6 +5270,21 @@ body body.theme-light .markdown-rendered table {
 }
 body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(30, 35, 42);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(30, 35, 42);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4700,6 +5297,21 @@ body body.theme-light .markdown-rendered thead {
 }
 body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(30, 35, 42);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body body.theme-light .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
@@ -4754,6 +5366,21 @@ body body.theme-light .markdown-rendered td {
 }
 body body.theme-light .markdown-rendered tr {
   background-color: var(--table-header-background);
+  color: rgb(30, 35, 42);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(30, 35, 42);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -4769,6 +5396,15 @@ body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background);
+}
+body body.theme-light .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(30, 35, 42);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body body.theme-light .markdown-rendered img {
   border-radius: 0px;
@@ -4919,465 +5555,8 @@ body body.theme-light .file-embed {
   margin: 0px;
   padding: 10px;
 }
-body body.theme-light .metadata-container {
-  background-color: var(--metadata-background);
-  color: var(--text-muted);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin: 0px;
-  padding: 10px 0px;
-}
-body body.theme-light .metadata-properties {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(75, 85, 95);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border-color: rgb(75, 85, 95);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin: 0px;
-  padding: 0px;
-}
-body body.theme-light .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background);
-  color: rgb(75, 85, 95);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border-color: rgb(75, 85, 95);
-  border-width: 0px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-}
-body body.theme-light .metadata-property-key {
-  color: rgb(75, 85, 95);
-  font-family: var(--metadata-label-font);
-  font-size: 16px;
-  font-weight: 400;
-}
-body body.theme-light .metadata-property-value {
-  color: rgb(75, 85, 95);
-  font-family: var(--metadata-input-font);
-  font-size: 16px;
-}
-body body.theme-light progress {
-  accent-color: auto;
-  background-color: rgba(0, 0, 0, 0);
-  height: 6px;
-  border: 0px rgb(30, 35, 42);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light input[type="range"] {
-  accent-color: auto;
-  background-color: rgb(255, 255, 255);
-  border: 2px inset rgb(118, 118, 118);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light input[type="text"] {
-  background-color: rgba(var(--background-modifier-form-field), 0.3);
-  color: var(--text-normal);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  padding: 8px 10px;
-  padding-block-end: 1px;
-  padding-block-start: 1px;
-  padding-inline-end: 2px;
-  padding-inline-start: 2px;
-}
-body body.theme-light details {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(30, 35, 42);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-light summary {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(30, 35, 42);
-  cursor: auto;
-  font-weight: 400;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-light details[open] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-light kbd {
-  background-color: var(--code-background);
-  box-shadow: none;
-  color: var(--code-normal);
-  font-family: var(--font-monospace);
-  font-size: var(--code-size);
-  border: 0px rgb(30, 35, 42);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
-  padding-block-end: 1.3125px;
-  padding-block-start: 1.3125px;
-  padding-inline-end: 3.28125px;
-  padding-inline-start: 3.28125px;
-}
-body body.theme-light dl {
-  margin: 16px 0px;
-  margin-block-end: 15px;
-  margin-block-start: 15px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-light dt {
-  color: rgb(30, 35, 42);
-  font-weight: 400;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  font-size: 16px;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  border: 0px rgb(30, 35, 42);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light dd {
-  color: rgb(30, 35, 42);
-  font-size: 16px;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  margin: 0px 0px 0px 40px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 40px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  border: 0px rgb(30, 35, 42);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light sub {
-  color: rgb(30, 35, 42);
-  font-size: 13.3333px;
-  vertical-align: sub;
-}
-body body.theme-light sup {
-  color: rgb(30, 35, 42);
-  font-size: 13.3333px;
-  vertical-align: super;
-}
-body body.theme-light abbr {
-  color: rgb(30, 35, 42);
-  cursor: auto;
-  text-decoration: underline dotted;
-  text-decoration-style: dotted;
-}
-body body.theme-light li.task-list-item[data-task="-"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task=">"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="/"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="?"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="!"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="*"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="l"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="b"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="i"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="S"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="I"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="p"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="c"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="f"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="k"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="u"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="d"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light li.task-list-item[data-task="w"] {
-  color: rgb(30, 35, 42);
-  text-decoration: none;
-  text-decoration-color: rgb(30, 35, 42);
-}
-body body.theme-light .math-block > mjx-container.MathJax {
-  display: block;
-  text-align: center;
-  white-space-collapse: collapse;
-  text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body body.theme-light div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: MJXZERO, MJXTEX;
-}
 body body.theme-light .nav-view-outer .tree-item-self a {
-  color: rgb(34, 34, 34);
-  cursor: auto;
+  color: rgba(30, 35, 42, 0.9);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5393,26 +5572,32 @@ body body.theme-light .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(34, 34, 34);
-  cursor: auto;
-  transition-behavior: normal;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: ease;
+  color: var(--nav-item-color);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgba(30, 35, 42, 0.9);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 body
   body.theme-light
@@ -5423,7 +5608,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5439,7 +5623,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body
   body.theme-light
@@ -5450,7 +5633,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5466,7 +5648,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(34, 34, 34);
 }
 body body.theme-light .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -5607,8 +5788,9 @@ body body.theme-light .view-header-breadcrumb-separator {
     "Segoe UI Symbol",
     sans-serif;
 }
-body body.theme-light .page-header .page-title {
-  color: var(--text-normal);
+body body.theme-dark .metadata-container {
+  background-color: var(--metadata-background);
+  color: var(--text-muted);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5623,124 +5805,85 @@ body body.theme-light .page-header .page-title {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16.9px;
-  background-color: rgba(0, 0, 0, 0);
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  padding: 0px;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   margin: 0px;
-  border-color: rgb(30, 35, 42);
+  padding: 10px 0px;
+}
+body body.theme-dark .metadata-properties {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(180, 180, 180);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(180, 180, 180);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
 }
-body body.theme-light .math-block {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(30, 35, 42);
-  border-color: rgb(30, 35, 42);
+body body.theme-dark .metadata-container .metadata-property {
+  background-color: var(--metadata-property-background);
+  color: rgb(180, 180, 180);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgb(180, 180, 180);
+  border-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+body body.theme-dark .metadata-property-key {
+  color: rgb(180, 180, 180);
+  font-family: var(--metadata-label-font);
+  font-size: 16px;
+  font-weight: 400;
+}
+body body.theme-dark .metadata-property-value {
+  color: rgb(180, 180, 180);
+  font-family: var(--metadata-input-font);
+  font-size: 16px;
+}
+body body.theme-dark .view-content {
+  border-color: rgb(220, 220, 220);
   border-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-}
-body body.theme-light .footnotes {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-color: rgb(30, 35, 42);
-  border-top-width: 0px;
-  color: rgb(30, 35, 42);
-}
-body body.theme-light .table-wrapper {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(30, 35, 42);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-light .view-content {
-  border-color: rgb(30, 35, 42);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-light figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body
-  body.theme-light
-  figure[data-rehype-pretty-code-figure]
-  > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(34, 34, 34);
-  font-family: monospace;
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light pre > code [data-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(34, 34, 34);
-}
-body body.theme-light pre > code [data-highlighted-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(34, 34, 34);
-}
-body body.theme-light pre > code [data-highlighted-chars] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(34, 34, 34);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-light .tag {
-  background-color: var(--tag-background);
-  color: var(--tag-color);
-  border: 0px solid rgba(129, 71, 209, 0.15);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
-}
-body body.theme-light .search-highlight {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
-  border: 0px rgb(0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered a.external-link {
   background-color: rgba(0, 0, 0, 0);
@@ -6252,6 +6395,19 @@ body body.theme-dark del {
   animation-fill-mode: none;
   animation-play-state: running;
 }
+body body.theme-dark .search-highlight {
+  background-color: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  border: 0px rgb(0, 0, 0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
 body body.theme-dark .suggestion-item.is-selected {
   background-color: hsla(
     var(--accent-h),
@@ -6342,211 +6498,6 @@ body body.theme-dark div.multi-select-pill {
 }
 body body.theme-dark div.multi-select-pill > div.multi-select-pill-content {
   color: rgb(187, 154, 247);
-}
-body body.theme-dark .markdown-rendered ul > li {
-  color: rgb(220, 220, 220);
-  text-align: start;
-  padding-top: var(--list-spacing);
-  padding-bottom: var(--list-spacing);
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-}
-body body.theme-dark .markdown-rendered ul > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
-  pointer-events: auto;
-  transform: none;
-}
-body body.theme-dark .markdown-rendered ol > li {
-  color: rgb(220, 220, 220);
-  text-align: start;
-  padding-top: var(--list-spacing);
-  padding-bottom: var(--list-spacing);
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-}
-body body.theme-dark .markdown-rendered ol > li::marker {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
-  pointer-events: auto;
-  transform: none;
-}
-body body.theme-dark .markdown-rendered code {
-  background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: var(--code-normal);
-  font-family: var(--font-monospace);
-  padding: 2.1px 4.2px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-dark .markdown-rendered pre > code {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-}
-body body.theme-dark :not(pre) > code[class*="language-"],
-body body.theme-dark pre[class*="language-"] {
-  background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  white-space-collapse: preserve;
-  text-wrap-mode: nowrap;
-}
-body
-  body.theme-dark
-  ul.contains-task-list
-  > li.task-list-item
-  > .task-list-item-checkbox {
-  appearance: auto;
-  border: 3px solid rgb(120, 120, 120);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  padding: 0px;
-  padding-block-end: 1px;
-  padding-block-start: 1px;
-  padding-inline-end: 2px;
-  padding-inline-start: 2px;
-  margin: 0px 8px 0px 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  width: var(--checkbox-size);
-  transition: box-shadow 0.15s ease-in-out;
-  position: relative;
-  top: auto;
-}
-body body.theme-dark ul.contains-task-list > li.task-list-item {
-  text-align: start;
-  display: list-item;
-}
-body
-  body.theme-dark
-  ul.contains-task-list
-  > li.task-list-item
-  > input[type="checkbox"]:checked {
-  content: normal;
-  top: auto;
-  inset-inline-start: auto;
-  position: static;
-  width: auto;
-  display: list-item;
-  background-color: rgba(0, 0, 0, 0);
-}
-body body.theme-dark .markdown-rendered blockquote {
-  background-color: var(--blockquote-background-color);
-  color: var(--blockquote-color);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 400;
-  font-style: var(--blockquote-font-style);
-  line-height: 25.6px;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-inline-start: 0px;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  text-decoration: rgb(218, 218, 218);
-  letter-spacing: normal;
-}
-body body.theme-dark .footnote-backref {
-  color: var(--text-faint);
-  text-decoration: underline rgb(166, 138, 249);
 }
 body body.theme-dark .site-body-left-column input.search-bar {
   background-color: rgba(var(--background-modifier-form-field), 0.3);
@@ -6886,6 +6837,683 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   height: auto;
   content: "▍";
   display: inline;
+}
+body body.theme-dark .markdown-rendered ul > li {
+  color: rgb(220, 220, 220);
+  text-align: start;
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+body body.theme-dark .markdown-rendered ul > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark .markdown-rendered ol > li {
+  color: rgb(220, 220, 220);
+  text-align: start;
+  padding-top: var(--list-spacing);
+  padding-bottom: var(--list-spacing);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+}
+body body.theme-dark .markdown-rendered ol > li::marker {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: rgb(218, 218, 218);
+  pointer-events: auto;
+  transform: none;
+}
+body body.theme-dark dl {
+  margin: 16px 0px;
+  margin-block-end: 15px;
+  margin-block-start: 15px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark dt {
+  color: rgb(220, 220, 220);
+  font-weight: 400;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(220, 220, 220);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark dd {
+  color: rgb(220, 220, 220);
+  font-size: 16px;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  margin: 0px 0px 0px 40px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 40px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  border: 0px rgb(220, 220, 220);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark .markdown-rendered code {
+  background-color: var(--code-background);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  padding: 2.1px 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark .markdown-rendered pre > code {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-dark :not(pre) > code[class*="language-"],
+body body.theme-dark pre[class*="language-"] {
+  background-color: var(--code-background);
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  overflow-x: visible;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+  white-space-collapse: preserve;
+  text-wrap-mode: nowrap;
+}
+body body.theme-dark figure[data-rehype-pretty-code-figure] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-dark
+  figure[data-rehype-pretty-code-figure]
+  > [data-rehype-pretty-code-title] {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(218, 218, 218);
+  font-family: monospace;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark pre > code [data-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 0px rgb(218, 218, 218);
+}
+body body.theme-dark pre > code [data-highlighted-line] {
+  background-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(218, 218, 218);
+}
+body body.theme-dark pre > code [data-highlighted-chars] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > .task-list-item-checkbox {
+  appearance: auto;
+  border: 3px solid rgb(120, 120, 120);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 0px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+  margin: 0px 8px 0px 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  width: var(--checkbox-size);
+  transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  top: auto;
+}
+body body.theme-dark ul.contains-task-list > li.task-list-item {
+  text-align: start;
+  display: list-item;
+}
+body
+  body.theme-dark
+  ul.contains-task-list
+  > li.task-list-item
+  > input[type="checkbox"]:checked {
+  content: normal;
+  top: auto;
+  inset-inline-start: auto;
+  position: static;
+  width: auto;
+  display: list-item;
+  background-color: rgba(0, 0, 0, 0);
+}
+body body.theme-dark li.task-list-item[data-task="-"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task=">"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="/"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="?"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="!"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="*"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="l"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="b"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="i"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="S"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="I"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="p"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="c"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="f"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="k"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="u"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="d"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark li.task-list-item[data-task="w"] {
+  color: rgb(220, 220, 220);
+  text-decoration: none;
+  text-decoration-color: rgb(220, 220, 220);
+}
+body body.theme-dark .markdown-rendered blockquote {
+  background-color: var(--blockquote-background-color);
+  color: var(--blockquote-color);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 400;
+  font-style: var(--blockquote-font-style);
+  line-height: 25.6px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-inline-start: 0px;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+  text-decoration: rgb(218, 218, 218);
+  letter-spacing: normal;
+}
+body body.theme-dark .footnote-backref {
+  color: var(--text-faint);
+  text-decoration: underline rgb(166, 138, 249);
+}
+body body.theme-dark progress {
+  accent-color: auto;
+  background-color: rgba(0, 0, 0, 0);
+  height: 6px;
+  border: 0px rgb(220, 220, 220);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="range"] {
+  accent-color: auto;
+  background-color: rgb(59, 59, 59);
+  border: 2px inset rgb(133, 133, 133);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark input[type="text"] {
+  background-color: rgba(var(--background-modifier-form-field), 0.3);
+  color: var(--text-normal);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  padding: 8px 10px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 2px;
+  padding-inline-start: 2px;
+}
+body body.theme-dark details {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(220, 220, 220);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark summary {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(220, 220, 220);
+  cursor: auto;
+  font-weight: 400;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark details[open] {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+body body.theme-dark kbd {
+  background-color: var(--code-background);
+  box-shadow: none;
+  color: var(--code-normal);
+  font-family: var(--font-monospace);
+  font-size: var(--code-size);
+  border: 0px rgb(180, 180, 180);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-start-start-radius: 4px;
+  border-start-end-radius: 4px;
+  border-end-start-radius: 4px;
+  border-end-end-radius: 4px;
+  padding: 1.4px 3.5px;
+  padding-block-end: 1.3125px;
+  padding-block-start: 1.3125px;
+  padding-inline-end: 3.28125px;
+  padding-inline-start: 3.28125px;
+}
+body body.theme-dark sub {
+  color: rgb(220, 220, 220);
+  font-size: 13.3333px;
+  vertical-align: sub;
+}
+body body.theme-dark sup {
+  color: rgb(220, 220, 220);
+  font-size: 13.3333px;
+  vertical-align: super;
+}
+body body.theme-dark abbr {
+  color: rgb(220, 220, 220);
+  cursor: auto;
+  text-decoration: underline dotted;
+  text-decoration-style: dotted;
+}
+body body.theme-dark .math-block > mjx-container.MathJax {
+  display: block;
+  text-align: center;
+  white-space-collapse: collapse;
+  text-wrap-mode: wrap;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark div.math-block > mjx-container.MathJax {
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+}
+body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
+  font-family: MJXZERO, MJXTEX;
+}
+body body.theme-dark .page-header .page-title {
+  color: var(--text-normal);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.9px;
+  background-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+    border-box;
+  padding: 0px;
+  margin: 0px;
+  border-color: rgb(220, 220, 220);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .math-block {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(220, 220, 220);
+  border-color: rgb(220, 220, 220);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+body body.theme-dark .footnotes {
+  background-color: rgba(0, 0, 0, 0);
+  border-top-color: rgb(220, 220, 220);
+  border-top-width: 0px;
+  color: rgb(220, 220, 220);
+}
+body body.theme-dark .tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 0px solid rgba(128, 208, 255, 0.15);
+  border-top-left-radius: 24.5px;
+  border-top-right-radius: 24.5px;
+  border-bottom-left-radius: 24.5px;
+  border-bottom-right-radius: 24.5px;
 }
 body
   body.theme-dark
@@ -7540,6 +8168,21 @@ body body.theme-dark .markdown-rendered table {
 }
 body body.theme-dark .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(220, 220, 220);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(220, 220, 220);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7552,6 +8195,21 @@ body body.theme-dark .markdown-rendered thead {
 }
 body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
+  color: rgb(220, 220, 220);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
 }
 body body.theme-dark .markdown-rendered th {
   background-color: rgba(0, 0, 0, 0);
@@ -7606,6 +8264,21 @@ body body.theme-dark .markdown-rendered td {
 }
 body body.theme-dark .markdown-rendered tr {
   background-color: var(--table-header-background);
+  color: rgb(220, 220, 220);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   border: 0px rgb(220, 220, 220);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -7621,6 +8294,15 @@ body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background);
+}
+body body.theme-dark .table-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgb(220, 220, 220);
+  border-width: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 body body.theme-dark .markdown-rendered img {
   border-radius: 0px;
@@ -7771,465 +8453,8 @@ body body.theme-dark .file-embed {
   margin: 0px;
   padding: 10px;
 }
-body body.theme-dark .metadata-container {
-  background-color: var(--metadata-background);
-  color: var(--text-muted);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin: 0px;
-  padding: 10px 0px;
-}
-body body.theme-dark .metadata-properties {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(180, 180, 180);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border-color: rgb(180, 180, 180);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  margin: 0px;
-  padding: 0px;
-}
-body body.theme-dark .metadata-container .metadata-property {
-  background-color: var(--metadata-property-background);
-  color: rgb(180, 180, 180);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border-color: rgb(180, 180, 180);
-  border-width: 0px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-}
-body body.theme-dark .metadata-property-key {
-  color: rgb(180, 180, 180);
-  font-family: var(--metadata-label-font);
-  font-size: 16px;
-  font-weight: 400;
-}
-body body.theme-dark .metadata-property-value {
-  color: rgb(180, 180, 180);
-  font-family: var(--metadata-input-font);
-  font-size: 16px;
-}
-body body.theme-dark progress {
-  accent-color: auto;
-  background-color: rgba(0, 0, 0, 0);
-  height: 6px;
-  border: 0px rgb(220, 220, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark input[type="range"] {
-  accent-color: auto;
-  background-color: rgb(59, 59, 59);
-  border: 2px inset rgb(133, 133, 133);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark input[type="text"] {
-  background-color: rgba(var(--background-modifier-form-field), 0.3);
-  color: var(--text-normal);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  border: 2px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  padding: 8px 10px;
-  padding-block-end: 1px;
-  padding-block-start: 1px;
-  padding-inline-end: 2px;
-  padding-inline-start: 2px;
-}
-body body.theme-dark details {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(220, 220, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-dark summary {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(220, 220, 220);
-  cursor: auto;
-  font-weight: 400;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-dark details[open] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-dark kbd {
-  background-color: var(--code-background);
-  box-shadow: none;
-  color: var(--code-normal);
-  font-family: var(--font-monospace);
-  font-size: var(--code-size);
-  border: 0px rgb(180, 180, 180);
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-start-start-radius: 4px;
-  border-start-end-radius: 4px;
-  border-end-start-radius: 4px;
-  border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
-  padding-block-end: 1.3125px;
-  padding-block-start: 1.3125px;
-  padding-inline-end: 3.28125px;
-  padding-inline-start: 3.28125px;
-}
-body body.theme-dark dl {
-  margin: 16px 0px;
-  margin-block-end: 15px;
-  margin-block-start: 15px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-}
-body body.theme-dark dt {
-  color: rgb(220, 220, 220);
-  font-weight: 400;
-  margin: 0px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
-  font-size: 16px;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  border: 0px rgb(220, 220, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark dd {
-  color: rgb(220, 220, 220);
-  font-size: 16px;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  margin: 0px 0px 0px 40px;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-  margin-inline-end: 0px;
-  margin-inline-start: 40px;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  border: 0px rgb(220, 220, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark sub {
-  color: rgb(220, 220, 220);
-  font-size: 13.3333px;
-  vertical-align: sub;
-}
-body body.theme-dark sup {
-  color: rgb(220, 220, 220);
-  font-size: 13.3333px;
-  vertical-align: super;
-}
-body body.theme-dark abbr {
-  color: rgb(220, 220, 220);
-  cursor: auto;
-  text-decoration: underline dotted;
-  text-decoration-style: dotted;
-}
-body body.theme-dark li.task-list-item[data-task="-"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task=">"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="/"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="?"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="!"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="*"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="l"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="b"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="i"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="S"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="I"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="p"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="c"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="f"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="k"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="u"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="d"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark li.task-list-item[data-task="w"] {
-  color: rgb(220, 220, 220);
-  text-decoration: none;
-  text-decoration-color: rgb(220, 220, 220);
-}
-body body.theme-dark .math-block > mjx-container.MathJax {
-  display: block;
-  text-align: center;
-  white-space-collapse: collapse;
-  text-wrap-mode: wrap;
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body body.theme-dark div.math-block > mjx-container.MathJax {
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-}
-body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
-  font-family: MJXZERO, MJXTEX;
-}
 body body.theme-dark .nav-view-outer .tree-item-self a {
-  color: rgb(218, 218, 218);
-  cursor: auto;
+  color: rgba(220, 220, 220, 0.9);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8245,26 +8470,32 @@ body body.theme-dark .nav-view-outer .tree-item-self a {
     "Segoe UI Symbol",
     sans-serif;
   font-weight: 400;
-  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-  color: rgb(218, 218, 218);
-  cursor: auto;
-  transition-behavior: normal;
-  transition-delay: 0s;
-  transition-duration: 0s;
-  transition-property: all;
-  transition-timing-function: ease;
+  color: var(--nav-item-color);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  border-color: rgba(220, 220, 220, 0.9);
+  border-left: 2px solid rgba(0, 0, 0, 0);
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 body
   body.theme-dark
@@ -8275,7 +8506,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8291,7 +8521,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(218, 218, 218);
 }
 body
   body.theme-dark
@@ -8302,7 +8531,6 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  cursor: var(--cursor);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -8318,7 +8546,6 @@ body
     "Segoe UI Symbol",
     sans-serif;
   font-weight: var(--nav-item-weight);
-  text-decoration: rgb(218, 218, 218);
 }
 body body.theme-dark .clickable-icon {
   background-color: rgba(0, 0, 0, 0);
@@ -8458,141 +8685,6 @@ body body.theme-dark .view-header-breadcrumb-separator {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-}
-body body.theme-dark .page-header .page-title {
-  color: var(--text-normal);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 16.9px;
-  background-color: rgba(0, 0, 0, 0);
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
-  padding: 0px;
-  margin: 0px;
-  border-color: rgb(220, 220, 220);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-dark .math-block {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(220, 220, 220);
-  border-color: rgb(220, 220, 220);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-dark .footnotes {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-color: rgb(220, 220, 220);
-  border-top-width: 0px;
-  color: rgb(220, 220, 220);
-}
-body body.theme-dark .table-wrapper {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: rgb(220, 220, 220);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-dark .view-content {
-  border-color: rgb(220, 220, 220);
-  border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-body body.theme-dark figure[data-rehype-pretty-code-figure] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body
-  body.theme-dark
-  figure[data-rehype-pretty-code-figure]
-  > [data-rehype-pretty-code-title] {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(218, 218, 218);
-  font-family: monospace;
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark pre > code [data-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left: 0px rgb(218, 218, 218);
-}
-body body.theme-dark pre > code [data-highlighted-line] {
-  background-color: rgba(0, 0, 0, 0);
-  border-left-color: rgb(218, 218, 218);
-}
-body body.theme-dark pre > code [data-highlighted-chars] {
-  background-color: rgba(0, 0, 0, 0);
-  border: 0px rgb(218, 218, 218);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
-}
-body body.theme-dark .tag {
-  background-color: var(--tag-background);
-  color: var(--tag-color);
-  border: 0px solid rgba(128, 208, 255, 0.15);
-  border-top-left-radius: 24.5px;
-  border-top-right-radius: 24.5px;
-  border-bottom-left-radius: 24.5px;
-  border-bottom-right-radius: 24.5px;
-}
-body body.theme-dark .search-highlight {
-  background-color: rgb(255, 255, 0);
-  color: rgb(0, 0, 0);
-  border: 0px rgb(0, 0, 0);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-start-start-radius: 0px;
-  border-start-end-radius: 0px;
-  border-end-start-radius: 0px;
-  border-end-end-radius: 0px;
 }
 body
   .callout[data-callout="note"]
