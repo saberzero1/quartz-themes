@@ -778,9 +778,9 @@ body:not(.is-mobile) .prompt {
 
 /* ==================== Mobile menu & prompt animations ==================== */
 /* is-mobile covers both phone and tablet */
-/* ponizej lepiej pasuje 750ms ale to poprawie w przyszlosci */
+/* 750ms suits better here, but will be refined in a future update */
 .is-phone .menu {
-  /* phone bo na tablecie to wyglada po prostu zle */
+  /* phone only — on tablet this animation looks poor */
   animation: tr-mobile-slide-up var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -860,7 +860,6 @@ input[type="range"] {
 }
 
 
-
 .suggestion-container.mod-search-suggestion {
   background-color: var(--tr);
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
@@ -873,10 +872,6 @@ input[type="range"] {
 button:not(.clickable-icon) {
   background-color: var(--color-accent);
   box-shadow: none;
-  color: #060606;
-}
-
-button {
   color: #060606;
 }
 
@@ -914,7 +909,6 @@ select,
   background-color: var(--tr06);
   box-shadow: none;
 }
-
 
 select.dropdown option {
   background-color: var(--background-primary-alt);
@@ -1159,7 +1153,7 @@ body.hide-canvas-dots svg.canvas-background {
 
 /* ===================== mobile ===================== */
 .is-phone .menu-group .menu-item.is-label {
-  /* lepszy prawy przycisk na folderach */
+  /* better context menu label on folders */
   padding: 6px 16px;
   margin: 8px 12px 8px 12px;
   color: var(--text-normal);
@@ -1622,19 +1616,19 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.Hype
   }
 }
 
-/* linijka traci fokus */
+/* line loses focus */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header {
   position: relative;
   padding-left: 0;
   transition: padding-left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* linijka zyskuje fokus */
+/* line gains focus */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active.HyperMD-header {
   transition: padding-left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* Hardcoded odsuwanie, pewnie będzie problem podczas zmiany czcionek headerów, lecz to się wydaje być niszowym rozwiązaniem */
+/* Hardcoded indent per header level — may need revisiting if header font sizes change */
 body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active {
   &.HyperMD-header-1 {
     padding-left: 20px;
@@ -1680,8 +1674,8 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
   }
 }
 
-/* Animuje znaczniki inline w aktywnej linii.
-  Wyklucza nagłówki, elementy list i checkboxy oraz ignoruje wielolinijkowe bloki kodu.
+/* Animates inline markers on the active line.
+  Excludes headings, list items, checkboxes, and multi-line code blocks.
 */
 body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header):not(.cm-formatting-list):not(.cm-formatting-task) {
   display: inline-block;
@@ -1692,7 +1686,7 @@ body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.
   animation: premiumHorizontalPush 0.3s cubic-bezier(0.25, 1, 0.5, 1.05) forwards;
 }
 
-/* ===================== Header Animations ===================== */
+/* ===================== Inline Formatting Animations ===================== */
 
 /* ===================== iOS Fixes ===================== */
 body.is-ios .app-container .workspace,

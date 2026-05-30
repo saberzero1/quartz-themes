@@ -1,0 +1,1068 @@
+/*
+  Dark Knight — an Obsidian theme inspired by Gotham at night.
+  Palette:
+    Gotham Black      #0a0a0c
+    Night Sky         #14141a
+    Asphalt           #1c1c24
+    Steel             #2a2a35
+    Concrete          #3a3a48
+    Fog               #8a8a96
+    Bone              #d4d4dc
+    Bat-Signal Gold   #f5c518
+    Signal Hover      #ffdb4d
+    Steel Blue        #4a6b8a
+    Joker Red         #c8252c
+    Riddler Green     #4a8b4a
+
+  Architecture
+  ------------
+  1. Shared derived tokens — written once, resolved per theme via the
+     raw --dk-* palette (which differs between dark and light). Because
+     CSS custom properties resolve lazily, a shared rule like
+     "rgba(var(--dk-gold-rgb), 0.1)" yields bright gold in dark mode and
+     deep gold in light mode automatically.
+  2. .theme-dark  — raw palette + surfaces + the few values unique to dark.
+  3. .theme-light — raw palette + surfaces + the few values unique to light.
+  4. Structural CSS scoped to :is(.theme-dark, .theme-light) so both
+     variants get the full theme, not just recolored defaults.
+  5. Dark-only noir enhancements (glows, vignette).
+*/
+
+/* =========================================================
+   1. SHARED DERIVED TOKENS — palette-driven, both variants
+   ========================================================= */
+
+.theme-dark,
+.theme-light {
+  /* Surfaces */
+  --background-primary:           var(--dk-black);
+  --background-primary-alt:       var(--dk-night);
+  --background-secondary:         var(--dk-night);
+  --background-secondary-alt:     var(--dk-asphalt);
+  --background-modifier-active-hover: rgba(var(--dk-gold-rgb), 0.12);
+  --background-modifier-border:   var(--dk-steel);
+  --background-modifier-border-hover:  var(--dk-concrete);
+  --background-modifier-border-focus:  var(--dk-gold);
+  --background-modifier-form-field:    var(--dk-night);
+  --background-modifier-form-field-highlighted: var(--dk-asphalt);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.6);
+  --background-modifier-success:  rgba(var(--dk-green-rgb), 0.20);
+  --background-modifier-error:    rgba(var(--dk-red-rgb), 0.20);
+  --background-modifier-error-hover: rgba(var(--dk-red-rgb), 0.30);
+
+  /* Text */
+  --text-normal:        var(--dk-bone);
+  --text-muted:         var(--dk-fog);
+  --text-error:         var(--dk-red);
+  --text-error-hover:   #e0464d;
+  --text-success:       var(--dk-green);
+  --text-warning:       var(--dk-gold);
+  --text-accent:        var(--dk-gold);
+  --text-accent-hover:  var(--dk-gold-bright);
+  --text-selection:     rgba(var(--dk-gold-rgb), 0.25);
+  --text-highlight-bg:  rgba(var(--dk-gold-rgb), 0.30);
+  --text-highlight-bg-active: rgba(var(--dk-gold-rgb), 0.45);
+
+  /* Accent (interactive) */
+  --interactive-accent:        var(--dk-gold);
+  --interactive-accent-hover:  var(--dk-gold-bright);
+  --interactive-normal:        var(--dk-asphalt);
+  --interactive-hover:         var(--dk-steel);
+  --interactive-success:       var(--dk-green);
+
+  /* Links */
+  --link-color:           var(--dk-gold);
+  --link-color-hover:     var(--dk-gold-bright);
+  --link-unresolved-color: var(--dk-red);
+  --link-external-color:  var(--dk-blue-bright);
+
+  /* Borders / dividers */
+  --divider-color:        var(--dk-steel);
+  --divider-color-hover:  var(--dk-concrete);
+
+  /* Tag */
+  --tag-color:            var(--dk-gold);
+  --tag-color-hover:      var(--text-on-accent);
+  --tag-background:       rgba(var(--dk-gold-rgb), 0.10);
+  --tag-background-hover: var(--dk-gold);
+  --tag-border-color:     rgba(var(--dk-gold-rgb), 0.30);
+  --tag-border-color-hover: var(--dk-gold);
+
+  /* Code (token colors; backgrounds set per theme) */
+  --code-normal:      var(--dk-bone);
+  --code-keyword:     var(--dk-gold);
+  --code-function:    var(--dk-blue-bright);
+  --code-tag:         var(--dk-gold-bright);
+  --code-property:    var(--dk-purple);
+  --code-string:      var(--dk-green);
+  --code-value:       #d9a86e;
+  --code-operator:    #c8c8d2;
+  --code-important:   var(--dk-red);
+
+  /* Caret / selection */
+  --caret-color:           var(--dk-gold);
+  --selection-background:  rgba(var(--dk-gold-rgb), 0.22);
+
+  /* Scrollbars */
+  --scrollbar-bg:           transparent;
+  --scrollbar-thumb-bg:     var(--dk-steel);
+  --scrollbar-active-thumb-bg: var(--dk-gold);
+
+  /* Graph */
+  --graph-line:    var(--dk-steel);
+  --graph-node:    var(--dk-fog);
+  --graph-text:    var(--dk-bone);
+  --graph-node-tag:        var(--dk-gold);
+  --graph-node-attachment: var(--dk-blue-bright);
+  --graph-node-unresolved: var(--dk-red);
+  --graph-node-focused:    var(--dk-gold-bright);
+
+  /* Title bar */
+  --titlebar-background:         var(--dk-black);
+  --titlebar-background-focused: var(--dk-night);
+  --titlebar-text-color:         var(--dk-fog);
+  --titlebar-text-color-focused: var(--dk-gold);
+  --titlebar-border-color:       var(--dk-steel);
+
+  --indentation-guide:        var(--dk-steel);
+  --indentation-guide-active: var(--dk-gold);
+
+  --blockquote-border-color: var(--dk-gold);
+
+  --hr-color: var(--dk-steel);
+
+  --table-header-background: var(--dk-night);
+  --table-row-hover-background: rgba(var(--dk-gold-rgb), 0.05);
+  --table-border-color: var(--dk-steel);
+
+  --checkbox-color:        var(--dk-gold);
+  --checkbox-color-hover:  var(--dk-gold-bright);
+  --checkbox-border-color: var(--dk-concrete);
+  --checkbox-border-color-hover: var(--dk-gold);
+  --checkbox-marker-color: var(--text-on-accent);
+
+  --pill-color:            var(--dk-bone);
+  --pill-color-hover:      var(--text-on-accent);
+  --pill-background:       var(--dk-asphalt);
+  --pill-background-hover: var(--dk-gold);
+
+  /* Focus ring */
+  --input-focus-border-color: var(--dk-gold);
+  --input-focus-outline:      0 0 0 2px rgba(var(--dk-gold-rgb), 0.25);
+
+  /* Modal */
+  --modal-border-color: var(--dk-steel);
+
+  /* Fonts — defaults stay user-controlled, but provide tasteful fallbacks */
+  --font-interface-theme: "Inter", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-text-theme:      "Inter", "Source Sans Pro", "Segoe UI", sans-serif;
+  --font-monospace-theme: "JetBrains Mono", "Fira Code", "Menlo", monospace;
+
+  /* Layout polish */
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 10px;
+}
+
+/* =========================================================
+   1a. DARK — raw palette + surfaces + dark-only values
+   ========================================================= */
+
+.theme-dark {
+  /* Core palette */
+  --dk-black:       #0a0a0c;
+  --dk-night:       #14141a;
+  --dk-asphalt:     #1c1c24;
+  --dk-steel:       #2a2a35;
+  --dk-concrete:    #3a3a48;
+  --dk-fog:         #8a8a96;
+  --dk-bone:        #d4d4dc;
+  --dk-paper:       #e8e8ee;
+  --dk-gold:        #f5c518;
+  --dk-gold-bright: #ffdb4d;
+  --dk-gold-deep:   #b8920f;
+  --dk-blue:        #4a6b8a;
+  --dk-blue-bright: #6a8fb5;
+  --dk-red:         #c8252c;
+  --dk-green:       #4a8b4a;
+  --dk-purple:      #7a5aa6;
+
+  /* RGB channels for rgba() compositing — resolve per theme */
+  --dk-gold-rgb:   245, 197, 24;
+  --dk-red-rgb:    200, 37, 44;
+  --dk-green-rgb:  74, 139, 74;
+  --dk-blue-rgb:   106, 143, 181;
+  --dk-purple-rgb: 122, 90, 166;
+
+  /* Dark-specific surfaces */
+  --background-modifier-hover:  rgba(var(--dk-gold-rgb), 0.06);
+  --background-modifier-cover:  rgba(5, 5, 8, 0.78);
+  --modal-background:           var(--dk-night);
+
+  /* Dark-specific text */
+  --text-faint:       #82828e;       /* lifted from #5a5a66 for AA legibility */
+  --text-on-accent:   var(--dk-black);
+
+  /* Headings — Bat-signal gold gradient by depth */
+  --h1-color: var(--dk-gold-bright);
+  --h2-color: var(--dk-gold);
+  --h3-color: #e8b412;
+  --h4-color: var(--dk-blue-bright);
+  --h5-color: var(--dk-blue);
+  --h6-color: var(--dk-fog);
+
+  --code-background:  #101016;
+  --code-comment:     #84848f;        /* lifted for contrast on code bg */
+  --code-punctuation: #8a8a96;
+
+  --blockquote-background:   rgba(var(--dk-gold-rgb), 0.04);
+  --table-row-alt-background: rgba(255, 255, 255, 0.015);
+}
+
+/* =========================================================
+   1b. LIGHT — Gotham at dawn. Same DNA, softened.
+   ========================================================= */
+
+.theme-light {
+  /* Core palette — surface tokens remapped to cream/ink */
+  --dk-black:       #f4f1ea;   /* primary surface */
+  --dk-night:       #ece8df;   /* secondary surface */
+  --dk-asphalt:     #ddd7ca;   /* inputs / buttons */
+  --dk-steel:       #c8c1b1;   /* borders */
+  --dk-concrete:    #aaa28e;   /* border hover */
+  --dk-fog:         #5b5b66;   /* muted text */
+  --dk-bone:        #1c1c24;   /* normal text (ink) */
+  --dk-paper:       #f4f1ea;
+  --dk-ink:         #1c1c24;
+  --dk-ink-soft:    #3a3a48;
+  --dk-gold:        #b8920f;
+  --dk-gold-bright: #d4a813;
+  --dk-gold-deep:   #9c7d0d;
+  --dk-blue:        #2f5470;
+  --dk-blue-bright: #3d6c8c;
+  --dk-red:         #a51d23;
+  --dk-green:       #3a6f3a;
+  --dk-purple:      #5f4685;
+
+  --dk-gold-rgb:   184, 146, 15;
+  --dk-red-rgb:    165, 29, 35;
+  --dk-green-rgb:  58, 111, 58;
+  --dk-blue-rgb:   47, 84, 112;
+  --dk-purple-rgb: 95, 70, 133;
+
+  /* Light-specific surfaces */
+  --background-modifier-hover:  rgba(var(--dk-gold-rgb), 0.10);
+  --background-modifier-cover:  rgba(40, 38, 32, 0.40);
+  --modal-background:           #faf8f2;
+
+  /* Light-specific text */
+  --text-faint:       #8a8474;
+  --text-on-accent:   #1c1c24;        /* dark ink reads on mid-tone gold */
+
+  /* Headings — ink title, gold subheads */
+  --h1-color: var(--dk-ink);
+  --h2-color: var(--dk-gold);
+  --h3-color: var(--dk-gold-bright);
+  --h4-color: var(--dk-blue);
+  --h5-color: var(--dk-blue-bright);
+  --h6-color: var(--dk-ink-soft);
+
+  --code-background:  #ebe5d6;
+  --code-comment:     #8a8470;
+  --code-punctuation: #6a6a74;
+
+  --blockquote-background:   rgba(var(--dk-gold-rgb), 0.06);
+  --table-row-alt-background: rgba(0, 0, 0, 0.025);
+}
+
+/* =========================================================
+   2. WORKSPACE CHROME
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) body,
+:is(.theme-dark, .theme-light) .app-container,
+:is(.theme-dark, .theme-light) .workspace,
+:is(.theme-dark, .theme-light) .workspace-split,
+:is(.theme-dark, .theme-light) .workspace-tabs {
+  background-color: var(--dk-black);
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header-container {
+  background-color: var(--dk-black);
+  border-bottom: 1px solid var(--dk-steel);
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius-s) var(--radius-s) 0 0;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header:hover {
+  background-color: var(--dk-night);
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header.is-active {
+  background-color: var(--dk-night);
+  border-color: var(--dk-steel);
+  border-bottom-color: var(--dk-night);
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--dk-gold-deep), var(--dk-gold-bright), var(--dk-gold-deep));
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header-inner-title {
+  color: var(--dk-fog);
+}
+
+:is(.theme-dark, .theme-light) .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  color: var(--dk-gold);
+}
+
+/* Sidebar */
+:is(.theme-dark, .theme-light) .workspace-ribbon,
+:is(.theme-dark, .theme-light) .workspace-ribbon.mod-left {
+  background-color: var(--dk-black);
+  border-right: 1px solid var(--dk-steel);
+}
+
+:is(.theme-dark, .theme-light) .side-dock-ribbon-action {
+  color: var(--dk-fog);
+  transition: color 120ms ease, background-color 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) .side-dock-ribbon-action:hover {
+  color: var(--dk-gold);
+  background-color: rgba(var(--dk-gold-rgb), 0.06);
+}
+
+:is(.theme-dark, .theme-light) .side-dock-ribbon-action.is-active {
+  color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .nav-folder-title,
+:is(.theme-dark, .theme-light) .nav-file-title {
+  color: var(--dk-bone);
+  border-radius: var(--radius-s);
+  transition: background-color 100ms ease, color 100ms ease;
+}
+
+:is(.theme-dark, .theme-light) .nav-file-title:hover,
+:is(.theme-dark, .theme-light) .nav-folder-title:hover {
+  background-color: rgba(var(--dk-gold-rgb), 0.06);
+  color: var(--dk-gold-bright);
+}
+
+:is(.theme-dark, .theme-light) .nav-file-title.is-active,
+:is(.theme-dark, .theme-light) .nav-file.is-active > .nav-file-title {
+  background-color: rgba(var(--dk-gold-rgb), 0.12);
+  color: var(--dk-gold);
+  box-shadow: inset 2px 0 0 var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .nav-folder-title-content {
+  font-weight: 500;
+}
+
+/* Status bar */
+:is(.theme-dark, .theme-light) .status-bar {
+  background-color: var(--dk-black);
+  border-top: 1px solid var(--dk-steel);
+  color: var(--dk-fog);
+  font-size: 11px;
+  letter-spacing: 0.02em;
+}
+
+:is(.theme-dark, .theme-light) .status-bar-item {
+  color: var(--dk-fog);
+}
+
+:is(.theme-dark, .theme-light) .status-bar-item:hover {
+  color: var(--dk-gold);
+}
+
+/* Title bar */
+:is(.theme-dark, .theme-light) .titlebar {
+  background-color: var(--dk-black);
+  border-bottom: 1px solid var(--dk-steel);
+}
+
+/* =========================================================
+   3. EDITOR CONTENT
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .markdown-source-view,
+:is(.theme-dark, .theme-light) .markdown-preview-view {
+  background-color: var(--dk-black);
+  color: var(--dk-bone);
+  line-height: 1.65;
+}
+
+:is(.theme-dark, .theme-light) .cm-editor {
+  background-color: var(--dk-black);
+  color: var(--dk-bone);
+}
+
+:is(.theme-dark, .theme-light) .cm-line {
+  caret-color: var(--dk-gold);
+}
+
+/* Headings — Bat-signal gold, descending in intensity */
+:is(.theme-dark, .theme-light) .markdown-preview-view h1,
+:is(.theme-dark, .theme-light) .HyperMD-header-1,
+:is(.theme-dark, .theme-light) .cm-header-1 {
+  color: var(--h1-color);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-bottom: 1px solid rgba(var(--dk-gold-rgb), 0.25);
+  padding-bottom: 0.25em;
+}
+
+:is(.theme-dark, .theme-light) .markdown-preview-view h2,
+:is(.theme-dark, .theme-light) .HyperMD-header-2,
+:is(.theme-dark, .theme-light) .cm-header-2 {
+  color: var(--h2-color);
+  font-weight: 650;
+  letter-spacing: -0.005em;
+  border-bottom: 1px solid rgba(var(--dk-gold-rgb), 0.15);
+  padding-bottom: 0.2em;
+}
+
+:is(.theme-dark, .theme-light) .markdown-preview-view h3,
+:is(.theme-dark, .theme-light) .HyperMD-header-3,
+:is(.theme-dark, .theme-light) .cm-header-3 { color: var(--h3-color); font-weight: 600; }
+
+:is(.theme-dark, .theme-light) .markdown-preview-view h4,
+:is(.theme-dark, .theme-light) .HyperMD-header-4,
+:is(.theme-dark, .theme-light) .cm-header-4 { color: var(--h4-color); font-weight: 600; }
+
+:is(.theme-dark, .theme-light) .markdown-preview-view h5,
+:is(.theme-dark, .theme-light) .HyperMD-header-5,
+:is(.theme-dark, .theme-light) .cm-header-5 { color: var(--h5-color); font-weight: 600; }
+
+:is(.theme-dark, .theme-light) .markdown-preview-view h6,
+:is(.theme-dark, .theme-light) .HyperMD-header-6,
+:is(.theme-dark, .theme-light) .cm-header-6 { color: var(--h6-color); font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* Strong / em */
+:is(.theme-dark, .theme-light) .markdown-preview-view strong,
+:is(.theme-dark, .theme-light) .cm-strong { color: var(--dk-gold-bright); font-weight: 700; }
+
+:is(.theme-dark, .theme-light) .markdown-preview-view em,
+:is(.theme-dark, .theme-light) .cm-em { color: var(--dk-blue-bright); }
+
+/* Blockquote — Bat-signal column down the side */
+:is(.theme-dark, .theme-light) .markdown-preview-view blockquote,
+:is(.theme-dark, .theme-light) .HyperMD-quote {
+  border-left: 3px solid var(--dk-gold);
+  background-color: var(--blockquote-background);
+  color: var(--dk-bone);
+  padding: 0.6em 1em;
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+
+/* Inline code */
+:is(.theme-dark, .theme-light) code,
+:is(.theme-dark, .theme-light) .cm-inline-code {
+  background-color: var(--code-background);
+  color: var(--dk-gold-bright);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-s);
+  padding: 0.1em 0.35em;
+  font-size: 0.92em;
+}
+
+/* Code blocks — body prefix bumps specificity over Obsidian defaults */
+body:is(.theme-dark, .theme-light) pre,
+body:is(.theme-dark, .theme-light) .markdown-preview-view pre,
+body:is(.theme-dark, .theme-light) .HyperMD-codeblock-bg {
+  background-color: var(--code-background);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-m);
+  color: var(--dk-bone);
+}
+
+:is(.theme-dark, .theme-light) pre code {
+  background: transparent;
+  border: none;
+  color: var(--dk-bone);
+  padding: 0;
+}
+
+/* Syntax highlighting (Prism-style classes used by Obsidian preview) */
+:is(.theme-dark, .theme-light) .token.comment,
+:is(.theme-dark, .theme-light) .token.prolog,
+:is(.theme-dark, .theme-light) .token.doctype,
+:is(.theme-dark, .theme-light) .token.cdata        { color: var(--code-comment); font-style: italic; }
+:is(.theme-dark, .theme-light) .token.keyword,
+:is(.theme-dark, .theme-light) .token.atrule       { color: var(--code-keyword); font-weight: 600; }
+:is(.theme-dark, .theme-light) .token.function,
+:is(.theme-dark, .theme-light) .token.class-name   { color: var(--code-function); }
+:is(.theme-dark, .theme-light) .token.string,
+:is(.theme-dark, .theme-light) .token.attr-value   { color: var(--code-string); }
+:is(.theme-dark, .theme-light) .token.number,
+:is(.theme-dark, .theme-light) .token.boolean,
+:is(.theme-dark, .theme-light) .token.constant     { color: var(--code-value); }
+:is(.theme-dark, .theme-light) .token.property,
+:is(.theme-dark, .theme-light) .token.attr-name    { color: var(--code-property); }
+:is(.theme-dark, .theme-light) .token.tag,
+:is(.theme-dark, .theme-light) .token.selector     { color: var(--code-tag); }
+:is(.theme-dark, .theme-light) .token.operator,
+:is(.theme-dark, .theme-light) .token.entity       { color: var(--code-operator); }
+:is(.theme-dark, .theme-light) .token.punctuation  { color: var(--code-punctuation); }
+:is(.theme-dark, .theme-light) .token.important,
+:is(.theme-dark, .theme-light) .token.deleted      { color: var(--code-important); font-weight: 600; }
+
+/* Live-preview syntax (CodeMirror) — broad strokes */
+:is(.theme-dark, .theme-light) .cm-keyword     { color: var(--code-keyword); }
+:is(.theme-dark, .theme-light) .cm-def,
+:is(.theme-dark, .theme-light) .cm-variable-2  { color: var(--code-function); }
+:is(.theme-dark, .theme-light) .cm-string,
+:is(.theme-dark, .theme-light) .cm-string-2    { color: var(--code-string); }
+:is(.theme-dark, .theme-light) .cm-number      { color: var(--code-value); }
+:is(.theme-dark, .theme-light) .cm-comment     { color: var(--code-comment); font-style: italic; }
+:is(.theme-dark, .theme-light) .cm-property    { color: var(--code-property); }
+:is(.theme-dark, .theme-light) .cm-operator    { color: var(--code-operator); }
+:is(.theme-dark, .theme-light) .cm-atom        { color: var(--code-value); }
+:is(.theme-dark, .theme-light) .cm-tag         { color: var(--code-tag); }
+:is(.theme-dark, .theme-light) .cm-attribute   { color: var(--code-property); }
+
+/* Links */
+:is(.theme-dark, .theme-light) .markdown-preview-view a,
+:is(.theme-dark, .theme-light) .cm-link,
+:is(.theme-dark, .theme-light) .cm-hmd-internal-link {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(var(--dk-gold-rgb), 0.4);
+  transition: color 120ms ease, border-color 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) .markdown-preview-view a:hover,
+:is(.theme-dark, .theme-light) .cm-link:hover,
+:is(.theme-dark, .theme-light) .cm-hmd-internal-link:hover {
+  color: var(--link-color-hover);
+  border-bottom-color: var(--dk-gold-bright);
+}
+
+body:is(.theme-dark, .theme-light) .is-unresolved,
+body:is(.theme-dark, .theme-light) .cm-hmd-internal-link.is-unresolved {
+  color: var(--link-unresolved-color);
+  border-bottom: 1px dashed rgba(var(--dk-red-rgb), 0.5);
+}
+
+/* Horizontal rule */
+:is(.theme-dark, .theme-light) hr,
+:is(.theme-dark, .theme-light) .markdown-preview-view hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--dk-gold) 20%, var(--dk-gold) 80%, transparent);
+  opacity: 0.55;
+  margin: 2em 0;
+}
+
+/* Lists */
+:is(.theme-dark, .theme-light) .markdown-preview-view ul > li::marker {
+  color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .markdown-preview-view ol > li::marker {
+  color: var(--dk-gold);
+  font-weight: 600;
+}
+
+/* Checkboxes */
+:is(.theme-dark, .theme-light) input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--checkbox-border-color);
+  border-radius: 3px;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) input[type="checkbox"]:hover {
+  border-color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) input[type="checkbox"]:checked {
+  background-color: var(--dk-gold);
+  border-color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--checkbox-marker-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Tags */
+:is(.theme-dark, .theme-light) .tag,
+:is(.theme-dark, .theme-light) a.tag {
+  background-color: var(--tag-background);
+  color: var(--tag-color);
+  border: 1px solid var(--tag-border-color);
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.82em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) .tag:hover,
+:is(.theme-dark, .theme-light) a.tag:hover {
+  background-color: var(--tag-background-hover);
+  color: var(--tag-color-hover);
+}
+
+/* Tables */
+:is(.theme-dark, .theme-light) table,
+:is(.theme-dark, .theme-light) .markdown-preview-view table {
+  border-collapse: collapse;
+  border: 1px solid var(--table-border-color);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+:is(.theme-dark, .theme-light) th {
+  background-color: var(--table-header-background);
+  color: var(--dk-gold);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid var(--dk-gold);
+  padding: 0.5em 0.9em;
+}
+
+:is(.theme-dark, .theme-light) td {
+  border-top: 1px solid var(--table-border-color);
+  padding: 0.45em 0.9em;
+}
+
+:is(.theme-dark, .theme-light) tr:nth-child(even) td {
+  background-color: var(--table-row-alt-background);
+}
+
+:is(.theme-dark, .theme-light) tr:hover td {
+  background-color: var(--table-row-hover-background);
+}
+
+/* Highlights (==text==) */
+:is(.theme-dark, .theme-light) mark,
+:is(.theme-dark, .theme-light) .markdown-preview-view mark,
+:is(.theme-dark, .theme-light) .cm-highlight {
+  background-color: var(--text-highlight-bg);
+  color: var(--dk-gold-bright);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+/* Selection */
+:is(.theme-dark, .theme-light) ::selection {
+  background-color: var(--selection-background);
+}
+.theme-dark ::selection { color: var(--dk-gold-bright); }
+
+/* =========================================================
+   4. UI ELEMENTS — buttons, inputs, modals, menus
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) button,
+:is(.theme-dark, .theme-light) .clickable-icon,
+:is(.theme-dark, .theme-light) input,
+:is(.theme-dark, .theme-light) textarea,
+:is(.theme-dark, .theme-light) select {
+  background-color: var(--dk-asphalt);
+  color: var(--dk-bone);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-s);
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) button:hover,
+:is(.theme-dark, .theme-light) .clickable-icon:hover {
+  background-color: var(--dk-steel);
+  border-color: var(--dk-concrete);
+  color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) button.mod-cta,
+:is(.theme-dark, .theme-light) .mod-cta {
+  background-color: var(--dk-gold);
+  color: var(--text-on-accent);
+  border-color: var(--dk-gold);
+  font-weight: 600;
+}
+
+:is(.theme-dark, .theme-light) button.mod-cta:hover,
+:is(.theme-dark, .theme-light) .mod-cta:hover {
+  background-color: var(--dk-gold-bright);
+  border-color: var(--dk-gold-bright);
+}
+
+:is(.theme-dark, .theme-light) button.mod-warning,
+:is(.theme-dark, .theme-light) .mod-warning {
+  background-color: var(--dk-red);
+  color: #f4f1ea;
+  border-color: var(--dk-red);
+}
+
+:is(.theme-dark, .theme-light) input:focus,
+:is(.theme-dark, .theme-light) textarea:focus,
+:is(.theme-dark, .theme-light) select:focus {
+  border-color: var(--dk-gold);
+  outline: none;
+  box-shadow: var(--input-focus-outline);
+}
+
+/* Keyboard focus visibility (accessibility) */
+:is(.theme-dark, .theme-light) button:focus-visible,
+:is(.theme-dark, .theme-light) .clickable-icon:focus-visible,
+:is(.theme-dark, .theme-light) .nav-file-title:focus-visible,
+:is(.theme-dark, .theme-light) .nav-folder-title:focus-visible,
+:is(.theme-dark, .theme-light) .menu-item:focus-visible,
+:is(.theme-dark, .theme-light) a:focus-visible {
+  outline: 2px solid var(--dk-gold);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
+/* Modals */
+:is(.theme-dark, .theme-light) .modal,
+:is(.theme-dark, .theme-light) .modal-bg + .modal,
+:is(.theme-dark, .theme-light) .prompt {
+  background-color: var(--modal-background);
+  border: 1px solid var(--modal-border-color);
+  border-radius: var(--radius-l);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(var(--dk-gold-rgb), 0.06);
+}
+
+:is(.theme-dark, .theme-light) .modal-title {
+  color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .modal-bg {
+  background-color: var(--background-modifier-cover);
+  backdrop-filter: blur(4px);
+}
+
+/* Command palette / suggester */
+:is(.theme-dark, .theme-light) .suggestion-container,
+:is(.theme-dark, .theme-light) .menu {
+  background-color: var(--dk-night);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-m);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+
+:is(.theme-dark, .theme-light) .suggestion-item,
+:is(.theme-dark, .theme-light) .menu-item {
+  color: var(--dk-bone);
+  border-radius: var(--radius-s);
+  margin: 1px 4px;
+  padding: 6px 10px;
+}
+
+:is(.theme-dark, .theme-light) .suggestion-item.is-selected,
+:is(.theme-dark, .theme-light) .menu-item.selected,
+:is(.theme-dark, .theme-light) .menu-item:hover {
+  background-color: rgba(var(--dk-gold-rgb), 0.12);
+  color: var(--dk-gold-bright);
+}
+
+:is(.theme-dark, .theme-light) .suggestion-hotkey {
+  color: var(--dk-fog);
+  background-color: var(--dk-asphalt);
+  border: 1px solid var(--dk-steel);
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 11px;
+}
+
+/* Tooltips */
+:is(.theme-dark, .theme-light) .tooltip {
+  background-color: var(--dk-night);
+  color: var(--dk-bone);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-s);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Settings */
+:is(.theme-dark, .theme-light) .setting-item {
+  border-top: 1px solid var(--dk-steel);
+}
+
+:is(.theme-dark, .theme-light) .setting-item-name {
+  color: var(--dk-bone);
+}
+
+:is(.theme-dark, .theme-light) .setting-item-description {
+  color: var(--dk-fog);
+}
+
+:is(.theme-dark, .theme-light) .vertical-tab-header {
+  background-color: var(--dk-night);
+  border-right: 1px solid var(--dk-steel);
+}
+
+:is(.theme-dark, .theme-light) .vertical-tab-nav-item.is-active {
+  background-color: rgba(var(--dk-gold-rgb), 0.10);
+  color: var(--dk-gold);
+  box-shadow: inset 2px 0 0 var(--dk-gold);
+}
+
+/* =========================================================
+   5. PROPERTIES / METADATA EDITOR  (Obsidian 1.4+)
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .metadata-container {
+  background-color: var(--dk-night);
+  border: 1px solid var(--dk-steel);
+  border-left: 2px solid var(--dk-gold);
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: 0.4em 0.6em;
+}
+
+:is(.theme-dark, .theme-light) .metadata-property-key,
+:is(.theme-dark, .theme-light) .metadata-property-key-input {
+  color: var(--dk-gold);
+  font-weight: 500;
+}
+
+:is(.theme-dark, .theme-light) .metadata-property-value,
+:is(.theme-dark, .theme-light) .metadata-property-value .multi-select-pill {
+  color: var(--dk-bone);
+}
+
+:is(.theme-dark, .theme-light) .metadata-property:hover {
+  background-color: rgba(var(--dk-gold-rgb), 0.04);
+}
+
+/* =========================================================
+   6. SEARCH RESULTS
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .search-result-file-title {
+  color: var(--dk-gold);
+  font-weight: 600;
+}
+
+:is(.theme-dark, .theme-light) .search-result-file-match:hover {
+  background-color: rgba(var(--dk-gold-rgb), 0.05);
+}
+
+:is(.theme-dark, .theme-light) .search-result-file-matched-text {
+  background-color: var(--text-highlight-bg);
+  color: var(--dk-gold-bright);
+  border-radius: 2px;
+}
+
+:is(.theme-dark, .theme-light) .search-result-count,
+:is(.theme-dark, .theme-light) .tree-item-flair {
+  color: var(--dk-fog);
+  background-color: var(--dk-asphalt);
+  border-radius: 999px;
+  padding: 0 6px;
+}
+
+/* =========================================================
+   7. GRAPH VIEW
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .graph-view.color-fill         { color: var(--graph-node); }
+:is(.theme-dark, .theme-light) .graph-view.color-fill-focused { color: var(--graph-node-focused); }
+:is(.theme-dark, .theme-light) .graph-view.color-fill-tag     { color: var(--graph-node-tag); }
+:is(.theme-dark, .theme-light) .graph-view.color-fill-attachment { color: var(--graph-node-attachment); }
+:is(.theme-dark, .theme-light) .graph-view.color-fill-unresolved { color: var(--graph-node-unresolved); }
+:is(.theme-dark, .theme-light) .graph-view.color-line         { color: var(--graph-line); }
+:is(.theme-dark, .theme-light) .graph-view.color-text         { color: var(--graph-text); }
+:is(.theme-dark, .theme-light) .graph-view.color-circle       { color: var(--dk-gold); }
+
+/* =========================================================
+   8. CANVAS
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .canvas-wrapper,
+:is(.theme-dark, .theme-light) .canvas-background {
+  background-color: var(--dk-black);
+}
+
+:is(.theme-dark, .theme-light) .canvas-node-content,
+:is(.theme-dark, .theme-light) .canvas-node-container {
+  background-color: var(--dk-night);
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-m);
+}
+
+:is(.theme-dark, .theme-light) .canvas-node.is-focused .canvas-node-container {
+  border-color: var(--dk-gold);
+  box-shadow: 0 0 0 1px var(--dk-gold);
+}
+
+/* =========================================================
+   9. COMMUNITY PLUGINS — Dataview & Tasks
+   ========================================================= */
+
+/* Dataview — inline + table/list rendering reuses table tokens, but
+   ensure inline fields and metadata read in palette colors. */
+:is(.theme-dark, .theme-light) .dataview.table-view-table th {
+  background-color: var(--table-header-background);
+  color: var(--dk-gold);
+  border-bottom: 1px solid var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .dataview.inline-field-key {
+  color: var(--dk-gold);
+}
+
+:is(.theme-dark, .theme-light) .dataview.inline-field-value {
+  color: var(--dk-bone);
+  background-color: rgba(var(--dk-gold-rgb), 0.06);
+  border-radius: var(--radius-s);
+  padding: 0 4px;
+}
+
+/* Tasks plugin — priority + due-date cues */
+:is(.theme-dark, .theme-light) .task-list-item[data-task="!"] {
+  color: var(--dk-red);
+}
+
+:is(.theme-dark, .theme-light) .tasks-group-heading {
+  color: var(--dk-gold);
+  font-weight: 600;
+}
+
+/* =========================================================
+   10. SCROLLBARS
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb {
+  background-color: var(--dk-steel);
+  border-radius: 5px;
+  border: 2px solid var(--dk-black);
+}
+
+:is(.theme-dark, .theme-light) ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--dk-gold);
+}
+
+/* =========================================================
+   11. CALLOUTS — re-skinned with Dark Knight palette
+   ========================================================= */
+
+:is(.theme-dark, .theme-light) .callout {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--dk-steel);
+  background-color: rgba(var(--callout-color), 0.06);
+  padding: 0.6em 0.9em;
+  margin: 1em 0;
+}
+
+:is(.theme-dark, .theme-light) .callout-title {
+  color: var(--dk-gold);
+  font-weight: 600;
+}
+
+:is(.theme-dark, .theme-light) .callout[data-callout="note"]     { --callout-color: var(--dk-gold-rgb); }
+:is(.theme-dark, .theme-light) .callout[data-callout="info"]     { --callout-color: var(--dk-blue-rgb); }
+:is(.theme-dark, .theme-light) .callout[data-callout="tip"],
+:is(.theme-dark, .theme-light) .callout[data-callout="hint"],
+:is(.theme-dark, .theme-light) .callout[data-callout="success"]  { --callout-color: var(--dk-green-rgb); }
+:is(.theme-dark, .theme-light) .callout[data-callout="warning"],
+:is(.theme-dark, .theme-light) .callout[data-callout="caution"]  { --callout-color: var(--dk-gold-rgb); }
+:is(.theme-dark, .theme-light) .callout[data-callout="danger"],
+:is(.theme-dark, .theme-light) .callout[data-callout="error"],
+:is(.theme-dark, .theme-light) .callout[data-callout="failure"]  { --callout-color: var(--dk-red-rgb); }
+:is(.theme-dark, .theme-light) .callout[data-callout="quote"],
+:is(.theme-dark, .theme-light) .callout[data-callout="cite"]     { --callout-color: var(--dk-purple-rgb); }
+
+/* =========================================================
+   12. NOIR TOUCHES — dark-only glows & vignette
+   ========================================================= */
+
+/* Heading & signal glow — only in dark mode, where it reads as light. */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .HyperMD-header-1,
+.theme-dark .cm-header-1 { text-shadow: 0 0 18px rgba(var(--dk-gold-rgb), 0.18); }
+
+.theme-dark .workspace-tab-header.is-active::after {
+  box-shadow: 0 0 8px rgba(var(--dk-gold-rgb), 0.45);
+}
+
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+  text-shadow: 0 0 6px rgba(var(--dk-gold-rgb), 0.25);
+}
+
+.theme-dark .markdown-preview-view blockquote,
+.theme-dark .HyperMD-quote {
+  box-shadow: -2px 0 12px rgba(var(--dk-gold-rgb), 0.08);
+}
+
+.theme-dark .markdown-preview-view mark,
+.theme-dark .cm-highlight { box-shadow: none; }
+
+.theme-dark button.mod-cta:hover,
+.theme-dark .mod-cta:hover {
+  box-shadow: 0 0 12px rgba(var(--dk-gold-rgb), 0.4);
+}
+
+/* Soft vignette on the active editor */
+.theme-dark .workspace-leaf.mod-active .view-content {
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.45);
+}
+
+/* Frontmatter — read like a dossier header */
+:is(.theme-dark, .theme-light) .frontmatter {
+  background-color: var(--dk-night);
+  border-left: 2px solid var(--dk-gold);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  color: var(--dk-fog);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.88em;
+}
+
+/* Embedded notes */
+:is(.theme-dark, .theme-light) .markdown-embed,
+:is(.theme-dark, .theme-light) .internal-embed {
+  border: 1px solid var(--dk-steel);
+  border-radius: var(--radius-m);
+  background-color: rgba(var(--dk-gold-rgb), 0.02);
+}
+
+/* File explorer drag-handle hover lift */
+:is(.theme-dark, .theme-light) .nav-file-title.is-being-dragged,
+:is(.theme-dark, .theme-light) .nav-folder-title.is-being-dragged {
+  background-color: rgba(var(--dk-gold-rgb), 0.15);
+  color: var(--dk-gold-bright);
+}
+
+/* End. */

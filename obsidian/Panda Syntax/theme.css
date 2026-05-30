@@ -22,7 +22,7 @@
 }
 
 /* ========================================================= */
-/* Light theme — palette                                     */
+/* Light theme — palette + specific overrides                */
 /* ========================================================= */
 
 .theme-light {
@@ -31,16 +31,22 @@
   --panda-bg-alt-2: #E4E4E4;
   --panda-border: #D4D4D4;
   --panda-fg: #2A2A2A;
-  --panda-muted: #888888;
-  --panda-faint: #B0B0B0;
+  --panda-muted: #6B6B6B;
+  --panda-faint: #909090;
 
-  /* Darkened accents for readability on light backgrounds */
+  /* Darkened accents for readability on light backgrounds (≥ 4.5:1 on #FAFAFA) */
   --panda-pink: #BF2982;
   --panda-red: #C0143C;
   --panda-orange: #C47800;
-  --panda-cyan: #00A896;
+  --panda-cyan: #007A6E;
   --panda-blue: #2B6CB0;
   --panda-purple: #6B35B0;
+
+  --background-modifier-hover: color-mix(in srgb, var(--panda-bg) 92%, black 8%);
+  --text-on-accent: #ffffff;
+  --accent-h: 210;
+  --accent-s: 100%;
+  --accent-l: 40%;
 }
 
 /* ========================================================= */
@@ -177,18 +183,6 @@
 }
 
 /* ========================================================= */
-/* Light theme — specific overrides                          */
-/* ========================================================= */
-
-.theme-light {
-  --background-modifier-hover: color-mix(in srgb, var(--panda-bg) 92%, black 8%);
-  --text-on-accent: #ffffff;
-  --accent-h: 210;
-  --accent-s: 100%;
-  --accent-l: 40%;
-}
-
-/* ========================================================= */
 /* Code blocks                                               */
 /* ========================================================= */
 
@@ -231,43 +225,23 @@
 /* File explorer                                             */
 /* ========================================================= */
 
-.nav-folder-title {
-  &:hover {
-    color: var(--panda-fg) !important;
-    background-color: color-mix(
-      in srgb,
-      var(--panda-pink) 15%,
-      transparent
-    ) !important;
-  }
+.nav-files-container .nav-folder-title:hover {
+  color: var(--panda-fg);
+  background-color: color-mix(in srgb, var(--panda-pink) 15%, transparent);
 }
 
-.nav-file-title {
-  &.is-active {
-    color: var(--panda-fg) !important;
-    background-color: color-mix(
-      in srgb,
-      var(--panda-pink) 25%,
-      transparent
-    ) !important;
-  }
+.nav-files-container .nav-file-title.is-active {
+  color: var(--panda-fg);
+  background-color: color-mix(in srgb, var(--panda-pink) 25%, transparent);
+}
 
-  &.is-active:hover {
-    color: var(--panda-fg) !important;
-    background-color: color-mix(
-      in srgb,
-      var(--panda-pink) 35%,
-      transparent
-    ) !important;
-  }
+.nav-files-container .nav-file-title.is-active:hover {
+  color: var(--panda-fg);
+  background-color: color-mix(in srgb, var(--panda-pink) 35%, transparent);
+}
 
-  &:hover {
-    background-color: color-mix(
-      in srgb,
-      var(--panda-pink) 15%,
-      transparent
-    ) !important;
-  }
+.nav-files-container .nav-file-title:hover {
+  background-color: color-mix(in srgb, var(--panda-pink) 15%, transparent);
 }
 
 /* ========================================================= */
