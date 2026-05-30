@@ -20,7 +20,7 @@ export const entries = [
   {
     obsidianSelector: `.file-embed`,
     publishSelector: `.file-embed`,
-    quartzSelector: ".file-embed",
+    quartzSelector: null,
     pseudoElement: "",
     properties: sets.embed,
   },

@@ -115,7 +115,7 @@ export const entries = [
     obsidianSelector: `.search-row`,
     publishSelector: `div.search-results`,
     quartzSelector:
-      ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results",
+      ".search > .search-container > .search-space > .search-layout",
     pseudoElement: "",
     properties: [
       //"border-color"
@@ -394,7 +394,8 @@ export const entries = [
   {
     obsidianSelector: `.search-result-file-title:hover`,
     publishSelector: null,
-    quartzSelector: ".search-result-title:hover",
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title",
     pseudoElement: "",
     properties: ["color", "background-color"],
   },

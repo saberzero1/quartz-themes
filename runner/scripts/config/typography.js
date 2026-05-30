@@ -76,7 +76,8 @@ export const entries = [
   {
     obsidianSelector: `mark.search-result-highlight`,
     publishSelector: `.search-highlight`,
-    quartzSelector: ".search-highlight",
+    quartzSelector:
+      ".search > .search-container > .search-space > .search-layout .highlight",
     pseudoElement: "",
     properties: ["background-color", "color", ...defaults.border],
   },

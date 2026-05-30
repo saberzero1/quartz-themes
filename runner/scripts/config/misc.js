@@ -124,14 +124,14 @@ export const entries = [
   {
     obsidianSelector: `.status-bar`,
     publishSelector: null,
-    quartzSelector: ".navigation-progress",
+    quartzSelector: null,
     pseudoElement: "",
     properties: ["background-color"],
   },
   {
     obsidianSelector: `.view-header-title`,
     publishSelector: `.page-header .page-title`,
-    quartzSelector: ".page-header h2.page-title",
+    quartzSelector: "h2.page-title",
     pseudoElement: "",
     properties: sets.headings.default,
   },

@@ -13,5 +13,7 @@ views:
       - file.folder
       - file.links
       - file.tags
+  - type: table
+    name: Second View
 
 ```

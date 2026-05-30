@@ -46,7 +46,7 @@ export const entries = [
   {
     obsidianSelector: `.workspace-tab-header-tab.is-active`,
     publishSelector: null,
-    quartzSelector: ".bases-view-tabs button.active",
+    quartzSelector: ".bases-view-tabs button.is-active",
     pseudoElement: "",
     properties: ["color", "background-color"],
   },
