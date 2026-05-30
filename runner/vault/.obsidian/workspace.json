@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "theme-bases/bases-table.md",
+                "file": "callouts.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bases-table"
+              "title": "callouts"
             }
           }
         ]
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theme-bases/bases-table.md",
+                "file": "callouts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,12 +121,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "specimen.md",
+                "file": "callouts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from specimen"
+              "title": "Outgoing links"
             }
           },
           {
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-bases/bases-table.md",
+                "file": "callouts.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -159,7 +159,8 @@
               "title": "Outline"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "cf38a29ab8834d5d",
@@ -193,8 +194,11 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "b9547fcabc7c6807",
+  "active": "af2029d5c3df875a",
   "lastOpenFiles": [
+    "callouts.md",
+    "embeds.md",
+    "headings.md",
     "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
@@ -208,19 +212,16 @@
     "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
     "backlinks.md",
-    "embeds.md",
     "media.md",
     "tables.md",
     "integrations.md",
-    "callouts.md",
-    "headings.md",
     "general.md",
+    "theme-callouts/fancy-a-story.md",
+    "theme-callouts/its-theme.md",
     "theme-callouts/lagom.md",
     "theme-callouts/ebullientworks.md",
     "theme-callouts/cupertino.md",
     "theme-callouts/baseline.md",
-    "theme-callouts/underwater.md",
-    "specimen.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

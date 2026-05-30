@@ -2,12 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--nav-item-weight",
-      "references": "--i-lt-folder-weight",
-      "selector": "li.depth-0",
-      "aspect": "toc"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

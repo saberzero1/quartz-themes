@@ -12,26 +12,26 @@
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: var(--color-red-rgb);
+  --callout-bug: var(--color-red);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
+  --callout-default: var(--color-blue);
+  --callout-error: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-fail: var(--color-red);
+  --callout-important: var(--color-cyan);
+  --callout-info: var(--color-blue);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
+  --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
+  --callout-success: var(--color-green);
+  --callout-summary: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
   --callout-title-padding: 0;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
+  --callout-todo: var(--color-blue);
+  --callout-warning: var(--color-orange);
   --checkbox-border-color: var(--text-muted) !important;
   --checkbox-border-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-color: var(--interactive-accent) !important;
@@ -111,26 +111,26 @@
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: var(--color-red-rgb);
+  --callout-bug: var(--color-red);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: var(--color-blue-rgb);
-  --callout-error: var(--color-red-rgb);
-  --callout-example: var(--color-purple-rgb);
-  --callout-fail: var(--color-red-rgb);
-  --callout-important: var(--color-cyan-rgb);
-  --callout-info: var(--color-blue-rgb);
+  --callout-default: var(--color-blue);
+  --callout-error: var(--color-red);
+  --callout-example: var(--color-purple);
+  --callout-fail: var(--color-red);
+  --callout-important: var(--color-cyan);
+  --callout-info: var(--color-blue);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange-rgb);
+  --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green-rgb);
-  --callout-summary: var(--color-cyan-rgb);
-  --callout-tip: var(--color-cyan-rgb);
+  --callout-success: var(--color-green);
+  --callout-summary: var(--color-cyan);
+  --callout-tip: var(--color-cyan);
   --callout-title-padding: 0;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue-rgb);
-  --callout-warning: var(--color-orange-rgb);
+  --callout-todo: var(--color-blue);
+  --callout-warning: var(--color-orange);
   --checkbox-border-color: var(--text-muted) !important;
   --checkbox-border-color-hover: var(--interactive-accent-hover) !important;
   --checkbox-color: var(--interactive-accent) !important;
@@ -538,7 +538,7 @@ body {
     color: var(--text-normal);
   }
 
-  .metadata {
+  .note-properties.metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
@@ -548,10 +548,39 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0px 0px 32px;
+    margin-block-end: 32px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 8px 0px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
-  .metadata-properties {
+  .metadata-container {
+    background-color: var(--metadata-background);
+    color: var(--text-muted);
+    font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
+    border: 0px solid oklch(0.8 0.161484 268.43 / 0.2);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 0px 32px;
+    margin-block-end: 32px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding: 8px 0px;
+    padding-block-end: 8px;
+    padding-block-start: 8px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .note-properties-table {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.9 0.0484452 268.43 / 0.9);
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
@@ -562,7 +591,15 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .metadata-container .metadata-property {
@@ -576,7 +613,15 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     display: flex;
   }
 
@@ -605,6 +650,10 @@ body {
   }
 
   .note-properties-value {
+    color: oklch(0.9 0.0484452 268.43 / 0.9);
+  }
+
+  .note-properties-link {
     color: oklch(0.9 0.0484452 268.43 / 0.9);
   }
 
@@ -728,6 +777,45 @@ body {
     text-decoration-line: underline;
     text-decoration-style: solid;
     color: rgb(138, 92, 245);
+  }
+
+  .backlinks {
+    background-color: rgba(0, 0, 0, 0);
+    color: oklch(0.95 0.0161484 268.43);
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-top: var(--size-4-1);
+    padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-block-end: 32px;
+    padding-block-start: 4px;
+    padding-inline-end: var(--size-4-3);
+    padding-inline-start: var(--size-4-3);
+  }
+
+  .backlinks ul li {
+    background-color: rgba(0, 0, 0, 0);
+    color: oklch(0.95 0.0161484 268.43);
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+  }
+
+  .backlinks ul li a {
+    color: var(--nav-heading-color);
   }
 
   p {
@@ -1020,8 +1108,8 @@ body {
     animation-play-state: running;
   }
 
-  .search-highlight {
-    background-color: rgb(255, 255, 0);
+  .search > .search-container > .search-space > .search-layout .highlight {
+    background-color: var(--text-highlight-bg);
     color: rgb(0, 0, 0);
     border: 0px rgb(0, 0, 0);
     border-top-left-radius: 0px;
@@ -1032,51 +1120,42 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    border-radius: 0px;
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: var(--background-modifier-hover);
+    background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    color: oklch(0.95 0.0161484 268.43);
+    color: var(--nav-item-color-active);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: var(--background-modifier-hover);
-    border: 0px oklch(0.95 0.0161484 268.43);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
     color: oklch(0.95 0.0161484 268.43);
   }
 
   hr {
-    border-color: rgb(128, 128, 128) oklch(0.8 0.161484 268.43 / 0.2) oklch(0.8 0.161484 268.43 / 0.2);
-    border-style: solid solid none none;
-    border-width: 0px 1px 0px 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-color: currentcolor oklch(0.8 0.161484 268.43 / 0.2) oklch(0.8 0.161484 268.43 / 0.2);
+    border-top: 2px solid oklch(0.8 0.161484 268.43 / 0.2);
+    border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    box-shadow: none;
-    margin: 0px;
+    margin: 32px 0px;
     margin-block-end: 32px;
     margin-block-start: 32px;
     margin-inline-end: 0px;
@@ -1095,7 +1174,7 @@ body {
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
-    border: 0px solid rgba(13, 13, 115, 0.15);
+    border: 0px solid oklch(0.268732 0.161484 268.43 / 0.15);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1126,84 +1205,77 @@ body {
   }
 
   .search > .search-container > .search-space {
-    background-color: var(--prompt-background);
-    border: 1px solid rgb(189, 189, 189);
+    background-color: rgba(0, 0, 0, 0);
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    box-shadow: var(--shadow-l);
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px inset oklch(0.95 0.0161484 268.43);
-    border-bottom: 1px solid oklch(0.268732 0.161484 268.43);
+    background-color: oklch(0.268732 0.161484 268.43);
+    border: 1px solid oklch(0.8 0.161484 268.43 / 0.2);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    box-shadow: none;
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
     color: oklch(0.95 0.0161484 268.43);
-    cursor: auto;
-    filter: none;
-    backdrop-filter: none;
-    box-shadow: none;
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     font-weight: 400;
     outline: oklch(0.95 0.0161484 268.43) none 0px;
-    text-decoration: rgb(34, 34, 34);
     text-decoration-color: oklch(0.95 0.0161484 268.43);
-    text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
-    transform: none;
-    user-select: text;
-    animation-name: none;
     animation-duration: 0s;
     animation-timing-function: ease;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
     animation-play-state: running;
   }
 
-  .search > .search-container > .search-space > .search-layout,
-  .search > .search-container > .search-space > .search-layout.display-results {
-    border: 1px solid rgb(189, 189, 189);
+  .search > .search-container > .search-space > .search-layout {
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container {
     color: oklch(0.95 0.0161484 268.43);
   }
 
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: oklch(0.95 0.0161484 268.43);
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border-radius: 0px;
+  }
+
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: oklch(0.95 0.0161484 268.43);
-    font-weight: 400;
-    background-color: var(--background-modifier-hover);
+    color: var(--nav-item-color-active);
+    font-weight: var(--nav-item-weight);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -1212,7 +1284,24 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
   .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    color: var(--nav-item-color-active);
+  }
+
+  .search > .search-container > .search-space > .search-layout > .preview-container {
+    color: oklch(0.9 0.0484452 268.43 / 0.9);
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
+    background-color: rgba(0, 0, 0, 0);
     color: oklch(0.95 0.0161484 268.43);
+    border-color: oklch(0.95 0.0161484 268.43);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   h1 {
@@ -1233,8 +1322,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 0px 0px 16px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.95);
@@ -1266,8 +1355,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 0px 0px 16px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.95);
@@ -1299,8 +1388,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.9);
@@ -1332,8 +1421,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.8);
@@ -1365,8 +1454,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.7);
@@ -1398,8 +1487,8 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 16px 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     border: 0px oklch(0.95 0.0484452 268.43 / 0.6);
@@ -1432,7 +1521,7 @@ body {
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin: 0px 0px 32px;
-    margin-block-end: 0px;
+    margin-block-end: var(--inline-title-margin-bottom);
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -1785,6 +1874,22 @@ body {
     color: rgb(34, 34, 34);
   }
 
+  .preview-container {
+    color: oklch(0.9 0.0484452 268.43 / 0.9);
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .highlight {
+    background-color: var(--text-highlight-bg);
+    border-radius: 0px;
+  }
+
+  input:focus {
+    border-color: oklch(0.8 0.161484 268.43 / 0.2);
+    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+  }
+
   h1.article-title {
     color: var(--text-accent);
     font-size: var(--inline-title-size);
@@ -1798,8 +1903,8 @@ body {
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
+    padding-block-end: 1.2px;
+    padding-block-start: 1.2px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin-top: 0px;
@@ -1833,8 +1938,8 @@ body {
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
+    padding-block-end: 1.2px;
+    padding-block-start: 1.2px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin-top: 0px;
@@ -1863,10 +1968,11 @@ body {
 
   dl {
     margin: 16px 0px;
-    margin-block-end: 15px;
-    margin-block-start: 15px;
+    margin-block-end: 16px;
+    margin-block-start: 16px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
+    list-style: outside none disc;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1948,34 +2054,13 @@ body {
     color: var(--ec-codeFg);
     font-family: var(--ec-codeFontFml);
     padding: 12px 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
   }
 
   pre > code,
-  pre:has(> code) {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-start-start-radius: 0px;
-    border-start-end-radius: 0px;
-    border-end-start-radius: 0px;
-    border-end-end-radius: 0px;
-    overflow-x: visible;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    white-space-collapse: preserve;
-    text-wrap-mode: nowrap;
-  }
-
   pre:has(> code) {
     background-color: var(--code-background);
     border: 0px solid rgba(0, 0, 0, 0);
@@ -1987,6 +2072,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    color: oklch(0.95 0.0161484 268.43);
     overflow-x: visible;
     padding: 0px;
     padding-block-end: 0px;
@@ -1998,8 +2084,8 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
+    background-color: var(--code-background);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2011,10 +2097,10 @@ body {
   }
 
   figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(34, 34, 34);
+    background-color: var(--code-background);
+    color: oklch(0.95 0.0161484 268.43);
     font-family: monospace;
-    border: 0px rgb(34, 34, 34);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2026,18 +2112,18 @@ body {
   }
 
   pre > code > [data-line] {
-    background-color: rgba(0, 0, 0, 0);
-    border-left: 0px rgb(34, 34, 34);
+    background-color: var(--code-background);
+    border-left: 0px solid rgba(0, 0, 0, 0);
   }
 
   pre > code > [data-line][data-highlighted-line] {
-    background-color: rgba(0, 0, 0, 0);
-    border-left-color: rgb(34, 34, 34);
+    background-color: var(--code-background);
+    border-left-color: rgba(0, 0, 0, 0);
   }
 
   pre > code [data-highlighted-chars] {
-    background-color: rgba(0, 0, 0, 0);
-    border: 0px rgb(34, 34, 34);
+    background-color: var(--code-background);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2060,15 +2146,15 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 0px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 2px;
-    padding-inline-start: 2px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     margin: 0px 8px 0px -24px;
     margin-block-end: 0px;
     margin-block-start: 0px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin-inline-end: 8px;
+    margin-inline-start: calc(var(--checkbox-size) * -1.5);
     width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
@@ -2076,6 +2162,7 @@ body {
   }
 
   ul > li.task-list-item {
+    list-style: outside none none;
     text-align: start;
     display: list-item;
   }
@@ -2200,6 +2287,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
+    border-inline-start: 6px solid oklch(0.8 0.161484 268.43 / 0.2);
     color: var(--blockquote-color);
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     font-weight: 400;
@@ -2207,9 +2295,9 @@ body {
     line-height: 24px;
     padding-bottom: 8px;
     padding-top: 8px;
-    padding-inline-start: 0px;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+    padding-inline-start: var(--size-4-6);
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
   }
@@ -2262,10 +2350,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 2px;
-    padding-inline-start: 2px;
+    padding-block-end: 4px;
+    padding-block-start: 4px;
+    padding-inline-end: 8px;
+    padding-inline-start: 8px;
   }
 
   details {
@@ -2296,6 +2384,7 @@ body {
     color: oklch(0.95 0.0161484 268.43);
     cursor: auto;
     font-weight: 400;
+    list-style: inside none disclosure-closed;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2342,10 +2431,10 @@ body {
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
     padding: 1.4px 3.5px;
-    padding-block-end: 1.3125px;
-    padding-block-start: 1.3125px;
-    padding-inline-end: 3.28125px;
-    padding-inline-start: 3.28125px;
+    padding-block-end: 1.4px;
+    padding-block-start: 1.4px;
+    padding-inline-end: 3.5px;
+    padding-inline-start: 3.5px;
   }
 
   sub {
@@ -2383,11 +2472,7 @@ body {
     font-family: MJXZERO, MJXTEX;
   }
 
-  .navigation-progress {
-    background-color: var(--status-bar-background);
-  }
-
-  .page-header h2.page-title {
+  h2.page-title {
     color: var(--text-normal);
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     font-size: 13px;
@@ -2396,7 +2481,15 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     border-color: oklch(0.95 0.0161484 268.43);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -2427,10 +2520,15 @@ body {
     background-color: rgba(0, 0, 0, 0);
   }
 
+  pre:has(> code.mermaid) {
+    background-color: var(--code-background);
+    border: 0px solid oklch(0.8 0.161484 268.43 / 0.2);
+  }
+
   ul.tags > li {
-    background-color: var(--tag-background);
-    color: var(--tag-color);
-    border: 0px solid rgba(13, 13, 115, 0.15);
+    background-color: var(--pill-background);
+    color: var(--pill-color);
+    border: 0px solid oklch(0.268732 0.161484 268.43 / 0.15);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2460,10 +2558,15 @@ body {
     padding-bottom: 4px;
     padding-left: 4px;
     padding-right: var(--size-4-2);
+    padding-block-end: 4px;
+    padding-block-start: 4px;
+    padding-inline-end: 8px;
+    padding-inline-start: 4px;
   }
 
-  li.depth-0 {
-    font-weight: var(--nav-item-weight);
+  .content-meta {
+    color: var(--text-muted);
+    font-size: 16px;
   }
 
   details.toc summary::marker {
@@ -2519,7 +2622,7 @@ body {
 
   .callout {
     --callout-color: var(--callout-default);
-    border: 1px solid rgba(8, 109, 221, 0.5);
+    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2537,11 +2640,11 @@ body {
   }
 
   .callout .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2551,11 +2654,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2573,18 +2676,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="note"] {
     --callout-color: var(--callout-default);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(8, 109, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(8, 109, 221, 0.5);
+    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2596,11 +2699,11 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2610,11 +2713,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2632,18 +2735,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="abstract"] {
     --callout-color: var(--callout-summary);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(0, 191, 188, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.727476 0.124634 192.763 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(0, 191, 188, 0.5);
+    border: 1px solid oklch(0.727476 0.124634 192.763 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2655,11 +2758,11 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2669,11 +2772,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2691,18 +2794,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="info"] {
     --callout-color: var(--callout-info);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(8, 109, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(8, 109, 221, 0.5);
+    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2714,11 +2817,11 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2728,11 +2831,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2750,18 +2853,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="todo"] {
     --callout-color: var(--callout-todo);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(8, 109, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(8, 109, 221, 0.5);
+    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2773,11 +2876,11 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2787,11 +2890,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2809,18 +2912,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="tip"] {
     --callout-color: var(--callout-tip);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(0, 191, 188, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.727476 0.124634 192.763 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(0, 191, 188, 0.5);
+    border: 1px solid oklch(0.727476 0.124634 192.763 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2832,11 +2935,11 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2846,11 +2949,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2868,18 +2971,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="success"] {
     --callout-color: var(--callout-success);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(8, 185, 78, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.686205 0.194562 148.477 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(8, 185, 78, 0.5);
+    border: 1px solid oklch(0.686205 0.194562 148.477 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2891,11 +2994,11 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2905,11 +3008,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2927,18 +3030,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="question"] {
     --callout-color: var(--callout-question);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(236, 117, 0, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(236, 117, 0, 0.5);
+    border: 1px solid oklch(0.688771 0.175867 52.5446 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2950,11 +3053,11 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2964,11 +3067,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -2986,18 +3089,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="warning"] {
     --callout-color: var(--callout-warning);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(236, 117, 0, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(236, 117, 0, 0.5);
+    border: 1px solid oklch(0.688771 0.175867 52.5446 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3009,11 +3112,11 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3023,11 +3126,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3045,18 +3148,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="danger"] {
     --callout-color: var(--callout-error);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(233, 49, 71, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(233, 49, 71, 0.5);
+    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3068,11 +3171,11 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3082,11 +3185,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3104,18 +3207,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="failure"] {
     --callout-color: var(--callout-fail);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(233, 49, 71, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(233, 49, 71, 0.5);
+    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3127,11 +3230,11 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3141,11 +3244,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3163,18 +3266,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="bug"] {
     --callout-color: var(--callout-bug);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(233, 49, 71, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(233, 49, 71, 0.5);
+    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3186,11 +3289,11 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3200,11 +3303,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3222,18 +3325,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="example"] {
     --callout-color: var(--callout-example);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(120, 82, 238, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.567895 0.221884 288.456 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(120, 82, 238, 0.5);
+    border: 1px solid oklch(0.567895 0.221884 288.456 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3245,11 +3348,11 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3259,11 +3362,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3281,18 +3384,18 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: var(--callout-quote);
-    background-color: rgba(var(--callout-color), 0.25);
+    background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
     background-image: none;
-    background: rgba(158, 158, 158, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.699256 0.0000347234 23.6829 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
     color: oklch(0.95 0.0161484 268.43);
     mix-blend-mode: normal;
-    border: 1px solid rgba(158, 158, 158, 0.5);
+    border: 1px solid oklch(0.699256 0.0000347234 23.6829 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3304,11 +3407,11 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
-    --callout-color: 8, 109, 221;
-    color: var(--text-muted);
+    --callout-color: #086ddd;
+    color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
     gap: 4px;
-    border: 0px oklch(0.9 0.0484452 268.43 / 0.9);
-    border-bottom: 1px solid rgba(8, 109, 221, 0.3);
+    border: 0px oklch(0.660704 0.189745 316.787);
+    border-bottom: 1px solid oklch(0.550587 0.189745 256.787 / 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3318,11 +3421,11 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 5px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    background-color: var(--callout-color);
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
@@ -3340,8 +3443,8 @@ body {
     padding: 0px 20px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 
   table {
@@ -3361,8 +3464,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 16px 0px 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
+    margin-block-end: var(--p-spacing);
+    margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     padding: 0px;
@@ -3415,10 +3518,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 1px;
-    padding-inline-start: 1px;
+    padding-block-end: 4px;
+    padding-block-start: 4px;
+    padding-inline-end: 8px;
+    padding-inline-start: 8px;
   }
 
   td {
@@ -3429,8 +3532,8 @@ body {
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border: 1px solid oklch(0.95 0.0161484 268.43);
-    border-left: var(--table-column-first-border-width) solid oklch(0.95 0.0161484 268.43);
+    border: 1px solid oklch(0.8 0.161484 268.43 / 0.2);
+    border-left: var(--table-column-first-border-width) solid oklch(0.8 0.161484 268.43 / 0.2);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3440,10 +3543,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     padding: 4px 8px;
-    padding-block-end: 1px;
-    padding-block-start: 1px;
-    padding-inline-end: 1px;
-    padding-inline-start: 1px;
+    padding-block-end: 4px;
+    padding-block-start: 4px;
+    padding-inline-end: 8px;
+    padding-inline-start: 8px;
   }
 
   tr {
@@ -3514,10 +3617,10 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 15px;
-    margin-block-start: 15px;
-    margin-inline-end: 40px;
-    margin-inline-start: 40px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -3594,7 +3697,15 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .transclude-inner {
@@ -3609,20 +3720,20 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
-  .file-embed {
-    background-color: var(--background-primary-alt);
-    color: var(--text-muted);
-    border-radius: 0px;
-    border: 1px solid oklch(0.8 0.161484 268.43 / 0.2);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    margin: 0px;
-    padding: 8px;
+  .transclude ul {
+    padding-left: 0px;
+    color: oklch(0.95 0.0161484 268.43);
   }
 
   .nav-files-container .nav-file-title {
@@ -3660,7 +3771,8 @@ body {
   }
 
   .nav-files-container .tree-item-children {
-    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    border-left: 1px solid oklch(0 0 none / 0.12);
+    border-inline-start: 1px solid oklch(0 0 none / 0.12);
   }
 
   .explorer .folder-container > div {
@@ -3690,6 +3802,17 @@ body {
     background-color: var(--table-row-alt-background);
   }
 
+  .bases-card {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: oklch(0.9 0.0484452 268.43 / 0.9);
+    border-radius: 0px;
+  }
+
+  .bases-card-title {
+    color: var(--nav-item-color-active);
+    font-weight: var(--nav-item-weight);
+  }
+
   .canvas-node {
     background-color: rgba(0, 0, 0, 0);
     border-color: oklch(0.95 0.0161484 268.43);
@@ -3706,6 +3829,17 @@ body {
     background-color: rgba(0, 0, 0, 0);
   }
 
+  .canvas-edge-label {
+    color: var(--text-muted);
+    background-color: var(--background-primary);
+  }
+
+  .canvas-controls button {
+    background-color: var(--background-primary);
+    border-color: oklch(0.9 0.0484452 268.43 / 0.9);
+    color: var(--text-muted);
+  }
+
   .canvas-sidebar {
     background-color: var(--background-primary);
     border-color: oklch(0.95 0.0161484 268.43);
@@ -3718,12 +3852,31 @@ body {
     border-width: 0px;
   }
 
+  .graph > .graph-outer {
+    background-color: var(--background-secondary);
+    color: oklch(0.95 0.0161484 268.43);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
   .graph > .graph-outer > .global-graph-icon {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
     cursor: var(--cursor);
     border-color: oklch(0.9 0.0484452 268.43 / 0.9);
     border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .graph > .global-graph-outer > .global-graph-container {
+    background-color: var(--background-secondary);
+    border: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3824,16 +3977,16 @@ body {
     font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
   }
 
-  .stacked-page {
+  #stacked-pages-container.binder-active {
     border-color: oklch(0.95 0.0161484 268.43);
     background-color: var(--background-secondary);
   }
 
-  .stacked-page-header {
+  .binder-tab {
     background-color: var(--tab-container-background);
   }
 
-  .stacked-page.active {
+  .binder-tab.binder-tab-active {
     border-color: oklch(0.95 0.0161484 268.43);
   }
 
@@ -3854,6 +4007,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3861,6 +4015,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task=","] {
@@ -3880,6 +4036,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3887,6 +4044,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task=";"] {
@@ -3906,6 +4065,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3913,6 +4073,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task=":"] {
@@ -3932,6 +4094,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3939,6 +4102,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="."] {
@@ -3958,6 +4123,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3965,6 +4131,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="'"] {
@@ -3984,6 +4152,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -3991,6 +4160,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="@"] {
@@ -4010,6 +4181,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4017,6 +4189,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="&"] {
@@ -4036,6 +4210,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4043,6 +4218,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="#"] {
@@ -4062,6 +4239,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4069,6 +4247,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="%"] {
@@ -4088,6 +4268,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4095,6 +4276,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="`"] {
@@ -4114,6 +4297,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4121,6 +4305,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="+"] {
@@ -4140,6 +4326,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4147,6 +4334,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="<"] {
@@ -4166,6 +4355,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4173,6 +4363,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="="] {
@@ -4192,6 +4384,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4199,6 +4392,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="|"] {
@@ -4218,6 +4413,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4225,6 +4421,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="~"] {
@@ -4244,6 +4442,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4251,6 +4450,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="$"] {
@@ -4270,6 +4471,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4277,6 +4479,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="0"] {
@@ -4296,6 +4500,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4303,6 +4508,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="1"] {
@@ -4322,6 +4529,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4329,6 +4537,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="2"] {
@@ -4348,6 +4558,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4355,6 +4566,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="3"] {
@@ -4374,6 +4587,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4381,6 +4595,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="4"] {
@@ -4400,6 +4616,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4407,6 +4624,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="5"] {
@@ -4426,6 +4645,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4433,6 +4653,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="6"] {
@@ -4452,6 +4674,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4459,6 +4682,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="7"] {
@@ -4478,6 +4703,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4485,6 +4711,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="8"] {
@@ -4504,6 +4732,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4511,6 +4740,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="9"] {
@@ -4530,6 +4761,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4537,6 +4769,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="a"] {
@@ -4556,6 +4790,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4563,6 +4798,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="A"] {
@@ -4582,6 +4819,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4589,6 +4827,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="B"] {
@@ -4608,6 +4848,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4615,6 +4856,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="C"] {
@@ -4634,6 +4877,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4641,6 +4885,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="D"] {
@@ -4660,6 +4906,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4667,6 +4914,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="e"] {
@@ -4686,6 +4935,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4693,6 +4943,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="E"] {
@@ -4712,6 +4964,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4719,6 +4972,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="F"] {
@@ -4738,6 +4993,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4745,6 +5001,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="g"] {
@@ -4764,6 +5022,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4771,6 +5030,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="G"] {
@@ -4790,6 +5051,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4797,6 +5059,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="h"] {
@@ -4816,6 +5080,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4823,6 +5088,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="H"] {
@@ -4842,6 +5109,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4849,6 +5117,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="j"] {
@@ -4868,6 +5138,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4875,6 +5146,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="J"] {
@@ -4894,6 +5167,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4901,6 +5175,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="K"] {
@@ -4920,6 +5196,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4927,6 +5204,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="L"] {
@@ -4946,6 +5225,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4953,6 +5233,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="m"] {
@@ -4972,6 +5254,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -4979,6 +5262,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="M"] {
@@ -4998,6 +5283,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5005,6 +5291,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="n"] {
@@ -5024,6 +5312,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5031,6 +5320,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="N"] {
@@ -5050,6 +5341,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5057,6 +5349,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="o"] {
@@ -5076,6 +5370,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5083,6 +5378,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="O"] {
@@ -5102,6 +5399,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5109,6 +5407,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="P"] {
@@ -5128,6 +5428,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5135,6 +5436,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="q"] {
@@ -5154,6 +5457,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5161,6 +5465,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="Q"] {
@@ -5180,6 +5486,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5187,6 +5494,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="r"] {
@@ -5206,6 +5515,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5213,6 +5523,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="R"] {
@@ -5232,6 +5544,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5239,6 +5552,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="s"] {
@@ -5258,6 +5573,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5265,6 +5581,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="t"] {
@@ -5284,6 +5602,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5291,6 +5610,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="T"] {
@@ -5310,6 +5631,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5317,6 +5639,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="U"] {
@@ -5336,6 +5660,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5343,6 +5668,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="v"] {
@@ -5362,6 +5689,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5369,6 +5697,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="V"] {
@@ -5388,6 +5718,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5395,6 +5726,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="W"] {
@@ -5414,6 +5747,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5421,6 +5755,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="x"] {
@@ -5440,6 +5776,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: line-through;
     font-weight: 400;
@@ -5447,6 +5784,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="X"] {
@@ -5466,6 +5805,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: line-through;
     font-weight: 400;
@@ -5473,6 +5813,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="y"] {
@@ -5492,6 +5834,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5499,6 +5842,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="Y"] {
@@ -5518,6 +5863,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5525,6 +5871,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="z"] {
@@ -5544,6 +5892,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5551,6 +5900,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   li.task-list-item[data-task="Z"] {
@@ -5570,6 +5921,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-inline-start: 0px;
     margin-left: 0px;
     text-decoration-line: none;
     font-weight: 400;
@@ -5577,6 +5929,8 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 15px;
     line-height: 1.3;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -6262,7 +6616,7 @@ html[saved-theme="dark"] {
       color: var(--text-normal);
     }
 
-    .metadata {
+    .note-properties.metadata-container {
       background-color: var(--metadata-background);
       color: var(--text-muted);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
@@ -6272,10 +6626,39 @@ html[saved-theme="dark"] {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0px 0px 32px;
+      margin-block-end: 32px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 8px 0px;
+      padding-block-end: 8px;
+      padding-block-start: 8px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
-    .metadata-properties {
+    .metadata-container {
+      background-color: var(--metadata-background);
+      color: var(--text-muted);
+      font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
+      border: 0px solid oklch(0.5 0.129187 268.43 / 0.5);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin: 0px 0px 32px;
+      margin-block-end: 32px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
+      padding: 8px 0px;
+      padding-block-end: 8px;
+      padding-block-start: 8px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    .note-properties-table {
       background-color: rgba(0, 0, 0, 0);
       color: oklch(0.8 0.0775124 268.43);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
@@ -6286,7 +6669,15 @@ html[saved-theme="dark"] {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .metadata-container .metadata-property {
@@ -6300,7 +6691,15 @@ html[saved-theme="dark"] {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       display: flex;
     }
 
@@ -6329,6 +6728,10 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-value {
+      color: oklch(0.8 0.0775124 268.43);
+    }
+
+    .note-properties-link {
       color: oklch(0.8 0.0775124 268.43);
     }
 
@@ -6452,6 +6855,45 @@ html[saved-theme="dark"] {
       text-decoration-line: underline;
       text-decoration-style: solid;
       color: rgb(166, 138, 249);
+    }
+
+    .backlinks {
+      background-color: rgba(0, 0, 0, 0);
+      color: oklch(0.9 0.0775124 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding-top: var(--size-4-1);
+      padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-block-end: 32px;
+      padding-block-start: 4px;
+      padding-inline-end: var(--size-4-3);
+      padding-inline-start: var(--size-4-3);
+    }
+
+    .backlinks ul li {
+      background-color: rgba(0, 0, 0, 0);
+      color: oklch(0.9 0.0775124 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+    }
+
+    .backlinks ul li a {
+      color: var(--nav-heading-color);
     }
 
     p {
@@ -6744,8 +7186,8 @@ html[saved-theme="dark"] {
       animation-play-state: running;
     }
 
-    .search-highlight {
-      background-color: rgb(255, 255, 0);
+    .search > .search-container > .search-space > .search-layout .highlight {
+      background-color: var(--text-highlight-bg);
       color: rgb(0, 0, 0);
       border: 0px rgb(0, 0, 0);
       border-top-left-radius: 0px;
@@ -6756,51 +7198,42 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      border-radius: 0px;
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      background-color: var(--background-modifier-hover);
+      background-color: rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      color: oklch(0.9 0.0775124 268.43);
+      color: var(--nav-item-color-active);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-      background-color: var(--background-modifier-hover);
-      border: 0px oklch(0.9 0.0775124 268.43);
+      background-color: rgba(0, 0, 0, 0);
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
       color: oklch(0.9 0.0775124 268.43);
     }
 
     hr {
-      border-color: rgb(128, 128, 128) oklch(0.5 0.129187 268.43 / 0.5) oklch(0.5 0.129187 268.43 / 0.5);
-      border-style: solid solid none none;
-      border-width: 0px 1px 0px 0px;
+      border-left-width: 0px;
+      border-right-width: 0px;
+      border-color: currentcolor oklch(0.5 0.129187 268.43 / 0.5) oklch(0.5 0.129187 268.43 / 0.5);
+      border-top: 2px solid oklch(0.5 0.129187 268.43 / 0.5);
+      border-bottom-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      box-shadow: none;
-      margin: 0px;
+      margin: 32px 0px;
       margin-block-end: 32px;
       margin-block-start: 32px;
       margin-inline-end: 0px;
@@ -6819,7 +7252,7 @@ html[saved-theme="dark"] {
       line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
-      border: 0px solid rgba(13, 13, 115, 0.15);
+      border: 0px solid oklch(0.268732 0.161484 268.43 / 0.15);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6850,84 +7283,77 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space {
-      background-color: var(--prompt-background);
-      border: 1px solid rgb(85, 85, 85);
+      background-color: rgba(0, 0, 0, 0);
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      box-shadow: var(--shadow-l);
     }
 
     .search > .search-container > .search-space > input {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px inset oklch(0.9 0.0775124 268.43);
-      border-bottom: 1px solid oklch(0.167493 0.129187 268.43);
+      background-color: oklch(0.167493 0.129187 268.43);
+      border: 1px solid oklch(0.5 0.129187 268.43 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      box-shadow: none;
+      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
     }
 
     .search > .search-container > .search-space > * {
       background-color: rgba(0, 0, 0, 0);
       color: oklch(0.9 0.0775124 268.43);
-      cursor: auto;
-      filter: none;
-      backdrop-filter: none;
-      box-shadow: none;
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
       outline: oklch(0.9 0.0775124 268.43) none 0px;
-      text-decoration: rgb(218, 218, 218);
       text-decoration-color: oklch(0.9 0.0775124 268.43);
-      text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
-      transform: none;
-      user-select: text;
-      animation-name: none;
       animation-duration: 0s;
       animation-timing-function: ease;
       animation-delay: 0s;
       animation-iteration-count: 1;
-      animation-direction: normal;
-      animation-fill-mode: none;
       animation-play-state: running;
     }
 
-    .search > .search-container > .search-space > .search-layout,
-    .search > .search-container > .search-space > .search-layout.display-results {
-      border: 1px solid rgb(85, 85, 85);
+    .search > .search-container > .search-space > .search-layout {
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container {
       color: oklch(0.9 0.0775124 268.43);
     }
 
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      background-color: rgba(0, 0, 0, 0);
+      color: oklch(0.9 0.0775124 268.43);
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
+      border-radius: 0px;
+    }
+
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-      color: oklch(0.9 0.0775124 268.43);
-      font-weight: 400;
-      background-color: var(--background-modifier-hover);
+      color: var(--nav-item-color-active);
+      font-weight: var(--nav-item-weight);
+      background-color: rgba(0, 0, 0, 0);
     }
 
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
@@ -6936,7 +7362,24 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
     .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+      color: var(--nav-item-color-active);
+    }
+
+    .search > .search-container > .search-space > .search-layout > .preview-container {
+      color: oklch(0.8 0.0775124 268.43);
+      background-color: rgba(0, 0, 0, 0);
+      font-weight: 400;
+    }
+
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
+      background-color: rgba(0, 0, 0, 0);
       color: oklch(0.9 0.0775124 268.43);
+      border-color: oklch(0.9 0.0775124 268.43);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     h1 {
@@ -6957,8 +7400,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 0px 0px 16px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.9 0.0775124 268.43);
@@ -6990,8 +7433,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 0px 0px 16px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.85 0.0775124 268.43);
@@ -7023,8 +7466,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 16px 0px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.8 0.0775124 268.43);
@@ -7056,8 +7499,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 16px 0px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.75 0.0775124 268.43);
@@ -7089,8 +7532,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 16px 0px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.7 0.0775124 268.43);
@@ -7122,8 +7565,8 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 16px 0px;
-      margin-block-end: 16px;
-      margin-block-start: 16px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       border: 0px oklch(0.6 0.0775124 268.43);
@@ -7156,7 +7599,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin: 0px 0px 32px;
-      margin-block-end: 0px;
+      margin-block-end: var(--inline-title-margin-bottom);
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
@@ -7509,6 +7952,22 @@ html[saved-theme="dark"] {
       color: rgb(218, 218, 218);
     }
 
+    .preview-container {
+      color: oklch(0.8 0.0775124 268.43);
+      font-weight: 400;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    .highlight {
+      background-color: var(--text-highlight-bg);
+      border-radius: 0px;
+    }
+
+    input:focus {
+      border-color: oklch(0.5 0.129187 268.43 / 0.5);
+      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+    }
+
     h1.article-title {
       color: var(--text-accent);
       font-size: var(--inline-title-size);
@@ -7522,8 +7981,8 @@ html[saved-theme="dark"] {
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
+      padding-block-end: 1.2px;
+      padding-block-start: 1.2px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin-top: 0px;
@@ -7557,8 +8016,8 @@ html[saved-theme="dark"] {
       padding-bottom: var(--list-spacing);
       padding-left: 0px;
       padding-right: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
+      padding-block-end: 1.2px;
+      padding-block-start: 1.2px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       margin-top: 0px;
@@ -7587,10 +8046,11 @@ html[saved-theme="dark"] {
 
     dl {
       margin: 16px 0px;
-      margin-block-end: 15px;
-      margin-block-start: 15px;
+      margin-block-end: 16px;
+      margin-block-start: 16px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
+      list-style: outside none disc;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7672,34 +8132,13 @@ html[saved-theme="dark"] {
       color: var(--ec-codeFg);
       font-family: var(--ec-codeFontFml);
       padding: 12px 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
+      padding-block-end: 12px;
+      padding-block-start: 12px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
     }
 
     pre > code,
-    pre:has(> code) {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-start-start-radius: 0px;
-      border-start-end-radius: 0px;
-      border-end-start-radius: 0px;
-      border-end-end-radius: 0px;
-      overflow-x: visible;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      white-space-collapse: preserve;
-      text-wrap-mode: nowrap;
-    }
-
     pre:has(> code) {
       background-color: var(--code-background);
       border: 0px solid rgba(0, 0, 0, 0);
@@ -7711,6 +8150,7 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
+      color: oklch(0.9 0.0775124 268.43);
       overflow-x: visible;
       padding: 0px;
       padding-block-end: 0px;
@@ -7722,8 +8162,8 @@ html[saved-theme="dark"] {
     }
 
     figure[data-rehype-pretty-code-figure] {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
+      background-color: var(--code-background);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7735,10 +8175,10 @@ html[saved-theme="dark"] {
     }
 
     figure[data-rehype-pretty-code-figure] > [data-rehype-pretty-code-title] {
-      background-color: rgba(0, 0, 0, 0);
-      color: rgb(218, 218, 218);
+      background-color: var(--code-background);
+      color: oklch(0.9 0.0775124 268.43);
       font-family: monospace;
-      border: 0px rgb(218, 218, 218);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7750,18 +8190,18 @@ html[saved-theme="dark"] {
     }
 
     pre > code > [data-line] {
-      background-color: rgba(0, 0, 0, 0);
-      border-left: 0px rgb(218, 218, 218);
+      background-color: var(--code-background);
+      border-left: 0px solid rgba(0, 0, 0, 0);
     }
 
     pre > code > [data-line][data-highlighted-line] {
-      background-color: rgba(0, 0, 0, 0);
-      border-left-color: rgb(218, 218, 218);
+      background-color: var(--code-background);
+      border-left-color: rgba(0, 0, 0, 0);
     }
 
     pre > code [data-highlighted-chars] {
-      background-color: rgba(0, 0, 0, 0);
-      border: 0px rgb(218, 218, 218);
+      background-color: var(--code-background);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7784,15 +8224,15 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 0px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 2px;
-      padding-inline-start: 2px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       margin: 0px 8px 0px -24px;
       margin-block-end: 0px;
       margin-block-start: 0px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
+      margin-inline-end: 8px;
+      margin-inline-start: calc(var(--checkbox-size) * -1.5);
       width: var(--checkbox-size);
       transition: box-shadow 0.15s ease-in-out;
       position: relative;
@@ -7800,6 +8240,7 @@ html[saved-theme="dark"] {
     }
 
     ul > li.task-list-item {
+      list-style: outside none none;
       text-align: start;
       display: list-item;
     }
@@ -7924,6 +8365,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
+      border-inline-start: 6px solid oklch(0.5 0.129187 268.43 / 0.5);
       color: var(--blockquote-color);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-weight: 400;
@@ -7931,9 +8373,9 @@ html[saved-theme="dark"] {
       line-height: 24px;
       padding-bottom: 8px;
       padding-top: 8px;
-      padding-inline-start: 0px;
-      margin-inline-start: 40px;
-      margin-inline-end: 40px;
+      padding-inline-start: var(--size-4-6);
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
     }
@@ -7986,10 +8428,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 2px;
-      padding-inline-start: 2px;
+      padding-block-end: 4px;
+      padding-block-start: 4px;
+      padding-inline-end: 8px;
+      padding-inline-start: 8px;
     }
 
     details {
@@ -8020,6 +8462,7 @@ html[saved-theme="dark"] {
       color: oklch(0.9 0.0775124 268.43);
       cursor: auto;
       font-weight: 400;
+      list-style: inside none disclosure-closed;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8066,10 +8509,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 4px;
       border-end-end-radius: 4px;
       padding: 1.4px 3.5px;
-      padding-block-end: 1.3125px;
-      padding-block-start: 1.3125px;
-      padding-inline-end: 3.28125px;
-      padding-inline-start: 3.28125px;
+      padding-block-end: 1.4px;
+      padding-block-start: 1.4px;
+      padding-inline-end: 3.5px;
+      padding-inline-start: 3.5px;
     }
 
     sub {
@@ -8107,11 +8550,7 @@ html[saved-theme="dark"] {
       font-family: MJXZERO, MJXTEX;
     }
 
-    .navigation-progress {
-      background-color: var(--status-bar-background);
-    }
-
-    .page-header h2.page-title {
+    h2.page-title {
       color: var(--text-normal);
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
       font-size: 13px;
@@ -8120,7 +8559,15 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       border-color: oklch(0.9 0.0775124 268.43);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -8151,10 +8598,15 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
     }
 
+    pre:has(> code.mermaid) {
+      background-color: var(--code-background);
+      border: 0px solid oklch(0.5 0.129187 268.43 / 0.5);
+    }
+
     ul.tags > li {
-      background-color: var(--tag-background);
-      color: var(--tag-color);
-      border: 0px solid rgba(13, 13, 115, 0.15);
+      background-color: var(--pill-background);
+      color: var(--pill-color);
+      border: 0px solid oklch(0.268732 0.161484 268.43 / 0.15);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8184,10 +8636,15 @@ html[saved-theme="dark"] {
       padding-bottom: 4px;
       padding-left: 4px;
       padding-right: var(--size-4-2);
+      padding-block-end: 4px;
+      padding-block-start: 4px;
+      padding-inline-end: 8px;
+      padding-inline-start: 4px;
     }
 
-    li.depth-0 {
-      font-weight: var(--nav-item-weight);
+    .content-meta {
+      color: var(--text-muted);
+      font-size: 16px;
     }
 
     details.toc summary::marker {
@@ -8243,7 +8700,7 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: var(--callout-default);
-      border: 1px solid rgba(2, 122, 255, 0.5);
+      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8261,11 +8718,11 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8275,11 +8732,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8297,18 +8754,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="note"] {
       --callout-color: var(--callout-default);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(2, 122, 255, 0.5);
+      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8320,11 +8777,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8334,11 +8791,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8356,18 +8813,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="abstract"] {
       --callout-color: var(--callout-summary);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(83, 223, 221, 0.5);
+      border: 1px solid oklch(0.828615 0.118893 193.752 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8379,11 +8836,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8393,11 +8850,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8415,18 +8872,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="info"] {
       --callout-color: var(--callout-info);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(2, 122, 255, 0.5);
+      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8438,11 +8895,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8452,11 +8909,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8474,18 +8931,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="todo"] {
       --callout-color: var(--callout-todo);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(2, 122, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(2, 122, 255, 0.5);
+      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8497,11 +8954,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8511,11 +8968,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8533,18 +8990,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="tip"] {
       --callout-color: var(--callout-tip);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(83, 223, 221, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(83, 223, 221, 0.5);
+      border: 1px solid oklch(0.828615 0.118893 193.752 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8556,11 +9013,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8570,11 +9027,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8592,18 +9049,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="success"] {
       --callout-color: var(--callout-success);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(68, 207, 110, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.757772 0.180999 149.614 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(68, 207, 110, 0.5);
+      border: 1px solid oklch(0.757772 0.180999 149.614 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8615,11 +9072,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8629,11 +9086,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8651,18 +9108,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="question"] {
       --callout-color: var(--callout-question);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(233, 151, 63, 0.5);
+      border: 1px solid oklch(0.744355 0.140765 64.0894 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8674,11 +9131,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8688,11 +9145,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8710,18 +9167,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="warning"] {
       --callout-color: var(--callout-warning);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(233, 151, 63, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(233, 151, 63, 0.5);
+      border: 1px solid oklch(0.744355 0.140765 64.0894 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8733,11 +9190,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8747,11 +9204,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8769,18 +9226,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="danger"] {
       --callout-color: var(--callout-error);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(251, 70, 76, 0.5);
+      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8792,11 +9249,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8806,11 +9263,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8828,18 +9285,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="failure"] {
       --callout-color: var(--callout-fail);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(251, 70, 76, 0.5);
+      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8851,11 +9308,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8865,11 +9322,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8887,18 +9344,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="bug"] {
       --callout-color: var(--callout-bug);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(251, 70, 76, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(251, 70, 76, 0.5);
+      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8910,11 +9367,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8924,11 +9381,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -8946,18 +9403,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="example"] {
       --callout-color: var(--callout-example);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(168, 130, 255, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.697305 0.17906 295.405 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(168, 130, 255, 0.5);
+      border: 1px solid oklch(0.697305 0.17906 295.405 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8969,11 +9426,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8983,11 +9440,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -9005,18 +9462,18 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     .callout[data-callout="quote"] {
       --callout-color: var(--callout-quote);
-      background-color: rgba(var(--callout-color), 0.25);
+      background-color: oklch(from var(--callout-color) l c h / calc(var(--font-brightness) * 0.25));
       background-image: none;
-      background: rgba(158, 158, 158, 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.699256 0.0000347234 23.6829 / 0.25) none repeat scroll 0% 0% / auto padding-box border-box;
       color: oklch(0.9 0.0775124 268.43);
       mix-blend-mode: normal;
-      border: 1px solid rgba(158, 158, 158, 0.5);
+      border: 1px solid oklch(0.699256 0.0000347234 23.6829 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9028,11 +9485,11 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title {
-      --callout-color: 2, 122, 255;
-      color: var(--text-muted);
+      --callout-color: #027aff;
+      color: oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
       gap: 4px;
-      border: 0px oklch(0.8 0.0775124 268.43);
-      border-bottom: 1px solid rgba(2, 122, 255, 0.3);
+      border: 0px oklch(0.723472 0.217554 317.503);
+      border-bottom: 1px solid oklch(0.602893 0.217554 257.503 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9042,11 +9499,11 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 5px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
-      background-color: var(--callout-color);
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 5px;
+      padding-inline-start: 5px;
+      background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
@@ -9064,8 +9521,8 @@ html[saved-theme="dark"] {
       padding: 0px 20px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding-inline-end: 20px;
+      padding-inline-start: 20px;
     }
 
     table {
@@ -9085,8 +9542,8 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       margin: 16px 0px 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
+      margin-block-end: var(--p-spacing);
+      margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       padding: 0px;
@@ -9139,10 +9596,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 1px;
-      padding-inline-start: 1px;
+      padding-block-end: 4px;
+      padding-block-start: 4px;
+      padding-inline-end: 8px;
+      padding-inline-start: 8px;
     }
 
     td {
@@ -9153,8 +9610,8 @@ html[saved-theme="dark"] {
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border: 1px solid oklch(0.9 0.0775124 268.43);
-      border-left: var(--table-column-first-border-width) solid oklch(0.9 0.0775124 268.43);
+      border: 1px solid oklch(0.5 0.129187 268.43 / 0.5);
+      border-left: var(--table-column-first-border-width) solid oklch(0.5 0.129187 268.43 / 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9164,10 +9621,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       padding: 4px 8px;
-      padding-block-end: 1px;
-      padding-block-start: 1px;
-      padding-inline-end: 1px;
-      padding-inline-start: 1px;
+      padding-block-end: 4px;
+      padding-block-start: 4px;
+      padding-inline-end: 8px;
+      padding-inline-start: 8px;
     }
 
     tr {
@@ -9238,10 +9695,10 @@ html[saved-theme="dark"] {
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       margin: 0px;
-      margin-block-end: 15px;
-      margin-block-start: 15px;
-      margin-inline-end: 40px;
-      margin-inline-start: 40px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -9318,7 +9775,15 @@ html[saved-theme="dark"] {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .transclude-inner {
@@ -9333,20 +9798,20 @@ html[saved-theme="dark"] {
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
       margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
-    .file-embed {
-      background-color: var(--background-primary-alt);
-      color: var(--text-muted);
-      border-radius: 0px;
-      border: 1px solid oklch(0.5 0.129187 268.43 / 0.5);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      margin: 0px;
-      padding: 8px;
+    .transclude ul {
+      padding-left: 0px;
+      color: oklch(0.9 0.0775124 268.43);
     }
 
     .nav-files-container .nav-file-title {
@@ -9384,7 +9849,8 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container .tree-item-children {
-      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      border-left: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
+      border-inline-start: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
     }
 
     .explorer .folder-container > div {
@@ -9414,6 +9880,17 @@ html[saved-theme="dark"] {
       background-color: var(--table-row-alt-background);
     }
 
+    .bases-card {
+      background-color: rgba(0, 0, 0, 0);
+      border-color: oklch(0.8 0.0775124 268.43);
+      border-radius: 0px;
+    }
+
+    .bases-card-title {
+      color: var(--nav-item-color-active);
+      font-weight: var(--nav-item-weight);
+    }
+
     .canvas-node {
       background-color: rgba(0, 0, 0, 0);
       border-color: oklch(0.9 0.0775124 268.43);
@@ -9430,6 +9907,17 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
     }
 
+    .canvas-edge-label {
+      color: var(--text-muted);
+      background-color: var(--background-primary);
+    }
+
+    .canvas-controls button {
+      background-color: var(--background-primary);
+      border-color: oklch(0.8 0.0775124 268.43);
+      color: var(--text-muted);
+    }
+
     .canvas-sidebar {
       background-color: var(--background-secondary);
       border-color: oklch(0.9 0.0775124 268.43);
@@ -9442,12 +9930,31 @@ html[saved-theme="dark"] {
       border-width: 0px;
     }
 
+    .graph > .graph-outer {
+      background-color: var(--background-secondary);
+      color: oklch(0.9 0.0775124 268.43);
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
     .graph > .graph-outer > .global-graph-icon {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
       border-color: oklch(0.8 0.0775124 268.43);
       border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .graph > .global-graph-outer > .global-graph-container {
+      background-color: var(--background-secondary);
+      border: 1px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9548,16 +10055,16 @@ html[saved-theme="dark"] {
       font-family: "IBM Plex Mono", "SF Mono", Menlo, Consolas, "Roboto Mono", monospace;
     }
 
-    .stacked-page {
+    #stacked-pages-container.binder-active {
       border-color: oklch(0.9 0.0775124 268.43);
       background-color: var(--background-secondary);
     }
 
-    .stacked-page-header {
+    .binder-tab {
       background-color: var(--tab-container-background);
     }
 
-    .stacked-page.active {
+    .binder-tab.binder-tab-active {
       border-color: oklch(0.9 0.0775124 268.43);
     }
 
@@ -9578,6 +10085,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9585,6 +10093,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task=","] {
@@ -9604,6 +10114,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9611,6 +10122,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task=";"] {
@@ -9630,6 +10143,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9637,6 +10151,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task=":"] {
@@ -9656,6 +10172,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9663,6 +10180,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="."] {
@@ -9682,6 +10201,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9689,6 +10209,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="'"] {
@@ -9708,6 +10230,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9715,6 +10238,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="@"] {
@@ -9734,6 +10259,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9741,6 +10267,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="&"] {
@@ -9760,6 +10288,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9767,6 +10296,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="#"] {
@@ -9786,6 +10317,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9793,6 +10325,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="%"] {
@@ -9812,6 +10346,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9819,6 +10354,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="`"] {
@@ -9838,6 +10375,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9845,6 +10383,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="+"] {
@@ -9864,6 +10404,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9871,6 +10412,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="<"] {
@@ -9890,6 +10433,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9897,6 +10441,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="="] {
@@ -9916,6 +10462,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9923,6 +10470,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="|"] {
@@ -9942,6 +10491,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9949,6 +10499,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="~"] {
@@ -9968,6 +10520,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -9975,6 +10528,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="$"] {
@@ -9994,6 +10549,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10001,6 +10557,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="0"] {
@@ -10020,6 +10578,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10027,6 +10586,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="1"] {
@@ -10046,6 +10607,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10053,6 +10615,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="2"] {
@@ -10072,6 +10636,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10079,6 +10644,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="3"] {
@@ -10098,6 +10665,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10105,6 +10673,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="4"] {
@@ -10124,6 +10694,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10131,6 +10702,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="5"] {
@@ -10150,6 +10723,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10157,6 +10731,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="6"] {
@@ -10176,6 +10752,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10183,6 +10760,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="7"] {
@@ -10202,6 +10781,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10209,6 +10789,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="8"] {
@@ -10228,6 +10810,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10235,6 +10818,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="9"] {
@@ -10254,6 +10839,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10261,6 +10847,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="a"] {
@@ -10280,6 +10868,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10287,6 +10876,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="A"] {
@@ -10306,6 +10897,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10313,6 +10905,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="B"] {
@@ -10332,6 +10926,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10339,6 +10934,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="C"] {
@@ -10358,6 +10955,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10365,6 +10963,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="D"] {
@@ -10384,6 +10984,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10391,6 +10992,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="e"] {
@@ -10410,6 +11013,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10417,6 +11021,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="E"] {
@@ -10436,6 +11042,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10443,6 +11050,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="F"] {
@@ -10462,6 +11071,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10469,6 +11079,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="g"] {
@@ -10488,6 +11100,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10495,6 +11108,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="G"] {
@@ -10514,6 +11129,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10521,6 +11137,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="h"] {
@@ -10540,6 +11158,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10547,6 +11166,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="H"] {
@@ -10566,6 +11187,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10573,6 +11195,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="j"] {
@@ -10592,6 +11216,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10599,6 +11224,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="J"] {
@@ -10618,6 +11245,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10625,6 +11253,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="K"] {
@@ -10644,6 +11274,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10651,6 +11282,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="L"] {
@@ -10670,6 +11303,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10677,6 +11311,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="m"] {
@@ -10696,6 +11332,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10703,6 +11340,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="M"] {
@@ -10722,6 +11361,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10729,6 +11369,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="n"] {
@@ -10748,6 +11390,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10755,6 +11398,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="N"] {
@@ -10774,6 +11419,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10781,6 +11427,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="o"] {
@@ -10800,6 +11448,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10807,6 +11456,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="O"] {
@@ -10826,6 +11477,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10833,6 +11485,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="P"] {
@@ -10852,6 +11506,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10859,6 +11514,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="q"] {
@@ -10878,6 +11535,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10885,6 +11543,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="Q"] {
@@ -10904,6 +11564,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10911,6 +11572,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="r"] {
@@ -10930,6 +11593,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10937,6 +11601,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="R"] {
@@ -10956,6 +11622,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10963,6 +11630,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="s"] {
@@ -10982,6 +11651,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -10989,6 +11659,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="t"] {
@@ -11008,6 +11680,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11015,6 +11688,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="T"] {
@@ -11034,6 +11709,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11041,6 +11717,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="U"] {
@@ -11060,6 +11738,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11067,6 +11746,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="v"] {
@@ -11086,6 +11767,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11093,6 +11775,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="V"] {
@@ -11112,6 +11796,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11119,6 +11804,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="W"] {
@@ -11138,6 +11825,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11145,6 +11833,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="x"] {
@@ -11164,6 +11854,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: line-through;
       font-weight: 400;
@@ -11171,6 +11862,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="X"] {
@@ -11190,6 +11883,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: line-through;
       font-weight: 400;
@@ -11197,6 +11891,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="y"] {
@@ -11216,6 +11912,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11223,6 +11920,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="Y"] {
@@ -11242,6 +11941,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11249,6 +11949,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="z"] {
@@ -11268,6 +11970,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11275,6 +11978,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
 
     li.task-list-item[data-task="Z"] {
@@ -11294,6 +11999,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
+      margin-inline-start: 0px;
       margin-left: 0px;
       text-decoration-line: none;
       font-weight: 400;
@@ -11301,6 +12007,8 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       font-size: 15px;
       line-height: 1.3;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
     }
   }
 }
@@ -11391,7 +12099,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="/"] input[type="checkbox"]::after {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(28, 28, 28);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg width=\'12px\' height=\'10px\' viewBox=\'0 0 12 8\' version=\'1.1\' xmlns=\'http://www.w3.org/2000/svg\' xmlns:xlink=\'http://www.w3.org/1999/xlink\'%3E%3Cg stroke=\'none\' stroke-width=\'1\' fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg transform=\'translate%2528-4.000000, -6.000000%2529\' fill=\'%2523000000\'%3E%3Cpath d=\'M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999\'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");

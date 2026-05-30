@@ -32,12 +32,6 @@
       "aspect": "misc"
     },
     {
-      "property": "--nav-collapse-icon-color",
-      "references": "--folder-text-2",
-      "selector": "li.depth-0",
-      "aspect": "toc"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

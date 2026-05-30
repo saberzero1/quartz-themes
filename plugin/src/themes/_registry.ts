@@ -70,6 +70,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["nunito-sans", "courier-prime", "bitter"],
   },
+  alien: { name: "alien", modes: ["dark", "light"], variations: [], fonts: [] },
   allium: {
     name: "allium",
     modes: ["dark", "light"],
@@ -327,6 +328,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "buena-vista": {
     name: "buena-vista",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  bureau: {
+    name: "bureau",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -639,6 +646,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  "dark-knight": {
+    name: "dark-knight",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "dark-moss": {
     name: "dark-moss",
     modes: ["dark"],
@@ -815,6 +828,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  emrald: {
+    name: "emrald",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   encore: {
     name: "encore",
     modes: ["dark", "light"],
@@ -936,6 +955,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  folio: { name: "folio", modes: ["dark", "light"], variations: [], fonts: [] },
   "forest-phosphor": {
     name: "forest-phosphor",
     modes: ["dark"],
@@ -996,6 +1016,18 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["ia-writer-quattro-s", "monaco"],
+  },
+  "github-dark-dimmed": {
+    name: "github-dark-dimmed",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "github-flavored-markdown": {
+    name: "github-flavored-markdown",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "github-theme": {
     name: "github-theme",
@@ -2288,6 +2320,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   overcast: { name: "overcast", modes: ["dark"], variations: [], fonts: [] },
+  "owen-graphite": {
+    name: "owen-graphite",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   oxygen: {
     name: "oxygen",
     modes: ["dark", "light"],
@@ -2591,6 +2629,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["jetbrains-mono", "noto-sans"],
+  },
+  "retro-larper": {
+    name: "retro-larper",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "retro-terminal": {
     name: "retro-terminal",

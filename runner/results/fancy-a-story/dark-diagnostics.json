@@ -2,18 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--nav-item-background-hover",
-      "references": "--folder-color",
-      "selector": "li.depth-0",
-      "aspect": "toc"
-    },
-    {
-      "property": "--nav-item-color",
-      "references": "--folder-color",
-      "selector": "li.depth-0",
-      "aspect": "toc"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",
@@ -35,6 +23,12 @@
       "property": "--embed-max-height",
       "references": "--card-height",
       "selector": ".transclude-inner",
+      "aspect": "embeds"
+    },
+    {
+      "property": "--embed-max-height",
+      "references": "--card-height",
+      "selector": ".transclude ul",
       "aspect": "embeds"
     },
     {

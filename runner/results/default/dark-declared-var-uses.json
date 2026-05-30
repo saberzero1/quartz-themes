@@ -457,7 +457,6 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
-    "color": "var(--callout-color)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
@@ -549,6 +548,9 @@
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
+  },
+  "pre:has(> code.language-mermaid)": {
+    "background-color": "var(--code-background)"
   },
   ".internal-embed": {
     "background-color": "var(--embed-background)",

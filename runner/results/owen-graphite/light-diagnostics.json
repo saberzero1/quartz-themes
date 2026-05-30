@@ -1,0 +1,197 @@
+{
+  "conflicts": [],
+  "brokenBridges": [
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout",
+      "aspect": "scrollbars"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout",
+      "aspect": "scrollbars"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"note\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"note\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"abstract\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"abstract\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"info\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"info\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"todo\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"todo\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"tip\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"tip\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"success\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"success\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"question\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"question\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"warning\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"warning\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"danger\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"danger\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"failure\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"failure\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"bug\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"bug\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"example\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"example\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-bg",
+      "references": "--ogd-callout-tint",
+      "selector": ".callout[data-callout=\"quote\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-callout-shadow",
+      "references": "--ogd-callout-border",
+      "selector": ".callout[data-callout=\"quote\"]",
+      "aspect": "callouts"
+    },
+    {
+      "property": "--ogd-table-surface",
+      "references": "--ogd-table-tint",
+      "selector": "table",
+      "aspect": "tables"
+    },
+    {
+      "property": "--code-background",
+      "references": "--ec-frm-edBg",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--header-border-radius",
+      "references": "--ec-brdRad",
+      "selector": "figure",
+      "aspect": "images"
+    },
+    {
+      "property": "--ogd-table-surface",
+      "references": "--ogd-table-tint",
+      "selector": ".bases-table",
+      "aspect": "bases"
+    }
+  ]
+}

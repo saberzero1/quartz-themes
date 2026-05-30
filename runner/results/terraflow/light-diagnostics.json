@@ -5,25 +5,25 @@
       "property": "--editor-max-width",
       "references": "--line-width",
       "selector": "html",
-      "aspect": "base"
+      "aspect": "misc"
     },
     {
       "property": "--file-line-width",
       "references": "--line-width",
       "selector": "html",
-      "aspect": "base"
+      "aspect": "misc"
     },
     {
       "property": "--line-normal",
       "references": "--editor-line-height",
       "selector": "html",
-      "aspect": "base"
+      "aspect": "misc"
     },
     {
       "property": "--reading-max-width",
       "references": "--line-width",
       "selector": "html",
-      "aspect": "base"
+      "aspect": "misc"
     },
     {
       "property": "--code-background",

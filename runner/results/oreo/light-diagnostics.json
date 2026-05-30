@@ -14,6 +14,12 @@
       "aspect": "search"
     },
     {
+      "property": "--pill-weight",
+      "references": "--tag-weight",
+      "selector": "ul.tags > li",
+      "aspect": "misc"
+    },
+    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

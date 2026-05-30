@@ -4,12 +4,6 @@
     {
       "property": "--bar-height",
       "references": "--bar-vertical-padding",
-      "selector": ".navigation-progress",
-      "aspect": "misc"
-    },
-    {
-      "property": "--bar-height",
-      "references": "--bar-vertical-padding",
       "selector": "footer",
       "aspect": "misc"
     },
