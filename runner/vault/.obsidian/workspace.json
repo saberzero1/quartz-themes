@@ -11,17 +11,14 @@
             "id": "b9547fcabc7c6807",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "theme-canvas/test-canvas.canvas",
-                "viewState": {
-                  "x": 350,
-                  "y": 250,
-                  "zoom": 0
-                }
+                "file": "theme-code/syntax-samples.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "test-canvas"
+              "icon": "lucide-file",
+              "title": "syntax-samples"
             }
           }
         ]
@@ -74,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "heading",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -105,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "theme-canvas/test-canvas.canvas",
+                "file": "theme-code/syntax-samples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "theme-canvas/test-canvas.canvas",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -162,8 +159,7 @@
               "title": "Outline"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       },
       {
         "id": "cf38a29ab8834d5d",
@@ -199,32 +195,32 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "headings.md",
-    "general.md",
-    "theme-properties/note-properties.md",
-    "backlinks.md",
-    "integrations.md",
+    "theme-bases/bases-cards.md",
+    "theme-bases/bases-list.md",
+    "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
+    "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
+    "theme-checkboxes/upper.md",
+    "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
+    "theme-embeds/tooltips.md",
+    "theme-embeds/note-embeds.md",
+    "theme-embeds/frontmatter.md",
+    "backlinks.md",
     "embeds.md",
     "media.md",
     "tables.md",
+    "integrations.md",
     "callouts.md",
-    "theme-embeds/note-embeds.md",
-    "theme-bases/bases-table.md",
-    "theme-embeds/tooltips.md",
-    "theme-code/syntax-samples.md",
-    "theme-bases/bases-cards.md",
-    "theme-bases/bases-list.md",
-    "theme-checkboxes/upper.md",
-    "theme-checkboxes/lower.md",
-    "theme-embeds/frontmatter.md",
-    "theme-callouts/underwater.md",
+    "headings.md",
+    "general.md",
     "theme-callouts/lagom.md",
+    "theme-callouts/ebullientworks.md",
     "theme-callouts/cupertino.md",
     "theme-callouts/baseline.md",
+    "theme-callouts/underwater.md",
     "specimen.md",
-    "index.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

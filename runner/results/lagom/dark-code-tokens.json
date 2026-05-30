@@ -4,8 +4,8 @@
     "color": "rgb(179, 179, 179)"
   },
   "_preBlock": {
-    "backgroundColor": "rgb(36, 36, 36)",
-    "borderColor": "rgb(54, 54, 54)"
+    "backgroundColor": "rgb(35, 35, 35)",
+    "borderColor": "rgb(51, 51, 51)"
   },
   "header": {
     "color": "rgb(218, 218, 218)",

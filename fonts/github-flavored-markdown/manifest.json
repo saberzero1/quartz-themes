@@ -1,0 +1,16 @@
+{
+  "extractedAt": "2026-05-30T11:17:42.384Z",
+  "sourceTheme": "GitHub Flavored Markdown",
+  "fonts": [
+    {
+      "family": "gfm-alert-icon",
+      "style": "normal",
+      "weight": "400",
+      "file": "gfm-alert-icon.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

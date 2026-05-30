@@ -8,7 +8,7 @@
     "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
-    "color": "rgb(224, 177, 94)",
+    "color": "oklch(0.825 0.102 83.018)",
     "fontStyle": "normal",
     "fontWeight": "500",
     "textDecoration": "none"

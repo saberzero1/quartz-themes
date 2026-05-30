@@ -5,7 +5,7 @@
  * Bump this value when releasing a new version that includes font changes.
  * The tag and plugin version are implicitly tied — they release together.
  */
-export const FONT_TAG = "v4.0.9";
+export const FONT_TAG = "v4.0.10";
 
 /** Base URL for font files served via jsDelivr. */
 export const FONT_BASE_URL =

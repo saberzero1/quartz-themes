@@ -218,9 +218,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -246,9 +246,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -274,9 +274,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(224, 177, 94)",
+                  "color": "oklch(0.825 0.102 83.018)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(224, 177, 94)",
+                  "borderColor": "oklch(0.825 0.102 83.018)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -361,9 +361,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -389,9 +389,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -417,9 +417,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(224, 177, 94)",
+                  "color": "oklch(0.825 0.102 83.018)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(224, 177, 94)",
+                  "borderColor": "oklch(0.825 0.102 83.018)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -504,9 +504,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -532,9 +532,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(173, 188, 176)",
+                  "color": "oklch(0.749 0.069 150.52)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(173, 188, 176)",
+                  "borderColor": "oklch(0.749 0.069 150.52)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -560,9 +560,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(227, 172, 151)",
+                  "color": "oklch(0.791 0.069 39.413)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(227, 172, 151)",
+                  "borderColor": "oklch(0.791 0.069 39.413)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -602,9 +602,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(227, 172, 151)",
+                  "color": "oklch(0.791 0.069 39.413)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(227, 172, 151)",
+                  "borderColor": "oklch(0.791 0.069 39.413)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -630,9 +630,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -717,9 +717,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -773,9 +773,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -947,9 +947,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -975,9 +975,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(116, 198, 197)",
+                  "color": "oklch(0.786 0.112 195.119)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(116, 198, 197)",
+                  "borderColor": "oklch(0.786 0.112 195.119)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1003,9 +1003,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1031,9 +1031,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(116, 198, 197)",
+                  "color": "oklch(0.786 0.112 195.119)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(116, 198, 197)",
+                  "borderColor": "oklch(0.786 0.112 195.119)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1175,9 +1175,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1203,9 +1203,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(198, 178, 195)",
+                  "color": "oklch(0.754 0.061 332.854)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(198, 178, 195)",
+                  "borderColor": "oklch(0.754 0.061 332.854)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1304,9 +1304,9 @@
                 "classes": [],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(222, 170, 184)",
+                  "color": "oklch(0.792 0.06 2.735)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(222, 170, 184)",
+                  "borderColor": "oklch(0.792 0.06 2.735)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1509,7 +1509,7 @@
                 "styles": {
                   "color": "rgb(205, 205, 205)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1606,7 +1606,7 @@
                         "styles": {
                           "color": "rgb(205, 205, 205)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1721,7 +1721,7 @@
                         "styles": {
                           "color": "rgb(205, 205, 205)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1836,7 +1836,7 @@
                         "styles": {
                           "color": "rgb(205, 205, 205)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                          "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -2041,7 +2041,7 @@
                 "styles": {
                   "color": "rgb(205, 205, 205)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -2338,7 +2338,7 @@
                 "styles": {
                   "color": "rgb(205, 205, 205)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) rgba(255, 255, 255, 0.12)",
+                  "borderColor": "rgb(205, 205, 205) rgb(205, 205, 205) rgb(205, 205, 205) oklch(0.999994 0.0000497986 none / 0.12)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -2863,7 +2863,7 @@
   },
   "search": {
     "tag": "div",
-    "classes": ["search-input-container", "global-search-input-container"],
+    "classes": ["search-input-container"],
     "attrs": {},
     "styles": {
       "color": "rgb(205, 205, 205)",
@@ -2872,7 +2872,7 @@
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
-    "childCount": 3,
+    "childCount": 2,
     "children": [
       {
         "tag": "input",
@@ -2906,120 +2906,6 @@
         },
         "childCount": 0,
         "children": []
-      },
-      {
-        "tag": "div",
-        "classes": ["input-right-decorator", "clickable-icon"],
-        "attrs": { "aria-label": "Match case" },
-        "styles": {
-          "color": "rgb(184, 184, 184)",
-          "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(184, 184, 184)",
-          "fill": "rgb(0, 0, 0)",
-          "stroke": "none"
-        },
-        "childCount": 1,
-        "children": [
-          {
-            "tag": "svg",
-            "classes": ["svg-icon", "uppercase-lowercase-a"],
-            "attrs": {
-              "xmlns": "http://www.w3.org/2000/svg",
-              "width": "24",
-              "height": "24",
-              "viewBox": "0 0 24 24",
-              "fill": "none",
-              "stroke": "currentColor",
-              "stroke-width": "2",
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round"
-            },
-            "styles": {
-              "color": "rgb(184, 184, 184)",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(184, 184, 184)",
-              "fill": "none",
-              "stroke": "rgb(184, 184, 184)"
-            },
-            "childCount": 5,
-            "children": [
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M10.5 14L4.5 14" },
-                "styles": {
-                  "color": "rgb(184, 184, 184)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(184, 184, 184)",
-                  "fill": "none",
-                  "stroke": "rgb(184, 184, 184)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M12.5 18L7.5 6" },
-                "styles": {
-                  "color": "rgb(184, 184, 184)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(184, 184, 184)",
-                  "fill": "none",
-                  "stroke": "rgb(184, 184, 184)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M3 18L7.5 6" },
-                "styles": {
-                  "color": "rgb(184, 184, 184)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(184, 184, 184)",
-                  "fill": "none",
-                  "stroke": "rgb(184, 184, 184)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": {
-                  "d": "M15.9526 10.8322C15.9526 10.8322 16.6259 10 18.3832 10C20.1406 9.99999 20.9986 11.0587 20.9986 11.9682V16.7018C20.9986 17.1624 21.2815 17.7461 21.7151 18"
-                },
-                "styles": {
-                  "color": "rgb(184, 184, 184)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(184, 184, 184)",
-                  "fill": "none",
-                  "stroke": "rgb(184, 184, 184)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": {
-                  "d": "M20.7151 13.5C18.7151 13.5 15.7151 14.2837 15.7151 16C15.7151 17.7163 17.5908 18.2909 18.7151 18C19.5635 17.7804 20.5265 17.3116 20.889 16.6199"
-                },
-                "styles": {
-                  "color": "rgb(184, 184, 184)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(184, 184, 184)",
-                  "fill": "none",
-                  "stroke": "rgb(184, 184, 184)"
-                },
-                "childCount": 0,
-                "children": []
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -3042,7 +2928,7 @@
         "attrs": {},
         "styles": {
           "color": "rgb(184, 184, 184)",
-          "backgroundColor": "rgba(237, 166, 165, 0.1)",
+          "backgroundColor": "oklch(0.756 0.096 24.111 / 0.1)",
           "borderColor": "rgb(184, 184, 184)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
@@ -3123,7 +3009,7 @@
             "attrs": {},
             "styles": {
               "color": "rgb(205, 205, 205)",
-              "backgroundColor": "rgba(92, 122, 98, 0.1)",
+              "backgroundColor": "oklch(0.549 0.051 150.52 / 0.1)",
               "borderColor": "rgb(205, 205, 205)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
@@ -3287,9 +3173,9 @@
                     ],
                     "attrs": { "aria-label": "Type mismatch, expected Text" },
                     "styles": {
-                      "color": "rgb(227, 172, 151)",
+                      "color": "oklch(0.791 0.069 39.413)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(227, 172, 151)",
+                      "borderColor": "oklch(0.791 0.069 39.413)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -3310,11 +3196,11 @@
                           "stroke-linejoin": "round"
                         },
                         "styles": {
-                          "color": "rgb(227, 172, 151)",
+                          "color": "oklch(0.791 0.069 39.413)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(227, 172, 151)",
+                          "borderColor": "oklch(0.791 0.069 39.413)",
                           "fill": "none",
-                          "stroke": "rgb(227, 172, 151)"
+                          "stroke": "oklch(0.791 0.069 39.413)"
                         },
                         "childCount": 3,
                         "children": [
@@ -3325,11 +3211,11 @@
                               "d": "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
                             },
                             "styles": {
-                              "color": "rgb(227, 172, 151)",
+                              "color": "oklch(0.791 0.069 39.413)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(227, 172, 151)",
+                              "borderColor": "oklch(0.791 0.069 39.413)",
                               "fill": "none",
-                              "stroke": "rgb(227, 172, 151)"
+                              "stroke": "oklch(0.791 0.069 39.413)"
                             },
                             "childCount": 0,
                             "children": []
@@ -3339,11 +3225,11 @@
                             "classes": [],
                             "attrs": { "d": "M12 9v4" },
                             "styles": {
-                              "color": "rgb(227, 172, 151)",
+                              "color": "oklch(0.791 0.069 39.413)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(227, 172, 151)",
+                              "borderColor": "oklch(0.791 0.069 39.413)",
                               "fill": "none",
-                              "stroke": "rgb(227, 172, 151)"
+                              "stroke": "oklch(0.791 0.069 39.413)"
                             },
                             "childCount": 0,
                             "children": []
@@ -3353,11 +3239,11 @@
                             "classes": [],
                             "attrs": { "d": "M12 17h.01" },
                             "styles": {
-                              "color": "rgb(227, 172, 151)",
+                              "color": "oklch(0.791 0.069 39.413)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(227, 172, 151)",
+                              "borderColor": "oklch(0.791 0.069 39.413)",
                               "fill": "none",
-                              "stroke": "rgb(227, 172, 151)"
+                              "stroke": "oklch(0.791 0.069 39.413)"
                             },
                             "childCount": 0,
                             "children": []
