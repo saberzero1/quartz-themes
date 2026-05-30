@@ -1,0 +1,675 @@
+/* ═══════════════════════════════════════════
+   Emrald — Obsidian Theme v1.0.0
+   Effort Mastery LLC
+   
+   Palette: Deep emerald backgrounds, warm gold accents
+   Philosophy: Calm, focused, premium — like a well-lit study
+   ═══════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════
+   Style Settings — curated controls
+   Requires the Style Settings plugin
+   ═══════════════════════════════════════════ */
+/* @settings
+name: Emrald
+id: emrald-theme
+settings:
+  -
+    id: emrald-dark-contrast
+    title: Dark Mode Surface Contrast
+    description: Choose whether the editor or side panels feel slightly darker.
+    type: class-select
+    allowEmpty: false
+    default: emrald-dark-editor-lighter
+    options:
+      -
+        label: Editor lighter / side panels darker
+        value: emrald-dark-editor-lighter
+      -
+        label: Editor darker / side panels lighter
+        value: emrald-dark-editor-darker
+  -
+    id: emrald-light-gold
+    title: Light Mode Gold Intensity
+    description: Keep the warmer gold pop, or soften it for a more restrained paper look.
+    type: class-select
+    allowEmpty: false
+    default: emrald-light-gold-rich
+    options:
+      -
+        label: Rich gold
+        value: emrald-light-gold-rich
+      -
+        label: Soft gold
+        value: emrald-light-gold-soft
+  -
+    id: emrald-header-style
+    title: Header Accent Style
+    description: Keep the H4 gold break or run a full emerald cascade.
+    type: class-select
+    allowEmpty: false
+    default: emrald-header-h4-gold
+    options:
+      -
+        label: H4 gold break
+        value: emrald-header-h4-gold
+      -
+        label: All-emerald cascade
+        value: emrald-header-all-emerald
+  -
+    id: emrald-link-emphasis
+    title: Link Emphasis
+    description: Increase how much links stand out, especially in light mode.
+    type: class-select
+    allowEmpty: false
+    default: emrald-links-balanced
+    options:
+      -
+        label: Balanced
+        value: emrald-links-balanced
+      -
+        label: Stronger
+        value: emrald-links-strong
+  -
+    id: emrald-dark-text-warmth
+    title: Dark Mode Text Warmth
+    description: Soften dark-mode text from cool white to warm parchment.
+    type: class-select
+    allowEmpty: false
+    default: emrald-dark-text-default
+    options:
+      -
+        label: Default (cool)
+        value: emrald-dark-text-default
+      -
+        label: Warm parchment
+        value: emrald-dark-text-warm
+*/
+
+/* ── Dark Mode ─────────────────────────────── */
+
+.theme-dark {
+  color-scheme: dark;
+
+  /* Accent (gold) — used for interactive highlights, checkboxes, toggles */
+  --accent-h: 39;
+  --accent-s: 66%;
+  --accent-l: 50%;
+
+  /* ── Backgrounds ── */
+  --background-primary:       #0E2822;  /* main editor */
+  --background-primary-alt:   #0E2822;
+  --background-secondary:     #091E18;  /* sidebar / file explorer */
+  --background-secondary-alt: #091E18;
+
+  --background-modifier-border:       #2A3F37;
+  --background-modifier-border-focus:  #34865B;
+  --background-modifier-border-hover:  #354D43;
+  --background-modifier-form-field:    #132E27;
+  --background-modifier-form-field-highlighted: #1A3A31;
+  --background-modifier-box-shadow:    rgba(0, 0, 0, 0.35);
+  --background-modifier-success:       #4CA67A;
+  --background-modifier-error:         #C45B5B;
+  --background-modifier-error-hover:   #D46A6A;
+  --background-modifier-cover:         rgba(9, 30, 24, 0.85);
+  --background-modifier-hover:         #1A3A31;
+  --background-modifier-message:       rgba(26, 58, 49, 0.9);
+  --background-modifier-active-hover:  #24493E;
+
+  /* ── Text ── */
+  --text-normal:      #E5E4DC;
+  --text-faint:       #5E6B63;
+  --text-muted:       #A19A8D;
+  --text-error:       #D46A6A;
+  --text-accent:      #C4943A;
+  --text-accent-hover:#D4A84A;
+  --text-error-hover: #E07878;
+  --text-on-accent:   #091E18;
+  --text-selection:    rgba(52, 134, 91, 0.35);
+
+  /* ── Highlight ── */
+  --text-highlight-bg: rgba(196, 148, 58, 0.28);
+  --text-highlight-bg-active: rgba(196, 148, 58, 0.42);
+
+  /* ── Bold & Italic — stand out with color ── */
+  --bold-color:    #6ECE9A;  /* bright emerald */
+  --italic-color:  #C4943A;  /* warm gold */
+
+  /* ── Interactive ── */
+  --interactive-normal:       #132E27;
+  --interactive-hover:        #1A3A31;
+  --interactive-success:      #4CA67A;
+  --interactive-accent:       hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --interactive-accent-hover: #D4A84A;
+
+  /* ── Scrollbar ── */
+  --scrollbar-bg:             #091E18;
+  --scrollbar-thumb-bg:       #2A3F37;
+  --scrollbar-active-thumb-bg:#354D43;
+
+  /* ── Headers — stepped shades: brightest at H1, darkening downward ── */
+  --h1-color: #6ECE9A;  /* bright emerald */
+  --h2-color: #4CA67A;  /* light emerald */
+  --h3-color: #34865B;  /* primary emerald */
+  --h4-color: #C4943A;  /* warm gold */
+  --h5-color: #A19A8D;  /* secondary text */
+  --h6-color: #5E6B63;  /* muted */
+
+  /* ── Tags ── */
+  --tag-color:            #C4943A;
+  --tag-background:       rgba(196, 148, 58, 0.15);
+  --tag-color-hover:      #D4A84A;
+  --tag-background-hover: rgba(196, 148, 58, 0.25);
+
+  /* ── Links ── */
+  --link-color:                #4CA67A;
+  --link-color-hover:          #6ECE9A;
+  --link-external-color:       #C4943A;
+  --link-external-color-hover: #D4A84A;
+  --link-unresolved-color:     #5E6B63;
+
+  /* ── Checkboxes ── */
+  --checkbox-color:              #4CA67A;
+  --checkbox-color-hover:        #6ECE9A;
+  --checkbox-marker-color:       #091E18;
+  --checkbox-border-color:       #354D43;
+  --checkbox-border-color-hover: #4CA67A;
+
+  /* ── Tables ── */
+  --table-header-background:       #132E27;
+  --table-header-background-hover: #1A3A31;
+
+  /* ── Code blocks ── */
+  --code-normal:     #E5E4DC;
+  --code-background: #132E27;
+  --code-comment:    #5E6B63;
+  --code-function:   #6ECE9A;
+  --code-important:  #D46A6A;
+  --code-keyword:    #C4943A;
+  --code-operator:   #A19A8D;
+  --code-property:   #4CA67A;
+  --code-punctuation:#5E6B63;
+  --code-string:     #8BC49C;
+  --code-tag:        #C4943A;
+  --code-value:      #D4A84A;
+
+  /* ── Inline code ── */
+  --inline-code-color:      #6ECE9A;
+
+  /* ── Graphs ── */
+  --graph-line:      #2A3F37;
+  --graph-node:      #4CA67A;
+  --graph-text:      #E5E4DC;
+
+  /* ── Nav / file explorer ── */
+  --nav-item-color:                #A19A8D;
+  --nav-item-color-hover:          #E5E4DC;
+  --nav-item-color-active:         #E5E4DC;
+  --nav-item-color-selected:       #E5E4DC;
+  --nav-item-background-hover:     #1A3A31;
+  --nav-item-background-active:    #24493E;
+  --nav-item-background-selected:  #1A3A31;
+  --nav-indentation-guide-color:   #2A3F37;
+
+  /* ── Modals / prompts ── */
+  --modal-background:    #0E2822;
+  --modal-border-color:  #2A3F37;
+  --prompt-border-color: #2A3F37;
+
+  /* ── Dividers ── */
+  --hr-color: #2A3F37;
+
+  /* ── Tabs ── */
+  --tab-text-color:                #A19A8D;
+  --tab-text-color-active:         #E5E4DC;
+  --tab-text-color-focused:        #E5E4DC;
+  --tab-text-color-focused-active: #E5E4DC;
+  --tab-background-active:         #0E2822;
+
+  /* ── Mermaid ── */
+  --mermaid-note: #1A3A31;
+}
+
+
+/* ── Light Mode ────────────────────────────── */
+
+.theme-light {
+  color-scheme: light;
+
+  --accent-h: 39;
+  --accent-s: 60%;
+  --accent-l: 42%;
+
+  /* ── Backgrounds ── */
+  --background-primary:       #E9E6D8;  /* warm paper */
+  --background-primary-alt:   #E9E6D8;
+  --background-secondary:     #E1DCCC;  /* sidebar */
+  --background-secondary-alt: #E1DCCC;
+
+  --background-modifier-border:       #C9C0AD;
+  --background-modifier-border-focus:  #34865B;
+  --background-modifier-border-hover:  #C5BFB3;
+  --background-modifier-form-field:    #F2EFE3;
+  --background-modifier-form-field-highlighted: #E6E1D3;
+  --background-modifier-box-shadow:    rgba(0, 0, 0, 0.08);
+  --background-modifier-success:       #34865B;
+  --background-modifier-error:         #C45B5B;
+  --background-modifier-error-hover:   #D46A6A;
+  --background-modifier-cover:         rgba(236, 233, 225, 0.85);
+  --background-modifier-hover:         #DDD7C7;
+  --background-modifier-message:       rgba(232, 228, 219, 0.9);
+  --background-modifier-active-hover:  #D2CAB8;
+
+  /* ── Text ── */
+  --text-normal:      #355747;
+  --text-faint:       #8A9A90;
+  --text-muted:       #5E6B63;
+  --text-error:       #C45B5B;
+  --text-accent:      #9A7420;
+  --text-accent-hover:#7D5F18;
+  --text-on-accent:   #E9E6D8;
+  --text-selection:    rgba(52, 134, 91, 0.2);
+
+  /* ── Highlight ── */
+  --text-highlight-bg: rgba(196, 148, 58, 0.22);
+
+  /* ── Bold & Italic ── */
+  --bold-color:    #1B6B42;  /* dark emerald */
+  --italic-color:  #9A7420;  /* dark gold */
+
+  /* ── Interactive ── */
+  --interactive-normal:       #E1DCCC;
+  --interactive-hover:        #DDD7C7;
+  --interactive-success:      #34865B;
+  --interactive-accent:       hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --interactive-accent-hover: #7D5F18;
+
+  /* ── Scrollbar ── */
+  --scrollbar-bg:             #E1DCCC;
+  --scrollbar-thumb-bg:       #C5BFB3;
+  --scrollbar-active-thumb-bg:#A79C8B;
+
+  /* ── Headers ── */
+  --h1-color: #1B6B42;  /* dark emerald */
+  --h2-color: #34865B;  /* primary emerald */
+  --h3-color: #4A7A5E;  /* medium emerald */
+  --h4-color: #9A7420;  /* dark gold */
+  --h5-color: #5E6B63;
+  --h6-color: #8A9A90;
+
+  /* ── Tags ── */
+  --tag-color:            #9A7420;
+  --tag-background:       rgba(154, 116, 32, 0.12);
+  --tag-color-hover:      #7D5F18;
+  --tag-background-hover: rgba(125, 95, 24, 0.18);
+
+  /* ── Links ── */
+  --link-color:                #34865B;
+  --link-color-hover:          #1B6B42;
+  --link-external-color:       #9A7420;
+  --link-external-color-hover: #7D5F18;
+  --link-unresolved-color:     #8A9A90;
+
+  /* ── Checkboxes ── */
+  --checkbox-color:              #34865B;
+  --checkbox-color-hover:        #1B6B42;
+  --checkbox-marker-color:       #E9E6D8;
+  --checkbox-border-color:       #C5BFB3;
+  --checkbox-border-color-hover: #34865B;
+
+  /* ── Tables ── */
+  --table-header-background:       #DDD7C7;
+  --table-header-background-hover: #D2CAB8;
+
+  /* ── Code blocks ── */
+  --code-normal:     #355747;
+  --code-background: #DDD7C7;
+  --code-comment:    #8A9A90;
+  --code-function:   #1B6B42;
+  --code-important:  #C45B5B;
+  --code-keyword:    #9A7420;
+  --code-operator:   #5E6B63;
+  --code-property:   #34865B;
+  --code-punctuation:#8A9A90;
+  --code-string:     #4A7A5E;
+  --code-tag:        #9A7420;
+  --code-value:      #7D5F18;
+
+  /* ── Inline code ── */
+  --inline-code-color: #1B6B42;
+
+  /* ── Graphs ── */
+  --graph-line:      #C9C0AD;
+  --graph-node:      #34865B;
+  --graph-text:      #355747;
+
+  /* ── Nav ── */
+  --nav-item-color:                #5E6B63;
+  --nav-item-color-hover:          #355747;
+  --nav-item-color-active:         #355747;
+  --nav-item-color-selected:       #355747;
+  --nav-item-background-hover:     #DDD7C7;
+  --nav-item-background-active:    #D2CAB8;
+  --nav-item-background-selected:  #DDD7C7;
+  --nav-indentation-guide-color:   #C9C0AD;
+
+  /* ── Modals ── */
+  --modal-background:    #E9E6D8;
+  --modal-border-color:  #C9C0AD;
+  --prompt-border-color: #C9C0AD;
+
+  /* ── Dividers ── */
+  --hr-color: #C9C0AD;
+
+  /* ── Tabs ── */
+  --tab-text-color:                #5E6B63;
+  --tab-text-color-active:         #355747;
+  --tab-text-color-focused:        #355747;
+  --tab-text-color-focused-active: #355747;
+  --tab-background-active:         #E9E6D8;
+
+  /* ── Mermaid ── */
+  --mermaid-note: #DDD7C7;
+}
+
+
+/* ═══════════════════════════════════════════
+   Notices / Toasts
+   ═══════════════════════════════════════════ */
+
+/* Dark mode: deep emerald background, warm light text */
+.theme-dark .notice {
+  background-color: #091E18;
+  color: #E5E4DC;
+  border: 1px solid #2A3F37;
+}
+
+/* Light mode: emerald background so text is always legible */
+.theme-light .notice {
+  background-color: #355747;
+  color: #E9E6D8;
+  border: 1px solid #2A3F37;
+}
+
+
+/* ═══════════════════════════════════════════
+   Typography enhancements
+   ═══════════════════════════════════════════ */
+
+/* Bold text — emerald accent with weight */
+.cm-strong,
+strong,
+.markdown-rendered strong {
+  color: var(--bold-color);
+  font-weight: 700;
+}
+
+/* Italic text — gold accent */
+.cm-em,
+em,
+.markdown-rendered em {
+  color: var(--italic-color);
+}
+
+/* Bold + italic */
+.cm-strong.cm-em,
+strong em,
+em strong,
+.markdown-rendered strong em,
+.markdown-rendered em strong {
+  color: var(--bold-color);
+}
+
+/* ── Headers — stepped weight + size feel ── */
+
+.cm-header-1,
+.markdown-rendered h1 {
+  font-weight: 800;
+}
+
+.cm-header-2,
+.markdown-rendered h2 {
+  font-weight: 700;
+}
+
+.cm-header-3,
+.markdown-rendered h3 {
+  font-weight: 700;
+}
+
+.cm-header-4,
+.markdown-rendered h4 {
+  font-weight: 600;
+}
+
+.cm-header-5,
+.markdown-rendered h5 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.85em;
+}
+
+.cm-header-6,
+.markdown-rendered h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8em;
+}
+
+
+/* ═══════════════════════════════════════════
+   Code block syntax — colored language blocks
+   ═══════════════════════════════════════════ */
+
+/* CodeMirror 6 token types */
+.theme-dark .cm-s-obsidian span.cm-comment   { color: #5E6B63; }
+.theme-dark .cm-s-obsidian span.cm-keyword   { color: #C4943A; }
+.theme-dark .cm-s-obsidian span.cm-def       { color: #6ECE9A; }
+.theme-dark .cm-s-obsidian span.cm-variable  { color: #E5E4DC; }
+.theme-dark .cm-s-obsidian span.cm-variable-2 { color: #4CA67A; }
+.theme-dark .cm-s-obsidian span.cm-string    { color: #8BC49C; }
+.theme-dark .cm-s-obsidian span.cm-string-2  { color: #8BC49C; }
+.theme-dark .cm-s-obsidian span.cm-number    { color: #D4A84A; }
+.theme-dark .cm-s-obsidian span.cm-atom      { color: #D4A84A; }
+.theme-dark .cm-s-obsidian span.cm-operator  { color: #A19A8D; }
+.theme-dark .cm-s-obsidian span.cm-meta      { color: #C4943A; }
+.theme-dark .cm-s-obsidian span.cm-tag       { color: #C4943A; }
+.theme-dark .cm-s-obsidian span.cm-attribute { color: #4CA67A; }
+.theme-dark .cm-s-obsidian span.cm-builtin   { color: #6ECE9A; }
+.theme-dark .cm-s-obsidian span.cm-type      { color: #C4943A; }
+.theme-dark .cm-s-obsidian span.cm-bracket   { color: #A19A8D; }
+.theme-dark .cm-s-obsidian span.cm-property  { color: #4CA67A; }
+.theme-dark .cm-s-obsidian span.cm-qualifier { color: #C4943A; }
+
+.theme-light .cm-s-obsidian span.cm-comment   { color: #8A9A90; }
+.theme-light .cm-s-obsidian span.cm-keyword   { color: #9A7420; }
+.theme-light .cm-s-obsidian span.cm-def       { color: #1B6B42; }
+.theme-light .cm-s-obsidian span.cm-variable  { color: #2A3F37; }
+.theme-light .cm-s-obsidian span.cm-variable-2 { color: #34865B; }
+.theme-light .cm-s-obsidian span.cm-string    { color: #4A7A5E; }
+.theme-light .cm-s-obsidian span.cm-string-2  { color: #4A7A5E; }
+.theme-light .cm-s-obsidian span.cm-number    { color: #7D5F18; }
+.theme-light .cm-s-obsidian span.cm-atom      { color: #7D5F18; }
+.theme-light .cm-s-obsidian span.cm-operator  { color: #5E6B63; }
+.theme-light .cm-s-obsidian span.cm-meta      { color: #9A7420; }
+.theme-light .cm-s-obsidian span.cm-tag       { color: #9A7420; }
+.theme-light .cm-s-obsidian span.cm-attribute { color: #34865B; }
+.theme-light .cm-s-obsidian span.cm-builtin   { color: #1B6B42; }
+.theme-light .cm-s-obsidian span.cm-type      { color: #9A7420; }
+.theme-light .cm-s-obsidian span.cm-bracket   { color: #5E6B63; }
+.theme-light .cm-s-obsidian span.cm-property  { color: #34865B; }
+.theme-light .cm-s-obsidian span.cm-qualifier { color: #9A7420; }
+
+
+/* ═══════════════════════════════════════════
+   Inline code — subtle emerald background
+   ═══════════════════════════════════════════ */
+
+.theme-dark code:not(pre code) {
+  color: var(--inline-code-color);
+  background: rgba(19, 46, 39, 0.65);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.theme-light code:not(pre code) {
+  color: var(--inline-code-color);
+  background: rgba(232, 228, 219, 0.8);
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+
+/* ═══════════════════════════════════════════
+   Blockquotes — subtle gold left border
+   ═══════════════════════════════════════════ */
+
+.theme-dark blockquote,
+.theme-dark .markdown-rendered blockquote {
+  border-left: 3px solid rgba(196, 148, 58, 0.55);
+  background: rgba(19, 46, 39, 0.3);
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+.theme-light blockquote,
+.theme-light .markdown-rendered blockquote {
+  border-left: 3px solid rgba(154, 116, 32, 0.45);
+  background: rgba(232, 228, 219, 0.5);
+  padding: 8px 16px;
+  border-radius: 0 4px 4px 0;
+}
+
+
+/* ═══════════════════════════════════════════
+   Horizontal rule — subtle emerald line
+   ═══════════════════════════════════════════ */
+
+.theme-dark hr {
+  border-color: #2A3F37;
+}
+
+.theme-light hr {
+  border-color: #C9C0AD;
+}
+
+
+/* ═══════════════════════════════════════════
+   Callouts — emerald-tinted backgrounds
+   ═══════════════════════════════════════════ */
+
+.theme-dark .callout {
+  background: rgba(14, 40, 34, 0.6);
+  border-color: #2A3F37;
+}
+
+.theme-light .callout {
+  background: rgba(236, 233, 225, 0.5);
+  border-color: #D5D0C6;
+}
+
+
+/* ═══════════════════════════════════════════
+   Style Settings classes
+   ═══════════════════════════════════════════ */
+
+/* Dark surface contrast */
+.theme-dark.emrald-dark-editor-lighter {
+  --background-primary:       #0E2822;
+  --background-primary-alt:   #0E2822;
+  --background-secondary:     #091E18;
+  --background-secondary-alt: #091E18;
+  --modal-background:         #0E2822;
+  --tab-background-active:    #0E2822;
+  --text-on-accent:           #091E18;
+}
+
+.theme-dark.emrald-dark-editor-darker {
+  --background-primary:       #091E18;
+  --background-primary-alt:   #091E18;
+  --background-secondary:     #0E2822;
+  --background-secondary-alt: #0E2822;
+  --modal-background:         #091E18;
+  --tab-background-active:    #091E18;
+  --text-on-accent:           #091E18;
+}
+
+/* Light gold intensity */
+.theme-light.emrald-light-gold-rich {
+  --text-accent:              #9A7420;
+  --text-accent-hover:        #7D5F18;
+  --italic-color:             #9A7420;
+  --h4-color:                 #9A7420;
+  --tag-color:                #9A7420;
+  --tag-color-hover:          #7D5F18;
+  --link-external-color:      #9A7420;
+  --link-external-color-hover:#7D5F18;
+  --code-keyword:             #9A7420;
+  --code-tag:                 #9A7420;
+  --code-value:               #7D5F18;
+}
+
+.theme-light.emrald-light-gold-soft {
+  --text-accent:              #7A6A56;
+  --text-accent-hover:        #6B5B4B;
+  --italic-color:             #7A6A56;
+  --h4-color:                 #7A6A56;
+  --tag-color:                #7A6A56;
+  --tag-color-hover:          #6B5B4B;
+  --link-external-color:      #7A6A56;
+  --link-external-color-hover:#6B5B4B;
+  --code-keyword:             #7A6A56;
+  --code-tag:                 #7A6A56;
+  --code-value:               #6B5B4B;
+}
+
+/* Header treatment */
+.emrald-header-h4-gold {
+  --h4-color: var(--text-accent);
+}
+
+.emrald-header-all-emerald.theme-dark {
+  --h4-color: #34865B;
+}
+
+.emrald-header-all-emerald.theme-light {
+  --h4-color: #4A7A5E;
+}
+
+/* Link emphasis */
+.emrald-links-balanced {}
+
+.theme-dark.emrald-links-strong {
+  --link-color:                #6ECE9A;
+  --link-color-hover:          #8BE0B3;
+  --link-external-color:       #D4A84A;
+  --link-external-color-hover: #E0B763;
+}
+
+.theme-light.emrald-links-strong {
+  --link-color:                #1B6B42;
+  --link-color-hover:          #145534;
+  --link-external-color:       #8C6720;
+  --link-external-color-hover: #6F5218;
+}
+
+/* Dark text warmth */
+.emrald-dark-text-default {}
+
+.theme-dark.emrald-dark-text-warm {
+  --text-normal:      #E9E2CE;
+  --text-faint:       #9E9688;
+  --text-muted:       #B8AE9C;
+  --code-normal:      #E9E2CE;
+  --nav-item-color-hover:          #E9E2CE;
+  --nav-item-color-active:         #E9E2CE;
+  --nav-item-color-selected:       #E9E2CE;
+  --tab-text-color-active:         #E9E2CE;
+  --tab-text-color-focused:        #E9E2CE;
+  --tab-text-color-focused-active: #E9E2CE;
+  --graph-text:      #E9E2CE;
+}

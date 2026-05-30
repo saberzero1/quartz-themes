@@ -572,16 +572,20 @@ body {
 .prompt {
   --background-primary: var(--leather-color);
   --background-modifier-form-field-hover: var(--leather-color-alt);
-  --text-normal: var(--light-ink);
-  --text-muted: var(--light-ink-muted);
-  --search-clear-button-color: var(--light-ink-alt);
+  --text-normal: var(--main-ink);
+  --text-muted: var(--main-ink-muted);
+  --search-clear-button-color: var(--leather-color);
 }
 
 .prompt .prompt-input::placeholder {
-  color: var(--light-ink-fainted);
+  color: var(--main-ink-fainted);
 }
 
 .prompt .prompt-results {
+  color: var(--main-ink);
+}
+
+.prompt .prompt-results .suggestion-item.is-selected {
   color: var(--light-ink-alt);
 }
 
@@ -994,6 +998,11 @@ button:focus-visible {
   /* Sidebar */
 .theme-dark .tree-item-icon {
   --nav-collapse-icon-color: var(--light-ink-alt);
+}
+
+/* Prompt */
+.theme-dark .prompt .prompt-instructions .prompt-instruction-command {
+  color: var(--main-ink-muted)
 }
 
 /* --- --- --- --- --- --- --- --- --- --- --- --- --- --- */

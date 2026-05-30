@@ -11,7 +11,7 @@ export const entries = [
     properties: ["background-color", "color"],
   },
   {
-    obsidianSelector: `.frontmatter-container`,
+    obsidianSelector: `.metadata-container`,
     publishSelector: `.frontmatter-container`,
     quartzSelector: ".frontmatter",
     pseudoElement: "",
@@ -80,7 +80,7 @@ export const entries = [
     properties: ["color"],
   },
   {
-    obsidianSelector: `.metadata-property-value a`,
+    obsidianSelector: `.metadata-property-value .metadata-link`,
     publishSelector: null,
     quartzSelector: ".note-properties-link",
     pseudoElement: "",

@@ -31,14 +31,14 @@ export const entries = [
     properties: ["color", "background-color"],
   },
   {
-    obsidianSelector: `.canvas-edge-label`,
+    obsidianSelector: `.canvas-path-label`,
     publishSelector: null,
     quartzSelector: ".canvas-edge-label",
     pseudoElement: "",
     properties: ["color", "background-color"],
   },
   {
-    obsidianSelector: `.canvas-control-group button`,
+    obsidianSelector: `.canvas-control-item`,
     publishSelector: null,
     quartzSelector: ".canvas-controls button",
     pseudoElement: "",

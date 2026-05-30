@@ -4,7 +4,7 @@ export const aspect = "search";
 
 export const entries = [
   {
-    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    obsidianSelector: `.search-result-file-title`,
     publishSelector: `.suggestion-item.is-selected`,
     quartzSelector:
       ".search>.search-container>.search-space>.search-layout>.results-container .result-card:hover, .search>.search-container>.search-space>.search-layout>.results-container .result-card:focus, .search>.search-container>.search-space>.search-layout>.results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
@@ -17,7 +17,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `div.mod-complex.suggestion-item`,
+    obsidianSelector: `.tree-item.search-result`,
     publishSelector: `div.suggestion-item`,
     quartzSelector:
       ".search>.search-container>.search-space>.search-layout>.results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover)",
@@ -30,7 +30,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `hr`,
+    obsidianSelector: `.markdown-preview-view hr`,
     publishSelector: `.markdown-rendered hr`,
     quartzSelector: "hr",
     pseudoElement: "",
@@ -78,7 +78,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `div.prompt`,
+    obsidianSelector: `.search-row`,
     publishSelector: `.search-results`,
     quartzSelector: ".search > .search-container > .search-space",
     pseudoElement: "",
@@ -91,7 +91,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `input.prompt-input[type=\"text\"]`,
+    obsidianSelector: `.search-input-container.global-search-input-container input[type="search"]`,
     publishSelector: null,
     quartzSelector: ".search > .search-container > .search-space > input",
     pseudoElement: "",
@@ -105,14 +105,14 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `div.prompt-results`,
+    obsidianSelector: `.search-results-children`,
     publishSelector: `.search-results > *`,
     quartzSelector: ".search > .search-container > .search-space > *",
     pseudoElement: "",
     properties: sets.text,
   },
   {
-    obsidianSelector: `div.prompt`,
+    obsidianSelector: `.search-row`,
     publishSelector: `div.search-results`,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout, .search > .search-container > .search-space > .search-layout.display-results",
@@ -123,7 +123,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `div.mod-complex.suggestion-item`,
+    obsidianSelector: `.tree-item.search-result`,
     publishSelector: `.search-results .suggestion-item`,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container",
@@ -131,7 +131,7 @@ export const entries = [
     properties: ["color"],
   },
   {
-    obsidianSelector: `div.mod-complex.suggestion-item`,
+    obsidianSelector: `.tree-item.search-result`,
     publishSelector: `div.search-results .suggestion-item`,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
@@ -142,7 +142,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    obsidianSelector: `.search-result-file-title`,
     publishSelector: `.search-results .suggestion-item.is-selected`,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))",
@@ -150,7 +150,7 @@ export const entries = [
     properties: ["color", "font-weight", "background-color"],
   },
   {
-    obsidianSelector: `div.is-selected.mod-complex.suggestion-item`,
+    obsidianSelector: `.search-result-file-title`,
     publishSelector: `div.search-results .suggestion-item.is-selected`,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title, .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description",
@@ -158,7 +158,7 @@ export const entries = [
     properties: ["color"],
   },
   {
-    obsidianSelector: `.search-view-container`,
+    obsidianSelector: `.workspace-leaf-content[data-type="search"]`,
     publishSelector: null,
     quartzSelector: ".search > .search-container",
     pseudoElement: "",
@@ -181,7 +181,7 @@ export const entries = [
     properties: ["color", "background-color", "font-weight"],
   },
   {
-    obsidianSelector: `.search-results-container .search-result`,
+    obsidianSelector: `.search-result-container .tree-item.search-result`,
     publishSelector: null,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container .result-card",
@@ -195,7 +195,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: `.search-results-container .search-result:hover`,
+    obsidianSelector: `.search-result-container .tree-item.search-result`,
     publishSelector: null,
     quartzSelector:
       ".search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover",
@@ -364,7 +364,7 @@ export const entries = [
     properties: ["background-color", "border-radius"],
   },
   {
-    obsidianSelector: `.search-input:focus`,
+    obsidianSelector: `.search-input-container.global-search-input-container input[type="search"]`,
     publishSelector: null,
     quartzSelector: "input:focus",
     pseudoElement: "",

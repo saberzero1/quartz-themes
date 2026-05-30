@@ -10,7 +10,7 @@
    ============================================= */
 
 /* @settings
-name: COLOURS
+name: colours
 id: colours-theme
 settings:
     - id: colours-colours
@@ -81,7 +81,7 @@ settings:
     - id: colours-typography
       title: Typography
       type: heading
-      level: 2
+      level: 1
       collapsed: false
 
     - id: font-heading-override
@@ -120,9 +120,18 @@ settings:
       type: class-toggle
       default: false
 
-    - id: font-brightness
-      title: Font Brightness
-      description: "Scales text opacity. Lower values give a softer, more muted look."
+    - id: font-brightness-light
+      title: Font Brightness (Light)
+      description: "Scales text opacity in light mode. Lower values give a softer, more muted look."
+      type: variable-number-slider
+      default: 1
+      min: 0.5
+      max: 1
+      step: 0.05
+
+    - id: font-brightness-dark
+      title: Font Brightness (Dark)
+      description: "Scales text opacity in dark mode. Lower values give a softer, more muted look."
       type: variable-number-slider
       default: 1
       min: 0.5
@@ -132,7 +141,7 @@ settings:
     - id: colours-layout
       title: Layout
       type: heading
-      level: 2
+      level: 1
       collapsed: false
 
     - id: table-style
@@ -449,6 +458,8 @@ svg * {
    ============================================= */
 
 .theme-light {
+	--font-brightness: var(--font-brightness-light, 1);
+
 	/* --- Accent lightness detection --------------------------------- */
 	--contrast-threshold: 1.11;
 	--dynamic-switch:     round(calc(var(--contrast-threshold) - l));
@@ -563,6 +574,7 @@ svg * {
    DARK MODE PALETTE
    ============================================= */
 .theme-dark {
+	--font-brightness: var(--font-brightness-dark, 1);
 
 	/* --- Accent lightness detection --------------------------------- */
 	--dynamic-switch: 1;
@@ -653,8 +665,12 @@ svg * {
    ============================================= */
 .theme-light.accent-override {
 	--color-accent: var(--accent-colour, #0d0d73);
-	--graph-text: hsl(from var(--color-accent) h calc(s * 0.5) clamp(10%, calc((45 - l) * 1000%), 90%) / 90%);
-	--graph-line: hsl(from var(--color-accent) h calc(s * 0.2) clamp(20%, calc((45 - l) * 1000%), 80%) / 30%);
+}
+@supports (color: oklch(from red l c h)) {
+	.theme-light.accent-override {
+		--graph-text: hsl(from var(--color-accent) h calc(s * 0.5) clamp(10%, calc((45 - l) * 1000%), 90%) / 90%);
+		--graph-line: hsl(from var(--color-accent) h calc(s * 0.2) clamp(20%, calc((45 - l) * 1000%), 80%) / 30%);
+	}
 }
 .theme-dark.accent-override {
 	--color-accent: var(--accent-colour, #0f0f3d);
@@ -1636,18 +1652,20 @@ body.link-none      { --internal-link-decoration-style: none; --link-decoration:
 .markdown-rendered .internal-link:hover {
 	background: var(--text-muted);
 	color: var(--background-primary);
-	text-decoration: underline var(--internal-link-decoration-style, wavy);
-	text-underline-offset: 4px;
-	text-decoration-color: var(--text-muted) !important;
+	text-decoration: none;
 }
 /* --- Hover state — unresolved links --- */
 .markdown-source-view.mod-cm6 .is-unresolved:hover,
 .markdown-rendered .internal-link.is-unresolved:hover {
 	background: var(--background-modifier-hover);
 	color: var(--background-primary);
-	text-decoration: underline var(--internal-link-decoration-style, wavy);
-	text-underline-offset: 4px;
-	text-decoration-color: red !important;
+	text-decoration: none;
+}
+
+/* --- Strikethrough ---------------------------------------------- */
+.cm-strikethrough,
+.markdown-rendered s {
+	color: var(--text-faint);
 }
 
 /* --- Tables ----------------------------------------------------- */
@@ -1660,7 +1678,7 @@ table {
 .markdown-rendered td,
 .cm-content th,
 .cm-content td {
-	border: 1px solid var(--text-normal);
+	border: 1px solid var(--background-modifier-border);
 	padding: 4px 8px;
 	text-align: left;
 }
@@ -1894,21 +1912,25 @@ body {
 
 .callout {
 	--callout-blend-mode: normal;
-	background-color: rgba(var(--callout-color), 0.25) !important;
-	border-radius: 0 !important;
-	padding: 0 !important;
-	border: 1px solid rgba(var(--callout-color), 0.5);
+	background-color: oklch(from var(--callout-color) l c h / calc(0.25 * var(--font-brightness)));
+	border-radius: 0;
+	padding: 0;
+	border: 1px solid oklch(from var(--callout-color) l c h / calc(0.5 * var(--font-brightness)));
+	font-size: 0.95em;
 }
 
 .callout-title {
-  color: var(--text-muted) !important;
+  color:  oklch(from var(--callout-color) clamp(0.5, l * 1.2, 0.75) c calc(h + 60) / var(--font-brightness));
  	padding: 5px;
- 	background-color: var(--callout-color) !important;
-	border-bottom: 1px solid rgba(var(--callout-color), 0.3);
+	border-bottom: 1px solid oklch(from var(--callout-color) l c h / calc(0.5 * var(--font-brightness)));
 }
 
 .callout-icon {
   padding: 0px 5px;
+}
+
+.callout-icon .svg-icon {
+  color: oklch(from var(--callout-color) l c calc(h + 60) / var(--font-brightness));
 }
 
 .callout-content {
@@ -2175,7 +2197,7 @@ body {
 .calendar {
   --background-modifier-border: var(--text-muted);
 	--color-text-today: var(--text-highlight-bg);
-	--color-background-weekend: oklch(from var(--background-primary) calc(l * 1.5) c h);
+	--color-background-weekend: oklch(from var(--background-primary) clamp(0.4, (l * 1.4), 0.9) c h / 0.5);
 	--color-dot: var(--text-highlight-bg);
 }
 

@@ -4,32 +4,33 @@ export const aspect = "toc";
 
 export const entries = [
   {
-    obsidianSelector: `div.is-clickable.mod-collapsible.tree-item-self`,
+    obsidianSelector: `.workspace-leaf-content[data-type="outline"] .tree-item-self.is-clickable.mod-collapsible`,
     publishSelector: `.outline-view-outer .outline-view .tree-item > .tree-item-self`,
     quartzSelector: "li.depth-0",
     pseudoElement: "",
-    properties: [/*"font-size", "line-height", */ "font-weight"],
+    properties: ["color", "font-family", "font-weight"],
   },
   {
-    obsidianSelector: `div.tree-item-children`,
+    obsidianSelector: `.workspace-leaf-content[data-type="outline"] .tree-item-children`,
     publishSelector: `.outline-view-outer .outline-view .tree-item > .tree-item-children`,
-    quartzSelector: null /*"li.depth-0 + li.depth-1"*/,
+    quartzSelector: null,
     pseudoElement: "",
     properties: [
-      "margin-inline-start",
-      "padding-inline-start",
-      "border-inline-start",
+      "color",
+      "border-left-color",
+      "border-left-width",
+      "border-left-style",
     ],
   },
   {
-    obsidianSelector: `.outline-view-outer .tree-item-self.is-active`,
+    obsidianSelector: `.workspace-leaf-content[data-type="outline"] .tree-item-self.is-active`,
     publishSelector: null,
     quartzSelector: "ul.toc-content.overflow > li > a.in-view",
     pseudoElement: "",
     properties: ["color", "opacity", "font-weight"],
   },
   {
-    obsidianSelector: `.outline-view-outer .tree-item-icon`,
+    obsidianSelector: `.workspace-leaf-content[data-type="outline"] .tree-item-icon.collapse-icon`,
     publishSelector: null,
     quartzSelector: ".toc .fold",
     pseudoElement: "",

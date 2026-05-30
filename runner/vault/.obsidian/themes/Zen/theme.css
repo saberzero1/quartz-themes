@@ -3113,3 +3113,8 @@ body:not(.is-mobile) .workspace-tabs.mod-top .workspace-tab-header-container .si
 .omnisearch-input-container__buttons {
 	display: none;
 }
+
+.mermaid svg {
+	max-width: 100%;
+	height: auto;
+  }

@@ -25,7 +25,7 @@ export const entries = [
     properties: sets.embed,
   },
   {
-    obsidianSelector: `.internal-embed.is-loaded .markdown-embed`,
+    obsidianSelector: `.internal-embed.is-loaded.markdown-embed`,
     publishSelector: `.internal-embed .markdown-embed`,
     quartzSelector: ".transclude ul",
     pseudoElement: "",

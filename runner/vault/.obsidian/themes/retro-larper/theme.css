@@ -1,0 +1,395 @@
+/*
+  retro-larper
+  CRT-inspired Obsidian theme.
+*/
+
+/* @settings
+
+name: retro-larper
+id: retro-larper
+settings:
+  -
+    id: retro-larper-palette
+    title: Phosphor palette
+    description: Pick a classic CRT phosphor color.
+    type: class-select
+    allowEmpty: false
+    default: retro-larper-green
+    options:
+      -
+        label: Amber
+        value: retro-larper-amber
+      -
+        label: Green
+        value: retro-larper-green
+      -
+        label: Ice
+        value: retro-larper-ice
+
+*/
+
+:root {
+  --zl-radius-s: 2px;
+  --zl-radius-m: 4px;
+  --zl-radius-l: 8px;
+
+  --zl-font-ui: "Consolas", "Cascadia Mono", monospace;
+  --zl-font-body: "Consolas", "Cascadia Mono", monospace;
+  --zl-font-mono: "Consolas", "Cascadia Mono", monospace;
+
+  --zl-phosphor-main: #bff6a1;
+  --zl-phosphor-muted: #87c06e;
+  --zl-phosphor-faint: #537848;
+  --zl-phosphor-accent: #d6ff9b;
+  --zl-phosphor-accent-hover: #ebffc8;
+  --zl-phosphor-rgb: 191, 246, 161;
+  --zl-accent-rgb: 214, 255, 155;
+  --zl-accent-hot-rgb: 235, 255, 200;
+  --zl-screen-glow: rgba(138, 255, 117, 0.1);
+  --zl-scanline-bright: rgba(194, 255, 180, 0.018);
+  --zl-scanline-dark: rgba(0, 0, 0, 0.16);
+  --zl-phosphor-wash: rgba(138, 255, 117, 0.034);
+  --zl-rgb-red: rgba(255, 96, 64, 0.075);
+  --zl-rgb-cyan: rgba(96, 216, 255, 0.065);
+  --zl-panel-veil: rgba(11, 10, 7, 0.94);
+  --zl-panel-veil-alt: rgba(16, 14, 9, 0.97);
+  --zl-button-ink: #12150c;
+  --zl-flicker-a: 0.992;
+  --zl-flicker-b: 1;
+}
+
+body.retro-larper-amber {
+  --zl-phosphor-main: #f8df8c;
+  --zl-phosphor-muted: #c9b06a;
+  --zl-phosphor-faint: #8b7748;
+  --zl-phosphor-accent: #ffd86d;
+  --zl-phosphor-accent-hover: #fff0a8;
+  --zl-phosphor-rgb: 248, 223, 140;
+  --zl-accent-rgb: 255, 216, 109;
+  --zl-accent-hot-rgb: 255, 240, 168;
+  --zl-screen-glow: rgba(255, 211, 92, 0.11);
+  --zl-scanline-bright: rgba(255, 230, 158, 0.02);
+  --zl-phosphor-wash: rgba(255, 205, 96, 0.036);
+}
+
+body.retro-larper-green {
+  --zl-phosphor-main: #bff6a1;
+  --zl-phosphor-muted: #87c06e;
+  --zl-phosphor-faint: #537848;
+  --zl-phosphor-accent: #d6ff9b;
+  --zl-phosphor-accent-hover: #ebffc8;
+  --zl-phosphor-rgb: 191, 246, 161;
+  --zl-accent-rgb: 214, 255, 155;
+  --zl-accent-hot-rgb: 235, 255, 200;
+  --zl-screen-glow: rgba(138, 255, 117, 0.1);
+  --zl-scanline-bright: rgba(194, 255, 180, 0.018);
+  --zl-phosphor-wash: rgba(138, 255, 117, 0.034);
+}
+
+body.retro-larper-ice {
+  --zl-phosphor-main: #d6f7ff;
+  --zl-phosphor-muted: #9ec6d0;
+  --zl-phosphor-faint: #68848b;
+  --zl-phosphor-accent: #9eefff;
+  --zl-phosphor-accent-hover: #d8fbff;
+  --zl-phosphor-rgb: 214, 247, 255;
+  --zl-accent-rgb: 158, 239, 255;
+  --zl-accent-hot-rgb: 216, 251, 255;
+  --zl-screen-glow: rgba(128, 230, 255, 0.1);
+  --zl-scanline-bright: rgba(204, 246, 255, 0.018);
+  --zl-phosphor-wash: rgba(128, 230, 255, 0.032);
+}
+
+.theme-light,
+.theme-dark {
+  --font-interface-theme: var(--zl-font-ui);
+  --font-text-theme: var(--zl-font-body);
+  --font-monospace-theme: var(--zl-font-mono);
+
+  --radius-s: var(--zl-radius-s);
+  --radius-m: var(--zl-radius-m);
+  --radius-l: var(--zl-radius-l);
+
+  --background-primary: #090805;
+  --background-primary-alt: #0c0b07;
+  --background-secondary: #11100a;
+  --background-secondary-alt: #18160d;
+  --background-modifier-hover: rgba(var(--zl-accent-rgb), 0.05);
+  --background-modifier-border: rgba(var(--zl-accent-rgb), 0.12);
+  --background-modifier-border-hover: rgba(var(--zl-accent-hot-rgb), 0.2);
+
+  --text-normal: var(--zl-phosphor-main);
+  --text-muted: var(--zl-phosphor-muted);
+  --text-faint: var(--zl-phosphor-faint);
+  --text-accent: var(--zl-phosphor-accent);
+  --text-accent-hover: var(--zl-phosphor-accent-hover);
+
+  --interactive-normal: #17140c;
+  --interactive-hover: #201b0f;
+  --interactive-accent: var(--zl-phosphor-accent);
+  --interactive-accent-hover: var(--zl-phosphor-accent-hover);
+  --text-on-accent: var(--zl-button-ink);
+  --text-on-accent-inverted: var(--zl-button-ink);
+
+  --titlebar-background: #090805;
+  --titlebar-background-focused: #0d0b07;
+  --tab-text-color-focused-active: var(--text-normal);
+  --tab-container-background: #090805;
+  --tab-divider-color: rgba(var(--zl-accent-rgb), 0.08);
+}
+
+body {
+  --h1-size: 2em;
+  --h2-size: 1.55em;
+  --h3-size: 1.25em;
+  --line-width: 780px;
+  text-shadow: 0 0 5px rgba(var(--zl-accent-rgb), 0.16);
+  animation: zl-crt-flicker 0.18s infinite alternate;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+body::before {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 1px,
+      var(--zl-scanline-bright) 1px,
+      var(--zl-scanline-bright) 2px,
+      var(--zl-scanline-dark) 2px,
+      var(--zl-scanline-dark) 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 3px,
+      rgba(255, 255, 255, 0.008) 3px,
+      rgba(255, 255, 255, 0.008) 4px
+    ),
+    linear-gradient(90deg, var(--zl-rgb-red), transparent 18%, transparent 82%, var(--zl-rgb-cyan));
+  opacity: 0.76;
+}
+
+body::after {
+  background:
+    radial-gradient(circle at 50% 50%, transparent 58%, rgba(0, 0, 0, 0.24) 100%),
+    linear-gradient(180deg, transparent 0%, var(--zl-phosphor-wash) 48%, transparent 100%);
+  mix-blend-mode: screen;
+}
+
+.workspace {
+  position: relative;
+  background:
+    radial-gradient(circle at top center, var(--zl-screen-glow), transparent 38%),
+    radial-gradient(circle at bottom center, rgba(var(--zl-accent-rgb), 0.036), transparent 44%),
+    linear-gradient(180deg, #0a0906 0%, #090805 100%);
+  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.32);
+}
+
+.workspace::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 0%, var(--zl-phosphor-wash) 50%, transparent 100%);
+  opacity: 0.82;
+}
+
+.mod-root .workspace-tab-header,
+.mod-root .workspace-tab-header-inner,
+.view-header,
+.status-bar {
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border-color: rgba(var(--zl-accent-rgb), 0.08);
+}
+
+.markdown-source-view.mod-cm6 .cm-content,
+.markdown-preview-view {
+  line-height: 1.7;
+  color: var(--text-normal);
+  text-shadow:
+    -0.55px 0 0 var(--zl-rgb-red),
+    0.55px 0 0 var(--zl-rgb-cyan),
+    0 0 7px rgba(var(--zl-accent-rgb), 0.1);
+}
+
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3 {
+  font-family: var(--zl-font-ui);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-accent);
+  text-shadow:
+    -0.85px 0 0 rgba(255, 96, 64, 0.1),
+    0.85px 0 0 rgba(96, 216, 255, 0.08),
+    0 0 9px rgba(var(--zl-accent-rgb), 0.12);
+}
+
+.markdown-rendered blockquote,
+.HyperMD-quote {
+  border-left: 3px solid var(--interactive-accent);
+  background: rgba(var(--zl-accent-rgb), 0.035);
+  border-radius: 0 var(--zl-radius-m) var(--zl-radius-m) 0;
+  box-shadow: inset 0 0 0 1px rgba(var(--zl-accent-rgb), 0.04);
+}
+
+.markdown-rendered a,
+.external-link,
+.internal-link,
+.cm-link,
+.cm-hmd-internal-link,
+.cm-url {
+  text-decoration-thickness: 0.12em;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: none;
+  text-decoration-color: rgba(var(--zl-accent-hot-rgb), 0.68);
+  color: var(--text-accent);
+}
+
+.internal-link.is-unresolved,
+.cm-hmd-internal-link.is-unresolved,
+a.is-unresolved {
+  text-decoration-thickness: 0.13em;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(var(--zl-accent-rgb), 0.78);
+}
+
+button,
+.mod-cta,
+.dropdown {
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+button.mod-cta,
+.mod-cta {
+  color: var(--text-on-accent);
+  font-weight: 700;
+  border: 1px solid rgba(var(--zl-accent-rgb), 0.16);
+  box-shadow:
+    inset 0 -1px 0 rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 14px rgba(var(--zl-accent-rgb), 0.12);
+}
+
+button.mod-cta:hover,
+.mod-cta:hover {
+  color: var(--text-on-accent);
+  box-shadow:
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 0 18px rgba(var(--zl-accent-hot-rgb), 0.16);
+}
+
+button:not(.mod-cta),
+.dropdown {
+  border-color: rgba(var(--zl-accent-rgb), 0.14);
+  box-shadow: inset 0 0 0 1px rgba(var(--zl-accent-rgb), 0.03);
+}
+
+.markdown-rendered code,
+.cm-inline-code {
+  border-radius: var(--zl-radius-s);
+  background: rgba(var(--zl-accent-rgb), 0.06);
+  color: var(--zl-phosphor-accent-hover);
+}
+
+.markdown-rendered pre,
+.HyperMD-codeblock {
+  border-radius: var(--zl-radius-m);
+  border: 1px solid rgba(var(--zl-accent-rgb), 0.08);
+  box-shadow: inset 0 0 18px rgba(var(--zl-accent-rgb), 0.03);
+}
+
+.callout {
+  border-radius: var(--zl-radius-m);
+  border-width: 1px;
+  border-color: rgba(var(--zl-accent-rgb), 0.14);
+  background: rgba(var(--zl-accent-rgb), 0.03);
+}
+
+.workspace-tab-header.is-active,
+.workspace-tab-header:hover,
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.vertical-tab-header {
+  background-color: rgba(var(--zl-accent-rgb), 0.03);
+}
+
+.menu,
+.popover,
+.workspace-switcher-popover,
+.suggestion-container {
+  background:
+    linear-gradient(180deg, var(--zl-panel-veil-alt) 0%, var(--zl-panel-veil) 100%);
+  border: 1px solid rgba(var(--zl-accent-rgb), 0.14);
+  box-shadow:
+    0 0 0 1px rgba(var(--zl-accent-rgb), 0.05),
+    0 12px 28px rgba(0, 0, 0, 0.42),
+    0 0 18px rgba(var(--zl-accent-rgb), 0.08);
+}
+
+.menu-item,
+.suggestion-item,
+.workspace-switcher-item {
+  border-radius: var(--zl-radius-s);
+}
+
+.menu-item:hover,
+.menu-item.is-selected,
+.suggestion-item:hover,
+.suggestion-item.is-selected,
+.workspace-switcher-item:hover {
+  background-color: rgba(var(--zl-accent-rgb), 0.075);
+}
+
+.cm-cursor,
+.markdown-source-view.mod-cm6 .cm-cursor {
+  border-left-color: var(--zl-phosphor-accent-hover);
+  box-shadow: 0 0 8px rgba(var(--zl-accent-hot-rgb), 0.4);
+}
+
+.cm-activeLine,
+.is-flashing,
+.suggestion-item.is-selected {
+  background-color: rgba(var(--zl-accent-rgb), 0.045);
+}
+
+.search-result-file-match,
+.search-result-file-matched-text,
+mark {
+  background-color: rgba(var(--zl-accent-rgb), 0.14);
+  color: var(--zl-phosphor-accent-hover);
+}
+
+.view-content,
+.workspace-leaf-content,
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-scroller {
+  background-color: transparent;
+}
+
+@keyframes zl-crt-flicker {
+  0% {
+    opacity: var(--zl-flicker-a);
+    filter: brightness(0.996);
+  }
+
+  100% {
+    opacity: var(--zl-flicker-b);
+    filter: brightness(1.004);
+  }
+}

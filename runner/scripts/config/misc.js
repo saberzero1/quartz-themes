@@ -163,7 +163,7 @@ export const entries = [
     properties: ["background-color"],
   },
   {
-    obsidianSelector: `pre:has(> code.mermaid)`,
+    obsidianSelector: `pre:has(> code.language-mermaid)`,
     publishSelector: `pre:has(> code.mermaid)`,
     quartzSelector: "pre:has(> code.mermaid)",
     pseudoElement: "",
@@ -177,7 +177,7 @@ export const entries = [
     properties: ["background-color"],
   },
   {
-    obsidianSelector: `.tag`,
+    obsidianSelector: `.multi-select-pill`,
     publishSelector: `.tag`,
     quartzSelector: "ul.tags > li",
     pseudoElement: "",
@@ -210,7 +210,7 @@ export const entries = [
     properties: ["opacity"],
   },
   {
-    obsidianSelector: `.frontmatter-container`,
+    obsidianSelector: `.metadata-container`,
     publishSelector: null,
     quartzSelector: ".content-meta",
     pseudoElement: "",

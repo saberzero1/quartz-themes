@@ -79,9 +79,14 @@ const STYLE_PROPERTIES = [
   "accent-color",
   "appearance",
   "background",
+  "background-blend-mode",
+  "background-clip",
   "background-color",
   "backdrop-filter",
   "background-image",
+  "background-position",
+  "background-repeat",
+  "background-size",
   "border",
   "border-bottom",
   "border-bottom-color",
@@ -107,6 +112,12 @@ const STYLE_PROPERTIES = [
   "border-top-style",
   "border-top-width",
   "border-width",
+  "border-image",
+  "border-image-source",
+  "border-image-slice",
+  "border-inline-start",
+  "border-inline-end",
+  "box-decoration-break",
   "box-shadow",
   "caret-color",
   "color",
@@ -122,9 +133,16 @@ const STYLE_PROPERTIES = [
   "gap",
   "letter-spacing",
   "line-height",
+  "list-style",
   "list-style-type",
   "margin",
+  "margin-block",
+  "margin-block-end",
+  "margin-block-start",
   "margin-bottom",
+  "margin-inline",
+  "margin-inline-end",
+  "margin-inline-start",
   "margin-left",
   "margin-right",
   "margin-top",
@@ -144,7 +162,13 @@ const STYLE_PROPERTIES = [
   "animation-fill-mode",
   "animation-play-state",
   "padding",
+  "padding-block",
+  "padding-block-end",
+  "padding-block-start",
   "padding-bottom",
+  "padding-inline",
+  "padding-inline-end",
+  "padding-inline-start",
   "padding-left",
   "padding-right",
   "padding-top",
@@ -153,6 +177,7 @@ const STYLE_PROPERTIES = [
   "scrollbar-color",
   "scrollbar-width",
   "stroke",
+  "stroke-width",
   "text-align",
   "text-decoration",
   "text-decoration-color",
@@ -160,9 +185,12 @@ const STYLE_PROPERTIES = [
   "text-decoration-style",
   "text-decoration-thickness",
   "text-shadow",
+  "text-underline-offset",
   "text-transform",
   "transform",
+  "transform-origin",
   "transition",
+  "transition-delay",
   "user-select",
   "vertical-align",
   "white-space",
@@ -172,11 +200,16 @@ const STYLE_PROPERTIES = [
   "min-height",
   "min-width",
   "width",
+  "mask-image",
+  "mask-position",
+  "mask-repeat",
+  "mask-size",
   "-webkit-mask-image",
   "-webkit-mask-position",
   "-webkit-mask-repeat",
   "-webkit-mask-size",
   "-webkit-backdrop-filter",
+  "-webkit-box-decoration-break",
   "-webkit-text-stroke",
   "-webkit-text-stroke-width",
   "-webkit-text-stroke-color",
@@ -421,6 +454,92 @@ class ObsidianCLI {
       await this.sleep(300);
     } catch {
       // Search hover failed, continue
+    }
+  }
+
+  async ensureOutlineVisible() {
+    try {
+      const visible = await this.eval(`
+        (() => {
+          const leaf = document.querySelector('.workspace-leaf-content[data-type="outline"]');
+          if (!leaf) return false;
+          const treeItems = leaf.querySelectorAll('.tree-item-self');
+          return treeItems.length > 0;
+        })();
+      `);
+      if (!visible) {
+        this.exec("command id=outline:open");
+        await this.sleep(500);
+      }
+    } catch {
+      try {
+        this.exec("command id=outline:open");
+        await this.sleep(500);
+      } catch {}
+    }
+  }
+
+  async ensureGraphVisible() {
+    try {
+      const visible = await this.eval(`
+        (() => {
+          const leaf = document.querySelector('.workspace-leaf-content[data-type="graph"]');
+          if (!leaf) return false;
+          return leaf.querySelector('canvas') !== null || leaf.querySelector('.graph-controls') !== null;
+        })();
+      `);
+      if (!visible) {
+        this.exec("command id=graph:open");
+        await this.sleep(500);
+      }
+    } catch {
+      try {
+        this.exec("command id=graph:open");
+        await this.sleep(500);
+      } catch {}
+    }
+  }
+
+  async ensureBacklinksVisible() {
+    try {
+      const visible = await this.eval(`
+        (() => {
+          const leaf = document.querySelector('.workspace-leaf-content[data-type="backlink"]');
+          if (!leaf) return false;
+          const pane = leaf.querySelector('.backlink-pane');
+          return pane !== null;
+        })();
+      `);
+      if (!visible) {
+        this.exec("command id=backlink:open");
+        await this.sleep(500);
+      }
+    } catch {
+      try {
+        this.exec("command id=backlink:open");
+        await this.sleep(500);
+      } catch {}
+    }
+  }
+
+  async performSearch(query = "heading") {
+    try {
+      this.exec("command id=global-search:open");
+      await this.sleep(300);
+      await this.eval(`
+        (() => {
+          const searchLeaf = document.querySelector('.workspace-leaf-content[data-type="search"]');
+          if (!searchLeaf) return;
+          const input = searchLeaf.querySelector('input[type="search"]');
+          if (input) {
+            input.value = ${JSON.stringify(query)};
+            input.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        })();
+      `);
+      await this.sleep(1000);
+    } catch {
+      // Search failed, continue
     }
   }
 
@@ -1761,6 +1880,10 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
   const modeAlternates = {};
   const modeDeclaredVarUses = {};
 
+  await cli.ensureOutlineVisible();
+  await cli.ensureGraphVisible();
+  await cli.ensureBacklinksVisible();
+
   for (const file of [...EXTRACTION_FILES, ...extraFiles]) {
     const fileStart = Date.now();
     let fileResults = {};
@@ -1775,6 +1898,16 @@ async function extractModeStyles(cli, selectors, extraFiles = []) {
 
         if (file === "theme-embeds/tooltips.md") {
           await cli.hoverOverLink();
+        }
+
+        if (file === "general.md") {
+          await cli.hoverOverExplorerItem();
+          await cli.hoverOverExplorerFile();
+        }
+
+        if (file === "integrations.md") {
+          await cli.performSearch("heading");
+          await cli.hoverOverSearchResult();
         }
 
         fileResults = await extractFull(cli, selectors);
