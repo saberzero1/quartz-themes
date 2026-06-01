@@ -569,6 +569,9 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "pre:has(> code.language-mermaid)": {
+    "background-color": "var(--code-background)"
+  },
   ".internal-embed": {
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"

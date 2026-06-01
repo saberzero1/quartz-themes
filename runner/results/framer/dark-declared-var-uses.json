@@ -350,6 +350,7 @@
     "background-color": "var(--callout-content-background)"
   },
   "svg.lucide-pencil.svg-icon": {
+    "color": "var(--callout-color)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
@@ -442,6 +443,16 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
+  },
+  "pre": { "background-color": "var(--code-background)" },
+  "pre:has(> code.language-mermaid)": {
+    "background-color": "var(--code-background)"
+  },
   "strong": {
     "color": "var(--bold-color)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
@@ -450,12 +461,6 @@
   "mark": {
     "background-color": "var(--hover-brand-bg)",
     "color": "var(--color-text)"
-  },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
   },
   "li[data-line=\"0\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -510,29 +515,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"-\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "li.task-list-item[data-task=\"l\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
@@ -573,17 +555,10 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"S\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"X\"]": {
+  "li.task-list-item[data-task=\"x\"]": {
     "color": "var(--checklist-done-color)"
   },
+  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   ".multi-select-pill": {
     "background-color": "var(--pill-background)",
     "color": "var(--pill-color)",
@@ -591,17 +566,6 @@
     "font-weight": "var(--pill-weight)",
     "line-height": "var(--line-height-tight)",
     "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill-content": {
-    "margin-inline-start": "var(--pill-padding-x)"
   },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "color": "var(--link-external-color)",
@@ -623,6 +587,17 @@
     "text-decoration-thickness": "var(--link-decoration-thickness)"
   },
   "strong > em": { "color": "var(--italic-color)" },
+  "div.multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill-content": {
+    "margin-inline-start": "var(--pill-padding-x)"
+  },
   "blockquote": {
     "background-color": "var(--blockquote-background-color)",
     "border-left-color": "var(--color-brand)",

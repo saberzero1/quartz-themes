@@ -561,6 +561,29 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
+  "li.task-list-item[data-task=\"-\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"/\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"!\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"*\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
+  },
   "li.task-list-item[data-task=\"l\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
@@ -601,7 +624,15 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"x\"]": {
+  "li.task-list-item[data-task=\"S\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"I\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },

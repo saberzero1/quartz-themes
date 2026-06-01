@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "callouts.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "callouts"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "callouts.md",
+                "file": "theme-code/syntax-samples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,12 +121,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "callouts.md",
+                "file": "specimen.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from specimen"
             }
           },
           {
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "callouts.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -159,8 +159,7 @@
               "title": "Outline"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "cf38a29ab8834d5d",
@@ -194,17 +193,14 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "af2029d5c3df875a",
+  "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "callouts.md",
-    "embeds.md",
-    "headings.md",
-    "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",
@@ -212,16 +208,19 @@
     "theme-embeds/note-embeds.md",
     "theme-embeds/frontmatter.md",
     "backlinks.md",
+    "embeds.md",
     "media.md",
     "tables.md",
     "integrations.md",
+    "callouts.md",
+    "headings.md",
     "general.md",
-    "theme-callouts/fancy-a-story.md",
-    "theme-callouts/its-theme.md",
-    "theme-callouts/lagom.md",
-    "theme-callouts/ebullientworks.md",
-    "theme-callouts/cupertino.md",
-    "theme-callouts/baseline.md",
+    "theme-callouts/willemstad.md",
+    "theme-callouts/vortex.md",
+    "theme-callouts/viridian.md",
+    "theme-callouts/velocity.md",
+    "theme-callouts/vauxhall.md",
+    "theme-callouts/universitario.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

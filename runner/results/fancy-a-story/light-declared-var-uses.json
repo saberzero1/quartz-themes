@@ -294,155 +294,6 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"email\"]": {
     "background-color": "color-mix(in oklch, var(--callout-color) 10%, transparent)"
   },
-  ".metadata-container .metadata-property": {
-    "background-color": "var(--metadata-property-background)",
-    "box-shadow": "var(--metadata-property-box-shadow)"
-  },
-  ".metadata-property-key": {
-    "background-color": "var(--metadata-label-background)",
-    "font-family": "var(--metadata-label-font)",
-    "min-width": "var(--metadata-label-width)",
-    "width": "var(--metadata-label-width)"
-  },
-  ".metadata-property-value": {
-    "background-color": "var(--metadata-input-background)",
-    "font-family": "var(--metadata-input-font)",
-    "padding-inline-start": "calc(var(--icon-size) + var(--size-4-1))",
-    "min-height": "var(--input-height)"
-  },
-  ".multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "a.external-link[data-tooltip-position=\"top\"]": {
-    "color": "var(--link-external-color)",
-    "cursor": "var(--cursor-link)",
-    "filter": "var(--link-external-filter)",
-    "font-weight": "var(--link-weight)",
-    "text-decoration-line": "var(--link-external-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "color": "var(--link-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--link-weight)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
-    "color": "var(--link-unresolved-color)",
-    "cursor": "var(--cursor-link)",
-    "filter": "var(--link-unresolved-filter)",
-    "font-weight": "var(--link-weight)",
-    "opacity": "var(--link-unresolved-opacity)",
-    "text-decoration-color": "var(--link-unresolved-decoration-color)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-style": "var(--link-unresolved-decoration-style)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "strong": {
-    "color": "var(--bold-color)",
-    "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
-  },
-  "em": { "color": "var(--italic-color)" },
-  "strong > em": { "color": "var(--italic-color)" },
-  "mark": {
-    "background-color": "var(--text-highlight-bg)",
-    "background-image": "linear-gradient(104deg,transparent .9%,var(--text-highlight-bg) 2.4%,color-mix(in srgb,var(--text-highlight-bg),transparent 30%) 5.8%,color-mix(in srgb,var(--text-highlight-bg),transparent 70%) 93%,color-mix(in srgb,var(--text-highlight-bg),transparent 10%) 96%,var(--text-highlight-bg) 98%),linear-gradient(183deg,transparent 0,color-mix(in srgb,var(--text-highlight-bg),transparent 70%) 7.9%,transparent 15%)",
-    "color": "var(--text-highlight-fg)"
-  },
-  ".markdown-preview-view hr": {
-    "background-color": "var(--hr-color)",
-    "height": "calc(var(--hr-height) + var(--hr-thickness))",
-    "mask-image": "linear-gradient(to right,transparent var(--hr-ornament-width),#000 var(--hr-ornament-width),#000 calc(100% - var(--hr-ornament-width)),transparent calc(100% - var(--hr-ornament-width))),var(--art-deco-hr-decoration-left),var(--art-deco-hr-decoration-right)",
-    "mask-size": "100% var(--hr-thickness),var(--hr-ornament-height),var(--hr-ornament-height)"
-  },
-  "div.multi-select-pill": {
-    "background-color": "var(--pill-background)",
-    "color": "var(--pill-color)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--pill-weight)",
-    "line-height": "var(--line-height-tight)",
-    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
-  },
-  "div.multi-select-pill-content": {
-    "margin-inline-start": "var(--pill-padding-x)"
-  },
-  "li[data-line=\"0\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
-  },
-  "pre": { "background-color": "var(--code-background)" },
-  "input.task-list-item-checkbox[data-line=\"0\"]": {
-    "margin-inline-start": "calc(var(--checkbox-size) * -1.5)",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\">\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "blockquote": {
-    "background-color": "var(--blockquote-background-color)",
-    "color": "var(--blockquote-color)",
-    "font-style": "var(--blockquote-font-style)",
-    "padding-inline-start": "var(--size-4-6)"
-  },
-  "a.footnote-backref.footnote-link": {
-    "color": "var(--text-faint)",
-    "cursor": "var(--cursor-link)",
-    "font-weight": "var(--link-weight)",
-    "margin-inline-start": "var(--size-4-1)",
-    "text-decoration-line": "var(--link-decoration)",
-    "text-decoration-thickness": "var(--link-decoration-thickness)"
-  },
-  "input[type=\"text\"]": {
-    "color": "var(--text-normal)",
-    "font-size": "var(--font-ui-small)",
-    "font-weight": "var(--metadata-label-font-weight)",
-    "height": "var(--input-height)"
-  },
-  "kbd": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
-  },
-  ".footnotes": { "font-size": "var(--footnote-size)" },
-  "input[type=\"checkbox\"]:checked": {
-    "background-color": "var(--checkbox-color)",
-    "margin-inline-start": "var(--checkbox-margin-inline-start)",
-    "height": "var(--checkbox-size)",
-    "width": "var(--checkbox-size)"
-  },
-  "svg.lucide-alert-triangle.svg-icon": {
-    "opacity": "var(--icon-opacity)",
-    "stroke-width": "var(--icon-stroke)",
-    "height": "var(--icon-size)",
-    "width": "var(--icon-size)"
-  },
-  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
   "h1[data-heading=\"This is a heading 1\"]": {
     "background-color": "var(--h1-background)",
     "color": "var(--h1-color)",
@@ -636,6 +487,12 @@
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
     "background-color": "color-mix(in oklch, var(--callout-color) 10%, transparent)"
   },
+  "svg.lucide-alert-triangle.svg-icon": {
+    "opacity": "var(--icon-opacity)",
+    "stroke-width": "var(--icon-stroke)",
+    "height": "var(--icon-size)",
+    "width": "var(--icon-size)"
+  },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
     "background-color": "color-mix(in oklch, var(--callout-color) 10%, transparent)"
   },
@@ -670,8 +527,41 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
+  },
+  "pre": { "background-color": "var(--code-background)" },
   "pre:has(> code.language-mermaid)": {
     "background-color": "var(--code-background)"
+  },
+  "strong": {
+    "color": "var(--bold-color)",
+    "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
+  },
+  "em": { "color": "var(--italic-color)" },
+  "mark": {
+    "background-color": "var(--text-highlight-bg)",
+    "background-image": "linear-gradient(104deg,transparent .9%,var(--text-highlight-bg) 2.4%,color-mix(in srgb,var(--text-highlight-bg),transparent 30%) 5.8%,color-mix(in srgb,var(--text-highlight-bg),transparent 70%) 93%,color-mix(in srgb,var(--text-highlight-bg),transparent 10%) 96%,var(--text-highlight-bg) 98%),linear-gradient(183deg,transparent 0,color-mix(in srgb,var(--text-highlight-bg),transparent 70%) 7.9%,transparent 15%)",
+    "color": "var(--text-highlight-fg)"
+  },
+  "li[data-line=\"0\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "input[type=\"text\"]": {
+    "color": "var(--text-normal)",
+    "font-size": "var(--font-ui-small)",
+    "font-weight": "var(--metadata-label-font-weight)",
+    "height": "var(--input-height)"
+  },
+  "kbd": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   ".internal-embed": {
     "background-color": "var(--embed-background)",
@@ -685,11 +575,41 @@
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
   },
+  "input.task-list-item-checkbox[data-line=\"0\"]": {
+    "margin-inline-start": "calc(var(--checkbox-size) * -1.5)",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
+  "li.task-list-item[data-task=\">\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "input[type=\"checkbox\"]:checked": {
+    "background-color": "var(--checkbox-color)",
+    "margin-inline-start": "var(--checkbox-margin-inline-start)",
+    "height": "var(--checkbox-size)",
+    "width": "var(--checkbox-size)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--link-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--link-weight)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
   "li.task-list-item[data-task=\"-\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
   "li.task-list-item[data-task=\"/\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
@@ -700,6 +620,9 @@
   "li.task-list-item[data-task=\"*\"]": {
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
   },
   "li.task-list-item[data-task=\"l\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -751,6 +674,74 @@
   },
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
+  },
+  ".metadata-container .metadata-property": {
+    "background-color": "var(--metadata-property-background)",
+    "box-shadow": "var(--metadata-property-box-shadow)"
+  },
+  ".metadata-property-key": {
+    "background-color": "var(--metadata-label-background)",
+    "font-family": "var(--metadata-label-font)",
+    "min-width": "var(--metadata-label-width)",
+    "width": "var(--metadata-label-width)"
+  },
+  ".metadata-property-value": {
+    "background-color": "var(--metadata-input-background)",
+    "font-family": "var(--metadata-input-font)",
+    "padding-inline-start": "calc(var(--icon-size) + var(--size-4-1))",
+    "min-height": "var(--input-height)"
+  },
+  "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
+  ".multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill": {
+    "background-color": "var(--pill-background)",
+    "color": "var(--pill-color)",
+    "cursor": "var(--cursor-link)",
+    "font-weight": "var(--pill-weight)",
+    "line-height": "var(--line-height-tight)",
+    "max-width": "calc(100% - var(--size-2-3) - 1ch)"
+  },
+  "div.multi-select-pill-content": {
+    "margin-inline-start": "var(--pill-padding-x)"
+  },
+  "a.external-link[data-tooltip-position=\"top\"]": {
+    "color": "var(--link-external-color)",
+    "cursor": "var(--cursor-link)",
+    "filter": "var(--link-external-filter)",
+    "font-weight": "var(--link-weight)",
+    "text-decoration-line": "var(--link-external-decoration)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
+    "color": "var(--link-unresolved-color)",
+    "cursor": "var(--cursor-link)",
+    "filter": "var(--link-unresolved-filter)",
+    "font-weight": "var(--link-weight)",
+    "opacity": "var(--link-unresolved-opacity)",
+    "text-decoration-color": "var(--link-unresolved-decoration-color)",
+    "text-decoration-line": "var(--link-decoration)",
+    "text-decoration-style": "var(--link-unresolved-decoration-style)",
+    "text-decoration-thickness": "var(--link-decoration-thickness)"
+  },
+  "strong > em": { "color": "var(--italic-color)" },
+  ".markdown-preview-view hr": {
+    "background-color": "var(--hr-color)",
+    "height": "calc(var(--hr-height) + var(--hr-thickness))",
+    "mask-image": "linear-gradient(to right,transparent var(--hr-ornament-width),#000 var(--hr-ornament-width),#000 calc(100% - var(--hr-ornament-width)),transparent calc(100% - var(--hr-ornament-width))),var(--art-deco-hr-decoration-left),var(--art-deco-hr-decoration-right)",
+    "mask-size": "100% var(--hr-thickness),var(--hr-ornament-height),var(--hr-ornament-height)"
+  },
+  "blockquote": {
+    "background-color": "var(--blockquote-background-color)",
+    "color": "var(--blockquote-color)",
+    "font-style": "var(--blockquote-font-style)",
+    "padding-inline-start": "var(--size-4-6)"
   },
   ".canvas-node-content": {
     "background-color": "var(--embed-background)",

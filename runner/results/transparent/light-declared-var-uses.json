@@ -365,7 +365,6 @@
     "background-color": "color-mix(in oklch, var(--callout-color) 10%, transparent)"
   },
   "svg.lucide-info.svg-icon": {
-    "color": "var(--callout-color)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"

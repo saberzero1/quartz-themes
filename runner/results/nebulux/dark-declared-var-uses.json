@@ -530,61 +530,6 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "li.task-list-item[data-task=\"-\"]": {
-    "color": "var(--text-muted)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"/\"]": {
-    "color": "var(--text-muted)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"?\"]": {
-    "color": "var(--text-muted)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"!\"]": {
-    "color": "var(--text-muted)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"*\"]": {
-    "color": "var(--text-muted)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"x\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  "li.task-list-item[data-task=\"_\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"+\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"=\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"&\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"@\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"$\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"'\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\":\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\";\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"|\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"~\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"`\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"#\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\".\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\",\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"<\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"%\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"1\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"2\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"3\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"4\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"5\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"6\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"7\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"8\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"9\"]": { "color": "var(--text-muted)" },
-  "li.task-list-item[data-task=\"0\"]": { "color": "var(--text-muted)" },
   "li.task-list-item[data-task=\"l\"]": {
     "color": "var(--text-muted)",
     "padding-bottom": "var(--list-spacing)",
@@ -648,6 +593,9 @@
   "li.task-list-item[data-task=\"s\"]": { "color": "var(--text-muted)" },
   "li.task-list-item[data-task=\"t\"]": { "color": "var(--text-muted)" },
   "li.task-list-item[data-task=\"v\"]": { "color": "var(--text-muted)" },
+  "li.task-list-item[data-task=\"x\"]": {
+    "color": "var(--checklist-done-color)"
+  },
   "li.task-list-item[data-task=\"y\"]": { "color": "var(--text-muted)" },
   "li.task-list-item[data-task=\"z\"]": { "color": "var(--text-muted)" },
   "li.task-list-item[data-task=\"S\"]": {

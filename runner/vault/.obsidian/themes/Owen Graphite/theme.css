@@ -15213,6 +15213,8 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
     --ogd-chrome-hairline: rgba(203, 213, 225, 0.14);
   }
 
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-header { min-height: 40px; padding: 6px 8px 2px; } body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-header .nav-buttons-container { display: flex; align-items: center; justify-content: flex-start; gap: 6px; width: 100%; margin: 0; padding: 0; }
+
   body:not(.is-mobile).ogd-glass-off {
     --ogd-tab-glass-bg: var(--tab-background-active) ;
     --ogd-tab-glass-bg-hover: var(--background-modifier-hover) ;
@@ -15494,18 +15496,23 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
   body:not(.is-mobile) .nav-folder-title[data-path]:not([data-path*="/"]) .nav-folder-title-content {
     display: block;
     flex: 1 1 auto;
-    width: 100%;
     max-width: 100%;
     color: var(--ogd-text-subtle, #475569);
     font-size: 12.5px;
     font-weight: 760;
     letter-spacing: 0.02em;
-    padding-left: 30px;
+    margin-left: -4px;
+    width: calc(100% + 4px);
+    padding-left: 26px;
   }
 
   body:not(.is-mobile) .nav-folder-title[data-path*="/"] .nav-folder-title-content {
     font-size: 13.25px;
     font-weight: 760;
+  }
+
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-children .nav-folder-title[data-path*="/"] .nav-folder-title-content {
+    margin-left: -16px; width: calc(100% + 16px); padding-left: 26px;
   }
 
   body:not(.is-mobile) .nav-file-title[data-path] .nav-file-title-content {
@@ -15534,64 +15541,59 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
     border-left: 0;
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) {
-    position: relative; margin: 10px 3px 8px 6px; padding: 28px 7px 7px 8px; border: 1px solid rgba(148, 163, 184, 0.24); border-radius: 10px; background: linear-gradient(180deg, rgba(244, 249, 252, 0.70), rgba(255, 255, 255, 0.44)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 12px rgba(15, 23, 42, 0.045); overflow: hidden;
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) {
+    position: relative; margin: 6px 2px 6px 2px; padding: 28px 0 0 0; border: 1px solid rgba(125, 152, 178, 0.34); border-radius: 10px; background: radial-gradient(circle at 78% 12%, color-mix(in srgb, var(--ogd-surface-tint-aqua) 56%, transparent), transparent 34%), linear-gradient(180deg, rgba(244, 249, 252, 0.82), rgba(255, 255, 255, 0.56)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 24%, transparent), 0 6px 16px rgba(15, 23, 42, 0.078); -webkit-backdrop-filter: var(--ogd-glass-filter-control, blur(12px) saturate(152%) brightness(1.04)); backdrop-filter: var(--ogd-glass-filter-control, blur(12px) saturate(152%) brightness(1.04)); overflow: hidden;
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active)::before {
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active)::before {
     content: ""; position: absolute; inset: 0 0 auto; height: 28px; border-bottom: 1px solid rgba(148, 163, 184, 0.22);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.48), rgba(255, 255, 255, 0.12));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72), 0 4px 9px rgba(15, 23, 42, 0.035);
+    background: radial-gradient(circle at 72% 20%, color-mix(in srgb, var(--ogd-surface-tint-aqua) 64%, transparent), transparent 38%), linear-gradient(180deg, rgba(255, 255, 255, 0.68), rgba(255, 255, 255, 0.18));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), 0 4px 10px rgba(15, 23, 42, 0.055);
     pointer-events: none;
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title {
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title {
     position: absolute; inset: 0 0 auto; z-index: 1; display: flex; align-items: center; justify-content: center; height: 28px; min-height: 28px; margin: 0; padding: 0 8px; padding-inline-start: 0;
     border-color: var(--ogd-surface-transparent, transparent); border-radius: 10px 10px 0 0; background: var(--ogd-surface-transparent, transparent); box-shadow: var(--ogd-shadow-none, none);
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
-    display: inline-flex; align-items: center; justify-content: center; flex: 0 1 auto; width: auto; max-width: calc(100% - 20px); min-width: 0; height: 20px; min-height: 20px; padding: 0 8px 0 16px; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; color: #25364b; font-weight: 820; line-height: 20px; --ogd-nav-hover-bg: var(--ogd-surface-transparent, transparent); --ogd-nav-hover-border: var(--ogd-surface-transparent, transparent); --ogd-nav-hover-shadow: var(--ogd-shadow-none, none); --ogd-glass-filter-soft: none;
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
+    display: inline-flex; align-items: center; justify-content: center; flex: 0 1 auto; width: auto; max-width: calc(100% - 20px); min-width: 0; height: 20px; min-height: 20px; margin-left: 0; padding: 0 8px 0 16px; overflow: hidden; text-align: center; text-overflow: ellipsis; white-space: nowrap; color: #25364b; font-weight: 820; line-height: 20px; --ogd-nav-hover-bg: var(--ogd-surface-transparent, transparent); --ogd-nav-hover-border: var(--ogd-surface-transparent, transparent); --ogd-nav-hover-shadow: var(--ogd-shadow-none, none); --ogd-glass-filter-soft: none;
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::before { left: 1px; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::before { left: 1px; }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children {
-    margin: 0 0 0 -8px; width: calc(100% + 14px); padding: 6px 0 2px 0; border-left: 0; border-radius: 0 0 8px 8px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.72));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children {
+    margin: 0; width: 100%; padding: 6px 0 2px 0; border-left: 0; border-radius: 0 0 8px 8px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.82), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 14%, transparent);
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-children > .nav-folder .nav-file-title.is-active) > .nav-folder-children { display: contents; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title { margin-left: 0; width: 100%; max-width: 100%; padding-left: 10px; padding-right: 2px; }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title { margin-left: -20px; width: calc(100% + 6px); max-width: calc(100% + 6px); padding-left: 28px; padding-right: 2px; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-children .nav-folder-children .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title { margin-left: 0; width: 100%; max-width: 100%; }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-children .nav-folder-children .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title { margin-left: -18px; width: calc(100% + 6px); max-width: calc(100% + 6px); }
-
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content {
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content {
     padding-left: 22px; padding-right: 2px; font-size: 13px; --ogd-lg-row-active-bg: radial-gradient(circle at 76% 18%, rgba(255, 255, 255, 0.68), transparent 36%), linear-gradient(180deg, rgba(255, 255, 255, 0.86), color-mix(in srgb, var(--ogd-surface-tint-aqua) 24%, rgba(248, 250, 252, 0.48))); --ogd-lg-row-active-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.88), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 14%, transparent), 0 5px 12px rgba(15, 23, 42, 0.06), 0 0 0 1px color-mix(in srgb, var(--ogd-rim-active-low) 54%, transparent);
     color: #4b5f77;
     font-weight: 560;
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content::before { left: 5px; width: 14px; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content::before { left: 5px; width: 14px; }
 
   body:not(.is-mobile) .nav-folder.mod-root > .nav-folder-children > .nav-folder + .nav-folder > .nav-folder-title { margin-top: 4px; }
 
   body:not(.is-mobile) :is(.nav-folder-collapse-indicator, .tree-item-icon.collapse-icon) {
-    display: none;
-    width: 0;
-    height: 0;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
+    display: none; width: 0; height: 0; min-width: 0; margin: 0; padding: 0; opacity: 0;
   }
 
   body:not(.is-mobile) :is(.nav-folder-collapse-indicator::before, .tree-item-icon.collapse-icon::before) {
-    content: none;
-    display: none;
+    content: none; display: none;
   }
+
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title { position: relative; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title > .nav-folder-collapse-indicator { display: block; position: absolute; inset: 0; width: auto; height: auto; min-width: 0; margin: 0; opacity: 0; pointer-events: auto; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder-title > .nav-folder-collapse-indicator::before { content: ""; display: block; position: absolute; inset: 0; }
 
   body:not(.is-mobile) :is(.nav-file-title:hover, .nav-folder-title:hover, .tree-item-self:hover) {
     background: var(--ogd-surface-transparent, transparent);
@@ -15612,7 +15614,7 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
     color: var(--ogd-text-strong, #111827); --ogd-nav-file-type-bg: color-mix(in srgb, var(--ogd-surface-tint-aqua) 36%, rgba(255, 255, 255, 0.72)); --ogd-nav-file-type-fg: #1d4ed8; --ogd-nav-file-type-border: var(--ogd-rim-active-low);
   }
 
-  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title:hover .nav-folder-title-content { background: var(--ogd-surface-transparent, transparent); border-color: var(--ogd-surface-transparent, transparent); box-shadow: var(--ogd-shadow-none, none); -webkit-backdrop-filter: none; backdrop-filter: none; transform: none; }
+  body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title:hover .nav-folder-title-content { background: var(--ogd-surface-transparent, transparent); border-color: var(--ogd-surface-transparent, transparent); box-shadow: var(--ogd-shadow-none, none); -webkit-backdrop-filter: none; backdrop-filter: none; transform: none; }
 
   body:not(.is-mobile) :is(.nav-file-title:focus-within .nav-file-title-content, .nav-folder-title:focus-within .nav-folder-title-content, .tree-item-self:focus-within .tree-item-inner) {
     border-color: var(--ogd-focus-ring-border);
@@ -15700,32 +15702,32 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
     border-left-color: rgba(148, 163, 184, 0.10);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) {
-    border-color: rgba(203, 213, 225, 0.18);
-    background: linear-gradient(180deg, rgba(30, 41, 59, 0.46), rgba(15, 23, 42, 0.28));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 4px 12px rgba(0, 0, 0, 0.18);
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) {
+    border-color: rgba(203, 213, 225, 0.24);
+    background: radial-gradient(circle at 78% 14%, color-mix(in srgb, var(--ogd-surface-tint-aqua) 22%, transparent), transparent 34%), linear-gradient(180deg, rgba(30, 41, 59, 0.54), rgba(15, 23, 42, 0.34));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09), inset 0 -1px 0 rgba(0, 0, 0, 0.18), 0 6px 16px rgba(0, 0, 0, 0.26);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active)::before {
-    border-bottom-color: rgba(203, 213, 225, 0.18); background: linear-gradient(180deg, rgba(51, 65, 85, 0.34), rgba(15, 23, 42, 0.10));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 4px 9px rgba(0, 0, 0, 0.18);
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active)::before {
+    border-bottom-color: rgba(203, 213, 225, 0.22); background: radial-gradient(circle at 72% 22%, color-mix(in srgb, var(--ogd-surface-tint-aqua) 28%, transparent), transparent 38%), linear-gradient(180deg, rgba(51, 65, 85, 0.42), rgba(15, 23, 42, 0.14));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 4px 10px rgba(0, 0, 0, 0.24);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title {
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title {
     border-color: var(--ogd-surface-transparent, transparent);
     background: var(--ogd-surface-transparent, transparent);
     box-shadow: var(--ogd-shadow-none, none);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
     color: var(--ogd-text-inverted, #f8fafc);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children {
-    border-left: 0; background: linear-gradient(180deg, rgba(30, 41, 59, 0.44), rgba(15, 23, 42, 0.30)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children {
+    border-left: 0; background: linear-gradient(180deg, rgba(30, 41, 59, 0.50), rgba(15, 23, 42, 0.34)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 12%, transparent);
   }
 
-  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title:not(.is-active) .nav-file-title-content {
+  body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title:not(.is-active) .nav-file-title-content {
     color: #cbd5e1;
     font-weight: 540;
   }
@@ -15783,8 +15785,8 @@ body:not(.is-mobile) :is(.modal.mod-community-theme, .modal .community-modal) :i
 
 body:not(.is-mobile) .nav-file-title.is-active .nav-file-title-content {
   border-color: var(--ogd-rim-active);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), color-mix(in srgb, var(--ogd-surface-tint-aqua) 30%, rgba(248, 250, 252, 0.66)));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.90), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 16%, transparent), 0 2px 7px rgba(15, 23, 42, 0.05), 0 0 0 1px color-mix(in srgb, var(--ogd-rim-active-low) 58%, transparent);
+  background: radial-gradient(circle at 78% 18%, rgba(255, 255, 255, 0.86), transparent 34%), linear-gradient(180deg, rgba(255, 255, 255, 0.96), color-mix(in srgb, var(--ogd-surface-tint-aqua) 42%, rgba(248, 250, 252, 0.70)));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.96), inset 0 -1px 0 color-mix(in srgb, var(--ogd-rim-active-low) 24%, transparent), 0 4px 11px rgba(15, 23, 42, 0.075), 0 0 0 1px color-mix(in srgb, var(--ogd-rim-active-low) 68%, transparent);
   color: #172033;
 }
 
@@ -15809,8 +15811,8 @@ body:not(.is-mobile) .nav-file-title.is-active .nav-file-title-content::after {
 
 body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-content {
   border-color: var(--ogd-rim-active);
-  background: linear-gradient(180deg, rgba(51, 65, 85, 0.58), color-mix(in srgb, var(--ogd-surface-tint-aqua) 24%, rgba(15, 23, 42, 0.42)));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 2px 8px rgba(0, 0, 0, 0.22), 0 0 0 1px color-mix(in srgb, var(--ogd-rim-active-low) 56%, transparent);
+  background: radial-gradient(circle at 78% 20%, rgba(148, 163, 184, 0.14), transparent 34%), linear-gradient(180deg, rgba(51, 65, 85, 0.66), color-mix(in srgb, var(--ogd-surface-tint-aqua) 32%, rgba(15, 23, 42, 0.48)));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.11), inset 0 -1px 0 rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.28), 0 0 0 1px color-mix(in srgb, var(--ogd-rim-active-low) 66%, transparent);
   color: var(--ogd-text-inverted, #f8fafc);
 }
 
@@ -15909,12 +15911,12 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
 
 @media (min-width: 701px) {
   @supports selector(.nav-folder:has(.nav-file-title.is-active)) {
-    body:not(.is-mobile) .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title,
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title,
     body:not(.is-mobile) .nav-folder:has(.nav-file-title.is-active) > .tree-item-self {
       color: #1f2937;
     }
 
-    body:not(.is-mobile) .nav-folder:has(.is-active) > .nav-folder-title[data-path]:not([data-path*="/"]) {
+    body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path]:not([data-path*="/"]) {
       border-color: rgba(100, 116, 139, 0.22);
       background: rgba(248, 250, 252, 0.36);
       -webkit-backdrop-filter: none;
@@ -15923,13 +15925,13 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       color: #64748b;
     }
 
-    body:not(.is-mobile) .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content,
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content,
     body:not(.is-mobile) .nav-folder:has(.nav-file-title.is-active) > .tree-item-self .tree-item-inner {
       color: #1e3a5f;
       font-weight: 800;
     }
 
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
       --ogd-direct-parent-folder-icon: #64748b;
       --ogd-direct-parent-folder-icon-opacity: 0.60;
       --ogd-direct-parent-folder-halo-border: rgba(125, 211, 252, 0.38);
@@ -15942,17 +15944,17 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       font-weight: 830;
     }
 
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content { padding-left: 22px; padding-right: 2px; color: #334155; font-size: 13px; font-weight: 540; }
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content::before { left: 5px; width: 14px; }
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content { padding-left: 22px; padding-right: 2px; color: #334155; font-size: 13px; font-weight: 540; }
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content::before { left: 5px; width: 14px; }
 
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::before {
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::before {
       left: 1px;
       z-index: 1;
       opacity: var(--ogd-direct-parent-folder-icon-opacity, 0.58);
       background-color: var(--ogd-direct-parent-folder-icon, #64748b);
     }
 
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::after {
+    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content::after {
       content: none;
       position: absolute;
       left: 2px;
@@ -15968,22 +15970,20 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       z-index: 0;
     }
 
-    body:not(.is-mobile) .nav-folder:has(.is-active) > .nav-folder-title[data-path]:not([data-path*="/"]) .nav-folder-title-content {
+    body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path]:not([data-path*="/"]) .nav-folder-title-content {
       color: var(--ogd-text-subtle, #475569);
-      font-weight: 760;
+      font-weight: 720;
     }
 
     body:not(.is-mobile) .nav-folder:has(.is-active) > .nav-folder-children {
       border-left-color: rgba(100, 116, 139, 0.14);
     }
 
-    body:not(.is-mobile) .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):not(:has(.nav-file-title.is-active)):not(:hover):not(:focus-within) > .nav-folder-children { display: none; }
-
     body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"] {
       position: relative;
       padding-left: 0;
       padding-right: 8px;
-      color: #1f2937;
+      color: #64748b;
     }
 
     body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"]::before {
@@ -15993,18 +15993,18 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
     }
 
     body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"] .nav-folder-title-content {
-      color: #1f2937;
-      font-weight: 800;
+      color: var(--ogd-text-subtle, #64748b);
+      font-weight: 720;
     }
 
     body:not(.is-mobile) .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"] .nav-folder-title-content::before {
-      background-color: #475569;
-      opacity: 0.56;
+      background-color: #64748b;
+      opacity: 0.38;
     }
   }
 
   @supports selector(.nav-folder:has(.nav-file-title.is-active)) {
-    body:not(.is-mobile).theme-dark .nav-folder:has(.is-active) > .nav-folder-title[data-path]:not([data-path*="/"]) {
+    body:not(.is-mobile).theme-dark .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path]:not([data-path*="/"]) {
       border-color: rgba(203, 213, 225, 0.18);
       background: rgba(15, 23, 42, 0.24);
       -webkit-backdrop-filter: none;
@@ -16013,12 +16013,12 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       color: var(--ogd-text-soft, #94a3b8);
     }
 
-    body:not(.is-mobile).theme-dark .nav-folder:has(.nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content,
+    body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content,
     body:not(.is-mobile).theme-dark .nav-folder:has(.nav-file-title.is-active) > .tree-item-self .tree-item-inner {
       color: var(--ogd-text-inverted, #f8fafc);
     }
 
-    body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
+    body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content {
       --ogd-direct-parent-folder-icon: #cbd5e1;
       --ogd-direct-parent-folder-icon-opacity: 0.62;
       --ogd-direct-parent-folder-halo-border: rgba(186, 230, 253, 0.20);
@@ -16027,11 +16027,11 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       color: #e0f2fe;
     }
 
-    body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path*="/"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content { padding-left: 22px; padding-right: 2px; color: #d6e0ee; font-size: 13px; font-weight: 540; --ogd-lg-row-active-bg: radial-gradient(circle at 76% 20%, rgba(148, 163, 184, 0.10), transparent 36%), linear-gradient(180deg, rgba(51, 65, 85, 0.50), color-mix(in srgb, var(--ogd-surface-tint-aqua) 16%, rgba(15, 23, 42, 0.38))); --ogd-lg-row-active-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 5px 13px rgba(0, 0, 0, 0.24), 0 0 0 1px rgba(148, 163, 184, 0.06); }
+    body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type="file-explorer"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content { padding-left: 22px; padding-right: 2px; color: #d6e0ee; font-size: 13px; font-weight: 540; --ogd-lg-row-active-bg: radial-gradient(circle at 76% 20%, rgba(148, 163, 184, 0.10), transparent 36%), linear-gradient(180deg, rgba(51, 65, 85, 0.50), color-mix(in srgb, var(--ogd-surface-tint-aqua) 16%, rgba(15, 23, 42, 0.38))); --ogd-lg-row-active-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), inset 0 -1px 0 rgba(0, 0, 0, 0.16), 0 5px 13px rgba(0, 0, 0, 0.24), 0 0 0 1px rgba(148, 163, 184, 0.06); }
 
-    body:not(.is-mobile).theme-dark .nav-folder:has(.is-active) > .nav-folder-title[data-path]:not([data-path*="/"]) .nav-folder-title-content {
+    body:not(.is-mobile).theme-dark .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path]:not([data-path*="/"]) .nav-folder-title-content {
       color: var(--ogd-line-strong, #cbd5e1);
-      font-weight: 760;
+      font-weight: 720;
     }
 
     body:not(.is-mobile).theme-dark .nav-folder:has(.is-active) > .nav-folder-children {
@@ -16042,7 +16042,7 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
       position: relative;
       padding-left: 0;
       padding-right: 8px;
-      color: var(--ogd-text-inverted, #f8fafc);
+      color: var(--ogd-text-soft, #94a3b8);
     }
 
     body:not(.is-mobile).theme-dark .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"]::before {
@@ -16052,13 +16052,13 @@ body:not(.is-mobile).theme-dark .nav-file-title.is-active .nav-file-title-conten
     }
 
     body:not(.is-mobile).theme-dark .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"] .nav-folder-title-content {
-      color: var(--ogd-text-inverted, #f8fafc);
-      font-weight: 800;
+      color: var(--ogd-line-strong, #cbd5e1);
+      font-weight: 720;
     }
 
     body:not(.is-mobile).theme-dark .nav-folder:has(.is-active):not(:has(> .nav-folder-children > .nav-file .nav-file-title.is-active)) > .nav-folder-title[data-path*="/"] .nav-folder-title-content::before {
-      background-color: #cbd5e1;
-      opacity: 0.56;
+      background-color: #94a3b8;
+      opacity: 0.42;
     }
   }
 }

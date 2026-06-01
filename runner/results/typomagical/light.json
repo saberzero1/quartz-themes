@@ -1,1 +1,1349 @@
-{".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon":{"--callout-color":"8, 109, 221","--callout-icon":"lucide-pencil","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},".canvas-card-menu":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".canvas-node":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".canvas-node-container .markdown-rendered":{"line-height":"var(--line-height-body)"},".canvas-node-container .markdown-rendered::after":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},".canvas-node-container .markdown-rendered::before":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},".canvas-node-content":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".canvas-node-group":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".clickable-icon":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".clickable-icon svg":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".clickable-icon.graph-controls-button":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".file-embed":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".footnotes":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"55.3906px","line-height":"20.3px"},".inline-title":{"color":"var(--text-title-h1)","height":"38.0625px","padding":"0px 0px 7px","padding-bottom":"7px","text-align":"center"},".internal-embed":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".markdown-embed":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".math-block":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".metadata-container":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"116.812px","line-height":"23.2px"},".metadata-container .metadata-property":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"28.2969px","line-height":"23.2px"},".metadata-properties":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"28.2969px","line-height":"23.2px"},".metadata-property-key":{"height":"28.2969px","line-height":"23.2px"},".metadata-property-value":{"height":"28.2969px","line-height":"23.2px"},".multi-select-pill":{"text-fill-color":"rgb(34, 34, 34)","text-stroke":"0px rgb(34, 34, 34)","text-stroke-color":"rgb(34, 34, 34)","background":"rgb(238, 182, 98) none repeat scroll 0% 0% / auto padding-box border-box","column-rule-color":"rgb(34, 34, 34)","font-family":"var(--font-links)","outline":"rgb(34, 34, 34) none 0px","outline-color":"rgb(34, 34, 34)","text-decoration-color":"rgb(34, 34, 34)","width":"58.7344px"},".nav-file-title":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".nav-file-title-content":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"39.9688px"},".nav-file-title::before":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".nav-files-container":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".nav-files-container .tree-item":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".nav-folder-title-content":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"34.0156px"},".nav-header":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".status-bar":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"346.625px"},".status-bar-item":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"67.8906px"},".table-wrapper":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".tag":{"text-fill-color":"rgb(34, 34, 34)","text-stroke":"0px rgb(34, 34, 34)","text-stroke-color":"rgb(34, 34, 34)","background":"rgb(238, 182, 98) none repeat scroll 0% 0% / auto padding-box border-box","column-rule-color":"rgb(34, 34, 34)","font-family":"var(--font-links)","outline":"rgb(34, 34, 34) none 0px","outline-color":"rgb(34, 34, 34)","text-decoration-color":"rgb(34, 34, 34)"},".tree-item-children":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".view-content":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".view-header-breadcrumb":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"80.1719px"},".view-header-breadcrumb-separator":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"5.25px"},".view-header-title":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"66.8594px"},".workspace-leaf":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".workspace-leaf-content":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".workspace-leaf.mod-active":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".workspace-tab-header-container":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},".workspace-tab-header-container::before":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"a.external-link[data-tooltip-position=\"top\"]":{"text-fill-color":"rgb(47, 155, 183)","text-stroke":"0px rgb(47, 155, 183)","text-stroke-color":"rgb(47, 155, 183)","background":"linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) no-repeat scroll 100% 0px / 13.2px padding-box border-box, rgba(0, 0, 0, 0) url(\"app://obsidian.md/public/images/6155340132a851f6089e.svg\") no-repeat scroll 100% 0px / 13.2px padding-box border-box","border":"0px none rgb(47, 155, 183)","border-bottom":"0px none rgb(47, 155, 183)","border-bottom-color":"rgb(47, 155, 183)","border-color":"rgb(47, 155, 183)","border-left":"0px none rgb(47, 155, 183)","border-left-color":"rgb(47, 155, 183)","border-right":"0px none rgb(47, 155, 183)","border-right-color":"rgb(47, 155, 183)","border-top":"0px none rgb(47, 155, 183)","border-top-color":"rgb(47, 155, 183)","column-rule-color":"rgb(47, 155, 183)","font-family":"var(--font-links)","line-height":"23.2px","outline":"rgb(47, 155, 183) none 0px","outline-color":"rgb(47, 155, 183)","text-decoration-color":"rgb(47, 155, 183)"},"a.footnote-backref.footnote-link":{"font-family":"var(--font-links)","height":"20.2969px","letter-spacing":"0.7px","line-height":"20.3px","margin":"0px 0px 0px 7px","margin-left":"7px","width":"12.4375px"},"a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]":{"text-fill-color":"rgb(213, 174, 207)","text-stroke":"0px rgb(213, 174, 207)","text-stroke-color":"rgb(213, 174, 207)","border":"0px none rgb(213, 174, 207)","border-bottom":"0px none rgb(213, 174, 207)","border-bottom-color":"rgb(213, 174, 207)","border-color":"rgb(213, 174, 207)","border-left":"0px none rgb(213, 174, 207)","border-left-color":"rgb(213, 174, 207)","border-right":"0px none rgb(213, 174, 207)","border-right-color":"rgb(213, 174, 207)","border-top":"0px none rgb(213, 174, 207)","border-top-color":"rgb(213, 174, 207)","column-rule-color":"rgb(213, 174, 207)","font-family":"var(--font-links)","line-height":"23.2px","outline":"rgb(213, 174, 207) none 0px","outline-color":"rgb(213, 174, 207)","text-decoration":"rgba(138, 92, 245, 0.3)"},"a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]":{"font-family":"var(--font-links)","line-height":"23.2px"},"abbr":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"audio":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"blockquote":{"border-color":"rgb(34, 34, 34)","border-left":"1px solid rgb(34, 34, 34)","border-left-color":"rgb(34, 34, 34)","border-left-width":"1px","border-width":"0px 0px 0px 1px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"body":{"--blockquote-border-color":"var(--text-normal)","--blockquote-border-thickness":"1px","--bold-weight":"600","--code-normal":"#4db95a","--font-default":"\"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","--font-links":"\"Alegreya SC\", \"Spectral\", serif","--font-text-theme":"var(--font-default)","--font-title":"\"Playfair Display\"","--heading-weight":"600","--line-height-body":"1.45","--line-height-headings":"1.2","--link-decoration":"none","--link-external-color":"#2f9bb7","--link-external-color-hover":"rgb(72, 191, 224)","--link-external-decoration":"none","--link-unresolved-color":"#d5aecf","--link-unresolved-opacity":"1","--modal-height":"75vh","--table-column-first-border-width":"0","--table-column-last-border-width":"0","--table-header-border-width":"0","--table-row-last-border-width":"0","--tag-background":"#eeb662","--tag-background-hover":"#f7d865","--tag-color":"var(--text-normal)","--tag-color-hover":"var(--text-normal)","--title-gradient-bottom":"color-mix(in hsl, var(--link-color), black)","--title-gradient-top":"var(--link-color)","font-weight":"var(--body-weight)"},"body.styled-scrollbars":{"--blockquote-border-color":"var(--text-normal)","--font-text-theme":"var(--font-default)","--tag-color":"var(--text-normal)","--tag-color-hover":"var(--text-normal)","--title-gradient-bottom":"color-mix(in hsl, var(--link-color), black)","--title-gradient-top":"var(--link-color)","font-weight":"var(--body-weight)"},"code":{"--ec-uiFontFml":"'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","text-fill-color":"rgb(77, 185, 90)","text-stroke":"0px rgb(77, 185, 90)","text-stroke-color":"rgb(77, 185, 90)","column-rule-color":"rgb(77, 185, 90)","line-height":"20.3px","outline":"rgb(77, 185, 90) none 0px","outline-color":"rgb(77, 185, 90)","text-decoration-color":"rgb(77, 185, 90)"},"dd":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"del":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"details":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"details summary":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"div.callout-content":{"--callout-color":"8, 109, 221","--callout-icon":"lucide-pencil","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","padding":"0px 0px 0px 32px","padding-left":"32px"},"div.callout-title":{"--callout-color":"8, 109, 221","--callout-icon":"lucide-pencil","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","padding":"16px 0px","padding-bottom":"16px","padding-top":"16px"},"div.callout-title-inner":{"--callout-color":"8, 109, 221","--callout-icon":"lucide-pencil","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]":{"--callout-color":"var(--callout-summary)","--callout-icon":"lucide-clipboard-list","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(0, 191, 188, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(0, 191, 188, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(0, 191, 188, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]":{"--callout-color":"var(--callout-bug)","--callout-icon":"lucide-bug","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(233, 49, 71, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(233, 49, 71, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(233, 49, 71, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]":{"--callout-color":"var(--callout-error)","--callout-icon":"lucide-zap","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(233, 49, 71, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(233, 49, 71, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(233, 49, 71, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]":{"--callout-color":"var(--callout-example)","--callout-icon":"lucide-list","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(120, 82, 238, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(120, 82, 238, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(120, 82, 238, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]":{"--callout-color":"var(--callout-fail)","--callout-icon":"lucide-x","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(233, 49, 71, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(233, 49, 71, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(233, 49, 71, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]":{"--callout-color":"var(--callout-info)","--callout-icon":"lucide-info","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(8, 109, 221, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(8, 109, 221, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(8, 109, 221, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]":{"--callout-color":"var(--callout-default)","--callout-icon":"lucide-pencil","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(8, 109, 221, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(8, 109, 221, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(8, 109, 221, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]":{"--callout-color":"var(--callout-question)","--callout-icon":"help-circle","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(236, 117, 0, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(236, 117, 0, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(236, 117, 0, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]":{"--callout-color":"var(--callout-quote)","--callout-icon":"quote-glyph","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(158, 158, 158, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(158, 158, 158, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(158, 158, 158, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"117.984px","line-height":"23.2px"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]":{"--callout-color":"var(--callout-success)","--callout-icon":"lucide-check","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(8, 185, 78, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(8, 185, 78, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(8, 185, 78, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]":{"--callout-color":"var(--callout-tip)","--callout-icon":"lucide-flame","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(0, 191, 188, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(0, 191, 188, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(0, 191, 188, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]":{"--callout-color":"var(--callout-todo)","--callout-icon":"lucide-check-circle-2","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(8, 109, 221, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(8, 109, 221, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(8, 109, 221, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]":{"--callout-color":"var(--callout-warning)","--callout-icon":"lucide-alert-triangle","background":"rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box","border-bottom":"1px solid rgba(236, 117, 0, 0.25)","border-bottom-width":"1px","border-right":"1px solid rgba(236, 117, 0, 0.25)","border-right-width":"1px","border-top":"1px solid rgba(236, 117, 0, 0.25)","border-top-width":"1px","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.inline-title":{"color":"var(--text-title-h1)","height":"38.0625px","padding":"0px 0px 7px","padding-bottom":"7px","text-align":"center"},"div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]::before":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]::before":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-clickable.mod-collapsible.tree-item-self":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-clickable.mod-collapsible.tree-item-self::before":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.is-selected.mod-complex.suggestion-item":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"33.75px","line-height":"21.75px"},"div.mod-active.workspace-leaf":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.mod-complex.suggestion-item":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"33.75px","line-height":"21.75px"},"div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.mod-horizontal.mod-right-split.mod-sidedock.workspace-split":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.multi-select-pill":{"text-fill-color":"rgb(34, 34, 34)","text-stroke":"0px rgb(34, 34, 34)","text-stroke-color":"rgb(34, 34, 34)","background":"rgb(238, 182, 98) none repeat scroll 0% 0% / auto padding-box border-box","column-rule-color":"rgb(34, 34, 34)","font-family":"var(--font-links)","outline":"rgb(34, 34, 34) none 0px","outline-color":"rgb(34, 34, 34)","text-decoration-color":"rgb(34, 34, 34)","width":"58.7344px"},"div.multi-select-pill-content":{"--pill-background":"#eeb662","--pill-background-hover":"#f7d865","--pill-color":"#222222","--pill-color-remove":"#222222","--pill-color-remove-hover":"#222222","text-fill-color":"rgb(34, 34, 34)","text-stroke":"0px rgb(34, 34, 34)","text-stroke-color":"rgb(34, 34, 34)","border":"0px none rgb(34, 34, 34)","border-bottom":"0px none rgb(34, 34, 34)","border-bottom-color":"rgb(34, 34, 34)","border-color":"rgb(34, 34, 34)","border-left":"0px none rgb(34, 34, 34)","border-left-color":"rgb(34, 34, 34)","border-right":"0px none rgb(34, 34, 34)","border-right-color":"rgb(34, 34, 34)","border-top":"0px none rgb(34, 34, 34)","border-top-color":"rgb(34, 34, 34)","color":"rgb(34, 34, 34)","column-rule-color":"rgb(34, 34, 34)","font-family":"\"Alegreya SC\", Spectral, serif","outline":"rgb(34, 34, 34) none 0px","outline-color":"rgb(34, 34, 34)","text-decoration-color":"rgb(34, 34, 34)","width":"27.6406px"},"div.prompt":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"213.641px","line-height":"23.2px"},"div.prompt-results":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"128.25px","line-height":"23.2px"},"div.quartz-icon-selector":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"div.tree-item-children":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"div.workspace-leaf":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"dl":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"92.75px","line-height":"23.2px"},"dt":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"em":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"figcaption":{"--ec-uiFontFml":"'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"figure":{"--ec-uiFontFml":"'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"h1[data-heading=\"This is a heading 1\"]":{"color":"var(--text-title-h1)","font-family":"var(--font-title)","font-weight":"var(--title-weight)","height":"38.0625px","line-height":"var(--line-height-headings)","padding":"0px 0px 7px","padding-bottom":"7px","text-align":"center"},"h2[data-heading=\"This is a heading 2\"]":{"color":"var(--text-title-h2)","font-weight":"var(--heading-weight)","line-height":"var(--line-height-headings)"},"h3[data-heading=\"This is a heading 3\"]":{"color":"var(--text-title-h3)","font-weight":"var(--heading-weight)","height":"25.3125px","line-height":"var(--line-height-headings)"},"h4[data-heading=\"This is a heading 4\"]":{"color":"var(--text-title-h4)","font-weight":"var(--heading-weight)","height":"22.8125px","line-height":"var(--line-height-headings)"},"h5[data-heading=\"This is a heading 5\"]":{"color":"var(--text-title-h5)","font-weight":"var(--heading-weight)","height":"20.6562px","line-height":"var(--line-height-headings)"},"h6[data-heading=\"This is a heading 6\"]":{"color":"var(--text-title-h6)","font-weight":"var(--heading-weight)","height":"19.1875px","line-height":"var(--line-height-headings)"},"hr":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"hr.workspace-leaf-resize-handle":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"html":{"--font-title":"\"Playfair Display\"","--h1-size":"clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em)","--h2-size":"clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em)","--h3-size":"clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em)","--h4-size":"clamp(1.424em, calc(1rem + 3vw), 1.728em)","--h5-size":"clamp(1.266em, calc(1rem + 3vw), 1.44em)","--h6-size":"clamp(1.125em, calc(1rem + 3vw), 1.2em)","--heading-weight":"600","--line-height-headings":"1.2"},"img":{"cursor":"zoom-in","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"37.5376px","text-align":"center"},"input.prompt-input[type=\"text\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"input[data-task=\"-\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E\")"},"input[data-task=\"!\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E\")"},"input[data-task=\"?\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E\")","background-color":"rgb(236, 117, 0)"},"input[data-task=\"\"\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E\")","background-color":"rgb(171, 171, 171)"},"input[data-task=\"*\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E\")","background-color":"rgb(224, 172, 0)"},"input[data-task=\"<\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E\")","background-color":"rgb(0, 191, 188)"},"input[data-task=\">\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")","background-color":"rgb(8, 109, 221)"},"input[data-task=\"b\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E\")","background-color":"rgb(233, 49, 71)"},"input[data-task=\"c\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E\")","background-color":"rgb(233, 49, 71)"},"input[data-task=\"d\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")","background-color":"rgb(233, 49, 71)"},"input[data-task=\"f\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E\")","background-color":"rgb(233, 49, 71)"},"input[data-task=\"i\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E\")","background-color":"rgb(8, 109, 221)"},"input[data-task=\"I\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E\")","background-color":"rgb(224, 172, 0)"},"input[data-task=\"k\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E\")","background-color":"rgb(224, 172, 0)"},"input[data-task=\"l\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E\")","background-color":"rgb(120, 82, 238)"},"input[data-task=\"n\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E\")","background-color":"rgb(233, 49, 71)"},"input[data-task=\"p\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E\")","background-color":"rgb(8, 185, 78)"},"input[data-task=\"S\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E\")","background-color":"rgb(8, 185, 78)"},"input[data-task=\"u\"]::after":{"mask-image":"url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")","background-color":"rgb(8, 185, 78)"},"input[type=\"search\"]":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"input[type=\"text\"]":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"kbd":{"text-fill-color":"rgb(77, 185, 90)","text-stroke":"0px rgb(77, 185, 90)","text-stroke-color":"rgb(77, 185, 90)","border":"0px none rgb(77, 185, 90)","border-bottom":"0px none rgb(77, 185, 90)","border-bottom-color":"rgb(77, 185, 90)","border-color":"rgb(77, 185, 90)","border-left":"0px none rgb(77, 185, 90)","border-left-color":"rgb(77, 185, 90)","border-right":"0px none rgb(77, 185, 90)","border-right-color":"rgb(77, 185, 90)","border-top":"0px none rgb(77, 185, 90)","border-top-color":"rgb(77, 185, 90)","column-rule-color":"rgb(77, 185, 90)","height":"21.3906px","line-height":"20.3px","outline":"rgb(77, 185, 90) none 0px","outline-color":"rgb(77, 185, 90)","text-decoration-color":"rgb(77, 185, 90)","width":"36.2188px"},"li.task-list-item[data-line=\"0\"][data-task=\"\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"-\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"!\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"?\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"*\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"/\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\">\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"b\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"c\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"d\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"f\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"i\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"I\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"k\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"l\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"p\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"S\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"u\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li.task-list-item[data-task=\"w\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"676px"},"li[data-line=\"0\"]":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"25.5625px","line-height":"23.2px","margin":"0px 0px 0px 24px","margin-left":"24px","width":"230px"},"mark":{"background":"rgba(0, 0, 0, 0) linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255)) repeat scroll 0% 0% / auto padding-box border-box","background-image":"linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255))","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"mjx-container.MathJax":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"p":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"pre":{"--ec-uiFontFml":"'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"47.1875px","line-height":"23.2px"},"progress":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"strong":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"strong > em":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"},"sub":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"19.3333px"},"summary":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"23.1875px","line-height":"23.2px"},"sup":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"13.3333px"},"svg.lucide-alert-triangle.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-bug.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-check-circle-2.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-check.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-clipboard-list.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-flame.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-help-circle.svg-icon":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-info.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"20.3px","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-list.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-pencil.svg-icon":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"svg.lucide-quote.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(-1.25, 0, 0, -1.25, 0, 0)"},"svg.lucide-x.svg-icon":{"font-family":"\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"},"svg.lucide-zap.svg-icon":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","transform":"matrix(1.25, 0, 0, 1.25, 0, 0)"},"table":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"88.3906px","width":"188.859px"},"tbody":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"59.0938px","width":"188.859px"},"tbody tr":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"188.859px"},"tbody tr:nth-child(even)":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"29.2969px","width":"188.859px"},"tbody tr:nth-child(odd)":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"188.859px"},"td":{"border-color":"rgb(224, 224, 224) rgba(0, 0, 0, 0)","border-left":"0px solid rgba(0, 0, 0, 0)","border-left-color":"rgba(0, 0, 0, 0)","border-right":"1px solid rgba(0, 0, 0, 0)","border-right-color":"rgba(0, 0, 0, 0)","border-width":"1px 1px 1px 0px","font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","width":"96.2031px"},"th":{"border-color":"rgb(224, 224, 224) rgba(0, 0, 0, 0)","border-left":"0px solid rgba(0, 0, 0, 0)","border-left-color":"rgba(0, 0, 0, 0)","border-right":"1px solid rgba(0, 0, 0, 0)","border-right-color":"rgba(0, 0, 0, 0)","border-top":"0px solid rgb(224, 224, 224)","border-width":"0px 1px 1px 0px","height":"29.2969px","width":"96.2031px"},"thead":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"29.2969px","width":"188.859px"},"thead th":{"border-color":"rgb(224, 224, 224) rgba(0, 0, 0, 0)","border-left":"0px solid rgba(0, 0, 0, 0)","border-left-color":"rgba(0, 0, 0, 0)","border-right":"1px solid rgba(0, 0, 0, 0)","border-right-color":"rgba(0, 0, 0, 0)","border-top":"0px solid rgb(224, 224, 224)","border-width":"0px 1px 1px 0px","height":"29.2969px","width":"96.2031px"},"tr":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","height":"29.2969px","width":"188.859px"},"video":{"font-family":"\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif","line-height":"23.2px"}}
+{
+  ".backlink-pane": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".backlink-pane .tree-item": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".backlink-pane .tree-item-self": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".backlink-pane .tree-item-self::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
+    "--callout-color": "#086ddd",
+    "--callout-icon": "lucide-pencil",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  ".canvas-card-menu": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".canvas-control-item": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".canvas-node": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".canvas-node-container .markdown-rendered": {
+    "line-height": "var(--line-height-body)"
+  },
+  ".canvas-node-container .markdown-rendered::after": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  ".canvas-node-container .markdown-rendered::before": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  ".canvas-node-content": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".canvas-node-group": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".canvas-path-label": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1, 0, 0, 1, -56.7656, -19)",
+    "transform-origin": "56.7656px 19px",
+    "width": "113.531px"
+  },
+  ".clickable-icon": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".clickable-icon svg": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".clickable-icon.graph-controls-button": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".clickable-icon.graph-controls-button.mod-reset": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".file-embed": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".footnotes": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "55.3906px",
+    "line-height": "20.3px",
+    "transform-origin": "350px 27.6953px"
+  },
+  ".graph-control-section": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".graph-controls": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".inline-title": {
+    "color": "var(--text-title-h1)",
+    "height": "38.0625px",
+    "padding": "0px 0px 7px",
+    "padding-block": "0px 7px",
+    "padding-block-end": "7px",
+    "padding-bottom": "7px",
+    "text-align": "center",
+    "transform-origin": "350px 19.0312px"
+  },
+  ".internal-embed": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".internal-embed.is-loaded.markdown-embed": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".markdown-embed": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".markdown-preview-view hr": {
+    "border-bottom": "0px dotted rgb(228, 228, 228)",
+    "border-bottom-style": "dotted",
+    "border-inline-end": "0px dotted rgb(228, 228, 228)",
+    "border-inline-start": "0px dotted rgb(228, 228, 228)",
+    "border-left": "0px dotted rgb(228, 228, 228)",
+    "border-left-style": "dotted",
+    "border-right": "0px dotted rgb(228, 228, 228)",
+    "border-right-style": "dotted",
+    "border-style": "dotted",
+    "border-top": "1px dotted rgb(228, 228, 228)",
+    "border-top-style": "dotted",
+    "border-top-width": "1px",
+    "border-width": "1px 0px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "1px",
+    "line-height": "23.2px",
+    "transform-origin": "127px 0.5px"
+  },
+  ".math-block": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".metadata-container": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "116.812px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 58.4062px"
+  },
+  ".metadata-container .metadata-property": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "28.2969px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 14.1484px"
+  },
+  ".metadata-properties": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "28.2969px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 14.1484px"
+  },
+  ".metadata-property-key": {
+    "height": "28.2969px",
+    "line-height": "23.2px",
+    "transform-origin": "72px 14.1484px"
+  },
+  ".metadata-property-value": {
+    "height": "28.2969px",
+    "line-height": "23.2px",
+    "transform-origin": "278px 14.1484px"
+  },
+  ".metadata-property-value .metadata-link": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "28.2969px",
+    "line-height": "23.2px",
+    "transform-origin": "278px 14.1484px"
+  },
+  ".multi-select-pill": {
+    "-webkit-text-fill-color": "rgb(34, 34, 34)",
+    "-webkit-text-stroke": "0px rgb(34, 34, 34)",
+    "-webkit-text-stroke-color": "rgb(34, 34, 34)",
+    "background": "rgb(238, 182, 98) none repeat scroll 0% 0% / auto padding-box border-box",
+    "column-rule-color": "rgb(34, 34, 34)",
+    "font-family": "var(--font-links)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "outline-color": "rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
+    "transform-origin": "29.3672px 10.5px",
+    "width": "58.7344px"
+  },
+  ".nav-file-title": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".nav-file-title-content": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "19.9844px 8.44531px",
+    "width": "39.9688px"
+  },
+  ".nav-file-title::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".nav-files-container": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".nav-files-container .tree-item": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".nav-folder-title-content": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "17.0078px 8.44531px",
+    "width": "34.0156px"
+  },
+  ".nav-header": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-input-container.global-search-input-container input[type=\"search\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-result-container .tree-item.search-result": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-result-file-match": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-result-file-matched-text": {
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255)) repeat scroll 0% 0% / auto padding-box border-box",
+    "background-image": "linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255))",
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-result-file-title": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-result-file-title::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".search-results-children": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "1267.17px",
+    "min-height": "1267.17px",
+    "transform-origin": "132px 633.586px"
+  },
+  ".search-row": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".status-bar": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "173.312px 13.5px",
+    "width": "346.625px"
+  },
+  ".status-bar-item": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "33.9453px 9px",
+    "width": "67.8906px"
+  },
+  ".table-wrapper": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".tree-item-children": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".tree-item.search-result": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".view-content": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".view-header-breadcrumb": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "40.0859px 10.4453px",
+    "width": "80.1719px"
+  },
+  ".view-header-breadcrumb-separator": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "2.625px 10.4453px",
+    "width": "5.25px"
+  },
+  ".view-header-title": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "33.4297px 8.44531px",
+    "width": "66.8594px"
+  },
+  ".workspace-leaf": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".workspace-leaf-content": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".workspace-leaf-content[data-type=\"search\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".workspace-leaf.mod-active": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".workspace-tab-header-container": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  ".workspace-tab-header-container::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "a.external-link[data-tooltip-position=\"top\"]": {
+    "-webkit-text-fill-color": "rgb(47, 155, 183)",
+    "-webkit-text-stroke": "0px rgb(47, 155, 183)",
+    "-webkit-text-stroke-color": "rgb(47, 155, 183)",
+    "background": "linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) no-repeat scroll 100% 0px / 13.2px padding-box border-box, rgba(0, 0, 0, 0) url(\"app://obsidian.md/public/images/6155340132a851f6089e.svg\") no-repeat scroll 100% 0px / 13.2px padding-box border-box",
+    "background-position": "100% 0px, 100% 0px",
+    "border": "0px none rgb(47, 155, 183)",
+    "border-bottom": "0px none rgb(47, 155, 183)",
+    "border-bottom-color": "rgb(47, 155, 183)",
+    "border-color": "rgb(47, 155, 183)",
+    "border-inline-end": "0px none rgb(47, 155, 183)",
+    "border-inline-start": "0px none rgb(47, 155, 183)",
+    "border-left": "0px none rgb(47, 155, 183)",
+    "border-left-color": "rgb(47, 155, 183)",
+    "border-right": "0px none rgb(47, 155, 183)",
+    "border-right-color": "rgb(47, 155, 183)",
+    "border-top": "0px none rgb(47, 155, 183)",
+    "border-top-color": "rgb(47, 155, 183)",
+    "column-rule-color": "rgb(47, 155, 183)",
+    "font-family": "var(--font-links)",
+    "line-height": "23.2px",
+    "outline": "rgb(47, 155, 183) none 0px",
+    "outline-color": "rgb(47, 155, 183)",
+    "text-decoration-color": "rgb(47, 155, 183)"
+  },
+  "a.footnote-backref.footnote-link": {
+    "font-family": "var(--font-links)",
+    "height": "20.2969px",
+    "letter-spacing": "0.7px",
+    "line-height": "20.3px",
+    "list-style": "outside none none",
+    "margin": "0px 0px 0px 7px",
+    "margin-inline": "7px 0px",
+    "margin-left": "7px",
+    "transform-origin": "6.21875px 10.1484px",
+    "width": "12.4375px"
+  },
+  "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
+    "-webkit-text-fill-color": "rgb(213, 174, 207)",
+    "-webkit-text-stroke": "0px rgb(213, 174, 207)",
+    "-webkit-text-stroke-color": "rgb(213, 174, 207)",
+    "border": "0px none rgb(213, 174, 207)",
+    "border-bottom": "0px none rgb(213, 174, 207)",
+    "border-bottom-color": "rgb(213, 174, 207)",
+    "border-color": "rgb(213, 174, 207)",
+    "border-inline-end": "0px none rgb(213, 174, 207)",
+    "border-inline-start": "0px none rgb(213, 174, 207)",
+    "border-left": "0px none rgb(213, 174, 207)",
+    "border-left-color": "rgb(213, 174, 207)",
+    "border-right": "0px none rgb(213, 174, 207)",
+    "border-right-color": "rgb(213, 174, 207)",
+    "border-top": "0px none rgb(213, 174, 207)",
+    "border-top-color": "rgb(213, 174, 207)",
+    "column-rule-color": "rgb(213, 174, 207)",
+    "font-family": "var(--font-links)",
+    "line-height": "23.2px",
+    "outline": "rgb(213, 174, 207) none 0px",
+    "outline-color": "rgb(213, 174, 207)",
+    "text-decoration": "oklch(0.653792 0.189218 293.559 / 0.3)"
+  },
+  "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
+    "font-family": "var(--font-links)",
+    "line-height": "23.2px"
+  },
+  "abbr": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "audio": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "blockquote": {
+    "border-color": "rgb(34, 34, 34)",
+    "border-inline-start": "1px solid rgb(34, 34, 34)",
+    "border-left": "1px solid rgb(34, 34, 34)",
+    "border-left-color": "rgb(34, 34, 34)",
+    "border-left-width": "1px",
+    "border-width": "0px 0px 0px 1px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "127px 11.5938px"
+  },
+  "body": {
+    "--blockquote-border-color": "var(--text-normal)",
+    "--blockquote-border-thickness": "1px",
+    "--bold-weight": "600",
+    "--code-normal": "#4db95a",
+    "--font-default": "\"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "--font-links": "\"Alegreya SC\", \"Spectral\", serif",
+    "--font-text-theme": "var(--font-default)",
+    "--font-title": "\"Playfair Display\"",
+    "--heading-weight": "600",
+    "--line-height-body": "1.45",
+    "--line-height-headings": "1.2",
+    "--link-decoration": "none",
+    "--link-external-color": "#2f9bb7",
+    "--link-external-color-hover": "rgb(72, 191, 224)",
+    "--link-external-decoration": "none",
+    "--link-unresolved-color": "#d5aecf",
+    "--link-unresolved-opacity": "1",
+    "--modal-height": "75vh",
+    "--table-column-first-border-width": "0",
+    "--table-column-last-border-width": "0",
+    "--table-header-border-width": "0",
+    "--table-row-last-border-width": "0",
+    "--tag-background": "#eeb662",
+    "--tag-background-hover": "#f7d865",
+    "--tag-color": "var(--text-normal)",
+    "--tag-color-hover": "var(--text-normal)",
+    "--title-gradient-bottom": "color-mix(in hsl, var(--link-color), black)",
+    "--title-gradient-top": "var(--link-color)",
+    "font-weight": "var(--body-weight)"
+  },
+  "body.styled-scrollbars": {
+    "--blockquote-border-color": "var(--text-normal)",
+    "--font-text-theme": "var(--font-default)",
+    "--tag-color": "var(--text-normal)",
+    "--tag-color-hover": "var(--text-normal)",
+    "--title-gradient-bottom": "color-mix(in hsl, var(--link-color), black)",
+    "--title-gradient-top": "var(--link-color)",
+    "font-weight": "var(--body-weight)"
+  },
+  "code": {
+    "--ec-uiFontFml": "'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "-webkit-text-fill-color": "rgb(77, 185, 90)",
+    "-webkit-text-stroke": "0px rgb(77, 185, 90)",
+    "-webkit-text-stroke-color": "rgb(77, 185, 90)",
+    "column-rule-color": "rgb(77, 185, 90)",
+    "line-height": "20.3px",
+    "outline": "rgb(77, 185, 90) none 0px",
+    "outline-color": "rgb(77, 185, 90)",
+    "text-decoration-color": "rgb(77, 185, 90)"
+  },
+  "dd": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "330px 11.5938px"
+  },
+  "del": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "details": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 11.5938px"
+  },
+  "details summary": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 11.5938px"
+  },
+  "div.callout-content": {
+    "--callout-color": "#086ddd",
+    "--callout-icon": "lucide-pencil",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "padding": "0px 0px 0px 32px",
+    "padding-inline": "32px 0px",
+    "padding-inline-start": "32px",
+    "padding-left": "32px"
+  },
+  "div.callout-title": {
+    "--callout-color": "#086ddd",
+    "--callout-icon": "lucide-pencil",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "padding": "16px 0px",
+    "padding-block": "16px",
+    "padding-block-end": "16px",
+    "padding-block-start": "16px",
+    "padding-bottom": "16px",
+    "padding-top": "16px"
+  },
+  "div.callout-title-inner": {
+    "--callout-color": "#086ddd",
+    "--callout-icon": "lucide-pencil",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"abstract\"]": {
+    "--callout-color": "var(--callout-summary)",
+    "--callout-icon": "lucide-clipboard-list",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-right": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
+    "--callout-color": "var(--callout-bug)",
+    "--callout-icon": "lucide-bug",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
+    "--callout-color": "var(--callout-error)",
+    "--callout-icon": "lucide-zap",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
+    "--callout-color": "var(--callout-example)",
+    "--callout-icon": "lucide-list",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.567895 0.221884 288.456 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.567895 0.221884 288.456 / 0.25)",
+    "border-right": "1px solid oklch(0.567895 0.221884 288.456 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.567895 0.221884 288.456 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
+    "--callout-color": "var(--callout-fail)",
+    "--callout-icon": "lucide-x",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.611475 0.216957 20.8417 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
+    "--callout-color": "var(--callout-info)",
+    "--callout-icon": "lucide-info",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
+    "--callout-color": "var(--callout-default)",
+    "--callout-icon": "lucide-pencil",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
+    "--callout-color": "var(--callout-question)",
+    "--callout-icon": "help-circle",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-right": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
+    "--callout-color": "var(--callout-quote)",
+    "--callout-icon": "quote-glyph",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.699256 0.0000347234 none / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.699256 0.0000347234 none / 0.25)",
+    "border-right": "1px solid oklch(0.699256 0.0000347234 none / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.699256 0.0000347234 none / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "117.984px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 58.9922px"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
+    "--callout-color": "var(--callout-success)",
+    "--callout-icon": "lucide-check",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.686205 0.194562 148.477 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.686205 0.194562 148.477 / 0.25)",
+    "border-right": "1px solid oklch(0.686205 0.194562 148.477 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.686205 0.194562 148.477 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
+    "--callout-color": "var(--callout-tip)",
+    "--callout-icon": "lucide-flame",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-right": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.727476 0.124634 192.763 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
+    "--callout-color": "var(--callout-todo)",
+    "--callout-icon": "lucide-check-circle-2",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.550587 0.189745 256.787 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
+    "--callout-color": "var(--callout-warning)",
+    "--callout-icon": "lucide-alert-triangle",
+    "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border-bottom": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-bottom-width": "1px",
+    "border-inline-end": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-right": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-right-width": "1px",
+    "border-top": "1px solid oklch(0.688771 0.175867 52.5446 / 0.25)",
+    "border-top-width": "1px",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.inline-title": {
+    "color": "var(--text-title-h1)",
+    "height": "38.0625px",
+    "padding": "0px 0px 7px",
+    "padding-block": "0px 7px",
+    "padding-block-end": "7px",
+    "padding-bottom": "7px",
+    "text-align": "center",
+    "transform-origin": "350px 19.0312px"
+  },
+  "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.is-clickable.mod-collapsible.tree-item-self": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.is-clickable.mod-collapsible.tree-item-self::before": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.mod-active.workspace-leaf": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.mod-horizontal.mod-right-split.mod-sidedock.workspace-split": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "div.multi-select-pill": {
+    "-webkit-text-fill-color": "rgb(34, 34, 34)",
+    "-webkit-text-stroke": "0px rgb(34, 34, 34)",
+    "-webkit-text-stroke-color": "rgb(34, 34, 34)",
+    "background": "rgb(238, 182, 98) none repeat scroll 0% 0% / auto padding-box border-box",
+    "column-rule-color": "rgb(34, 34, 34)",
+    "font-family": "var(--font-links)",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "outline-color": "rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
+    "transform-origin": "29.3672px 10.5px",
+    "width": "58.7344px"
+  },
+  "div.multi-select-pill-content": {
+    "--pill-background": "#eeb662",
+    "--pill-background-hover": "#f7d865",
+    "--pill-color": "#222222",
+    "--pill-color-remove": "#222222",
+    "--pill-color-remove-hover": "#222222",
+    "-webkit-text-fill-color": "rgb(34, 34, 34)",
+    "-webkit-text-stroke": "0px rgb(34, 34, 34)",
+    "-webkit-text-stroke-color": "rgb(34, 34, 34)",
+    "border": "0px none rgb(34, 34, 34)",
+    "border-bottom": "0px none rgb(34, 34, 34)",
+    "border-bottom-color": "rgb(34, 34, 34)",
+    "border-color": "rgb(34, 34, 34)",
+    "border-inline-end": "0px none rgb(34, 34, 34)",
+    "border-inline-start": "0px none rgb(34, 34, 34)",
+    "border-left": "0px none rgb(34, 34, 34)",
+    "border-left-color": "rgb(34, 34, 34)",
+    "border-right": "0px none rgb(34, 34, 34)",
+    "border-right-color": "rgb(34, 34, 34)",
+    "border-top": "0px none rgb(34, 34, 34)",
+    "border-top-color": "rgb(34, 34, 34)",
+    "color": "rgb(34, 34, 34)",
+    "column-rule-color": "rgb(34, 34, 34)",
+    "font-family": "\"Alegreya SC\", Spectral, serif",
+    "outline": "rgb(34, 34, 34) none 0px",
+    "outline-color": "rgb(34, 34, 34)",
+    "text-decoration-color": "rgb(34, 34, 34)",
+    "transform-origin": "13.8203px 7px",
+    "width": "27.6406px"
+  },
+  "div.quartz-icon-selector": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 11.5938px"
+  },
+  "div.workspace-leaf": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "dl": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "92.75px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 46.375px"
+  },
+  "dt": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 11.5938px"
+  },
+  "em": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "figcaption": {
+    "--ec-uiFontFml": "'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "figure": {
+    "--ec-uiFontFml": "'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "h1[data-heading=\"This is a heading 1\"]": {
+    "color": "var(--text-title-h1)",
+    "font-family": "var(--font-title)",
+    "font-weight": "var(--title-weight)",
+    "height": "38.0625px",
+    "line-height": "var(--line-height-headings)",
+    "padding": "0px 0px 7px",
+    "padding-block": "0px 7px",
+    "padding-block-end": "7px",
+    "padding-bottom": "7px",
+    "text-align": "center",
+    "transform-origin": "350px 19.0312px"
+  },
+  "h2[data-heading=\"This is a heading 2\"]": {
+    "color": "var(--text-title-h2)",
+    "font-weight": "var(--heading-weight)",
+    "line-height": "var(--line-height-headings)"
+  },
+  "h3[data-heading=\"This is a heading 3\"]": {
+    "color": "var(--text-title-h3)",
+    "font-weight": "var(--heading-weight)",
+    "height": "25.3125px",
+    "line-height": "var(--line-height-headings)",
+    "transform-origin": "331px 12.6562px"
+  },
+  "h4[data-heading=\"This is a heading 4\"]": {
+    "color": "var(--text-title-h4)",
+    "font-weight": "var(--heading-weight)",
+    "height": "22.8125px",
+    "line-height": "var(--line-height-headings)",
+    "transform-origin": "331px 11.4062px"
+  },
+  "h5[data-heading=\"This is a heading 5\"]": {
+    "color": "var(--text-title-h5)",
+    "font-weight": "var(--heading-weight)",
+    "height": "20.6562px",
+    "line-height": "var(--line-height-headings)",
+    "transform-origin": "331px 10.3281px"
+  },
+  "h6[data-heading=\"This is a heading 6\"]": {
+    "color": "var(--text-title-h6)",
+    "font-weight": "var(--heading-weight)",
+    "height": "19.1875px",
+    "line-height": "var(--line-height-headings)",
+    "transform-origin": "331px 9.59375px"
+  },
+  "hr.workspace-leaf-resize-handle": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "html": {
+    "--font-title": "\"Playfair Display\"",
+    "--h1-size": "clamp(2.027em, calc(0.4rem + 5.1vw), 2.986em)",
+    "--h2-size": "clamp(1.802em, calc(0.6rem + 3.7vw), 2.488em)",
+    "--h3-size": "clamp(1.602em, calc(0.8rem + 2.5vw), 2.074em)",
+    "--h4-size": "clamp(1.424em, calc(1rem + 3vw), 1.728em)",
+    "--h5-size": "clamp(1.266em, calc(1rem + 3vw), 1.44em)",
+    "--h6-size": "clamp(1.125em, calc(1rem + 3vw), 1.2em)",
+    "--heading-weight": "600",
+    "--line-height-headings": "1.2"
+  },
+  "img": {
+    "cursor": "zoom-in",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "37.5376px",
+    "text-align": "center"
+  },
+  "input.task-list-item-checkbox[data-line=\"0\"]": {
+    "--checkbox-color": "transparent",
+    "--checkbox-color-hover": "transparent"
+  },
+  "input.task-list-item-checkbox[data-line=\"0\"]::after": {
+    "--checkbox-color": "transparent",
+    "--checkbox-color-hover": "transparent",
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
+    "-webkit-mask-size": "contain",
+    "background": "rgb(8, 109, 221) none repeat scroll 0% 0% / auto padding-box border-box",
+    "mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
+    "mask-size": "contain"
+  },
+  "input[data-task=\"-\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E\")"
+  },
+  "input[data-task=\"!\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E\")"
+  },
+  "input[data-task=\"?\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(236, 117, 0)"
+  },
+  "input[data-task=\"\"\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(171, 171, 171)"
+  },
+  "input[data-task=\"*\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(224, 172, 0)"
+  },
+  "input[data-task=\"<\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(0, 191, 188)"
+  },
+  "input[data-task=\">\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(8, 109, 221)"
+  },
+  "input[data-task=\"b\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"c\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"d\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
+    "background-color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"f\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
+    "background-color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"i\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(8, 109, 221)"
+  },
+  "input[data-task=\"I\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(224, 172, 0)"
+  },
+  "input[data-task=\"k\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
+    "background-color": "rgb(224, 172, 0)"
+  },
+  "input[data-task=\"l\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(120, 82, 238)"
+  },
+  "input[data-task=\"n\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"p\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(8, 185, 78)"
+  },
+  "input[data-task=\"S\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E\")",
+    "background-color": "rgb(8, 185, 78)"
+  },
+  "input[data-task=\"u\"]::after": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
+    "background-color": "rgb(8, 185, 78)"
+  },
+  "input[type=\"checkbox\"]:checked": {
+    "--checkbox-color": "transparent",
+    "--checkbox-color-hover": "transparent"
+  },
+  "input[type=\"checkbox\"]:checked::after": {
+    "--checkbox-color": "transparent",
+    "--checkbox-color-hover": "transparent"
+  },
+  "input[type=\"search\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "input[type=\"text\"]": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "kbd": {
+    "-webkit-text-fill-color": "rgb(77, 185, 90)",
+    "-webkit-text-stroke": "0px rgb(77, 185, 90)",
+    "-webkit-text-stroke-color": "rgb(77, 185, 90)",
+    "border": "0px none rgb(77, 185, 90)",
+    "border-bottom": "0px none rgb(77, 185, 90)",
+    "border-bottom-color": "rgb(77, 185, 90)",
+    "border-color": "rgb(77, 185, 90)",
+    "border-inline-end": "0px none rgb(77, 185, 90)",
+    "border-inline-start": "0px none rgb(77, 185, 90)",
+    "border-left": "0px none rgb(77, 185, 90)",
+    "border-left-color": "rgb(77, 185, 90)",
+    "border-right": "0px none rgb(77, 185, 90)",
+    "border-right-color": "rgb(77, 185, 90)",
+    "border-top": "0px none rgb(77, 185, 90)",
+    "border-top-color": "rgb(77, 185, 90)",
+    "column-rule-color": "rgb(77, 185, 90)",
+    "height": "21.3906px",
+    "line-height": "20.3px",
+    "outline": "rgb(77, 185, 90) none 0px",
+    "outline-color": "rgb(77, 185, 90)",
+    "text-decoration-color": "rgb(77, 185, 90)",
+    "width": "36.2188px"
+  },
+  "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"-\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"!\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"?\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"*\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"/\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\">\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"b\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"c\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"d\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"f\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"i\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"I\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"k\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"l\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"p\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"S\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"u\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li.task-list-item[data-task=\"w\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "338px 12.7812px",
+    "width": "676px"
+  },
+  "li[data-line=\"0\"]": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "25.5625px",
+    "line-height": "23.2px",
+    "margin": "0px 0px 0px 24px",
+    "margin-inline": "24px 0px",
+    "margin-inline-start": "24px",
+    "margin-left": "24px",
+    "transform-origin": "115px 12.7812px",
+    "width": "230px"
+  },
+  "mark": {
+    "background": "rgba(0, 0, 0, 0) linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255)) repeat scroll 0% 0% / auto padding-box border-box",
+    "background-image": "linear-gradient(rgba(255, 208, 0, 0.4), rgb(255, 255, 255))",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "mjx-container.MathJax": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "p": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "pre": {
+    "--ec-uiFontFml": "'??', '??', '??', \"Spectral\", -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n  \t\"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "47.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "127px 23.5938px"
+  },
+  "progress": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "strong": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "strong > em": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  },
+  "sub": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "19.3333px"
+  },
+  "summary": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "23.1875px",
+    "line-height": "23.2px",
+    "transform-origin": "350px 11.5938px"
+  },
+  "sup": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "13.3333px"
+  },
+  "svg.lucide-alert-triangle.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-bug.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-check-circle-2.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-check.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-clipboard-list.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-flame.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-help-circle.svg-icon": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-info.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "20.3px",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-list.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-pencil.svg-icon": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "svg.lucide-quote.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(-1.25, 0, 0, -1.25, 0, 0)"
+  },
+  "svg.lucide-x.svg-icon": {
+    "font-family": "\"??\", \"??\", \"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif"
+  },
+  "svg.lucide-zap.svg-icon": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform": "matrix(1.25, 0, 0, 1.25, 0, 0)"
+  },
+  "table": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "88.3906px",
+    "transform-origin": "94.4297px 44.1953px",
+    "width": "188.859px"
+  },
+  "tbody": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "59.0938px",
+    "transform-origin": "94.4297px 29.5469px",
+    "width": "188.859px"
+  },
+  "tbody tr": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "94.4297px 14.8984px",
+    "width": "188.859px"
+  },
+  "tbody tr:nth-child(even)": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "29.2969px",
+    "transform-origin": "94.4297px 14.6484px",
+    "width": "188.859px"
+  },
+  "tbody tr:nth-child(odd)": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "94.4297px 14.8984px",
+    "width": "188.859px"
+  },
+  "td": {
+    "border-color": "rgb(228, 228, 228) rgba(0, 0, 0, 0)",
+    "border-inline-end": "1px solid rgba(0, 0, 0, 0)",
+    "border-inline-start": "0px solid rgba(0, 0, 0, 0)",
+    "border-left": "0px solid rgba(0, 0, 0, 0)",
+    "border-left-color": "rgba(0, 0, 0, 0)",
+    "border-right": "1px solid rgba(0, 0, 0, 0)",
+    "border-right-color": "rgba(0, 0, 0, 0)",
+    "border-width": "1px 1px 1px 0px",
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "transform-origin": "48.1016px 14.8984px",
+    "width": "96.2031px"
+  },
+  "th": {
+    "border-color": "rgb(228, 228, 228) rgba(0, 0, 0, 0)",
+    "border-inline-end": "1px solid rgba(0, 0, 0, 0)",
+    "border-inline-start": "0px solid rgba(0, 0, 0, 0)",
+    "border-left": "0px solid rgba(0, 0, 0, 0)",
+    "border-left-color": "rgba(0, 0, 0, 0)",
+    "border-right": "1px solid rgba(0, 0, 0, 0)",
+    "border-right-color": "rgba(0, 0, 0, 0)",
+    "border-top": "0px solid rgb(228, 228, 228)",
+    "border-width": "0px 1px 1px 0px",
+    "height": "29.2969px",
+    "transform-origin": "48.1016px 14.6484px",
+    "width": "96.2031px"
+  },
+  "thead": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "29.2969px",
+    "transform-origin": "94.4297px 14.6484px",
+    "width": "188.859px"
+  },
+  "thead th": {
+    "border-color": "rgb(228, 228, 228) rgba(0, 0, 0, 0)",
+    "border-inline-end": "1px solid rgba(0, 0, 0, 0)",
+    "border-inline-start": "0px solid rgba(0, 0, 0, 0)",
+    "border-left": "0px solid rgba(0, 0, 0, 0)",
+    "border-left-color": "rgba(0, 0, 0, 0)",
+    "border-right": "1px solid rgba(0, 0, 0, 0)",
+    "border-right-color": "rgba(0, 0, 0, 0)",
+    "border-top": "0px solid rgb(228, 228, 228)",
+    "border-width": "0px 1px 1px 0px",
+    "height": "29.2969px",
+    "transform-origin": "48.1016px 14.6484px",
+    "width": "96.2031px"
+  },
+  "tr": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "height": "29.2969px",
+    "transform-origin": "94.4297px 14.6484px",
+    "width": "188.859px"
+  },
+  "video": {
+    "font-family": "\"??\", Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif, Spectral, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", serif",
+    "line-height": "23.2px"
+  }
+}

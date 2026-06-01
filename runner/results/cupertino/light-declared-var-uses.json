@@ -507,8 +507,6 @@
     "font-size": "var(--callout-size)"
   },
   "svg.lucide-info.svg-icon": {
-    "background-color": "rgb(var(--callout-color))",
-    "color": "var(--callout-color)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"

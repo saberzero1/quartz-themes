@@ -536,42 +536,6 @@
   "li.task-list-item[data-task=\"v\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"y\"]": { "color": "var(--text-normal)" },
   "li.task-list-item[data-task=\"z\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"S\"]": {
-    "color": "var(--text-normal)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"I\"]": {
-    "color": "var(--text-normal)",
-    "padding-bottom": "var(--list-spacing)",
-    "padding-top": "var(--list-spacing)"
-  },
-  "li.task-list-item[data-task=\"A\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"B\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"C\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"D\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"E\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"F\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"G\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"H\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"J\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"K\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"L\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"M\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"N\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"O\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"P\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"Q\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"R\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"T\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"U\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"V\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"W\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"X\"]": {
-    "color": "var(--checklist-done-color)"
-  },
-  "li.task-list-item[data-task=\"Y\"]": { "color": "var(--text-normal)" },
-  "li.task-list-item[data-task=\"Z\"]": { "color": "var(--text-normal)" },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   "svg.lucide-pencil.svg-icon": {
     "color": "var(--callout-color)",

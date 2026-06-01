@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Urbanist:wght@500;600;700;900&display=swap');
 
-/* Bureau — dark Obsidian theme ("Disco Elysium meets Control" + CRT) · v1.48.4
+/* Bureau — noir Obsidian theme, dark + daylight ("Disco Elysium meets Control" + CRT) · v2.3.0
    Sonophage · github.com/Sonophage/Bureau
    Retheme from the .theme-dark token block; Style Settings config in the @settings block at the foot. */
 
-.theme-dark {
+/* The third selector below powers "Paper editor" mode: re-declaring the whole token block on the
+   editor pane makes its descendants recompute against the editor's own --bu-* (paper, set by the
+   .theme-light selector addition further down) while body stays .theme-dark — so chrome stays dark. */
+/* ───────────────────────────  TOKENS & PALETTE — base --bu-* colours (dark + light) + Obsidian core var map  ─────────────────────────── */
+.theme-dark,
+.theme-light,
+body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-content,
+body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-content {
   --bu-bg: #0c0b0a;
   --bu-bg-alt: #060605;
   --bu-surface: #151310;
@@ -19,6 +26,9 @@
   --bu-teal: #4f817a;
   --bu-label-bg: #f3f1eb;
   --bu-label-fg: #14110d;
+  --bu-on-accent: #ffffff;
+  --bu-veil: #ffffff;
+  --bu-code-bg: #0a0908;
 
   --bu-control: #e23b2c;
   --bu-magnus:  #2f7d52;
@@ -42,7 +52,7 @@
   --text-faint: var(--bu-faint);
   --text-accent: var(--bu-accent);
   --text-accent-hover: var(--bu-accent-hi);
-  --text-on-accent: #ffffff;
+  --text-on-accent: var(--bu-on-accent);
   --text-selection: color-mix(in srgb, var(--bu-accent) 22%, transparent);
   --text-highlight-bg: rgba(202, 154, 78, 0.30);
   --accent-h: 6;
@@ -84,7 +94,7 @@
   --bold-weight: 700;
   --italic-color: var(--bu-text);
   --bu-green: #4fae90;
-  --scrollbar-thumb-bg: rgba(255,255,255,0.10);
+  --scrollbar-thumb-bg: color-mix(in srgb, var(--bu-veil) 10%, transparent);
   --scrollbar-active-thumb-bg: var(--bu-accent);
   --scrollbar-bg: transparent;
   --checkbox-color: var(--bu-green);
@@ -93,13 +103,24 @@
   --inline-title-font: var(--bu-font-label);
   --bu-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.58 0 0 0 0 0.55 0 0 0 0 0.48 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
   --bu-acrylic: blur(12px) saturate(1.05);
+  --bu-scanline-strength: 0.34;
+  --bu-scanlines: repeating-linear-gradient(to bottom,
+    transparent 0,
+    transparent calc(var(--bu-scanline-period, 3) * 1px - 1px),
+    rgba(0, 0, 0, var(--bu-scanline-strength, 0.34)) calc(var(--bu-scanline-period, 3) * 1px - 1px),
+    rgba(0, 0, 0, var(--bu-scanline-strength, 0.34)) calc(var(--bu-scanline-period, 3) * 1px));
   --scrollable-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='1400' viewBox='0 0 900 1400'%3E%3Cline x1='26' y1='100' x2='26' y2='140' stroke='%23a89e8c' stroke-width='3' opacity='0.5'/%3E%3Ctext x='26' y='250' transform='rotate(-90 26 250)' text-anchor='middle' fill='%23a89e8c' opacity='0.5' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EBUREAU%3C/text%3E%3Cline x1='26' y1='570' x2='26' y2='610' stroke='%23f3f1eb' stroke-width='3' opacity='0.8'/%3E%3Cg transform='rotate(-90 26 720)'%3E%3Crect x='-41' y='705' width='100' height='22' rx='2' fill='%23f3f1eb'/%3E%3Ctext x='9' y='720' text-anchor='middle' textLength='84' lengthAdjust='spacingAndGlyphs' fill='%2314110d' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EOBSIDIAN%3C/text%3E%3Ctext x='71' y='720' text-anchor='start' textLength='22' lengthAdjust='spacingAndGlyphs' fill='%23f3f1eb' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EMD%3C/text%3E%3C/g%3E%3Cline x1='26' y1='1030' x2='26' y2='1070' stroke='%23a89e8c' stroke-width='3' opacity='0.5'/%3E%3Ctext x='26' y='1180' transform='rotate(-90 26 1180)' text-anchor='middle' fill='%23a89e8c' opacity='0.5' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EDOSSIER%3C/text%3E%3Cline x1='884' y1='0' x2='884' y2='1400' stroke='%23a89e8c' stroke-width='2.5' opacity='0.22'/%3E%3Cline x1='854' y1='30' x2='884' y2='30' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='56' x2='884' y2='56' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='82' x2='884' y2='82' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='108' x2='884' y2='108' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='134' x2='884' y2='134' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='160' x2='884' y2='160' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='186' x2='884' y2='186' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='212' x2='884' y2='212' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='238' x2='884' y2='238' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='264' x2='884' y2='264' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='290' x2='884' y2='290' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='316' x2='884' y2='316' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='342' x2='884' y2='342' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='368' x2='884' y2='368' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='394' x2='884' y2='394' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='420' x2='884' y2='420' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='446' x2='884' y2='446' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='472' x2='884' y2='472' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='498' x2='884' y2='498' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='524' x2='884' y2='524' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='550' x2='884' y2='550' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='576' x2='884' y2='576' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='602' x2='884' y2='602' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='628' x2='884' y2='628' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='654' x2='884' y2='654' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='680' x2='884' y2='680' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='706' x2='884' y2='706' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='732' x2='884' y2='732' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='758' x2='884' y2='758' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='784' x2='884' y2='784' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='810' x2='884' y2='810' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='836' x2='884' y2='836' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='862' x2='884' y2='862' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='888' x2='884' y2='888' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='914' x2='884' y2='914' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='940' x2='884' y2='940' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='966' x2='884' y2='966' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='992' x2='884' y2='992' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1018' x2='884' y2='1018' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1044' x2='884' y2='1044' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1070' x2='884' y2='1070' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1096' x2='884' y2='1096' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1122' x2='884' y2='1122' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1148' x2='884' y2='1148' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1174' x2='884' y2='1174' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1200' x2='884' y2='1200' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1226' x2='884' y2='1226' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1252' x2='884' y2='1252' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1278' x2='884' y2='1278' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1304' x2='884' y2='1304' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1330' x2='884' y2='1330' stroke='%23a89e8c' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1356' x2='884' y2='1356' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1382' x2='884' y2='1382' stroke='%23a89e8c' stroke-width='1.8' opacity='0.3'/%3E%3C/svg%3E");
   --bu-card-gap:    calc(var(--bu-card-gap-n, 12) * 1px);
   --bu-card-radius: calc(var(--bu-card-radius-n, 12) * 1px);
   --bu-card-shadow: 0.55;
+  --bu-shadow: color-mix(in srgb, #000 calc(var(--bu-shadow-strength, 50) * 1%), transparent);
+  --bu-shadow-soft: color-mix(in srgb, #000 calc(var(--bu-shadow-strength, 50) * 0.66%), transparent);
   --bu-anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
   --bu-t-fast: calc(var(--bu-anim-speed, 600) * 0.3ms);
   --bu-t-slow: calc(var(--bu-anim-speed, 600) * 1ms);
+  --file-line-width: calc(var(--bu-line-width-n, 800) * 1px);
+  --line-height-normal: var(--bu-line-height, 1.5);
+  --p-spacing: calc(var(--bu-p-spacing-n, 16) * 1px);
   --bu-line: #564c3e;
   --graph-line: color-mix(in srgb, var(--bu-accent) 38%, transparent);
   --list-marker-color: var(--bu-accent);
@@ -118,13 +139,54 @@
   --nn-selected-navitem-count-bg: var(--bu-accent);
 }
 
+/* LIGHT MODE — "the case file in daylight". Overrides only the base colour
+   literals; every var(--bu-*)-derived token above follows automatically.
+   Accent presets, fonts, sizes, card/anim calcs are shared (mode-agnostic). */
+.theme-light,
+body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-content {
+  --bu-bg: #e7e0cd;          /* aged paper (a touch deeper than #efe9db) */
+  --bu-bg-alt: #e4dcc9;      /* deeper paper — the desk/stage */
+  --bu-surface: #e7e0cf;     /* inset paper */
+  --bu-raised: #f4efe4;      /* raised paper */
+  --bu-border: #cabfa6;
+  --bu-border-hi: #b3a787;
+  --bu-text: #1e1a14;        /* typewriter ink */
+  --bu-text-hi: #0d0a06;     /* darkest ink — headings/bold */
+  --bu-muted: #5c5444;       /* darkened to clear WCAG AA (4.5:1) on paper */
+  --bu-faint: #8a8069;
+  --bu-brass: #8a6a24;       /* darker brass reads on paper */
+  --bu-teal: #2f6058;
+  --bu-label-bg: #1c1813;    /* INVERTED: dark stamp on paper */
+  --bu-label-fg: #efe9db;    /* paper text on the stamp */
+  --bu-on-accent: #ffffff;
+  --bu-veil: #000000;        /* hover veils darken on light */
+  --bu-code-bg: #e6dfce;     /* paper-grey code block */
+  --bu-line: #b8ad93;        /* pencil rule */
+  --bu-shadow: color-mix(in srgb, #2e2618 calc(var(--bu-shadow-strength, 50) * 0.4%), transparent);   /* warm; paper takes less */
+  --bu-shadow-soft: color-mix(in srgb, #2e2618 calc(var(--bu-shadow-strength, 50) * 0.24%), transparent);
+
+  /* dark-specific core-var literals → light */
+  --background-modifier-hover: #e8e1d0;
+  --background-modifier-active-hover: #ddd4bf;
+  --code-background: var(--bu-code-bg);
+  --graph-node: #4a463d;
+  --graph-node-tag: #6e6a60;
+  --graph-node-attachment: #837c6d;
+  --graph-node-unresolved: #a39a86;
+  --graph-text: #423e36;
+
+  /* Paper tooth, not soot: dark ink specks at low alpha so the grain reads as
+     desk texture on daylight instead of greying the whole stage. */
+  --bu-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='cp'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23cp)'/%3E%3C/svg%3E");
+  /* The dark marginalia ledger is dropped in daylight; the paper tooth carries texture. */
+  --scrollable-background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='1400' viewBox='0 0 900 1400'%3E%3Cline x1='26' y1='100' x2='26' y2='140' stroke='%23000000' stroke-width='3' opacity='0.5'/%3E%3Ctext x='26' y='250' transform='rotate(-90 26 250)' text-anchor='middle' fill='%23000000' opacity='0.5' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EBUREAU%3C/text%3E%3Cline x1='26' y1='570' x2='26' y2='610' stroke='%23000000' stroke-width='3' opacity='0.8'/%3E%3Cg transform='rotate(-90 26 720)'%3E%3Crect x='-41' y='705' width='100' height='22' rx='2' fill='%23000000'/%3E%3Ctext x='9' y='720' text-anchor='middle' textLength='84' lengthAdjust='spacingAndGlyphs' fill='%23efe9db' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EOBSIDIAN%3C/text%3E%3Ctext x='71' y='720' text-anchor='start' textLength='22' lengthAdjust='spacingAndGlyphs' fill='%23000000' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EMD%3C/text%3E%3C/g%3E%3Cline x1='26' y1='1030' x2='26' y2='1070' stroke='%23000000' stroke-width='3' opacity='0.5'/%3E%3Ctext x='26' y='1180' transform='rotate(-90 26 1180)' text-anchor='middle' fill='%23000000' opacity='0.5' font-size='17' font-family='Oswald, %22Arial Narrow%22, Impact, sans-serif' font-weight='800' font-stretch='condensed' letter-spacing='1'%3EDOSSIER%3C/text%3E%3Cline x1='884' y1='0' x2='884' y2='1400' stroke='%23000000' stroke-width='2.5' opacity='0.22'/%3E%3Cline x1='854' y1='30' x2='884' y2='30' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='56' x2='884' y2='56' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='82' x2='884' y2='82' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='108' x2='884' y2='108' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='134' x2='884' y2='134' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='160' x2='884' y2='160' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='186' x2='884' y2='186' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='212' x2='884' y2='212' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='238' x2='884' y2='238' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='264' x2='884' y2='264' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='290' x2='884' y2='290' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='316' x2='884' y2='316' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='342' x2='884' y2='342' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='368' x2='884' y2='368' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='394' x2='884' y2='394' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='420' x2='884' y2='420' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='446' x2='884' y2='446' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='472' x2='884' y2='472' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='498' x2='884' y2='498' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='524' x2='884' y2='524' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='550' x2='884' y2='550' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='576' x2='884' y2='576' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='602' x2='884' y2='602' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='628' x2='884' y2='628' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='654' x2='884' y2='654' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='680' x2='884' y2='680' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='706' x2='884' y2='706' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='732' x2='884' y2='732' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='758' x2='884' y2='758' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='784' x2='884' y2='784' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='810' x2='884' y2='810' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='836' x2='884' y2='836' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='862' x2='884' y2='862' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='888' x2='884' y2='888' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='914' x2='884' y2='914' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='940' x2='884' y2='940' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='966' x2='884' y2='966' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='992' x2='884' y2='992' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1018' x2='884' y2='1018' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1044' x2='884' y2='1044' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1070' x2='884' y2='1070' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1096' x2='884' y2='1096' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1122' x2='884' y2='1122' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1148' x2='884' y2='1148' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1174' x2='884' y2='1174' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1200' x2='884' y2='1200' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1226' x2='884' y2='1226' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1252' x2='884' y2='1252' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1278' x2='884' y2='1278' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1304' x2='884' y2='1304' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='854' y1='1330' x2='884' y2='1330' stroke='%23000000' stroke-width='2.6' opacity='0.42'/%3E%3Cline x1='869' y1='1356' x2='884' y2='1356' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3Cline x1='869' y1='1382' x2='884' y2='1382' stroke='%23000000' stroke-width='1.8' opacity='0.3'/%3E%3C/svg%3E");
+}
+
+/* ───────────────────────────  TYPOGRAPHY — inline-title, heading chips, bold / italic emphasis  ─────────────────────────── */
 .inline-title {
   display: inline-block;
   width: fit-content;
-  max-width: 100%;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  background: var(--bu-label-bg);
+  max-width: 100%;  background: var(--bu-label-bg);
   color: var(--bu-label-fg);
   font-family: var(--bu-font-label);
   font-weight: 900;
@@ -142,7 +204,7 @@
   margin-bottom: 0.65em;
   margin-left: 0;
   background: var(--bu-label-bg);
-  color: var(--bu-label-fg) !important;
+  color: var(--bu-label-fg);
   font-family: var(--bu-font-label);
   font-weight: 900;
   text-transform: uppercase;
@@ -153,10 +215,7 @@
 }
 .markdown-source-view.mod-cm6 :is(.cm-header-1,.cm-header-2,.cm-header-3,.cm-header-4,.cm-header-5,.cm-header-6) {
   background: var(--bu-label-bg);
-  color: var(--bu-label-fg) !important;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  padding: 0.04em 0.36em;
+  color: var(--bu-label-fg);  padding: 0.04em 0.36em;
   font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -169,10 +228,7 @@
   text-transform: none;
   letter-spacing: 0.05em;
   color: var(--bu-label-tag);
-  background: none;
-  -webkit-box-decoration-break: initial;
-  box-decoration-break: initial;
-  margin-right: 0.45em;
+  background: none;  margin-right: 0.45em;
   padding-right: 0.4em;
   border-right: 1px solid rgba(20,17,13,0.28);
   vertical-align: baseline;
@@ -220,23 +276,18 @@
   white-space: nowrap;
   vertical-align: 0.12em;
 }
-.markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4,.HyperMD-header-5,.HyperMD-header-6)::after {
-  text-indent: 0;
-}
 
-.inline-title { font-family: var(--bu-font-label) !important; }
+.inline-title { font-family: var(--bu-font-label); }
 .markdown-source-view.mod-cm6 .HyperMD-header { margin-bottom: 0.45em; }
 
+/* INLINE TEXT — bold · italic · links (redaction chips) · strikethrough · external-link tags ════════ */
 .markdown-rendered strong,
 .cm-s-obsidian .cm-strong {
-  color: #f5f2ec;
+  color: var(--bu-text-hi);
   font-weight: 700;
   background-color: color-mix(in srgb, var(--bu-accent) 22%, transparent);
   padding: 0 0.18em;
-  border-radius: 1px;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
+  border-radius: 1px;}
 .markdown-rendered em,
 .cm-s-obsidian .cm-em {
   color: color-mix(in srgb, var(--bu-brass) 85%, var(--bu-text));
@@ -248,14 +299,13 @@
   background-color: transparent;
 }
 
+/* ───────────────────────────  LINKS & INLINE — redaction chips, external www tag, strikethrough  ─────────────────────────── */
 .markdown-rendered a.internal-link,
 .markdown-rendered a.external-link,
 .cm-s-obsidian .cm-hmd-internal-link,
 .cm-s-obsidian .cm-link {
   color: var(--bu-text);
   text-decoration: underline;
-  text-decoration-color: var(--bu-accent);
-  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
 }
 .markdown-rendered a.external-link:hover,
@@ -264,29 +314,29 @@
 .markdown-rendered a.internal-link,
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link {
   background-color: var(--bu-label-bg);
-  color: var(--bu-label-fg) !important;
-  text-decoration: none !important;
+  color: var(--bu-label-fg);
+  text-decoration: none;
   padding: 0 0.3em;
   border-radius: 2px;
 }
 .markdown-rendered a.internal-link:hover,
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link:hover {
   background-color: var(--bu-label-fg);
-  color: var(--bu-label-bg) !important;
+  color: var(--bu-label-bg);
 }
 .markdown-rendered :is(h1,h2,h3,h4,h5,h6) a.internal-link,
 .markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4,.HyperMD-header-5,.HyperMD-header-6) .cm-hmd-internal-link {
-  background-color: var(--bu-label-fg) !important;
-  color: var(--bu-label-bg) !important;
+  background-color: var(--bu-label-fg);
+  color: var(--bu-label-bg);
 }
 .markdown-rendered :is(h1,h2,h3,h4,h5,h6) a.internal-link:hover,
 .markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4,.HyperMD-header-5,.HyperMD-header-6) .cm-hmd-internal-link:hover {
-  background-color: var(--bu-label-bg) !important;
-  color: var(--bu-label-fg) !important;
+  background-color: var(--bu-label-bg);
+  color: var(--bu-label-fg);
 }
 
 .markdown-rendered a.external-link {
-  background-image: none !important;
+  background-image: none;
 }
 .markdown-rendered a.external-link::after {
   content: "www";
@@ -296,7 +346,7 @@
   border: 1px solid var(--bu-accent);
   border-radius: 2px;
   background: var(--bu-accent);
-  color: #fff;
+  color: var(--bu-on-accent);
   font-family: var(--bu-font-body);
   font-weight: 500;
   font-size: 0.62em;
@@ -308,12 +358,11 @@
 .markdown-rendered a.external-link:hover::after {
   background: var(--bu-accent-hi);
   border-color: var(--bu-accent-hi);
-  color: #fff;
+  color: var(--bu-on-accent);
 }
 
 .markdown-rendered :is(h1,h2,h3,h4,h5,h6) a.external-link {
-  color: var(--bu-accent) !important;
-  text-decoration-color: var(--bu-accent);
+  color: var(--bu-accent);
 }
 
 .markdown-source-view.mod-cm6 .cm-line:not(.cm-active) .cm-link:not(.cm-formatting-link)::after {
@@ -324,7 +373,7 @@
   border: 1px solid var(--bu-accent);
   border-radius: 2px;
   background: var(--bu-accent);
-  color: #fff;
+  color: var(--bu-on-accent);
   font-family: var(--bu-font-body);
   font-weight: 500;
   font-size: 0.62em;
@@ -337,63 +386,58 @@
 .markdown-rendered a.external-link,
 .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting-link) {
   background-color: var(--bu-label-bg);
-  color: var(--bu-accent) !important;
-  -webkit-text-fill-color: var(--bu-accent) !important;
-  text-decoration: none !important;
+  color: var(--bu-accent);
+  -webkit-text-fill-color: var(--bu-accent);
+  text-decoration: none;
   padding: 0 0.3em;
-  border-radius: 2px;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
+  border-radius: 2px;}
 .markdown-rendered a.external-link:hover,
 .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting-link):hover {
   background-color: var(--bu-accent);
-  color: var(--bu-label-bg) !important;
-  -webkit-text-fill-color: var(--bu-label-bg) !important;
+  color: var(--bu-label-bg);
+  -webkit-text-fill-color: var(--bu-label-bg);
 }
 .markdown-rendered :is(h1,h2,h3,h4,h5,h6) a.external-link,
 .markdown-source-view.mod-cm6 :is(.HyperMD-header-1,.HyperMD-header-2,.HyperMD-header-3,.HyperMD-header-4,.HyperMD-header-5,.HyperMD-header-6) .cm-link:not(.cm-formatting-link) {
-  background-color: var(--bu-label-fg) !important;
-  color: var(--bu-accent) !important;
-  -webkit-text-fill-color: var(--bu-accent) !important;
+  background-color: var(--bu-label-fg);
+  color: var(--bu-accent);
+  -webkit-text-fill-color: var(--bu-accent);
 }
 
 .markdown-rendered a.external-link::after,
 .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting-link)::after {
-  -webkit-text-fill-color: #fff;
+  -webkit-text-fill-color: var(--bu-on-accent);
 }
 
 .markdown-rendered del,
 .markdown-rendered s,
 .cm-s-obsidian .cm-strikethrough {
-  background-color: #000 !important;
-  color: transparent !important;
-  text-decoration: none !important;
-  border-radius: 1px;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  box-shadow: 0 0 0 1px var(--bu-accent);
+  background-color: #000;
+  color: transparent;
+  text-decoration: none;
+  border-radius: 1px;  box-shadow: 0 0 0 1px var(--bu-accent);
   transition: color 90ms ease;
 }
 .markdown-rendered del:hover,
 .markdown-rendered s:hover,
 .cm-s-obsidian .cm-strikethrough:hover {
-  background-color: transparent !important;
-  color: var(--bu-text) !important;
+  background-color: transparent;
+  color: var(--bu-text);
   box-shadow: none;
 }
 
+/* ───────────────────────────  CODE — fenced blocks, language chips, inline code  ─────────────────────────── */
 .markdown-rendered pre {
   position: relative;
-  background-color: #0a0908 !important;
+  background-color: var(--bu-code-bg);
   background-image: repeating-linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0px,
     rgba(0, 0, 0, 0) 2px,
-    rgba(0, 0, 0, 0.35) 3px) !important;
-  border: 1px solid var(--bu-line) !important;
+    rgba(0, 0, 0, 0.35) 3px);
+  border: 1px solid var(--bu-line);
   border-radius: 3px;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.40) !important;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.40);
 }
 .markdown-rendered :not(pre) > code {
   background: var(--bu-surface);
@@ -406,8 +450,9 @@
   color: var(--bu-text);
   text-shadow: 0 0 3px color-mix(in srgb, var(--bu-accent) 30%, transparent);
 }
+body.theme-light .markdown-rendered pre code { text-shadow: none; }
 
-.markdown-rendered pre:has(> code)::after {
+.markdown-rendered pre::after {
   content: "CODE";
   position: absolute;
   top: 6px;
@@ -426,45 +471,45 @@
   line-height: 1.3;
   pointer-events: none;
 }
-.markdown-rendered pre:has(> code.language-js)::after,
-.markdown-rendered pre:has(> code.language-javascript)::after { content: "JS"; }
-.markdown-rendered pre:has(> code.language-ts)::after,
-.markdown-rendered pre:has(> code.language-typescript)::after { content: "TS"; }
-.markdown-rendered pre:has(> code.language-jsx)::after { content: "JSX"; }
-.markdown-rendered pre:has(> code.language-tsx)::after { content: "TSX"; }
-.markdown-rendered pre:has(> code.language-py)::after,
-.markdown-rendered pre:has(> code.language-python)::after { content: "PY"; }
-.markdown-rendered pre:has(> code.language-rb)::after,
-.markdown-rendered pre:has(> code.language-ruby)::after { content: "RB"; }
-.markdown-rendered pre:has(> code.language-go)::after { content: "GO"; }
-.markdown-rendered pre:has(> code.language-rs)::after,
-.markdown-rendered pre:has(> code.language-rust)::after { content: "RS"; }
-.markdown-rendered pre:has(> code.language-c)::after { content: "C"; }
-.markdown-rendered pre:has(> code.language-cpp)::after { content: "C++"; }
-.markdown-rendered pre:has(> code.language-cs)::after,
-.markdown-rendered pre:has(> code.language-csharp)::after { content: "C#"; }
-.markdown-rendered pre:has(> code.language-java)::after { content: "JAVA"; }
-.markdown-rendered pre:has(> code.language-php)::after { content: "PHP"; }
-.markdown-rendered pre:has(> code.language-html)::after { content: "HTML"; }
-.markdown-rendered pre:has(> code.language-css)::after { content: "CSS"; }
-.markdown-rendered pre:has(> code.language-scss)::after { content: "SCSS"; }
-.markdown-rendered pre:has(> code.language-json)::after { content: "JSON"; }
-.markdown-rendered pre:has(> code.language-yaml)::after,
-.markdown-rendered pre:has(> code.language-yml)::after { content: "YAML"; }
-.markdown-rendered pre:has(> code.language-md)::after,
-.markdown-rendered pre:has(> code.language-markdown)::after { content: "MD"; }
-.markdown-rendered pre:has(> code.language-bash)::after,
-.markdown-rendered pre:has(> code.language-sh)::after,
-.markdown-rendered pre:has(> code.language-shell)::after,
-.markdown-rendered pre:has(> code.language-zsh)::after { content: "SH"; }
-.markdown-rendered pre:has(> code.language-sql)::after { content: "SQL"; }
-.markdown-rendered pre:has(> code.language-lua)::after { content: "LUA"; }
+.markdown-rendered pre.language-js::after,
+.markdown-rendered pre.language-javascript::after { content: "JS"; }
+.markdown-rendered pre.language-ts::after,
+.markdown-rendered pre.language-typescript::after { content: "TS"; }
+.markdown-rendered pre.language-jsx::after { content: "JSX"; }
+.markdown-rendered pre.language-tsx::after { content: "TSX"; }
+.markdown-rendered pre.language-py::after,
+.markdown-rendered pre.language-python::after { content: "PY"; }
+.markdown-rendered pre.language-rb::after,
+.markdown-rendered pre.language-ruby::after { content: "RB"; }
+.markdown-rendered pre.language-go::after { content: "GO"; }
+.markdown-rendered pre.language-rs::after,
+.markdown-rendered pre.language-rust::after { content: "RS"; }
+.markdown-rendered pre.language-c::after { content: "C"; }
+.markdown-rendered pre.language-cpp::after { content: "C++"; }
+.markdown-rendered pre.language-cs::after,
+.markdown-rendered pre.language-csharp::after { content: "C#"; }
+.markdown-rendered pre.language-java::after { content: "JAVA"; }
+.markdown-rendered pre.language-php::after { content: "PHP"; }
+.markdown-rendered pre.language-html::after { content: "HTML"; }
+.markdown-rendered pre.language-css::after { content: "CSS"; }
+.markdown-rendered pre.language-scss::after { content: "SCSS"; }
+.markdown-rendered pre.language-json::after { content: "JSON"; }
+.markdown-rendered pre.language-yaml::after,
+.markdown-rendered pre.language-yml::after { content: "YAML"; }
+.markdown-rendered pre.language-md::after,
+.markdown-rendered pre.language-markdown::after { content: "MD"; }
+.markdown-rendered pre.language-bash::after,
+.markdown-rendered pre.language-sh::after,
+.markdown-rendered pre.language-shell::after,
+.markdown-rendered pre.language-zsh::after { content: "SH"; }
+.markdown-rendered pre.language-sql::after { content: "SQL"; }
+.markdown-rendered pre.language-lua::after { content: "LUA"; }
 
 .markdown-rendered hr,
 .markdown-source-view.mod-cm6 .cm-hr {
-  border: none !important;
-  height: 10px !important;
-  margin: 24px 0 !important;
+  border: none;
+  height: 10px;
+  margin: 24px 0;
   background-image:
     linear-gradient(to right,
       transparent 0%,
@@ -492,20 +537,40 @@
   line-height: 1;
 }
 
-body::after {
+/* GLOW layer (body::after) — this is the element the glow-breathe animation pulses, so it now holds
+   ONLY the glow, never the vignette. Dark = rises from the bottom; light = focused beam from the top. */
+/* EDITOR ATMOSPHERE — glow layer · vignette · film grain · stage · scrollable ledger ════════ */
+body.theme-dark::after,
+body.theme-light::after {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background:
-    radial-gradient(120% calc(var(--bu-glow-reach, 95) * 1%) at 50% 120%, var(--bu-glow) 0%, transparent 55%),
-    radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0, var(--bu-vignette-amount, 0.65)) 100%);
+  background: radial-gradient(120% calc(var(--bu-glow-reach, 95) * 1%) at 50% 120%, var(--bu-glow) 0%, transparent 55%);
+}
+body.theme-light::after {
+  background: radial-gradient(60% calc(var(--bu-glow-reach, 95) * 1%) at 50% -20%, var(--bu-glow) 0%, transparent 55%);
 }
 
-body:not(.bu-vignette) { --bu-vignette-amount: 0 !important; }
+/* VIGNETTE layer (.app-container::after) — separate + STATIC so the breathing glow can't pulse it.
+   Slider-only: --bu-vignette-amount drives it directly (0 = off). Dark = full ellipse; light = top inverted-V (∧). */
+.app-container::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9997;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, var(--bu-vignette-amount, 0.5)) 100%);
+}
+body.theme-light .app-container::after {
+  background:
+    linear-gradient(to bottom right, rgba(0, 0, 0, var(--bu-vignette-amount, 0.5)) 0%, transparent 42%),
+    linear-gradient(to bottom left, rgba(0, 0, 0, var(--bu-vignette-amount, 0.5)) 0%, transparent 42%);
+}
 
-body.bu-grain::before {
+/* Film grain — slider-only now (no toggle): --bu-grain-opacity drives it, 0 = off. */
+body::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -514,6 +579,7 @@ body.bu-grain::before {
   opacity: 0.05;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+/* ───────────────────────────  EDITOR, ATMOSPHERE & CONTENT — stage, grain, glow, callouts, metadata, tables  ─────────────────────────── */
 .app-container {
   background-color: var(--bu-bg-alt);
   background-image:
@@ -524,192 +590,199 @@ body.bu-grain::before {
 }
 
 body:not(.bu-panel-grain) .app-container { background-image: none; }
+body.theme-light.bu-panel-grain .app-container { background-image: var(--bu-grain); }
 .markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-reading-view .markdown-preview-view {
-  background-image: var(--scrollable-background) !important;
-  background-size: 100% auto !important;
-  background-repeat: repeat-y !important;
-  background-attachment: local !important;
+  background-image: var(--scrollable-background);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-attachment: local;
 }
 
-body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
+/* Daylight page texture — the black marginalia ledger (layer 1, at the page edges) over an
+   always-on paper-tooth grain (layer 2), so the daylight page is never a flat white sheet. */
+body.theme-light .markdown-source-view.mod-cm6 .cm-scroller,
+body.theme-light .markdown-reading-view .markdown-preview-view,
+body.theme-dark.bu-split-editor .markdown-source-view.mod-cm6 .cm-scroller,
+body.theme-dark.bu-split-editor .markdown-reading-view .markdown-preview-view {
+  background-image: var(--scrollable-background), var(--bu-grain);
+  background-size: 100% auto, auto;
+  background-repeat: repeat-y, repeat;
+  background-attachment: local, local;
+}
+
+body::before { opacity: var(--bu-grain-opacity, 0.05); }
 
 .metadata-properties-heading .metadata-properties-title,
 .setting-item-heading .setting-item-name,
 .nav-header .nav-buttons-container + *,
 .tree-item-heading {
-  font-family: var(--bu-font-body) !important;
+  font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.10em;
   font-weight: 700;
-  color: var(--bu-accent) !important;
+  color: var(--bu-accent);
   font-size: 0.86em;
 }
 
-.theme-dark .metadata-container {
-  border: 1px solid var(--bu-line) !important;
-  border-radius: 8px !important;
+/* PROPERTIES & METADATA panel ═══════════════════════════════════════════════════════════ */
+:is(.theme-dark, .theme-light) .metadata-container {
+  border: 1px solid var(--bu-line);
+  border-radius: 8px;
   background: var(--bu-bg-alt);
   padding: 8px 12px 10px;
   margin-bottom: 16px;
   font-family: var(--bu-font-body);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.40) !important;
+  box-shadow: 0 5px 14px var(--bu-shadow-soft);
 }
-.theme-dark .metadata-properties-heading {
+:is(.theme-dark, .theme-light) .metadata-properties-heading {
   border-bottom: 1px solid var(--bu-border);
   padding-bottom: 5px;
   margin-bottom: 6px;
 }
-.theme-dark .metadata-property {
+:is(.theme-dark, .theme-light) .metadata-property {
   border-bottom: 1px solid var(--bu-border);
   padding: 4px 0;
 }
-.theme-dark .metadata-property:last-child { border-bottom: none; }
+:is(.theme-dark, .theme-light) .metadata-property:last-child { border-bottom: none; }
 
-.theme-dark .metadata-property-key-input {
-  background: var(--bu-label-bg) !important;
-  color: var(--bu-label-fg) !important;
-  font-family: var(--bu-font-label) !important;
+:is(.theme-dark, .theme-light) .metadata-property-key-input {
+  background: var(--bu-label-bg);
+  color: var(--bu-label-fg);
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 700;
   width: fit-content;
-  padding: 1px 6px !important;
+  padding: 1px 6px;
   border-radius: 2px;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 14em;
+  white-space: nowrap;
 }
-.theme-dark .metadata-property-icon { color: var(--bu-muted); }
+:is(.theme-dark, .theme-light) .metadata-property-icon { color: var(--bu-muted); }
 
-.theme-dark .metadata-property-value { color: var(--bu-text); }
-.theme-dark .metadata-input-longtext,
-.theme-dark .metadata-input-text,
-.theme-dark .metadata-property-value input,
-.theme-dark .metadata-property-value .metadata-input {
-  background: var(--bu-bg) !important;
-  border: 1px solid var(--bu-border) !important;
-  border-radius: 2px !important;
-  color: var(--bu-text) !important;
-  padding: 2px 6px !important;
+:is(.theme-dark, .theme-light) .metadata-property-value { color: var(--bu-text); }
+:is(.theme-dark, .theme-light) .metadata-input-longtext,
+:is(.theme-dark, .theme-light) .metadata-input-text,
+:is(.theme-dark, .theme-light) .metadata-property-value input,
+:is(.theme-dark, .theme-light) .metadata-property-value .metadata-input {
+  color: var(--bu-text);
 }
-.theme-dark .metadata-input-longtext:focus,
-.theme-dark .metadata-input-text:focus,
-.theme-dark .metadata-property-value input:focus {
-  border-color: var(--bu-accent) !important;
-  box-shadow: none !important;
+:is(.theme-dark, .theme-light) .metadata-input-longtext:focus,
+:is(.theme-dark, .theme-light) .metadata-input-text:focus,
+:is(.theme-dark, .theme-light) .metadata-property-value input:focus {
+  border-color: var(--bu-accent);
+  box-shadow: none;
 }
 
-.theme-dark .metadata-property .multi-select-pill {
-  background: transparent !important;
-  border: 1px solid var(--bu-border-hi) !important;
-  color: var(--bu-text) !important;
-  border-radius: 2px !important;
+:is(.theme-dark, .theme-light) .metadata-property .multi-select-pill {
+  background: transparent;
+  border: 1px solid var(--bu-border-hi);
+  color: var(--bu-text);
+  border-radius: 2px;
   letter-spacing: 0.03em;
 }
-.theme-dark .metadata-property .multi-select-pill:hover {
-  border-color: var(--bu-accent) !important;
-  color: var(--bu-accent) !important;
+:is(.theme-dark, .theme-light) .metadata-property .multi-select-pill:hover {
+  border-color: var(--bu-accent);
+  color: var(--bu-accent);
 }
 
-.theme-dark .metadata-property-key { padding-right: 12px; }
-.theme-dark .metadata-input-longtext,
-.theme-dark .metadata-input-text,
-.theme-dark .metadata-property-value input,
-.theme-dark .metadata-property-value .metadata-input,
-.theme-dark .metadata-property-value .metadata-link-inner {
-  background: transparent !important;
-  border: 1px solid transparent !important;
-  border-radius: 2px !important;
-  padding: 2px 4px !important;
-  box-shadow: none !important;
+:is(.theme-dark, .theme-light) .metadata-property-key { padding-right: 12px; }
+:is(.theme-dark, .theme-light) .metadata-input-longtext,
+:is(.theme-dark, .theme-light) .metadata-input-text,
+:is(.theme-dark, .theme-light) .metadata-property-value input,
+:is(.theme-dark, .theme-light) .metadata-property-value .metadata-input,
+:is(.theme-dark, .theme-light) .metadata-property-value .metadata-link-inner {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 2px 4px;
+  box-shadow: none;
 }
-.theme-dark .metadata-input-longtext:focus,
-.theme-dark .metadata-input-text:focus,
-.theme-dark .metadata-property-value input:focus,
-.theme-dark .metadata-property-value .metadata-input:focus {
-  background: var(--bu-bg) !important;
-  border-color: var(--bu-border-hi) !important;
-}
-
-.theme-dark .metadata-property-key-input {
-  flex: 0 1 auto !important;
-  width: fit-content !important;
-  min-width: 0 !important;
-  max-width: 14em !important;
-  white-space: nowrap !important;
+:is(.theme-dark, .theme-light) .metadata-input-longtext:focus,
+:is(.theme-dark, .theme-light) .metadata-input-text:focus,
+:is(.theme-dark, .theme-light) .metadata-property-value input:focus,
+:is(.theme-dark, .theme-light) .metadata-property-value .metadata-input:focus {
+  background: var(--bu-bg);
+  border-color: var(--bu-border-hi);
 }
 
-.theme-dark .metadata-property-icon { margin-right: 9px; }
+:is(.theme-dark, .theme-light) .metadata-property-icon { margin-right: 9px; }
 
+/* CALLOUTS ══════════════════════════════════════════════════════════════════════════════ */
 .callout {
-  background-color: var(--bu-label-bg) !important;
-  color: var(--bu-label-fg) !important;
-  border: none !important;
-  border-left: 4px solid rgb(var(--callout-color)) !important;
-  border-radius: 0 3px 3px 0 !important;
-  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.55) !important;
+  background-color: var(--bu-label-bg);
+  color: var(--bu-label-fg);
+  border: none;
+  border-left: 4px solid rgb(var(--callout-color));
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 7px 20px var(--bu-shadow);
   position: relative;
-  overflow: visible !important;
-  margin: 26px 0 22px !important;
-  padding: 15px 16px 13px !important;
-  mix-blend-mode: normal !important;
+  overflow: visible;
+  margin: 26px 0 22px;
+  padding: 15px 16px 13px;
+  mix-blend-mode: normal;
 }
 .callout-content,
 .callout-content > *,
 .callout-content strong,
-.callout-content em { color: var(--bu-label-fg) !important; }
+.callout-content em { color: var(--bu-label-fg); }
 .callout-content > :first-child { margin-top: 0; }
 .callout-content > :last-child { margin-bottom: 0; }
-.callout-icon { display: none !important; }
+.callout-icon { display: none; }
 
 .callout-title {
-  position: absolute !important;
+  position: absolute;
   top: -10px;
   right: 12px;
-  margin: 0 !important;
-  padding: 2px 9px !important;
-  background-color: rgb(var(--callout-color)) !important;
-  border: none !important;
-  border-radius: 2px !important;
-  font-family: var(--bu-font-label) !important;
+  margin: 0;
+  padding: 2px 9px;
+  background-color: rgb(var(--callout-color));
+  border: none;
+  border-radius: 2px;
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.07em;
   font-weight: 700;
-  font-size: 0.66em !important;
+  font-size: 0.66em;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
 }
-.callout-title-inner { color: #ffffff !important; }
+.callout-title-inner { color: var(--bu-on-accent); }
 
 .callout a.internal-link {
-  background-color: var(--bu-label-fg) !important;
-  color: var(--bu-label-bg) !important;
+  background-color: var(--bu-label-fg);
+  color: var(--bu-label-bg);
 }
 .callout a.internal-link:hover {
-  background-color: var(--bu-accent) !important;
-  color: #ffffff !important;
+  background-color: var(--bu-accent);
+  color: var(--bu-on-accent);
 }
 
-.callout { --callout-color: 124, 133, 151 !important; }
+.callout { --callout-color: 124, 133, 151; }
 
 .callout[data-callout="note"], .callout[data-callout="info"], .callout[data-callout="todo"],
 .callout[data-callout="abstract"], .callout[data-callout="summary"], .callout[data-callout="tldr"] {
-  --callout-color: 94, 141, 134 !important;
+  --callout-color: 94, 141, 134;
 }
 .callout[data-callout="tip"], .callout[data-callout="hint"],
 .callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
-  --callout-color: 79, 163, 163 !important;
+  --callout-color: 79, 163, 163;
 }
 .callout[data-callout="question"], .callout[data-callout="help"], .callout[data-callout="faq"] {
-  --callout-color: 131, 111, 160 !important;
+  --callout-color: 131, 111, 160;
 }
 .callout[data-callout="important"], .callout[data-callout="warning"],
 .callout[data-callout="caution"], .callout[data-callout="attention"] {
-  --callout-color: 168, 111, 134 !important;
+  --callout-color: 168, 111, 134;
 }
 .callout[data-callout="danger"], .callout[data-callout="error"], .callout[data-callout="failure"],
 .callout[data-callout="fail"], .callout[data-callout="missing"], .callout[data-callout="bug"] {
-  --callout-color: 140, 90, 126 !important;
+  --callout-color: 140, 90, 126;
 }
 .callout[data-callout="example"], .callout[data-callout="quote"], .callout[data-callout="cite"] {
-  --callout-color: 92, 122, 158 !important;
+  --callout-color: 92, 122, 158;
 }
 .markdown-rendered table,
 .markdown-source-view.mod-cm6 table {
@@ -721,17 +794,17 @@ body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
 }
 .markdown-rendered th,
 .markdown-source-view.mod-cm6 th {
-  background-color: var(--bu-accent) !important;
-  color: #ffffff !important;
-  font-family: var(--bu-font-label) !important;
+  background-color: var(--bu-accent);
+  color: var(--bu-on-accent);
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 700;
-  border-color: var(--bu-accent) !important;
+  border-color: var(--bu-accent);
 }
 .markdown-rendered td,
 .markdown-source-view.mod-cm6 td {
-  border-color: var(--bu-border) !important;
+  border-color: var(--bu-border);
   color: var(--bu-text);
 }
 .markdown-rendered tbody tr:nth-child(even),
@@ -743,106 +816,171 @@ body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
   background-color: color-mix(in srgb, var(--bu-accent) 17%, transparent);
 }
 
-.theme-dark .metadata-property:not(:focus-within) .metadata-property-value {
+/* Bases — native database views, dressed as a case-file dossier. Scoped to
+   .bases-* so regular markdown tables (above) are untouched. */
+/* ───────────────────────────  PLUGINS — Bases (database views), Notebook Navigator  ─────────────────────────── */
+.bases-view {
+  font-family: var(--bu-font-body);
+  --bases-row-even: color-mix(in srgb, var(--bu-accent) 8%, transparent);
+  --bases-row-hover: color-mix(in srgb, var(--bu-accent) 17%, transparent);
+}
+.bases-table { border-collapse: collapse; }
+.bases-th,
+.bases-table-header {
+  background-color: var(--bu-accent);
+  color: var(--bu-on-accent);
+  font-family: var(--bu-font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  border-color: var(--bu-accent);
+}
+.bases-table-header-name,
+.bases-table-header-icon { color: var(--bu-on-accent); }
+.bases-tr { border-bottom: 1px solid var(--bu-line); }
+.bases-tbody .bases-tr:nth-child(even) { background-color: var(--bases-row-even); }
+.bases-tbody .bases-tr:hover { background-color: var(--bases-row-hover); }
+.bases-td,
+.bases-table-cell {
+  color: var(--bu-text);
+  border-color: var(--bu-border);
+}
+/* BASES — native database views (dossier styling) ═══════════════════════════════════════ */
+.bases-rendered-value,
+.bases-metadata-value { color: var(--bu-text); }
+.bases-td.mod-formula,
+.bases-table-cell.mod-formula {
+  color: color-mix(in srgb, var(--bu-brass) 85%, var(--bu-text));
+  font-style: italic;
+}
+.bases-boolean,
+.bases-view input[type="checkbox"] { accent-color: var(--bu-accent); }
+
+/* Cards view — dossier cards on the dark desk. */
+.bases-cards-item {
+  background-color: var(--bu-surface);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  box-shadow: 0 5px 14px var(--bu-shadow-soft);
+  --custom-bases-overlay-background-color: color-mix(in srgb, var(--bu-bg) 82%, transparent);
+  --custom-bases-overlay-text-color: var(--bu-text);
+}
+.bases-cards-item .title {
+  color: var(--bu-accent);
+  font-family: var(--bu-font-label);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.bases-cards-item .subtitle { color: color-mix(in srgb, var(--bu-text) 60%, transparent); }
+.bases-cards-item .tag,
+.bases-cards-item .pill {
+  background-color: var(--bu-label-bg);
+  color: var(--bu-label-fg);
+  border-radius: 2px;
+  font-family: var(--bu-font-label);
+  letter-spacing: 0.02em;
+}
+
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-property-value {
   font-family: var(--bu-font-body);
   color: var(--bu-text);
   letter-spacing: 0.01em;
 }
 
-.theme-dark .metadata-property:not(:focus-within) .metadata-input-longtext,
-.theme-dark .metadata-property:not(:focus-within) .metadata-input-text,
-.theme-dark .metadata-property:not(:focus-within) .metadata-property-value input,
-.theme-dark .metadata-property:not(:focus-within) .metadata-property-value .metadata-input {
-  background: transparent !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-input-longtext,
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-input-text,
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-property-value input,
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-property-value .metadata-input {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
 }
 
-.theme-dark .metadata-property {
+:is(.theme-dark, .theme-light) .metadata-property {
   border-left: 2px solid transparent;
   padding-left: 4px;
   transition: border-color 80ms linear, background-color 80ms linear;
 }
-.theme-dark .metadata-property:hover {
+:is(.theme-dark, .theme-light) .metadata-property:hover {
   border-left-color: var(--bu-brass);
   background-color: rgba(202, 154, 78, 0.04);
 }
 
-.theme-dark .metadata-property-value a.internal-link,
-.theme-dark .metadata-property-value a.external-link {
-  color: var(--bu-accent) !important;
-  text-decoration: none !important;
+:is(.theme-dark, .theme-light) .metadata-property-value a.internal-link,
+:is(.theme-dark, .theme-light) .metadata-property-value a.external-link {
+  color: var(--bu-accent);
+  text-decoration: none;
   border-bottom: 1px dotted color-mix(in srgb, var(--bu-accent) 45%, transparent);
   padding-bottom: 1px;
   letter-spacing: 0.02em;
 }
-.theme-dark .metadata-property-value a.internal-link:hover,
-.theme-dark .metadata-property-value a.external-link:hover {
-  color: var(--bu-accent-hi) !important;
+:is(.theme-dark, .theme-light) .metadata-property-value a.internal-link:hover,
+:is(.theme-dark, .theme-light) .metadata-property-value a.external-link:hover {
+  color: var(--bu-accent-hi);
   border-bottom-style: dashed;
   border-bottom-color: var(--bu-accent-hi);
 }
 
-.theme-dark .metadata-property-value a.internal-link.is-unresolved {
-  color: var(--bu-faint) !important;
+:is(.theme-dark, .theme-light) .metadata-property-value a.internal-link.is-unresolved {
+  color: var(--bu-faint);
   border-bottom-color: var(--bu-faint);
   font-style: italic;
 }
 
-.theme-dark .metadata-property[data-property-key-type="date"] .metadata-property-value,
-.theme-dark .metadata-property[data-property-key-type="datetime"] .metadata-property-value,
-.theme-dark .metadata-property[data-property-type="date"] .metadata-property-value,
-.theme-dark .metadata-property[data-property-type="datetime"] .metadata-property-value {
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key-type="date"] .metadata-property-value,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key-type="datetime"] .metadata-property-value,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-type="date"] .metadata-property-value,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-type="datetime"] .metadata-property-value {
   color: var(--bu-brass);
 }
 
-.theme-dark .metadata-property[data-property-key-type="number"] .metadata-property-value,
-.theme-dark .metadata-property[data-property-type="number"] .metadata-property-value {
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key-type="number"] .metadata-property-value,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-type="number"] .metadata-property-value {
   color: var(--bu-brass);
   font-variant-numeric: tabular-nums;
 }
 
-.theme-dark .metadata-property-value .tag,
-.theme-dark .metadata-property[data-property-key-type="tags"] .multi-select-pill,
-.theme-dark .metadata-property[data-property-type="tags"] .multi-select-pill {
-  background: transparent !important;
-  color: var(--bu-accent) !important;
-  border: 1px solid color-mix(in srgb, var(--bu-accent) 55%, transparent) !important;
-  border-radius: 2px !important;
-  font-family: var(--bu-font-body) !important;
-  font-size: 0.78em !important;
+:is(.theme-dark, .theme-light) .metadata-property-value .tag,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key-type="tags"] .multi-select-pill,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-type="tags"] .multi-select-pill {
+  background: transparent;
+  color: var(--bu-accent);
+  border: 1px solid color-mix(in srgb, var(--bu-accent) 55%, transparent);
+  border-radius: 2px;
+  font-family: var(--bu-font-body);
+  font-size: 0.78em;
   letter-spacing: 0.04em;
   text-transform: lowercase;
-  padding: 0 5px !important;
+  padding: 0 5px;
 }
-.theme-dark .metadata-property-value .tag:hover,
-.theme-dark .metadata-property[data-property-key-type="tags"] .multi-select-pill:hover,
-.theme-dark .metadata-property[data-property-type="tags"] .multi-select-pill:hover {
-  color: var(--bu-accent-hi) !important;
-  border-color: var(--bu-accent-hi) !important;
-  background: color-mix(in srgb, var(--bu-accent) 8%, transparent) !important;
+:is(.theme-dark, .theme-light) .metadata-property-value .tag:hover,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key-type="tags"] .multi-select-pill:hover,
+:is(.theme-dark, .theme-light) .metadata-property[data-property-type="tags"] .multi-select-pill:hover {
+  color: var(--bu-accent-hi);
+  border-color: var(--bu-accent-hi);
+  background: color-mix(in srgb, var(--bu-accent) 8%, transparent);
 }
 
-.theme-dark .metadata-property-value input[type="checkbox"] {
+:is(.theme-dark, .theme-light) .metadata-property-value input[type="checkbox"] {
   accent-color: var(--bu-accent);
 }
 
-.theme-dark .metadata-property:not(:focus-within) .metadata-input-longtext:empty::before,
-.theme-dark .metadata-property:not(:focus-within) .metadata-input-text:empty::before {
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-input-longtext:empty::before,
+:is(.theme-dark, .theme-light) .metadata-property:not(:focus-within) .metadata-input-text:empty::before {
   color: var(--bu-faint);
   font-style: italic;
   letter-spacing: 0.02em;
 }
 
-.theme-dark .metadata-property[data-property-key="aliases"] .multi-select-pill {
+:is(.theme-dark, .theme-light) .metadata-property[data-property-key="aliases"] .multi-select-pill {
   font-style: italic;
 }
-.theme-dark .banner-view .banner-props-slot {
+:is(.theme-dark, .theme-light) .banner-view .banner-props-slot {
   max-width: var(--file-line-width, 800px);
   margin: 0 auto;
   padding: 18px 24px 56px;
 }
-.theme-dark .banner-view .banner-props-list {
+:is(.theme-dark, .theme-light) .banner-view .banner-props-list {
   display: grid;
   grid-template-columns: max-content 1fr;
   gap: 1px;
@@ -854,13 +992,13 @@ body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.40);
 }
 
-.theme-dark .banner-view .banner-props-key {
+:is(.theme-dark, .theme-light) .banner-view .banner-props-key {
   background: var(--bu-label-bg);
-  color: #000 !important;
+  color: var(--bu-label-fg);
   font-family: var(--bu-font-label);
   font-weight: 900;
   font-size: 0.78em;
-  text-transform: uppercase !important;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 8px 14px;
   display: flex;
@@ -869,7 +1007,7 @@ body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
   min-width: 9em;
 }
 
-.theme-dark .banner-view .banner-props-value {
+:is(.theme-dark, .theme-light) .banner-view .banner-props-value {
   background: var(--bu-bg-alt);
   color: var(--bu-text);
   padding: 8px 14px;
@@ -882,23 +1020,23 @@ body.bu-grain::before { opacity: var(--bu-grain-opacity, 0.05) !important; }
   gap: 0 6px;
 }
 
-.theme-dark .banner-view .banner-props-value a.internal-link,
-.theme-dark .banner-view .banner-props-value a.external-link {
-  color: var(--bu-accent) !important;
-  text-decoration: none !important;
+:is(.theme-dark, .theme-light) .banner-view .banner-props-value a.internal-link,
+:is(.theme-dark, .theme-light) .banner-view .banner-props-value a.external-link {
+  color: var(--bu-accent);
+  text-decoration: none;
   border-bottom: 1px dotted color-mix(in srgb, var(--bu-accent) 45%, transparent);
   padding-bottom: 1px;
   letter-spacing: 0.02em;
 }
-.theme-dark .banner-view .banner-props-value a.internal-link:hover,
-.theme-dark .banner-view .banner-props-value a.external-link:hover {
-  color: var(--bu-accent-hi) !important;
+:is(.theme-dark, .theme-light) .banner-view .banner-props-value a.internal-link:hover,
+:is(.theme-dark, .theme-light) .banner-view .banner-props-value a.external-link:hover {
+  color: var(--bu-accent-hi);
   border-bottom-style: dashed;
   border-bottom-color: var(--bu-accent-hi);
 }
 
-.theme-dark .banner-view .banner-props-list:hover .banner-props-key { transition: background-color 80ms linear; }
-.theme-dark .banner-view .banner-props-list:hover .banner-props-value { transition: background-color 80ms linear; }
+:is(.theme-dark, .theme-light) .banner-view .banner-props-list:hover .banner-props-key { transition: background-color 80ms linear; }
+:is(.theme-dark, .theme-light) .banner-view .banner-props-list:hover .banner-props-value { transition: background-color 80ms linear; }
 
 .view-header-title {
   font-family: var(--bu-font-body);
@@ -912,68 +1050,71 @@ button:not(.mod-cta):not(.clickable-icon),
 input[type="text"], input[type="search"], input[type="number"],
 input[type="email"], input[type="password"], textarea,
 .dropdown, select, .search-input-container input {
-  background: transparent !important;
-  border: 1px solid var(--bu-border) !important;
-  border-radius: 2px !important;
-  color: var(--bu-text) !important;
-  box-shadow: none !important;
+  /* background-COLOR (not the `background` shorthand) so we don't wipe the dropdown's
+     arrow background-image that Obsidian sets — that wipe is what left raw chevrons in Settings. */
+  background-color: transparent;
+  border: 1px solid var(--bu-border);
+  border-radius: 2px;
+  color: var(--bu-text);
+  box-shadow: none;
 }
 button:not(.mod-cta):not(.clickable-icon):hover,
 .dropdown:hover, select:hover {
-  border-color: var(--bu-border-hi) !important;
-  background: var(--bu-surface) !important;
+  border-color: var(--bu-border-hi);
+  background: var(--bu-surface);
 }
 input:focus, textarea:focus, select:focus, .dropdown:focus {
-  border-color: var(--bu-accent) !important;
-  box-shadow: 0 0 0 1px var(--bu-accent) !important;
+  border-color: var(--bu-accent);
+  box-shadow: 0 0 0 1px var(--bu-accent);
 }
 
 button.mod-cta, .mod-cta {
-  background: var(--bu-accent) !important;
-  color: #ffffff !important;
-  border: 1px solid var(--bu-accent) !important;
-  border-radius: 2px !important;
+  background: var(--bu-accent);
+  color: var(--bu-on-accent);
+  border: 1px solid var(--bu-accent);
+  border-radius: 2px;
 }
-button.mod-cta:hover { background: var(--bu-accent-hi) !important; }
+button.mod-cta:hover { background: var(--bu-accent-hi); }
 
-.checkbox-container.is-enabled { background-color: var(--bu-green) !important; }
+.checkbox-container.is-enabled { background-color: var(--bu-green); }
 
 .status-bar { font-family: var(--bu-font-body); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.72em; }
 
+/* CHROME — menus · modals · command palette · suggestions · nav · status bar ════════════ */
 .menu,
 .suggestion-container,
 .modal,
 .prompt,
 .popover.hover-popover {
-  background-color: rgba(12, 11, 10, 0.72) !important;
+  background-color: color-mix(in srgb, var(--bu-bg) 72%, transparent);
   -webkit-backdrop-filter: var(--bu-acrylic);
   backdrop-filter: var(--bu-acrylic);
-  border: 1px solid var(--bu-border) !important;
+  border: 1px solid var(--bu-border);
 }
 
 .nav-file-title.is-active,
 .tree-item-self.is-active,
 .tree-item-self.is-clickable.is-active {
-  background-color: color-mix(in srgb, var(--bu-accent) 14%, transparent) !important;
+  background-color: color-mix(in srgb, var(--bu-accent) 14%, transparent);
   box-shadow: inset 2px 0 0 var(--bu-accent);
-  color: var(--bu-text-hi) !important;
+  color: var(--bu-text-hi);
 }
 .nav-file-title:hover,
-.tree-item-self.is-clickable:hover { background-color: var(--bu-raised) !important; }
+.tree-item-self.is-clickable:hover { background-color: var(--bu-raised); }
 
 .modal-bg {
-  background-color: rgba(0, 0, 0, 0.44) !important;
-  -webkit-backdrop-filter: blur(28px) brightness(0.66) !important;
-  backdrop-filter: blur(28px) brightness(0.66) !important;
+  background-color: rgba(0, 0, 0, 0.44);
+  -webkit-backdrop-filter: blur(28px) brightness(0.66);
+  backdrop-filter: blur(28px) brightness(0.66);
 }
 
 .prompt {
-  background-color: transparent !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
+  background-color: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
   max-width: 820px;
 }
 .prompt::before {
@@ -981,23 +1122,23 @@ button.mod-cta:hover { background: var(--bu-accent-hi) !important; }
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 300px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.88), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bu-bg) 88%, transparent), transparent);
   pointer-events: none;
 }
 .prompt-input-container { padding: 6px 6px 10px; }
 .prompt-input {
-  background: transparent !important;
-  border: none !important;
+  background: transparent;
+  border: none;
   font-family: var(--bu-font-body);
-  font-size: 2.2em !important;
+  font-size: 2.2em;
   line-height: 1.15;
   letter-spacing: -0.01em;
   color: var(--bu-text-hi);
   padding: 8px 6px 10px;
 }
-.prompt-input::placeholder { color: var(--bu-text) !important; opacity: 1 !important; }
+.prompt-input::placeholder { color: var(--bu-text); opacity: 1; }
 .prompt-instructions {
-  border-top: none !important;
+  border-top: none;
   font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -1007,30 +1148,30 @@ button.mod-cta:hover { background: var(--bu-accent-hi) !important; }
 
 .suggestion-item { border-radius: 2px; padding: 6px 12px; color: var(--bu-text); }
 .suggestion-item.is-selected {
-  background-color: color-mix(in srgb, var(--bu-accent) 16%, transparent) !important;
+  background-color: color-mix(in srgb, var(--bu-accent) 16%, transparent);
   box-shadow: inset 2px 0 0 var(--bu-accent);
-  color: var(--bu-text-hi) !important;
+  color: var(--bu-text-hi);
 }
 .suggestion-hotkey,
 .suggestion-flair {
-  background: var(--bu-surface) !important;
-  border: 1px solid var(--bu-border) !important;
+  background: var(--bu-surface);
+  border: 1px solid var(--bu-border);
   border-radius: 2px;
   font-family: var(--bu-font-body);
   font-size: 0.78em;
-  color: var(--bu-muted) !important;
+  color: var(--bu-muted);
   padding: 1px 6px;
 }
 
 body:not(.is-mobile) .prompt {
-  background-color: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
   height: 100%;
-  max-height: unset !important;
-  max-width: unset !important;
+  max-height: unset;
+  max-width: unset;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -1043,24 +1184,24 @@ body:not(.is-mobile) .prompt > * {
   margin-right: auto;
 }
 body:not(.is-mobile) .prompt > .prompt-input-container {
-  background-color: rgba(255, 255, 255, 0.05) !important;
-  border: none !important;
+  background-color: color-mix(in srgb, var(--bu-veil) 5%, transparent);
+  border: none;
   border-radius: 10px;
   padding: 4px 18px;
   order: 1;
 }
 body:not(.is-mobile) .prompt > .prompt-input-container > .prompt-input {
-  background-color: transparent !important;
-  font-size: 2rem !important;
-  border: none !important;
-  border-bottom: none !important;
+  background-color: transparent;
+  font-size: 2rem;
+  border: none;
+  border-bottom: none;
   height: auto;
   font-family: var(--bu-font-body);
   color: var(--bu-text-hi);
 }
 body:not(.is-mobile) .prompt > .prompt-instructions {
   order: 2;
-  border-top: none !important;
+  border-top: none;
   margin-bottom: 2rem;
   padding: 0;
   font-family: var(--bu-font-body);
@@ -1072,60 +1213,104 @@ body:not(.is-mobile) .prompt > .prompt-instructions {
 body:not(.is-mobile) .prompt > .prompt-results {
   order: 3;
   border-top: 1px solid var(--bu-border);
-  color: var(--bu-text-hi) !important;
+  color: var(--bu-text-hi);
 }
 body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { cursor: pointer; color: var(--bu-text); }
 body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item.is-selected {
-  color: var(--bu-text-hi) !important;
-  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: var(--bu-text-hi);
+  background-color: color-mix(in srgb, var(--bu-veil) 6%, transparent);
 }
 body:not(.is-mobile) .prompt .suggestion-content,
 body:not(.is-mobile) .prompt .suggestion-title,
-body:not(.is-mobile) .prompt .suggestion-note { color: var(--bu-text-hi) !important; }
+body:not(.is-mobile) .prompt .suggestion-note { color: var(--bu-text-hi); }
 body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item kbd,
 body:not(.is-mobile) .prompt .suggestion-hotkey {
-  background-color: var(--bu-surface) !important;
+  background-color: var(--bu-surface);
   border: 1px solid var(--bu-border);
   color: var(--bu-muted);
 }
 
+/* Daylight command palette — the transparent floating design assumes light-text-on-dark.
+   On paper that left ink text floating on a dimmed page with no container (note bled through),
+   so give the input and results solid paper cards; ink text then reads cleanly. */
+body.theme-light:not(.is-mobile) .prompt > .prompt-input-container {
+  background-color: var(--bu-raised);
+  border: 1px solid var(--bu-border);
+}
+body.theme-light:not(.is-mobile) .prompt > .prompt-results {
+  background-color: var(--bu-bg-alt);
+  border: 1px solid var(--bu-border);
+  border-radius: 10px;
+  padding: 6px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+body.theme-light:not(.is-mobile) .prompt > .prompt-results > .suggestion-item.is-selected {
+  background-color: color-mix(in srgb, var(--bu-accent) 14%, transparent);
+  box-shadow: inset 2px 0 0 var(--bu-accent);
+}
+
+/* New Tab (empty state) — a Bureau filing menu: stamped title + one dossier card of action rows. */
 .empty-state-title {
   font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--bu-muted);
 }
+/* New Tab: the native .empty-state-title is EMPTY here (that's why styling it as a chip left a
+   blank bar). Inject an in-world label so the stamp has text. */
+.workspace-leaf-content[data-type="empty"] .empty-state-title {
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  color: var(--bu-label-fg);
+  background: var(--bu-label-bg);
+  padding: 0.12em 0.5em;
+  border-radius: 2px;
+  width: fit-content;
+  margin: 0 auto 1.4em;
+}
+.workspace-leaf-content[data-type="empty"] .empty-state-title::before { content: "NO ACTIVE FILE"; }
+.empty-state-action-list {
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  overflow: hidden;
+  background: var(--bu-surface);
+  box-shadow: 0 5px 14px var(--bu-shadow-soft);
+  gap: 0;
+}
 .empty-state-action {
   font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  border: 1px solid var(--bu-border) !important;
-  border-radius: 2px;
-  background: var(--bu-surface) !important;
-  color: var(--bu-text) !important;
+  color: var(--bu-text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--bu-border);
+  border-radius: 0;
+  margin: 0;
 }
+.empty-state-action:last-child { border-bottom: none; }
 .empty-state-action:hover {
-  border-color: var(--bu-accent) !important;
-  color: var(--bu-accent) !important;
-  background: var(--bu-raised) !important;
+  background: var(--bu-label-bg);
+  color: var(--bu-label-fg);
+  border-color: var(--bu-border);
 }
 
 button:not(.clickable-icon):not(.mod-cta),
 input[type="button"], input[type="submit"] {
-  font-family: var(--bu-font-body) !important;
+  font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 0.78em;
   font-weight: 600;
-  background-color: var(--bu-surface) !important;
-  border: 2px solid var(--bu-line) !important;
-  border-radius: 2px !important;
-  box-shadow: none !important;
+  background-color: var(--bu-surface);
+  border: 2px solid var(--bu-line);
+  border-radius: 2px;
+  box-shadow: none;
 }
 button:not(.clickable-icon):not(.mod-cta):hover {
-  border-color: var(--bu-accent) !important;
-  color: var(--bu-accent) !important;
-  background-color: var(--bu-raised) !important;
+  border-color: var(--bu-accent);
+  color: var(--bu-accent);
+  background-color: var(--bu-raised);
 }
 
 button:not(.clickable-icon):active,
@@ -1133,21 +1318,21 @@ button:not(.clickable-icon):active,
 .clickable-icon:active,
 .nav-action-button:active,
 .side-dock-ribbon-action:active {
-  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.55) !important;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.55);
   transform: translateY(1px);
 }
 .mod-cta {
-  font-family: var(--bu-font-body) !important;
+  font-family: var(--bu-font-body);
   text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;
-  border: 2px solid var(--bu-accent) !important;
+  border: 2px solid var(--bu-accent);
 }
 
 .clickable-icon:hover {
-  color: var(--bu-accent) !important;
-  background-color: var(--bu-surface) !important;
+  color: var(--bu-accent);
+  background-color: var(--bu-surface);
 }
 .clickable-icon.is-active, .clickable-icon.is-active svg,
-.nav-action-button.is-active { color: var(--bu-accent) !important; }
+.nav-action-button.is-active { color: var(--bu-accent); }
 
 .nav-header .nav-action-button + .nav-action-button,
 .nav-buttons-container .nav-action-button + .nav-action-button {
@@ -1160,48 +1345,48 @@ button:not(.clickable-icon):active,
 }
 
 .status-bar {
-  background-color: var(--bu-bg-alt) !important;
-  border-top: 2px solid var(--bu-line) !important;
+  background-color: var(--bu-bg-alt);
+  border-top: 2px solid var(--bu-line);
   font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   font-size: 0.72em;
 }
 .status-bar-item { color: var(--bu-muted); }
-.status-bar-item:hover, .status-bar-item.mod-clickable:hover { color: var(--bu-accent) !important; }
+.status-bar-item:hover, .status-bar-item.mod-clickable:hover { color: var(--bu-accent); }
 
 .status-bar-item:hover,
 .status-bar-item.mod-clickable:hover {
-  background-color: var(--bu-label-bg) !important;
-  color: var(--bu-label-fg) !important;
+  background-color: var(--bu-label-bg);
+  color: var(--bu-label-fg);
   border-radius: 2px;
 }
 .status-bar-item.mod-clickable:hover .status-bar-item-icon,
-.status-bar-item:hover span { color: var(--bu-label-fg) !important; }
+.status-bar-item:hover span { color: var(--bu-label-fg); }
 .status-bar-item { padding: 2px 6px; overflow: visible; }
 
 .view-header .view-actions,
 .view-actions {
-  gap: 5px !important;
+  gap: 5px;
   padding-right: 4px;
 }
 .view-header .view-actions .clickable-icon,
 .view-actions .clickable-icon,
 .view-action {
-  padding: 5px !important;
-  margin: 0 !important;
+  padding: 5px;
+  margin: 0;
 }
 
 .prompt .search-input-clear-button,
 .prompt-input-container .search-input-clear-button {
-  right: 22px !important;
+  right: 22px;
 }
 
 .prompt .suggestion-item.is-selected,
 .prompt .suggestion-item:hover {
-  box-shadow: none !important;
-  border-radius: 8px !important;
-  background-color: rgba(255, 255, 255, 0.07) !important;
+  box-shadow: none;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--bu-veil) 7%, transparent);
 }
 body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left: 14px; margin-right: 14px; }
 
@@ -1215,16 +1400,17 @@ body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left:
 .mod-right-split .view-content,
 .mod-right-split .nav-files-container,
 .mod-right-split .workspace-tab-header-container {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
+/* ───────────────────────────  CHROME — tabs, ribbon, sidebars, status bar, prompt, modals, tooltips  ─────────────────────────── */
 .workspace-tab-header-container {
-  background-color: transparent !important;
-  border-bottom: none !important;
+  background-color: transparent;
+  border-bottom: none;
 }
-.workspace-tab-header-inner { padding: 5px 11px !important; }
+.workspace-tab-header-inner { padding: 5px 11px; }
 .workspace-tab-header-inner-title {
-  font-family: var(--bu-font-label) !important;
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.07em;
   font-size: 0.72em;
@@ -1233,79 +1419,81 @@ body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left:
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title,
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon,
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
-  color: var(--bu-accent) !important;
+  color: var(--bu-text);
 }
 .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
-  color: var(--bu-accent-hi) !important;
+  color: var(--bu-text-hi);
 }
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
-  color: #ffffff !important;
+  color: var(--bu-on-accent);
 }
 .nav-action-button:hover,
 .workspace-tab-header-new-tab:hover,
 .view-action:hover {
-  color: var(--bu-accent) !important;
-  background-color: var(--bu-surface) !important;
+  color: var(--bu-accent);
+  background-color: var(--bu-surface);
 }
 
 .mod-left-split .workspace-tab-header-inner-icon,
 .mod-right-split .workspace-tab-header-inner-icon,
 .mod-left-split .workspace-tab-header-inner-icon svg,
 .mod-right-split .workspace-tab-header-inner-icon svg {
-  color: var(--bu-text) !important;
+  color: var(--bu-text);
 }
 .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
 .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
 .mod-left-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg,
 .mod-right-split .workspace-tab-header.is-active .workspace-tab-header-inner-icon svg {
-  color: var(--bu-accent) !important;
+  color: var(--bu-accent);
 }
 
 .mod-left-split .workspace-tab-header-container-inner,
 .mod-right-split .workspace-tab-header-container-inner {
-  background-color: var(--bu-surface) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: var(--bu-card-radius) !important;
-  margin: 10px var(--bu-card-gap) 4px !important;
-  padding: 3px !important;
+  background-color: var(--bu-surface);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  margin: 10px var(--bu-card-gap) 4px;
+  padding: 3px;
 }
 
 .mod-root .workspace-tab-header-container-inner {
   position: relative;
   z-index: 4;
   margin-bottom: -2px;
+  padding-top: 24px;   /* headroom so the taller active tab + hover growth never clip */
 }
 
 .workspace-tab-header-container-inner { padding: 8px 0 0 0; }
 
 .workspace-tab-header-container {
-  height: auto !important;
+  height: auto;
   min-height: var(--header-height);
 }
 body:not(.bu-cards) .side-dock-actions,
 body:not(.bu-cards) .workspace-sidedock-vault-profile,
 body:not(.bu-cards) .mod-left-split .workspace-tab-header-container-inner,
 body:not(.bu-cards) .mod-right-split .workspace-tab-header-container-inner {
-  border: none !important; border-radius: 0 !important;
-  margin: 0 !important; background-color: transparent !important;
+  border: none; border-radius: 0;
+  margin: 0; background-color: transparent;
 }
 
+/* WORKSPACE — ribbon · splits · tabs · editor-card layout · new tab ═════════════════════ */
 .workspace-ribbon {
-  background-color: transparent !important;
-  border-right: none !important;
+  background-color: transparent;
+  border-right: none;
 }
 .side-dock-ribbon-action:hover,
 .workspace-ribbon .clickable-icon:hover {
-  color: var(--bu-accent) !important;
-  background-color: var(--bu-surface) !important;
+  color: var(--bu-accent);
+  background-color: var(--bu-surface);
 }
 
 .workspace-ribbon.mod-left,
 .workspace-ribbon.mod-left:before {
-  background-color: transparent !important;
-  border: none !important;
+  background-color: transparent;
+  border: none;
 }
 
 .workspace-split.mod-left-split,
@@ -1322,7 +1510,15 @@ body:not(.bu-cards) .mod-right-split .workspace-tab-header-container-inner {
   padding-left: calc(var(--bu-card-gap) + 5px);
   padding-right: calc(var(--bu-card-gap) + 5px);
 }
-.workspace-tab-container { background-color: transparent !important; }
+.workspace-tab-container { background-color: transparent; }
+
+/* The rounded editor card is .workspace-leaf-content; its parents (.workspace-leaf / .workspace-tabs)
+   carry Obsidian's default --background-primary — square and unrounded — which peeked past the card's
+   rounded corners and squared off below it. Make them transparent so only the card is paper. */
+.workspace-split.mod-root .workspace-tabs,
+.workspace-split.mod-root .workspace-leaf {
+  background-color: transparent;
+}
 
 .workspace-split.mod-root,
 .workspace-split.mod-left-split,
@@ -1331,72 +1527,171 @@ body:not(.bu-cards) .mod-right-split .workspace-tab-header-container-inner {
 }
 
 .workspace-split .workspace-leaf-content {
-  background-color: var(--bu-bg) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: var(--bu-card-radius) !important;
-  margin: 0 0 calc(var(--bu-card-gap) + 5px) 0 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55)) !important;
+  background-color: var(--bu-bg);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  margin: 0 0 calc(var(--bu-card-gap) + 5px) 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55));
   overflow: hidden;
 }
 
 body.bu-cards .workspace-split.mod-root .workspace-leaf-content {
-  box-shadow: none !important;
-  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 64px), transparent);
-  mask-image: linear-gradient(to bottom, #000 calc(100% - 64px), transparent);
+  /* Clip-safe lift: downward, horizontally contained (spread ≈ -blur) so the shadow never reaches
+     the overflow-clipped workspace edge that used to slice a normal shadow into a hard line. */
+  box-shadow: 0 28px 30px -24px var(--bu-shadow);
+  position: relative;
+}
+body.bu-cards .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 64px;
+  background: linear-gradient(to bottom, transparent, var(--bu-bg));
+  border-radius: 0 0 var(--bu-card-radius) var(--bu-card-radius);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ───────────────────────────  FLOATING & GLASS — opt-in soft looks layered over the brutalist base  ─────────────────────────── */
+
+/* Heavier card float — more space around each card + a deeper, clip-safe shadow,
+   so panes visibly lift off the desk. */
+body.bu-cards.bu-float .workspace-split .workspace-leaf-content {
+  margin: 6px 6px calc(var(--bu-card-gap) + 16px) 6px;
+  box-shadow: 0 22px 44px -20px var(--bu-shadow), 0 8px 16px -10px var(--bu-shadow);
+}
+
+/* Custom background image — sits on the stage behind everything. Visible in the
+   card gaps and through Frosted glass panes (opaque panes cover it otherwise).
+   The .theme-dark/.theme-light prefixes raise specificity above the panel-grain
+   rules so it wins in both modes. The scrim keeps text legible. */
+body.bu-wallpaper.theme-dark .app-container,
+body.bu-wallpaper.theme-light .app-container {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--bu-bg) calc(var(--bu-wallpaper-dim, 30) * 1%), transparent),
+                    color-mix(in srgb, var(--bu-bg) calc(var(--bu-wallpaper-dim, 30) * 1%), transparent)),
+    var(--bu-wallpaper-url, none);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Frosted glass — the EDITOR floats as a frosted card; the SIDEBARS become flush
+   frosted panels (not cards), matching the floating-card reference. Needs a
+   wallpaper (or the dark stage) behind it to blur — frost over nothing reads as
+   nothing. Inner editor surfaces go transparent so the frost is what shows. */
+body.bu-glass-cards .workspace-split.mod-root .workspace-leaf-content {
+  background-color: color-mix(in srgb, var(--bu-bg) 55%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.12);
+  backdrop-filter: blur(20px) saturate(1.12);
+}
+body.bu-glass-cards :is(.mod-left-split, .mod-right-split) .workspace-leaf-content {
+  background-color: color-mix(in srgb, var(--bu-bg) 42%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.12);
+  backdrop-filter: blur(20px) saturate(1.12);
+  border: none;
+  box-shadow: none;
+}
+body.bu-glass-cards :is(.view-content, .markdown-source-view, .markdown-source-view.mod-cm6,
+  .cm-editor, .markdown-source-view.mod-cm6 .cm-scroller,
+  .markdown-reading-view, .markdown-preview-view) {
+  background-color: transparent;
+}
+body.bu-glass-cards .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]::after { display: none; }
+
+/* Pill chrome — round the breadcrumbs + window buttons into floating pills. */
+body.bu-pill-chrome .view-header-title-container {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--bu-surface);
+  border-radius: 999px;
+  padding: 2px 14px;
+  box-shadow: 0 2px 10px -4px var(--bu-shadow);
+}
+body.bu-pill-chrome .titlebar-button-container {
+  background-color: var(--bu-surface);
+  border-radius: 999px;
+  padding: 2px 6px;
+  box-shadow: 0 2px 10px -4px var(--bu-shadow);
+}
+/* Float the tabs too — outer shadow + a little gap so they detach from the bar. */
+body.bu-pill-chrome .mod-root .workspace-tab-header {
+  margin: 0 3px;
+  box-shadow: 0 3px 12px -5px var(--bu-shadow);
+}
+
+/* Editor-only cards — strip all card chrome from the sidebars (flush, plain) so
+   only the editor floats as a card (the Ultra-Lobster layout). */
+body.bu-editor-only-cards :is(.mod-left-split, .mod-right-split) .workspace-leaf-content {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  overflow: visible;
 }
 
 .workspace-tab-header::before,
-.workspace-tab-header::after { display: none !important; }
+.workspace-tab-header::after { display: none; }
 .workspace-tab-header {
   position: relative;
   z-index: 5;
-  border-radius: 8px 8px 0 0 !important;
-  border: 2px solid transparent !important;
-  border-bottom: none !important;
+  border-radius: 8px 8px 0 0;
+  border: 2px solid transparent;
+  border-bottom: none;
   margin-right: 4px;
 }
 
 .mod-root .workspace-tab-header:not(.is-active) {
-  background-color: color-mix(in srgb, var(--bu-label-bg) 62%, var(--bu-brass) 38%) !important;
-  border: 2px solid color-mix(in srgb, var(--bu-label-bg), #000 26%) !important;
-  border-bottom: none !important;
+  background-color: var(--bu-label-fg);   /* near-black in dark, paper-white in light */
+  border: 2px solid transparent;
+  border-bottom: none;
 }
 .mod-root .workspace-tab-header.is-active {
-  background-color: var(--bu-accent) !important;
-  border: 2px solid var(--bu-accent) !important;
-  border-bottom: none !important;
+  background-color: var(--bu-accent);
+  border: 2px solid var(--bu-accent);
+  border-bottom: none;
 }
 
 body.bu-tabs-pill .workspace-tab-header {
-  border-radius: 999px !important;
-  border-bottom-width: 2px !important;
-  border-bottom-style: solid !important;
-  margin-bottom: 5px !important;
+  border-radius: 999px;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  margin-bottom: 5px;
 }
 body.bu-tabs-pill .mod-root .workspace-tab-header:not(.is-active) {
-  border-bottom-color: color-mix(in srgb, var(--bu-label-bg), #000 26%) !important;
+  border-bottom-color: color-mix(in srgb, var(--bu-label-bg), #000 26%);
 }
 body.bu-tabs-pill .mod-root .workspace-tab-header.is-active {
-  border-bottom-color: var(--bu-accent) !important;
+  border-bottom-color: var(--bu-accent);
 }
 body.bu-tabs-pill .mod-root .workspace-tab-header-container-inner {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 
-body.bu-main-icons  .mod-root .workspace-tab-header-inner-title { display: none !important; }
-body.bu-main-labels .mod-root .workspace-tab-header-inner-icon  { display: none !important; }
+body.bu-main-icons  .mod-root .workspace-tab-header-inner-title { display: none; }
+body.bu-main-labels .mod-root .workspace-tab-header-inner-icon  { display: none; }
 body.bu-left-labels  .mod-left-split  .workspace-tab-header-inner-title,
-body.bu-left-both    .mod-left-split  .workspace-tab-header-inner-title { display: inline-flex !important; }
-body.bu-left-labels  .mod-left-split  .workspace-tab-header-inner-icon  { display: none !important; }
+body.bu-left-both    .mod-left-split  .workspace-tab-header-inner-title { display: inline-flex; }
+body.bu-left-labels  .mod-left-split  .workspace-tab-header-inner-icon  { display: none; }
 body.bu-right-labels .mod-right-split .workspace-tab-header-inner-title,
-body.bu-right-both   .mod-right-split .workspace-tab-header-inner-title { display: inline-flex !important; }
-body.bu-right-labels .mod-right-split .workspace-tab-header-inner-icon  { display: none !important; }
+body.bu-right-both   .mod-right-split .workspace-tab-header-inner-title { display: inline-flex; }
+body.bu-right-labels .mod-right-split .workspace-tab-header-inner-icon  { display: none; }
 
-body.bu-pin-icon-only .workspace-tab-header.mod-pinned .workspace-tab-header-inner-title { display: none !important; }
+body.bu-pin-icon-only .workspace-tab-header.mod-pinned .workspace-tab-header-inner-title { display: none; }
 
 .mod-left-split .workspace-leaf-content,
 .mod-right-split .workspace-leaf-content {
-  background-color: rgba(12, 11, 10, 0.60) !important;
+  background-color: color-mix(in srgb, var(--bu-bg) 60%, transparent);
+  /* Clip-safe lift only: downward + horizontally contained (spread ≈ -blur), so it can't reach the
+     ancestor clip edge that used to slice a full shadow into a hard vertical line. */
+  box-shadow: 0 20px 22px -18px var(--bu-shadow-soft);
+  /* Breathing room between the tab/toolbar strip above and the panel. */
+  margin-top: 10px;
 }
 
 .workspace-tab-header.is-active {
@@ -1406,71 +1701,71 @@ body.bu-pin-icon-only .workspace-tab-header.mod-pinned .workspace-tab-header-inn
 
 .workspace-leaf.mod-active .workspace-leaf-content,
 .workspace-tabs.mod-active .workspace-leaf-content {
-  border-color: color-mix(in srgb, var(--bu-accent) 30%, var(--bu-line)) !important;
+  border-color: color-mix(in srgb, var(--bu-accent) 30%, var(--bu-line));
 }
 
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-  background-color: transparent !important;
-  border: none !important;
+  background-color: transparent;
+  border: none;
 }
 
 .workspace-sidedock-vault-profile {
-  background-color: var(--bu-surface) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: var(--bu-card-radius) !important;
-  margin: 4px var(--bu-card-gap) var(--bu-card-gap) !important;
-  box-sizing: border-box !important;
-  max-width: calc(100% - 2 * var(--bu-card-gap)) !important;
-  overflow: hidden !important;
+  background-color: var(--bu-surface);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  margin: 4px var(--bu-card-gap) var(--bu-card-gap);
+  box-sizing: border-box;
+  max-width: calc(100% - 2 * var(--bu-card-gap));
+  overflow: hidden;
 }
-.mod-root .workspace-tab-header.is-active { border-bottom: none !important; }
+.mod-root .workspace-tab-header.is-active { border-bottom: none; }
 
 .side-dock-settings,
 .workspace-sidedock-vault-profile,
-.status-bar { overflow: visible !important; }
-.side-dock-settings { padding: 4px !important; }
+.status-bar { overflow: visible; }
+.side-dock-settings { padding: 4px; }
 .side-dock-actions {
-  background-color: var(--bu-surface) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: var(--bu-card-radius) !important;
-  margin: 8px 4px 8px 6px !important;
-  padding: 8px 3px !important;
-  height: auto !important;
-  overflow: visible !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 3px !important;
+  background-color: var(--bu-surface);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius);
+  margin: 8px 4px 8px 6px;
+  padding: 8px 3px;
+  height: auto;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
 }
 .side-dock-actions .clickable-icon,
 .side-dock-ribbon-action {
-  margin: 0 !important;
-  overflow: visible !important;
-  opacity: 1 !important;
-  visibility: visible !important;
+  margin: 0;
+  overflow: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
-.side-dock-settings, .side-dock-settings .clickable-icon { overflow: visible !important; }
+.side-dock-settings, .side-dock-settings .clickable-icon { overflow: visible; }
 
 .workspace-leaf-resize-handle {
-  background-color: transparent !important;
+  background-color: transparent;
   opacity: 0;
   transition: opacity 0.12s ease;
 }
 .workspace-leaf-resize-handle:hover {
   opacity: 1;
-  background-color: var(--bu-accent) !important;
+  background-color: var(--bu-accent);
 }
 
 body:not(.bu-cards) .workspace-split .workspace-leaf-content {
-  border: none !important; border-radius: 0 !important;
-  margin: 0 !important; box-shadow: none !important;
+  border: none; border-radius: 0;
+  margin: 0; box-shadow: none;
 }
 body:not(.bu-cards) .workspace-split.mod-root .workspace-tabs,
 body:not(.bu-cards) .mod-left-split .workspace-tabs,
 body:not(.bu-cards) .mod-right-split .workspace-tabs {
-  padding-left: 0 !important; padding-right: 0 !important;
+  padding-left: 0; padding-right: 0;
 }
 
 .workspace-drawer-vault-name,
@@ -1486,12 +1781,12 @@ body:not(.bu-cards) .mod-right-split .workspace-tabs {
 
 .workspace-leaf-content[data-type="graph"] .view-content,
 .workspace-leaf-content[data-type="localgraph"] .view-content {
-  background-color: #060605;
+  background-color: var(--bu-bg-alt);
 }
 .graph-controls {
-  background-color: rgba(12, 11, 10, 0.88) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: 4px !important;
+  background-color: color-mix(in srgb, var(--bu-bg) 88%, transparent);
+  border: 1px solid var(--bu-line);
+  border-radius: 4px;
   -webkit-backdrop-filter: var(--bu-acrylic);
   backdrop-filter: var(--bu-acrylic);
 }
@@ -1499,31 +1794,31 @@ body:not(.bu-cards) .mod-right-split .workspace-tabs {
 .nn-bg-primary, .nn-bg-secondary,
 .nn-navigation-pane, .nn-navigation-pane-content, .nn-navigation-pane-scroller,
 .nn-list-pane, .nn-list-pane-content, .nn-list-pane-scroller {
-  background-color: transparent !important;
+  background-color: transparent;
 }
 
-.nn-navitem-name, .nn-file-name {
-  font-family: var(--bu-font-body) !important;
+.nn-file-name {
+  font-family: var(--bu-font-body);
   color: var(--bu-text);
 }
 .nn-file-date, .nn-file-preview, .nn-file-second-line,
-.nn-navitem-count, .nn-file-word-count-suffix { color: var(--bu-muted) !important; }
+.nn-navitem-count, .nn-file-word-count-suffix { color: var(--bu-muted); }
 .nn-navitem-icon, .nn-file-icon, .nn-navitem-chevron { color: var(--bu-muted); }
 .nn-file-tag { color: var(--bu-teal); }
 
-.nn-navitem:hover, .nn-file:hover { background-color: var(--bu-surface) !important; }
+.nn-file:hover { background-color: var(--bu-surface); }
 
-.nn-navitem.nn-selected, .nn-file.nn-selected { box-shadow: inset 2px 0 0 var(--bu-accent); }
+.nn-file.nn-selected { box-shadow: inset 2px 0 0 var(--bu-accent); }
 .nn-navitem.nn-selected .nn-navitem-name,
-.nn-file.nn-selected .nn-file-name { color: var(--bu-text-hi) !important; }
+.nn-file.nn-selected .nn-file-name { color: var(--bu-text-hi); }
 .nn-navitem.nn-selected .nn-navitem-icon,
-.nn-navitem.nn-selected .nn-navitem-chevron { color: var(--bu-accent) !important; }
+.nn-navitem.nn-selected .nn-navitem-chevron { color: var(--bu-accent); }
 
 .nn-list-group-header-text, .nn-list-title-text {
-  font-family: var(--bu-font-body) !important;
+  font-family: var(--bu-font-body);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--bu-accent) !important;
+  color: var(--bu-accent);
   font-size: 0.82em;
 }
 
@@ -1531,43 +1826,49 @@ body:not(.bu-cards) .mod-right-split .workspace-tabs {
 .nn-header-actions button.nn-icon-button:not(.clickable-icon),
 button.nn-icon-button:not(.clickable-icon),
 .nn-action-btn:not(.clickable-icon) {
-  border: none !important;
-  border-radius: var(--radius-s) !important;
-  background-color: transparent !important;
+  border: none;
+  border-radius: var(--radius-s);
+  background-color: transparent;
 }
 
 .nn-icon-button:hover, .nn-action-btn:hover {
-  color: var(--bu-accent) !important;
-  background-color: var(--bu-surface) !important;
+  color: var(--bu-accent);
+  background-color: var(--bu-surface);
 }
 
 .nn-navitem-name {
-  font-family: var(--bu-font-label) !important;
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--bu-text-hi) !important;
+  color: var(--bu-text-hi);
 }
 
-.nn-navitem.nn-selected { box-shadow: none !important; }
-.nn-navitem.nn-selected .nn-navitem-name { color: var(--bu-text-hi) !important; }
-.nn-navitem.nn-selected .nn-navitem-icon,
-.nn-navitem.nn-selected .nn-navitem-chevron { color: var(--bu-accent) !important; }
+.nn-navitem.nn-selected:not(.nn-file) { box-shadow: none; }
 
-.nn-navitem:hover { background-color: rgba(240, 235, 220, 0.08) !important; }
+.nn-navitem:hover { background-color: color-mix(in srgb, var(--bu-veil) 8%, transparent); }
+
+/* Keep the selected file visible when the navigator pane is unfocused (editor
+   focused). NN swaps --nn-selected-*-bg-color to an "inactive" value on blur via
+   [data-navigator-focused='false']; re-point it to a dimmer accent tint so the
+   active note stays marked instead of vanishing. */
+body .nn-split-container[data-navigator-focused="false"] {
+  --nn-selected-file-bg-color: color-mix(in srgb, var(--bu-accent) 11%, transparent);
+  --nn-selected-navitem-bg-color: color-mix(in srgb, var(--bu-accent) 13%, transparent);
+}
 
 .search-result-file-title,
 .search-result-file-title .tree-item-inner {
-  font-family: var(--bu-font-label) !important;
+  font-family: var(--bu-font-label);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--bu-accent) !important;
+  color: var(--bu-accent);
   font-weight: 700;
 }
 
 .search-result-count,
 .search-result-file-title .tree-item-flair {
-  font-family: var(--bu-font-body) !important;
-  color: var(--bu-muted) !important;
+  font-family: var(--bu-font-body);
+  color: var(--bu-muted);
   font-size: 0.82em;
 }
 .search-results-info {
@@ -1579,71 +1880,103 @@ button.nn-icon-button:not(.clickable-icon),
 }
 
 .search-result-file-match {
-  background-color: var(--bu-bg-alt) !important;
-  border: none !important;
-  border-left: 2px solid transparent !important;
-  border-radius: 2px !important;
+  background-color: var(--bu-bg-alt);
+  border: none;
+  border-left: 2px solid transparent;
+  border-radius: 2px;
   font-family: var(--bu-font-body);
   color: var(--bu-muted);
-  margin: 7px 0 !important;
-  padding: 9px 13px !important;
+  margin: 7px 0;
+  padding: 9px 13px;
   transition: border-color 80ms linear, background-color 80ms linear, color 80ms linear;
 }
 .search-result-file-match:hover {
-  border-left-color: var(--bu-accent) !important;
-  background-color: var(--bu-surface) !important;
-  color: var(--bu-text) !important;
+  border-left-color: var(--bu-accent);
+  background-color: var(--bu-surface);
+  color: var(--bu-text);
 }
 
 .search-result-file-matched-text {
-  background-color: color-mix(in srgb, var(--bu-accent) 30%, transparent) !important;
-  color: var(--bu-text-hi) !important;
+  background-color: color-mix(in srgb, var(--bu-accent) 30%, transparent);
+  color: var(--bu-text-hi);
   border-radius: 2px;
   padding: 0 1px;
 }
 
-body.bu-scanlines .markdown-source-view.mod-cm6 .cm-editor,
-body.bu-scanlines .markdown-reading-view { position: relative; }
-body.bu-scanlines .markdown-source-view.mod-cm6 .cm-editor::after,
-body.bu-scanlines .markdown-reading-view::after {
+/* CRT scanlines + phosphor text-glow (dark mode). Slider-controlled, not toggled:
+   --bu-scanline-strength 0 = no scanlines, --bu-glow-text 0 = no glow. */
+body.theme-dark .markdown-source-view.mod-cm6 .cm-editor,
+body.theme-dark .markdown-reading-view { position: relative; }
+body.theme-dark .markdown-source-view.mod-cm6 .cm-editor::after,
+body.theme-dark .markdown-reading-view::after {
   content: "";
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 4;
-  background: repeating-linear-gradient(to bottom,
-    transparent 0,
-    transparent calc(var(--bu-scanline-period, 3) * 1px - 1px),
-    rgba(0, 0, 0, 0.34) calc(var(--bu-scanline-period, 3) * 1px - 1px),
-    rgba(0, 0, 0, 0.34) calc(var(--bu-scanline-period, 3) * 1px));
+  background: var(--bu-scanlines);
 }
-body.bu-text-glow .markdown-source-view.mod-cm6 .cm-line,
-body.bu-text-glow .markdown-rendered p,
-body.bu-text-glow .markdown-rendered li {
+body.theme-dark .markdown-source-view.mod-cm6 .cm-line,
+body.theme-dark .markdown-rendered p,
+body.theme-dark .markdown-rendered li {
   text-shadow: 0 0 calc(var(--bu-glow-text, 55) * 0.08px) color-mix(in srgb, var(--bu-accent) calc(var(--bu-glow-text, 55) * 1%), transparent);
 }
+/* Inverted-editor mode. Force the pane's text to its own (inverted) ink so it can't inherit the
+   chrome's color, and give each side the texture that fits its palette. */
+body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-content,
+body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-content {
+  color: var(--bu-text);
+}
+/* Caret follows the page's own ink (dark caret on paper, light on noir), not the chrome's. */
+body.bu-split-editor .workspace-split.mod-root .cm-editor {
+  --caret-color: var(--bu-text);
+  caret-color: var(--bu-text);
+}
+body.bu-split-editor .workspace-split.mod-root .cm-cursor,
+body.bu-split-editor .workspace-split.mod-root .cm-cursor-primary {
+  border-color: var(--bu-text);
+}
+/* Paper page (dark mode): no dark-CRT scanlines/phosphor on a light page — keeps ledger + paper tooth. */
+body.theme-dark.bu-split-editor .markdown-source-view.mod-cm6 .cm-editor::after,
+body.theme-dark.bu-split-editor .markdown-reading-view::after { display: none; }
+body.theme-dark.bu-split-editor .markdown-source-view.mod-cm6 .cm-line,
+body.theme-dark.bu-split-editor .markdown-rendered p,
+body.theme-dark.bu-split-editor .markdown-rendered li { text-shadow: none; }
+/* Dark page (light mode): CRT, not grain — ledger only (drop the paper-grain layer the light
+   texture rule adds) plus scanlines, so it reads like the real noir editor. */
+body.theme-light.bu-split-editor .markdown-source-view.mod-cm6 .cm-scroller,
+body.theme-light.bu-split-editor .markdown-reading-view .markdown-preview-view {
+  background-image: var(--scrollable-background);
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-attachment: local;
+}
+body.theme-light.bu-split-editor .markdown-source-view.mod-cm6 .cm-editor,
+body.theme-light.bu-split-editor .markdown-reading-view { position: relative; }
+body.theme-light.bu-split-editor .markdown-source-view.mod-cm6 .cm-editor::after,
+body.theme-light.bu-split-editor .markdown-reading-view::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 4;
+  background: var(--bu-scanlines);
+}
 .tooltip {
-  font-family: var(--bu-font-body) !important;
-  background-color: var(--bu-surface) !important;
-  color: var(--bu-text) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-radius: 2px !important;
-  font-size: 0.76em !important;
+  font-family: var(--bu-font-body);
+  background-color: var(--bu-surface);
+  color: var(--bu-text);
+  border: 1px solid var(--bu-line);
+  border-radius: 2px;
+  font-size: 0.76em;
   letter-spacing: 0.04em;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55) !important;
-}
-body.bu-tooltip-type .tooltip {
-  animation: bu-typewriter 0.5s steps(30, end) both;
-}
-@keyframes bu-typewriter {
-  from { clip-path: inset(0 100% 0 0); }
-  to   { clip-path: inset(0 0 0 0); }
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
 }
 
 body.is-fullscreen.bu-fullscreen-crt .markdown-source-view.mod-cm6 .cm-editor,
 body.is-fullscreen.bu-fullscreen-crt .markdown-reading-view { position: relative; }
-body.is-fullscreen.bu-fullscreen-crt .markdown-source-view.mod-cm6 .cm-editor::before,
-body.is-fullscreen.bu-fullscreen-crt .markdown-reading-view::before {
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-source-view.mod-cm6 .cm-editor::before,
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-reading-view::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -1652,19 +1985,19 @@ body.is-fullscreen.bu-fullscreen-crt .markdown-reading-view::before {
   background: radial-gradient(130% 110% at 50% 50%, transparent 32%, rgba(0, 0, 0, 0.5) 68%, rgba(0, 0, 0, 0.95) 100%);
 }
 
-body.is-fullscreen.bu-fullscreen-crt.bu-scanlines .markdown-source-view.mod-cm6 .cm-editor::after,
-body.is-fullscreen.bu-fullscreen-crt.bu-scanlines .markdown-reading-view::after {
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-source-view.mod-cm6 .cm-editor::after,
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-reading-view::after {
   background: repeating-linear-gradient(to bottom,
     transparent 0,
     transparent calc(var(--bu-scanline-period, 3) * 1px - 1px),
     rgba(0, 0, 0, 0.5) calc(var(--bu-scanline-period, 3) * 1px - 1px),
-    rgba(0, 0, 0, 0.5) calc(var(--bu-scanline-period, 3) * 1px)) !important;
+    rgba(0, 0, 0, 0.5) calc(var(--bu-scanline-period, 3) * 1px));
 }
 
-body.is-fullscreen.bu-fullscreen-crt.bu-text-glow .markdown-source-view.mod-cm6 .cm-line,
-body.is-fullscreen.bu-fullscreen-crt.bu-text-glow .markdown-rendered p,
-body.is-fullscreen.bu-fullscreen-crt.bu-text-glow .markdown-rendered li {
-  text-shadow: 0 0 calc(var(--bu-glow-text, 55) * 0.13px) color-mix(in srgb, var(--bu-accent) calc(var(--bu-glow-text, 55) * 1.4%), transparent) !important;
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-source-view.mod-cm6 .cm-line,
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-rendered p,
+body.theme-dark.is-fullscreen.bu-fullscreen-crt .markdown-rendered li {
+  text-shadow: 0 0 calc(var(--bu-glow-text, 55) * 0.13px) color-mix(in srgb, var(--bu-accent) calc(var(--bu-glow-text, 55) * 1.4%), transparent);
 }
 
 body.is-fullscreen.bu-fullscreen-crt .workspace-ribbon,
@@ -1683,7 +2016,7 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
   opacity: 1;
 }
 
-.daily :is(strong, .cm-strong) { background-color: transparent !important; }
+.daily :is(strong, .cm-strong) { background-color: transparent; }
 .daily {
   color: var(--highlight);
   background-color: var(--dark);
@@ -1710,35 +2043,41 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
   --background-modifier-border: color-mix(in srgb, var(--highlight) 60%, transparent);
   --background-modifier-hover: color-mix(in srgb, var(--highlight) 60%, transparent);
 }
-.sunday,.Sunday       { --highlight: var(--bu-sun-hl,#c6a3b5); --primary: var(--bu-sun-pri,#9e6b86); --dark: var(--bu-sun-bg,#161114); }
-.monday,.Monday       { --highlight: var(--bu-mon-hl,#a6b6c8); --primary: var(--bu-mon-pri,#5b7a9e); --dark: var(--bu-mon-bg,#0f131a); }
-.tuesday,.Tuesday     { --highlight: var(--bu-tue-hl,#a4c2bc); --primary: var(--bu-tue-pri,#5e8d86); --dark: var(--bu-tue-bg,#0e1413); }
-.wednesday,.Wednesday { --highlight: var(--bu-wed-hl,#b6a9c9); --primary: var(--bu-wed-pri,#836fa0); --dark: var(--bu-wed-bg,#131019); }
-.thursday,.Thursday   { --highlight: var(--bu-thu-hl,#b2b8c4); --primary: var(--bu-thu-pri,#7c8597); --dark: var(--bu-thu-bg,#101216); }
-.friday,.Friday       { --highlight: var(--bu-fri-hl,#9ec8c8); --primary: var(--bu-fri-pri,#4f9a9a); --dark: var(--bu-fri-bg,#0c1515); }
-.saturday,.Saturday   { --highlight: var(--bu-sat-hl,#c0a0b6); --primary: var(--bu-sat-pri,#8c5a7e); --dark: var(--bu-sat-bg,#151013); }
-.daily :is(h1, .HyperMD-header.HyperMD-header-1) { color: var(--primary); text-align: center; font-size: 60px; padding: 0 !important; }
-.daily :is(h2, .HyperMD-header.HyperMD-header-2) { color: var(--highlight); text-align: center; font-size: 30px; font-style: italic; padding: 0 !important; }
+/* ───────────────────────────  DAILY NOTES — one accent per weekday (text + bg derived)  ─────────────────────────── */
+.sunday,.Sunday       { --primary: var(--bu-sun-pri, #9e6b86); }
+.monday,.Monday       { --primary: var(--bu-mon-pri, #5b7a9e); }
+.tuesday,.Tuesday     { --primary: var(--bu-tue-pri, #5e8d86); }
+.wednesday,.Wednesday { --primary: var(--bu-wed-pri, #836fa0); }
+.thursday,.Thursday   { --primary: var(--bu-thu-pri, #7c8597); }
+.friday,.Friday       { --primary: var(--bu-fri-pri, #4f9a9a); }
+.saturday,.Saturday   { --primary: var(--bu-sat-pri, #8c5a7e); }
+:is(.sunday,.monday,.tuesday,.wednesday,.thursday,.friday,.saturday,
+    .Sunday,.Monday,.Tuesday,.Wednesday,.Thursday,.Friday,.Saturday) {
+  --highlight: color-mix(in srgb, var(--primary), var(--bu-text-hi) 38%);
+  --dark: color-mix(in srgb, var(--primary) 12%, var(--bu-bg));
+}
+.daily :is(h1, .HyperMD-header.HyperMD-header-1) { color: var(--primary); text-align: center; font-size: 60px; padding: 0; }
+.daily :is(h2, .HyperMD-header.HyperMD-header-2) { color: var(--highlight); text-align: center; font-size: 30px; font-style: italic; padding: 0; }
 .daily :is(h3, .HyperMD-header.HyperMD-header-3) { color: var(--primary); text-align: center; font-size: 32px; padding-top: 0; }
 .daily :is(h4, .HyperMD-header.HyperMD-header-4) { background-color: var(--primary); color: var(--dark); font-weight: 900; margin-bottom: 0; padding: 0 6px; font-size: 20px; width: fit-content; border-radius: 8px; }
 .daily p { margin: 4px 0; }
 .daily :is(a:link, .cm-hmd-internal-link) { color: var(--primary); }
 .daily :is(a:hover, .cm-hmd-internal-link:hover) { color: var(--highlight); }
-.daily hr { margin: 20px 0 !important; }
-.daily img { display: block !important; margin-left: auto !important; margin-right: auto !important; }
+.daily hr { margin: 20px 0; }
+.daily img { display: block; margin-left: auto; margin-right: auto; }
 
 .daily { counter-reset: bu-section; }
 
 .daily :is(h1, .HyperMD-header.HyperMD-header-1) {
-  font-family: var(--bu-font-label) !important;
-  text-align: left !important;
-  font-size: 2.2em !important;
+  font-family: var(--bu-font-label);
+  text-align: left;
+  font-size: 2.2em;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--primary) !important;
+  color: var(--primary);
   border-bottom: 1px solid var(--primary);
-  padding: 0 0 8px !important;
-  margin: 4px 0 18px !important;
+  padding: 0 0 8px;
+  margin: 4px 0 18px;
   position: relative;
 }
 .daily :is(h1, .HyperMD-header.HyperMD-header-1)::after {
@@ -1792,40 +2131,40 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
 
 .daily > blockquote:not(.callout),
 .daily .markdown-preview-section > blockquote:not(.callout) {
-  border-left: 2px solid var(--bu-brass) !important;
-  background: transparent !important;
+  border-left: 2px solid var(--bu-brass);
+  background: transparent;
   font-family: var(--bu-font-body);
-  font-size: 0.82em !important;
+  font-size: 0.82em;
   font-style: normal;
-  color: var(--bu-muted) !important;
-  padding: 4px 12px !important;
-  margin: 0 0 14px 0 !important;
+  color: var(--bu-muted);
+  padding: 4px 12px;
+  margin: 0 0 14px 0;
 }
 
 .daily .callout {
   counter-increment: bu-section;
-  background: rgba(0, 0, 0, 0.30) !important;
-  border: 1px solid var(--bu-line) !important;
-  border-left: 3px solid rgb(var(--callout-color)) !important;
-  border-radius: 2px !important;
-  margin: 16px 0 !important;
-  padding: 0 !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35) !important;
+  background: rgba(0, 0, 0, 0.30);
+  border: 1px solid var(--bu-line);
+  border-left: 3px solid rgb(var(--callout-color));
+  border-radius: 2px;
+  margin: 16px 0;
+  padding: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 .daily .callout-title {
-  background: rgba(0, 0, 0, 0.45) !important;
-  border-bottom: 1px solid var(--bu-line) !important;
-  padding: 8px 14px !important;
-  margin: 0 !important;
-  font-family: var(--bu-font-body) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.10em !important;
-  font-weight: 700 !important;
-  font-size: 0.80em !important;
+  background: rgba(0, 0, 0, 0.45);
+  border-bottom: 1px solid var(--bu-line);
+  padding: 8px 14px;
+  margin: 0;
+  font-family: var(--bu-font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  font-weight: 700;
+  font-size: 0.80em;
   display: flex;
   align-items: center;
   gap: 10px;
-  border-radius: 0 !important;
+  border-radius: 0;
 }
 .daily .callout-title::before {
   content: "§ " counter(bu-section, decimal-leading-zero);
@@ -1835,11 +2174,11 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
   letter-spacing: 0.06em;
   font-size: 0.95em;
 }
-.daily .callout-title-inner { color: rgb(var(--callout-color)) !important; }
-.daily .callout-icon { display: none !important; }
+.daily .callout-title-inner { color: rgb(var(--callout-color)); }
+.daily .callout-icon { display: none; }
 
 .daily .callout-content {
-  padding: 12px 16px 14px !important;
+  padding: 12px 16px 14px;
   color: var(--highlight);
 }
 .daily .callout-content > :first-child { margin-top: 0; }
@@ -1847,17 +2186,17 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
 
 .daily .callout-content ul.contains-task-list,
 .daily ul.contains-task-list {
-  padding-left: 0 !important;
-  margin: 4px 0 !important;
-  list-style: none !important;
+  padding-left: 0;
+  margin: 4px 0;
+  list-style: none;
 }
 .daily ul.contains-task-list li.task-list-item {
-  padding: 5px 4px !important;
-  font-family: var(--bu-font-body) !important;
-  font-size: 0.90em !important;
+  padding: 5px 4px;
+  font-family: var(--bu-font-body);
+  font-size: 0.90em;
   letter-spacing: 0.01em;
   border-bottom: 1px dotted rgba(240, 235, 220, 0.06);
-  list-style: none !important;
+  list-style: none;
 }
 .daily ul.contains-task-list li.task-list-item:last-child { border-bottom: none; }
 .daily ul.contains-task-list li.task-list-item input[type="checkbox"] {
@@ -1866,9 +2205,9 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
 }
 
 .daily hr {
-  border: none !important;
-  height: 10px !important;
-  margin: 24px 0 !important;
+  border: none;
+  height: 10px;
+  margin: 24px 0;
   background-image:
     linear-gradient(to right,
       transparent 0%,
@@ -1895,57 +2234,59 @@ body.is-fullscreen.bu-fullscreen-crt .workspace-split.mod-right-split:hover {
 
 .daily .block-language-dataview,
 .daily .block-language-dataviewjs {
-  font-family: var(--bu-font-body) !important;
-  font-size: 0.88em !important;
-  background: rgba(0, 0, 0, 0.55) !important;
-  padding: 10px 14px !important;
-  border-left: 2px solid var(--bu-brass) !important;
+  font-family: var(--bu-font-body);
+  font-size: 0.88em;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 10px 14px;
+  border-left: 2px solid var(--bu-brass);
   border-radius: 2px;
-  margin: 10px 0 !important;
+  margin: 10px 0;
 }
 .daily .block-language-dataview ul,
 .daily .block-language-dataview ol {
-  margin: 4px 0 !important;
-  padding-left: 1.2em !important;
+  margin: 4px 0;
+  padding-left: 1.2em;
 }
 .daily .block-language-dataview a.internal-link {
-  color: var(--bu-brass) !important;
-  text-decoration: none !important;
+  color: var(--bu-brass);
+  text-decoration: none;
   border-bottom: 1px dotted rgba(202, 154, 78, 0.4);
 }
 .daily .block-language-dataview a.internal-link:hover {
-  color: var(--highlight) !important;
+  color: var(--highlight);
 }
 
 .daily .internal-embed.markdown-embed,
 .daily .markdown-embed {
-  border: 1px solid var(--bu-line) !important;
-  border-radius: 2px !important;
-  background: rgba(0, 0, 0, 0.25) !important;
-  margin: 14px 0 !important;
+  border: 1px solid var(--bu-line);
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.25);
+  margin: 14px 0;
 }
 
 .daily strong { color: var(--primary); }
 
 .daily .callout {
-  border-left: 3px solid var(--primary) !important;
+  border-left: 3px solid var(--primary);
 }
-.daily .callout-title-inner { color: var(--primary) !important; }
+.daily .callout-title-inner { color: var(--primary); }
 .daily .callout-icon,
-.daily .callout-icon svg { color: var(--primary) !important; }
+.daily .callout-icon svg { color: var(--primary); }
 
 body.bu-focus .mod-root .workspace-tab-header-container,
 body.bu-focus .titlebar-button-container,
-body.bu-focus .status-bar { display: none !important; }
-body.bu-hide-status-bar .status-bar { display: none !important; }
+body.bu-focus .status-bar { display: none; }
+body.bu-hide-status-bar .status-bar { display: none; }
 body.bu-hide-breadcrumbs .view-header-breadcrumb,
-body.bu-hide-breadcrumbs .view-header-breadcrumb-separator { display: none !important; }
-body.bu-hide-tab-close .workspace-tab-header-inner-close-button { display: none !important; }
-body.bu-hide-sidebar-toggle-left .sidebar-toggle-button.mod-left { display: none !important; }
-body.bu-hide-sidebar-toggle-right .sidebar-toggle-button.mod-right { display: none !important; }
-body.bu-hide-folder-arrow .nav-folder-title .tree-item-icon.collapse-icon { display: none !important; }
-body.bu-hide-prompt-instructions .prompt-instructions { display: none !important; }
+body.bu-hide-breadcrumbs .view-header-breadcrumb-separator { display: none; }
+body.bu-hide-tab-close .workspace-tab-header-inner-close-button { display: none; }
+body.bu-hide-sidebar-toggle-left .sidebar-toggle-button.mod-left { display: none; }
+body.bu-hide-sidebar-toggle-right .sidebar-toggle-button.mod-right { display: none; }
+body.bu-hide-folder-arrow .nav-folder-title .tree-item-icon.collapse-icon { display: none; }
+body.bu-hide-prompt-instructions .prompt-instructions { display: none; }
 
+/* ANIMATION SUITE — keyframes + bu-anim effects · then EFFECTS-MODE / MOBILE / @settings ═══════ */
+/* ───────────────────────────  ANIMATION & CRT-FX — keyframes, effects, focus line, mode/mobile overrides  ─────────────────────────── */
 @keyframes bu-poweron {
   0%   { opacity: 0; transform: scaleY(0.99); filter: brightness(0.18); }
   55%  { opacity: 1; filter: brightness(1.14); }
@@ -1973,8 +2314,28 @@ body.bu-anim :is(.workspace-tab-header, .clickable-icon, button, .nav-file-title
     box-shadow       var(--bu-t-fast) var(--bu-anim-ease);
 }
 
-body.bu-anim .mod-root .workspace-tab-header:not(.is-active):hover { transform: translateY(-1px); }
-body.bu-anim :is(.nav-file-title, .nav-folder-title, .tree-item-self.is-clickable, .nn-navitem, .nn-file):hover { transform: translateX(2px); }
+/* Rolodex tabs — active & hovered tabs grow bigger than the rest (anchored to the
+   bar so they rise into the headroom above); resting tabs keep their size. */
+.mod-root .workspace-tab-header { transform-origin: center bottom; position: relative; }
+body.bu-anim .mod-root .workspace-tab-header:hover { transform: scale(1.07); z-index: 6; }
+/* Active tab rests 5px taller than the rest (grows upward into the headroom). */
+body.bu-anim .mod-root .workspace-tab-header.is-active {
+  margin-top: -5px;
+  padding-top: 5px;
+  z-index: 5;
+}
+body.bu-anim .mod-root .workspace-tab-header.is-active:hover { transform: scale(1.04); }
+/* Rolodex file list (incl. Notebook Navigator) — hovered rows grow; the selected
+   row grows bigger still and casts a shadow (kept after hover so it stays big). */
+:is(.nn-navitem, .nn-file, .nav-file-title, .nav-folder-title, .tree-item-self) { transform-origin: left center; }
+body.bu-anim :is(.nav-file-title, .nav-folder-title, .tree-item-self.is-clickable, .nn-navitem, .nn-file):hover { transform: scale(1.05); position: relative; z-index: 3; }
+body.bu-anim :is(.nn-navitem, .nn-file).nn-selected,
+body.bu-anim .tree-item-self.is-active {
+  transform: scale(1.08);
+  position: relative;
+  z-index: 4;
+  filter: drop-shadow(0 4px 8px var(--bu-shadow));
+}
 body.bu-anim .clickable-icon:hover { transform: scale(1.1); }
 
 body.bu-anim.bu-poweron :is(.markdown-source-view.mod-cm6, .markdown-preview-view) {
@@ -2032,9 +2393,9 @@ body.bu-anim.bu-glow-pulse::after {
 
 body.bu-block-caret .cm-editor .cm-cursor,
 body.bu-block-caret .cm-editor .cm-cursor-primary {
-  border: none !important;
-  width: 0.62em !important;
-  background-color: var(--bu-accent) !important;
+  border: none;
+  width: 0.62em;
+  background-color: var(--bu-accent);
   opacity: 0.62;
 }
 
@@ -2047,7 +2408,7 @@ body.bu-anim.bu-hover-bloom :is(.clickable-icon, button:not(.mod-cta),
 @keyframes bu-line-sweep { from { background-position: 200% 0; } to { background-position: -200% 0; } }
 body.bu-anim.bu-line-scan .markdown-source-view.mod-cm6 .cm-line.cm-active {
   background-image: linear-gradient(90deg, transparent 20%,
-    color-mix(in srgb, var(--bu-accent) 9%, transparent) 50%, transparent 80%) !important;
+    color-mix(in srgb, var(--bu-accent) 9%, transparent) 50%, transparent 80%);
   background-size: 200% 100%;
   background-repeat: no-repeat;
   animation: bu-line-sweep calc(var(--bu-anim-speed, 600) * 6ms) linear infinite;
@@ -2073,6 +2434,14 @@ body.bu-focus-line .markdown-source-view.mod-cm6 .cm-line.cm-active::before {
   background: var(--bu-accent);
 }
 
+/* limelight — spotlight the active pane; dim every other note/sidebar leaf.
+   Hover a dimmed pane to peek without taking focus. */
+body.bu-limelight .workspace-leaf:not(.mod-active) {
+  opacity: 0.5;
+  transition: opacity var(--bu-t-slow, 500ms) var(--bu-anim-ease);
+}
+body.bu-limelight .workspace-leaf:not(.mod-active):hover { opacity: 1; }
+
 @keyframes bu-flicker {
   0%, 100% { filter: brightness(1); }
   6%  { filter: brightness(0.992); }
@@ -2086,24 +2455,6 @@ body.bu-focus-line .markdown-source-view.mod-cm6 .cm-line.cm-active::before {
 body.bu-anim.bu-flicker .markdown-source-view.mod-cm6 .cm-editor,
 body.bu-anim.bu-flicker .markdown-reading-view {
   animation: bu-flicker 4.2s linear infinite;
-}
-
-@keyframes bu-boot-sweep {
-  0%   { transform: translateY(-12vh); opacity: 0; }
-  10%  { opacity: 1; }
-  90%  { opacity: 1; }
-  100% { transform: translateY(112vh); opacity: 0; }
-}
-body.bu-anim.bu-boot-scan .workspace::before {
-  content: "";
-  position: fixed;
-  left: 0; right: 0; top: 0;
-  height: 3px;
-  z-index: 99999;
-  pointer-events: none;
-  background: color-mix(in srgb, var(--bu-accent) 85%, white);
-  box-shadow: 0 0 16px 3px color-mix(in srgb, var(--bu-accent) 55%, transparent);
-  animation: bu-boot-sweep calc(var(--bu-anim-speed, 600) * 1.8ms) var(--bu-anim-ease) both;
 }
 
 @keyframes bu-view-sweep {
@@ -2127,13 +2478,6 @@ body.bu-anim.bu-crossfade :is(.markdown-source-view.mod-cm6, .markdown-preview-v
   animation: bu-view-sweep calc(var(--bu-anim-speed, 600) * 1.4ms) var(--bu-anim-ease) both;
 }
 
-@keyframes bu-throb { 0% { transform: rotate(0); opacity: 0.5; } 50% { opacity: 1; } 100% { transform: rotate(360deg); opacity: 0.5; } }
-body.bu-anim.bu-throbber :is(.spinner, .loading-spinner) {
-  border-color: color-mix(in srgb, var(--bu-accent) 28%, transparent) !important;
-  border-top-color: var(--bu-accent) !important;
-  animation: bu-throb calc(var(--bu-anim-speed, 600) * 1.4ms) linear infinite !important;
-}
-
 @keyframes bu-check-pop {
   0%   { transform: scale(0.55); opacity: 0.4; box-shadow: 0 0 0 6px color-mix(in srgb, var(--bu-accent) 40%, transparent); }
   100% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 0 transparent; }
@@ -2142,8 +2486,6 @@ body.bu-anim.bu-check-anim input[type="checkbox"]:checked {
   animation: bu-check-pop calc(var(--bu-anim-speed, 600) * 0.6ms) var(--bu-anim-ease);
 }
 
-body.is-mobile.bu-anim-mobile-off * { transition: none !important; animation: none !important; }
-
 /* EFFECTS MODE — override layer (Custom = no override, your toggles apply).
    Low + Medium kill motion + CRT; Low also kills textures/glow. High = nothing
    suppressed. The individual toggles are never modified, so Custom preserves them. */
@@ -2151,19 +2493,64 @@ body:is(.bu-mode-low, .bu-mode-medium) *,
 body:is(.bu-mode-low, .bu-mode-medium) *::before,
 body:is(.bu-mode-low, .bu-mode-medium) *::after,
 body:is(.bu-mode-low, .bu-mode-medium)::before,
-body:is(.bu-mode-low, .bu-mode-medium)::after { animation: none !important; transition: none !important; }
+body:is(.bu-mode-low, .bu-mode-medium)::after { animation: none; transition: none; }
 body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-editor, .markdown-source-view.mod-cm6, .markdown-reading-view, .view-content)::before,
-body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-editor, .markdown-source-view.mod-cm6, .markdown-reading-view, .view-content)::after { display: none !important; }
-body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-line, .markdown-rendered p, .markdown-rendered li, .markdown-rendered pre code) { text-shadow: none !important; }
+body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-editor, .markdown-source-view.mod-cm6, .markdown-reading-view, .view-content)::after { display: none; }
+body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-line, .markdown-rendered p, .markdown-rendered li, .markdown-rendered pre code) { text-shadow: none; }
 body.bu-mode-low::before,
-body.bu-mode-low::after { display: none !important; }
-body.bu-mode-low .app-container { background-image: none !important; }
+body.bu-mode-low::after { display: none; }
+body.bu-mode-low .app-container { background-image: none; }
+
+/* ACCESSIBILITY — honor the OS "reduce motion" preference (toggle, default on).
+   Kills the whole animation suite and the scanning-line/sweep remnant. */
+@media (prefers-reduced-motion: reduce) {
+  body.bu-respect-motion *,
+  body.bu-respect-motion *::before,
+  body.bu-respect-motion *::after { animation: none; transition: none; }
+  body.bu-respect-motion .workspace-leaf-content[data-type="markdown"] .view-content::after { display: none; }
+}
+
+/* ============================================================
+   MOBILE — hard baseline, INDEPENDENT of Style Settings (whose bu-* classes vanish if the plugin
+   is disabled). Phones/tablets are fast + legible out of the box: no animation, film grain, panel
+   grain, scanlines, vignette, or heavy card shadows. Mobile-only — desktop is untouched.
+   ============================================================ */
+body.is-mobile *,
+body.is-mobile *::before,
+body.is-mobile *::after { animation: none; }
+body.is-mobile::before,
+body.is-mobile .app-container::after { display: none; }
+body.is-mobile .app-container { background-image: none; }
+body.is-mobile .markdown-source-view.mod-cm6 .cm-editor::after,
+body.is-mobile .markdown-reading-view::after,
+body.is-mobile .markdown-preview-view::after,
+body.is-mobile .workspace-leaf-content[data-type="markdown"] .view-content::after { display: none; }
+body.is-mobile .workspace-split.mod-root .workspace-leaf-content,
+body.is-mobile .mod-left-split .workspace-leaf-content,
+body.is-mobile .mod-right-split .workspace-leaf-content { box-shadow: none; }
+
+/* MOBILE — touch targets (≈ WCAG 2.5.5). Desktop density is too tight to tap reliably. */
+body.is-mobile .workspace-tab-header-inner,
+body.is-mobile .nav-action-button,
+body.is-mobile .view-action,
+body.is-mobile .clickable-icon { min-height: 40px; min-width: 40px; }
+body.is-mobile .nav-file-title,
+body.is-mobile .nav-folder-title,
+body.is-mobile .empty-state-action,
+body.is-mobile .menu-item,
+body.is-mobile .suggestion-item { min-height: 40px; display: flex; align-items: center; }
+body.is-mobile .setting-item { padding-top: 10px; padding-bottom: 10px; }
 
 /* @settings
 
 name: Bureau
 id: bureau
 settings:
+  - id: bu-reset-note
+    title: Reset all options
+    description: "To restore every Bureau setting to its default: open this Style Settings pane's header row and click the reset (↻ \"Reset all settings\") button. Every option below has a defined default, so the reset is clean."
+    type: info-text
+    markdown: true
   - id: bu-mode-heading
     title: Mode
     type: heading
@@ -2184,11 +2571,16 @@ settings:
         value: bu-mode-high
       - label: Custom
         value: bu-mode-custom
+  - id: bu-split-editor
+    title: Inverted editor (opposite palette to the chrome)
+    description: Render the editor pane in the OPPOSITE palette to the rest of the UI — paper page on dark chrome in dark mode, dark page on light chrome in light mode. Flip Obsidian's light/dark appearance to switch which is which (a theme can't change that mode itself).
+    type: class-toggle
+    default: false
   - id: bu-color-heading
     title: Color & accent
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-accent
     title: Accent preset
     description: Accent colour used across the whole UI and the glow.
@@ -2214,7 +2606,7 @@ settings:
     title: Atmosphere
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-glow-intensity
     title: Glow intensity
     description: Strength of the ambient accent glow at the bottom of the window (0 = off).
@@ -2231,17 +2623,22 @@ settings:
     min: 30
     max: 160
     step: 5
-  - id: bu-grain
-    title: Film grain
-    type: class-toggle
-    default: true
   - id: bu-grain-opacity
-    title: Grain intensity
+    title: Film grain
+    description: Fine noise over the whole window (0 = off).
     type: variable-number-slider
     default: 0.05
     min: 0
     max: 0.2
     step: 0.01
+  - id: bu-shadow-strength
+    title: Shadow strength
+    description: Depth of shadows on callouts, properties, cards, the editor and side panels (0 = off).
+    type: variable-number-slider
+    default: 50
+    min: 0
+    max: 100
+    step: 5
   - id: bu-panel-grain
     title: Sidebar texture
     description: Concrete grain on the side panels.
@@ -2254,15 +2651,11 @@ settings:
     min: 0
     max: 0.7
     step: 0.02
-  - id: bu-vignette
-    title: Vignette
-    description: Darkened window edges.
-    type: class-toggle
-    default: true
   - id: bu-vignette-amount
-    title: Vignette amount
+    title: Vignette
+    description: Darkened window edges — full ellipse in dark, top inverted-V (∧) in light (0 = off).
     type: variable-number-slider
-    default: 0.65
+    default: 0.5
     min: 0
     max: 0.9
     step: 0.05
@@ -2270,17 +2663,15 @@ settings:
     title: CRT
     type: heading
     level: 2
-    collapsed: false
-  - id: bu-scanlines
+    collapsed: true
+  - id: bu-scanline-strength
     title: CRT scanlines
-    description: Faint horizontal scanlines over the editor.
-    type: class-toggle
-    default: true
-  - id: bu-text-glow
-    title: CRT text glow
-    description: Phosphor-style glow on body text.
-    type: class-toggle
-    default: true
+    description: Darkness of the horizontal scanlines over the editor (0 = off).
+    type: variable-number-slider
+    default: 0.34
+    min: 0
+    max: 0.6
+    step: 0.02
   - id: bu-scanline-period
     title: Scanline spacing
     description: Pixels between scanlines (smaller = more lines).
@@ -2290,17 +2681,13 @@ settings:
     max: 10
     step: 1
   - id: bu-glow-text
-    title: Text glow brightness
+    title: CRT text glow
+    description: Phosphor-style glow on body text (0 = off).
     type: variable-number-slider
     default: 55
     min: 0
     max: 100
     step: 5
-  - id: bu-tooltip-type
-    title: Typewriter tooltips
-    description: Tooltips type in like a typewriter (single-line; turn off if long tooltips clip).
-    type: class-toggle
-    default: true
   - id: bu-fullscreen-crt
     title: Fullscreen CRT mode
     description: In fullscreen, add a curved CRT-glass vignette, amp scanlines/glow, and recede the chrome.
@@ -2323,7 +2710,7 @@ settings:
     title: Cards & layout
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-cards
     title: Cards layout
     description: Float every pane as a bordered card on a dark desk.
@@ -2352,12 +2739,82 @@ settings:
     min: 0
     max: 0.9
     step: 0.05
+  - id: bu-line-width-n
+    title: Reading line width
+    description: Max line width with "Readable line length" on, in pixels.
+    type: variable-number-slider
+    default: 800
+    min: 480
+    max: 1200
+    step: 10
+  - id: bu-line-height
+    title: Line height
+    description: Body text line spacing.
+    type: variable-number-slider
+    default: 1.5
+    min: 1.2
+    max: 2.2
+    step: 0.05
+  - id: bu-p-spacing-n
+    title: Paragraph spacing
+    description: Gap between paragraphs, in pixels.
+    type: variable-number-slider
+    default: 16
+    min: 0
+    max: 36
+    step: 1
+
+  - id: bu-float-heading
+    title: Floating & glass
+    description: Optional soft/floating looks layered over the brutalist base. All off by default — the standard theme is untouched.
+    type: heading
+    level: 2
+    collapsed: true
+  - id: bu-float
+    title: Heavier card float
+    description: Deeper, larger drop shadow so panes float higher off the desk (needs Cards layout on).
+    type: class-toggle
+    default: false
+  - id: bu-glass-cards
+    title: Frosted glass panes
+    description: Translucent, blurred editor and sidebar panes — the stage or your wallpaper shows through. Best paired with a custom background.
+    type: class-toggle
+    default: false
+  - id: bu-pill-chrome
+    title: Pill chrome
+    description: Round the breadcrumbs and window buttons into floating pills (Bureau already pills the tabs).
+    type: class-toggle
+    default: false
+  - id: bu-editor-only-cards
+    title: Editor-only cards (flush sidebars)
+    description: Only the editor floats as a card — strip the card border, rounding and shadow from the sidebars so they sit flush.
+    type: class-toggle
+    default: false
+  - id: bu-wallpaper
+    title: Custom background image
+    description: Show a wallpaper behind the workspace, best with Frosted glass. Paste the image URL into the field below.
+    type: class-toggle
+    default: false
+  - id: bu-wallpaper-url
+    title: Background image URL
+    description: The image, wrapped in url(...) — for example url('https://example.com/bg.jpg').
+    type: variable-text
+    default: none
+    quotes: false
+  - id: bu-wallpaper-dim
+    title: Background dim
+    description: Scrim over the wallpaper for legibility (higher = darker/more paper, lower = more image).
+    type: variable-number-slider
+    default: 30
+    min: 0
+    max: 92
+    step: 1
 
   - id: bu-tabs-heading
     title: Tabs
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-tab-shape
     title: Tab shape
     description: Folder = connected file-folder tabs. Pill = fully-rounded floating tabs.
@@ -2414,7 +2871,7 @@ settings:
     title: Hide / Focus
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-focus
     title: Focus Mode
     description: Hides the tab bar, window buttons & status bar. Bind a hotkey to "Style Settings → Toggle Focus Mode".
@@ -2453,7 +2910,7 @@ settings:
     title: Animation
     type: heading
     level: 2
-    collapsed: false
+    collapsed: true
   - id: bu-anim
     title: Animations
     description: Restrained, CRT-flavoured transitions. Turn off to disable all motion.
@@ -2527,193 +2984,72 @@ settings:
     title: CRT flicker (subtle)
     type: class-toggle
     default: false
-  - id: bu-boot-scan
-    title: Boot scan-sweep (at launch)
-    type: class-toggle
-    default: true
   - id: bu-crossfade
     title: Channel-change crossfade (note switch)
-    type: class-toggle
-    default: true
-  - id: bu-throbber
-    title: CRT loading throbber
     type: class-toggle
     default: true
   - id: bu-check-anim
     title: Eased checkbox tick
     type: class-toggle
     default: true
-  - id: bu-anim-mobile-off
-    title: MOBILE — disable animations
+  - id: bu-limelight
+    title: Limelight (spotlight active pane)
+    description: Dim every pane but the one you're working in — notes and sidebars. Hover a dimmed pane to peek.
     type: class-toggle
     default: false
+  - id: bu-respect-motion
+    title: Respect "reduce motion"
+    description: Honor the OS reduced-motion setting — disables animation when the system asks. (Phones/tablets are auto-lightened regardless — heavy effects are dropped on mobile by default.)
+    type: class-toggle
+    default: true
 
   - id: bu-daily-note
     title: Daily notes
-    description: Colors for daily notes, keyed to the weekday. Disable the "Daily Note Themes" snippet — Bureau owns this now.
+    description: One accent per weekday — text and background derive from it automatically (works in light and dark). Add a weekday class (monday, tuesday, …) to a note. Disable the old Daily Note Themes snippet — Bureau owns this now.
     type: heading
     level: 2
     collapsed: true
-  - id: bu-sun-head
-    title: Sunday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-sun-pri
-    title: Sunday — accent
+    title: Sunday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#9e6b86'
-  - id: bu-sun-hl
-    title: Sunday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#c6a3b5'
-  - id: bu-sun-bg
-    title: Sunday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#161114'
-  - id: bu-mon-head
-    title: Monday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-mon-pri
-    title: Monday — accent
+    title: Monday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#5b7a9e'
-  - id: bu-mon-hl
-    title: Monday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#a6b6c8'
-  - id: bu-mon-bg
-    title: Monday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#0f131a'
-  - id: bu-tue-head
-    title: Tuesday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-tue-pri
-    title: Tuesday — accent
+    title: Tuesday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#5e8d86'
-  - id: bu-tue-hl
-    title: Tuesday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#a4c2bc'
-  - id: bu-tue-bg
-    title: Tuesday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#0e1413'
-  - id: bu-wed-head
-    title: Wednesday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-wed-pri
-    title: Wednesday — accent
+    title: Wednesday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#836fa0'
-  - id: bu-wed-hl
-    title: Wednesday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#b6a9c9'
-  - id: bu-wed-bg
-    title: Wednesday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#131019'
-  - id: bu-thu-head
-    title: Thursday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-thu-pri
-    title: Thursday — accent
+    title: Thursday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#7c8597'
-  - id: bu-thu-hl
-    title: Thursday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#b2b8c4'
-  - id: bu-thu-bg
-    title: Thursday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#101216'
-  - id: bu-fri-head
-    title: Friday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-fri-pri
-    title: Friday — accent
+    title: Friday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#4f9a9a'
-  - id: bu-fri-hl
-    title: Friday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#9ec8c8'
-  - id: bu-fri-bg
-    title: Friday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#0c1515'
-  - id: bu-sat-head
-    title: Saturday
-    type: heading
-    level: 3
-    collapsed: true
   - id: bu-sat-pri
-    title: Saturday — accent
+    title: Saturday accent
     type: variable-color
     format: hex
     opacity: false
     default: '#8c5a7e'
-  - id: bu-sat-hl
-    title: Saturday — text
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#c0a0b6'
-  - id: bu-sat-bg
-    title: Saturday — background
-    type: variable-color
-    format: hex
-    opacity: false
-    default: '#151013'
 
 */

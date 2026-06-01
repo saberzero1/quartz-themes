@@ -211,8 +211,8 @@
   "kbd": {
     "background-color": "var(--code-background)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-interface)",
-    "font-size": "var(--font-ui-smaller)"
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
   },
   ".status-bar": {
     "background-color": "var(--background-primary)",
@@ -460,16 +460,20 @@
     "background-color": "var(--code-background)"
   },
   ".internal-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)",
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)",
     "max-width": "var(--max-width)",
     "width": "var(--line-width)"
   },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)",
+  ".markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)",
+    "max-width": "var(--max-width)",
+    "width": "var(--line-width)"
+  },
+  ".internal-embed.is-loaded.markdown-embed": {
+    "background-color": "var(--embed-background)",
+    "font-style": "var(--embed-font-style)",
     "max-width": "var(--max-width)",
     "width": "var(--line-width)"
   },

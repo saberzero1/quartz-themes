@@ -2338,13 +2338,13 @@
   },
   "--ogd-lg-row-active-bg": {
     "body:not(.is-mobile) .nav-file-title-content": ["--ogd-surface-tint-aqua"],
-    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
+    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
       "--ogd-surface-tint-aqua"
     ],
     "body:not(.is-mobile).theme-dark .nav-file-title-content": [
       "--ogd-surface-tint-aqua"
     ],
-    "body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
+    "body:not(.is-mobile).theme-dark .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
       "--ogd-surface-tint-aqua"
     ]
   },
@@ -2353,7 +2353,7 @@
       "--ogd-rim-active-low",
       "--ogd-surface-tint-aqua-soft"
     ],
-    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
+    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-children > .nav-file > .nav-file-title .nav-file-title-content": [
       "--ogd-rim-active-low",
       "--ogd-rim-active-low"
     ],
@@ -2740,17 +2740,17 @@
     ]
   },
   "--ogd-nav-hover-bg": {
-    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
+    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
       "--ogd-surface-transparent"
     ]
   },
   "--ogd-nav-hover-border": {
-    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
+    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
       "--ogd-surface-transparent"
     ]
   },
   "--ogd-nav-hover-shadow": {
-    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path*=\"/\"]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
+    "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-folder:has(> .nav-folder-title[data-path]):has(> .nav-folder-children > .nav-file .nav-file-title.is-active) > .nav-folder-title .nav-folder-title-content": [
       "--ogd-shadow-none"
     ]
   },

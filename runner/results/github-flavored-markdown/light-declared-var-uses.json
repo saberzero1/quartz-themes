@@ -453,6 +453,16 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "code": {
+    "background-color": "var(--bgColor-neutral-muted)",
+    "color": "var(--fgColor-default)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
+  },
+  "pre": { "background-color": "var(--bgColor-muted)" },
+  "pre:has(> code.language-mermaid)": {
+    "background-color": "var(--bgColor-muted)"
+  },
   "strong": {
     "color": "var(--bold-color)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
@@ -461,12 +471,6 @@
   "mark": {
     "background-color": "var(--text-highlight-bg)",
     "color": "var(--text-normal)"
-  },
-  "code": {
-    "background-color": "var(--bgColor-neutral-muted)",
-    "color": "var(--fgColor-default)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
   },
   "li[data-line=\"0\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -584,7 +588,15 @@
     "padding-bottom": "var(--list-spacing)",
     "padding-top": "var(--list-spacing)"
   },
-  "pre": { "background-color": "var(--bgColor-muted)" },
+  "li.task-list-item[data-task=\"S\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"I\"]": {
+    "padding-bottom": "var(--list-spacing)",
+    "padding-top": "var(--list-spacing)"
+  },
+  "li.task-list-item[data-task=\"X\"]": { "color": "var(--fgColor-default)" },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   ".multi-select-pill": {
     "background-color": "var(--pill-background)",

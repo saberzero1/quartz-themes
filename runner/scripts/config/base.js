@@ -13,7 +13,7 @@ export const entries = [
   {
     obsidianSelector: `div.mod-active.workspace-leaf`,
     publishSelector: null, //TODO
-    quartzSelector: `&[data-slug], &[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer`,
+    quartzSelector: `body[data-slug], body[data-slug] .page > div#quartz-body, .page > div#quartz-body div.center, .page > div#quartz-body footer`,
     pseudoElement: "",
     properties: ["background-color", "color"],
   },
@@ -28,7 +28,7 @@ export const entries = [
     obsidianSelector: `div.mod-horizontal.mod-left-split.mod-sidedock.workspace-split`,
     publishSelector: null, //TODO
     quartzSelector:
-      "&[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content",
+      "body[data-slug] div#quartz-root.page, .page > div#quartz-body div.sidebar.left, .page > div#quartz-body div.sidebar.left:has(.explorer), .page > div#quartz-body div.sidebar.left .explorer .explorer-content",
     pseudoElement: "",
     properties: ["background-color", "color"],
   },

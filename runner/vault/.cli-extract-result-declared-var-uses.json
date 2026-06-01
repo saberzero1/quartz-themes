@@ -12,6 +12,7 @@
     "background-color": "var(--tab-container-background)"
   },
   "hr.workspace-leaf-resize-handle": {
+    "background-color": "var(--background-secondary-alt)",
     "height": "var(--divider-vertical-height)",
     "width": "var(--divider-width-hover)"
   },
@@ -81,28 +82,26 @@
   },
   ".search-result-file-matched-text": {
     "background-color": "var(--text-highlight-bg)",
-    "color": "var(--text-normal)"
+    "color": "var(--white-dim)"
   },
   ".search-result-file-match": {
     "cursor": "var(--cursor)"
   },
   "div.inline-title": {
-    "color": "var(--col-pr-txt-title)",
+    "color": "var(--inline-title-color)",
     "font-family": "var(--inline-title-font)",
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "letter-spacing": "var(--letterspacing-pr-headers)",
     "line-height": "var(--inline-title-line-height)",
     "margin-block-end": "var(--inline-title-margin-bottom)"
   },
   ".inline-title": {
-    "color": "var(--col-pr-txt-title)",
+    "color": "var(--inline-title-color)",
     "font-family": "var(--inline-title-font)",
     "font-size": "var(--inline-title-size)",
     "font-style": "var(--inline-title-style)",
     "font-weight": "var(--inline-title-weight)",
-    "letter-spacing": "var(--letterspacing-pr-headers)",
     "line-height": "var(--inline-title-line-height)",
     "margin-block-end": "var(--inline-title-margin-bottom)"
   },
@@ -150,10 +149,6 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  ".nav-file-title-content": {
-    "color": "var(--col-txt-files)",
-    "font-size": "var(--files-font-size)"
-  },
   ".nav-file-title": {
     "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
@@ -163,25 +158,25 @@
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
-    "color": "var(--col-txt-titles)",
+    "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-size": "var(--folders-font-size)",
+    "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]": {
-    "color": "var(--col-txt-titles)",
+    "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-size": "var(--folders-font-size)",
+    "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
     "margin-bottom": "var(--nav-item-margin-bottom)"
   },
   "div.is-clickable.mod-collapsible.tree-item-self": {
-    "color": "var(--col-txt-titles)",
+    "color": "var(--nav-item-color)",
     "cursor": "var(--cursor)",
-    "font-size": "var(--folders-font-size)",
+    "font-size": "var(--nav-item-size)",
     "font-weight": "var(--nav-item-weight)",
     "line-height": "var(--line-height-tight)",
     "margin-bottom": "var(--nav-item-margin-bottom)"
@@ -191,7 +186,6 @@
     "padding-inline-start": "var(--nav-item-children-padding-start, var(--nav-item-children-padding-left))"
   },
   ".nav-files-container": {
-    "background-color": "var(--col-bckg-mainpanels)",
     "padding-bottom": "max(var(--safe-area-inset-bottom), var(--size-4-6))"
   },
   ".graph-controls": {
@@ -210,7 +204,7 @@
     "cursor": "var(--cursor)"
   },
   ".clickable-icon": {
-    "color": "var(--col-icons)",
+    "color": "var(--icon-color)",
     "cursor": "var(--cursor)"
   },
   ".clickable-icon svg": {
@@ -226,7 +220,7 @@
     "background-color": "var(--background-secondary)"
   },
   ".workspace-tab-header-container": {
-    "background-color": "var(--col-txt-titlebars)",
+    "background-color": "var(--tab-container-background)",
     "padding-left": "calc(var(--size-4-2) + var(--frame-left-space))",
     "padding-right": "var(--size-4-2)",
     "height": "var(--header-height)"

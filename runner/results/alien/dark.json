@@ -1096,8 +1096,8 @@
     "outline": "rgb(204, 214, 210) none 0px",
     "outline-color": "rgb(204, 214, 210)",
     "text-decoration-color": "rgb(204, 214, 210)",
-    "transition": "background-color 0.1s, color 0.1s",
-    "transition-delay": "0s, 0s"
+    "transition": "background-color 0.1s, color 0.1s, box-shadow 0.12s",
+    "transition-delay": "0s, 0s, 0s"
   },
   ".nav-file-title-content": {
     "--bases-table-header-background": "#0a1014",
@@ -3265,8 +3265,8 @@
     "outline": "rgb(204, 214, 210) none 0px",
     "outline-color": "rgb(204, 214, 210)",
     "text-decoration-color": "rgb(204, 214, 210)",
-    "transition": "background-color 0.1s, color 0.1s",
-    "transition-delay": "0s, 0s"
+    "transition": "background-color 0.1s, color 0.1s, box-shadow 0.12s",
+    "transition-delay": "0s, 0s, 0s"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]::before": {
     "--bases-table-header-background": "#0a1014",
@@ -3322,8 +3322,8 @@
     "outline": "rgb(204, 214, 210) none 0px",
     "outline-color": "rgb(204, 214, 210)",
     "text-decoration-color": "rgb(204, 214, 210)",
-    "transition": "background-color 0.1s, color 0.1s",
-    "transition-delay": "0s, 0s"
+    "transition": "background-color 0.1s, color 0.1s, box-shadow 0.12s",
+    "transition-delay": "0s, 0s, 0s"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]::before": {
     "--bases-table-header-background": "#0a1014",
@@ -3379,8 +3379,8 @@
     "outline": "rgb(204, 214, 210) none 0px",
     "outline-color": "rgb(204, 214, 210)",
     "text-decoration-color": "rgb(204, 214, 210)",
-    "transition": "background-color 0.1s, color 0.1s",
-    "transition-delay": "0s, 0s"
+    "transition": "background-color 0.1s, color 0.1s, box-shadow 0.12s",
+    "transition-delay": "0s, 0s, 0s"
   },
   "div.is-clickable.mod-collapsible.tree-item-self::before": {
     "--bases-table-header-background": "#0a1014",

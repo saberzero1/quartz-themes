@@ -79,10 +79,6 @@
     "font-size": "var(--font-ui-small)",
     "height": "var(--input-height)"
   },
-  ".workspace-leaf-content[data-type=\"search\"]": {
-    "background-color": "var(--bu-bg)",
-    "box-shadow": "0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55))"
-  },
   ".search-result-file-matched-text": {
     "background-color": "var(--text-highlight-bg)",
     "color": "var(--text-normal)"
@@ -120,10 +116,6 @@
     "position": "var(--status-bar-position)"
   },
   ".view-header-title": { "color": "var(--text-normal)" },
-  ".workspace-leaf-content": {
-    "background-color": "var(--bu-bg)",
-    "box-shadow": "0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55))"
-  },
   "input[type=\"checkbox\"]": {
     "background-color": "var(--cn-bg-tertiary)",
     "color": "var(--cn-text-primary)",
@@ -206,6 +198,10 @@
     "cursor": "var(--cursor)"
   },
   ".status-bar-item": { "cursor": "var(--cursor)" },
+  ".nav-header": {
+    "border-image-source": "linear-gradient(to right, transparent, var(--crema), transparent)",
+    "color": "var(--text-accent)"
+  },
   ".clickable-icon": {
     "color": "var(--icon-color)",
     "cursor": "var(--cursor)"

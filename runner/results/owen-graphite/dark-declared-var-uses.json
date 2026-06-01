@@ -39,7 +39,6 @@
     "transform": "translateX(calc(var(--size-4-1) * -1 * var(--direction)))",
     "max-width": "var(--metadata-max-width)"
   },
-  ".metadata-properties": { "font-family": "var(--font-text)" },
   ".metadata-container .metadata-property": {
     "background-color": "var(--metadata-property-background)",
     "box-shadow": "var(--metadata-property-box-shadow)"
@@ -186,7 +185,6 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
-  ".nav-file-title-content": { "color": "var(--ogd-line-strong, #cbd5e1)" },
   ".nav-file-title": {
     "color": "var(--ogd-text-secondary, #374151)",
     "cursor": "var(--cursor)",
@@ -223,7 +221,6 @@
     "margin-inline-start": "var(--nav-item-children-margin-start, var(--nav-item-children-margin-left))",
     "padding-inline-start": "var(--nav-item-children-padding-start, var(--nav-item-children-padding-left))"
   },
-  ".nav-folder-title-content": { "color": "var(--ogd-line-strong, #cbd5e1)" },
   ".nav-files-container": {
     "box-shadow": "var(--ogd-shadow-none, none)",
     "padding-bottom": "max(var(--safe-area-inset-bottom), var(--size-4-6))"
@@ -429,6 +426,8 @@
   },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   "figcaption": { "color": "var(--ogd-text-soft, #94a3b8)" },
+  ".nav-file-title-content": { "color": "var(--ogd-line-strong, #cbd5e1)" },
+  ".nav-folder-title-content": { "color": "var(--ogd-line-strong, #cbd5e1)" },
   ".graph-control-section": {
     "backdrop-filter": "var(--ogd-glass-filter-soft, blur(14px) saturate(155%))"
   },

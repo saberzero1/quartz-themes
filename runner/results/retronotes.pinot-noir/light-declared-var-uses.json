@@ -362,6 +362,7 @@
     "background-color": "color-mix(in oklch, var(--callout-color) 10%, transparent)"
   },
   "svg.lucide-info.svg-icon": {
+    "color": "var(--secondary-ink-muted)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
@@ -437,6 +438,16 @@
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
   },
+  "code": {
+    "background-color": "var(--code-background)",
+    "color": "var(--code-normal)",
+    "font-family": "var(--font-monospace)",
+    "font-size": "var(--code-size)"
+  },
+  "pre": { "background-color": "var(--code-background)" },
+  "pre:has(> code.language-mermaid)": {
+    "background-color": "var(--code-background)"
+  },
   "strong": {
     "color": "var(--bold-color)",
     "font-weight": "calc(var(--font-weight) + var(--bold-modifier))"
@@ -445,12 +456,6 @@
   "mark": {
     "background-color": "var(--text-highlight-bg)",
     "color": "var(--text-normal)"
-  },
-  "code": {
-    "background-color": "var(--code-background)",
-    "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)"
   },
   "li[data-line=\"0\"]": {
     "padding-bottom": "var(--list-spacing)",
@@ -572,7 +577,6 @@
   "li.task-list-item[data-task=\"X\"]": {
     "color": "var(--checklist-done-color)"
   },
-  "pre": { "background-color": "var(--code-background)" },
   "figure": { "box-shadow": "var(--ec-frm-frameBoxShdCssVal)" },
   ".multi-select-pill": {
     "background-color": "var(--pill-background)",

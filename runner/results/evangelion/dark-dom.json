@@ -2863,7 +2863,7 @@
   },
   "search": {
     "tag": "div",
-    "classes": ["search-input-container", "global-search-input-container"],
+    "classes": ["search-input-container"],
     "attrs": {},
     "styles": {
       "color": "rgb(225, 214, 248)",
@@ -2872,7 +2872,7 @@
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
-    "childCount": 3,
+    "childCount": 2,
     "children": [
       {
         "tag": "input",
@@ -2906,120 +2906,6 @@
         },
         "childCount": 0,
         "children": []
-      },
-      {
-        "tag": "div",
-        "classes": ["input-right-decorator", "clickable-icon"],
-        "attrs": { "aria-label": "Match case" },
-        "styles": {
-          "color": "rgb(212, 212, 212)",
-          "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(212, 212, 212)",
-          "fill": "rgb(0, 0, 0)",
-          "stroke": "none"
-        },
-        "childCount": 1,
-        "children": [
-          {
-            "tag": "svg",
-            "classes": ["svg-icon", "uppercase-lowercase-a"],
-            "attrs": {
-              "xmlns": "http://www.w3.org/2000/svg",
-              "width": "24",
-              "height": "24",
-              "viewBox": "0 0 24 24",
-              "fill": "none",
-              "stroke": "currentColor",
-              "stroke-width": "2",
-              "stroke-linecap": "round",
-              "stroke-linejoin": "round"
-            },
-            "styles": {
-              "color": "rgb(212, 212, 212)",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(212, 212, 212)",
-              "fill": "rgb(40, 22, 59)",
-              "stroke": "rgb(135, 255, 95)"
-            },
-            "childCount": 5,
-            "children": [
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M10.5 14L4.5 14" },
-                "styles": {
-                  "color": "rgb(212, 212, 212)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(212, 212, 212)",
-                  "fill": "rgb(40, 22, 59)",
-                  "stroke": "rgb(135, 255, 95)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M12.5 18L7.5 6" },
-                "styles": {
-                  "color": "rgb(212, 212, 212)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(212, 212, 212)",
-                  "fill": "rgb(40, 22, 59)",
-                  "stroke": "rgb(135, 255, 95)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": { "d": "M3 18L7.5 6" },
-                "styles": {
-                  "color": "rgb(212, 212, 212)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(212, 212, 212)",
-                  "fill": "rgb(40, 22, 59)",
-                  "stroke": "rgb(135, 255, 95)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": {
-                  "d": "M15.9526 10.8322C15.9526 10.8322 16.6259 10 18.3832 10C20.1406 9.99999 20.9986 11.0587 20.9986 11.9682V16.7018C20.9986 17.1624 21.2815 17.7461 21.7151 18"
-                },
-                "styles": {
-                  "color": "rgb(212, 212, 212)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(212, 212, 212)",
-                  "fill": "rgb(40, 22, 59)",
-                  "stroke": "rgb(135, 255, 95)"
-                },
-                "childCount": 0,
-                "children": []
-              },
-              {
-                "tag": "path",
-                "classes": [],
-                "attrs": {
-                  "d": "M20.7151 13.5C18.7151 13.5 15.7151 14.2837 15.7151 16C15.7151 17.7163 17.5908 18.2909 18.7151 18C19.5635 17.7804 20.5265 17.3116 20.889 16.6199"
-                },
-                "styles": {
-                  "color": "rgb(212, 212, 212)",
-                  "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(212, 212, 212)",
-                  "fill": "rgb(40, 22, 59)",
-                  "stroke": "rgb(135, 255, 95)"
-                },
-                "childCount": 0,
-                "children": []
-              }
-            ]
-          }
-        ]
       }
     ]
   },
@@ -3042,7 +2928,7 @@
         "attrs": {},
         "styles": {
           "color": "rgb(212, 212, 212)",
-          "backgroundColor": "rgba(251, 70, 76, 0.1)",
+          "backgroundColor": "oklch(0.652195 0.158509 2.12036 / 0.1)",
           "borderColor": "rgb(212, 212, 212)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"

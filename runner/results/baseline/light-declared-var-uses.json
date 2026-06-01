@@ -342,8 +342,8 @@
     "background-color": "var(--background-secondary)",
     "box-shadow": "var(--shadow-tactile)",
     "color": "var(--text-muted)",
-    "font-family": "var(--font-interface)",
-    "font-size": "var(--font-ui-smaller)"
+    "font-family": "var(--font-text)",
+    "font-size": "var(--code-size)"
   },
   ".footnotes": { "font-size": "var(--footnote-size)" },
   "input[type=\"checkbox\"]:checked": {
@@ -618,11 +618,6 @@
     "font-style": "var(--embed-font-style)",
     "max-height": "var(--embed-max-height)"
   },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "color": "var(--text-muted)",
-    "font-size": "var(--font-smaller)"
-  },
   ".markdown-embed": {
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)"
@@ -631,6 +626,11 @@
     "background-color": "var(--embed-background)",
     "font-style": "var(--embed-font-style)",
     "max-height": "var(--embed-max-height)"
+  },
+  ".file-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "color": "var(--text-muted)",
+    "font-size": "var(--font-smaller)"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "color": "var(--text-faint)",

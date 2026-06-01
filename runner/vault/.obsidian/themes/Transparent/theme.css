@@ -302,7 +302,7 @@ div.setting-item[data-id="info-section"] {
   margin-bottom: 1.5em;
 }
 
-.style-settings-container {
+body:not(.enchanted-animations-present) .style-settings-container {
   padding-bottom: 0px;
   transform-origin: top center;
   animation: st-open 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -760,7 +760,7 @@ body.theme-dark .prompt {
   background-color: var(--overlay-color);
 }
 
-body:not(.is-mobile) .prompt {
+body:not(.is-mobile):not(.enchanted-animations-present) .prompt {
   animation: promptSlideUp var(--anim-duration-moderate) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
@@ -779,12 +779,12 @@ body:not(.is-mobile) .prompt {
 /* ==================== Mobile menu & prompt animations ==================== */
 /* is-mobile covers both phone and tablet */
 /* 750ms suits better here, but will be refined in a future update */
-.is-phone .menu {
+body.is-phone:not(.enchanted-animations-present) .menu {
   /* phone only — on tablet this animation looks poor */
   animation: tr-mobile-slide-up var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.is-mobile .prompt {
+body.is-mobile:not(.enchanted-animations-present) .prompt {
   animation: tr-mobile-slide-up var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -802,12 +802,12 @@ body:not(.is-mobile) .prompt {
   }
 }
 
-body.is-phone .modal.mod-settings .vertical-tab-content-container {
+body.is-phone:not(.enchanted-animations-present) .modal.mod-settings .vertical-tab-content-container {
   --slide-start: 30px;
   animation: tr-settings-slide var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-body.is-phone .modal.mod-settings .vertical-tab-header {
+body.is-phone:not(.enchanted-animations-present) .modal.mod-settings .vertical-tab-header {
   --slide-start: -30px;
   animation: tr-settings-slide var(--anim-duration-slow) cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -922,7 +922,7 @@ select.dropdown option {
   backdrop-filter: blur(2px);
 }
 
-.notice {
+body:not(.enchanted-animations-present) .notice {
   background-color: var(--tr);
   -webkit-backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
   backdrop-filter: brightness(var(--brightness)) blur(var(--ui-blur));
@@ -931,7 +931,7 @@ select.dropdown option {
 }
 
 /* ==================== Notice animation ==================== */
-.is-phone .notice {
+body.is-phone:not(.enchanted-animations-present) .notice {
   animation: tr-notice-in-mobile 1000ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1428,12 +1428,12 @@ body.default-sync-error .sync-status-icon.mod-error {
 }
 
 /* Settings Modal Open Animation – enabled by default, can be disabled via Style Settings */
-body:not(.disable-modal-animation) .modal {
+body:not(.disable-modal-animation):not(.enchanted-animations-present) .modal {
   animation: modal-open calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
 /* Modal Background Dimming */
-body:not(.disable-modal-animation) .modal-bg {
+body:not(.disable-modal-animation):not(.enchanted-animations-present) .modal-bg {
   animation: modal-bg-fade calc(var(--animationspeed) * 0.7) cubic-bezier(0.2, 0, 0, 1) forwards;
 }
 
@@ -1531,8 +1531,8 @@ body.preset-orange .workspace-leaf.mod-active .workspace-leaf-content[data-type=
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
 body.animate-note-open .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view,
 /* mod-active re-fires animation when switching note from the left file panel */
-body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
-body.animate-note-open .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
+body.animate-note-open:not(.enchanted-animations-present) .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-reading-view,
+body.animate-note-open:not(.enchanted-animations-present) .workspace-leaf.mod-active .workspace-leaf-content[data-type="markdown"]>.view-content>.markdown-source-view {
   animation: tr-note-fade-in var(--anim-duration-moderate) cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1553,7 +1553,7 @@ body.no-animation *::after {
 /* this is not my code in general it is inspired by */
 /* Benjamin Fernandez - github.com/benfernandezmedia */
 
-body:not(.disable-splash-screen):not(.no-animation)::before {
+body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present)::before {
   content: "";
   position: fixed;
   inset: 0;
@@ -1563,7 +1563,7 @@ body:not(.disable-splash-screen):not(.no-animation)::before {
   animation: splashFade 2.5s ease forwards;
 }
 
-body:not(.disable-splash-screen):not(.no-animation) .workspace {
+body:not(.disable-splash-screen):not(.no-animation):not(.enchanted-animations-present) .workspace {
   animation: vaultReveal 1.2s ease 1.2s backwards;
 }
 
@@ -1598,7 +1598,7 @@ body:not(.disable-splash-screen):not(.no-animation) .workspace {
 
 /* ===================== Header Animations ===================== */
 
-body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
+body:not(.disable-header-animations) body:not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.HyperMD-header .cm-formatting-header {
   position: absolute;
   top: auto;
   animation: materialPopHeader 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
@@ -1677,7 +1677,7 @@ body:not(.disable-header-animations) .markdown-source-view.mod-cm6 .cm-line.cm-a
 /* Animates inline markers on the active line.
   Excludes headings, list items, checkboxes, and multi-line code blocks.
 */
-body:not(.disable-formatting-animations) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header):not(.cm-formatting-list):not(.cm-formatting-task) {
+body:not(.disable-formatting-animations):not(.enchanted-animations-present) .markdown-source-view.mod-cm6 .cm-line.cm-active:not(.HyperMD-codeblock) .cm-formatting:not(.cm-formatting-header):not(.cm-formatting-list):not(.cm-formatting-task) {
   display: inline-block;
   vertical-align: baseline;
   line-height: 0;
