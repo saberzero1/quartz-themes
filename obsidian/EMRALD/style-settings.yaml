@@ -1,0 +1,61 @@
+mode: replace
+sections:
+  - name: Emrald
+    id: emrald-theme
+    collapsed: false
+    settings:
+      - id: emrald-dark-contrast
+        title: Dark Mode Surface Contrast
+        description: Choose whether the editor or side panels feel slightly darker.
+        type: class-select
+        allowEmpty: false
+        default: emrald-dark-editor-lighter
+        options:
+          - label: Editor lighter / side panels darker
+            value: emrald-dark-editor-lighter
+          - label: Editor darker / side panels lighter
+            value: emrald-dark-editor-darker
+      - id: emrald-light-gold
+        title: Light Mode Gold Intensity
+        description: Keep the warmer gold pop, or soften it for a more restrained paper look.
+        type: class-select
+        allowEmpty: false
+        default: emrald-light-gold-rich
+        options:
+          - label: Rich gold
+            value: emrald-light-gold-rich
+          - label: Soft gold
+            value: emrald-light-gold-soft
+      - id: emrald-header-style
+        title: Header Accent Style
+        description: Keep the H4 gold break or run a full emerald cascade.
+        type: class-select
+        allowEmpty: false
+        default: emrald-header-h4-gold
+        options:
+          - label: H4 gold break
+            value: emrald-header-h4-gold
+          - label: All-emerald cascade
+            value: emrald-header-all-emerald
+      - id: emrald-link-emphasis
+        title: Link Emphasis
+        description: Increase how much links stand out, especially in light mode.
+        type: class-select
+        allowEmpty: false
+        default: emrald-links-balanced
+        options:
+          - label: Balanced
+            value: emrald-links-balanced
+          - label: Stronger
+            value: emrald-links-strong
+      - id: emrald-dark-text-warmth
+        title: Dark Mode Text Warmth
+        description: Soften dark-mode text from cool white to warm parchment.
+        type: class-select
+        allowEmpty: false
+        default: emrald-dark-text-default
+        options:
+          - label: Default (cool)
+            value: emrald-dark-text-default
+          - label: Warm parchment
+            value: emrald-dark-text-warm

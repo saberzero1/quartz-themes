@@ -43,6 +43,10 @@ import {
 import { entries as basesEntries, aspect as basesAspect } from "./bases.js";
 import { entries as canvasEntries, aspect as canvasAspect } from "./canvas.js";
 import { entries as graphEntries, aspect as graphAspect } from "./graph.js";
+import {
+  entries as headingsEntries,
+  aspect as headingsAspect,
+} from "./headings.js";
 import { entries as footerEntries, aspect as footerAspect } from "./footer.js";
 import {
   entries as recentNotesEntries,
@@ -87,6 +91,7 @@ const aspectModules = [
   { entries: basesEntries, aspect: basesAspect },
   { entries: canvasEntries, aspect: canvasAspect },
   { entries: graphEntries, aspect: graphAspect },
+  { entries: headingsEntries, aspect: headingsAspect },
   { entries: footerEntries, aspect: footerAspect },
   { entries: recentNotesEntries, aspect: recentNotesAspect },
   { entries: listPageEntries, aspect: listPageAspect },

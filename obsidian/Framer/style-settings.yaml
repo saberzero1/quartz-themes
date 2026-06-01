@@ -6,7 +6,7 @@ sections:
     settings:
       - id: framer-info
         title: Framer Design System
-        description: A clean black-and-white theme inspired by Framer's design system, with vivid blue accents and smooth transitions.
+        description: A clean theme inspired by Framer's design system, with pink accents (dark) and rose gold accents (light), and smooth transitions.
         type: info-text
         markdown: true
       - id: appearance

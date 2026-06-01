@@ -1784,10 +1784,10 @@ body body.theme-dark .backlink-pane {
   border-bottom-right-radius: 0px;
   padding-top: var(--size-4-1);
   padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-block-end: 32px;
-  padding-block-start: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 6px;
+  padding-block-start: 6px;
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
 }
@@ -3293,10 +3293,10 @@ body body.theme-dark .callout[data-callout="note"] {
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
   padding: 18px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
-  padding-inline-end: 12px;
-  padding-inline-start: 24px;
+  padding-block-end: 18px;
+  padding-block-start: 18px;
+  padding-inline-end: 18px;
+  padding-inline-start: 18px;
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
   background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
@@ -3304,7 +3304,7 @@ body body.theme-dark .callout[data-callout="note"] {
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3361,7 +3361,7 @@ body body.theme-dark .callout[data-callout="abstract"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3402,7 +3402,7 @@ body body.theme-dark .callout[data-callout="info"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="info"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3443,7 +3443,7 @@ body body.theme-dark .callout[data-callout="todo"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="todo"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3484,7 +3484,7 @@ body body.theme-dark .callout[data-callout="tip"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="tip"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3525,7 +3525,7 @@ body body.theme-dark .callout[data-callout="success"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="success"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3566,7 +3566,7 @@ body body.theme-dark .callout[data-callout="question"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="question"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3607,7 +3607,7 @@ body body.theme-dark .callout[data-callout="warning"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="warning"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3648,7 +3648,7 @@ body body.theme-dark .callout[data-callout="danger"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="danger"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3689,7 +3689,7 @@ body body.theme-dark .callout[data-callout="failure"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="failure"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3730,7 +3730,7 @@ body body.theme-dark .callout[data-callout="bug"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="bug"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3771,7 +3771,7 @@ body body.theme-dark .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="example"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -3812,7 +3812,7 @@ body body.theme-dark .callout[data-callout="quote"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="quote"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: #027aff;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(2, 122, 255);
@@ -4290,9 +4290,9 @@ body body.theme-dark .graph-view-container {
   background-color: var(--background-secondary);
   color: rgb(218, 218, 218);
   border: 1px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   border-bottom-right-radius: 8px;
 }
 body body.theme-dark .clickable-icon {
@@ -4305,6 +4305,180 @@ body body.theme-dark .clickable-icon {
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+body body.theme-dark h1 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 700;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h2 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 680;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h3 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 660;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h4 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 640;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h5 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 620;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h6 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark .site-footer {
   background-color: var(--status-bar-background);

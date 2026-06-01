@@ -1,0 +1,19 @@
+mode: replace
+sections:
+  - name: retro-larper
+    id: retro-larper
+    collapsed: false
+    settings:
+      - id: retro-larper-palette
+        title: Phosphor palette
+        description: Pick a classic CRT phosphor color.
+        type: class-select
+        allowEmpty: false
+        default: retro-larper-green
+        options:
+          - label: Amber
+            value: retro-larper-amber
+          - label: Green
+            value: retro-larper-green
+          - label: Ice
+            value: retro-larper-ice

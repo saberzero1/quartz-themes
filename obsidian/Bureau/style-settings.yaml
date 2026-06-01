@@ -1,0 +1,575 @@
+mode: replace
+sections:
+  - name: Bureau
+    id: bureau
+    collapsed: false
+    settings:
+      - id: bu-mode-heading
+        title: Mode
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-mode
+        title: Effects mode
+        description: Quick preset. Low = base styling only · Medium = + textures & glow · High = everything on · Custom = use the toggles below. Your toggles are always preserved — Custom restores them.
+        type: class-select
+        default: bu-mode-custom
+        allowEmpty: false
+        options:
+          - label: Low
+            value: bu-mode-low
+          - label: Medium
+            value: bu-mode-medium
+          - label: High
+            value: bu-mode-high
+          - label: Custom
+            value: bu-mode-custom
+      - id: bu-color-heading
+        title: Color & accent
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-accent
+        title: Accent preset
+        description: Accent colour used across the whole UI and the glow.
+        type: variable-select
+        default: var(--bu-control)
+        options:
+          - label: Control (red)
+            value: var(--bu-control)
+          - label: Magnus (green)
+            value: var(--bu-magnus)
+          - label: Deus (gold)
+            value: var(--bu-deus)
+          - label: Custom
+            value: var(--bu-accent-custom)
+      - id: bu-accent-custom
+        title: Custom accent
+        description: Used when Accent preset is set to Custom.
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#e23b2c'
+        alt-format: []
+      - id: bu-atmos-heading
+        title: Atmosphere
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-glow-intensity
+        title: Glow intensity
+        description: Strength of the ambient accent glow at the bottom of the window (0 = off).
+        type: variable-number-slider
+        default: 13
+        min: 0
+        max: 40
+        step: 1
+      - id: bu-glow-reach
+        title: Glow reach
+        description: How far up the window the glow rises.
+        type: variable-number-slider
+        default: 95
+        min: 30
+        max: 160
+        step: 5
+      - id: bu-grain
+        title: Film grain
+        type: class-toggle
+        default: true
+      - id: bu-grain-opacity
+        title: Grain intensity
+        type: variable-number-slider
+        default: 0.05
+        min: 0
+        max: 0.2
+        step: 0.01
+      - id: bu-panel-grain
+        title: Sidebar texture
+        description: Concrete grain on the side panels.
+        type: class-toggle
+        default: true
+      - id: bu-panel-grain-amount
+        title: Sidebar texture strength
+        type: variable-number-slider
+        default: 0.38
+        min: 0
+        max: 0.7
+        step: 0.02
+      - id: bu-vignette
+        title: Vignette
+        description: Darkened window edges.
+        type: class-toggle
+        default: true
+      - id: bu-vignette-amount
+        title: Vignette amount
+        type: variable-number-slider
+        default: 0.65
+        min: 0
+        max: 0.9
+        step: 0.05
+      - id: bu-crt-heading
+        title: CRT
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-scanlines
+        title: CRT scanlines
+        description: Faint horizontal scanlines over the editor.
+        type: class-toggle
+        default: true
+      - id: bu-text-glow
+        title: CRT text glow
+        description: Phosphor-style glow on body text.
+        type: class-toggle
+        default: true
+      - id: bu-scanline-period
+        title: Scanline spacing
+        description: Pixels between scanlines (smaller = more lines).
+        type: variable-number-slider
+        default: 3
+        min: 2
+        max: 10
+        step: 1
+      - id: bu-glow-text
+        title: Text glow brightness
+        type: variable-number-slider
+        default: 55
+        min: 0
+        max: 100
+        step: 5
+      - id: bu-tooltip-type
+        title: Typewriter tooltips
+        description: Tooltips type in like a typewriter (single-line; turn off if long tooltips clip).
+        type: class-toggle
+        default: true
+      - id: bu-fullscreen-crt
+        title: Fullscreen CRT mode
+        description: In fullscreen, add a curved CRT-glass vignette, amp scanlines/glow, and recede the chrome.
+        type: class-toggle
+        default: true
+      - id: bu-focus-line
+        title: Focus line (dim the rest)
+        description: Dim every line but the one you're editing and mark it with an accent edge.
+        type: class-toggle
+        default: false
+      - id: bu-focus-dim
+        title: Focus dim amount
+        description: How dark the off-focus lines get (lower = dimmer).
+        type: variable-number-slider
+        default: 0.4
+        min: 0.15
+        max: 0.75
+        step: 0.05
+      - id: bu-cards-heading
+        title: Cards & layout
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-cards
+        title: Cards layout
+        description: Float every pane as a bordered card on a dark desk.
+        type: class-toggle
+        default: true
+      - id: bu-card-gap-n
+        title: Card gap
+        description: Space between cards, in pixels.
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 30
+        step: 1
+      - id: bu-card-radius-n
+        title: Card rounding
+        description: Corner radius, in pixels.
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 28
+        step: 1
+      - id: bu-card-shadow
+        title: Card shadow darkness
+        type: variable-number-slider
+        default: 0.55
+        min: 0
+        max: 0.9
+        step: 0.05
+      - id: bu-tabs-heading
+        title: Tabs
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-tab-shape
+        title: Tab shape
+        description: Folder = connected file-folder tabs. Pill = fully-rounded floating tabs.
+        type: class-select
+        default: bu-tabs-folder
+        allowEmpty: false
+        options:
+          - label: Folder (connected)
+            value: bu-tabs-folder
+          - label: Pill
+            value: bu-tabs-pill
+      - id: bu-dock-main
+        title: Main tab content
+        type: class-select
+        default: bu-main-both
+        allowEmpty: false
+        options:
+          - label: Icons + Labels
+            value: bu-main-both
+          - label: Icons only
+            value: bu-main-icons
+          - label: Labels only
+            value: bu-main-labels
+      - id: bu-dock-left
+        title: Left sidebar tab content
+        type: class-select
+        default: bu-left-icons
+        allowEmpty: false
+        options:
+          - label: Icons only
+            value: bu-left-icons
+          - label: Labels only
+            value: bu-left-labels
+          - label: Icons + Labels
+            value: bu-left-both
+      - id: bu-dock-right
+        title: Right sidebar tab content
+        type: class-select
+        default: bu-right-icons
+        allowEmpty: false
+        options:
+          - label: Icons only
+            value: bu-right-icons
+          - label: Labels only
+            value: bu-right-labels
+          - label: Icons + Labels
+            value: bu-right-both
+      - id: bu-pin-icon-only
+        title: Pinned tabs — icon only
+        type: class-toggle
+        default: false
+      - id: bu-hide-heading
+        title: Hide / Focus
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-focus
+        title: Focus Mode
+        description: Hides the tab bar, window buttons & status bar. Bind a hotkey to "Style Settings → Toggle Focus Mode".
+        type: class-toggle
+        default: false
+      - id: bu-hide-status-bar
+        title: Hide status bar
+        type: class-toggle
+        default: false
+      - id: bu-hide-breadcrumbs
+        title: Hide breadcrumbs
+        type: class-toggle
+        default: false
+      - id: bu-hide-tab-close
+        title: Hide tab close button
+        type: class-toggle
+        default: false
+      - id: bu-hide-sidebar-toggle-left
+        title: Hide left sidebar toggle
+        type: class-toggle
+        default: false
+      - id: bu-hide-sidebar-toggle-right
+        title: Hide right sidebar toggle
+        type: class-toggle
+        default: false
+      - id: bu-hide-folder-arrow
+        title: Hide folder collapse arrow
+        type: class-toggle
+        default: false
+      - id: bu-hide-prompt-instructions
+        title: Hide command-palette instructions
+        type: class-toggle
+        default: false
+      - id: bu-anim-heading
+        title: Animation
+        type: heading
+        level: 2
+        collapsed: false
+      - id: bu-anim
+        title: Animations
+        description: Restrained, CRT-flavoured transitions. Turn off to disable all motion.
+        type: class-toggle
+        default: true
+      - id: bu-anim-speed
+        title: Animation speed (ms)
+        description: Entrance speed. Hover/state transitions run at ~0.3× this for responsiveness.
+        type: variable-number-slider
+        default: 600
+        min: 400
+        max: 1000
+        step: 20
+      - id: bu-poweron
+        title: CRT power-on (on note/pane open)
+        type: class-toggle
+        default: true
+      - id: bu-glow-ease
+        title: Ease the phosphor glow
+        type: class-toggle
+        default: true
+      - id: bu-menu-fade
+        title: Fade menus & modals
+        type: class-toggle
+        default: true
+      - id: bu-scan-anim
+        title: Scanning line
+        description: A faint white line scans down the editor; stays steady, then glitches now and then (the static scanlines stay still).
+        type: class-toggle
+        default: true
+      - id: bu-scan-bright
+        title: Scanning line — brightness
+        type: variable-number-slider
+        default: 0.2
+        min: 0.05
+        max: 0.6
+        step: 0.01
+      - id: bu-scan-interval
+        title: Scanning line — glitch every (sec)
+        description: How often the loose-wire blink-burst happens.
+        type: variable-number-slider
+        default: 7
+        min: 2
+        max: 20
+        step: 1
+      - id: bu-scan-dip
+        title: Scanning line — glitch depth
+        description: How far the line blinks out during a glitch (0 = fully out / most violent).
+        type: variable-number-slider
+        default: 0
+        min: 0
+        max: 0.7
+        step: 0.05
+      - id: bu-glow-pulse
+        title: Breathe the ambient glow
+        type: class-toggle
+        default: true
+      - id: bu-block-caret
+        title: Terminal block caret
+        type: class-toggle
+        default: true
+      - id: bu-hover-bloom
+        title: Hover bloom (accent glow)
+        type: class-toggle
+        default: true
+      - id: bu-line-scan
+        title: Active-line scan sweep
+        type: class-toggle
+        default: false
+      - id: bu-flicker
+        title: CRT flicker (subtle)
+        type: class-toggle
+        default: false
+      - id: bu-boot-scan
+        title: Boot scan-sweep (at launch)
+        type: class-toggle
+        default: true
+      - id: bu-crossfade
+        title: Channel-change crossfade (note switch)
+        type: class-toggle
+        default: true
+      - id: bu-throbber
+        title: CRT loading throbber
+        type: class-toggle
+        default: true
+      - id: bu-check-anim
+        title: Eased checkbox tick
+        type: class-toggle
+        default: true
+      - id: bu-anim-mobile-off
+        title: MOBILE — disable animations
+        type: class-toggle
+        default: false
+      - id: bu-daily-note
+        title: Daily notes
+        description: Colors for daily notes, keyed to the weekday. Disable the "Daily Note Themes" snippet — Bureau owns this now.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: bu-sun-head
+        title: Sunday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-sun-pri
+        title: Sunday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9e6b86'
+        alt-format: []
+      - id: bu-sun-hl
+        title: Sunday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#c6a3b5'
+        alt-format: []
+      - id: bu-sun-bg
+        title: Sunday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#161114'
+        alt-format: []
+      - id: bu-mon-head
+        title: Monday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-mon-pri
+        title: Monday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#5b7a9e'
+        alt-format: []
+      - id: bu-mon-hl
+        title: Monday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#a6b6c8'
+        alt-format: []
+      - id: bu-mon-bg
+        title: Monday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#0f131a'
+        alt-format: []
+      - id: bu-tue-head
+        title: Tuesday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-tue-pri
+        title: Tuesday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#5e8d86'
+        alt-format: []
+      - id: bu-tue-hl
+        title: Tuesday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#a4c2bc'
+        alt-format: []
+      - id: bu-tue-bg
+        title: Tuesday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#0e1413'
+        alt-format: []
+      - id: bu-wed-head
+        title: Wednesday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-wed-pri
+        title: Wednesday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#836fa0'
+        alt-format: []
+      - id: bu-wed-hl
+        title: Wednesday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#b6a9c9'
+        alt-format: []
+      - id: bu-wed-bg
+        title: Wednesday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#131019'
+        alt-format: []
+      - id: bu-thu-head
+        title: Thursday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-thu-pri
+        title: Thursday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#7c8597'
+        alt-format: []
+      - id: bu-thu-hl
+        title: Thursday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#b2b8c4'
+        alt-format: []
+      - id: bu-thu-bg
+        title: Thursday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#101216'
+        alt-format: []
+      - id: bu-fri-head
+        title: Friday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-fri-pri
+        title: Friday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#4f9a9a'
+        alt-format: []
+      - id: bu-fri-hl
+        title: Friday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#9ec8c8'
+        alt-format: []
+      - id: bu-fri-bg
+        title: Friday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#0c1515'
+        alt-format: []
+      - id: bu-sat-head
+        title: Saturday
+        type: heading
+        level: 3
+        collapsed: true
+      - id: bu-sat-pri
+        title: Saturday — accent
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#8c5a7e'
+        alt-format: []
+      - id: bu-sat-hl
+        title: Saturday — text
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#c0a0b6'
+        alt-format: []
+      - id: bu-sat-bg
+        title: Saturday — background
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#151013'
+        alt-format: []

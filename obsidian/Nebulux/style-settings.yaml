@@ -84,7 +84,6 @@ sections:
         title: H1 - End Color (Right)
         type: variable-color
         format: hex
-        default: '#999999'
         alt-format: []
       - id: h2-start
         title: H2 - Start Color

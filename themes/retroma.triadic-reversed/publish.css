@@ -2640,15 +2640,15 @@ body body.theme-light .frontmatter-container {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0px;
-  margin-block-end: 32px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 8px;
   padding-block-end: 8px;
   padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
 }
 body body.theme-light .metadata-container {
   background-color: var(--metadata-background);
@@ -2673,15 +2673,15 @@ body body.theme-light .metadata-container {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0px;
-  margin-block-end: 32px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 8px;
   padding-block-end: 8px;
   padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
 }
 body body.theme-light .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
@@ -2913,10 +2913,10 @@ body body.theme-light .backlink-pane {
   border-bottom-right-radius: 0px;
   padding-top: var(--size-4-1);
   padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-block-end: 32px;
-  padding-block-start: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
 }
@@ -2925,10 +2925,10 @@ body body.theme-light .backlink-pane .tree-item {
   color: rgb(34, 34, 34);
   border-color: rgb(34, 34, 34);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   padding: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -2936,7 +2936,7 @@ body body.theme-light .backlink-pane .tree-item {
   padding-inline-start: 0px;
 }
 body body.theme-light .backlink-pane .tree-item-self {
-  color: var(--nav-heading-color);
+  color: oklch(from var(--background-paper) 100% c h);
 }
 body body.theme-light .markdown-rendered p {
   background-color: rgba(0, 0, 0, 0);
@@ -3329,28 +3329,28 @@ body body.theme-light .search-highlight {
   border-end-end-radius: 0px;
 }
 body body.theme-light .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  background-color: oklch(from var(--base-accent) l c h/30%);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: var(--nav-item-color-active);
 }
 body body.theme-light div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgb(34, 34, 34);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   color: rgb(34, 34, 34);
 }
 body body.theme-light .markdown-rendered hr {
   border-left-width: 0px;
   border-right-width: 0px;
   border-top: 2px solid;
-  border-color: rgb(228, 228, 228);
+  border-color: oklch(25.1963% 0.0000125793 23.5283deg / 0.25);
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -3478,15 +3478,15 @@ body body.theme-light .search-results .suggestion-item {
 body body.theme-light div.search-results .suggestion-item {
   border-color: rgb(34, 34, 34);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 body body.theme-light .search-results .suggestion-item.is-selected {
   color: var(--nav-item-color-active);
   font-weight: var(--nav-item-weight);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: oklch(from var(--base-accent) l c h/30%);
 }
 body body.theme-light div.search-results .suggestion-item.is-selected {
   color: var(--nav-item-color-active);
@@ -3869,14 +3869,14 @@ body body.theme-light .markdown-rendered code {
   color: var(--code-normal);
   font-family: var(--font-monospace);
   padding: 0px 6px;
-  padding-block-end: 2.1px;
-  padding-block-start: 2.1px;
-  padding-inline-end: 4.2px;
-  padding-inline-start: 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 6px;
+  padding-inline-start: 6px;
 }
 body body.theme-light .markdown-rendered pre > code {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(80% 0.0756873 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -3887,7 +3887,7 @@ body body.theme-light .markdown-rendered pre > code {
   border-end-end-radius: 0px;
   color: rgb(34, 34, 34);
   overflow-x: visible;
-  padding: 0px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
   padding-inline-end: 16px;
@@ -3897,7 +3897,7 @@ body body.theme-light .markdown-rendered pre > code {
 }
 body body.theme-light figure[data-rehype-pretty-code-figure] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(80% 0.0756873 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -3914,7 +3914,7 @@ body
   background-color: var(--code-background);
   color: rgb(34, 34, 34);
   font-family: monospace;
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(80% 0.0756873 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -3926,15 +3926,15 @@ body
 }
 body body.theme-light pre > code [data-line] {
   background-color: var(--code-background);
-  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-left: 0px solid oklch(80% 0.0756873 293.559deg);
 }
 body body.theme-light pre > code [data-highlighted-line] {
   background-color: var(--code-background);
-  border-left-color: rgba(0, 0, 0, 0);
+  border-left-color: oklch(80% 0.0756873 293.559deg);
 }
 body body.theme-light pre > code [data-highlighted-chars] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(80% 0.0756873 293.559deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4084,7 +4084,7 @@ body body.theme-light li.task-list-item[data-task="w"] {
 }
 body body.theme-light .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color);
-  border-inline-start: 2px solid rgb(152, 115, 247);
+  border-inline-start: 4px solid oklch(50% 0.189218 293.559deg / 0.75);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -4363,7 +4363,7 @@ body body.theme-light .footnotes {
 }
 body body.theme-light pre:has(> code.mermaid) {
   background-color: var(--code-background);
-  border: 0px solid rgb(228, 228, 228);
+  border: 0px solid oklch(80% 0.0756873 293.559deg);
 }
 body body.theme-light .tag {
   background-color: var(--pill-background);
@@ -4417,7 +4417,7 @@ body body.theme-light body {
 }
 body body.theme-light .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 4px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border: 4px solid oklch(50% 0.12 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4434,15 +4434,15 @@ body body.theme-light .callout[data-callout="note"] {
   padding-inline-start: 24px;
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4481,11 +4481,11 @@ body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(72.7476% 0.124634 192.763deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 210.819deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(72.7476% 0.124634 192.763deg / 0.25);
+  border: 4px solid oklch(50% 0.12 210.819deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4496,10 +4496,10 @@ body body.theme-light .callout[data-callout="abstract"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4522,11 +4522,11 @@ body body.theme-light .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border: 4px solid oklch(50% 0.12 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4537,10 +4537,10 @@ body body.theme-light .callout[data-callout="info"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="info"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4563,11 +4563,11 @@ body body.theme-light .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border: 4px solid oklch(50% 0.12 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4578,10 +4578,10 @@ body body.theme-light .callout[data-callout="todo"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="todo"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4604,11 +4604,11 @@ body body.theme-light .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(72.7476% 0.124634 192.763deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 210.819deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(72.7476% 0.124634 192.763deg / 0.25);
+  border: 4px solid oklch(50% 0.12 210.819deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4619,10 +4619,10 @@ body body.theme-light .callout[data-callout="tip"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="tip"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4645,11 +4645,11 @@ body body.theme-light .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(68.6205% 0.194562 148.477deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 144.199deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(68.6205% 0.194562 148.477deg / 0.25);
+  border: 4px solid oklch(50% 0.12 144.199deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4660,10 +4660,10 @@ body body.theme-light .callout[data-callout="success"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="success"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4686,11 +4686,11 @@ body body.theme-light .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(68.8771% 0.175867 52.5446deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 64.0453deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
+  border: 4px solid oklch(50% 0.12 64.0453deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4701,10 +4701,10 @@ body body.theme-light .callout[data-callout="question"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="question"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4727,11 +4727,11 @@ body body.theme-light .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(68.8771% 0.175867 52.5446deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 64.0453deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
+  border: 4px solid oklch(50% 0.12 64.0453deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4742,10 +4742,10 @@ body body.theme-light .callout[data-callout="warning"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="warning"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4768,11 +4768,11 @@ body body.theme-light .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border: 4px solid oklch(50% 0.12 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4783,10 +4783,10 @@ body body.theme-light .callout[data-callout="danger"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="danger"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4809,11 +4809,11 @@ body body.theme-light .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border: 4px solid oklch(50% 0.12 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4824,10 +4824,10 @@ body body.theme-light .callout[data-callout="failure"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="failure"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4850,11 +4850,11 @@ body body.theme-light .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border: 4px solid oklch(50% 0.12 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4865,10 +4865,10 @@ body body.theme-light .callout[data-callout="bug"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="bug"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4891,11 +4891,11 @@ body body.theme-light .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(56.7895% 0.221884 288.456deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(50% 0.12 294.789deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(34, 34, 34);
   mix-blend-mode: normal;
-  border: 4px solid oklch(56.7895% 0.221884 288.456deg / 0.25);
+  border: 4px solid oklch(50% 0.12 294.789deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -4906,10 +4906,10 @@ body body.theme-light .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="example"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4947,10 +4947,10 @@ body body.theme-light .callout[data-callout="quote"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="quote"] > .callout-title {
-  --callout-color: 8, 109, 221;
+  --callout-color: oklch(from #2196f3 50% 30% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(8, 109, 221);
+  border: 0px oklch(50% 0.12 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5427,7 +5427,7 @@ body
 body body.theme-light .graph-view-container {
   background-color: var(--background-secondary);
   color: rgb(34, 34, 34);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgb(92, 92, 92);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -5442,6 +5442,180 @@ body body.theme-light .clickable-icon {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+body body.theme-light h1 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 700;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light h2 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 680;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light h3 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 660;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light h4 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 640;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light h5 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 620;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-light h6 {
+  color: rgb(34, 34, 34);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  text-decoration: rgb(34, 34, 34);
+  text-transform: none;
+  border: 0px rgb(34, 34, 34);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-light .site-footer {
   background-color: var(--status-bar-background);
@@ -5597,15 +5771,15 @@ body body.theme-dark .frontmatter-container {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0px;
-  margin-block-end: 32px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 8px;
   padding-block-end: 8px;
   padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
 }
 body body.theme-dark .metadata-container {
   background-color: var(--metadata-background);
@@ -5630,15 +5804,15 @@ body body.theme-dark .metadata-container {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   margin: 0px;
-  margin-block-end: 32px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 8px;
   padding-block-end: 8px;
   padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding-inline-end: 8px;
+  padding-inline-start: 8px;
 }
 body body.theme-dark .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
@@ -5870,10 +6044,10 @@ body body.theme-dark .backlink-pane {
   border-bottom-right-radius: 0px;
   padding-top: var(--size-4-1);
   padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-block-end: 32px;
-  padding-block-start: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: var(--size-4-3);
   padding-inline-start: var(--size-4-3);
 }
@@ -5882,10 +6056,10 @@ body body.theme-dark .backlink-pane .tree-item {
   color: rgb(218, 218, 218);
   border-color: rgb(218, 218, 218);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   padding: 0px;
   padding-block-end: 0px;
   padding-block-start: 0px;
@@ -6286,28 +6460,28 @@ body body.theme-dark .search-highlight {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .suggestion-item.is-selected {
-  background-color: rgba(0, 0, 0, 0);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  background-color: oklch(from var(--base-accent) l c h/30%);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   color: var(--nav-item-color-active);
 }
 body body.theme-dark div.suggestion-item {
   background-color: rgba(0, 0, 0, 0);
   border-color: rgb(218, 218, 218);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .markdown-rendered hr {
   border-left-width: 0px;
   border-right-width: 0px;
   border-top: 2px solid;
-  border-color: rgb(51, 51, 51);
+  border-color: oklch(88.8364% 0.000044365 23.517deg / 0.25);
   border-bottom-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -6435,15 +6609,15 @@ body body.theme-dark .search-results .suggestion-item {
 body body.theme-dark div.search-results .suggestion-item {
   border-color: rgb(218, 218, 218);
   border-width: 0px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 body body.theme-dark .search-results .suggestion-item.is-selected {
   color: var(--nav-item-color-active);
   font-weight: var(--nav-item-weight);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: oklch(from var(--base-accent) l c h/30%);
 }
 body body.theme-dark div.search-results .suggestion-item.is-selected {
   color: var(--nav-item-color-active);
@@ -6826,14 +7000,14 @@ body body.theme-dark .markdown-rendered code {
   color: var(--code-normal);
   font-family: var(--font-monospace);
   padding: 0px 6px;
-  padding-block-end: 2.1px;
-  padding-block-start: 2.1px;
-  padding-inline-end: 4.2px;
-  padding-inline-start: 4.2px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+  padding-inline-end: 6px;
+  padding-inline-start: 6px;
 }
 body body.theme-dark .markdown-rendered pre > code {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(18% 0.0651659 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -6844,7 +7018,7 @@ body body.theme-dark .markdown-rendered pre > code {
   border-end-end-radius: 0px;
   color: rgb(218, 218, 218);
   overflow-x: visible;
-  padding: 0px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
   padding-inline-end: 16px;
@@ -6854,7 +7028,7 @@ body body.theme-dark .markdown-rendered pre > code {
 }
 body body.theme-dark figure[data-rehype-pretty-code-figure] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(18% 0.0651659 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -6871,7 +7045,7 @@ body
   background-color: var(--code-background);
   color: rgb(218, 218, 218);
   font-family: monospace;
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(18% 0.0651659 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -6883,15 +7057,15 @@ body
 }
 body body.theme-dark pre > code [data-line] {
   background-color: var(--code-background);
-  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-left: 0px solid oklch(18% 0.0651659 292.489deg);
 }
 body body.theme-dark pre > code [data-highlighted-line] {
   background-color: var(--code-background);
-  border-left-color: rgba(0, 0, 0, 0);
+  border-left-color: oklch(18% 0.0651659 292.489deg);
 }
 body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
+  border: 0px solid oklch(18% 0.0651659 292.489deg);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7041,7 +7215,7 @@ body body.theme-dark li.task-list-item[data-task="w"] {
 }
 body body.theme-dark .markdown-rendered blockquote {
   background-color: var(--blockquote-background-color);
-  border-inline-start: 2px solid rgb(138, 92, 245);
+  border-inline-start: 4px solid oklch(50% 0.21722 292.489deg / 0.75);
   color: var(--blockquote-color);
   font-family:
     ui-sans-serif,
@@ -7320,7 +7494,7 @@ body body.theme-dark .footnotes {
 }
 body body.theme-dark pre:has(> code.mermaid) {
   background-color: var(--code-background);
-  border: 0px solid rgb(51, 51, 51);
+  border: 0px solid oklch(18% 0.0651659 292.489deg);
 }
 body body.theme-dark .tag {
   background-color: var(--pill-background);
@@ -7374,7 +7548,7 @@ body body.theme-dark body {
 }
 body body.theme-dark .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 4px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border: 4px solid oklch(70% 0.08 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7391,15 +7565,15 @@ body body.theme-dark .callout[data-callout="note"] {
   padding-inline-start: 24px;
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7438,11 +7612,11 @@ body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(82.8615% 0.118893 193.752deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 210.819deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
+  border: 4px solid oklch(70% 0.08 210.819deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7453,10 +7627,10 @@ body body.theme-dark .callout[data-callout="abstract"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7479,11 +7653,11 @@ body body.theme-dark .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border: 4px solid oklch(70% 0.08 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7494,10 +7668,10 @@ body body.theme-dark .callout[data-callout="info"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="info"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7520,11 +7694,11 @@ body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 248.82deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border: 4px solid oklch(70% 0.08 248.82deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7535,10 +7709,10 @@ body body.theme-dark .callout[data-callout="todo"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="todo"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7561,11 +7735,11 @@ body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(82.8615% 0.118893 193.752deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 210.819deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
+  border: 4px solid oklch(70% 0.08 210.819deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7576,10 +7750,10 @@ body body.theme-dark .callout[data-callout="tip"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="tip"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7602,11 +7776,11 @@ body body.theme-dark .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(75.7772% 0.180999 149.614deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 144.199deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(75.7772% 0.180999 149.614deg / 0.25);
+  border: 4px solid oklch(70% 0.08 144.199deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7617,10 +7791,10 @@ body body.theme-dark .callout[data-callout="success"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="success"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7643,11 +7817,11 @@ body body.theme-dark .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(74.4355% 0.140765 64.0894deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 64.0453deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
+  border: 4px solid oklch(70% 0.08 64.0453deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7658,10 +7832,10 @@ body body.theme-dark .callout[data-callout="question"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="question"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7684,11 +7858,11 @@ body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(74.4355% 0.140765 64.0894deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 64.0453deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
+  border: 4px solid oklch(70% 0.08 64.0453deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7699,10 +7873,10 @@ body body.theme-dark .callout[data-callout="warning"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="warning"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7725,11 +7899,11 @@ body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border: 4px solid oklch(70% 0.08 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7740,10 +7914,10 @@ body body.theme-dark .callout[data-callout="danger"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="danger"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7766,11 +7940,11 @@ body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border: 4px solid oklch(70% 0.08 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7781,10 +7955,10 @@ body body.theme-dark .callout[data-callout="failure"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="failure"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7807,11 +7981,11 @@ body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 26.4067deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border: 4px solid oklch(70% 0.08 26.4067deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7822,10 +7996,10 @@ body body.theme-dark .callout[data-callout="bug"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="bug"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7848,11 +8022,11 @@ body body.theme-dark .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
   background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: oklch(69.7304% 0.17906 295.405deg / 0.1) none repeat scroll 0%
-    0% / auto padding-box border-box;
+  background: oklch(70% 0.08 294.789deg / 0.1) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(218, 218, 218);
   mix-blend-mode: normal;
-  border: 4px solid oklch(69.7305% 0.17906 295.405deg / 0.25);
+  border: 4px solid oklch(70% 0.08 294.789deg / 0.25);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -7863,10 +8037,10 @@ body body.theme-dark .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="example"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -7904,10 +8078,10 @@ body body.theme-dark .callout[data-callout="quote"] {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .callout[data-callout="quote"] > .callout-title {
-  --callout-color: 2, 122, 255;
+  --callout-color: oklch(from #2196f3 70% 20% h);
   color: var(--callout-color);
   gap: 4px;
-  border: 0px rgb(2, 122, 255);
+  border: 0px oklch(70% 0.08 248.82deg);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -8384,7 +8558,7 @@ body
 body body.theme-dark .graph-view-container {
   background-color: var(--background-secondary);
   color: rgb(218, 218, 218);
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid rgb(179, 179, 179);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -8399,6 +8573,180 @@ body body.theme-dark .clickable-icon {
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+body body.theme-dark h1 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 700;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h2 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 680;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h3 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 660;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h4 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 640;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h5 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 620;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
+}
+body body.theme-dark h6 {
+  color: rgb(218, 218, 218);
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Segoe UI",
+    "Google Sans Flex",
+    Roboto,
+    "Inter Variable",
+    Inter,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 600;
+  text-decoration: rgb(218, 218, 218);
+  text-transform: none;
+  border: 0px rgb(218, 218, 218);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-start-start-radius: 0px;
+  border-start-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border-end-end-radius: 0px;
 }
 body body.theme-dark .site-footer {
   background-color: var(--status-bar-background);

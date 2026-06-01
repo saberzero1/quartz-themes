@@ -5,13 +5,13 @@
       "property": "--h",
       "references": "--h-raw",
       "selector": "html",
-      "aspect": "misc"
+      "aspect": "base"
     },
     {
       "property": "--w",
       "references": "--w-raw",
       "selector": "html",
-      "aspect": "misc"
+      "aspect": "base"
     },
     {
       "property": "--code-background",

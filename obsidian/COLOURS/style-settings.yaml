@@ -1,6 +1,6 @@
 mode: replace
 sections:
-  - name: COLOURS
+  - name: colours
     id: colours-theme
     collapsed: false
     settings:
@@ -40,16 +40,24 @@ sections:
       - id: colours-typography
         title: Typography
         type: heading
-        level: 2
+        level: 1
         collapsed: false
       - id: enable-uppercase
         title: Enable Uppercase
         description: Applies uppercase to the note title, table headers, and UI buttons
         type: class-toggle
         default: false
-      - id: font-brightness
-        title: Font Brightness
-        description: Scales text opacity. Lower values give a softer, more muted look.
+      - id: font-brightness-light
+        title: Font Brightness (Light)
+        description: Scales text opacity in light mode. Lower values give a softer, more muted look.
+        type: variable-number-slider
+        default: 1
+        min: 0.5
+        max: 1
+        step: 0.05
+      - id: font-brightness-dark
+        title: Font Brightness (Dark)
+        description: Scales text opacity in dark mode. Lower values give a softer, more muted look.
         type: variable-number-slider
         default: 1
         min: 0.5
@@ -58,7 +66,7 @@ sections:
       - id: colours-layout
         title: Layout
         type: heading
-        level: 2
+        level: 1
         collapsed: false
       - id: auto-hide-scrollbar
         title: Auto-hide Scrollbar
@@ -92,3 +100,11 @@ sections:
         min: 1
         max: 5
         step: 0.1
+      - id: font-brightness
+        title: Font Brightness
+        description: Scales text opacity. Lower values give a softer, more muted look.
+        type: variable-number-slider
+        default: 1
+        min: 0.5
+        max: 1
+        step: 0.05

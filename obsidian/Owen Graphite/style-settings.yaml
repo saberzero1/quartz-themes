@@ -1,0 +1,157 @@
+mode: replace
+sections:
+  - name: Owen Graphite
+    id: owen-graphite-document
+    collapsed: false
+    settings:
+      - id: ogd-settings-reading
+        title: 읽기와 본문
+        type: heading
+        level: 2
+      - id: ogd-body-size
+        title: 본문 폰트 크기
+        description: 본문(p, li 등) 기본 글자 크기
+        type: variable-number-slider
+        default: 15
+        min: 13
+        max: 18
+        step: 1
+        format: px
+      - id: ogd-max-width
+        title: 본문 최대 폭
+        type: variable-select
+        default: 420mm
+        options:
+          - label: 210mm
+            value: 210mm
+          - label: 297mm
+            value: 297mm
+          - label: 360mm
+            value: 360mm
+          - label: 420mm
+            value: 420mm
+          - label: 100%
+            value: 100%
+      - id: ogd-accent
+        title: 헤더 강조 색상
+        type: variable-color
+        format: hex
+        default: '#4b5563'
+        alt-format: []
+      - id: ogd-settings-tables
+        title: 표와 코드
+        type: heading
+        level: 2
+      - id: ogd-modern-tables
+        title: 표 모던 스타일 강화
+        description: 표 헤더, 첫 컬럼, hover, PDF border를 보고서형 톤으로 강화
+        type: class-toggle
+        default: true
+      - id: ogd-print-avoid-breaks
+        title: PDF 블록 분할 방지 강화
+        description: callout, 표, mermaid, 코드블록, 이미지가 페이지 중간에서 잘리는 것을 완화
+        type: class-toggle
+        default: true
+      - id: ogd-settings-report
+        title: 보고서와 PDF
+        type: heading
+        level: 2
+      - id: ogd-report-mode
+        title: 보고서 모드 (헤더 자동 넘버링 + 본문 들여쓰기 + 세리프)
+        description: 표지/넘버링/들여쓰기/세리프 본문을 한 번에 적용
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-compact
+        title: PDF Compact Report
+        description: PDF 출력 시 제목·본문·callout·표·참고 문헌 간격을 압축해 공백을 줄이고 정보 밀도를 높입니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-visibility
+        title: PDF 보고서 가시성 강화
+        description: PDF 출력에서 문서 상태 라벨, callout, 문서 끝 신호의 대비를 높입니다. 제목 계층과 표 디자인은 변경하지 않습니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-screen-delivery
+        title: PDF 고객 전달용 화면 가시성
+        description: 메일, Teams, 브라우저 미리보기에서 바로 읽히도록 제목 위계, 본문·표 크기, callout 구분, 라벨 톤을 조정합니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-client-delivery
+        title: PDF 고객 전달 권장 프리셋
+        description: 고객 공유용 PDF에 맞춰 본문·표·callout·코드·링크를 한 번에 읽기 좋은 톤으로 조정합니다.
+        type: class-toggle
+        default: false
+      - id: ogd-serif-body
+        title: 본문 세리프 글꼴
+        description: 본문만 Noto Serif KR로 전환 (긴 보고서 가독성)
+        type: class-toggle
+        default: false
+      - id: ogd-indent-paragraph
+        title: 첫 줄 들여쓰기
+        description: 한국 보고서 스타일 1em 들여쓰기
+        type: class-toggle
+        default: false
+      - id: ogd-auto-number-headings
+        title: 헤더 자동 넘버링 (1. 1.1 1.1.1)
+        type: class-toggle
+        default: false
+      - id: ogd-drop-cap
+        title: 드롭 캡 (첫 문단 첫 글자 크게)
+        type: class-toggle
+        default: false
+      - id: ogd-settings-workspace
+        title: 워크스페이스와 접근성
+        type: heading
+        level: 2
+      - id: ogd-eye-care
+        title: 시선 보호 모드 (베이지 배경)
+        type: class-toggle
+        default: false
+      - id: ogd-auto-dark
+        title: OS 다크 모드 자동 추종
+        description: 시스템 다크 모드일 때 자동으로 다크 테마 변수 적용
+        type: class-toggle
+        default: false
+      - id: ogd-cjk-boost
+        title: 한글/CJK 폰트 +0.5px 자동 보정
+        type: class-toggle
+        default: true
+      - id: ogd-settings-pdf-marginalia
+        title: PDF 헤더/푸터 작은 라벨
+        description: PDF 출력에만 첫 페이지 헤더와 마지막 페이지 푸터 라벨을 표시합니다. 화면 Reading View에는 노출하지 않습니다.
+        type: heading
+        level: 2
+      - id: ogd-pdf-header-enabled
+        title: 첫 페이지 헤더 라벨 표시
+        description: PDF 첫 페이지 상단에 한 줄 라벨을 표시합니다. 끄면 문구나 프리셋이 있어도 출력하지 않습니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-footer-enabled
+        title: 마지막 페이지 푸터 라벨 표시
+        description: PDF 마지막 콘텐츠 아래 중앙에 한 줄 라벨을 표시합니다. 끄면 문구나 프리셋이 있어도 출력하지 않습니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-settings-common
+        title: 공통 구성
+        type: heading
+        level: 3
+      - id: ogd-pdf-marginalia-accent
+        title: 헤더/푸터 글자 색상
+        description: 두 라벨 공통 글자 색상입니다. 기본값은 출력물에 어울리는 graphite 톤입니다.
+        type: variable-color
+        format: hex
+        default: '#475569'
+        alt-format: []
+      - id: ogd-pdf-settings-header
+        title: 헤더 설정
+        type: heading
+        level: 3
+      - id: ogd-pdf-header-dual-pair
+        title: 첫 페이지 헤더 2번 Key/Value 표시
+        description: 기존 Key/Value 1쌍 구성에서 두 번째 key/value 쌍만 추가로 켭니다. PDF 라벨 구성에서 `Key/Value 2쌍`을 선택해도 같은 출력이 적용됩니다.
+        type: class-toggle
+        default: false
+      - id: ogd-pdf-settings-footer
+        title: 푸터 설정
+        type: heading
+        level: 3

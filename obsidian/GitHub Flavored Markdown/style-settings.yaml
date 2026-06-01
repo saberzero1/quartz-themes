@@ -1,0 +1,58 @@
+mode: replace
+sections:
+  - name: GitHub Flavored Markdown Settings
+    id: github-flavored-markdown-theme
+    collapsed: false
+    settings:
+      - id: general
+        title: General
+        type: heading
+        level: 1
+        collapsed: true
+      - id: accent
+        title: Accent Color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0969da'
+        default-dark: '#4493f8'
+        alt-format: []
+      - id: colorblind
+        title: Colorblind variants
+        type: heading
+        level: 1
+        collapsed: true
+      - id: colorblind_protan-deutan
+        title: Protanopia & Deuteranopia
+        type: class-toggle
+      - id: colorblind_tritan
+        title: Tritanopia
+        type: class-toggle
+      - id: kanban
+        title: Kanban
+        type: heading
+        level: 1
+        collapsed: true
+      - id: kanban-variant
+        title: Kanban variant
+        description: Variations of Kanban styles
+        type: class-select
+        allowEmpty: false
+        default: kanban-full
+        options:
+          - label: GitHub projects style
+            value: kanban-full
+          - label: Minimal style
+            value: kanban-on
+          - label: Disable styles
+            value: kanban-off
+      - id: kanban-same-height-cards
+        title: Minimal height for cards
+        description: All cards will have the same initial height
+        type: class-toggle
+        default: true
+      - id: kanban-full-height-column
+        title: Full height lists
+        description: null
+        type: class-toggle
+        default: true

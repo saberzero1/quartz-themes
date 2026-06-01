@@ -332,8 +332,8 @@ html {
 }
 
 body {
-  &[data-slug],
-  &[data-slug] .page > div#quartz-body,
+  body[data-slug],
+  body[data-slug] .page > div#quartz-body,
   .page > div#quartz-body div.center,
   .page > div#quartz-body footer {
     background-color: var(--background-primary);
@@ -345,7 +345,7 @@ body {
     color: rgb(71, 85, 105);
   }
 
-  &[data-slug] div#quartz-root.page,
+  body[data-slug] div#quartz-root.page,
   .page > div#quartz-body div.sidebar.left,
   .page > div#quartz-body div.sidebar.left:has(.explorer),
   .page > div#quartz-body div.sidebar.left .explorer .explorer-content {
@@ -537,7 +537,7 @@ body {
   }
 
   .note-properties-link {
-    color: rgb(179, 179, 179);
+    color: rgb(128, 50, 50);
   }
 
   .note-properties-tags {
@@ -627,7 +627,7 @@ body {
     font-family: var(--link-font);
     font-weight: var(--link-weight);
     outline: rgb(27, 38, 47) none 0px;
-    text-decoration: rgba(186, 64, 64, 0.3);
+    text-decoration: oklch(0.126751 0.0140707 none / 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
@@ -664,8 +664,8 @@ body {
 
   .backlinks {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
-    border-color: rgb(218, 218, 218);
+    color: rgb(71, 85, 105);
+    border-color: rgb(71, 85, 105);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -675,17 +675,16 @@ body {
     padding-bottom: max(var(--safe-area-inset-bottom), var(--size-4-8));
     padding-left: 12px;
     padding-right: 12px;
-    padding-block-end: 32px;
-    padding-block-start: 4px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding-inline-end: var(--size-4-3);
     padding-inline-start: var(--size-4-3);
   }
 
   .backlinks ul li {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
-    border-color: rgb(218, 218, 218);
-    border-width: 0px;
+    background-color: rgb(7, 11, 17);
+    color: rgb(71, 85, 105);
+    border: 2px solid rgb(0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1114,38 +1113,37 @@ body {
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    background-color: rgba(0, 0, 0, 0);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    color: var(--nav-item-color-active);
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
-    background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(218, 218, 218);
-    border-width: 0px;
+    background-color: rgb(4, 7, 12);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    color: rgb(218, 218, 218);
+    color: var(--text);
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    background-color: rgb(7, 11, 17);
+    border: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: rgb(71, 85, 105);
   }
 
   hr {
     border-left-width: 0px;
     border-right-width: 0px;
-    border-color: currentcolor rgb(51, 51, 51) rgb(51, 51, 51);
-    border-top: 2px solid rgb(51, 51, 51);
+    border-color: currentcolor rgb(87, 26, 26) rgb(87, 26, 26);
+    border-top: 2px solid rgb(87, 26, 26);
     border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 32px 0px;
-    margin-block-end: 32px;
-    margin-block-start: 32px;
+    margin: 24px 0px;
+    margin-block-end: 24px;
+    margin-block-start: 24px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -1220,7 +1218,7 @@ body {
 
   .search > .search-container > .search-space {
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(218, 218, 218);
+    border-color: rgb(71, 85, 105);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1229,17 +1227,107 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(46, 46, 46);
-    border: 1px solid rgb(51, 51, 51);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: rgba(3, 0, 0, 0.33);
+    border: 1px solid rgb(56, 11, 19);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
+    color: rgb(71, 85, 105);
+    font-family:
+      Inter,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Microsoft YaHei Light",
+      sans-serif;
+    font-weight: 400;
+    outline: rgb(71, 85, 105) none 0px;
+    text-decoration-color: rgb(71, 85, 105);
+    text-decoration-style: solid;
+    transition: all;
+    animation-duration: 0s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
+
+  .search > .search-container > .search-space > .search-layout {
+    border-color: rgb(71, 85, 105);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container {
+    color: rgb(71, 85, 105);
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    border: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(7, 11, 17);
+    color: rgb(71, 85, 105);
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
+    border-radius: 0px;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    color: var(--text);
+    font-weight: var(--nav-item-weight);
+    background-color: rgb(4, 7, 12);
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    color: var(--text);
+  }
+
+  .search > .search-container > .search-space > .search-layout > .preview-container {
+    color: var(--text);
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 400;
+  }
+
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
+    background-color: rgb(7, 11, 17);
+    color: rgb(71, 85, 105);
+    border: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  h1 {
     color: rgb(218, 218, 218);
     font-family:
       ui-sans-serif,
@@ -1255,87 +1343,8 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    font-weight: 400;
-    outline: rgb(218, 218, 218) none 0px;
-    text-decoration-color: rgb(218, 218, 218);
-    text-decoration-style: solid;
-    transition: all;
-    animation-duration: 0s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-play-state: running;
-  }
-
-  .search > .search-container > .search-space > .search-layout {
-    border-color: rgb(218, 218, 218);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container {
-    color: rgb(218, 218, 218);
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
-    border-color: rgb(218, 218, 218);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
-    border-radius: 0px;
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
-    color: var(--nav-item-color-active);
-    font-weight: var(--nav-item-weight);
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
-    color: var(--nav-item-color-active);
-  }
-
-  .search > .search-container > .search-space > .search-layout > .preview-container {
-    color: rgb(179, 179, 179);
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: 400;
-  }
-
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(218, 218, 218);
-    border-color: rgb(218, 218, 218);
-    border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-
-  h1 {
-    color: var(--h1-color);
-    font-family: var(--h1-font);
     font-size: var(--h1-size);
-    font-weight: var(--font-weight);
+    font-weight: 700;
     line-height: var(--h1-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1352,11 +1361,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1365,13 +1374,27 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h2 {
-    color: var(--h2-color);
-    font-family: var(--h2-font);
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-size: var(--h2-size);
-    font-weight: var(--font-weight);
+    font-weight: 680;
     line-height: var(--h2-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1388,11 +1411,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1401,13 +1424,27 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h3 {
-    color: var(--h3-color);
-    font-family: var(--h3-font);
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-size: var(--h3-size);
-    font-weight: var(--font-weight);
+    font-weight: 660;
     line-height: var(--h3-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1424,11 +1461,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1437,13 +1474,27 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h4 {
-    color: var(--h4-color);
-    font-family: var(--h4-font);
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-size: var(--h4-size);
-    font-weight: var(--font-weight);
+    font-weight: 640;
     line-height: var(--h4-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1460,11 +1511,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1473,13 +1524,27 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h5 {
-    color: var(--h5-color);
-    font-family: var(--h5-font);
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-size: var(--h5-size);
-    font-weight: var(--font-weight);
+    font-weight: 620;
     line-height: var(--h5-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1496,11 +1561,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1509,13 +1574,27 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h6 {
-    color: var(--h6-color);
-    font-family: var(--h6-font);
+    color: rgb(218, 218, 218);
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      BlinkMacSystemFont,
+      system-ui,
+      "Segoe UI",
+      "Google Sans Flex",
+      Roboto,
+      "Inter Variable",
+      Inter,
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      sans-serif;
     font-size: var(--h6-size);
-    font-weight: var(--font-weight);
+    font-weight: 600;
     line-height: var(--h6-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1532,11 +1611,11 @@ body {
     margin-bottom: 10px;
     margin-left: 0px;
     margin-right: 0px;
-    margin-block-end: var(--p-spacing);
-    margin-block-start: var(--p-spacing);
+    margin-block-end: var(--heading-spacing-bottom);
+    margin-block-start: var(--heading-spacing-top);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px solid rgb(170, 51, 51);
+    border: 0px rgb(218, 218, 218);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1545,6 +1624,7 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
+    text-transform: none;
   }
 
   h2.page-title,
@@ -1592,8 +1672,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
@@ -1617,8 +1697,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
@@ -1642,8 +1722,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
@@ -1667,8 +1747,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
@@ -1692,8 +1772,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
@@ -1717,8 +1797,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
@@ -1767,8 +1847,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h1-border-line-width);
@@ -1792,8 +1872,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h2-border-line-width);
@@ -1817,8 +1897,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h3-border-line-width);
@@ -1842,8 +1922,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h4-border-line-width);
@@ -1867,8 +1947,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h5-border-line-width);
@@ -1892,8 +1972,8 @@ body {
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     margin: 0px;
-    margin-block-end: 16px;
-    margin-block-start: 16px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     width: var(--h6-border-line-width);
@@ -1932,7 +2012,7 @@ body {
   }
 
   .preview-container {
-    color: rgb(179, 179, 179);
+    color: var(--text);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0);
   }
@@ -1943,7 +2023,7 @@ body {
   }
 
   input:focus {
-    border-color: rgb(51, 51, 51);
+    border-color: rgb(56, 11, 19);
     box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
   }
 
@@ -1960,15 +2040,15 @@ body {
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
-    padding-block-end: 1.2px;
-    padding-block-start: 1.2px;
+    padding-block-end: 1px;
+    padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin-top: 1px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-block-end: 0px;
-    margin-block-start: 0px;
+    margin-block-start: var(--list-spacing);
     margin-inline-end: 0px;
   }
 
@@ -1995,15 +2075,15 @@ body {
     padding-bottom: var(--list-spacing);
     padding-left: 0px;
     padding-right: 0px;
-    padding-block-end: 1.2px;
-    padding-block-start: 1.2px;
+    padding-block-end: 1px;
+    padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     margin-top: 1px;
     margin-bottom: 0px;
     margin-right: 0px;
     margin-block-end: 0px;
-    margin-block-start: 0px;
+    margin-block-start: var(--list-spacing);
     margin-inline-end: 0px;
   }
 
@@ -2137,10 +2217,10 @@ body {
     color: var(--code-normal);
     font-family: var(--font-monospace);
     padding: 2.16px 4.32px;
-    padding-block-end: 2.1px;
-    padding-block-start: 2.1px;
-    padding-inline-end: 4.2px;
-    padding-inline-start: 4.2px;
+    padding-block-end: 2.16px;
+    padding-block-start: 2.16px;
+    padding-inline-end: 4.32px;
+    padding-inline-start: 4.32px;
   }
 
   pre > code,
@@ -2237,7 +2317,7 @@ body {
     margin-block-end: 0px;
     margin-block-start: 0px;
     margin-inline-end: 8px;
-    margin-inline-start: calc(var(--checkbox-size) * -1.5);
+    margin-inline-start: calc(var(--checkbox-size) * -1.4);
     width: var(--checkbox-size);
     transition: box-shadow 0.15s ease-in-out;
     position: relative;
@@ -2370,7 +2450,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    border-inline-start: 2px solid rgb(138, 92, 245);
+    border-inline-start: 7px solid rgb(27, 38, 47);
     color: var(--blockquote-color);
     font-family:
       Inter,
@@ -2540,10 +2620,10 @@ body {
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
     padding: 1.44px 3.6px;
-    padding-block-end: 1.4px;
-    padding-block-start: 1.4px;
-    padding-inline-end: 3.5px;
-    padding-inline-start: 3.5px;
+    padding-block-end: 1.44px;
+    padding-block-start: 1.44px;
+    padding-inline-end: 3.6px;
+    padding-inline-start: 3.6px;
   }
 
   sub {
@@ -2670,7 +2750,7 @@ body {
 
   pre:has(> code.mermaid) {
     background-color: var(--code-background);
-    border: 0px solid rgb(51, 51, 51);
+    border: 0px solid rgb(56, 11, 19);
   }
 
   ul.tags > li {
@@ -2796,8 +2876,8 @@ body {
     padding: 12px 16px;
     padding-block-end: 12px;
     padding-block-start: 12px;
-    padding-inline-end: 12px;
-    padding-inline-start: 24px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
   }
 
   .callout .callout-title {
@@ -2834,10 +2914,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="note"] {
@@ -2892,10 +2972,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="abstract"] {
@@ -2950,10 +3030,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="info"] {
@@ -3008,10 +3088,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="todo"] {
@@ -3066,10 +3146,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="tip"] {
@@ -3124,10 +3204,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="success"] {
@@ -3182,10 +3262,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="question"] {
@@ -3240,10 +3320,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="warning"] {
@@ -3298,10 +3378,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="danger"] {
@@ -3356,10 +3436,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="failure"] {
@@ -3414,10 +3494,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="bug"] {
@@ -3472,10 +3552,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="example"] {
@@ -3530,20 +3610,20 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   .callout[data-callout="quote"] {
     --callout-color: var(--color-accent);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.543924 0.15824 24.0237 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     mix-blend-mode: normal;
-    border: 0px solid rgb(71, 85, 105);
+    border: 0px solid oklch(0.543924 0.15824 24.0237 / 0.7);
     border-left-width: 4px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -3589,10 +3669,10 @@ body {
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(71, 85, 105);
     padding: 5px 10px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   table {
@@ -3951,7 +4031,7 @@ body {
 
   .transclude ul {
     padding-left: 0px;
-    color: rgb(218, 218, 218);
+    color: rgb(71, 85, 105);
   }
 
   .nav-files-container .nav-file-title {
@@ -4042,7 +4122,7 @@ body {
 
   .nav-files-container .tree-item-children {
     border-left: 2px solid rgb(87, 26, 26);
-    border-inline-start: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
+    border-inline-start: 2px solid rgb(87, 26, 26);
   }
 
   .explorer .folder-container > div {
@@ -4124,12 +4204,12 @@ body {
 
   .bases-card {
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(179, 179, 179);
+    border-color: rgb(71, 85, 105);
     border-radius: 0px;
   }
 
   .bases-card-title {
-    color: var(--nav-item-color-active);
+    color: var(--text);
     font-weight: var(--nav-item-weight);
   }
 
@@ -4150,13 +4230,13 @@ body {
   }
 
   .canvas-edge-label {
-    color: rgb(218, 218, 218);
-    background-color: var(--background-primary);
+    color: rgb(71, 85, 105);
+    background-color: var(--canvas-background);
   }
 
   .canvas-controls button {
-    background-color: var(--background-primary);
-    border-color: rgb(179, 179, 179);
+    background-color: var(--note);
+    border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgb(128, 50, 50);
     color: var(--text-muted);
   }
 
@@ -4174,12 +4254,12 @@ body {
 
   .graph > .graph-outer {
     background-color: var(--background-secondary);
-    color: rgb(218, 218, 218);
+    color: rgb(71, 85, 105);
     border: 1px solid rgba(0, 0, 0, 0);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   .graph > .graph-outer > .global-graph-icon {
@@ -4197,10 +4277,10 @@ body {
   .graph > .global-graph-outer > .global-graph-container {
     background-color: var(--background-secondary);
     border: 1px solid rgba(0, 0, 0, 0);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   footer ul li a {
@@ -4382,6 +4462,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4404,12 +4490,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid rgb(71, 85, 105);
+    border-inline-start: 0px solid rgb(71, 85, 105);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 16px;
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
     background-color: var(--aside-bg, var(--background-secondary));
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 5px;
+    margin-inline-end: 5px;
+    margin-inline-start: 5px;
     margin: 5px;
+    stroke-width: 1px;
     --callout-color: "";
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
     border: 0px solid rgb(71, 85, 105);
     --callout-margin: 0 -1.2em 0 5px;
@@ -4421,6 +4522,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4444,6 +4546,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4466,20 +4574,36 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid oklch(0 0 none / 0);
+    border-inline-start: 0px solid oklch(0 0 none / 0);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: transparent;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
-    border: 0px solid rgb(71, 85, 105);
+    border: 0px solid oklch(0 0 none / 0);
     box-shadow: none;
     --callout-content-padding: 0;
     --callout-border-width: 0;
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4503,6 +4627,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4525,12 +4655,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--callout-default);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
     border: 0px rgb(71, 85, 105);
     box-shadow: none;
@@ -4539,6 +4684,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4562,6 +4708,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4584,20 +4736,36 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+    border-inline-start: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 16px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--callout-default);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
-    border: 0px solid rgba(2, 122, 255, 0.25);
+    border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
     box-shadow: none;
     --callout-content-padding: 0;
     --callout-border-width: 0px;
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4621,6 +4789,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4643,12 +4817,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: transparent;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 0;
     border: 0px rgb(71, 85, 105);
     box-shadow: none;
@@ -4659,6 +4848,7 @@ body {
     --callout-cards-columns: 3;
     --callout-cards-gap: 5px;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4682,6 +4872,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4704,10 +4900,25 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid rgb(71, 85, 105);
+    border-inline-start: 0px solid rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --table-border-color: #363636;
     --callout-padding: 0px;
     border: 0px solid rgb(71, 85, 105);
@@ -4718,6 +4929,7 @@ body {
     --callout-border-opacity: 0.25;
     --list-indent: 0;
     --root-list-spacing: 0;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4741,6 +4953,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4763,12 +4981,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--text-normal);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
     border: 0px rgb(71, 85, 105);
     box-shadow: none;
@@ -4779,6 +5012,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4802,6 +5036,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4824,12 +5064,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--text-normal);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
     border: 0px rgb(71, 85, 105);
     box-shadow: none;
@@ -4840,6 +5095,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4863,6 +5119,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4885,12 +5147,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--callout-default);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 0;
     border: 0px rgb(71, 85, 105);
     box-shadow: none;
@@ -4899,6 +5176,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4922,6 +5200,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -4944,12 +5228,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 0px;
+    stroke-width: 1px;
     --callout-color: var(--note, var(--background-primary));
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 0;
     border: 0px rgb(71, 85, 105);
     --callout-margin: 0 0 0 5px;
@@ -4965,6 +5264,7 @@ body {
     --h4-border-line-height: 0;
     --h5-border-line-height: 0;
     --h6-border-line-height: 0;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -4988,6 +5288,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5010,10 +5316,25 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --table-border-color: #363636;
     --callout-padding: 0;
     border: 0px rgb(71, 85, 105);
@@ -5025,6 +5346,7 @@ body {
     --list-indent: 2.25em;
     --item-outline: 0 0 0 1px var(--outline, var(--background-modifier-border));
     --lane-width: 250px;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -5048,6 +5370,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5070,12 +5398,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid rgba(115, 167, 202, 0.7);
+    border-inline-start: 0px solid rgba(115, 167, 202, 0.7);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 16px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: 115, 167, 202;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
     border: 0px solid rgba(115, 167, 202, 0.7);
     box-shadow: none;
@@ -5084,6 +5427,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -5107,6 +5451,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5129,14 +5479,29 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 2px solid rgb(71, 85, 105);
+    border-inline-start: 2px solid rgb(71, 85, 105);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 16px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: 82, 139, 212;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
-    border: 2px solid rgba(82, 139, 212, 0.25);
+    border: 2px solid rgb(71, 85, 105);
     box-shadow: none;
     --callout-content-padding: 0px 10px 10px;
     --callout-border-width: 2px;
@@ -5145,6 +5510,7 @@ body {
     --list-indent: 2.25em;
     --bold-color: rgb(var(--callout-color));
     --callout-shadow: 0px 0px 0px 1px var(--outline);
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -5168,6 +5534,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 5px;
+    margin-block-end: 5px;
+    margin-block-start: 5px;
+    padding-inline: 16px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5190,20 +5562,36 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+    border-inline-start: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 16px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 5px 0px;
+    stroke-width: 1px;
     --callout-color: var(--callout-default);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 12px 12px 12px 24px;
-    border: 0px solid rgba(2, 122, 255, 0.25);
+    border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
     box-shadow: none;
     --callout-content-padding: 0;
     --callout-border-width: 0px;
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-content-background: transparent;
   }
 
@@ -5227,6 +5615,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 10px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+    padding-inline: 10px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5249,14 +5643,29 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 11px solid rgb(71, 85, 105);
+    border-inline-start: 11px solid rgb(71, 85, 105);
+    padding-block: 5px 10px;
+    padding-block-end: 10px;
+    padding-block-start: 5px;
     padding: 5px 10px 10px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 11;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 10px;
+    margin-inline-end: 10px;
+    margin-inline-start: 10px;
     margin: 10px;
+    stroke-width: 1px;
     --callout-color: 193, 67, 67;
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 5px 10px 10px 10px;
-    border: 11px solid rgba(193, 67, 67, 0.25);
+    border: 11px solid rgb(71, 85, 105);
     --callout-margin: 10px;
     box-shadow: 0px 0px 10px var(--outline, var(--background-modifier-box-shadow));
     --callout-content-padding: 0;
@@ -5264,6 +5673,8 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAYAAADxJz2MAAAFWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjgwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI4MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjMwMC8xIgogICB0aWZmOllSZXNvbHV0aW9uPSIzMDAvMSIKICAgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIKICAgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIgogICB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCI+CiAgIDxkYzp0aXRsZT4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RCZhbXA7RCBCb3JkZXI8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzp0aXRsZT4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0icHJvZHVjZWQiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFmZmluaXR5IERlc2lnbmVyIDEuMTAuNCIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+SLcLyAAAAYFpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc/8xD50SiUhcVLWA35UWJjMZNfhcXMKIPNm2fejJo3Xu+NJFtlO0WJjV8L/gK2ylopIiVLWRMbpuc8o0Yy53bP/dzvPed077mgRNO66ZR3g5nJ2uHRoDoTm1Urn/Ch0EQdqqY71mRkJEpJe7+VaLHrTq9W6bh/rWYh4ejgqxIe0i07KzwmPLGStTzeEm7UU9qC8IlwwJYLCt94erzAzx4nC/zpsR0Nh0CpF1aTvzj+i/WUbQrLy2kz08v6z328l9QmMtMRWVtltuAQZpQgKuMME6KfHgbF99NJL12yo0R+93f+FEuSq4u3WMVmkSQpsgREXZbqCVkN0RMy0qx6/f/bV8fo6y1Urw1CxaPrvrZD5Sbkc677ceC6+UMoe4DzTDF/aR8G3kTPFbW2PfCvw+lFUYtvw9kGNN9bmq19S2UyFcOAl2Ooi0HDFVTPFXr2c87RHUTX5KsuYWcXOiTeP/8FK5Jny8RYHqYAAAAJcEhZcwAALiMAAC4jAXilP3YAAAG5SURBVHic7dyxSiNRFMbxv0OwEkvZfrEWleWAvbA+giB5ANtgcx/gFJK0+wAbwUdYV7bZRjiIirXYL1tbiajFXHV3Y5KBbIyTfL8yOQxfPu5kprkXKnCzRTfrVpmdBm7WdbPFKrNFhYt9As6BnVGD1cgOcJ5/+0CNfl+4WQG0AB80N8U+AiduloBOirh/bejVFehmH4AjYJ/ZLO9Jg7KDo9xJj54C3ewzcAlsjjdbrWwCl7mbvzyvLjebp7xdW28YrE6WgG9u1gFSiriFvALdbBk4QeVV0aL8b1wGKNysCVwA6xONVS/rwIWbNefc7GHSaeps6HugiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIyCzQTqURaafSiBpAE/gCLAwbThFzY0/0DlS8K2+A3SJFdIE14Gy8sabKGbCWIroFQIq4AjaA9kRj1UMb2MidvexYzzuw99zsB/CVcoe2vPgNNFPE9z8/7HmI5IEV4PiNgtXBMbDyb3nQ5ymcIn4BW8AecDfebO/aHWUHW7mTHn2PNMnnpLTd7CdwSHmOyiy5BrZTxOmgoaHvgfkCq8DBfwpWBwfA6rDyAB4BTjVxWZByO0gAAAAASUVORK5CYII=") 11 / 1 / 9px 0px stretch;
+    border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAYAAADxJz2MAAAFWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjgwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI4MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjMwMC8xIgogICB0aWZmOllSZXNvbHV0aW9uPSIzMDAvMSIKICAgcGhvdG9zaG9wOkNvbG9yTW9kZT0iMyIKICAgcGhvdG9zaG9wOklDQ1Byb2ZpbGU9InNSR0IgSUVDNjE5NjYtMi4xIgogICB4bXA6TW9kaWZ5RGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIKICAgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCI+CiAgIDxkYzp0aXRsZT4KICAgIDxyZGY6QWx0PgogICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+RCZhbXA7RCBCb3JkZXI8L3JkZjpsaT4KICAgIDwvcmRmOkFsdD4KICAgPC9kYzp0aXRsZT4KICAgPHhtcE1NOkhpc3Rvcnk+CiAgICA8cmRmOlNlcT4KICAgICA8cmRmOmxpCiAgICAgIHN0RXZ0OmFjdGlvbj0icHJvZHVjZWQiCiAgICAgIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFmZmluaXR5IERlc2lnbmVyIDEuMTAuNCIKICAgICAgc3RFdnQ6d2hlbj0iMjAyMi0wMS0wMlQxNjowNTo0MS0wODowMCIvPgogICAgPC9yZGY6U2VxPgogICA8L3htcE1NOkhpc3Rvcnk+CiAgPC9yZGY6RGVzY3JpcHRpb24+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+SLcLyAAAAYFpQ0NQc1JHQiBJRUM2MTk2Ni0yLjEAACiRdZHPK0RRFMc/8xD50SiUhcVLWA35UWJjMZNfhcXMKIPNm2fejJo3Xu+NJFtlO0WJjV8L/gK2ylopIiVLWRMbpuc8o0Yy53bP/dzvPed077mgRNO66ZR3g5nJ2uHRoDoTm1Urn/Ch0EQdqqY71mRkJEpJe7+VaLHrTq9W6bh/rWYh4ejgqxIe0i07KzwmPLGStTzeEm7UU9qC8IlwwJYLCt94erzAzx4nC/zpsR0Nh0CpF1aTvzj+i/WUbQrLy2kz08v6z328l9QmMtMRWVtltuAQZpQgKuMME6KfHgbF99NJL12yo0R+93f+FEuSq4u3WMVmkSQpsgREXZbqCVkN0RMy0qx6/f/bV8fo6y1Urw1CxaPrvrZD5Sbkc677ceC6+UMoe4DzTDF/aR8G3kTPFbW2PfCvw+lFUYtvw9kGNN9bmq19S2UyFcOAl2Ooi0HDFVTPFXr2c87RHUTX5KsuYWcXOiTeP/8FK5Jny8RYHqYAAAAJcEhZcwAALiMAAC4jAXilP3YAAAG5SURBVHic7dyxSiNRFMbxv0OwEkvZfrEWleWAvbA+giB5ANtgcx/gFJK0+wAbwUdYV7bZRjiIirXYL1tbiajFXHV3Y5KBbIyTfL8yOQxfPu5kprkXKnCzRTfrVpmdBm7WdbPFKrNFhYt9As6BnVGD1cgOcJ5/+0CNfl+4WQG0AB80N8U+AiduloBOirh/bejVFehmH4AjYJ/ZLO9Jg7KDo9xJj54C3ewzcAlsjjdbrWwCl7mbvzyvLjebp7xdW28YrE6WgG9u1gFSiriFvALdbBk4QeVV0aL8b1wGKNysCVwA6xONVS/rwIWbNefc7GHSaeps6HugiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIyCzQTqURaafSiBpAE/gCLAwbThFzY0/0DlS8K2+A3SJFdIE14Gy8sabKGbCWIroFQIq4AjaA9kRj1UMb2MidvexYzzuw99zsB/CVcoe2vPgNNFPE9z8/7HmI5IEV4PiNgtXBMbDyb3nQ5ymcIn4BW8AecDfebO/aHWUHW7mTHn2PNMnnpLTd7CdwSHmOyiy5BrZTxOmgoaHvgfkCq8DBfwpWBwfA6rDyAB4BTjVxWZByO0gAAAAASUVORK5CYII=");
     --callout-content-background: transparent;
   }
 
@@ -5287,6 +5698,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 10px;
+    margin-block-end: 10px;
+    margin-block-start: 10px;
+    padding-inline: 15px;
+    padding-inline-end: 15px;
+    padding-inline-start: 15px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5309,10 +5726,25 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px solid rgb(71, 85, 105);
+    border-inline-start: 0px solid rgb(71, 85, 105);
+    padding-block: 12px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
     padding: 12px 15px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 138.688px;
+    margin-inline-end: 138.688px;
+    margin-inline-start: 138.688px;
     margin: 10px 138.688px;
+    stroke-width: 1px;
     --table-border-color: #363636;
     --callout-padding: 12px 15px;
     border-color: rgb(71, 85, 105);
@@ -5327,6 +5759,7 @@ body {
     --callout-title-padding: 0;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --callout-border-color: var(--hr, var(--hr-color));
     --callout-content-background: transparent;
   }
@@ -5351,6 +5784,12 @@ body {
       "Segoe UI Symbol",
       "Microsoft YaHei Light",
       sans-serif;
+    margin-block: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    padding-inline: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     --callout-black: 0, 0, 0;
     --callout-blend-mode: normal;
     --callout-blue: 82, 139, 212;
@@ -5373,12 +5812,27 @@ body {
     --callout-tiny: 20%;
     --callout-white: 256, 256, 256;
     --callout-yellow: 208, 181, 48;
+    border-inline-end: 0px none rgb(71, 85, 105);
+    border-inline-start: 0px none rgb(71, 85, 105);
+    padding-block: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding: 0px;
-    background-color: rgba(var(--callout-color), 0.1);
+    -webkit-background-clip: border-box;
+    -webkit-box-decoration-break: slice;
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    border-image-slice: 100%;
+    box-decoration-break: slice;
     line-height: 24px;
+    margin-inline: 0px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     margin: 0px;
+    stroke-width: 1px;
     --callout-color: var(--callout-default);
-    --table-border-color: color-mix(in srgb, rgb(var(--callout-color)) 25%, var(--background-primary) 50%);
+    --table-border-color: color-mix(in oklch, var(--callout-color) 25%, var(--background-primary) 50%);
     --callout-padding: 0;
     border: 0px rgb(71, 85, 105);
     --callout-margin: 0;
@@ -5388,6 +5842,7 @@ body {
     --callout-title-padding: 10px;
     --callout-border-opacity: 0.25;
     --list-indent: 2.25em;
+    border-image-source: none;
     --c-timeline: calc(50% - 2px);
     --callout-content-background: var(--callout-background, rgb(var(--callout-color), 0.1));
     --micro: 50px;
@@ -5411,8 +5866,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5434,8 +5893,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5457,8 +5920,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5480,8 +5947,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5503,8 +5974,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5526,8 +6001,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5549,8 +6028,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5572,8 +6055,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5595,8 +6082,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5618,8 +6109,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5641,8 +6136,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5664,8 +6163,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5687,8 +6190,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5710,8 +6217,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5733,8 +6244,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5756,8 +6271,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5779,8 +6298,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5802,8 +6325,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5825,8 +6352,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5848,8 +6379,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5871,8 +6406,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5894,8 +6433,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5917,8 +6460,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5940,8 +6487,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5963,8 +6514,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -5986,8 +6541,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6009,8 +6568,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6032,8 +6595,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6055,8 +6622,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6078,8 +6649,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6101,8 +6676,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6124,8 +6703,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6147,8 +6730,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6170,8 +6757,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6193,8 +6784,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6216,8 +6811,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6239,8 +6838,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6262,8 +6865,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6285,8 +6892,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6308,8 +6919,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6331,8 +6946,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6354,8 +6973,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6377,8 +7000,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6400,8 +7027,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6423,8 +7054,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6446,8 +7081,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6469,8 +7108,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6492,8 +7135,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6515,8 +7162,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6538,8 +7189,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6561,8 +7216,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6584,8 +7243,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6607,8 +7270,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6630,8 +7297,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6653,8 +7324,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6676,8 +7351,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6699,8 +7378,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6722,8 +7405,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6745,8 +7432,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6768,8 +7459,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6791,8 +7486,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6814,8 +7513,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6837,8 +7540,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6860,8 +7567,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6883,8 +7594,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6906,8 +7621,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;
@@ -6929,8 +7648,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
+    margin-block-start: 0px;
+    margin-inline-start: 0px;
     margin-left: 0px;
     margin-top: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     text-decoration-line: none;
     background-image: none;

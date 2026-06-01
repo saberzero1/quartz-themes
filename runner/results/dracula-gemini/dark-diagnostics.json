@@ -2,6 +2,12 @@
   "conflicts": [],
   "brokenBridges": [
     {
+      "property": "--hr-remainder",
+      "references": "--hr-required-size",
+      "selector": "hr",
+      "aspect": "search"
+    },
+    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",
