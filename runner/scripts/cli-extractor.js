@@ -1118,6 +1118,62 @@ function generateFullExtractionScript(selectors) {
       return candidate.value;
     }
 
+    // CSS properties that are inherited by default. When no direct CSSOM
+    // rule sets one of these on an element, the browser inherits the
+    // computed value from the nearest ancestor that does declare it.
+    // We walk up the DOM tree to find the ancestor's var() declaration
+    // so we can preserve it instead of emitting the resolved value.
+    const INHERITABLE_PROPS = new Set([
+      "color", "font-family", "font-size", "font-weight", "font-style",
+      "font-variant", "font-variant-caps", "font-variant-ligatures",
+      "font-variant-numeric", "font-variant-east-asian",
+      "font-stretch", "font-optical-sizing", "font-size-adjust",
+      "line-height", "letter-spacing", "word-spacing",
+      "text-align", "text-indent", "text-transform",
+      "white-space", "word-break", "overflow-wrap", "word-wrap",
+      "direction", "unicode-bidi",
+      "cursor", "visibility",
+      "list-style-type", "list-style-position", "list-style-image",
+      "caret-color",
+      "text-decoration-color",
+      "-webkit-text-fill-color", "-webkit-text-stroke-color",
+      "column-rule-color",
+      "orphans", "widows",
+      "quotes", "tab-size",
+      "border-collapse", "border-spacing",
+      "caption-side", "empty-cells",
+    ]);
+
+    // Walk up the DOM ancestor chain to find an inherited var() declaration
+    // for properties where no direct CSSOM rule exists on the element.
+    function getInheritedDeclaredValue(el, prop) {
+      // First try the element itself (fast path)
+      const direct = getDeclaredValue(el, prop);
+      if (direct && direct.includes("var(")) return direct;
+
+      // Only walk ancestors for inheritable properties
+      if (!INHERITABLE_PROPS.has(prop)) return null;
+
+      let ancestor = el.parentElement;
+      while (ancestor) {
+        const result = findWinningRule(ancestor, prop);
+        if (result) {
+          let value;
+          if (result.candidate.isShorthand) {
+            value = extractVarToken(result.candidate.value, prop);
+          } else {
+            value = result.candidate.value;
+          }
+          if (value && value.includes("var(")) return value;
+          // Ancestor has a non-var() rule — stop walking, this is the
+          // cascade winner and it intentionally uses a fixed value.
+          return null;
+        }
+        ancestor = ancestor.parentElement;
+      }
+      return null;
+    }
+
     // Source provenance: returns which selector won for a property
     function getProvenance(el, prop) {
       const result = findWinningRule(el, prop);
@@ -1572,6 +1628,9 @@ function generateFullExtractionScript(selectors) {
     // the CSSOM winning rule's declared value contains var(), record the
     // declared text. This lets generate.js preserve var() references instead
     // of using the computed (resolved) value.
+    // For inheritable properties (color, font-*, cursor, etc.), walks the
+    // DOM ancestor chain to find var() declarations from parent elements
+    // when no direct rule exists on the element itself.
     const declaredVarUses = {};
     for (const [resultSelector, props] of Object.entries(results)) {
       if (resultSelector === "html" || resultSelector === "body") continue;
@@ -1592,9 +1651,13 @@ function generateFullExtractionScript(selectors) {
       for (const prop of Object.keys(props)) {
         if (prop.startsWith("--")) continue;
 
-        const declared = isPseudo
-          ? getDeclaredValueForPseudo(el, resultSelector.match(/::[\w-]+/)?.[0] || "", prop)
-          : getDeclaredValue(el, prop);
+        let declared;
+        if (isPseudo) {
+          declared = getDeclaredValueForPseudo(el, resultSelector.match(/::[\w-]+/)?.[0] || "", prop);
+        } else {
+          // Use ancestor walk for inheritable properties, direct lookup otherwise
+          declared = getInheritedDeclaredValue(el, prop);
+        }
         if (!declared || !declared.includes("var(")) continue;
 
         if (!declaredVarUses[resultSelector]) declaredVarUses[resultSelector] = {};

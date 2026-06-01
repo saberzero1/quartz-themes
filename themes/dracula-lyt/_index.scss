@@ -1541,23 +1541,10 @@ body {
   }
 
   h1 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h1-color);
+    font-family: var(--font-header);
     font-size: var(--h1-size);
-    font-weight: 700;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1575,7 +1562,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(255, 184, 107);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1588,23 +1575,10 @@ body {
   }
 
   h2 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h2-color);
+    font-family: var(--font-header);
     font-size: var(--h2-size);
-    font-weight: 680;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1622,7 +1596,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(255, 122, 198);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1635,23 +1609,10 @@ body {
   }
 
   h3 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h3-color);
+    font-family: var(--font-header);
     font-size: var(--h3-size);
-    font-weight: 660;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1669,7 +1630,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(189, 147, 249);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1682,23 +1643,10 @@ body {
   }
 
   h4 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h4-color);
+    font-family: var(--font-header);
     font-size: var(--h4-size);
-    font-weight: 640;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1716,7 +1664,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(139, 233, 253);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1729,23 +1677,10 @@ body {
   }
 
   h5 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h5-color);
+    font-family: var(--font-header);
     font-size: var(--h5-size);
-    font-weight: 620;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1763,7 +1698,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(80, 250, 123);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1776,23 +1711,10 @@ body {
   }
 
   h6 {
-    color: rgb(218, 218, 218);
-    font-family:
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    color: var(--h6-color);
+    font-family: var(--font-header);
     font-size: var(--h6-size);
-    font-weight: 600;
+    font-weight: var(--font-bold);
     line-height: var(--header-line-height);
     text-shadow: none;
     text-decoration: rgb(218, 218, 218);
@@ -1810,7 +1732,7 @@ body {
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(218, 218, 218);
+    border: 0px rgb(241, 250, 140);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;

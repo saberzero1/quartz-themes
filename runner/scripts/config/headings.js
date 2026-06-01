@@ -4,7 +4,7 @@ export const aspect = "headings";
 
 export const entries = [
   {
-    obsidianSelector: 'h1[data-heading=\\"This is a heading 1\\"]',
+    obsidianSelector: `h1[data-heading=\"This is a heading 1\"]`,
     publishSelector: "h1",
     quartzSelector: "h1",
     pseudoElement: "",
@@ -18,7 +18,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: 'h2[data-heading=\\"This is a heading 2\\"]',
+    obsidianSelector: `h2[data-heading=\"This is a heading 2\"]`,
     publishSelector: "h2",
     quartzSelector: "h2",
     pseudoElement: "",
@@ -32,7 +32,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: 'h3[data-heading=\\"This is a heading 3\\"]',
+    obsidianSelector: `h3[data-heading=\"This is a heading 3\"]`,
     publishSelector: "h3",
     quartzSelector: "h3",
     pseudoElement: "",
@@ -46,7 +46,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: 'h4[data-heading=\\"This is a heading 4\\"]',
+    obsidianSelector: `h4[data-heading=\"This is a heading 4\"]`,
     publishSelector: "h4",
     quartzSelector: "h4",
     pseudoElement: "",
@@ -60,7 +60,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: 'h5[data-heading=\\"This is a heading 5\\"]',
+    obsidianSelector: `h5[data-heading=\"This is a heading 5\"]`,
     publishSelector: "h5",
     quartzSelector: "h5",
     pseudoElement: "",
@@ -74,7 +74,7 @@ export const entries = [
     ],
   },
   {
-    obsidianSelector: 'h6[data-heading=\\"This is a heading 6\\"]',
+    obsidianSelector: `h6[data-heading=\"This is a heading 6\"]`,
     publishSelector: "h6",
     quartzSelector: "h6",
     pseudoElement: "",

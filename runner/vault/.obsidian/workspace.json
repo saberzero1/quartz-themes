@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "headings.md",
+                "file": "theme-code/syntax-samples.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "headings"
+              "title": "syntax-samples"
             }
           }
         ]
@@ -102,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "headings.md",
+                "file": "theme-code/syntax-samples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "headings.md",
+                "file": "theme-code/syntax-samples.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -195,12 +195,12 @@
   },
   "active": "b9547fcabc7c6807",
   "lastOpenFiles": [
-    "theme-code/syntax-samples.md",
     "theme-bases/bases-cards.md",
     "theme-bases/bases-list.md",
     "theme-bases/bases-table.md",
     "theme-canvas/test-canvas.canvas",
     "theme-properties/note-properties.md",
+    "theme-code/syntax-samples.md",
     "theme-checkboxes/upper.md",
     "theme-checkboxes/lower.md",
     "theme-checkboxes/special.md",

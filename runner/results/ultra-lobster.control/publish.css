@@ -4211,25 +4211,12 @@ body body.theme-dark .clickable-icon {
   border-bottom-right-radius: 24px;
 }
 body body.theme-dark h1 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 700;
+  color: var(--ulu-h1-text-color, var(--h1-color, var(--color-base-100)));
+  font-family: var(--h1-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4240,25 +4227,12 @@ body body.theme-dark h1 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h2 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 680;
+  color: var(--ulu-h2-text-color, var(--h2-color, var(--color-accent)));
+  font-family: var(--h2-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 217, 26);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4269,25 +4243,12 @@ body body.theme-dark h2 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h3 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 660;
+  color: var(--ulu-h3-text-color, var(--h3-color, var(--color-base-100)));
+  font-family: var(--h3-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4298,25 +4259,12 @@ body body.theme-dark h3 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h4 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 640;
+  color: var(--ulu-h4-text-color, var(--h4-color, var(--color-base-100)));
+  font-family: var(--h4-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4327,25 +4275,12 @@ body body.theme-dark h4 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h5 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 620;
+  color: var(--ulu-h5-text-color, var(--h5-color, var(--color-base-100)));
+  font-family: var(--h5-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -4356,25 +4291,12 @@ body body.theme-dark h5 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h6 {
-  color: rgb(218, 218, 218);
-  font-family:
-    ui-sans-serif,
-    -apple-system,
-    BlinkMacSystemFont,
-    system-ui,
-    "Segoe UI",
-    "Google Sans Flex",
-    Roboto,
-    "Inter Variable",
-    Inter,
-    "Apple Color Emoji",
-    "Segoe UI Emoji",
-    "Segoe UI Symbol",
-    sans-serif;
-  font-weight: 600;
+  color: var(--ulu-h6-text-color, var(--h6-color, var(--color-base-100)));
+  font-family: var(--h6-font);
+  font-weight: var(--font-weight);
   text-decoration: rgb(218, 218, 218);
   text-transform: none;
-  border: 0px rgb(218, 218, 218);
+  border: 0px rgb(255, 255, 255);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

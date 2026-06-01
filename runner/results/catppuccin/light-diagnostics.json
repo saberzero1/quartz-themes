@@ -102,6 +102,42 @@
       "references": "--ec-brdRad",
       "selector": "figure",
       "aspect": "images"
+    },
+    {
+      "property": "--h1-color",
+      "references": "--ctp-h1",
+      "selector": "h1",
+      "aspect": "headings"
+    },
+    {
+      "property": "--h2-color",
+      "references": "--ctp-h2",
+      "selector": "h2",
+      "aspect": "headings"
+    },
+    {
+      "property": "--h3-color",
+      "references": "--ctp-h3",
+      "selector": "h3",
+      "aspect": "headings"
+    },
+    {
+      "property": "--h4-color",
+      "references": "--ctp-h4",
+      "selector": "h4",
+      "aspect": "headings"
+    },
+    {
+      "property": "--h5-color",
+      "references": "--ctp-h5",
+      "selector": "h5",
+      "aspect": "headings"
+    },
+    {
+      "property": "--h6-color",
+      "references": "--ctp-h6",
+      "selector": "h6",
+      "aspect": "headings"
     }
   ]
 }
