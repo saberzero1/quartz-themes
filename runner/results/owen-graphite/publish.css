@@ -1831,7 +1831,7 @@ body.theme-light {
       var(--ogd-bottom-document-frame-gap) * 2 + 8px
   ) !important;
   --ogd-bottom-document-frame-source-header-height: 40px !important;
-  --ogd-bottom-document-frame-status-space: min(52vw, 680px) !important;
+  --ogd-bottom-document-frame-status-space: 520px !important;
   --ogd-bottom-document-toolbar-bottom: var(
     --ogd-bottom-document-toolbar-floor-offset
   ) !important;
@@ -3354,7 +3354,7 @@ body.theme-dark {
       var(--ogd-bottom-document-frame-gap) * 2 + 8px
   ) !important;
   --ogd-bottom-document-frame-source-header-height: 40px !important;
-  --ogd-bottom-document-frame-status-space: min(52vw, 680px) !important;
+  --ogd-bottom-document-frame-status-space: 520px !important;
   --ogd-bottom-document-toolbar-bottom: var(
     --ogd-bottom-document-toolbar-floor-offset
   ) !important;
@@ -5435,7 +5435,7 @@ body body.theme-light .page-header .page-title {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  border: 1px solid rgba(125, 211, 252, 0.58);
+  border: 1px solid rgba(203, 213, 225, 0.46);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -8198,7 +8198,7 @@ body body.theme-dark .page-header .page-title {
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  border: 1px solid rgba(186, 230, 253, 0.3);
+  border: 1px solid rgba(203, 213, 225, 0.18);
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
   border-bottom-left-radius: 9px;

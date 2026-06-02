@@ -505,7 +505,7 @@
     "body": ["--size-4-3", "--size-4-3", "--size-4-3", "--size-4-6"],
     ".mod-rtl": ["--size-4-3", "--size-4-6", "--size-4-3", "--size-4-3"]
   },
-  "--callout-radius": { "body": ["--radius-s"], ".callout": ["--radius-s"] },
+  "--callout-radius": { "body": ["--radius-s"], ".callout": ["--radius-m"] },
   "--callout-blend-mode": { "body": ["--highlight-mix-blend-mode"] },
   "--callout-title-weight": { "body": ["--font-weight", "--bold-modifier"] },
   "--callout-bug": { "body": ["--color-red"] },

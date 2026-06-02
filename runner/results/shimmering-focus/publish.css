@@ -4058,25 +4058,25 @@ body body.theme-light body {
 }
 body body.theme-light .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 1px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  background-color: rgb(var(--callout-color), 11%);
+  padding: 4px;
+  padding-block-end: 4px;
+  padding-block-start: 4px;
+  padding-inline-end: 4px;
+  padding-inline-start: 4px;
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
@@ -4120,17 +4120,17 @@ body body.theme-light .callout > .callout-content {
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(62.8051% 0.0981486 193.19deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(62.8051% 0.0981486 193.19deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(62.8051% 0.0981486 193.19deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4161,17 +4161,17 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4202,17 +4202,17 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(55.0587% 0.189745 256.787deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(55.0587% 0.189745 256.787deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4243,17 +4243,17 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(62.8051% 0.0981486 193.19deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(62.8051% 0.0981486 193.19deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(62.8051% 0.0981486 193.19deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4284,17 +4284,17 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(68.6205% 0.194562 148.477deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(68.6205% 0.194562 148.477deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(68.6205% 0.194562 148.477deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4325,17 +4325,17 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(68.8771% 0.175867 52.5446deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4366,17 +4366,17 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(68.8771% 0.175867 52.5446deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(68.8771% 0.175867 52.5446deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4407,17 +4407,17 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4448,17 +4448,17 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4489,17 +4489,17 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(61.1475% 0.216957 20.8417deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(61.1475% 0.216957 20.8417deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4530,17 +4530,17 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(56.7895% 0.221884 288.456deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(56.7895% 0.221884 288.456deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(56.7895% 0.221884 288.456deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4571,17 +4571,17 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(69.9256% 0.0000347234 none / 0.1) none repeat scroll 0% 0% /
+    auto padding-box border-box;
   color: rgb(31, 41, 92);
   mix-blend-mode: normal;
-  border: 1px solid oklch(69.9256% 0.0000347234 none / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(69.9256% 0.0000347234 none / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7115,25 +7115,25 @@ body body.theme-dark body {
 }
 body body.theme-dark .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 1px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   mix-blend-mode: normal;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
-  background-color: rgb(var(--callout-color), 11%);
+  padding: 4px;
+  padding-block-end: 4px;
+  padding-block-start: 4px;
+  padding-inline-end: 4px;
+  padding-inline-start: 4px;
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
@@ -7177,17 +7177,17 @@ body body.theme-dark .callout > .callout-content {
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(82.8615% 0.118893 193.752deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7218,17 +7218,17 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7259,17 +7259,17 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(60.2893% 0.217554 257.503deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(60.2893% 0.217554 257.503deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7300,17 +7300,17 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(82.8615% 0.118893 193.752deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(82.8615% 0.118893 193.752deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7341,17 +7341,17 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(75.7772% 0.180999 149.614deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(75.7772% 0.180999 149.614deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(75.7772% 0.180999 149.614deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7382,17 +7382,17 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(74.4355% 0.140765 64.0894deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7423,17 +7423,17 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(74.4355% 0.140765 64.0894deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(74.4355% 0.140765 64.0894deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7464,17 +7464,17 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7505,17 +7505,17 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7546,17 +7546,17 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(65.9737% 0.216875 23.8105deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(65.9737% 0.216875 23.8105deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7587,17 +7587,17 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(69.7304% 0.17906 295.405deg / 0.1) none repeat scroll 0%
+    0% / auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(69.7305% 0.17906 295.405deg / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(69.7305% 0.17906 295.405deg / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7628,17 +7628,17 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
-  background-color: rgb(var(--callout-color), 11%);
+  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: oklch(69.9256% 0.0000347234 none / 0.1) none repeat scroll 0% 0% /
+    auto padding-box border-box;
   color: rgb(195, 200, 223);
   mix-blend-mode: normal;
-  border: 1px solid oklch(69.9256% 0.0000347234 none / 0.25);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 2px solid oklch(69.9256% 0.0000347234 none / 0.25);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;

@@ -843,8 +843,8 @@ body.theme-light {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
+  --file-header-background: transparent !important;
+  --file-header-background-focused: transparent !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -1492,7 +1492,11 @@ body.theme-light {
   --tag-size: var(--font-smaller) !important;
   --text-accent-hover: var(--bu-accent-hi) !important;
   --text-error: var(--color-red) !important;
-  --text-highlight-bg: rgba(202, 154, 78, 0.3) !important;
+  --text-highlight-bg: color-mix(
+    in srgb,
+    var(--bu-accent) 42%,
+    transparent
+  ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: var(--bu-muted) !important;
   --text-on-accent: var(--bu-on-accent) !important;
@@ -1565,9 +1569,9 @@ body.theme-light {
   --bu-accent: var(--bu-control) !important;
   --bu-accent-custom: #e23b2c !important;
   --bu-accent-hi: color-mix(in srgb, var(--bu-accent), white 24%) !important;
-  --bu-acrylic: blur(12px) saturate(1.05) !important;
+  --bu-acrylic: none !important;
   --bu-anim-ease: cubic-bezier(0.16, 1, 0.3, 1) !important;
-  --bu-bg: #e7e0cd !important;
+  --bu-bg: var(--bu-white-level, #e7e0cd) !important;
   --bu-bg-alt: #e4dcc9 !important;
   --bu-border: #cabfa6 !important;
   --bu-border-hi: #b3a787 !important;
@@ -1578,6 +1582,8 @@ body.theme-light {
   --bu-code-bg: #e6dfce !important;
   --bu-control: #e23b2c !important;
   --bu-deus: #d7a531 !important;
+  --bu-editor-bg: var(--bu-white-level, #e7e0cd) !important;
+  --bu-editor-text: var(--bu-text-light, #1e1a14) !important;
   --bu-faint: #8a8069 !important;
   --bu-font-body:
     "Courier Prime", ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas,
@@ -1585,6 +1591,9 @@ body.theme-light {
   --bu-font-label:
     "Urbanist", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
     sans-serif !important;
+  --bu-glass-br: inset -1.5px -1.5px 0 0 rgb(0 0 0 / 0.13) !important;
+  --bu-glass-ring: 0 0 0 1px color-mix(in srgb, var(--bu-line) 45%, transparent) !important;
+  --bu-glass-tl: inset 1.5px 1.5px 0 0 rgb(255 255 255 / 0.95) !important;
   --bu-glow: color-mix(
     in srgb,
     var(--bu-accent) calc(var(--bu-glow-intensity, 13) * 1%),
@@ -1600,6 +1609,7 @@ body.theme-light {
   --bu-muted: #5c5444 !important;
   --bu-on-accent: #ffffff !important;
   --bu-raised: #f4efe4 !important;
+  --bu-rolodex-ease: cubic-bezier(0.34, 1.56, 0.64, 1) !important;
   --bu-scanline-strength: 0.34 !important;
   --bu-scanlines: repeating-linear-gradient(
     to bottom,
@@ -1624,7 +1634,7 @@ body.theme-light {
   --bu-t-fast: calc(var(--bu-anim-speed, 600) * 0.3ms) !important;
   --bu-t-slow: calc(var(--bu-anim-speed, 600) * 1ms) !important;
   --bu-teal: #2f6058 !important;
-  --bu-text: #1e1a14 !important;
+  --bu-text: var(--bu-text-light, #1e1a14) !important;
   --bu-text-hi: #0d0a06 !important;
   --bu-veil: #000000 !important;
   --nn-selected-file-bg-color: color-mix(
@@ -1980,8 +1990,8 @@ body.theme-dark {
   --embed-max-height: 4000px !important;
   --embed-padding: 0 0 0 var(--size-4-6) !important;
   --file-folding-offset: 24px !important;
-  --file-header-background: var(--background-primary) !important;
-  --file-header-background-focused: var(--background-primary) !important;
+  --file-header-background: transparent !important;
+  --file-header-background-focused: transparent !important;
   --file-header-border: var(--border-width) solid transparent !important;
   --file-header-font: var(--font-interface) !important;
   --file-header-font-size: var(--font-ui-small) !important;
@@ -2623,7 +2633,11 @@ body.theme-dark {
   --tag-size: var(--font-smaller) !important;
   --text-accent-hover: var(--bu-accent-hi) !important;
   --text-error: var(--color-red) !important;
-  --text-highlight-bg: rgba(202, 154, 78, 0.3) !important;
+  --text-highlight-bg: color-mix(
+    in srgb,
+    var(--bu-accent) 42%,
+    transparent
+  ) !important;
   --text-highlight-bg-rgb: 255, 208, 0 !important;
   --text-muted: var(--bu-muted) !important;
   --text-on-accent: var(--bu-on-accent) !important;
@@ -2691,9 +2705,9 @@ body.theme-dark {
   --bu-accent: var(--bu-control) !important;
   --bu-accent-custom: #e23b2c !important;
   --bu-accent-hi: color-mix(in srgb, var(--bu-accent), white 24%) !important;
-  --bu-acrylic: blur(12px) saturate(1.05) !important;
+  --bu-acrylic: none !important;
   --bu-anim-ease: cubic-bezier(0.16, 1, 0.3, 1) !important;
-  --bu-bg: #0c0b0a !important;
+  --bu-bg: var(--bu-black-level, #0c0b0a) !important;
   --bu-bg-alt: #060605 !important;
   --bu-border: #2a2620 !important;
   --bu-border-hi: #3a342a !important;
@@ -2704,6 +2718,8 @@ body.theme-dark {
   --bu-code-bg: #0a0908 !important;
   --bu-control: #e23b2c !important;
   --bu-deus: #d7a531 !important;
+  --bu-editor-bg: var(--bu-black-level, #0c0b0a) !important;
+  --bu-editor-text: var(--bu-text-dark, #f1efea) !important;
   --bu-faint: #5f594e !important;
   --bu-font-body:
     "Courier Prime", ui-monospace, "Cascadia Code", "SF Mono", Menlo, Consolas,
@@ -2711,6 +2727,11 @@ body.theme-dark {
   --bu-font-label:
     "Urbanist", system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial,
     sans-serif !important;
+  --bu-glass-br: inset -1px -1px 0 0 color-mix(in srgb, #000 42%, transparent) !important;
+  --bu-glass-ring: 0 0 0 0.5px
+    color-mix(in srgb, var(--bu-text-hi) 12%, transparent) !important;
+  --bu-glass-tl: inset 1px 1px 0 0
+    color-mix(in srgb, var(--bu-text-hi) 26%, transparent) !important;
   --bu-glow: color-mix(
     in srgb,
     var(--bu-accent) calc(var(--bu-glow-intensity, 13) * 1%),
@@ -2726,6 +2747,7 @@ body.theme-dark {
   --bu-muted: #968d7e !important;
   --bu-on-accent: #ffffff !important;
   --bu-raised: #1e1b17 !important;
+  --bu-rolodex-ease: cubic-bezier(0.34, 1.56, 0.64, 1) !important;
   --bu-scanline-strength: 0.34 !important;
   --bu-scanlines: repeating-linear-gradient(
     to bottom,
@@ -2750,7 +2772,7 @@ body.theme-dark {
   --bu-t-fast: calc(var(--bu-anim-speed, 600) * 0.3ms) !important;
   --bu-t-slow: calc(var(--bu-anim-speed, 600) * 1ms) !important;
   --bu-teal: #4f817a !important;
-  --bu-text: #f1efea !important;
+  --bu-text: var(--bu-text-dark, #f1efea) !important;
   --bu-text-hi: #ffffff !important;
   --bu-veil: #ffffff !important;
   --nn-selected-file-bg-color: color-mix(
@@ -5348,7 +5370,7 @@ body body.theme-light .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(even) {
-  background-color: color-mix(in srgb, var(--bu-accent) 8%, transparent);
+  background-color: color-mix(in srgb, var(--bu-accent) 15%, transparent);
 }
 body body.theme-light .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background);
@@ -5793,7 +5815,7 @@ body body.theme-light h6 {
   border-end-end-radius: 0px;
 }
 body body.theme-light .site-footer {
-  background-color: var(--bu-bg-alt);
+  background-color: var(--bu-editor-text);
   color: var(--status-bar-text-color);
   font-family: var(--bu-font-body);
   font-size: var(--status-bar-font-size);
@@ -5808,7 +5830,7 @@ body body.theme-light .site-footer {
   padding-inline-start: 4px;
 }
 body body.theme-light .site-footer a {
-  color: var(--bu-muted);
+  color: var(--bu-editor-bg);
   font-size: 10.8px;
   font-weight: 400;
 }
@@ -8491,7 +8513,7 @@ body body.theme-dark .markdown-rendered tr {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(even) {
-  background-color: color-mix(in srgb, var(--bu-accent) 8%, transparent);
+  background-color: color-mix(in srgb, var(--bu-accent) 15%, transparent);
 }
 body body.theme-dark .markdown-rendered tbody tr:nth-child(odd) {
   background-color: var(--table-row-alt-background);
@@ -8936,7 +8958,7 @@ body body.theme-dark h6 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark .site-footer {
-  background-color: var(--bu-bg-alt);
+  background-color: var(--bu-editor-text);
   color: var(--status-bar-text-color);
   font-family: var(--bu-font-body);
   font-size: var(--status-bar-font-size);
@@ -8951,7 +8973,7 @@ body body.theme-dark .site-footer {
   padding-inline-start: 4px;
 }
 body body.theme-dark .site-footer a {
-  color: var(--bu-muted);
+  color: var(--bu-editor-bg);
   font-size: 10.8px;
   font-weight: 400;
 }

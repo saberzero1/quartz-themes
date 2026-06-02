@@ -32,6 +32,7 @@
     "line-height": "var(--line-height-tight)"
   },
   "hr.workspace-leaf-resize-handle": {
+    "background-color": "var(--background-secondary-alt)",
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
@@ -181,7 +182,7 @@
   ".search-result-file-matched-text": {
     "background-color": "var(--text-highlight-bg)",
     "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
+    "color": "var(--white-dim)",
     "cursor": "var(--cursor)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-smaller)",

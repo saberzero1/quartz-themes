@@ -1117,6 +1117,8 @@ body.theme-light {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --table-header-padding-x: 10px !important;
+  --table-header-padding-y: 4px !important;
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
@@ -1492,8 +1494,6 @@ body.theme-light {
   --table-add-button-size: var(--size-4-6) !important;
   --table-cell-padding-x: 10px !important;
   --table-cell-padding-y: 4px !important;
-  --table-header-padding-x: 10px !important;
-  --table-header-padding-y: 4px !important;
   --table-header-text-color: #a35158 !important;
   --table-row-edit-font-size: var(--font-small) !important;
   --tag: #c65656 !important;
@@ -2619,6 +2619,8 @@ body.theme-dark {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --table-header-padding-x: 10px !important;
+  --table-header-padding-y: 4px !important;
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
@@ -2995,8 +2997,6 @@ body.theme-dark {
   --table-add-button-size: var(--size-4-6) !important;
   --table-cell-padding-x: 10px !important;
   --table-cell-padding-y: 4px !important;
-  --table-header-padding-x: 10px !important;
-  --table-header-padding-y: 4px !important;
   --table-header-text-color: #e06c75 !important;
   --table-row-edit-font-size: var(--font-small) !important;
   --tag: #571a1a !important;

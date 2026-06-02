@@ -111,6 +111,7 @@ function extractClassSettings(themeSlug, styleSettings) {
 
 const ASPECT_ORDER = [
   "base",
+  "headings",
   "typography",
   "links",
   "lists",

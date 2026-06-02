@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Urbanist:wght@500;600;700;900&display=swap');
 
-/* Bureau — noir Obsidian theme, dark + daylight ("Disco Elysium meets Control" + CRT) · v2.3.0
+/* Bureau — noir Obsidian theme, dark + daylight ("Disco Elysium meets Control" + CRT) · v2.5.1
    Sonophage · github.com/Sonophage/Bureau
    Retheme from the .theme-dark token block; Style Settings config in the @settings block at the foot. */
 
@@ -12,13 +12,13 @@
 .theme-light,
 body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-content,
 body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-content {
-  --bu-bg: #0c0b0a;
+  --bu-bg: var(--bu-black-level, #0c0b0a);
   --bu-bg-alt: #060605;
   --bu-surface: #151310;
   --bu-raised: #1e1b17;
   --bu-border: #2a2620;
   --bu-border-hi: #3a342a;
-  --bu-text: #f1efea;
+  --bu-text: var(--bu-text-dark, #f1efea);
   --bu-text-hi: #ffffff;
   --bu-muted: #968d7e;
   --bu-faint: #5f594e;
@@ -42,6 +42,9 @@ body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-conte
   --background-primary-alt: var(--bu-surface);
   --background-secondary: var(--bu-bg-alt);
   --background-secondary-alt: var(--bu-surface);
+  /* note headers ride the desk — no opaque fill behind the title/active leaf */
+  --file-header-background: transparent;
+  --file-header-background-focused: transparent;
   --background-modifier-border: var(--bu-border);
   --background-modifier-border-hover: var(--bu-border-hi);
   --background-modifier-border-focus: var(--bu-accent);
@@ -54,7 +57,7 @@ body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-conte
   --text-accent-hover: var(--bu-accent-hi);
   --text-on-accent: var(--bu-on-accent);
   --text-selection: color-mix(in srgb, var(--bu-accent) 22%, transparent);
-  --text-highlight-bg: rgba(202, 154, 78, 0.30);
+  --text-highlight-bg: color-mix(in srgb, var(--bu-accent) 42%, transparent);
   --accent-h: 6;
   --accent-s: 76%;
   --accent-l: 53%;
@@ -102,7 +105,7 @@ body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-conte
   --toggle-thumb-color: #ffffff;
   --inline-title-font: var(--bu-font-label);
   --bu-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.58 0 0 0 0 0.55 0 0 0 0 0.48 0 0 0 0.55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
-  --bu-acrylic: blur(12px) saturate(1.05);
+  --bu-acrylic: none;   /* glassmorphism removed theme-wide — surfaces read via fill + bevel, not blur */
   --bu-scanline-strength: 0.34;
   --bu-scanlines: repeating-linear-gradient(to bottom,
     transparent 0,
@@ -115,6 +118,11 @@ body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-conte
   --bu-card-shadow: 0.55;
   --bu-shadow: color-mix(in srgb, #000 calc(var(--bu-shadow-strength, 50) * 1%), transparent);
   --bu-shadow-soft: color-mix(in srgb, #000 calc(var(--bu-shadow-strength, 50) * 0.66%), transparent);
+  /* Glass-bevel card edge (Ultra-Lobster-style): inset TL highlight + inset BR shadow.
+     Dark = faint light bevel from the white veil; light overridden below. */
+  --bu-glass-tl: inset 1px 1px 0 0 color-mix(in srgb, var(--bu-text-hi) 26%, transparent);
+  --bu-glass-br: inset -1px -1px 0 0 color-mix(in srgb, #000 42%, transparent);
+  --bu-glass-ring: 0 0 0 0.5px color-mix(in srgb, var(--bu-text-hi) 12%, transparent);
   --bu-anim-ease: cubic-bezier(0.16, 1, 0.3, 1);
   --bu-t-fast: calc(var(--bu-anim-speed, 600) * 0.3ms);
   --bu-t-slow: calc(var(--bu-anim-speed, 600) * 1ms);
@@ -144,13 +152,13 @@ body.theme-light.bu-split-editor .workspace-split.mod-root .workspace-leaf-conte
    Accent presets, fonts, sizes, card/anim calcs are shared (mode-agnostic). */
 .theme-light,
 body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-content {
-  --bu-bg: #e7e0cd;          /* aged paper (a touch deeper than #efe9db) */
+  --bu-bg: var(--bu-white-level, #e7e0cd);   /* aged paper (a touch deeper than #efe9db) */
   --bu-bg-alt: #e4dcc9;      /* deeper paper — the desk/stage */
   --bu-surface: #e7e0cf;     /* inset paper */
   --bu-raised: #f4efe4;      /* raised paper */
   --bu-border: #cabfa6;
   --bu-border-hi: #b3a787;
-  --bu-text: #1e1a14;        /* typewriter ink */
+  --bu-text: var(--bu-text-light, #1e1a14);   /* typewriter ink */
   --bu-text-hi: #0d0a06;     /* darkest ink — headings/bold */
   --bu-muted: #5c5444;       /* darkened to clear WCAG AA (4.5:1) on paper */
   --bu-faint: #8a8069;
@@ -164,6 +172,10 @@ body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-conten
   --bu-line: #b8ad93;        /* pencil rule */
   --bu-shadow: color-mix(in srgb, #2e2618 calc(var(--bu-shadow-strength, 50) * 0.4%), transparent);   /* warm; paper takes less */
   --bu-shadow-soft: color-mix(in srgb, #2e2618 calc(var(--bu-shadow-strength, 50) * 0.24%), transparent);
+  /* Paper glass bevel: a bright top-left lip + soft bottom-right ink edge. */
+  --bu-glass-tl: inset 1.5px 1.5px 0 0 rgb(255 255 255 / 0.95);
+  --bu-glass-br: inset -1.5px -1.5px 0 0 rgb(0 0 0 / 0.13);
+  --bu-glass-ring: 0 0 0 1px color-mix(in srgb, var(--bu-line) 45%, transparent);
 
   /* dark-specific core-var literals → light */
   --background-modifier-hover: #e8e1d0;
@@ -335,12 +347,30 @@ body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-conten
   color: var(--bu-label-fg);
 }
 
+/* External links + bare URLs — accent chip (inverted from plain text). Hover flips to white-on-accent
+   in dark / dark-on-accent in light (via --bu-text-hi). The accent fill replaces the old "www" tag. */
+.markdown-rendered a.external-link,
+.cm-s-obsidian .cm-url,
+.cm-s-obsidian .cm-link:not(.cm-hmd-internal-link) {
+  background-color: var(--bu-accent);
+  color: var(--bu-on-accent);
+  text-decoration: none;
+  padding: 0 0.3em;
+  border-radius: 2px;
+}
+.markdown-rendered a.external-link:hover,
+.cm-s-obsidian .cm-url:hover,
+.cm-s-obsidian .cm-link:not(.cm-hmd-internal-link):hover {
+  background-color: var(--bu-text-hi);
+  color: var(--bu-accent);
+}
+
 .markdown-rendered a.external-link {
   background-image: none;
 }
 .markdown-rendered a.external-link::after {
   content: "www";
-  display: inline-block;
+  display: none;   /* retired — the accent chip now marks external links */
   margin-left: 0.35em;
   padding: 0.05em 0.32em;
   border: 1px solid var(--bu-accent);
@@ -367,7 +397,7 @@ body.theme-dark.bu-split-editor .workspace-split.mod-root .workspace-leaf-conten
 
 .markdown-source-view.mod-cm6 .cm-line:not(.cm-active) .cm-link:not(.cm-formatting-link)::after {
   content: "www";
-  display: inline-block;
+  display: none;   /* retired — accent chip marks external links */
   margin-left: 0.35em;
   padding: 0.05em 0.32em;
   border: 1px solid var(--bu-accent);
@@ -553,6 +583,34 @@ body.theme-light::after {
   background: radial-gradient(60% calc(var(--bu-glow-reach, 95) * 1%) at 50% -20%, var(--bu-glow) 0%, transparent 55%);
 }
 
+/* HALO (.app-container::before) — an Ultra-Lobster-style soft accent ring that breathes outward
+   from centre. Slider-only intensity (0 = invisible); toggle adds the class. Sits just below the
+   vignette/grain/glow overlays so it reads as ambient. The pulse is killed by reduced-motion /
+   effects-mode like every other animation, leaving a faint static ring. */
+body.bu-halo .app-container::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 150vmax;
+  height: 150vmax;
+  margin: -75vmax 0 0 -75vmax;
+  pointer-events: none;
+  z-index: 9996;
+  background: radial-gradient(circle,
+    transparent 0%,
+    color-mix(in srgb, var(--bu-accent) calc(var(--bu-halo-intensity, 20) * 1%), transparent) 30%,
+    transparent 70%);
+  animation: bu-halo-pulse 25s linear infinite;
+}
+@keyframes bu-halo-pulse {
+  0%   { transform: scale(0.1); opacity: 0; }
+  5%   { opacity: 0.5; }
+  40%  { opacity: 1; }
+  80%  { opacity: 0; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
 /* VIGNETTE layer (.app-container::after) — separate + STATIC so the breathing glow can't pulse it.
    Slider-only: --bu-vignette-amount drives it directly (0 = off). Dark = full ellipse; light = top inverted-V (∧). */
 .app-container::after {
@@ -718,7 +776,7 @@ body::before { opacity: var(--bu-grain-opacity, 0.05); }
   border: none;
   border-left: 4px solid rgb(var(--callout-color));
   border-radius: 0 3px 3px 0;
-  box-shadow: 0 7px 20px var(--bu-shadow);
+  box-shadow: 0 16px 36px -8px var(--bu-shadow), 0 4px 10px -3px var(--bu-shadow);
   position: relative;
   overflow: visible;
   margin: 26px 0 22px;
@@ -727,8 +785,17 @@ body::before { opacity: var(--bu-grain-opacity, 0.05); }
 }
 .callout-content,
 .callout-content > *,
-.callout-content strong,
 .callout-content em { color: var(--bu-label-fg); }
+/* Bold in callouts = a redaction stamp (inverted chip: ink bar, paper text), per the redaction
+   rules — solid, never blurred. Auto-inverts with the label tokens in light mode. */
+.callout-content strong,
+.callout-content b {
+  background-color: var(--bu-label-fg);
+  color: var(--bu-label-bg);
+  padding: 0 0.3em;
+  border-radius: 2px;
+  font-weight: 700;
+}
 .callout-content > :first-child { margin-top: 0; }
 .callout-content > :last-child { margin-bottom: 0; }
 .callout-icon { display: none; }
@@ -809,11 +876,11 @@ body::before { opacity: var(--bu-grain-opacity, 0.05); }
 }
 .markdown-rendered tbody tr:nth-child(even),
 .markdown-source-view.mod-cm6 tbody tr:nth-child(even) {
-  background-color: color-mix(in srgb, var(--bu-accent) 8%, transparent);
+  background-color: color-mix(in srgb, var(--bu-accent) 15%, transparent);
 }
 .markdown-rendered tbody tr:hover,
 .markdown-source-view.mod-cm6 tbody tr:hover {
-  background-color: color-mix(in srgb, var(--bu-accent) 17%, transparent);
+  background-color: color-mix(in srgb, var(--bu-accent) 30%, transparent);
 }
 
 /* Bases — native database views, dressed as a case-file dossier. Scoped to
@@ -1102,10 +1169,22 @@ button.mod-cta:hover { background: var(--bu-accent-hi); }
 .nav-file-title:hover,
 .tree-item-self.is-clickable:hover { background-color: var(--bu-raised); }
 
+/* Shared backdrop behind the settings modal AND the command palette — blur the app behind it
+   and float a soft accent glow where the panel sits. (The editor panes stay flat; only this
+   modal/palette scrim gets the glass treatment.) */
 .modal-bg {
-  background-color: rgba(0, 0, 0, 0.44);
-  -webkit-backdrop-filter: blur(28px) brightness(0.66);
-  backdrop-filter: blur(28px) brightness(0.66);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: radial-gradient(58% 48% at 50% 44%,
+    color-mix(in srgb, var(--bu-accent) 13%, transparent) 0%, transparent 70%);
+  -webkit-backdrop-filter: blur(10px) saturate(1.05);
+  backdrop-filter: blur(10px) saturate(1.05);
+}
+/* Accent halo around the settings modal panel (the palette is transparent, so its glow is the
+   backdrop radial above). */
+.modal.mod-settings,
+.modal:not(.mod-settings) {
+  box-shadow: 0 0 70px -18px color-mix(in srgb, var(--bu-accent) 32%, transparent),
+    0 24px 70px -28px var(--bu-shadow);
 }
 
 .prompt {
@@ -1376,6 +1455,16 @@ button:not(.clickable-icon):active,
   padding: 5px;
   margin: 0;
 }
+/* never underline panel/header icons (or the link-icon glyph some panels render) */
+.clickable-icon,
+.view-action,
+.nav-action-button,
+.workspace-tab-header,
+.clickable-icon a,
+a.clickable-icon,
+.external-link-icon {
+  text-decoration: none;
+}
 
 .prompt .search-input-clear-button,
 .prompt-input-container .search-input-clear-button {
@@ -1419,10 +1508,18 @@ body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left:
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-title,
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-icon,
 .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button {
-  color: var(--bu-text);
+  color: var(--bu-editor-bg);   /* readable on the inverted (editor-text) tab fill */
 }
-.mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
-  color: var(--bu-text-hi);
+/* No colour change on tab hover. Obsidian paints var(--background-modifier-hover) on hover; we
+   redefine that variable to transparent INSIDE the tab scope, so the overlay vanishes wherever it
+   lands (header or inner, active or inactive) without affecting hover anywhere else. */
+.mod-root .workspace-tab-header { --background-modifier-hover: transparent; }
+.mod-root .workspace-tab-header:not(.is-active):hover {
+  background: var(--bu-editor-text);
+}
+.mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title,
+.mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-icon {
+  color: var(--bu-editor-bg);
 }
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .mod-root .workspace-tab-header.is-active .workspace-tab-header-inner-icon,
@@ -1434,6 +1531,15 @@ body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left:
 .view-action:hover {
   color: var(--bu-accent);
   background-color: var(--bu-surface);
+}
+
+/* New-tab "+" — keep it flat: no glow, no shadow, no float, in any state. */
+.workspace-tab-header-new-tab,
+.workspace-tab-header-new-tab:hover,
+body.bu-pill-chrome .workspace-tab-header-new-tab {
+  box-shadow: none;
+  filter: none;
+  text-shadow: none;
 }
 
 .mod-left-split .workspace-tab-header-inner-icon,
@@ -1451,8 +1557,8 @@ body:not(.is-mobile) .prompt > .prompt-results > .suggestion-item { margin-left:
 
 .mod-left-split .workspace-tab-header-container-inner,
 .mod-right-split .workspace-tab-header-container-inner {
-  background-color: var(--bu-surface);
-  border: 1px solid var(--bu-line);
+  background-color: transparent;
+  border: none;
   border-radius: var(--bu-card-radius);
   margin: 10px var(--bu-card-gap) 4px;
   padding: 3px;
@@ -1510,6 +1616,11 @@ body:not(.bu-cards) .mod-right-split .workspace-tab-header-container-inner {
   padding-left: calc(var(--bu-card-gap) + 5px);
   padding-right: calc(var(--bu-card-gap) + 5px);
 }
+/* Right sidebar tabs — Obsidian zeroes the inline-end padding (to clear window controls);
+   give it back so the tab strip isn't flush to the edge. */
+.workspace-split.mod-right-split .workspace-tabs {
+  padding-inline-end: 10px;
+}
 .workspace-tab-container { background-color: transparent; }
 
 /* The rounded editor card is .workspace-leaf-content; its parents (.workspace-leaf / .workspace-tabs)
@@ -1531,14 +1642,11 @@ body:not(.bu-cards) .mod-right-split .workspace-tab-header-container-inner {
   border: 1px solid var(--bu-line);
   border-radius: var(--bu-card-radius);
   margin: 0 0 calc(var(--bu-card-gap) + 5px) 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55));
+  box-shadow: var(--bu-glass-tl), var(--bu-glass-br), 0 4px 12px rgba(0, 0, 0, var(--bu-card-shadow, 0.55));
   overflow: hidden;
 }
 
 body.bu-cards .workspace-split.mod-root .workspace-leaf-content {
-  /* Clip-safe lift: downward, horizontally contained (spread ≈ -blur) so the shadow never reaches
-     the overflow-clipped workspace edge that used to slice a normal shadow into a hard line. */
-  box-shadow: 0 28px 30px -24px var(--bu-shadow);
   position: relative;
 }
 body.bu-cards .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]::after {
@@ -1560,7 +1668,7 @@ body.bu-cards .workspace-split.mod-root .workspace-leaf-content[data-type="markd
    so panes visibly lift off the desk. */
 body.bu-cards.bu-float .workspace-split .workspace-leaf-content {
   margin: 6px 6px calc(var(--bu-card-gap) + 16px) 6px;
-  box-shadow: 0 22px 44px -20px var(--bu-shadow), 0 8px 16px -10px var(--bu-shadow);
+  box-shadow: var(--bu-glass-tl), var(--bu-glass-br), 0 22px 44px -20px var(--bu-shadow), 0 8px 16px -10px var(--bu-shadow);
 }
 
 /* Custom background image — sits on the stage behind everything. Visible in the
@@ -1569,31 +1677,33 @@ body.bu-cards.bu-float .workspace-split .workspace-leaf-content {
    rules so it wins in both modes. The scrim keeps text legible. */
 body.bu-wallpaper.theme-dark .app-container,
 body.bu-wallpaper.theme-light .app-container {
+  /* image-set() accepts a quoted string as a URL (plain url() can't take a var), so the user
+     can paste a bare address and Style Settings' quotes wrap it into a valid image. The fallback
+     is a transparent 1×1 pixel so an enabled-but-empty wallpaper just shows the scrim, not a break. */
   background-image:
     linear-gradient(color-mix(in srgb, var(--bu-bg) calc(var(--bu-wallpaper-dim, 30) * 1%), transparent),
                     color-mix(in srgb, var(--bu-bg) calc(var(--bu-wallpaper-dim, 30) * 1%), transparent)),
-    var(--bu-wallpaper-url, none);
+    image-set(var(--bu-wallpaper-url, url("data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==")) 1x);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-/* Frosted glass — the EDITOR floats as a frosted card; the SIDEBARS become flush
-   frosted panels (not cards), matching the floating-card reference. Needs a
-   wallpaper (or the dark stage) behind it to blur — frost over nothing reads as
-   nothing. Inner editor surfaces go transparent so the frost is what shows. */
+/* Frosted glass — panes become raised glass slabs. The Ultra-Lobster lesson: blur alone is
+   invisible over a flat desk, so the glass READ comes from a LIGHTER-than-desk translucent fill
+   (toward --bu-raised) + the 3-part bevel (lit top-left, shaded bottom-right, hairline ring).
+   No backdrop blur — the glass READ comes from the lighter fill + bevel, the way Ultra-Lobster
+   actually does it. Inner editor surfaces go transparent so the slab fill is what shows. */
 body.bu-glass-cards .workspace-split.mod-root .workspace-leaf-content {
-  background-color: color-mix(in srgb, var(--bu-bg) 55%, transparent);
-  -webkit-backdrop-filter: blur(20px) saturate(1.12);
-  backdrop-filter: blur(20px) saturate(1.12);
+  background-color: color-mix(in srgb, var(--bu-raised) 78%, transparent);
+  border-color: color-mix(in srgb, var(--bu-text-hi) 8%, transparent);
+  box-shadow: var(--bu-glass-tl), var(--bu-glass-br), var(--bu-glass-ring), 0 22px 44px -20px var(--bu-shadow);
 }
 body.bu-glass-cards :is(.mod-left-split, .mod-right-split) .workspace-leaf-content {
-  background-color: color-mix(in srgb, var(--bu-bg) 42%, transparent);
-  -webkit-backdrop-filter: blur(20px) saturate(1.12);
-  backdrop-filter: blur(20px) saturate(1.12);
+  background-color: color-mix(in srgb, var(--bu-raised) 60%, transparent);
   border: none;
-  box-shadow: none;
+  box-shadow: var(--bu-glass-tl), var(--bu-glass-br);
 }
 body.bu-glass-cards :is(.view-content, .markdown-source-view, .markdown-source-view.mod-cm6,
   .cm-editor, .markdown-source-view.mod-cm6 .cm-scroller,
@@ -1602,26 +1712,227 @@ body.bu-glass-cards :is(.view-content, .markdown-source-view, .markdown-source-v
 }
 body.bu-glass-cards .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]::after { display: none; }
 
-/* Pill chrome — round the breadcrumbs + window buttons into floating pills. */
-body.bu-pill-chrome .view-header-title-container {
+/* Glass properties — the frontmatter block becomes its own raised slab with inset value
+   "wells" (Ultra-Lobster prop-card). This is the most glass-worthy element in a note. */
+body.bu-glass-cards .metadata-container {
+  background-color: color-mix(in srgb, var(--bu-raised) 70%, transparent);
+  border: 1px solid color-mix(in srgb, var(--bu-text-hi) 9%, transparent);
+  box-shadow: var(--bu-glass-tl), var(--bu-glass-br), 0 8px 24px -6px var(--bu-shadow);
+}
+body.bu-glass-cards .metadata-property-value {
+  background-color: color-mix(in srgb, var(--bu-bg) 55%, transparent);
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px var(--bu-shadow-soft);
+  padding: 2px 4px 2px 10px;
+}
+body.bu-glass-cards .metadata-property:hover .metadata-property-value {
+  background-color: color-mix(in srgb, var(--bu-bg) 70%, transparent);
+}
+
+/* Pill chrome — the view-header stays in its normal place ABOVE the note (a row of pills over
+   the editor, not floating on top of the content). The bar itself goes transparent; its three
+   groups become solid floating pills. No glassmorphism — solid fills so they read on any banner. */
+body.bu-pill-chrome .view-header {
+  background-color: transparent;
+  border-bottom: none;
+  box-shadow: none;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+/* ...and push the note content clear of the pill row so they read as separate bands. */
+body.bu-pill-chrome .view-content { padding-top: 4px; }
+body.bu-pill-chrome .view-header-title-container,
+body.bu-pill-chrome .view-header-nav-buttons,
+body.bu-pill-chrome .view-header > .view-actions {
   display: inline-flex;
   align-items: center;
   width: fit-content;
   background-color: var(--bu-surface);
   border-radius: 999px;
-  padding: 2px 14px;
-  box-shadow: 0 2px 10px -4px var(--bu-shadow);
+  padding: 4px 10px;
+  box-shadow: 0 2px 8px -5px var(--bu-shadow);
+  border: 1px solid var(--bu-line);
 }
+body.bu-pill-chrome .view-header-title-container { padding: 4px 18px; }
+body.bu-pill-chrome .view-action { margin: 0 1px; }
 body.bu-pill-chrome .titlebar-button-container {
   background-color: var(--bu-surface);
   border-radius: 999px;
   padding: 2px 6px;
   box-shadow: 0 2px 10px -4px var(--bu-shadow);
 }
+/* Side-panel icon rows (file explorer / plugin panel headers) become pills too — sidebar
+   .view-actions are already pilled by the rule above; this catches the .nav-buttons-container row. */
+body.bu-pill-chrome .nav-buttons-container {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--bu-surface);
+  border-radius: 999px;
+  padding: 3px 8px;
+  box-shadow: 0 2px 8px -5px var(--bu-shadow);
+  border: 1px solid var(--bu-line);
+}
+/* Peek — fade the header out until it's hovered/focused, or the title is being renamed.
+   The header is in normal flow now (pointer-events normal), so :hover fires reliably. */
+body.bu-pill-chrome.bu-pill-peek .view-header {
+  opacity: 0;
+  max-height: 6px;          /* reclaim the header's space — collapse to a thin hover sliver */
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  transition: max-height var(--bu-t-slow, 200ms) ease, opacity var(--bu-t-slow, 200ms) ease,
+    margin-bottom var(--bu-t-slow, 200ms) ease;
+}
+body.bu-pill-chrome.bu-pill-peek .view-header:hover,
+body.bu-pill-chrome.bu-pill-peek .view-header:focus-within,
+body.bu-pill-chrome.bu-pill-peek .workspace-leaf-content:has(.inline-title:focus-within) .view-header {
+  opacity: 1;
+  max-height: 60px;
+  margin-bottom: 12px;
+  padding-top: 5px;
+}
 /* Float the tabs too — outer shadow + a little gap so they detach from the bar. */
 body.bu-pill-chrome .mod-root .workspace-tab-header {
   margin: 0 3px;
   box-shadow: 0 3px 12px -5px var(--bu-shadow);
+}
+
+/* Lobster layout — the HEADER floats free on the desk; the EDITOR (its content) is its OWN
+   rounded card below. The leaf wrapper + header go fully transparent so nothing reads as a black
+   slab, and the card is curved on every corner (no cut-off top). Applies to the main editor AND
+   the sidebar panels (files/graph/search · backlinks/outgoing/properties). */
+body.bu-pill-chrome .workspace-split .workspace-leaf-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  overflow: visible;
+}
+body.bu-pill-chrome .workspace-split .view-header { background-color: transparent; }
+body.bu-pill-chrome .workspace-split .view-content {
+  background-color: var(--bu-surface);
+  border: 1px solid var(--bu-line);
+  border-radius: var(--bu-card-radius, 12px);
+  box-shadow: 0 22px 44px -26px rgba(0, 0, 0, 0.78);
+  margin: 6px var(--bu-card-gap, 12px) calc(var(--bu-card-gap, 12px) + 10px);
+  overflow: auto;
+  /* CodeMirror's scroller uses `contain`, so border-radius+overflow won't clip its rectangular
+     ledger background into the rounded corners — clip-path clips every descendant regardless. */
+  clip-path: inset(0 round var(--bu-card-radius, 12px));
+}
+/* let the editor surfaces ride the card shade rather than re-painting a black background */
+body.bu-pill-chrome .workspace-split .markdown-source-view,
+body.bu-pill-chrome .workspace-split .markdown-reading-view {
+  background-color: transparent;
+}
+/* the old merged-card bottom fade belonged to the single slab — drop it */
+body.bu-pill-chrome .workspace-split.mod-root .workspace-leaf-content[data-type="markdown"]::after {
+  display: none;
+}
+/* the top window bar rides the desk too — no black band behind the title/buttons */
+body.bu-pill-chrome .titlebar { background-color: transparent; }
+
+/* Status bar — each section becomes its own pill (Ultra-Lobster). */
+/* Status bar — INVERTED (always, not just under pill chrome): the bar fills with the editor's
+   text colour and writes in the editor background, so it flips white/black with the theme AND with
+   Inverted editor. */
+.status-bar {
+  background-color: var(--bu-editor-text);
+  border-top: 1px solid var(--bu-line);
+}
+.status-bar .status-bar-item,
+.status-bar .status-bar-item span,
+.status-bar .status-bar-item .status-bar-item-icon,
+.status-bar .status-bar-item .status-bar-item-segment {
+  color: var(--bu-editor-bg);
+}
+/* Pill chrome — split into floating pills on a transparent bar (still the inverted fill). */
+body.bu-pill-chrome .status-bar {
+  background-color: transparent;
+  border-top: none;
+  gap: 6px;
+  padding: 4px 10px;
+}
+body.bu-pill-chrome .status-bar-item {
+  background-color: var(--bu-editor-text);
+  border: 1px solid var(--bu-line);
+  border-radius: 999px;
+  padding: 2px 11px;
+  box-shadow: 0 2px 8px -5px var(--bu-shadow);
+}
+
+/* HORIZONTAL SETTINGS — reflow the settings modal's vertical tab sidebar into a top scrolling
+   strip (Ultra-Lobster). The body-class prefix out-specifies Obsidian's defaults, so no !important.
+   Desktop only — phones keep the native stacked nav. */
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .modal-content {
+  flex-direction: column;
+  min-height: 0;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header {
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  padding-bottom: 6px;
+  border-right: none;
+  margin: 0 3px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bu-accent) transparent;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header::-webkit-scrollbar { height: 8px; }
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header::-webkit-scrollbar-thumb {
+  background-color: color-mix(in srgb, var(--bu-accent) 70%, transparent);
+  border-radius: 999px;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+  width: auto;
+  max-width: none;
+  margin: 0;
+  gap: 2px;
+  padding: 4px 8px 4px 0;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group:not(:last-child)::after {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 4px;
+  height: 14px;
+  border-radius: 999px;
+  align-self: center;
+  background: var(--bu-accent);
+  margin-left: 4px;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group-items { display: contents; }
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-header-group-title { display: none; }
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  width: auto;
+  max-width: none;
+  height: auto;
+  min-height: 0;
+  padding: 4px 10px;
+}
+body.bu-settings-horizontal:not(.is-mobile) .modal.mod-settings .vertical-tab-content-container {
+  flex: 1 1 auto;
+  margin-right: 0;
+  margin-bottom: 3px;
 }
 
 /* Editor-only cards — strip all card chrome from the sidebars (flush, plain) so
@@ -1635,6 +1946,14 @@ body.bu-editor-only-cards :is(.mod-left-split, .mod-right-split) .workspace-leaf
   overflow: visible;
 }
 
+/* Editor-aware palette — the ACTUAL editor background/text, accounting for Inverted editor.
+   Chrome elements (tabs, status bar) read these so they track the editor, not the window theme:
+   normally they match the theme; with Inverted editor on, they flip to the opposite palette. */
+.theme-dark  { --bu-editor-bg: var(--bu-black-level, #0c0b0a); --bu-editor-text: var(--bu-text-dark, #f1efea); }
+.theme-light { --bu-editor-bg: var(--bu-white-level, #e7e0cd); --bu-editor-text: var(--bu-text-light, #1e1a14); }
+body.theme-dark.bu-split-editor  { --bu-editor-bg: var(--bu-white-level, #e7e0cd); --bu-editor-text: var(--bu-text-light, #1e1a14); }
+body.theme-light.bu-split-editor { --bu-editor-bg: var(--bu-black-level, #0c0b0a); --bu-editor-text: var(--bu-text-dark, #f1efea); }
+
 .workspace-tab-header::before,
 .workspace-tab-header::after { display: none; }
 .workspace-tab-header {
@@ -1646,15 +1965,20 @@ body.bu-editor-only-cards :is(.mod-left-split, .mod-right-split) .workspace-leaf
   margin-right: 4px;
 }
 
+/* Inactive tabs — INVERTED: the tab fills with the editor's TEXT colour (white on a dark editor,
+   black on a light editor) and is editor-inverted-aware via --bu-editor-text. Solid, no gradient. */
 .mod-root .workspace-tab-header:not(.is-active) {
-  background-color: var(--bu-label-fg);   /* near-black in dark, paper-white in light */
+  background: var(--bu-editor-text);
   border: 2px solid transparent;
   border-bottom: none;
 }
+/* Active tab — solid accent, rises taller than the rest. */
 .mod-root .workspace-tab-header.is-active {
-  background-color: var(--bu-accent);
+  background: var(--bu-accent);
   border: 2px solid var(--bu-accent);
   border-bottom: none;
+  margin-top: -4px;
+  z-index: 7;
 }
 
 body.bu-tabs-pill .workspace-tab-header {
@@ -1663,14 +1987,16 @@ body.bu-tabs-pill .workspace-tab-header {
   border-bottom-style: solid;
   margin-bottom: 5px;
 }
+/* Pill tabs float free — no folder "tail" reaching for the content below. Inactive tabs lose the
+   dark bottom-border; the active tab keeps a full accent ring (border-bottom matches its sides). */
 body.bu-tabs-pill .mod-root .workspace-tab-header:not(.is-active) {
-  border-bottom-color: color-mix(in srgb, var(--bu-label-bg), #000 26%);
+  border-bottom-color: transparent;
 }
 body.bu-tabs-pill .mod-root .workspace-tab-header.is-active {
   border-bottom-color: var(--bu-accent);
 }
 body.bu-tabs-pill .mod-root .workspace-tab-header-container-inner {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 body.bu-main-icons  .mod-root .workspace-tab-header-inner-title { display: none; }
@@ -2314,29 +2640,47 @@ body.bu-anim :is(.workspace-tab-header, .clickable-icon, button, .nav-file-title
     box-shadow       var(--bu-t-fast) var(--bu-anim-ease);
 }
 
-/* Rolodex tabs — active & hovered tabs grow bigger than the rest (anchored to the
-   bar so they rise into the headroom above); resting tabs keep their size. */
+/* ROLODEX — tabs & file rows pop forward on hover with a heavy, springy overshoot and a real
+   (neutral, non-accent) drop-shadow so the lifted element feels tactile and physical. */
+:root { --bu-rolodex-ease: cubic-bezier(0.34, 1.56, 0.64, 1); } /* overshoot = the "tactile" snap */
+
+/* Tabs rise from the bar. */
 .mod-root .workspace-tab-header { transform-origin: center bottom; position: relative; }
-body.bu-anim .mod-root .workspace-tab-header:hover { transform: scale(1.07); z-index: 6; }
-/* Active tab rests 5px taller than the rest (grows upward into the headroom). */
+body.bu-anim .mod-root .workspace-tab-header {
+  transition: transform 210ms var(--bu-rolodex-ease), box-shadow 210ms var(--bu-rolodex-ease);
+}
+body.bu-anim .mod-root .workspace-tab-header:hover {
+  transform: scale(1.08) translateY(-2px);
+  z-index: 6;
+  box-shadow: 0 8px 16px -5px var(--bu-shadow);
+}
+/* Active tab rests 5px taller (static), and still pops a touch on hover. */
 body.bu-anim .mod-root .workspace-tab-header.is-active {
   margin-top: -5px;
   padding-top: 5px;
   z-index: 5;
 }
-body.bu-anim .mod-root .workspace-tab-header.is-active:hover { transform: scale(1.04); }
-/* Rolodex file list (incl. Notebook Navigator) — hovered rows grow; the selected
-   row grows bigger still and casts a shadow (kept after hover so it stays big). */
+body.bu-anim .mod-root .workspace-tab-header.is-active:hover { transform: scale(1.05) translateY(-2px); }
+
+/* File rows (native tree + Notebook Navigator) grow from the left edge. */
 :is(.nn-navitem, .nn-file, .nav-file-title, .nav-folder-title, .tree-item-self) { transform-origin: left center; }
-body.bu-anim :is(.nav-file-title, .nav-folder-title, .tree-item-self.is-clickable, .nn-navitem, .nn-file):hover { transform: scale(1.05); position: relative; z-index: 3; }
+body.bu-anim :is(.nav-file-title, .nav-folder-title, .tree-item-self.is-clickable, .nn-navitem, .nn-file) {
+  transition: transform 190ms var(--bu-rolodex-ease), box-shadow 190ms var(--bu-rolodex-ease);
+}
+body.bu-anim :is(.nav-file-title, .nav-folder-title, .tree-item-self.is-clickable, .nn-navitem, .nn-file):hover {
+  transform: scale(1.05);
+  position: relative;
+  z-index: 3;
+  box-shadow: 0 5px 14px -5px var(--bu-shadow);
+}
+/* The selected row sits forward and heavy, holding its lift after the hover leaves. */
 body.bu-anim :is(.nn-navitem, .nn-file).nn-selected,
 body.bu-anim .tree-item-self.is-active {
-  transform: scale(1.08);
+  transform: scale(1.07);
   position: relative;
   z-index: 4;
-  filter: drop-shadow(0 4px 8px var(--bu-shadow));
+  filter: drop-shadow(0 4px 9px var(--bu-shadow));
 }
-body.bu-anim .clickable-icon:hover { transform: scale(1.1); }
 
 body.bu-anim.bu-poweron :is(.markdown-source-view.mod-cm6, .markdown-preview-view) {
   animation: bu-poweron var(--bu-t-slow) var(--bu-anim-ease);
@@ -2397,12 +2741,6 @@ body.bu-block-caret .cm-editor .cm-cursor-primary {
   width: 0.62em;
   background-color: var(--bu-accent);
   opacity: 0.62;
-}
-
-body.bu-anim.bu-hover-bloom :is(.clickable-icon, button:not(.mod-cta),
-  .mod-root .workspace-tab-header, a.internal-link, a.external-link,
-  .nav-file-title, .nn-file):hover {
-  box-shadow: 0 0 10px color-mix(in srgb, var(--bu-accent) 40%, transparent);
 }
 
 @keyframes bu-line-sweep { from { background-position: 200% 0; } to { background-position: -200% 0; } }
@@ -2498,7 +2836,8 @@ body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-editor, .markdown-source-view.mod
 body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-editor, .markdown-source-view.mod-cm6, .markdown-reading-view, .view-content)::after { display: none; }
 body:is(.bu-mode-low, .bu-mode-medium) :is(.cm-line, .markdown-rendered p, .markdown-rendered li, .markdown-rendered pre code) { text-shadow: none; }
 body.bu-mode-low::before,
-body.bu-mode-low::after { display: none; }
+body.bu-mode-low::after,
+body.bu-mode-low .app-container::before { display: none; }
 body.bu-mode-low .app-container { background-image: none; }
 
 /* ACCESSIBILITY — honor the OS "reduce motion" preference (toggle, default on).
@@ -2519,6 +2858,7 @@ body.is-mobile *,
 body.is-mobile *::before,
 body.is-mobile *::after { animation: none; }
 body.is-mobile::before,
+body.is-mobile .app-container::before,
 body.is-mobile .app-container::after { display: none; }
 body.is-mobile .app-container { background-image: none; }
 body.is-mobile .markdown-source-view.mod-cm6 .cm-editor::after,
@@ -2541,6 +2881,67 @@ body.is-mobile .menu-item,
 body.is-mobile .suggestion-item { min-height: 40px; display: flex; align-items: center; }
 body.is-mobile .setting-item { padding-top: 10px; padding-bottom: 10px; }
 
+/* ───────────────────────────  PRINT / PDF EXPORT — drop the theatre; ink on white paper  ───────────────────────────
+   Bureau's dark chrome + atmosphere + CRT would otherwise bake onto the page. Selectors are prefixed
+   with `body` so they out-specify the screen rules — keeps the theme's zero-!important streak intact. */
+@media print {
+  @page { margin: 18mm; }
+
+  /* Ink on white whatever the screen mode; kill shadows + glass edges. */
+  body.theme-dark, body.theme-light,
+  body .app-container, body .workspace, body .workspace-split,
+  body .workspace-split .workspace-leaf-content,
+  body .view-content, body .markdown-preview-view,
+  body .markdown-source-view, body .cm-editor, body .cm-scroller {
+    background: #fff;
+    background-image: none;
+    color: #111;
+    box-shadow: none;
+  }
+
+  /* Atmosphere / CRT / halo overlays + the card bottom-fade — gone on paper. */
+  body::before, body::after,
+  body .app-container::before, body .app-container::after,
+  body .cm-editor::after, body .markdown-reading-view::after,
+  body .workspace-leaf-content[data-type="markdown"] .view-content::after { display: none; }
+
+  /* backdrop-filter prints as grey slabs — null it. */
+  body .menu, body .callout, body .modal, body .popover,
+  body .workspace-leaf-content, body .view-header-title-container {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  /* Only the note prints — strip every piece of chrome. */
+  body .workspace-ribbon,
+  body .mod-left-split, body .mod-right-split,
+  body .status-bar, body .view-header,
+  body .workspace-tab-header-container,
+  body .titlebar { display: none; }
+
+  /* Headings stay with their text; big blocks don't split across a page break. */
+  body :is(h1, h2, h3, h4, h5, h6) { break-after: avoid; color: #000; }
+  body p, body li, body blockquote { orphans: 3; widows: 3; }
+  body pre, body blockquote, body table,
+  body .callout, body img, body figure { break-inside: avoid; }
+  body pre, body pre code { white-space: pre-wrap; }
+
+  /* Un-invert Bureau's redaction-chip links so they read as plain underlined ink. */
+  body a, body .internal-link, body .external-link, body .cm-link {
+    color: #111;
+    background: none;
+    box-shadow: none;
+    text-decoration: underline;
+  }
+
+  /* Optional — append the destination after external links (toggle below). */
+  body.bu-print-link-urls a[href^="http"]::after {
+    content: " <" attr(href) ">";
+    font-size: 0.85em;
+    color: #555;
+  }
+}
+
 /* @settings
 
 name: Bureau
@@ -2553,6 +2954,7 @@ settings:
     markdown: true
   - id: bu-mode-heading
     title: Mode
+    description: Quick effect presets and the inverted-editor toggle — start here.
     type: heading
     level: 2
     collapsed: false
@@ -2578,6 +2980,7 @@ settings:
     default: false
   - id: bu-color-heading
     title: Color & accent
+    description: Accent preset and custom colour, per-mode text, and black / white levels.
     type: heading
     level: 2
     collapsed: true
@@ -2602,8 +3005,37 @@ settings:
     format: hex
     opacity: false
     default: '#e23b2c'
+  - id: bu-text-dark
+    title: Text colour — dark mode
+    description: Body text colour while the dark theme is active.
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#f1efea'
+  - id: bu-text-light
+    title: Text colour — light mode
+    description: Body text (typewriter ink) while the paper/light theme is active.
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#1e1a14'
+  - id: bu-black-level
+    title: Black level — dark background
+    description: How dark the base background is in dark mode (lower = blacker).
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#0c0b0a'
+  - id: bu-white-level
+    title: White level — light background
+    description: How light the paper is in light mode (higher = whiter).
+    type: variable-color
+    format: hex
+    opacity: false
+    default: '#e7e0cd'
   - id: bu-atmos-heading
     title: Atmosphere
+    description: Glow, film grain, vignette, shadow, and the accent halo — the ambient layer.
     type: heading
     level: 2
     collapsed: true
@@ -2646,6 +3078,7 @@ settings:
     default: true
   - id: bu-panel-grain-amount
     title: Sidebar texture strength
+    description: How visible the sidebar paper-grain texture is.
     type: variable-number-slider
     default: 0.38
     min: 0
@@ -2659,8 +3092,22 @@ settings:
     min: 0
     max: 0.9
     step: 0.05
+  - id: bu-halo
+    title: Accent halo
+    description: A soft accent ring that breathes outward from the centre behind the UI. Set the strength below.
+    type: class-toggle
+    default: false
+  - id: bu-halo-intensity
+    title: Halo strength
+    description: Peak intensity of the halo ring (0 = invisible).
+    type: variable-number-slider
+    default: 20
+    min: 0
+    max: 60
+    step: 1
   - id: bu-crt-heading
     title: CRT
+    description: Scanlines, phosphor text-glow, fullscreen tube mode, and the focus line.
     type: heading
     level: 2
     collapsed: true
@@ -2708,14 +3155,25 @@ settings:
     step: 0.05
   - id: bu-cards-heading
     title: Cards & layout
+    description: Float panes as cards, plus reading width, line-height and spacing dials.
     type: heading
     level: 2
     collapsed: true
   - id: bu-cards
     title: Cards layout
-    description: Float every pane as a bordered card on a dark desk.
+    description: Float every pane as a bordered card on a dark desk — the base the floating looks below build on.
     type: class-toggle
     default: true
+  - id: bu-settings-horizontal
+    title: Horizontal settings nav
+    description: Reflow the settings window's left tab list into a scrolling strip across the top (desktop only).
+    type: class-toggle
+    default: false
+  - id: bu-print-link-urls
+    title: Print — show link URLs
+    description: When printing or exporting to PDF, append each external link's address after it.
+    type: class-toggle
+    default: false
   - id: bu-card-gap-n
     title: Card gap
     description: Space between cards, in pixels.
@@ -2734,6 +3192,7 @@ settings:
     step: 1
   - id: bu-card-shadow
     title: Card shadow darkness
+    description: How dark the drop-shadow under each card is.
     type: variable-number-slider
     default: 0.55
     min: 0
@@ -2781,8 +3240,13 @@ settings:
     type: class-toggle
     default: false
   - id: bu-pill-chrome
-    title: Pill chrome
-    description: Round the breadcrumbs and window buttons into floating pills (Bureau already pills the tabs).
+    title: Pill terminal (floating editor)
+    description: Lift the header into floating pills and float the editor as its own rounded card on the desk (the Ultra-Lobster look). Best with Cards layout on.
+    type: class-toggle
+    default: false
+  - id: bu-pill-peek
+    title: Pill terminal — hover to reveal
+    description: With Pill terminal on, collapse the header pills until you hover or focus the row, reclaiming that space (needs Pill terminal).
     type: class-toggle
     default: false
   - id: bu-editor-only-cards
@@ -2792,15 +3256,15 @@ settings:
     default: false
   - id: bu-wallpaper
     title: Custom background image
-    description: Show a wallpaper behind the workspace, best with Frosted glass. Paste the image URL into the field below.
+    description: "Show a wallpaper behind the workspace (best with Frosted glass). Paste a web address or a local vault path into the field below."
     type: class-toggle
     default: false
   - id: bu-wallpaper-url
     title: Background image URL
-    description: The image, wrapped in url(...) — for example url('https://example.com/bg.jpg').
+    description: "Just paste the image address — e.g. https://example.com/bg.jpg. No url(...) wrapping needed."
     type: variable-text
-    default: none
-    quotes: false
+    default: "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+    quotes: true
   - id: bu-wallpaper-dim
     title: Background dim
     description: Scrim over the wallpaper for legibility (higher = darker/more paper, lower = more image).
@@ -2812,6 +3276,7 @@ settings:
 
   - id: bu-tabs-heading
     title: Tabs
+    description: Tab shape, what each dock's tabs show, and pinned-tab behaviour.
     type: heading
     level: 2
     collapsed: true
@@ -2828,6 +3293,7 @@ settings:
         value: bu-tabs-pill
   - id: bu-dock-main
     title: Main tab content
+    description: What the main editor tabs show — icon, title, or both.
     type: class-select
     default: bu-main-both
     allowEmpty: false
@@ -2840,6 +3306,7 @@ settings:
         value: bu-main-labels
   - id: bu-dock-left
     title: Left sidebar tab content
+    description: What the left sidebar tabs show — icon, label, or both.
     type: class-select
     default: bu-left-icons
     allowEmpty: false
@@ -2852,6 +3319,7 @@ settings:
         value: bu-left-both
   - id: bu-dock-right
     title: Right sidebar tab content
+    description: What the right sidebar tabs show — icon, label, or both.
     type: class-select
     default: bu-right-icons
     allowEmpty: false
@@ -2864,11 +3332,13 @@ settings:
         value: bu-right-both
   - id: bu-pin-icon-only
     title: Pinned tabs — icon only
+    description: Pinned tabs collapse to just their icon to save room.
     type: class-toggle
     default: false
 
   - id: bu-hide-heading
     title: Hide / Focus
+    description: Focus Mode plus à-la-carte switches for hiding bits of chrome.
     type: heading
     level: 2
     collapsed: true
@@ -2908,6 +3378,7 @@ settings:
 
   - id: bu-anim-heading
     title: Animation
+    description: CRT power-on, scanning line, the Rolodex lift and other eased motions (the master toggle gates all).
     type: heading
     level: 2
     collapsed: true
@@ -2926,14 +3397,17 @@ settings:
     step: 20
   - id: bu-poweron
     title: CRT power-on (on note/pane open)
+    description: A quick scan-in flicker when a note or pane first opens.
     type: class-toggle
     default: true
   - id: bu-glow-ease
     title: Ease the phosphor glow
+    description: Ramp the CRT text-glow in smoothly instead of snapping it on.
     type: class-toggle
     default: true
   - id: bu-menu-fade
     title: Fade menus & modals
+    description: Menus, modals and popovers fade and scale in instead of appearing instantly.
     type: class-toggle
     default: true
   - id: bu-scan-anim
@@ -2943,6 +3417,7 @@ settings:
     default: true
   - id: bu-scan-bright
     title: Scanning line — brightness
+    description: How bright the moving scan line is.
     type: variable-number-slider
     default: 0.2
     min: 0.05
@@ -2966,30 +3441,32 @@ settings:
     step: 0.05
   - id: bu-glow-pulse
     title: Breathe the ambient glow
+    description: Slowly pulse the accent glow at the window edge.
     type: class-toggle
     default: true
   - id: bu-block-caret
     title: Terminal block caret
-    type: class-toggle
-    default: true
-  - id: bu-hover-bloom
-    title: Hover bloom (accent glow)
+    description: Use a solid block cursor instead of the thin caret.
     type: class-toggle
     default: true
   - id: bu-line-scan
     title: Active-line scan sweep
+    description: Sweep a faint accent gradient across the line you're editing.
     type: class-toggle
     default: false
   - id: bu-flicker
     title: CRT flicker (subtle)
+    description: A barely-there brightness flicker over the whole window.
     type: class-toggle
     default: false
   - id: bu-crossfade
     title: Channel-change crossfade (note switch)
+    description: Briefly crossfade the editor when you switch notes.
     type: class-toggle
     default: true
   - id: bu-check-anim
     title: Eased checkbox tick
+    description: Pop checkboxes with a small eased animation when ticked.
     type: class-toggle
     default: true
   - id: bu-limelight

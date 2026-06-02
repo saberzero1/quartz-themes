@@ -854,6 +854,7 @@
     "margin": "0px 0px 24px",
     "margin-block": "0px 24px",
     "margin-bottom": "24px",
+    "transform": "matrix(1, 0, 0, 1, 0, 0.000332406)",
     "transform-origin": "350px 28.7969px",
     "transition": "opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
     "transition-delay": "0s, 0s"
@@ -4439,6 +4440,7 @@
     "margin": "0px 0px 24px",
     "margin-block": "0px 24px",
     "margin-bottom": "24px",
+    "transform": "matrix(1, 0, 0, 1, 0, 0.000332406)",
     "transform-origin": "350px 28.7969px",
     "transition": "opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
     "transition-delay": "0s, 0s"

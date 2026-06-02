@@ -1992,6 +1992,16 @@
   "--tooltip-bg": {
     ".expressive-code .copy .feedback": ["--ec-frm-tooltipSuccessBg"]
   },
+  "--callout-accent": {
+    ".callout[data-callout=\"info\"]": ["--callout-color-info"],
+    ".callout[data-callout=\"warning\"]": ["--callout-color-warning"],
+    ".callout[data-callout=\"error\"]": ["--callout-color-error"],
+    ".callout[data-callout=\"success\"]": ["--callout-color-success"],
+    ".callout[data-callout=\"question\"]": ["--callout-color-clay"],
+    ".callout[data-callout=\"quote\"]": ["--callout-color-slate"],
+    ".callout[data-callout=\"abstract\"]": ["--callout-color-heather"],
+    ".callout[data-callout=\"example\"]": ["--callout-color-clay"]
+  },
   "--ec-brdRad": { ".expressive-code": ["--shiki-code-block-border-radius"] },
   "--ec-brdWd": { ".expressive-code": ["--shiki-code-block-border-width"] },
   "--ec-brdCol": { ".expressive-code": ["--shiki-code-block-border-color"] },

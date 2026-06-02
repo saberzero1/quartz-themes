@@ -1,5 +1,5 @@
 /* ============================================================
-   Folio — Obsidian Theme  v1.0.2
+   Folio — Obsidian Theme  v1.0.5
    字体: Lora · Instrument Sans · JetBrains Mono
    色彩: Ivory #FAF9F5 · Slate #141413 · Clay #D97757
    ============================================================*/
@@ -26,12 +26,12 @@ body {
   --anim-medium: 0.2s  ease;
 
   /* ── 标题字号（Obsidian 读取 --h1-size 等来渲染编辑器） ── */
-  --h1-size: 1.5em;
-  --h2-size: 1.25em;
-  --h3-size: 1.1em;
-  --h4-size: 1.0em;
-  --h5-size: 0.9em;
-  --h6-size: 0.8em;
+  --h1-size: 1.55em;
+  --h2-size: 1.35em;
+  --h3-size: 1.25em;
+  --h4-size: 1.15em;
+  --h5-size: 1.05em;
+  --h6-size: 1.0em;
 
   /* ── Callout 颜色（典雅书卷色板，模式无关） ── */
   --callout-color-info:     #6A9BCC;   /* Sky */
@@ -45,6 +45,13 @@ body {
   /* ── 辅助文字层级（页岩灰色系） ── */
   --slate-light:  #B0AEA5;   /* Slate Light — 次要文字、图标 */
   --slate-faint:  #87867F;   /* 更淡文字 */
+
+  /* ── 表格默认间距排版 ── */
+  --table-padding-x: 14px;
+  --table-padding-y: 8px;
+  --table-header-padding-x: 14px;
+  --table-header-padding-y: 10px;
+  --table-line-height: 1.4;
 
   /* ── 字体平滑与排版 ── */
   -webkit-font-smoothing: antialiased;
@@ -1039,10 +1046,21 @@ input[type='range']::-webkit-slider-thumb:hover {
 .callout {
   border-radius: var(--radius-l);
   border: 1px solid var(--background-modifier-border);
-  border-left: 3px solid var(--callout-color, var(--interactive-accent));
   background: var(--background-primary-alt);
-  padding: 16px 20px;
+  padding: 16px 20px 16px 24px;
+  position: relative;
   transition: transform var(--anim-fast), box-shadow var(--anim-fast);
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  width: 4px;
+  background: var(--callout-accent, var(--callout-color, var(--interactive-accent)));
+  border-top-left-radius: var(--radius-l);
+  border-bottom-left-radius: var(--radius-l);
 }
 .callout:hover {
   transform: translate3d(-1px, -1px, 0);
@@ -1054,17 +1072,17 @@ input[type='range']::-webkit-slider-thumb:hover {
   color: var(--text-normal);
 }
 
-.callout[data-callout='info']     { border-left-color: var(--callout-color-info);    background: rgba(106, 155, 204, 0.06); color: #1a365d; }
-.callout[data-callout='warning']  { border-left-color: var(--callout-color-warning); background: rgba(212, 162, 127, 0.06); color: #7a4a23; }
+.callout[data-callout='info']     { --callout-accent: var(--callout-color-info);    background: rgba(106, 155, 204, 0.06); color: #1a365d; }
+.callout[data-callout='warning']  { --callout-accent: var(--callout-color-warning); background: rgba(212, 162, 127, 0.06); color: #7a4a23; }
 .callout[data-callout='error'],
-.callout[data-callout='danger']   { border-left-color: var(--callout-color-error);   background: rgba(196, 102, 134, 0.06); color: #7a1a3a; }
+.callout[data-callout='danger']   { --callout-accent: var(--callout-color-error);   background: rgba(196, 102, 134, 0.06); color: #7a1a3a; }
 .callout[data-callout='success'],
-.callout[data-callout='tip']      { border-left-color: var(--callout-color-success); background: rgba(120, 140, 93, 0.06); color: #3d5a1a; }
-.callout[data-callout='question'] { border-left-color: var(--callout-color-clay);    background: rgba(217, 119, 87, 0.06); }
-.callout[data-callout='quote']    { border-left-color: var(--callout-color-slate);   background: rgba(94, 93, 89, 0.04); }
+.callout[data-callout='tip']      { --callout-accent: var(--callout-color-success); background: rgba(120, 140, 93, 0.06); color: #3d5a1a; }
+.callout[data-callout='question'] { --callout-accent: var(--callout-color-clay);    background: rgba(217, 119, 87, 0.06); }
+.callout[data-callout='quote']    { --callout-accent: var(--callout-color-slate);   background: rgba(94, 93, 89, 0.04); }
 .callout[data-callout='abstract'],
-.callout[data-callout='summary']  { border-left-color: var(--callout-color-heather); background: rgba(130, 125, 189, 0.06); }
-.callout[data-callout='example']  { border-left-color: var(--callout-color-clay); }
+.callout[data-callout='summary']  { --callout-accent: var(--callout-color-heather); background: rgba(130, 125, 189, 0.06); }
+.callout[data-callout='example']  { --callout-accent: var(--callout-color-clay); }
 
 /* ── 表格 ──────────────────────────────────────────────────────
    社论增强版风格（精细排版）：
@@ -1095,7 +1113,7 @@ input[type='range']::-webkit-slider-thumb:hover {
   font-weight: 700;
   letter-spacing: 0.01em;
   text-align: left;
-  padding: 14px 16px;
+  padding: var(--table-header-padding-y) var(--table-header-padding-x);
 
   background: var(--background-secondary-alt) !important;
   border-bottom: 2px solid var(--background-modifier-border);
@@ -1138,11 +1156,19 @@ input[type='range']::-webkit-slider-thumb:hover {
 
 .markdown-rendered td,
 .cm-embed-block td {
-  padding: 12px 16px;
+  padding: var(--table-padding-y) var(--table-padding-x);
   color: var(--text-normal);
-  line-height: 1.6;
+  line-height: var(--table-line-height);
   border-right: 1px solid var(--background-modifier-border);
   border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* 确保编辑模式 (Live Preview) 的表格单元格也读取一致的间距变量 */
+.markdown-source-view.mod-cm6 .cm-table-widget td .table-cell-wrapper {
+  padding: var(--table-padding-y) var(--table-padding-x);
+}
+.markdown-source-view.mod-cm6 .cm-table-widget th .table-cell-wrapper {
+  padding: var(--table-header-padding-y) var(--table-header-padding-x);
 }
 
 .markdown-rendered td:last-child,
@@ -1164,6 +1190,17 @@ input[type='range']::-webkit-slider-thumb:hover {
   border: none;
   padding: 0 2px;
   font-size: 0.9em;
+}
+
+/* Dataview 专属紧凑化配置 */
+.dataview.table-view-table,
+.block-language-dataview table {
+  --table-padding-y: 6px;          /* 纵向内边距缩减一半 */
+  --table-padding-x: 12px;
+  --table-header-padding-y: 8px;   /* 表头纵向内边距缩减 */
+  --table-header-padding-x: 12px;
+  --table-line-height: 1.35;       /* 稍微收紧行高 */
+  font-size: 0.9em;                /* 适当降低字号提高信息密度 */
 }
 
 /* ── 阅读模式（限宽设在 sizer 层，滚动条保持在容器右边缘） ── */

@@ -1099,6 +1099,8 @@ body.theme-light {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --table-header-padding-x: var(--size-4-2) !important;
+  --table-header-padding-y: var(--size-2-2) !important;
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
@@ -1472,8 +1474,6 @@ body.theme-light {
   --table-add-button-size: var(--size-4-6) !important;
   --table-cell-padding-x: var(--size-4-2) !important;
   --table-cell-padding-y: var(--size-2-2) !important;
-  --table-header-padding-x: var(--size-4-2) !important;
-  --table-header-padding-y: var(--size-2-2) !important;
   --table-header-text-color: var(--lite-accent) !important;
   --table-row-edit-font-size: var(--font-small) !important;
   --tag: var(--note) !important;
@@ -2564,6 +2564,8 @@ body.theme-dark {
   --r-heading-font: var(--font) !important;
   --r-heading-text-transform: capitalize !important;
   --r-main-font: var(--font-default) !important;
+  --table-header-padding-x: var(--size-4-2) !important;
+  --table-header-padding-y: var(--size-2-2) !important;
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
@@ -2938,8 +2940,6 @@ body.theme-dark {
   --table-add-button-size: var(--size-4-6) !important;
   --table-cell-padding-x: var(--size-4-2) !important;
   --table-cell-padding-y: var(--size-2-2) !important;
-  --table-header-padding-x: var(--size-4-2) !important;
-  --table-header-padding-y: var(--size-2-2) !important;
   --table-header-text-color: var(--lite-accent) !important;
   --table-row-edit-font-size: var(--font-small) !important;
   --tag: var(--note) !important;

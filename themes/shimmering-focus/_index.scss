@@ -2749,21 +2749,21 @@ body {
 
   .callout {
     --callout-color: var(--callout-default);
-    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     mix-blend-mode: normal;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding: 4px;
+    padding-block-end: 4px;
+    padding-block-start: 4px;
+    padding-inline-end: 4px;
+    padding-inline-start: 4px;
   }
 
   .callout .callout-title {
@@ -2808,16 +2808,16 @@ body {
 
   .callout[data-callout="note"] {
     --callout-color: var(--callout-default);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2866,16 +2866,16 @@ body {
 
   .callout[data-callout="abstract"] {
     --callout-color: var(--callout-summary);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.628051 0.0981486 193.19 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.628051 0.0981486 193.19 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.628051 0.0981486 193.19 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2924,16 +2924,16 @@ body {
 
   .callout[data-callout="info"] {
     --callout-color: var(--callout-info);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2982,16 +2982,16 @@ body {
 
   .callout[data-callout="todo"] {
     --callout-color: var(--callout-todo);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.550587 0.189745 256.787 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3040,16 +3040,16 @@ body {
 
   .callout[data-callout="tip"] {
     --callout-color: var(--callout-tip);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.628051 0.0981486 193.19 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.628051 0.0981486 193.19 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.628051 0.0981486 193.19 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3098,16 +3098,16 @@ body {
 
   .callout[data-callout="success"] {
     --callout-color: var(--callout-success);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.686205 0.194562 148.477 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.686205 0.194562 148.477 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.686205 0.194562 148.477 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3156,16 +3156,16 @@ body {
 
   .callout[data-callout="question"] {
     --callout-color: var(--callout-question);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.688771 0.175867 52.5446 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.688771 0.175867 52.5446 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3214,16 +3214,16 @@ body {
 
   .callout[data-callout="warning"] {
     --callout-color: var(--callout-warning);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.688771 0.175867 52.5446 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.688771 0.175867 52.5446 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3272,16 +3272,16 @@ body {
 
   .callout[data-callout="danger"] {
     --callout-color: var(--callout-error);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3330,16 +3330,16 @@ body {
 
   .callout[data-callout="failure"] {
     --callout-color: var(--callout-fail);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3388,16 +3388,16 @@ body {
 
   .callout[data-callout="bug"] {
     --callout-color: var(--callout-bug);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.611475 0.216957 20.8417 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3446,16 +3446,16 @@ body {
 
   .callout[data-callout="example"] {
     --callout-color: var(--callout-example);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.567895 0.221884 288.456 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.567895 0.221884 288.456 / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.567895 0.221884 288.456 / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3504,16 +3504,16 @@ body {
 
   .callout[data-callout="quote"] {
     --callout-color: var(--callout-quote);
-    background-color: rgb(var(--callout-color), 11%);
+    background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 41, 92);
     mix-blend-mode: normal;
-    border: 1px solid oklch(0.699256 0.0000347234 none / 0.25);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 2px solid oklch(0.699256 0.0000347234 none / 0.25);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -8763,21 +8763,21 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: var(--callout-default);
-      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       mix-blend-mode: normal;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding: 4px;
+      padding-block-end: 4px;
+      padding-block-start: 4px;
+      padding-inline-end: 4px;
+      padding-inline-start: 4px;
     }
 
     .callout .callout-title {
@@ -8822,16 +8822,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="note"] {
       --callout-color: var(--callout-default);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -8880,16 +8880,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="abstract"] {
       --callout-color: var(--callout-summary);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.828615 0.118893 193.752 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.828615 0.118893 193.752 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -8938,16 +8938,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="info"] {
       --callout-color: var(--callout-info);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -8996,16 +8996,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="todo"] {
       --callout-color: var(--callout-todo);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.602893 0.217554 257.503 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9054,16 +9054,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="tip"] {
       --callout-color: var(--callout-tip);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.828615 0.118893 193.752 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.828615 0.118893 193.752 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9112,16 +9112,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="success"] {
       --callout-color: var(--callout-success);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.757772 0.180999 149.614 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.757772 0.180999 149.614 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.757772 0.180999 149.614 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9170,16 +9170,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="question"] {
       --callout-color: var(--callout-question);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.744355 0.140765 64.0894 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.744355 0.140765 64.0894 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9228,16 +9228,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="warning"] {
       --callout-color: var(--callout-warning);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.744355 0.140765 64.0894 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.744355 0.140765 64.0894 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9286,16 +9286,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="danger"] {
       --callout-color: var(--callout-error);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9344,16 +9344,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="failure"] {
       --callout-color: var(--callout-fail);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9402,16 +9402,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="bug"] {
       --callout-color: var(--callout-bug);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.659737 0.216875 23.8105 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9460,16 +9460,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="example"] {
       --callout-color: var(--callout-example);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.697304 0.17906 295.405 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.697305 0.17906 295.405 / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.697305 0.17906 295.405 / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -9518,16 +9518,16 @@ html[saved-theme="dark"] {
 
     .callout[data-callout="quote"] {
       --callout-color: var(--callout-quote);
-      background-color: rgb(var(--callout-color), 11%);
+      background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(195, 200, 223);
       mix-blend-mode: normal;
-      border: 1px solid oklch(0.699256 0.0000347234 none / 0.25);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 2px solid oklch(0.699256 0.0000347234 none / 0.25);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
