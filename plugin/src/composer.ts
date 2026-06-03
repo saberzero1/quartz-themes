@@ -23,6 +23,7 @@ import { FONT_BASE_URL } from "./fonts/font-tag";
 /** All aspect keys in the order they should appear in the CSS output. */
 const ASPECT_ORDER: AspectKey[] = [
   "base",
+  "headings",
   "typography",
   "links",
   "lists",

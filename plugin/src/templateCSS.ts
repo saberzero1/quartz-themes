@@ -537,12 +537,12 @@ body a.internal-link {
  */
 export const TEMPLATE_OVERRIDE_CSS = `
 /* heading sizes */
-h1 { font-size: 1.618rem; margin-top: 0; margin-bottom: 0.67rem; }
-h2 { font-size: 1.462rem; margin-top: 0; margin-bottom: 0.67rem; }
-h3 { font-size: 1.318rem; margin-top: 0; margin-bottom: 0.67rem; }
-h4 { font-size: 1.188rem; margin-top: 0; margin-bottom: 0.67rem; }
-h5 { font-size: 1.076rem; margin-top: 0; margin-bottom: 0.67rem; }
-h6 { font-size: 1rem; margin-top: 0; margin-bottom: 0.67rem; }
+h1 { --h1-size: 1.618rem; }
+h2 { --h2-size: 1.462rem; }
+h3 { --h3-size: 1.318rem; }
+h4 { --h4-size: 1.188rem; }
+h5 { --h5-size: 1.076rem; }
+h6 { --h6-size: 1rem; }
 h2.page-title { font-size: 1rem; }
 .backlinks > h3,
 .graph > h3,

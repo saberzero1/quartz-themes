@@ -8,6 +8,7 @@ export type {
 /** All available aspect keys that can be mixed and matched across themes. */
 export type AspectKey =
   | "base"
+  | "headings"
   | "typography"
   | "callouts"
   | "tables"
