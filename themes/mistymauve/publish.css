@@ -2,14 +2,14 @@
   font-family: "Arvo";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/mistymauve/arvo.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/mistymauve/arvo.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Permanent Marker";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/mistymauve/permanent-marker.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/mistymauve/permanent-marker.woff2")
     format("woff2");
 }
 body.theme-light {

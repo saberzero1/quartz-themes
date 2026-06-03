@@ -2,14 +2,14 @@
   font-family: "Lower Pixel";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/cranky-goblin/lower-pixel.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/cranky-goblin/lower-pixel.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "PixelWarden";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/cranky-goblin/pixelwarden.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/cranky-goblin/pixelwarden.woff2")
     format("woff2");
 }
 body.theme-dark {

@@ -2,28 +2,28 @@
   font-family: "iA Writer Duo";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/ia-writer/ia-writer-duo.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ia-writer/ia-writer-duo.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/ia-writer/ia-writer-duo-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ia-writer/ia-writer-duo-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/ia-writer/ia-writer-duo-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ia-writer/ia-writer-duo-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/ia-writer/ia-writer-duo-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ia-writer/ia-writer-duo-3.woff2")
     format("woff2");
 }
 body.theme-light {

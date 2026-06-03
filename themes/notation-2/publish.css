@@ -2,84 +2,84 @@
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-1.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-1.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-2.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-2.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-3.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-3.woff")
     format("woff");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/ia-writer-duospace.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/ia-writer-duospace.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/ia-writer-duospace-1.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/ia-writer-duospace-1.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/ia-writer-duospace-2.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/ia-writer-duospace-2.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duospace";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/ia-writer-duospace-3.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/ia-writer-duospace-3.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-4.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-4.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-5.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-5.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-6.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-6.woff")
     format("woff");
 }
 @font-face {
   font-family: "Lyon-Text";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/notation-2/lyon-text-7.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/notation-2/lyon-text-7.woff")
     format("woff");
 }
 body.theme-light {

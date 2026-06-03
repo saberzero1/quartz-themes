@@ -158,20 +158,6 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
-          },
-          {
-            "id": "8c6335934d1b45a3",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
           }
         ]
       },
@@ -229,12 +215,12 @@
     "callouts.md",
     "headings.md",
     "general.md",
-    "theme-callouts/willemstad.md",
-    "theme-callouts/vortex.md",
-    "theme-callouts/viridian.md",
-    "theme-callouts/velocity.md",
-    "theme-callouts/vauxhall.md",
-    "theme-callouts/universitario.md",
+    "theme-callouts/its-theme.ttrpg-wotc.md",
+    "theme-callouts/its-theme.ttrpg-pathfinder-remastered.md",
+    "theme-callouts/its-theme.ttrpg-pathfinder.md",
+    "theme-callouts/its-theme.ttrpg-dnd.md",
+    "theme-callouts/its-theme.tangerine-dunes.md",
+    "theme-callouts/its-theme.school-days.md",
     "folder/unopened",
     "theme-properties",
     "theme-code",

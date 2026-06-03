@@ -2,21 +2,21 @@
   font-family: "Linux Libertine";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/wikipedia/linux-libertine.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/wikipedia/linux-libertine.woff")
     format("woff");
 }
 @font-face {
   font-family: "Linux Libertine";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/wikipedia/linux-libertine-1.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/wikipedia/linux-libertine-1.woff")
     format("woff");
 }
 @font-face {
   font-family: "Linux Libertine";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/wikipedia/linux-libertine-2.woff")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/wikipedia/linux-libertine-2.woff")
     format("woff");
 }
 body.theme-light {

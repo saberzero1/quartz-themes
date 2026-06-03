@@ -2,35 +2,35 @@
   font-family: "Apercu Pro Thin";
   font-style: normal italic;
   font-weight: 200;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/spring/apercu-pro-thin.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/spring/apercu-pro-thin.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Apercu Pro Light";
   font-style: normal italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/spring/apercu-pro-light.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/spring/apercu-pro-light.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Apercu Pro Black";
   font-style: bold;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/spring/apercu-pro-black.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/spring/apercu-pro-black.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Apercu Pro";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/spring/apercu-pro.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/spring/apercu-pro.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "Apercu Pro Italic Black";
   font-style: italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.10/fonts/spring/apercu-pro-italic-black.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/spring/apercu-pro-italic-black.woff2")
     format("woff2");
 }
 body.theme-light {

@@ -904,6 +904,7 @@
     "outline": "rgb(255, 255, 255) none 0px",
     "outline-color": "rgb(255, 255, 255)",
     "text-decoration-color": "rgb(255, 255, 255)",
+    "transform": "matrix(1, 0, 0, 1, 0, 0.000588517)",
     "transform-origin": "350px 28.7969px",
     "transition": "opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
     "transition-delay": "0s, 0s"
@@ -4574,6 +4575,7 @@
     "outline": "rgb(255, 255, 255) none 0px",
     "outline-color": "rgb(255, 255, 255)",
     "text-decoration-color": "rgb(255, 255, 255)",
+    "transform": "matrix(1, 0, 0, 1, 0, 0.000588517)",
     "transform-origin": "350px 28.7969px",
     "transition": "opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)",
     "transition-delay": "0s, 0s"
