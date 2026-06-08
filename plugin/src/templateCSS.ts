@@ -186,11 +186,12 @@ button.toc-header .fold,
 }
 
 @media all and (max-width: 1200px) {
-:root[saved-theme="dark"],
-:root[saved-theme="light"] {
-  &body .page > div#quartz-body div.sidebar.right {
-    background-color: transparent;
-    border-left: none;
+  :root[saved-theme="dark"],
+  :root[saved-theme="light"] {
+    &body .page > div#quartz-body div.sidebar.right {
+      background-color: transparent;
+      border-left: none;
+    }
   }
 }
 
