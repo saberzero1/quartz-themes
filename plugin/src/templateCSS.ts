@@ -215,8 +215,8 @@ button.toc-header .fold,
   .page > #quartz-body {
     & div.center,
     & footer {
-      min-width: 100%;
-      max-width: 100%;
+      min-width: calc(100% - 3rem);
+      max-width: calc(100% - 3rem);
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       margin-left: 0;
@@ -400,6 +400,7 @@ pre {
   }
 }
 
+/*
 blockquote.callout {
   .callout-title {
     color: var(--color);
@@ -483,6 +484,7 @@ blockquote.callout {
     --bg: rgba(var(--callout-quote, 158, 158, 158), 0.063);
   }
 }
+*/
 
 :root[reader-mode="on"] {
   body[data-slug] {
