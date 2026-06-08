@@ -696,6 +696,14 @@ function buildCalloutBridgeVars(data) {
     if (!selector.includes("[data-callout=")) continue;
     const typeMatch = selector.match(/data-callout="([^"]+)"/);
     if (!typeMatch) continue;
+    // Only read from the parent callout selector, not child elements like
+    // .callout-title whose computed --callout-color is always the default.
+    const closingBracket = selector.indexOf(
+      "]",
+      selector.indexOf(typeMatch[0]),
+    );
+    if (closingBracket === -1) continue;
+    if (selector.slice(closingBracket + 1).trim().length > 0) continue;
     const targetVar = mapping[typeMatch[1]];
     if (!targetVar) continue;
     const value = props?.["--callout-color"];
@@ -1195,6 +1203,24 @@ function buildModeCSS(
       }
     }
   });
+
+  // Post-processing: strip --callout-color from child selectors of
+  // [data-callout="X"] parents when it holds a literal (non-var) value.
+  // The Obsidian DOM scraper captures the computed value of --callout-color on
+  // .callout-title children, which is always the resolved default color rather
+  // than the per-type variable set on the parent .callout[data-callout="X"].
+  // Emitting this literal clobbers the parent's var() reference and causes all
+  // callout titles to render in the same default color.
+  for (const [, selectorMap] of aspectSelectors) {
+    for (const [selector, propMap] of selectorMap) {
+      if (selector.includes(".callout-title")) {
+        const value = propMap.get("--callout-color");
+        if (value && !value.includes("var(")) {
+          propMap.delete("--callout-color");
+        }
+      }
+    }
+  }
 
   // Post-processing: ensure shorthand property coherence.
   // When the baseline diff strips default values (e.g. border-width: 0px) but
