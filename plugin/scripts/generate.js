@@ -401,6 +401,12 @@ const FONT_CSS_VARS = new Set([
   "--headerFont",
   "--titleFont",
   "--codeFont",
+  "--h1-font",
+  "--h2-font",
+  "--h3-font",
+  "--h4-font",
+  "--h5-font",
+  "--h6-font",
   "font-family",
 ]);
 
@@ -1001,6 +1007,12 @@ function buildModeCSS(
     "--headerFont": ["--font-text", "--font-interface", "--font-text-theme"],
     "--titleFont": ["--font-text", "--font-interface", "--font-text-theme"],
     "--codeFont": ["--font-monospace", "--font-text", "--font-interface"],
+    "--h1-font": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--h2-font": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--h3-font": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--h4-font": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--h5-font": ["--font-text", "--font-interface", "--font-text-theme"],
+    "--h6-font": ["--font-text", "--font-interface", "--font-text-theme"],
   };
 
   // Build a reverse dependency map from var-graph: "which vars reference this one?"

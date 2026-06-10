@@ -13,7 +13,7 @@ import type {
   ThemeData,
   ThemeOptions,
 } from "./types";
-import { TEMPLATE_CSS } from "./templateCSS";
+import { TEMPLATE_BASELINE_CSS, TEMPLATE_CSS } from "./templateCSS";
 import { resolveThemeId, loadTheme } from "./registry";
 import { generateCalloutIconCSS } from "./icons/callout-icons";
 import { generateCheckboxIconCSS } from "./icons/checkbox-icons";
@@ -148,6 +148,8 @@ export function composeCSS(options: ThemeOptions): ComposedTheme {
     (fontCSS ? fontCSS + "\n\n" : "") +
     iconCSS +
     "\n\n" +
+    TEMPLATE_BASELINE_CSS +
+    "\n" +
     parts.join("\n") +
     "\n" +
     TEMPLATE_CSS;

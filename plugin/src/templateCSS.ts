@@ -1,4 +1,29 @@
 /**
+ * Baseline CSS variable defaults injected BEFORE theme aspect CSS.
+ *
+ * These provide Obsidian-compatible defaults that theme CSS can freely
+ * override by source order (both live in the same @layer obsidian-theme).
+ */
+export const TEMPLATE_BASELINE_CSS = `
+:root {
+  --font-default-obsidian: ui-sans-serif, -apple-system, BlinkMacSystemFont,
+    system-ui, "Segoe UI", Roboto, "Inter", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-monospace-default-obsidian: ui-monospace, SFMono-Regular,
+    "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
+    Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
+  --font-default: var(--font-default-obsidian);
+  --font-monospace: var(--font-monospace-default-obsidian);
+  --h1-font: inherit;
+  --h2-font: inherit;
+  --h3-font: inherit;
+  --h4-font: inherit;
+  --h5-font: inherit;
+  --h6-font: inherit;
+}
+`;
+
+/**
  * Template CSS — static layout and component styles ported from v4 compile.js.
  * These styles are mode-independent (they reference CSS variables that are already
  * mode-scoped by the theme CSS). Injected once after theme CSS.
