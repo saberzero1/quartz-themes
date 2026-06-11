@@ -416,6 +416,81 @@ const FONT_CSS_VARS = new Set([
  * e.g.: "'??', '??', '"JetBrains Mono", monospace, "Inter", sans-serif', ui-sans-serif"
  * After stripping, also cleans up orphaned leading quotes from the next entry.
  */
+function splitVarArgs(s) {
+  const parts = [];
+  let depth = 0;
+  let current = [];
+  for (const ch of s) {
+    if (ch === "(") {
+      depth++;
+      current.push(ch);
+    } else if (ch === ")") {
+      depth--;
+      current.push(ch);
+    } else if (ch === "," && depth === 0) {
+      parts.push(current.join(""));
+      current = [];
+    } else {
+      current.push(ch);
+    }
+  }
+  if (current.length) parts.push(current.join(""));
+  return parts;
+}
+
+function nestVarParts(parts) {
+  parts = parts.map((p) => p.trim()).filter(Boolean);
+  if (parts.length <= 1) return parts[0] || "";
+  let result = parts[parts.length - 1];
+  for (let i = parts.length - 2; i >= 0; i--) {
+    const m = parts[i].match(/^var\((--[\w-]+)(?:,\s*(.*))?\)$/s);
+    if (m) result = `var(${m[1]}, ${result})`;
+    else result = `${parts[i]}, ${result}`;
+  }
+  return result;
+}
+
+function nestVarChain(value) {
+  if (!value || typeof value !== "string") return value;
+  value = value.trim();
+  const outerMatch = value.match(/^var\((--[\w-]+),\s*(.+)\)$/s);
+  if (outerMatch) {
+    const parts = splitVarArgs(outerMatch[2].trim());
+    if (
+      parts.length > 1 &&
+      parts.every((p) => {
+        const t = p.trim();
+        return (
+          !t ||
+          t.startsWith("var(") ||
+          t.startsWith('"') ||
+          t.startsWith("'") ||
+          /^[\w-]+$/.test(t)
+        );
+      })
+    ) {
+      return `var(${outerMatch[1]}, ${nestVarParts(parts)})`;
+    }
+  }
+  const parts = splitVarArgs(value);
+  if (
+    parts.length > 1 &&
+    parts.every((p) => {
+      const t = p.trim();
+      return (
+        !t ||
+        t.startsWith("var(") ||
+        t.startsWith('"') ||
+        t.startsWith("'") ||
+        /^[\w-]+$/.test(t)
+      );
+    })
+  ) {
+    return nestVarParts(parts);
+  }
+  return value;
+}
+
 function sanitizeFontValue(value) {
   if (typeof value !== "string" || !value.includes("??")) return value;
 
@@ -1072,6 +1147,14 @@ function buildModeCSS(
     }
   }
 
+  // Convert comma-separated var() chains in font properties to nested form.
+  // Obsidian stores font fallbacks as "var(--a), var(--b), var(--c)" but CSS
+  // needs "var(--a, var(--b, var(--c)))" for proper fallback resolution.
+  for (const varName of FONT_CSS_VARS) {
+    if (!baseVars[varName] || !baseVars[varName].includes("var(")) continue;
+    baseVars[varName] = nestVarChain(baseVars[varName]);
+  }
+
   config.forEach((mapping, index) => {
     const aspect = aspectMap[index] ?? "misc";
     const style = data[mapping.obsidianSelector];
@@ -1134,6 +1217,9 @@ function buildModeCSS(
         if (declared) {
           normalized = declared;
         }
+      }
+      if (FONT_CSS_VARS.has(prop) && normalized.includes("var(")) {
+        normalized = nestVarChain(normalized);
       }
       let selectorMap = aspectSelectors.get(aspect);
       if (!selectorMap) {
@@ -1211,7 +1297,8 @@ function buildModeCSS(
       }
       // Don't overwrite if already set by the config property whitelist
       if (!propMap.has(prop)) {
-        propMap.set(prop, value);
+        const emitted = FONT_CSS_VARS.has(prop) ? nestVarChain(value) : value;
+        propMap.set(prop, emitted);
       }
     }
   });

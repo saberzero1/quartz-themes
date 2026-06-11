@@ -76,6 +76,8 @@ export interface ComposedTheme {
   styleSettingsId?: string | string[];
   classSettings?: Record<string, ClassSettingCSS>;
   brokenVarLinks?: Record<string, string[]>;
+  /** Theme metadata for inter-plugin communication (font registry). */
+  themeMeta?: { name: string; fontFiles?: FontFileEntry[]; fontDir?: string };
 }
 
 export function composeCSS(options: ThemeOptions): ComposedTheme {
@@ -160,6 +162,11 @@ export function composeCSS(options: ThemeOptions): ComposedTheme {
     styleSettingsId: baseTheme.meta.styleSettingsId,
     classSettings: baseTheme.classSettings,
     brokenVarLinks: baseTheme.brokenVarLinks,
+    themeMeta: {
+      name: baseTheme.meta.name,
+      fontFiles: baseTheme.meta.fontFiles,
+      fontDir: baseTheme.meta.fontDir ?? baseTheme.meta.name,
+    },
   };
 }
 

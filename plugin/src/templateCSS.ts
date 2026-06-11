@@ -13,7 +13,14 @@ export const TEMPLATE_BASELINE_CSS = `
     "Cascadia Mono", "Roboto Mono", "DejaVu Sans Mono", "Liberation Mono",
     Menlo, Monaco, "Consolas", "Source Code Pro", monospace;
   --font-default: var(--font-default-obsidian);
-  --font-monospace: var(--font-monospace-default-obsidian);
+  --font-monospace-default: var(--font-monospace-default-obsidian);
+
+  /* Resolved font stacks — themes override these in their base aspect.
+     The baseline just ensures usable defaults before theme CSS loads. */
+  --font-text: var(--font-default);
+  --font-interface: var(--font-default);
+  --font-monospace: var(--font-monospace-default);
+
   --h1-font: inherit;
   --h2-font: inherit;
   --h3-font: inherit;
@@ -667,7 +674,7 @@ button.darkmode {
 /* code blocks */
 :root[saved-theme="dark"] body code,
 :root[saved-theme="light"] body code {
-  font-family: monospace;
+  font-family: var(--font-monospace);
 }
 
 /* center */

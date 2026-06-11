@@ -19,6 +19,44 @@ import { TEMPLATE_OVERRIDE_CSS } from "./templateCSS";
 const defaultOptions: ThemeOptions = { theme: "tokyo-night", mode: "both" };
 
 /**
+ * Font variable names to extract for inter-plugin communication.
+ * Includes both the resolved font stacks (--font-text, etc.) and
+ * the theme-specific slots (--font-text-theme, etc.) so downstream
+ * consumers can identify the actual font families the theme uses.
+ */
+const FONT_VAR_NAMES = [
+  "--font-text",
+  "--font-text-theme",
+  "--font-interface",
+  "--font-interface-theme",
+  "--font-monospace",
+  "--font-monospace-theme",
+  "--h1-font",
+  "--h2-font",
+  "--h3-font",
+  "--h4-font",
+  "--h5-font",
+  "--h6-font",
+] as const;
+
+function extractFontVars(css: string): Record<string, string> {
+  const result: Record<string, string> = {};
+  for (const varName of FONT_VAR_NAMES) {
+    const pattern = new RegExp(
+      `${varName.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*:\\s*([^;]+)`,
+    );
+    const match = css.match(pattern);
+    if (match?.[1]) {
+      const value = match[1].trim();
+      if (value && !value.startsWith("var(") && value !== "inherit") {
+        result[varName] = value;
+      }
+    }
+  }
+  return result;
+}
+
+/**
  * QuartzTheme transformer plugin.
  *
  * @example
@@ -62,7 +100,18 @@ export const QuartzTheme: QuartzTransformerPlugin<Partial<ThemeOptions>> = (
       styleSettingsId,
       classSettings,
       brokenVarLinks,
+      themeMeta,
     } = composeCSS(options);
+
+    if (resolvedCSS && themeMeta) {
+      const fontVars = extractFontVars(resolvedCSS);
+      (globalThis as Record<string, unknown>).__quartzFonts = {
+        themeName: options.theme,
+        fonts: fontVars,
+        fontFiles: themeMeta.fontFiles,
+        fontDir: themeMeta.fontDir,
+      };
+    }
 
     const isSingleMode = effectiveMode !== "both";
 
