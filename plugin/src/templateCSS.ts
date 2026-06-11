@@ -316,7 +316,6 @@ button.toc-header .fold,
       max-width: 100dvw;
     }
 
-    /* overflow fix for explorer on mobile */
     .explorer {
       .explorer-content {
         padding-left: 1rem;
@@ -335,6 +334,10 @@ button.toc-header .fold,
   }
   .page-title {
     display: none;
+  }
+
+  .callout {
+    z-index: auto !important;
   }
 }
 
