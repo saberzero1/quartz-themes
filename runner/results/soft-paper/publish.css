@@ -393,6 +393,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: rgb(var(--ctp-accent)) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1105,11 +1106,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1213,6 +1210,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1407,6 +1406,7 @@ body.theme-light {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: rgb(var(--ctp-red)) !important;
   --italic-color: rgb(var(--ctp-green)) !important;
+  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1) !important;
   --interactive-success: rgb(var(--ctp-green)) !important;
   --anp-header-font: "Source Serif Pro", serif !important;
   --anp-header-margin-value: 15px !important;
@@ -1417,7 +1417,6 @@ body.theme-light {
   --anp-rainbow-folder-collapse-border-custom: #00000044 !important;
   --anp-speech-bubble-opacity: 0.5 !important;
   --anp-table-width-pct: 100% !important;
-  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1) !important;
   --background-modifier-success-hover: rgba(var(--ctp-green), 0.9) !important;
   --card-background-color: rgba(var(--ctp-accent), 1) !important;
   --card-foreground-color: var(--background-primary) !important;
@@ -1485,6 +1484,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: rgb(var(--ctp-accent)) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2202,11 +2202,7 @@ body.theme-dark {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2308,6 +2304,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2499,6 +2497,7 @@ body.theme-dark {
   --inline-title-font: var(--h1-font) !important;
   --bold-color: rgb(var(--ctp-red)) !important;
   --italic-color: rgb(var(--ctp-green)) !important;
+  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1) !important;
   --anp-header-font: "Source Serif Pro", serif !important;
   --anp-header-margin-value: 15px !important;
   --anp-preview-width-max: 800px !important;
@@ -2507,7 +2506,6 @@ body.theme-dark {
   --anp-rainbow-folder-border-opacity: 1 !important;
   --anp-rainbow-folder-collapse-border-custom: #00000044 !important;
   --anp-table-width-pct: 100% !important;
-  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1) !important;
   --card-background-color: rgba(var(--ctp-accent), 1) !important;
   --card-foreground-color: var(--background-primary) !important;
   --colorful-frame-color: rgb(var(--ctp-accent)) !important;
@@ -4374,7 +4372,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7473,7 +7471,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

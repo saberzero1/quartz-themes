@@ -2,30 +2,6 @@
   "conflicts": [],
   "brokenBridges": [
     {
-      "property": "--editor-max-width",
-      "references": "--line-width",
-      "selector": "html",
-      "aspect": "base"
-    },
-    {
-      "property": "--file-line-width",
-      "references": "--line-width",
-      "selector": "html",
-      "aspect": "base"
-    },
-    {
-      "property": "--line-normal",
-      "references": "--editor-line-height",
-      "selector": "html",
-      "aspect": "base"
-    },
-    {
-      "property": "--reading-max-width",
-      "references": "--line-width",
-      "selector": "html",
-      "aspect": "base"
-    },
-    {
       "property": "--code-background",
       "references": "--ec-frm-edBg",
       "selector": "figure",

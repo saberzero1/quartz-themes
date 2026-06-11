@@ -2097,9 +2097,9 @@ body {
   }
 
   dl {
-    margin: 14.85px 0px;
-    margin-block-end: 14.85px;
-    margin-block-start: 14.85px;
+    margin: 15px 0px;
+    margin-block-end: 15px;
+    margin-block-start: 15px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     list-style: outside none disc;
@@ -2118,7 +2118,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    font-size: 14.85px;
+    font-size: 15px;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2151,7 +2151,7 @@ body {
 
   dd {
     color: rgb(34, 34, 34);
-    font-size: 14.85px;
+    font-size: 15px;
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -2612,22 +2612,22 @@ body {
     border-start-end-radius: 4px;
     border-end-start-radius: 4px;
     border-end-end-radius: 4px;
-    padding: 1.4553px 3.63825px;
-    padding-block-end: 1.4553px;
-    padding-block-start: 1.4553px;
-    padding-inline-end: 3.63825px;
-    padding-inline-start: 3.63825px;
+    padding: 1.47px 3.675px;
+    padding-block-end: 1.47px;
+    padding-block-start: 1.47px;
+    padding-inline-end: 3.675px;
+    padding-inline-start: 3.675px;
   }
 
   sub {
     color: rgb(34, 34, 34);
-    font-size: 12.375px;
+    font-size: 12.5px;
     vertical-align: sub;
   }
 
   sup {
     color: rgb(34, 34, 34);
-    font-size: 12.375px;
+    font-size: 12.5px;
     vertical-align: super;
   }
 
@@ -2800,7 +2800,7 @@ body {
 
   .content-meta {
     color: var(--text-muted);
-    font-size: 14.85px;
+    font-size: var(--properties-editor-font-size);
   }
 
   details.toc summary::marker {
@@ -2850,7 +2850,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -4451,8 +4451,6 @@ body {
     border-inline-start: 1px solid rgb(228, 228, 228);
     border-top-left-radius: 11.5px;
     border-top-right-radius: 11.5px;
-    font-size: 14.85px;
-    line-height: 22.275px;
     padding-block: 0px 2px;
     padding-block-end: 2px;
     padding-block-start: 0px;
@@ -4460,6 +4458,7 @@ body {
     padding-inline-end: 10px;
     padding-inline-start: 10px;
     padding: 0px 10px 2px;
+    line-height: 24px;
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4492,7 +4491,9 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
+    font-size: 16px;
     box-shadow: var(--background-modifier-box-shadow) 0px 0px 0px 0px;
   }
 
@@ -4503,8 +4504,6 @@ body {
     border-inline-start: 1px solid rgb(228, 228, 228);
     border-top-left-radius: 11.5px;
     border-top-right-radius: 11.5px;
-    font-size: 14.85px;
-    line-height: 22.275px;
     padding-block: 0px 2px;
     padding-block-end: 2px;
     padding-block-start: 0px;
@@ -4512,6 +4511,7 @@ body {
     padding-inline-end: 10px;
     padding-inline-start: 10px;
     padding: 0px 10px 2px;
+    line-height: 24px;
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4544,7 +4544,9 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
+    font-size: 16px;
     box-shadow: none;
   }
 
@@ -4555,8 +4557,6 @@ body {
     border-inline-start: 1px solid rgb(228, 228, 228);
     border-top-left-radius: 11.5px;
     border-top-right-radius: 11.5px;
-    font-size: 14.85px;
-    line-height: 22.275px;
     padding-block: 0px 2px;
     padding-block-end: 2px;
     padding-block-start: 0px;
@@ -4564,6 +4564,7 @@ body {
     padding-inline-end: 10px;
     padding-inline-start: 10px;
     padding: 0px 10px 2px;
+    line-height: 24px;
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4596,7 +4597,9 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
+    font-size: 16px;
     box-shadow: none;
   }
 
@@ -4607,8 +4610,6 @@ body {
     border-inline-start: 1px solid rgb(228, 228, 228);
     border-top-left-radius: 11.5px;
     border-top-right-radius: 11.5px;
-    font-size: 14.85px;
-    line-height: 22.275px;
     padding-block: 0px 2px;
     padding-block-end: 2px;
     padding-block-start: 0px;
@@ -4616,6 +4617,7 @@ body {
     padding-inline-end: 10px;
     padding-inline-start: 10px;
     padding: 0px 10px 2px;
+    line-height: 24px;
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -4648,7 +4650,9 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
+    font-size: 16px;
     box-shadow: none;
   }
 
@@ -7023,9 +7027,9 @@ html[saved-theme="dark"] {
     }
 
     dl {
-      margin: 14.85px 0px;
-      margin-block-end: 14.85px;
-      margin-block-start: 14.85px;
+      margin: 15px 0px;
+      margin-block-end: 15px;
+      margin-block-start: 15px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       list-style: outside none disc;
@@ -7044,7 +7048,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      font-size: 14.85px;
+      font-size: 15px;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -7077,7 +7081,7 @@ html[saved-theme="dark"] {
 
     dd {
       color: rgb(218, 218, 218);
-      font-size: 14.85px;
+      font-size: 15px;
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -7538,22 +7542,22 @@ html[saved-theme="dark"] {
       border-start-end-radius: 4px;
       border-end-start-radius: 4px;
       border-end-end-radius: 4px;
-      padding: 1.4553px 3.63825px;
-      padding-block-end: 1.4553px;
-      padding-block-start: 1.4553px;
-      padding-inline-end: 3.63825px;
-      padding-inline-start: 3.63825px;
+      padding: 1.47px 3.675px;
+      padding-block-end: 1.47px;
+      padding-block-start: 1.47px;
+      padding-inline-end: 3.675px;
+      padding-inline-start: 3.675px;
     }
 
     sub {
       color: rgb(218, 218, 218);
-      font-size: 12.375px;
+      font-size: 12.5px;
       vertical-align: sub;
     }
 
     sup {
       color: rgb(218, 218, 218);
-      font-size: 12.375px;
+      font-size: 12.5px;
       vertical-align: super;
     }
 
@@ -7726,7 +7730,7 @@ html[saved-theme="dark"] {
 
     .content-meta {
       color: var(--text-muted);
-      font-size: 14.85px;
+      font-size: var(--properties-editor-font-size);
     }
 
     details.toc summary::marker {
@@ -7776,7 +7780,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -9377,8 +9381,6 @@ html[saved-theme="dark"] {
       border-inline-start: 1px solid rgb(51, 51, 51);
       border-top-left-radius: 11.5px;
       border-top-right-radius: 11.5px;
-      font-size: 14.85px;
-      line-height: 22.275px;
       padding-block: 0px 2px;
       padding-block-end: 2px;
       padding-block-start: 0px;
@@ -9386,6 +9388,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 10px;
       padding-inline-start: 10px;
       padding: 0px 10px 2px;
+      line-height: 24px;
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -9418,7 +9421,9 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
+      font-size: 16px;
       box-shadow: var(--background-modifier-box-shadow) 0px 0px 0px 0px;
     }
 
@@ -9429,8 +9434,6 @@ html[saved-theme="dark"] {
       border-inline-start: 1px solid rgb(51, 51, 51);
       border-top-left-radius: 11.5px;
       border-top-right-radius: 11.5px;
-      font-size: 14.85px;
-      line-height: 22.275px;
       padding-block: 0px 2px;
       padding-block-end: 2px;
       padding-block-start: 0px;
@@ -9438,6 +9441,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 10px;
       padding-inline-start: 10px;
       padding: 0px 10px 2px;
+      line-height: 24px;
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -9470,7 +9474,9 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
+      font-size: 16px;
       box-shadow: none;
     }
 
@@ -9481,8 +9487,6 @@ html[saved-theme="dark"] {
       border-inline-start: 1px solid rgb(51, 51, 51);
       border-top-left-radius: 11.5px;
       border-top-right-radius: 11.5px;
-      font-size: 14.85px;
-      line-height: 22.275px;
       padding-block: 0px 2px;
       padding-block-end: 2px;
       padding-block-start: 0px;
@@ -9490,6 +9494,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 10px;
       padding-inline-start: 10px;
       padding: 0px 10px 2px;
+      line-height: 24px;
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -9522,7 +9527,9 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
+      font-size: 16px;
       box-shadow: none;
     }
 
@@ -9533,8 +9540,6 @@ html[saved-theme="dark"] {
       border-inline-start: 1px solid rgb(51, 51, 51);
       border-top-left-radius: 11.5px;
       border-top-right-radius: 11.5px;
-      font-size: 14.85px;
-      line-height: 22.275px;
       padding-block: 0px 2px;
       padding-block-end: 2px;
       padding-block-start: 0px;
@@ -9542,6 +9547,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 10px;
       padding-inline-start: 10px;
       padding: 0px 10px 2px;
+      line-height: 24px;
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -9574,7 +9580,9 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
+      font-size: 16px;
       box-shadow: none;
     }
   }

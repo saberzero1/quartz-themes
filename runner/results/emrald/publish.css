@@ -393,6 +393,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1211,6 +1212,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1409,8 +1412,8 @@ body.theme-light {
   --table-header-background-hover: #d2cab8 !important;
   --bold-color: #1b6b42 !important;
   --italic-color: #9a7420 !important;
-  --interactive-success: #34865b !important;
   --inline-code-color: #1b6b42 !important;
+  --interactive-success: #34865b !important;
   --mermaid-note: #ddd7c7 !important;
 }
 
@@ -1431,6 +1434,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2243,6 +2247,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2438,8 +2444,8 @@ body.theme-dark {
   --table-header-background-hover: #1a3a31 !important;
   --bold-color: #6ece9a !important;
   --italic-color: #c4943a !important;
-  --interactive-success: #4ca67a !important;
   --inline-code-color: #6ece9a !important;
+  --interactive-success: #4ca67a !important;
   --mermaid-note: #1a3a31 !important;
 }
 
@@ -4257,7 +4263,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7309,7 +7315,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

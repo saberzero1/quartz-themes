@@ -1,7 +1,0 @@
-{
-  "name": "TerraFlow",
-  "version": "4.5.6",
-  "minAppVersion": "1.0.0",
-  "author": "fabdub",
-  "modes": ["dark", "light"]
-}

@@ -386,6 +386,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1225,6 +1226,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1428,6 +1431,7 @@ body.theme-light {
   --table-border-radius: 5px !important;
   --font-size-normal: 16px !important;
   --interactive-success: rgb(25, 115, 0) !important;
+  --list-min-width: 200px !important;
   --font-size-code: 15px !important;
   --font-size-h1: 23px !important;
   --font-size-h2: 22px !important;
@@ -1445,7 +1449,6 @@ body.theme-light {
   --callout-min-width: 200px;
   --col-rule-color: var(--background-modifier-border) !important;
   --col-rule-width: 1px !important;
-  --list-min-width: 200px !important;
   --animation: 200ms !important;
   --arrow1: rgba(211, 211, 211, 0.852) !important;
   --bg-blue: rgba(9, 168, 225, 0.45) !important;
@@ -1522,6 +1525,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2355,6 +2359,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2553,6 +2559,7 @@ body.theme-dark {
   --table-border-radius: 5px !important;
   --font-size-normal: 16px !important;
   --interactive-success: rgb(25, 115, 0) !important;
+  --list-min-width: 200px !important;
   --font-size-code: 15px !important;
   --font-size-h1: 23px !important;
   --font-size-h2: 22px !important;
@@ -2570,7 +2577,6 @@ body.theme-dark {
   --callout-min-width: 200px;
   --col-rule-color: var(--background-modifier-border) !important;
   --col-rule-width: 1px !important;
-  --list-min-width: 200px !important;
   --animation: 200ms !important;
   --arrow1: rgba(99, 99, 99, 0.687) !important;
   --bg-blue: rgba(29, 174, 226, 0.4) !important;

@@ -1,0 +1,4079 @@
+/* ============================================================================
+   Lucid — an installable Obsidian theme
+   "Obsidian Glass" palette (violet + teal), dark-first with a light variant.
+   Recreates the MyWiki-vault.html mockup on Obsidian's real DOM + variables,
+   and folds in all the vault's custom snippet features (multi-column callouts,
+   gallery cards, banners, infobox, master-home dashboard, color-coded
+   headings, styled blockquotes, grids, wide views) recolored to the palette.
+
+   Author: SUBHADIP
+   License: MIT
+   ----------------------------------------------------------------------------
+   Layout map (this file):
+     [@settings]   Style Settings panel definition
+     [Fonts]       Google Font imports (disable with "Use system fonts")
+     [Tokens]      --mwg-* primitives (dark + light) and Obsidian var bridge
+     [Base]        body background, scrollbars, selection
+     [Chrome]      ribbon, tabs, sidebars, status bar, title bar
+     [Editor]      headings, lists, code, tables, links, tags, properties
+     [Blockquote]  styled blockquotes + pull quotes
+     [Callouts]    base callout recolor
+     [Components]  infobox, multi-column, grids, gallery, banners, master-home,
+                   wide views, easy multi-column, list column/grid/card
+     [Motion]      keyframes + entrance animations + reduced-motion
+   Every color flows through --mwg-* primitives so the palette can be re-mapped
+   in one block (and ported to Quartz later).
+   ========================================================================== */
+
+
+/* ============================================================================
+   [@settings]  Style Settings  (https://github.com/mgmeyers/obsidian-style-settings)
+   ========================================================================== */
+/* @settings
+
+name: Lucid
+id: mywiki-glass
+settings:
+    -
+        id: mwg-info
+        title: Lucid
+        description: "Obsidian Glass palette (violet + teal). All colors, fonts and layout below drive the whole theme and its custom features."
+        type: info-text
+        markdown: false
+
+    -
+        id: mwg-colors-heading
+        title: 🎨 Colors
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-accent
+        title: Primary accent
+        description: Blue by default. Drives links, active states, glows.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a5fd6'
+        default-dark: '#3d8fe6'
+    -
+        id: mwg-accent-2
+        title: Secondary accent
+        description: Teal by default. Used in gradients and hover links.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d82d0'
+        default-dark: '#5ad0c0'
+    -
+        id: mwg-gold
+        title: Folder / highlight gold
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+    -
+        id: mwg-danger
+        title: Danger / close
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c34a26'
+        default-dark: '#e0623f'
+    -
+        id: mwg-bg-0
+        title: App background (deepest)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f7f8fb'
+        default-dark: '#0a0a0b'
+    -
+        id: mwg-editor
+        title: Editor / note background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ffffff'
+        default-dark: '#0a0a0b'
+    -
+        id: mwg-pane
+        title: Sidebar background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f2f4f9'
+        default-dark: '#0e0e10'
+    -
+        id: mwg-pane-2
+        title: Card / raised panel background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#eaedf4'
+        default-dark: '#161618'
+    -
+        id: mwg-text
+        title: Body text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1a1a1a'
+        default-dark: '#ececec'
+    -
+        id: mwg-text-strong
+        title: Headings / strong text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+    -
+        id: mwg-muted
+        title: Muted text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5c5a55'
+        default-dark: '#a3a2a0'
+    -
+        id: mwg-faint
+        title: Faint text / icons
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#8a8780'
+        default-dark: '#6e6d6b'
+
+    -
+        id: mwg-code-fg
+        title: Inline code color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f5fd0'
+        default-dark: '#9ccbff'
+    -
+        id: mwg-tag-graph-sub
+        title: Tag & graph colors
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: mwg-tag-blue
+        title: Tag tint — blue (cloud / platform)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5b9bd5'
+        default-dark: '#5b9bd5'
+    -
+        id: mwg-tag-green
+        title: Tag tint — green (data / pipeline)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#4cb782'
+        default-dark: '#4cb782'
+    -
+        id: mwg-tag-amber
+        title: Tag tint — amber (storage / db)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d9a441'
+        default-dark: '#d9a441'
+    -
+        id: mwg-tag-rose
+        title: Tag tint — rose (people / meta)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#e0708a'
+        default-dark: '#e0708a'
+    -
+        id: mwg-graph
+        title: Graph node color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a2733'
+        default-dark: '#ccc9e8'
+    -
+        id: mwg-graph-line
+        title: Graph edge color
+        type: variable-themed-color
+        format: rgb
+        opacity: true
+        default-light: 'rgba(20, 18, 14, 0.18)'
+        default-dark: 'rgba(236, 236, 236, 0.16)'
+
+    -
+        id: mwg-type-heading
+        title: ✒️ Typography
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-system-fonts
+        title: Use system fonts
+        description: Skip the bundled Google fonts (faster / offline / mobile).
+        type: class-toggle
+        addCommand: true
+    -
+        id: mwg-font-body
+        title: Body & interface font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'Segoe UI', system-ui, sans-serif"
+        options:
+            - { label: System default (sans), value: "system-ui, -apple-system, 'Segoe UI', sans-serif" }
+            - { label: Segoe UI, value: "'Segoe UI', system-ui, sans-serif" }
+            - { label: Segoe UI Variable, value: "'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" }
+            - { label: Inter, value: "'Inter', system-ui, sans-serif" }
+            - { label: Roboto, value: "'Roboto', system-ui, sans-serif" }
+            - { label: Open Sans, value: "'Open Sans', system-ui, sans-serif" }
+            - { label: Lato, value: "'Lato', system-ui, sans-serif" }
+            - { label: Montserrat, value: "'Montserrat', system-ui, sans-serif" }
+            - { label: Poppins, value: "'Poppins', system-ui, sans-serif" }
+            - { label: Nunito, value: "'Nunito', system-ui, sans-serif" }
+            - { label: Nunito Sans, value: "'Nunito Sans', system-ui, sans-serif" }
+            - { label: Source Sans, value: "'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif" }
+            - { label: Work Sans, value: "'Work Sans', system-ui, sans-serif" }
+            - { label: Fira Sans, value: "'Fira Sans', system-ui, sans-serif" }
+            - { label: Ubuntu, value: "'Ubuntu', system-ui, sans-serif" }
+            - { label: Noto Sans, value: "'Noto Sans', system-ui, sans-serif" }
+            - { label: Helvetica Neue, value: "'Helvetica Neue', Helvetica, Arial, sans-serif" }
+            - { label: Arial, value: "Arial, Helvetica, sans-serif" }
+            - { label: Calibri, value: "Calibri, system-ui, sans-serif" }
+            - { label: Candara, value: "Candara, system-ui, sans-serif" }
+            - { label: Corbel, value: "Corbel, system-ui, sans-serif" }
+            - { label: Verdana, value: "Verdana, Geneva, sans-serif" }
+            - { label: Tahoma, value: "Tahoma, Geneva, sans-serif" }
+            - { label: Trebuchet MS, value: "'Trebuchet MS', Tahoma, sans-serif" }
+            - { label: Franklin Gothic, value: "'Franklin Gothic', 'Franklin Gothic Medium', sans-serif" }
+            - { label: Century Gothic, value: "'Century Gothic', sans-serif" }
+            - { label: Gill Sans, value: "'Gill Sans', 'Gill Sans MT', sans-serif" }
+            - { label: Optima, value: "Optima, Candara, sans-serif" }
+            - { label: Avenir Next, value: "'Avenir Next', Avenir, sans-serif" }
+            - { label: Georgia (serif), value: "Georgia, 'Times New Roman', serif" }
+            - { label: Times New Roman (serif), value: "'Times New Roman', Times, serif" }
+            - { label: Cambria (serif), value: "Cambria, Georgia, serif" }
+            - { label: Constantia (serif), value: "Constantia, Georgia, serif" }
+            - { label: Garamond (serif), value: "Garamond, 'EB Garamond', Georgia, serif" }
+            - { label: Palatino (serif), value: "'Palatino Linotype', Palatino, 'Book Antiqua', serif" }
+            - { label: Book Antiqua (serif), value: "'Book Antiqua', Palatino, serif" }
+            - { label: Baskerville (serif), value: "Baskerville, Georgia, serif" }
+            - { label: Newsreader (serif), value: "'Newsreader', Georgia, serif" }
+            - { label: Source Serif (serif), value: "'Source Serif 4', Georgia, serif" }
+            - { label: Merriweather (serif), value: "'Merriweather', Georgia, serif" }
+            - { label: Lora (serif), value: "'Lora', Georgia, serif" }
+            - { label: Playfair Display (serif), value: "'Playfair Display', Georgia, serif" }
+    -
+        id: mwg-font-heading
+        title: Heading / display font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif"
+        options:
+            - { label: System default (sans), value: "system-ui, -apple-system, 'Segoe UI', sans-serif" }
+            - { label: Segoe UI, value: "'Segoe UI', system-ui, sans-serif" }
+            - { label: Segoe UI Variable, value: "'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" }
+            - { label: Inter, value: "'Inter', system-ui, sans-serif" }
+            - { label: Roboto, value: "'Roboto', system-ui, sans-serif" }
+            - { label: Open Sans, value: "'Open Sans', system-ui, sans-serif" }
+            - { label: Lato, value: "'Lato', system-ui, sans-serif" }
+            - { label: Montserrat, value: "'Montserrat', system-ui, sans-serif" }
+            - { label: Poppins, value: "'Poppins', system-ui, sans-serif" }
+            - { label: Nunito, value: "'Nunito', system-ui, sans-serif" }
+            - { label: Nunito Sans, value: "'Nunito Sans', system-ui, sans-serif" }
+            - { label: Source Sans, value: "'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif" }
+            - { label: Work Sans, value: "'Work Sans', system-ui, sans-serif" }
+            - { label: Fira Sans, value: "'Fira Sans', system-ui, sans-serif" }
+            - { label: Ubuntu, value: "'Ubuntu', system-ui, sans-serif" }
+            - { label: Noto Sans, value: "'Noto Sans', system-ui, sans-serif" }
+            - { label: Helvetica Neue, value: "'Helvetica Neue', Helvetica, Arial, sans-serif" }
+            - { label: Arial, value: "Arial, Helvetica, sans-serif" }
+            - { label: Calibri, value: "Calibri, system-ui, sans-serif" }
+            - { label: Candara, value: "Candara, system-ui, sans-serif" }
+            - { label: Corbel, value: "Corbel, system-ui, sans-serif" }
+            - { label: Verdana, value: "Verdana, Geneva, sans-serif" }
+            - { label: Tahoma, value: "Tahoma, Geneva, sans-serif" }
+            - { label: Trebuchet MS, value: "'Trebuchet MS', Tahoma, sans-serif" }
+            - { label: Franklin Gothic, value: "'Franklin Gothic', 'Franklin Gothic Medium', sans-serif" }
+            - { label: Century Gothic, value: "'Century Gothic', sans-serif" }
+            - { label: Gill Sans, value: "'Gill Sans', 'Gill Sans MT', sans-serif" }
+            - { label: Optima, value: "Optima, Candara, sans-serif" }
+            - { label: Avenir Next, value: "'Avenir Next', Avenir, sans-serif" }
+            - { label: Georgia (serif), value: "Georgia, 'Times New Roman', serif" }
+            - { label: Times New Roman (serif), value: "'Times New Roman', Times, serif" }
+            - { label: Cambria (serif), value: "Cambria, Georgia, serif" }
+            - { label: Constantia (serif), value: "Constantia, Georgia, serif" }
+            - { label: Garamond (serif), value: "Garamond, 'EB Garamond', Georgia, serif" }
+            - { label: Palatino (serif), value: "'Palatino Linotype', Palatino, 'Book Antiqua', serif" }
+            - { label: Book Antiqua (serif), value: "'Book Antiqua', Palatino, serif" }
+            - { label: Baskerville (serif), value: "Baskerville, Georgia, serif" }
+            - { label: Newsreader (serif), value: "'Newsreader', Georgia, serif" }
+            - { label: Source Serif (serif), value: "'Source Serif 4', Georgia, serif" }
+            - { label: Merriweather (serif), value: "'Merriweather', Georgia, serif" }
+            - { label: Lora (serif), value: "'Lora', Georgia, serif" }
+            - { label: Playfair Display (serif), value: "'Playfair Display', Georgia, serif" }
+    -
+        id: mwg-font-mono
+        title: Monospace / label font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'JetBrains Mono', ui-monospace, monospace"
+        options:
+            - { label: JetBrains Mono, value: "'JetBrains Mono', ui-monospace, monospace" }
+            - { label: Cascadia Code, value: "'Cascadia Code', ui-monospace, monospace" }
+            - { label: Cascadia Mono, value: "'Cascadia Mono', ui-monospace, monospace" }
+            - { label: Consolas, value: "Consolas, ui-monospace, monospace" }
+            - { label: SF Mono / system, value: "ui-monospace, SFMono-Regular, Menlo, monospace" }
+            - { label: Menlo, value: "Menlo, Monaco, monospace" }
+            - { label: Monaco, value: "Monaco, Menlo, monospace" }
+            - { label: Fira Code, value: "'Fira Code', ui-monospace, monospace" }
+            - { label: Fira Mono, value: "'Fira Mono', ui-monospace, monospace" }
+            - { label: Source Code Pro, value: "'Source Code Pro', ui-monospace, monospace" }
+            - { label: IBM Plex Mono, value: "'IBM Plex Mono', ui-monospace, monospace" }
+            - { label: Roboto Mono, value: "'Roboto Mono', ui-monospace, monospace" }
+            - { label: Courier New, value: "'Courier New', Courier, monospace" }
+            - { label: Lucida Console, value: "'Lucida Console', Monaco, monospace" }
+
+    -
+        id: file-line-width
+        title: Note width (readable line length)
+        type: variable-number-slider
+        default: 760
+        min: 500
+        max: 1600
+        step: 20
+        format: px
+    -
+        id: font-text-size
+        title: Body font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 22
+        step: 1
+        format: px
+    -
+        id: line-height-normal
+        title: Line height
+        type: variable-number-slider
+        default: 1.55
+        min: 1.2
+        max: 2.2
+        step: 0.05
+    -
+        id: bold-weight
+        title: Bold weight
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 900
+        step: 100
+    -
+        id: nav-item-size
+        title: Sidebar font size
+        type: variable-number-slider
+        default: 14
+        min: 11
+        max: 18
+        step: 1
+        format: px
+    -
+        id: mwg-heading-sizes
+        title: Heading sizes & weight
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: inline-title-size
+        title: Inline title size
+        type: variable-number-slider
+        default: 40
+        min: 24
+        max: 64
+        step: 1
+        format: px
+    -
+        id: h1-size
+        title: H1 size
+        type: variable-number-slider
+        default: 1.9
+        min: 1.2
+        max: 3
+        step: 0.05
+        format: em
+    -
+        id: h2-size
+        title: H2 size
+        type: variable-number-slider
+        default: 1.5
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+    -
+        id: h3-size
+        title: H3 size
+        type: variable-number-slider
+        default: 1.28
+        min: 1
+        max: 2
+        step: 0.05
+        format: em
+    -
+        id: h4-size
+        title: H4 size
+        type: variable-number-slider
+        default: 1.1
+        min: 0.9
+        max: 1.8
+        step: 0.05
+        format: em
+    -
+        id: h5-size
+        title: H5 size
+        type: variable-number-slider
+        default: 1
+        min: 0.8
+        max: 1.6
+        step: 0.05
+        format: em
+    -
+        id: h6-size
+        title: H6 size
+        type: variable-number-slider
+        default: 0.9
+        min: 0.7
+        max: 1.4
+        step: 0.05
+        format: em
+    -
+        id: mwg-heading-weight
+        title: Heading weight
+        type: variable-number-slider
+        default: 500
+        min: 300
+        max: 800
+        step: 100
+
+    -
+        id: mwg-head-colors
+        title: Heading colors (H1–H6)
+        description: Color-coded headings, like the vault snippet.
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: mwg-h1
+        title: H1 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+    -
+        id: mwg-h2
+        title: H2 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+    -
+        id: mwg-h3
+        title: H3 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a2d34'
+        default-dark: '#eaedf5'
+    -
+        id: mwg-h4
+        title: H4 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3a3d44'
+        default-dark: '#ececec'
+    -
+        id: mwg-h5
+        title: H5 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#4a4d54'
+        default-dark: '#ececec'
+    -
+        id: mwg-h6
+        title: H6 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5a5d64'
+        default-dark: '#a3a2a0'
+
+    -
+        id: mwg-format-colors
+        title: Text format colors
+        description: Bold / italic / strikethrough.
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: mwg-bold-color
+        title: Bold color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+    -
+        id: mwg-italic-color
+        title: Italic / emphasis color
+        description: Teal by default — different from the blue accent. Also colors *em* in headings & cards.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0d7d72'
+        default-dark: '#4fd0bf'
+    -
+        id: mwg-bold-italic-color
+        title: Bold + italic color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0d7d72'
+        default-dark: '#4fd0bf'
+    -
+        id: mwg-strikethrough-color
+        title: Strikethrough color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5c5a55'
+        default-dark: '#a3a2a0'
+
+    -
+        id: mwg-callouts-heading
+        title: 🗨️ Callout colors
+        description: "One accent per callout type. Same syntax as ITS: > [!tip], > [!warning], etc."
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-callout-note
+        title: Note / info / summary / abstract
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a5fd6'
+        default-dark: '#3d8fe6'
+    -
+        id: mwg-callout-tip
+        title: Tip / success / important / done
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d82d0'
+        default-dark: '#5ad0c0'
+    -
+        id: mwg-callout-warning
+        title: Warning / caution / attention
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+    -
+        id: mwg-callout-question
+        title: Question / help / FAQ
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+    -
+        id: mwg-callout-danger
+        title: Failure / danger / error / bug
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c34a26'
+        default-dark: '#e0623f'
+    -
+        id: mwg-callout-example
+        title: Example
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7a6a8e'
+        default-dark: '#a890be'
+    -
+        id: mwg-callout-quote
+        title: Quote / cite
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7a6a8e'
+        default-dark: '#a890be'
+
+    -
+        id: mwg-shape-heading
+        title: 🟦 Shape & motion
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-radius
+        title: Roundness
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 16
+        step: 1
+        format: px
+    -
+        id: mwg-scrollbar
+        title: Scrollbar width
+        type: variable-number-slider
+        default: 6
+        min: 3
+        max: 16
+        step: 1
+        format: px
+    -
+        id: mwg-no-anim
+        title: Disable animations
+        description: Turn off entrance + hover motion (also respects OS reduced-motion).
+        type: class-toggle
+        addCommand: true
+    -
+        id: mwg-head-underline-width
+        title: Heading underline width
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 6
+        step: 1
+        format: px
+    -
+        id: mwg-no-head-underline
+        title: Disable heading underline
+        type: class-toggle
+    -
+        id: mwg-bg-glow
+        title: Accent background glow (Glass wash)
+        description: Re-adds the soft violet glow behind the app. Off = flat near-black like the reference.
+        type: class-toggle
+        addCommand: true
+
+    -
+        id: mwg-editorial-heading
+        title: ✒️ Editorial & polish
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-drop-cap
+        title: Editorial drop cap
+        description: Large serif initial on the first paragraph of a note (reading view + live preview).
+        type: class-toggle
+        default: true
+        addCommand: true
+    -
+        id: mwg-drop-cap-size
+        title: Drop cap size
+        type: variable-number-slider
+        default: 3.1
+        min: 2
+        max: 6
+        step: 0.1
+        format: em
+    -
+        id: mwg-drop-cap-solid
+        title: Solid drop cap (no gradient)
+        description: Fill the drop cap with a flat accent color instead of the violet→teal gradient.
+        type: class-toggle
+    -
+        id: mwg-quote-mark-opacity
+        title: Quote mark opacity
+        description: Strength of the oversized quotation mark behind blockquotes.
+        type: variable-number-slider
+        default: 0.1
+        min: 0
+        max: 0.4
+        step: 0.01
+    -
+        id: mwg-hr-gem-size
+        title: Divider gem size
+        description: Size of the diamond ornament in the center of "---" dividers.
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 16
+        step: 1
+        format: px
+    -
+        id: mwg-heading-letter-spacing
+        title: Heading letter spacing
+        type: variable-number-slider
+        default: -0.01
+        min: -0.05
+        max: 0.1
+        step: 0.005
+        format: em
+    -
+        id: mwg-para-spacing
+        title: Paragraph spacing
+        description: Vertical gap below each paragraph.
+        type: variable-number-slider
+        default: 11
+        min: 0
+        max: 28
+        step: 1
+        format: px
+    -
+        id: mwg-heading-align
+        title: Default heading alignment
+        description: Aligns all headings (both views). Per-heading "#center / #right / #left" tags still override this in reading view.
+        type: class-select
+        allowEmpty: false
+        default: mwg-halign-left
+        options:
+            -
+                label: Left
+                value: mwg-halign-left
+            -
+                label: Center
+                value: mwg-halign-center
+            -
+                label: Right
+                value: mwg-halign-right
+    -
+        id: mwg-active-line
+        title: Highlight active line (editor)
+        description: Faint accent wash behind the line your cursor is on, in live preview / source.
+        type: class-toggle
+        addCommand: true
+    -
+        id: mwg-scroll-reveal
+        title: Scroll reveal
+        description: Headings, callouts, tables and quotes fade-rise as they scroll into view (native, no JS).
+        type: class-toggle
+        default: true
+        addCommand: true
+    -
+        id: mwg-quote-mark
+        title: Decorative quote mark
+        description: Oversized serif quotation mark behind blockquotes and pull quotes.
+        type: class-toggle
+        default: true
+        addCommand: true
+    -
+        id: mwg-hr-plain
+        title: Plain dividers (no gem)
+        description: Removes the center diamond ornament from "---" dividers, leaving just the fading line.
+        type: class-toggle
+    -
+        id: mwg-heading-underline-fit
+        title: Heading underline fits text
+        description: Heading boxes (and their underline) shrink to the text width instead of spanning the full column. Off = full-width underline.
+        type: class-toggle
+        default: true
+
+    -
+        id: mwg-features-heading
+        title: 🧩 Custom features
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: callout-min-width
+        title: Multi-column — min sub-callout width
+        type: variable-number-slider
+        default: 200
+        min: 100
+        max: 500
+        step: 20
+        format: px
+    -
+        id: callout-gap
+        title: Multi-column — gap
+        type: variable-text
+        default: 1em
+        quotes: false
+    -
+        id: float-small-width
+        title: Float callout width — small
+        type: variable-number-slider
+        default: 300
+        min: 200
+        max: 450
+        step: 10
+        format: px
+    -
+        id: float-medium-width
+        title: Float callout width — medium
+        type: variable-number-slider
+        default: 400
+        min: 300
+        max: 550
+        step: 10
+        format: px
+    -
+        id: float-large-width
+        title: Float callout width — large
+        type: variable-number-slider
+        default: 600
+        min: 500
+        max: 750
+        step: 10
+        format: px
+    -
+        id: img-border-radius
+        title: Image border radius
+        type: variable-text
+        default: 14px
+        quotes: false
+    -
+        id: img-max-height
+        title: Gallery image max height
+        type: variable-text
+        default: 300px
+        quotes: false
+    -
+        id: img-max-width
+        title: Gallery image max width
+        type: variable-text
+        default: 350px
+        quotes: false
+    -
+        id: callout-gallery-gap
+        title: Gallery gap
+        type: variable-text
+        default: 5px
+        quotes: false
+    -
+        id: mcl-banner-height-normal
+        title: Banner height — normal
+        type: variable-text
+        default: 200px
+        quotes: false
+    -
+        id: mcl-banner-height-tall
+        title: Banner height — tall
+        type: variable-text
+        default: 300px
+        quotes: false
+    -
+        id: image-zoom
+        title: Enable image zoom via CSS
+        type: class-toggle
+    -
+        id: list-image-control-off
+        title: Disable image sizing inside lists
+        type: class-toggle
+    -
+        id: mwg-cards-heading
+        title: 🃏 Cards (shared with Atelier)
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-card-default
+        title: Default card style
+        description: "Style for a bare > [!card]. Override inline e.g. > [!card|profile] or > [!card|honor]. Add surfaces (dark / accent) and spans (span2 / spanfull). Wrap in > [!grid] to flow into columns."
+        type: class-select
+        allowEmpty: false
+        default: at-card-plain
+        options:
+            - { label: Plain card, value: at-card-plain }
+            - { label: Skill / numbered steps, value: at-card-skill }
+            - { label: Section (roman column), value: at-card-section }
+            - { label: Step, value: at-card-step }
+            - { label: Profile, value: at-card-profile }
+            - { label: Honor (dark), value: at-card-honor }
+            - { label: Channels (dark), value: at-card-channels }
+            - { label: Hero / CTA, value: at-card-hero }
+    -
+        id: mwg-card-min
+        title: Card grid — min card width
+        description: "Cards inside > [!grid] flow into as many columns as fit at this minimum width."
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 480
+        step: 10
+        format: px
+    -
+        id: mwg-card-blur
+        title: Card glass blur
+        description: Backdrop-blur strength on frosted cards & infobox (0 = flat / opaque-ish).
+        type: variable-number-slider
+        default: 24
+        min: 0
+        max: 48
+        step: 2
+        format: px
+    -
+        id: mwg-gradient-heading
+        title: 🌈 Gradient text (.at-gradient)
+        description: Colors for the Apple-style gradient text class. Use <span class="at-gradient">…</span>.
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: mwg-grad-1
+        title: Gradient stop 1
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d8fe6'
+        default-dark: '#3d8fe6'
+    -
+        id: mwg-grad-2
+        title: Gradient stop 2
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7b6cff'
+        default-dark: '#7b6cff'
+    -
+        id: mwg-grad-3
+        title: Gradient stop 3
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ff6aa0'
+        default-dark: '#ff6aa0'
+    -
+        id: mwg-grad-4
+        title: Gradient stop 4
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ff8a3d'
+        default-dark: '#ff8a3d'
+    -
+        id: mwg-grad-angle
+        title: Gradient angle
+        type: variable-number-slider
+        default: 100
+        min: 0
+        max: 360
+        step: 5
+        format: deg
+*/
+
+
+/* ============================================================================
+   [Fonts]
+   ========================================================================== */
+
+
+/* ============================================================================
+   [Tokens]  --mwg-* primitives (dark + light) and the Obsidian variable bridge
+   ========================================================================== */
+
+body.theme-dark {
+    /* Obsidian Pro: layered near-black + luminous oklch violet */
+    --mwg-accent: #3d8fe6;
+    --mwg-accent-2: #5ad0c0;
+    --mwg-accent-rgb: 61, 143, 230;
+    --mwg-gold: #d9a441;
+    --mwg-danger: #e0623f;
+
+    --mwg-bg-0: #0a0a0b;
+    --mwg-bg-grad-a: #121214;
+    --mwg-bg-grad-b: #08080a;
+    --mwg-ribbon: #0a0a0b;
+    --mwg-pane: #0e0e10;
+    --mwg-pane-2: #161618;
+    --mwg-editor: #0a0a0b;
+    --mwg-raised: #1f1f22;
+
+    --mwg-text: #ececec;
+    --mwg-text-strong: #fbfbfa;
+    --mwg-muted: #a3a2a0;
+    --mwg-faint: #6e6d6b;
+
+    --mwg-code-fg: #9ccbff;
+    --mwg-th-bg: linear-gradient(180deg, #1c2f50, #16243f);
+    --mwg-shadow-pop: 0 1px 2px rgba(0, 0, 0, 0.5), 0 24px 60px rgba(0, 0, 0, 0.7);
+    /* subtle, neutral card elevation (no colored/white glow) */
+    --mwg-shadow-card: 0 6px 22px rgba(0, 0, 0, 0.40);
+    --mwg-shadow-card-hover: 0 12px 34px rgba(0, 0, 0, 0.50);
+    --mwg-scrim: rgba(10, 10, 11, 0.66);
+    /* graph: concrete hex/rgba ONLY — Obsidian's graph reader can't parse color-mix()/var-math */
+    --mwg-graph: #ccc9e8;
+    --mwg-graph-line: rgba(236, 236, 236, 0.16);
+
+    --mwg-h1: #fbfbfa;
+    --mwg-h2: #fbfbfa;
+    --mwg-h3: #ececec;
+    --mwg-h4: #d6d5d3;
+    --mwg-h5: #d6d5d3;
+    --mwg-h6: #a3a2a0;
+    --mwg-bold-color: #fbfbfa;
+    /* italic emphasis = teal, deliberately DIFFERENT from the blue accent */
+    --mwg-em-color: #4fd0bf;
+    --mwg-italic-color: #4fd0bf;
+    --mwg-bold-italic-color: #4fd0bf;
+    --mwg-strikethrough-color: #a3a2a0;
+
+    /* ---- Atelier parity: shared card/hero skin (dark mode) ---- */
+    --mwg-dark-surface: #1a1922;
+    --mwg-on-dark: #ececec;
+    --mwg-on-dark-muted: #b9b8c4;
+    --mwg-on-dark-border: rgba(255, 255, 255, 0.10);
+    /* accent hero — DARK = warm-dark panel, lifted cards, accent text */
+    --mwg-accent-surface: #121620;
+    --mwg-on-accent: #ececec;
+    --mwg-on-accent-em: var(--mwg-accent);
+    --mwg-on-accent-kick: var(--mwg-accent);
+    --mwg-accent-btn-bg: var(--mwg-accent);
+    --mwg-accent-btn-fg: #ffffff;
+    --mwg-accent-nested: #20202a;
+    --mwg-accent-nested-h: #fbfbfa;
+    --mwg-accent-nested-p: #b9b8c4;
+
+    color-scheme: dark;
+}
+
+body.theme-light {
+    /* Obsidian Pro: warm bone paper + pure-white surfaces + violet accent */
+    --mwg-accent: #2a5fd6;
+    --mwg-accent-2: #3d82d0;
+    --mwg-accent-rgb: 42, 95, 214;
+    --mwg-gold: #b07d20;
+    --mwg-danger: #c34a26;
+
+    --mwg-bg-0: #f7f8fb;
+    --mwg-bg-grad-a: #ffffff;
+    --mwg-bg-grad-b: #eef0f6;
+    --mwg-ribbon: #eef0f6;
+    --mwg-pane: #f2f4f9;
+    --mwg-pane-2: #eaedf4;
+    --mwg-editor: #ffffff;
+    --mwg-raised: #ffffff;
+
+    --mwg-text: #1a1a1a;
+    --mwg-text-strong: #14120e;
+    --mwg-muted: #5c5a55;
+    --mwg-faint: #8a8780;
+
+    --mwg-code-fg: #1f5fd0;
+    --mwg-th-bg: linear-gradient(180deg, #2a5fd6, #1f5fd0);
+    --mwg-shadow-pop: 0 1px 2px rgba(20, 18, 14, 0.06), 0 20px 50px rgba(20, 18, 14, 0.14);
+    /* subtle, neutral card elevation (no colored glow) */
+    --mwg-shadow-card: 0 6px 22px rgba(20, 18, 14, 0.10);
+    --mwg-shadow-card-hover: 0 12px 32px rgba(20, 18, 14, 0.14);
+    --mwg-scrim: rgba(20, 18, 14, 0.5);
+    --mwg-graph: #2a2733;
+    --mwg-graph-line: rgba(20, 18, 14, 0.18);
+
+    --mwg-h1: #14120e;
+    --mwg-h2: #14120e;
+    --mwg-h3: #2a2733;
+    --mwg-h4: #3a3833;
+    --mwg-h5: #4a4843;
+    --mwg-h6: #5c5a55;
+    --mwg-bold-color: #14120e;
+    /* italic emphasis = deep teal, deliberately DIFFERENT from the blue accent */
+    --mwg-em-color: #0d7d72;
+    --mwg-italic-color: #0d7d72;
+    --mwg-bold-italic-color: #0d7d72;
+    --mwg-strikethrough-color: #5c5a55;
+
+    /* ---- Atelier parity: shared card/hero skin (light mode) ---- */
+    --mwg-dark-surface: #1c1b24;
+    --mwg-on-dark: #ececec;
+    --mwg-on-dark-muted: #b9b8c4;
+    --mwg-on-dark-border: rgba(255, 255, 255, 0.10);
+    /* accent hero — LIGHT = violet panel + dark nested cards (reference look) */
+    --mwg-accent-surface: #2a5fd6;
+    --mwg-on-accent: #ffffff;
+    --mwg-on-accent-em: #ece7ff;
+    --mwg-on-accent-kick: #ece7ff;
+    --mwg-accent-btn-bg: #14120e;
+    --mwg-accent-btn-fg: #ffffff;
+    --mwg-accent-nested: #1b1a22;
+    --mwg-accent-nested-h: #ffffff;
+    --mwg-accent-nested-p: #c7c5d2;
+
+    color-scheme: light;
+}
+
+/* Derived tokens + Obsidian bridge — identical formulas across themes */
+body {
+    /* derived from accent so a single picker recolors everything */
+    --mwg-accent-soft: color-mix(in srgb, var(--mwg-accent) 14%, transparent);
+    --mwg-accent-line: color-mix(in srgb, var(--mwg-accent) 55%, transparent);
+    --mwg-code-bg: color-mix(in srgb, var(--mwg-accent) 12%, transparent);
+    --mwg-chip-bg: color-mix(in srgb, var(--mwg-accent) 13%, transparent);
+    --mwg-border: color-mix(in srgb, var(--mwg-text-strong) 8%, transparent);
+    --mwg-border-2: color-mix(in srgb, var(--mwg-text-strong) 14%, transparent);
+    --mwg-border-strong: color-mix(in srgb, var(--mwg-text-strong) 22%, transparent);
+
+    /* category-tag tint hues (Obsidian Pro) — text auto-adapts per theme */
+    --mwg-tag-blue: #5b9bd5;
+    --mwg-tag-green: #4cb782;
+    --mwg-tag-amber: #d9a441;
+    --mwg-tag-rose: #e0708a;
+
+    /* heading-underline width + per-callout accent fallbacks (Style Settings overrides each) */
+    --mwg-head-underline-width: 1px;
+    --mwg-callout-note: var(--mwg-accent);
+    --mwg-callout-tip: var(--mwg-accent-2);
+    --mwg-callout-warning: var(--mwg-gold);
+    --mwg-callout-question: var(--mwg-gold);
+    --mwg-callout-danger: var(--mwg-danger);
+    --mwg-callout-example: #a890be;
+    --mwg-callout-quote: #a890be;
+
+    /* fonts */
+    --mwg-font-body: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+    /* Glass identity = clean Segoe UI sans throughout (Apple/glass look) */
+    --mwg-font-heading: 'Segoe UI Variable Display', 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --mwg-font-serif: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --mwg-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+    /* heading-color aliases used by the editor section + Style Settings */
+    --h1-color: var(--mwg-h1);
+    --h2-color: var(--mwg-h2);
+    --h3-color: var(--mwg-h3);
+    --h4-color: var(--mwg-h4);
+    --h5-color: var(--mwg-h5);
+    --h6-color: var(--mwg-h6);
+    --bold-color: var(--mwg-bold-color);
+    --italic-color: var(--mwg-italic-color);
+    --bold-italic-color: var(--mwg-bold-italic-color);
+    --strikethrough-color: var(--mwg-strikethrough-color);
+
+    /* shape */
+    --mwg-radius: 8px;
+    --mwg-scrollbar: 6px;
+    --radius-s: var(--mwg-radius);
+    --radius-m: calc(var(--mwg-radius) + 4px);
+    --radius-l: calc(var(--mwg-radius) + 6px);
+
+    /* editorial + spacing knobs (overridable via Style Settings) */
+    --mwg-para-spacing: 11px;
+    --mwg-heading-letter-spacing: -0.01em;
+    --mwg-drop-cap-size: 3.1em;
+    --mwg-quote-mark-opacity: 0.1;
+    --mwg-hr-gem-size: 7px;
+
+    /* motion — one signature easing + spring across the whole theme (Obsidian Pro) */
+    --mwg-ease: cubic-bezier(0.32, 0.72, 0, 1);
+    --mwg-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --mwg-dur-fast: 150ms;
+    --mwg-dur: 240ms;
+    --mwg-dur-slow: 360ms;
+
+    /* Atelier parity: card/column layout knobs */
+    --mwg-card-min: 260px;
+    --mwg-grid-gap: 1.3rem;
+    --mwg-col-gap: 30px;
+    --mwg-col-min: 200px;
+
+    /* frosted-card backdrop blur strength (Style Settings slider) */
+    --mwg-card-blur: 24px;
+
+    /* .at-gradient text ramp — each stop + angle is a Style Settings control */
+    --mwg-grad-1: #3d8fe6;
+    --mwg-grad-2: #7b6cff;
+    --mwg-grad-3: #ff6aa0;
+    --mwg-grad-4: #ff8a3d;
+    --mwg-grad-angle: 100deg;
+    --mwg-grad: linear-gradient(var(--mwg-grad-angle), var(--mwg-grad-1), var(--mwg-grad-2) 34%, var(--mwg-grad-3) 66%, var(--mwg-grad-4));
+
+    /* ---- Obsidian core variable bridge ---- */
+    --background-primary: var(--mwg-editor);
+    --background-primary-alt: var(--mwg-pane-2);
+    --background-secondary: var(--mwg-pane);
+    --background-secondary-alt: var(--mwg-pane-2);
+    --background-modifier-border: var(--mwg-border);
+    --background-modifier-border-hover: var(--mwg-border-2);
+    --background-modifier-border-focus: var(--mwg-border-strong);
+    --background-modifier-hover: var(--mwg-accent-soft);
+    --background-modifier-active-hover: var(--mwg-accent-soft);
+    --background-modifier-form-field: var(--mwg-pane-2);
+    --background-modifier-flair: var(--mwg-accent);
+    --background-modifier-backlinks: var(--mwg-pane-2);
+
+    --text-normal: var(--mwg-text);
+    --text-muted: var(--mwg-muted);
+    --text-faint: var(--mwg-faint);
+    --text-on-accent: #ffffff;
+    --text-accent: var(--mwg-accent);
+    --text-accent-hover: var(--mwg-accent-2);
+    --text-selection: var(--mwg-accent-soft);
+    --text-highlight-bg: color-mix(in srgb, var(--mwg-gold) 35%, transparent);
+
+    --interactive-normal: var(--mwg-pane-2);
+    --interactive-hover: var(--mwg-raised);
+    --interactive-accent: var(--mwg-accent);
+    --interactive-accent-hover: color-mix(in srgb, var(--mwg-accent) 82%, white);
+
+    --code-background: var(--mwg-code-bg);
+    --code-normal: var(--mwg-code-fg);
+
+    --titlebar-background: var(--mwg-ribbon);
+    --titlebar-background-focused: var(--mwg-ribbon);
+    --titlebar-text-color: var(--mwg-muted);
+    --titlebar-border-width: 0;
+
+    --tab-background-active: var(--mwg-editor);
+    --tab-outline-color: var(--mwg-border);
+    --tab-text-color: var(--mwg-muted);
+    --tab-text-color-active: var(--mwg-text-strong);
+    --tab-text-color-focused-active-current: var(--mwg-text-strong);
+    --ribbon-background: var(--mwg-ribbon);
+    --nav-item-color: var(--mwg-text);
+    --nav-item-color-hover: var(--mwg-text-strong);
+    --nav-item-color-active: var(--mwg-text-strong);
+    --nav-item-background-hover: var(--mwg-accent-soft);
+    --nav-item-background-active: var(--mwg-accent-soft);
+    --nav-indentation-guide-color: var(--mwg-border-2);
+
+    --status-bar-background: var(--mwg-pane);
+    --status-bar-text-color: var(--mwg-muted);
+    --status-bar-border-color: var(--mwg-border);
+
+    --divider-color: var(--mwg-border);
+    --scrollbar-thumb-bg: var(--mwg-border-strong);
+    --scrollbar-active-thumb-bg: var(--mwg-muted);
+    --scrollbar-bg: transparent;
+
+    --table-header-background: var(--mwg-th-bg);
+    --table-border-color: var(--mwg-border-2);
+    --hr-color: var(--mwg-border-2);
+    --blockquote-border-color: var(--mwg-accent);
+    --blockquote-background-color: var(--mwg-accent-soft);
+
+    --shadow-s: 0 2px 8px -4px rgba(0, 0, 0, 0.4);
+    --shadow-l: var(--mwg-shadow-pop);
+
+    --link-color: var(--mwg-accent);
+    --link-color-hover: var(--mwg-accent-2);
+    --link-unresolved-color: var(--mwg-danger);
+
+    /* fonts that Obsidian reads */
+    --font-text-theme: var(--mwg-font-body);
+    --font-interface-theme: var(--mwg-font-body);
+    --font-monospace-theme: var(--mwg-font-mono);
+
+    --file-line-width: 760px;
+    --bold-weight: 700;
+    --bold-modifier: 0;
+
+    /* heading sizing/weight defaults (overridable in Style Settings) */
+    --inline-title-size: 40px;
+    --inline-title-weight: 500;
+    --mwg-heading-weight: 500;
+    --h1-size: 1.9em;
+    --h2-size: 1.5em;
+    --h3-size: 1.28em;
+    --h4-size: 1.1em;
+    --h5-size: 1em;
+    --h6-size: 0.9em;
+    --h1-weight: var(--mwg-heading-weight);
+    --h2-weight: var(--mwg-heading-weight);
+    --h3-weight: calc(var(--mwg-heading-weight) + 100);
+    --h4-weight: calc(var(--mwg-heading-weight) + 100);
+    --h5-weight: calc(var(--mwg-heading-weight) + 100);
+    --h6-weight: calc(var(--mwg-heading-weight) + 100);
+}
+
+/* "Use system fonts" toggle */
+body.mwg-system-fonts {
+    --mwg-font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mwg-font-heading: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mwg-font-serif: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --mwg-font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+
+/* ============================================================================
+   [Base]
+   ========================================================================== */
+body {
+    font-family: var(--mwg-font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+.workspace,
+.app-container,
+body {
+    background-color: var(--mwg-bg-0);
+}
+
+/* Obsidian Pro: flat, uniform near-black — no accent wash, no diagonal gradient */
+.workspace {
+    background: var(--mwg-bg-0);
+}
+/* opt-in "Glass wash" — re-adds the soft accent glow behind the whole app */
+body.mwg-bg-glow .workspace {
+    background:
+        radial-gradient(120% 80% at 78% -10%, var(--mwg-accent-soft), transparent 55%),
+        var(--mwg-bg-0);
+}
+
+::selection {
+    background: var(--mwg-accent-soft);
+    color: var(--mwg-text-strong);
+}
+
+/* scrollbars */
+::-webkit-scrollbar {
+    width: var(--mwg-scrollbar);
+    height: var(--mwg-scrollbar);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--mwg-border-strong);
+    border-radius: 99px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--mwg-muted);
+    background-clip: content-box;
+}
+::-webkit-scrollbar-corner { background: transparent; }
+
+
+/* ============================================================================
+   [Chrome]  ribbon, tabs, sidebars, status bar, title bar
+   ========================================================================== */
+
+/* ----- Ribbon (left icon rail) ----- */
+.workspace-ribbon {
+    background: var(--mwg-ribbon);
+    border-right: 1px solid var(--mwg-border) !important;
+}
+.workspace-ribbon.mod-left::before { border-color: var(--mwg-border); }
+.side-dock-ribbon-action,
+.workspace-ribbon .clickable-icon {
+    color: var(--mwg-faint);
+    border-radius: var(--radius-s);
+    transition: color 180ms, background 180ms, transform 180ms;
+}
+.side-dock-ribbon-action:hover,
+.workspace-ribbon .clickable-icon:hover {
+    color: var(--mwg-text-strong);
+    background: var(--mwg-accent-soft);
+    transform: translateY(-1px);
+}
+.side-dock-ribbon-action.is-active {
+    color: var(--mwg-accent);
+    position: relative;
+}
+.side-dock-ribbon-action.is-active::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 18px;
+    border-radius: 0 3px 3px 0;
+    background: var(--mwg-accent);
+    box-shadow: 0 0 10px var(--mwg-accent-line);
+}
+
+/* ----- Title bar / tab headers ----- */
+.workspace-tab-header-container,
+.titlebar {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--mwg-pane) 80%, transparent), var(--mwg-pane));
+    border-bottom: 1px solid var(--mwg-border) !important;
+}
+.workspace-tab-header {
+    color: var(--mwg-muted);
+    border-radius: var(--radius-s) var(--radius-s) 0 0;
+    transition: background 180ms, color 180ms;
+}
+.workspace-tab-header:hover {
+    background: var(--mwg-accent-soft);
+    color: var(--mwg-text);
+}
+.workspace-tab-header.is-active {
+    background: var(--mwg-editor);
+    color: var(--mwg-text-strong);
+    box-shadow: inset 0 0 0 1px var(--mwg-border-2);
+    position: relative;
+}
+.workspace-tab-header.is-active::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2));
+}
+.workspace-tab-header-inner-title { font-weight: 500; }
+.workspace-tab-header .clickable-icon:hover {
+    color: var(--mwg-text-strong);
+    background: var(--mwg-accent-soft);
+}
+
+/* window close button accent */
+.titlebar-button.mod-close:hover {
+    background: var(--mwg-danger);
+    color: #fff;
+}
+
+/* ----- Sidebars ----- */
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+    background: var(--mwg-pane);
+}
+.workspace-split.mod-left-split .workspace-leaf,
+.workspace-split.mod-right-split .workspace-leaf {
+    background: transparent;
+}
+.nav-header,
+.nav-buttons-container {
+    border-bottom: 1px solid var(--mwg-border);
+}
+.nav-action-button {
+    color: var(--mwg-muted);
+    border-radius: var(--radius-s);
+    transition: color 150ms, background 150ms;
+}
+.nav-action-button:hover {
+    color: var(--mwg-text-strong);
+    background: var(--mwg-accent-soft);
+}
+
+/* file/nav tree items */
+.tree-item-self {
+    border-radius: var(--radius-s);
+    color: var(--mwg-text);
+    /* NOTE: do NOT transition padding-left/padding-inline-start — Obsidian
+       recomputes tree indentation on every expand/collapse, so animating it
+       makes the file list visibly drift right each time a folder opens. */
+    transition: background 150ms, color 150ms;
+}
+.tree-item-self:hover {
+    background: var(--mwg-accent-soft) !important;
+    color: var(--mwg-text-strong);
+}
+.nav-folder-title .tree-item-icon,
+.nav-folder-collapse-indicator { color: var(--mwg-gold); }
+.nav-file-title .tree-item-icon { color: var(--mwg-faint); }
+.tree-item-self:hover .tree-item-icon { color: var(--mwg-accent); }
+
+/* default note + folder glyphs before each tree item (Obsidian shows none by default) */
+.nav-file-title-content::before,
+.nav-folder-title-content::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 7px;
+    vertical-align: -3px;
+    flex-shrink: 0;
+    background-color: var(--mwg-faint);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 15px;
+    transition: background-color 150ms;
+}
+.nav-file-title-content::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z'/%3E%3Cpolyline points='14 2 14 8 20 8'/%3E%3Cline x1='16' y1='13' x2='8' y2='13'/%3E%3Cline x1='16' y1='17' x2='8' y2='17'/%3E%3Cline x1='10' y1='9' x2='8' y2='9'/%3E%3C/svg%3E");
+}
+.nav-folder-title-content::before {
+    background-color: var(--mwg-gold);
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z'/%3E%3C/svg%3E");
+}
+.nav-file-title:hover .nav-file-title-content::before,
+.nav-file-title.is-active .nav-file-title-content::before { background-color: var(--mwg-accent); }
+
+.nav-file-title.is-active,
+.tree-item-self.is-active,
+.tree-item-self.has-focus {
+    background: linear-gradient(90deg, var(--mwg-accent-soft), transparent 90%) !important;
+    color: var(--mwg-text-strong) !important;
+    font-weight: 600;
+    position: relative;
+}
+.tree-item-self.is-active::before,
+.nav-file-title.is-active::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: linear-gradient(180deg, var(--mwg-accent), var(--mwg-accent-2));
+    box-shadow: 0 0 10px var(--mwg-accent-line);
+}
+
+/* outline / tag / backlink panes share the right-pane look */
+.outline .tree-item-self,
+.tag-container .tree-item-self { font-size: 0.85em; }
+.tag-pane-tag-count,
+.tree-item-flair {
+    font-variant-numeric: tabular-nums;
+    color: var(--mwg-muted);
+    background: var(--mwg-pane-2);
+    border-radius: 99px;
+    padding: 1px 8px;
+    transition: background 140ms, color 140ms;
+}
+.tree-item-self:hover .tag-pane-tag-count,
+.tree-item-self:hover .tree-item-flair {
+    background: var(--mwg-accent);
+    color: #fff;
+}
+
+/* ----- Graph view (local + global): multi-color by node type + glowing edges -----
+   Obsidian's graph is a WebGL canvas — only these color variables are themable.
+   Node SIZE already encodes link weight; color here is by node *type*. For
+   weight/folder color groups, add queries under Graph settings → Groups. */
+/* single soft periwinkle for all nodes; node SIZE already encodes weight.
+   (Obsidian's core graph can't color by weight — only size scales with it.)
+   NOTE: graph reader needs concrete hex/rgba — no color-mix()/var-math here. */
+.graph-view.color-fill { color: var(--mwg-graph); }
+.graph-view.color-fill-tag { color: var(--mwg-graph); }
+.graph-view.color-fill-attachment { color: var(--mwg-graph); }
+.graph-view.color-fill-unresolved { color: var(--mwg-faint); }
+.graph-view.color-fill-focused { color: var(--mwg-text-strong); }
+.graph-view.color-circle { color: var(--mwg-text-strong); }
+.graph-view.color-line { color: var(--mwg-graph-line); }
+.graph-view.color-text { color: var(--mwg-muted); }
+.graph-view.color-fill-highlight { color: var(--mwg-text-strong); }
+.graph-view.color-line-highlight { color: var(--mwg-accent); }
+.graph-view.color-arrow { color: var(--mwg-muted); }
+
+/* modern variable bridge (Obsidian 1.5+ reads these off the graph leaf) */
+.workspace-leaf-content[data-type="graph"],
+.workspace-leaf-content[data-type="localgraph"] {
+    --graph-line: var(--mwg-graph-line);
+    --graph-node: var(--mwg-graph);
+    --graph-node-focused: var(--mwg-text-strong);
+    --graph-node-tag: var(--mwg-graph);
+    --graph-node-attachment: var(--mwg-graph);
+    --graph-node-unresolved: var(--mwg-faint);
+    --graph-text: var(--mwg-muted);
+}
+
+/* ----- Status bar ----- */
+.status-bar {
+    background: var(--mwg-pane);
+    border-top: 1px solid var(--mwg-border);
+    color: var(--mwg-muted);
+    font-size: 11.5px;
+}
+.status-bar-item { transition: color 150ms; }
+.status-bar-item:hover { color: var(--mwg-text-strong); }
+
+
+/* ============================================================================
+   [Editor]  headings, lists, code, tables, links, tags, properties
+   ========================================================================== */
+
+.markdown-preview-view,
+.markdown-source-view {
+    background: var(--mwg-editor);
+}
+
+/* ----- Inline title + headings (serif) ----- */
+.inline-title,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.HyperMD-header,
+.cm-line.HyperMD-header {
+    font-family: var(--mwg-font-heading);
+}
+
+.inline-title {
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    color: var(--mwg-text-strong);
+    letter-spacing: -0.018em;
+    line-height: 1.08;
+    text-wrap: balance;
+    margin-bottom: 16px;
+}
+
+/* h1–h6 size/weight come from --hN-size / --hN-weight (set above + Style Settings) */
+/* gradient underline on section headings (violet → teal, like tabs / active items) */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-reading-view h1,
+.markdown-reading-view h2,
+.HyperMD-header-1,
+.HyperMD-header-2 {
+    padding-bottom: 7px;
+    border-bottom: var(--mwg-head-underline-width) solid transparent;
+    border-image: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2)) 1;
+}
+/* "Disable heading underline" toggle removes the gradient rule */
+body.mwg-no-head-underline :is(.markdown-preview-view h1, .markdown-preview-view h2,
+.markdown-reading-view h1, .markdown-reading-view h2, .HyperMD-header-1, .HyperMD-header-2) {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* color-coded headings (preview + edit), overridable via Style Settings */
+.cm-header-1, .markdown-preview-view h1, .markdown-reading-view h1 { color: var(--h1-color); }
+.cm-header-2, .markdown-preview-view h2, .markdown-reading-view h2 { color: var(--h2-color); }
+.cm-header-3, .markdown-preview-view h3, .markdown-reading-view h3 { color: var(--h3-color); }
+.cm-header-4, .markdown-preview-view h4, .markdown-reading-view h4 { color: var(--h4-color); }
+.cm-header-5, .markdown-preview-view h5, .markdown-reading-view h5 { color: var(--h5-color); }
+.cm-header-6, .markdown-preview-view h6, .markdown-reading-view h6 { color: var(--h6-color); }
+
+/* ----- Heading hover affordances (reading view) -----
+   A '#' anchor glyph slides in from the left gutter, and h3–h6 (which have no
+   static underline) get a gradient underline that wipes in left→right. */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6) { position: relative; }
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6)::before,
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6)::before {
+    content: "#";
+    position: absolute;
+    left: -0.95em;
+    color: var(--mwg-accent);
+    font-weight: 700;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity var(--mwg-dur) var(--mwg-ease), transform var(--mwg-dur) var(--mwg-ease);
+    pointer-events: none;
+}
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):hover::before,
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):hover::before {
+    opacity: 0.5;
+    transform: translateX(0);
+}
+/* hover-wipe underline for h3–h6 only (h1/h2 already carry the static gradient) */
+.markdown-preview-view :is(h3, h4, h5, h6)::after,
+.markdown-reading-view :is(h3, h4, h5, h6)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 1.5px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--mwg-accent), var(--mwg-accent-2));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size var(--mwg-dur) var(--mwg-ease);
+}
+.markdown-preview-view :is(h3, h4, h5, h6):hover::after,
+.markdown-reading-view :is(h3, h4, h5, h6):hover::after { background-size: 100% 100%; }
+
+/* heading letter-spacing (Style-Settings slider), both views + live preview */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view .HyperMD-header {
+    letter-spacing: var(--mwg-heading-letter-spacing);
+}
+
+/* ----- Heading underline fits the text (not the whole column) -----
+   Shrinks the heading box to its text so the gradient underline / hover wipe
+   ends at the last glyph. Now also applies in LIVE PREVIEW (the .HyperMD-header
+   line shrinks to its text). Toggle: "Heading underline fits text". */
+body.mwg-heading-underline-fit .markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+body.mwg-heading-underline-fit .markdown-reading-view :is(h1, h2, h3, h4, h5, h6),
+body.mwg-heading-underline-fit .markdown-source-view .HyperMD-header {
+    width: fit-content;
+    max-width: 100%;
+}
+
+/* ----- Global default heading alignment (works in BOTH reading + live preview) -----
+   Set via Style Settings → "Default heading alignment". Per-heading #center/#right
+   tags (reading view) override this. */
+body.mwg-halign-center :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body.mwg-halign-center .markdown-source-view .HyperMD-header { margin-inline: auto; text-align: center; }
+body.mwg-halign-right :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body.mwg-halign-right .markdown-source-view .HyperMD-header { margin-left: auto; margin-right: 0; text-align: right; }
+
+/* ----- Per-heading alignment via a trailing tag marker -----
+   Write:  ## My Title #center   (or #left / #right). The marker tag is hidden
+   and the heading (plus its fit-to-text underline) moves to that position. */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#center" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#center" i]) {
+    margin-inline: auto;
+    text-align: center;
+}
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#right" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#right" i]) {
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+}
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#left" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#left" i]) {
+    margin-right: auto;
+    margin-left: 0;
+    text-align: left;
+}
+/* hide the alignment marker tags themselves (they still index in the tag pane) */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) a.tag:is([href="#center" i], [href="#right" i], [href="#left" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6) a.tag:is([href="#center" i], [href="#right" i], [href="#left" i]) {
+    display: none;
+}
+
+/* ----- Body text + lists ----- */
+/* Bind the rendered text explicitly to the Style-Settings tokens so the
+   "Body font size" + "Line height" sliders actually take effect (reading
+   AND live-preview/source). Without this, native vars were being shadowed
+   by the app's own font-size setting and the sliders did nothing. */
+.markdown-preview-view,
+.markdown-source-view .cm-content {
+    font-size: var(--font-text-size);
+    line-height: var(--line-height-normal);
+}
+.markdown-preview-view p { margin: 0 0 var(--mwg-para-spacing); }
+
+/* glassy rotated-square list markers (reading view) */
+.markdown-preview-view ul > li::marker { color: transparent; }
+.markdown-preview-view ul > li {
+    position: relative;
+}
+.markdown-preview-view ul > li::before {
+    content: "";
+    position: absolute;
+    left: -1.1em;
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--mwg-accent);
+    transform: rotate(45deg);
+    box-shadow: 0 0 7px var(--mwg-accent-line);
+}
+.markdown-preview-view ul ul > li::before { background: var(--mwg-accent-2); }
+/* live-preview bullets: accent-colored for parity with reading view */
+.markdown-source-view .cm-formatting-list-ul,
+.markdown-source-view .HyperMD-list-line .list-bullet { color: var(--mwg-accent); }
+.markdown-source-view .cm-formatting-list-ol { color: var(--mwg-accent-2); }
+
+/* ----- Text format colors ----- */
+.cm-strong, .markdown-rendered strong, .markdown-preview-view strong {
+    color: var(--bold-color);
+    font-weight: var(--bold-weight);
+}
+.cm-em, .markdown-rendered em, .markdown-preview-view em { color: var(--italic-color); font-style: italic; }
+.cm-strong.cm-em,
+.markdown-rendered strong em, .markdown-rendered em strong,
+.markdown-preview-view strong em, .markdown-preview-view em strong { color: var(--bold-italic-color); }
+.cm-strikethrough, .markdown-rendered del, .markdown-preview-view del {
+    color: var(--strikethrough-color);
+    text-decoration-color: var(--strikethrough-color);
+}
+
+/* ----- Links ----- */
+.cm-hmd-internal-link, .internal-link,
+a.external-link, .cm-link {
+    color: var(--mwg-accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 140ms, color 140ms;
+}
+.internal-link:hover, a.external-link:hover {
+    color: var(--mwg-accent-2);
+    border-bottom-color: var(--mwg-accent-line);
+}
+.internal-link.is-unresolved { color: var(--mwg-danger); opacity: 0.85; }
+
+/* Obsidian Pro signature: reading-view links underline-wipe left→right on hover */
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link {
+    border-bottom: none;
+    font-weight: 500;
+    background-image: linear-gradient(var(--mwg-accent-2), var(--mwg-accent-2));
+    background-size: 0% 1.5px;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    padding-bottom: 1.5px;
+    transition: background-size var(--mwg-dur) var(--mwg-ease), color var(--mwg-dur-fast) var(--mwg-ease);
+}
+.markdown-rendered a.internal-link:hover,
+.markdown-rendered a.external-link:hover {
+    background-size: 100% 1.5px;
+}
+
+/* ----- Inline code ----- */
+:not(pre) > code {
+    font-family: var(--mwg-font-mono);
+    background: var(--mwg-code-bg);
+    color: var(--mwg-code-fg);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 0.88em;
+}
+pre, .HyperMD-codeblock {
+    background: var(--mwg-pane-2) !important;
+    border: 1px solid var(--mwg-border);
+    border-radius: var(--radius-m);
+}
+
+/* Body & UI run on the sans body font; only headings are serif (set in heading rules). */
+
+/* ----- Tags ----- */
+.tag,
+a.tag {
+    background: var(--mwg-chip-bg);
+    color: var(--mwg-code-fg);
+    border: none;
+    border-radius: 99px;
+    padding: 2px 10px;
+    font-size: 0.82em;
+    font-weight: 500;
+    transition: transform 160ms, background 160ms, color 160ms;
+}
+.tag:hover { transform: translateY(-2px); background: var(--mwg-accent-soft); }
+
+/* ----- Multi-color category tags (Obsidian Pro tint system) -----
+   Adaptive: text mixes the hue toward --mwg-text-strong, so it stays readable
+   in both dark and light. Unlisted tags keep the default violet chip. */
+a.tag[href="#Cloud" i], a.tag[href="#CloudEngineering" i], a.tag[href="#AWS" i],
+a.tag[href="#Azure" i], a.tag[href="#GCP" i], a.tag[href="#Compute" i],
+a.tag[href="#Architecture" i] {
+    background: color-mix(in srgb, var(--mwg-tag-blue) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-blue) 72%, var(--mwg-text-strong));
+}
+a.tag[href="#DataEngineering" i], a.tag[href="#data_engineering" i], a.tag[href="#ETL" i],
+a.tag[href="#Pipelines" i], a.tag[href="#Spark" i], a.tag[href="#Processing" i],
+a.tag[href="#Streaming" i], a.tag[href="#Ingestion" i], a.tag[href="#Databricks" i],
+a.tag[href="#Analytics" i], a.tag[href="#BI" i], a.tag[href="#distributed_systems" i],
+a.tag[href="#DistributedSystems" i] {
+    background: color-mix(in srgb, var(--mwg-tag-green) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-green) 70%, var(--mwg-text-strong));
+}
+a.tag[href="#Storage" i], a.tag[href="#Database" i], a.tag[href="#NoSQL" i],
+a.tag[href="#SQL" i], a.tag[href="#BigQuery" i], a.tag[href="#OLAP" i],
+a.tag[href="#OLTP" i], a.tag[href="#Lakehouse" i], a.tag[href="#Modeling" i],
+a.tag[href="#data_warehousing" i], a.tag[href="#Patterns" i] {
+    background: color-mix(in srgb, var(--mwg-tag-amber) 20%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-amber) 72%, var(--mwg-text-strong));
+}
+a.tag[href="#person" i], a.tag[href="#people" i], a.tag[href="#book" i],
+a.tag[href="#Guide" i], a.tag[href="#Theory" i], a.tag[href="#Governance" i],
+a.tag[href="#Quality" i], a.tag[href="#Performance" i], a.tag[href="#Compliance" i],
+a.tag[href="#Messaging" i], a.tag[href="#index" i], a.tag[href="#Tools" i],
+a.tag[href="#python" i], a.tag[href="#computer_science" i] {
+    background: color-mix(in srgb, var(--mwg-tag-rose) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-rose) 70%, var(--mwg-text-strong));
+}
+
+/* ----- Tables ----- */
+:is(.markdown-rendered, .cm-table-widget) table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--mwg-border-2);
+    border-radius: var(--radius-m);
+    overflow: hidden;
+}
+:is(.markdown-rendered, .cm-table-widget) th {
+    background: var(--mwg-th-bg);
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.02em;
+    border: none;
+}
+/* links in the (dark gradient) header must stay readable */
+:is(.markdown-rendered, .cm-table-widget) th a,
+:is(.markdown-rendered, .cm-table-widget) th a.internal-link,
+:is(.markdown-rendered, .cm-table-widget) th a.external-link,
+:is(.markdown-rendered, .cm-table-widget) th a.internal-link.is-unresolved {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+:is(.markdown-rendered, .cm-table-widget) th a:hover { color: #fff; border-bottom-color: #fff; }
+:is(.markdown-rendered, .cm-table-widget) td { border: none; border-top: 1px solid var(--mwg-border); }
+:is(.markdown-rendered, .cm-table-widget) tbody tr { transition: background 140ms; }
+:is(.markdown-rendered, .cm-table-widget) tbody tr:hover { background: var(--mwg-accent-soft); }
+:is(.markdown-rendered, .cm-table-widget) tbody td:first-child { font-weight: 600; color: var(--mwg-text-strong); }
+
+/* ----- Properties / metadata block (compact · borderless · editorial) ----- */
+.metadata-container {
+    --metadata-label-width: 132px;
+    --metadata-gap: 2px;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    margin: 2px 0 1.7em;
+    padding-bottom: 1.05em;
+    border-bottom: 1px solid var(--mwg-border);
+}
+/* "Properties" header → small uppercase section label (saves vertical weight) */
+.metadata-properties-heading { border: 0; margin-bottom: 2px; }
+.metadata-properties-heading .metadata-properties-title {
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    font-weight: 600;
+    color: var(--mwg-faint);
+}
+/* compact rows */
+.metadata-property {
+    border-radius: var(--radius-s);
+    padding: 1px 4px;
+    margin: 0;
+    line-height: 1.4;
+    transition: background 150ms var(--mwg-ease);
+}
+.metadata-property:hover { background: var(--mwg-accent-soft); }
+.metadata-property-key { color: var(--mwg-muted); font-size: 12px; }
+.metadata-property-key-input { font-size: 12px; font-weight: 500; }
+.metadata-property-icon { color: var(--mwg-faint); width: 16px; }
+.metadata-property-value,
+.metadata-property-value .metadata-input-longtext { color: var(--mwg-text); font-size: 13.5px; }
+.metadata-property-value input,
+.metadata-property-value .metadata-input-longtext { min-height: 22px; }
+/* tag / multi-select pills inside properties — refined pill shape */
+.multi-select-pill,
+.metadata-property .multi-select-pill {
+    background: var(--mwg-chip-bg);
+    color: var(--mwg-code-fg);
+    border: none;
+    border-radius: 999px;
+    font-size: 11.5px;
+    transition: transform 150ms var(--mwg-ease), background 150ms var(--mwg-ease);
+}
+.multi-select-pill:hover { transform: translateY(-1px); background: var(--mwg-accent-soft); }
+
+/* Multi-color the tags property pills. Obsidian exposes no per-tag CSS hook on
+   these pills, so we cycle the 4 category tints by position for the lively,
+   reference-style look. Text auto-adapts to dark/light via --mwg-text-strong. */
+.metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(4n+1) {
+    background: color-mix(in srgb, var(--mwg-tag-blue) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-blue) 72%, var(--mwg-text-strong));
+}
+.metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(4n+2) {
+    background: color-mix(in srgb, var(--mwg-tag-green) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-green) 70%, var(--mwg-text-strong));
+}
+.metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(4n+3) {
+    background: color-mix(in srgb, var(--mwg-tag-amber) 20%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-amber) 72%, var(--mwg-text-strong));
+}
+.metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(4n+4) {
+    background: color-mix(in srgb, var(--mwg-tag-rose) 18%, transparent);
+    color: color-mix(in srgb, var(--mwg-tag-rose) 70%, var(--mwg-text-strong));
+}
+/* keep the category color on hover, just lift + brighten */
+.metadata-property[data-property-key="tags"] .multi-select-pill:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.12);
+}
+
+/* NOTE: the multi-column properties layout lives in a separate, toggleable CSS
+   snippet (.obsidian/snippets/properties-two-columns.css) instead of the theme,
+   so it can be enabled/disabled independently in Settings → Appearance. */
+
+/* --- Themed checkboxes (boolean properties + task lists) ---
+   Obsidian's stock checkbox ignores the accent; we re-point its variables to the
+   Glass gradient accent and round the corners so it stops looking out of place. */
+body {
+    --checkbox-color: var(--mwg-accent);
+    --checkbox-color-hover: var(--mwg-accent-2);
+    --checkbox-border-color: var(--mwg-border-strong, var(--mwg-border));
+    --checkbox-border-color-hover: var(--mwg-accent);
+    --checkbox-radius: 5px;
+    --checkbox-marker-color: var(--background-primary);
+}
+/* boolean-property checkbox → small CIRCLE with a centered white tick.
+   Defined here (not only in the snippet) so it's guaranteed after an app
+   reload regardless of snippet reload state. */
+.metadata-property-value:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    min-height: 22px;
+}
+.metadata-property-value input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    position: relative;
+    flex: 0 0 16px;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    margin: 0;
+    padding: 0;
+    border: 1.5px solid var(--mwg-border-strong, var(--mwg-border));
+    border-radius: 50%;
+    background: var(--background-primary);
+    box-shadow: none;
+    cursor: pointer;
+    transition: border-color 150ms var(--mwg-ease), box-shadow 150ms var(--mwg-ease);
+}
+.metadata-property-value input[type="checkbox"]:hover {
+    border-color: var(--mwg-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--mwg-accent) 18%, transparent);
+}
+.metadata-property-value input[type="checkbox"]:checked {
+    border-radius: 50%;
+    border-color: transparent;
+    box-shadow: none;
+    background-image:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"),
+        linear-gradient(135deg,
+            color-mix(in srgb, var(--mwg-accent) 82%, #000),
+            color-mix(in srgb, var(--mwg-accent-2) 78%, #000));
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 10px 10px, cover;
+}
+/* hide Obsidian's stock mask-checkmark so it doesn't double up with our svg */
+.metadata-property-value input[type="checkbox"]:checked::after,
+.metadata-property-value input[type="checkbox"]:checked::before {
+    content: none;
+    -webkit-mask-image: none;
+    mask-image: none;
+    background: none;
+}
+/* FORCE circle + size — high specificity + !important so nothing (Obsidian's
+   --checkbox-radius/--checkbox-size) can flatten it back into a rounded square */
+body .metadata-property[data-property-type="checkbox"] .metadata-property-value input[type="checkbox"],
+body .metadata-property[data-property-type="checkbox"] .metadata-property-value input[type="checkbox"]:checked {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    max-width: 16px !important;
+    min-height: 16px !important;
+    max-height: 16px !important;
+    aspect-ratio: 1 / 1 !important;
+    border-radius: 50% !important;
+}
+
+
+/* ============================================================================
+   [Blockquote]  styled blockquotes + pull quotes
+   ========================================================================== */
+.markdown-rendered blockquote,
+.markdown-source-view .HyperMD-quote {
+    border: none;
+    border-left: 3px solid var(--mwg-accent);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+    /* one subtle violet gradient across the whole box (reference look) */
+    background-image: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--mwg-accent) 36%, var(--mwg-pane-2)),
+        color-mix(in srgb, var(--mwg-accent) 12%, var(--mwg-pane-2))
+    );
+    padding: 12px 18px;
+    font-style: italic;
+    color: var(--mwg-text-strong);
+}
+/* decorative quotation mark — anchored to the text start (top-left) so it sits
+   beside the opening words at any quote width (reading view, toggleable) */
+.markdown-rendered blockquote { position: relative; overflow: hidden; }
+body.mwg-quote-mark .markdown-preview-view blockquote::before,
+body.mwg-quote-mark .markdown-reading-view blockquote::before {
+    content: "\201C";
+    position: absolute;
+    top: 0.05em;
+    right: 8px;
+    font-family: var(--mwg-font-heading);
+    font-size: 3.4em;
+    line-height: 1;
+    color: var(--mwg-accent);
+    opacity: var(--mwg-quote-mark-opacity);
+    pointer-events: none;
+    z-index: 0;
+}
+.markdown-rendered blockquote > * { position: relative; z-index: 1; }
+.markdown-rendered blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-style: normal;
+    font-size: 0.85em;
+    color: var(--mwg-muted);
+}
+.markdown-rendered blockquote cite::before { content: "— "; }
+
+/* opt-in pull quote: > [!quote|pull] ... */
+.callout[data-callout="quote"][data-callout-metadata*="pull"] {
+    border: none;
+    border-left: 3px solid var(--mwg-accent);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+    background: var(--mwg-accent-soft);
+    position: relative;
+    overflow: hidden;
+}
+body.mwg-quote-mark .callout[data-callout="quote"][data-callout-metadata*="pull"]::before {
+    content: "\201C";
+    position: absolute;
+    top: -0.28em;
+    left: 0.06em;
+    font-family: var(--mwg-font-heading);
+    font-size: 7em;
+    line-height: 1;
+    color: var(--mwg-accent);
+    opacity: calc(var(--mwg-quote-mark-opacity) + 0.04);
+    pointer-events: none;
+    z-index: 0;
+}
+.callout[data-callout="quote"][data-callout-metadata*="pull"] .callout-content { position: relative; z-index: 1; }
+.callout[data-callout="quote"][data-callout-metadata*="pull"] .callout-title { display: none; }
+.callout[data-callout="quote"][data-callout-metadata*="pull"] .callout-content {
+    font-family: var(--mwg-font-heading);
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--mwg-text-strong);
+}
+
+/* a PLAIN [!quote] callout (no |pull) renders identically to a bare blockquote:
+   left-fading accent wash, accent left bar, italic, and NO "Quote" title — so
+   the two quote forms match each other (and the Quartz site). */
+.callout[data-callout="quote"]:not([data-callout-metadata*="pull"]),
+.callout[data-callout="cite"]:not([data-callout-metadata*="pull"]) {
+    position: relative;
+    overflow: hidden;
+    /* no full border (it drew a bright edge glow); only the accent left bar */
+    border: none;
+    border-left: 3px solid var(--mwg-accent);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+    /* one subtle violet gradient across the whole box (reference look) */
+    background: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--mwg-accent) 36%, var(--mwg-pane-2)),
+        color-mix(in srgb, var(--mwg-accent) 12%, var(--mwg-pane-2))
+    );
+    padding: 12px 18px;
+    font-style: italic;
+    color: var(--mwg-text-strong);
+}
+.callout[data-callout="quote"]:not([data-callout-metadata*="pull"]):hover,
+.callout[data-callout="cite"]:not([data-callout-metadata*="pull"]):hover {
+    box-shadow: none;
+    border-color: transparent;
+    border-left-color: var(--mwg-accent);
+}
+.callout[data-callout="quote"]:not([data-callout-metadata*="pull"]) > .callout-title,
+.callout[data-callout="cite"]:not([data-callout-metadata*="pull"]) > .callout-title {
+    display: none;
+}
+.callout[data-callout="quote"]:not([data-callout-metadata*="pull"]) .callout-content,
+.callout[data-callout="cite"]:not([data-callout-metadata*="pull"]) .callout-content {
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+/* same decorative oversized quotation mark the blockquote has (toggleable) */
+body.mwg-quote-mark .callout[data-callout="quote"]:not([data-callout-metadata*="pull"])::before,
+body.mwg-quote-mark .callout[data-callout="cite"]:not([data-callout-metadata*="pull"])::before {
+    content: "\201C";
+    position: absolute;
+    top: 0.05em;
+    right: 8px;
+    font-family: var(--mwg-font-heading);
+    font-size: 3.4em;
+    line-height: 1;
+    color: var(--mwg-accent);
+    opacity: var(--mwg-quote-mark-opacity);
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* ============================================================================
+   [Callouts]  base recolor
+   ========================================================================== */
+.callout {
+    /* --cc = the callout's accent color. Default Obsidian types fall back to
+       rgb(var(--callout-color)); our themed types set --cc to a Style-Settings token. */
+    --cc: rgb(var(--callout-color));
+    border-radius: var(--radius-m);
+    border: 1px solid var(--mwg-border-2);
+    border-left: 3px solid var(--cc);
+    background: color-mix(in srgb, var(--cc) 8%, var(--mwg-pane-2));
+    mix-blend-mode: normal;
+    transition: transform 200ms var(--mwg-ease), box-shadow 200ms, border-color 200ms;
+}
+.callout:hover {
+    box-shadow: var(--mwg-shadow-pop);
+    border-color: var(--mwg-border-strong);
+}
+.callout-title { padding: 8px 12px; }
+.callout-icon .svg-icon { color: var(--cc); }
+
+/* per-type accent — each is its own Style Settings color picker */
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="summary"],
+.callout[data-callout="info"]      { --cc: var(--mwg-callout-note); }
+.callout[data-callout="tip"],
+.callout[data-callout="hint"],
+.callout[data-callout="important"],
+.callout[data-callout="success"],
+.callout[data-callout="check"],
+.callout[data-callout="done"]      { --cc: var(--mwg-callout-tip); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"],
+.callout[data-callout="attention"] { --cc: var(--mwg-callout-warning); }
+.callout[data-callout="question"],
+.callout[data-callout="help"],
+.callout[data-callout="faq"]       { --cc: var(--mwg-callout-question); }
+.callout[data-callout="failure"],
+.callout[data-callout="fail"],
+.callout[data-callout="missing"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"]       { --cc: var(--mwg-callout-danger); }
+.callout[data-callout="example"]   { --cc: var(--mwg-callout-example); }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"]      { --cc: var(--mwg-callout-quote); }
+.callout[data-callout="card"]      { --cc: var(--mwg-accent); }
+
+
+/* ============================================================================
+   [Components]
+   ========================================================================== */
+
+/* ----- Infobox: > [!infobox] (floated glass card; body text wraps beside it) ----- */
+body { --mwg-infobox-width: 300px; }
+
+/* Float the BLOCK WRAPPER (not the callout) so following paragraphs wrap around it.
+   Reading view: each block is a direct child div of .markdown-preview-sizer. */
+.markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"]),
+.markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"]) {
+    float: right;
+    width: var(--mwg-infobox-width);
+    max-width: 45%;
+    margin: 4px 0 18px 24px;
+}
+.markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"][data-callout-metadata*="left"]),
+.markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"][data-callout-metadata*="left"]) {
+    float: left;
+    margin: 4px 24px 18px 0;
+}
+/* the callout fills its floated wrapper */
+.callout[data-callout="infobox"] {
+    float: none;
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--mwg-border-2);
+    border-left: 1px solid var(--mwg-border-2);
+    border-radius: var(--radius-l);
+    background: var(--mwg-pane-2);
+    overflow: hidden;
+    box-shadow: var(--mwg-shadow-pop);
+}
+.callout[data-callout="infobox"]:hover { transform: translateY(-3px); border-color: var(--mwg-border-strong); }
+/* headings clear the float so they never overlap the card on narrow notes */
+.markdown-preview-view .markdown-preview-sizer > div:has(> :is(h1, h2)) { clear: none; }
+/* ...but their underline / rules must NOT run UNDER the floated infobox.
+   flow-root gives each block its own formatting context so its box (and the
+   gradient underline / hr) shrinks to the space beside the float instead of
+   slicing across the card. No effect when there's no float (stays full width). */
+.markdown-preview-view .markdown-preview-sizer > :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-hr),
+.markdown-reading-view .markdown-preview-sizer > :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-hr) {
+    display: flow-root;
+}
+/* hide the auto "Infobox" title — the card starts with the note's own heading */
+.callout[data-callout="infobox"] > .callout-title { display: none; }
+.callout[data-callout="infobox"] > .callout-content { padding-top: 16px; }
+/* first heading inside the infobox becomes the centered serif title */
+.callout[data-callout="infobox"] :is(h1, h2):first-child {
+    text-align: center;
+    font-family: var(--mwg-font-heading);
+    font-size: 1.5em;
+    margin: 0 0 2px;
+    padding: 0;
+    border-bottom: none;
+    color: var(--mwg-text-strong);
+}
+/* subtitle = first paragraph right under the title (italic, centered, muted) */
+.callout[data-callout="infobox"] :is(h1, h2):first-child + p {
+    text-align: center;
+    font-style: italic;
+    color: var(--mwg-muted);
+    margin: 0 0 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--mwg-border);
+}
+/* Obsidian wraps reading-view tables in a .table-wrapper that scrolls on
+   overflow; inside the narrow infobox card that shows a tiny, unusable
+   horizontal scrollbar. The table is already width:100%, so just clip. */
+.callout[data-callout="infobox"] .table-wrapper {
+    overflow: visible;
+    max-width: 100%;
+}
+.callout[data-callout="infobox"] table {
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 0.88em;
+    background: transparent;
+    table-layout: fixed;
+}
+/* let long values (URLs, etc.) wrap instead of forcing the card to scroll */
+.callout[data-callout="infobox"] td,
+.callout[data-callout="infobox"] th { overflow-wrap: anywhere; }
+/* hide the (usually empty) header row so there's no gap / partial line at top */
+.callout[data-callout="infobox"] thead { display: none; }
+/* horizontal row lines only — no vertical dividers, no gradient header */
+.callout[data-callout="infobox"] th,
+.callout[data-callout="infobox"] td {
+    border: none;
+    border-top: 1px solid var(--mwg-border);
+    background: none;
+    padding: 8px 14px;
+    color: var(--mwg-text);
+}
+/* left column = muted label */
+.callout[data-callout="infobox"] tr > :first-child {
+    color: var(--mwg-muted);
+    font-weight: 500;
+    width: 40%;
+}
+/* a bolded label keeps the muted label color, not the body bold color */
+.callout[data-callout="infobox"] tr > :first-child strong {
+    color: inherit;
+    font-weight: 600;
+}
+/* links in values use the accent (the reference's website row) */
+.callout[data-callout="infobox"] a { color: var(--mwg-accent); border-bottom: none; }
+.callout[data-callout="infobox"] a:hover { color: var(--mwg-accent-2); }
+
+/* ----- Multi-column callout machinery (MCL), glass-skinned ----- */
+body {
+    --list-min-width: 200px;
+    --col-rule-color: var(--mwg-border-2);
+    --col-rule-width: 1px;
+    --list-grid-min-width: 250px;
+    --list-grid-wide-min-width: 350px;
+    --callout-min-width: 200px;
+    --callout-nowrap-min-width: 250px;
+    --callout-gap: 1em;
+    --callout-margin: 0px;
+    --float-small-width: 300px;
+    --float-medium-width: 400px;
+    --float-large-width: 600px;
+    --float-left-callout-margin-inline: 0 12px;
+    --float-right-callout-margin-inline: 12px 0;
+    --img-border-radius: 14px;
+    --img-max-height: 300px;
+    --img-max-width: 350px;
+    --img-max-height-list: 270px;
+    --img-max-width-list: 300px;
+    --callout-gallery-gap: 5px;
+    --mcl-banner-height-normal: 200px;
+    --mcl-banner-height-tall: 300px;
+    --mcl-card-bg-color: var(--mwg-pane-2);
+    --mcl-card-border-color: var(--mwg-border-2);
+    --mcl-card-border-width: 1px;
+    --mcl-card-header-border-width: 1px;
+    --mcl-card-gap: 0.2em;
+}
+
+/* fixed / percentage / dynamic widths */
+div[data-callout-metadata*="fw"].callout.callout.callout { flex-grow: 0; flex-shrink: 0; }
+div[data-callout-metadata*="fw1"].callout.callout.callout.callout { flex-basis: 100px; width: 100px; }
+div[data-callout-metadata*="fw2"].callout.callout.callout.callout { flex-basis: 200px; width: 200px; }
+div[data-callout-metadata*="fw3"].callout.callout.callout.callout { flex-basis: 300px; width: 300px; }
+div[data-callout-metadata*="fw4"].callout.callout.callout.callout { flex-basis: 400px; width: 400px; }
+div[data-callout-metadata*="fw5"].callout.callout.callout.callout { flex-basis: 500px; width: 500px; }
+div[data-callout-metadata*="fw6"].callout.callout.callout.callout { flex-basis: 600px; width: 600px; }
+div[data-callout-metadata*="fw7"].callout.callout.callout.callout { flex-basis: 700px; width: 700px; }
+div[data-callout-metadata*="fw8"].callout.callout.callout.callout { flex-basis: 800px; width: 800px; }
+div[data-callout-metadata*="fw9"].callout.callout.callout.callout { flex-basis: 900px; width: 900px; }
+div[data-callout-metadata*="pw1"].callout.callout.callout.callout { flex-basis: 10%; width: 10%; }
+div[data-callout-metadata*="pw2"].callout.callout.callout.callout { flex-basis: 18%; width: 18%; }
+div[data-callout-metadata*="pw3"].callout.callout.callout.callout { flex-basis: 28%; width: 28%; }
+div[data-callout-metadata*="pw4"].callout.callout.callout.callout { flex-basis: 38%; width: 38%; }
+div[data-callout-metadata*="pw5"].callout.callout.callout.callout { flex-basis: 48%; width: 48%; }
+div[data-callout-metadata*="pw6"].callout.callout.callout.callout { flex-basis: 58%; width: 58%; }
+div[data-callout-metadata*="pw7"].callout.callout.callout.callout { flex-basis: 68%; width: 68%; }
+div[data-callout-metadata*="pw8"].callout.callout.callout.callout { flex-basis: 78%; width: 78%; }
+div[data-callout-metadata*="pw9"].callout.callout.callout.callout { flex-basis: 88%; width: 88%; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw1"].callout { flex: 1 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw2"].callout { flex: 2 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw3"].callout { flex: 3 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw4"].callout { flex: 4 0 auto; }
+div[data-callout="multi-column"].callout > .callout-content > div[data-callout-metadata*="dw5"].callout { flex: 5 0 auto; }
+
+/* main multi-column: flex wrapper, sub-callouts become glass cards */
+div[data-callout="multi-column"].callout > .callout-title { display: none; }
+div[data-callout="multi-column"].callout > .callout-content { display: contents; }
+div[data-callout="multi-column"].callout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--callout-gap);
+    background: unset;
+    border: unset;
+    margin: unset;
+    margin-bottom: 1.5em;
+    padding: unset;
+    box-shadow: none;
+    clear: both;
+    --columns: unset;
+}
+div[data-callout="multi-column"].callout:hover { box-shadow: none; }
+div[data-callout="multi-column"].callout .callout:not([data-callout="multi-column"]) {
+    display: flex;
+    flex-direction: column;
+}
+div[data-callout="multi-column"].callout .callout .callout-content { flex-grow: 1; }
+div[data-callout="multi-column"].callout > .callout-content > *:is(div, ul, blockquote, p) {
+    flex: 1 1 var(--callout-min-width);
+    margin: 0;
+}
+div[data-callout="multi-column"][data-callout-metadata*="flex-h"].callout { align-items: flex-start; }
+div[data-callout="multi-column"][data-callout-metadata*="col3"]:not([data-callout-metadata*="icons"]).callout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div[data-callout="multi-column"][data-callout-metadata*="no-wrap"].callout {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+div[data-callout="multi-column"][data-callout-metadata*="no-wrap"].callout > .callout-content > *:is(div, ul) { flex-shrink: 0; }
+div[data-callout="multi-column"][data-callout-metadata*="center-fixed"].callout { justify-content: center; }
+div[data-callout="multi-column"][data-callout-metadata*="left-fixed"].callout { justify-content: flex-start; }
+div[data-callout="multi-column"][data-callout-metadata*="right-fixed"].callout { justify-content: flex-end; }
+div[data-callout="multi-column"][data-callout-metadata*="fixed"].callout > .callout-content > *:is(div, ul) { flex-grow: 0; }
+
+/* icons variant */
+div[data-callout="multi-column"][data-callout-metadata*="icons"].callout { justify-content: center; }
+div[data-callout="multi-column"][data-callout-metadata*="icons"].callout .callout { display: flex; flex-direction: row; flex-wrap: wrap; }
+div[data-callout="multi-column"][data-callout-metadata*="icons"].callout.callout .callout-content > p { flex-grow: 1; text-align: center; }
+div[data-callout="multi-column"][data-callout-metadata*="icons"][data-callout-metadata*="col3"].callout.callout .callout-content > p { flex-basis: 30%; }
+div[data-callout="multi-column"][data-callout-metadata*="icons"][data-callout-metadata*="col4"].callout.callout .callout-content > p { flex-basis: 22%; }
+
+/* sub-callout cards: same elegant treatment as the blockquote you liked —
+   left accent bar + rightward accent-soft → transparent wash, no cream fill */
+div[data-callout="multi-column"] > .callout-content > .callout {
+    position: relative;
+    margin: 0;
+    /* match the blockquote: square left (flush with the accent bar), rounded right */
+    border-radius: 0 var(--radius-l) var(--radius-l) 0;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--mwg-accent-soft), transparent 72%);
+    border: 1px solid var(--mwg-border);
+    border-left: 3px solid var(--mwg-accent);
+    box-shadow: var(--shadow-s);
+    transition:
+        transform var(--mwg-dur) var(--mwg-ease),
+        box-shadow var(--mwg-dur) var(--mwg-ease),
+        border-color var(--mwg-dur) var(--mwg-ease);
+}
+/* 3rd card → secondary (teal) wash + bar */
+div[data-callout="multi-column"] > .callout-content > .callout:nth-child(3n) {
+    background-image: linear-gradient(to right, color-mix(in srgb, var(--mwg-accent-2) 14%, transparent), transparent 72%);
+    border-left-color: var(--mwg-accent-2);
+}
+/* card title: a bit bigger, with its own very-thin divider line under it */
+div[data-callout="multi-column"] > .callout-content > .callout > .callout-title {
+    background: transparent;
+    padding: 2px 0 8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--mwg-border);
+}
+div[data-callout="multi-column"] > .callout-content > .callout > .callout-title .callout-title-inner {
+    color: var(--mwg-accent);
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1em;
+    letter-spacing: -0.01em;
+}
+div[data-callout="multi-column"] > .callout-content > .callout:nth-child(3n) > .callout-title .callout-title-inner { color: var(--mwg-accent-2); }
+div[data-callout="multi-column"] > .callout-content > .callout > .callout-title .callout-icon { color: inherit; }
+/* keep any manual "---" divider subtle (redundant with the title line, but harmless) */
+div[data-callout="multi-column"] > .callout-content > .callout hr { border-color: var(--mwg-border); margin: 6px 0 10px; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout {
+    opacity: 0;
+    animation: mwg-card-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(1) { animation-delay: 0.05s; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(2) { animation-delay: 0.10s; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(3) { animation-delay: 0.15s; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(4) { animation-delay: 0.20s; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(5) { animation-delay: 0.25s; }
+body:not(.mwg-no-anim) div[data-callout="multi-column"] > .callout-content > .callout:nth-child(6) { animation-delay: 0.30s; }
+div[data-callout="multi-column"] > .callout-content > .callout:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--mwg-shadow-pop);
+    border-color: var(--mwg-border-strong);
+}
+div[data-callout="multi-column"] > .callout-content > .callout:hover { border-left-color: var(--mwg-accent); }
+div[data-callout="multi-column"] > .callout-content > .callout:nth-child(3n):hover { border-left-color: var(--mwg-accent-2); }
+
+/* ----- Blank container ----- */
+div[data-callout*="blank"].callout { --callout-blend-mode: normal; }
+div[data-callout*="blank"].callout > .callout-title { display: none; }
+div[data-callout*="blank"].callout > .callout-content { display: contents; }
+div[data-callout*="blank"].callout {
+    border: 0;
+    padding-top: 0;
+    padding-inline: 5px;
+    background: unset;
+    box-shadow: unset;
+}
+div[data-callout-metadata*="no-margin"]:is(.cm-callout, .callout.callout, .callout.callout .callout-content) { margin: 0; padding: 0; }
+
+/* ----- Float callouts ----- */
+@media (min-width: 500px) {
+    .markdown-reading-view div[data-callout-metadata*="left"].callout { float: left; }
+    .markdown-reading-view div[data-callout-metadata*="right"].callout { float: right; }
+    .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) { display: inline; z-index: 30; }
+    .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-left"]) > div > .callout { float: left; z-index: 30; }
+    .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) { display: inline; z-index: 30; }
+    .markdown-source-view .cm-embed-block.cm-callout:has(> div.markdown-rendered > [data-callout-metadata*="float-right"]) > div > .callout { float: right; z-index: 30; }
+    .callout:is(div[data-callout-metadata*="left"], div[data-callout-metadata*="right"]) .callout-content > :is(p:first-child, ul:first-child, ol:first-child) { margin-top: 0; }
+    .markdown-reading-view div[data-callout-metadata*="left"].callout { margin-inline: var(--float-left-callout-margin-inline); }
+    .markdown-reading-view div[data-callout-metadata*="right"].callout { margin-inline: var(--float-right-callout-margin-inline); }
+}
+[data-callout-metadata*="-small"].callout { width: var(--float-small-width); }
+[data-callout-metadata*="-medium"].callout { width: var(--float-medium-width); }
+[data-callout-metadata*="-large"].callout { width: var(--float-large-width); }
+.embedded-backlinks { clear: both; }
+
+/* ----- Grid wrapper: > [!grid-wrapper] (responsive flat cards) ----- */
+.callout[data-callout="grid-wrapper"] {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+.callout[data-callout="grid-wrapper"] > .callout-title { display: none; }
+.callout[data-callout="grid-wrapper"] > .callout-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+.callout[data-callout="grid-wrapper"] > .callout-content > .callout {
+    margin: 0;
+    background: var(--mwg-pane-2);
+    border: 1px solid var(--mwg-border-2);
+    border-left: 3px solid var(--mwg-accent);
+    border-radius: var(--radius-m);
+}
+.callout[data-callout="grid-wrapper"] .block-language-dataview ul,
+.callout[data-callout="grid-wrapper"] .block-language-dataview ul li { display: inline; padding: 0 !important; margin: 0 !important; }
+.callout[data-callout="grid-wrapper"] .block-language-dataview ul li::after { content: ", "; color: var(--mwg-muted); }
+.callout[data-callout="grid-wrapper"] .block-language-dataview ul li:last-child::after { content: ""; }
+
+/* ----- Image gallery ----- */
+img { border-radius: var(--img-border-radius); }
+.image-gallery .markdown-rendered div:has(> p .image-embed) > p,
+div[data-callout-metadata*="gallery"].callout > .callout-content > p {
+    display: flex;
+    gap: var(--callout-gallery-gap);
+    margin-top: var(--callout-gallery-gap);
+    margin-bottom: 0;
+}
+div[data-callout-metadata*="gallery"].callout > .callout-content { --callout-content-padding: 0.5rem 0 0 0; }
+.image-gallery .markdown-rendered div:has(> p .image-embed) > p img,
+div[data-callout-metadata*="gallery"].callout > .callout-content > p img {
+    max-height: var(--img-max-height);
+    border: 1px solid var(--mwg-border-2);
+    object-fit: cover;
+    display: block;
+}
+
+/* images in lists */
+body:not(.list-image-control-off) :is(.HyperMD-list-line, ul) .image-embed.image-embed img:not([width]) {
+    max-height: var(--img-max-height-list);
+    max-width: var(--img-max-width-list);
+    margin-inline: 0;
+    object-fit: cover;
+}
+
+/* image float by alt text */
+img[alt^="left"], img[alt^="float-left"] { float: left; margin: 4px 12px 4px 0; }
+img[alt^="right"], img[alt^="float-right"] { float: right; margin: 4px 0 4px 12px; }
+.internal-embed.image-embed[alt*="float-left"],
+.internal-embed.image-embed[alt*="float-right"] { display: contents; }
+div.no-float { clear: both; display: inline-grid; height: 1px; width: 100%; background-color: var(--mwg-pane-2); }
+
+/* aspect ratio */
+img[src*="1-1"], img[alt*="1-1"] { aspect-ratio: 1/1; object-fit: cover; }
+img[src*="4-3"], img[alt*="4-3"] { aspect-ratio: 4/3; object-fit: cover; }
+img[src*="16-9"], img[alt*="16-9"] { aspect-ratio: 16/9; object-fit: cover; }
+
+/* image zoom (Style Settings toggle) */
+.image-zoom .view-content :is(.cm-editor, .markdown-preview-view) img { max-width: 100%; cursor: zoom-in; }
+body.image-zoom:not(.is-mobile) .view-content :is(.cm-editor, .markdown-preview-view) img:active {
+    cursor: zoom-out;
+    background: var(--mwg-scrim);
+    max-height: calc(100% + 1px);
+    max-width: calc(100% - 20px);
+    height: calc(100% + 1px);
+    width: 100%;
+    object-fit: contain;
+    margin: -0.5px auto 0;
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 100;
+}
+
+/* dataview card view (cssClass: dv-card) */
+.dv-card table.dataview { display: flex; flex-direction: column; font-size: 0.9em; }
+.dv-card table.dataview tbody { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); grid-gap: 8px; }
+.dv-card table.dataview tbody tr {
+    background-color: var(--mwg-pane-2);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--mwg-border-2);
+    border-radius: var(--radius-m);
+}
+.dv-card table.dataview tbody tr:hover { background-color: var(--mwg-raised) !important; }
+.dv-card table.dataview tbody td:first-child { font-weight: var(--bold-weight); }
+.dv-card table.dataview tbody td:not(:first-child) { color: var(--mwg-muted); font-size: 0.9em; }
+
+/* ----- Banners: ![|mcl-banner]() ----- */
+.markdown-source-view .cm-line:has(> .internal-embed.image-embed > img[alt*="mcl-banner"]),
+.markdown-source-view :is(.internal-embed.image-embed, .cm-line):has(> img[alt*="mcl-banner"]) { display: contents; }
+img[alt*="mcl-banner"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--mcl-banner-height-normal);
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    overflow: hidden;
+    user-select: none;
+    border-radius: 0;
+}
+img[alt*="mcl-banner"][alt*="gradient"] { mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); }
+.view-content:has(img[alt*="mcl-banner"]) :is(.cm-sizer, .markdown-preview-section) {
+    padding-top: calc(var(--mcl-banner-height-normal) - 50px);
+}
+.view-content:has(img[alt*="mcl-banner"][alt*="-tall"]) :is(.cm-sizer, .markdown-preview-section) {
+    padding-top: calc(var(--mcl-banner-height-tall) - 50px);
+}
+.view-content:has(img[alt*="mcl-banner"]) .inline-title { position: relative; z-index: 30; }
+img[alt*="mcl-banner"][alt*="y-30"] { object-position: 50% 20%; }
+img[alt*="mcl-banner"][alt*="y-20"] { object-position: 50% 30%; }
+img[alt*="mcl-banner"][alt*="y-10"] { object-position: 50% 40%; }
+img[alt*="mcl-banner"][alt*="y+10"] { object-position: 50% 60%; }
+img[alt*="mcl-banner"][alt*="y+20"] { object-position: 50% 70%; }
+img[alt*="mcl-banner"][alt*="y+30"] { object-position: 50% 80%; }
+img[alt*="mcl-banner"][alt*="-tall"] { height: var(--mcl-banner-height-tall); }
+
+/* ----- List Column / Grid / Card (cssClass + #mcl tags) ----- */
+.two-column-list div > ul, .two-column-list-block,
+.three-column-list div > ul, .three-column-list-block,
+.multi-column-list div > ul, .multi-column-list-block {
+    column-gap: 3rem;
+    column-rule: var(--col-rule-width) solid var(--col-rule-color);
+}
+@media (min-width: 500px) {
+    .two-column-list div > ul, .two-column-list-block { columns: 2; }
+    .three-column-list div > ul, .three-column-list-block { columns: 3; }
+}
+.multi-column-list div > ul, .multi-column-list-block { column-width: var(--list-min-width); }
+:is(.markdown-rendered) a[href*="#mcl"] { display: none; }
+ul:has(> li > [href*="#mcl/list-column"]) {
+    margin-top: 0;
+    column-width: var(--list-min-width);
+    column-gap: 1rem;
+    column-rule: var(--col-rule-width) solid var(--col-rule-color);
+}
+ul:has(> li > [href*="#mcl/list-grid"]),
+ul:has(> li > [data-heading] > [href*="#mcl/list-grid"]) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-min-width), 1fr));
+}
+:is(div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:not(ul ul) > li {
+    margin-inline: var(--mcl-card-gap);
+    margin-bottom: calc(var(--mcl-card-gap) * 2);
+    padding: 0.3em 0.5em;
+    outline: var(--mcl-card-border-width) solid var(--mcl-card-border-color);
+    border-radius: 0.5em;
+    background-color: var(--mcl-card-bg-color);
+    list-style: none;
+}
+:is(div:has(> ul [href*="#mcl/list-card"]), .tag-mcllist-card) ul:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--list-grid-min-width), 1fr));
+}
+
+/* ----- Wide views (cssClass) ----- */
+body .wide-page { --file-line-width: 100%; }
+body.is-adj-rll .view-content { --file-line-width: var(--adj-rll-max-width, 700px); }
+.narrow-page.markdown-source-view .cm-sizer,
+.narrow-page.markdown-preview-view .markdown-preview-sizer {
+    max-width: var(--narrow-max-width, 750px);
+    margin-inline: auto;
+}
+:is(.wide-table, .wide-dataview, .wide-callout, .wide-backlinks).markdown-source-view.is-readable-line-width,
+:is(.wide-table, .wide-dataview, .wide-callout, .wide-backlinks).markdown-preview-view.is-readable-line-width {
+    container-name: content-view;
+    container-type: inline-size;
+}
+@container content-view (width > 50px) {
+    .wide-table.markdown-preview-view div:has(> table),
+    .wide-dataview.markdown-preview-view div:has(> .block-language-dataview),
+    .wide-callout.markdown-preview-view .markdown-preview-sizer > div:has(> .callout) {
+        width: 100cqi;
+        margin-left: calc(max(100cqi - var(--file-line-width), 1rem) / 2 * -1) !important;
+    }
+}
+
+/* ----- Easy multi-column notes (double --- ) ----- */
+.markdown-preview-view div:has(> hr) + * > hr,
+.markdown-source-view :is(.HyperMD-hr:not(.HyperMD-quote), .hr) + :is(.HyperMD-hr, .hr) + *,
+.callout-content hr + hr { break-after: column; }
+.mod-header,
+.frontmatter-container,
+.cm-line:has(.cm-hmd-frontmatter) { column-span: all; }
+.cm-contentContainer > *,
+.markdown-preview-sizer,
+.callout-content { column-rule: solid var(--hr-thickness, 1px) var(--hr-color); }
+.hr:has(+ .hr):not(:has(+ * + .cm-active)),
+.hr + .hr:not(:has(+ .cm-active)),
+.el-hr:has(+ .el-hr), .el-hr + .el-hr,
+hr:has(+ hr), hr + hr { --hr-color: transparent; }
+.markdown-source-view:has(:is(.HyperMD-hr:not(.HyperMD-quote), .hr) + :is(.HyperMD-hr, .hr) + .cm-line:not(:last-child)),
+.markdown-preview-view:has(> * > .el-hr + .el-hr + :not(.mod-footer)) { --file-line-width: 100%; }
+.cm-contentContainer > :has(:is(.HyperMD-hr:not(.HyperMD-quote), .hr) + :is(.HyperMD-hr, .hr) + .cm-line:not(:last-child)) { column-count: 2; }
+.markdown-preview-sizer:has(> .el-hr + .el-hr + :not(.mod-footer)) { column-count: 2; }
+.callout-content:has(> hr + hr:not(:last-child)) { column-count: 2; }
+.callout-content:has(> hr + hr ~ hr + hr:not(:last-child)) { column-count: 3; }
+/* transparent mcol callout */
+.callout[data-callout="mcol"] {
+    --callout-color: transparent;
+    --callout-icon: none;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.callout[data-callout="mcol"] > .callout-title { display: none !important; }
+.callout[data-callout="mcol"] > .callout-content { padding: 0 !important; }
+.callout[data-callout="mcol"] th { background-color: var(--mwg-pane-2) !important; }
+
+/* ----- Master Home dashboard (cssClass: master-home), glass-skinned ----- */
+body .master-home {
+    --mh-amber: var(--mwg-gold);
+    --mh-amber-soft: color-mix(in srgb, var(--mwg-gold) 70%, white);
+    --mh-amber-dim: color-mix(in srgb, var(--mwg-accent) 22%, transparent);
+    --mh-card: var(--mwg-pane-2);
+    --mh-card-hover: var(--mwg-raised);
+    --mh-card-deep: var(--mwg-bg-0);
+    --mh-text: var(--mwg-text-strong);
+    --mh-mute: var(--mwg-muted);
+}
+body .master-home .callout { border-left: none !important; border-radius: var(--radius-m) !important; }
+
+/* hero wordmark + tagline */
+body .master-home h1:first-of-type,
+body .master-home h1.inline-title {
+    font-family: var(--mwg-font-heading) !important;
+    font-size: 4.2rem !important;
+    font-weight: 500 !important;
+    font-style: italic !important;
+    text-align: center !important;
+    margin: 1.5rem 0 0.25rem 0 !important;
+    border: none !important;
+    color: var(--mwg-text-strong) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--mwg-text-strong) !important;
+}
+body .master-home > blockquote:first-of-type {
+    text-align: center !important;
+    font-style: italic !important;
+    color: var(--mwg-accent) !important;
+    background: transparent !important;
+    border: none !important;
+    max-width: 720px !important;
+    margin: 0 auto 2rem auto !important;
+    padding: 0 !important;
+}
+body .master-home > blockquote:first-of-type p { color: var(--mwg-accent) !important; margin: 0 !important; }
+
+/* section headings */
+body .master-home h2 {
+    text-align: center !important;
+    color: var(--mwg-accent) !important;
+    -webkit-text-fill-color: var(--mwg-accent) !important;
+    font-family: var(--mwg-font-heading) !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    font-size: 1.4rem !important;
+    border: none !important;
+    border-top: 1px solid var(--mh-amber-dim) !important;
+    border-bottom: 1px solid var(--mh-amber-dim) !important;
+    padding: 0.55rem 0 !important;
+    margin: 2.8rem 0 1.5rem 0 !important;
+    letter-spacing: 0.04em !important;
+}
+
+/* search pill */
+body .master-home div[data-callout-metadata*="search-pill"].callout {
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2)) !important;
+    border: none !important;
+    border-radius: 999px !important;
+    max-width: 380px !important;
+    margin: 0.5rem auto 3rem auto !important;
+    padding: 0.55rem 1.5rem !important;
+    text-align: center !important;
+    box-shadow: 0 6px 24px var(--mwg-accent-soft) !important;
+}
+body .master-home div[data-callout-metadata*="search-pill"].callout .callout-title {
+    background: transparent !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+body .master-home div[data-callout-metadata*="search-pill"].callout :is(.callout-icon, .callout-fold) { display: none !important; }
+
+/* grid engine */
+body .master-home div[data-callout="grid"].callout {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.7em;
+    background: unset !important;
+    border: unset !important;
+    padding: unset !important;
+    margin: unset !important;
+}
+body .master-home div[data-callout="grid"].callout > .callout-title { display: none !important; }
+body .master-home div[data-callout="grid"].callout > .callout-content { display: contents !important; }
+body .master-home div[data-callout="grid"].callout > .callout-content > p { flex: 0 0 0 !important; margin: 0 !important; padding: 0 !important; min-width: 0 !important; }
+
+/* pills row */
+body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout {
+    flex: 1 1 calc(16.666% - 0.7em) !important;
+    min-width: 130px !important;
+    background: var(--mh-card) !important;
+    border: 1px solid var(--mh-amber-dim) !important;
+    padding: 0.7rem 0.9rem !important;
+    min-height: 70px !important;
+    transition: border-color 0.18s, transform 0.18s, background 0.18s !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout:hover {
+    border-color: var(--mwg-accent) !important;
+    background: var(--mh-card-hover) !important;
+    transform: translateY(-2px) !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout .callout-title {
+    background: transparent !important;
+    color: var(--mwg-accent) !important;
+    font-weight: 600 !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout .callout-title a.internal-link { color: var(--mwg-accent) !important; }
+body .master-home div[data-callout="grid"] .callout :is(.callout-icon, .callout-fold) { display: none !important; }
+body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout .callout-content p { color: var(--mh-mute) !important; font-size: 0.78rem !important; margin: 0 !important; }
+
+/* featured row */
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout {
+    flex: 1 1 calc(33.333% - 0.7em) !important;
+    min-width: 240px !important;
+    background: var(--mh-card) !important;
+    border: 1px solid var(--mh-amber-dim) !important;
+    padding: 0.95rem !important;
+    min-height: 240px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout > .callout-title {
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2)) !important;
+    color: #fff !important;
+    padding: 0.22rem 0.6rem !important;
+    font-size: 0.65rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.14em !important;
+    font-weight: 700 !important;
+    width: fit-content !important;
+    border-radius: 4px !important;
+    margin-bottom: 0.8rem !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout img {
+    width: 100% !important;
+    height: 130px !important;
+    object-fit: cover !important;
+    border-radius: 6px !important;
+    margin: 0.2rem 0 0.6rem 0 !important;
+    display: block !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout :is(h3, a.internal-link) { color: var(--mh-amber-soft) !important; border: none !important; }
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout p { color: var(--mh-mute) !important; font-size: 0.85rem !important; }
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > div[data-callout-metadata*="quote-card"].callout {
+    background: linear-gradient(135deg, var(--mwg-raised), var(--mwg-pane-2)) !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > div[data-callout-metadata*="quote-card"].callout::after {
+    content: '\201C';
+    position: absolute;
+    top: -1.2rem;
+    right: 1rem;
+    font-size: 8rem;
+    color: var(--mwg-accent);
+    opacity: 0.25;
+    font-family: var(--mwg-font-heading);
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* status row */
+body .master-home div[data-callout="grid"][data-callout-metadata*="status"].callout > .callout-content > .callout {
+    flex: 1 1 calc(50% - 0.7em) !important;
+    min-width: 240px !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0.4rem 0.5rem !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="status"].callout > .callout-content > .callout > .callout-title { display: none !important; }
+body .master-home div[data-callout="grid"][data-callout-metadata*="status"].callout > .callout-content > .callout strong { color: var(--mwg-accent) !important; }
+body .master-home div[data-callout="grid"][data-callout-metadata*="status"].callout > .callout-content > .callout:last-of-type { text-align: right !important; }
+
+/* a-z strip + footer */
+body .master-home div[data-callout-metadata*="az-strip"].callout,
+body .master-home div[data-callout-metadata*="footer"].callout {
+    background: transparent !important;
+    border: none !important;
+    border-top: 1px solid var(--mh-amber-dim) !important;
+    border-bottom: 1px solid var(--mh-amber-dim) !important;
+    border-radius: 0 !important;
+    margin: 1rem 0 1.5rem 0 !important;
+    padding: 0.55rem 0 !important;
+}
+body .master-home div[data-callout-metadata*="footer"].callout { border-bottom: none !important; margin-top: 3rem !important; }
+body .master-home :is(div[data-callout-metadata*="az-strip"], div[data-callout-metadata*="footer"]).callout > .callout-title {
+    text-align: center !important;
+    justify-content: center !important;
+    color: var(--mwg-accent) !important;
+    font-family: var(--mwg-font-heading) !important;
+    background: transparent !important;
+    padding: 0 !important;
+}
+body .master-home div[data-callout-metadata*="az-strip"].callout > .callout-title { letter-spacing: 0.45em !important; }
+body .master-home :is(div[data-callout-metadata*="az-strip"], div[data-callout-metadata*="footer"]).callout :is(.callout-icon, .callout-fold) { display: none !important; }
+
+/* discover row */
+body .master-home div[data-callout="grid"][data-callout-metadata*="discover"].callout > .callout-content > .callout {
+    flex: 1 1 calc(50% - 0.7em) !important;
+    min-width: 340px !important;
+    background: transparent !important;
+    border: none !important;
+    border-top: 1px solid var(--mh-amber-dim) !important;
+    border-radius: 0 !important;
+    padding: 0.7rem 0.5rem !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="discover"].callout > .callout-content > .callout > .callout-title {
+    background: transparent !important;
+    color: var(--mwg-accent) !important;
+    font-family: var(--mwg-font-heading) !important;
+    font-style: italic !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+body .master-home div[data-callout="grid"][data-callout-metadata*="discover"].callout > .callout-content > .callout .callout-content { text-align: justify !important; line-height: 1.7 !important; font-size: 0.85rem !important; color: var(--mwg-text) !important; }
+body .master-home hr:first-of-type { display: none !important; }
+
+/* master-home responsive */
+@media (max-width: 900px) {
+    body .master-home div[data-callout="grid"][data-callout-metadata*="pills"].callout > .callout-content > .callout { flex: 1 1 calc(33.333% - 0.7em) !important; }
+    body .master-home div[data-callout="grid"][data-callout-metadata*="featured"].callout > .callout-content > .callout { flex: 1 1 calc(50% - 0.7em) !important; }
+}
+@media (max-width: 560px) {
+    body .master-home h1:first-of-type { font-size: 3rem !important; }
+    body .master-home div[data-callout="grid"] .callout { flex: 1 1 100% !important; }
+}
+
+
+/* ============================================================================
+   [Motion]  keyframes + entrance animations + reduced-motion
+   ========================================================================== */
+@keyframes mwg-fade-up   { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes mwg-fade-down { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: none; } }
+@keyframes mwg-slide-r   { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: none; } }
+@keyframes mwg-slide-l   { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+@keyframes mwg-card-in   { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes mwg-pulse     { 0% { box-shadow: 0 0 0 0 var(--mwg-accent-line); } 70% { box-shadow: 0 0 0 7px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+@keyframes mwg-view-in   { from { opacity: 0; transform: translateY(8px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+
+/* Obsidian Pro: per-note content entrance (Apple-style blur-fade) */
+body:not(.mwg-no-anim) .markdown-preview-view .markdown-preview-section,
+body:not(.mwg-no-anim) .markdown-source-view .inline-title {
+    animation: mwg-view-in var(--mwg-dur-slow) var(--mwg-ease);
+}
+/* Folder collapse arrow eases on a spring, not a linear flip */
+.tree-item-icon.collapse-icon svg,
+.collapse-icon svg.svg-icon,
+.nav-folder-collapse-indicator svg {
+    transition: transform var(--mwg-dur) var(--mwg-ease-spring);
+}
+
+/* ----- Calendar plugin: accent today cell + glowing pulse ----- */
+.calendar {
+    --color-dot: var(--mwg-accent);
+    --color-background-today: var(--mwg-accent-soft);
+    --color-text-today: var(--mwg-accent);
+    --color-arrow: var(--mwg-muted);
+    --interactive-accent: var(--mwg-accent);
+}
+.calendar .day.today,
+.calendar td.today,
+#calendar-container .today {
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2)) !important;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: var(--radius-s);
+}
+body:not(.mwg-no-anim) :is(.calendar .day.today, .calendar td.today, #calendar-container .today) {
+    position: relative;
+    animation: mwg-pulse 2.4s ease-out infinite;
+}
+
+body:not(.mwg-no-anim) .workspace-ribbon { animation: mwg-slide-r 600ms var(--mwg-ease) both; }
+body:not(.mwg-no-anim) .workspace-tab-header-container { animation: mwg-fade-down 600ms var(--mwg-ease) both; }
+body:not(.mwg-no-anim) .workspace-split.mod-left-split { animation: mwg-slide-r 600ms 60ms var(--mwg-ease) both; }
+body:not(.mwg-no-anim) .workspace-split.mod-right-split { animation: mwg-slide-l 600ms 120ms var(--mwg-ease) both; }
+body:not(.mwg-no-anim) .workspace-split.mod-root .view-content { animation: mwg-fade-up 600ms 120ms var(--mwg-ease) both; }
+body:not(.mwg-no-anim) .status-bar { animation: mwg-fade-up 600ms 200ms var(--mwg-ease) both; }
+
+/* ============================================================================
+   [Editorial]  drop cap + scroll-reveal  (Style-Settings toggleable)
+   ========================================================================== */
+
+/* #1 — Editorial drop cap: large gradient serif initial on the first paragraph.
+   Reading view: first .el-p. Live preview: first non-header line, but NOT while
+   that line is being edited (:not(.cm-active)) so the caret never fights the
+   floated glyph. Size + gradient/solid are Style-Settings controlled. */
+body.mwg-drop-cap .markdown-preview-view .markdown-preview-sizer > .el-p:first-of-type p::first-letter,
+body.mwg-drop-cap .markdown-reading-view .markdown-preview-sizer > .el-p:first-of-type p::first-letter,
+body.mwg-drop-cap .markdown-source-view .cm-content > .cm-line:not(.HyperMD-header):not(.HyperMD-quote):not(.HyperMD-list-line):not(.cm-active):first-of-type::first-letter {
+    float: left;
+    font-family: var(--mwg-font-heading);
+    font-weight: 600;
+    font-size: var(--mwg-drop-cap-size);
+    line-height: 0.78;
+    padding: 6px 10px 0 0;
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* "Solid drop cap" toggle → flat accent instead of the gradient fill */
+body.mwg-drop-cap-solid .markdown-preview-view .markdown-preview-sizer > .el-p:first-of-type p::first-letter,
+body.mwg-drop-cap-solid .markdown-reading-view .markdown-preview-sizer > .el-p:first-of-type p::first-letter,
+body.mwg-drop-cap-solid .markdown-source-view .cm-content > .cm-line:not(.HyperMD-header):not(.HyperMD-quote):not(.HyperMD-list-line):not(.cm-active):first-of-type::first-letter {
+    background: none;
+    -webkit-text-fill-color: var(--mwg-accent);
+    color: var(--mwg-accent);
+}
+
+/* #2 — Scroll reveal: structural blocks fade-rise as they enter the viewport.
+   Native scroll-driven animation (animation-timeline) — no JS. Gated behind
+   the toggle AND the master animation switch; @supports keeps older builds safe. */
+@keyframes mwg-reveal { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+@supports (animation-timeline: view()) {
+    body.mwg-scroll-reveal:not(.mwg-no-anim) .markdown-preview-view .markdown-preview-sizer
+        > :is(.el-h1, .el-h2, .el-h3, .el-callout, .el-table, .el-blockquote, .el-pre, .el-embed, .image-embed) {
+        animation: mwg-reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 2% cover 18%;
+    }
+}
+
+/* ============================================================================
+   [Divider]  editorial "---" : fading hairline + center gem
+   Scoped to TOP-LEVEL reading-view rules so it never touches callout dividers
+   or the HR-based multi-column feature. The line is built from var(--hr-color),
+   so paired "---" column dividers (which set --hr-color: transparent) stay
+   invisible automatically; the gem is suppressed for those too.
+   ========================================================================== */
+.markdown-preview-view .markdown-preview-sizer > .el-hr > hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--hr-color), transparent);
+    margin: 2.3em 0;
+    position: relative;
+    overflow: visible;
+}
+/* center diamond gem in the brand gradient, with a bg-colored ring so the
+   hairline appears to break cleanly around it */
+body:not(.mwg-hr-plain) .markdown-preview-view .markdown-preview-sizer > .el-hr > hr::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--mwg-hr-gem-size);
+    height: var(--mwg-hr-gem-size);
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2));
+    border-radius: 1.5px;
+    box-shadow: 0 0 0 5px var(--background-primary);
+}
+/* paired "---" = multi-column divider: keep it invisible + gap-free, no gem */
+.markdown-preview-sizer > .el-hr:has(+ .el-hr) > hr,
+.markdown-preview-sizer > .el-hr + .el-hr > hr { margin: 0; }
+.markdown-preview-sizer > .el-hr:has(+ .el-hr) > hr::after,
+.markdown-preview-sizer > .el-hr + .el-hr > hr::after { content: none; }
+
+/* ----- same divider, LIVE PREVIEW (CodeMirror) -----
+   The line is built from var(--hr-color) so the HR-multi-column feature (which
+   sets --hr-color: transparent on paired rules) still hides them; the gem is
+   suppressed on paired rules too. */
+/* the .cm-hr span IS the rendered rule — make it a real gradient bar and the
+   positioning context for the gem (overflow visible so the diamond can straddle
+   the 2px line). This is far more reliable than a pseudo on the .cm-line. */
+.markdown-source-view .cm-hr {
+    border: none;
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, transparent, var(--hr-color), transparent);
+    opacity: 1;
+    position: relative;
+    overflow: visible;
+}
+/* give the divider line vertical breathing room to match reading view */
+.markdown-source-view .HyperMD-hr { padding-block: 0.5em; }
+/* center diamond gem, painted on the .cm-hr element itself */
+body:not(.mwg-hr-plain) .markdown-source-view .cm-hr::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: var(--mwg-hr-gem-size);
+    height: var(--mwg-hr-gem-size);
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: linear-gradient(135deg, var(--mwg-accent), var(--mwg-accent-2));
+    border-radius: 1.5px;
+    box-shadow: 0 0 0 5px var(--background-primary);
+    pointer-events: none;
+}
+/* paired "---" = multi-column divider: no gem */
+.markdown-source-view :is(.HyperMD-hr, .hr):has(+ :is(.HyperMD-hr, .hr)) .cm-hr::after,
+.markdown-source-view :is(.HyperMD-hr, .hr) + :is(.HyperMD-hr, .hr) .cm-hr::after { content: none; }
+
+/* ----- Active-line highlight (live preview) — Style-Settings toggle ----- */
+body.mwg-active-line .markdown-source-view .cm-active.cm-line {
+    background: color-mix(in srgb, var(--mwg-accent) 6%, transparent);
+    border-radius: var(--radius-s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+}
+
+/* ============================================================================
+   [Atelier parity]  shared card + column LAYOUT, skinned with --mwg-*
+   --------------------------------------------------------------------------
+   Ported from the Atelier theme so a note authored with [!card]/[!grid]/
+   [!columns] renders with IDENTICAL geometry under Glass — only the skin (color,
+   font, shadow, radius) differs, because every value resolves through --mwg-*.
+   General [!grid] is unscoped here; the .master-home gallery keeps its own
+   higher-specificity rules, so the home dashboard is untouched.
+   ========================================================================== */
+@keyframes mwg-rise { from { transform: translateY(8px); } to { transform: translateY(0); } }
+
+/* ----- GRID container: flows any number of cards, any rows × columns.
+   !important defeats plugin CSS (Minimal/contextual-typography) that re-paints a
+   callout surface AFTER the theme — otherwise a cream box shows behind the cards
+   wherever they don't fill the grid (revealed once cards size to content). ----- */
+.callout[data-callout="grid"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1.4em 0;
+}
+.callout[data-callout="grid"] > .callout-content { background: none !important; padding: 0 !important; }
+.callout[data-callout="grid"] > .callout-title { display: none; }
+.callout[data-callout="grid"] > .callout-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--mwg-card-min, 260px), 1fr));
+    column-gap: var(--mwg-grid-gap, 1.3rem);
+    row-gap: var(--mwg-grid-row-gap, var(--mwg-grid-gap, 1.3rem));
+    padding: 0;
+    align-items: stretch;
+}
+/* zero the grid items' own margin so row-gap (not Obsidian's default .callout
+   margin) is what controls the vertical distance between card rows */
+.callout[data-callout="grid"] > .callout-content > .callout { margin: 0 !important; }
+.callout[data-callout="grid"][data-callout-metadata*="cols2"] > .callout-content { grid-template-columns: repeat(2, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols3"] > .callout-content { grid-template-columns: repeat(3, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols4"] > .callout-content { grid-template-columns: repeat(4, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols5"] > .callout-content { grid-template-columns: repeat(5, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols6"] > .callout-content { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 700px) {
+    .callout[data-callout="grid"] > .callout-content { grid-template-columns: 1fr; }
+}
+/* the blank ">" separators between child cards can leave empty paragraphs —
+   don't let them become stray grid cells */
+.callout[data-callout="grid"] > .callout-content > p:empty,
+.callout[data-callout="grid"] > .callout-content > br { display: none; }
+/* Cards stretch to equal height per row via the grid's align-items:stretch (set on
+   .callout-content above). Do NOT add `height:100%` to the children — in the user's
+   plugin-heavy vault it resolves against the preview sizer and balloons/collapses the
+   whole panel into one empty dark box. align-items:stretch alone gives equal height. */
+/* spans (place on a child card) */
+.callout[data-callout="card"][data-callout-metadata*="span2"] { grid-column: span 2; }
+.callout[data-callout="card"][data-callout-metadata*="span3"] { grid-column: span 3; }
+.callout[data-callout="card"][data-callout-metadata*="spanfull"] { grid-column: 1 / -1; }
+
+/* ----- shared card chrome (all styles) ----- */
+.callout[data-callout="card"] {
+    --cc: var(--mwg-accent);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--mwg-border-2);
+    border-radius: var(--radius-l);
+    background: var(--mwg-pane-2);
+    box-shadow: var(--mwg-shadow-card);
+    padding: 2px 4px 6px;
+    overflow: hidden;
+    transition: transform var(--mwg-dur) var(--mwg-ease), box-shadow var(--mwg-dur) var(--mwg-ease), border-color var(--mwg-dur) var(--mwg-ease);
+    animation: mwg-rise var(--mwg-dur-slow) var(--mwg-ease);
+}
+.callout[data-callout="card"]:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--mwg-shadow-card-hover);
+    border-color: color-mix(in srgb, var(--mwg-accent) 30%, var(--mwg-border-2));
+}
+.callout[data-callout="card"] > .callout-title { padding: 14px 20px 0; align-items: flex-start; }
+.callout[data-callout="card"] .callout-icon { display: none; }
+.callout[data-callout="card"] .callout-title-inner {
+    font-family: var(--mwg-font-heading);
+    font-weight: 500;
+    font-size: 1.7em;
+    line-height: 1.12;
+    letter-spacing: -0.012em;
+    color: var(--mwg-text-strong);
+}
+.callout[data-callout="card"] .callout-title-inner em { color: var(--mwg-italic-color); font-style: italic; }
+.callout[data-callout="card"] > .callout-content { padding: 6px 20px 16px; flex: 1; overflow: visible; }
+/* cards must never show their own scrollbar (Minimal/core set overflow:auto on
+   callout-content to handle wide content). Only an inner code block may scroll. */
+.callout[data-callout="card"] > .callout-content > pre { overflow-x: auto; }
+.callout[data-callout="card"] > .callout-content > :not(pre) { overflow: visible; }
+/* first h6 in a card = coral mono kicker label (e.g. ###### THE SKILL) */
+.callout[data-callout="card"] .callout-content > h6:first-child {
+    font-family: var(--mwg-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72em;
+    color: var(--mwg-accent);
+    font-weight: 500;
+    margin: 0 0 10px;
+    border: none;
+    padding: 0;
+}
+.callout[data-callout="card"] .callout-content > h6:first-child::before {
+    content: "● ";
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+}
+
+/* ----- SURFACES (direct-child scoped so they NEVER bleed into nested cards) ----- */
+.callout[data-callout="card"][data-callout-metadata*="dark"] {
+    background: var(--mwg-dark-surface) !important;
+    border-color: var(--mwg-on-dark-border);
+    color: var(--mwg-on-dark);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-title .callout-title-inner { color: var(--mwg-on-dark); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content { color: var(--mwg-on-dark-muted); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--mwg-on-dark); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > hr { border-top-color: var(--mwg-on-dark-border); }
+/* NESTED cards inside a dark surface that don't set their OWN surface still need
+   light text — Obsidian/other themes set `color` directly on every .callout, which
+   breaks inheritance and makes them render black-on-black (the four-step step cards
+   were invisible for exactly this reason, not clipping). */
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) {
+    color: var(--mwg-on-dark-muted);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) :is(h1, h2, h3, h4, p, li) {
+    color: var(--mwg-on-dark);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) p {
+    color: var(--mwg-on-dark-muted);
+}
+
+/* ACCENT hero. LIGHT = coral panel (reference); DARK = warm-dark panel (the black
+   version). All colours come from mode-aware tokens so each mode is correct. */
+.callout[data-callout="card"][data-callout-metadata*="accent"] {
+    background: var(--mwg-accent-surface);
+    border-color: transparent;
+    color: var(--mwg-on-accent);
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--mwg-on-accent); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner em,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3) em { color: var(--mwg-on-accent-em); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content { color: color-mix(in srgb, var(--mwg-on-accent) 84%, var(--mwg-accent)); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child::before { color: var(--mwg-on-accent-kick); }
+
+/* NESTED cards inside the accent hero. The 6× .callout specificity (the MCL
+   "kill any background" technique) forces the fill past any vault override. Ancestor
+   requires class .callout so it matches the hero CALLOUT only — NOT the .el-div
+   wrapper (which shares the metadata) and NOT the hero itself. Token-driven fill:
+   dark cards on the coral hero (light) / lifted cards on the dark hero (dark). */
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"],
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] > .callout-content {
+    background: var(--mwg-accent-nested) !important;
+    background-color: var(--mwg-accent-nested) !important;
+    background-image: none !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] {
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: var(--radius-l) !important;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.30) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(h1, h2, h3, h4) { color: var(--mwg-accent-nested-h) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(p, li, td) { color: var(--mwg-accent-nested-p) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(h6, em) { color: var(--mwg-accent) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout-metadata*="channels"] tr > :first-child { color: var(--mwg-accent) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] img { border-color: var(--mwg-accent) !important; }
+
+/* ----- SPLIT: side-by-side hero — text flows left, nested grid FLOATS right.
+   Float (not grid) so the card height = its content. (grid-row spanning ballooned
+   the card to a runaway height.) ----- */
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content { display: block; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content::after { content: ""; display: block; clear: both; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > p:empty,
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > br { display: none; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > .callout[data-callout="grid"] {
+    float: right;
+    width: 50%;
+    margin: 0 0 1rem 2.4rem;
+}
+@media (max-width: 820px) {
+    .callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > .callout[data-callout="grid"] {
+        float: none;
+        width: 100%;
+        margin: 1.4rem 0 0;
+    }
+}
+
+/* ----- STYLE: skill — kicker, big title, dark command bar + steps ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre {
+    position: relative;
+    background: var(--mwg-dark-surface) !important;
+    border: 1px solid var(--mwg-on-dark-border);
+    border-radius: var(--radius-m);
+    padding: 15px 104px 15px 18px;
+    margin: 6px 0 18px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre code {
+    color: var(--mwg-on-dark) !important;
+    background: none;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre .copy-code-button {
+    opacity: 1;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--mwg-on-dark);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: var(--mwg-font-mono);
+    font-size: 0.66em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol {
+    list-style: none;
+    counter-reset: step;
+    padding-left: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3.2em;
+    margin: 1em 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    font-family: var(--mwg-font-mono);
+    font-size: 0.95em;
+    color: var(--mwg-accent);
+    opacity: 0.55;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li strong {
+    display: block;
+    font-family: var(--mwg-font-heading);
+    font-weight: 600;
+    font-size: 1.12em;
+    color: var(--mwg-text-strong);
+    margin-bottom: 2px;
+}
+
+/* ----- STYLE: section — flat column block (use inside [!grid|cols3]) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])):hover {
+    transform: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 4px 0; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) h3 { margin: 4px 0 8px; font-size: 1.4em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) ul { padding-left: 1.1em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) ul > li::marker { color: var(--mwg-accent); }
+/* vertical divider between section columns (skips the first in a row) */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="section"] {
+    border-left: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+    padding-left: 1.8rem;
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="section"]:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* ----- STYLE: step — SELF-CONTAINED dark tile (ring + "Step 0N" + heading + body).
+   Built like the honor/profile cards (which render reliably) — a complete dark card,
+   NOT a transparent child relying on a special parent. Use in a plain [!grid]. ----- */
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--mwg-dark-surface) !important;
+    border: none;
+    border-radius: var(--radius-l);
+    box-shadow: none;
+    color: var(--mwg-on-dark-muted);
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])):hover {
+    transform: none; box-shadow: none; border-color: transparent;
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 30px 26px 40px; }
+/* "Step 0N" kicker: title-case (not all-caps) like the reference */
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child { text-transform: none; letter-spacing: 0.12em; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--mwg-accent) 60%, transparent);
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233d8fe6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+}
+/* per-step reference icons (file / chat / list). The spanfull hero is the grid's
+   1st child, so Step 01 = nth-of-type(2) keeps the default magnifier and the
+   file/chat/list icons sit on nth-of-type 3/4/5 (Steps 02/03/04). */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(3) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233d8fe6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z'/%3E%3Cpath d='M14 4v5h5'/%3E%3C/svg%3E");
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(4) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233d8fe6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(5) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233d8fe6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12l2 2 4-4M3 6l2 2 4-4M3 18l2 2 4-4M13 6h8M13 12h8M13 18h8'/%3E%3C/svg%3E");
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) h3 {
+    margin: 0 0 10px;
+    font-family: var(--mwg-font-heading);
+    font-weight: 500;
+    font-size: 1.55em;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: var(--mwg-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) h3 em { color: var(--mwg-italic-color); font-style: italic; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) p { color: var(--mwg-on-dark-muted); }
+
+/* grids never show their own scrollbar (Minimal/core add overflow:auto) */
+.callout[data-callout="grid"],
+.callout[data-callout="grid"] > .callout-content { overflow: visible; }
+
+/* ===== FOUR-STEP CTA — SEAMLESS SLAB ===========================================
+   Built on the rendering path PROVEN to work in the vault: each tile keeps its OWN
+   opaque dark background (the separated-tile version rendered dark with cream text).
+   To read as ONE slab we just flush the tiles (gap:0) and draw hairline dividers
+   with borders. Corner tiles round; middle tiles square. No transparent tiles, no
+   container background, no overflow:hidden — none of the things that broke before.
+   Text colours forced so they always sit cream/coral on the dark tiles. ========= */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content {
+    gap: 0 !important;
+}
+/* every tile squared by default; corner rules below round the four outer corners.
+   margin:0 is critical — Obsidian's default .callout margin is what opens the cream
+   gap between the header and the step row and stops them fusing into one slab. */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout="card"] {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+/* hairline dividers: a line under the header / between rows (each step's top) and
+   between columns (each step after the first). Adapts on wrap automatically. */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"] {
+    border-top: 1px solid color-mix(in srgb, var(--mwg-on-dark) 16%, transparent) !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"] + .callout[data-callout-metadata~="step"] {
+    border-left: 1px solid color-mix(in srgb, var(--mwg-on-dark) 16%, transparent) !important;
+}
+/* round the four outer corners of the slab (corner tiles only) */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata*="hero"] {
+    border-radius: var(--radius-l) var(--radius-l) 0 0 !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata*="hero"] + .callout[data-callout-metadata~="step"] {
+    border-bottom-left-radius: var(--radius-l) !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"]:last-of-type {
+    border-bottom-right-radius: var(--radius-l) !important;
+}
+/* force the slab's text colours so nothing can wash them out */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) :is(h1, h2, h3) { color: var(--mwg-on-dark) !important; }
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) :is(h6, em) { color: var(--mwg-accent) !important; }
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) p:not(:has(strong)) { color: var(--mwg-on-dark-muted) !important; }
+
+/* HEADER: two columns — display heading left, intro paragraph right (reference). */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="hero"] > .callout-content {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    column-gap: 48px;
+    align-items: start;
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > h6:first-child { grid-column: 1 / -1; }
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > h1 { grid-column: 1; margin-bottom: 0; }
+/* intro = the plain paragraph (no button); send it to the right column */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:not(:has(strong)) {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    align-self: start;
+    margin-top: 8px;
+}
+/* button paragraph stays in the left column, below the heading */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:has(strong) { grid-column: 1; }
+@media (max-width: 820px) {
+    .callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content { grid-template-columns: 1fr; }
+    .callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:not(:has(strong)) { grid-column: 1; grid-row: auto; text-align: left; }
+}
+
+/* ----- STYLE: profile — avatar, label, name, bio, link (centered) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) {
+    text-align: center;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 18px 16px; }
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) h6 {
+    font-family: var(--mwg-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.7em;
+    color: var(--mwg-accent);
+    border: none;
+    margin: 0 0 6px;
+    padding: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
+    font-family: var(--mwg-font-heading);
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) a {
+    font-family: var(--mwg-font-mono);
+    font-size: 0.8em;
+    border-bottom: none;
+}
+
+/* ----- STYLE: honor — dark, rank badge, ringed avatar, pull quote, stats ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--mwg-dark-surface);
+    border-color: var(--mwg-on-dark-border);
+    color: var(--mwg-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child {
+    display: inline-block;
+    background: var(--mwg-accent);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child::before { content: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--mwg-accent);
+    padding: 3px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
+    font-family: var(--mwg-font-heading);
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--mwg-on-dark);
+    margin: 8px 0 6px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) blockquote {
+    background: none;
+    border-left: 2px solid var(--mwg-accent);
+    border-radius: 0;
+    font-family: var(--mwg-font-heading);
+    font-style: italic;
+    font-size: 1.3em;
+    color: var(--mwg-on-dark);
+    padding: 4px 0 4px 18px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) strong { color: var(--mwg-accent); font-size: 1.4em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) hr {
+    border: none;
+    border-top: 1px solid var(--mwg-on-dark-border);
+    margin: 14px 0;
+}
+
+/* ----- STYLE: channels — dark list (channel ........ LABEL) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--mwg-dark-surface);
+    border-color: var(--mwg-on-dark-border);
+    color: var(--mwg-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) table {
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) thead { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) :is(th, td) {
+    border: none;
+    border-bottom: 1px solid var(--mwg-on-dark-border);
+    padding: 9px 4px;
+    background: none;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: var(--mwg-font-body);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :first-child {
+    color: var(--mwg-accent);
+    font-weight: 600;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :first-child::before { content: "# "; opacity: 0.7; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :last-child {
+    text-align: right;
+    color: var(--mwg-on-dark-muted);
+    font-family: var(--mwg-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.76em;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr:last-child :is(th, td) { border-bottom: none; }
+
+/* ----- STYLE: hero / cta — big display heading + buttons ----- */
+/* title comes from the inner "# heading"; hide the auto callout title ("Card") */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 20px 28px 26px; }
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content > :is(h1, h2) {
+    font-size: 3.2em;
+    line-height: 1.02;
+    margin: 0 0 16px;
+    border: none;
+}
+/* buttons (direct children only, so nested-card links are NOT turned into pills):
+   plain link = outline pill, bold link **[x](y)** = filled pill */
+/* buttons — style EVERY link in the hero's own content (robust to whatever
+   wrapper Obsidian puts the buttons paragraph in), then reset nested-card links.
+   plain link = outline pill, bold link **[x](y)** = filled pill */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a {
+    display: inline-block;
+    border: 1.5px solid var(--mwg-accent);
+    border-radius: 99px;
+    padding: 11px 24px;
+    margin: 16px 12px 0 0;
+    font-family: var(--mwg-font-body);
+    font-weight: 600;
+    color: var(--mwg-accent);
+    cursor: pointer;
+    transition: opacity var(--mwg-dur-fast) var(--mwg-ease);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content strong a {
+    background: var(--mwg-accent);
+    color: #fff;
+    border-color: var(--mwg-accent);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a:hover { opacity: 0.85; }
+/* links INSIDE nested cards are not buttons — undo the pill look */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content .callout a {
+    display: inline;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    font-weight: inherit;
+    color: var(--mwg-accent);
+}
+/* on the coral (accent) surface, invert buttons to dark (!important to beat the
+   high-specificity :is() default-class arm in the base button rule) */
+/* outline button — border + text follow the hero's text colour so it's visible on
+   the coral hero (light: dark ink) AND the dark hero (dark: cream) */
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a {
+    border-color: color-mix(in srgb, var(--mwg-on-accent) 55%, transparent) !important;
+    color: var(--mwg-on-accent) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a:hover {
+    border-color: var(--mwg-on-accent) !important;
+    background: color-mix(in srgb, var(--mwg-on-accent) 8%, transparent) !important;
+}
+/* filled button — light: dark pill (reference) · dark: CORAL pill (matches accent) */
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content strong a {
+    background: var(--mwg-accent-btn-bg) !important;
+    color: var(--mwg-accent-btn-fg) !important;
+    border-color: var(--mwg-accent-btn-bg) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content .callout a { color: inherit !important; border: none !important; background: none !important; }
+/* Discord glyph on any "discord" link styled as a hero button */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a[href*="discord"]::before {
+    content: "";
+    display: inline-block;
+    width: 1.05em;
+    height: 1.05em;
+    margin-right: 0.5em;
+    vertical-align: -0.16em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.27 5.33A18 18 0 0 0 14.72 4l-.2.4a13.7 13.7 0 0 0-5.04 0L9.27 4a18 18 0 0 0-4.54 1.33C2.4 8.94 1.78 12.45 2.09 15.9a18.4 18.4 0 0 0 5.6 2.83l1.13-1.55a11.6 11.6 0 0 1-1.78-.86l.44-.34a13 13 0 0 0 11.04 0l.44.34c-.55.33-1.16.61-1.78.86l1.13 1.55a18.3 18.3 0 0 0 5.6-2.83c.45-4.05-.5-7.53-2.64-10.57Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.27 5.33A18 18 0 0 0 14.72 4l-.2.4a13.7 13.7 0 0 0-5.04 0L9.27 4a18 18 0 0 0-4.54 1.33C2.4 8.94 1.78 12.45 2.09 15.9a18.4 18.4 0 0 0 5.6 2.83l1.13-1.55a11.6 11.6 0 0 1-1.78-.86l.44-.34a13 13 0 0 0 11.04 0l.44.34c-.55.33-1.16.61-1.78.86l1.13 1.55a18.3 18.3 0 0 0 5.6-2.83c.45-4.05-.5-7.53-2.64-10.57Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+
+body { --mwg-col-gap: 30px; --mwg-col-min: 200px; }
+
+.callout[data-callout="columns"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1.3em 0;
+}
+.callout[data-callout="columns"] > .callout-title { display: none; }
+.callout[data-callout="columns"] > .callout-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--mwg-col-gap);
+    align-items: stretch;
+    padding: 0 !important;
+}
+/* drop the empty-paragraph separators so they don't become stray columns */
+.callout[data-callout="columns"] > .callout-content > p:empty,
+.callout[data-callout="columns"] > .callout-content > br { display: none; }
+/* each COLUMN = a plain content block: strip all card chrome, keep note content */
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] {
+    flex: 1 1 0;
+    min-width: var(--mwg-col-min);
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation: none !important;
+}
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"]:hover { transform: none; box-shadow: none; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-title { display: none; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-content { padding: 0 !important; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-content > :first-child { margin-top: 0; }
+/* WIDTH WEIGHTS — flex-basis:0 makes the grow values exact ratios (w3:w7 = 30/70).
+   !important beats the higher-specificity base `flex:1 1 0` shorthand above. */
+.callout[data-callout="col"][data-callout-metadata~="w1"]  { flex-grow: 1 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w2"]  { flex-grow: 2 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w3"]  { flex-grow: 3 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w4"]  { flex-grow: 4 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w5"]  { flex-grow: 5 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w6"]  { flex-grow: 6 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w7"]  { flex-grow: 7 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w8"]  { flex-grow: 8 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w9"]  { flex-grow: 9 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w10"] { flex-grow: 10 !important; }
+/* optional hairline dividers between columns: [!columns|ruled] */
+.callout[data-callout="columns"][data-callout-metadata~="ruled"] > .callout-content > .callout[data-callout="col"] + .callout[data-callout="col"] {
+    border-left: 1px solid var(--mwg-border) !important;
+    padding-left: var(--mwg-col-gap) !important;
+}
+
+/* ============================================================================
+   [Atelier parity II]  text utilities · lists · font-size (Glass skin)
+   --------------------------------------------------------------------------
+   SAME class names as Atelier (.at-kicker/.at-badge/.at-display/.at-lead/
+   .at-stat/.at-mark, inline .at-xs…at-4xl/.at-fs, list markers, per-note text-*),
+   so a note using them renders in BOTH themes — here they resolve through --mwg-*,
+   so the colour is violet, the fonts are Glass's, the look is Glass's. ========= */
+
+/* ----- Lists: render AS lists with themed markers ----- */
+/* LISTS — force them to actually render AS lists (markers + indent). Some vault
+   setups flatten list indent to 0, which hides the native markers; this restores
+   them everywhere, including inside callouts/columns. */
+.markdown-rendered :is(ul, ol) {
+    padding-inline-start: 1.7em;
+    list-style-position: outside;
+    margin: 0.4em 0;
+}
+.markdown-rendered ul { list-style-type: disc; }
+.markdown-rendered ul ul { list-style-type: circle; }
+.markdown-rendered ul ul ul { list-style-type: square; }
+.markdown-rendered ol { list-style-type: decimal; }
+.markdown-rendered :is(ul, ol) > li { display: list-item; margin: 0.3em 0; }
+.markdown-rendered ul > li::marker { color: var(--mwg-accent); }
+/* ordered lists: coral mono numerals (the editorial numbered-list look) */
+.markdown-rendered ol > li::marker { color: var(--mwg-accent); font-family: var(--mwg-font-mono); font-weight: 600; }
+.markdown-source-view.mod-cm6 .cm-formatting-list { color: var(--mwg-accent); }
+/* task list checkboxes pick up the accent (and keep their item un-bulleted) */
+.markdown-rendered li.task-list-item { list-style-type: none; }
+.markdown-rendered input[type="checkbox"] { accent-color: var(--mwg-accent); }
+
+/* ----- Body font size + per-note text-sm/md/lg/xl ----- */
+/* BODY FONT SIZE — apply --font-text-size ourselves so the Style Settings slider
+   ("Body font size") and the per-note text-sm/md/lg/xl classes always take effect,
+   even if something overrides Obsidian core. Headings use em, so they scale too. */
+.markdown-preview-view,
+.markdown-reading-view .markdown-preview-sizer,
+.markdown-source-view .cm-content { font-size: var(--font-text-size); }
+
+/* ----- Per-note BODY TEXT SIZE via cssclass (frontmatter: cssclasses: [text-lg])
+   Global default lives in Style Settings → "Body font size"; these override it for
+   a single note. text-sm · text-md · text-lg · text-xl. ----------------------- */
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-sm { --font-text-size: 14px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-md { --font-text-size: 16px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-lg { --font-text-size: 18px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-xl { --font-text-size: 20px; }
+
+/* ----- Reusable inline text utilities + inline font-size ----- */
+/* at-kicker — mono small-caps coral label with a dot (the "THE SKILL" look) */
+.markdown-rendered .at-kicker {
+    font-family: var(--mwg-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.74em;
+    font-weight: 500;
+    color: var(--mwg-accent);
+}
+.markdown-rendered .at-kicker::before { content: "● "; font-size: 0.8em; vertical-align: 0.1em; }
+.markdown-rendered .at-kicker.no-dot::before { content: none; }
+
+/* at-badge — filled coral pill, mono caps (the "01 · ALL-TIME CONTRIBUTOR" look) */
+.markdown-rendered .at-badge {
+    display: inline-block;
+    font-family: var(--mwg-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72em;
+    font-weight: 500;
+    background: var(--mwg-accent);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+/* at-badge.ghost — outline variant */
+.markdown-rendered .at-badge.ghost {
+    background: transparent;
+    color: var(--mwg-accent);
+    border: 1px solid color-mix(in srgb, var(--mwg-accent) 50%, transparent);
+}
+
+/* at-display — serif display run; <em> inside shows the coral italic emphasis */
+.markdown-rendered .at-display {
+    font-family: var(--mwg-font-heading);
+    font-weight: 500;
+    font-size: 1.55em;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    color: var(--mwg-text-strong);
+}
+.markdown-rendered .at-display em { color: var(--mwg-italic-color); font-style: italic; }
+
+/* at-lead — larger, calmer intro paragraph */
+.markdown-rendered .at-lead {
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: var(--mwg-muted);
+}
+
+/* at-stat — big coral display numeral for inline stats */
+.markdown-rendered .at-stat {
+    font-family: var(--mwg-font-heading);
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--mwg-accent);
+    line-height: 1;
+}
+
+/* at-mark — soft coral highlight (alternative to ==mark==) */
+.markdown-rendered .at-mark {
+    background: color-mix(in srgb, var(--mwg-accent) 16%, transparent);
+    color: var(--mwg-text-strong);
+    border-radius: 4px;
+    padding: 0.05em 0.3em;
+}
+
+/* ----- INLINE FONT-SIZE utilities -------------------------------------------
+   Resize ANY run of text, like the colour/label classes. Wrap with inline HTML:
+       This is <span class="at-xl">much bigger</span> and <span class="at-sm">smaller</span>.
+   Sizes are em-relative, so they also scale with the global Body-font-size slider.
+   Scale: at-xs · at-sm · at-md · at-lg · at-xl · at-2xl · at-3xl · at-4xl       */
+.markdown-rendered .at-xs  { font-size: 0.72em; }
+.markdown-rendered .at-sm  { font-size: 0.85em; }
+.markdown-rendered .at-md  { font-size: 1em; }
+.markdown-rendered .at-lg  { font-size: 1.25em; }
+.markdown-rendered .at-xl  { font-size: 1.5em; }
+.markdown-rendered .at-2xl { font-size: 2em; line-height: 1.15; }
+.markdown-rendered .at-3xl { font-size: 2.75em; line-height: 1.1; }
+.markdown-rendered .at-4xl { font-size: 3.6em; line-height: 1.05; }
+/* exact pt/px control when you need it: <span class="at-fs" style="--fs: 28px">…</span> */
+.markdown-rendered .at-fs { font-size: var(--fs, 1em); }
+
+/* ============================================================================
+   [Glass identity]  give the shared elements Glass's OWN skin — frosted glass +
+   Apple spring. The CARD GEOMETRY is shared with Atelier, but here the
+   surface is translucent with a backdrop blur and a crisp top-edge highlight, so
+   it reads as glass rather than paper. Only light/default cards are frosted; the
+   dark "honor/CTA" and accent-hero surfaces stay solid for legibility.
+   ========================================================================== */
+.callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) {
+    position: relative;
+    /* translucent pane + a faint diagonal sheen so the surface reads as glass */
+    background:
+        linear-gradient(135deg,
+            color-mix(in srgb, var(--mwg-text-strong) 6%, transparent),
+            transparent 38%),
+        color-mix(in srgb, var(--mwg-pane-2) 58%, transparent);
+    -webkit-backdrop-filter: blur(var(--mwg-card-blur)) saturate(1.8);
+            backdrop-filter: blur(var(--mwg-card-blur)) saturate(1.8);
+    border: 1px solid color-mix(in srgb, var(--mwg-text-strong) 10%, transparent);
+    /* one subtle, neutral elevation — no colored or white glow */
+    box-shadow: var(--mwg-shadow-card);
+    transition:
+        transform var(--mwg-dur) var(--mwg-ease-spring),
+        box-shadow var(--mwg-dur) var(--mwg-ease),
+        border-color var(--mwg-dur) var(--mwg-ease);
+}
+/* glassy top + left rim highlight (light catches the edge, Apple-style) */
+.callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"])::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border-top: 1px solid color-mix(in srgb, var(--mwg-text-strong) 14%, transparent);
+    border-left: 1px solid color-mix(in srgb, var(--mwg-text-strong) 8%, transparent);
+    -webkit-mask: linear-gradient(135deg, #000, transparent 46%);
+            mask: linear-gradient(135deg, #000, transparent 46%);
+    pointer-events: none;
+    z-index: 0;
+}
+.callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]):hover {
+    transform: translateY(-4px) scale(1.006);
+    border-color: color-mix(in srgb, var(--mwg-accent) 30%, var(--mwg-border-strong));
+    box-shadow: var(--mwg-shadow-card-hover);
+}
+/* frost the infobox too (it shares the [!infobox] name across both themes) */
+.callout[data-callout="infobox"] {
+    background:
+        linear-gradient(135deg,
+            color-mix(in srgb, var(--mwg-text-strong) 6%, transparent),
+            transparent 38%),
+        color-mix(in srgb, var(--mwg-pane-2) 60%, transparent);
+    -webkit-backdrop-filter: blur(22px) saturate(1.6);
+            backdrop-filter: blur(22px) saturate(1.6);
+}
+
+/* ----- .at-gradient — Apple-style GRADIENT TEXT (Glass identity) ---------------
+   The SAME class renders as a single accent colour in Atelier. Override the
+   ramp per use with inline style="--grad: linear-gradient(...)". --------------- */
+.markdown-rendered .at-gradient {
+    background: var(--grad, var(--mwg-grad));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 600;
+}
+.markdown-rendered .at-gradient em { font-style: italic; -webkit-text-fill-color: transparent; }

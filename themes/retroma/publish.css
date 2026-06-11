@@ -54,6 +54,7 @@ body.theme-light {
   --titlebar-background: oklch(
     from var(--accent-1) 65% calc(c * var(--chroma-accent)) h
   ) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
@@ -844,11 +845,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -950,6 +947,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--interactive-active) !important;
   --slider-track-height: var(--size-2-3) !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-tertiary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1342,6 +1341,7 @@ body.theme-dark {
     from var(--accent-1) calc(var(--lightness-accent) - 0.12)
       calc(c * var(--chroma-accent)) h
   ) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
@@ -2130,11 +2130,7 @@ body.theme-dark {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2236,6 +2232,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--interactive-active) !important;
   --slider-track-height: var(--size-2-3) !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-tertiary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -4412,7 +4410,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7465,7 +7463,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

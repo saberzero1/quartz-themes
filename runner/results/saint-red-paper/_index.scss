@@ -40,7 +40,7 @@
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: #fff6f3 !important;
+  --code-background: #ffffff !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -48,7 +48,7 @@
   --code-function: var(--color-yellow) !important;
   --code-important: var(--color-orange) !important;
   --code-keyword: var(--color-pink) !important;
-  --code-normal: #1f2328 !important;
+  --code-normal: #8f201d !important;
   --code-operator: var(--color-red) !important;
   --code-property: var(--color-cyan) !important;
   --code-punctuation: var(--text-muted) !important;
@@ -85,6 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-styler-inline-background-colour: transparent !important;
+  --code-styler-inline-colour: #8f201d !important;
+  --code-styler-inline-colour-active: #8f201d !important;
   --graph-node-alias: #b6534b !important;
   --graph-node-url: #b6534b !important;
 
@@ -173,6 +176,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-styler-inline-background-colour: rgba(102, 48, 17, 0.36) !important;
+  --code-styler-inline-colour: #f2a35e !important;
+  --code-styler-inline-colour-active: #f2a35e !important;
   --graph-node-alias: #d8a39d !important;
   --graph-node-url: #e0aba4 !important;
 
@@ -186,7 +192,7 @@
 html[saved-theme="light"] body {
   --qt-code-header: rgb(55, 53, 47);
   --qt-code-default: rgb(118, 108, 104);
-  --qt-code-background: rgb(255, 246, 243);
+  --qt-code-background: rgb(255, 255, 255);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {
@@ -537,19 +543,19 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(239, 229, 228);
+    border: 0px solid rgb(118, 108, 104);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
-    margin-block-end: 32px;
-    margin-block-start: 0px;
+    margin: 11.2px 0px 12.8px;
+    margin-block-end: 12.8px;
+    margin-block-start: 11.2px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
-    padding-block-start: 8px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
   }
@@ -575,19 +581,19 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(239, 229, 228);
+    border: 0px solid rgb(118, 108, 104);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
-    margin-block-end: 32px;
-    margin-block-start: 0px;
+    margin: 11.2px 0px 12.8px;
+    margin-block-end: 12.8px;
+    margin-block-start: 11.2px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
-    padding-block-start: 8px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
   }
@@ -654,18 +660,18 @@ body {
       sans-serif;
     border-color: rgb(118, 108, 104);
     border-width: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    margin: 0px;
-    margin-block-end: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 0px 2.88px;
+    margin-block-end: 2.88px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
+    padding: 0.32px 0px 4.48px;
+    padding-block-end: 4.48px;
+    padding-block-start: 0.32px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
     display: flex;
@@ -686,7 +692,7 @@ body {
 
   .note-properties {
     background-color: var(--metadata-background);
-    border-color: rgb(239, 229, 228);
+    border-color: rgb(118, 108, 104);
     border-radius: 0px;
   }
 
@@ -706,7 +712,7 @@ body {
   .note-properties-tags {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border-radius: 4px;
+    border-radius: 0px;
   }
 
   .note-properties-row {
@@ -729,7 +735,7 @@ body {
     cursor: var(--cursor-link);
     filter: var(--link-external-filter);
     backdrop-filter: none;
-    box-shadow: none;
+    box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
     font-family:
       SUIT,
       -apple-system,
@@ -737,14 +743,14 @@ body {
       sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(161, 40, 34) none 0px;
-    text-decoration: underline 1px rgba(159, 29, 29, 0.22);
-    text-decoration-color: rgba(159, 29, 29, 0.22);
+    text-decoration: underline;
+    text-decoration-color: rgb(161, 40, 34);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.12s,
-      text-decoration-color 0.12s;
+      box-shadow 0.12s;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -764,7 +770,7 @@ body {
     cursor: var(--cursor-link);
     filter: none;
     backdrop-filter: none;
-    box-shadow: none;
+    box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
     font-family:
       SUIT,
       -apple-system,
@@ -772,14 +778,14 @@ body {
       sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(161, 40, 34) none 0px;
-    text-decoration: underline 1px rgba(159, 29, 29, 0.22);
-    text-decoration-color: rgba(159, 29, 29, 0.22);
+    text-decoration: underline;
+    text-decoration-color: rgb(161, 40, 34);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.12s,
-      text-decoration-color 0.12s;
+      box-shadow 0.12s;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -798,22 +804,22 @@ body {
     cursor: var(--cursor-link);
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
-    box-shadow: none;
+    box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
     font-family:
       SUIT,
       -apple-system,
       BlinkMacSystemFont,
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(161, 40, 34) none 0px;
-    text-decoration: underline 1px oklch(0.650324 0.164027 271.65 / 0.3);
+    outline: rgb(11, 102, 209) none 0px;
+    text-decoration: underline oklch(0.650324 0.164027 271.65 / 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
       color 0.12s,
-      text-decoration-color 0.12s;
+      box-shadow 0.12s;
     transform: none;
     user-select: text;
     animation-name: none;
@@ -1300,11 +1306,11 @@ body {
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
-    border: 0px solid oklch(0.650324 0.164027 271.65 / 0.15);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -1312,7 +1318,7 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: rgb(227, 86, 73);
+    color: var(--text-normal);
   }
 
   .search > .search-button {
@@ -2246,23 +2252,23 @@ body {
   }
 
   code {
-    background-color: var(--code-background);
-    border: 0px solid rgb(31, 35, 40);
-    border-top-left-radius: 6.44px;
-    border-top-right-radius: 6.44px;
-    border-bottom-left-radius: 6.44px;
-    border-bottom-right-radius: 6.44px;
+    background-color: var(--srp-inline-code-bg);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal);
+    color: var(--srp-inline-code-text);
     font-family: var(--font-monospace);
-    padding: 1.4px 5.88px;
-    padding-block-end: 1.4px;
-    padding-block-start: 1.4px;
-    padding-inline-end: 5.88px;
-    padding-inline-start: 5.88px;
+    padding: 0px 1.12px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 1.12px;
+    padding-inline-start: 1.12px;
   }
 
   pre > code,
@@ -2492,7 +2498,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    border-inline-start: 3px solid rgba(205, 38, 35, 0.32);
+    border-inline-start: 3px solid rgba(205, 38, 35, 0.36);
     color: var(--notion-text);
     font-family:
       SUIT,
@@ -2566,7 +2572,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(118, 108, 104);
+    border: 0px solid color(srgb 0.681098 0.247843 0.234667);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2647,7 +2653,7 @@ body {
     color: var(--code-normal);
     font-family: var(--font-monospace);
     font-size: var(--code-size);
-    border: 0px rgb(31, 35, 40);
+    border: 0px rgb(143, 32, 29);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2684,7 +2690,7 @@ body {
 
   .katex-display > .katex {
     display: block;
-    text-align: left;
+    text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
     font-family:
@@ -2733,7 +2739,7 @@ body {
   }
 
   h2.page-title {
-    color: var(--notion-muted);
+    color: var(--text-normal);
     font-family:
       SUIT,
       -apple-system,
@@ -2768,7 +2774,7 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border-color: rgb(107, 103, 96);
+    border-color: rgb(49, 44, 42);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -2795,7 +2801,7 @@ body {
   }
 
   .spacer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   pre:has(> code.mermaid) {
@@ -2806,11 +2812,11 @@ body {
   ul.tags > li {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border: 0px solid oklch(0.650324 0.164027 271.65 / 0.15);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   li.task-list-item input[type="checkbox"] {
@@ -2822,7 +2828,7 @@ body {
 
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color);
-    border-color: rgb(21, 146, 255);
+    border-color: rgb(11, 102, 209);
   }
 
   footer {
@@ -2911,7 +2917,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -3729,7 +3735,7 @@ body {
   }
 
   table {
-    background-color: rgb(255, 253, 252);
+    background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: var(--notion-text);
     font-family:
@@ -3739,11 +3745,11 @@ body {
       sans-serif;
     table-layout: auto;
     text-align: start;
-    border: 1px solid color(srgb 0.937255 0.898039 0.894118 / 0.88);
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    border: 0px rgb(55, 53, 47);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -3768,7 +3774,7 @@ body {
       -apple-system,
       BlinkMacSystemFont,
       sans-serif;
-    border: 0px color(srgb 0.937255 0.898039 0.894118 / 0.88);
+    border: 0px rgb(55, 53, 47);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3790,18 +3796,18 @@ body {
   }
 
   th {
-    background-color: var(--srp-markdown-table-header);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--srp-markdown-table-header-text);
     font-weight: var(--table-header-weight);
     text-align: start;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: 0.6px;
-    border-left: var(--table-column-first-border-width) solid rgb(239, 229, 228);
-    border-right: 1px solid rgb(239, 229, 228);
-    border-top: var(--table-header-border-width) solid rgb(239, 229, 228);
-    border-bottom: 1px solid rgb(234, 217, 212);
+    letter-spacing: normal;
+    border-left: var(--table-column-first-border-width) solid rgb(143, 32, 29);
+    border-right: 0px solid rgb(143, 32, 29);
+    border-top: var(--table-header-border-width) solid rgb(143, 32, 29);
+    border-bottom: 2px solid rgb(199, 74, 67);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3810,11 +3816,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 7.68px 15.2px;
-    padding-block-end: 7.68px;
-    padding-block-start: 7.68px;
-    padding-inline-end: 15.2px;
-    padding-inline-start: 15.2px;
+    padding: 9.92px 14.4px;
+    padding-block-end: 9.92px;
+    padding-block-start: 9.92px;
+    padding-inline-end: 14.4px;
+    padding-inline-start: 14.4px;
   }
 
   td {
@@ -3825,10 +3831,10 @@ body {
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border-left: var(--table-column-first-border-width) solid rgb(239, 229, 228);
-    border-right: 1px solid rgb(239, 229, 228);
-    border-top: 1px solid color(srgb 0.917647 0.85098 0.831373 / 0.88);
-    border-bottom: 1px solid rgb(239, 229, 228);
+    border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
+    border-right: 0px solid rgba(0, 0, 0, 0);
+    border-top: 0px solid rgb(55, 53, 47);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3837,22 +3843,22 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 10.24px 15.2px;
-    padding-block-end: 10.24px;
-    padding-block-start: 10.24px;
-    padding-inline-end: 15.2px;
-    padding-inline-start: 15.2px;
+    padding: 6.72px 14.4px;
+    padding-block-end: 6.72px;
+    padding-block-start: 6.72px;
+    padding-inline-end: 14.4px;
+    padding-inline-start: 14.4px;
   }
 
   tr {
-    background-color: var(--srp-markdown-table-header);
+    background-color: var(--table-header-background);
     color: rgb(55, 53, 47);
     font-family:
       SUIT,
       -apple-system,
       BlinkMacSystemFont,
       sans-serif;
-    border: 0px color(srgb 0.937255 0.898039 0.894118 / 0.88);
+    border: 0px rgb(55, 53, 47);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3872,12 +3878,13 @@ body {
   }
 
   .table-container {
-    background-color: rgb(255, 253, 252);
-    border: 1px solid color(srgb 0.937255 0.898039 0.894118 / 0.88);
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgb(55, 53, 47);
+    border-width: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
 
   img {
@@ -4207,14 +4214,14 @@ body {
   }
 
   .bases-table {
-    border-color: color(srgb 0.937255 0.898039 0.894118 / 0.88);
+    border-color: rgb(55, 53, 47);
   }
 
   .bases-table thead th {
-    background-color: var(--srp-markdown-table-header);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--srp-markdown-table-header-text);
     font-weight: var(--table-header-weight);
-    border-color: rgb(239, 229, 228) rgb(239, 229, 228) rgb(234, 217, 212);
+    border-color: rgb(143, 32, 29) rgb(143, 32, 29) rgb(199, 74, 67);
   }
 
   .bases-table tbody tr:nth-child(even) {
@@ -4245,7 +4252,7 @@ body {
 
   .canvas-node-file {
     color: var(--notion-text);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .canvas-edge-label {
@@ -6990,19 +6997,19 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(51, 41, 43);
+      border: 0px solid rgb(184, 171, 168);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 0px 0px 32px;
-      margin-block-end: 32px;
-      margin-block-start: 0px;
+      margin: 11.2px 0px 12.8px;
+      margin-block-end: 12.8px;
+      margin-block-start: 11.2px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
-      padding-block-start: 8px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
     }
@@ -7028,19 +7035,19 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(51, 41, 43);
+      border: 0px solid rgb(184, 171, 168);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 0px 0px 32px;
-      margin-block-end: 32px;
-      margin-block-start: 0px;
+      margin: 11.2px 0px 12.8px;
+      margin-block-end: 12.8px;
+      margin-block-start: 11.2px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
-      padding-block-start: 8px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
     }
@@ -7107,18 +7114,18 @@ html[saved-theme="dark"] {
         sans-serif;
       border-color: rgb(184, 171, 168);
       border-width: 0px;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
-      margin: 0px;
-      margin-block-end: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      margin: 0px 0px 2.88px;
+      margin-block-end: 2.88px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
+      padding: 0.32px 0px 4.48px;
+      padding-block-end: 4.48px;
+      padding-block-start: 0.32px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
       display: flex;
@@ -7139,7 +7146,7 @@ html[saved-theme="dark"] {
 
     .note-properties {
       background-color: var(--metadata-background);
-      border-color: rgb(51, 41, 43);
+      border-color: rgb(184, 171, 168);
       border-radius: 0px;
     }
 
@@ -7159,7 +7166,7 @@ html[saved-theme="dark"] {
     .note-properties-tags {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border-radius: 4px;
+      border-radius: 0px;
     }
 
     .note-properties-row {
@@ -7182,7 +7189,7 @@ html[saved-theme="dark"] {
       cursor: var(--cursor-link);
       filter: var(--link-external-filter);
       backdrop-filter: none;
-      box-shadow: none;
+      box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
       font-family:
         SUIT,
         -apple-system,
@@ -7190,14 +7197,14 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(240, 163, 154) none 0px;
-      text-decoration: underline 1px rgba(159, 29, 29, 0.22);
-      text-decoration-color: rgba(159, 29, 29, 0.22);
+      text-decoration: underline;
+      text-decoration-color: rgb(240, 163, 154);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.12s,
-        text-decoration-color 0.12s;
+        box-shadow 0.12s;
       transform: none;
       user-select: text;
       animation-name: none;
@@ -7217,7 +7224,7 @@ html[saved-theme="dark"] {
       cursor: var(--cursor-link);
       filter: none;
       backdrop-filter: none;
-      box-shadow: none;
+      box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
       font-family:
         SUIT,
         -apple-system,
@@ -7225,14 +7232,14 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(240, 163, 154) none 0px;
-      text-decoration: underline 1px rgba(159, 29, 29, 0.22);
-      text-decoration-color: rgba(159, 29, 29, 0.22);
+      text-decoration: underline;
+      text-decoration-color: rgb(240, 163, 154);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.12s,
-        text-decoration-color 0.12s;
+        box-shadow 0.12s;
       transform: none;
       user-select: text;
       animation-name: none;
@@ -7251,22 +7258,22 @@ html[saved-theme="dark"] {
       cursor: var(--cursor-link);
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
-      box-shadow: none;
+      box-shadow: rgba(159, 29, 29, 0.22) 0px -1px 0px 0px inset;
       font-family:
         SUIT,
         -apple-system,
         BlinkMacSystemFont,
         sans-serif;
       font-weight: var(--link-weight);
-      outline: rgb(240, 163, 154) none 0px;
-      text-decoration: underline 1px oklch(0.699903 0.121791 29.7223 / 0.3);
+      outline: rgb(240, 142, 130) none 0px;
+      text-decoration: underline oklch(0.699903 0.121791 29.7223 / 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
         color 0.12s,
-        text-decoration-color 0.12s;
+        box-shadow 0.12s;
       transform: none;
       user-select: text;
       animation-name: none;
@@ -7753,11 +7760,11 @@ html[saved-theme="dark"] {
       line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
-      border: 0px solid oklch(0.699903 0.121791 29.7223 / 0.15);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -7765,7 +7772,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: rgb(229, 192, 123);
+      color: var(--text-normal);
     }
 
     .search > .search-button {
@@ -8699,23 +8706,23 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--code-background);
-      border: 0px solid rgb(242, 163, 94);
-      border-top-left-radius: 6.44px;
-      border-top-right-radius: 6.44px;
-      border-bottom-left-radius: 6.44px;
-      border-bottom-right-radius: 6.44px;
+      background-color: var(--srp-inline-code-bg);
+      border: 1px solid rgba(242, 163, 94, 0.22);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal);
+      color: var(--srp-inline-code-text);
       font-family: var(--font-monospace);
-      padding: 1.4px 5.88px;
-      padding-block-end: 1.4px;
-      padding-block-start: 1.4px;
-      padding-inline-end: 5.88px;
-      padding-inline-start: 5.88px;
+      padding: 0px 1.12px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 1.12px;
+      padding-inline-start: 1.12px;
     }
 
     pre > code,
@@ -9019,7 +9026,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(184, 171, 168);
+      border: 0px solid color(srgb 0.862118 0.597804 0.563451);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9137,7 +9144,7 @@ html[saved-theme="dark"] {
 
     .katex-display > .katex {
       display: block;
-      text-align: left;
+      text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
       font-family:
@@ -9186,7 +9193,7 @@ html[saved-theme="dark"] {
     }
 
     h2.page-title {
-      color: var(--notion-muted);
+      color: var(--text-normal);
       font-family:
         SUIT,
         -apple-system,
@@ -9221,7 +9228,7 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border-color: rgb(185, 171, 167);
+      border-color: rgb(240, 232, 229);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9259,11 +9266,11 @@ html[saved-theme="dark"] {
     ul.tags > li {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border: 0px solid oklch(0.699903 0.121791 29.7223 / 0.15);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     li.task-list-item input[type="checkbox"] {
@@ -9364,7 +9371,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -10182,7 +10189,7 @@ html[saved-theme="dark"] {
     }
 
     table {
-      background-color: rgb(24, 20, 22);
+      background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: var(--notion-text);
       font-family:
@@ -10192,11 +10199,11 @@ html[saved-theme="dark"] {
         sans-serif;
       table-layout: auto;
       text-align: start;
-      border: 1px solid color(srgb 0.2 0.160784 0.168627 / 0.88);
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-      border-bottom-left-radius: 18px;
-      border-bottom-right-radius: 18px;
+      border: 0px rgb(240, 232, 229);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -10221,7 +10228,7 @@ html[saved-theme="dark"] {
         -apple-system,
         BlinkMacSystemFont,
         sans-serif;
-      border: 0px color(srgb 0.2 0.160784 0.168627 / 0.88);
+      border: 0px rgb(240, 232, 229);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -10243,18 +10250,18 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: var(--srp-markdown-table-header);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--srp-markdown-table-header-text);
       font-weight: var(--table-header-weight);
       text-align: start;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: 0.6px;
-      border-left: var(--table-column-first-border-width) solid rgb(51, 41, 43);
-      border-right: 1px solid rgb(51, 41, 43);
-      border-top: var(--table-header-border-width) solid rgb(51, 41, 43);
-      border-bottom: 1px solid rgb(53, 41, 43);
+      letter-spacing: normal;
+      border-left: var(--table-column-first-border-width) solid rgb(215, 203, 199);
+      border-right: 0px solid rgb(215, 203, 199);
+      border-top: var(--table-header-border-width) solid rgb(215, 203, 199);
+      border-bottom: 2px solid rgb(52, 40, 42);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -10263,11 +10270,11 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      padding: 7.68px 15.2px;
-      padding-block-end: 7.68px;
-      padding-block-start: 7.68px;
-      padding-inline-end: 15.2px;
-      padding-inline-start: 15.2px;
+      padding: 9.92px 14.4px;
+      padding-block-end: 9.92px;
+      padding-block-start: 9.92px;
+      padding-inline-end: 14.4px;
+      padding-inline-start: 14.4px;
     }
 
     td {
@@ -10278,10 +10285,10 @@ html[saved-theme="dark"] {
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border-left: var(--table-column-first-border-width) solid rgb(51, 41, 43);
-      border-right: 1px solid rgb(51, 41, 43);
-      border-top: 1px solid color(srgb 0.207843 0.160784 0.168627 / 0.88);
-      border-bottom: 1px solid rgb(51, 41, 43);
+      border-left: var(--table-column-first-border-width) solid rgba(0, 0, 0, 0);
+      border-right: 0px solid rgba(0, 0, 0, 0);
+      border-top: 0px solid rgb(240, 232, 229);
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -10290,22 +10297,22 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      padding: 10.24px 15.2px;
-      padding-block-end: 10.24px;
-      padding-block-start: 10.24px;
-      padding-inline-end: 15.2px;
-      padding-inline-start: 15.2px;
+      padding: 6.72px 14.4px;
+      padding-block-end: 6.72px;
+      padding-block-start: 6.72px;
+      padding-inline-end: 14.4px;
+      padding-inline-start: 14.4px;
     }
 
     tr {
-      background-color: var(--srp-markdown-table-header);
+      background-color: var(--table-header-background);
       color: rgb(240, 232, 229);
       font-family:
         SUIT,
         -apple-system,
         BlinkMacSystemFont,
         sans-serif;
-      border: 0px color(srgb 0.2 0.160784 0.168627 / 0.88);
+      border: 0px rgb(240, 232, 229);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -10325,12 +10332,13 @@ html[saved-theme="dark"] {
     }
 
     .table-container {
-      background-color: rgb(24, 20, 22);
-      border: 1px solid color(srgb 0.2 0.160784 0.168627 / 0.88);
-      border-top-left-radius: 18px;
-      border-top-right-radius: 18px;
-      border-bottom-left-radius: 18px;
-      border-bottom-right-radius: 18px;
+      background-color: rgba(0, 0, 0, 0);
+      border-color: rgb(240, 232, 229);
+      border-width: 0px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
 
     img {
@@ -10660,14 +10668,14 @@ html[saved-theme="dark"] {
     }
 
     .bases-table {
-      border-color: color(srgb 0.2 0.160784 0.168627 / 0.88);
+      border-color: rgb(240, 232, 229);
     }
 
     .bases-table thead th {
-      background-color: var(--srp-markdown-table-header);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--srp-markdown-table-header-text);
       font-weight: var(--table-header-weight);
-      border-color: rgb(51, 41, 43) rgb(51, 41, 43) rgb(53, 41, 43);
+      border-color: rgb(215, 203, 199) rgb(215, 203, 199) rgb(52, 40, 42);
     }
 
     .bases-table tbody tr:nth-child(even) {
@@ -10698,7 +10706,7 @@ html[saved-theme="dark"] {
 
     .canvas-node-file {
       color: var(--notion-text);
-      background-color: rgb(20, 17, 19);
+      background-color: rgba(0, 0, 0, 0);
     }
 
     .canvas-edge-label {

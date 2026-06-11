@@ -2,7 +2,7 @@
 
 /*───────────────────────────────────────────────────────
 OUROBOROS
-Version 1.0.2
+Version 1.0.4
 Created by Lemon695
 
 Inspired by Things theme (@colineckert)
@@ -48,10 +48,16 @@ body {
 	--interactive-accent-hover: #4385BE;
 
 	/* Editor Settings */
-	--font-text-theme: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial", sans-serif;
+	/* Reading font resolves through --reading-font (Style Settings: reading-font),
+	   falling back to the system sans stack. cjk-mode and style packs override
+	   --font-text-theme directly, so they win over this base selection.
+	   The UI chrome font is decoupled (kept system sans) so picking a serif
+	   reading font does not turn the whole interface serif. */
+	--font-system-ui: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial", sans-serif;
+	--font-text-theme: var(--reading-font, var(--font-system-ui));
 	--font-editor-theme: var(--font-text-theme);
 	--font-monospace-theme: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
-	--font-interface-theme: var(--font-text-theme);
+	--font-interface-theme: var(--font-system-ui);
 
 	--h1-size: clamp(1.7em, 1.55em + 0.3vw, 1.95em);
 	--h2-size: clamp(1.42em, 1.32em + 0.22vw, 1.6em);
@@ -61,9 +67,13 @@ body {
 	--h6-size: clamp(0.9em, 0.88em + 0.03vw, 0.95em);
 
 	/* Spacing & Layout */
-	--line-width: 42rem;
+	/* Reading column width resolves: advanced custom → tier select → base default.
+	   --line-width-custom / --line-width-tier are only ever written by Style Settings. */
+	--line-width: var(--line-width-custom, var(--line-width-tier, 42rem));
+	/* Bind to Obsidian's native readable-line-length variable so the width above
+	   (and every reading mode / style pack override) actually takes effect. */
+	--file-line-width: var(--line-width);
 	--line-height: 1.66;
-	--max-width: 88%;
 	--radius-s: 4px;
 	--radius-xs: 3px;
 	--radius-m: 8px;
@@ -79,6 +89,25 @@ body {
 	--font-adaptive-small: var(--font-ui-small);
 	--input-height: 32px;
 
+	/* Component tokens */
+	--surface-raised: var(--background-primary-alt);
+	--surface-overlay: var(--background-primary);
+	--surface-sunken: var(--background-secondary-alt);
+	--shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.06);
+	--shadow-raised: 0 4px 14px rgba(0, 0, 0, 0.10);
+	--shadow-popover: 0 18px 40px rgba(0, 0, 0, 0.12);
+	--shadow-floating: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+	--text-on-accent: #FFFCF0;
+	--text-on-danger: #FFFCF0;
+	--text-on-success: #FFFCF0;
+
+	/* Bullet threading tokens (M12). The indent unit mirrors Obsidian's
+	   default ~2em-per-level editor indent (tab size 4); users with a
+	   different tab size can retune it from a snippet. */
+	--ouroboros-thread-color: color-mix(in srgb, var(--interactive-accent) 62%, transparent);
+	--ouroboros-thread-width: 1.5px;
+	--ouroboros-thread-indent: 2em;
+
 	/* Style Settings defaults */
 	--link-decoration: underline;
 	--link-external-decoration: underline;
@@ -92,7 +121,7 @@ body {
 	--tag-background-color-l: #BDE1D3;
 	--tag-font-color-l: #1D694B;
 	--tag-background-color-d: #1D694B;
-	--tag-font-color-d: #FFFFFF;
+	--tag-font-color-d: #FFFCF0;
 	--progress-color-1: #ad5758;
 	--progress-color-2: #b87f4c;
 	--progress-color-3: #d2b874;
@@ -111,10 +140,22 @@ body {
 	--accent-amber-hover: #C48735;
 	--accent-sage: #4D7C6F;
 	--accent-sage-hover: #65A090;
+	--accent-ink-blue: #3E5C8A;
+	--accent-ink-blue-hover: #5A77A6;
+	--accent-clay: #A05A3F;
+	--accent-clay-hover: #BC7659;
+	--accent-slate: #5C6B73;
+	--accent-slate-hover: #76858D;
 
 	/* CJK Font Stacks */
 	--font-cjk-sc: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", sans-serif;
 	--font-cjk-serif: "Source Han Serif SC", "Noto Serif CJK SC", "Songti SC", Georgia, serif;
+
+	/* Western reading-font profiles (Style Settings: reading-font).
+	   Latin reading/writing surface only; UI chrome stays --font-system-ui. */
+	--font-western-serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Source Serif Pro", Georgia, serif;
+	--font-western-modern: Georgia, Cambria, "Times New Roman", "Liberation Serif", serif;
+	--font-western-humanist: "Inter", "Helvetica Neue", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* COLOR SCHEMES
@@ -156,6 +197,20 @@ body.theme-light.is-mobile {
 	--tx1: #100F0F;
 	--tx2: #6F6E69;
 	--tx3: #B7B5AC;
+
+	--background-primary: var(--bg1);
+	--background-primary-alt: var(--bg2);
+	--background-secondary: var(--bg2);
+	--background-secondary-alt: var(--ui1);
+	--background-modifier-border: var(--ui2);
+	--background-modifier-hover: var(--bg3);
+	--text-normal: var(--tx1);
+	--text-muted: var(--tx2);
+	--text-faint: var(--tx3);
+	--text-accent: var(--color-blue);
+	--text-accent-hover: #4385BE;
+	--interactive-accent: var(--color-blue);
+	--interactive-accent-hover: #4385BE;
 
 	--color-base-00: var(--bg1);
 	--color-base-05: var(--bg2);
@@ -279,6 +334,408 @@ body.is-mobile.theme-dark.mobile-black-background {
 	--color-base-00: black;
 }
 
+/* Style packs
+──────────────────────────────────────────────────────
+Enable one style pack at a time for the clearest result.
+Accent toggles are declared after these packs so users can
+override only the accent color without losing the full pack. */
+
+body.preset-classic-paper {
+	--bg1: #fffaf0;
+	--bg2: #f5eddd;
+	--bg3: rgba(35, 25, 13, 0.055);
+	--ui1: #eadfcb;
+	--ui2: #dccdb5;
+	--ui3: #c8b99f;
+	--tx1: #17120d;
+	--tx2: #756a5a;
+	--tx3: #aca18f;
+	--color-blue-rgb: 47, 99, 141;
+	--color-cyan-rgb: 52, 121, 118;
+	--color-yellow-rgb: 177, 133, 28;
+	--color-orange-rgb: 165, 94, 31;
+	--color-green-rgb: 92, 122, 75;
+	--color-purple-rgb: 111, 79, 143;
+	--color-pink-rgb: 154, 78, 112;
+	--color-blue: #2f638d;
+	--color-cyan: #347976;
+	--color-yellow: #b1851c;
+	--color-orange: #a55e1f;
+	--color-green: #5c7a4b;
+	--color-purple: #6f4f8f;
+	--color-pink: #9a4e70;
+	--text-accent-hover: #4f83aa;
+	--interactive-accent-hover: #4f83aa;
+	--h1-color: var(--tx1);
+	--h2-color: var(--tx1);
+	--h3-color: var(--color-blue);
+	--h4-color: var(--color-orange);
+	--quote-color: var(--color-cyan);
+	--text-highlight-bg-l: rgba(229, 188, 86, 0.34);
+	--line-height: 1.68;
+}
+
+body.theme-dark.preset-classic-paper {
+	--bg1: #1d1a16;
+	--bg2: #26221c;
+	--bg3: rgba(245, 237, 221, 0.06);
+	--ui1: #302a22;
+	--ui2: #41382d;
+	--ui3: #554a3d;
+	--tx1: #ece4d5;
+	--tx2: #beb29f;
+	--tx3: #7b7163;
+	--color-blue-rgb: 121, 161, 190;
+	--color-cyan-rgb: 115, 176, 169;
+	--color-yellow-rgb: 215, 175, 90;
+	--color-orange-rgb: 213, 139, 75;
+	--color-green-rgb: 145, 170, 112;
+	--color-purple-rgb: 167, 142, 194;
+	--color-pink-rgb: 204, 127, 157;
+	--color-blue: #79a1be;
+	--color-cyan: #73b0a9;
+	--color-yellow: #d7af5a;
+	--color-orange: #d58b4b;
+	--color-green: #91aa70;
+	--color-purple: #a78ec2;
+	--color-pink: #cc7f9d;
+	--text-accent-hover: #9ebbd0;
+	--interactive-accent-hover: #9ebbd0;
+	--text-highlight-bg-d: rgba(215, 175, 90, 0.25);
+}
+
+body.preset-things-warm {
+	--bg1: #fff7e8;
+	--bg2: #f4ead8;
+	--bg3: rgba(41, 26, 12, 0.055);
+	--ui1: #ead9bf;
+	--ui2: #dac5a6;
+	--ui3: #c5ac89;
+	--tx1: #1b130c;
+	--tx2: #766551;
+	--tx3: #aa9983;
+	--color-blue-rgb: 54, 104, 151;
+	--color-cyan-rgb: 68, 124, 112;
+	--color-yellow-rgb: 181, 135, 38;
+	--color-orange-rgb: 180, 105, 42;
+	--color-green-rgb: 101, 126, 74;
+	--color-purple-rgb: 119, 83, 146;
+	--color-pink-rgb: 163, 74, 111;
+	--color-blue: #366897;
+	--color-cyan: #447c70;
+	--color-yellow: #b58726;
+	--color-orange: #b4692a;
+	--color-green: #657e4a;
+	--color-purple: #775392;
+	--color-pink: #a34a6f;
+	--interactive-accent: var(--color-orange);
+	--interactive-accent-hover: #cf8448;
+	--text-accent: var(--color-orange);
+	--text-accent-hover: #cf8448;
+	--h2-color: var(--tx1);
+	--h3-color: var(--color-orange);
+	--h4-color: var(--color-yellow);
+	--quote-color: var(--color-green);
+	--text-highlight-bg-l: rgba(229, 177, 89, 0.32);
+}
+
+body.theme-dark.preset-things-warm {
+	--bg1: #201914;
+	--bg2: #2a211a;
+	--bg3: rgba(244, 234, 216, 0.06);
+	--ui1: #35291f;
+	--ui2: #493728;
+	--ui3: #5e4935;
+	--tx1: #efe2d2;
+	--tx2: #c2ad95;
+	--tx3: #806d58;
+	--color-blue-rgb: 119, 157, 194;
+	--color-cyan-rgb: 126, 182, 168;
+	--color-yellow-rgb: 224, 179, 91;
+	--color-orange-rgb: 211, 147, 85;
+	--color-green-rgb: 153, 175, 112;
+	--color-purple-rgb: 179, 148, 204;
+	--color-pink-rgb: 217, 129, 160;
+	--color-blue: #779dc2;
+	--color-cyan: #7eb6a8;
+	--color-yellow: #e0b35b;
+	--color-orange: #d39355;
+	--color-green: #99af70;
+	--color-purple: #b394cc;
+	--color-pink: #d981a0;
+	--interactive-accent-hover: #e2aa72;
+	--text-accent-hover: #e2aa72;
+	--text-highlight-bg-d: rgba(224, 179, 91, 0.24);
+}
+
+body.preset-research-desk {
+	--bg1: #fbfcf7;
+	--bg2: #eef3ec;
+	--bg3: rgba(17, 47, 51, 0.05);
+	--ui1: #dce6dc;
+	--ui2: #ccd8cf;
+	--ui3: #b5c5bd;
+	--tx1: #101817;
+	--tx2: #60706c;
+	--tx3: #9dadab;
+	--color-blue-rgb: 45, 103, 139;
+	--color-cyan-rgb: 43, 121, 120;
+	--color-yellow-rgb: 166, 128, 31;
+	--color-orange-rgb: 174, 100, 38;
+	--color-green-rgb: 75, 125, 99;
+	--color-purple-rgb: 92, 87, 145;
+	--color-pink-rgb: 149, 76, 114;
+	--color-blue: #2d678b;
+	--color-cyan: #2b7978;
+	--color-yellow: #a6801f;
+	--color-orange: #ae6426;
+	--color-green: #4b7d63;
+	--color-purple: #5c5791;
+	--color-pink: #954c72;
+	--interactive-accent: var(--color-cyan);
+	--interactive-accent-hover: #4c9592;
+	--text-accent: var(--color-cyan);
+	--text-accent-hover: #4c9592;
+	--h2-color: var(--tx1);
+	--h3-color: var(--color-cyan);
+	--h4-color: var(--color-blue);
+	--h4-transform: none;
+	--quote-color: var(--color-blue);
+	--line-width: 50rem;
+	--line-height: 1.7;
+	--text-highlight-bg-l: rgba(197, 182, 96, 0.3);
+}
+
+body.theme-dark.preset-research-desk {
+	--bg1: #151c1d;
+	--bg2: #1b2527;
+	--bg3: rgba(238, 243, 236, 0.06);
+	--ui1: #243033;
+	--ui2: #314044;
+	--ui3: #415357;
+	--tx1: #e3ece9;
+	--tx2: #b1c2bd;
+	--tx3: #718782;
+	--color-blue-rgb: 116, 160, 191;
+	--color-cyan-rgb: 104, 184, 179;
+	--color-yellow-rgb: 212, 183, 94;
+	--color-orange-rgb: 216, 146, 78;
+	--color-green-rgb: 143, 184, 143;
+	--color-purple-rgb: 162, 153, 206;
+	--color-pink-rgb: 208, 126, 163;
+	--color-blue: #74a0bf;
+	--color-cyan: #68b8b3;
+	--color-yellow: #d4b75e;
+	--color-orange: #d8924e;
+	--color-green: #8fb88f;
+	--color-purple: #a299ce;
+	--color-pink: #d07ea3;
+	--interactive-accent-hover: #8ed0cb;
+	--text-accent-hover: #8ed0cb;
+	--text-highlight-bg-d: rgba(212, 183, 94, 0.22);
+}
+
+body.preset-longform-book {
+	--bg1: #fff8e8;
+	--bg2: #f1e5cc;
+	--bg3: rgba(45, 26, 9, 0.052);
+	--ui1: #e3d1b2;
+	--ui2: #d1bb98;
+	--ui3: #bda37c;
+	--tx1: #21170f;
+	--tx2: #76624b;
+	--tx3: #aa967b;
+	--color-blue-rgb: 58, 91, 133;
+	--color-cyan-rgb: 70, 116, 109;
+	--color-yellow-rgb: 171, 124, 40;
+	--color-orange-rgb: 142, 91, 43;
+	--color-green-rgb: 92, 116, 70;
+	--color-purple-rgb: 104, 74, 132;
+	--color-pink-rgb: 146, 72, 103;
+	--color-blue: #3a5b85;
+	--color-cyan: #46746d;
+	--color-yellow: #ab7c28;
+	--color-orange: #8e5b2b;
+	--color-green: #5c7446;
+	--color-purple: #684a84;
+	--color-pink: #924867;
+	--interactive-accent: var(--color-orange);
+	--interactive-accent-hover: #a97543;
+	--text-accent: var(--color-orange);
+	--text-accent-hover: #a97543;
+	--font-text-theme: Georgia, "Iowan Old Style", "Songti SC", serif;
+	--font-editor-theme: var(--font-text-theme);
+	--font-interface-theme: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica", "Arial", sans-serif;
+	--h1-color: var(--tx1);
+	--h2-color: var(--tx1);
+	--h3-color: var(--color-orange);
+	--h4-color: var(--color-green);
+	--h4-transform: none;
+	--line-width: 40rem;
+	--line-height: 1.84;
+	--quote-color: var(--color-orange);
+	--text-highlight-bg-l: rgba(210, 168, 84, 0.3);
+}
+
+body.theme-dark.preset-longform-book {
+	--bg1: #1e1812;
+	--bg2: #292016;
+	--bg3: rgba(241, 229, 204, 0.06);
+	--ui1: #35291b;
+	--ui2: #473624;
+	--ui3: #5d4731;
+	--tx1: #eee0cb;
+	--tx2: #c4ad90;
+	--tx3: #806c54;
+	--color-blue-rgb: 124, 154, 190;
+	--color-cyan-rgb: 129, 177, 165;
+	--color-yellow-rgb: 218, 177, 91;
+	--color-orange-rgb: 205, 145, 82;
+	--color-green-rgb: 150, 170, 111;
+	--color-purple-rgb: 172, 143, 201;
+	--color-pink-rgb: 210, 126, 154;
+	--color-blue: #7c9abe;
+	--color-cyan: #81b1a5;
+	--color-yellow: #dab15b;
+	--color-orange: #cd9152;
+	--color-green: #96aa6f;
+	--color-purple: #ac8fc9;
+	--color-pink: #d27e9a;
+	--interactive-accent-hover: #dfad78;
+	--text-accent-hover: #dfad78;
+	--text-highlight-bg-d: rgba(218, 177, 91, 0.22);
+}
+
+body.preset-night-ink {
+	--bg1: #f7f8f3;
+	--bg2: #ecefea;
+	--bg3: rgba(20, 25, 33, 0.05);
+	--ui1: #dde3df;
+	--ui2: #ccd4d1;
+	--ui3: #b6c1bf;
+	--tx1: #11151a;
+	--tx2: #5f6974;
+	--tx3: #98a2ad;
+	--color-blue-rgb: 51, 101, 158;
+	--color-cyan-rgb: 48, 122, 139;
+	--color-yellow-rgb: 160, 126, 39;
+	--color-orange-rgb: 176, 94, 44;
+	--color-green-rgb: 83, 126, 91;
+	--color-purple-rgb: 92, 83, 153;
+	--color-pink-rgb: 151, 75, 122;
+	--color-blue: #33659e;
+	--color-cyan: #307a8b;
+	--color-yellow: #a07e27;
+	--color-orange: #b05e2c;
+	--color-green: #537e5b;
+	--color-purple: #5c5399;
+	--color-pink: #974b7a;
+	--interactive-accent: var(--color-blue);
+	--interactive-accent-hover: #557fb4;
+	--text-accent: var(--color-blue);
+	--text-accent-hover: #557fb4;
+	--h3-color: var(--color-blue);
+	--h4-color: var(--color-purple);
+	--quote-color: var(--color-cyan);
+	--text-highlight-bg-l: rgba(173, 184, 105, 0.28);
+}
+
+body.theme-dark.preset-night-ink {
+	--bg1: #111419;
+	--bg2: #171b22;
+	--bg3: rgba(233, 237, 242, 0.06);
+	--ui1: #202630;
+	--ui2: #2f3845;
+	--ui3: #445061;
+	--tx1: #e9edf2;
+	--tx2: #b8c2cf;
+	--tx3: #748091;
+	--color-blue-rgb: 122, 162, 247;
+	--color-cyan-rgb: 125, 207, 219;
+	--color-yellow-rgb: 224, 196, 108;
+	--color-orange-rgb: 230, 148, 96;
+	--color-green-rgb: 158, 206, 106;
+	--color-purple-rgb: 187, 154, 247;
+	--color-pink-rgb: 247, 118, 142;
+	--color-blue: #7aa2f7;
+	--color-cyan: #7dcfdb;
+	--color-yellow: #e0c46c;
+	--color-orange: #e69460;
+	--color-green: #9ece6a;
+	--color-purple: #bb9af7;
+	--color-pink: #f7768e;
+	--interactive-accent-hover: #9bb8ff;
+	--text-accent-hover: #9bb8ff;
+	--text-highlight-bg-d: rgba(224, 196, 108, 0.2);
+	--shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.22);
+	--shadow-popover: 0 20px 44px rgba(0, 0, 0, 0.34);
+}
+
+body.preset-low-contrast-calm {
+	--bg1: #f7f3e8;
+	--bg2: #efeadf;
+	--bg3: rgba(57, 55, 48, 0.04);
+	--ui1: #e4ded2;
+	--ui2: #d7d0c3;
+	--ui3: #c8c0b2;
+	--tx1: #3a3831;
+	--tx2: #817b6d;
+	--tx3: #aaa293;
+	--color-blue-rgb: 89, 117, 141;
+	--color-cyan-rgb: 88, 126, 118;
+	--color-yellow-rgb: 154, 130, 69;
+	--color-orange-rgb: 158, 108, 67;
+	--color-green-rgb: 106, 124, 90;
+	--color-purple-rgb: 119, 101, 141;
+	--color-pink-rgb: 145, 93, 115;
+	--color-blue: #59758d;
+	--color-cyan: #587e76;
+	--color-yellow: #9a8245;
+	--color-orange: #9e6c43;
+	--color-green: #6a7c5a;
+	--color-purple: #77658d;
+	--color-pink: #915d73;
+	--interactive-accent: var(--color-green);
+	--interactive-accent-hover: #7f936f;
+	--text-accent: var(--color-green);
+	--text-accent-hover: #7f936f;
+	--h2-color: var(--tx1);
+	--h3-color: var(--color-green);
+	--h4-color: var(--tx2);
+	--quote-color: var(--color-cyan);
+	--line-height: 1.72;
+	--text-highlight-bg-l: rgba(180, 166, 99, 0.24);
+}
+
+body.theme-dark.preset-low-contrast-calm {
+	--bg1: #21221f;
+	--bg2: #282924;
+	--bg3: rgba(239, 234, 223, 0.045);
+	--ui1: #31322c;
+	--ui2: #3d3e36;
+	--ui3: #4e4f45;
+	--tx1: #d8d4c8;
+	--tx2: #aaa496;
+	--tx3: #716d63;
+	--color-blue-rgb: 129, 154, 178;
+	--color-cyan-rgb: 130, 174, 166;
+	--color-yellow-rgb: 194, 174, 111;
+	--color-orange-rgb: 199, 146, 102;
+	--color-green-rgb: 165, 181, 140;
+	--color-purple-rgb: 168, 150, 190;
+	--color-pink-rgb: 196, 139, 162;
+	--color-blue: #819ab2;
+	--color-cyan: #82aea6;
+	--color-yellow: #c2ae6f;
+	--color-orange: #c79266;
+	--color-green: #a5b58c;
+	--color-purple: #a896be;
+	--color-pink: #c48ba2;
+	--interactive-accent-hover: #bdc9a6;
+	--text-accent-hover: #bdc9a6;
+	--text-highlight-bg-d: rgba(194, 174, 111, 0.18);
+}
+
 /* Design presets */
 body.accent-moss {
 	--interactive-accent: var(--accent-moss);
@@ -307,11 +764,115 @@ body.accent-sage {
 	--color-accent: var(--interactive-accent);
 }
 
+/* N2: expanded accent palette (ink-blue / clay / slate) */
+body.accent-ink-blue {
+	--interactive-accent: var(--accent-ink-blue);
+	--interactive-accent-hover: var(--accent-ink-blue-hover);
+	--text-accent: var(--accent-ink-blue);
+	--text-accent-hover: var(--accent-ink-blue-hover);
+	--blue: var(--interactive-accent);
+	--color-accent: var(--interactive-accent);
+}
+
+body.accent-clay {
+	--interactive-accent: var(--accent-clay);
+	--interactive-accent-hover: var(--accent-clay-hover);
+	--text-accent: var(--accent-clay);
+	--text-accent-hover: var(--accent-clay-hover);
+	--blue: var(--interactive-accent);
+	--color-accent: var(--interactive-accent);
+}
+
+body.accent-slate {
+	--interactive-accent: var(--accent-slate);
+	--interactive-accent-hover: var(--accent-slate-hover);
+	--text-accent: var(--accent-slate);
+	--text-accent-hover: var(--accent-slate-hover);
+	--blue: var(--interactive-accent);
+	--color-accent: var(--interactive-accent);
+}
+
+/* N2: paper temperature — shift the paper surfaces warmer or cooler.
+   Pick one; if both are enabled the lower rule (cool) wins deterministically. */
+body.paper-warm {
+	--background-primary: #FFFAE8;
+	--background-primary-alt: #F4EFDC;
+	--background-secondary: #F4EFDC;
+	--background-secondary-alt: #E9E2CB;
+}
+
+body.theme-dark.paper-warm {
+	--background-primary: #1C1A15;
+	--background-primary-alt: #26231C;
+	--background-secondary: #211E18;
+	--background-secondary-alt: #2C2820;
+}
+
+body.paper-cool {
+	--background-primary: #FBFBF6;
+	--background-primary-alt: #EFEFE9;
+	--background-secondary: #EFEFE9;
+	--background-secondary-alt: #E3E3DC;
+}
+
+body.theme-dark.paper-cool {
+	--background-primary: #15171A;
+	--background-primary-alt: #1E2024;
+	--background-secondary: #191B1E;
+	--background-secondary-alt: #232629;
+}
+
+/* N3: current-path / breadcrumb / active-note emphasis.
+   Only the *current* item gets a warm, low-noise accent cue; parent path
+   segments and inactive tabs stay muted so the chrome remains quiet.
+   The warm cue is color-mixed from --interactive-accent, so it follows the
+   accent presets automatically and never reads as a high-saturation block.
+   Default-on, escapable via the Style Settings toggle.
+   Obsidian's core status bar has no native breadcrumb element, so the real
+   "current path" surfaces are the view-header breadcrumb and the tab title;
+   those are what we emphasize here. */
+body.active-path-emphasis {
+	--ouroboros-active-path-accent: color-mix(in srgb, var(--interactive-accent) 70%, var(--text-normal));
+	--ouroboros-active-path-rail: color-mix(in srgb, var(--interactive-accent) 55%, transparent);
+}
+
+/* View-header breadcrumb: parent path segments read as quiet context,
+   the separators recede, and the current note title leans warm. */
+body.active-path-emphasis .view-header-breadcrumb {
+	color: var(--text-muted);
+}
+
+body.active-path-emphasis .view-header-breadcrumb-separator {
+	color: var(--text-faint);
+}
+
+body.active-path-emphasis .workspace-leaf.mod-active .view-header-title {
+	color: var(--ouroboros-active-path-accent);
+}
+
+/* Active tab: warm inner title + a thin accent top rail. Scoped to .is-active
+   only — inactive tabs keep their muted color so the tab strip stays low-noise. */
+body.active-path-emphasis .workspace-tab-header.is-active .workspace-tab-header-inner-title {
+	color: var(--ouroboros-active-path-accent);
+}
+
+body.active-path-emphasis .workspace-tab-header.is-active {
+	box-shadow: inset 0 2px 0 0 var(--ouroboros-active-path-rail);
+}
+
 /* CJK Typography Mode */
 body.cjk-mode {
 	--font-text-theme: var(--font-cjk-sc), -apple-system, BlinkMacSystemFont, sans-serif;
 	--font-editor-theme: var(--font-text-theme);
 	--font-interface-theme: var(--font-text-theme);
+}
+
+/* Line-breaking rules scoped to content surfaces only — `overflow-wrap:
+   anywhere` on the whole body let sidebar / settings UI labels break at
+   arbitrary points. */
+body.cjk-mode .markdown-rendered,
+body.cjk-mode .markdown-preview-view,
+body.cjk-mode .markdown-source-view.mod-cm6 .cm-content {
 	word-break: normal;
 	overflow-wrap: anywhere;
 	line-break: strict;
@@ -333,12 +894,28 @@ body.airy-reading {
 	--line-height: 1.72;
 }
 
+body.research-reading {
+	--line-width: 50rem;
+	--line-height: 1.68;
+	--research-reading-accent-rgb: var(--color-blue-rgb);
+	--research-reading-secondary-rgb: var(--color-cyan-rgb);
+	--research-reading-marker-rgb: var(--color-yellow-rgb);
+}
+
+body.longform-reading {
+	--line-width: 41rem;
+	--line-height: 1.82;
+	--longform-reading-accent-rgb: var(--color-orange-rgb);
+	--longform-reading-soft-rgb: var(--color-yellow-rgb);
+	--longform-reading-ink-rgb: var(--color-purple-rgb);
+}
+
 /* Make exported PDFs render correctly */
 @media print {
 	.theme-dark {
 		--highlight-mix-blend-mode: darken;
 		--color-base-30: #ebedf0;
-		--h1-color: var(--color-base-00);
+		--h1-color: var(--text-normal);
 	}
 }
 
@@ -437,6 +1014,156 @@ body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
 	padding-bottom: 0.08rem;
 }
 
+/* ───────────────────────────────────────────────────
+   M12: Bullet threading (absorbed from the Logseq-style community snippet,
+   https://gist.github.com/itsonlyjames/6d149fa636ac0bc9e278e2eab0826257)
+   Draws a continuous accent thread from each ancestor bullet down to the
+   active list line, ending in a rounded elbow into its bullet.
+   DOM honesty (P-019): editor only (Live Preview + source mode) — Reading
+   View has no cursor, so a CSS-only theme cannot know the "current" item
+   there. CM6's flat line DOM carries depth as .HyperMD-list-line-N, so the
+   ancestor path is recovered with :has() + sibling combinators: the nearest
+   depth-N line before the active line (no same-depth line in between) is the
+   depth-N ancestor. Covered to 6 levels; deeper levels keep native guides.
+   Default-on; escapable via Style Settings → New Features.
+   The thread is static (no animation), so reduce-motion needs no override.
+   Known trade-off: on active list lines the elbow occupies ::before, which
+   takes precedence over the `active-line` rail (documented).
+   ─────────────────────────────────────────────────── */
+
+/* Per-mode anchors: Live Preview and source mode indent the first marker
+   differently; everything else derives from these two variables. */
+body.bullet-threading .markdown-source-view.mod-cm6 {
+	--ouroboros-thread-base: calc(12px + 0.15em);
+	--ouroboros-thread-elbow-height: calc(0.85em - var(--ouroboros-thread-width) / 2);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6:not(.is-live-preview) {
+	--ouroboros-thread-base: calc(3px + 0.15em);
+	--ouroboros-thread-elbow-height: calc(0.925em - var(--ouroboros-thread-width) / 2);
+}
+
+/* Column assignment, one group per ancestor depth. Each group positions:
+   the ancestor's downward tail (::after), the straight pass-through lines
+   between ancestor and the next path node (::before), the child path node's
+   elbow (::before), and tints the ancestor's bullet. */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-2, .HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-2, .HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) .list-bullet,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-2.cm-active, ~ .HyperMD-list-line-2 ~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before {
+	--ouroboros-thread-offset: var(--ouroboros-thread-base);
+	--list-marker-color: var(--interactive-accent);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) .list-bullet,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-3.cm-active, ~ .HyperMD-list-line-3 ~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before {
+	--ouroboros-thread-offset: calc(var(--ouroboros-thread-base) + var(--ouroboros-thread-indent));
+	--list-marker-color: var(--interactive-accent);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) .list-bullet,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-4.cm-active, ~ .HyperMD-list-line-4 ~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before {
+	--ouroboros-thread-offset: calc(var(--ouroboros-thread-base) + 2 * var(--ouroboros-thread-indent));
+	--list-marker-color: var(--interactive-accent);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active) .list-bullet,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-5.cm-active, ~ .HyperMD-list-line-5 ~ .HyperMD-list-line-6.cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ .HyperMD-list-line-6.cm-active))::before {
+	--ouroboros-thread-offset: calc(var(--ouroboros-thread-base) + 3 * var(--ouroboros-thread-indent));
+	--list-marker-color: var(--interactive-accent);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(~ .HyperMD-list-line-6.cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(~ .HyperMD-list-line-6.cm-active) .list-bullet,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-6.cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-6:not(:has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line.cm-active)).cm-active::before {
+	--ouroboros-thread-offset: calc(var(--ouroboros-thread-base) + 4 * var(--ouroboros-thread-indent));
+	--list-marker-color: var(--interactive-accent);
+}
+
+/* Drawing: ancestor tails — vertical run from below the bullet to the line
+   bottom. Task lines shorten the run so it never crosses the checkbox. */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line.HyperMD-task-line {
+	--ouroboros-thread-tail-max: 0.275em;
+	--ouroboros-thread-elbow-max: calc(var(--ouroboros-thread-indent) - 0.35em);
+}
+
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-2, .HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::after,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):has(~ .HyperMD-list-line-6.cm-active)::after {
+	content: "";
+	position: absolute;
+	left: var(--ouroboros-thread-offset);
+	bottom: 0;
+	z-index: 0;
+	width: var(--ouroboros-thread-width);
+	height: min(calc(100% - 0.8em), var(--ouroboros-thread-tail-max, 100%));
+	border-radius: 999px;
+	background-color: var(--ouroboros-thread-color);
+}
+
+/* Drawing: straight pass-through segments on the lines between an ancestor
+   and the next path node. */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-1:not(:has(~ .HyperMD-list-line-1 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-2.cm-active, ~ .HyperMD-list-line-2 ~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-3.cm-active, ~ .HyperMD-list-line-3 ~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-4.cm-active, ~ .HyperMD-list-line-4 ~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-5.cm-active, ~ .HyperMD-list-line-5 ~ .HyperMD-list-line-6.cm-active)::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)) ~ .HyperMD-list-line:has(~ .HyperMD-list-line-6.cm-active)::before {
+	content: "";
+	position: absolute;
+	left: var(--ouroboros-thread-offset);
+	top: 0;
+	z-index: 0;
+	width: var(--ouroboros-thread-width);
+	height: 100%;
+	background-color: var(--ouroboros-thread-color);
+}
+
+/* Drawing: rounded elbows — the path node turns from the parent column into
+   its own bullet (the screenshot's curve). */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-2:not(:has(~ .HyperMD-list-line-2 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-3, .HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-3:not(:has(~ .HyperMD-list-line-3 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-4, .HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-4:not(:has(~ .HyperMD-list-line-4 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ :is(.HyperMD-list-line-5, .HyperMD-list-line-6).cm-active))::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-5:not(:has(~ .HyperMD-list-line-5 ~ .HyperMD-list-line.cm-active)):is(.cm-active, :has(~ .HyperMD-list-line-6.cm-active))::before,
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line-6:not(:has(~ .HyperMD-list-line-6 ~ .HyperMD-list-line.cm-active)).cm-active::before {
+	content: "";
+	position: absolute;
+	left: var(--ouroboros-thread-offset);
+	top: 0;
+	z-index: 0;
+	width: min(var(--ouroboros-thread-indent), var(--ouroboros-thread-elbow-max, var(--ouroboros-thread-indent)));
+	height: var(--ouroboros-thread-elbow-height);
+	background-color: transparent;
+	border-bottom: var(--ouroboros-thread-width) solid var(--ouroboros-thread-color);
+	border-left: var(--ouroboros-thread-width) solid var(--ouroboros-thread-color);
+	border-bottom-left-radius: var(--radius-m);
+}
+
+/* The active line's own bullet always joins the thread tint, including
+   top-level lines that have no elbow. */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line.cm-active .list-bullet {
+	--list-marker-color: var(--interactive-accent);
+}
+
+/* BUG-007: threads paint at z-index 0 — above the line's own background —
+   so the native "Highlight active line" backdrop (or a quote-line fill)
+   cannot swallow them. A negative z-index would sink the pseudo below any
+   line background because .cm-line is not a stacking context. List markers
+   are lifted one layer higher so the thread still never crosses bullets,
+   ordered-list numbers, or checkboxes. */
+body.bullet-threading .markdown-source-view.mod-cm6 .HyperMD-list-line :is(.list-bullet, .list-number, .task-list-item-checkbox) {
+	position: relative;
+	z-index: 1;
+}
+
 /* Link settings */
 .markdown-rendered .internal-link,
 .markdown-source-view.mod-cm6 .cm-hmd-internal-link {
@@ -486,10 +1213,11 @@ body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
 	padding-left: 0;
 }
 
+/* Hover feedback stays in-flow: the previous translateY(-1px) shifted an
+   inline element with no transition, causing abrupt text jitter. */
 .markdown-rendered .tag:hover,
 .markdown-source-view.mod-cm6 .cm-hashtag:hover {
-	filter: brightness(0.98);
-	transform: translateY(-1px);
+	filter: brightness(0.96);
 }
 
 .workspace-leaf-content[data-type='tag'] .tag-pane-tag {
@@ -508,6 +1236,36 @@ body.h2-underline .HyperMD-header.HyperMD-header-2.cm-line {
 	border-radius: 999px;
 	color: var(--text-faint);
 	padding-inline: 0.35rem;
+}
+
+/* M9-4: nested tags (#parent/child) read as a quieter, hierarchical pill.
+   Obsidian renders the whole path as one node with no sub-spans, so per-segment
+   coloring isn't possible; instead we detect nesting via the href (Reading View)
+   and add a left rail + softer fill so deep tags stay recessive and legible.
+   Live Preview's .cm-hashtag carries no path attribute, so this cue is
+   Reading-View-only by DOM limitation. */
+.markdown-rendered a.tag[href*='/'] {
+	box-shadow: inset 2px 0 0 color-mix(in srgb, currentColor 32%, transparent);
+	padding-left: 0.55em;
+}
+
+.theme-light .markdown-rendered a.tag[href*='/'] {
+	background-color: color-mix(in srgb, var(--tag-background-color-l) 72%, var(--background-primary));
+}
+
+.theme-dark .markdown-rendered a.tag[href*='/'] {
+	background-color: color-mix(in srgb, var(--tag-background-color-d) 72%, var(--background-primary));
+}
+
+/* M9-4: tag pane nesting guide — a quiet rail clarifies parent/child depth. */
+.workspace-leaf-content[data-type='tag'] .tree-item-children {
+	margin-left: 0.55rem;
+	padding-left: 0.35rem;
+	border-left: 1px solid color-mix(in srgb, var(--background-modifier-border) 58%, transparent);
+}
+
+.workspace-leaf-content[data-type='tag'] .tree-item.is-collapsed > .tree-item-self .tag-pane-tag-count {
+	color: var(--text-muted);
 }
 
 /* Blockquote */
@@ -530,6 +1288,432 @@ body:not(.default-font-color) span.cm-quote.cm-quote-1 {
 	background-color: var(--background-primary-alt);
 	padding-left: 0.7rem;
 	padding-right: 0.4rem;
+}
+
+/* Research reading mode */
+body.research-reading .markdown-preview-view,
+body.research-reading .markdown-source-view.mod-cm6,
+.markdown-preview-view.research-reading,
+.markdown-source-view.mod-cm6.research-reading {
+	--line-width: 50rem;
+	--line-height: 1.68;
+	--research-reading-accent-rgb: var(--color-blue-rgb);
+	--research-reading-secondary-rgb: var(--color-cyan-rgb);
+	--research-reading-marker-rgb: var(--color-yellow-rgb);
+}
+
+body.research-reading .markdown-preview-view,
+.markdown-preview-view.research-reading {
+	background:
+		radial-gradient(circle at top center, rgba(var(--research-reading-accent-rgb), 0.045), transparent 34rem),
+		var(--background-primary);
+}
+
+body.research-reading .markdown-rendered :is(p, li, blockquote),
+.markdown-preview-view.research-reading :is(p, li, blockquote),
+body.research-reading .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header-1):not(.HyperMD-header-2):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(.HyperMD-header-6),
+.markdown-source-view.mod-cm6.research-reading .cm-line:not(.HyperMD-header-1):not(.HyperMD-header-2):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(.HyperMD-header-6) {
+	line-height: var(--line-height);
+}
+
+body.research-reading .markdown-rendered h2,
+.markdown-preview-view.research-reading h2,
+body.research-reading .markdown-source-view.mod-cm6 .HyperMD-header-2,
+.markdown-source-view.mod-cm6.research-reading .HyperMD-header-2 {
+	border-bottom: 1px solid color-mix(in srgb, rgb(var(--research-reading-accent-rgb)) 28%, var(--background-modifier-border));
+	padding-bottom: 0.35rem;
+}
+
+body.research-reading .markdown-rendered h3,
+.markdown-preview-view.research-reading h3 {
+	position: relative;
+}
+
+body.research-reading .markdown-rendered h3::before,
+.markdown-preview-view.research-reading h3::before {
+	content: "";
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	margin-inline-end: 0.45em;
+	border-radius: 999px;
+	background-color: rgba(var(--research-reading-secondary-rgb), 0.55);
+	vertical-align: 0.08em;
+}
+
+body.research-reading .markdown-rendered blockquote,
+.markdown-preview-view.research-reading blockquote {
+	background:
+		linear-gradient(90deg, rgba(var(--research-reading-secondary-rgb), 0.1), transparent 68%),
+		var(--background-primary-alt);
+	border-left-color: rgba(var(--research-reading-secondary-rgb), 0.58);
+	box-shadow: inset 0 0 0 1px rgba(var(--research-reading-secondary-rgb), 0.08);
+}
+
+body.research-reading .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote,
+.markdown-source-view.mod-cm6.research-reading .cm-line.HyperMD-quote {
+	background:
+		linear-gradient(90deg, rgba(var(--research-reading-secondary-rgb), 0.1), transparent 68%),
+		var(--background-primary-alt);
+	border-left-color: rgba(var(--research-reading-secondary-rgb), 0.58);
+}
+
+body.research-reading .markdown-rendered mark,
+.markdown-preview-view.research-reading mark,
+body.research-reading .markdown-source-view.mod-cm6 span.cm-highlight,
+.markdown-source-view.mod-cm6.research-reading span.cm-highlight {
+	background:
+		linear-gradient(180deg, transparent 56%, rgba(var(--research-reading-marker-rgb), 0.38) 0),
+		transparent;
+	border-radius: 0.12em;
+	box-decoration-break: clone;
+	-webkit-box-decoration-break: clone;
+	padding-inline: 0.05em;
+}
+
+body.research-reading .markdown-rendered .external-link,
+.markdown-preview-view.research-reading .external-link,
+body.research-reading .markdown-source-view.mod-cm6 :is(.cm-link, .cm-url),
+.markdown-source-view.mod-cm6.research-reading :is(.cm-link, .cm-url) {
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.18em;
+	background-color: rgba(var(--research-reading-accent-rgb), 0.055);
+	border-radius: var(--radius-xs);
+	padding-inline: 0.08em;
+}
+
+body.research-reading .markdown-rendered .internal-link,
+.markdown-preview-view.research-reading .internal-link,
+body.research-reading .markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6.research-reading .cm-hmd-internal-link {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
+}
+
+body.research-reading .markdown-rendered :is(.footnote-ref, sup),
+.markdown-preview-view.research-reading :is(.footnote-ref, sup) {
+	font-size: 0.78em;
+}
+
+body.research-reading .markdown-rendered .footnote-ref a,
+.markdown-preview-view.research-reading .footnote-ref a {
+	background-color: rgba(var(--research-reading-accent-rgb), 0.12);
+	border: 1px solid rgba(var(--research-reading-accent-rgb), 0.2);
+	border-radius: 999px;
+	color: var(--text-accent);
+	padding: 0.02em 0.38em;
+	text-decoration: none;
+}
+
+body.research-reading .markdown-rendered :is(.footnotes, section.footnotes),
+.markdown-preview-view.research-reading :is(.footnotes, section.footnotes) {
+	margin-top: 2.4rem;
+	padding: 1rem 1.15rem;
+	border: 1px solid rgba(var(--research-reading-accent-rgb), 0.16);
+	border-radius: var(--radius-l);
+	background-color: rgba(var(--research-reading-accent-rgb), 0.045);
+	color: var(--text-muted);
+}
+
+body.research-reading .markdown-rendered :is(.footnotes, section.footnotes)::before,
+.markdown-preview-view.research-reading :is(.footnotes, section.footnotes)::before {
+	content: "References";
+	display: block;
+	margin-bottom: 0.65rem;
+	color: var(--text-normal);
+	font-size: var(--font-ui-small);
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+body.research-reading .markdown-rendered table,
+.markdown-preview-view.research-reading table {
+	font-size: 0.94em;
+}
+
+body.research-reading .markdown-rendered thead th,
+.markdown-preview-view.research-reading thead th {
+	background-color: rgba(var(--research-reading-accent-rgb), 0.07);
+}
+
+body.research-reading .callout[data-callout='annotation'],
+.markdown-preview-view.research-reading .callout[data-callout='annotation'],
+body.research-reading .callout[data-callout='synopsis'],
+.markdown-preview-view.research-reading .callout[data-callout='synopsis'],
+body.research-reading .callout[data-callout='tldr'],
+.markdown-preview-view.research-reading .callout[data-callout='tldr'] {
+	border-radius: var(--radius-l);
+	box-shadow: inset 3px 0 0 rgba(var(--research-reading-secondary-rgb), 0.36), var(--shadow-soft);
+}
+
+/* Longform reading mode */
+body.longform-reading .markdown-preview-view,
+body.longform-reading .markdown-source-view.mod-cm6,
+.markdown-preview-view.longform-reading,
+.markdown-source-view.mod-cm6.longform-reading {
+	--line-width: 41rem;
+	--line-height: 1.82;
+	--longform-reading-accent-rgb: var(--color-orange-rgb);
+	--longform-reading-soft-rgb: var(--color-yellow-rgb);
+	--longform-reading-ink-rgb: var(--color-purple-rgb);
+}
+
+body.longform-reading .markdown-preview-view,
+.markdown-preview-view.longform-reading {
+	background:
+		radial-gradient(circle at 50% 0, rgba(var(--longform-reading-soft-rgb), 0.055), transparent 30rem),
+		linear-gradient(180deg, transparent, rgba(var(--longform-reading-soft-rgb), 0.025)),
+		var(--background-primary);
+}
+
+body.longform-reading .markdown-rendered,
+.markdown-preview-view.longform-reading,
+body.longform-reading .markdown-source-view.mod-cm6 .cm-content,
+.markdown-source-view.mod-cm6.longform-reading .cm-content {
+	letter-spacing: 0.003em;
+}
+
+body.longform-reading .markdown-rendered :is(p, li),
+.markdown-preview-view.longform-reading :is(p, li),
+body.longform-reading .markdown-source-view.mod-cm6 .cm-line:not(.HyperMD-header-1):not(.HyperMD-header-2):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(.HyperMD-header-6),
+.markdown-source-view.mod-cm6.longform-reading .cm-line:not(.HyperMD-header-1):not(.HyperMD-header-2):not(.HyperMD-header-3):not(.HyperMD-header-4):not(.HyperMD-header-5):not(.HyperMD-header-6) {
+	line-height: var(--line-height);
+}
+
+body.longform-reading .markdown-rendered p,
+.markdown-preview-view.longform-reading p {
+	margin-block: 0 1.05rem;
+}
+
+body.longform-reading .markdown-rendered :is(h1, h2),
+.markdown-preview-view.longform-reading :is(h1, h2),
+body.longform-reading .markdown-source-view.mod-cm6 :is(.HyperMD-header-1, .HyperMD-header-2),
+.markdown-source-view.mod-cm6.longform-reading :is(.HyperMD-header-1, .HyperMD-header-2) {
+	text-align: center;
+}
+
+body.longform-reading .markdown-rendered h1,
+.markdown-preview-view.longform-reading h1,
+body.longform-reading .inline-title,
+.markdown-source-view.mod-cm6.longform-reading .inline-title {
+	margin-block: 0.6rem 1.6rem;
+	color: color-mix(in srgb, var(--text-normal) 86%, rgb(var(--longform-reading-ink-rgb)));
+	letter-spacing: -0.02em;
+}
+
+body.longform-reading .markdown-rendered h2,
+.markdown-preview-view.longform-reading h2,
+body.longform-reading .markdown-source-view.mod-cm6 .HyperMD-header-2,
+.markdown-source-view.mod-cm6.longform-reading .HyperMD-header-2 {
+	margin-top: 3.2rem;
+	margin-bottom: 1.25rem;
+	border-bottom: 0;
+	color: color-mix(in srgb, var(--text-normal) 82%, rgb(var(--longform-reading-accent-rgb)));
+}
+
+body.longform-reading .markdown-rendered h2::before,
+body.longform-reading .markdown-rendered h2::after,
+.markdown-preview-view.longform-reading h2::before,
+.markdown-preview-view.longform-reading h2::after {
+	content: "";
+	display: inline-block;
+	width: 2.4rem;
+	height: 1px;
+	margin-inline: 0.8rem;
+	background-color: color-mix(in srgb, rgb(var(--longform-reading-accent-rgb)) 32%, transparent);
+	vertical-align: middle;
+}
+
+body.longform-reading .markdown-rendered h3,
+.markdown-preview-view.longform-reading h3 {
+	margin-top: 2rem;
+	color: var(--text-muted);
+	font-size: 0.92em;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body.longform-reading .markdown-rendered h1 + p,
+body.longform-reading .markdown-rendered h2 + p,
+.markdown-preview-view.longform-reading h1 + p,
+.markdown-preview-view.longform-reading h2 + p {
+	color: color-mix(in srgb, var(--text-normal) 88%, rgb(var(--longform-reading-ink-rgb)));
+	font-size: 1.04em;
+}
+
+body.longform-reading .markdown-rendered h1 + p::first-letter,
+body.longform-reading .markdown-rendered h2 + p::first-letter,
+.markdown-preview-view.longform-reading h1 + p::first-letter,
+.markdown-preview-view.longform-reading h2 + p::first-letter {
+	float: left;
+	margin: 0.08em 0.12em 0 0;
+	color: color-mix(in srgb, var(--text-normal) 58%, rgb(var(--longform-reading-accent-rgb)));
+	font-size: 3.4em;
+	font-weight: 700;
+	line-height: 0.86;
+}
+
+body.longform-reading .markdown-rendered blockquote,
+.markdown-preview-view.longform-reading blockquote {
+	margin: 1.4rem auto 1.6rem;
+	padding: 0.75rem 1.1rem;
+	max-width: 34rem;
+	border-left: 0;
+	border-top: 1px solid rgba(var(--longform-reading-accent-rgb), 0.2);
+	border-bottom: 1px solid rgba(var(--longform-reading-accent-rgb), 0.16);
+	border-radius: var(--radius-m);
+	background-color: rgba(var(--longform-reading-soft-rgb), 0.055);
+	color: color-mix(in srgb, var(--text-muted) 82%, rgb(var(--longform-reading-ink-rgb)));
+	text-align: center;
+}
+
+body.longform-reading .markdown-source-view.mod-cm6 .cm-line.HyperMD-quote,
+.markdown-source-view.mod-cm6.longform-reading .cm-line.HyperMD-quote {
+	background-color: rgba(var(--longform-reading-soft-rgb), 0.055);
+	border-left-color: rgba(var(--longform-reading-accent-rgb), 0.32);
+}
+
+body.longform-reading .markdown-rendered hr,
+.markdown-preview-view.longform-reading hr {
+	position: relative;
+	height: 2.4rem;
+	margin: 2.2rem 0;
+	border: 0;
+}
+
+body.longform-reading .markdown-rendered hr::after,
+.markdown-preview-view.longform-reading hr::after {
+	content: "✦";
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: color-mix(in srgb, rgb(var(--longform-reading-accent-rgb)) 58%, var(--text-faint));
+	font-size: 0.85rem;
+	letter-spacing: 0.9rem;
+}
+
+body.longform-reading .markdown-rendered :is(ul, ol),
+.markdown-preview-view.longform-reading :is(ul, ol) {
+	margin-block: 0.6rem 1.2rem;
+}
+
+body.longform-reading .markdown-rendered li,
+.markdown-preview-view.longform-reading li {
+	margin-bottom: 0.36rem;
+}
+
+body.longform-reading .markdown-rendered img,
+.markdown-preview-view.longform-reading img {
+	display: block;
+	margin: 1.4rem auto;
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-soft);
+}
+
+body.longform-reading .markdown-rendered .callout,
+.markdown-preview-view.longform-reading .callout {
+	margin-block: 1.35rem;
+}
+
+/* ───────────────────────────────────────────────────
+   Numbered headings (optional chapter-feel toggle)
+   Adds automatic outline numbers (1, 1.1, 1.1.1, 1.1.1.1) to H1–H4.
+   Covers both Reading View and Live Preview; numbers reset per note.
+   ─────────────────────────────────────────────────── */
+
+/* Reading View — counter scope resets per rendered note */
+body.numbered-headings .markdown-rendered {
+	counter-reset: ouro-h1 ouro-h2 ouro-h3 ouro-h4;
+}
+body.numbered-headings .markdown-rendered h1 {
+	counter-reset: ouro-h2 ouro-h3 ouro-h4;
+	counter-increment: ouro-h1;
+}
+body.numbered-headings .markdown-rendered h2 {
+	counter-reset: ouro-h3 ouro-h4;
+	counter-increment: ouro-h2;
+}
+body.numbered-headings .markdown-rendered h3 {
+	counter-reset: ouro-h4;
+	counter-increment: ouro-h3;
+}
+body.numbered-headings .markdown-rendered h4 {
+	counter-increment: ouro-h4;
+}
+body.numbered-headings .markdown-rendered h1::before {
+	content: counter(ouro-h1) "\2002";
+}
+body.numbered-headings .markdown-rendered h2::before {
+	content: counter(ouro-h1) "." counter(ouro-h2) "\2002";
+}
+body.numbered-headings .markdown-rendered h3::before {
+	content: counter(ouro-h1) "." counter(ouro-h2) "." counter(ouro-h3) "\2002";
+}
+body.numbered-headings .markdown-rendered h4::before {
+	content: counter(ouro-h1) "." counter(ouro-h2) "." counter(ouro-h3) "." counter(ouro-h4) "\2002";
+}
+body.numbered-headings .markdown-rendered :is(h1, h2, h3, h4)::before {
+	color: var(--text-faint);
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+/* Keep the counter accurate: do not number headings nested in callouts/quotes */
+body.numbered-headings .markdown-rendered :is(.callout, blockquote) :is(h1, h2, h3, h4) {
+	counter-increment: none;
+	counter-reset: none;
+}
+body.numbered-headings .markdown-rendered :is(.callout, blockquote) :is(h1, h2, h3, h4)::before {
+	content: none;
+}
+
+/* Live Preview (CM6) — parallel counter scope on the editor content */
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-content {
+	counter-reset: ouro-sh1 ouro-sh2 ouro-sh3 ouro-sh4;
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1 {
+	counter-reset: ouro-sh2 ouro-sh3 ouro-sh4;
+	counter-increment: ouro-sh1;
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2 {
+	counter-reset: ouro-sh3 ouro-sh4;
+	counter-increment: ouro-sh2;
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3 {
+	counter-reset: ouro-sh4;
+	counter-increment: ouro-sh3;
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4 {
+	counter-increment: ouro-sh4;
+}
+/* Number is anchored on the persistent .cm-line (not the .cm-formatting-header
+   markers, which Obsidian hides when the line is not being edited). */
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::before {
+	content: counter(ouro-sh1) "\2002";
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2::before {
+	content: counter(ouro-sh1) "." counter(ouro-sh2) "\2002";
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before {
+	content: counter(ouro-sh1) "." counter(ouro-sh2) "." counter(ouro-sh3) "\2002";
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4::before {
+	content: counter(ouro-sh1) "." counter(ouro-sh2) "." counter(ouro-sh3) "." counter(ouro-sh4) "\2002";
+}
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3, .HyperMD-header-4)::before,
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-1::before,
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-2::before,
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-3::before,
+body.numbered-headings .markdown-source-view.mod-cm6 .cm-line.HyperMD-header-4::before {
+	color: var(--text-faint);
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
 }
 
 /* Bold font */
@@ -565,15 +1749,41 @@ body.fancy-highlight span.search-result-file-matched-text {
 			var(--highlight-background-color-underline) 2px,
 			var(--highlight-background-color--active) 2px,
 			var(--highlight-background-color--active) 100%
-		) !important;
-	background-color: transparent !important;
+		);
+	background-color: transparent;
+}
+
+/* ───────────────────────────────────────────────────
+   N1: Multi-color highlight pens (low-saturation, paper-friendly)
+   Apply via HTML <mark class="green">…</mark> in notes, or via a highlight
+   plugin that emits these classes. Reading View only — ==…== highlights in
+   Live Preview can't carry a per-instance class. Each class only sets the
+   --ouro-hl-rgb carrier; the two rules below consume it for light/dark. */
+.markdown-rendered mark.red { --ouro-hl-rgb: var(--color-red-rgb); }
+.markdown-rendered mark.orange { --ouro-hl-rgb: var(--color-orange-rgb); }
+.markdown-rendered mark.yellow { --ouro-hl-rgb: var(--color-yellow-rgb); }
+.markdown-rendered mark.green { --ouro-hl-rgb: var(--color-green-rgb); }
+.markdown-rendered mark.cyan { --ouro-hl-rgb: var(--color-cyan-rgb); }
+.markdown-rendered mark.blue { --ouro-hl-rgb: var(--color-blue-rgb); }
+.markdown-rendered mark.purple { --ouro-hl-rgb: var(--color-purple-rgb); }
+.markdown-rendered mark.pink { --ouro-hl-rgb: var(--color-pink-rgb); }
+
+.markdown-rendered mark:is(.red, .orange, .yellow, .green, .cyan, .blue, .purple, .pink) {
+	background-color: rgba(var(--ouro-hl-rgb), 0.2);
+	color: var(--text-normal);
+	border-radius: var(--radius-xs);
+	padding: 0.02em 0.14em;
+}
+
+.theme-dark .markdown-rendered mark:is(.red, .orange, .yellow, .green, .cyan, .blue, .purple, .pink) {
+	background-color: rgba(var(--ouro-hl-rgb), 0.28);
 }
 
 /* Markdown formatting */
 .cm-formatting-strong,
 .cm-formatting-em,
 .cm-formatting.cm-formatting-quote {
-	color: var(--text-formatted) !important;
+	color: var(--text-formatted);
 	font-weight: var(--normal-weight);
 	letter-spacing: -0.02em;
 }
@@ -588,9 +1798,174 @@ body.fancy-highlight span.search-result-file-matched-text {
 }
 
 /* Image card */
-img {
-	border-radius: 4px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+.markdown-rendered img,
+.markdown-source-view.mod-cm6 .image-embed img,
+.markdown-source-view.mod-cm6 .media-embed img {
+	border-radius: var(--radius-s);
+	box-shadow: var(--shadow-soft);
+}
+
+.markdown-rendered :is(.image-embed, .internal-embed.image-embed),
+.markdown-source-view.mod-cm6 :is(.image-embed, .internal-embed.image-embed) {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.markdown-rendered :is(.image-embed, .internal-embed.image-embed) img,
+.markdown-source-view.mod-cm6 :is(.image-embed, .internal-embed.image-embed) img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Image / figure / gallery helper classes */
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+	--ouroboros-figure-max-width: min(54rem, calc(100vw - 3rem));
+	--ouroboros-figure-wide-width: min(78rem, calc(100vw - 3rem));
+	--ouroboros-gallery-min-width: 11rem;
+	--ouroboros-gallery-gap: 0.75rem;
+}
+
+.markdown-preview-view.img-frame :is(.image-embed, .internal-embed.image-embed, img),
+.markdown-source-view.mod-cm6.img-frame :is(.image-embed, .internal-embed.image-embed, img) {
+	border-radius: var(--radius-l);
+}
+
+.markdown-preview-view.img-frame :is(.image-embed, .internal-embed.image-embed),
+.markdown-source-view.mod-cm6.img-frame :is(.image-embed, .internal-embed.image-embed) {
+	padding: 0.35rem;
+	background-color: var(--surface-overlay);
+	box-shadow: 0 0 0 1px var(--background-modifier-border), var(--shadow-soft);
+}
+
+.markdown-preview-view.img-frame :is(.image-embed, .internal-embed.image-embed) img,
+.markdown-source-view.mod-cm6.img-frame :is(.image-embed, .internal-embed.image-embed) img,
+.markdown-preview-view.img-frame > img,
+.markdown-source-view.mod-cm6.img-frame img {
+	display: block;
+	box-shadow: none;
+}
+
+.markdown-preview-view.img-wide :is(.image-embed, .internal-embed.image-embed, figure),
+.markdown-source-view.mod-cm6.img-wide :is(.image-embed, .internal-embed.image-embed, figure) {
+	display: block;
+	width: var(--ouroboros-figure-wide-width);
+	max-width: calc(100vw - 3rem);
+	margin: 1.3rem 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+.markdown-preview-view.img-wide :is(.image-embed, .internal-embed.image-embed) img,
+.markdown-source-view.mod-cm6.img-wide :is(.image-embed, .internal-embed.image-embed) img,
+.markdown-preview-view.img-wide figure img {
+	width: 100%;
+	max-height: min(78vh, 48rem);
+	object-fit: contain;
+}
+
+.markdown-preview-view.img-grid,
+.markdown-source-view.mod-cm6.img-grid {
+	--ouroboros-gallery-min-width: 10rem;
+}
+
+.markdown-preview-view.img-grid :is(p, div):has(> .image-embed:nth-child(2)),
+.markdown-preview-view.img-grid :is(p, div):has(> img:nth-child(2)),
+.markdown-source-view.mod-cm6.img-grid .cm-preview-code-block:has(.image-embed:nth-child(2)) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--ouroboros-gallery-min-width)), 1fr));
+	gap: var(--ouroboros-gallery-gap);
+	align-items: stretch;
+}
+
+.markdown-preview-view.img-grid :is(p, div):has(> .image-embed:nth-child(2)) > :is(.image-embed, .internal-embed.image-embed),
+.markdown-preview-view.img-grid :is(p, div):has(> img:nth-child(2)) > img {
+	display: block;
+	margin: 0;
+}
+
+.markdown-preview-view.img-grid :is(p, div):has(> .image-embed:nth-child(2)) img,
+.markdown-preview-view.img-grid :is(p, div):has(> img:nth-child(2)) img {
+	width: 100%;
+	height: 100%;
+	min-height: 8rem;
+	max-height: 18rem;
+	object-fit: cover;
+}
+
+.markdown-preview-view.figure-note figure,
+.markdown-preview-view figure.figure-note,
+.markdown-preview-view.figure-note .image-embed,
+.markdown-source-view.mod-cm6.figure-note figure {
+	display: block;
+	max-width: var(--ouroboros-figure-max-width);
+	margin: 1.35rem auto;
+	transform: none;
+	padding: 0.55rem;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-l);
+	background-color: color-mix(in srgb, var(--surface-overlay) 86%, transparent);
+	box-shadow: var(--shadow-soft);
+}
+
+.markdown-preview-view.figure-note figure img,
+.markdown-preview-view figure.figure-note img,
+.markdown-preview-view.figure-note .image-embed img,
+.markdown-source-view.mod-cm6.figure-note figure img {
+	display: block;
+	width: 100%;
+	box-shadow: none;
+}
+
+.markdown-preview-view.figure-note figcaption,
+.markdown-preview-view figcaption.figure-note,
+.markdown-source-view.mod-cm6.figure-note figcaption {
+	margin: 0.55rem auto 0.1rem;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	font-style: italic;
+	line-height: 1.45;
+	text-align: center;
+}
+
+.markdown-preview-view.figure-note .image-embed[alt]::after {
+	content: attr(alt);
+	display: block;
+	margin: 0.55rem auto 0.1rem;
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	font-style: italic;
+	line-height: 1.45;
+	text-align: center;
+}
+
+.markdown-preview-view.figure-note .image-embed[alt='']::after {
+	display: none;
+}
+
+.markdown-preview-view.figure-note.img-wide .image-embed,
+.markdown-preview-view.img-wide figure.figure-note {
+	width: var(--ouroboros-figure-wide-width);
+	max-width: calc(100vw - 3rem);
+	margin: 1.35rem 50%;
+	transform: translateX(-50%);
+}
+
+@media (max-width: 700px) {
+	.markdown-preview-view.img-wide :is(.image-embed, .internal-embed.image-embed, figure),
+	.markdown-source-view.mod-cm6.img-wide :is(.image-embed, .internal-embed.image-embed, figure),
+	.markdown-preview-view.figure-note.img-wide .image-embed,
+	.markdown-preview-view.img-wide figure.figure-note {
+		width: 100%;
+		max-width: 100%;
+		margin-inline: 0;
+		transform: none;
+	}
+
+	.markdown-preview-view.img-grid :is(p, div):has(> .image-embed:nth-child(2)),
+	.markdown-preview-view.img-grid :is(p, div):has(> img:nth-child(2)) {
+		grid-template-columns: 1fr;
+	}
 }
 
 /* Core app chrome */
@@ -636,6 +2011,34 @@ img {
 
 .workspace-leaf.mod-active .view-header {
 	border-bottom: var(--thin-border);
+}
+
+/* ─────────────────────────────────────── */
+/* Paper panes (N6, opt-in) — give each editor tab group a thin border, soft */
+/* shadow, and rounded corners so panes read as raised paper sheets (Border  */
+/* influence) without adding interface noise. Scoped to .mod-root so the      */
+/* left/right docks keep their flat, quiet chrome. overflow:hidden clips the  */
+/* tab bar + content to the card radius; scrolling stays on the inner         */
+/* .view-content, so the box model is untouched (no layout reflow, no margins */
+/* that could trip version-sensitive split math).                            */
+/* ─────────────────────────────────────── */
+
+body.paper-panes .workspace-split.mod-root {
+	background-color: var(--background-secondary);
+}
+
+body.paper-panes .mod-root .workspace-tabs {
+	border: var(--thin-border);
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-soft);
+	overflow: hidden;
+}
+
+/* The active sheet lifts a little more with a quiet accent edge so focus is */
+/* obvious but calm (follows accent presets; composes with active-path).     */
+body.paper-panes .mod-root .workspace-tabs:has(.workspace-leaf.mod-active) {
+	border-color: color-mix(in srgb, var(--interactive-accent) 18%, var(--background-modifier-border));
+	box-shadow: var(--shadow-raised);
 }
 
 .vertical-tab-header,
@@ -701,8 +2104,28 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 .nav-files-container,
 .tree-item-children,
 .workspace-leaf-content[data-type='file-explorer'] .view-content,
-.workspace-leaf-content[data-type='search'] .view-content {
+.workspace-leaf-content[data-type='search'] .view-content,
+.workspace-leaf-content[data-type='bookmarks'] .view-content,
+.workspace-leaf-content[data-type='outline'] .view-content {
 	background-color: var(--background-secondary);
+}
+
+:is(
+	.nav-files-container,
+	.workspace-leaf-content[data-type='search'] .view-content,
+	.workspace-leaf-content[data-type='bookmarks'] .view-content,
+	.workspace-leaf-content[data-type='outline'] .view-content,
+	.workspace-leaf-content[data-type='backlink'] .view-content
+) {
+	--ouroboros-nav-rail: color-mix(in srgb, var(--background-modifier-border) 62%, transparent);
+	--ouroboros-nav-rail-hover: color-mix(in srgb, var(--interactive-accent) 28%, var(--background-modifier-border));
+	--ouroboros-nav-current-bg: color-mix(in srgb, var(--interactive-accent) 9%, var(--background-primary));
+	--ouroboros-nav-current-border: color-mix(in srgb, var(--interactive-accent) 34%, var(--background-modifier-border));
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .view-content,
+.workspace-leaf-content[data-type='outline'] .view-content {
+	padding: var(--size-4-1) var(--size-4-3) var(--size-4-8);
 }
 
 .nav-folder-title,
@@ -711,7 +2134,27 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 .search-result-file-title {
 	border-radius: var(--radius-s);
 	color: var(--text-muted);
+	position: relative;
 	transition: background-color 120ms ease, color 120ms ease;
+}
+
+.nav-folder-title {
+	font-weight: 600;
+}
+
+.nav-folder-title .collapse-icon,
+.tree-item-self .collapse-icon,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-icon,
+.workspace-leaf-content[data-type='outline'] .tree-item-icon {
+	color: var(--text-faint);
+	transition: color 120ms ease;
+}
+
+.nav-folder-title:hover .collapse-icon,
+.tree-item-self:hover .collapse-icon,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-self:hover .tree-item-icon,
+.workspace-leaf-content[data-type='outline'] .tree-item-self:hover .tree-item-icon {
+	color: var(--text-accent);
 }
 
 .nav-folder-title:hover,
@@ -722,12 +2165,140 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	color: var(--text-normal);
 }
 
+.nav-folder-children {
+	background: transparent;
+	border-inline-start: 1px solid var(--ouroboros-nav-rail);
+	margin-inline-start: 0.58rem;
+	padding-inline-start: 0.42rem;
+	transition: border-color 120ms ease;
+}
+
+.nav-folder:hover > .nav-folder-children,
+.nav-folder:focus-within > .nav-folder-children,
+.nav-folder:has(.nav-file.is-active, .nav-file-title.is-active) > .nav-folder-children {
+	border-inline-start-color: var(--ouroboros-nav-rail-hover);
+}
+
+.nav-folder:has(.nav-file.is-active, .nav-file-title.is-active) > .nav-folder-title,
+.nav-folder:has(.nav-folder-title.is-active) > .nav-folder-title,
+.nav-file.is-active > .nav-file-title,
+.nav-file-title.is-active {
+	background-color: var(--ouroboros-nav-current-bg);
+	color: var(--text-normal);
+	box-shadow: inset 0 0 0 1px var(--ouroboros-nav-current-border);
+}
+
+.nav-folder:has(.nav-file.is-active, .nav-file-title.is-active) > .nav-folder-title::before,
+.nav-folder:has(.nav-folder-title.is-active) > .nav-folder-title::before,
+.nav-file.is-active > .nav-file-title::before,
+.nav-file-title.is-active::before,
+.tree-item:has(.tree-item-self.is-active) > .tree-item-self::before,
+.tree-item-self.is-active::before,
+.tree-item-self.is-selected::before {
+	content: "";
+	position: absolute;
+	inset-block: 0.32rem;
+	inset-inline-start: 0.18rem;
+	width: 2px;
+	border-radius: 999px;
+	background-color: var(--interactive-accent);
+	opacity: 0.62;
+}
+
+.nav-folder:has(.nav-file.is-active, .nav-file-title.is-active) > .nav-folder-title .collapse-icon,
+.nav-folder:has(.nav-folder-title.is-active) > .nav-folder-title .collapse-icon,
+.nav-file.is-active > .nav-file-title,
+.nav-file-title.is-active,
+.tree-item-self.is-active .tree-item-icon,
+.tree-item-self.is-selected .tree-item-icon {
+	color: var(--text-accent);
+}
+
 .is-active .nav-file-title,
 .tree-item-self.is-clickable.is-active,
+.tree-item-self.is-selected,
 .search-result-file-title.is-active {
-	background-color: var(--background-primary);
+	background-color: var(--ouroboros-nav-current-bg);
 	color: var(--text-normal);
-	box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+	box-shadow: inset 0 0 0 1px var(--ouroboros-nav-current-border);
+}
+
+.tree-item-inner {
+	color: inherit;
+}
+
+.tree-item-inner-subtext {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+}
+
+.tree-item-flair,
+.tree-item-flair-outer {
+	font-variant-numeric: tabular-nums;
+}
+
+.tree-item-flair {
+	background-color: var(--background-primary-alt);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+	border-radius: 999px;
+	color: var(--text-faint);
+	padding-inline: 0.38rem;
+}
+
+.tree-item-self:hover .tree-item-flair,
+.tree-item-self.is-active .tree-item-flair,
+.tree-item-self.is-selected .tree-item-flair {
+	color: var(--text-muted);
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-self,
+.workspace-leaf-content[data-type='outline'] .tree-item-self {
+	margin-block: 1px;
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-children,
+.workspace-leaf-content[data-type='outline'] .tree-item-children {
+	background: transparent;
+	border-inline-start: 1px solid var(--ouroboros-nav-rail);
+	margin-inline-start: var(--size-4-2);
+	padding-inline-start: var(--size-4-1);
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .tree-item:hover > .tree-item-children,
+.workspace-leaf-content[data-type='outline'] .tree-item:hover > .tree-item-children,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item:focus-within > .tree-item-children,
+.workspace-leaf-content[data-type='outline'] .tree-item:focus-within > .tree-item-children,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item:has(.tree-item-self.is-active) > .tree-item-children,
+.workspace-leaf-content[data-type='outline'] .tree-item:has(.tree-item-self.is-active) > .tree-item-children,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item:has(.tree-item-self.is-selected) > .tree-item-children,
+.workspace-leaf-content[data-type='outline'] .tree-item:has(.tree-item-self.is-selected) > .tree-item-children {
+	border-inline-start-color: var(--ouroboros-nav-rail-hover);
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-self .tree-item-icon,
+.workspace-leaf-content[data-type='outline'] .tree-item-self .tree-item-icon {
+	color: var(--text-faint);
+}
+
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-self:hover .tree-item-icon,
+.workspace-leaf-content[data-type='outline'] .tree-item-self:hover .tree-item-icon,
+.workspace-leaf-content[data-type='bookmarks'] .tree-item-self.is-active .tree-item-icon,
+.workspace-leaf-content[data-type='outline'] .tree-item-self.is-active .tree-item-icon {
+	color: var(--text-accent);
+}
+
+.nav-file-tag {
+	background-color: color-mix(in srgb, var(--interactive-accent) 10%, var(--background-primary-alt));
+	border: 1px solid color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+	border-radius: 999px;
+	color: var(--text-muted);
+	font-size: 0.68em;
+	font-weight: 650;
+	letter-spacing: 0.04em;
+}
+
+.view-action.mod-bookmarked {
+	color: var(--text-accent);
 }
 
 /* Search */
@@ -739,44 +2310,340 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	box-shadow: none;
 }
 
+.workspace-leaf-content[data-type='search'] .search-input-container {
+	margin: var(--size-4-2) var(--size-4-3);
+}
+
+.search-input-container:before {
+	background-color: var(--text-faint);
+}
+
+.search-input-container:focus-within:before {
+	background-color: var(--text-accent);
+}
+
 .search-result {
 	border: var(--thin-border);
 	border-radius: var(--radius-m);
 	background-color: var(--background-primary);
 	margin-bottom: 0.75rem;
 	padding: 0.35rem;
+	box-shadow: var(--shadow-soft);
+}
+
+.search-result:not(.is-collapsed) .search-result-file-title {
+	color: var(--text-normal);
+}
+
+.search-result-file-title {
+	font-weight: 650;
+}
+
+.search-result-file-matches {
+	background-color: var(--background-primary-alt);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+	margin-block: var(--size-4-1) var(--size-4-2);
+	overflow: hidden;
 }
 
 .search-result-file-match {
 	border-radius: var(--radius-s);
+	border-bottom-color: color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
 	padding: 0.2rem 0.4rem;
 }
 
-.search-result-file-matched-text {
+.search-result-file-match:hover,
+.search-result-file-match.mobile-tap {
+	background-color: color-mix(in srgb, var(--interactive-accent) 10%, var(--background-primary));
 	color: var(--text-normal);
-	border-radius: 2px;
+}
+
+.search-result-file-matched-text {
+	background-color: color-mix(in srgb, var(--interactive-accent) 18%, transparent);
+	color: var(--text-normal);
+	border-radius: 0.22em;
+	font-weight: 700;
+	padding-inline: 0.08em;
+}
+
+.search-empty-state,
+.empty-state-container {
+	color: var(--text-muted);
+}
+
+.workspace-leaf-content[data-type='search'] .search-empty-state,
+.workspace-leaf-content[data-type='bookmarks'] .empty-state-container,
+.workspace-leaf-content[data-type='outline'] .empty-state-container {
+	background-color: color-mix(in srgb, var(--background-primary-alt) 74%, transparent);
+	border: 1px dashed color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-l);
+	margin: var(--size-4-3);
+	padding: var(--size-4-6);
+	text-align: center;
+}
+
+.empty-state-title {
+	color: var(--text-normal);
+}
+
+.empty-state-action {
+	border-radius: var(--radius-s);
+	padding-inline: var(--size-4-2);
+}
+
+.empty-state-action:hover,
+.empty-state-action.mobile-tap {
+	background-color: color-mix(in srgb, var(--interactive-accent) 10%, transparent);
 }
 
 .suggestion-container,
 .menu,
 .modal,
 .prompt {
+	--prompt-background: var(--background-primary);
+	--prompt-border-color: color-mix(in srgb, var(--background-modifier-border) 84%, transparent);
+	--prompt-border-width: var(--border-width);
+	--prompt-input-height: 44px;
+	--suggestion-background: var(--background-primary);
 	background-color: var(--background-primary);
 	border: var(--thin-border);
 	border-radius: var(--radius-l);
-	box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+	box-shadow: var(--shadow-popover);
+}
+
+.prompt {
+	overflow: hidden;
+}
+
+.prompt-input-container {
+	position: relative;
+	background: linear-gradient(180deg, var(--background-primary), var(--background-primary-alt));
+	border-bottom: 1px solid color-mix(in srgb, var(--background-modifier-border) 76%, transparent);
+}
+
+input.prompt-input,
+input.prompt-input:hover,
+input.prompt-input:focus,
+input.prompt-input:focus-visible {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	color: var(--text-normal);
+	font-size: var(--font-ui-medium);
+	height: var(--prompt-input-height);
+}
+
+input.prompt-input::placeholder {
+	color: var(--text-faint);
+}
+
+.prompt-results,
+.suggestion {
+	padding: var(--size-4-2);
+}
+
+.prompt-instructions {
+	background-color: color-mix(in srgb, var(--background-primary-alt) 74%, transparent);
+	border-top: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	color: var(--text-muted);
+	gap: var(--size-4-2);
+}
+
+.prompt-instruction-command {
+	background-color: var(--background-primary);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-s);
+	color: var(--text-normal);
+	font-variant-numeric: tabular-nums;
+	padding: 0.08rem 0.38rem;
 }
 
 .suggestion-item,
 .menu-item {
 	border-radius: var(--radius-s);
 	color: var(--text-muted);
+	position: relative;
+	transition: background-color 120ms ease, box-shadow 120ms ease, color 120ms ease;
+}
+
+.suggestion-item:hover:not(.is-selected):not(.mobile-tap) {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
 }
 
 .suggestion-item.is-selected,
+.suggestion-item.mobile-tap,
+.cm-tooltip.cm-tooltip-autocomplete > ul > li[role='option'].is-selected,
+.cm-tooltip.cm-tooltip-autocomplete > ul > li[role='option'][aria-selected],
 .menu-item.selected {
-	background-color: var(--background-primary-alt);
+	background-color: color-mix(in srgb, var(--interactive-accent) 12%, var(--background-primary));
+	box-shadow: inset 3px 0 0 color-mix(in srgb, var(--interactive-accent) 72%, transparent);
 	color: var(--text-normal);
+}
+
+.suggestion-item.mod-complex {
+	align-items: center;
+	gap: var(--size-4-2);
+}
+
+.suggestion-item.mod-complex .suggestion-title {
+	color: var(--text-normal);
+	font-weight: 600;
+}
+
+.suggestion-item.mod-complex .suggestion-note,
+.suggestion-empty {
+	color: var(--text-muted);
+}
+
+.suggestion-empty {
+	background-color: color-mix(in srgb, var(--background-primary-alt) 72%, transparent);
+	border: 1px dashed color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-m);
+	margin: var(--size-4-2);
+}
+
+.suggestion-empty-suggestion {
+	color: var(--text-faint);
+}
+
+.suggestion-highlight,
+.suggestion-item.mod-complex .suggestion-highlight,
+.cm-tooltip.cm-tooltip-autocomplete .cm-completionLabel .cm-completionMatchedText {
+	background-color: color-mix(in srgb, var(--interactive-accent) 16%, transparent);
+	border-radius: 0.22em;
+	color: var(--text-normal);
+	font-weight: 750;
+	padding-inline: 0.08em;
+	text-decoration: none;
+}
+
+.suggestion-item.mod-complex .suggestion-hotkey,
+.suggestion-hotkey {
+	background-color: var(--background-primary-alt);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+}
+
+.suggestion-item.is-selected .suggestion-hotkey,
+.suggestion-item.mobile-tap .suggestion-hotkey {
+	background-color: color-mix(in srgb, var(--interactive-accent) 10%, var(--background-primary));
+	border-color: color-mix(in srgb, var(--interactive-accent) 32%, var(--background-modifier-border));
+	color: var(--text-normal);
+}
+
+.suggestion-item.mod-complex .suggestion-flair,
+.suggestion-item.mod-complex .suggestion-icon,
+.suggestion-item.mod-complex .suggestion-aux {
+	color: var(--text-faint);
+}
+
+.suggestion-item.is-selected .suggestion-flair,
+.suggestion-item.is-selected .suggestion-icon,
+.suggestion-item.is-selected .suggestion-aux,
+.suggestion-item.mobile-tap .suggestion-flair,
+.suggestion-item.mobile-tap .suggestion-icon,
+.suggestion-item.mobile-tap .suggestion-aux {
+	color: var(--text-accent);
+}
+
+/* Keyboard Mode / command surface */
+body.keyboard-mode {
+	--keyboard-mode-hint-background: color-mix(in srgb, var(--surface-overlay) 90%, transparent);
+	--keyboard-mode-hint-border: color-mix(in srgb, var(--interactive-accent) 28%, var(--background-modifier-border));
+}
+
+body.keyboard-mode:not(.focus-mode)::after {
+	content: "Keyboard mode · Tab panes · Cmd/Ctrl+P command · Cmd/Ctrl+O switch";
+	position: fixed;
+	inset-inline-end: 1rem;
+	inset-block-end: calc(var(--status-bar-height, 24px) + 0.65rem);
+	z-index: var(--layer-tooltip);
+	padding: 0.32rem 0.6rem;
+	border: 1px solid var(--keyboard-mode-hint-border);
+	border-radius: 999px;
+	background-color: var(--keyboard-mode-hint-background);
+	box-shadow: var(--shadow-soft);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	font-weight: 650;
+	letter-spacing: 0.01em;
+	pointer-events: none;
+}
+
+body.keyboard-mode :is(
+	.nav-file-title,
+	.nav-folder-title,
+	.tree-item-self,
+	.workspace-tab-header,
+	.clickable-icon,
+	.menu-item,
+	.suggestion-item,
+	button,
+	input,
+	textarea,
+	select
+):focus-visible {
+	outline: 2px solid color-mix(in srgb, var(--interactive-accent) 72%, transparent);
+	outline-offset: 2px;
+	box-shadow: 0 0 0 4px color-mix(in srgb, var(--interactive-accent) 12%, transparent);
+}
+
+body.keyboard-mode .prompt {
+	border-color: color-mix(in srgb, var(--interactive-accent) 32%, var(--background-modifier-border));
+	box-shadow: var(--shadow-popover), 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 18%, transparent);
+}
+
+body.keyboard-mode .prompt::before {
+	content: "Keyboard mode  ·  ↑↓ navigate  ·  Enter open  ·  Esc close";
+	display: block;
+	padding: 0.34rem 0.75rem;
+	border-bottom: 1px solid color-mix(in srgb, var(--interactive-accent) 18%, var(--background-modifier-border));
+	background-color: color-mix(in srgb, var(--interactive-accent) 7%, var(--background-primary));
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	font-weight: 650;
+	letter-spacing: 0.01em;
+}
+
+body.keyboard-mode .prompt:focus-within .prompt-input-container::after {
+	content: "";
+	position: absolute;
+	inset-inline: 0.75rem;
+	inset-block-end: 0;
+	height: 2px;
+	border-radius: 999px;
+	background-color: color-mix(in srgb, var(--interactive-accent) 64%, transparent);
+}
+
+body.keyboard-mode input.prompt-input {
+	caret-color: var(--interactive-accent);
+}
+
+body.keyboard-mode .suggestion-item.is-selected,
+body.keyboard-mode .cm-tooltip.cm-tooltip-autocomplete > ul > li[role='option'].is-selected,
+body.keyboard-mode .cm-tooltip.cm-tooltip-autocomplete > ul > li[role='option'][aria-selected],
+body.keyboard-mode .menu-item.selected {
+	background-color: color-mix(in srgb, var(--interactive-accent) 15%, var(--background-primary));
+	box-shadow:
+		inset 3px 0 0 color-mix(in srgb, var(--interactive-accent) 82%, transparent),
+		0 0 0 1px color-mix(in srgb, var(--interactive-accent) 20%, transparent);
+}
+
+body.keyboard-mode .suggestion-item.is-selected::after {
+	content: "↵";
+	position: absolute;
+	inset-inline-end: 0.55rem;
+	inset-block-start: 50%;
+	transform: translateY(-50%);
+	color: var(--text-accent);
+	font-size: var(--font-ui-smaller);
+	font-weight: 700;
+	opacity: 0.72;
 }
 
 :is(
@@ -969,6 +2836,73 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	padding: 0.12em 0.38em;
 }
 
+/* Content helper classes
+──────────────────────────────────────────────────────
+Apply through note cssclasses. These helpers are intentionally
+low-level and composable so Dataview/library pages can be shaped
+without installing another snippet. */
+
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+	--ouroboros-table-wide-width: min(78rem, calc(100vw - 3rem));
+	--ouroboros-table-small-font-size: 0.88em;
+	--ouroboros-table-small-padding-y: 0.42rem;
+	--ouroboros-table-small-padding-x: 0.55rem;
+}
+
+.markdown-preview-view.table-wide :is(.table-wrapper, .block-language-dataview, .block-language-dataviewjs) {
+	width: var(--ouroboros-table-wide-width);
+	max-width: calc(100vw - 3rem);
+	margin-left: 50%;
+	transform: translateX(-50%);
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.markdown-source-view.mod-cm6.table-wide .cm-embed-block.markdown-rendered {
+	max-width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.markdown-preview-view.table-wide :is(table, .dataview.table-view-table),
+.markdown-source-view.mod-cm6.table-wide .cm-embed-block.markdown-rendered table {
+	min-width: min(56rem, 100%);
+}
+
+.markdown-preview-view.table-small :is(table, .dataview.table-view-table),
+.markdown-source-view.mod-cm6.table-small .cm-embed-block.markdown-rendered table {
+	font-size: var(--ouroboros-table-small-font-size);
+}
+
+.markdown-preview-view.table-small :is(th, td),
+.markdown-source-view.mod-cm6.table-small .cm-embed-block.markdown-rendered :is(th, td) {
+	padding: var(--ouroboros-table-small-padding-y) var(--ouroboros-table-small-padding-x);
+}
+
+.markdown-preview-view.table-clean :is(table, .dataview.table-view-table),
+.markdown-source-view.mod-cm6.table-clean .cm-embed-block.markdown-rendered table {
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.markdown-preview-view.table-clean :is(th, td),
+.markdown-source-view.mod-cm6.table-clean .cm-embed-block.markdown-rendered :is(th, td) {
+	border-right: 0;
+}
+
+.markdown-preview-view.table-clean tbody tr:nth-child(even),
+.markdown-source-view.mod-cm6.table-clean .cm-embed-block.markdown-rendered tbody tr:nth-child(even) {
+	background-color: transparent;
+}
+
+.markdown-preview-view.table-clean tbody tr:hover,
+.markdown-source-view.mod-cm6.table-clean .cm-embed-block.markdown-rendered tbody tr:hover {
+	background-color: color-mix(in srgb, var(--background-modifier-hover) 74%, transparent);
+}
+
 /* Status bar */
 .status-bar {
 	background-color: var(--background-secondary);
@@ -994,18 +2928,80 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 }
 
 .metadata-container {
-	background-color: var(--background-primary-alt);
-	border: var(--thin-border);
-	border-radius: var(--radius-l);
-	padding: 0.7rem;
+	--metadata-background: var(--background-primary-alt);
+	--metadata-border-color: color-mix(in srgb, var(--background-modifier-border) 88%, transparent);
+	--metadata-border-width: var(--border-width);
+	--metadata-border-radius: var(--radius-l);
+	--metadata-padding: 0.7rem;
+	--metadata-gap: 0.18rem;
+	--metadata-divider-color: color-mix(in srgb, var(--background-modifier-border) 76%, transparent);
+	--metadata-divider-color-hover: color-mix(in srgb, var(--background-modifier-border-hover) 86%, transparent);
+	--metadata-divider-color-focus: color-mix(in srgb, var(--interactive-accent) 42%, var(--background-modifier-border));
+	--metadata-property-radius: var(--radius-s);
+	--metadata-property-radius-hover: var(--radius-m);
+	--metadata-property-radius-focus: var(--radius-m);
+	--metadata-property-background: transparent;
+	--metadata-property-background-hover: color-mix(in srgb, var(--background-modifier-hover) 74%, transparent);
+	--metadata-property-background-active: color-mix(in srgb, var(--interactive-accent) 10%, transparent);
+	--metadata-property-box-shadow: none;
+	--metadata-property-box-shadow-hover: inset 0 0 0 1px color-mix(in srgb, var(--background-modifier-border) 78%, transparent);
+	--metadata-property-box-shadow-focus: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 16%, transparent);
+	--metadata-label-background: transparent;
+	--metadata-label-background-hover: transparent;
+	--metadata-label-background-active: transparent;
+	--metadata-label-text-color: var(--text-muted);
+	--metadata-label-font-weight: 650;
+	--metadata-input-background: var(--background-primary);
+	--metadata-input-background-hover: var(--background-primary);
+	--metadata-input-background-active: var(--background-primary);
+	--metadata-input-text-color: var(--text-normal);
+	background-color: var(--metadata-background);
+	border: var(--metadata-border-width) solid var(--metadata-border-color);
+	border-radius: var(--metadata-border-radius);
+	padding: var(--metadata-padding);
 	margin-bottom: 1rem;
 }
 
+.workspace-leaf-content[data-type='all-properties'] .view-content,
+.workspace-leaf-content[data-type='properties'] .view-content,
+.workspace-leaf-content[data-type='file-properties'] .view-content {
+	background-color: var(--background-secondary);
+	padding: var(--size-4-2);
+}
+
+.workspace-leaf-content[data-type='all-properties'] .metadata-container,
+.workspace-leaf-content[data-type='properties'] .metadata-container,
+.workspace-leaf-content[data-type='file-properties'] .metadata-container {
+	--metadata-background: var(--background-primary);
+	--metadata-padding: var(--size-4-2);
+	box-shadow: var(--shadow-soft);
+	margin: 0;
+	max-width: none;
+}
+
+.metadata-container[data-property-count='0']:not(.mod-error) {
+	border-style: dashed;
+	color: var(--text-faint);
+}
+
 .metadata-properties-heading {
+	align-items: center;
 	color: var(--text-muted);
+	display: inline-flex;
 	font-size: var(--font-ui-small);
-	font-weight: 600;
+	font-weight: 650;
+	gap: var(--size-2-2);
 	letter-spacing: 0.01em;
+	padding: var(--size-4-1);
+}
+
+.metadata-properties-heading:hover {
+	color: var(--text-normal);
+}
+
+.metadata-properties-title {
+	color: var(--text-normal);
+	font-weight: 700;
 }
 
 .metadata-property {
@@ -1014,23 +3010,55 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	transition: background-color 120ms ease, box-shadow 120ms ease;
 }
 
-.metadata-property:hover {
-	background-color: var(--background-modifier-hover);
-	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--background-modifier-border) 80%, transparent);
+.metadata-property:hover,
+.metadata-property.has-focus,
+.metadata-property:focus-within {
+	background-color: var(--metadata-property-background-hover);
+}
+
+.metadata-container:focus-within .metadata-property.is-selected {
+	background-color: var(--metadata-property-background-active);
+	box-shadow: inset 3px 0 0 color-mix(in srgb, var(--interactive-accent) 72%, transparent);
+	color: var(--text-normal);
 }
 
 .metadata-property-key {
 	color: var(--text-muted);
-	font-weight: 600;
-	text-transform: uppercase;
+	font-weight: 650;
 	font-size: 0.78rem;
-	letter-spacing: 0.04em;
+	letter-spacing: 0.01em;
+	text-transform: none;
+}
+
+.metadata-property-icon,
+.metadata-type-icon {
+	color: var(--text-faint);
+	transition: color 120ms ease;
+}
+
+.metadata-property:hover .metadata-property-icon,
+.metadata-property:hover .metadata-type-icon,
+.metadata-property:focus-within .metadata-property-icon,
+.metadata-property:focus-within .metadata-type-icon {
+	color: var(--text-muted);
 }
 
 .metadata-property-value {
 	background-color: var(--background-primary);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 68%, transparent);
 	border-radius: var(--radius-s);
-	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+	box-shadow: none;
+	color: var(--text-normal);
+	transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.metadata-property:hover .metadata-property-value {
+	border-color: color-mix(in srgb, var(--background-modifier-border-hover) 78%, transparent);
+}
+
+.metadata-property-value:focus-within {
+	border-color: color-mix(in srgb, var(--interactive-accent) 54%, var(--background-modifier-border));
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 13%, transparent);
 }
 
 .metadata-property-value :is(input, select, textarea) {
@@ -1042,8 +3070,16 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 }
 
 .metadata-property-value :is(input, select, textarea):focus {
-	border-color: var(--interactive-accent);
-	box-shadow: 0 0 0 2px rgba(var(--color-blue-rgb), 0.12);
+	border-color: color-mix(in srgb, var(--interactive-accent) 58%, transparent);
+	box-shadow: none;
+}
+
+.metadata-property-value .metadata-link-inner,
+.metadata-property-value .internal-link,
+.metadata-property-value .external-link {
+	border-radius: var(--radius-xs);
+	color: var(--text-accent);
+	padding-inline: 0.12em;
 }
 
 .multi-select-pill {
@@ -1054,18 +3090,68 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	font-weight: 500;
 }
 
+.metadata-property-value[data-property-type='tags'] .multi-select-pill,
+.metadata-property[data-property-type='tags'] .multi-select-pill {
+	background-color: var(--tag-background);
+	border-color: var(--tag-border-color);
+	color: var(--tag-color);
+}
+
+.metadata-property-value .multi-select-pill.is-invalid {
+	border-color: color-mix(in srgb, var(--color-red) 58%, transparent);
+	color: var(--color-red);
+	text-decoration-thickness: 2px;
+}
+
 .multi-select-pill-remove-button {
 	color: var(--text-muted);
+}
+
+.metadata-property-warning-icon {
+	color: var(--color-orange);
+}
+
+.metadata-error-container {
+	background-color: rgba(var(--color-red-rgb), 0.08);
+	border: 1px solid rgba(var(--color-red-rgb), 0.24);
+	border-radius: var(--radius-m);
+}
+
+.metadata-error-title {
+	color: var(--color-red);
 }
 
 .metadata-add-button {
 	background-color: var(--background-primary);
 	border: var(--thin-border);
 	border-radius: var(--radius-s);
+	color: var(--text-muted);
 }
 
+.metadata-container .metadata-show-source-button,
+.metadata-container .metadata-add-button {
+	border-radius: var(--radius-s);
+	transition: background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
+}
+
+.metadata-container .metadata-show-source-button:hover,
 .metadata-add-button:hover {
 	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.workspace-drawer .metadata-container,
+.is-phone .metadata-container {
+	--metadata-padding: var(--size-4-2);
+	--metadata-property-radius: var(--radius-s);
+	border-radius: var(--radius-m);
+	box-shadow: none;
+}
+
+@container metadata (width < 250px) {
+	.metadata-property-value {
+		border-radius: var(--radius-s);
+	}
 }
 
 /* Frontmatter / YAML editing */
@@ -1107,23 +3193,9 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	border-radius: var(--radius-s);
 }
 
-.workspace-leaf-content[data-type='outline'] .tree-item-self:hover,
-.workspace-leaf-content[data-type='backlink'] .tree-item-self:hover,
-.workspace-leaf-content[data-type='backlink'] .search-result-file-match:hover {
-	background-color: var(--background-modifier-hover);
-}
-
 .workspace-leaf-content[data-type='outline'] .tree-item-inner,
 .workspace-leaf-content[data-type='backlink'] .tree-item-inner {
 	color: var(--text-muted);
-}
-
-.workspace-leaf-content[data-type='outline'] .tree-item-flair,
-.workspace-leaf-content[data-type='backlink'] .tree-item-flair {
-	background-color: var(--background-primary-alt);
-	border-radius: 999px;
-	color: var(--text-faint);
-	padding-inline: 0.35rem;
 }
 
 .workspace-leaf-content[data-type='outline'] .tree-item-self.is-active .tree-item-inner,
@@ -1131,10 +3203,16 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	color: var(--text-normal);
 }
 
+.workspace-leaf-content[data-type='backlink'] .search-result-file-match:hover {
+	background-color: color-mix(in srgb, var(--interactive-accent) 10%, var(--background-primary));
+}
+
 /* Graph view */
 .workspace-leaf-content[data-type='graph'] .view-content {
+	/* M9-5: warm paper wash instead of a cool blue tint */
 	background:
-		radial-gradient(circle at top left, rgba(var(--color-blue-rgb), 0.08), transparent 28%),
+		radial-gradient(circle at 28% 0%, rgba(var(--color-yellow-rgb), 0.06), transparent 30%),
+		radial-gradient(circle at bottom right, rgba(var(--color-orange-rgb), 0.04), transparent 32%),
 		var(--background-primary);
 }
 
@@ -1163,7 +3241,7 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 }
 
 .theme-dark .modal-container .suggestion-item.is-selected {
-	background: var(--interactive-accent);
+	background: color-mix(in srgb, var(--interactive-accent) 18%, var(--background-primary));
 }
 
 /* ─────────────────────────────────────────────────── */
@@ -1204,6 +3282,46 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 .markdown-embed .markdown-embed {
 	border-left-color: var(--text-faint);
 	background-color: var(--background-secondary);
+}
+
+/* ───────────────────────────────────────────────────
+   M12: Clean embeds (absorb Minimal's embed-strict idea)
+   Strips the card chrome from transclusions so an embedded note reads as
+   part of the host note — for long-form drafts assembled from fragments.
+   Opt-in two ways: globally via Style Settings (`embed-clean` toggle) or
+   per note via `cssclasses: embed-clean`. A quiet accent rail appears on
+   hover so embeds stay discoverable; the open-link icon keeps its
+   existing hover reveal.
+   ─────────────────────────────────────────────────── */
+
+body.embed-clean .markdown-embed,
+.markdown-preview-view.embed-clean .markdown-embed,
+.markdown-source-view.mod-cm6.embed-clean .markdown-embed {
+	border-left: none;
+	background-color: transparent;
+	border-radius: 0;
+	padding: 0;
+	margin: 0.3em 0;
+	transition: box-shadow 120ms ease;
+}
+
+body.embed-clean .markdown-embed-title,
+.markdown-preview-view.embed-clean .markdown-embed-title,
+.markdown-source-view.mod-cm6.embed-clean .markdown-embed-title {
+	display: none;
+}
+
+body.embed-clean .markdown-embed:hover,
+.markdown-preview-view.embed-clean .markdown-embed:hover,
+.markdown-source-view.mod-cm6.embed-clean .markdown-embed:hover {
+	box-shadow: inset 2px 0 0 color-mix(in srgb, var(--interactive-accent) 32%, transparent);
+}
+
+/* Nested embeds inherit the same flat surface instead of the darker card. */
+body.embed-clean .markdown-embed .markdown-embed,
+.markdown-preview-view.embed-clean .markdown-embed .markdown-embed,
+.markdown-source-view.mod-cm6.embed-clean .markdown-embed .markdown-embed {
+	background-color: transparent;
 }
 
 /* ─────────────────────────────────────────────────── */
@@ -1248,6 +3366,77 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	box-shadow: inset 3px 0 0 rgba(var(--color-cyan-rgb), 0.4);
 }
 
+/* knowledge workflow: decision / risk / principle / insight / cycle */
+.callout[data-callout='decision'] {
+	--callout-color: var(--color-purple-rgb);
+	--ouroboros-workflow-callout-rgb: var(--color-purple-rgb);
+}
+
+.callout[data-callout='risk'] {
+	--callout-color: var(--color-orange-rgb);
+	--ouroboros-workflow-callout-rgb: var(--color-orange-rgb);
+}
+
+.callout[data-callout='principle'] {
+	--callout-color: var(--color-blue-rgb);
+	--ouroboros-workflow-callout-rgb: var(--color-blue-rgb);
+}
+
+.callout[data-callout='insight'] {
+	--callout-color: var(--color-yellow-rgb);
+	--ouroboros-workflow-callout-rgb: var(--color-yellow-rgb);
+}
+
+.callout[data-callout='cycle'] {
+	--callout-color: var(--color-green-rgb);
+	--ouroboros-workflow-callout-rgb: var(--color-green-rgb);
+}
+
+.callout[data-callout='decision'],
+.callout[data-callout='risk'],
+.callout[data-callout='principle'],
+.callout[data-callout='insight'],
+.callout[data-callout='cycle'] {
+	background:
+		linear-gradient(
+			135deg,
+			rgba(var(--ouroboros-workflow-callout-rgb), 0.12),
+			rgba(var(--ouroboros-workflow-callout-rgb), 0.035) 48%,
+			transparent
+		),
+		var(--background-primary);
+	border-color: rgba(var(--ouroboros-workflow-callout-rgb), 0.26);
+	box-shadow:
+		inset 3px 0 0 rgba(var(--ouroboros-workflow-callout-rgb), 0.58),
+		var(--shadow-soft);
+}
+
+.callout[data-callout='decision'] .callout-title,
+.callout[data-callout='risk'] .callout-title,
+.callout[data-callout='principle'] .callout-title,
+.callout[data-callout='insight'] .callout-title,
+.callout[data-callout='cycle'] .callout-title {
+	color: color-mix(in srgb, var(--text-normal) 76%, rgb(var(--ouroboros-workflow-callout-rgb)));
+	letter-spacing: 0.01em;
+}
+
+.callout[data-callout='decision'] .callout-icon,
+.callout[data-callout='risk'] .callout-icon,
+.callout[data-callout='principle'] .callout-icon,
+.callout[data-callout='insight'] .callout-icon,
+.callout[data-callout='cycle'] .callout-icon {
+	background-color: rgba(var(--ouroboros-workflow-callout-rgb), 0.16);
+	box-shadow: 0 0 0 1px rgba(var(--ouroboros-workflow-callout-rgb), 0.16);
+}
+
+.callout[data-callout='decision'] .callout-content,
+.callout[data-callout='risk'] .callout-content,
+.callout[data-callout='principle'] .callout-content,
+.callout[data-callout='insight'] .callout-content,
+.callout[data-callout='cycle'] .callout-content {
+	color: color-mix(in srgb, var(--text-normal) 92%, rgb(var(--ouroboros-workflow-callout-rgb)));
+}
+
 /* ─────────────────────────────────────────────────── */
 /* Graph View — Node & Edge Colors */
 /* ─────────────────────────────────────────────────── */
@@ -1264,8 +3453,9 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	color: var(--text-faint);
 }
 
+/* M9-5: focused/current node pops (brighter accent) instead of dimming. */
 .graph-view.color-fill-focused {
-	color: color-mix(in srgb, var(--interactive-accent) 60%, white);
+	color: var(--interactive-accent-hover);
 }
 
 .graph-view.color-fill-attachment {
@@ -1276,12 +3466,18 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 	color: var(--color-cyan);
 }
 
+/* M9-5: current-note highlight ring (local graph) uses the accent. */
+.graph-view.color-circle {
+	color: var(--interactive-accent);
+}
+
+/* M9-5: quieter links to reduce edge noise in dense graphs. */
 .graph-view.color-line {
-	color: var(--background-modifier-border);
+	color: color-mix(in srgb, var(--background-modifier-border) 60%, transparent);
 }
 
 .graph-view.color-line-highlight {
-	color: color-mix(in srgb, var(--interactive-accent) 50%, transparent);
+	color: color-mix(in srgb, var(--interactive-accent) 55%, transparent);
 }
 
 .graph-view.color-arrow {
@@ -1315,39 +3511,224 @@ body.airy-reading :is(.markdown-rendered p, .markdown-rendered li, .markdown-ren
 /* Focus Mode */
 /* ─────────────────────────────────────────────────── */
 
+body.focus-mode {
+	--focus-mode-reveal-opacity: 0.08;
+	--focus-mode-ribbon-opacity: 0.16;
+	--focus-mode-status-opacity: 0.2;
+	--focus-mode-hint-background: color-mix(in srgb, var(--surface-overlay) 88%, transparent);
+	--focus-mode-hint-border: color-mix(in srgb, var(--interactive-accent) 24%, var(--background-modifier-border));
+	--focus-mode-rail-color: color-mix(in srgb, var(--interactive-accent) 32%, transparent);
+	box-shadow:
+		inset 3px 0 0 rgba(var(--color-blue-rgb), 0.12),
+		inset -3px 0 0 rgba(var(--color-blue-rgb), 0.12);
+}
+
+body.focus-mode::before {
+	content: "";
+	position: fixed;
+	inset-block: var(--header-height, 40px) var(--status-bar-height, 24px);
+	inset-inline: 0;
+	z-index: var(--layer-cover);
+	box-shadow:
+		inset 4px 0 0 var(--focus-mode-rail-color),
+		inset -4px 0 0 var(--focus-mode-rail-color);
+	opacity: 0.62;
+	pointer-events: none;
+}
+
+body.focus-mode::after {
+	content: "Focus mode · hover/tab rails · Cmd/Ctrl+P search";
+	position: fixed;
+	inset-block-start: calc(var(--header-height, 40px) + 0.45rem);
+	inset-inline-end: 1rem;
+	z-index: var(--layer-tooltip);
+	padding: 0.32rem 0.58rem;
+	border: 1px solid var(--focus-mode-hint-border);
+	border-radius: 999px;
+	background-color: var(--focus-mode-hint-background);
+	box-shadow: var(--shadow-soft);
+	color: var(--text-muted);
+	font-size: var(--font-ui-smaller);
+	font-weight: 650;
+	letter-spacing: 0.01em;
+	pointer-events: none;
+	transition: opacity 180ms ease, transform 180ms ease;
+}
+
+body.focus-mode:hover::after,
+body.focus-mode:focus-within::after,
+body.focus-mode:has(.prompt, .modal-container)::after {
+	opacity: 0.42;
+	transform: translateY(-1px);
+}
+
 body.focus-mode .workspace-ribbon {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 220ms ease;
+	opacity: var(--focus-mode-ribbon-opacity);
+	pointer-events: auto;
+	transition: opacity 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
 }
 
-body.focus-mode .workspace-split.mod-left-split {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 220ms ease;
-}
-
+body.focus-mode .workspace-split.mod-left-split,
 body.focus-mode .workspace-split.mod-right-split {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 220ms ease;
+	opacity: var(--focus-mode-reveal-opacity);
+	pointer-events: auto;
+	transition: opacity 220ms ease, filter 220ms ease, box-shadow 220ms ease;
+	filter: saturate(0.72);
 }
 
 body.focus-mode .status-bar {
-	opacity: 0;
-	pointer-events: none;
-	transition: opacity 220ms ease;
+	opacity: var(--focus-mode-status-opacity);
+	pointer-events: auto;
+	transition: opacity 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
 }
 
-/* Reveal ribbon on hover in focus mode */
-body.focus-mode:hover .workspace-ribbon {
+/* Recover hidden chrome on hover or keyboard focus */
+body.focus-mode .workspace-ribbon:hover,
+body.focus-mode .workspace-ribbon:focus-within,
+body.focus-mode .workspace-split.mod-left-split:hover,
+body.focus-mode .workspace-split.mod-left-split:focus-within,
+body.focus-mode .workspace-split.mod-right-split:hover,
+body.focus-mode .workspace-split.mod-right-split:focus-within,
+body.focus-mode .status-bar:hover,
+body.focus-mode .status-bar:focus-within,
+body.focus-mode:has(.prompt, .modal-container) .workspace-ribbon,
+body.focus-mode:has(.prompt, .modal-container) .status-bar {
 	opacity: 1;
-	pointer-events: auto;
+	filter: none;
+}
+
+body.focus-mode .workspace-split.mod-left-split:has(.nav-file-title:focus-visible, .nav-folder-title:focus-visible, .tree-item-self:focus-visible),
+body.focus-mode .workspace-split.mod-right-split:has(.nav-file-title:focus-visible, .nav-folder-title:focus-visible, .tree-item-self:focus-visible),
+body.focus-mode .workspace-split.mod-left-split:has(input:focus, textarea:focus, select:focus),
+body.focus-mode .workspace-split.mod-right-split:has(input:focus, textarea:focus, select:focus) {
+	opacity: 1;
+	filter: none;
+}
+
+body.focus-mode .workspace-ribbon:hover,
+body.focus-mode .workspace-ribbon:focus-within,
+body.focus-mode .status-bar:hover,
+body.focus-mode .status-bar:focus-within {
+	background-color: var(--surface-overlay);
+	box-shadow: var(--shadow-soft);
+}
+
+body.focus-mode .workspace-split.mod-left-split:hover,
+body.focus-mode .workspace-split.mod-left-split:focus-within {
+	box-shadow: 6px 0 18px rgba(0, 0, 0, 0.08);
+}
+
+body.focus-mode .workspace-split.mod-right-split:hover,
+body.focus-mode .workspace-split.mod-right-split:focus-within {
+	box-shadow: -6px 0 18px rgba(0, 0, 0, 0.08);
+}
+
+body.focus-mode.keyboard-mode .prompt::before {
+	content: "Focus + Keyboard mode  ·  search without leaving focus  ·  Enter open  ·  Esc return";
+}
+
+/* ─────────────────────────────────────────────────── */
+/* Typewriter focus (N7) — a Focus-mode sub-toggle (Shimmering Focus          */
+/* influence). While the editor is focused, inactive lines dim and the active */
+/* line stays full opacity, so the eye centers on what you are typing; the    */
+/* editor also gets generous vertical room so the active line can sit near the */
+/* middle of the screen. Live Preview / source only (Reading View has no       */
+/* "active line"). Requires Focus mode on.                                     */
+/*                                                                            */
+/* DOM honesty: a CSS-only theme cannot scroll-lock the active line to the     */
+/* exact vertical center on every keystroke — that needs JS. This delivers the */
+/* typing-focus emphasis + centered composition room, not an auto-centering   */
+/* scroll. The opacity fade is neutralized by reduce-motion (the dim state     */
+/* stays), so reduced-motion users keep the focus without the transition.      */
+/* ─────────────────────────────────────────────────── */
+
+body.focus-mode.typewriter-focus .markdown-source-view.mod-cm6 .cm-content {
+	padding-block: 30vh 40vh;
+}
+
+body.focus-mode.typewriter-focus .markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line {
+	opacity: 0.4;
+	transition: opacity 200ms ease;
+}
+
+body.focus-mode.typewriter-focus .markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line.cm-active {
+	opacity: 1;
+}
+
+/* ─────────────────────────────────────────────────── */
+/* Obsidian Publish */
+/* ─────────────────────────────────────────────────── */
+
+.published-container,
+.published-container .markdown-preview-view,
+.published-container .markdown-rendered {
+	background-color: var(--background-primary);
+	color: var(--text-normal);
+}
+
+.published-container .site-body {
+	background-color: var(--background-primary);
+}
+
+.published-container :is(.site-body-left-column, .site-body-right-column, .site-header, .site-footer) {
+	background-color: var(--background-secondary);
+	color: var(--text-muted);
+}
+
+.published-container :is(.site-header, .site-footer) {
+	border-color: var(--background-modifier-border);
+}
+
+.published-container .site-body-center-column {
+	background-color: var(--background-primary);
+	box-shadow: 0 0 0 1px color-mix(in srgb, var(--background-modifier-border) 48%, transparent);
+}
+
+.published-container :is(.site-body-left-column-site-name, .site-body-left-column-site-logo, .site-body-right-column-title) {
+	color: var(--text-normal);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.published-container :is(.tree-item-self, .nav-file-title, .nav-folder-title) {
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+}
+
+.published-container :is(.tree-item-self:hover, .nav-file-title:hover, .nav-folder-title:hover, .tree-item-self.is-active) {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.published-container :is(.search-bar, .search-input-container input, input[type='search']) {
+	background-color: var(--background-primary);
+	border: var(--thin-border);
+	border-radius: var(--radius-m);
+	color: var(--text-normal);
+}
+
+.published-container :is(.search-result, .site-body-left-column .nav-view-outer, .outline-view-outer) {
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	border-radius: var(--radius-m);
+	background-color: color-mix(in srgb, var(--background-primary-alt) 68%, transparent);
+}
+
+.published-container .markdown-rendered :is(.footnotes, section.footnotes) {
+	border-top: 1px solid var(--background-modifier-border);
+	color: var(--text-muted);
+}
+
+.published-container .markdown-rendered :is(pre, table, blockquote, .callout, figure, .image-embed) {
+	break-inside: avoid;
 }
 
 /* ─────────────────────────────────────────────────── */
 /* Print / PDF Export */
 /* ─────────────────────────────────────────────────── */
+
+@page {
+	margin: 18mm 16mm;
+}
 
 @media print {
 	/* Hide all chrome */
@@ -1358,7 +3739,7 @@ body.focus-mode:hover .workspace-ribbon {
 	.titlebar,
 	.workspace-tab-header-container,
 	.view-header {
-		display: none !important;
+		display: none;
 	}
 
 	/* Force readable background in dark mode */
@@ -1366,22 +3747,106 @@ body.focus-mode:hover .workspace-ribbon {
 		--background-primary: #FFFCF0;
 		--background-primary-alt: #F2F0E5;
 		--background-secondary: #F2F0E5;
+		--background-secondary-alt: #E6E4D9;
 		--background-modifier-border: #DAD8CE;
 		--text-normal: #100F0F;
 		--text-muted: #6F6E69;
 		--text-faint: #B7B5AC;
+		--surface-overlay: #FFFCF0;
+		--surface-raised: #F2F0E5;
+		--shadow-soft: none;
+		color-scheme: light;
 	}
 
 	/* Full-width content */
-	.markdown-preview-view {
-		max-width: 100% !important;
-		padding: 1.5cm 2cm !important;
+	body,
+	.markdown-preview-view,
+	.markdown-rendered,
+	.published-container,
+	.published-container .markdown-preview-view {
+		background: #FFFCF0 !important;
+		color: #100F0F !important;
+	}
+
+	.markdown-preview-view,
+	.markdown-rendered {
+		max-width: 100%;
+		padding: 0;
+		font-size: 11pt;
+		line-height: 1.55;
+	}
+
+	.markdown-preview-view :is(p, li, blockquote),
+	.markdown-rendered :is(p, li, blockquote) {
+		orphans: 3;
+		widows: 3;
+	}
+
+	a,
+	.internal-link,
+	.external-link {
+		color: #100F0F !important;
+		text-decoration: underline;
+		text-decoration-thickness: 0.06em;
+		text-underline-offset: 0.16em;
+	}
+
+	a[href^='http']::after,
+	.external-link[href^='http']::after {
+		content: " (" attr(href) ")";
+		color: #6F6E69;
+		font-size: 0.82em;
+		font-weight: 400;
+		overflow-wrap: anywhere;
+	}
+
+	/* Keep internal links compact in exported PDFs */
+	.internal-link::after,
+	a.internal-link::after {
+		content: "";
 	}
 
 	/* Prevent code from being clipped */
+	pre,
+	code {
+		background-color: #F2F0E5 !important;
+		color: #100F0F !important;
+		border-color: #DAD8CE !important;
+	}
+
 	pre {
-		white-space: pre-wrap !important;
-		word-break: break-all !important;
+		white-space: pre-wrap;
+		word-break: break-all;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	table,
+	.table-wrapper {
+		width: 100%;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group;
+	}
+
+	tr {
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	th,
+	td {
+		border-color: #DAD8CE !important;
+	}
+
+	blockquote {
+		border-left-color: #DAD8CE !important;
+		break-inside: avoid;
+		page-break-inside: avoid;
+		color: #3A3831 !important;
 	}
 
 	/* Prevent orphaned headings */
@@ -1391,14 +3856,57 @@ body.focus-mode:hover .workspace-ribbon {
 	}
 
 	/* Keep images within page */
-	img {
-		max-width: 100% !important;
+	img,
+	figure,
+	.image-embed,
+	.internal-embed.image-embed {
+		max-width: 100%;
+		break-inside: avoid;
 		page-break-inside: avoid;
+		box-shadow: none !important;
+	}
+
+	.markdown-preview-view.img-wide :is(.image-embed, .internal-embed.image-embed, figure),
+	.markdown-preview-view.figure-note.img-wide .image-embed,
+	.markdown-preview-view.img-wide figure.figure-note {
+		width: 100%;
+		max-width: 100%;
+		margin-inline: 0;
+		transform: none;
 	}
 
 	/* Callouts behave on page breaks */
-	.callout {
+	.callout,
+	.markdown-embed,
+	.footnotes,
+	section.footnotes {
+		background-color: #F2F0E5 !important;
+		border-color: #DAD8CE !important;
+		color: #100F0F !important;
+		break-inside: avoid;
 		page-break-inside: avoid;
+	}
+
+	.callout .callout-icon {
+		display: none;
+	}
+
+	.footnote-ref a,
+	sup a {
+		text-decoration: none;
+	}
+
+	.footnotes,
+	section.footnotes {
+		margin-top: 1.4rem;
+		padding-top: 0.75rem;
+		border-top: 1px solid #DAD8CE !important;
+		font-size: 9pt;
+	}
+
+	.print-hidden,
+	.no-print {
+		display: none !important;
 	}
 }
 
@@ -1582,15 +4090,17 @@ body.fancy-code
 
 body.fancy-code .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
 	background-color: var(--code-block-alt-bg);
-	border: var(--codeblock-border);
+	/* BUG-003: --codeblock-border is a color token; the `border` shorthand needs
+	   an explicit style or border-style stays `none` and nothing renders. */
+	border: 1px solid var(--codeblock-border);
 	border-bottom: none;
 	border-top-right-radius: var(--codeblock-roundness);
 	border-top-left-radius: var(--codeblock-roundness);
 }
 
 body.fancy-code div.HyperMD-codeblock-bg:not(.HyperMD-codeblock-begin-bg) {
-	border-right: var(--codeblock-border);
-	border-left: var(--codeblock-border);
+	border-right: 1px solid var(--codeblock-border);
+	border-left: 1px solid var(--codeblock-border);
 }
 
 body.fancy-code .cm-line.HyperMD-codeblock .code-block-flair {
@@ -1612,15 +4122,9 @@ body.fancy-code .markdown-reading-view pre[class*='language-']::before {
 	border-top-left-radius: calc(var(--codeblock-roundness) * 0.8);
 }
 
-body.fancy-code pre[class*='language-']::after {
-	content: attr(class);
-	font-size: 0.9rem;
-	text-shadow: none;
-	color: var(--text-muted);
-	position: absolute;
-	top: 2px;
-	right: 5px;
-}
+/* Clean language badge is provided by the M9-3 `code-language-label` section
+   below (curated names on code::before), replacing the old attr(class) label
+   that rendered the literal "language-xxx" string. */
 
 body.fancy-code .markdown-preview-view pre code {
 	padding: var(--size-4-1) var(--size-4-2);
@@ -1645,7 +4149,7 @@ body.fancy-code .markdown-preview-view.markdown-preview-view pre {
 	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
 	padding: 0;
 	margin-top: var(--size-4-2);
-	border: var(--codeblock-border);
+	border: 1px solid var(--codeblock-border);
 	border-radius: var(--codeblock-roundness);
 }
 
@@ -1818,17 +4322,23 @@ code .cm-tag {
 	color: var(--atom-gray-2);
 }
 
+/* M9-3: stronger, calmer diff contrast — a left accent rail plus a slightly
+   deeper tint reads clearly without resorting to high-saturation green/red. */
 .token.inserted,
 .language-diff .token.inserted {
 	color: var(--color-green);
-	background-color: rgba(var(--color-green-rgb), 0.1);
+	background-color: rgba(var(--color-green-rgb), 0.14);
+	border-left: 2px solid rgba(var(--color-green-rgb), 0.55);
+	padding-left: 0.4em;
 	display: block;
 }
 
 .token.deleted,
 .language-diff .token.deleted {
 	color: var(--color-red);
-	background-color: rgba(var(--color-red-rgb), 0.1);
+	background-color: rgba(var(--color-red-rgb), 0.14);
+	border-left: 2px solid rgba(var(--color-red-rgb), 0.55);
+	padding-left: 0.4em;
 	display: block;
 }
 
@@ -1836,28 +4346,182 @@ code .cm-tag {
 .language-diff .token.chunk {
 	color: var(--color-cyan);
 	font-weight: 600;
-	background-color: rgba(var(--color-cyan-rgb), 0.07);
+	background-color: rgba(var(--color-cyan-rgb), 0.09);
+	border-left: 2px solid rgba(var(--color-cyan-rgb), 0.4);
+	padding-left: 0.4em;
 	display: block;
 }
 
 /* CodeMirror live-preview diff (git-style) */
 .cm-hmd-codeblock .cm-positive {
 	color: var(--color-green);
+	background-color: rgba(var(--color-green-rgb), 0.1);
 }
 
 .cm-hmd-codeblock .cm-negative {
 	color: var(--color-red);
+	background-color: rgba(var(--color-red-rgb), 0.1);
+}
+
+/* ─────────────────────────────────────────────────── */
+/* M9-3 Code block language label (Reading View) */
+/* Opt-out via Style Settings → Features → Code block    */
+/* language labels. Live Preview needs no badge — the    */
+/* ```lang fence text already shows the language.        */
+/* ─────────────────────────────────────────────────── */
+
+body.code-language-label .markdown-preview-view pre[class*='language-'] {
+	position: relative;
+}
+
+/* Badge box styling (no content here) — per-language rules below supply the
+   text, so unmapped languages render nothing instead of an empty pill. */
+body.code-language-label .markdown-preview-view pre[class*='language-'] > code::before {
+	position: absolute;
+	top: 0.35rem;
+	right: 0.5rem;
+	padding: 0.02rem 0.42rem;
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 70%, transparent);
+	border-radius: 999px;
+	background-color: color-mix(in srgb, var(--background-primary) 86%, transparent);
+	color: var(--text-faint);
+	font-family: var(--font-interface);
+	font-size: 0.72em;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	line-height: 1.5;
+	pointer-events: none;
+	opacity: 0.9;
+	transition: opacity 120ms ease;
+}
+
+/* Fade the badge on hover so the copy button (top-right) is unobstructed. */
+body.code-language-label .markdown-preview-view pre[class*='language-']:hover > code::before {
+	opacity: 0;
+}
+
+body.code-language-label .markdown-preview-view pre.language-js > code::before,
+body.code-language-label .markdown-preview-view pre.language-javascript > code::before {
+	content: 'JS';
+}
+body.code-language-label .markdown-preview-view pre.language-ts > code::before,
+body.code-language-label .markdown-preview-view pre.language-typescript > code::before {
+	content: 'TS';
+}
+body.code-language-label .markdown-preview-view pre.language-jsx > code::before {
+	content: 'JSX';
+}
+body.code-language-label .markdown-preview-view pre.language-tsx > code::before {
+	content: 'TSX';
+}
+body.code-language-label .markdown-preview-view pre.language-py > code::before,
+body.code-language-label .markdown-preview-view pre.language-python > code::before {
+	content: 'Python';
+}
+body.code-language-label .markdown-preview-view pre.language-rb > code::before,
+body.code-language-label .markdown-preview-view pre.language-ruby > code::before {
+	content: 'Ruby';
+}
+body.code-language-label .markdown-preview-view pre.language-go > code::before {
+	content: 'Go';
+}
+body.code-language-label .markdown-preview-view pre.language-rs > code::before,
+body.code-language-label .markdown-preview-view pre.language-rust > code::before {
+	content: 'Rust';
+}
+body.code-language-label .markdown-preview-view pre.language-java > code::before {
+	content: 'Java';
+}
+body.code-language-label .markdown-preview-view pre.language-c > code::before {
+	content: 'C';
+}
+body.code-language-label .markdown-preview-view pre.language-cpp > code::before {
+	content: 'C++';
+}
+body.code-language-label .markdown-preview-view pre.language-cs > code::before,
+body.code-language-label .markdown-preview-view pre.language-csharp > code::before {
+	content: 'C#';
+}
+body.code-language-label .markdown-preview-view pre.language-php > code::before {
+	content: 'PHP';
+}
+body.code-language-label .markdown-preview-view pre.language-html > code::before {
+	content: 'HTML';
+}
+body.code-language-label .markdown-preview-view pre.language-css > code::before {
+	content: 'CSS';
+}
+body.code-language-label .markdown-preview-view pre.language-scss > code::before {
+	content: 'SCSS';
+}
+body.code-language-label .markdown-preview-view pre.language-json > code::before {
+	content: 'JSON';
+}
+body.code-language-label .markdown-preview-view pre.language-yml > code::before,
+body.code-language-label .markdown-preview-view pre.language-yaml > code::before {
+	content: 'YAML';
+}
+body.code-language-label .markdown-preview-view pre.language-toml > code::before {
+	content: 'TOML';
+}
+body.code-language-label .markdown-preview-view pre.language-sh > code::before,
+body.code-language-label .markdown-preview-view pre.language-shell > code::before,
+body.code-language-label .markdown-preview-view pre.language-bash > code::before {
+	content: 'Shell';
+}
+body.code-language-label .markdown-preview-view pre.language-sql > code::before {
+	content: 'SQL';
+}
+body.code-language-label .markdown-preview-view pre.language-md > code::before,
+body.code-language-label .markdown-preview-view pre.language-markdown > code::before {
+	content: 'Markdown';
+}
+body.code-language-label .markdown-preview-view pre.language-dockerfile > code::before {
+	content: 'Dockerfile';
+}
+body.code-language-label .markdown-preview-view pre.language-kotlin > code::before {
+	content: 'Kotlin';
+}
+body.code-language-label .markdown-preview-view pre.language-swift > code::before {
+	content: 'Swift';
+}
+body.code-language-label .markdown-preview-view pre.language-dart > code::before {
+	content: 'Dart';
+}
+body.code-language-label .markdown-preview-view pre.language-diff > code::before {
+	content: 'Diff';
+}
+
+/* ─────────────────────────────────────────────────── */
+/* M9-3 Copy button — clear hover/active by default */
+/* (previously only styled under fancy-code).            */
+/* ─────────────────────────────────────────────────── */
+
+.markdown-preview-view .copy-code-button {
+	transition: background-color 120ms ease, color 120ms ease, border-color 120ms ease;
+}
+
+.markdown-preview-view .copy-code-button:hover {
+	background-color: var(--background-modifier-hover);
+	border-color: color-mix(in srgb, var(--interactive-accent) 45%, var(--background-modifier-border));
+	color: var(--text-normal);
+}
+
+.markdown-preview-view .copy-code-button:active {
+	background-color: color-mix(in srgb, var(--interactive-accent) 16%, var(--background-primary));
+	color: var(--text-normal);
 }
 
 /* --------------------- */
 /* Mobile toolbar button */
 /* --------------------- */
 
-body.is-mobile:not(.floating-button-off):not(.advanced-toolbar)
-.view-action:nth-last-of-type(2),
+/* Fragile: Obsidian mobile does not expose a stable compose/new-note class here.
+ * Keep this selector audited in docs-code-ai/PLUGIN-COMPATIBILITY-AUDIT.md.
+ */
 body.is-mobile:not(.floating-button-off):not(.advanced-toolbar)
 .view-action:nth-last-of-type(2) {
-	color: white;
+	color: var(--text-on-accent);
 	background-color: var(--interactive-accent);
 	opacity: 1;
 	display: flex;
@@ -1869,7 +4533,7 @@ body.is-mobile:not(.floating-button-off):not(.advanced-toolbar)
 	align-items: center;
 	width: 53px;
 	height: 53px;
-	border-radius: 50% !important;
+	border-radius: 50%;
 	box-shadow: 1.1px 0.3px 2.2px rgba(0, 0, 0, 0.02),
 	2.7px 0.7px 5.3px rgba(0, 0, 0, 0.028), 5px 1.3px 10px rgba(0, 0, 0, 0.035),
 	8.9px 2.2px 17.9px rgba(0, 0, 0, 0.042),
@@ -1877,10 +4541,8 @@ body.is-mobile:not(.floating-button-off):not(.advanced-toolbar)
 }
 
 body.is-mobile:not(.floating-button-off).advanced-toolbar
-.view-action:nth-last-of-type(2),
-body.is-mobile:not(.floating-button-off).advanced-toolbar
 .view-action:nth-last-of-type(2) {
-	color: white;
+	color: var(--text-on-accent);
 	background-color: var(--interactive-accent);
 	opacity: 1;
 	position: fixed;
@@ -1892,7 +4554,7 @@ body.is-mobile:not(.floating-button-off).advanced-toolbar
 	align-items: center;
 	width: 53px;
 	height: 53px;
-	border-radius: 50% !important;
+	border-radius: 50%;
 	box-shadow: 1.1px 0.3px 2.2px rgba(0, 0, 0, 0.02),
 	2.7px 0.7px 5.3px rgba(0, 0, 0, 0.028), 5px 1.3px 10px rgba(0, 0, 0, 0.035),
 	8.9px 2.2px 17.9px rgba(0, 0, 0, 0.042),
@@ -1980,7 +4642,6 @@ input[data-task='<']:checked,
 li[data-task='<'] > input:checked,
 li[data-task='<'] > p > input:checked {
 	color: var(--text-faint);
-	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z' clip-rule='evenodd' /%3E%3C/svg%3E");
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E");
 }
 
@@ -2679,6 +5340,192 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 	animation: ouroboros-pulse 1.5s ease-in-out infinite;
 }
 
+/* Dataview / library helper classes
+──────────────────────────────────────────────────────
+Apply through note cssclasses:
+- cards: convert Dataview tables/lists into quiet card grids
+- cards-cover: treat first-cell images as covers
+- cards-compact: tighter cards for dense library indexes */
+
+.markdown-preview-view.cards,
+.markdown-source-view.mod-cm6.cards {
+	--ouroboros-card-min-width: 15rem;
+	--ouroboros-card-gap: 0.85rem;
+	--ouroboros-card-padding: 0.85rem;
+	--ouroboros-card-cover-height: 8rem;
+	--ouroboros-card-shadow: 0 0 0 1px var(--background-modifier-border), var(--shadow-soft);
+	--ouroboros-card-shadow-hover: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 32%, var(--background-modifier-border)), 0 10px 28px rgba(0, 0, 0, 0.09);
+}
+
+.markdown-preview-view.cards.cards-compact,
+.markdown-source-view.mod-cm6.cards.cards-compact {
+	--ouroboros-card-min-width: 12rem;
+	--ouroboros-card-gap: 0.55rem;
+	--ouroboros-card-padding: 0.62rem;
+	--ouroboros-card-cover-height: 6rem;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table, .block-language-dataview table, .block-language-dataviewjs table) {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--ouroboros-card-min-width)), 1fr));
+	gap: var(--ouroboros-card-gap);
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	overflow: visible;
+	background: transparent;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table thead, .block-language-dataview thead, .block-language-dataviewjs thead) {
+	display: none;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table tbody, .block-language-dataview tbody, .block-language-dataviewjs tbody) {
+	display: contents;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table tr, .block-language-dataview tr, .block-language-dataviewjs tr) {
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
+	min-width: 0;
+	overflow: hidden;
+	border-radius: var(--radius-l);
+	background-color: var(--surface-overlay);
+	box-shadow: var(--ouroboros-card-shadow);
+	transition: box-shadow 140ms ease, transform 140ms ease, background-color 140ms ease;
+}
+
+@media (hover: hover) {
+	.markdown-preview-view.cards :is(.dataview.table-view-table tr, .block-language-dataview tr, .block-language-dataviewjs tr):hover {
+		transform: translateY(-1px);
+		box-shadow: var(--ouroboros-card-shadow-hover);
+	}
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td, .block-language-dataview td, .block-language-dataviewjs td) {
+	display: block;
+	border: 0;
+	padding: 0 var(--ouroboros-card-padding);
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td:first-child, .block-language-dataview td:first-child, .block-language-dataviewjs td:first-child) {
+	padding-top: var(--ouroboros-card-padding);
+	color: var(--text-normal);
+	font-size: 1.02em;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td:last-child, .block-language-dataview td:last-child, .block-language-dataviewjs td:last-child) {
+	padding-bottom: var(--ouroboros-card-padding);
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td:empty, .block-language-dataview td:empty, .block-language-dataviewjs td:empty) {
+	display: none;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td:not(:first-child), .block-language-dataview td:not(:first-child), .block-language-dataviewjs td:not(:first-child)) {
+	color: var(--text-muted);
+	font-size: 0.9em;
+}
+
+.markdown-preview-view.cards :is(.dataview.table-view-table td a.internal-link, .block-language-dataview td a.internal-link, .block-language-dataviewjs td a.internal-link) {
+	font-weight: 650;
+	text-decoration: none;
+}
+
+.markdown-preview-view.cards.cards-cover :is(.dataview.table-view-table td:first-child:has(img), .block-language-dataview td:first-child:has(img), .block-language-dataviewjs td:first-child:has(img)) {
+	padding: 0;
+	margin-bottom: 0.2rem;
+	background-color: var(--surface-raised);
+}
+
+.markdown-preview-view.cards.cards-cover :is(.dataview.table-view-table td:first-child img, .block-language-dataview td:first-child img, .block-language-dataviewjs td:first-child img) {
+	display: block;
+	width: 100%;
+	height: var(--ouroboros-card-cover-height);
+	max-height: var(--ouroboros-card-cover-height);
+	object-fit: cover;
+	border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+
+.markdown-preview-view.cards .dataview.list-view-ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--ouroboros-card-min-width)), 1fr));
+	gap: var(--ouroboros-card-gap);
+	padding-left: 0;
+	list-style: none;
+}
+
+.markdown-preview-view.cards .dataview.list-view-ul > li,
+.markdown-preview-view.cards .dataview.task-list-basic-item {
+	padding: var(--ouroboros-card-padding);
+	border-radius: var(--radius-l);
+	background-color: var(--surface-overlay);
+	box-shadow: var(--ouroboros-card-shadow);
+}
+
+/* N4: Daily / periodic-note dashboard layout
+──────────────────────────────────────────────────────
+Apply through note cssclasses:
+- dashboard: turn a daily/periodic note into a calm board of widget panels
+
+Each Dataview / Tasks block becomes a raised paper panel (reusing the surface
+and shadow tokens) so the note reads like a quiet dashboard — never a
+high-saturation dashboard. Composes with `.cards`: when both classes are set,
+each panel still renders its Dataview table as a card grid inside the widget.
+
+Reliability note: Obsidian does not wrap "a heading plus the blocks that follow
+it" into a single groupable element, so this helper panels each block on its own
+rather than column-flowing the whole note (which would orphan headings). */
+
+.markdown-preview-view.dashboard h2,
+.markdown-source-view.mod-cm6.dashboard .cm-line.HyperMD-header-2 {
+	font-size: 0.82em;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: var(--text-muted);
+	font-weight: 700;
+	border: 0;
+	margin: 1.4rem 0 0.5rem;
+	padding-left: 0.6rem;
+	border-left: 2px solid var(--interactive-accent);
+}
+
+.markdown-preview-view.dashboard :is(
+	.block-language-dataview,
+	.block-language-dataviewjs,
+	.block-language-tasks
+),
+.markdown-source-view.mod-cm6.dashboard .cm-embed-block:has(:is(
+	.block-language-dataview,
+	.block-language-dataviewjs,
+	.block-language-tasks
+)) {
+	background-color: var(--surface-raised);
+	border: var(--thin-border);
+	border-radius: var(--radius-l);
+	padding: 0.7rem 0.85rem;
+	box-shadow: var(--shadow-soft);
+	margin-block: 0.5rem;
+}
+
+/* Callouts already carry their own surface — keep them, only relax spacing so
+   they sit in the same rhythm as the panels instead of getting a second frame. */
+.markdown-preview-view.dashboard > .callout {
+	margin-block: 0.5rem;
+}
+
+/* A panel that holds a Dataview card grid (dashboard + cards) drops its inner
+   padding so the grid breathes edge to edge inside the widget. */
+.markdown-preview-view.dashboard.cards :is(
+	.block-language-dataview,
+	.block-language-dataviewjs
+) {
+	padding: 0.7rem;
+}
+
 /* --------------- */
 /* Calendar */
 /* --------------- */
@@ -2726,7 +5573,7 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 .calendar .active,
 .calendar .selected {
 	background-color: var(--interactive-accent);
-	color: white;
+	color: var(--text-on-accent);
 }
 
 .calendar .note {
@@ -2857,48 +5704,97 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 /* --------------- */
+/* Task priority palette (N5, opt-in) — reuse the warm progress 5-color ramp */
+/* as a low-noise urgency gradient on Tasks-plugin priorities.               */
+/* Mapping: highest→progress-1 (#ad5758 warm red) … lowest→progress-5        */
+/* (#768399 cool slate), so warm = urgent and cool = calm (Things workbench).*/
+/* DOM-honest: a JS-less theme can't compute date proximity, so the Tasks    */
+/* plugin emits data-task-priority (reliable) but no runtime overdue/today    */
+/* class. Urgency is carried by the priority ramp and a warm due chip — never */
+/* by fabricated date math. data-task-priority="none" is intentionally left   */
+/* unstyled so unprioritized tasks stay quiet.                                */
+/* --------------- */
+
+body.task-priority-palette .task-list-item[data-task-priority='highest'],
+body.task-priority-palette .task-list-item[data-task-priority='high'],
+body.task-priority-palette .task-list-item[data-task-priority='medium'],
+body.task-priority-palette .task-list-item[data-task-priority='low'],
+body.task-priority-palette .task-list-item[data-task-priority='lowest'] {
+	box-shadow: inset 2px 0 0 0 var(--ouroboros-priority-rail, transparent);
+	padding-left: 0.4rem;
+}
+
+body.task-priority-palette .task-list-item[data-task-priority='highest'] {
+	--ouroboros-priority-rail: color-mix(in srgb, var(--progress-color-1) 78%, transparent);
+}
+
+body.task-priority-palette .task-list-item[data-task-priority='high'] {
+	--ouroboros-priority-rail: color-mix(in srgb, var(--progress-color-2) 74%, transparent);
+}
+
+body.task-priority-palette .task-list-item[data-task-priority='medium'] {
+	--ouroboros-priority-rail: color-mix(in srgb, var(--progress-color-3) 70%, transparent);
+}
+
+body.task-priority-palette .task-list-item[data-task-priority='low'] {
+	--ouroboros-priority-rail: color-mix(in srgb, var(--progress-color-4) 66%, transparent);
+}
+
+body.task-priority-palette .task-list-item[data-task-priority='lowest'] {
+	--ouroboros-priority-rail: color-mix(in srgb, var(--progress-color-5) 60%, transparent);
+}
+
+/* Due chip reads warm (the time-pressure metadata) so it separates from the */
+/* neutral start/scheduled/recurring chips, without claiming date proximity. */
+body.task-priority-palette .tasks-layout .tasks-due {
+	background-color: color-mix(in srgb, var(--progress-color-2) 16%, var(--background-primary-alt));
+	border-color: color-mix(in srgb, var(--progress-color-1) 28%, transparent);
+	color: var(--text-normal);
+}
+
+/* --------------- */
 /* Todoist */
 /* --------------- */
 
 .todoist-p1 > input[type='checkbox'] {
-	border: 1px solid #ff757f !important;
-	background-color: rgba(255, 117, 127, 0.25) !important;
+	border: 1px solid var(--color-red);
+	background-color: rgba(var(--color-red-rgb), 0.18);
 }
 
 .todoist-p1 > input[type='checkbox']:hover {
-	background-color: rgba(255, 117, 127, 0.5) !important;
+	background-color: rgba(var(--color-red-rgb), 0.28);
 }
 
 .todoist-p2 > input[type='checkbox'] {
-	border: 1px solid #ffc777 !important;
-	background-color: rgba(255, 199, 119, 0.25) !important;
+	border: 1px solid var(--color-orange);
+	background-color: rgba(var(--color-orange-rgb), 0.18);
 }
 
 .todoist-p2 > input[type='checkbox']:hover {
-	background-color: rgba(255, 199, 119, 0.5) !important;
+	background-color: rgba(var(--color-orange-rgb), 0.28);
 }
 
 .todoist-p3 > input[type='checkbox'] {
-	border: 1px solid #65bcff !important;
-	background-color: rgba(101, 188, 255, 0.25) !important;
+	border: 1px solid var(--color-blue);
+	background-color: rgba(var(--color-blue-rgb), 0.18);
 }
 
 .todoist-p3 > input[type='checkbox']:hover {
-	background-color: rgba(101, 188, 255, 0.5) !important;
+	background-color: rgba(var(--color-blue-rgb), 0.28);
 }
 
 .todoist-p4 > input[type='checkbox'] {
-	border: 1px solid #b4c2f0 !important;
-	background-color: rgba(180, 194, 240, 0.25) !important;
+	border: 1px solid var(--color-purple);
+	background-color: rgba(var(--color-purple-rgb), 0.14);
 }
 
 .todoist-p4 > input[type='checkbox']:hover {
-	background-color: rgba(180, 194, 240, 0.5) !important;
+	background-color: rgba(var(--color-purple-rgb), 0.24);
 }
 
 .task-metadata {
 	font-size: var(--font-todoist-metadata-size);
-	color: #7a88cf;
+	color: var(--color-purple);
 	margin-left: unset;
 }
 
@@ -2907,7 +5803,7 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 .task-date.task-overdue {
-	color: rgba(255, 152, 164, 0.75) !important;
+	color: var(--color-red);
 }
 
 .task-calendar-icon,
@@ -2933,14 +5829,14 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 
 .todoist-section .todoist-section-title {
 	font-size: var(--font-todoist-title-size);
-	color: #7a88cf;
+	color: var(--color-purple);
 	font-weight: 700;
 	margin-block-end: 0px;
 }
 
 .todoist-error {
-	border: 1px solid #ff98a4;
-	background-color: rgba(255, 152, 164, 0.05);
+	border: 1px solid var(--color-red);
+	background-color: rgba(var(--color-red-rgb), 0.07);
 	padding: 1em 1em;
 	margin: 1em 0px;
 }
@@ -2951,15 +5847,15 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 .todoist-error code {
-	background-color: unset !important;
-	padding: unset !important;
-	margin: unset !important;
+	background-color: unset;
+	padding: unset;
+	margin: unset;
 }
 
 .todoist-success {
-	border: 1px solid #c3e88d !important;
-	background-color: rgba(195, 232, 141, 0.05);
-	padding: 1em 1em !important;
+	border: 1px solid var(--color-green);
+	background-color: rgba(var(--color-green-rgb), 0.07);
+	padding: 1em 1em;
 	margin: 1em 0px;
 }
 
@@ -2969,16 +5865,16 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 /* .priority-container .priority-1 {
-  color: #ff98a4;
+  color: var(--color-red);
 }
 .priority-container .priority-2 {
-  color: #ffc777;
+  color: var(--color-orange);
 }
 .priority-container .priority-3 {
-  color: #65bcff;
+  color: var(--color-blue);
 }
 .priority-container .priority-4 {
-  color: #b4c2f0;
+  color: var(--color-purple);
 } */
 
 /* ─────────────────────────────────────────────────── */
@@ -3037,7 +5933,7 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 .fc .fc-button-primary:not(:disabled).fc-button-active {
 	background-color: var(--interactive-accent);
 	border-color: var(--interactive-accent);
-	color: white;
+	color: var(--text-on-accent);
 }
 
 .fc-theme-standard .fc-scrollgrid,
@@ -3057,7 +5953,7 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
 	background-color: var(--interactive-accent);
 	border-radius: 999px;
-	color: white;
+	color: var(--text-on-accent);
 	padding: 2px 6px;
 }
 
@@ -3130,141 +6026,735 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 /* ─────────────────────────────────────────────────── */
-/* Canvas View */
+/* Bases */
 /* ─────────────────────────────────────────────────── */
 
-/* Canvas background: dot-grid pattern */
-.canvas-wrapper {
-	background-color: var(--background-secondary);
-	background-image: radial-gradient(
-		circle,
-		color-mix(in srgb, var(--background-modifier-border) 80%, transparent) 1px,
-		transparent 1px
-	);
-	background-size: 24px 24px;
+.workspace-leaf-content[data-type='bases'],
+.bases-embed,
+.block-language-base {
+	--bases-header-border-width: 0 0 var(--border-width) 0;
+	--bases-header-padding-start: var(--size-4-2);
+	--bases-header-padding-end: var(--size-4-2);
+	--bases-embed-border-width: var(--border-width);
+	--bases-embed-border-color: var(--background-modifier-border);
+	--bases-embed-border-radius: var(--radius-l);
+	--bases-table-container-border-width: var(--border-width);
+	--bases-table-container-border-radius: var(--radius-m);
+	--bases-table-group-background: var(--background-primary-alt);
+	--bases-table-header-background: var(--background-primary-alt);
+	--bases-table-header-background-hover: var(--background-modifier-hover);
+	--bases-table-header-color: var(--text-muted);
+	--bases-table-header-weight: 650;
+	--bases-table-border-color: var(--background-modifier-border);
+	--bases-table-row-background-hover: var(--background-modifier-hover);
+	--bases-table-cell-background-active: var(--background-primary);
+	--bases-table-cell-background-disabled: color-mix(in srgb, var(--background-primary-alt) 72%, transparent);
+	--bases-table-cell-background-selected: color-mix(in srgb, var(--interactive-accent) 14%, transparent);
+	--bases-table-cell-shadow-active: 0 0 0 1px var(--background-modifier-border), 0 0 0 3px color-mix(in srgb, var(--interactive-accent) 12%, transparent);
+	--bases-table-cell-shadow-focus: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 54%, transparent);
+	--bases-cards-background: var(--background-primary);
+	--bases-cards-container-background: transparent;
+	--bases-cards-cover-background: var(--background-primary-alt);
+	--bases-cards-radius: var(--radius-l);
+	--bases-cards-shadow: 0 0 0 1px var(--background-modifier-border), var(--shadow-soft);
+	--bases-cards-shadow-hover: 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 34%, var(--background-modifier-border)), 0 8px 24px rgba(0, 0, 0, 0.08);
+	--bases-group-heading-property-color: var(--text-faint);
+	--bases-group-heading-property-size: var(--font-ui-smaller);
+	--bases-group-heading-value-weight: 650;
 }
 
-/* Canvas node card */
-.canvas-node {
+.bases-view {
 	background-color: var(--background-primary);
-	border: 1px solid var(--background-modifier-border);
-	border-radius: var(--radius-m);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
-	transition: box-shadow 160ms ease, border-color 160ms ease;
-}
-
-.theme-dark .canvas-node {
-	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3), 0 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Selected / focused node */
-.canvas-node.is-focused,
-.canvas-node.is-selected {
-	border-color: var(--interactive-accent);
-	box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 30%, transparent),
-		0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-/* Node label / title */
-.canvas-node-label {
-	color: var(--text-normal);
-	font-size: 0.88em;
-	font-weight: 500;
-}
-
-/* Node resize handle */
-.canvas-node-resize-handle {
-	background-color: var(--interactive-accent);
-	border-radius: 999px;
-	opacity: 0;
-	transition: opacity 120ms ease;
-}
-
-.canvas-node:hover .canvas-node-resize-handle,
-.canvas-node.is-focused .canvas-node-resize-handle {
-	opacity: 0.75;
-}
-
-/* Canvas edge / connection line */
-.canvas-edge path {
-	stroke: var(--background-modifier-border);
-	stroke-width: 2;
-}
-
-.canvas-edge.is-selected path,
-.canvas-edge:hover path {
-	stroke: var(--interactive-accent);
-}
-
-/* Canvas edge arrow head */
-.canvas-edge .canvas-edge-end-marker path {
-	fill: var(--background-modifier-border);
-}
-
-.canvas-edge.is-selected .canvas-edge-end-marker path,
-.canvas-edge:hover .canvas-edge-end-marker path {
-	fill: var(--interactive-accent);
-}
-
-/* Canvas toolbar / controls */
-.canvas-controls {
-	background-color: var(--background-primary);
-	border: var(--thin-border);
 	border-radius: var(--radius-l);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.canvas-controls .clickable-icon {
-	color: var(--text-muted);
+.workspace-leaf-content[data-type='bases'] .view-content {
+	background-color: var(--background-primary);
+}
+
+.bases-embed .bases-view,
+.block-language-base .bases-view {
+	border: var(--bases-embed-border-width) solid var(--bases-embed-border-color);
+	border-radius: var(--bases-embed-border-radius);
+	box-shadow: var(--shadow-soft);
+	overflow: hidden;
+}
+
+.bases-header {
+	background-color: var(--background-primary);
+	border-color: var(--bases-table-border-color);
+}
+
+.bases-header .title {
+	color: var(--text-normal);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.bases-toolbar .text-icon-button,
+.bases-toolbar .clickable-icon,
+.bases-toolbar-menu-container-header .back-button,
+.bases-toolbar-menu-container-header .close-icon {
 	border-radius: var(--radius-s);
-	transition: background-color 120ms ease, color 120ms ease;
+	transition: background-color 120ms ease, color 120ms ease, box-shadow 120ms ease;
 }
 
-.canvas-controls .clickable-icon:hover {
+.bases-toolbar .text-icon-button:hover,
+.bases-toolbar .clickable-icon:hover,
+.bases-toolbar-menu-container-header .back-button:hover,
+.bases-toolbar-menu-container-header .close-icon:hover {
 	background-color: var(--background-modifier-hover);
 	color: var(--text-normal);
 }
 
-/* Canvas toolbar menu */
-.canvas-menu {
+.bases-toolbar .text-icon-button.is-active,
+.bases-toolbar .bases-toolbar-item.has-active-menu .text-icon-button,
+.bases-toolbar .bases-toolbar-item.bases-toolbar-views-menu .text-icon-button {
+	background-color: color-mix(in srgb, var(--interactive-accent) 11%, transparent);
+	box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 24%, transparent);
+	color: var(--text-accent);
+}
+
+.bases-toolbar .toolbar-badge,
+.bases-toolbar .bases-toolbar-result-count .text-icon-button {
+	background-color: var(--background-primary-alt);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 76%, transparent);
+	border-radius: 999px;
+	color: var(--text-muted);
+	font-size: 0.82em;
+	font-variant-numeric: tabular-nums;
+}
+
+.bases-toolbar-menu-container,
+.bases-toolbar-menu {
 	background-color: var(--background-primary);
 	border: var(--thin-border);
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-popover);
+}
+
+.bases-toolbar-menu-container-header {
+	border-bottom: var(--thin-border);
+	padding: var(--size-4-2);
+}
+
+.bases-toolbar-menu-container-header .menu-title,
+.bases-toolbar-menu-container-header .menu-title-inner {
+	color: var(--text-normal);
+	font-weight: 650;
+}
+
+.bases-toolbar-menu .bases-toolbar-section:not(:last-child) {
+	border-bottom: 1px solid color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+}
+
+.bases-toolbar-menu .bases-toolbar-section-header {
+	border-radius: var(--radius-s);
+	color: var(--text-muted);
+	font-size: var(--font-ui-small);
+	font-weight: 650;
+	letter-spacing: 0.02em;
+}
+
+.bases-toolbar-menu .bases-toolbar-section-header:hover {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.bases-toolbar-menu-item {
+	border-radius: var(--radius-s);
+	transition: background-color 120ms ease, color 120ms ease;
+}
+
+.bases-toolbar-menu-item:hover,
+.bases-toolbar-menu-item.mod-active,
+.bases-toolbar-menu-item.is-selected {
+	background-color: var(--background-modifier-hover);
+	color: var(--text-normal);
+}
+
+.bases-toolbar-menu-item.mod-active {
+	box-shadow: inset 3px 0 0 color-mix(in srgb, var(--interactive-accent) 70%, transparent);
+}
+
+.bases-toolbar-menu-item .bases-toolbar-menu-item-info-icon,
+.bases-toolbar-menu-item .bases-toolbar-menu-action-icon {
+	color: var(--text-muted);
+}
+
+.bases-query-container .filter-group .filter-group,
+.bases-query-container .filter-expression,
+.bases-toolbar-menu .bases-sort-property-container .bases-sort-property,
+.bases-toolbar-menu .bases-groupby-property-container .bases-sort-property,
+.bases-toolbar-menu .bases-sort-property-container .bases-groupby-property,
+.bases-toolbar-menu .bases-groupby-property-container .bases-groupby-property,
+.base-toolbar-sort-item .bases-sort-property,
+.base-toolbar-groupby-item .bases-sort-property,
+.base-toolbar-sort-item .filter-property-select,
+.base-toolbar-groupby-item .filter-property-select {
+	background-color: var(--background-primary-alt);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 78%, transparent);
 	border-radius: var(--radius-m);
-	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.bases-query-container .filter-expression {
+	box-shadow: none;
+}
+
+.bases-query-container .filter-expression:focus-within,
+.bases-toolbar-menu .bases-sort-property-container:focus-within .bases-sort-property,
+.bases-toolbar-menu .bases-groupby-property-container:focus-within .bases-sort-property,
+.bases-toolbar-menu .bases-sort-property-container:focus-within .bases-groupby-property,
+.bases-toolbar-menu .bases-groupby-property-container:focus-within .bases-groupby-property {
+	border-color: color-mix(in srgb, var(--interactive-accent) 48%, var(--background-modifier-border));
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 12%, transparent);
+}
+
+.bases-query-container .filter-group .filter-group-header .filter-group-label,
+.bases-query-container .filter-row .conjunction,
+.bases-toolbar-menu .bases-sort-direction,
+.bases-toolbar-menu .bases-groupby-property {
+	color: var(--text-muted);
+}
+
+.bases-search-row {
+	background-color: var(--background-primary);
+	border-color: var(--background-modifier-border);
+}
+
+.bases-search-row .document-search-count {
+	background-color: var(--background-primary-alt);
+	border-radius: 999px;
+	color: var(--text-faint);
+	font-size: 0.82em;
+	padding-inline: 0.45rem;
+}
+
+.bases-table-container {
+	background: var(--bases-table-group-background);
+	border: var(--bases-table-container-border-width) solid var(--bases-table-border-color);
+	border-radius: var(--bases-table-container-border-radius);
+	overflow: hidden;
+}
+
+.bases-thead {
+	background-color: var(--bases-table-header-background);
+	box-shadow: inset 0 -1px 0 var(--bases-table-border-color);
+}
+
+.bases-table-header-label {
+	color: var(--bases-table-header-color);
+	font-weight: var(--bases-table-header-weight);
+	letter-spacing: 0.01em;
+}
+
+.bases-thead .bases-td:hover,
+.bases-thead .bases-td.has-active-menu {
+	background-color: var(--bases-table-header-background-hover);
+}
+
+.bases-thead .bases-td[data-sort] .bases-table-header-label,
+.bases-table-header-sort {
+	color: var(--text-accent);
+}
+
+.bases-tbody {
+	background: var(--background-primary);
+}
+
+.bases-tbody .bases-tr:hover {
+	background-color: var(--bases-table-row-background-hover);
+}
+
+.bases-table-group-summary-row.bases-tr,
+.bases-table-footer {
+	background-color: var(--bases-table-group-background);
+}
+
+.bases-table-summary-cell .summary-content,
+.bases-table-summary-cell .summary-function-name,
+.bases-table-group-summary-row .summary-function-value {
+	color: var(--text-muted);
+	font-variant-numeric: tabular-nums;
+}
+
+.bases-td:focus-within {
+	background-color: var(--bases-table-cell-background-active);
+	box-shadow: var(--bases-table-cell-shadow-focus);
+}
+
+.bases-table-container:focus .bases-table-active-cell {
+	box-shadow: var(--bases-table-cell-shadow-active);
+}
+
+.bases-table-container:focus .bases-table-selection {
+	background-color: var(--bases-table-cell-background-selected);
+}
+
+.bases-group-heading {
+	background-color: color-mix(in srgb, var(--background-primary-alt) 72%, transparent);
+	border-radius: var(--radius-s);
+	color: var(--text-normal);
+	padding-inline: var(--size-4-2);
+}
+
+.bases-group-heading .bases-group-property {
+	color: var(--bases-group-heading-property-color);
+	font-size: var(--bases-group-heading-property-size);
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.bases-group-heading .bases-group-value {
+	color: var(--text-normal);
+	font-weight: var(--bases-group-heading-value-weight);
+}
+
+.bases-view[data-view-type='cards'] {
+	--bases-view-padding: var(--size-4-3);
+	--bases-cards-container-background: transparent;
+}
+
+.bases-cards-container {
+	background-color: var(--bases-cards-container-background);
+	gap: var(--size-4-3);
+}
+
+.bases-cards-item {
+	background-color: var(--bases-cards-background);
+	border-radius: var(--bases-cards-radius);
+	box-shadow: var(--bases-cards-shadow);
+	transition: box-shadow 160ms ease, transform 160ms ease;
+}
+
+@media (hover: hover) {
+	.bases-cards-item:hover {
+		box-shadow: var(--bases-cards-shadow-hover);
+		transform: translateY(-1px);
+	}
+}
+
+.bases-cards-cover {
+	background-color: var(--bases-cards-cover-background);
+}
+
+.bases-cards-property.mod-title .bases-cards-line {
+	color: var(--text-normal);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+.bases-cards-label {
+	color: var(--text-faint);
+	font-size: var(--font-ui-smaller);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+
+.bases-cards-line {
+	color: var(--text-muted);
+}
+
+.bases-view[data-view-type='list'] {
+	--bases-view-padding: var(--size-4-2) var(--size-4-4) 60px var(--size-4-2);
+}
+
+.bases-list-item {
+	border-radius: var(--radius-s);
+	transition: background-color 120ms ease, transform 120ms ease;
+}
+
+.bases-list-item:hover {
+	background-color: var(--background-modifier-hover);
+	transform: translateX(1px);
+}
+
+.bases-list-item .list-number,
+.bases-list-item .list-bullet,
+.bases-list-item .bases-list-separator {
+	color: var(--text-faint);
+}
+
+.bases-list-item .bases-list-property {
+	border-radius: var(--radius-xs);
+}
+
+.show-indentation-guide .bases-list-item-properties.nested:before {
+	border-inline-end-color: color-mix(in srgb, var(--background-modifier-border) 68%, transparent);
+}
+
+/* ─────────────────────────────────────────────────── */
+/* Canvas View */
+/* ─────────────────────────────────────────────────── */
+
+.workspace-leaf-content[data-type='canvas'] .view-content,
+.canvas-wrapper {
+	--canvas-background: var(--surface-sunken);
+	--canvas-card-label-color: var(--text-muted);
+	--canvas-dot-pattern: color-mix(in srgb, var(--background-modifier-border) 72%, transparent);
+	--canvas-controls-radius: var(--radius-m);
+	--canvas-controls-icon-size: var(--icon-s);
+	--canvas-controls-icon-stroke: var(--icon-s-stroke-width);
+}
+
+/* Canvas background: warm dot grid with SVG-dot and CSS fallback support */
+.canvas-wrapper {
+	background-color: var(--canvas-background);
+	background-image:
+		radial-gradient(circle at 1px 1px, var(--canvas-dot-pattern) 1px, transparent 1.2px),
+		linear-gradient(180deg, rgba(var(--color-yellow-rgb), 0.025), transparent 34%);
+	background-size: 24px 24px, 100% 100%;
+}
+
+.canvas-background circle {
+	fill: var(--canvas-dot-pattern);
+}
+
+.canvas-selection {
+	background-color: rgba(var(--color-blue-rgb), 0.1);
+	border-color: color-mix(in srgb, var(--interactive-accent) 72%, transparent);
+	border-radius: var(--radius-m);
+}
+
+.canvas-selection.mod-group-selection {
+	background-color: rgba(var(--color-blue-rgb), 0.045);
+	border-color: color-mix(in srgb, var(--interactive-accent) 46%, transparent);
+	border-radius: var(--radius-l);
+}
+
+.canvas-selection.mod-node-highlight {
+	border-radius: var(--radius-l);
+}
+
+/* Canvas node card */
+.canvas-node-container {
+	background-color: var(--surface-overlay);
+	border: 1px solid color-mix(in srgb, rgb(var(--canvas-color)) 52%, var(--background-modifier-border));
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-soft);
+	transition: border-color 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+}
+
+.canvas-node:hover .canvas-node-container {
+	border-color: color-mix(in srgb, rgb(var(--canvas-color)) 68%, var(--interactive-accent));
+	box-shadow: var(--shadow-floating);
+}
+
+.canvas-node.is-selected .canvas-node-container,
+.canvas-node.is-focused .canvas-node-container {
+	border-color: var(--interactive-accent);
+	box-shadow:
+		inset 0 0 0 1px color-mix(in srgb, var(--interactive-accent) 72%, transparent),
+		0 0 0 3px rgba(var(--color-blue-rgb), 0.16),
+		var(--shadow-floating);
+}
+
+.canvas-node.is-dragging .canvas-node-container {
+	box-shadow: var(--shadow-floating);
+}
+
+.canvas-node.is-themed .canvas-node-container {
+	background:
+		linear-gradient(180deg, rgba(var(--canvas-color), 0.09), rgba(var(--canvas-color), 0.025)),
+		var(--surface-overlay);
+	border-color: rgba(var(--canvas-color), 0.48);
+	box-shadow: inset 0 0 0 1px rgba(var(--canvas-color), 0.22), var(--shadow-soft);
+}
+
+.canvas-node.is-selected.is-themed .canvas-node-container,
+.canvas-node.is-focused.is-themed .canvas-node-container {
+	border-color: rgb(var(--canvas-color));
+	box-shadow:
+		inset 0 0 0 1px rgba(var(--canvas-color), 0.42),
+		0 0 0 3px rgba(var(--canvas-color), 0.18),
+		var(--shadow-floating);
+}
+
+/* Node label / title */
+.canvas-node-label {
+	color: var(--canvas-card-label-color);
+	font-size: 0.88em;
+	font-weight: 600;
+	letter-spacing: 0.01em;
+	padding: 0.14em 0.45em;
+	border-radius: var(--radius-s);
+	background-color: color-mix(in srgb, var(--canvas-background) 72%, transparent);
+	backdrop-filter: blur(8px);
+}
+
+.canvas-node.is-selected .canvas-node-label,
+.canvas-node.is-focused .canvas-node-label,
+.canvas-node:hover .canvas-node-label {
+	color: var(--text-normal);
+}
+
+.canvas-node-label svg {
+	color: color-mix(in srgb, var(--interactive-accent) 72%, var(--text-muted));
+}
+
+.canvas-node-placeholder::after {
+	background-color: rgba(var(--canvas-color), 0.09);
+	border: 1px dashed rgba(var(--canvas-color), 0.24);
+}
+
+.canvas-icon-placeholder svg {
+	color: color-mix(in srgb, rgb(var(--canvas-color)) 80%, var(--text-muted));
+	opacity: 0.34;
+}
+
+.canvas-node-content.markdown-embed,
+.canvas-node-content.media-embed {
+	background-color: var(--surface-overlay);
+}
+
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view {
+	padding-inline: var(--size-4-4);
+}
+
+.canvas-node-content.markdown-embed > .markdown-embed-content > .markdown-preview-view .callout {
+	box-shadow: inset 3px 0 0 rgba(var(--callout-color), 0.32);
+}
+
+/* Node resize and connection affordances */
+.canvas-node-resizer[data-resize],
+.canvas-node-resize-handle {
+	background-color: transparent;
+	border-radius: var(--radius-s);
+}
+
+.is-mobile .canvas-wrapper:not(.mod-readonly) .canvas-node-interaction-layer .canvas-node-resizer[data-resize='topright'],
+.is-mobile .canvas-wrapper:not(.mod-readonly) .canvas-node-interaction-layer .canvas-node-resizer[data-resize='bottomright'],
+.is-mobile .canvas-wrapper:not(.mod-readonly) .canvas-node-interaction-layer .canvas-node-resizer[data-resize='topleft'],
+.is-mobile .canvas-wrapper:not(.mod-readonly) .canvas-node-interaction-layer .canvas-node-resizer[data-resize='bottomleft'] {
+	background-color: var(--surface-overlay);
+	border-color: var(--interactive-accent);
+	box-shadow: var(--shadow-soft);
+}
+
+.canvas-node-connection-point::after {
+	background-color: var(--interactive-accent);
+	border-color: var(--surface-overlay);
+	box-shadow: 0 0 0 1px rgba(var(--color-blue-rgb), 0.24), var(--shadow-soft);
+}
+
+.canvas-snaps line {
+	stroke: color-mix(in srgb, var(--interactive-accent) 72%, transparent);
+}
+
+.canvas-snaps circle {
+	fill: color-mix(in srgb, var(--interactive-accent) 72%, transparent);
+}
+
+/* Canvas edges / connection lines */
+.canvas-edges path.canvas-display-path,
+.canvas-edge path {
+	stroke: color-mix(in srgb, rgb(var(--canvas-color)) 64%, var(--background-modifier-border));
+	stroke-width: calc(2px * var(--zoom-multiplier, 1));
+}
+
+.canvas-edges polygon.canvas-path-end,
+.canvas-edge .canvas-edge-end-marker path {
+	stroke: color-mix(in srgb, rgb(var(--canvas-color)) 64%, var(--background-modifier-border));
+	fill: color-mix(in srgb, rgb(var(--canvas-color)) 64%, var(--background-modifier-border));
+}
+
+.canvas-edges g.is-focused path.canvas-display-path,
+.canvas:not(.is-connecting) .canvas-edges g:hover path.canvas-display-path,
+.canvas-edge.is-selected path,
+.canvas-edge:hover path {
+	stroke: var(--interactive-accent);
+	stroke-width: calc(4px * var(--zoom-multiplier, 1));
+}
+
+.canvas-edges g.is-focused path.canvas-interaction-path,
+.canvas:not(.is-connecting) .canvas-edges g:hover path.canvas-interaction-path {
+	stroke: rgba(var(--color-blue-rgb), 0.12);
+}
+
+.canvas-edges g.is-focused polygon.canvas-path-end,
+.canvas:not(.is-connecting) .canvas-edges g:hover polygon.canvas-path-end,
+.canvas-edge.is-selected .canvas-edge-end-marker path,
+.canvas-edge:hover .canvas-edge-end-marker path {
+	stroke: var(--interactive-accent);
+	fill: var(--interactive-accent);
+}
+
+.canvas-path-label {
+	background-color: var(--surface-overlay);
+	border: 1px solid var(--background-modifier-border);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-soft);
+	color: var(--text-muted);
+	font-weight: 500;
+}
+
+.canvas-path-label.is-editing {
+	border-color: color-mix(in srgb, rgb(var(--canvas-color)) 74%, var(--interactive-accent));
+	box-shadow: 0 0 0 2px rgba(var(--canvas-color), 0.18), var(--shadow-floating);
+	color: var(--text-normal);
+}
+
+/* Canvas toolbar / controls */
+.canvas-control-group,
+.canvas-card-menu,
+.canvas-menu,
+.canvas-submenu {
+	background-color: var(--surface-overlay);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 84%, transparent);
+	border-radius: var(--radius-l);
+	box-shadow: var(--shadow-popover);
+	backdrop-filter: blur(14px);
+}
+
+.canvas-card-menu,
+.canvas-menu,
+.canvas-submenu {
+	padding: var(--size-2-2);
+	gap: var(--size-2-1);
+}
+
+.canvas-control-item,
+.canvas-controls .clickable-icon,
+.canvas-card-menu .canvas-card-menu-button,
+.canvas-menu .clickable-icon,
+.canvas-submenu .clickable-icon {
+	background-color: transparent;
+	color: var(--text-muted);
+	border-radius: var(--radius-s);
+	transition: background-color 120ms ease, color 120ms ease, transform 120ms ease;
+}
+
+.canvas-control-item {
+	border-bottom-color: color-mix(in srgb, var(--background-modifier-border) 78%, transparent);
+}
+
+.canvas-control-item:hover,
+.canvas-controls .clickable-icon:hover,
+.canvas-card-menu .canvas-card-menu-button:hover,
+.canvas-menu .clickable-icon:hover,
+.canvas-submenu .clickable-icon:hover {
+	background-color: rgba(var(--color-blue-rgb), 0.1);
+	color: var(--interactive-accent);
+}
+
+.canvas-control-item.is-active {
+	background-color: rgba(var(--color-blue-rgb), 0.14);
+	color: var(--interactive-accent);
+}
+
+.canvas-control-item.is-disabled svg {
+	color: var(--text-faint);
+}
+
+.canvas-card-menu .canvas-card-menu-divider {
+	background-color: color-mix(in srgb, var(--background-modifier-border) 82%, transparent);
+}
+
+.canvas-color-picker-item {
+	border-color: var(--surface-overlay);
+	box-shadow: 0 0 0 1px rgba(var(--canvas-color), 0.08);
+}
+
+.canvas-color-picker-item.is-active,
+.canvas-color-picker-item:hover {
+	box-shadow: 0 0 0 2px rgba(var(--canvas-color), 0.72), var(--shadow-soft);
 }
 
 /* Canvas minimap */
 .canvas-minimap {
-	background-color: var(--background-secondary);
-	border: var(--thin-border);
-	border-radius: var(--radius-s);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-	opacity: 0.85;
+	background-color: color-mix(in srgb, var(--surface-overlay) 88%, transparent);
+	border: 1px solid color-mix(in srgb, var(--background-modifier-border) 84%, transparent);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-soft);
+	opacity: 0.9;
 }
 
 .canvas-minimap:hover {
 	opacity: 1;
+	box-shadow: var(--shadow-floating);
 }
 
-/* Canvas minimap viewport indicator */
+.canvas-minimap rect {
+	stroke: color-mix(in srgb, var(--background-modifier-border) 78%, transparent);
+	fill: color-mix(in srgb, var(--background-secondary) 78%, transparent);
+	fill-opacity: 0.72;
+}
+
+.canvas-minimap rect.is-themed {
+	stroke: rgb(var(--canvas-color));
+	fill: rgb(var(--canvas-color));
+	fill-opacity: 0.42;
+}
+
+.canvas-minimap path {
+	stroke: color-mix(in srgb, var(--text-faint) 72%, transparent);
+}
+
+.canvas-minimap path.is-themed {
+	stroke: rgb(var(--canvas-color));
+}
+
 .canvas-minimap-viewport {
 	border: 1px solid var(--interactive-accent);
-	background-color: color-mix(in srgb, var(--interactive-accent) 12%, transparent);
-	border-radius: 2px;
+	background-color: rgba(var(--color-blue-rgb), 0.12);
+	border-radius: var(--radius-xs);
 }
 
 /* Canvas group frame */
+.canvas-node-group .canvas-node-container,
 .canvas-node.canvas-node-group {
-	background-color: color-mix(in srgb, var(--background-secondary) 70%, transparent);
-	border: 1.5px dashed var(--background-modifier-border);
+	background-color: transparent;
+	border: 1.5px dashed rgba(var(--canvas-color), 0.34);
 	border-radius: var(--radius-l);
 	box-shadow: none;
 }
 
+.canvas-node-group .canvas-node-content {
+	background:
+		linear-gradient(135deg, rgba(var(--canvas-color), 0.075), rgba(var(--canvas-color), 0.025)),
+		color-mix(in srgb, var(--canvas-background) 76%, transparent);
+	border-radius: var(--radius-l);
+}
+
+.canvas-group-label {
+	background-color: color-mix(in srgb, var(--surface-overlay) 86%, transparent);
+	border: 1px solid rgba(var(--canvas-color), 0.24);
+	border-radius: var(--radius-m);
+	box-shadow: var(--shadow-soft);
+	color: color-mix(in srgb, var(--text-normal) 76%, rgb(var(--canvas-color)));
+	font-size: 1.12em;
+	font-weight: 650;
+	letter-spacing: 0.01em;
+}
+
+.canvas-node-group.is-focused .canvas-node-container,
+.canvas-node-group.is-selected .canvas-node-container,
 .canvas-node.canvas-node-group.is-focused,
 .canvas-node.canvas-node-group.is-selected {
 	border-color: var(--interactive-accent);
 	border-style: dashed;
+	box-shadow: 0 0 0 3px rgba(var(--color-blue-rgb), 0.12);
+}
+
+.canvas-node-group.is-themed .canvas-group-label:not([contenteditable='true']) {
+	background-color: rgb(var(--canvas-color));
+	border-color: rgb(var(--canvas-color));
+	box-shadow: var(--shadow-soft);
+}
+
+.canvas-group-label[contenteditable='true'] {
+	background-color: var(--surface-overlay);
+	border-color: rgb(var(--canvas-color));
+	box-shadow: 0 0 0 2px rgba(var(--canvas-color), 0.18), var(--shadow-floating);
+	color: var(--text-normal);
+}
+
+.canvas-placeholder-message,
+.canvas-empty-embed-container {
+	background-color: rgba(var(--color-blue-rgb), 0.08);
+	border: 1px dashed rgba(var(--color-blue-rgb), 0.24);
+	border-radius: var(--radius-l);
+	color: var(--text-muted);
 }
 
 /* ---------------  */
@@ -3290,7 +6780,7 @@ body:not(.tasks) li[data-task='D'].task-list-item.is-checked {
 }
 
 .checklist-plugin-main .toggle .checkbox {
-	border-radius: var(--checkbox-radius) !important;
+	border-radius: var(--checkbox-radius);
 }
 
 /* ---------------  */
@@ -3550,13 +7040,13 @@ body .kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
 .git-source-control-view .git-commit-button {
 	background-color: var(--interactive-accent);
 	border-color: var(--interactive-accent);
-	color: white;
+	color: var(--text-on-accent);
 	font-weight: 500;
 }
 
 .git-source-control-view .git-commit-button:hover {
 	background-color: var(--interactive-accent-hover);
-	color: white;
+	color: var(--text-on-accent);
 }
 
 /* Diff view: inline diff colors */
@@ -3632,6 +7122,12 @@ settings:
         type: class-toggle
         default: false
     -
+        title: Code block language labels
+        description: Show a small language badge on fenced code blocks in Reading View (fades on hover so the copy button stays reachable)
+        id: code-language-label
+        type: class-toggle
+        default: true
+    -
         title: Fancy highlighting
         description: Enable fancy highlight styles with highlight underlines
         id: fancy-highlight
@@ -3650,6 +7146,56 @@ settings:
         level: 2
         collapsed: true
     -
+        id: style-packs
+        title: Style packs
+        description: Whole-theme atmosphere presets. Pick ONE pack only — these are not mutually exclusive in the UI, so if you enable several, the pack lowest in this list wins (deterministic, but not what you usually want). Accent presets below can still override only the accent color on top of your chosen pack.
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: Classic Paper style pack
+        description: Quiet paper, ink contrast, restrained blue/cyan accents for everyday vault use.
+        id: preset-classic-paper
+        type: class-toggle
+        default: false
+    -
+        title: Things Warm style pack
+        description: Warmer task-planning surface with amber accent and soft cream UI.
+        id: preset-things-warm
+        type: class-toggle
+        default: false
+    -
+        title: Research Desk style pack
+        description: Wider, cooler, evidence-friendly palette for citations, tables, and source-heavy notes.
+        id: preset-research-desk
+        type: class-toggle
+        default: false
+    -
+        title: Longform Book style pack
+        description: Book-like serif reading surface for essays, chapters, and manuscript work.
+        id: preset-longform-book
+        type: class-toggle
+        default: false
+    -
+        title: Night Ink style pack
+        description: Cool ink dark-room palette with clearer dark-mode chroma and a restrained light fallback.
+        id: preset-night-ink
+        type: class-toggle
+        default: false
+    -
+        title: Low Contrast Calm style pack
+        description: Softer contrast and sage accent for long low-fatigue sessions.
+        id: preset-low-contrast-calm
+        type: class-toggle
+        default: false
+    -
+        id: accent-presets
+        title: Accent presets
+        description: Accent-only overrides. Pick ONE accent — if you enable several (moss / amber / sage / ink-blue / clay / slate), the one lowest in this list wins. Can be combined with one style pack.
+        type: heading
+        level: 3
+        collapsed: true
+    -
         title: Moss accent preset
         description: Switch accents to a quieter green palette
         id: accent-moss
@@ -3659,6 +7205,49 @@ settings:
         title: Amber accent preset
         description: Switch accents to a warmer amber palette
         id: accent-amber
+        type: class-toggle
+        default: false
+    -
+        title: Sage accent preset
+        description: Switch accents to a calm sage green palette
+        id: accent-sage
+        type: class-toggle
+        default: false
+    -
+        title: Ink Blue accent preset
+        description: Switch accents to a deep, restrained ink-blue palette
+        id: accent-ink-blue
+        type: class-toggle
+        default: false
+    -
+        title: Clay accent preset
+        description: Switch accents to a warm terracotta clay palette
+        id: accent-clay
+        type: class-toggle
+        default: false
+    -
+        title: Slate accent preset
+        description: Switch accents to a cool grey-blue slate palette
+        id: accent-slate
+        type: class-toggle
+        default: false
+    -
+        id: paper-temperature
+        title: Paper temperature
+        description: Shift the paper surfaces warmer or cooler. Pick ONE — if both are enabled, Cool wins.
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        title: Warm paper
+        description: Warmer, creamier paper surfaces (light and dark)
+        id: paper-warm
+        type: class-toggle
+        default: false
+    -
+        title: Cool paper
+        description: Cooler, more neutral paper surfaces (light and dark)
+        id: paper-cool
         type: class-toggle
         default: false
     -
@@ -3673,6 +7262,38 @@ settings:
         id: airy-reading
         type: class-toggle
         default: false
+    -
+        id: reading-width
+        title: Reading width
+        description: Width of the readable line column. Requires Obsidian's "Readable line length" enabled. Reading modes and style packs override these.
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: line-width-tier
+        title: Reading column width
+        description: Pick a comfortable line width for body text.
+        type: variable-select
+        default: 42rem
+        options:
+            -
+                label: Narrow (36rem)
+                value: 36rem
+            -
+                label: Standard (42rem)
+                value: 42rem
+            -
+                label: Relaxed (46rem)
+                value: 46rem
+            -
+                label: Wide (52rem)
+                value: 52rem
+    -
+        id: line-width-custom
+        title: Reading column width (advanced)
+        description: Override the tier with any CSS length, e.g. 40rem or 760px. Leave blank to use the tier above.
+        type: variable-text
+        default: ''
     -
         id: link-decoration
         title: Underline internal links
@@ -3691,12 +7312,31 @@ settings:
         options:
           - Underline
           - None
-	-
+    -
         id: custom-fonts
         title: Typography
         type: heading
         level: 2
         collapsed: true
+    -
+        id: reading-font
+        title: Reading font
+        description: Body and editor reading font. The interface chrome stays system sans. CJK mode and style packs override this.
+        type: variable-select
+        default: var(--font-system-ui)
+        options:
+            -
+                label: System sans (default)
+                value: var(--font-system-ui)
+            -
+                label: Serif (Iowan / Palatino)
+                value: var(--font-western-serif)
+            -
+                label: Modern serif (Georgia)
+                value: var(--font-western-modern)
+            -
+                label: Humanist sans (Inter)
+                value: var(--font-western-humanist)
     -
         id: default-font-color
         title: Default font colors
@@ -3768,7 +7408,7 @@ settings:
         title: Tag font color (Dark mode)
         type: variable-color
         format: hex
-        default: '#FFFFFF'
+        default: '#FFFCF0'
     -
         id: progress-color
         title: Progress colorful mode switcher
@@ -3817,6 +7457,12 @@ settings:
         level: 2
         collapsed: true
     -
+        title: Numbered headings
+        description: Add automatic outline numbers (1, 1.1, 1.1.1) to H1–H4 for a chapter-like feel. Works in Reading View and Live Preview.
+        id: numbered-headings
+        type: class-toggle
+        default: false
+    -
         id: level-1-headings
         title: Level 1 Headings
         type: heading
@@ -3839,7 +7485,7 @@ settings:
         title: H1 color
         type: variable-color
         format: hex
-        default: '#'
+        default: '#100F0F'
     -
         id: level-2-headings
         title: Level 2 Headings
@@ -3863,7 +7509,7 @@ settings:
         title: H2 color
         type: variable-color
         format: hex
-        default: '#2E80F2'
+        default: '#100F0F'
     -
         id: h2-underline
         title: H2 underline
@@ -3893,7 +7539,7 @@ settings:
         title: H3 color
         type: variable-color
         format: hex
-        default: '#2E80F2'
+        default: '#100F0F'
     -
         id: level-4-headings
         title: Level 4 Headings
@@ -3917,7 +7563,7 @@ settings:
         title: H4 color
         type: variable-color
         format: hex
-        default: '#E5B567'
+        default: '#100F0F'
     -
         id: h4-transform
         title: H4 transform
@@ -3954,7 +7600,7 @@ settings:
         title: H5 color
         type: variable-color
         format: hex
-        default: '#E83E3E'
+        default: '#100F0F'
     -
         id: level-6-headings
         title: Level 6 Headings
@@ -3978,7 +7624,7 @@ settings:
         title: H6 color
         type: variable-color
         format: hex
-        default: '#'
+        default: '#6F6E69'
     -
         id: new-features
         title: New Features
@@ -3986,15 +7632,63 @@ settings:
         level: 2
         collapsed: true
     -
-        title: Sage accent preset
-        description: Switch accents to a calm sage green palette
-        id: accent-sage
+        title: Bullet threading
+        description: Draw a rounded accent thread from ancestor bullets down to the active list line (Logseq-style outline cue). Editor only — Reading View has no cursor. Covers 6 indent levels; assumes Obsidian's default tab size.
+        id: bullet-threading
+        type: class-toggle
+        default: true
+    -
+        title: Clean embeds
+        description: Strip the card chrome from embedded notes so transclusions read as part of the host note, with a quiet accent rail on hover. Also available per note via cssclasses 'embed-clean'. Opt-in.
+        id: embed-clean
+        type: class-toggle
+        default: false
+    -
+        title: Active path emphasis
+        description: Give the current note a warm low-noise cue — active tab title and top rail, the active pane's view-header title, and a quieter breadcrumb path. Only the current item is emphasized.
+        id: active-path-emphasis
+        type: class-toggle
+        default: true
+    -
+        title: Task priority palette
+        description: Map Tasks-plugin priorities (highest…lowest) to the warm progress 5-color ramp as a quiet left rail, with a warm due chip. Urgency reads warm-to-cool; date proximity needs a JS plugin. Opt-in.
+        id: task-priority-palette
+        type: class-toggle
+        default: false
+    -
+        title: Paper panes
+        description: Give each editor tab group a thin border, soft shadow, and rounded corners so panes read as raised paper sheets. The active pane lifts a little more with a quiet accent edge. Editor area only; sidebars stay flat. Opt-in.
+        id: paper-panes
+        type: class-toggle
+        default: false
+    -
+        title: Typewriter focus
+        description: A Focus mode sub-toggle. While editing, inactive lines dim and the active line stays sharp, with generous vertical room so you can keep the current line near the screen center. Live Preview / source only. Requires Focus mode on; a true scroll-locked typewriter needs a plugin.
+        id: typewriter-focus
         type: class-toggle
         default: false
     -
         title: Focus mode
-        description: Hide sidebar and ribbon — hover to reveal ribbon temporarily
+        description: Dim sidebars, ribbon, and status bar while keeping hover/tab recovery rails visible
         id: focus-mode
+        type: class-toggle
+        default: false
+    -
+        title: Keyboard mode
+        description: Strengthen keyboard focus rings and add command/switcher navigation hints for keyboard-first vault work
+        id: keyboard-mode
+        type: class-toggle
+        default: false
+    -
+        title: Research reading mode
+        description: Add citation, footnote, quote, table, and annotation polish for research-heavy notes
+        id: research-reading
+        type: class-toggle
+        default: false
+    -
+        title: Longform reading mode
+        description: Add chapter-like spacing, centered headings, scene breaks, and calmer prose rhythm for long essays and drafts
+        id: longform-reading
         type: class-toggle
         default: false
     -
@@ -4026,12 +7720,20 @@ settings:
 */
 
 /* ─────────────────────────────────────────────────── */
-/* Plugin Compatibility info for the Obsidian Hub */
+/* Plugin Compatibility info for Obsidian Hub / theme metadata */
 /* ─────────────────────────────────────────────────── */
+
+/* Keep this list conservative. It should contain official core/community ids
+ * with direct theme coverage or a documented selector-level compatibility pass.
+ * See docs-code-ai/PLUGIN-COMPATIBILITY-AUDIT.md before adding ids.
+ */
 
 /* @plugins
 core:
 - backlink
+- bases
+- bookmarks
+- canvas
 - command-palette
 - file-explorer
 - global-search
@@ -4049,20 +7751,19 @@ core:
 - sync
 - word-count
 community:
-- sliding-panes-obsidian
-- obsidian-codemirror-options
-- obsidian-kanban
 - dataview
-- obsidian-hider
 - calendar
-- mysnippets-plugin
-- cmenu-plugin
-- obsidian-outliner
-- readwise-official
-- tag-wrangler
+- obsidian-full-calendar
+- obsidian-tasks-plugin
 - todoist-sync-plugin
-- templater-obsidian
-- obsidian-system-dark-mode
+- obsidian-excalidraw-plugin
+- obsidian-hover-editor
+- obsidian-banners
+- obsidian-checklist-plugin
+- obsidian-kanban
+- obsidian-outliner
+- obsidian-timeline
+- obsidian-git
 - obsidian-style-settings
 */
 
@@ -4136,11 +7837,17 @@ community:
 
 /* ─────────────────────────────────────────────────── */
 /* Search Loading Pulse */
+/* M9-6 audit: the infinite pulse is scoped to the transient loading state
+   only. The persistent empty state gets a one-shot fade-in instead, so we
+   never run a forever-repainting animation on an always-visible element. */
 /* ─────────────────────────────────────────────────── */
 
-.search-empty-state,
 .is-loading .search-result-container {
 	animation: ouroboros-pulse 1.6s ease-in-out infinite;
+}
+
+.search-empty-state {
+	animation: ouroboros-fade-in 200ms ease both;
 }
 
 /* ─────────────────────────────────────────────────── */
@@ -4153,35 +7860,44 @@ community:
 
 /* ─────────────────────────────────────────────────── */
 /* Callout Fold Animation */
+/* BUG-006: the previous max-height transition was dead code — Obsidian
+   toggles folded callout content at the display level, so a max-height
+   transition never plays, and the expanded state had no max-height to
+   transition from. The stray `overflow: hidden` also risked clipping
+   hover popovers inside callouts. Fold feedback is carried by the
+   fold-icon rotation in 01-foundation.css instead. */
 /* ─────────────────────────────────────────────────── */
-
-.callout-content {
-	overflow: hidden;
-	transition: max-height 240ms ease, opacity 200ms ease;
-}
-
-.callout.is-collapsed .callout-content {
-	max-height: 0;
-	opacity: 0;
-}
 
 /* ─────────────────────────────────────────────────── */
 /* Respect prefers-reduced-motion */
+/* M9-6: both the OS preference and the user toggle neutralize duration,
+   force infinite animations (loading pulses) to a single iteration, and
+   disable smooth scrolling defensively. */
 /* ─────────────────────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
 	*, *::before, *::after {
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
 	}
 }
 
 /* Style Settings class override: user-controlled motion reduction */
+body.reduce-motion {
+	scroll-behavior: auto;
+}
+
 body.reduce-motion *,
 body.reduce-motion *::before,
 body.reduce-motion *::after {
 	animation-duration: 0.01ms !important;
 	animation-iteration-count: 1 !important;
 	transition-duration: 0.01ms !important;
+	scroll-behavior: auto !important;
 }

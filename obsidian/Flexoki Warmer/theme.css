@@ -1,0 +1,84 @@
+/*
+Flexoki Warmer
+MIT License
+Copyright (c) 2023 Steph Ango
+Copyright (c) 2026 Sajal Verma
+https://stephango.com/flexoki
+*/
+.theme-light {
+  --color-red-rgb: 175, 48, 41;
+  --color-orange-rgb: 188, 82, 21;
+  --color-yellow-rgb: 173, 131, 1;
+  --color-green-rgb: 102, 128, 11;
+  --color-cyan-rgb: 36, 131, 123;
+  --color-blue-rgb: 32, 94, 166;
+  --color-purple-rgb: 94, 64, 157;
+  --color-pink-rgb: 160, 47, 111;
+
+  --color-red: #AF3029;
+  --color-orange: #BC5215;
+  --color-yellow: #AD8301;
+  --color-green: #66800B;
+  --color-cyan: #24837B;
+  --color-blue: #205EA6;
+  --color-purple: #5E409D;
+  --color-pink: #A02F6F;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  /* Flexoki Override: Solarized Light Base Colors */
+  --color-base-00: #fdf6e3;
+  --color-base-05: #fdf6e3;
+  --color-base-10: #eee8d5;
+  --color-base-20: #eee8d5;
+  --color-base-25: #e4decc;
+  --color-base-30: #e4decc;
+  --color-base-35: #d5cfbd;
+  --color-base-40: #c6bfad;
+
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
+}
+
+.theme-dark {
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 218, 112, 44;
+  --color-yellow-rgb: 208, 162, 21;
+  --color-green-rgb: 135, 154, 57;
+  --color-cyan-rgb: 58, 169, 159;
+  --color-blue-rgb: 67, 133, 190;
+  --color-purple-rgb: 139, 126, 200;
+  --color-pink-rgb: 206, 93, 151;
+
+  --color-red: #D14D41;
+  --color-orange: #DA702C;
+  --color-yellow: #D0A215;
+  --color-green: #879A39;
+  --color-cyan: #3AA99F;
+  --color-blue: #4385BE;
+  --color-purple: #8B7EC8;
+  --color-pink: #CE5D97;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  /* Flexoki Override: Obsidian Default Dark Base Colors */
+  --color-base-00: #1e1e1e;
+  --color-base-05: #1e1e1e;
+  --color-base-10: #242424;
+  --color-base-20: #2a2a2a;
+  --color-base-25: #303030;
+  --color-base-30: #363636;
+  --color-base-35: #3f3f3f;
+  --color-base-40: #4a4a4a;
+
+  --color-base-50: #575653;
+  --color-base-60: #6F6E69;
+  --color-base-70: #878580;
+  --color-base-100: #CECDC3;
+}

@@ -429,6 +429,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1171,11 +1172,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1277,6 +1274,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1489,6 +1488,7 @@ body.theme-light {
   --folder-title: #37291a !important;
   --mark-highlight: #fd355a !important;
   --panel-border-color: #fd355a !important;
+  --graph-arrow: #980000 !important;
   --green: #40916c !important;
   --orange: #f19c79 !important;
   --purple: #8673b4 !important;
@@ -1553,7 +1553,6 @@ body.theme-light {
   --font-size-preview-normal: 1em !important;
   --font-size-tag: 1em !important;
   --font-size-vault-name: 0.875em !important;
-  --graph-arrow: #980000 !important;
   --graph-attach: #f5a7a2 !important;
   --graph-circle: #fd355c !important;
   --graph-text-color: #37291a !important;
@@ -1634,6 +1633,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2370,11 +2370,7 @@ body.theme-dark {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2476,6 +2472,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2682,6 +2680,7 @@ body.theme-dark {
   --folder-title: #fff !important;
   --mark-highlight: #f93759 !important;
   --panel-border-color: #f93759 !important;
+  --graph-arrow: #ffc3bc !important;
   --green: #00ffc7 !important;
   --orange: #f28d61 !important;
   --purple: #b073ff !important;
@@ -2746,7 +2745,6 @@ body.theme-dark {
   --font-size-preview-normal: 1em !important;
   --font-size-tag: 1em !important;
   --font-size-vault-name: 0.875em !important;
-  --graph-arrow: #ffc3bc !important;
   --graph-attach: #ffebec !important;
   --graph-circle: #f39ba0 !important;
   --graph-text-color: #efe9d9 !important;
@@ -4625,7 +4623,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7639,7 +7637,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

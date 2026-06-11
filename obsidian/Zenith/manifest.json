@@ -1,0 +1,8 @@
+{
+  "name": "Zenith",
+  "version": "1.0.0",
+  "minAppVersion": "1.12.7",
+  "author": "Ryan Bakker",
+  "authorUrl": "https://ryanbakker.vercel.app/",
+  "isDesktopOnly": true
+}

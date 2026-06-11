@@ -2666,8 +2666,8 @@
     "padding-left": "0px",
     "padding-top": "0px",
     "text-decoration-color": "rgb(156, 163, 175)",
-    "transform-origin": "245.633px 14px",
-    "width": "491.266px"
+    "transform-origin": "248.672px 14px",
+    "width": "497.344px"
   },
   ".status-bar-item": {
     "-webkit-text-fill-color": "rgb(184, 194, 207)",
@@ -2713,7 +2713,7 @@
     "height": "28px",
     "letter-spacing": "0.22px",
     "line-height": "11px",
-    "max-width": "176px",
+    "max-width": "220px",
     "min-height": "28px",
     "min-width": "0px",
     "outline": "rgb(184, 194, 207) none 0px",
@@ -3141,15 +3141,16 @@
     "position": "relative",
     "text-decoration-color": "rgb(248, 250, 252)",
     "text-shadow": "rgba(147, 197, 253, 0.1) 0px 0px 12px",
-    "transform-origin": "531.5px 16px",
+    "transform-origin": "411.5px 16px",
     "transition": "color 0.16s, text-shadow 0.16s, transform 0.16s",
     "transition-delay": "0s, 0s, 0s",
     "white-space": "nowrap",
-    "width": "1063px"
+    "width": "823px"
   },
   ".view-header-title::before": {
     "--scroll-fade-offset-left": "0",
     "--scroll-fade-offset-right": "0",
+    "--scrollbar-native-width": "none",
     "-webkit-background-clip": "border-box, border-box, border-box, border-box",
     "-webkit-box-decoration-break": "slice",
     "-webkit-mask-position": "0% 0%",
@@ -3961,7 +3962,7 @@
     "--ogd-bottom-document-frame-inset": "clamp(28px, 4vw, 64px)",
     "--ogd-bottom-document-frame-reserve": "calc(var(--ogd-bottom-document-frame-height) + (var(--ogd-bottom-document-frame-gap) * 2) + 8px)",
     "--ogd-bottom-document-frame-source-header-height": "40px",
-    "--ogd-bottom-document-frame-status-space": "520px",
+    "--ogd-bottom-document-frame-status-space": "clamp(520px, 35vw, 760px)",
     "--ogd-bottom-document-toolbar-bottom": "var(--ogd-bottom-document-toolbar-floor-offset)",
     "--ogd-bottom-document-toolbar-boundary-offset": "calc(-1 * (var(--ogd-bottom-document-frame-source-header-height) + var(--ogd-bottom-document-toolbar-lift) + var(--ogd-bottom-document-toolbar-height) + var(--ogd-bottom-document-toolbar-gap)) + var(--ogd-bottom-document-toolbar-top-gap))",
     "--ogd-bottom-document-toolbar-clearance": "calc(var(--ogd-editor-toolbar-height) + var(--ogd-bottom-document-toolbar-margin) + var(--ogd-bottom-document-toolbar-gap))",
@@ -4191,7 +4192,6 @@
     "--radius-m": "6px",
     "--ribbon-background": "#14151a",
     "--scrollbar-active-thumb-bg": "#6b7280",
-    "--scrollbar-bg": "transparent",
     "--scrollbar-thumb-bg": "#3f424b",
     "--tab-background-active": "#1f2024",
     "--tab-container-background": "#14151a",

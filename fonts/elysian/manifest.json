@@ -1,22 +1,12 @@
 {
-  "extractedAt": "2026-06-02T00:42:20.898Z",
+  "extractedAt": "2026-06-11T11:51:05.283Z",
   "sourceTheme": "Elysian",
   "fonts": [
     {
       "family": "Libre Baskerville",
       "style": "normal",
-      "weight": "normal",
+      "weight": "400",
       "file": "libre-baskerville.woff2",
-      "format": "woff2",
-      "unicodeRange": null,
-      "sourceType": "base64",
-      "sourceUrl": null
-    },
-    {
-      "family": "Libre Baskerville",
-      "style": "normal",
-      "weight": "bold",
-      "file": "libre-baskerville-1.woff2",
       "format": "woff2",
       "unicodeRange": null,
       "sourceType": "base64",
@@ -26,7 +16,7 @@
       "family": "Libre Baskerville",
       "style": "italic",
       "weight": "normal",
-      "file": "libre-baskerville-2.woff2",
+      "file": "libre-baskerville-1.woff2",
       "format": "woff2",
       "unicodeRange": null,
       "sourceType": "base64",

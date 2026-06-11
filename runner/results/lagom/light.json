@@ -1,32 +1,24 @@
 {
   ".backlink-pane .tree-item": {
     "font-size": "14.85px",
-    "height": "83.125px",
+    "height": "81.1094px",
     "line-height": "19.305px",
-    "transform-origin": "137px 41.5625px"
+    "transform-origin": "137px 40.5547px"
   },
   ".backlink-pane .tree-item-self": {
     "border-bottom-left-radius": "11.5px",
     "border-bottom-right-radius": "11.5px",
     "border-radius": "11.5px",
     "border-top-left-radius": "11.5px",
-    "border-top-right-radius": "11.5px",
-    "height": "27.1094px",
-    "transform-origin": "138px 13.5547px"
-  },
-  ".backlink-pane .tree-item-self::before": {
-    "font-size": "14.7px",
-    "height": "19.1094px",
-    "line-height": "19.11px",
-    "transform-origin": "0px 9.55469px"
+    "border-top-right-radius": "11.5px"
   },
   ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
     "--callout-color": "#086ddd",
     "--callout-icon": "lucide-pencil",
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -112,14 +104,11 @@
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px"
   },
-  ".file-embed": {
-    "line-height": "19.4906px"
-  },
   ".footnotes": {
-    "height": "61.9375px",
+    "height": "61.9688px",
     "line-height": "25px",
     "text-align": "justify",
-    "transform-origin": "350px 30.9688px"
+    "transform-origin": "350px 30.9844px"
   },
   ".inline-title": {
     "-webkit-mask-image": "linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%)",
@@ -132,7 +121,7 @@
     "border-style": "none none solid",
     "display": "flex",
     "font-family": "var(--magazine-title-font)",
-    "height": "83.5938px",
+    "height": "83.7969px",
     "letter-spacing": "var(--letter-spacing-note)",
     "margin": "-35px -35px 20px",
     "margin-block": "-35px 20px",
@@ -158,7 +147,7 @@
     "padding-top": "32px",
     "text-align": "var(--inline-title-align)",
     "text-transform": "uppercase",
-    "transform-origin": "385px 41.7969px",
+    "transform-origin": "385px 41.8984px",
     "width": "770px"
   },
   ".internal-embed": {
@@ -188,8 +177,6 @@
     "border-top-style": "solid",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "15px 7px 7px 0px",
     "padding-block": "15px 7px",
     "padding-block-end": "7px",
@@ -228,8 +215,6 @@
     "border-top-style": "solid",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "15px 7px 7px 0px",
     "padding-block": "15px 7px",
     "padding-block-end": "7px",
@@ -281,7 +266,7 @@
     "border-top-color": "rgb(128, 128, 128)",
     "border-top-width": "0px",
     "border-width": "0px 0px 1px",
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "1px",
     "line-height": "25px",
     "margin": "30px 0px",
@@ -345,7 +330,7 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
+    "font-size": "15px",
     "font-weight": "400",
     "height": "25px",
     "line-height": "25px",
@@ -388,17 +373,15 @@
     "text-align": "justify",
     "text-decoration-color": "rgba(108, 108, 108, 0.42)",
     "text-decoration-style": "solid",
-    "transform": "matrix(1, 0, 0, 1, -17.8047, -16.5)",
-    "transform-origin": "17.8047px 16.5px",
+    "transform": "matrix(1, 0, 0, 1, -17.9531, -16.5)",
+    "transform-origin": "17.9531px 16.5px",
     "transition": "all",
     "transition-delay": "0s",
     "user-select": "text",
     "vertical-align": "baseline",
-    "width": "27.6094px"
+    "width": "27.9062px"
   },
   ".math-block": {
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "text-align": "justify"
   },
   ".metadata-container": {
@@ -410,7 +393,7 @@
     "border-top-style": "dotted",
     "border-top-width": "2px",
     "border-width": "2px 0px",
-    "font-size": "14.85px",
+    "font-size": "var(--properties-editor-font-size)",
     "height": "47px",
     "line-height": "25px",
     "margin": "10px 0px 32px",
@@ -449,9 +432,9 @@
   },
   ".metadata-property-key": {
     "border": "0px none rgb(92, 92, 92)",
-    "border-bottom": "0px solid rgb(255, 0, 0)",
-    "border-bottom-color": "rgb(255, 0, 0)",
-    "border-color": "rgb(92, 92, 92) rgb(92, 92, 92) rgb(255, 0, 0)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
     "font-size": "var(--metadata-label-font-size)",
     "height": "33px",
     "line-height": "25px",
@@ -460,9 +443,10 @@
     "transform-origin": "140px 16.5px"
   },
   ".metadata-property-value": {
-    "border-bottom": "0px solid rgb(255, 0, 0)",
-    "border-bottom-color": "rgb(255, 0, 0)",
-    "border-color": "rgb(92, 92, 92) rgb(92, 92, 92) rgb(255, 0, 0)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
     "font-size": "var(--metadata-label-font-size)",
     "height": "33px",
     "line-height": "25px",
@@ -509,6 +493,7 @@
     "border-radius": "0px",
     "border-top-left-radius": "0px",
     "border-top-right-radius": "0px",
+    "font-size": "var(--files-explorer-font-size)",
     "height": "36.4688px",
     "margin": "0px 0px 0px -56px",
     "margin-block": "0px",
@@ -821,9 +806,9 @@
   },
   ".search-result-container .tree-item.search-result": {
     "font-size": "14.85px",
-    "height": "83.125px",
+    "height": "81.1094px",
     "line-height": "19.305px",
-    "transform-origin": "136px 41.5625px",
+    "transform-origin": "136px 40.5547px",
     "width": "272px"
   },
   ".search-result-file-match": {
@@ -852,22 +837,15 @@
     "border-radius": "11.5px",
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px",
-    "height": "26.9062px",
-    "transform-origin": "136px 13.4531px",
+    "transform-origin": "136px 12.4453px",
     "width": "272px"
-  },
-  ".search-result-file-title::before": {
-    "font-size": "14.553px",
-    "height": "18.9062px",
-    "line-height": "18.9189px",
-    "transform-origin": "0px 9.45312px"
   },
   ".search-results-children": {
     "font-size": "14.85px",
-    "height": "1624.45px",
+    "height": "1610.34px",
     "line-height": "19.305px",
-    "min-height": "1624.47px",
-    "transform-origin": "136px 812.227px",
+    "min-height": "1610.36px",
+    "transform-origin": "136px 805.172px",
     "width": "272px"
   },
   ".search-row": {
@@ -886,8 +864,6 @@
     "border-top-right-radius": "11.5px"
   },
   ".table-wrapper": {
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "text-align": "justify"
   },
   ".tree-item-children": {
@@ -909,9 +885,9 @@
   },
   ".tree-item.search-result": {
     "font-size": "14.85px",
-    "height": "83.125px",
+    "height": "81.1094px",
     "line-height": "19.305px",
-    "transform-origin": "136px 41.5625px",
+    "transform-origin": "136px 40.5547px",
     "width": "272px"
   },
   ".view-header-breadcrumb": {
@@ -929,44 +905,44 @@
   },
   "a.external-link[data-tooltip-position=\"top\"]": {
     "-webkit-background-clip": "border-box",
-    "background": "rgba(0, 0, 0, 0) none no-repeat scroll 100% 3.7125px / 12.2513px padding-box border-box",
+    "background": "rgba(0, 0, 0, 0) none no-repeat scroll 100% 3.75px / 12.375px padding-box border-box",
     "background-clip": "border-box",
-    "background-position": "100% 3.7125px",
+    "background-position": "100% 3.75px",
     "background-repeat": "no-repeat",
-    "background-size": "12.2513px",
+    "background-size": "12.375px",
     "border-bottom": "1px solid rgb(138, 92, 245)",
     "border-bottom-style": "solid",
     "border-bottom-width": "1px",
     "border-style": "none none solid",
     "border-width": "0px 0px 1px",
-    "font-size": "14.85px",
+    "font-size": "15px",
     "line-height": "25px",
     "padding": "0px",
     "padding-inline": "0px",
     "padding-inline-end": "0px",
     "padding-right": "0px",
     "text-align": "justify",
-    "text-underline-offset": "2.97px"
+    "text-underline-offset": "3px"
   },
   "a.footnote-backref.footnote-link": {
-    "font-size": "12.9938px",
+    "font-size": "13.125px",
     "height": "25px",
     "line-height": "25px",
-    "transform-origin": "5.44531px 12.5px",
-    "width": "10.8906px"
+    "transform-origin": "5.49219px 12.5px",
+    "width": "10.9844px"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "line-height": "25px",
     "text-align": "justify"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "line-height": "25px",
     "text-align": "justify"
   },
   "abbr": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "line-height": "25px",
     "text-align": "justify"
   },
@@ -998,8 +974,6 @@
     "border-top-style": "solid",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "text-align": "justify"
   },
   "blockquote": {
@@ -1084,7 +1058,7 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "50.9355px",
+    "font-size": "51.45px",
     "font-weight": "400",
     "height": "25px",
     "line-height": "25px",
@@ -1142,6 +1116,7 @@
     "--clickable-icon-radius": "11.5px",
     "--code-size": "0.98em",
     "--code-size-edit-mode": "0.9em",
+    "--dark-theme-opacity": "1",
     "--default-font-size": "0.99em",
     "--embed-border-left": "none",
     "--embed-font-size": "0.98em",
@@ -1149,8 +1124,9 @@
     "--explorer-bar-position": "absolute",
     "--filename-line-thickness": "1.8px",
     "--filename-separator-style": "dotted",
-    "--focus-active-line-opacity": "0.8",
-    "--focus-non-active-line-opacity": "0.55",
+    "--files-explorer-font-size": "0.98em",
+    "--focus-active-line-opacity": "1",
+    "--focus-non-active-line-opacity": "1",
     "--folder-1-open": "var(--normal-folder-1-open)",
     "--folder-2-open": "var(--normal-folder-2-open)",
     "--folder-3-open": "var(--normal-folder-3-open)",
@@ -1180,15 +1156,14 @@
     "--input-shadow-hover": "hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px",
     "--interactive-hover": "hsla(var(--color-accent-hsl), 0.1)",
     "--letter-spacing-note": "0px",
+    "--light-theme-opacity": "1",
     "--line-height-note": "25px",
     "--list-indent": "18px",
     "--mac-terminal-shadow": "rgba(9, 30, 66, 0.10) 0px 4px 8px 5px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px",
     "--metadata-display-editing": "none",
-    "--metadata-divider-color": "red",
     "--metadata-input-font-size": "1em",
     "--metadata-label-font-size": "1em",
     "--metadata-property-radius": "var(--radius-s)",
-    "--nav-item-size": "0.98em",
     "--navbar-radius": "11.5px",
     "--normal-folder-1-open": "\"╔\"",
     "--normal-folder-2-open": "\"╔\"",
@@ -1211,14 +1186,12 @@
     "--table-header-weight": "normal",
     "--tabs-height": "300px",
     "--text-note-align": "justify",
-    "--theme-dark-opacity": "0.85",
-    "--theme-light-opacity": "1",
     "--touch-radius-m": "11.5px",
     "--touch-radius-s": "11.5px",
     "--touch-radius-xl": "11.5px",
     "--touch-radius-xs": "11.5px",
     "--touch-radius-xxs": "11.5px",
-    "opacity": "var(--theme-light-opacity)"
+    "opacity": "var(--light-theme-opacity)"
   },
   "body.styled-scrollbars": {
     "--folder-1-open": "var(--normal-folder-1-open)",
@@ -1228,7 +1201,7 @@
     "--input-shadow-hover": "hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px",
     "--interactive-hover": "hsla(var(--color-accent-hsl), 0.1)",
     "--metadata-property-radius": "var(--radius-s)",
-    "opacity": "var(--theme-light-opacity)"
+    "opacity": "var(--light-theme-opacity)"
   },
   "code": {
     "--ec-brdRad": "11.5px",
@@ -1284,7 +1257,7 @@
     "transform-origin": "50% 50%"
   },
   "dd": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
@@ -1298,14 +1271,14 @@
     "transform-origin": "50% 50%"
   },
   "details": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
     "transform-origin": "350px 12.5px"
   },
   "details summary": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
@@ -1314,8 +1287,6 @@
   "div.callout-content": {
     "--callout-color": "#086ddd",
     "--callout-icon": "lucide-pencil",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "text-align": "justify"
   },
   "div.callout-title": {
@@ -1333,7 +1304,7 @@
     "border-width": "0px 0px 1px",
     "display": "var(--hide-callout-title)",
     "font-size": "var(--callout-font-size-title)",
-    "line-height": "18.9189px",
+    "line-height": "20.384px",
     "margin": "7px auto",
     "margin-block": "7px",
     "margin-block-end": "7px",
@@ -1371,8 +1342,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1411,8 +1380,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1451,8 +1418,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1491,8 +1456,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1531,8 +1494,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1571,8 +1532,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1653,9 +1612,9 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
+    "font-size": "16px",
     "font-weight": "400",
-    "line-height": "22.275px",
+    "line-height": "24px",
     "list-style": "outside none disc",
     "list-style-type": "disc",
     "margin": "0px",
@@ -1691,6 +1650,7 @@
     "padding-right": "10px",
     "padding-top": "0px",
     "position": "static",
+    "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "1px",
     "text-align": "justify",
     "text-decoration-color": "rgb(34, 34, 34)",
@@ -1726,8 +1686,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1807,9 +1765,9 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
+    "font-size": "16px",
     "font-weight": "400",
-    "line-height": "22.275px",
+    "line-height": "24px",
     "list-style": "outside none disc",
     "list-style-type": "disc",
     "margin": "0px",
@@ -1845,6 +1803,7 @@
     "padding-right": "10px",
     "padding-top": "0px",
     "position": "static",
+    "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "1px",
     "text-align": "justify",
     "text-decoration-color": "rgb(34, 34, 34)",
@@ -1880,8 +1839,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1920,15 +1877,15 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "53px",
     "line-height": "25px",
-    "margin": "14.85px 0px",
-    "margin-block": "14.85px",
-    "margin-block-end": "14.85px",
-    "margin-block-start": "14.85px",
-    "margin-bottom": "14.85px",
-    "margin-top": "14.85px",
+    "margin": "15px 0px",
+    "margin-block": "15px",
+    "margin-block-end": "15px",
+    "margin-block-start": "15px",
+    "margin-bottom": "15px",
+    "margin-top": "15px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -1968,8 +1925,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -2049,9 +2004,9 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
+    "font-size": "16px",
     "font-weight": "400",
-    "line-height": "22.275px",
+    "line-height": "24px",
     "list-style": "outside none disc",
     "list-style-type": "disc",
     "margin": "0px",
@@ -2087,6 +2042,7 @@
     "padding-right": "10px",
     "padding-top": "0px",
     "position": "static",
+    "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "1px",
     "text-align": "justify",
     "text-decoration-color": "rgb(34, 34, 34)",
@@ -2122,8 +2078,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -2162,8 +2116,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -2243,9 +2195,9 @@
     "display": "block",
     "fill": "rgb(0, 0, 0)",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
+    "font-size": "16px",
     "font-weight": "400",
-    "line-height": "22.275px",
+    "line-height": "24px",
     "list-style": "outside none disc",
     "list-style-type": "disc",
     "margin": "0px",
@@ -2281,6 +2233,7 @@
     "padding-right": "10px",
     "padding-top": "0px",
     "position": "static",
+    "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "1px",
     "text-align": "justify",
     "text-decoration-color": "rgb(34, 34, 34)",
@@ -2316,8 +2269,6 @@
     "border-top-right-radius": "11.5px",
     "border-top-width": "1px",
     "border-width": "1px",
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "padding": "0px 10px 2px",
     "padding-block": "0px 2px",
     "padding-block-end": "2px",
@@ -2342,7 +2293,7 @@
     "border-style": "none none solid",
     "display": "flex",
     "font-family": "var(--magazine-title-font)",
-    "height": "83.5938px",
+    "height": "83.7969px",
     "letter-spacing": "var(--letter-spacing-note)",
     "margin": "-35px -35px 20px",
     "margin-block": "-35px 20px",
@@ -2368,7 +2319,7 @@
     "padding-top": "32px",
     "text-align": "var(--inline-title-align)",
     "text-transform": "uppercase",
-    "transform-origin": "385px 41.7969px",
+    "transform-origin": "385px 41.8984px",
     "width": "770px"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder\"]": {
@@ -2377,6 +2328,7 @@
     "border-radius": "11.5px",
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px",
+    "font-size": "var(--files-explorer-font-size)",
     "height": "28.1094px",
     "margin": "0px 0px 2px -13px",
     "margin-inline": "-13px 0px",
@@ -2411,6 +2363,7 @@
     "border-radius": "11.5px",
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px",
+    "font-size": "var(--files-explorer-font-size)",
     "height": "28.1094px",
     "margin": "0px 0px 2px -41px",
     "margin-inline": "-41px 0px",
@@ -2445,6 +2398,7 @@
     "border-radius": "11.5px",
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px",
+    "font-size": "var(--files-explorer-font-size)",
     "height": "28.1094px",
     "margin": "0px 0px 2px -13px",
     "margin-inline": "-13px 0px",
@@ -2509,27 +2463,27 @@
     "width": "32.5156px"
   },
   "div.quartz-icon-selector": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
     "transform-origin": "350px 12.5px"
   },
   "dl": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "100px",
     "line-height": "25px",
-    "margin": "14.85px 0px",
-    "margin-block": "14.85px",
-    "margin-block-end": "14.85px",
-    "margin-block-start": "14.85px",
-    "margin-bottom": "14.85px",
-    "margin-top": "14.85px",
+    "margin": "15px 0px",
+    "margin-block": "15px",
+    "margin-block-end": "15px",
+    "margin-block-start": "15px",
+    "margin-bottom": "15px",
+    "margin-top": "15px",
     "text-align": "justify",
     "transform-origin": "350px 50px"
   },
   "dt": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
@@ -2562,7 +2516,7 @@
     "text-align": "justify"
   },
   "h1[data-heading=\"This is a heading 1\"]": {
-    "height": "22.2812px",
+    "height": "22.5px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2570,11 +2524,11 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "114.664px 11.1406px",
-    "width": "229.328px"
+    "transform-origin": "115.875px 11.25px",
+    "width": "231.75px"
   },
   "h2[data-heading=\"This is a heading 2\"]": {
-    "height": "18.9219px",
+    "height": "19.1094px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2582,11 +2536,11 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "98.0859px 9.46094px",
-    "width": "196.172px"
+    "transform-origin": "99.1406px 9.55469px",
+    "width": "198.281px"
   },
   "h3[data-heading=\"This is a heading 3\"]": {
-    "height": "16.0156px",
+    "height": "16.1719px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2594,11 +2548,11 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "83.4609px 8.00781px",
-    "width": "166.922px"
+    "transform-origin": "84.2812px 8.08594px",
+    "width": "168.562px"
   },
   "h4[data-heading=\"This is a heading 4\"]": {
-    "height": "13.0938px",
+    "height": "13.2344px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2606,11 +2560,11 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "68.5938px 6.54688px",
-    "width": "137.188px"
+    "transform-origin": "69.3359px 6.61719px",
+    "width": "138.672px"
   },
   "h5[data-heading=\"This is a heading 5\"]": {
-    "height": "11.6406px",
+    "height": "11.7656px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2618,11 +2572,11 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "61.3047px 5.82031px",
-    "width": "122.609px"
+    "transform-origin": "61.9609px 5.88281px",
+    "width": "123.922px"
   },
   "h6[data-heading=\"This is a heading 6\"]": {
-    "height": "14.5469px",
+    "height": "14.7031px",
     "line-height": "var(--headers-space-symmetry)",
     "margin": "18px 0px",
     "margin-block": "18px",
@@ -2630,8 +2584,8 @@
     "margin-top": "18px",
     "max-width": "fit-content",
     "text-align": "var(--headers-align)",
-    "transform-origin": "76.9922px 7.27344px",
-    "width": "153.984px"
+    "transform-origin": "77.7344px 7.35156px",
+    "width": "155.469px"
   },
   "hr.workspace-leaf-resize-handle": {
     "margin": "30px 0px",
@@ -2649,10 +2603,10 @@
     "border-top-right-radius": "11.5px",
     "box-shadow": "var(--background-modifier-box-shadow) 0px 0px 2.5px 0px",
     "filter": "saturate(1.05)",
-    "font-size": "22.275px",
-    "height": "22.275px",
-    "letter-spacing": "-0.334125px",
-    "line-height": "22.275px",
+    "font-size": "24px",
+    "height": "24px",
+    "letter-spacing": "-0.36px",
+    "line-height": "24px",
     "opacity": "0.95",
     "text-align": "left"
   },
@@ -2786,8 +2740,8 @@
     "border-top-left-radius": "11.5px",
     "border-top-right-radius": "11.5px",
     "text-transform": "capitalize",
-    "transform-origin": "129.094px 14px",
-    "width": "258.188px"
+    "transform-origin": "129px 14px",
+    "width": "258px"
   },
   "kbd": {
     "border-bottom-left-radius": "11.5px",
@@ -2797,21 +2751,21 @@
     "border-top-right-radius": "11.5px",
     "height": "29px",
     "line-height": "25px",
-    "padding": "1.4553px 3.63825px",
-    "padding-block": "1.4553px",
-    "padding-block-end": "1.4553px",
-    "padding-block-start": "1.4553px",
-    "padding-bottom": "1.4553px",
-    "padding-inline": "3.63825px",
-    "padding-inline-end": "3.63825px",
-    "padding-inline-start": "3.63825px",
-    "padding-left": "3.63825px",
-    "padding-right": "3.63825px",
-    "padding-top": "1.4553px",
+    "padding": "1.47px 3.675px",
+    "padding-block": "1.47px",
+    "padding-block-end": "1.47px",
+    "padding-block-start": "1.47px",
+    "padding-bottom": "1.47px",
+    "padding-inline": "3.675px",
+    "padding-inline-end": "3.675px",
+    "padding-inline-start": "3.675px",
+    "padding-left": "3.675px",
+    "padding-right": "3.675px",
+    "padding-top": "1.47px",
     "text-align": "justify"
   },
   "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2826,7 +2780,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"-\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2841,7 +2795,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"!\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2856,7 +2810,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"?\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2871,7 +2825,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"*\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2886,7 +2840,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"/\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2901,7 +2855,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\">\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2916,7 +2870,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"b\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2931,7 +2885,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"c\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2946,7 +2900,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"d\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2961,7 +2915,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"f\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2976,7 +2930,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"i\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -2991,7 +2945,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"I\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3006,7 +2960,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"k\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3021,7 +2975,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"l\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3036,7 +2990,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"p\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3051,7 +3005,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"S\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3066,7 +3020,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"u\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3081,7 +3035,7 @@
     "width": "672px"
   },
   "li.task-list-item[data-task=\"w\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "margin": "0px 0px 0px 45px",
@@ -3096,7 +3050,7 @@
     "width": "672px"
   },
   "li[data-line=\"0\"]": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "29px",
     "line-height": "25px",
     "list-style": "outside none none",
@@ -3117,18 +3071,6 @@
     "line-height": "20.8px",
     "text-align": "center",
     "transform-origin": "50% 50%"
-  },
-  "mjx-container.MathJax": {
-    "font-size": "14.85px",
-    "padding": "14.85px 0px",
-    "padding-block": "14.85px",
-    "padding-block-end": "14.85px",
-    "padding-block-start": "14.85px",
-    "padding-bottom": "14.85px",
-    "padding-top": "14.85px"
-  },
-  "mjx-math.MJX-TEX": {
-    "font-size": "14.85px"
   },
   "pre": {
     "--ec-brdRad": "11.5px",
@@ -3194,7 +3136,7 @@
     "border-top-width": "1px",
     "border-width": "1px",
     "font-size": "var(--code-size)",
-    "line-height": "21.8295px",
+    "line-height": "23.52px",
     "margin": "16px 0px",
     "margin-block": "16px",
     "margin-block-end": "16px",
@@ -3204,10 +3146,7 @@
     "text-align": "justify"
   },
   "progress": {
-    "font-size": "14.85px",
-    "line-height": "22.275px",
-    "text-align": "justify",
-    "width": "148.5px"
+    "text-align": "justify"
   },
   "strong": {
     "--table-border-radius": "11.5px",
@@ -3217,24 +3156,24 @@
     "transform-origin": "50% 50%"
   },
   "strong > em": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "line-height": "25px",
     "text-align": "justify"
   },
   "sub": {
-    "font-size": "12.375px",
+    "font-size": "12.5px",
     "line-height": "25px",
     "text-align": "justify"
   },
   "summary": {
-    "font-size": "14.85px",
+    "font-size": "15px",
     "height": "25px",
     "line-height": "25px",
     "text-align": "justify",
     "transform-origin": "350px 12.5px"
   },
   "sup": {
-    "font-size": "12.375px",
+    "font-size": "12.5px",
     "line-height": "25px",
     "text-align": "justify"
   },
@@ -3247,8 +3186,8 @@
   "svg.lucide-bug.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3257,8 +3196,8 @@
   "svg.lucide-check-circle-2.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3267,8 +3206,8 @@
   "svg.lucide-check.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3277,8 +3216,8 @@
   "svg.lucide-clipboard-list.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3287,8 +3226,8 @@
   "svg.lucide-flame.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3299,7 +3238,7 @@
     "min-width": "0px"
   },
   "svg.lucide-info.svg-icon": {
-    "font-size": "12.9938px",
+    "font-size": "13.125px",
     "line-height": "25px",
     "min-height": "0px",
     "min-width": "0px"
@@ -3332,8 +3271,8 @@
     "column-rule-color": "rgb(8, 109, 221)",
     "display": "inline",
     "font-family": "\"??\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "outline": "rgb(8, 109, 221) none 0px",
@@ -3347,8 +3286,8 @@
   "svg.lucide-quote.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3357,8 +3296,8 @@
   "svg.lucide-zap.svg-icon": {
     "--icon-size": "0em",
     "display": "inline",
-    "font-size": "14.85px",
-    "line-height": "19.305px",
+    "font-size": "15px",
+    "line-height": "19.5px",
     "min-height": "0px",
     "min-width": "0px",
     "text-align": "justify",
@@ -3383,7 +3322,7 @@
   "tbody": {
     "--table-border-radius": "11.5px",
     "font-size": "var(--default-font-size)",
-    "line-height": "18.5424px",
+    "line-height": "18.7297px",
     "padding": "10px",
     "padding-block": "10px",
     "padding-block-end": "10px",
@@ -3401,8 +3340,8 @@
   },
   "tbody tr": {
     "--table-border-radius": "11.5px",
-    "font-size": "14.2634px",
-    "line-height": "18.5424px",
+    "font-size": "14.4075px",
+    "line-height": "18.7297px",
     "text-align": "center",
     "transform-origin": "306.5px 14.8984px",
     "width": "613px"
@@ -3411,16 +3350,16 @@
     "--table-border-radius": "11.5px",
     "background": "rgb(246, 246, 246) none repeat scroll 0% 0% / auto padding-box border-box",
     "background-color": "var(--background-secondary)",
-    "font-size": "14.2634px",
-    "line-height": "18.5424px",
+    "font-size": "14.4075px",
+    "line-height": "18.7297px",
     "text-align": "center",
     "transform-origin": "306.5px 14.8984px",
     "width": "613px"
   },
   "tbody tr:nth-child(odd)": {
     "--table-border-radius": "11.5px",
-    "font-size": "14.2634px",
-    "line-height": "18.5424px",
+    "font-size": "14.4075px",
+    "line-height": "18.7297px",
     "text-align": "center",
     "transform-origin": "306.5px 14.8984px",
     "width": "613px"
@@ -3447,9 +3386,9 @@
   },
   "thead": {
     "--table-border-radius": "11.5px",
-    "font-size": "14.4075px",
+    "font-size": "14.553px",
     "height": "30.7969px",
-    "line-height": "18.7297px",
+    "line-height": "18.9189px",
     "text-align": "justify",
     "transform-origin": "306.5px 15.3984px",
     "width": "613px"
@@ -3469,16 +3408,14 @@
     "--table-border-radius": "11.5px",
     "background": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
     "background-color": "var(--background-primary)",
-    "font-size": "14.4075px",
+    "font-size": "14.553px",
     "height": "30.7969px",
-    "line-height": "18.7297px",
+    "line-height": "18.9189px",
     "text-align": "justify",
     "transform-origin": "306.5px 15.3984px",
     "width": "613px"
   },
   "video": {
-    "font-size": "14.85px",
-    "line-height": "22.275px",
     "text-align": "justify"
   }
 }

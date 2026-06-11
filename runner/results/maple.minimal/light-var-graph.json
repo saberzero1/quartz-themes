@@ -948,7 +948,7 @@
     ],
     ".loader-spinner": ["--icon-xl"],
     ".setting-item-chevron": ["--icon-s"],
-    ".font-warning-icon": ["--icon-xs"],
+    ".setting-item-status": ["--icon-s"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs"
     ],
@@ -1067,6 +1067,7 @@
     ],
     ".loader-spinner": ["--icon-l-stroke-width"],
     ".setting-item-chevron": ["--icon-s-stroke-width"],
+    ".setting-item-status": ["--icon-s-stroke-width"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs-stroke-width"
     ],
@@ -1619,8 +1620,10 @@
       "--safe-area-inset-top",
       "--size-4-12"
     ],
-    "body.modal-setting-header:not(.is-mobile)": ["--size-4-10"],
-    "body.modal-setting-header:not(.is-mobile).modal-setting-header-search": [
+    "body.modal-setting-header:not(.is-mobile):not(.is-popout-modal)": [
+      "--size-4-10"
+    ],
+    "body.modal-setting-header:not(.is-mobile):not(.is-popout-modal).modal-setting-header-search": [
       "--size-4-12"
     ]
   },
@@ -1781,7 +1784,6 @@
     "body": ["--mono-100"],
     ".is-mobile": ["--interactive-accent"]
   },
-  "--scrollbar-bg": { "body": ["--mono-100"] },
   "--scrollbar-thumb-bg": {
     "body": ["--mono-100"],
     ".is-mobile": ["--interactive-hover"]
@@ -1880,6 +1882,8 @@
       "--size-4-3"
     ]
   },
+  "--slider-value-font-size": { "body": ["--font-ui-small"] },
+  "--slider-value-font-weight": { "body": ["--input-font-weight"] },
   "--status-bar-background": { "body": ["--background-secondary"] },
   "--status-bar-border-color": { "body": ["--background-modifier-border"] },
   "--status-bar-border-width": { "body": ["--border-width", "--border-width"] },
@@ -2854,7 +2858,7 @@
     ".theme-light.color-use-minimal:not(.color-highlight-only)": [
       "--base-accent-h"
     ],
-    ".theme-light.color-use-custom.color-modify-bg-light": [
+    ".theme-light.color-use-custom:is(.color-modify-bg-light, .color-highlight-only)": [
       "--setting-bg-primary-light-hsl",
       "--default-mod-bg-hsl"
     ],
@@ -2867,7 +2871,7 @@
       "--bg-delta-dark",
       "--bg-delta-dark"
     ],
-    ".theme-dark.color-use-custom.color-modify-bg-dark": [
+    ".theme-dark.color-use-custom:is(.color-modify-bg-dark, .color-highlight-only)": [
       "--setting-bg-primary-dark-hsl",
       "--default-mod-bg-hsl"
     ]
@@ -2877,7 +2881,7 @@
     ".theme-light.color-use-minimal:not(.color-highlight-only)": [
       "--base-accent-h"
     ],
-    ".theme-light.color-use-custom.color-modify-bg-light": [
+    ".theme-light.color-use-custom:is(.color-modify-bg-light, .color-highlight-only)": [
       "--setting-bg-primary-alt-light-hsl",
       "--default-mod-bg-hsl"
     ],
@@ -2890,7 +2894,7 @@
       "--bg-delta-dark",
       "--bg-delta-dark"
     ],
-    ".theme-dark.color-use-custom.color-modify-bg-dark": [
+    ".theme-dark.color-use-custom:is(.color-modify-bg-dark, .color-highlight-only)": [
       "--setting-bg-primary-alt-dark-hsl",
       "--default-mod-bg-hsl"
     ],
@@ -2912,7 +2916,7 @@
     ".theme-light.color-use-minimal:not(.color-highlight-only)": [
       "--base-accent-h"
     ],
-    ".theme-light.color-use-custom.color-modify-bg-light": [
+    ".theme-light.color-use-custom:is(.color-modify-bg-light, .color-highlight-only)": [
       "--setting-bg-secondary-light-hsl",
       "--default-mod-bg-hsl"
     ],
@@ -2925,7 +2929,7 @@
       "--bg-delta-dark",
       "--bg-delta-dark"
     ],
-    ".theme-dark.color-use-custom.color-modify-bg-dark": [
+    ".theme-dark.color-use-custom:is(.color-modify-bg-dark, .color-highlight-only)": [
       "--setting-bg-secondary-dark-hsl",
       "--default-mod-bg-hsl"
     ]
@@ -2941,7 +2945,7 @@
       "--theme-accent-active-s",
       "--theme-accent-active-l"
     ],
-    ".theme-light.color-use-custom.color-modify-bg-light": [
+    ".theme-light.color-use-custom:is(.color-modify-bg-light, .color-highlight-only)": [
       "--setting-bg-frame-light",
       "--default-mod-bg-hsl"
     ],
@@ -2957,7 +2961,7 @@
       "--theme-accent-active-l",
       "--color-opacity"
     ],
-    ".theme-dark.color-use-custom.color-modify-bg-dark": [
+    ".theme-dark.color-use-custom:is(.color-modify-bg-dark, .color-highlight-only)": [
       "--setting-bg-frame-dark",
       "--default-mod-bg-hsl"
     ]
@@ -3337,8 +3341,10 @@
     ]
   },
   "--modal-close-button-padding": {
-    "body.modal-setting-header:not(.is-mobile)": ["--size-4-2"],
-    "body.modal-setting-header:not(.is-mobile).modal-setting-header-search": [
+    "body.modal-setting-header:not(.is-mobile):not(.is-popout-modal)": [
+      "--size-4-2"
+    ],
+    "body.modal-setting-header:not(.is-mobile):not(.is-popout-modal).modal-setting-header-search": [
       "--size-4-3"
     ]
   },

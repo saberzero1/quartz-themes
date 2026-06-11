@@ -78,6 +78,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -909,6 +910,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1106,8 +1109,8 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --indentation-guide: var(--layer-4) !important;
   --interactive-success: var(--green) !important;
+  --indentation-guide: var(--layer-4) !important;
   --green: hsl(var(--green-tuple)) !important;
   --orange: hsl(var(--orange-tuple)) !important;
   --purple: hsl(var(--purple-tuple)) !important;
@@ -1206,6 +1209,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2030,6 +2034,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2222,8 +2228,8 @@ body.theme-dark {
   --zoom-factor: 1 !important;
   --background-modifier-form-field-highlighted: var(--pink-300) !important;
   --text-highlight-bg-active: var(--orange-100) !important;
-  --indentation-guide: var(--layer-4) !important;
   --interactive-success: var(--green) !important;
+  --indentation-guide: var(--layer-4) !important;
   --green: hsl(var(--green-tuple)) !important;
   --orange: hsl(var(--orange-tuple)) !important;
   --purple: hsl(var(--purple-tuple)) !important;
@@ -4179,7 +4185,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7317,7 +7323,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

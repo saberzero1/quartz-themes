@@ -1,13 +1,13 @@
 /* ============================================================
-   Folio — Obsidian Theme  v1.0.2
-   字体: Lora · Instrument Sans · JetBrains Mono
+   Folio — Obsidian Theme  v1.0.9
+   字体: Inter · Lora · Instrument Sans · JetBrains Mono
    色彩: Ivory #FAF9F5 · Slate #141413 · Clay #D97757
    ============================================================*/
 
 /* ── 字体族（开源平替 + CJK 回退） ── */
 
 body {
-  --font-text-theme:       'Lora', Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-text-theme:       'Inter', 'Instrument Sans', system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-heading-theme:    'Lora', Georgia, "GenRyuMin2 TW", "源流明體月", "GenRyuMin2 TC", "源流明體丹", "GenRyuMin2 JP", "源流明朝", "GenRyuMin", "源流明體", "Source Han Serif SC", "Source Han Serif CN", "Noto Serif CJK SC", "思源宋体", "Songti SC", "STSong", serif;
   --font-monospace-theme:  'JetBrains Mono', ui-monospace, monospace;
   --font-interface-theme:  'Instrument Sans', 'Inter', system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -20,18 +20,32 @@ body {
   --radius-xl:  24px;  /* image hero */
   --radius-pill: 100vw; /* tags, toggles */
 
+  /* ── 核心组件覆写 ── */
+  --blockquote-border-thickness: 0px;
+  --checkbox-radius:             50%;
+  --checkbox-size:               16px;
+  --checkbox-border-width:       1.5px;
+  --checkbox-border-color:       rgba(20, 20, 19, 0.2);
+  --checkbox-border-color-hover: var(--interactive-accent);
+  --checkbox-color:              var(--interactive-accent);
+  --checkbox-color-hover:        var(--interactive-accent);
+  --checkbox-marker-color:       var(--background-primary);
 
   /* ── 过渡（统一速率，不在组件里各写各的） ── */
   --anim-fast:   0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
   --anim-medium: 0.2s  ease;
 
+  /* ── 共享 SVG 资源（一处维护） ── */
+  --quote-icon: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23b08968'><path d='M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z'/></svg>");
+
   /* ── 标题字号（Obsidian 读取 --h1-size 等来渲染编辑器） ── */
-  --h1-size: 1.5em;
-  --h2-size: 1.25em;
-  --h3-size: 1.1em;
+  --inline-title-size: 1.75em;
+  --h1-size: 1.3em;
+  --h2-size: 1.15em;
+  --h3-size: 1.05em;
   --h4-size: 1.0em;
-  --h5-size: 0.9em;
-  --h6-size: 0.8em;
+  --h5-size: 0.92em;
+  --h6-size: 0.88em;
 
   /* ── Callout 颜色（典雅书卷色板，模式无关） ── */
   --callout-color-info:     #6A9BCC;   /* Sky */
@@ -45,6 +59,17 @@ body {
   /* ── 辅助文字层级（页岩灰色系） ── */
   --slate-light:  #B0AEA5;   /* Slate Light — 次要文字、图标 */
   --slate-faint:  #87867F;   /* 更淡文字 */
+
+  /* ── 表格默认间距排版 ── */
+  --table-padding-x: 10px;
+  --table-padding-y: 5px;
+  --table-header-padding-x: 10px;
+  --table-header-padding-y: 7px;
+  --table-line-height: 1.35;
+  --table-frame-color: rgba(176, 137, 104, 0.5);  /* 表格外框沙色，与 H1 呼应 */
+
+  /* ── Mermaid 图表字体 ── */
+  --font-mermaid: var(--font-interface-theme);
 
   /* ── 字体平滑与排版 ── */
   -webkit-font-smoothing: antialiased;
@@ -120,7 +145,7 @@ body.theme-light {
   --tab-text-color-focused-active:         #141413;
   --tab-text-color-focused-active-current: #D97757;
   --tab-background-active: var(--background-primary);
-  --tab-outline-color:     var(--background-modifier-border);
+  --tab-outline-color:     #E2E0D7;   /* 实色描边，避免 rgba 在弧线处叠加变粗 */
   --tab-outline-width:     1px;
 
   /* 滑块（官方变量） */
@@ -148,8 +173,8 @@ body.theme-light {
   --prompt-border-color: rgba(20, 20, 19, 0.08);
 
   /* 表格（官方变量 + 强制禁用交替效果） */
-  --table-column-alt-background:   transparent !important;
-  --table-row-alt-background:      transparent !important;
+  --table-column-alt-background:   transparent;
+  --table-row-alt-background:      transparent;
   --table-row-background-hover:    rgba(20, 20, 19, 0.03);  /* 极淡悬停 */
   --tooltip-bg:    #141413;
   --tooltip-color: #FAF9F5;
@@ -233,7 +258,7 @@ body.theme-dark {
   --tab-text-color-focused-active:         rgba(250, 249, 245, 0.85);
   --tab-text-color-focused-active-current: #D97757;
   --tab-background-active: var(--background-primary);
-  --tab-outline-color:     var(--background-modifier-border);
+  --tab-outline-color:     #2A2A27;   /* 实色描边，避免 rgba 在弧线处叠加变粗 */
   --tab-outline-width:     1px;
 
   /* 滑块（官方变量） */
@@ -263,8 +288,8 @@ body.theme-dark {
   --bg-text-tint:  rgba(250, 249, 245, 0.07);
 
   /* 表格（官方变量 + 强制禁用交替效果） */
-  --table-column-alt-background:   transparent !important;
-  --table-row-alt-background:      transparent !important;
+  --table-column-alt-background:   transparent;
+  --table-row-alt-background:      transparent;
   --table-row-background-hover:    rgba(250, 249, 245, 0.04);  /* 极淡悬停 */
 
   /* 阴影体系（统一为完整声明，而非单层颜色） */
@@ -307,6 +332,12 @@ body.theme-dark {
   line-height: 1.1;   letter-spacing: -0.025em;
   color: var(--h1-color);
   margin-top: 0;      margin-bottom: 0.6em;
+}
+
+.inline-title {
+  font-weight: 700;
+  line-height: 1.1;   letter-spacing: -0.025em;
+  color: var(--h1-color);
 }
 
 .markdown-rendered h2 {
@@ -426,29 +457,77 @@ body.theme-dark {
 
 /* ── 引用块 ── */
 
-blockquote,
-.markdown-rendered blockquote,
-.HyperMD-quote {
-  border-left: 2px solid var(--interactive-accent);
-  background: transparent;
-  border-radius: 0;
-  padding: 2px 0 2px 20px;
-  margin: 1.2em 0;
-  font-style: italic;
+/* ── 阅读模式 ── */
+.markdown-rendered blockquote {
+  position: relative;
+  border-left: none !important;
+  background: transparent !important;
+  padding: 0 0 0 28px !important; 
+  margin: 1.5em 0;
+  font-style: normal;
   color: var(--text-muted);
+}
+/* 小巧精致的设计感引号 SVG */
+.markdown-rendered blockquote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.45;
+  background-image: var(--quote-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 .markdown-rendered blockquote p {
-  font-size: 1em;
+  font-size: 0.95em;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+/* ── 实时预览模式 (Live Preview) ── */
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  border-left: none !important;
+  background: transparent !important;
+  font-style: normal !important;
+  color: var(--text-muted) !important;
+}
+
+/* 彻底消灭原生的左侧实线！ */
+.markdown-source-view.mod-cm6 .cm-blockquote-border {
+  display: none !important;
+}
+
+/* 将原本的 > 符号伪装成小巧的设计感引号 */
+.markdown-source-view.mod-cm6 .cm-formatting-quote {
+  color: transparent !important;
+  position: relative;
+  display: inline-block;
+  width: 28px; /* 与阅读模式的 28px padding 保持完美一致 */
+}
+
+.markdown-source-view.mod-cm6 .cm-formatting-quote::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.45;
+  background-image: var(--quote-icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 /* ── 代码 ── */
 
 /* 行内代码（编辑器 + 阅读模式统一） */
-code,
 .cm-inline-code,
+.cm-s-obsidian .cm-inline-code,
 .markdown-rendered code {
   font-family: var(--font-monospace-theme);
   background: var(--background-secondary-alt);
@@ -459,19 +538,7 @@ code,
   color: var(--text-normal);
 }
 
-/* Live Preview 行内代码确保一致性 */
-.cm-s-obsidian .cm-inline-code {
-  font-family: var(--font-monospace-theme);
-  background: var(--background-secondary-alt);
-  border: 1px solid var(--background-modifier-border);
-  border-radius: var(--radius-s);
-  padding: 2px 6px;
-  font-size: 0.85em;
-  color: var(--text-normal);
-}
-
 /* 代码块 (阅读视图 & 渲染的嵌入代码块) */
-pre,
 .markdown-rendered pre {
   font-family: var(--font-monospace-theme);
   background: var(--background-primary-alt);
@@ -643,29 +710,57 @@ a.tag {
   padding-left: 1px; padding-right: 10px;
 }
 
-/* ── 复选框 ── */
+/* ── 复选框（Circle Minimal · 圆形极简风） ── */
 
 .task-list-item-checkbox {
   appearance: none;
   -webkit-appearance: none;
-  width: 18px; height: 18px;
-  min-width: 18px; min-height: 18px;
-  border: 2px solid var(--background-modifier-border);
-  border-radius: var(--radius-s);
-  background: var(--background-modifier-form-field);
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+  border: var(--checkbox-border-width) solid var(--checkbox-border-color);
+  border-radius: var(--checkbox-radius);
+  background: transparent;
   cursor: pointer;
-  transition: background var(--anim-fast), border-color var(--anim-fast);
+  /* 弹性回弹：勾选时填充"落定"（reduced-motion 下由全局规则禁用） */
+  transition: background-color 0.22s cubic-bezier(0.34, 1.4, 0.64, 1),
+              border-color     0.22s cubic-bezier(0.34, 1.4, 0.64, 1);
   vertical-align: middle;
   position: relative;
 }
 
-.task-list-item-checkbox:checked {
-  background: var(--interactive-accent);
-  border-color: var(--interactive-accent);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23FAF9F5' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8l3.5 3.5L13 4.5'/%3E%3C/svg%3E");
-  background-size: 70%; background-position: center; background-repeat: no-repeat;
+.task-list-item-checkbox:hover {
+  border-color: var(--checkbox-border-color-hover);
 }
-.task-list-item-checkbox:checked::after { display: none; }
+
+.task-list-item-checkbox:checked {
+  background: var(--checkbox-color);
+  border-color: var(--checkbox-color);
+}
+
+/* 极简短勾 — 必须走 Obsidian 原生 ::after mask 通道：
+   原生对勾以 ::after 蒙版绘制在最上层，input 的 background-image
+   会被它整个盖住（此前改勾"不生效"的根因），故在同一通道替换造型 */
+.task-list-item-checkbox:checked::after {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--checkbox-marker-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.6 6 L7.2 9.9 L5.4 8.1' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.6 6 L7.2 9.9 L5.4 8.1' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* 伪元素扩大点击范围（不影响布局） */
+.task-list-item-checkbox::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+}
 
 
 /* ════════════════════════════════════════════════════════════
@@ -683,7 +778,7 @@ a.tag {
 }
 
 .workspace-tab-header-container {
-  border-bottom: 1px solid var(--background-modifier-border);
+  border-bottom: 1px solid var(--tab-outline-color);  /* 与页签描边统一实色 */
 }
 
 .titlebar-button-container {
@@ -705,6 +800,28 @@ a.tag {
   font-size: 0.76em;
 }
 
+/* 锁定页签图标 — 简约竖线圆钉（修正选择器：.mod-pinned 在 close-button 上） */
+.workspace-tab-header-inner-close-button.mod-pinned > svg,
+.workspace-tab-header-status-icon.mod-pinned > svg {
+  display: none !important;
+}
+.workspace-tab-header-inner-close-button.mod-pinned::before,
+.workspace-tab-header-status-icon.mod-pinned::before {
+  content: '';
+  display: block;
+  width: var(--icon-size, 16px);
+  height: var(--icon-size, 16px);
+  background-color: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='8' r='3' fill='black'/%3E%3Cline x1='12' y1='11' x2='12' y2='19'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='8' r='3' fill='black'/%3E%3Cline x1='12' y1='11' x2='12' y2='19'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
 /* ── 侧边栏 ── */
 
 .workspace-ribbon {
@@ -721,11 +838,10 @@ a.tag {
 .workspace-split.mod-left-split,
 .workspace-split.mod-right-split {
   background: var(--background-secondary);
-  will-change: transform;
 }
 
 .workspace-leaf-content {
-  contain: paint style;
+  contain: paint;
 }
 
 /* ── 大纲视图（TOC）与正文标题字体族统一 ── */
@@ -743,7 +859,9 @@ a.tag {
 }
 .workspace-leaf-content[data-type="outline"] .tree-item-self::before,
 .outline-view-container .tree-item-self::before,
-.outline-item-self::before {
+.outline-item-self::before,
+.nav-file-title::before,
+.nav-folder-title::before {
   content: '';
   position: absolute;
   left: 2px;
@@ -758,12 +876,16 @@ a.tag {
 }
 .workspace-leaf-content[data-type="outline"] .tree-item-self:hover::before,
 .outline-view-container .tree-item-self:hover::before,
-.outline-item-self:hover::before {
+.outline-item-self:hover::before,
+.nav-file-title:hover::before,
+.nav-folder-title:hover::before {
   transform: scaleY(1);
 }
 .workspace-leaf-content[data-type="outline"] .tree-item-self.is-active::before,
 .outline-view-container .tree-item-self.is-active::before,
-.outline-item-self.is-active::before {
+.outline-item-self.is-active::before,
+.nav-file-title.is-active::before,
+.nav-folder-title.is-active::before {
   transform: scaleY(1);
   width: 2.5px;
   background-color: var(--callout-color-clay);
@@ -771,13 +893,11 @@ a.tag {
 
 .workspace-leaf-resize-handle {
   border-color: var(--background-modifier-border);
-  will-change: transform;
 }
 
 .markdown-preview-view,
 .markdown-source-view {
   overscroll-behavior-y: contain;
-  will-change: scroll-position;
   /* ── 纸张微质感（高硬度平铺底噪，对 GPU 滚动 100% 零损耗） ── */
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0.33 0.33 0.33 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E") !important;
 }
@@ -793,30 +913,6 @@ a.tag {
   font-family: var(--font-interface-theme);
   font-size: 0.9em;
   transition: background var(--anim-fast), color var(--anim-fast);
-}
-.nav-file-title::before,
-.nav-folder-title::before {
-  content: '';
-  position: absolute;
-  left: 2px;
-  top: 22%;
-  height: 56%;
-  width: 2px;
-  background-color: var(--callout-color-clay);
-  border-radius: 2px;
-  transform: scaleY(0);
-  transform-origin: center;
-  transition: transform 0.22s cubic-bezier(0.25, 1, 0.5, 1);
-}
-.nav-file-title:hover::before,
-.nav-folder-title:hover::before {
-  transform: scaleY(1);
-}
-.nav-file-title.is-active::before,
-.nav-folder-title.is-active::before {
-  transform: scaleY(1);
-  width: 2.5px;
-  background-color: var(--callout-color-clay);
 }
 .nav-file-title:hover,
 .nav-folder-title:hover {
@@ -1039,10 +1135,21 @@ input[type='range']::-webkit-slider-thumb:hover {
 .callout {
   border-radius: var(--radius-l);
   border: 1px solid var(--background-modifier-border);
-  border-left: 3px solid var(--callout-color, var(--interactive-accent));
   background: var(--background-primary-alt);
-  padding: 16px 20px;
+  padding: 16px 20px 16px 24px;
+  position: relative;
   transition: transform var(--anim-fast), box-shadow var(--anim-fast);
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  width: 4px;
+  background: var(--callout-accent, var(--callout-color, var(--interactive-accent)));
+  border-top-left-radius: var(--radius-l);
+  border-bottom-left-radius: var(--radius-l);
 }
 .callout:hover {
   transform: translate3d(-1px, -1px, 0);
@@ -1054,17 +1161,25 @@ input[type='range']::-webkit-slider-thumb:hover {
   color: var(--text-normal);
 }
 
-.callout[data-callout='info']     { border-left-color: var(--callout-color-info);    background: rgba(106, 155, 204, 0.06); color: #1a365d; }
-.callout[data-callout='warning']  { border-left-color: var(--callout-color-warning); background: rgba(212, 162, 127, 0.06); color: #7a4a23; }
+.callout[data-callout='info']     { --callout-accent: var(--callout-color-info);    background: rgba(106, 155, 204, 0.06); }
+.callout[data-callout='warning']  { --callout-accent: var(--callout-color-warning); background: rgba(212, 162, 127, 0.06); }
 .callout[data-callout='error'],
-.callout[data-callout='danger']   { border-left-color: var(--callout-color-error);   background: rgba(196, 102, 134, 0.06); color: #7a1a3a; }
+.callout[data-callout='danger']   { --callout-accent: var(--callout-color-error);   background: rgba(196, 102, 134, 0.06); }
 .callout[data-callout='success'],
-.callout[data-callout='tip']      { border-left-color: var(--callout-color-success); background: rgba(120, 140, 93, 0.06); color: #3d5a1a; }
-.callout[data-callout='question'] { border-left-color: var(--callout-color-clay);    background: rgba(217, 119, 87, 0.06); }
-.callout[data-callout='quote']    { border-left-color: var(--callout-color-slate);   background: rgba(94, 93, 89, 0.04); }
+.callout[data-callout='tip']      { --callout-accent: var(--callout-color-success); background: rgba(120, 140, 93, 0.06); }
+.callout[data-callout='question'] { --callout-accent: var(--callout-color-clay);    background: rgba(217, 119, 87, 0.06); }
+.callout[data-callout='quote']    { --callout-accent: var(--callout-color-slate);   background: rgba(94, 93, 89, 0.04); }
 .callout[data-callout='abstract'],
-.callout[data-callout='summary']  { border-left-color: var(--callout-color-heather); background: rgba(130, 125, 189, 0.06); }
-.callout[data-callout='example']  { border-left-color: var(--callout-color-clay); }
+.callout[data-callout='summary']  { --callout-accent: var(--callout-color-heather); background: rgba(130, 125, 189, 0.06); }
+.callout[data-callout='example']  { --callout-accent: var(--callout-color-clay); }
+
+/* 染色正文仅限亮色模式（暗色下深色文字不可读，回退 --text-normal） */
+body.theme-light .callout[data-callout='info']    { color: #1a365d; }
+body.theme-light .callout[data-callout='warning'] { color: #7a4a23; }
+body.theme-light .callout[data-callout='error'],
+body.theme-light .callout[data-callout='danger']  { color: #7a1a3a; }
+body.theme-light .callout[data-callout='success'],
+body.theme-light .callout[data-callout='tip']     { color: #3d5a1a; }
 
 /* ── 表格 ──────────────────────────────────────────────────────
    社论增强版风格（精细排版）：
@@ -1077,55 +1192,47 @@ input[type='range']::-webkit-slider-thumb:hover {
 
 .markdown-rendered table,
 .cm-embed-block table {
-  width: 100%;
+  width: fit-content;
   border-collapse: collapse;
   font-family: var(--font-interface-theme);
-  font-size: 0.95em;
   margin: 16px 0 20px 0;
 
-  /* 外边框 + 圆角 */
-  border: 1px solid var(--background-modifier-border);
-  border-radius: var(--radius-m);
+  /* 优雅的外框：使用与 H1 呼应的沙色/陶土色，但更轻盈 (50% 透明度) */
+  border: 1px solid var(--table-frame-color);
+  border-radius: 8px;
   overflow: hidden;
+  /* 浅浅的背景色，使表格区域从正文中脱离出来 */
+  background-color: var(--background-primary-alt);
 }
 
 .markdown-rendered th,
 .cm-embed-block th {
   color: var(--text-normal);
   font-weight: 700;
-  letter-spacing: 0.01em;
+  font-size: calc(var(--font-text-size) * 0.7) !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   text-align: left;
-  padding: 14px 16px;
+  padding: var(--table-header-padding-y) var(--table-header-padding-x);
 
-  background: var(--background-secondary-alt) !important;
-  border-bottom: 2px solid var(--background-modifier-border);
-  border-right: 1px solid var(--background-modifier-border);
+  background: transparent !important;
+  border-bottom: 1px solid var(--background-modifier-border);
+  /* 去除竖向分割线 */
+  border-right: none !important;
+  border-left: none !important;
 }
 
 /* 禁用表头交替背景 */
 .markdown-rendered thead th:nth-child(odd),
 .markdown-rendered thead th:nth-child(even),
-.markdown-rendered th:nth-child(odd),
-.markdown-rendered th:nth-child(even),
 .cm-embed-block thead th:nth-child(odd),
-.cm-embed-block thead th:nth-child(even),
-.cm-embed-block th:nth-child(odd),
-.cm-embed-block th:nth-child(even) {
-  background: var(--background-secondary-alt) !important;
-}
-
-.markdown-rendered thead tr,
-.markdown-rendered thead tr:nth-child(odd),
-.markdown-rendered thead tr:nth-child(even),
-.cm-embed-block thead tr,
-.cm-embed-block thead tr:nth-child(odd),
-.cm-embed-block thead tr:nth-child(even) {
+.cm-embed-block thead th:nth-child(even) {
   background: transparent !important;
 }
 
-.markdown-rendered th:last-child,
-.cm-embed-block th:last-child {
-  border-right: none;
+.markdown-rendered thead tr,
+.cm-embed-block thead tr {
+  background: transparent !important;
 }
 
 /* 第一列不换行 */
@@ -1138,21 +1245,68 @@ input[type='range']::-webkit-slider-thumb:hover {
 
 .markdown-rendered td,
 .cm-embed-block td {
-  padding: 12px 16px;
+  padding: var(--table-padding-y) var(--table-padding-x);
   color: var(--text-normal);
-  line-height: 1.6;
-  border-right: 1px solid var(--background-modifier-border);
-  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: calc(var(--font-text-size) * 0.85) !important;
+  line-height: var(--table-line-height);
+  
+  border-bottom: 1px solid rgba(var(--background-modifier-border-rgb), 0.5);
+  /* 去除竖向分割线 */
+  border-right: none !important;
+  border-left: none !important;
 }
 
-.markdown-rendered td:last-child,
-.cm-embed-block td:last-child {
-  border-right: none;
-}
-
+/* 最后一行去底边框 */
 .markdown-rendered tr:last-child td,
 .cm-embed-block tr:last-child td {
   border-bottom: none;
+}
+
+/* 悬停效果回归官方原生变量 */
+.markdown-rendered tbody tr {
+  transition: background-color var(--anim-fast);
+}
+.markdown-rendered tbody tr:hover {
+  background-color: var(--table-row-background-hover);
+}
+
+/* 确保编辑模式 (Live Preview) 走官方架构，仅覆盖内边距和竖线 */
+.markdown-source-view.mod-cm6 .cm-table-widget {
+  line-height: var(--table-line-height);
+  width: fit-content;
+  /* 取消官方的负边距，让外框整体右移，对齐段落文字 */
+  margin-inline-start: 0 !important;
+  margin-left: 0 !important;
+  /* 优雅外框与圆角同步 */
+  border: 1px solid var(--table-frame-color) !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+  /* 浅浅的背景色，使表格区域从正文中脱离出来 */
+  background-color: var(--background-primary-alt) !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget td .table-cell-wrapper {
+  padding: var(--table-padding-y) var(--table-padding-x);
+}
+.markdown-source-view.mod-cm6 .cm-table-widget th .table-cell-wrapper {
+  padding: var(--table-header-padding-y) var(--table-header-padding-x);
+}
+/* 编辑模式也去除竖线 */
+.markdown-source-view.mod-cm6 .cm-table-widget-row .cm-table-widget-cell {
+  border-right: none !important;
+  border-left: none !important;
+}
+.markdown-source-view.mod-cm6 .cm-table-widget-row:first-child .cm-table-widget-cell {
+  background: transparent !important;
+  color: var(--text-normal) !important;
+  font-weight: 700 !important;
+  font-size: calc(var(--font-text-size) * 0.7) !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget-row .cm-table-widget-cell {
+  font-size: calc(var(--font-text-size) * 0.85) !important;
 }
 
 /* 表格内 code：去掉背景/边框 */
@@ -1166,18 +1320,23 @@ input[type='range']::-webkit-slider-thumb:hover {
   font-size: 0.9em;
 }
 
+/* Dataview 专属紧凑化配置 */
+.dataview.table-view-table,
+.block-language-dataview table {
+  --table-padding-y: 4px;          /* 纵向内边距缩减 */
+  --table-padding-x: 8px;
+  --table-header-padding-y: 6px;   /* 表头纵向内边距缩减 */
+  --table-header-padding-x: 8px;
+  --table-line-height: 1.3;        /* 稍微收紧行高 */
+  font-size: 0.85em;               /* 适当降低字号提高信息密度 */
+}
+
 /* ── 阅读模式（限宽设在 sizer 层，滚动条保持在容器右边缘） ── */
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width: 950px;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* 长笔记滚动优化：跳过屏幕外内容块的布局与绘制 */
-.markdown-preview-sizer > div {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 150px;
 }
 
 .markdown-rendered img {
@@ -1199,65 +1358,125 @@ input[type='range']::-webkit-slider-thumb:hover {
 /* ── 选区 ── */
 
 ::selection {
-  background: rgba(217, 119, 87, 0.15);
+  background: rgba(var(--interactive-accent-rgb), 0.15);
 }
 
-/* ── Frontmatter / 属性 ── */
-
-/* ── 属性区域（仅覆盖颜色，布局由 Obsidian 原生控制） ── */
+/* ── Frontmatter / 属性 ──────────────────────────────────────
+   社论元数据条风格：
+   · 底部 Clay 色细分隔线，与正文优雅分离
+   · 精致小字号 + 行间细线，杂志版面感
+   · Tags 胶囊改为描边风格（仅在属性区内）
+   ─────────────────────────────────────────────────────────── */
 
 .metadata-container {
-  /* 容器：透明 */
+  /* 容器：透明底 + 底部 Clay 分隔线 */
   --metadata-background: transparent;
   --metadata-border-width: 0;
+  --metadata-padding: var(--size-4-2) 0;
 
-  /* 输入框白底消除（Obsidian 对 value 已处理，key 需要在此层覆盖） */
+  /* 行间细分隔线（杂志版面感） */
+  --metadata-divider-width: 1px;
+  --metadata-divider-color: var(--background-modifier-border);
+  --metadata-divider-color-hover: var(--background-modifier-border);
+  --metadata-divider-color-focus: var(--background-modifier-border);
+  --metadata-gap: 0;
+
+  /* 输入框白底消除 */
   --background-modifier-form-field: transparent;
 
   /* 属性行 hover/focus 颜色 */
-  --metadata-property-background-hover: rgba(var(--interactive-accent-rgb), 0.05);
-  --metadata-property-background-active: rgba(var(--interactive-accent-rgb), 0.08);
-  --metadata-property-box-shadow-focus: inset 0 0 0 1px rgba(var(--interactive-accent-rgb), 0.5);
+  --metadata-property-background-hover: rgba(var(--interactive-accent-rgb), 0.04);
+  --metadata-property-background-active: rgba(var(--interactive-accent-rgb), 0.06);
+  --metadata-property-box-shadow-focus: inset 0 0 0 1px rgba(var(--interactive-accent-rgb), 0.35);
+  --metadata-property-radius: 4px;
+  --metadata-property-radius-hover: 4px;
+  --metadata-property-radius-focus: 4px;
 
   /* 值输入框透明 */
   --metadata-input-background: transparent;
   --metadata-input-background-hover: transparent;
-  --metadata-input-background-active: rgba(var(--interactive-accent-rgb), 0.04);
+  --metadata-input-background-active: rgba(var(--interactive-accent-rgb), 0.03);
 
   font-family: var(--font-interface-theme);
   font-size: 0.8em;
+
+  /* 统一属性区所有文字的字体（覆盖官方 --font-interface 回退） */
+  --metadata-label-font: var(--font-interface-theme);
+  --metadata-input-font: var(--font-interface-theme);
+
+  /* 底部分隔线 — Clay accent，与脚注区呼应 */
+  border-bottom: 1px solid var(--interactive-accent);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
 }
 
+/* 标题「笔记属性」：去 uppercase，更精致 */
 .metadata-properties-heading {
   color: var(--text-faint);
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  font-size: 0.72em;
+  opacity: 0.7;
 }
 
+/* 属性类型图标：缩小 + 降透明度，退居视觉背景 + 与文字拉开间距 */
+.metadata-property-icon {
+  --icon-size: var(--icon-xs);
+  --icon-stroke: var(--icon-xs-stroke-width);
+  opacity: 0.35;
+  transition: opacity var(--anim-fast);
+  margin-right: 2px;
+}
+
+.metadata-property:hover .metadata-property-icon,
+.metadata-property:focus-within .metadata-property-icon {
+  opacity: 0.6;
+}
+
+/* 属性键文字 */
 .metadata-property-key-input {
   color: var(--text-faint);
   font-family: var(--font-interface-theme);
+  font-weight: 500;
 }
 
+/* 属性值文字 */
 .metadata-property-value {
   color: var(--text-normal);
 }
 
+/* Tags 胶囊：仅在属性区改为描边风格 */
+.metadata-property-value[data-property-type="tags"] .multi-select-pill {
+  --pill-background: transparent;
+  --pill-background-hover: rgba(var(--interactive-accent-rgb), 0.08);
+  --pill-border-width: 1px;
+  --pill-border-color: var(--interactive-accent);
+  --pill-border-color-hover: var(--interactive-accent);
+  --pill-color: var(--interactive-accent);
+  --pill-color-hover: var(--interactive-accent);
+  --pill-color-remove: var(--interactive-accent);
+  --pill-color-remove-hover: var(--text-error);
+  --pill-padding-x: var(--tag-padding-x);
+  --pill-padding-y: var(--tag-padding-y);
+  --pill-radius: var(--radius-pill);
+  font-weight: 500;
+  font-size: 0.92em;
+}
+
+/* 「+ 添加属性」按钮 */
 .metadata-add-button {
   color: var(--text-faint);
   font-family: var(--font-interface-theme);
-  font-size: 0.8em;
-  opacity: 0.7;
-  transition: opacity var(--anim-fast);
+  font-size: 0.78em;
+  opacity: 0.5;
+  transition: opacity var(--anim-fast), color var(--anim-fast);
 }
 
 .metadata-add-button:hover {
   opacity: 1;
   color: var(--text-accent);
-  background: var(--color-accent-2);
-  border-radius: var(--radius-s);
+  background: transparent;
 }
 
 /* 属性区所有 input：覆盖全局白底样式（变量级联在此上下文中不可靠） */
@@ -1288,7 +1507,7 @@ input.metadata-property-key-input:focus-visible,
   outline: none !important;
 }
 
-/* 属性行 focus：inset box-shadow 替代 outline（避免分界处亚像素渲染点） */
+/* 属性行 focus：inset box-shadow 替代 outline */
 .metadata-property.has-focus,
 .metadata-property:focus-within {
   outline: none;
@@ -1307,6 +1526,47 @@ input.metadata-property-key-input:focus-visible,
 }
 .search-result-file-match { color: var(--text-muted); }
 .search-result-file-match:hover { background: var(--nav-item-background-hover); }
+
+/* ── 脚注（Editorial 书末注风格） ── */
+
+/* 阅读模式脚注区域 */
+.markdown-rendered .footnotes {
+  font-family: var(--font-interface-theme);
+  font-size: 0.82em;
+  color: var(--text-muted);
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--interactive-accent);
+}
+
+/* 脚注区分隔线用 Clay accent 替代默认灰线 */
+.markdown-rendered .footnotes-sep,
+.markdown-rendered .footnotes > hr {
+  display: none;  /* 隐藏默认 hr，由 .footnotes 的 border-top 替代 */
+}
+
+/* 正文中的脚注引用序号 */
+.footnote-ref,
+.footnote-link,
+.cm-footref {
+  color: var(--text-accent);
+  font-weight: 600;
+}
+
+/* 脚注返回按钮 */
+.footnote-backref {
+  color: var(--text-accent) !important;
+  opacity: 0.6;
+  transition: opacity var(--anim-fast);
+}
+.footnote-backref:hover {
+  opacity: 1;
+}
+
+/* 官方脚注变量覆盖 */
+body {
+  --footnote-size: 0.85em;
+}
 
 /* ── Canvas 白板 ── */
 
@@ -1495,7 +1755,7 @@ select:focus-visible,
 /* ── 高对比度模式支持 ───────────────────────────────────── */
 
 @media (prefers-contrast: high) {
-  :root {
+  body.theme-light {
     /* 亮色模式：提升文字与背景对比度 */
     --text-normal:          #000000;  /* 纯黑文字 */
     --text-muted:           #333333;  /* 深灰次要文字 */
@@ -1596,7 +1856,11 @@ button:focus-visible .clickable-icon,
 }
 
 /* 按钮、输入框统一比例：水平 padding 大于垂直，避免方形 */
-button,
+/* 注意：排除 .clickable-icon；按钮限定 .modal/.prompt/.markdown-rendered，
+   避免裸 button 选择器泄漏到设置页与插件 UI（泄漏后需 !important 补救） */
+.modal button:not(.clickable-icon),
+.prompt button:not(.clickable-icon),
+.markdown-rendered button:not(.clickable-icon),
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -1609,17 +1873,13 @@ select {
 }
 
 /* 按钮额外水平 padding */
-button.mod-cta,
-button:not(.clickable-icon) {
+.modal button:not(.clickable-icon),
+.prompt button:not(.clickable-icon),
+.markdown-rendered button:not(.clickable-icon) {
   padding: 7px 20px;
 }
 
-/* 复选框触摸区域：用 ::after 伪元素扩大点击范围（不影响布局） */
-.task-list-item-checkbox::after {
-  content: '';
-  position: absolute;
-  inset: -13px;
-}
+
 
 /* ── 模态框与对话框可访问性 ──────────────────────────────────── */
 

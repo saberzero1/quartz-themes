@@ -580,6 +580,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -1386,6 +1387,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1597,6 +1600,8 @@ body.theme-light {
   --ctp-text: 76, 79, 105 !important;
   --ctp-yellow: 223, 142, 29 !important;
   --text-muted-rgb: var(--ctp-subtext0) !important;
+  --transition-text-decoration-color: text-decoration-color 0.3s
+    cubic-bezier(0.44, 0.21, 0, 1) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
@@ -1623,8 +1628,6 @@ body.theme-light {
   --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
   --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
   --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-text-decoration-color: text-decoration-color 0.3s
-    cubic-bezier(0.44, 0.21, 0, 1) !important;
 }
 
 body.theme-dark {
@@ -1644,6 +1647,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -2446,6 +2450,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2652,6 +2658,8 @@ body.theme-dark {
   --ctp-text: 205, 214, 244 !important;
   --ctp-yellow: 249, 226, 175 !important;
   --text-muted-rgb: var(--ctp-subtext0) !important;
+  --transition-text-decoration-color: text-decoration-color 0.3s
+    cubic-bezier(0.44, 0.21, 0, 1) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --nav-item-children-margin-left: var(--size-4-3) !important;
@@ -2678,8 +2686,6 @@ body.theme-dark {
   --transition-hover-box-shadow: box-shadow 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
   --transition-hover-color: color 0.3s cubic-bezier(0.44, 0.21, 0, 1) !important;
   --transition-hover-color-fast: color 0.2s cubic-bezier(0.44, 0.21, 0, 1) !important;
-  --transition-text-decoration-color: text-decoration-color 0.3s
-    cubic-bezier(0.44, 0.21, 0, 1) !important;
 }
 
 body {
@@ -4696,7 +4702,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -8052,7 +8058,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

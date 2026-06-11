@@ -393,6 +393,7 @@ body.theme-dark {
   --icon-stroke: 2px !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1229,6 +1230,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1424,6 +1427,7 @@ body.theme-dark {
   --bold-color: var(--dark-castle-palette-light-blue) !important;
   --italic-color: var(--dark-castle-palette-light-blue) !important;
   --vault-name-font-size: 1em !important;
+  --strikethrough-color: var(--dark-castle-palette-light-blue) !important;
   --dark-castle-accent: var(--dark-castle-palette-light-orange) !important;
   --dark-castle-accent-h: 40 !important;
   --dark-castle-accent-hover: var(--dark-castle-palette-gray) !important;
@@ -1493,7 +1497,6 @@ body.theme-dark {
   --dark-castle-text-faint: var(--dark-castle-palette-light-orange) !important;
   --dark-castle-text-muted: var(--dark-castle-palette-light-gray) !important;
   --dark-castle-text-normal: var(--dark-castle-palette-light-gray) !important;
-  --strikethrough-color: var(--dark-castle-palette-light-blue) !important;
 }
 
 body .site-body-left-column-site-theme-toggle {
@@ -3313,7 +3316,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

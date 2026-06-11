@@ -85,9 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--lotusOrange) !important;
   --code-builtin: var(--lotusTeal2) !important;
   --code-definition: var(--lotusOrange) !important;
-  --code-variable: var(--lotusOrange) !important;
   --code-boolean: var(--lotusOrange) !important;
   --code-parentheses: var(--lotusTeal1) !important;
 
@@ -2943,7 +2943,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7874,7 +7874,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

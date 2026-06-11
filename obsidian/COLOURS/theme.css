@@ -1818,6 +1818,13 @@ body {
 }
 
 /* --- Properties ------------------------------------------------- */
+.metadata-properties ::selection,
+.metadata-input-longtext::selection,
+input.nn-search-input::selection {
+	background: var(--h6-color) !important;
+	color: var(--background-primary) !important;
+}
+
 .is-mobile .metadata-content {
 	background-color: transparent;
 }
@@ -2216,6 +2223,12 @@ body.is-translucent {
 }
 
 /* --- Notebook Navigator plugin ---------------------------------- */
+
+input.nn-search-input.nn-search-active,
+input.nn-search-input.nn-search-active:hover {
+	background: var(--background-primary-alt);
+}
+
 body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .notebook-navigator,
 body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-navigation-pane,
 body.is-translucent .workspace-leaf-content[data-type="notebook-navigator"] .nn-list-pane,

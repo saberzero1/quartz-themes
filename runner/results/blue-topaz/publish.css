@@ -14,15 +14,23 @@
     format("woff2");
 }
 body.theme-light {
-  --bases-table-header-background: var(--background-primary) !important;
+  --bases-table-header-background: var(--background-secondary-alt) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --bases-embed-border-color: var(--background-modifier-border) !important;
-  --bases-table-border-color: var(--table-border-color) !important;
-  --bases-table-header-background-hover: var(
-    --background-modifier-hover
+  --bases-table-border-color: transparent !important;
+  --bases-table-header-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.18
   ) !important;
-  --table-border-color: #7d7d7d !important;
+  --table-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.2
+  ) !important;
   --text-accent: var(--color-accent) !important;
   --text-faint: #7f7f7f !important;
   --text-normal: #0e0e0e !important;
@@ -30,6 +38,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -119,8 +128,8 @@ body.theme-light {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-radius: var(--radius-s) !important;
-  --bases-embed-border-width: 0px !important;
+  --bases-embed-border-radius: 6px !important;
+  --bases-embed-border-width: 1px !important;
   --bases-filter-input-background: var(
     --background-modifier-form-field
   ) !important;
@@ -131,27 +140,30 @@ body.theme-light {
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
-  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
+  --bases-header-border-width: 1px !important;
   --bases-header-height: 40px !important;
-  --bases-header-padding-end: 2px !important;
-  --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-header-padding-end: 8px !important;
+  --bases-header-padding-start: 8px !important;
+  --bases-table-cell-background-active: color-mix(
+    in srgb,
+    var(--text-accent-hover) 18%,
+    transparent
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-active: 0 0 0 1px var(--interactive-accent) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: var(--radius-s) !important;
-  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: 6px !important;
+  --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-group-background: transparent !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
@@ -160,11 +172,14 @@ body.theme-light {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight) !important;
-  --bases-table-row-background-hover: var(
-    --table-row-background-hover
+  --bases-table-header-weight: 600 !important;
+  --bases-table-row-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.18
   ) !important;
-  --bases-table-row-border-width: var(--border-width) !important;
+  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
@@ -778,11 +793,7 @@ body.theme-light {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: #ddddddd9 !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -880,6 +891,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1110,6 +1123,11 @@ body.theme-light {
   --inline-title-font: var(--h1-font) !important;
   --folder-title: #000000 !important;
   --panel-border-color: #dbdbdc !important;
+  --bases-table-text-size: var(--font-text-size) !important;
+  --code-attribute: var(--code-function) !important;
+  --code-number: #ff5370 !important;
+  --code-variable: #f07178 !important;
+  --graph-arrow: #e25300 !important;
   --green: var(--nord14) !important;
   --orange: #db9600 !important;
   --purple: #c74df7 !important;
@@ -1174,6 +1192,14 @@ body.theme-light {
   --background-transparent-blue: #c6e5ffde !important;
   --background-waves-color: #4a75db8c !important;
   --background-yellow: #fbf3db !important;
+  --bases-card-line-hover: var(--background-primary-alt) !important;
+  --bases-card-shadow: var(--background-modifier-box-shadow) !important;
+  --bases-table-stripe-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.08
+  ) !important;
   --bg-color-highlight-1: #ff000034 !important;
   --bg-color-highlight-2: #0fc41835 !important;
   --bg-color-highlight-3: #4ca6ff51 !important;
@@ -1242,7 +1268,6 @@ body.theme-light {
   --cloze-decoration-color-3: var(--theme-color) !important;
   --code-active-line-background-color: var(--activeline-background) !important;
   --code-atom: var(--orange-1) !important;
-  --code-attribute: var(--code-function) !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -1256,14 +1281,12 @@ body.theme-light {
   --code-link: #696d70 !important;
   --code-matching-bracket: #ffffff !important;
   --code-meta: var(--text-faint) !important;
-  --code-number: #ff5370 !important;
   --code-qualifier: var(--aqua) !important;
   --code-selection-background: var(--text-selection) !important;
   --code-selection-color: var(--code-normal) !important;
   --code-string-2: var(--orange-1) !important;
   --code-tag-in-comment: #ff5370 !important;
   --code-type: var(--code-function) !important;
-  --code-variable: #f07178 !important;
   --code-variable-2: var(--light-purple) !important;
   --code-variable-3: #e7852fe7 !important;
   --color-highlight-1: var(--text-normal) !important;
@@ -1389,7 +1412,6 @@ body.theme-light {
   --font-weight-highlight-3: normal !important;
   --font-weight-inline-code: bold !important;
   --font-weight-strong: bold !important;
-  --graph-arrow: #e25300 !important;
   --graph-attach: #afcfe0cc !important;
   --graph-canvas-bg: var(--background-primary) !important;
   --graph-circle: #1f78b4cc !important;
@@ -1697,15 +1719,23 @@ body.theme-light {
 }
 
 body.theme-dark {
-  --bases-table-header-background: var(--background-primary) !important;
+  --bases-table-header-background: var(--background-secondary-alt) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
   --tab-container-background: var(--background-secondary) !important;
   --bases-embed-border-color: var(--background-modifier-border) !important;
-  --bases-table-border-color: var(--table-border-color) !important;
-  --bases-table-header-background-hover: var(
-    --background-modifier-hover
+  --bases-table-border-color: transparent !important;
+  --bases-table-header-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.15
   ) !important;
-  --table-border-color: #4a4a4a !important;
+  --table-border-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.2
+  ) !important;
   --text-accent: var(--color-accent) !important;
   --text-faint: #797979 !important;
   --text-normal: #c6c6c6 !important;
@@ -1713,6 +1743,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1789,7 +1820,7 @@ body.theme-dark {
   ) !important;
   --background-secondary-alt: var(
     --background-secondary-alt-bg-4-bt,
-    #000000
+    #222222
   ) !important;
   --bases-cards-background: var(--background-primary) !important;
   --bases-cards-border-width: var(--border-width) !important;
@@ -1802,8 +1833,8 @@ body.theme-dark {
   --bases-cards-scale: 1 !important;
   --bases-cards-shadow: 0 0 0 1px var(--background-modifier-border) !important;
   --bases-cards-shadow-hover: 0 0 0 1px var(--background-modifier-border-hover) !important;
-  --bases-embed-border-radius: var(--radius-s) !important;
-  --bases-embed-border-width: 0px !important;
+  --bases-embed-border-radius: 6px !important;
+  --bases-embed-border-width: 1px !important;
   --bases-filter-input-background: var(
     --background-modifier-form-field
   ) !important;
@@ -1814,27 +1845,30 @@ body.theme-dark {
   --bases-group-heading-property-weight: var(--font-normal) !important;
   --bases-group-heading-value-size: var(--font-smaller) !important;
   --bases-group-heading-value-weight: var(--font-semibold) !important;
-  --bases-header-border-width: 0 0 var(--border-width) 0 !important;
+  --bases-header-border-width: 1px !important;
   --bases-header-height: 40px !important;
-  --bases-header-padding-end: 2px !important;
-  --bases-header-padding-start: 2px !important;
-  --bases-table-cell-background-active: var(--background-primary) !important;
+  --bases-header-padding-end: 8px !important;
+  --bases-header-padding-start: 8px !important;
+  --bases-table-cell-background-active: color-mix(
+    in srgb,
+    var(--text-accent-hover) 18%,
+    transparent
+  ) !important;
   --bases-table-cell-background-disabled: var(
     --background-primary-alt
   ) !important;
   --bases-table-cell-background-selected: var(--table-selection) !important;
   --bases-table-cell-radius-active: 2px !important;
   --bases-table-cell-radius-focus: 2px !important;
-  --bases-table-cell-shadow-active: 0 0 0 2px
-    var(--background-modifier-border-focus) !important;
+  --bases-table-cell-shadow-active: 0 0 0 1px var(--interactive-accent) !important;
   --bases-table-cell-shadow-focus: 0 0 0 2px var(--interactive-accent) !important;
-  --bases-table-column-border-width: var(--border-width) !important;
+  --bases-table-column-border-width: 0px !important;
   --bases-table-column-max-width: 300 !important;
   --bases-table-column-min-width: 40 !important;
-  --bases-table-container-border-radius: var(--radius-s) !important;
-  --bases-table-container-border-width: var(--border-width) !important;
+  --bases-table-container-border-radius: 6px !important;
+  --bases-table-container-border-width: 1px !important;
   --bases-table-font-size: var(--font-smaller) !important;
-  --bases-table-group-background: var(--background-primary-alt) !important;
+  --bases-table-group-background: transparent !important;
   --bases-table-group-gap: 10px !important;
   --bases-table-header-color: var(--text-muted) !important;
   --bases-table-header-icon-display: flex !important;
@@ -1843,11 +1877,14 @@ body.theme-dark {
     transparent var(--size-4-6),
     black var(--size-4-6)
   ) !important;
-  --bases-table-header-weight: var(--font-weight) !important;
-  --bases-table-row-background-hover: var(
-    --table-row-background-hover
+  --bases-table-header-weight: 600 !important;
+  --bases-table-row-background-hover: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.15
   ) !important;
-  --bases-table-row-border-width: var(--border-width) !important;
+  --bases-table-row-border-width: 1px !important;
   --bases-table-row-height: 30px !important;
   --bases-table-summary-background: var(--background-primary) !important;
   --bases-table-summary-background-hover: var(
@@ -1976,18 +2013,18 @@ body.theme-dark {
   ) !important;
   --color-accent-hsl:
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
-  --color-base-00: #1c1c1c !important;
-  --color-base-05: #212121 !important;
-  --color-base-10: #232323 !important;
-  --color-base-100: #dadada !important;
-  --color-base-20: #282828 !important;
-  --color-base-25: #2e2e2e !important;
-  --color-base-30: #333333 !important;
-  --color-base-35: #3f3f3f !important;
-  --color-base-40: #555555 !important;
-  --color-base-50: #666666 !important;
-  --color-base-60: #999999 !important;
-  --color-base-70: #b3b3b3 !important;
+  --color-base-00: #222222 !important;
+  --color-base-05: #252525 !important;
+  --color-base-10: #282828 !important;
+  --color-base-100: #dcdcdc !important;
+  --color-base-20: #2c2c2c !important;
+  --color-base-25: #323232 !important;
+  --color-base-30: #3a3a3a !important;
+  --color-base-35: #434343 !important;
+  --color-base-40: #585858 !important;
+  --color-base-50: #6a6a6a !important;
+  --color-base-60: #9a9a9a !important;
+  --color-base-70: #b5b5b5 !important;
   --color-blue: #027aff !important;
   --color-blue-rgb: 2, 122, 255 !important;
   --color-cyan: #53dfdd !important;
@@ -2455,11 +2492,7 @@ body.theme-dark {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: #4d4d4d88 !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2557,6 +2590,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2780,6 +2815,11 @@ body.theme-dark {
   --inline-title-font: var(--h1-font) !important;
   --folder-title: #ffffff !important;
   --panel-border-color: #18191e !important;
+  --bases-table-text-size: var(--font-text-size) !important;
+  --code-attribute: var(--code-function) !important;
+  --code-number: #ff5370 !important;
+  --code-variable: var(--red) !important;
+  --graph-arrow: #c23917 !important;
   --green: #abd58e !important;
   --orange: #d1945b !important;
   --purple: #c594d4 !important;
@@ -2845,6 +2885,14 @@ body.theme-dark {
   --background-transparent-blue: #003e759a !important;
   --background-waves-color: #4a75db8c !important;
   --background-yellow: #585536 !important;
+  --bases-card-line-hover: var(--background-primary-alt) !important;
+  --bases-card-shadow: var(--background-modifier-box-shadow) !important;
+  --bases-table-stripe-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.06
+  ) !important;
   --bg-color-highlight-1: #c865656f !important;
   --bg-color-highlight-2: #54b9476f !important;
   --bg-color-highlight-3: #1e83d086 !important;
@@ -2913,7 +2961,6 @@ body.theme-dark {
   --cloze-decoration-color-3: var(--theme-color) !important;
   --code-active-line-background-color: #111111eb !important;
   --code-atom: var(--orange-1) !important;
-  --code-attribute: var(--code-function) !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -2927,14 +2974,12 @@ body.theme-dark {
   --code-link: #696d70 !important;
   --code-matching-bracket: #ffffff !important;
   --code-meta: #ffcb6b !important;
-  --code-number: #ff5370 !important;
   --code-qualifier: var(--aqua) !important;
   --code-selection-background: var(--text-selection) !important;
   --code-selection-color: var(--code-normal) !important;
   --code-string-2: var(--yellow) !important;
   --code-tag-in-comment: #ff5370 !important;
   --code-type: var(--code-function) !important;
-  --code-variable: var(--red) !important;
   --code-variable-2: #53ada3 !important;
   --code-variable-3: #e7852fe7 !important;
   --color-highlight-1: var(--text-normal) !important;
@@ -3060,7 +3105,6 @@ body.theme-dark {
   --font-weight-highlight-3: normal !important;
   --font-weight-inline-code: bold !important;
   --font-weight-strong: bold !important;
-  --graph-arrow: #c23917 !important;
   --graph-attach: #b2cfe0bb !important;
   --graph-canvas-bg: var(--background-primary) !important;
   --graph-circle: #55a2d6bb !important;
@@ -5136,7 +5180,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -5812,10 +5856,11 @@ body body.theme-light .markdown-rendered th {
   box-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width) solid rgb(125, 125, 125);
-  border-right: 0px solid rgb(125, 125, 125);
-  border-top: var(--table-header-border-width) solid rgb(125, 125, 125);
-  border-bottom: 0px solid rgb(125, 125, 125);
+  border-left: var(--table-column-first-border-width) solid
+    rgba(47, 147, 228, 0.2);
+  border-right: 0px solid rgba(47, 147, 228, 0.2);
+  border-top: var(--table-header-border-width) solid rgba(47, 147, 228, 0.2);
+  border-bottom: 0px solid rgba(47, 147, 228, 0.2);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -8091,7 +8136,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
@@ -8767,10 +8812,11 @@ body body.theme-dark .markdown-rendered th {
   box-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: normal;
-  border-left: var(--table-column-first-border-width) solid rgb(74, 74, 74);
-  border-right: 0px solid rgb(74, 74, 74);
-  border-top: var(--table-header-border-width) solid rgb(74, 74, 74);
-  border-bottom: 0px solid rgb(74, 74, 74);
+  border-left: var(--table-column-first-border-width) solid
+    rgba(45, 130, 205, 0.2);
+  border-right: 0px solid rgba(45, 130, 205, 0.2);
+  border-top: var(--table-header-border-width) solid rgba(45, 130, 205, 0.2);
+  border-bottom: 0px solid rgba(45, 130, 205, 0.2);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;

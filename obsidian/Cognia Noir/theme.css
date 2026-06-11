@@ -10,10 +10,11 @@
    measure. Highlightr is
    editor-content only (no workspace leaf), so it needs no opt-out and is
    unaffected by the force-paint either way.
-   v1.10.24 (Obsidian 1.12.x desktop appearance fixes. Full version
-            history now lives in CHANGELOG.md and on the GitHub releases
-            page; it was moved out of this header so theme.css stays small
-            and Obsidian stops flagging the stylesheet size.)
+   v1.10.25 (Mobile: the iPhone left-drawer view-picker popup now reads as
+            an opaque floating menu instead of letting the file tree bleed
+            through, with no select-bar overlap or double highlight. Full
+            version history lives in CHANGELOG.md and on the GitHub
+            releases page.)
 
    SECTIONS
       0   Shared constants (theme-independent vars: radius, transition)
@@ -2249,7 +2250,7 @@ body:not(.is-phone) .workspace-split.mod-left-split > .workspace-sidedock-vault-
 
 /* ============================================================
    21. MOBILE — settings card contrast, button visibility,
-       and drawer view-picker opacity
+       and drawer view-picker chrome
    ============================================================
    On iPhone, Obsidian groups the Settings screen content into
    stacked cards (Account, Catalyst license, Help, etc.) that
@@ -2294,21 +2295,81 @@ body.is-phone.theme-dark .modal.mod-settings .modal-content {
 /* ----------------------------------------------------------------
    Mobile drawer view-picker popup. The dropdown that opens from
    the bottom-of-drawer chevron lists Files / Search / Tags /
-   Bookmarks / All properties / Recent files. Stock Obsidian mobile
-   does not paint this popup -- it expects the theme to. Without an
-   opaque fill the file-explorer leaf behind it shows through and
-   both layers become simultaneously legible. Paint both the
-   container (.workspace-drawer-tab-options) and the list
-   (.workspace-drawer-tab-options-list) defensively: one or both
-   carries the visible surface depending on Obsidian build and
-   device class, and painting both costs nothing. Scoped to
-   .is-mobile so iPhone and iPad both pick it up.
+   Bookmarks / All properties / Recent files.
+
+   Core DOM (verified in obsidian.asar):
+     .workspace-drawer-active-tab-container
+       .workspace-drawer-tab-options                      <- container
+         .workspace-tab-header.workspace-drawer-tab-select <- always-visible
+                                                              "current view" bar
+                                                              with the chevron
+         .workspace-drawer-tab-options-list               <- the popup list
+                                                              that floats open
+           .workspace-tab-header (one row per view; active
+                                  row is .is-active)
+
+   The container holds BOTH the always-visible select bar AND the
+   floating list, so chrome (border/shadow/radius) must go on the
+   floating LIST, not the container -- a box on the container wraps the
+   select bar too and frames the whole bottom of the drawer. The list
+   is what overlays the file tree when open, so it must be fully opaque
+   or the folder names behind it bleed through. Give the list real
+   floating-menu chrome (opaque elevated fill + border + radius +
+   shadow, matching the .menu treatment at line ~1328); leave the
+   container and the select bar to their stock layout. Scoped to
+   .is-mobile so iPhone and iPad both pick it up; iPad rarely surfaces
+   this popup but the chrome is harmless there.
    Velocity additionally paints the whole .workspace-drawer-inner
    for cohesive chrome; that approach tints the iOS status bar
    safe area, which we don't want here, so we stop at the picker. */
-body.is-mobile .workspace-drawer-tab-options,
 body.is-mobile .workspace-drawer-tab-options-list {
-  background-color: var(--cn-bg-secondary);
+  background-color: var(--cn-bg-elevated);
+  border: 1px solid var(--cn-border-subtle);
+  border-radius: var(--cn-radius);
+  box-shadow: 0 8px 32px var(--cn-modal-shadow);
+  /* Do NOT set `padding` here. Core gives the list
+     `padding-top: var(--touch-size-l)`, which reserves a strip for the
+     always-on-top .workspace-drawer-tab-select bar (z-index:
+     var(--layer-cover)). A `padding` shorthand wipes that reservation
+     and a row slides under the select bar. Recolor only; keep stock
+     padding. */
+}
+
+/* Row styling only -- no size/spacing overrides. Core lays the rows
+   out in its own flow; setting min-height / padding / gap on the
+   .workspace-tab-header(-inner) made the rows taller than that flow
+   expects and the first and last collided. Limit ourselves to the
+   rounded corner (cosmetic, no layout effect) and the active fill.
+   Scoped inside the list so the always-visible
+   .workspace-drawer-tab-select bar (a sibling, not a child) is left
+   alone. */
+body.is-mobile .workspace-drawer-tab-options-list .workspace-tab-header {
+  border-radius: var(--radius-s);
+}
+
+/* Clear but restrained active highlight -- tertiary fill reads on the
+   elevated list surface where the faint --cn-soft-overlay from
+   section 4 did not. */
+body.is-mobile .workspace-drawer-tab-options-list .workspace-tab-header.is-active {
+  background-color: var(--cn-bg-tertiary);
+  color: var(--cn-text-primary);
+}
+
+/* Stop the "highlighted twice" look. The always-present
+   .workspace-drawer-tab-select bar (bottom of the picker, carries the
+   collapse chevron) mirrors the current view, so core marks it
+   .is-active and paints its inner with --nav-item-background-hover --
+   the same highlight the active row in the list already shows. When
+   the picker is open that bar is redundant, so drop its fill so it
+   reads as a plain collapse control, not a second highlighted "Files".
+   Two selector forms cover both DOM shapes (the select bar is a
+   sibling of the list in the desktop build but appears nested in the
+   mobile list rules). Specificity (>= 0,5,1) beats core's
+   .workspace-tab-header.is-active .workspace-tab-header-inner (0,5,0).
+   Closed state is untouched, so the bar keeps its resting pill. */
+body.is-mobile .workspace-drawer-tab-options:not(.is-collapsed) .workspace-drawer-tab-select .workspace-tab-header-inner,
+body.is-mobile .workspace-drawer-tab-options:not(.is-collapsed) .workspace-drawer-tab-options-list .workspace-drawer-tab-select .workspace-tab-header-inner {
+  background-color: transparent;
 }
 
 /* ============================================================

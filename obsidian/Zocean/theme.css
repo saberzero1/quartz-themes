@@ -1,0 +1,321 @@
+/* ============================================================
+   Zocean — a clean, minimal document theme for Obsidian
+   Author: maniarasan.s
+   License: MIT
+   ------------------------------------------------------------
+   A calm, paper-like editor: generous whitespace, soft text
+   colors, subtle borders, a friendly blue accent, and tidy
+   callouts, code blocks, tables, checkboxes and headings.
+   ============================================================ */
+
+/* ---------- 1. Design tokens (shared) ---------- */
+.theme-light,
+.theme-dark {
+  /* Typography — clean UI / serif / mono stacks */
+  --font-text-theme: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-interface-theme: "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-monospace-theme: "SFMono-Regular", "JetBrains Mono", Menlo, Consolas,
+    "Liberation Mono", monospace;
+
+  --font-text-size: 16px;
+  --line-height-normal: 1.6;
+  --line-height-tight: 1.3;
+
+  /* Tighter, slightly heavier headings */
+  --h1-size: 2em;
+  --h2-size: 1.5em;
+  --h3-size: 1.25em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+  --h3-weight: 600;
+  --h1-line-height: 1.2;
+
+  --bold-weight: 600;
+
+  /* A comfortable, centered reading column */
+  --file-line-width: 708px;
+  --max-width: 708px;
+
+  /* Soft, rounded geometry */
+  --radius-s: 4px;
+  --radius-m: 6px;
+  --radius-l: 8px;
+
+  /* Accent blue */
+  --accent-h: 206;
+  --accent-s: 76%;
+  --accent-l: 51%;
+}
+
+/* ---------- 2. Light mode ---------- */
+.theme-light {
+  --background-primary: #ffffff;
+  --background-primary-alt: #fbfbfa;
+  --background-secondary: #f7f6f3;       /* sidebar / soft gray bg */
+  --background-secondary-alt: #f1f1ef;
+  --background-modifier-border: rgba(55, 53, 47, 0.09);
+  --background-modifier-border-hover: rgba(55, 53, 47, 0.16);
+  --background-modifier-hover: rgba(55, 53, 47, 0.06);
+  --background-modifier-active-hover: rgba(35, 131, 226, 0.14);
+  --background-modifier-form-field: #ffffff;
+
+  --text-normal: rgb(55, 53, 47);        /* warm near-black */
+  --text-muted: rgba(55, 53, 47, 0.65);
+  --text-faint: rgba(55, 53, 47, 0.4);
+  --text-on-accent: #ffffff;
+  --text-accent: #2383e2;
+  --text-accent-hover: #1a73c7;
+  --text-selection: rgba(35, 131, 226, 0.2);
+  --text-highlight-bg: rgba(255, 212, 0, 0.4);
+
+  --interactive-accent: #2383e2;
+  --interactive-accent-hover: #1a73c7;
+  --interactive-normal: #f7f6f3;
+  --interactive-hover: #f1f1ef;
+
+  --code-background: #f7f6f3;
+  --code-normal: #eb5757;                /* warm inline-code red */
+
+  --blockquote-border: rgba(55, 53, 47, 0.16);
+  --hr-color: rgba(55, 53, 47, 0.09);
+
+  --link-color: #2383e2;
+  --link-decoration: underline;
+
+  --titlebar-background: #ffffff;
+  --titlebar-background-focused: #ffffff;
+}
+
+/* ---------- 3. Dark mode ---------- */
+.theme-dark {
+  --background-primary: #191919;
+  --background-primary-alt: #1f1f1f;
+  --background-secondary: #202020;
+  --background-secondary-alt: #252525;
+  --background-modifier-border: rgba(255, 255, 255, 0.08);
+  --background-modifier-border-hover: rgba(255, 255, 255, 0.16);
+  --background-modifier-hover: rgba(255, 255, 255, 0.055);
+  --background-modifier-active-hover: rgba(35, 131, 226, 0.22);
+  --background-modifier-form-field: #2a2a2a;
+
+  --text-normal: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.56);
+  --text-faint: rgba(255, 255, 255, 0.36);
+  --text-on-accent: #ffffff;
+  --text-accent: #5aa7ec;
+  --text-accent-hover: #7cbcf2;
+  --text-selection: rgba(35, 131, 226, 0.3);
+  --text-highlight-bg: rgba(255, 212, 0, 0.28);
+
+  --interactive-accent: #2383e2;
+  --interactive-accent-hover: #3b91e6;
+  --interactive-normal: #2a2a2a;
+  --interactive-hover: #313131;
+
+  --code-background: #252525;
+  --code-normal: #ff7b72;
+
+  --blockquote-border: rgba(255, 255, 255, 0.16);
+  --hr-color: rgba(255, 255, 255, 0.09);
+
+  --link-color: #5aa7ec;
+
+  --titlebar-background: #191919;
+  --titlebar-background-focused: #191919;
+}
+
+/* ---------- 4. Editor canvas & typography ---------- */
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-scroller {
+  font-family: var(--font-text-theme);
+  line-height: var(--line-height-normal);
+  letter-spacing: -0.003em;          /* subtle tightening */
+  color: var(--text-normal);
+}
+
+/* Inline title behaves like a big page title */
+.inline-title {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  letter-spacing: -0.01em;
+  margin-top: 1.4em;
+}
+.markdown-preview-view h2,
+.markdown-preview-view h3 {
+  margin-top: 1.2em;
+}
+
+/* ---------- 5. Inline code (red pill) ---------- */
+.markdown-rendered code,
+.cm-inline-code {
+  background-color: var(--code-background);
+  color: var(--code-normal);
+  font-size: 0.85em;
+  padding: 0.2em 0.4em;
+  border-radius: var(--radius-s);
+  font-family: var(--font-monospace-theme);
+}
+
+/* ---------- 6. Code blocks ---------- */
+.markdown-rendered pre,
+.HyperMD-codeblock {
+  background-color: var(--code-background);
+  border-radius: var(--radius-l);
+  border: 1px solid var(--background-modifier-border);
+}
+.markdown-rendered pre code {
+  color: var(--text-normal);
+  background: none;
+  font-size: 0.85em;
+}
+
+/* ---------- 7. Blockquotes (left bar) ---------- */
+.markdown-rendered blockquote {
+  border-left: 3px solid var(--text-normal);
+  padding-left: 0.9em;
+  margin-left: 0;
+  color: var(--text-normal);
+  font-style: normal;
+}
+
+/* ---------- 8. Callouts → soft colored blocks ---------- */
+.callout {
+  border-radius: var(--radius-m);
+  border: none;
+  padding: 16px 16px 16px 14px;
+  background-color: var(--background-secondary);
+  mix-blend-mode: normal;
+}
+.callout-title {
+  font-weight: 600;
+  padding: 0;
+}
+.callout[data-callout="note"]    { background-color: rgba(35, 131, 226, 0.08); }
+.callout[data-callout="info"]    { background-color: rgba(35, 131, 226, 0.08); }
+.callout[data-callout="tip"]     { background-color: rgba(15, 123, 108, 0.10); }
+.callout[data-callout="success"] { background-color: rgba(15, 123, 108, 0.10); }
+.callout[data-callout="warning"] { background-color: rgba(203, 145, 47, 0.12); }
+.callout[data-callout="danger"]  { background-color: rgba(224, 62, 62, 0.10); }
+.callout[data-callout="quote"]   { background-color: var(--background-secondary); }
+
+/* ---------- 9. Tables (clean database look) ---------- */
+.markdown-rendered table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+.markdown-rendered th,
+.markdown-rendered td {
+  border: 1px solid var(--background-modifier-border);
+  padding: 7px 10px;
+}
+.markdown-rendered thead th {
+  background-color: var(--background-secondary);
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* ---------- 10. Checkboxes (to-do) ---------- */
+.markdown-rendered input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--text-faint);
+  border-radius: 3px;
+  position: relative;
+  top: 2px;
+  transition: background-color 80ms ease-in;
+}
+.markdown-rendered input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+.markdown-rendered input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4.5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* ---------- 11. Horizontal rule ---------- */
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--hr-color);
+  margin: 1.4em 0;
+}
+
+/* ---------- 12. Links ---------- */
+.markdown-rendered a,
+.cm-link,
+.cm-hmd-internal-link {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-faint);
+}
+.markdown-rendered a:hover {
+  border-bottom-color: var(--text-muted);
+}
+
+/* ---------- 13. Chrome: sidebar, tabs, ribbon ---------- */
+.workspace-tabs .workspace-tab-header.is-active {
+  background-color: var(--background-primary);
+}
+.workspace-tab-header-inner-title {
+  font-size: 0.85em;
+}
+.nav-file-title,
+.nav-folder-title {
+  border-radius: var(--radius-s);
+  font-size: 0.88em;
+  color: var(--text-muted);
+}
+.nav-file-title.is-active {
+  background-color: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+/* ---------- 14. Buttons & inputs ---------- */
+button:not(.clickable-icon) {
+  border-radius: var(--radius-m);
+  box-shadow: none;
+  font-weight: 500;
+}
+button.mod-cta {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+input[type="text"],
+input[type="search"],
+textarea {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* ---------- 15. Scrollbars (thin, quiet) ---------- */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background-color: var(--background-modifier-border-hover);
+  border-radius: 8px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-faint);
+}
+
+/* ---------- 16. Selection ---------- */
+::selection { background-color: var(--text-selection); }

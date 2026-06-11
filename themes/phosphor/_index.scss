@@ -2346,7 +2346,7 @@ body {
 
   li.task-list-item[data-task="-"] {
     color: rgb(160, 154, 144);
-    text-decoration: line-through rgb(160, 154, 144);
+    text-decoration: line-through;
     text-decoration-color: rgb(160, 154, 144);
   }
 
@@ -2867,7 +2867,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -8691,7 +8691,7 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="-"] {
       color: rgb(92, 88, 98);
-      text-decoration: line-through rgb(92, 88, 98);
+      text-decoration: line-through;
       text-decoration-color: rgb(92, 88, 98);
     }
 
@@ -9212,7 +9212,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

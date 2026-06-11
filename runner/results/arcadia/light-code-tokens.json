@@ -1,10 +1,10 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "rgb(92, 92, 92)"
+    "color": "rgba(28, 28, 32, 0.78)"
   },
   "_preBlock": {
-    "backgroundColor": "rgb(250, 250, 250)",
+    "backgroundColor": "rgb(248, 248, 250)",
     "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {

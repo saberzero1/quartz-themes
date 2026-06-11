@@ -900,8 +900,7 @@ body:not(.tasks)
   .HyperMD-task-line[data-task]:is([data-task='-']),
 body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
   color: var(--text-faint);
-  text-decoration-line: line-through;
-  text-decoration-color: var(--text-faint);
+  text-decoration: line-through;
 }
 
 /* ── [*] Star ── */

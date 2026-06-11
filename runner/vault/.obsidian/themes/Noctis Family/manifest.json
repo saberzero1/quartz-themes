@@ -1,8 +1,0 @@
-{
-  "name": "Noctis Family",
-  "version": "1.0.0",
-  "minAppVersion": "1.4.0",
-  "author": "Jordan Bayles",
-  "authorUrl": "https://github.com/baylesj/obsidian-noctis-theme",
-  "modes": ["dark", "light"]
-}

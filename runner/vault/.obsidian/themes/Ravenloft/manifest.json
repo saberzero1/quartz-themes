@@ -1,8 +1,0 @@
-{
-  "name": "Ravenloft",
-  "author": "Ivan Devyatko",
-  "version": "1.1.1",
-  "minAppVersion": "1.6.0",
-  "description": "A parchment-warm gothic theme inspired by AD&D 2e Ravenloft. Dual light/dark palettes, full typographic hierarchy.",
-  "isDark": true
-}

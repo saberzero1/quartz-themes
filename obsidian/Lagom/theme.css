@@ -15,7 +15,7 @@ body {
   --inline-title-size: 1.2em;
   --code-size-edit-mode: 0.9em;
   --quote-font-size: 0.98em;
-  --nav-item-size: 0.98em; /* font size files */
+  --files-explorer-font-size: 0.98em; /* font size files */
   --callout-font-size-title: 0.98em;
   --metadata-label-font-size: 1em;
   --metadata-input-font-size: 1em;
@@ -26,7 +26,7 @@ body {
   --h3-size: 1.1em;
   --h4-size: 0.9em;
   --h5-size: 0.8em;
-  
+
   --inline-title-align: center;
   --quotes-align: justify;
   --text-note-align: justify;
@@ -36,15 +36,15 @@ body {
   --line-height-note: 25px;
 
   --properties-icon-size: 1.2em;
-  --icon-file-size: 1.7em !important;
+  --icon-file-size: 1.7em;
 
   
   --radius-s: 11.5px;
   --separator-icon: "o0o";
   --nav-indentation-guide-width: unset;
   --padding-default-note-style: 35px;
-  --focus-active-line-opacity: 0.8;
-  --focus-non-active-line-opacity: 0.55;
+  --focus-active-line-opacity: 1;
+  --focus-non-active-line-opacity: 1;
   --show-dotted-line: 1px;
   --active-line-indicator: "+ ";
   --icon-file-indicator: "·";
@@ -69,31 +69,30 @@ body {
 
   --separator-icon-color: #6C6C6C6B;
   --mac-terminal-shadow: rgba(9, 30, 66, 0.10) 0px 4px 8px 5px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;	
-  --metadata-divider-color: red;
-  --theme-dark-opacity: 0.85;
+  --metadata-divider-color: unset;
+  --dark-theme-opacity: 1;
   --folder-border-color: #50505088;
-  --theme-light-opacity: 1;
+  --light-theme-opacity: 1;
   --icon-ui-opacity: 0.9;
-  --input-shadow: var(--background-modifier-border) 0 0 0 1px !important;
-  --input-shadow-hover: hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px !important;
-  --interactive-hover: hsla(var(--color-accent-hsl), 0.1) !important;
- 
+  --input-shadow: var(--background-modifier-border) 0 0 0 1px;
+  --input-shadow-hover: hsla(var(--color-accent-hsl), 0.6) 0 0 0px 1px;
+  --interactive-hover: hsla(var(--color-accent-hsl), 0.1);
+
   --metadata-property-radius: var(--radius-s);
   /* --metadata-gap: 23px; */
   --metadata-display-editing: none;
   --table-border-width: 1px;
   --table-header-weight: normal;
-  
+
   --headers-space-symmetry: 1em;
   --input-border-width: 1px;
   --list-indent: 18px;
   --tabs-height: 300px;
-  
-  /* Others */ 
+
   --bg-url: ;
   --filename-line-thickness: 1.8px;
   --filename-separator-style: dotted;
-  --setting-items-background: none !important;
+  --setting-items-background: none;
 }
 
 
@@ -147,7 +146,6 @@ body.is-mobile {
 .workspace-bg .app-container::before {
   background-image: var(--bg-url);
   opacity: var(--bg-opacity, 0.8);
-  filter: blur(var(--bg-blur, 4px));
   background-color: var(--uw-background);
   background-position: center;
   background-repeat: no-repeat;
@@ -164,11 +162,11 @@ body.is-mobile {
 
 /* OBSIDIAN THEME */
 body.theme-dark {
-  opacity: var(--theme-dark-opacity); 
+  opacity: var(--dark-theme-opacity);
 }
 
 body.theme-light {
-   opacity: var(--theme-light-opacity);
+  opacity: var(--light-theme-opacity);
 }
 
 
@@ -203,25 +201,44 @@ body.theme-light {
   display: none;
 }
 
+/* ::::: TOGGLE VIEW ::::: */
+.view-action[aria-label*="view"] {
+  margin-right: var(--toggle-buttom-distance) !important;
+}
 
-/* BOTH MODES */
+/* ::::: MORE MENU ::::: */
+.view-action[aria-label="More options"] {
+  display: var(--hide-more-menu);
+}
+
+
+.markdown-reading-view .markdown-rendered {
+  font-size: var(--content-note-font-size);
+}
+
+
+/* ::::: BOTH MODES ::::: */
  .markdown-preview-view, .cm-s-obsidian {
   padding-left: var(--padding-default-note-style) !important;
   padding-right: var(--padding-default-note-style) !important;
   text-align: var(--text-note-align);
-  font-size: var(--default-font-size);
   width: auto;
 }
 
 
 /* EDITOR MODE */
 .mod-cm6 .cm-editor {
-top: -100px !important;
+top: -90px !important;
+}
 
+/* Editor mode */
+
+.cm-editor .cm-content {
+  font-size: var(--content-note-font-size);
 }
 
 .cm-s-obsidian {
-  padding: 10px !important;
+  padding: 0px !important;
 }
 
 
@@ -241,10 +258,10 @@ top: -100px !important;
 
 /* Style page for editor mode */
 .page-style-editor-mode .cm-s-obsidian {
-  position: sticky !important;
+  position: relative !important;
   padding-left: calc(var(--padding-note-content) - 5%);
   padding-right: calc(var(--padding-note-content) - 5%);
-  margin: 80px 15px 0px 15px !important;
+  margin: 90px 15px 0px 15px !important;
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
   box-shadow: var(--mac-terminal-shadow);
@@ -372,6 +389,7 @@ top: -100px !important;
   letter-spacing: var(--letter-spacing-note);
 }
 
+
 .inline-title-always-uppercase .inline-title {
   text-transform: uppercase;
 }
@@ -436,7 +454,7 @@ li:has(> ol) > ol > li {
 }
 
 /* Vertical Line */
-le .cm-hmd-list-indent .cm-tab, ul ul { 
+.cm-hmd-list-indent .cm-tab, ul ul { 
   position: relative;
 }
 
@@ -561,12 +579,38 @@ input[type=checkbox]:checked {
   font-size: var(--code-size);
 }
 
+
 /* CODE BLOCK EDITOR MODE */
 .cm-line.HyperMD-codeblock {
-  border-radius: 0;
+  padding-left: 40px !important;
   font-size: var(--code-size-edit-mode);
-  background: var(--background-secondary);
-  border: 1.5px solid var(--background-primary);
+  background: var(--background-secondary) !important;
+  border-left: 1.5px solid var(--background-modifier-border) !important;
+  border-right: 1.5px solid var(--background-modifier-border) !important;
+  
+}
+
+
+/* Border top */
+.cm-line.HyperMD-codeblock-begin {
+  padding: 5px !important;
+  border-top: 1px solid var(--background-modifier-border) !important;
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Border Sides */
+.cm-line.HyperMD-codeblock-middle {
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
+}
+
+/* Borde bottom */
+.cm-line.HyperMD-codeblock-end {
+  padding: 5px !important;
+  border-bottom: 1px solid var(--background-modifier-border) !important;
+  border-left: 1px solid var(--background-modifier-border) !important;
+  border-right: 1px solid var(--background-modifier-border) !important;
 }
 
 
@@ -618,21 +662,37 @@ body.theme-dark .markdown-preview-view pre::before {
 }
 
 /* NUMBER LINES */
+/* Top Code block */
 body:not(.no-codeblock-line-numbers)
 .HyperMD-codeblock-begin{
   counter-reset:codeblock-line-numbers;
 }
 
+/* Code inself (?) */
 body:not(.no-codeblock-line-numbers)
 .HyperMD-codeblock.cm-line:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end){
   padding-left:2.8em;
 }
 
+/* Number lines */
 body:not(.no-codeblock-line-numbers)
 .HyperMD-codeblock:not(.HyperMD-codeblock-begin,.HyperMD-codeblock-end):before{
-  color:var(--text-muted);text-align:right;content:counter(codeblock-line-numbers);counter-increment:codeblock-line-numbers;background-color:var(--bg2);width:1.7em;height:100%;padding-right:1.4em;font-size:.75em;line-height:2;position:absolute;left:0
-}
-
+  color:var(--text-muted);
+  text-align: center !important;
+  margin-left: 0.3em;
+  border-right: 1.3px solid var(--background-modifier-border);
+  content:counter(codeblock-line-numbers);
+  counter-increment:codeblock-line-numbers;
+  width: 1.4em;
+  height: 100%; 
+  padding-left: 0.1em;
+  padding-right: 0.4em;
+  font-size:.75em;
+  line-height: 2;
+  position:absolute;
+  left: 0;
+ }
+ 
 .obsidian-banner-spacer {
   height: calc(var(--banner-height) - 10rem);
  /* display: none; */
@@ -665,7 +725,7 @@ body:not(.no-codeblock-line-numbers)
 .markdown-reading-view h5,
 .markdown-reading-view h6 {
   text-align: var(--headers-align) !important;
-  break-after: avoid;
+  /* break-after: avoid; */
   margin: 18px 0px 18px 0px !important;
   max-width: fit-content !important;
   padding: 0px !important;
@@ -844,6 +904,8 @@ tr:last-child td:last-child {
 }
 
 .metadata-container {
+  font-size: var(--properties-editor-font-size) !important;
+
 	margin-top: 10px;
   border-bottom: dotted 2.1px var(--background-modifier-border);
   border-top: dotted 2.5px var(--background-modifier-border);
@@ -1244,8 +1306,7 @@ body.is-mobile.popup-explorer .workspace-drawer-backdrop {
 	& .setting-item:last-of-type,
 	.setting-item:has( + .setting-item.setting-item-heading),
 	.setting-item:not(.setting-item-heading):has( + :not(.setting-item)) {
-		box-shadow: 
-		var(--mac-terminal-shadow);
+		box-shadow: var(--mac-terminal-shadow);
     border-bottom: 1px solid var(--background-modifier-border);
     border-radius: 0 0 var(--radius-s) var(--radius-s);
 		clip-path: inset(0px -24px -24px -24px);
@@ -1391,6 +1452,12 @@ body.is-mobile .workspace-drawer-active-tab-header {
   hyphens: var(--hyphens-files-explorer) !important; 
 }
 
+.nav-file-title,
+.nav-folder-title {
+  font-size: var(--files-explorer-font-size);
+}
+
+
 /*
 
 body.is-mobile .workspace-drawer-tab-option-item {
@@ -1476,7 +1543,7 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 /* MENU - RIBBON */
 .is-mobile .menu {
-  font-size: var(--nav-item-size) !important;
+  font-size: var(--files-explorer-font-size) !important;
   max-width: 85%;
   padding: 1px 1px 1px 1px;
   bottom: 10px !important;
@@ -1485,9 +1552,9 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 
 
 .is-mobile .menu-item:not(.menu-separator) {
-	border-bottom: 0 dashed var(--background-modifier-border);
-	border-radius: 0;
-	background: transparent !important;
+  border-bottom: 0 dashed var(--background-modifier-border);
+  border-radius: 0;
+  background: transparent !important;
   padding: 10px 1px 10px 1px !important;
 }
 
@@ -1534,7 +1601,6 @@ body:not(.native-scrollbars) ::-webkit-scrollbar {
 /* BACKGROUND SEARCH */
 .is-mobile .document-search-container {
   margin-bottom: 5px;
-  border-bottom: 1px;
   border-bottom: 1px solid var(--background-modifier-border);
   box-shadow: var(--background-modifier-box-shadow) 0px 0px 2.5px 0px;
 }
@@ -2047,6 +2113,27 @@ settings:
           - 
               label: Show
               value: unset
+  -
+      id: hide-more-menu
+      title: More menu
+      description: "Show or hide more menu"
+      type: variable-select
+      default: none
+      options:
+          - 
+              label: Hide
+              value: none
+          - 
+              label: Show
+              value: unset
+  -
+      id: toggle-buttom-distance
+      title: Toggle view buttom
+      description: "Move toggle view buttom. Useful to adjust when used with commander or appears off-screen"
+      type: variable-number
+      default: 30
+      format: px
+  -
  */
 
 /* @settings
@@ -2060,9 +2147,9 @@ settings:
       level: 2
       collapsed: true
   - 
-      id: default-font-size
+      id: content-note-font-size
       title: Font size
-      description: "Base font size for note content."
+      description: "Base font size for note content (read / editor mode)."
       type: variable-number
       default: 1.06
       format: em
@@ -2125,13 +2212,13 @@ settings:
       title: Opacity active line
       description: "Opacity of the currently focused line in the editor."
       type: variable-number
-      default: 0.8
+      default: 1
   - 
       id: focus-non-active-line-opacity
       title: Opacity non-active line
       description: "Opacity of non-active lines when focus mode is enabled."
       type: variable-number
-      default: 0.65
+      default: 1
   - 
       id: separator-icon
       title: Separator content
@@ -2773,19 +2860,17 @@ settings:
       type: variable-text
       default: 8px
   - 
-      id: theme-light-opacity
+      id: light-theme-opacity
       title: Light mode - Opacity
       description: "Background opacity of the main content area in light mode."
       type: variable-number
       default: 1
-      format: 
   - 
-      id: theme-dark-opacity
+      id: dark-theme-opacity
       title: Dark mode - Opacity
       description: "Background opacity of the main content area in dark mode."
       type: variable-number
-      default: 0.75
-      format: 
+      default: 1
  */
 
 /* @settings
@@ -2793,28 +2878,21 @@ name: Explorer & Files
 id: files-folders
 settings:
   -
-      id: icon-file-indicator
-      title: Icon file
-      description: "Character displayed before each file name in the explorer."
-      type: variable-text
-      default: "•"
-      quotes: true 
-  -
       id: enable-icon-file
       title: Enable icon file
       description: "Enables or disables the icon shown before file names."
       type: class-toggle
       default: true
   -
-      id: nav-item-size
-      title: Explorer Font size
-      description: "Font size of file and folder names in the explorer."
-      type: variable-number
-      default: 0.99
-      format: em
+      id: icon-file-indicator
+      title: Icon file symbol
+      description: "Character displayed before each file name in the explorer."
+      type: variable-text
+      default: "•"
+      quotes: true 
   -
       id: icon-file-size
-      title: Icon file
+      title: Icon file size
       description: "Size of the icon displayed before each file name."
       type: variable-number
       default: 1.5
@@ -2898,6 +2976,13 @@ settings:
       type: variable-number
       default: 1.8
       format: px
+  -
+      id: files-explorer-font-size
+      title: Explorer Font size
+      description: "Font size of file and folder names in the explorer."
+      type: variable-number
+      default: 0.98
+      format: em
  */
 
 /* @settings

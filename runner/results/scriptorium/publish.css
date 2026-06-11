@@ -793,6 +793,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1536,11 +1537,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1642,6 +1639,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1850,17 +1849,17 @@ body.theme-light {
   --h3-color: rgb(var(--color-accent-rgb)) !important;
   --h4-color: rgb(var(--h4-color-rgb)) !important;
   --h5-color: rgb(var(--h5-color-rgb)) !important;
+  --background-modifier-active: var(--background-active) !important;
+  --background-modifier-selected: var(--background-selected) !important;
   --green: rgba(var(--color-success-rgb), var(--opacity-subtle)) !important;
   --red: rgba(var(--color-error-rgb), var(--opacity-subtle)) !important;
   --text-primary: rgb(var(--text-primary-rgb)) !important;
   --text-secondary: rgb(var(--text-secondary-rgb)) !important;
-  --background-modifier-active: var(--background-active) !important;
   --background-modifier-success-hover: rgba(
     var(--color-success-rgb),
     var(--opacity-moderate)
   ) !important;
   --text-muted-rgb: var(--gray-70) !important;
-  --background-modifier-selected: var(--background-selected) !important;
   --background-modifier-selected-hover: var(
     --background-selected-hover
   ) !important;
@@ -2236,6 +2235,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2973,11 +2973,7 @@ body.theme-dark {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -3079,6 +3075,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -3282,17 +3280,17 @@ body.theme-dark {
   --h3-color: rgb(var(--color-accent-rgb)) !important;
   --h4-color: rgb(var(--h4-color-rgb)) !important;
   --h5-color: rgb(var(--h5-color-rgb)) !important;
+  --background-modifier-active: var(--background-active) !important;
+  --background-modifier-selected: var(--background-selected) !important;
   --green: rgba(var(--color-success-rgb), var(--opacity-subtle)) !important;
   --red: rgba(var(--color-error-rgb), var(--opacity-subtle)) !important;
   --text-primary: rgb(var(--text-primary-rgb)) !important;
   --text-secondary: rgb(var(--text-secondary-rgb)) !important;
-  --background-modifier-active: var(--background-active) !important;
   --background-modifier-success-hover: rgba(
     var(--color-success-rgb),
     var(--opacity-moderate)
   ) !important;
   --text-muted-rgb: var(--gray-30) !important;
-  --background-modifier-selected: var(--background-selected) !important;
   --background-modifier-selected-hover: var(
     --background-selected-hover
   ) !important;
@@ -5208,7 +5206,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7950,7 +7948,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

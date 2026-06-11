@@ -8,8 +8,8 @@ Partial style(s) is(are) sourced or adapted from Blue Topaz (https://github.com/
 
 */
 
-/*蓝色托帕石，适合Obsidian v1.5.0。uid [2026011401] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
-/*Blue Topaz for Obsidian v1.5.0, uid [2026011401] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
+/*蓝色托帕石，适合Obsidian v1.5.0。uid [2026060801] flying fly flies制作。如果喜欢，可以在Github里给我星星 https://github.com/whyt-byte */
+/*Blue Topaz for Obsidian v1.5.0, uid [2026060801] created by flying fly flies. Feel free to use, share and modify. If you like the theme, please star me on GitHub https://github.com/whyt-byte */
 
 /*
 MIT License
@@ -5626,7 +5626,7 @@ body.all-dark-pdf .print,
   --background-primary: var(--background-primary-bg-4-bt,#202020);
   --background-primary-alt: var(--background-primary-alt-bg-4-bt,#444444);
   --background-secondary: var(--background-secondary-bg-4-bt,#151515);
-  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#000000);
+  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#222222);
   --background-modifier-border: #343434;
   --background-modifier-success: #539126;
   --background-modifier-success-rgb: 83, 145, 38;
@@ -5759,7 +5759,7 @@ body.all-dark-pdf .print,
   --h5-color: var(--print-h5-color,hsl(258, 79%, 77%));
   --h6-color: var(--print-h6-color,hsl(290, 85%, 81%));
 
-   --hr-color:var(--color-base-10);
+  --hr-color:var(--color-base-10);
   --graph-text-color: #B5B5B5;
   --graph-tag: #88d842bb;
   --graph-attach: #b2cfe0bb;
@@ -5963,6 +5963,46 @@ body.all-dark-pdf .print,
   --bt-indentation-line-image: url("");
   --bt-connected-indent-line-color: #926a6a;
   --list-colorful-marker: #ff8686;
+
+  /*Bases Dark*/
+	--color-base-00: #222222;
+  --color-base-05: #252525;
+  --color-base-10: #282828;
+  --color-base-20: #2c2c2c;
+  --color-base-25: #323232;
+  --color-base-30: #3a3a3a;
+  --color-base-35: #434343;
+  --color-base-40: #585858;
+  --color-base-50: #6a6a6a;
+  --color-base-60: #9a9a9a;
+  --color-base-70: #b5b5b5;
+  --color-base-100: #dcdcdc;
+
+  --bases-header-border-width: 1px;
+  --bases-header-height: 40px;
+  --bases-header-padding-start: 8px;
+  --bases-header-padding-end: 8px;
+  --bases-embed-border-width: 1px;
+  --bases-embed-border-color: var(--background-modifier-border);
+  --bases-embed-border-radius: 6px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-container-border-radius: 6px;
+  --bases-table-header-weight: 600;
+  --bases-table-header-color: var(--deep-color);
+  --bases-table-header-background: var(--background-secondary-alt);
+  --bases-table-header-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
+  --table-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.20);
+  --bases-table-border-color: transparent;
+  --bases-table-column-border-width: 0px;
+  --bases-table-row-border-width: 1px;
+  --bases-table-stripe-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.06);
+  --bases-table-group-background: transparent;
+  --bases-table-row-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.15);
+  --bases-table-text-size: var(--font-text-size);
+  --bases-table-cell-background-active: color-mix(in srgb, var(--text-accent-hover) 18%, transparent);
+  --bases-table-cell-shadow-active: 0 0 0 1px var(--interactive-accent);
+	--bases-card-shadow: var(--background-modifier-box-shadow);
+	--bases-card-line-hover: var(--background-primary-alt);
 }
 
 .theme-light {
@@ -6306,6 +6346,33 @@ body.all-dark-pdf .print,
   --bt-indentation-line-image: url("");
   --bt-connected-indent-line-color: #FFA8A8;
   --list-colorful-marker: #fd4949;
+	
+	/*Bases*/
+  --bases-header-border-width: 1px;
+  --bases-header-height: 40px;
+  --bases-header-padding-start: 8px;
+  --bases-header-padding-end: 8px;
+  --bases-embed-border-width: 1px;
+  --bases-embed-border-color: var(--background-modifier-border);
+  --bases-embed-border-radius: 6px;
+  --bases-table-container-border-width: 1px;
+  --bases-table-container-border-radius: 6px;
+  --bases-table-header-weight: 600;
+  --bases-table-header-color: var(--deep-color);
+	--bases-table-header-background: var(--background-secondary-alt);
+  --bases-table-header-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.18);
+  --table-border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.20);
+  --bases-table-border-color: transparent;
+  --bases-table-column-border-width: 0px;
+  --bases-table-row-border-width: 1px;
+	--bases-table-stripe-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.08);
+  --bases-table-group-background: transparent;
+	--bases-table-row-background-hover: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.18);
+	--bases-table-text-size: var(--font-text-size);
+  --bases-table-cell-background-active: color-mix(in srgb, var(--text-accent-hover) 18%, transparent);
+  --bases-table-cell-shadow-active: 0 0 0 1px var(--interactive-accent);
+	--bases-card-shadow: var(--background-modifier-box-shadow);
+	--bases-card-line-hover: var(--background-primary-alt);
 }
 
 body.color-scheme-options-avocado-topaz .theme-light,
@@ -6455,6 +6522,9 @@ body.color-scheme-options-avocado-topaz.theme-light {
 
   --table-color-calendar-2: rgb(182, 221, 191);
   --table-color-rgb: 182, 221, 191;
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-avocado-topaz .workspace-leaf.mod-active .view-header-title {
@@ -6463,9 +6533,9 @@ body.color-scheme-options-avocado-topaz .workspace-leaf.mod-active .view-header-
 
 body.color-scheme-options-avocado-topaz.theme-dark {
   --background-primary: var(--background-primary-bg-4-bt,#181818);
-  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#000000);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#222222);
   --background-secondary: var(--background-secondary-bg-4-bt,#181818);
-  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#000000);
+  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#222222);
   --accent-h: 140;
   --accent-s: 52%;
   --accent-l: 41%;
@@ -6560,14 +6630,16 @@ body.color-scheme-options-avocado-topaz.theme-dark {
   --table-color-calendar-2: rgb(5, 158, 5);
   --table-color-rgb: 5, 158, 5;
   --divider-color: #000000;
-}
 
+  /*Bases 继承默认主题*/
+
+}
 
 body.color-scheme-options-monochrome-topaz.theme-dark {
   --background-primary: var(--background-primary-bg-4-bt,#1e1e1e);
-  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#000000);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#222222);
   --background-secondary: var(--background-secondary-bg-4-bt,#151515);
-  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#000000);
+  --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#222222);
   --accent-em: #ffffff;
   --accent-h: 0;
   --accent-s: 0%;
@@ -6636,7 +6708,8 @@ body.color-scheme-options-monochrome-topaz.theme-dark {
   --mermaid-active-task-color: #187ef1;
   --mermaid-seq-dia-color: #1371be;
 
-  --table-border-color: #878787;
+  /* table */
+	--table-border-color: #878787;
   --table-thead-background-color: #b3b3b363;
   --table-hover-raw-color: #4040401c;
   --table-hover-color: #59595947;
@@ -6669,13 +6742,15 @@ body.color-scheme-options-monochrome-topaz.theme-dark {
   --sliding-panes-header-color: #ebebeb;
   --background-4-sliding-pane: #252525ed;
 
-
-
   --color-view-header-gradient-1: #000000de;
   --color-view-header-gradient-2: #000000c0;
 
   --table-color-calendar-2: rgb(69, 69, 69);
   --table-color-rgb: 69, 69, 69;
+
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-monochrome-topaz .theme-light,
@@ -6798,6 +6873,9 @@ body.color-scheme-options-monochrome-topaz.theme-light {
 
   --table-color-calendar-2: rgb(212, 212, 212);
   --table-color-rgb: 212, 212, 212;
+
+  /*Bases 继承默认主题*/
+
 }
 
 
@@ -6907,7 +6985,6 @@ body.color-scheme-options-pink-topaz.theme-light {
   --mermaid-seq-dia-color: #76c8ff;
 
   /*table*/
-
   --table-border-color: #7d7d7d;
   --table-thead-background-color: #fad1e96f;
   --table-hover-raw-color: #fad1e92f;
@@ -6961,12 +7038,15 @@ body.color-scheme-options-pink-topaz.theme-light {
 
   --table-color-calendar-2: rgb(245, 214, 224);
   --table-color-rgb: 245, 214, 224;
+
+  /*Bases 继承默认主题*/
+
 }
 
 
 body.color-scheme-options-pink-topaz.theme-dark {
   --background-primary: var(--background-primary-bg-4-bt,#0f0f0f);
-  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#000000);
+  --background-primary-alt: var(--background-primary-alt-bg-4-bt,#222222);
   --background-secondary: var(--background-secondary-bg-4-bt,#181818);
   --background-secondary-alt: var(--background-secondary-alt-bg-4-bt,#222222);
 
@@ -7050,7 +7130,6 @@ body.color-scheme-options-pink-topaz.theme-dark {
   --mermaid-seq-dia-color: #1371be;
 
   /*table*/
-
   --table-thead-background-color: #a76c8f45;
   --table-hover-raw-color: #a76c8f25;
   --table-hover-color: #a76c8f2b;
@@ -7110,6 +7189,9 @@ body.color-scheme-options-pink-topaz.theme-dark {
 
   --table-color-calendar-2: rgb(215, 121, 153);
   --table-color-rgb: 215, 121, 153;
+
+	/*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-pink-topaz.theme-light *:not(font)>em>strong,
@@ -7188,13 +7270,16 @@ body.color-scheme-options-topaz-nord.theme-dark {
   --list-ol-number-color: var(--nord9);
   --list-ol-hover: var(--nord7);
 
+	/* table */
   --table-thead-background-color: var(--nord9-2);
   --table-hover-raw-color: var(--nord9-2);
   --table-hover-color: var(--nord9-2);
   --table-hover-thead-color: var(--nord9-1);
 
+	/* checkbox */
   --checkbox-color-0: var(--interactive-accent);
 
+	/* graph */
   --graph-text-color: var(--nord4);
   --graph-tag: var(--nord7);
   --graph-attach: var(--nord15);
@@ -7206,6 +7291,10 @@ body.color-scheme-options-topaz-nord.theme-dark {
   --text-search-highlight-bg: var(--nord9-1);
   --tab-outline-color: var(--nord0);
   --divider-color: var(--nord0);
+
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-topaz-nord.theme-dark .titlebar-text {
@@ -7350,6 +7439,7 @@ body.color-scheme-options-topaz-nord.theme-light {
   --list-ol-number-color: var(--nord9);
   --list-ol-hover: var(--nord7);
 
+	/* table */
   --table-thead-background-color: var(--nord9-2);
   --table-hover-raw-color: var(--nord9-2);
   --table-hover-color: var(--nord9-2);
@@ -7366,6 +7456,9 @@ body.color-scheme-options-topaz-nord.theme-light {
   --graph-arrow: var(--nord11);
 
   --text-search-highlight-bg: var(--nord9-2);
+
+  /*Bases 继承默认主题*/
+
 }
 
 /*@Lavi & @嘴 的Flamingo主题色（原Pink Topaz）*/
@@ -7452,6 +7545,7 @@ body.color-scheme-options-flamingo.theme-light {
   --h5-color: var(--print-h5-color,#f39ba0);
   --h6-color: var(--print-h6-color,#f39ba0);
 
+	/* graph */
   --graph-text-color: #37291a;
   --graph-tag: #ffdece;
   --graph-attach: #f5a7a2;
@@ -7459,8 +7553,12 @@ body.color-scheme-options-flamingo.theme-light {
   --graph-line: #fea2c2;
   --graph-unresolved: #E87659;
   --graph-arrow: #980000;
+
+	/* mermaid */
   --mermaid-active-task-color: #f5a7a2;
   --mermaid-seq-dia-color: #ffdece;
+
+	/* table */
   --table-background-color: #ffdece;
   --table-background-color-odd: #ffdece;
   --table-border-color: #fd355a;
@@ -7468,9 +7566,15 @@ body.color-scheme-options-flamingo.theme-light {
   --table-hover-color: #f5a7a2;
   --table-hover-thead-color: #f5a7a2;
   --table-hover-raw-color: #ffdece;
+	--table-color-calendar-2: rgb(214, 118, 146);
+  --table-color-rgb: 214, 118, 146;
+
+	/* calendar */
   --calendar-week-color: #f5a7a2;
   --calendar-week-hover: #ffdece;
   --calendar-week-background-color: #ffdece;
+
+	/* day planner */
   --day-planner-pie: #f5a7a2;
   --day-planner-timeline: #ffdece;
   --day-planner-line: #fd355a;
@@ -7497,10 +7601,11 @@ body.color-scheme-options-flamingo.theme-light {
   --color-view-header-gradient-1: #efe9d933;
   --color-view-header-gradient-2: #efe9d933;
 
-  --table-color-calendar-2: rgb(214, 118, 146);
-  --table-color-rgb: 214, 118, 146;
   --scrollbar-thumb-bg: #f39ba050;
   --scrollbar-active-thumb-bg: #f39ba0;
+
+  /*Bases 继承默认主题*/
+
 }
 
 
@@ -7559,12 +7664,16 @@ body.color-scheme-options-flamingo.theme-dark {
 
   --search-result-file-title-color: #f39ba0;
   --background-blockquote-dark: #292929;
+
+	/* list */
   --list-ul-block-color: #f39ba0;
   --list-ul-disc-color: #f93759;
   --list-ul-hover: #ffebec;
   --list-ol-block-color: #f39ba0;
   --list-ol-number-color: #ffccbc;
   --list-ol-hover: #ffebec;
+	
+	/* tag */
   --stag1: #f39ba0;
   --stag2: #ffccbc;
   --stag3: #ffebec;
@@ -7581,6 +7690,7 @@ body.color-scheme-options-flamingo.theme-dark {
   --h5-color: var(--print-h5-color,#ffccbc);
   --h6-color: var(--print-h6-color,#ffccbc);
 
+	/* graph */
   --graph-text-color: #efe9d9;
   --graph-tag: #f39ba0;
   --graph-attach: #ffebec;
@@ -7588,8 +7698,12 @@ body.color-scheme-options-flamingo.theme-dark {
   --graph-line: #ffc3bc;
   --graph-unresolved: #ffccbc;
   --graph-arrow: #ffc3bc;
+
+	/* mermaid */
   --mermaid-active-task-color: #F39BA4;
   --mermaid-seq-dia-color: #ffebec;
+
+	/* table */
   --table-background-color: #212121;
   --table-background-color-odd: transparent;
   --table-border-color: #ffebec;
@@ -7597,14 +7711,22 @@ body.color-scheme-options-flamingo.theme-dark {
   --table-hover-raw-color: #292929;
   --table-hover-color: #ffccbc0a;
   --table-hover-thead-color: #f39ba0;
+	--table-color-calendar-2: rgb(215, 86, 125);
+  --table-color-rgb: 215, 86, 125;
+
+	/* calendar */
   --calendar-week-color: #ffccbc;
   --calendar-week-hover: #f39ba0;
   --calendar-week-background-color: transparent;
+
+	/* day planner */
   --day-planner-pie: #ffccbc;
   --day-planner-timeline: #ff9b7c;
   --day-planner-line: #f39ba0;
   --day-planner-dot: #ffebec;
   --day-planner-item-hover: #f39ba0;
+
+	/* event */
   --event-item-color9: #ffc3bc;
   --event-item-color8: #ffbcbc;
   --event-item-color10: #ffccbc;
@@ -7626,10 +7748,11 @@ body.color-scheme-options-flamingo.theme-dark {
   --color-view-header-gradient-1: #21212122;
   --color-view-header-gradient-2: #21212122;
 
-  --table-color-calendar-2: rgb(215, 86, 125);
-  --table-color-rgb: 215, 86, 125;
   --scrollbar-thumb-bg: #e2bdbd50;
   --scrollbar-active-thumb-bg: #e2bdbd;
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-flamingo.theme-light #calendar-container {
@@ -7913,6 +8036,9 @@ body.color-scheme-options-honey-milk-topaz.theme-light {
 
   --table-color-calendar-2: rgb(242, 235, 207);
   --table-color-rgb: 242, 235, 207;
+
+  /*Bases 继承默认主题*/
+
 }
 
 
@@ -8007,6 +8133,7 @@ body.color-scheme-options-honey-milk-topaz.theme-dark {
   --mermaid-active-task-color: var(--low-color);
   --mermaid-seq-dia-color: var(--high-color);
 
+	/* table */
   --table-background-color: var(--bg-color2);
   --table-background-color-odd: var(--bg-color);
   --table-border-color: #878787;
@@ -8049,6 +8176,10 @@ body.color-scheme-options-honey-milk-topaz.theme-dark {
 
   --table-color-calendar-2: rgb(120, 104, 38);
   --table-color-rgb: 120, 104, 38;
+
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-honey-milk-topaz #calendar-container {
@@ -8187,6 +8318,8 @@ body.color-scheme-options-chocolate-topaz.theme-light {
   --table-hover-raw-color: var(--color2);
   --table-hover-color: var(--color1);
   --table-hover-thead-color: var(--color2);
+	--table-color-calendar-2: rgb(76, 52, 16);
+  --table-color-rgb: 76, 52, 16;
 
   /*calendar*/
   --calendar-week-color: var(--high-color);
@@ -8221,8 +8354,8 @@ body.color-scheme-options-chocolate-topaz.theme-light {
   /*checkbox*/
   --checkbox-color-0: var(--main-color);
 
-  --table-color-calendar-2: rgb(76, 52, 16);
-  --table-color-rgb: 76, 52, 16;
+  /*Bases 继承默认主题*/
+  
 }
 
 body.color-scheme-options-chocolate-topaz.theme-dark {
@@ -8388,6 +8521,10 @@ body.color-scheme-options-chocolate-topaz.theme-dark {
 
   --table-color-calendar-2: rgb(70, 45, 6);
   --table-color-rgb: 70, 45, 6;
+
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-chocolate-topaz #calendar-container {
@@ -8496,7 +8633,9 @@ body.color-scheme-options-autumn-topaz.theme-light {
   /*table*/
   --table-background-color: var(--bg-color2);
   --table-background-color-odd: var(--bg-color);
-  --table-border-color: #7d7d7d;
+	--table-border-color: #c5b896;
+	--table-color-calendar-2: rgb(222, 236, 182);
+  --table-color-rgb: 222, 236, 182;
   --table-thead-background-color: var(--color1);
   --table-hover-raw-color: var(--color2);
   --table-hover-color: var(--color1);
@@ -8535,8 +8674,28 @@ body.color-scheme-options-autumn-topaz.theme-light {
   /*checkbox*/
   --checkbox-color-0: var(--main-color);
 
-  --table-color-calendar-2: rgb(222, 236, 182);
-  --table-color-rgb: 222, 236, 182;
+  /*Bases - color-base*/
+  --color-base-01: #bfb9a0;
+  --color-base-02: #f0f0e9;
+  --color-base-03: #aaa;
+  --color-base-04: #e6e6dd;
+  --color-base-05: #dbdbd2;
+  --color-base-06: #d0d0c6;
+  --color-base-07: #c3c3b8;
+  --color-base-08: #b3b3a7;
+  --color-base-09: #9a9a8e;
+  --color-base-10: #727267;
+  --color-base-11: #515149;
+  --color-base-12: #2b2b26;
+
+  /*Bases Autumn tweak*/
+  --bases-table-header-color: var(--deep-color);
+	--bases-table-header-background: var(--background-secondary-alt);
+  --bases-table-row-background-hover: color-mix(in srgb, var(--color1) 80%, var(--color-base-03));
+  --bases-table-stripe-color: color-mix(in srgb, var(--color2) 20%, transparent);
+	--bases-table-group-background: color-mix(in srgb, var(--color2), white 50%);
+	--background-primary-alt: var(--color-base-02);
+
 }
 
 
@@ -8557,7 +8716,7 @@ body.color-scheme-options-autumn-topaz.theme-dark {
   --main-color: var(--color6);
   --low-color: var(--color3);
   --high-color: var(--color7);
-  --deep-color:var(--color11);
+  --deep-color:var(--text-muted);
 
   --bg-color:#222222;
   --bg-color2:#444444;
@@ -8672,8 +8831,8 @@ body.color-scheme-options-autumn-topaz.theme-dark {
   /*checkbox*/
   --checkbox-color-0: var(--main-color);
 
-  --table-color-calendar-2: rgb(81, 165, 39);
-  --table-color-rgb: 81, 165, 39;
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-autumn-topaz #calendar-container {
@@ -8825,6 +8984,9 @@ body.color-scheme-options-lillimon-topaz.theme-light {
 
   /*checkbox*/
   --checkbox-color-0: var(--magic-main-color);
+
+  /*Bases 继承默认主题*/
+  
 }
 
 
@@ -8948,6 +9110,10 @@ body.color-scheme-options-lillimon-topaz.theme-dark {
 
   /*checkbox*/
   --checkbox-color-0: var(--magic-main-color);
+
+
+  /*Bases 继承默认主题*/
+
 }
 
 body.color-scheme-options-lillimon-topaz #calendar-container {
@@ -9024,6 +9190,7 @@ body.color-scheme-options-lilac.theme-light {
 
   --internal-link-color: #6203a2;
 
+	/* list */
   --list-ul: #ffffff;
   --list-ul-block-color: #7f1bb9;
   --list-ul-disc-color: #d955f3;
@@ -9034,6 +9201,7 @@ body.color-scheme-options-lilac.theme-light {
 
   --green-1: #9c30c7;
 
+	/* tag */
   --tag-text: #d2a3d4;
   --stag1: #fa8787;
   --stag1-bg: #eb2727;
@@ -9041,13 +9209,11 @@ body.color-scheme-options-lilac.theme-light {
   --stag2-bg: #ee9002;
   --stag3: #50ce3a;
   --stag3-bg: #22ac09;
-
   --tag1: #2b85ce;
   --tag2: #29b325;
   --tag3: #20b9ce;
   --tag4: #dfd331;
   --tag5: #bbbbbb;
-
   --tag-dailynote: #0077ff;
   --tag-dailynote-bg: #277CDD;
   --tag-weeklynote: #4b9fff;
@@ -9057,6 +9223,7 @@ body.color-scheme-options-lilac.theme-light {
   --tag-ideas: #ceb900;
   --tag-ideas-bg: #444444d8;
 
+	/* header */
   --h1-color: var(--print-h1-color, #6F6493);
   --h2-color: var(--print-h2-color, #724681);
   --h3-color: var(--print-h3-color, #330349);
@@ -9143,6 +9310,9 @@ body.color-scheme-options-lilac.theme-light {
 
   --divider-color: #d7c4f2;
   --tab-stacked-shadow: #c69fd5;
+
+  /*Bases 继承默认主题*/
+	
 }
 
 
@@ -9174,12 +9344,15 @@ body.color-scheme-options-lilac.theme-dark {
 
   --strong-em-highlight-color: #9c8ce6;
 
+	/* text */
   --text-highlight-bg-h: 286;
   --text-highlight-bg-s: 40%;
   --text-highlight-bg-l: 38%;
   --text-highlight-bg-a: 0.541;
   --text-highlight-bg: hsla(var(--text-highlight-bg-h), var(--text-highlight-bg-s), var(--text-highlight-bg-l), var(--text-highlight-bg-a));
   --text-search-highlight-bg: #bb4361;
+	--text-color-code: #d58000;
+
   --strong-em-color-1: #9c8ce6;
   --strong-em-color-2: #23d05c;
 
@@ -9195,10 +9368,10 @@ body.color-scheme-options-lilac.theme-dark {
   --background-blockquote: #9191911c;
   --background-code: #1111118c;
   --background-code-2: #4c4c4cb0;
-  --text-color-code: #d58000;
-
+  
   --internal-link-color: #a360da;
 
+	/* list */
   --list-ul: #f1a8f8;
   --list-ul-block-color: #e142d9a9;
   --list-ul-disc-color: #ae63eb;
@@ -9208,6 +9381,7 @@ body.color-scheme-options-lilac.theme-dark {
   --list-ol-number-color: #b595c4;
   --list-ol-hover: #ba2cd6;
 
+	/* tag */
   --tag-text: #e4e4e4;
   --stag1: #f08383;
   --stag1-bg: #bd1919;
@@ -9299,6 +9473,9 @@ body.color-scheme-options-lilac.theme-dark {
   --table-color-rgb: 98, 36, 143;
 
   --tab-stacked-shadow: #240a2e;
+
+  /*Bases 继承默认主题*/
+  
 }
 
 /*分割工作区的线透明*/
@@ -9482,6 +9659,9 @@ body.color-scheme-options-simplicity-topaz.theme-light {
   --background-transparent-black-or-white-3: var(--bg-color-settings-1) !important;
   --tab-background-active: #ffffff;
   --theme-color-translucent-01: hsla(254,80%,68%,0.1);
+
+  /*Bases 继承默认主题*/
+
 }
 
 
@@ -9562,6 +9742,8 @@ body.color-scheme-options-simplicity-topaz.theme-dark {
   --indentation-guide: var(--simple-gray-3);
   --search-result-background:var(--simple-gray-2);
   --scrollbar-bg: transparent;
+	
+  /*Bases 继承默认主题*/
 
 }
 
@@ -11102,13 +11284,13 @@ div[class="markdown-source-view cm-s-obsidian mod-cm6"] span.cm-hashtag-begin+.c
   background-color: var(--theme-color-translucent-015);
 }
 
-:is(.markdown-preview-view,.markdown-rendered):not([class*="kanban-plugin"]) {
+/* :is(.markdown-preview-view,.markdown-rendered):not([class*="kanban-plugin"]) {
   position: relative;
   overflow-y: auto;
   overflow-wrap: break-word;
   color: var(--text-normal);
   user-select: text;
-}
+} */
 
 /*edit mode font size*/
 pre.CodeMirror-line {
@@ -20555,6 +20737,7 @@ body.quiet-outline-optimize .workspace-leaf-content[data-type=quiet-outline] .n-
 /* ============ */
 /*image position*/
 /* ============ */
+.cm-content .image-embed:is([alt="L" i], [alt^="L|" i]),
 img[alt$="left"]:not([class*="emoji"]),
 img[alt$="Left"]:not([class*="emoji"]),
 img[alt$="LEFT"]:not([class*="emoji"]),
@@ -20575,7 +20758,10 @@ body:not(.image-zoom) .view-content img[alt$="L"]:not([class*="emoji"]) {
   margin-left: 0 !important;
   display: block;
 }
-
+/* RIGHT */
+ 
+ 
+.cm-content .image-embed:is([alt="R" i], [alt^="R|" i]),
 img[alt$="right"]:not([class*="emoji"]),
 img[alt$="Right"]:not([class*="emoji"]),
 img[alt$="RIGHT"]:not([class*="emoji"]),
@@ -20596,7 +20782,7 @@ body:not(.image-zoom) .view-content img[alt$="R"]:not([class*="emoji"]) {
   margin-right: 0 !important;
   display: block;
 }
-
+.cm-content .image-embed:is([alt="C" i], [alt^="C|" i]),
 img[alt$="centre"]:not([class*="emoji"]),
 img[alt$="center"]:not([class*="emoji"]),
 img[alt$="CENTRE"]:not([class*="emoji"]),
@@ -28382,7 +28568,7 @@ body:is(.bt-bubble-ribbon-hide-left,.bt-bubble-ribbon) .side-dock-actions {
 body:is(.bt-bubble-ribbon-hide-left,.bt-bubble-ribbon) .side-dock-actions, 
 body:is(.bt-bubble-ribbon-hide-left,.bt-bubble-ribbon) .side-dock-settings {
   border: 1px solid var(--tab-outline-color);
-  padding: 5px 0;
+ 
   background-color: var(--background-primary);
 }
 body:is(.bt-bubble-ribbon-hide-left,.bt-bubble-ribbon) .side-dock-settings {
@@ -29037,10 +29223,11 @@ body.background-settings-workplace-background-image .workspace-tab-header-contai
  
   
 body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked,.folder-style-change-options-colorful-border) .nav-files-container {
-  padding: 0 0 0 12px;
+ margin-left: 12px;
 }
   
-body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked,.folder-style-change-options-colorful-border) .nav-files-container>div>.tree-item.nav-folder > .tree-item-children.nav-folder-children {
+body.bt-toggle-colorful-folder:is(.folder-style-change-options-colorful-tab-liked,
+.folder-style-change-options-colorful-border) .nav-files-container>div>.tree-item.nav-folder > .tree-item-children.nav-folder-children {
   border-left: none;
 }
   
@@ -29669,3 +29856,169 @@ body.enable-alternative-checkboxes li[data-task=U] > p > input:checked {
 
 /****end checkbox****/
 
+body:not(.theme-light.background-settings-workplace-background-image) .workspace-split.mod-left-split .workspace-sidedock-vault-profile 
+{
+   background-color: var(--ribbon-background);
+}
+/**** Bases start ****/
+
+/*=== Bases 表格视图 ===*/
+
+.bases-table-container {
+  border-radius: var(--bases-table-container-border-radius);
+  border: var(--bases-table-container-border-width) solid var(--bases-table-border-color);
+}
+.theme-dark .bases-thead
+{
+  background-color:rgba(0,0,0,0.2);
+}
+.bases-table-header {
+  font-weight: var(--bases-table-header-weight);
+  color: var(--bases-table-header-color);
+  /* background: var(--bases-table-header-background); */
+  background: var(--bases-table-stripe-color, rgba(0,0,0,0.02));
+}
+
+.bases-table-header:hover {
+  background: var(--bases-table-header-background-hover);
+ color:var(--text-faint);
+}
+
+.bases-tbody .bases-tr:nth-child(even) {
+  background: var(--bases-table-stripe-color, rgba(0,0,0,0.02));
+}
+.bases-tr
+{
+  box-shadow:none;
+}
+.bases-tr:hover,
+.bases-tbody .bases-tr:nth-child(even):hover {
+  background: var(--bases-table-row-background-hover) !important;
+}
+
+.bases-table-active-cell {
+  box-shadow: var(--bases-table-cell-shadow-active);
+  background: var(--bases-table-cell-background-active);
+}
+
+/*=== Bases 卡片视图 ===*/
+
+.bases-cards-container {
+  padding: 8px;
+	overflow: visible;
+}
+
+.bases-cards-item {
+  background: var(--background-primary);
+  border: 1px solid var(--bases-table-border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 6px var(--bases-card-shadow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: visible !important;
+}
+
+.bases-cards-item:hover {
+  box-shadow: var(--window-shadow);
+  transform: translateY(-1px);
+  overflow: visible !important;
+}
+
+.bases-cards-item:hover .bases-cards-property {
+  overflow: visible !important;
+}
+
+.bases-cards-cover {
+  background: linear-gradient(135deg, var(--background-secondary), var(--background-secondary-alt));
+  min-height: 40px;
+}
+
+.bases-cards-property {
+  padding: var(--size-2-1)  var(--size-4-2);
+}
+
+.bases-cards-property.mod-title {
+  border-bottom: 1px solid var(--table-border-color);
+  margin-bottom: 2px;
+}
+
+.bases-cards-property.mod-title .bases-cards-line {
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+.bases-cards-label {
+  font-size: 0.75em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.bases-cards-line {
+  font-size: 0.875em;
+  color: var(--text-normal);
+  /* line-height: 1.5; */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.bases-cards-line:hover {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: calc(100% - 4px);
+  height: 100%;
+  background: var(--bases-card-line-hover);
+  border-radius: 8px;
+  z-index: 20;
+  box-sizing: border-box;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* 限制最多显示两行，超出省略号 */
+  overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: normal;
+}
+
+.bases-group-heading {
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--text-normal);
+  padding: 6px 0;
+  border-bottom: 1px solid var(--bases-table-border-color);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.bases-table > .bases-group-heading:first-of-type {
+  margin-top: 8px;
+}
+
+.bases-group-property {
+  color: var(--text-muted);
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.bases-group-value {
+  color: var(--text-accent);
+}
+
+/*=== Bases 工具栏 ===*/
+
+.bases-header {
+  border-bottom: var(--bases-header-border-width, 1px) solid var(--bases-table-border-color);
+  min-height: var(--bases-header-height, 40px);
+  padding-inline-start: var(--bases-header-padding-start, 8px);
+  padding-inline-end: var(--bases-header-padding-end, 8px);
+}
+
+/**** Bases end ****/

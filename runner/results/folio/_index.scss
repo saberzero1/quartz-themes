@@ -32,14 +32,14 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue);
   --callout-warning: var(--color-orange);
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-border-color: rgba(20, 20, 19, 0.2) !important;
+  --checkbox-border-color-hover: var(--interactive-accent) !important;
   --checkbox-color: var(--interactive-accent) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-color-hover: var(--interactive-accent) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
@@ -86,8 +86,9 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --code-number: #a63d2f !important;
-  --code-type: #6e6aa8 !important;
   --code-variable: #141413 !important;
+  --checkbox-border-width: 1.5px !important;
+  --code-type: #6e6aa8 !important;
   --callout-color-clay: 217, 119, 87;
   --callout-color-error: 196, 102, 134;
   --callout-color-heather: 130, 125, 189;
@@ -97,7 +98,7 @@
   --callout-color-warning: 212, 162, 127;
 
   --font-interface-override: "Instrument Sans", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-  --font-text-override: "Lora", Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-text-override: "Inter", "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-monospace-override: "JetBrains Mono", ui-monospace, monospace;
 
   --quartz-icon-color: currentColor;
@@ -128,14 +129,14 @@
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--color-blue);
   --callout-warning: var(--color-orange);
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
+  --checkbox-border-color: rgba(20, 20, 19, 0.2) !important;
+  --checkbox-border-color-hover: var(--interactive-accent) !important;
   --checkbox-color: var(--interactive-accent) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --checkbox-color-hover: var(--interactive-accent) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: var(--background-primary) !important;
-  --checkbox-radius: var(--radius-s) !important;
-  --checkbox-size: var(--font-text-size) !important;
+  --checkbox-radius: 50% !important;
+  --checkbox-size: 16px !important;
   --code-background: var(--background-primary-alt) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
@@ -182,8 +183,9 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --code-number: #e07060 !important;
-  --code-type: #9e9ad6 !important;
   --code-variable: rgba(250, 249, 245, 0.87) !important;
+  --checkbox-border-width: 1.5px !important;
+  --code-type: #9e9ad6 !important;
   --callout-color-clay: 217, 119, 87;
   --callout-color-error: 196, 102, 134;
   --callout-color-heather: 130, 125, 189;
@@ -193,7 +195,7 @@
   --callout-color-warning: 212, 162, 127;
 
   --font-interface-override: "Instrument Sans", "Inter", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-  --font-text-override: "Lora", Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-text-override: "Inter", "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", "思源黑体", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-monospace-override: "JetBrains Mono", ui-monospace, monospace;
 
   --quartz-icon-color: currentColor;
@@ -641,17 +643,18 @@ body {
     color: var(--text-muted);
     font-family: var(--font-interface-theme);
     border: 0px solid rgba(20, 20, 19, 0.08);
+    border-bottom: 1px solid rgb(217, 119, 87);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
-    margin-block-end: 32px;
+    margin: 0px 0px 24px;
+    margin-block-end: 24px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
+    padding: 8px 0px 12px;
+    padding-block-end: 12px;
     padding-block-start: 8px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
@@ -662,17 +665,18 @@ body {
     color: var(--text-muted);
     font-family: var(--font-interface-theme);
     border: 0px solid rgba(20, 20, 19, 0.08);
+    border-bottom: 1px solid rgb(217, 119, 87);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 0px 32px;
-    margin-block-end: 32px;
+    margin: 0px 0px 24px;
+    margin-block-end: 24px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
+    padding: 8px 0px 12px;
+    padding-block-end: 12px;
     padding-block-start: 8px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
@@ -706,10 +710,10 @@ body {
     font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
     border-color: rgb(94, 93, 89);
     border-width: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -738,7 +742,7 @@ body {
 
   .note-properties {
     background-color: var(--metadata-background);
-    border-color: rgba(20, 20, 19, 0.08);
+    border-color: rgba(20, 20, 19, 0.08) rgba(20, 20, 19, 0.08) rgb(217, 119, 87);
     border-radius: 0px;
   }
 
@@ -758,7 +762,7 @@ body {
   .note-properties-tags {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border-radius: 22.4px;
+    border-radius: 2538px;
   }
 
   .note-properties-row {
@@ -782,7 +786,7 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 87) none 0px;
     text-decoration: underline;
@@ -811,7 +815,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 87) none 0px;
     text-decoration: underline;
@@ -839,7 +843,7 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(217, 119, 87) none 0px;
     text-decoration: underline oklch(0.672423 0.13087 38.7527 / 0.3);
@@ -951,7 +955,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -979,7 +983,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1007,7 +1011,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1035,7 +1039,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1138,7 +1142,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 700;
     outline: rgb(61, 61, 58) none 0px;
     text-decoration-color: rgb(61, 61, 58);
@@ -1159,7 +1163,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -1186,7 +1190,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(61, 61, 58) none 0px;
     text-decoration: line-through;
@@ -1264,40 +1268,17 @@ body {
     background-color: var(--pill-background);
     color: var(--pill-color);
     display: flex;
-    font-family:
-      "Instrument Sans",
-      Inter,
-      system-ui,
-      "Segoe UI",
-      Roboto,
-      Helvetica,
-      Arial,
-      "PingFang SC",
-      "Microsoft YaHei",
-      sans-serif,
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
-    font-size: 11.2px;
+    font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 10.304px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
-    border: 0px solid oklch(0.672423 0.13087 38.7527 / 0.15);
-    border-top-left-radius: 22.4px;
-    border-top-right-radius: 22.4px;
-    border-bottom-left-radius: 22.4px;
-    border-bottom-right-radius: 22.4px;
+    border: 1px solid rgb(217, 119, 87);
+    border-top-left-radius: 2538px;
+    border-top-right-radius: 2538px;
+    border-bottom-left-radius: 2538px;
+    border-bottom-right-radius: 2538px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -1305,7 +1286,7 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: rgb(250, 249, 245);
+    color: rgb(217, 119, 87);
   }
 
   .search > .search-button {
@@ -1440,7 +1421,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 14.88px;
+    margin: 0px 0px 12.48px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1474,7 +1455,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 10.8px;
+    margin: 0px 0px 9.2px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1508,7 +1489,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 16px 0px 7px;
+    margin: 13.44px 0px 5.88px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1542,7 +1523,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 9.2px 0px 5.52px;
+    margin: 8px 0px 4.8px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1576,7 +1557,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 25.2px 0px 5.04px;
+    margin: 22.08px 0px 4.416px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1610,7 +1591,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 24px 0px 4.8px;
+    margin: 21.12px 0px 4.224px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1629,14 +1610,14 @@ body {
 
   h2.page-title,
   h2.page-title a {
-    color: var(--inline-title-color);
+    color: var(--h1-color);
     font-family: var(--font-heading-theme);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
     line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: -0.372px;
+    letter-spacing: -0.42px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1645,7 +1626,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 12.4px;
+    margin: 0px 0px 14px;
     margin-block-end: var(--inline-title-margin-bottom);
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2016,7 +1997,7 @@ body {
   }
 
   h1.article-title {
-    color: var(--inline-title-color);
+    color: var(--h1-color);
     font-size: var(--inline-title-size);
     font-weight: var(--inline-title-weight);
   }
@@ -2115,8 +2096,13 @@ body {
     margin-inline-start: 0px;
     font-size: 16px;
     font-family:
-      Lora,
-      Georgia,
+      Inter,
+      "Instrument Sans",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
       "Source Han Sans SC",
       "Source Han Sans CN",
       "Noto Sans CJK SC",
@@ -2283,11 +2269,11 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 1px solid rgb(176, 174, 165);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 1px solid rgba(20, 20, 19, 0.2);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2434,11 +2420,16 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    border-inline-start: 2px solid rgb(217, 119, 87);
+    border-inline-start: 0px none rgb(94, 93, 89);
     color: var(--text-muted);
     font-family:
-      Lora,
-      Georgia,
+      Inter,
+      "Instrument Sans",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
       "Source Han Sans SC",
       "Source Han Sans CN",
       "Noto Sans CJK SC",
@@ -2462,8 +2453,8 @@ body {
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     padding-inline-start: var(--size-4-6);
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -2613,7 +2604,7 @@ body {
   }
 
   sup {
-    color: rgb(61, 61, 58);
+    color: var(--text-accent);
     font-size: 14.1667px;
     vertical-align: super;
   }
@@ -2631,8 +2622,13 @@ body {
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
     font-family:
-      Lora,
-      Georgia,
+      Inter,
+      "Instrument Sans",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
       "Source Han Sans SC",
       "Source Han Sans CN",
       "Noto Sans CJK SC",
@@ -2657,8 +2653,13 @@ body {
 
   .katex-display > .katex > .katex-html {
     font-family:
-      Lora,
-      Georgia,
+      Inter,
+      "Instrument Sans",
+      system-ui,
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
       "Source Han Sans SC",
       "Source Han Sans CN",
       "Noto Sans CJK SC",
@@ -2747,9 +2748,8 @@ body {
 
   .footnotes {
     background-color: rgba(0, 0, 0, 0);
-    border-top-color: rgb(61, 61, 58);
-    border-top-width: 0px;
-    color: rgb(61, 61, 58);
+    border-top: 1px solid rgb(217, 119, 87);
+    color: var(--text-muted);
   }
 
   .spacer {
@@ -2764,16 +2764,16 @@ body {
   ul.tags > li {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border: 0px solid oklch(0.672423 0.13087 38.7527 / 0.15);
-    border-top-left-radius: 22.4px;
-    border-top-right-radius: 22.4px;
-    border-bottom-left-radius: 22.4px;
-    border-bottom-right-radius: 22.4px;
+    border: 1px solid rgb(217, 119, 87);
+    border-top-left-radius: 2538px;
+    border-top-right-radius: 2538px;
+    border-bottom-left-radius: 2538px;
+    border-bottom-right-radius: 2538px;
   }
 
   li.task-list-item input[type="checkbox"] {
-    border-color: rgb(176, 174, 165);
-    border-radius: 4px;
+    border-color: rgba(20, 20, 19, 0.2);
+    border-radius: 50%;
     border-width: 1px;
     background-color: rgba(0, 0, 0, 0);
   }
@@ -2852,7 +2852,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -3670,13 +3670,13 @@ body {
   }
 
   table {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--background-primary-alt);
     border-collapse: separate;
     color: rgb(61, 61, 58);
     font-family: var(--font-interface-theme);
     table-layout: auto;
     text-align: start;
-    border: 1px solid rgba(20, 20, 19, 0.08);
+    border: 1px solid rgba(176, 137, 104, 0.5);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -3701,7 +3701,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(61, 61, 58);
     font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    border: 0px rgba(20, 20, 19, 0.08);
+    border: 0px rgba(176, 137, 104, 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3719,18 +3719,18 @@ body {
   }
 
   th {
-    background-color: rgb(232, 230, 220);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
     font-weight: var(--table-header-weight);
     text-align: left;
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: 0.16px;
-    border-left: var(--table-column-first-border-width) solid rgba(20, 20, 19, 0.08);
-    border-right: 1px solid rgba(20, 20, 19, 0.08);
+    letter-spacing: 0.56px;
+    border-left: var(--table-column-first-border-width) solid rgb(61, 61, 58);
+    border-right: 0px solid rgb(61, 61, 58);
     border-top: var(--table-header-border-width) solid rgba(20, 20, 19, 0.08);
-    border-bottom: 2px solid rgba(20, 20, 19, 0.08);
+    border-bottom: 1px solid rgba(20, 20, 19, 0.08);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3739,11 +3739,11 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 10px 14px;
-    padding-block-end: 10px;
-    padding-block-start: 10px;
-    padding-inline-end: 14px;
-    padding-inline-start: 14px;
+    padding: 7px 10px;
+    padding-block-end: 7px;
+    padding-block-start: 7px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   td {
@@ -3754,8 +3754,10 @@ body {
     vertical-align: var(--table-cell-vertical-alignment);
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    border: 1px solid rgba(20, 20, 19, 0.08);
-    border-left: var(--table-column-first-border-width) solid rgba(20, 20, 19, 0.08);
+    border-left: var(--table-column-first-border-width) solid rgb(61, 61, 58);
+    border-right: 0px solid rgb(61, 61, 58);
+    border-top: 1px solid rgba(20, 20, 19, 0.08);
+    border-bottom: 0px solid rgb(61, 61, 58);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3764,18 +3766,18 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    padding: 8px 14px;
-    padding-block-end: 8px;
-    padding-block-start: 8px;
-    padding-inline-end: 14px;
-    padding-inline-start: 14px;
+    padding: 5px 10px;
+    padding-block-end: 5px;
+    padding-block-start: 5px;
+    padding-inline-end: 10px;
+    padding-inline-start: 10px;
   }
 
   tr {
     background-color: var(--table-header-background);
     color: rgb(61, 61, 58);
     font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-    border: 0px rgba(20, 20, 19, 0.08);
+    border: 0px rgba(176, 137, 104, 0.5);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4032,14 +4034,14 @@ body {
   }
 
   .bases-table {
-    border-color: rgba(20, 20, 19, 0.08);
+    border-color: rgba(176, 137, 104, 0.5);
   }
 
   .bases-table thead th {
-    background-color: rgb(232, 230, 220);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
     font-weight: var(--table-header-weight);
-    border-color: rgba(20, 20, 19, 0.08);
+    border-color: rgba(20, 20, 19, 0.08) rgb(61, 61, 58);
   }
 
   .bases-table tbody tr:nth-child(even) {
@@ -6553,17 +6555,18 @@ html[saved-theme="dark"] {
       color: var(--text-muted);
       font-family: var(--font-interface-theme);
       border: 0px solid rgba(250, 249, 245, 0.08);
+      border-bottom: 1px solid rgb(217, 119, 87);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 0px 0px 32px;
-      margin-block-end: 32px;
+      margin: 0px 0px 24px;
+      margin-block-end: 24px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
+      padding: 8px 0px 12px;
+      padding-block-end: 12px;
       padding-block-start: 8px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
@@ -6574,17 +6577,18 @@ html[saved-theme="dark"] {
       color: var(--text-muted);
       font-family: var(--font-interface-theme);
       border: 0px solid rgba(250, 249, 245, 0.08);
+      border-bottom: 1px solid rgb(217, 119, 87);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 0px 0px 32px;
-      margin-block-end: 32px;
+      margin: 0px 0px 24px;
+      margin-block-end: 24px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
+      padding: 8px 0px 12px;
+      padding-block-end: 12px;
       padding-block-start: 8px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
@@ -6618,10 +6622,10 @@ html[saved-theme="dark"] {
       font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
       border-color: rgba(250, 249, 245, 0.62);
       border-width: 0px;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
-      border-bottom-left-radius: 6px;
-      border-bottom-right-radius: 6px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
       margin: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -6650,7 +6654,7 @@ html[saved-theme="dark"] {
 
     .note-properties {
       background-color: var(--metadata-background);
-      border-color: rgba(250, 249, 245, 0.08);
+      border-color: rgba(250, 249, 245, 0.08) rgba(250, 249, 245, 0.08) rgb(217, 119, 87);
       border-radius: 0px;
     }
 
@@ -6670,7 +6674,7 @@ html[saved-theme="dark"] {
     .note-properties-tags {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border-radius: 22.4px;
+      border-radius: 2538px;
     }
 
     .note-properties-row {
@@ -6694,7 +6698,7 @@ html[saved-theme="dark"] {
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(217, 119, 87) none 0px;
       text-decoration: underline;
@@ -6723,7 +6727,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(217, 119, 87) none 0px;
       text-decoration: underline;
@@ -6751,7 +6755,7 @@ html[saved-theme="dark"] {
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(217, 119, 87) none 0px;
       text-decoration: underline oklch(0.672423 0.13087 38.7527 / 0.3);
@@ -6863,7 +6867,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6891,7 +6895,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6919,7 +6923,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -6947,7 +6951,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7050,7 +7054,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--italic-color);
       cursor: grab;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 700;
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration-color: rgba(250, 249, 245, 0.87);
@@ -7071,7 +7075,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -7098,7 +7102,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family: Lora, Georgia, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-family: Inter, "Instrument Sans", system-ui, "Segoe UI", Roboto, Helvetica, Arial, "Source Han Sans SC", "Source Han Sans CN", "Noto Sans CJK SC", 思源黑体, "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgba(250, 249, 245, 0.87) none 0px;
       text-decoration: line-through;
@@ -7176,40 +7180,17 @@ html[saved-theme="dark"] {
       background-color: var(--pill-background);
       color: var(--pill-color);
       display: flex;
-      font-family:
-        "Instrument Sans",
-        Inter,
-        system-ui,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        "PingFang SC",
-        "Microsoft YaHei",
-        sans-serif,
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
-      font-size: 11.2px;
+      font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 10.304px;
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
-      border: 0px solid oklch(0.672423 0.13087 38.7527 / 0.15);
-      border-top-left-radius: 22.4px;
-      border-top-right-radius: 22.4px;
-      border-bottom-left-radius: 22.4px;
-      border-bottom-right-radius: 22.4px;
+      border: 1px solid rgb(217, 119, 87);
+      border-top-left-radius: 2538px;
+      border-top-right-radius: 2538px;
+      border-bottom-left-radius: 2538px;
+      border-bottom-right-radius: 2538px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -7217,7 +7198,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: rgb(250, 249, 245);
+      color: rgb(217, 119, 87);
     }
 
     .search > .search-button {
@@ -7352,7 +7333,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 14.88px;
+      margin: 0px 0px 12.48px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7386,7 +7367,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 10.8px;
+      margin: 0px 0px 9.2px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7420,7 +7401,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 16px 0px 7px;
+      margin: 13.44px 0px 5.88px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7454,7 +7435,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 9.2px 0px 5.52px;
+      margin: 8px 0px 4.8px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7488,7 +7469,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 25.2px 0px 5.04px;
+      margin: 22.08px 0px 4.416px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7522,7 +7503,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 24px 0px 4.8px;
+      margin: 21.12px 0px 4.224px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -7541,14 +7522,14 @@ html[saved-theme="dark"] {
 
     h2.page-title,
     h2.page-title a {
-      color: var(--inline-title-color);
+      color: var(--h1-color);
       font-family: var(--font-heading-theme);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
       line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: -0.372px;
+      letter-spacing: -0.42px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7557,7 +7538,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 12.4px;
+      margin: 0px 0px 14px;
       margin-block-end: var(--inline-title-margin-bottom);
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -7928,7 +7909,7 @@ html[saved-theme="dark"] {
     }
 
     h1.article-title {
-      color: var(--inline-title-color);
+      color: var(--h1-color);
       font-size: var(--inline-title-size);
       font-weight: var(--inline-title-weight);
     }
@@ -8027,8 +8008,13 @@ html[saved-theme="dark"] {
       margin-inline-start: 0px;
       font-size: 16px;
       font-family:
-        Lora,
-        Georgia,
+        Inter,
+        "Instrument Sans",
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
         "Source Han Sans SC",
         "Source Han Sans CN",
         "Noto Sans CJK SC",
@@ -8195,11 +8181,11 @@ html[saved-theme="dark"] {
 
     input[type="checkbox"] {
       appearance: auto;
-      border: 1px solid rgba(250, 249, 245, 0.42);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 1px solid rgba(20, 20, 19, 0.2);
+      border-top-left-radius: 50%;
+      border-top-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -8346,11 +8332,16 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      border-inline-start: 2px solid rgb(217, 119, 87);
+      border-inline-start: 0px none rgba(250, 249, 245, 0.62);
       color: var(--text-muted);
       font-family:
-        Lora,
-        Georgia,
+        Inter,
+        "Instrument Sans",
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
         "Source Han Sans SC",
         "Source Han Sans CN",
         "Noto Sans CJK SC",
@@ -8374,8 +8365,8 @@ html[saved-theme="dark"] {
       font-weight: 400;
       font-style: var(--blockquote-font-style);
       line-height: 24px;
-      padding-bottom: 2px;
-      padding-top: 2px;
+      padding-bottom: 0px;
+      padding-top: 0px;
       padding-inline-start: var(--size-4-6);
       margin-inline-start: 0px;
       margin-inline-end: 0px;
@@ -8525,7 +8516,7 @@ html[saved-theme="dark"] {
     }
 
     sup {
-      color: rgba(250, 249, 245, 0.87);
+      color: var(--text-accent);
       font-size: 14.1667px;
       vertical-align: super;
     }
@@ -8543,8 +8534,13 @@ html[saved-theme="dark"] {
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
       font-family:
-        Lora,
-        Georgia,
+        Inter,
+        "Instrument Sans",
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
         "Source Han Sans SC",
         "Source Han Sans CN",
         "Noto Sans CJK SC",
@@ -8569,8 +8565,13 @@ html[saved-theme="dark"] {
 
     .katex-display > .katex > .katex-html {
       font-family:
-        Lora,
-        Georgia,
+        Inter,
+        "Instrument Sans",
+        system-ui,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
         "Source Han Sans SC",
         "Source Han Sans CN",
         "Noto Sans CJK SC",
@@ -8659,9 +8660,8 @@ html[saved-theme="dark"] {
 
     .footnotes {
       background-color: rgba(0, 0, 0, 0);
-      border-top-color: rgba(250, 249, 245, 0.87);
-      border-top-width: 0px;
-      color: rgba(250, 249, 245, 0.87);
+      border-top: 1px solid rgb(217, 119, 87);
+      color: var(--text-muted);
     }
 
     .spacer {
@@ -8676,16 +8676,16 @@ html[saved-theme="dark"] {
     ul.tags > li {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border: 0px solid oklch(0.672423 0.13087 38.7527 / 0.15);
-      border-top-left-radius: 22.4px;
-      border-top-right-radius: 22.4px;
-      border-bottom-left-radius: 22.4px;
-      border-bottom-right-radius: 22.4px;
+      border: 1px solid rgb(217, 119, 87);
+      border-top-left-radius: 2538px;
+      border-top-right-radius: 2538px;
+      border-bottom-left-radius: 2538px;
+      border-bottom-right-radius: 2538px;
     }
 
     li.task-list-item input[type="checkbox"] {
-      border-color: rgba(250, 249, 245, 0.42);
-      border-radius: 4px;
+      border-color: rgba(20, 20, 19, 0.2);
+      border-radius: 50%;
       border-width: 1px;
       background-color: rgba(0, 0, 0, 0);
     }
@@ -8764,7 +8764,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -8948,7 +8948,7 @@ html[saved-theme="dark"] {
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
       background: rgba(106, 155, 204, 0.06) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: rgb(26, 54, 93);
+      color: rgba(250, 249, 245, 0.87);
       mix-blend-mode: normal;
       border: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 16px;
@@ -9064,7 +9064,7 @@ html[saved-theme="dark"] {
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
       background: rgba(120, 140, 93, 0.06) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: rgb(61, 90, 26);
+      color: rgba(250, 249, 245, 0.87);
       mix-blend-mode: normal;
       border: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 16px;
@@ -9122,7 +9122,7 @@ html[saved-theme="dark"] {
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
       background: rgba(120, 140, 93, 0.06) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: rgb(61, 90, 26);
+      color: rgba(250, 249, 245, 0.87);
       mix-blend-mode: normal;
       border: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 16px;
@@ -9238,7 +9238,7 @@ html[saved-theme="dark"] {
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
       background: rgba(212, 162, 127, 0.06) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: rgb(122, 74, 35);
+      color: rgba(250, 249, 245, 0.87);
       mix-blend-mode: normal;
       border: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 16px;
@@ -9296,7 +9296,7 @@ html[saved-theme="dark"] {
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
       background: rgba(196, 102, 134, 0.06) none repeat scroll 0% 0% / auto padding-box border-box;
-      color: rgb(122, 26, 58);
+      color: rgba(250, 249, 245, 0.87);
       mix-blend-mode: normal;
       border: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 16px;
@@ -9582,13 +9582,13 @@ html[saved-theme="dark"] {
     }
 
     table {
-      background-color: rgba(0, 0, 0, 0);
+      background-color: var(--background-primary-alt);
       border-collapse: separate;
       color: rgba(250, 249, 245, 0.87);
       font-family: var(--font-interface-theme);
       table-layout: auto;
       text-align: start;
-      border: 1px solid rgba(250, 249, 245, 0.08);
+      border: 1px solid rgba(176, 137, 104, 0.5);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
       border-bottom-left-radius: 8px;
@@ -9613,7 +9613,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: rgba(250, 249, 245, 0.87);
       font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      border: 0px rgba(250, 249, 245, 0.08);
+      border: 0px rgba(176, 137, 104, 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9631,18 +9631,18 @@ html[saved-theme="dark"] {
     }
 
     th {
-      background-color: rgb(17, 17, 16);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
       font-weight: var(--table-header-weight);
       text-align: left;
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: 0.16px;
-      border-left: var(--table-column-first-border-width) solid rgba(250, 249, 245, 0.08);
-      border-right: 1px solid rgba(250, 249, 245, 0.08);
+      letter-spacing: 0.56px;
+      border-left: var(--table-column-first-border-width) solid rgba(250, 249, 245, 0.87);
+      border-right: 0px solid rgba(250, 249, 245, 0.87);
       border-top: var(--table-header-border-width) solid rgba(250, 249, 245, 0.08);
-      border-bottom: 2px solid rgba(250, 249, 245, 0.08);
+      border-bottom: 1px solid rgba(250, 249, 245, 0.08);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9651,11 +9651,11 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      padding: 10px 14px;
-      padding-block-end: 10px;
-      padding-block-start: 10px;
-      padding-inline-end: 14px;
-      padding-inline-start: 14px;
+      padding: 7px 10px;
+      padding-block-end: 7px;
+      padding-block-start: 7px;
+      padding-inline-end: 10px;
+      padding-inline-start: 10px;
     }
 
     td {
@@ -9666,8 +9666,10 @@ html[saved-theme="dark"] {
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border: 1px solid rgba(250, 249, 245, 0.08);
-      border-left: var(--table-column-first-border-width) solid rgba(250, 249, 245, 0.08);
+      border-left: var(--table-column-first-border-width) solid rgba(250, 249, 245, 0.87);
+      border-right: 0px solid rgba(250, 249, 245, 0.87);
+      border-top: 1px solid rgba(250, 249, 245, 0.08);
+      border-bottom: 0px solid rgba(250, 249, 245, 0.87);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9676,18 +9678,18 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      padding: 8px 14px;
-      padding-block-end: 8px;
-      padding-block-start: 8px;
-      padding-inline-end: 14px;
-      padding-inline-start: 14px;
+      padding: 5px 10px;
+      padding-block-end: 5px;
+      padding-block-start: 5px;
+      padding-inline-end: 10px;
+      padding-inline-start: 10px;
     }
 
     tr {
       background-color: var(--table-header-background);
       color: rgba(250, 249, 245, 0.87);
       font-family: "Instrument Sans", Inter, system-ui, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-      border: 0px rgba(250, 249, 245, 0.08);
+      border: 0px rgba(176, 137, 104, 0.5);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9944,14 +9946,14 @@ html[saved-theme="dark"] {
     }
 
     .bases-table {
-      border-color: rgba(250, 249, 245, 0.08);
+      border-color: rgba(176, 137, 104, 0.5);
     }
 
     .bases-table thead th {
-      background-color: rgb(17, 17, 16);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
       font-weight: var(--table-header-weight);
-      border-color: rgba(250, 249, 245, 0.08);
+      border-color: rgba(250, 249, 245, 0.08) rgba(250, 249, 245, 0.87);
     }
 
     .bases-table tbody tr:nth-child(even) {

@@ -562,6 +562,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -1353,6 +1354,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1535,6 +1538,7 @@ body.theme-dark {
   --font-sans:
     -apple-system BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  --inline-code-background: rgba(158, 167, 179, 0.4) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-small) !important;
@@ -1542,8 +1546,6 @@ body.theme-dark {
   --color-white: #ffffff !important;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace !important;
   --toggle-border-color: var(--background-modifier-border) !important;
-  --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
-  --inline-code-background: rgba(158, 167, 179, 0.4) !important;
   --accent-h-theme: 220 !important;
   --accent-l-theme: 70% !important;
   --accent-s-theme: 13% !important;
@@ -1564,6 +1566,7 @@ body.theme-dark {
   --kanban-lane-count: var(--color-base-35) !important;
   --kanban-options-btn: var(--color-base-30) !important;
   --rgb-hover: 183, 189, 200 !important;
+  --titlebar-text-color-highlighted: var(--text-accent-hover) !important;
   --toggle-background-color: var(--interactive-accent) !important;
   --toggle-background-color-off: var(--interactive-normal) !important;
 }
@@ -3585,7 +3588,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

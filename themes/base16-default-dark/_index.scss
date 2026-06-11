@@ -2942,7 +2942,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -4548,6 +4548,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4601,6 +4602,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4654,6 +4656,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4707,6 +4710,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4760,6 +4764,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4813,6 +4818,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4866,6 +4872,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4919,6 +4926,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4972,6 +4980,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5025,6 +5034,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5078,6 +5088,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5131,6 +5142,7 @@ body {
     margin: 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5184,6 +5196,7 @@ body {
     margin: 16px 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5237,6 +5250,7 @@ body {
     margin: 16px 0px;
     padding-inline-end: 12px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -8736,7 +8750,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -10360,6 +10374,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10417,6 +10432,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10474,6 +10490,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10531,6 +10548,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10588,6 +10606,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10645,6 +10664,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10702,6 +10722,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10759,6 +10780,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10816,6 +10838,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10873,6 +10896,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10930,6 +10954,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10987,6 +11012,7 @@ html[saved-theme="dark"] {
       margin: 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -11044,6 +11070,7 @@ html[saved-theme="dark"] {
       margin: 8px 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -11101,6 +11128,7 @@ html[saved-theme="dark"] {
       margin: 8px 0px;
       padding-inline-end: 12px;
       padding: 4px 12px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 

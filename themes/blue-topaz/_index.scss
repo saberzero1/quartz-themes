@@ -85,6 +85,10 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-attribute: var(--code-function) !important;
+  --code-number: #ff5370 !important;
+  --code-variable: #f07178 !important;
+  --graph-arrow: #e25300 !important;
   --checkbox-color-0: #2f92e4 !important;
   --checkbox-color-1: #c4c116 !important;
   --checkbox-color-2: #4bbf40 !important;
@@ -94,7 +98,6 @@
   --checkbox-color-6: #5f5f5f !important;
   --code-active-line-background-color: var(--activeline-background) !important;
   --code-atom: var(--orange-1) !important;
-  --code-attribute: var(--code-function) !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -108,17 +111,14 @@
   --code-link: #696d70 !important;
   --code-matching-bracket: #ffffff !important;
   --code-meta: var(--text-faint) !important;
-  --code-number: #ff5370 !important;
   --code-qualifier: var(--aqua) !important;
   --code-selection-background: var(--text-selection) !important;
   --code-selection-color: var(--code-normal) !important;
   --code-string-2: var(--orange-1) !important;
   --code-tag-in-comment: #ff5370 !important;
   --code-type: var(--code-function) !important;
-  --code-variable: #f07178 !important;
   --code-variable-2: var(--light-purple) !important;
   --code-variable-3: #e7852fe7 !important;
-  --graph-arrow: #e25300 !important;
   --graph-attach: #afcfe0cc !important;
   --graph-canvas-bg: var(--background-primary) !important;
   --graph-circle: #1f78b4cc !important;
@@ -414,6 +414,10 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-attribute: var(--code-function) !important;
+  --code-number: #ff5370 !important;
+  --code-variable: var(--red) !important;
+  --graph-arrow: #c23917 !important;
   --checkbox-color-0: #3187d3 !important;
   --checkbox-color-1: #a9a608 !important;
   --checkbox-color-2: #1dac10 !important;
@@ -423,7 +427,6 @@
   --checkbox-color-6: #5f5f5f !important;
   --code-active-line-background-color: #111111eb !important;
   --code-atom: var(--orange-1) !important;
-  --code-attribute: var(--code-function) !important;
   --code-attribute-in-comment: #c792ea !important;
   --code-bracket: #ff5370 !important;
   --code-builtin: #ffcb6b !important;
@@ -437,17 +440,14 @@
   --code-link: #696d70 !important;
   --code-matching-bracket: #ffffff !important;
   --code-meta: #ffcb6b !important;
-  --code-number: #ff5370 !important;
   --code-qualifier: var(--aqua) !important;
   --code-selection-background: var(--text-selection) !important;
   --code-selection-color: var(--code-normal) !important;
   --code-string-2: var(--yellow) !important;
   --code-tag-in-comment: #ff5370 !important;
   --code-type: var(--code-function) !important;
-  --code-variable: var(--red) !important;
   --code-variable-2: #53ada3 !important;
   --code-variable-3: #e7852fe7 !important;
-  --graph-arrow: #c23917 !important;
   --graph-attach: #b2cfe0bb !important;
   --graph-canvas-bg: var(--background-primary) !important;
   --graph-circle: #55a2d6bb !important;
@@ -3108,7 +3108,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -4048,10 +4048,10 @@ body {
     box-shadow: none;
     text-decoration: rgb(34, 34, 34);
     letter-spacing: normal;
-    border-left: var(--table-column-first-border-width) solid rgb(125, 125, 125);
-    border-right: 0px solid rgb(125, 125, 125);
-    border-top: var(--table-header-border-width) solid rgb(125, 125, 125);
-    border-bottom: 0px solid rgb(125, 125, 125);
+    border-left: var(--table-column-first-border-width) solid rgba(47, 147, 228, 0.2);
+    border-right: 0px solid rgba(47, 147, 228, 0.2);
+    border-top: var(--table-header-border-width) solid rgba(47, 147, 228, 0.2);
+    border-bottom: 0px solid rgba(47, 147, 228, 0.2);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4398,7 +4398,7 @@ body {
     background-color: var(--table-thead-background-color);
     color: var(--table-header-color);
     font-weight: var(--table-header-weight);
-    border-color: rgb(125, 125, 125);
+    border-color: rgba(47, 147, 228, 0.2);
   }
 
   .bases-table tbody tr:nth-child(even) {
@@ -4666,6 +4666,7 @@ body {
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -4725,6 +4726,7 @@ body {
     margin-block: -112px 0px;
     margin-block-end: 0px;
     margin-block-start: -112px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -4784,6 +4786,7 @@ body {
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -4843,6 +4846,7 @@ body {
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -4902,6 +4906,7 @@ body {
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -4961,6 +4966,7 @@ body {
     margin-block: 20px 0px;
     margin-block-end: 0px;
     margin-block-start: 20px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -5019,6 +5025,7 @@ body {
     margin-block: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
     margin-inline: 0px;
     margin-inline-end: 0px;
@@ -9875,7 +9882,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -10815,10 +10822,10 @@ html[saved-theme="dark"] {
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width) solid rgb(74, 74, 74);
-      border-right: 0px solid rgb(74, 74, 74);
-      border-top: var(--table-header-border-width) solid rgb(74, 74, 74);
-      border-bottom: 0px solid rgb(74, 74, 74);
+      border-left: var(--table-column-first-border-width) solid rgba(45, 130, 205, 0.2);
+      border-right: 0px solid rgba(45, 130, 205, 0.2);
+      border-top: var(--table-header-border-width) solid rgba(45, 130, 205, 0.2);
+      border-bottom: 0px solid rgba(45, 130, 205, 0.2);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -11165,7 +11172,7 @@ html[saved-theme="dark"] {
       background-color: var(--table-thead-background-color);
       color: var(--table-header-color);
       font-weight: var(--table-header-weight);
-      border-color: rgb(74, 74, 74);
+      border-color: rgba(45, 130, 205, 0.2);
     }
 
     .bases-table tbody tr:nth-child(even) {
@@ -11433,6 +11440,7 @@ html[saved-theme="dark"] {
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -11492,6 +11500,7 @@ html[saved-theme="dark"] {
       margin-block: -112px 0px;
       margin-block-end: 0px;
       margin-block-start: -112px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -11551,6 +11560,7 @@ html[saved-theme="dark"] {
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -11610,6 +11620,7 @@ html[saved-theme="dark"] {
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -11669,6 +11680,7 @@ html[saved-theme="dark"] {
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -11728,6 +11740,7 @@ html[saved-theme="dark"] {
       margin-block: 20px 0px;
       margin-block-end: 0px;
       margin-block-start: 20px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
@@ -11786,6 +11799,7 @@ html[saved-theme="dark"] {
       margin-block: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
       margin-inline: 0px;
       margin-inline-end: 0px;
@@ -13505,7 +13519,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task=""] input[type="checkbox"]::after {
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(106, 106, 106);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");

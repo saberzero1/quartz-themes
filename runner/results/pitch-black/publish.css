@@ -393,6 +393,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--pitch-black) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1213,6 +1214,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--pitch-black) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1400,6 +1403,8 @@ body.theme-dark {
   --text-highlight-bg-active: rgba(255, 238, 0, 0.4) !important;
   --text-error-hover: #ff8585 !important;
   --table-header-background-hover: #151515 !important;
+  --inline-code-background: rgba(255, 255, 255, 0.08) !important;
+  --inline-code-color: #d7ba7d !important;
   --interactive-success: #197f2c !important;
   --text-primary: #d4d4d4 !important;
   --text-secondary: #cccccc !important;
@@ -1411,11 +1416,9 @@ body.theme-dark {
   --syntax-regexp: #d16969 !important;
   --syntax-string: #ce9178 !important;
   --syntax-tag: #569cd6 !important;
-  --inline-code-color: #d7ba7d !important;
   --embed-background: #0a0a0a !important;
   --accent-blue: #007acc !important;
   --flashing-background: rgba(0, 122, 204, 0.3) !important;
-  --inline-code-background: rgba(255, 255, 255, 0.08) !important;
   --border-subtle: #222222 !important;
   --search-match-highlight-bg: var(--find-match-bg) !important;
   --search-match-highlight-color: var(--text-active) !important;
@@ -3264,7 +3267,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

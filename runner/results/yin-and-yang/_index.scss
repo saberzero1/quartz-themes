@@ -88,13 +88,13 @@
   --code-block: var(--frost2) !important;
   --code-block-border: var(--light2) !important;
   --graph-arrow: var(--boldpurple) !important;
+  --graph-line-highlight: var(--interactive-accent-hover) !important;
   --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --graph-circle-outline: var(--text-faint) !important;
   --graph-circle-fill: var(--text-normal) !important;
   --graph-circle-fill-unresolved: var(--text-normal) !important;
   --graph-fill-attachment: var(--em-color) !important;
   --graph-fill-tag: var(--background-modifier-accent) !important;
-  --graph-line-highlight: var(--interactive-accent-hover) !important;
   --code-line-height: 1.50667em !important;
   --checkbox-after: var(--interactive-accent) !important;
   --checkbox-base: hsl(var(--base-h), calc(var(--base-s) - 8%), calc(var(--base-l) - 5%)) !important;
@@ -255,13 +255,13 @@
   --code-block: var(--paleblue) !important;
   --code-block-border: var(--light0) !important;
   --graph-arrow: hsl(var(--boldpink)) !important;
+  --graph-line-highlight: var(--interactive-accent-hover) !important;
   --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --graph-circle-outline: var(--text-faint) !important;
   --graph-circle-fill: var(--text-normal) !important;
   --graph-circle-fill-unresolved: hsl(var(--boldlightpink)) !important;
   --graph-fill-attachment: var(--em-color) !important;
   --graph-fill-tag: var(--background-modifier-accent) !important;
-  --graph-line-highlight: var(--interactive-accent-hover) !important;
   --code-line-height: 1.50667em !important;
   --checkbox-after: var(--interactive-accent) !important;
   --checkbox-base: hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 10%)) !important;
@@ -2848,7 +2848,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -11703,7 +11703,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

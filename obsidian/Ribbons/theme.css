@@ -108,18 +108,18 @@ body {
 
 .view-content hr {
   border: none;
-  border-top: var(--size-2-1) double var(--text-normal) !important;
-  color: var(--text-normal);
-  overflow: visible;
-  text-align: center;
-  height: var(--size-2-2);
+  height: auto;
+  background: none;
+  margin: 1.2em 0;
 }
-.view-content hr::after {
-  background: var(--background-primary);
-  content: "§";
-  padding: 0 var(--size-2-2);
-  position: relative;
-  top: calc(0% - var(--size-4-3));
+.view-content hr::before {
+  content: "※";
+  display: block;
+  text-align: center;
+  color: var(--text-faint);
+  letter-spacing: 0.3em;
+  font-size: 1.1em;
+  line-height: 1;
 }
 
 body .HyperMD-quote:has(> span.cm-highlight) {
@@ -134,10 +134,10 @@ body .HyperMD-quote:has(> span.cm-highlight) .cm-highlight {
 }
 body .markdown-preview-view blockquote mark {
   /* Position element */
-  position: relative;
-  left: 90%;
+  display: block;
+  text-align: end;
   /* Alter its font style */
-  background-color: var(--background-primary);
+  background-color: transparent;
   color: var(--h3-color);
   font-weight: bold;
 }

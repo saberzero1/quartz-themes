@@ -86,13 +86,13 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --graph-arrow: hsla(314, 57%, 63%, 1) !important;
+  --graph-line-highlight: hsla(191, 57%, 59%, 1) !important;
   --graph-circle-fill-highlight: hsla(59, 99%, 50%, 1) !important;
   --graph-circle-outline: transparent !important;
   --graph-circle-fill: hsla(59, 99%, 50%, 1) !important;
   --graph-circle-fill-unresolved: hsla(206, 89%, 71%, 1) !important;
   --graph-fill-attachment: hsla(314, 57%, 63%, 1) !important;
   --graph-fill-tag: hsla(250, 100%, 77%, 1) !important;
-  --graph-line-highlight: hsla(191, 57%, 59%, 1) !important;
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -2565,7 +2565,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 

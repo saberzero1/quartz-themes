@@ -1,0 +1,1388 @@
+/* ============================================================
+   DEEPFIELD — Obsidian Theme v1.0.0
+   Dark sci-fi editorial. Inspired by the Caelum video aesthetic.
+
+   Strategy:
+   - Dark + light modes; palettes set accent only (theme-agnostic)
+   - Overrides Minimal's HSL base system (--base-h/s/l, --accent-h/s/l)
+     so Minimal users get full cascade. Falls back to direct Obsidian
+     variable overrides for non-Minimal installs.
+   - Adds custom .deepfield-* CSS classes for special components
+     (origin tag, attribution, tier transition, HUD panel, etc.)
+
+   Install: copy this folder to your vault's .obsidian/themes/
+   Recommended: also install the Minimal theme and Style Settings plugin.
+   ============================================================ */
+
+/* @settings
+name: Deepfield
+id: deepfield
+settings:
+  -
+    id: color-palette
+    title: Color Palette
+    description: Choose a color scheme
+    type: class-select
+    allowEmpty: false
+    default: deepfield-electric
+    options:
+      -
+        label: Electric
+        value: deepfield-electric
+      -
+        label: Steel
+        value: deepfield-steel
+      -
+        label: Slate
+        value: deepfield-slate
+      -
+        label: Midnight
+        value: deepfield-midnight
+      -
+        label: Mercury
+        value: deepfield-mercury
+      -
+        label: Venus
+        value: deepfield-venus
+      -
+        label: Earth
+        value: deepfield-earth
+      -
+        label: Mars
+        value: deepfield-mars
+      -
+        label: Jupiter
+        value: deepfield-jupiter
+      -
+        label: Saturn
+        value: deepfield-saturn
+      -
+        label: Uranus
+        value: deepfield-uranus
+      -
+        label: Neptune
+        value: deepfield-neptune
+      -
+        label: Event Horizon
+        value: deepfield-event-horizon
+      -
+        label: Galactic Noir
+        value: deepfield-galactic-noir
+      -
+        label: Midnight Orbit
+        value: deepfield-midnight-orbit
+      -
+        label: Ion Trail
+        value: deepfield-ion-trail
+      -
+        label: Aurora Nebula
+        value: deepfield-aurora-nebula
+      -
+        label: Magnetic Field
+        value: deepfield-magnetic-field
+      -
+        label: Retro Galaxy
+        value: deepfield-retro-galaxy
+      -
+        label: Vintage Cosmos
+        value: deepfield-vintage-cosmos
+
+*/
+
+/* ── FONTS ─────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── DARK MODE ONLY ─────────────────────────────────────────── */
+body.theme-dark {
+
+  /* ── Minimal HSL System (cascade to all derived vars) ── */
+  --base-h: 214;      /* blue-tinted dark base */
+  --base-s: 30%;
+  --base-l: 6%;       /* very dark — 6% lightness */
+  --accent-h: 216;
+  --accent-s: 100%;
+  --accent-l: 58%;
+
+  /* ── Direct Obsidian variables (fallback + precision) ── */
+
+  /* Backgrounds */
+  --background-primary:              #020509;
+  --background-primary-alt:          #040a10;
+  --background-secondary:            #030810;
+  --background-secondary-alt:        #040a10;
+  --background-tertiary:             #060e18;
+  --background-modifier-hover:       rgba(var(--interactive-accent-rgb), 0.06);
+  --background-modifier-active-hover: rgba(var(--interactive-accent-rgb), 0.1);
+  --background-modifier-border:      rgba(var(--interactive-accent-rgb), 0.04);
+  --background-modifier-border-hover: rgba(var(--interactive-accent-rgb), 0.12);
+  --background-modifier-border-focus: rgba(var(--interactive-accent-rgb), 0.28);
+  --background-modifier-form-field:  #060e18;
+  --background-modifier-form-field-highlighted: #091320;
+  --background-modifier-success:     rgba(61, 201, 160, 0.15);
+  --background-modifier-error:       rgba(180, 50, 40, 0.15);
+  --background-modifier-error-hover: rgba(180, 50, 40, 0.25);
+  --background-modifier-cover:       rgba(2, 5, 9, 0.85);
+  --modal-background:                #040a10;
+
+  /* Text */
+  --text-normal:      #d4e4f7;
+  --text-muted:       #8aabcc;
+  --text-faint:       #3d607a;
+  --text-on-accent:   #020509;
+  --text-error:       #e06060;
+  --text-bold:        #c5dbf5;
+  --text-italic:      #8aabcc;
+  --text-code:        #7ec8ff;
+  --text-blockquote:  #8aabcc;
+  --text-mark:        rgba(var(--interactive-accent-rgb), 0.25);
+  --text-selection:   rgba(var(--interactive-accent-rgb), 0.2);
+
+  /* Headings */
+  --h1-color:  #e8f2ff;
+  --h2-color:  #c8dcf5;
+  --h3-color:  #9ab8dc;
+  --h4-color:  #7a98bc;
+  --h5-color:  #5a80a0;
+  --h6-color:  #3d607a;
+  --h1-size:   1.9em;
+  --h2-size:   1.3em;
+  --h3-size:   1.1em;
+  --h4-size:   1em;
+  --h5-size:   .9em;
+  --h6-size:   .85em;
+  --h1-weight: 700;
+  --h2-weight: 600;
+
+  /* Accent + interactive */
+  --text-accent:             #4d9fff;
+  --text-accent-hover:       #80bdff;
+  --interactive-accent:      #1d6fff;
+  --interactive-accent-hover: #3380ff;
+  --interactive-accent-rgb:  29, 111, 255;
+  --background-modifier-accent: rgba(var(--interactive-accent-rgb), 0.15);
+
+  /* Links */
+  --link-color:              #4d9fff;
+  --link-color-hover:        #80bdff;
+  --link-unresolved-color:   #3d607a;
+  --link-unresolved-opacity: 0.8;
+  --link-external-color:     #4d9fff;
+  --link-external-color-hover: #80bdff;
+
+  /* Tags */
+  --tag-color:               #4d9fff;
+  --tag-color-hover:         #80bdff;
+  --tag-background:          rgba(var(--interactive-accent-rgb), 0.12);
+  --tag-background-hover:    rgba(var(--interactive-accent-rgb), 0.2);
+  --tag-border-color:        rgba(var(--interactive-accent-rgb), 0.25);
+  --tag-border-width:        1px;
+  --tag-border-radius:       0px;   /* square tags, Caelum style */
+  --tag-padding-x:           0.5em;
+  --tag-padding-y:           0.15em;
+  --tag-font-size:           .75em;
+
+  /* Code */
+  --code-background:         rgba(4, 10, 16, 0.9);
+  --code-normal:             #7ec8ff;
+  --code-comment:            #3d607a;
+  --code-function:           #9b7dff;
+  --code-keyword:            #9b7dff;
+  --code-important:          #4d9fff;
+  --code-string:             #3dc9a0;
+  --code-tag:                #4d9fff;
+  --code-value:              #f0a040;
+  --code-property:           #c5dbf5;
+  --code-operator:           #3d607a;
+  --code-size:               .85em;
+
+  /* Borders */
+  --divider-color:           rgba(var(--interactive-accent-rgb), 0.03);
+  --modal-border-color:      rgba(var(--interactive-accent-rgb), 0.15);
+  --prompt-border-color:     rgba(var(--interactive-accent-rgb), 0.2);
+  --sidebar-markdown-link-border: rgba(var(--interactive-accent-rgb), 0.15);
+
+  /* Scrollbars */
+  --scrollbar-bg:            transparent;
+  --scrollbar-thumb-bg:      rgba(var(--interactive-accent-rgb), 0.12);
+  --scrollbar-active-thumb-bg: rgba(var(--interactive-accent-rgb), 0.25);
+
+  /* Checkboxes */
+  --checkbox-color:          #1d6fff;
+  --checkbox-color-hover:    #4d9fff;
+  --checkbox-border-color:   rgba(var(--interactive-accent-rgb), 0.3);
+  --checkbox-marker-color:   #020509;
+
+  /* Graph */
+  --graph-node:              #3d607a;
+  --graph-node-focused:      #4d9fff;
+  --graph-node-unresolved:   #1e3347;
+  --graph-node-tag:          #9b7dff;
+  --graph-node-attachment:   #3dc9a0;
+  --graph-line:              rgba(var(--interactive-accent-rgb), 0.12);
+  --graph-line-focused:      rgba(var(--interactive-accent-rgb), 0.4);
+
+  /* Title bar */
+  --titlebar-background:     #020509;
+  --titlebar-background-focused: #020509;
+
+  /* Ribbon */
+  --ribbon-background:       #030810;
+  --ribbon-background-collapsed: #020509;
+
+  /* Typography */
+  --font-text-theme:         'Inter', system-ui, sans-serif;
+  --font-monospace-theme:    'Space Mono', monospace;
+  --font-ui-theme:           'Inter', system-ui, sans-serif;
+  --font-text-size:          16px;
+
+  /* Spacing */
+  --file-line-width:         720px;
+  --list-indent:             1.5em;
+  --metadata-label-width:    8em;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   LIGHT MODE — "Daylight Readout"
+   Cool-neutral paper, slate ink, blue accent held. Palette accents
+   (Mars, Jupiter, etc.) override --interactive-accent in both modes,
+   so theme colors show here too. Components are theme-agnostic and
+   pull these variables automatically.
+   ════════════════════════════════════════════════════════════════ */
+body.theme-light {
+  /* Minimal HSL base — light */
+  --base-h: 214; --base-s: 18%; --base-l: 96%;
+  --accent-h: 216; --accent-s: 80%; --accent-l: 45%;
+
+  /* Backgrounds — cool near-white */
+  --background-primary:              #eef2f7;
+  --background-primary-alt:          #e6ecf4;
+  --background-secondary:            #e4eaf2;
+  --background-secondary-alt:        #dae2ec;
+  --background-tertiary:             #dae2ec;
+  --background-modifier-hover:       rgba(21, 88, 204, 0.06);
+  --background-modifier-active-hover: rgba(21, 88, 204, 0.1);
+  --background-modifier-border:      rgba(21, 88, 204, 0.12);
+  --background-modifier-border-hover: rgba(21, 88, 204, 0.22);
+  --background-modifier-border-focus: rgba(21, 88, 204, 0.4);
+  --background-modifier-form-field:  #ffffff;
+  --background-modifier-success:     rgba(40, 160, 110, 0.15);
+  --background-modifier-error:       rgba(200, 60, 50, 0.15);
+  --background-modifier-cover:       rgba(220, 228, 238, 0.85);
+  --modal-background:                #e6ecf4;
+
+  /* Text — slate ink */
+  --text-normal:      #1a2a3d;
+  --text-muted:       #4a6078;
+  --text-faint:       #8499ad;
+  --text-on-accent:   #ffffff;
+  --text-error:       #c83c32;
+  --text-bold:        #0e1c2e;
+  --text-italic:      #4a6078;
+  --text-code:        #1558cc;
+  --text-blockquote:  #4a6078;
+  --text-mark:        rgba(21, 88, 204, 0.22);
+  --text-selection:   rgba(21, 88, 204, 0.15);
+
+  /* Headings */
+  --h1-color:  #0e1c2e;
+  --h2-color:  #1558cc;
+  --h3-color:  #2a4a70;
+  --h4-color:  #4a6078;
+  --h5-color:  #5a7088;
+  --h6-color:  #8499ad;
+
+  /* Accent + interactive — blue, darker for light-bg contrast */
+  --text-accent:             #1558cc;
+  --text-accent-hover:       #0e44a8;
+  --interactive-accent:      #1558cc;
+  --interactive-accent-hover: #0e44a8;
+  --interactive-accent-rgb:  21, 88, 204;
+  --background-modifier-accent: rgba(21, 88, 204, 0.12);
+
+  /* Links */
+  --link-color:              #1558cc;
+  --link-color-hover:        #0e44a8;
+  --link-unresolved-color:   #8499ad;
+  --link-external-color:     #1558cc;
+
+  /* Tags */
+  --tag-color:               #1558cc;
+  --tag-background:          rgba(21, 88, 204, 0.1);
+  --tag-border-color:        rgba(21, 88, 204, 0.25);
+
+  /* Code — light surface, ink-blue text */
+  --code-background:         #e2e8f1;
+  --code-normal:             #1558cc;
+  --code-comment:            #8499ad;
+  --code-function:           #7a42d0;
+  --code-keyword:            #7a42d0;
+  --code-string:             #1e8a66;
+  --code-value:              #b06010;
+  --code-property:           #1a2a3d;
+
+  /* Scrollbars */
+  --scrollbar-thumb-bg:      rgba(21, 88, 204, 0.15);
+  --scrollbar-active-thumb-bg: rgba(21, 88, 204, 0.3);
+
+  /* Checkboxes */
+  --checkbox-marker-color:   #ffffff;
+
+  /* Titlebar / ribbon */
+  --titlebar-background:     #e4eaf2;
+  --titlebar-background-focused: #e4eaf2;
+  --ribbon-background:       #e4eaf2;
+
+  /* Typography (shared with dark) */
+  --font-text-theme:         'Inter', system-ui, sans-serif;
+  --font-monospace-theme:    'Space Mono', monospace;
+  --font-ui-theme:           'Inter', system-ui, sans-serif;
+}
+
+/* ── WORKSPACE PANEL DIVIDERS ── */
+body .workspace-split.mod-left-split,
+body .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-right: 1px solid var(--background-modifier-border) !important;
+}
+
+body .workspace-split.mod-right-split,
+body .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+  border-left: 1px solid var(--background-modifier-border) !important;
+}
+
+body .workspace-leaf-resize-handle {
+  background: var(--background-modifier-border) !important;
+  width: 1px !important;
+}
+
+body .workspace-split > .workspace-leaf + .workspace-leaf {
+  border-left: 1px solid var(--background-modifier-border) !important;
+}
+
+/* ── H3–H6 STYLING — Option B: H3 sans, H4–H6 mono uppercase ── */
+body .markdown-rendered h3,
+body .cm-header-3 {
+  font-family: var(--font-text-theme);
+  font-size: 1em;
+  font-weight: 600;
+  color: #9ab8dc;
+  letter-spacing: 0.01em;
+}
+
+body .markdown-rendered h4,
+body .cm-header-4 {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.72em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+}
+
+body .markdown-rendered h5,
+body .cm-header-5 {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+}
+
+body .markdown-rendered h6,
+body .cm-header-6 {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.6em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  opacity: 0.6;
+}
+
+/* ── H2 STYLING — Deepfield monospace uppercase ── */
+body .markdown-rendered h2,
+body .cm-header-2 {
+  font-family: var(--font-monospace-theme);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75em;
+  color: var(--interactive-accent);
+  border-bottom: 1px solid rgba(var(--interactive-accent-rgb), 0.12);
+  padding-bottom: 0.4em;
+}
+
+/* ── TASK LIST CHECKBOXES ── */
+body {
+  --checkbox-radius: 0px;
+  --checkbox-color: rgba(var(--interactive-accent-rgb, 29,111,255), 0.2);
+  --checkbox-color-hover: rgba(var(--interactive-accent-rgb, 29,111,255), 0.35);
+  --checkbox-border-color: var(--text-faint);
+  --checkbox-border-color-hover: var(--interactive-accent);
+  --checkbox-marker-color: var(--text-accent);
+}
+
+body .task-list-item.is-checked,
+body .task-list-item.is-checked > p {
+  text-decoration: line-through;
+  color: var(--text-faint);
+}
+
+/* ── NESTED LIST — open circle at second level ── */
+body .markdown-rendered ul ul,
+body .cm-content ul ul {
+  list-style-type: circle;
+}
+
+body .markdown-rendered ul ul > li::marker,
+body .cm-content ul ul > li::marker {
+  color: var(--text-faint);
+}
+
+/* Live Preview nested bullets (depth 2+) — open circle by restyling the
+   existing .list-bullet::after BOX (transparent fill + border), never
+   adding content (which doubles the marker). */
+body .markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet::after,
+body .markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet::after,
+body .markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet::after,
+body .markdown-source-view.mod-cm6 .HyperMD-list-line-5 .list-bullet::after,
+body .markdown-source-view.mod-cm6 .HyperMD-list-line-6 .list-bullet::after {
+  background-color: transparent !important;
+  border: 1px solid var(--list-marker-color, var(--text-faint)) !important;
+  width: calc(var(--list-bullet-size, 5px) - 1px) !important;
+  height: calc(var(--list-bullet-size, 5px) - 1px) !important;
+}
+
+/* ── MERMAID DIAGRAMS ──
+   Obsidian exposes NO --mermaid-* variables; mermaid injects an
+   ID-scoped <style> inside the SVG. Only !important overrides hitting
+   EVERY shape primitive + both color AND fill on labels win. ── */
+body .mermaid { background: transparent; }
+
+/* Node shapes — every primitive + the label-container wrapper */
+body .mermaid .node rect,
+body .mermaid .node circle,
+body .mermaid .node ellipse,
+body .mermaid .node polygon,
+body .mermaid .node path,
+body .mermaid .label-container,
+body .mermaid rect.basic,
+body .mermaid .node .basic {
+  fill: #14233a !important;
+  stroke: var(--interactive-accent) !important;
+  stroke-width: 1px !important;
+}
+
+/* Edges */
+body .mermaid .edgePath .path,
+body .mermaid .flowchart-link,
+body .mermaid path.flowchart-link {
+  stroke: var(--text-faint) !important;
+  fill: none !important;
+}
+
+/* Node label text — color (HTML) AND fill (SVG text), every element */
+body .mermaid .nodeLabel,
+body .mermaid .nodeLabel p,
+body .mermaid span.nodeLabel,
+body .mermaid .node .label,
+body .mermaid .node .label div,
+body .mermaid .node .label span,
+body .mermaid .node .label p,
+body .mermaid .node foreignObject div,
+body .mermaid .node text,
+body .mermaid .node tspan {
+  color: #e8f2ff !important;
+  fill: #e8f2ff !important;
+  font-family: var(--font-text-theme) !important;
+}
+
+/* Edge labels (No / Yes) — bright text on dark backing */
+body .mermaid .edgeLabel,
+body .mermaid .edgeLabel p,
+body .mermaid .edgeLabel span,
+body .mermaid .edgeLabel div {
+  color: #c8d8ec !important;
+  fill: #c8d8ec !important;
+  background-color: var(--background-primary) !important;
+}
+body .mermaid .edgeLabel rect,
+body .mermaid .edgeLabel .label-container {
+  fill: var(--background-primary) !important;
+  opacity: 0.92 !important;
+}
+
+body .mermaid .cluster rect {
+  fill: rgba(var(--interactive-accent-rgb),0.03) !important;
+  stroke: rgba(var(--interactive-accent-rgb),0.15) !important;
+}
+
+/* ── BLOCKQUOTE — left bar style ── */
+body blockquote {
+  border-left: 2px solid var(--interactive-accent);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 0.5em 0 0.5em 1em;
+  background: rgba(var(--interactive-accent-rgb), 0.04);
+  color: var(--text-muted);
+  margin: 1em 0;
+}
+
+/* ── HIGHLIGHT — accent-tinted instead of default yellow ── */
+body mark,
+body .markdown-rendered mark {
+  background: rgba(var(--interactive-accent-rgb, 29,111,255), 0.2);
+  color: var(--text-accent);
+  border-radius: 0;
+  padding: 0.05em 0.15em;
+}
+
+/* ── FOOTNOTES ── */
+body .footnotes {
+  border-top: 1px solid rgba(var(--interactive-accent-rgb),.08);
+  margin-top: 2em;
+  padding-top: 1em;
+  font-size: 0.78em;
+  color: var(--text-faint);
+}
+
+body .footnote-ref a,
+body .footnotes a {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.85em;
+  color: var(--text-accent);
+}
+
+/* ── CALLOUT FOLD ARROW ── */
+body .callout-fold {
+  color: var(--text-faint) !important;
+  opacity: 0.5;
+}
+
+/* ── CUSTOM CHECKBOX STATES ──
+   Obsidian draws the checkmark on input:checked::after as a pseudo-
+   element: background-color: var(--checkbox-marker-color) + a
+   -webkit-mask-image checkmark SVG (confirmed from Obsidian's own
+   app source). To change the glyph we override THAT ::after's mask
+   per state — the box gets translucent fill + colored border, the
+   ::after becomes the state's symbol in the state's color. ── */
+
+/* [x] completed — accent fill + glow, keeps Obsidian's checkmark */
+body input[data-task="x"]:checked,
+body input[data-task="X"]:checked,
+body li[data-task="x"] > input:checked,
+body li[data-task="X"] > input:checked {
+  background-color: rgba(var(--interactive-accent-rgb, 29,111,255), 0.25) !important;
+  border-color: var(--text-accent) !important;
+  box-shadow: 0 0 6px rgba(var(--interactive-accent-rgb, 29,111,255), 0.4) !important;
+}
+
+/* Custom-state boxes: translucent fill + colored border, no glow */
+body input[data-task="/"]:checked,
+body li[data-task="/"] > input:checked,
+body li[data-task="/"] > p > input:checked {
+  background-color: rgba(192,120,32,0.18) !important;
+  border-color: #c07820 !important;
+  box-shadow: none !important;
+}
+body input[data-task="-"]:checked,
+body li[data-task="-"] > input:checked,
+body li[data-task="-"] > p > input:checked {
+  background-color: rgba(100,100,100,0.15) !important;
+  border-color: #5a6a7a !important;
+  box-shadow: none !important;
+}
+body input[data-task=">"]:checked,
+body li[data-task=">"] > input:checked,
+body li[data-task=">"] > p > input:checked {
+  background-color: rgba(155,125,255,0.18) !important;
+  border-color: #9b7dff !important;
+  box-shadow: none !important;
+}
+body input[data-task="!"]:checked,
+body li[data-task="!"] > input:checked,
+body li[data-task="!"] > p > input:checked {
+  background-color: rgba(224,96,96,0.18) !important;
+  border-color: #e06060 !important;
+  box-shadow: none !important;
+}
+
+/* [/] in progress — dot glyph, amber */
+body input[data-task="/"]:checked::after,
+body li[data-task="/"] > input:checked::after,
+body li[data-task="/"] > p > input:checked::after {
+  background-color: #c07820 !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4'/%3E%3C/svg%3E") !important;
+  -webkit-mask-size: 60% !important; mask-size: 60% !important;
+}
+
+/* [-] cancelled — minus glyph, faint */
+body input[data-task="-"]:checked::after,
+body li[data-task="-"] > input:checked::after,
+body li[data-task="-"] > p > input:checked::after {
+  background-color: #8a9aaa !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+  -webkit-mask-size: 65% !important; mask-size: 65% !important;
+}
+
+/* [>] deferred — arrow glyph, purple */
+body input[data-task=">"]:checked::after,
+body li[data-task=">"] > input:checked::after,
+body li[data-task=">"] > p > input:checked::after {
+  background-color: #9b7dff !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+  -webkit-mask-size: 65% !important; mask-size: 65% !important;
+}
+
+/* [!] important — triangle glyph, red */
+body input[data-task="!"]:checked::after,
+body li[data-task="!"] > input:checked::after,
+body li[data-task="!"] > p > input:checked::after {
+  background-color: #e06060 !important;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd'/%3E%3C/svg%3E") !important;
+  -webkit-mask-size: 65% !important; mask-size: 65% !important;
+}
+
+/* Text styling per state */
+body .task-list-item[data-task="-"] { color: var(--text-faint); text-decoration: line-through; }
+body .task-list-item[data-task=">"] { color: var(--text-muted); }
+body .task-list-item[data-task="!"] { color: var(--text-normal); }
+body .task-list-item[data-task="/"] { color: var(--text-muted); }
+
+/* ── INLINE CODE ── */
+body code {
+  background: var(--code-background);
+  color: var(--code-normal);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+  padding: 0.1em 0.35em;
+  font-size: 0.85em;
+}
+
+/* ── CODE BLOCK ── */
+body pre code {
+  border: none;
+  padding: 0;
+}
+
+body pre {
+  background: var(--code-background) !important;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 0;
+}
+
+/* ── TABLES ── */
+body th {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--interactive-accent);
+  font-weight: 400;
+  border-bottom: 1px solid rgba(var(--interactive-accent-rgb), 0.25);
+  background: transparent;
+}
+
+body td {
+  border-color: rgba(var(--interactive-accent-rgb), 0.08);
+  font-size: 0.9em;
+}
+
+body tr:nth-child(even) td {
+  background: rgba(var(--interactive-accent-rgb), 0.02);
+}
+
+/* ── HORIZONTAL RULE — scan line style ── */
+body hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(var(--interactive-accent-rgb),.25) 30%, rgba(var(--interactive-accent-rgb),.25) 70%, transparent);
+  margin: 2em 0;
+}
+
+/* ── FRONTMATTER / PROPERTIES PANEL ── */
+body .metadata-container {
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.1);
+  border-left: 2px solid var(--interactive-accent);
+  background: rgba(var(--interactive-accent-rgb), 0.03);
+  border-radius: 0;
+  padding: 0.6em 0.8em;
+  margin-bottom: 2em;
+}
+
+body .metadata-properties-heading {
+  display: none;  /* hide the "Properties" collapse header for a cleaner panel */
+}
+
+body .metadata-property {
+  border-bottom: 1px solid rgba(var(--interactive-accent-rgb), 0.06);
+  padding: 0.15em 0;
+}
+body .metadata-property:last-child { border-bottom: none; }
+
+body .metadata-property-key,
+body .metadata-property-key-input {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+body .metadata-property-value {
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+/* ── EMBEDS — left-bar container, mono title ── */
+body .markdown-embed,
+body .internal-embed.markdown-embed {
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.1);
+  border-left: 2px solid var(--interactive-accent);
+  border-radius: 0;
+  background: rgba(var(--interactive-accent-rgb), 0.03);
+  padding-left: 0.2em;
+  margin: 0.8em 0;
+}
+
+body .markdown-embed-title {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.6em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  font-weight: 400;
+}
+
+body .markdown-embed-link {
+  color: var(--text-faint);
+}
+body .markdown-embed-link:hover {
+  color: var(--interactive-accent);
+}
+
+/* image embeds — square corners, faint border */
+body .internal-embed img,
+body .image-embed img {
+  border-radius: 0;
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.1);
+}
+
+/* ── TAGS — Option C: [#tag] bracket-wrapped, mono uppercase ── */
+body .tag {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.68em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted) !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+body a.tag::before {
+  content: '[';
+  color: var(--interactive-accent);
+  margin-right: 0.05em;
+}
+body a.tag::after {
+  content: ']';
+  color: var(--interactive-accent);
+  margin-left: 0.05em;
+}
+body a.tag:hover {
+  color: var(--text-accent) !important;
+  text-decoration: none;
+}
+
+/* Live Preview / edit mode — tags render as .cm-hashtag spans */
+body .cm-s-obsidian .cm-hashtag {
+  font-family: var(--font-monospace-theme) !important;
+  font-size: 0.85em !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: var(--text-muted) !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 1px !important;
+}
+body .cm-s-obsidian .cm-hashtag-begin::before {
+  content: '[';
+  color: var(--interactive-accent);
+}
+body .cm-s-obsidian .cm-hashtag-end::after {
+  content: ']';
+  color: var(--interactive-accent);
+}
+
+/* ── FILE EXPLORER ── */
+body .nav-folder-title,
+body .nav-file-title {
+  font-size: 0.8em;
+  letter-spacing: 0.02em;
+  border-radius: 0;
+}
+
+body .nav-file-title.is-active {
+  background: rgba(var(--interactive-accent-rgb), 0.1);
+  border-right: 2px solid var(--interactive-accent);
+  color: #4d9fff;
+}
+
+/* ── SEARCH ── */
+body .search-result-file-title {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ── STATUS BAR ── */
+body .status-bar {
+  background: rgba(3, 8, 16, 0.95);
+  border-top: 1px solid rgba(var(--interactive-accent-rgb), 0.08);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  letter-spacing: 0.12em;
+}
+
+/* ── TAB HEADER ── */
+body .workspace-tab-header-inner {
+  font-size: 0.8em;
+}
+
+body .workspace-tab-header.is-active {
+  border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* ── MODAL & COMMAND PALETTE ── */
+body .prompt {
+  background: #040a10;
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.2);
+  border-radius: 0;
+}
+
+body .prompt-input {
+  font-family: var(--font-monospace-theme);
+  letter-spacing: 0.05em;
+}
+
+body .suggestion-item.is-selected {
+  background: rgba(var(--interactive-accent-rgb), 0.1);
+  border-left: 2px solid var(--interactive-accent);
+}
+
+/* ────────────────────────────────────────────────────────────
+   DEEPFIELD CUSTOM CSS CLASSES
+   Use via cssClass frontmatter or with the Style Settings plugin.
+   ──────────────────────────────────────────────────────────── */
+
+/* ── Origin tag — "SUPERNOVA REMNANT" rectangular label
+   Usage: add class="deepfield-origin" to a paragraph ── */
+body .deepfield-origin {
+  display: inline-block;
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.3);
+  font-family: var(--font-monospace-theme);
+  font-size: 0.6em;
+  letter-spacing: 0.22em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  padding: 0.2em 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* ── HUD panel — transparent bg + vertical left bar
+   Usage: wrap content in a div with class deepfield-hud ── */
+body .deepfield-hud {
+  display: flex;
+  margin: 1em 0;
+}
+
+body .deepfield-hud-bar {
+  width: 3px;
+  background: var(--interactive-accent);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+body .deepfield-hud-body {
+  flex: 1;
+  padding: 0.75em 1em;
+  background: rgba(var(--interactive-accent-rgb), 0.04);
+  border: 1px solid rgba(var(--interactive-accent-rgb), 0.1);
+  border-left: none;
+}
+
+/* ── Punchline — "SLOWLY · UNSTOPPABLY"
+   Usage: paragraph with class deepfield-punchline ── */
+body .deepfield-punchline {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.72em;
+  letter-spacing: 0.22em;
+  color: #4d9fff;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+/* ── Bracket container — L-corners only, no full border
+   Usage: div.deepfield-bracket > div.deepfield-bracket-inner ── */
+body .deepfield-bracket {
+  position: relative;
+  padding: 1em 1.2em;
+  margin: 1em 0;
+}
+
+body .deepfield-bracket::before,
+body .deepfield-bracket::after,
+body .deepfield-bracket-inner::before,
+body .deepfield-bracket-inner::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: rgba(var(--interactive-accent-rgb), 0.4);
+  border-style: solid;
+}
+
+body .deepfield-bracket::before  { top: 0; left: 0; border-width: 1px 0 0 1px; }
+body .deepfield-bracket::after   { top: 0; right: 0; border-width: 1px 1px 0 0; }
+body .deepfield-bracket-inner::before { bottom: 0; left: 0; border-width: 0 0 1px 1px; }
+body .deepfield-bracket-inner::after  { bottom: 0; right: 0; border-width: 0 1px 1px 0; }
+
+/* ── Scan line divider
+   Usage: div.deepfield-scan ── */
+body .deepfield-scan {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 1.5em 0;
+}
+
+body .deepfield-scan::before,
+body .deepfield-scan::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: var(--interactive-accent);
+  flex-shrink: 0;
+}
+
+body .deepfield-scan-rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, rgba(var(--interactive-accent-rgb),.5), transparent);
+}
+
+/* ── LED status indicator
+   Usage: span.deepfield-led, span.deepfield-led.on, span.deepfield-led.warn ── */
+body .deepfield-led {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--text-faint);
+  background: transparent;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+body .deepfield-led.on {
+  background: var(--interactive-accent);
+  border-color: #4d9fff;
+  box-shadow: 0 0 4px var(--interactive-accent);
+}
+
+body .deepfield-led.warn {
+  background: #c07820;
+  border-color: #e09840;
+  box-shadow: 0 0 4px #c07820;
+}
+
+/* ── Attribution block — PROOF · LOCATION · YEAR / NAME / descriptor
+   Usage: div.deepfield-attribution ── */
+body .deepfield-attribution {
+  border-left: 2px solid var(--interactive-accent);
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+  background: rgba(var(--interactive-accent-rgb), 0.04);
+}
+
+body .deepfield-attribution-meta {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+body .deepfield-attribution-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--text-normal);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
+
+body .deepfield-attribution-desc {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  letter-spacing: 0.14em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* ── Progress / HUD bar
+   Usage: div.deepfield-bar > div.deepfield-bar-fill ── */
+body .deepfield-bar {
+  margin: 0.5em 0;
+}
+
+body .deepfield-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-monospace-theme);
+  font-size: 0.58em;
+  letter-spacing: 0.15em;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  margin-bottom: 0.3em;
+}
+
+body .deepfield-bar-track {
+  height: 3px;
+  background: rgba(var(--interactive-accent-rgb), 0.1);
+  position: relative;
+}
+
+body .deepfield-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--interactive-accent);
+}
+
+body .deepfield-bar-fill::after {
+  content: '';
+  position: absolute;
+  right: -1px;
+  top: -2px;
+  width: 1px;
+  height: 7px;
+  background: #4d9fff;
+}
+
+/* ── Callout overrides — Caelum style ── */
+body .callout {
+  border-radius: 0;
+  border-left-width: 2px;
+  background: rgba(var(--interactive-accent-rgb), 0.05);
+}
+
+body .callout-title {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.65em;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ── Graph view ── */
+body .graph-view.color-fill { color: rgba(var(--interactive-accent-rgb), 0.6); }
+body .graph-view.color-line { color: rgba(var(--interactive-accent-rgb), 0.08); }
+body .graph-view.color-fill-focused { color: #4d9fff; }
+body .graph-view.color-fill-unresolved { color: rgba(var(--interactive-accent-rgb), 0.15); }
+body .graph-view.color-fill-tag { color: #9b7dff; }
+body .graph-view.color-arrow { color: rgba(var(--interactive-accent-rgb), 0.25); }
+
+/* ================================================================
+   COLOR PALETTE VARIANTS
+   Applied via Style Settings plugin — adds class to body element.
+   Each variant overrides Minimal HSL base + direct Obsidian vars.
+   ================================================================ */
+
+/* ── ELECTRIC — default Electric Blue (explicit class) ── */
+body.deepfield-electric {
+  --interactive-accent: #1d6fff; --interactive-accent-hover: #3380ff;
+  --text-accent: #4d9fff; --text-accent-hover: #80bdff;
+  --link-color: #4d9fff; --link-color-hover: #80bdff;
+  --tag-color: #4d9fff; --tag-background: rgba(var(--interactive-accent-rgb),.12); --tag-border-color: rgba(var(--interactive-accent-rgb),.25);
+  --background-modifier-border: rgba(var(--interactive-accent-rgb),.04);
+  --background-modifier-border-hover: rgba(var(--interactive-accent-rgb),.12);
+  --background-modifier-border-focus: rgba(var(--interactive-accent-rgb),.28);
+  --background-modifier-accent: rgba(var(--interactive-accent-rgb),.15);
+  --interactive-accent-rgb: 29,111,255;
+  --code-normal: #7ec8ff; --checkbox-color: #1d6fff;
+}
+
+/* ── STEEL — muted mid-blue ── */
+body.deepfield-steel {
+  --interactive-accent: #3a6b9a; --interactive-accent-hover: #4a7baa;
+  --text-accent: #6a9bbf; --text-accent-hover: #8ab8d8;
+  --link-color: #6a9bbf; --link-color-hover: #8ab8d8;
+  --tag-color: #6a9bbf; --tag-background: rgba(58,107,154,.14); --tag-border-color: rgba(58,107,154,.28);
+  --background-modifier-border: rgba(58,107,154,.04);
+  --background-modifier-border-hover: rgba(58,107,154,.14);
+  --background-modifier-border-focus: rgba(58,107,154,.30);
+  --background-modifier-accent: rgba(58,107,154,.15);
+  --interactive-accent-rgb: 58,107,154;
+  --code-normal: #8ab8d8; --checkbox-color: #3a6b9a;
+}
+
+/* ── SLATE — blue-grey ── */
+body.deepfield-slate {
+  --interactive-accent: #4a6478; --interactive-accent-hover: #5a7488;
+  --text-accent: #7a9aac; --text-accent-hover: #90aaba;
+  --link-color: #7a9aac; --link-color-hover: #90aaba;
+  --tag-color: #7a9aac; --tag-background: rgba(74,100,120,.14); --tag-border-color: rgba(74,100,120,.28);
+  --background-modifier-border: rgba(74,100,120,.04);
+  --background-modifier-border-hover: rgba(74,100,120,.14);
+  --background-modifier-border-focus: rgba(74,100,120,.30);
+  --background-modifier-accent: rgba(74,100,120,.15);
+  --interactive-accent-rgb: 74,100,120;
+  --code-normal: #90aaba; --checkbox-color: #4a6478;
+}
+
+/* ── MIDNIGHT — deep indigo-blue ── */
+body.deepfield-midnight {
+  --interactive-accent: #2040a0; --interactive-accent-hover: #3050b0;
+  --text-accent: #5070d0; --text-accent-hover: #6888e0;
+  --link-color: #5070d0; --link-color-hover: #6888e0;
+  --tag-color: #5070d0; --tag-background: rgba(32,64,160,.15); --tag-border-color: rgba(32,64,160,.30);
+  --background-modifier-border: rgba(32,64,160,.04);
+  --background-modifier-border-hover: rgba(32,64,160,.15);
+  --background-modifier-border-focus: rgba(32,64,160,.32);
+  --background-modifier-accent: rgba(32,64,160,.18);
+  --interactive-accent-rgb: 32,64,160;
+  --code-normal: #6888e0; --checkbox-color: #2040a0;
+}
+
+/* ── MERCURY — spectral neutral grey ~500nm ── */
+body.deepfield-mercury {
+  --interactive-accent: #6a6a7e; --interactive-accent-hover: #7a7a8e;
+  --text-accent: #a8a8bc; --text-accent-hover: #bcbccc;
+  --link-color: #a8a8bc; --link-color-hover: #bcbccc;
+  --tag-color: #a8a8bc; --tag-background: rgba(106,106,126,.14); --tag-border-color: rgba(106,106,126,.30);
+  --background-modifier-border: rgba(106,106,126,.04);
+  --background-modifier-border-hover: rgba(106,106,126,.14);
+  --background-modifier-border-focus: rgba(106,106,126,.30);
+  --background-modifier-accent: rgba(106,106,126,.15);
+  --interactive-accent-rgb: 106,106,126;
+  --code-normal: #bcbccc; --checkbox-color: #6a6a7e;
+}
+
+/* ── VENUS — sulfuric acid clouds, peak ~550nm, yellow-white ── */
+body.deepfield-venus {
+  --interactive-accent: #a89820; --interactive-accent-hover: #b8a830;
+  --text-accent: #d8c848; --text-accent-hover: #e0d050;
+  --link-color: #d8c848; --link-color-hover: #e0d050;
+  --tag-color: #d8c848; --tag-background: rgba(168,152,32,.14); --tag-border-color: rgba(168,152,32,.30);
+  --background-modifier-border: rgba(168,152,32,.05);
+  --background-modifier-border-hover: rgba(168,152,32,.14);
+  --background-modifier-border-focus: rgba(168,152,32,.30);
+  --background-modifier-accent: rgba(168,152,32,.15);
+  --interactive-accent-rgb: 168,152,32;
+  --code-normal: #d8c848; --checkbox-color: #a89820;
+}
+
+/* ── EARTH — Rayleigh scattering peak ~450nm, ocean blue ── */
+body.deepfield-earth {
+  --interactive-accent: #3a80c0; --interactive-accent-hover: #4a90d0;
+  --text-accent: #6aaad8; --text-accent-hover: #78b8e8;
+  --link-color: #6aaad8; --link-color-hover: #78b8e8;
+  --tag-color: #6aaad8; --tag-background: rgba(58,128,192,.14); --tag-border-color: rgba(58,128,192,.30);
+  --background-modifier-border: rgba(58,128,192,.04);
+  --background-modifier-border-hover: rgba(58,128,192,.14);
+  --background-modifier-border-focus: rgba(58,128,192,.30);
+  --background-modifier-accent: rgba(58,128,192,.15);
+  --interactive-accent-rgb: 58,128,192;
+  --code-normal: #78b8e8; --checkbox-color: #3a80c0;
+}
+
+/* ── MARS — ferric iron Fe₂O₃/hematite, peak ~750nm, rust red ── */
+body.deepfield-mars {
+  --interactive-accent: #b04038; --interactive-accent-hover: #c05048;
+  --text-accent: #d87060; --text-accent-hover: #e07868;
+  --link-color: #d87060; --link-color-hover: #e07868;
+  --tag-color: #d87060; --tag-background: rgba(176,64,56,.14); --tag-border-color: rgba(176,64,56,.30);
+  --background-modifier-border: rgba(176,64,56,.04);
+  --background-modifier-border-hover: rgba(176,64,56,.14);
+  --background-modifier-border-focus: rgba(176,64,56,.30);
+  --background-modifier-accent: rgba(176,64,56,.15);
+  --interactive-accent-rgb: 176,64,56;
+  --code-normal: #e07060; --checkbox-color: #b04038;
+}
+
+/* ── JUPITER — red chromophore absorbs 300-500nm, brown-orange ── */
+body.deepfield-jupiter {
+  --interactive-accent: #b07030; --interactive-accent-hover: #c08040;
+  --text-accent: #d89050; --text-accent-hover: #e0a060;
+  --link-color: #d89050; --link-color-hover: #e0a060;
+  --tag-color: #d89050; --tag-background: rgba(176,112,48,.14); --tag-border-color: rgba(176,112,48,.30);
+  --background-modifier-border: rgba(176,112,48,.04);
+  --background-modifier-border-hover: rgba(176,112,48,.14);
+  --background-modifier-border-focus: rgba(176,112,48,.30);
+  --background-modifier-accent: rgba(176,112,48,.15);
+  --interactive-accent-rgb: 176,112,48;
+  --code-normal: #d89050; --checkbox-color: #b07030;
+}
+
+/* ── SATURN — ammonia ice, peak 550-600nm, pale gold ── */
+body.deepfield-saturn {
+  --interactive-accent: #988028; --interactive-accent-hover: #a89038;
+  --text-accent: #c0b848; --text-accent-hover: #d8c050;
+  --link-color: #c0b848; --link-color-hover: #d8c050;
+  --tag-color: #c0b848; --tag-background: rgba(152,128,40,.14); --tag-border-color: rgba(152,128,40,.30);
+  --background-modifier-border: rgba(152,128,40,.04);
+  --background-modifier-border-hover: rgba(152,128,40,.14);
+  --background-modifier-border-focus: rgba(152,128,40,.30);
+  --background-modifier-accent: rgba(152,128,40,.15);
+  --interactive-accent-rgb: 152,128,40;
+  --code-normal: #c0b848; --checkbox-color: #988028;
+}
+
+/* ── URANUS — methane absorbs 700-900nm, reflects ~480nm cyan-green ── */
+body.deepfield-uranus {
+  --interactive-accent: #38a0b0; --interactive-accent-hover: #48b0c0;
+  --text-accent: #68d0dc; --text-accent-hover: #78dce8;
+  --link-color: #68d0dc; --link-color-hover: #78dce8;
+  --tag-color: #68d0dc; --tag-background: rgba(56,160,176,.14); --tag-border-color: rgba(56,160,176,.30);
+  --background-modifier-border: rgba(56,160,176,.04);
+  --background-modifier-border-hover: rgba(56,160,176,.14);
+  --background-modifier-border-focus: rgba(56,160,176,.30);
+  --background-modifier-accent: rgba(56,160,176,.15);
+  --interactive-accent-rgb: 56,160,176;
+  --code-normal: #68d0dc; --checkbox-color: #38a0b0;
+}
+
+/* ── NEPTUNE — stronger methane, only ~440nm deep blue escapes ── */
+body.deepfield-neptune {
+  --interactive-accent: #4060a8; --interactive-accent-hover: #5070b8;
+  --text-accent: #6880c0; --text-accent-hover: #7890c8;
+  --link-color: #6880c0; --link-color-hover: #7890c8;
+  --tag-color: #6880c0; --tag-background: rgba(64,96,168,.14); --tag-border-color: rgba(64,96,168,.30);
+  --background-modifier-border: rgba(64,96,168,.04);
+  --background-modifier-border-hover: rgba(64,96,168,.14);
+  --background-modifier-border-focus: rgba(64,96,168,.30);
+  --background-modifier-accent: rgba(64,96,168,.15);
+  --interactive-accent-rgb: 64,96,168;
+  --code-normal: #6880c0; --checkbox-color: #4060a8;
+}
+
+/* ── EVENT HORIZON — #02030a #071325 #283956 #8aa4ff #f4f7ff ── */
+body.deepfield-event-horizon {
+  --interactive-accent: #8aa4ff; --interactive-accent-hover: #9ab4ff;
+  --text-accent: #b0c4ff; --text-accent-hover: #c0d0ff;
+  --link-color: #b0c4ff; --link-color-hover: #c0d0ff;
+  --tag-color: #b0c4ff; --tag-background: rgba(138,164,255,.14); --tag-border-color: rgba(138,164,255,.30);
+  --background-modifier-border: rgba(138,164,255,.04);
+  --background-modifier-border-hover: rgba(138,164,255,.14);
+  --background-modifier-border-focus: rgba(138,164,255,.30);
+  --background-modifier-accent: rgba(138,164,255,.15);
+  --interactive-accent-rgb: 138,164,255;
+  --code-normal: #b0c4ff; --checkbox-color: #8aa4ff;
+}
+
+/* ── GALACTIC NOIR — #050309 #15111d #332c3f #b27cff #ffeefe ── */
+body.deepfield-galactic-noir {
+  --interactive-accent: #b27cff; --interactive-accent-hover: #c28cff;
+  --text-accent: #cc9cff; --text-accent-hover: #d8a8ff;
+  --link-color: #cc9cff; --link-color-hover: #d8a8ff;
+  --tag-color: #cc9cff; --tag-background: rgba(178,124,255,.14); --tag-border-color: rgba(178,124,255,.30);
+  --background-modifier-border: rgba(178,124,255,.04);
+  --background-modifier-border-hover: rgba(178,124,255,.14);
+  --background-modifier-border-focus: rgba(178,124,255,.30);
+  --background-modifier-accent: rgba(178,124,255,.15);
+  --interactive-accent-rgb: 178,124,255;
+  --code-normal: #cc9cff; --checkbox-color: #b27cff;
+}
+
+/* ── MIDNIGHT ORBIT — #020614 #08162b #224461 #4fd0ff #e9fbff ── */
+body.deepfield-midnight-orbit {
+  --interactive-accent: #38b8d8; --interactive-accent-hover: #48c8e8;
+  --text-accent: #6ad8f8; --text-accent-hover: #80e0ff;
+  --link-color: #6ad8f8; --link-color-hover: #80e0ff;
+  --tag-color: #6ad8f8; --tag-background: rgba(56,184,216,.14); --tag-border-color: rgba(56,184,216,.30);
+  --background-modifier-border: rgba(56,184,216,.04);
+  --background-modifier-border-hover: rgba(56,184,216,.14);
+  --background-modifier-border-focus: rgba(56,184,216,.30);
+  --background-modifier-accent: rgba(56,184,216,.15);
+  --interactive-accent-rgb: 56,184,216;
+  --code-normal: #6ad8f8; --checkbox-color: #38b8d8;
+}
+
+/* ── ION TRAIL — #02030f #112134 #0869c2 #25f0ff #f1feff ── */
+body.deepfield-ion-trail {
+  --interactive-accent: #18b0c8; --interactive-accent-hover: #28c0d8;
+  --text-accent: #38d8f0; --text-accent-hover: #48e8ff;
+  --link-color: #38d8f0; --link-color-hover: #48e8ff;
+  --tag-color: #38d8f0; --tag-background: rgba(24,176,200,.14); --tag-border-color: rgba(24,176,200,.30);
+  --background-modifier-border: rgba(24,176,200,.04);
+  --background-modifier-border-hover: rgba(24,176,200,.14);
+  --background-modifier-border-focus: rgba(24,176,200,.30);
+  --background-modifier-accent: rgba(24,176,200,.15);
+  --interactive-accent-rgb: 24,176,200;
+  --code-normal: #38d8f0; --checkbox-color: #18b0c8;
+}
+
+/* ── AURORA NEBULA — #050813 #151b3b #5a4ff2 #ff7ad9 #ffe9ff ── */
+body.deepfield-aurora-nebula {
+  --interactive-accent: #a848c0; --interactive-accent-hover: #b858d0;
+  --text-accent: #d878e8; --text-accent-hover: #e888f0;
+  --link-color: #d878e8; --link-color-hover: #e888f0;
+  --tag-color: #d878e8; --tag-background: rgba(168,72,192,.14); --tag-border-color: rgba(168,72,192,.30);
+  --background-modifier-border: rgba(168,72,192,.04);
+  --background-modifier-border-hover: rgba(168,72,192,.14);
+  --background-modifier-border-focus: rgba(168,72,192,.30);
+  --background-modifier-accent: rgba(168,72,192,.15);
+  --interactive-accent-rgb: 168,72,192;
+  --code-normal: #d878e8; --checkbox-color: #a848c0;
+}
+
+/* ── MAGNETIC FIELD — #01030c #121e2c #284f6d #7ce8b6 #f5fff8 ── */
+body.deepfield-magnetic-field {
+  --interactive-accent: #40a878; --interactive-accent-hover: #50b888;
+  --text-accent: #68d8a0; --text-accent-hover: #78e0a8;
+  --link-color: #68d8a0; --link-color-hover: #78e0a8;
+  --tag-color: #68d8a0; --tag-background: rgba(64,168,120,.14); --tag-border-color: rgba(64,168,120,.30);
+  --background-modifier-border: rgba(64,168,120,.04);
+  --background-modifier-border-hover: rgba(64,168,120,.14);
+  --background-modifier-border-focus: rgba(64,168,120,.30);
+  --background-modifier-accent: rgba(64,168,120,.15);
+  --interactive-accent-rgb: 64,168,120;
+  --code-normal: #68d8a0; --checkbox-color: #40a878;
+}
+
+/* ── RETRO GALAXY — #050311 #151734 #35356c #ff4ec0 #ffefb0 ── */
+body.deepfield-retro-galaxy {
+  --interactive-accent: #b030a0; --interactive-accent-hover: #c040b0;
+  --text-accent: #d858c0; --text-accent-hover: #e868d0;
+  --link-color: #d858c0; --link-color-hover: #e868d0;
+  --tag-color: #d858c0; --tag-background: rgba(176,48,160,.14); --tag-border-color: rgba(176,48,160,.30);
+  --background-modifier-border: rgba(176,48,160,.04);
+  --background-modifier-border-hover: rgba(176,48,160,.14);
+  --background-modifier-border-focus: rgba(176,48,160,.30);
+  --background-modifier-accent: rgba(176,48,160,.15);
+  --interactive-accent-rgb: 176,48,160;
+  --code-normal: #d858c0; --checkbox-color: #b030a0;
+}
+
+/* ── VINTAGE COSMOS — #07060f #243044 #4a6a7a #ffb27c #ffe7c7 ── */
+body.deepfield-vintage-cosmos {
+  --interactive-accent: #b07038; --interactive-accent-hover: #c08048;
+  --text-accent: #d09050; --text-accent-hover: #d8a060;
+  --link-color: #d09050; --link-color-hover: #d8a060;
+  --tag-color: #d09050; --tag-background: rgba(176,112,56,.14); --tag-border-color: rgba(176,112,56,.30);
+  --background-modifier-border: rgba(176,112,56,.04);
+  --background-modifier-border-hover: rgba(176,112,56,.14);
+  --background-modifier-border-focus: rgba(176,112,56,.30);
+  --background-modifier-accent: rgba(176,112,56,.15);
+  --interactive-accent-rgb: 176,112,56;
+  --code-normal: #d09050; --checkbox-color: #b07038;
+}

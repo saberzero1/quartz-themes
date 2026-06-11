@@ -1,7 +1,7 @@
 # Slytherin
 
 - Theme: Slytherin
-- Author: No author provided
+- Author: <a href="https://github.com/MatheusZarkov" target="_blank" rel="noopener noreferrer">MatheusZarkov</a>
 
 ## Preview
 

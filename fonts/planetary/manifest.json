@@ -1,5 +1,5 @@
 {
-  "extractedAt": "2026-06-02T05:52:53.893Z",
+  "extractedAt": "2026-06-11T12:14:10.161Z",
   "sourceTheme": "Planetary",
   "fonts": [
     {
@@ -37,6 +37,26 @@
       "style": "italic",
       "weight": "400",
       "file": "ibm-plex-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "normal",
+      "weight": "100 700",
+      "file": "ibm-plex-serif.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Serif",
+      "style": "italic",
+      "weight": "100 700",
+      "file": "ibm-plex-serif-1.woff2",
       "format": "woff2",
       "unicodeRange": null,
       "sourceType": "base64",

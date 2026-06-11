@@ -71,6 +71,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -872,6 +873,8 @@ body.theme-dark {
   --slider-thumb-y: -5px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary-alt) !important;
   --status-bar-border-color: transparent !important;
@@ -1066,6 +1069,8 @@ body.theme-dark {
   --embed-border-right: none !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
+  --bold-italic-color: var(--color-gray-10) !important;
+  --strikethrough-color: var(--color-gray-60) !important;
   --color-white: hsl(220, 23%, 95%) !important;
   --font-mono: "DM Mono", "Fira Code", Courier, monospace !important;
   --comment-color: var(--color-gray-15) !important;
@@ -1074,10 +1079,8 @@ body.theme-dark {
   --color-slate-300: hsl(220, 23%, 90%) !important;
   --color-slate-700: hsl(223, 18%, 68%) !important;
   --color-slate-900: hsl(225, 14%, 40%) !important;
-  --bold-italic-color: var(--color-gray-10) !important;
   --window-border: 1px solid var(--window-border-color) !important;
   --window-border-color: var(--color-gray-70) !important;
-  --strikethrough-color: var(--color-gray-60) !important;
   --color-green-300: hsl(151, 100%, 81%) !important;
   --color-green-500: hsl(124, 54%, 75%) !important;
   --color-green-700: hsl(151, 54%, 64%) !important;
@@ -3291,7 +3294,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

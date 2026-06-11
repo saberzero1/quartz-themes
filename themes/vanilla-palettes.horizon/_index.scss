@@ -85,9 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--thunderbird) !important;
   --code-builtin: var(--elm) !important;
   --code-definition: var(--thunderbird) !important;
-  --code-variable: var(--thunderbird) !important;
   --code-boolean: var(--crimson) !important;
   --code-parentheses: var(--black) !important;
 
@@ -176,9 +176,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--cranberry) !important;
   --code-builtin: var(--turquoise) !important;
   --code-definition: var(--cranberry) !important;
-  --code-variable: var(--cranberry) !important;
   --code-boolean: var(--apricot) !important;
   --code-parentheses: var(--gray) !important;
 
@@ -2944,7 +2944,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7875,7 +7875,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

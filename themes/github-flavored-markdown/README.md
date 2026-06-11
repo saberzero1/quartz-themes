@@ -1,7 +1,8 @@
 # GitHub Flavored Markdown
 
 - Theme: GitHub Flavored Markdown
-- Author: <a href="https://github.com/tofrankie" target="_blank" rel="noopener noreferrer">frankie</a>
+- Author: <a href="https://github.com/tofrankie" target="_blank" rel="noopener noreferrer">Frankie</a>
+- Support the author: <a href="https://paypal.me/tofrankie" target="_blank" rel="noopener noreferrer">PayPal</a>
 
 ## Preview
 

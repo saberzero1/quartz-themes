@@ -1,0 +1,2377 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500;1,6..72,600&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+/* ============================================================================
+   ANTHROPIC TOUCH — an Obsidian theme
+   Warm cream paper · coral accent · serif display headings · multi-variant
+   cards / infobox / tags / headings. Light-first, warm dark variant.
+   Token namespace: --at-*  (sibling theme MyWiki Glass uses --mwg-*)
+   ========================================================================== */
+
+/* ============================================================================
+   [@settings]  Style Settings  (https://github.com/mgmeyers/obsidian-style-settings)
+   ========================================================================== */
+/* @settings
+
+name: Atelier
+id: anthropic-touch
+settings:
+    -
+        id: at-info
+        title: Atelier
+        description: "Warm cream paper + coral accent, inspired by the open-design.ai community page. Colors, fonts, layout and the per-element style variants below drive the whole theme."
+        type: info-text
+        markdown: false
+
+    -
+        id: at-colors-heading
+        title: 🎨 Colors
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: at-accent
+        title: Primary accent
+        description: Coral by default. Drives links, labels, active states.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d8552f'
+        default-dark: '#e8714c'
+    -
+        id: at-accent-2
+        title: Secondary accent
+        description: Deeper terracotta. Used in gradients and hover links.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b8442a'
+        default-dark: '#d2603f'
+    -
+        id: at-gold
+        title: Folder / highlight gold
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+    -
+        id: at-danger
+        title: Danger / close
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c0392b'
+        default-dark: '#e0623f'
+    -
+        id: at-bg-0
+        title: App background (deepest)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ece3d0'
+        default-dark: '#14110c'
+    -
+        id: at-editor
+        title: Editor / note background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f7f1e4'
+        default-dark: '#14110c'
+    -
+        id: at-pane
+        title: Sidebar background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#efe7d6'
+        default-dark: '#1a160f'
+    -
+        id: at-pane-2
+        title: Card / raised panel background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f6f1e6'
+        default-dark: '#211c14'
+    -
+        id: at-dark-surface
+        title: Dark card surface (honor / CTA cards)
+        description: Used by card v4 / v5; intentionally dark in both light and dark mode.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1a1510'
+        default-dark: '#231d14'
+    -
+        id: at-text
+        title: Body text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3a352c'
+        default-dark: '#e7ddc8'
+    -
+        id: at-text-strong
+        title: Headings / strong text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f1b14'
+        default-dark: '#f5efe1'
+    -
+        id: at-muted
+        title: Muted text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#8a7f6d'
+        default-dark: '#a99e87'
+
+    -
+        id: at-type-heading
+        title: 🔤 Fonts & typography
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: at-system-fonts
+        title: Use system fonts
+        description: Skip the bundled Google fonts (faster / offline / mobile).
+        type: class-toggle
+        addCommand: true
+    -
+        id: at-font-body
+        title: Body & interface font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'Inter', system-ui, sans-serif"
+        options:
+            - { label: System default (sans), value: "system-ui, -apple-system, 'Segoe UI', sans-serif" }
+            - { label: Segoe UI, value: "'Segoe UI', system-ui, sans-serif" }
+            - { label: Segoe UI Variable, value: "'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" }
+            - { label: Inter, value: "'Inter', system-ui, sans-serif" }
+            - { label: Roboto, value: "'Roboto', system-ui, sans-serif" }
+            - { label: Open Sans, value: "'Open Sans', system-ui, sans-serif" }
+            - { label: Lato, value: "'Lato', system-ui, sans-serif" }
+            - { label: Montserrat, value: "'Montserrat', system-ui, sans-serif" }
+            - { label: Poppins, value: "'Poppins', system-ui, sans-serif" }
+            - { label: Nunito, value: "'Nunito', system-ui, sans-serif" }
+            - { label: Nunito Sans, value: "'Nunito Sans', system-ui, sans-serif" }
+            - { label: Source Sans, value: "'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif" }
+            - { label: Work Sans, value: "'Work Sans', system-ui, sans-serif" }
+            - { label: Fira Sans, value: "'Fira Sans', system-ui, sans-serif" }
+            - { label: Ubuntu, value: "'Ubuntu', system-ui, sans-serif" }
+            - { label: Noto Sans, value: "'Noto Sans', system-ui, sans-serif" }
+            - { label: Helvetica Neue, value: "'Helvetica Neue', Helvetica, Arial, sans-serif" }
+            - { label: Arial, value: "Arial, Helvetica, sans-serif" }
+            - { label: Calibri, value: "Calibri, system-ui, sans-serif" }
+            - { label: Candara, value: "Candara, system-ui, sans-serif" }
+            - { label: Corbel, value: "Corbel, system-ui, sans-serif" }
+            - { label: Verdana, value: "Verdana, Geneva, sans-serif" }
+            - { label: Tahoma, value: "Tahoma, Geneva, sans-serif" }
+            - { label: Trebuchet MS, value: "'Trebuchet MS', Tahoma, sans-serif" }
+            - { label: Franklin Gothic, value: "'Franklin Gothic', 'Franklin Gothic Medium', sans-serif" }
+            - { label: Century Gothic, value: "'Century Gothic', sans-serif" }
+            - { label: Gill Sans, value: "'Gill Sans', 'Gill Sans MT', sans-serif" }
+            - { label: Optima, value: "Optima, Candara, sans-serif" }
+            - { label: Avenir Next, value: "'Avenir Next', Avenir, sans-serif" }
+            - { label: Georgia (serif), value: "Georgia, 'Times New Roman', serif" }
+            - { label: Times New Roman (serif), value: "'Times New Roman', Times, serif" }
+            - { label: Cambria (serif), value: "Cambria, Georgia, serif" }
+            - { label: Constantia (serif), value: "Constantia, Georgia, serif" }
+            - { label: Garamond (serif), value: "Garamond, 'EB Garamond', Georgia, serif" }
+            - { label: Palatino (serif), value: "'Palatino Linotype', Palatino, 'Book Antiqua', serif" }
+            - { label: Book Antiqua (serif), value: "'Book Antiqua', Palatino, serif" }
+            - { label: Baskerville (serif), value: "Baskerville, Georgia, serif" }
+            - { label: Newsreader (serif), value: "'Newsreader', Georgia, serif" }
+            - { label: Source Serif (serif), value: "'Source Serif 4', Georgia, serif" }
+            - { label: Merriweather (serif), value: "'Merriweather', Georgia, serif" }
+            - { label: Lora (serif), value: "'Lora', Georgia, serif" }
+            - { label: Playfair Display (serif), value: "'Playfair Display', Georgia, serif" }
+    -
+        id: at-font-heading
+        title: Heading / display font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'Newsreader', Georgia, serif"
+        options:
+            - { label: System default (sans), value: "system-ui, -apple-system, 'Segoe UI', sans-serif" }
+            - { label: Segoe UI, value: "'Segoe UI', system-ui, sans-serif" }
+            - { label: Segoe UI Variable, value: "'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif" }
+            - { label: Inter, value: "'Inter', system-ui, sans-serif" }
+            - { label: Roboto, value: "'Roboto', system-ui, sans-serif" }
+            - { label: Open Sans, value: "'Open Sans', system-ui, sans-serif" }
+            - { label: Lato, value: "'Lato', system-ui, sans-serif" }
+            - { label: Montserrat, value: "'Montserrat', system-ui, sans-serif" }
+            - { label: Poppins, value: "'Poppins', system-ui, sans-serif" }
+            - { label: Nunito, value: "'Nunito', system-ui, sans-serif" }
+            - { label: Nunito Sans, value: "'Nunito Sans', system-ui, sans-serif" }
+            - { label: Source Sans, value: "'Source Sans 3', 'Source Sans Pro', system-ui, sans-serif" }
+            - { label: Work Sans, value: "'Work Sans', system-ui, sans-serif" }
+            - { label: Fira Sans, value: "'Fira Sans', system-ui, sans-serif" }
+            - { label: Ubuntu, value: "'Ubuntu', system-ui, sans-serif" }
+            - { label: Noto Sans, value: "'Noto Sans', system-ui, sans-serif" }
+            - { label: Helvetica Neue, value: "'Helvetica Neue', Helvetica, Arial, sans-serif" }
+            - { label: Arial, value: "Arial, Helvetica, sans-serif" }
+            - { label: Calibri, value: "Calibri, system-ui, sans-serif" }
+            - { label: Candara, value: "Candara, system-ui, sans-serif" }
+            - { label: Corbel, value: "Corbel, system-ui, sans-serif" }
+            - { label: Verdana, value: "Verdana, Geneva, sans-serif" }
+            - { label: Tahoma, value: "Tahoma, Geneva, sans-serif" }
+            - { label: Trebuchet MS, value: "'Trebuchet MS', Tahoma, sans-serif" }
+            - { label: Franklin Gothic, value: "'Franklin Gothic', 'Franklin Gothic Medium', sans-serif" }
+            - { label: Century Gothic, value: "'Century Gothic', sans-serif" }
+            - { label: Gill Sans, value: "'Gill Sans', 'Gill Sans MT', sans-serif" }
+            - { label: Optima, value: "Optima, Candara, sans-serif" }
+            - { label: Avenir Next, value: "'Avenir Next', Avenir, sans-serif" }
+            - { label: Georgia (serif), value: "Georgia, 'Times New Roman', serif" }
+            - { label: Times New Roman (serif), value: "'Times New Roman', Times, serif" }
+            - { label: Cambria (serif), value: "Cambria, Georgia, serif" }
+            - { label: Constantia (serif), value: "Constantia, Georgia, serif" }
+            - { label: Garamond (serif), value: "Garamond, 'EB Garamond', Georgia, serif" }
+            - { label: Palatino (serif), value: "'Palatino Linotype', Palatino, 'Book Antiqua', serif" }
+            - { label: Book Antiqua (serif), value: "'Book Antiqua', Palatino, serif" }
+            - { label: Baskerville (serif), value: "Baskerville, Georgia, serif" }
+            - { label: Newsreader (serif), value: "'Newsreader', Georgia, serif" }
+            - { label: Source Serif (serif), value: "'Source Serif 4', Georgia, serif" }
+            - { label: Merriweather (serif), value: "'Merriweather', Georgia, serif" }
+            - { label: Lora (serif), value: "'Lora', Georgia, serif" }
+            - { label: Playfair Display (serif), value: "'Playfair Display', Georgia, serif" }
+    -
+        id: at-font-mono
+        title: Monospace / label font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: "'JetBrains Mono', ui-monospace, monospace"
+        options:
+            - { label: JetBrains Mono, value: "'JetBrains Mono', ui-monospace, monospace" }
+            - { label: Cascadia Code, value: "'Cascadia Code', ui-monospace, monospace" }
+            - { label: Cascadia Mono, value: "'Cascadia Mono', ui-monospace, monospace" }
+            - { label: Consolas, value: "Consolas, ui-monospace, monospace" }
+            - { label: SF Mono / system, value: "ui-monospace, SFMono-Regular, Menlo, monospace" }
+            - { label: Menlo, value: "Menlo, Monaco, monospace" }
+            - { label: Monaco, value: "Monaco, Menlo, monospace" }
+            - { label: Fira Code, value: "'Fira Code', ui-monospace, monospace" }
+            - { label: Fira Mono, value: "'Fira Mono', ui-monospace, monospace" }
+            - { label: Source Code Pro, value: "'Source Code Pro', ui-monospace, monospace" }
+            - { label: IBM Plex Mono, value: "'IBM Plex Mono', ui-monospace, monospace" }
+            - { label: Roboto Mono, value: "'Roboto Mono', ui-monospace, monospace" }
+            - { label: Courier New, value: "'Courier New', Courier, monospace" }
+            - { label: Lucida Console, value: "'Lucida Console', Monaco, monospace" }
+
+    -
+        id: file-line-width
+        title: Note width (readable line length)
+        type: variable-number-slider
+        default: 760
+        min: 500
+        max: 1600
+        step: 20
+        format: px
+    -
+        id: font-text-size
+        title: Body font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 22
+        step: 1
+        format: px
+    -
+        id: line-height-normal
+        title: Line height
+        type: variable-number-slider
+        default: 1.6
+        min: 1.2
+        max: 2.2
+        step: 0.05
+    -
+        id: bold-weight
+        title: Bold weight
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 900
+        step: 100
+    -
+        id: nav-item-size
+        title: Sidebar font size
+        type: variable-number-slider
+        default: 14
+        min: 11
+        max: 18
+        step: 1
+        format: px
+    -
+        id: inline-title-size
+        title: Inline title size
+        type: variable-number-slider
+        default: 42
+        min: 24
+        max: 64
+        step: 1
+        format: px
+    -
+        id: h1-size
+        title: H1 size
+        type: variable-number-slider
+        default: 2
+        min: 1.2
+        max: 3
+        step: 0.05
+        format: em
+    -
+        id: h2-size
+        title: H2 size
+        type: variable-number-slider
+        default: 1.55
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+    -
+        id: h3-size
+        title: H3 size
+        type: variable-number-slider
+        default: 1.3
+        min: 1
+        max: 2
+        step: 0.05
+        format: em
+
+    -
+        id: at-variants-heading
+        title: 🧩 Element style variants
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: at-card-default
+        title: Default card style
+        description: "Style for a bare > [!card]. Override any card inline, e.g. > [!card|profile] or > [!card|honor]. Combine surfaces (dark / accent) and spans (span2 / spanfull). Wrap cards in > [!grid] to flow them into columns."
+        type: class-select
+        allowEmpty: false
+        default: at-card-plain
+        options:
+            -
+                label: Plain card
+                value: at-card-plain
+            -
+                label: Skill / numbered steps
+                value: at-card-skill
+            -
+                label: Section (roman column)
+                value: at-card-section
+            -
+                label: Step
+                value: at-card-step
+            -
+                label: Profile
+                value: at-card-profile
+            -
+                label: Honor (dark)
+                value: at-card-honor
+            -
+                label: Channels (dark)
+                value: at-card-channels
+            -
+                label: Hero / CTA
+                value: at-card-hero
+    -
+        id: at-card-min
+        title: Card grid — min card width
+        description: "Cards inside > [!grid] flow into as many columns as fit at this minimum width."
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 480
+        step: 10
+        format: px
+    -
+        id: at-infobox-default
+        title: Default infobox style
+        description: "Style for a bare > [!infobox]. Override inline with |v1 … |v3. Add |left to float left."
+        type: class-select
+        allowEmpty: false
+        default: at-ib-v1
+        options:
+            -
+                label: v1 — Floated cream card
+                value: at-ib-v1
+            -
+                label: v2 — Dark honor card
+                value: at-ib-v2
+            -
+                label: v3 — Flat bordered
+                value: at-ib-v3
+    -
+        id: at-tag-style
+        title: Tag style
+        description: How #tags render. Category tags still auto-tint by color family.
+        type: class-select
+        allowEmpty: false
+        default: at-tag-pill
+        options:
+            -
+                label: Pill
+                value: at-tag-pill
+            -
+                label: Outline
+                value: at-tag-outline
+            -
+                label: Mono caps
+                value: at-tag-mono
+            -
+                label: Underline
+                value: at-tag-underline
+    -
+        id: at-heading-style
+        title: Heading style
+        description: Decoration for h1–h3. Italic words inside headings always show the coral emphasis.
+        type: class-select
+        allowEmpty: false
+        default: at-head-serif
+        options:
+            -
+                label: Serif display (thin coral rule)
+                value: at-head-serif
+            -
+                label: Mono caps labels
+                value: at-head-mono
+            -
+                label: Underlined
+                value: at-head-underline
+            -
+                label: Plain
+                value: at-head-plain
+
+    -
+        id: at-editorial-heading
+        title: ✒️ Editorial & polish
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: at-heading-letter-spacing
+        title: Heading letter spacing
+        type: variable-number-slider
+        default: -0.01
+        min: -0.05
+        max: 0.1
+        step: 0.005
+        format: em
+    -
+        id: at-para-spacing
+        title: Paragraph spacing
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 28
+        step: 1
+        format: px
+    -
+        id: at-radius
+        title: Corner radius
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 24
+        step: 1
+        format: px
+    -
+        id: at-heading-align
+        title: Default heading alignment
+        description: Per-heading "#center / #right / #left" tags still override this in reading view.
+        type: class-select
+        allowEmpty: false
+        default: at-halign-left
+        options:
+            -
+                label: Left
+                value: at-halign-left
+            -
+                label: Center
+                value: at-halign-center
+            -
+                label: Right
+                value: at-halign-right
+
+    -
+        id: at-features-heading
+        title: ⚙️ Features & motion
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        id: at-no-anim
+        title: Disable animations
+        description: Turn off entrance + hover motion (also respects OS reduced-motion).
+        type: class-toggle
+        addCommand: true
+    -
+        id: at-scroll-reveal
+        title: Scroll reveal
+        description: Headings, callouts and quotes fade-rise as they scroll into view.
+        type: class-toggle
+        default: true
+        addCommand: true
+    -
+        id: at-active-line
+        title: Highlight active line (editor)
+        type: class-toggle
+        addCommand: true
+    -
+        id: at-infobox-width
+        title: Infobox width
+        type: variable-number-slider
+        default: 300
+        min: 200
+        max: 460
+        step: 10
+        format: px
+    -
+        id: callout-min-width
+        title: Multi-column — min sub-callout width
+        type: variable-number-slider
+        default: 200
+        min: 100
+        max: 500
+        step: 20
+        format: px
+    -
+        id: at-grad-color
+        title: Gradient-text color (.at-gradient)
+        description: The .at-gradient class is a single accent colour here (it's a gradient in MyWiki Glass). Use <span class="at-gradient">…</span>.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d8552f'
+        default-dark: '#e8714c'
+*/
+
+
+/* ============================================================================
+   [Tokens]  --at-* primitives (light PRIMARY + dark variant) + Obsidian bridge
+   ========================================================================== */
+
+body.theme-light {
+    --at-accent: #d8552f;
+    --at-accent-rgb: 216, 85, 47;
+    --at-accent-2: #b8442a;
+    --at-gold: #b07d20;
+    --at-danger: #c0392b;
+
+    --at-bg-0: #ece3d0;
+    --at-bg-grad-a: #f1ebda;
+    --at-bg-grad-b: #e6dcc6;
+    --at-ribbon: #e6dcc6;
+    --at-pane: #efe7d6;
+    --at-pane-2: #f6f1e6;
+    --at-editor: #f7f1e4;
+    --at-raised: #fbf7ee;
+
+    --at-text: #3a352c;
+    --at-text-strong: #1f1b14;
+    --at-muted: #8a7f6d;
+    --at-faint: #b3a892;
+
+    --at-dark-surface: #241d15;
+    --at-on-dark: #ece4d4;
+    --at-on-dark-muted: #d3c7af;
+    --at-accent-surface: #ea6a51;       /* LIGHT: coral hero (reference) */
+    --at-on-accent: #1a1208;            /* dark ink text on the coral hero */
+    --at-on-accent-em: #f7eed9;         /* italic emphasis (cream on coral) */
+    --at-on-accent-kick: #1a1208;       /* kicker / labels */
+    --at-accent-btn-bg: #1a1208;        /* filled CTA: dark pill on the coral hero */
+    --at-accent-btn-fg: #f5efe1;
+    --at-accent-nested: #18130d;        /* dark nested cards on the coral */
+    --at-accent-nested-h: #f5efe1;      /* nested card heading */
+    --at-accent-nested-p: #d3c7af;      /* nested card body */
+
+    --at-code-fg: #b8442a;
+    --at-th-bg: linear-gradient(180deg, #efe7d6, #e6dcc6);
+    --at-shadow-pop: 0 1px 2px rgba(60, 45, 25, 0.08), 0 18px 44px rgba(60, 45, 25, 0.14);
+    --at-scrim: rgba(31, 27, 20, 0.5);
+    --at-graph: #6b4a32;
+    --at-graph-line: rgba(31, 27, 20, 0.18);
+
+    --at-h1: #1f1b14;
+    --at-h2: #1f1b14;
+    --at-h3: #2a241a;
+    --at-h4: #3a352c;
+    --at-h5: #4a4438;
+    --at-h6: #8a7f6d;
+    --at-bold-color: #1f1b14;
+    --at-italic-color: var(--at-accent);        /* italic = coral signature */
+    --at-bold-italic-color: var(--at-accent);
+    --at-strikethrough-color: #8a7f6d;
+
+    color-scheme: light;
+}
+
+body.theme-dark {
+    --at-accent: #e8714c;
+    --at-accent-rgb: 232, 113, 76;
+    --at-accent-2: #d2603f;
+    --at-gold: #d9a441;
+    --at-danger: #e0623f;
+
+    /* layered WARM dark (espresso): page darkest → note → cards lighter, so
+       surfaces separate and the warmth reads instead of looking flat black. */
+    --at-bg-0: #18130d;
+    --at-bg-grad-a: #221b13;
+    --at-bg-grad-b: #130f0a;
+    --at-ribbon: #120f0a;
+    --at-pane: #221b13;
+    --at-pane-2: #2a2218;        /* cards — clearly lifted off the page */
+    --at-editor: #1c1710;        /* note bg sits between page and cards */
+    --at-raised: #342a1c;
+
+    --at-text: #e7ddc8;
+    --at-text-strong: #f5efe1;
+    --at-muted: #a99e87;
+    --at-faint: #6f6555;
+
+    --at-dark-surface: #231d14;
+    --at-on-dark: #f5efe1;
+    --at-on-dark-muted: #d3c7af;
+    /* DARK: the "accent" hero becomes the BLACK version of the section — a warm-dark
+       panel with coral accents (not a coral block). Nested cards lift above it. */
+    --at-accent-surface: #1f1810;       /* dark panel, slightly lifted off the page */
+    --at-on-accent: #f5efe1;            /* cream text on the dark hero */
+    --at-on-accent-em: var(--at-accent); /* italic emphasis = coral on the dark hero */
+    --at-on-accent-kick: var(--at-accent); /* kicker / labels = coral */
+    --at-accent-btn-bg: var(--at-accent); /* filled CTA: CORAL pill on the dark hero */
+    --at-accent-btn-fg: #ffffff;
+    --at-accent-nested: #2c2418;        /* nested cards lift above the dark hero */
+    --at-accent-nested-h: #f5efe1;
+    --at-accent-nested-p: #d3c7af;
+
+    --at-code-fg: #f0a07f;
+    --at-th-bg: linear-gradient(180deg, #2a2317, #211c14);
+    --at-shadow-pop: 0 1px 2px rgba(0, 0, 0, 0.5), 0 22px 56px rgba(0, 0, 0, 0.66);
+    --at-scrim: rgba(10, 8, 5, 0.66);
+    --at-graph: #d8c8aa;
+    --at-graph-line: rgba(231, 221, 200, 0.16);
+
+    --at-h1: #f5efe1;
+    --at-h2: #f5efe1;
+    --at-h3: #e7ddc8;
+    --at-h4: #d4c9b0;
+    --at-h5: #c2b69b;
+    --at-h6: #a99e87;
+    --at-bold-color: #f5efe1;
+    --at-italic-color: var(--at-accent);        /* italic = coral signature */
+    --at-bold-italic-color: var(--at-accent);
+    --at-strikethrough-color: #a99e87;
+
+    color-scheme: dark;
+}
+
+/* Derived tokens + Obsidian bridge — identical formulas across both modes */
+body {
+    --at-accent-soft: color-mix(in srgb, var(--at-accent) 14%, transparent);
+    --at-accent-line: color-mix(in srgb, var(--at-accent) 55%, transparent);
+    --at-code-bg: color-mix(in srgb, var(--at-accent) 12%, transparent);
+    --at-chip-bg: color-mix(in srgb, var(--at-accent) 14%, transparent);
+    --at-border: color-mix(in srgb, var(--at-text-strong) 10%, transparent);
+    --at-border-2: color-mix(in srgb, var(--at-text-strong) 16%, transparent);
+    --at-border-strong: color-mix(in srgb, var(--at-text-strong) 26%, transparent);
+    --at-on-dark-border: rgba(245, 239, 225, 0.12);
+
+    /* category-tag tint hues — text auto-adapts per mode */
+    --at-tag-blue: #5b87c5;
+    --at-tag-green: #5a9e6a;
+    --at-tag-amber: #c08a2e;
+    --at-tag-rose: #c75c6a;
+
+    /* per-callout accent fallbacks */
+    --at-callout-note: var(--at-accent);
+    --at-callout-tip: #5a9e6a;
+    --at-callout-warning: var(--at-gold);
+    --at-callout-question: var(--at-gold);
+    --at-callout-danger: var(--at-danger);
+    --at-callout-example: #9a6b8e;
+    --at-callout-quote: var(--at-accent-2);
+
+    /* fonts */
+    --at-font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    --at-font-heading: 'Newsreader', Georgia, 'Times New Roman', serif;
+    --at-font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+    /* heading-color aliases used by the editor section */
+    --h1-color: var(--at-h1);
+    --h2-color: var(--at-h2);
+    --h3-color: var(--at-h3);
+    --h4-color: var(--at-h4);
+    --h5-color: var(--at-h5);
+    --h6-color: var(--at-h6);
+    --bold-color: var(--at-bold-color);
+    --italic-color: var(--at-italic-color);
+    --bold-italic-color: var(--at-bold-italic-color);
+    --strikethrough-color: var(--at-strikethrough-color);
+
+    /* shape */
+    --at-radius: 12px;
+    --at-scrollbar: 6px;
+    --radius-s: calc(var(--at-radius) - 4px);
+    --radius-m: var(--at-radius);
+    --radius-l: calc(var(--at-radius) + 4px);
+
+    /* editorial knobs */
+    --at-para-spacing: 12px;
+    --at-heading-letter-spacing: -0.01em;
+
+    /* motion */
+    --at-ease: cubic-bezier(0.32, 0.72, 0, 1);
+    --at-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --at-dur-fast: 150ms;
+    --at-dur: 240ms;
+    --at-dur-slow: 360ms;
+
+    /* ---- Obsidian core variable bridge ---- */
+    --background-primary: var(--at-editor);
+    --background-primary-alt: var(--at-pane-2);
+    --background-secondary: var(--at-pane);
+    --background-secondary-alt: var(--at-pane-2);
+    --background-modifier-border: var(--at-border);
+    --background-modifier-border-hover: var(--at-border-2);
+    --background-modifier-border-focus: var(--at-border-strong);
+    --background-modifier-hover: var(--at-accent-soft);
+    --background-modifier-active-hover: var(--at-accent-soft);
+    --background-modifier-form-field: var(--at-pane-2);
+    --background-modifier-flair: var(--at-accent);
+
+    --text-normal: var(--at-text);
+    --text-muted: var(--at-muted);
+    --text-faint: var(--at-faint);
+    --text-on-accent: #fbf7ee;
+    --text-accent: var(--at-accent);
+    --text-accent-hover: var(--at-accent-2);
+    --text-selection: var(--at-accent-soft);
+    --text-highlight-bg: color-mix(in srgb, var(--at-gold) 32%, transparent);
+
+    --interactive-normal: var(--at-pane-2);
+    --interactive-hover: var(--at-raised);
+    --interactive-accent: var(--at-accent);
+    --interactive-accent-hover: color-mix(in srgb, var(--at-accent) 82%, white);
+
+    --code-background: var(--at-code-bg);
+    --code-normal: var(--at-code-fg);
+
+    --titlebar-background: var(--at-ribbon);
+    --titlebar-background-focused: var(--at-ribbon);
+    --titlebar-text-color: var(--at-muted);
+    --titlebar-border-width: 0;
+
+    --tab-background-active: var(--at-editor);
+    --tab-outline-color: var(--at-border);
+    --tab-text-color: var(--at-muted);
+    --tab-text-color-active: var(--at-text-strong);
+    --tab-text-color-focused-active-current: var(--at-text-strong);
+    --ribbon-background: var(--at-ribbon);
+    --nav-item-color: var(--at-text);
+    --nav-item-color-hover: var(--at-text-strong);
+    --nav-item-color-active: var(--at-text-strong);
+    --nav-item-background-hover: var(--at-accent-soft);
+    --nav-item-background-active: var(--at-accent-soft);
+    --nav-indentation-guide-color: var(--at-border-2);
+
+    --status-bar-background: var(--at-pane);
+    --status-bar-text-color: var(--at-muted);
+    --status-bar-border-color: var(--at-border);
+
+    --divider-color: var(--at-border);
+    --scrollbar-thumb-bg: var(--at-border-strong);
+    --scrollbar-active-thumb-bg: var(--at-muted);
+    --scrollbar-bg: transparent;
+
+    --table-header-background: var(--at-th-bg);
+    --table-border-color: var(--at-border-2);
+    --hr-color: var(--at-border-2);
+    --blockquote-border-color: var(--at-accent);
+    --blockquote-background-color: var(--at-accent-soft);
+
+    --shadow-s: 0 2px 8px -4px rgba(60, 45, 25, 0.3);
+    --shadow-l: var(--at-shadow-pop);
+
+    --link-color: var(--at-accent);
+    --link-color-hover: var(--at-accent-2);
+    --link-unresolved-color: var(--at-danger);
+
+    --font-text-theme: var(--at-font-body);
+    --font-interface-theme: var(--at-font-body);
+    --font-monospace-theme: var(--at-font-mono);
+
+    --file-line-width: 760px;
+    --bold-weight: 700;
+
+    --inline-title-size: 42px;
+    --inline-title-weight: 500;
+    --at-heading-weight: 500;
+    --h1-size: 2em;
+    --h2-size: 1.55em;
+    --h3-size: 1.3em;
+    --h4-size: 1.12em;
+    --h5-size: 1em;
+    --h6-size: 0.9em;
+    --h1-weight: var(--at-heading-weight);
+    --h2-weight: var(--at-heading-weight);
+    --h3-weight: calc(var(--at-heading-weight) + 100);
+    --h4-weight: calc(var(--at-heading-weight) + 100);
+    --h5-weight: calc(var(--at-heading-weight) + 100);
+    --h6-weight: calc(var(--at-heading-weight) + 100);
+}
+
+/* "Use system fonts" toggle */
+body.at-system-fonts {
+    --at-font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --at-font-heading: Georgia, "Times New Roman", serif;
+    --at-font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+
+/* ============================================================================
+   [Base]
+   ========================================================================== */
+body {
+    font-family: var(--at-font-body);
+    -webkit-font-smoothing: antialiased;
+}
+
+.workspace,
+.app-container,
+body { background-color: var(--at-bg-0); }
+
+.workspace {
+    background:
+        radial-gradient(120% 90% at 80% -10%, color-mix(in srgb, var(--at-accent) 7%, transparent), transparent 55%),
+        var(--at-bg-0);
+}
+
+::selection {
+    background: var(--at-accent-soft);
+    color: var(--at-text-strong);
+}
+
+::-webkit-scrollbar { width: var(--at-scrollbar); height: var(--at-scrollbar); }
+::-webkit-scrollbar-thumb {
+    background: var(--at-border-strong);
+    border-radius: 99px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--at-muted); background-clip: content-box; }
+::-webkit-scrollbar-corner { background: transparent; }
+
+
+/* ============================================================================
+   [Chrome]  ribbon, tabs, sidebars, status bar
+   ========================================================================== */
+.workspace-ribbon {
+    background: var(--at-ribbon);
+    border: none;
+}
+.workspace-ribbon::before { border: none; }
+.side-dock-ribbon-action:hover { color: var(--at-accent); }
+
+.workspace-tab-header-container { background: var(--at-bg-0); border-bottom: 1px solid var(--at-border); }
+.workspace-tab-header { color: var(--at-muted); }
+.workspace-tab-header.is-active { color: var(--at-text-strong); }
+.workspace-tab-header.is-active .workspace-tab-header-inner {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg, var(--at-accent), var(--at-accent-2)) 1;
+}
+
+.workspace-leaf-content[data-type="markdown"] { background: var(--at-editor); }
+
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split { background: var(--at-pane); }
+.nav-files-container { background: transparent; }
+
+.tree-item-self.is-clickable:hover { background: var(--at-accent-soft); border-radius: var(--radius-s); }
+.nav-file-title.is-active,
+.tree-item-self.is-active {
+    background: var(--at-accent-soft);
+    border-radius: var(--radius-s);
+    box-shadow: inset 2px 0 0 var(--at-accent);
+}
+.nav-folder-title-content { color: var(--at-gold); }
+
+.status-bar { background: var(--at-pane); border-top: 1px solid var(--at-border); }
+
+/* graph view */
+.graph-view.color-fill { color: var(--at-graph); }
+.graph-view.color-line { color: var(--at-graph-line); }
+.graph-view.color-circle { color: var(--at-accent); }
+
+
+/* ============================================================================
+   [Editor]  headings, text, links, code, tables, tags, metadata
+   ========================================================================== */
+
+/* ----- Inline title + headings (serif display) ----- */
+.inline-title,
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6),
+.HyperMD-header,
+.cm-line.HyperMD-header {
+    font-family: var(--at-font-heading);
+}
+
+.inline-title {
+    font-size: var(--inline-title-size);
+    font-weight: var(--inline-title-weight);
+    color: var(--at-text-strong);
+    letter-spacing: -0.018em;
+    line-height: 1.08;
+    text-wrap: balance;
+    margin-bottom: 14px;
+}
+
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view .HyperMD-header {
+    letter-spacing: var(--at-heading-letter-spacing);
+}
+
+/* color-coded headings (preview + edit) */
+.cm-header-1, .markdown-preview-view h1, .markdown-reading-view h1 { color: var(--h1-color); }
+.cm-header-2, .markdown-preview-view h2, .markdown-reading-view h2 { color: var(--h2-color); }
+.cm-header-3, .markdown-preview-view h3, .markdown-reading-view h3 { color: var(--h3-color); }
+.cm-header-4, .markdown-preview-view h4, .markdown-reading-view h4 { color: var(--h4-color); }
+.cm-header-5, .markdown-preview-view h5, .markdown-reading-view h5 { color: var(--h5-color); }
+.cm-header-6, .markdown-preview-view h6, .markdown-reading-view h6 { color: var(--h6-color); }
+
+/* SIGNATURE: italic words inside headings show the coral emphasis */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6) em,
+.markdown-source-view .HyperMD-header .cm-em {
+    color: var(--at-accent);
+    font-style: italic;
+}
+
+/* ----- Heading style variants (global dropdown: at-head-*) ----- */
+/* serif (default) — thin coral rule under h1/h2 */
+body.at-head-serif :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2),
+body.at-head-serif .HyperMD-header-1,
+body.at-head-serif .HyperMD-header-2 {
+    padding-bottom: 6px;
+    border-bottom: 1px solid color-mix(in srgb, var(--at-accent) 45%, transparent);
+}
+/* underlined — full coral rule under h1–h3 */
+body.at-head-underline :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3) {
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--at-accent);
+}
+/* mono caps labels — small-caps coral mono on all headings */
+body.at-head-mono :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body.at-head-mono .HyperMD-header {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--at-accent);
+    font-weight: 500;
+}
+body.at-head-mono :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6) em { letter-spacing: 0.12em; }
+/* plain — no decoration (rules already absent) */
+
+/* per-heading alignment marker: "## Title #center" */
+body.at-halign-center :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body.at-halign-center .markdown-source-view .HyperMD-header { text-align: center; }
+body.at-halign-right :is(.markdown-preview-view, .markdown-reading-view) :is(h1, h2, h3, h4, h5, h6),
+body.at-halign-right .markdown-source-view .HyperMD-header { text-align: right; }
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#center" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#center" i]) { text-align: center; }
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#right" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#right" i]) { text-align: right; }
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#left" i]),
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6):has(a.tag[href="#left" i]) { text-align: left; }
+:is(h1, h2, h3, h4, h5, h6) a.tag[href="#center" i],
+:is(h1, h2, h3, h4, h5, h6) a.tag[href="#right" i],
+:is(h1, h2, h3, h4, h5, h6) a.tag[href="#left" i] { display: none; }
+
+/* ----- Body text + lists ----- */
+.markdown-rendered p { margin-block: 0 var(--at-para-spacing); }
+.markdown-rendered { line-height: var(--line-height-normal, 1.6); }
+/* LISTS — force them to actually render AS lists (markers + indent). Some vault
+   setups flatten list indent to 0, which hides the native markers; this restores
+   them everywhere, including inside callouts/columns. */
+.markdown-rendered :is(ul, ol) {
+    padding-inline-start: 1.7em;
+    list-style-position: outside;
+    margin: 0.4em 0;
+}
+.markdown-rendered ul { list-style-type: disc; }
+.markdown-rendered ul ul { list-style-type: circle; }
+.markdown-rendered ul ul ul { list-style-type: square; }
+.markdown-rendered ol { list-style-type: decimal; }
+.markdown-rendered :is(ul, ol) > li { display: list-item; margin: 0.3em 0; }
+.markdown-rendered ul > li::marker { color: var(--at-accent); }
+/* ordered lists: coral mono numerals (the editorial numbered-list look) */
+.markdown-rendered ol > li::marker { color: var(--at-accent); font-family: var(--at-font-mono); font-weight: 600; }
+.markdown-source-view.mod-cm6 .cm-formatting-list { color: var(--at-accent); }
+/* task list checkboxes pick up the accent (and keep their item un-bulleted) */
+.markdown-rendered li.task-list-item { list-style-type: none; }
+.markdown-rendered input[type="checkbox"] { accent-color: var(--at-accent); }
+
+/* BODY FONT SIZE — apply --font-text-size ourselves so the Style Settings slider
+   ("Body font size") and the per-note text-sm/md/lg/xl classes always take effect,
+   even if something overrides Obsidian core. Headings use em, so they scale too. */
+.markdown-preview-view,
+.markdown-reading-view .markdown-preview-sizer,
+.markdown-source-view .cm-content { font-size: var(--font-text-size); }
+
+/* ----- Per-note BODY TEXT SIZE via cssclass (frontmatter: cssclasses: [text-lg])
+   Global default lives in Style Settings → "Body font size"; these override it for
+   a single note. text-sm · text-md · text-lg · text-xl. ----------------------- */
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-sm { --font-text-size: 14px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-md { --font-text-size: 16px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-lg { --font-text-size: 18px; }
+:is(.markdown-preview-view, .markdown-source-view, .markdown-reading-view).text-xl { --font-text-size: 20px; }
+
+/* text format colors */
+.markdown-rendered strong, .cm-strong { color: var(--bold-color); font-weight: var(--bold-weight); }
+.markdown-rendered em, .cm-em { color: var(--italic-color); }
+.markdown-rendered del, .cm-strikethrough { color: var(--strikethrough-color); }
+.markdown-rendered mark { background: var(--text-highlight-bg); color: var(--at-text-strong); border-radius: 3px; }
+
+/* ----- Links: editorial underline that draws in on hover -----
+   Two stacked gradient layers: a faint static baseline (so a link reads as a link
+   at rest) + a bright accent line that animates 0→100% width via background-size.
+   `:not(.tag)` keeps category-tag pills untouched. */
+.markdown-rendered a:not(.tag),
+.cm-hmd-internal-link, .cm-link {
+    color: var(--at-accent);
+    text-decoration: none;
+    background-image:
+        linear-gradient(var(--at-accent-2), var(--at-accent-2)),
+        linear-gradient(color-mix(in srgb, var(--at-accent) 32%, transparent), color-mix(in srgb, var(--at-accent) 32%, transparent));
+    background-size: 0% 1.5px, 100% 1px;
+    background-position: 0 100%, 0 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 1.5px;
+    transition: color var(--at-dur-fast), background-size var(--at-dur) var(--at-ease);
+}
+.markdown-rendered a:not(.tag):hover { color: var(--at-accent-2); background-size: 100% 1.5px, 100% 1px; }
+
+/* ----- Focus-visible rings (keyboard accessibility) -----
+   The theme previously had no focus indicator on rendered links/buttons/checkboxes.
+   A coral ring restores keyboard nav without affecting mouse users. */
+:is(.markdown-rendered a, .markdown-rendered input[type="checkbox"],
+    .markdown-rendered button, button.mod-cta, .clickable-icon, a.tag):focus-visible {
+    outline: 2px solid var(--at-accent);
+    outline-offset: 2px;
+    border-radius: var(--radius-s);
+}
+
+/* ----- Inline code ----- */
+.markdown-rendered code {
+    background: var(--at-code-bg);
+    color: var(--at-code-fg);
+    border-radius: 5px;
+    padding: 0.1em 0.4em;
+    font-size: 0.88em;
+}
+.markdown-rendered pre {
+    background: var(--at-dark-surface);
+    border: 1px solid var(--at-on-dark-border);
+    border-radius: var(--radius-m);
+}
+.markdown-rendered pre code { color: var(--at-on-dark); background: none; }
+button.copy-code-button {
+    background: var(--at-accent);
+    color: #fff;
+    border-radius: 6px;
+    font-family: var(--at-font-mono);
+    font-size: 0.7em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* ----- Tables ----- */
+.markdown-rendered table { border-collapse: collapse; border-radius: var(--radius-m); overflow: hidden; }
+.markdown-rendered th {
+    background: var(--at-pane);
+    color: var(--at-text-strong);
+    font-family: var(--at-font-mono);
+    font-size: 0.78em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--at-border-2);
+}
+.markdown-rendered td { border-top: 1px solid var(--at-border); }
+
+/* ----- Tags: base + style variants ----- */
+.tag, a.tag {
+    background: var(--at-chip-bg);
+    color: var(--at-code-fg);
+    border: none;
+    border-radius: 99px;
+    padding: 2px 10px;
+    font-size: 0.82em;
+    font-weight: 500;
+    transition: transform 160ms, background 160ms, color 160ms;
+}
+.tag:hover { transform: translateY(-2px); }
+
+/* outline */
+body.at-tag-outline .tag, body.at-tag-outline a.tag {
+    background: transparent;
+    border: 1px solid color-mix(in srgb, var(--at-accent) 50%, transparent);
+    color: var(--at-accent);
+}
+/* mono caps */
+body.at-tag-mono .tag, body.at-tag-mono a.tag {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    color: var(--at-accent);
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.74em;
+}
+body.at-tag-mono a.tag::before { content: "# "; opacity: 0.5; }
+/* underline */
+body.at-tag-underline .tag, body.at-tag-underline a.tag {
+    background: transparent;
+    border-radius: 0;
+    padding: 0 1px;
+    color: var(--at-accent);
+    border-bottom: 1px solid var(--at-accent);
+}
+
+/* category auto-tint by href (applies to pill/outline) */
+a.tag[href="#Cloud" i], a.tag[href="#CloudEngineering" i], a.tag[href="#AWS" i],
+a.tag[href="#Azure" i], a.tag[href="#GCP" i], a.tag[href="#Architecture" i] {
+    background: color-mix(in srgb, var(--at-tag-blue) 18%, transparent);
+    color: color-mix(in srgb, var(--at-tag-blue) 72%, var(--at-text-strong));
+}
+a.tag[href="#DataEngineering" i], a.tag[href="#ETL" i], a.tag[href="#Pipelines" i],
+a.tag[href="#Spark" i], a.tag[href="#Streaming" i], a.tag[href="#Analytics" i] {
+    background: color-mix(in srgb, var(--at-tag-green) 18%, transparent);
+    color: color-mix(in srgb, var(--at-tag-green) 70%, var(--at-text-strong));
+}
+a.tag[href="#Storage" i], a.tag[href="#Database" i], a.tag[href="#SQL" i],
+a.tag[href="#NoSQL" i], a.tag[href="#Lakehouse" i], a.tag[href="#Modeling" i] {
+    background: color-mix(in srgb, var(--at-tag-amber) 20%, transparent);
+    color: color-mix(in srgb, var(--at-tag-amber) 72%, var(--at-text-strong));
+}
+a.tag[href="#person" i], a.tag[href="#book" i], a.tag[href="#Guide" i],
+a.tag[href="#Theory" i], a.tag[href="#index" i], a.tag[href="#python" i] {
+    background: color-mix(in srgb, var(--at-tag-rose) 18%, transparent);
+    color: color-mix(in srgb, var(--at-tag-rose) 70%, var(--at-text-strong));
+}
+
+/* ----- Properties / metadata block ----- */
+.metadata-container { border: none; border-top: 1px solid var(--at-border); padding-top: 8px; }
+.metadata-property-key { color: var(--at-muted); font-family: var(--at-font-mono); font-size: 0.82em; }
+
+/* ----- REUSABLE TEXT UTILITIES -----------------------------------------------
+   Apply the theme's signature text looks to ANY text in a note via inline HTML:
+       <span class="at-kicker">THE SKILL</span>
+       <span class="at-badge">01 · ALL-TIME CONTRIBUTOR</span>
+       <span class="at-display">From zero to <em>merged</em>.</span>
+       <p class="at-lead">A larger, calmer intro paragraph.</p>
+       <span class="at-stat">37</span> commits
+   They read the same tokens as the cards, so they restyle with the palette/fonts. */
+
+/* at-kicker — mono small-caps coral label with a dot (the "THE SKILL" look) */
+.markdown-rendered .at-kicker {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.74em;
+    font-weight: 500;
+    color: var(--at-accent);
+}
+.markdown-rendered .at-kicker::before { content: "● "; font-size: 0.8em; vertical-align: 0.1em; }
+.markdown-rendered .at-kicker.no-dot::before { content: none; }
+
+/* at-badge — filled coral pill, mono caps (the "01 · ALL-TIME CONTRIBUTOR" look) */
+.markdown-rendered .at-badge {
+    display: inline-block;
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72em;
+    font-weight: 500;
+    background: var(--at-accent);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+/* at-badge.ghost — outline variant */
+.markdown-rendered .at-badge.ghost {
+    background: transparent;
+    color: var(--at-accent);
+    border: 1px solid color-mix(in srgb, var(--at-accent) 50%, transparent);
+}
+
+/* at-display — serif display run; <em> inside shows the coral italic emphasis */
+.markdown-rendered .at-display {
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 1.55em;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    color: var(--at-text-strong);
+}
+.markdown-rendered .at-display em { color: var(--at-accent); font-style: italic; }
+
+/* at-lead — larger, calmer intro paragraph */
+.markdown-rendered .at-lead {
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: var(--at-muted);
+}
+
+/* at-stat — big coral display numeral for inline stats */
+.markdown-rendered .at-stat {
+    font-family: var(--at-font-heading);
+    font-weight: 600;
+    font-size: 1.5em;
+    color: var(--at-accent);
+    line-height: 1;
+}
+
+/* at-mark — soft coral highlight (alternative to ==mark==) */
+.markdown-rendered .at-mark {
+    background: color-mix(in srgb, var(--at-accent) 16%, transparent);
+    color: var(--at-text-strong);
+    border-radius: 4px;
+    padding: 0.05em 0.3em;
+}
+
+/* ----- INLINE FONT-SIZE utilities -------------------------------------------
+   Resize ANY run of text, like the colour/label classes. Wrap with inline HTML:
+       This is <span class="at-xl">much bigger</span> and <span class="at-sm">smaller</span>.
+   Sizes are em-relative, so they also scale with the global Body-font-size slider.
+   Scale: at-xs · at-sm · at-md · at-lg · at-xl · at-2xl · at-3xl · at-4xl       */
+.markdown-rendered .at-xs  { font-size: 0.72em; }
+.markdown-rendered .at-sm  { font-size: 0.85em; }
+.markdown-rendered .at-md  { font-size: 1em; }
+.markdown-rendered .at-lg  { font-size: 1.25em; }
+.markdown-rendered .at-xl  { font-size: 1.5em; }
+.markdown-rendered .at-2xl { font-size: 2em; line-height: 1.15; }
+.markdown-rendered .at-3xl { font-size: 2.75em; line-height: 1.1; }
+.markdown-rendered .at-4xl { font-size: 3.6em; line-height: 1.05; }
+/* exact pt/px control when you need it: <span class="at-fs" style="--fs: 28px">…</span> */
+.markdown-rendered .at-fs { font-size: var(--fs, 1em); }
+
+
+/* ============================================================================
+   [Blockquote]
+   ========================================================================== */
+.markdown-rendered blockquote,
+.markdown-source-view .HyperMD-quote {
+    border: none;
+    border-left: 3px solid var(--at-accent);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+    background: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--at-accent) 16%, var(--at-pane-2)),
+        color-mix(in srgb, var(--at-accent) 5%, var(--at-pane-2))
+    );
+    padding: 12px 18px;
+    font-style: italic;
+    color: var(--at-text-strong);
+}
+/* ----- Quote with author -----
+   Pattern:   > "The quote sits here, in serif italic."
+              > <cite>Author Name</cite>
+   Write the attribution ONCE as a <cite> (no manual "—"); the dash is added here.
+   The cite renders as a right-aligned coral mono small-caps line, clearly set off
+   from the italic quote body above it. */
+.markdown-rendered blockquote cite,
+.markdown-rendered blockquote .cm-cite {
+    display: block;
+    margin-top: 12px;
+    padding-top: 8px;
+    border-top: 1px solid color-mix(in srgb, var(--at-accent) 20%, transparent);
+    font-style: normal;
+    font-family: var(--at-font-mono);
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--at-accent);
+}
+.markdown-rendered blockquote cite::before { content: "— "; opacity: 0.65; }
+
+
+/* ============================================================================
+   [Callouts]  base recolor
+   ========================================================================== */
+.callout {
+    --cc: rgb(var(--callout-color));
+    border-radius: var(--radius-m);
+    border: 1px solid var(--at-border-2);
+    border-left: 3px solid var(--cc);
+    background: color-mix(in srgb, var(--cc) 8%, var(--at-pane-2));
+    transition: transform 200ms var(--at-ease), box-shadow 200ms, border-color 200ms;
+}
+.callout:hover { box-shadow: var(--at-shadow-pop); border-color: var(--at-border-strong); }
+.callout-icon .svg-icon { color: var(--cc); }
+
+.callout[data-callout="note"],
+.callout[data-callout="abstract"],
+.callout[data-callout="info"]      { --cc: var(--at-callout-note); }
+.callout[data-callout="tip"],
+.callout[data-callout="success"],
+.callout[data-callout="check"]     { --cc: var(--at-callout-tip); }
+.callout[data-callout="warning"],
+.callout[data-callout="caution"]   { --cc: var(--at-callout-warning); }
+.callout[data-callout="question"],
+.callout[data-callout="help"]      { --cc: var(--at-callout-question); }
+.callout[data-callout="failure"],
+.callout[data-callout="danger"],
+.callout[data-callout="error"],
+.callout[data-callout="bug"]       { --cc: var(--at-callout-danger); }
+.callout[data-callout="example"]   { --cc: var(--at-callout-example); }
+.callout[data-callout="quote"],
+.callout[data-callout="cite"]      { --cc: var(--at-callout-quote); }
+
+/* standard-callout title: mono small-caps label in the callout's own accent
+   (scoped away from the card/grid system, which styles its own titles) */
+.callout:not([data-callout="card"]):not([data-callout="grid"]):not([data-callout="infobox"]) > .callout-title {
+    padding: 4px 2px;
+    gap: 8px;
+}
+.callout:not([data-callout="card"]):not([data-callout="grid"]):not([data-callout="infobox"]) > .callout-title .callout-title-inner {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--cc);
+}
+.callout:not([data-callout="card"]):not([data-callout="grid"]):not([data-callout="infobox"]) .callout-content > :first-child { margin-top: 0; }
+
+
+/* ============================================================================
+   [Card System]   a flexible, webpage-like card layout
+   --------------------------------------------------------------------------
+   LAYOUT:  > [!grid]            auto-flow cards into as many columns as fit
+            > [!grid|cols2..4]   lock to 2/3/4 columns
+            child: |span2 |span3 |spanfull   make a card span columns
+
+   STYLE:   > [!card|<style>]    skill · section · step · profile · honor
+                                 · channels · hero   (bare [!card] = default)
+   SURFACE: add  dark  or  accent   e.g. [!card|profile dark]
+   BUTTONS: in hero/cta — **[Label](url)** = filled pill, [Label](url) = outline
+   ========================================================================== */
+
+/* ----- GRID container: flows any number of cards, any rows × columns.
+   !important defeats plugin CSS (Minimal/contextual-typography) that re-paints a
+   callout surface AFTER the theme — otherwise a cream box shows behind the cards
+   wherever they don't fill the grid (revealed once cards size to content). ----- */
+.callout[data-callout="grid"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1.4em 0;
+}
+.callout[data-callout="grid"] > .callout-content { background: none !important; padding: 0 !important; }
+.callout[data-callout="grid"] > .callout-title { display: none; }
+.callout[data-callout="grid"] > .callout-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--at-card-min, 260px), 1fr));
+    column-gap: var(--at-grid-gap, 1.3rem);
+    row-gap: var(--at-grid-row-gap, var(--at-grid-gap, 1.3rem));
+    padding: 0;
+    align-items: stretch;
+}
+/* zero the grid items' own margin so row-gap (not Obsidian's default .callout
+   margin) is what controls the vertical distance between card rows */
+.callout[data-callout="grid"] > .callout-content > .callout { margin: 0 !important; }
+.callout[data-callout="grid"][data-callout-metadata*="cols2"] > .callout-content { grid-template-columns: repeat(2, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols3"] > .callout-content { grid-template-columns: repeat(3, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols4"] > .callout-content { grid-template-columns: repeat(4, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols5"] > .callout-content { grid-template-columns: repeat(5, 1fr); }
+.callout[data-callout="grid"][data-callout-metadata*="cols6"] > .callout-content { grid-template-columns: repeat(6, 1fr); }
+@media (max-width: 700px) {
+    .callout[data-callout="grid"] > .callout-content { grid-template-columns: 1fr; }
+}
+/* the blank ">" separators between child cards can leave empty paragraphs —
+   don't let them become stray grid cells */
+.callout[data-callout="grid"] > .callout-content > p:empty,
+.callout[data-callout="grid"] > .callout-content > br { display: none; }
+/* Cards stretch to equal height per row via the grid's align-items:stretch (set on
+   .callout-content above). Do NOT add `height:100%` to the children — in the user's
+   plugin-heavy vault it resolves against the preview sizer and balloons/collapses the
+   whole panel into one empty dark box. align-items:stretch alone gives equal height. */
+/* spans (place on a child card) */
+.callout[data-callout="card"][data-callout-metadata*="span2"] { grid-column: span 2; }
+.callout[data-callout="card"][data-callout-metadata*="span3"] { grid-column: span 3; }
+.callout[data-callout="card"][data-callout-metadata*="spanfull"] { grid-column: 1 / -1; }
+
+/* ----- shared card chrome (all styles) ----- */
+.callout[data-callout="card"] {
+    --cc: var(--at-accent);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--at-border-2);
+    border-radius: var(--radius-l);
+    background: var(--at-pane-2);
+    box-shadow: var(--at-shadow-pop);
+    padding: 2px 4px 6px;
+    overflow: hidden;
+    transition: transform var(--at-dur) var(--at-ease), box-shadow var(--at-dur) var(--at-ease), border-color var(--at-dur) var(--at-ease);
+    animation: at-rise var(--at-dur-slow) var(--at-ease);
+}
+.callout[data-callout="card"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(60, 45, 25, 0.10), 0 26px 60px rgba(60, 45, 25, 0.22);
+    border-color: color-mix(in srgb, var(--at-accent) 40%, var(--at-border-2));
+}
+.callout[data-callout="card"] > .callout-title { padding: 14px 20px 0; align-items: flex-start; }
+.callout[data-callout="card"] .callout-icon { display: none; }
+.callout[data-callout="card"] .callout-title-inner {
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 1.7em;
+    line-height: 1.12;
+    letter-spacing: -0.012em;
+    color: var(--at-text-strong);
+}
+.callout[data-callout="card"] .callout-title-inner em { color: var(--at-accent); font-style: italic; }
+.callout[data-callout="card"] > .callout-content { padding: 6px 20px 16px; flex: 1; overflow: visible; }
+/* cards must never show their own scrollbar (Minimal/core set overflow:auto on
+   callout-content to handle wide content). Only an inner code block may scroll. */
+.callout[data-callout="card"] > .callout-content > pre { overflow-x: auto; }
+.callout[data-callout="card"] > .callout-content > :not(pre) { overflow: visible; }
+/* first h6 in a card = coral mono kicker label (e.g. ###### THE SKILL) */
+.callout[data-callout="card"] .callout-content > h6:first-child {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.72em;
+    color: var(--at-accent);
+    font-weight: 500;
+    margin: 0 0 10px;
+    border: none;
+    padding: 0;
+}
+.callout[data-callout="card"] .callout-content > h6:first-child::before {
+    content: "● ";
+    font-size: 0.8em;
+    vertical-align: 0.1em;
+}
+
+/* ----- SURFACES (direct-child scoped so they NEVER bleed into nested cards) ----- */
+.callout[data-callout="card"][data-callout-metadata*="dark"] {
+    background: var(--at-dark-surface) !important;
+    border-color: var(--at-on-dark-border);
+    color: var(--at-on-dark);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-title .callout-title-inner { color: var(--at-on-dark); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content { color: var(--at-on-dark-muted); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--at-on-dark); }
+.callout[data-callout="card"][data-callout-metadata*="dark"] > .callout-content > hr { border-top-color: var(--at-on-dark-border); }
+/* NESTED cards inside a dark surface that don't set their OWN surface still need
+   light text — Obsidian/other themes set `color` directly on every .callout, which
+   breaks inheritance and makes them render black-on-black (the four-step step cards
+   were invisible for exactly this reason, not clipping). */
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) {
+    color: var(--at-on-dark-muted);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) :is(h1, h2, h3, h4, p, li) {
+    color: var(--at-on-dark);
+}
+.callout[data-callout="card"][data-callout-metadata*="dark"] .callout[data-callout="card"]:not([data-callout-metadata*="dark"]):not([data-callout-metadata*="accent"]) p {
+    color: var(--at-on-dark-muted);
+}
+
+/* ACCENT hero. LIGHT = coral panel (reference); DARK = warm-dark panel (the black
+   version). All colours come from mode-aware tokens so each mode is correct. */
+.callout[data-callout="card"][data-callout-metadata*="accent"] {
+    background: var(--at-accent-surface);
+    border-color: transparent;
+    color: var(--at-on-accent);
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3, h4) { color: var(--at-on-accent); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-title .callout-title-inner em,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > :is(h1, h2, h3) em { color: var(--at-on-accent-em); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content { color: color-mix(in srgb, var(--at-on-accent) 84%, var(--at-accent)); }
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child,
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content > h6:first-child::before { color: var(--at-on-accent-kick); }
+
+/* NESTED cards inside the accent hero. The 6× .callout specificity (the MCL
+   "kill any background" technique) forces the fill past any vault override. Ancestor
+   requires class .callout so it matches the hero CALLOUT only — NOT the .el-div
+   wrapper (which shares the metadata) and NOT the hero itself. Token-driven fill:
+   dark cards on the coral hero (light) / lifted cards on the dark hero (dark). */
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"],
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] > .callout-content {
+    background: var(--at-accent-nested) !important;
+    background-color: var(--at-accent-nested) !important;
+    background-image: none !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] {
+    border: 1px solid rgba(255, 255, 255, 0.10) !important;
+    border-radius: var(--radius-l) !important;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.30) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(h1, h2, h3, h4) { color: var(--at-accent-nested-h) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(p, li, td) { color: var(--at-accent-nested-p) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] :is(h6, em) { color: var(--at-accent) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout-metadata*="channels"] tr > :first-child { color: var(--at-accent) !important; }
+.callout[data-callout="card"][data-callout-metadata*="accent"] .callout.callout.callout.callout.callout.callout[data-callout="card"] img { border-color: var(--at-accent) !important; }
+
+/* ----- SPLIT: side-by-side hero — text flows left, nested grid FLOATS right.
+   Float (not grid) so the card height = its content. (grid-row spanning ballooned
+   the card to a runaway height.) ----- */
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content { display: block; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content::after { content: ""; display: block; clear: both; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > p:empty,
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > br { display: none; }
+.callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > .callout[data-callout="grid"] {
+    float: right;
+    width: 50%;
+    margin: 0 0 1rem 2.4rem;
+}
+@media (max-width: 820px) {
+    .callout[data-callout="card"][data-callout-metadata*="split"] > .callout-content > .callout[data-callout="grid"] {
+        float: none;
+        width: 100%;
+        margin: 1.4rem 0 0;
+    }
+}
+
+/* ----- STYLE: skill — kicker, big title, dark command bar + steps ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre {
+    position: relative;
+    background: var(--at-dark-surface) !important;
+    border: 1px solid var(--at-on-dark-border);
+    border-radius: var(--radius-m);
+    padding: 15px 104px 15px 18px;
+    margin: 6px 0 18px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre code {
+    color: var(--at-on-dark) !important;
+    background: none;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) pre .copy-code-button {
+    opacity: 1;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--at-on-dark);
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: var(--at-font-mono);
+    font-size: 0.66em;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol {
+    list-style: none;
+    counter-reset: step;
+    padding-left: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3.2em;
+    margin: 1em 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.05em;
+    font-family: var(--at-font-mono);
+    font-size: 0.95em;
+    color: var(--at-accent);
+    opacity: 0.55;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="skill"],
+    body.at-card-skill .callout[data-callout="card"]:not([data-callout-metadata])) ol > li strong {
+    display: block;
+    font-family: var(--at-font-heading);
+    font-weight: 600;
+    font-size: 1.12em;
+    color: var(--at-text-strong);
+    margin-bottom: 2px;
+}
+
+/* ----- STYLE: section — flat column block (use inside [!grid|cols3]) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])):hover {
+    transform: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 4px 0; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) h3 { margin: 4px 0 8px; font-size: 1.4em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) ul { padding-left: 1.1em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="section"],
+    body.at-card-section .callout[data-callout="card"]:not([data-callout-metadata])) ul > li::marker { color: var(--at-accent); }
+/* vertical divider between section columns (skips the first in a row) */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="section"] {
+    border-left: 1px solid color-mix(in srgb, currentColor 16%, transparent);
+    padding-left: 1.8rem;
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="section"]:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+/* ----- STYLE: step — SELF-CONTAINED dark tile (ring + "Step 0N" + heading + body).
+   Built like the honor/profile cards (which render reliably) — a complete dark card,
+   NOT a transparent child relying on a special parent. Use in a plain [!grid]. ----- */
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--at-dark-surface) !important;
+    border: none;
+    border-radius: var(--radius-l);
+    box-shadow: none;
+    color: var(--at-on-dark-muted);
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])):hover {
+    transform: none; box-shadow: none; border-color: transparent;
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 30px 26px 40px; }
+/* "Step 0N" kicker: title-case (not all-caps) like the reference */
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child { text-transform: none; letter-spacing: 0.12em; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content::before {
+    content: "";
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--at-accent) 60%, transparent);
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8552f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E");
+}
+/* per-step reference icons (file / chat / list). The spanfull hero is the grid's
+   1st child, so Step 01 = nth-of-type(2) keeps the default magnifier and the
+   file/chat/list icons sit on nth-of-type 3/4/5 (Steps 02/03/04). */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(3) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8552f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M14 4H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9z'/%3E%3Cpath d='M14 4v5h5'/%3E%3C/svg%3E");
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(4) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8552f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'/%3E%3C/svg%3E");
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata~="step"]:nth-of-type(5) > .callout-content::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d8552f' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 12l2 2 4-4M3 6l2 2 4-4M3 18l2 2 4-4M13 6h8M13 12h8M13 18h8'/%3E%3C/svg%3E");
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) h3 {
+    margin: 0 0 10px;
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 1.55em;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    color: var(--at-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) h3 em { color: var(--at-accent); font-style: italic; }
+:is(.callout[data-callout="card"][data-callout-metadata~="step"],
+    body.at-card-step .callout[data-callout="card"]:not([data-callout-metadata])) p { color: var(--at-on-dark-muted); }
+
+/* grids never show their own scrollbar (Minimal/core add overflow:auto) */
+.callout[data-callout="grid"],
+.callout[data-callout="grid"] > .callout-content { overflow: visible; }
+
+/* ===== FOUR-STEP CTA — SEAMLESS SLAB ===========================================
+   Built on the rendering path PROVEN to work in the vault: each tile keeps its OWN
+   opaque dark background (the separated-tile version rendered dark with cream text).
+   To read as ONE slab we just flush the tiles (gap:0) and draw hairline dividers
+   with borders. Corner tiles round; middle tiles square. No transparent tiles, no
+   container background, no overflow:hidden — none of the things that broke before.
+   Text colours forced so they always sit cream/coral on the dark tiles. ========= */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content {
+    gap: 0 !important;
+}
+/* every tile squared by default; corner rules below round the four outer corners.
+   margin:0 is critical — Obsidian's default .callout margin is what opens the cream
+   gap between the header and the step row and stops them fusing into one slab. */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout="card"] {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+/* hairline dividers: a line under the header / between rows (each step's top) and
+   between columns (each step after the first). Adapts on wrap automatically. */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"] {
+    border-top: 1px solid color-mix(in srgb, var(--at-on-dark) 16%, transparent) !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"] + .callout[data-callout-metadata~="step"] {
+    border-left: 1px solid color-mix(in srgb, var(--at-on-dark) 16%, transparent) !important;
+}
+/* round the four outer corners of the slab (corner tiles only) */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata*="hero"] {
+    border-radius: var(--radius-l) var(--radius-l) 0 0 !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata*="hero"] + .callout[data-callout-metadata~="step"] {
+    border-bottom-left-radius: var(--radius-l) !important;
+}
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) > .callout-content > .callout[data-callout-metadata~="step"]:last-of-type {
+    border-bottom-right-radius: var(--radius-l) !important;
+}
+/* force the slab's text colours so nothing can wash them out */
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) :is(h1, h2, h3) { color: var(--at-on-dark) !important; }
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) :is(h6, em) { color: var(--at-accent) !important; }
+.callout[data-callout="grid"]:has(> .callout-content > .callout[data-callout-metadata~="step"]) p:not(:has(strong)) { color: var(--at-on-dark-muted) !important; }
+
+/* HEADER: two columns — display heading left, intro paragraph right (reference). */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout="card"][data-callout-metadata*="hero"] > .callout-content {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    column-gap: 48px;
+    align-items: start;
+}
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > h6:first-child { grid-column: 1 / -1; }
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > h1 { grid-column: 1; margin-bottom: 0; }
+/* intro = the plain paragraph (no button); send it to the right column */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:not(:has(strong)) {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+    align-self: start;
+    margin-top: 8px;
+}
+/* button paragraph stays in the left column, below the heading */
+.callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:has(strong) { grid-column: 1; }
+@media (max-width: 820px) {
+    .callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content { grid-template-columns: 1fr; }
+    .callout[data-callout="grid"] > .callout-content > .callout[data-callout-metadata*="hero"] > .callout-content > p:not(:has(strong)) { grid-column: 1; grid-row: auto; text-align: left; }
+}
+
+/* ----- STYLE: profile — avatar, label, name, bio, link (centered) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) {
+    text-align: center;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 18px 16px; }
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) h6 {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.7em;
+    color: var(--at-accent);
+    border: none;
+    margin: 0 0 6px;
+    padding: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="profile"],
+    body.at-card-profile .callout[data-callout="card"]:not([data-callout-metadata])) a {
+    font-family: var(--at-font-mono);
+    font-size: 0.8em;
+    border-bottom: none;
+}
+
+/* ----- STYLE: honor — dark, rank badge, ringed avatar, pull quote, stats ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--at-dark-surface);
+    border-color: var(--at-on-dark-border);
+    color: var(--at-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child {
+    display: inline-block;
+    background: var(--at-accent);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) .callout-content > h6:first-child::before { content: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--at-accent);
+    padding: 3px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) :is(h2, h3) {
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 2em;
+    color: var(--at-on-dark);
+    margin: 8px 0 6px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) blockquote {
+    background: none;
+    border-left: 2px solid var(--at-accent);
+    border-radius: 0;
+    font-family: var(--at-font-heading);
+    font-style: italic;
+    font-size: 1.3em;
+    color: var(--at-on-dark);
+    padding: 4px 0 4px 18px;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) strong { color: var(--at-accent); font-size: 1.4em; }
+:is(.callout[data-callout="card"][data-callout-metadata*="honor"],
+    body.at-card-honor .callout[data-callout="card"]:not([data-callout-metadata])) hr {
+    border: none;
+    border-top: 1px solid var(--at-on-dark-border);
+    margin: 14px 0;
+}
+
+/* ----- STYLE: channels — dark list (channel ........ LABEL) ----- */
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) {
+    background: var(--at-dark-surface);
+    border-color: var(--at-on-dark-border);
+    color: var(--at-on-dark);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) table {
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) thead { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) :is(th, td) {
+    border: none;
+    border-bottom: 1px solid var(--at-on-dark-border);
+    padding: 9px 4px;
+    background: none;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: var(--at-font-body);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :first-child {
+    color: var(--at-accent);
+    font-weight: 600;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :first-child::before { content: "# "; opacity: 0.7; }
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr > :last-child {
+    text-align: right;
+    color: var(--at-on-dark-muted);
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.76em;
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="channels"],
+    body.at-card-channels .callout[data-callout="card"]:not([data-callout-metadata])) tr:last-child :is(th, td) { border-bottom: none; }
+
+/* ----- STYLE: hero / cta — big display heading + buttons ----- */
+/* title comes from the inner "# heading"; hide the auto callout title ("Card") */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-title { display: none; }
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content { padding: 20px 28px 26px; }
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content > :is(h1, h2) {
+    font-size: 3.2em;
+    line-height: 1.02;
+    margin: 0 0 16px;
+    border: none;
+}
+/* buttons (direct children only, so nested-card links are NOT turned into pills):
+   plain link = outline pill, bold link **[x](y)** = filled pill */
+/* buttons — style EVERY link in the hero's own content (robust to whatever
+   wrapper Obsidian puts the buttons paragraph in), then reset nested-card links.
+   plain link = outline pill, bold link **[x](y)** = filled pill */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a {
+    display: inline-block;
+    border: 1.5px solid var(--at-accent);
+    border-radius: 99px;
+    padding: 11px 24px;
+    margin: 16px 12px 0 0;
+    font-family: var(--at-font-body);
+    font-weight: 600;
+    color: var(--at-accent);
+    cursor: pointer;
+    transition: opacity var(--at-dur-fast) var(--at-ease);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content strong a {
+    background: var(--at-accent);
+    color: #fff;
+    border-color: var(--at-accent);
+}
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a:hover { opacity: 0.85; }
+/* links INSIDE nested cards are not buttons — undo the pill look */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content .callout a {
+    display: inline;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    font-weight: inherit;
+    color: var(--at-accent);
+}
+/* on the coral (accent) surface, invert buttons to dark (!important to beat the
+   high-specificity :is() default-class arm in the base button rule) */
+/* outline button — border + text follow the hero's text colour so it's visible on
+   the coral hero (light: dark ink) AND the dark hero (dark: cream) */
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a {
+    border-color: color-mix(in srgb, var(--at-on-accent) 55%, transparent) !important;
+    color: var(--at-on-accent) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content a:hover {
+    border-color: var(--at-on-accent) !important;
+    background: color-mix(in srgb, var(--at-on-accent) 8%, transparent) !important;
+}
+/* filled button — light: dark pill (reference) · dark: CORAL pill (matches accent) */
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content strong a {
+    background: var(--at-accent-btn-bg) !important;
+    color: var(--at-accent-btn-fg) !important;
+    border-color: var(--at-accent-btn-bg) !important;
+}
+.callout[data-callout="card"][data-callout-metadata*="accent"] > .callout-content .callout a { color: inherit !important; border: none !important; background: none !important; }
+/* Discord glyph on any "discord" link styled as a hero button */
+:is(.callout[data-callout="card"][data-callout-metadata*="hero"],
+    body.at-card-hero .callout[data-callout="card"]:not([data-callout-metadata])) > .callout-content a[href*="discord"]::before {
+    content: "";
+    display: inline-block;
+    width: 1.05em;
+    height: 1.05em;
+    margin-right: 0.5em;
+    vertical-align: -0.16em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.27 5.33A18 18 0 0 0 14.72 4l-.2.4a13.7 13.7 0 0 0-5.04 0L9.27 4a18 18 0 0 0-4.54 1.33C2.4 8.94 1.78 12.45 2.09 15.9a18.4 18.4 0 0 0 5.6 2.83l1.13-1.55a11.6 11.6 0 0 1-1.78-.86l.44-.34a13 13 0 0 0 11.04 0l.44.34c-.55.33-1.16.61-1.78.86l1.13 1.55a18.3 18.3 0 0 0 5.6-2.83c.45-4.05-.5-7.53-2.64-10.57Z'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M19.27 5.33A18 18 0 0 0 14.72 4l-.2.4a13.7 13.7 0 0 0-5.04 0L9.27 4a18 18 0 0 0-4.54 1.33C2.4 8.94 1.78 12.45 2.09 15.9a18.4 18.4 0 0 0 5.6 2.83l1.13-1.55a11.6 11.6 0 0 1-1.78-.86l.44-.34a13 13 0 0 0 11.04 0l.44.34c-.55.33-1.16.61-1.78.86l1.13 1.55a18.3 18.3 0 0 0 5.6-2.83c.45-4.05-.5-7.53-2.64-10.57Z'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+
+/* ============================================================================
+   [Element Variants — INFOBOX]   > [!infobox|v1..v3]  (floats; body wraps)
+   ========================================================================== */
+body { --at-infobox-width: 300px; }
+
+.markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"]),
+.markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"]) {
+    float: right;
+    width: var(--at-infobox-width);
+    max-width: 42%;
+    margin: 4px 0 16px 24px;
+    /* the floated wrapper is a transparent rectangle painted above the text beside it;
+       make it click-transparent so it never swallows clicks. The card re-enables. */
+    pointer-events: none;
+}
+.callout[data-callout="infobox"] { pointer-events: auto; }
+/* responsive: on a narrow pane the infobox stops floating and spans full width,
+   so text never gets squeezed into a sliver beside it (webpage-like reflow) */
+@media (max-width: 700px) {
+    .markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"]),
+    .markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"]) {
+        float: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 16px 0 !important;
+    }
+}
+.markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"][data-callout-metadata*="left"]),
+.markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"][data-callout-metadata*="left"]) {
+    float: left;
+    margin: 4px 24px 18px 0;
+}
+/* center — no float, centered block (text does NOT wrap beside it) */
+.markdown-preview-view .markdown-preview-sizer > div:has(> .callout[data-callout="infobox"][data-callout-metadata*="center"]),
+.markdown-source-view .cm-embed-block.cm-callout:has(.callout[data-callout="infobox"][data-callout-metadata*="center"]) {
+    float: none;
+    margin: 22px auto;
+    max-width: var(--at-infobox-width);
+}
+/* Top-level blocks beside a floated infobox: make each wrapper a BFC (flow-root)
+   so its BOX shrinks to sit beside the float instead of sliding full-width UNDER
+   it. Headings/hr clear; blockquotes/code/tables/standard-callouts (which carry a
+   background) now wrap cleanly. Cards/grids/columns aren't direct sizer children
+   in these layouts, so their flex/grid is untouched. */
+.markdown-preview-view .markdown-preview-sizer > :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-hr, .el-blockquote, .el-pre, .el-table, .el-callout),
+.markdown-reading-view .markdown-preview-sizer > :is(.el-h1, .el-h2, .el-h3, .el-h4, .el-h5, .el-h6, .el-hr, .el-blockquote, .el-pre, .el-table, .el-callout) { display: flow-root; }
+
+.callout[data-callout="infobox"] {
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 0;
+    border: 1px solid var(--at-border-2);
+    border-radius: var(--radius-l);
+    background: var(--at-pane-2);
+    overflow: hidden;                /* clip the rounded corners cleanly */
+    box-shadow: var(--at-shadow-pop);
+    transition: transform var(--at-dur) var(--at-ease), box-shadow var(--at-dur) var(--at-ease);
+}
+/* HOVER: lift + deepen shadow */
+.callout[data-callout="infobox"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 6px rgba(60, 45, 25, 0.12), 0 24px 56px rgba(60, 45, 25, 0.22);
+}
+/* TITLE → coral mono-caps tag, INSIDE the card at the top-left (no overflow, so it
+   renders identically in reading AND editing mode — the peek-outside version got
+   clipped by the editing-mode embed wrapper). */
+.callout[data-callout="infobox"] > .callout-title {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    margin: 0;
+    padding: 6px 16px;
+    background: var(--at-accent);
+    border: none;
+    border-radius: 0 0 var(--radius-m) 0;   /* tab tucked into the top-left corner */
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--at-accent) 30%, transparent);
+}
+.callout[data-callout="infobox"] > .callout-title .callout-icon { display: none; }
+.callout[data-callout="infobox"] > .callout-title .callout-title-inner {
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72em;
+    font-weight: 600;
+    color: #fff;
+}
+.callout[data-callout="infobox"] > .callout-content { padding: 14px 16px 16px; }
+/* a serif NAME heading inside the box (## Name) sits below the tag */
+.callout[data-callout="infobox"] .callout-content > :is(h1, h2, h3):first-child {
+    font-family: var(--at-font-heading);
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.1;
+    margin: 0 0 2px;
+    padding: 0;
+    border-bottom: none;
+    color: var(--at-text-strong);
+}
+.callout[data-callout="infobox"] .callout-content > :is(h1, h2, h3) em { color: var(--at-accent); font-style: italic; }
+/* lead description = first italic-only paragraph → muted, divider under it */
+.callout[data-callout="infobox"] .callout-content > p:first-child,
+.callout[data-callout="infobox"] .callout-content > :is(h1, h2, h3):first-child + p {
+    font-style: italic;
+    color: var(--at-muted);
+    margin: 4px 0 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--at-border);
+}
+.callout[data-callout="infobox"] .table-wrapper { overflow: visible; max-width: 100%; }
+.callout[data-callout="infobox"] table {
+    border: none; border-radius: 0; width: 100%; margin: 0;
+    font-size: 0.88em; background: transparent; table-layout: fixed;
+}
+.callout[data-callout="infobox"] td,
+.callout[data-callout="infobox"] th { overflow-wrap: anywhere; }
+.callout[data-callout="infobox"] thead { display: none; }
+.callout[data-callout="infobox"] th,
+.callout[data-callout="infobox"] td {
+    border: none;
+    border-top: 1px solid var(--at-border);
+    background: none;
+    padding: 8px 14px;
+    color: var(--at-text);
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: var(--at-font-body);
+}
+.callout[data-callout="infobox"] tr > :first-child { color: var(--at-muted); font-weight: 500; width: 40%; }
+.callout[data-callout="infobox"] tr > :first-child strong { color: inherit; font-weight: 600; }
+.callout[data-callout="infobox"] a { color: var(--at-accent); border-bottom: none; }
+
+/* infobox v2 — dark honor card */
+.callout[data-callout="infobox"][data-callout-metadata*="v2"],
+body.at-ib-v2 .callout[data-callout="infobox"]:not([data-callout-metadata*="v"]) {
+    background: var(--at-dark-surface);
+    border-color: var(--at-on-dark-border);
+    color: var(--at-on-dark);
+}
+:is(.callout[data-callout="infobox"][data-callout-metadata*="v2"],
+    body.at-ib-v2 .callout[data-callout="infobox"]:not([data-callout-metadata*="v"])) :is(h1, h2):first-child { color: var(--at-on-dark); }
+:is(.callout[data-callout="infobox"][data-callout-metadata*="v2"],
+    body.at-ib-v2 .callout[data-callout="infobox"]:not([data-callout-metadata*="v"])) :is(th, td) { color: var(--at-on-dark-muted); border-top-color: var(--at-on-dark-border); }
+:is(.callout[data-callout="infobox"][data-callout-metadata*="v2"],
+    body.at-ib-v2 .callout[data-callout="infobox"]:not([data-callout-metadata*="v"])) img { border-radius: 50%; }
+
+/* infobox v3 — flat bordered (no shadow) */
+.callout[data-callout="infobox"][data-callout-metadata*="v3"],
+body.at-ib-v3 .callout[data-callout="infobox"]:not([data-callout-metadata*="v"]) {
+    background: transparent;
+    border: 1px solid var(--at-border-strong);
+    border-radius: var(--radius-s);
+    box-shadow: none;
+}
+
+/* ----- OPTIONAL extras (apply to ANY infobox; require no image) -----------------
+   If an image is present it's framed; if a **bold** line is followed by another
+   line they fuse into a dark caption "footer". Neither is required — a plain text
+   infobox (title + description + fields) is the default. */
+.callout[data-callout="infobox"] .callout-content img {
+    display: block;
+    width: 100%;
+    border-radius: var(--radius-m);
+    border: 1px solid var(--at-border-2);
+    margin: 4px 0 10px;
+}
+.callout[data-callout="infobox"] .callout-content > p:has(strong) + p:last-child {
+    background: var(--at-dark-surface);
+    color: var(--at-on-dark-muted);
+    margin: 12px -16px -16px;
+    padding: 4px 16px 12px;
+    border-radius: 0 0 var(--radius-l) var(--radius-l);
+    font-family: var(--at-font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7em;
+}
+.callout[data-callout="infobox"] .callout-content > p:has(strong):has(+ p:last-child) {
+    background: var(--at-dark-surface);
+    color: var(--at-on-dark);
+    margin: 12px -16px 0;
+    padding: 12px 16px 3px;
+    border-radius: var(--radius-l) var(--radius-l) 0 0;
+    font-weight: 600;
+    font-size: 0.92em;
+    line-height: 1.3;
+}
+.callout[data-callout="infobox"] .callout-content > p:has(strong):has(+ p:last-child) strong { color: var(--at-on-dark); }
+
+
+/* ============================================================================
+   [Components]  multi-column machinery + dividers (lightly skinned)
+   ========================================================================== */
+body { --list-min-width: var(--callout-min-width, 200px); }
+
+.callout[data-callout="multi-column"] {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.callout[data-callout="multi-column"] > .callout-title { display: none; }
+.callout[data-callout="multi-column"] > .callout-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: stretch;
+}
+.callout[data-callout="multi-column"] > .callout-content > .callout {
+    flex: 1 1 var(--list-min-width);
+    min-width: var(--list-min-width);
+}
+.callout[data-callout="multi-column"][data-callout-metadata*="col3"] > .callout-content > .callout { flex-basis: calc(33% - 1em); }
+
+/* ----- COLUMNS — plain multi-column NOTE layout (no card chrome) ----------------
+   > [!columns]
+   >
+   >> [!col]            equal width by default
+   >> ## Left
+   >> normal note content — headings, lists, callouts, anything…
+   >
+   >> [!col|w2]         mix weights w1..w10 for ANY ratio
+   >> ## Right
+   >> more content…
+   Examples:  w3 + w7  ·  w3 + w3 + w4  ·  w2 + w1  ·  w1 + w3 .  Columns wrap and
+   stack on narrow panes like a webpage. Add `ruled` on [!columns] for hairline
+   dividers; tune `--at-col-gap` / `--at-col-min` to taste. ==================== */
+body { --at-col-gap: 30px; --at-col-min: 200px; }
+
+.callout[data-callout="columns"] {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 1.3em 0;
+}
+.callout[data-callout="columns"] > .callout-title { display: none; }
+.callout[data-callout="columns"] > .callout-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--at-col-gap);
+    align-items: stretch;
+    padding: 0 !important;
+}
+/* drop the empty-paragraph separators so they don't become stray columns */
+.callout[data-callout="columns"] > .callout-content > p:empty,
+.callout[data-callout="columns"] > .callout-content > br { display: none; }
+/* each COLUMN = a plain content block: strip all card chrome, keep note content */
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] {
+    flex: 1 1 0;
+    min-width: var(--at-col-min);
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation: none !important;
+}
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"]:hover { transform: none; box-shadow: none; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-title { display: none; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-content { padding: 0 !important; }
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"] > .callout-content > :first-child { margin-top: 0; }
+/* WIDTH WEIGHTS — flex-basis:0 makes the grow values exact ratios (w3:w7 = 30/70).
+   !important beats the higher-specificity base `flex:1 1 0` shorthand above. */
+.callout[data-callout="col"][data-callout-metadata~="w1"]  { flex-grow: 1 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w2"]  { flex-grow: 2 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w3"]  { flex-grow: 3 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w4"]  { flex-grow: 4 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w5"]  { flex-grow: 5 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w6"]  { flex-grow: 6 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w7"]  { flex-grow: 7 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w8"]  { flex-grow: 8 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w9"]  { flex-grow: 9 !important; }
+.callout[data-callout="col"][data-callout-metadata~="w10"] { flex-grow: 10 !important; }
+/* optional hairline dividers between columns: [!columns|ruled] */
+.callout[data-callout="columns"][data-callout-metadata~="ruled"] > .callout-content > .callout[data-callout="col"] + .callout[data-callout="col"] {
+    border-left: 1px solid var(--at-border) !important;
+    padding-left: var(--at-col-gap) !important;
+}
+
+/* horizontal rule with a small center gem */
+.markdown-rendered hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--at-border-strong), transparent);
+}
+
+
+/* ============================================================================
+   [Motion]  entrance + reduced-motion
+   ========================================================================== */
+/* transform-only (NO opacity): a stuck/!important-overridden animation can never
+   leave a card invisible — only opacity:0 did that in busy multi-snippet vaults. */
+@keyframes at-rise {
+    from { transform: translateY(8px); }
+    to   { transform: translateY(0); }
+}
+/* no fill-mode: after the entrance the element returns to author styles, so
+   card :hover transforms still work (fill:both would lock transform:none). */
+body.at-scroll-reveal .markdown-rendered :is(h1, h2, blockquote, table) {
+    animation: at-rise var(--at-dur) var(--at-ease);
+}
+
+/* ---- Opening: minimal coral shimmer -------------------------------------------
+   A one-shot coral progress hairline sweeps across the very top of the app on
+   load (theme switch / boot), then a calm fade-rise brings note content in. The
+   sizer is recreated on every note open, so the fade plays each time a note is
+   opened. The bar uses `both` (ends invisible by design); the content fade has NO
+   fill-mode, so it always settles to the author's opacity — a stuck animation can
+   never leave a note blank. Toggle off with "Disable animations". ---------------- */
+@keyframes at-load-bar {
+    0%   { transform: scaleX(0);   opacity: 1; }
+    72%  { transform: scaleX(1);   opacity: 1; }
+    100% { transform: scaleX(1);   opacity: 0; }
+}
+body:not(.at-no-anim)::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    transform-origin: left center;
+    background: linear-gradient(90deg,
+        transparent,
+        var(--at-accent) 36%,
+        color-mix(in srgb, var(--at-accent) 45%, transparent));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--at-accent) 55%, transparent);
+    z-index: 9999;
+    pointer-events: none;
+    animation: at-load-bar 1080ms var(--at-ease) both;
+}
+@keyframes at-open-rise {
+    from { opacity: 0; transform: translateY(7px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+body:not(.at-no-anim) .markdown-preview-view .markdown-preview-sizer,
+body:not(.at-no-anim) .markdown-source-view .cm-sizer {
+    animation: at-open-rise 460ms var(--at-ease);
+}
+
+/* active-line highlight (live preview) */
+body.at-active-line .markdown-source-view.mod-cm6 .cm-active.cm-line {
+    background: var(--at-accent-soft);
+    border-radius: var(--radius-s);
+}
+
+body.at-no-anim *,
+body.at-no-anim *::before,
+body.at-no-anim *::after {
+    animation: none !important;
+    transition: none !important;
+}
+/* OS "reduced motion": drop the entrance keyframes but KEEP hover transitions,
+   so cards still give feedback. Use "Disable animations" to kill both. */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+/* ----- .at-gradient — cross-theme custom style. In Lucid this paints an Apple-style
+   gradient; here in Atelier the same class is a SINGLE accent colour (coral),
+   matching the rest of the theme. Style Settings → "Gradient-text color" drives it; or
+   override per use with style="--grad-color: <hex>". ----------------------------- */
+.markdown-rendered .at-gradient {
+    color: var(--grad-color, var(--at-grad-color, var(--at-accent)));
+    font-weight: 600;
+}
+.markdown-rendered .at-gradient em { color: var(--grad-color, var(--at-grad-color, var(--at-accent))); font-style: italic; }

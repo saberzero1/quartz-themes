@@ -85,9 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--text) !important;
   --code-builtin: var(--love) !important;
   --code-definition: var(--rose) !important;
-  --code-variable: var(--text) !important;
   --code-boolean: var(--rose) !important;
   --code-parentheses: var(--subtle) !important;
 
@@ -176,9 +176,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--text-color) !important;
   --code-builtin: var(--off-blue) !important;
   --code-definition: var(--off-blue) !important;
-  --code-variable: var(--text-color) !important;
   --code-boolean: var(--glacier) !important;
   --code-parentheses: var(--teal) !important;
 
@@ -2944,7 +2944,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7875,7 +7875,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

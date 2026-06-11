@@ -774,7 +774,7 @@
     ],
     ".loader-spinner": ["--icon-xl"],
     ".setting-item-chevron": ["--icon-s"],
-    ".font-warning-icon": ["--icon-xs"],
+    ".setting-item-status": ["--icon-s"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs"
     ],
@@ -891,6 +891,7 @@
     ],
     ".loader-spinner": ["--icon-l-stroke-width"],
     ".setting-item-chevron": ["--icon-s-stroke-width"],
+    ".setting-item-status": ["--icon-s-stroke-width"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs-stroke-width"
     ],
@@ -1434,7 +1435,6 @@
     ]
   },
   "--scrollbar-bg": {
-    "body": ["--mono-100"],
     "body:not(.is-mobile) :is(.workspace-split.mod-left-split, .workspace-split.mod-right-split)": [
       "--ogd-surface-transparent"
     ]
@@ -1511,6 +1511,8 @@
   "--slider-track-background": {
     "body": ["--background-modifier-border-hover"]
   },
+  "--slider-value-font-size": { "body": ["--font-ui-small"] },
+  "--slider-value-font-weight": { "body": ["--input-font-weight"] },
   "--status-bar-background": { "body": ["--background-secondary"] },
   "--status-bar-border-color": { "body": ["--divider-color"] },
   "--status-bar-border-width": { "body": ["--border-width", "--border-width"] },
@@ -1657,7 +1659,7 @@
   "--background-modifier-success": { "body": ["--color-green"] },
   "--background-modifier-message": {
     ".is-mobile.theme-dark": ["--background-secondary"],
-    "body:not(.is-mobile) :is(.prompt, .modal, .popover, .popover.hover-popover, .hover-popover .markdown-embed, .hover-popover .markdown-embed-content, .menu, [role=\"menu\"], .suggestion-container, .tooltip, [role=\"tooltip\"], .notice, .notice-container .notice)": [
+    "body:not(.is-mobile) :is(.prompt, .modal, .popover, .popover.hover-popover, .hover-popover .markdown-embed, .hover-popover .markdown-embed-content, .menu, [role=\"menu\"], .suggestion-container, .tooltip, [role=\"tooltip\"])": [
       "--ogd-surface-transparent"
     ]
   },
@@ -1684,7 +1686,7 @@
   "--text-faint": { "body": ["--color-base-50"] },
   "--text-on-accent": {
     ".theme-dark": ["--ogd-surface-base"],
-    "body:not(.is-mobile) :is(.prompt, .modal, .popover, .popover.hover-popover, .hover-popover .markdown-embed, .hover-popover .markdown-embed-content, .menu, [role=\"menu\"], .suggestion-container, .tooltip, [role=\"tooltip\"], .notice, .notice-container .notice)": [
+    "body:not(.is-mobile) :is(.prompt, .modal, .popover, .popover.hover-popover, .hover-popover .markdown-embed, .hover-popover .markdown-embed-content, .menu, [role=\"menu\"], .suggestion-container, .tooltip, [role=\"tooltip\"])": [
       "--text-normal"
     ]
   },

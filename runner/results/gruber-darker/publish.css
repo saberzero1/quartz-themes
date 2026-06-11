@@ -630,6 +630,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: #d8d6d6 !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1368,11 +1369,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1474,6 +1471,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: #d8d6d6 !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1734,6 +1733,7 @@ body.theme-dark {
   --icon-stroke: 1.75px !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--gd-bg-dark) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2532,6 +2532,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--gd-bg-2) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--gd-bg-dark) !important;
   --status-bar-border-color: var(--gd-bg-light) !important;
@@ -2716,9 +2718,9 @@ body.theme-dark {
   --bold-color: var(--gd-fg-bright) !important;
   --callout-title-size: var(--font-small);
   --italic-color: var(--gd-quartz) !important;
+  --interactive-success: var(--gd-green) !important;
   --blockquote-background: rgba(40, 40, 40, 0.5) !important;
   --input-focus-border-color: var(--gd-niagara) !important;
-  --interactive-success: var(--gd-green) !important;
   --suggestion-radius: 4px !important;
   --nav-item-weight-active: normal !important;
   --tag-weight: normal !important;
@@ -4604,7 +4606,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7657,7 +7659,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

@@ -85,9 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--fg) !important;
   --code-builtin: var(--color-cyan) !important;
   --code-definition: var(--color-blue) !important;
-  --code-variable: var(--fg) !important;
   --code-boolean: var(--orange) !important;
   --code-parentheses: var(--fg-dark) !important;
 
@@ -176,9 +176,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --code-variable: var(--fg) !important;
   --code-builtin: var(--color-cyan) !important;
   --code-definition: var(--color-blue) !important;
-  --code-variable: var(--fg) !important;
   --code-boolean: var(--orange) !important;
   --code-parentheses: var(--fg-dark) !important;
 
@@ -2944,7 +2944,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7875,7 +7875,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

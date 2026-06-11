@@ -30,6 +30,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--note) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -823,6 +824,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--outer-bar) !important;
   --status-bar-border-color: var(--accent) !important;
@@ -1025,6 +1028,7 @@ body.theme-light {
   --h5-font: var(--font) !important;
   --h6-font: var(--font) !important;
   --inline-title-font: var(--h1-font) !important;
+  --graph-arrow: var(--soft-text) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 251, 146, 76 !important;
   --chbx-B: 182, 118, 255 !important;
@@ -1059,7 +1063,6 @@ body.theme-light {
   --hr-width: auto !important;
   --vault-font: var(--font) !important;
   --button-background-hover: var(--interactive-accent-hover) !important;
-  --graph-arrow: var(--soft-text) !important;
   --graph-tag: #000000 !important;
   --he-title-bar-active-action: var(--lite-accent) !important;
   --he-title-bar-inactive-action: var(--soft-text) !important;
@@ -1069,6 +1072,8 @@ body.theme-light {
   --blockquote-padding: var(--size-4-3) var(--size-4-6) !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --kanban-lane-background: var(--code-bg) !important;
+  --kanban-lane-border: var(--box-border-m) !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
   --medium: 500px !important;
@@ -1107,8 +1112,6 @@ body.theme-light {
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
-  --kanban-lane-background: var(--code-bg) !important;
-  --kanban-lane-border: var(--box-border-m) !important;
   --ribbon-border-color: var(--outer-bar) !important;
   --h1-text-align: var(--header-text-align) !important;
   --h2-text-align: var(--header-text-align) !important;
@@ -1516,6 +1519,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--note) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2301,6 +2305,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--outer-bar) !important;
   --status-bar-border-color: var(--accent) !important;
@@ -2498,6 +2504,7 @@ body.theme-dark {
   --h5-font: var(--font) !important;
   --h6-font: var(--font) !important;
   --inline-title-font: var(--h1-font) !important;
+  --graph-arrow: var(--soft-text) !important;
   --chbx-a: 248, 114, 181 !important;
   --chbx-b: 230, 129, 63 !important;
   --chbx-B: 136, 94, 233 !important;
@@ -2532,7 +2539,6 @@ body.theme-dark {
   --hr-width: auto !important;
   --vault-font: var(--font) !important;
   --button-background-hover: var(--interactive-accent-hover) !important;
-  --graph-arrow: var(--soft-text) !important;
   --graph-tag: saddlebrown !important;
   --he-title-bar-active-action: var(--lite-accent) !important;
   --he-title-bar-inactive-action: var(--soft-text) !important;
@@ -2542,6 +2548,8 @@ body.theme-dark {
   --blockquote-padding: var(--size-4-3) var(--size-4-6) !important;
   --nav-item-weight: 500 !important;
   --nav-item-weight-hover: 700 !important;
+  --kanban-lane-background: var(--code-bg) !important;
+  --kanban-lane-border: var(--box-border-m) !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
   --medium: 500px !important;
@@ -2580,8 +2588,6 @@ body.theme-dark {
   --tooltip-color: var(--text-dl) !important;
   --button-border-radius: var(--radius-m) !important;
   --embed-border-color: transparent !important;
-  --kanban-lane-background: var(--code-bg) !important;
-  --kanban-lane-border: var(--box-border-m) !important;
   --ribbon-border-color: var(--outer-bar) !important;
   --h1-text-align: var(--header-text-align) !important;
   --h2-text-align: var(--header-text-align) !important;
@@ -4757,7 +4763,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7784,7 +7790,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

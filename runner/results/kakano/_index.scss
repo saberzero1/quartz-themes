@@ -2624,7 +2624,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: var(--theme-color-baseTransparent25) transparent;
   }
 
@@ -8183,7 +8183,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: var(--theme-color-baseTransparent25) transparent;
     }
 

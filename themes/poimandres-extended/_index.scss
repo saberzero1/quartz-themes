@@ -2999,7 +2999,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -4826,8 +4826,8 @@ body {
   }
 
   html {
-    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
     scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -8079,7 +8079,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -9906,8 +9906,8 @@ html[saved-theme="dark"] {
     }
 
     html {
-      scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
       scrollbar-width: thin;
+      scrollbar-color: var(--scrollbar-thumb-bg) var(--scrollbar-bg);
     }
   }
 }

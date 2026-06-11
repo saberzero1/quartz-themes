@@ -1437,9 +1437,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(111, 110, 105)",
+                      "color": "rgb(183, 181, 172)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(111, 110, 105)",
+                      "borderColor": "rgb(183, 181, 172)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -1508,8 +1508,8 @@
                 "attrs": {},
                 "styles": {
                   "color": "rgb(16, 15, 15)",
-                  "backgroundColor": "rgb(242, 240, 229)",
-                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -1568,9 +1568,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(111, 110, 105)",
+                              "color": "rgb(183, 181, 172)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(111, 110, 105)",
+                              "borderColor": "rgb(183, 181, 172)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1605,8 +1605,8 @@
                         "attrs": {},
                         "styles": {
                           "color": "rgb(16, 15, 15)",
-                          "backgroundColor": "rgb(242, 240, 229)",
-                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1683,9 +1683,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(111, 110, 105)",
+                              "color": "rgb(183, 181, 172)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(111, 110, 105)",
+                              "borderColor": "rgb(183, 181, 172)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1720,8 +1720,8 @@
                         "attrs": {},
                         "styles": {
                           "color": "rgb(16, 15, 15)",
-                          "backgroundColor": "rgb(242, 240, 229)",
-                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1798,9 +1798,9 @@
                             "classes": ["tree-item-icon", "collapse-icon"],
                             "attrs": {},
                             "styles": {
-                              "color": "rgb(111, 110, 105)",
+                              "color": "rgb(183, 181, 172)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(111, 110, 105)",
+                              "borderColor": "rgb(183, 181, 172)",
                               "fill": "rgb(0, 0, 0)",
                               "stroke": "none"
                             },
@@ -1835,8 +1835,8 @@
                         "attrs": {},
                         "styles": {
                           "color": "rgb(16, 15, 15)",
-                          "backgroundColor": "rgb(242, 240, 229)",
-                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
+                          "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -1969,9 +1969,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(111, 110, 105)",
+                      "color": "rgb(183, 181, 172)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(111, 110, 105)",
+                      "borderColor": "rgb(183, 181, 172)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -2040,8 +2040,8 @@
                 "attrs": {},
                 "styles": {
                   "color": "rgb(16, 15, 15)",
-                  "backgroundColor": "rgb(242, 240, 229)",
-                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -2266,9 +2266,9 @@
                     "classes": ["tree-item-icon", "collapse-icon"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(111, 110, 105)",
+                      "color": "rgb(183, 181, 172)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(111, 110, 105)",
+                      "borderColor": "rgb(183, 181, 172)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -2337,8 +2337,8 @@
                 "attrs": {},
                 "styles": {
                   "color": "rgb(16, 15, 15)",
-                  "backgroundColor": "rgb(242, 240, 229)",
-                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) oklch(0 0 none / 0.12)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "borderColor": "rgb(16, 15, 15) rgb(16, 15, 15) rgb(16, 15, 15) color(srgb 0.854902 0.847059 0.807843 / 0.62)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -2916,7 +2916,7 @@
     "styles": {
       "color": "rgb(111, 110, 105)",
       "backgroundColor": "rgb(242, 240, 229)",
-      "borderColor": "rgb(218, 216, 206)",
+      "borderColor": "color(srgb 0.854902 0.847059 0.807843 / 0.88)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
@@ -2928,8 +2928,8 @@
         "attrs": {},
         "styles": {
           "color": "rgb(111, 110, 105)",
-          "backgroundColor": "oklch(0.504249 0.164816 27.8395 / 0.1)",
-          "borderColor": "rgb(111, 110, 105)",
+          "backgroundColor": "rgba(175, 48, 41, 0.08)",
+          "borderColor": "rgba(175, 48, 41, 0.24)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -3065,7 +3065,7 @@
                     "styles": {
                       "color": "rgb(111, 110, 105)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(111, 110, 105) rgb(111, 110, 105) rgb(218, 216, 206)",
+                      "borderColor": "rgb(111, 110, 105) rgb(111, 110, 105) color(srgb 0.854902 0.847059 0.807843 / 0.76)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -3076,9 +3076,9 @@
                         "classes": ["metadata-property-icon"],
                         "attrs": { "aria-disabled": "false" },
                         "styles": {
-                          "color": "rgb(111, 110, 105)",
+                          "color": "rgb(183, 181, 172)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(111, 110, 105)",
+                          "borderColor": "rgb(183, 181, 172)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },
@@ -3099,11 +3099,11 @@
                               "stroke-linejoin": "round"
                             },
                             "styles": {
-                              "color": "rgb(111, 110, 105)",
+                              "color": "rgb(183, 181, 172)",
                               "backgroundColor": "rgba(0, 0, 0, 0)",
-                              "borderColor": "rgb(111, 110, 105)",
+                              "borderColor": "rgb(183, 181, 172)",
                               "fill": "none",
-                              "stroke": "rgb(111, 110, 105)"
+                              "stroke": "rgb(183, 181, 172)"
                             },
                             "childCount": 3,
                             "children": []
@@ -3136,9 +3136,9 @@
                     "classes": ["metadata-property-value"],
                     "attrs": { "data-property-type": "text" },
                     "styles": {
-                      "color": "rgb(111, 110, 105)",
+                      "color": "rgb(16, 15, 15)",
                       "backgroundColor": "rgb(255, 252, 240)",
-                      "borderColor": "rgb(111, 110, 105) rgb(111, 110, 105) rgb(218, 216, 206)",
+                      "borderColor": "color(srgb 0.854902 0.847059 0.807843 / 0.68)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },

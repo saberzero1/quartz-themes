@@ -188,7 +188,7 @@ html[saved-theme="light"] body {
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {
-  --qt-code-header: rgb(201, 209, 217);
+  --qt-code-header: rgb(240, 246, 252);
   --qt-code-default: rgb(139, 148, 158);
   --qt-code-background: rgb(22, 27, 34);
   --qt-code-border-color: rgba(0, 0, 0, 0);
@@ -2678,7 +2678,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7894,7 +7894,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -8918,7 +8918,7 @@ html[saved-theme="dark"] {
       filter: none;
       max-width: 100%;
       object-fit: fill;
-      border: 0px rgb(201, 209, 217);
+      border: 0px rgb(240, 246, 252);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;

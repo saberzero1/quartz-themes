@@ -4306,7 +4306,7 @@
     "padding-block": "1.35px",
     "padding-block-end": "1.35px",
     "padding-block-start": "1.35px",
-    "text-decoration": "line-through rgb(160, 154, 144)",
+    "text-decoration": "line-through",
     "text-decoration-color": "rgb(160, 154, 144)",
     "text-decoration-line": "line-through",
     "transform-origin": "266.102px 16.8203px",

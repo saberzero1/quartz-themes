@@ -87,7 +87,7 @@
   --icon-xs-stroke-width: 2px !important;
 
   --font-interface-override: "??";
-  --font-text-override: IBM Plex Sans, sans-serif;
+  --font-text-override: var(--body-font-select, "IBM Plex Sans", sans-serif);
   --font-monospace-override: "??";
 
   --quartz-icon-color: currentColor;
@@ -173,7 +173,7 @@
   --icon-xs-stroke-width: 2px !important;
 
   --font-interface-override: "??";
-  --font-text-override: IBM Plex Sans, sans-serif;
+  --font-text-override: var(--body-font-select, "IBM Plex Sans", sans-serif);
   --font-monospace-override: "??";
 
   --quartz-icon-color: currentColor;
@@ -230,6 +230,18 @@ html {
   font-style: italic;
   font-weight: 400;
   src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-mono-2.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-serif.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 100 700;
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-serif-1.woff2") format("woff2");
 }
 
 body {
@@ -2677,7 +2689,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -2701,7 +2713,7 @@ body {
   }
 
   .callout .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -2759,7 +2771,7 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -2817,7 +2829,7 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -2875,7 +2887,7 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -2933,7 +2945,7 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -2991,7 +3003,7 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3049,7 +3061,7 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3107,7 +3119,7 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3165,7 +3177,7 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3223,7 +3235,7 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3281,7 +3293,7 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3339,7 +3351,7 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3397,7 +3409,7 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3455,7 +3467,7 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
-    --callout-color: 214, 233, 255;
+    --callout-color: 92, 168, 255;
     color: var(--callout-color);
     gap: 4px;
     border: 0px rgb(74, 56, 39);
@@ -3864,12 +3876,12 @@ body {
   .nav-files-container .nav-file-title {
     color: rgb(178, 150, 136);
     font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
   }
 
   .nav-files-container .nav-file-title.is-active {
     color: var(--nav-item-color);
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
     border-color: rgb(178, 150, 136);
     border-width: 0px;
     border-top-left-radius: 4px;
@@ -3880,14 +3892,14 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: var(--nav-item-weight);
+    font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+    font-weight: var(--font-semibold);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--nav-item-color);
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: var(--nav-item-weight);
+    font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+    font-weight: var(--font-semibold);
   }
 
   .nav-files-container .collapse-icon {
@@ -3902,8 +3914,8 @@ body {
 
   .explorer .folder-container > div {
     color: rgb(178, 150, 136);
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
+    font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+    font-weight: var(--font-semibold);
   }
 
   .nav-files-container {
@@ -5469,6 +5481,7 @@ body {
   }
 
   html {
+    --font-body-theme: "IBM Plex Sans", sans-serif;
     --font-monospace-theme: "IBM Plex Mono", monospace;
     --font-text-theme: "IBM Plex Sans", sans-serif;
   }
@@ -5617,7 +5630,7 @@ li.task-list-item[data-task="="] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task=">"] input[type="checkbox"]::after {
-  background-color: rgb(214, 233, 255);
+  background-color: rgb(92, 168, 255);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
@@ -5827,7 +5840,7 @@ li.task-list-item[data-task="H"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-  background-color: rgb(214, 233, 255);
+  background-color: rgb(92, 168, 255);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
@@ -5869,7 +5882,7 @@ li.task-list-item[data-task="K"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(162, 155, 254);
+  background-color: rgb(139, 92, 246);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
@@ -8564,7 +8577,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -9751,12 +9764,12 @@ html[saved-theme="dark"] {
     .nav-files-container .nav-file-title {
       color: rgb(128, 120, 116);
       font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
+      font-weight: 600;
     }
 
     .nav-files-container .nav-file-title.is-active {
       color: var(--nav-item-color);
-      font-family: "IBM Plex Sans", sans-serif;
+      font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
       border-color: rgb(128, 120, 116);
       border-width: 0px;
       border-top-left-radius: 4px;
@@ -9767,14 +9780,14 @@ html[saved-theme="dark"] {
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--nav-item-color);
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: var(--nav-item-weight);
+      font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+      font-weight: var(--font-semibold);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--nav-item-color);
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: var(--nav-item-weight);
+      font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+      font-weight: var(--font-semibold);
     }
 
     .nav-files-container .collapse-icon {
@@ -9789,8 +9802,8 @@ html[saved-theme="dark"] {
 
     .explorer .folder-container > div {
       color: rgb(128, 120, 116);
-      font-family: "IBM Plex Sans", sans-serif;
-      font-weight: 400;
+      font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+      font-weight: var(--font-semibold);
     }
 
     .nav-files-container {
@@ -11356,6 +11369,7 @@ html[saved-theme="dark"] {
     }
 
     html {
+      --font-body-theme: "IBM Plex Sans", sans-serif;
       --font-monospace-theme: "IBM Plex Mono", monospace;
       --font-text-theme: "IBM Plex Sans", sans-serif;
     }

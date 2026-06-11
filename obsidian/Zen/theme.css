@@ -325,7 +325,7 @@ body {
 	--table-header-background: rgba(245, 245, 245, 0.1);
 	--indentation-guide-color-active: var(--indentation-guide-color);
 	--scrollbar-thumb-color: rgba(255, 255, 255, 0.2);
-	--workspace-background-translucent: hsla(0, 0%, 0%, 0.3);
+	--workspace-background-translucent: hsla(0, 0%, 0%, 0.8);
 	--text-color: rgb(240, 240, 240);
 	--tree-item-color: rgba(210, 210, 210, 0.8);
 	--active-border-color: rgba(0, 157, 255, 0.8);
@@ -513,9 +513,34 @@ body:not(.is-phone) .status-bar {
 	margin: 0 5px 5px 5px;
 }
 
+body:not(.show-ribbon) .workspace.is-right-sidedock-open.is-left-sidedock-open .workspace-split.mod-left-split {
+	border-radius: var(--radius-l);
+	margin-left: 6px;
+}
+
+body:not(.show-ribbon) .workspace.is-right-sidedock-open.is-left-sidedock-open .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+	display: none !important;
+}
+
+body:not(.show-ribbon) .workspace.is-right-sidedock-open.is-left-sidedock-open .workspace-split.mod-left-split .workspace-tabs .workspace-tab-container {
+	border-left: none
+}
+
+.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+	border-radius: var(--radius-l);
+}
+
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+    background-color: transparent;
+	opacity: 0 !important;
+}
+
+.is-translucent .workspace {
+	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 40%, rgb(from var(--glass-bg-color) r g b / 0.7)) !important;
+}
 
 .is-translucent .workspace-split.mod-root {
-	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 10%, rgb(from var(--glass-bg-color) r g b / 0.5)) !important;
+	background: linear-gradient(90deg, transparent, rgb(from var(--glass-bg-color) r g b / 0.7) 20%, rgb(from var(--glass-bg-color) r g b / 0.5)) !important;
 }
 
 .tree-item-self.nav-folder-title.is-clickable.mod-collapsible:hover,

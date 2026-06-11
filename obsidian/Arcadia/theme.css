@@ -7,8 +7,8 @@
 
    Author: Peter J. Carter
    Website: https://theologyinfocus.org
-   Version: 2.1.0
-   Last Updated: 2026-03-26
+   Version: 2.1.1
+   Last Updated: 2026-06-10
    Minimum Obsidian Version: 0.16.0
 
    FEATURES:
@@ -94,11 +94,14 @@
    PERFORMANCE NOTES
 
    File size: ~250KB (6,900+ lines). Cannot be minified because Style Settings
-   requires /* @settings */ comment blocks in the CSS to function. Minifying or
+   requires its "@settings" comment blocks in the CSS to function. Minifying or
    stripping comments would break all 55+ Style Settings options.
+   (Never write nested comment markers inside this file: a stray close marker
+   here once ended this comment early and silently swallowed the font imports
+   and the entire base variable block.)
 
-   Font loading: 2 HTTP requests (1 combined Google Fonts, 1 OpenDyslexic CDN).
-   All 16 font families load on every page. See font import section for details.
+   Font loading: zero network requests. The theme declares font-family stacks
+   only and never downloads font files. See the font policy section for details.
 
    Color schemes: 34 total (16 dark + 18 light). Each defines ~20 CSS variables.
    Variables cascade naturally; no runtime switching cost beyond class application.
@@ -120,19 +123,15 @@
    ================================================================================ */
 
 /* ================================================================================
-   FONT IMPORTS
-   All Google Fonts combined into a single request for performance.
-   Previous: 15+ separate @import calls (15+ HTTP requests, render-blocking)
-   Current: 1 combined Google Fonts request + 1 OpenDyslexic (2 HTTP requests)
-
-   PERFORMANCE CEILING: All 16 font families load on every page regardless of
-   which font the user selects. CSS-only themes cannot conditionally load fonts
-   because @import does not support class-based conditions. Conditional loading
-   would require JavaScript (a plugin, not a theme). This is a known limitation,
-   not a bug. The combined Google Fonts URL uses display=swap to prevent FOIT.
+   FONT POLICY (NO REMOTE ASSETS)
+   Obsidian developer policies prohibit themes from loading remote assets, so
+   this theme downloads nothing: no Google Fonts, no CDN stylesheets. Every
+   font option is declared as a font-family stack with safe fallbacks (Georgia,
+   system serif, system sans, or monospace). A selected font (for example
+   Vollkorn, Caveat, or OpenDyslexic) is used when it is installed on the
+   system; otherwise the fallback stack applies. Fonts chosen in Obsidian's
+   Settings > Appearance > Font take precedence over the theme stacks.
    ================================================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=Fira+Code:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Literata:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,400;0,500;1,400&family=Source+Code+Pro:wght@400;500&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Vollkorn:ital,wght@0,400;0,600;1,400&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/open-dyslexic-regular.css');
 
 :root,
 .theme-light,
@@ -147,7 +146,7 @@
 
     /* Accent Colors - Interactive elements */
     --ctp-accent: 136, 192, 208;       /* Primary accent (links, highlights) */
-    --ctp-accent-hover: 116, 172, 188; /* Hover state (slightly darker) */
+    --ctp-accent-hover: var(--ctp-accent); /* Hover state - schemes may override */
 
     /* Status Colors - Semantic indicators */
     --ctp-success: 152, 195, 121;  /* Success states, confirmations */
@@ -164,6 +163,36 @@
 
     /* Additional UI Colors */
     --ctp-orchid: 180, 130, 200;   /* Accent variant for special elements */
+
+    /* Default named palette - every scheme may override these.
+       Defined here so no variable is ever undefined (light schemes
+       previously left these unset, breaking close-button and status
+       colors in light mode). */
+    --ctp-green: 100, 144, 100;
+    --ctp-red: 188, 80, 89;
+    --ctp-maroon: 160, 70, 80;
+    --ctp-apricot: 225, 185, 130;
+    --ctp-gold: 255, 215, 95;
+    --ctp-teal: 80, 146, 155;
+    --ctp-aqua: 127, 219, 255;
+    --ctp-indigo: 75, 0, 130;
+    --ctp-blue: 80, 120, 180;
+    --ctp-lavender: 140, 150, 180;
+
+    /* ====== Official Obsidian Variable Mappings ======
+       Map the Arcadia palette onto Obsidian's documented CSS variables so
+       core UI, plugins, and mobile follow the active color scheme. These
+       resolve per-scheme because the --ctp-* triplets cascade from body. */
+    --background-primary: rgb(var(--ctp-base));
+    --background-primary-alt: rgb(var(--ctp-mantle));
+    --text-normal: rgb(var(--ctp-text));
+    --text-muted: rgba(var(--ctp-text), 0.78);
+    --text-faint: rgba(var(--ctp-text), 0.58);
+    --text-accent: rgb(var(--ctp-accent));
+    --text-accent-hover: rgb(var(--ctp-accent-hover));
+    --interactive-accent: rgb(var(--ctp-accent));
+    --interactive-accent-hover: rgb(var(--ctp-accent-hover));
+    --text-selection: rgba(var(--ctp-accent), 0.25);
 
     /* ====== Typography System ======
        Font stacks with system fallbacks for reliability */
@@ -200,7 +229,11 @@
    SECTION 2: BASE ELEMENT STYLES
    ================================================================================ */
 body {
-    font-family: var(--arcadia-font-ui);
+    /* Use Obsidian's documented theme font variables so user-selected
+       interface/text/monospace fonts (Settings > Appearance) still win. */
+    --font-interface-theme: var(--arcadia-font-ui);
+    --font-text-theme: var(--arcadia-font-text);
+    --font-monospace-theme: var(--arcadia-font-code);
     line-height: 1.6;
     color: rgb(var(--ctp-text));
     background-color: rgb(var(--ctp-base));
@@ -226,25 +259,43 @@ body {
     --ctp-mantle: 245, 245, 245;
     --ctp-crust: 235, 235, 235;
     --ctp-text: 51, 51, 51;
+
+    /* Light-appropriate surfaces (the :root defaults are dark and made
+       quick switcher hotkeys and prompt borders unreadable in light mode) */
+    --ctp-surface0: 226, 228, 232;
+    --ctp-surface1: 212, 215, 221;
+    --ctp-surface2: 198, 202, 210;
+
+    /* Darker palette variants for adequate contrast on light backgrounds */
+    --ctp-green: 70, 130, 70;
+    --ctp-red: 190, 55, 65;
+    --ctp-maroon: 150, 50, 60;
+    --ctp-apricot: 185, 120, 50;
+    --ctp-gold: 165, 130, 25;
+    --ctp-teal: 35, 115, 125;
+    --ctp-aqua: 25, 125, 155;
+    --ctp-indigo: 90, 70, 160;
+    --ctp-blue: 50, 100, 170;
+    --ctp-lavender: 105, 110, 155;
+    --ctp-orchid: 140, 90, 170;
+
+    /* Status colors darkened for light backgrounds */
+    --ctp-success: 60, 140, 70;
+    --ctp-warning: 170, 120, 20;
+    --ctp-error: 185, 55, 65;
 }
 
 .theme-dark {
     --ctp-text: 230, 230, 230;
 }
 
-/* ====== Scrollbars ====== */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgb(var(--ctp-mantle));
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(var(--ctp-accent));
-    border-radius: 4px;
+/* ====== Scrollbars ======
+   Uses Obsidian's official scrollbar variables instead of raw
+   ::-webkit-scrollbar overrides (plays nicer with mobile and core UI). */
+body {
+    --scrollbar-bg: rgba(var(--ctp-mantle), 0.6);
+    --scrollbar-thumb-bg: rgba(var(--ctp-accent), 0.45);
+    --scrollbar-active-thumb-bg: rgb(var(--ctp-accent));
 }
 
 
@@ -346,9 +397,11 @@ name: Arcadia Theme Settings
 id: arcadia-settings
 settings:
   - id: accent-color
-    title: Accent Color
+    title: Accent color override
+    description: Replace the scheme's built-in accent with a fixed color
     type: class-select
-    default: ctp-theme-indigo
+    allowEmpty: true
+    default: none
     options:
       - label: Indigo
         value: ctp-theme-indigo
@@ -358,24 +411,6 @@ settings:
         value: ctp-theme-rose
       - label: Teal
         value: ctp-theme-teal
-  - id: font-family
-    title: Font Family
-    type: variable-select
-    default: var(--arcadia-font-ui)
-    options:
-      - label: System UI
-        value: system-ui
-      - label: Inter
-        value: 'Inter'
-      - label: Geist
-        value: 'Geist'
-  - id: border-radius
-    title: Border Radius
-    type: variable-number
-    default: 6
-    min: 2
-    max: 12
-    step: 1
 */
 
 /* @settings
@@ -654,7 +689,7 @@ settings:
     default: false
   - id: dyslexia-friendly
     title: Dyslexia-Friendly Mode
-    description: Use OpenDyslexic font with improved spacing
+    description: Improve letter and word spacing, and use the OpenDyslexic font when it is installed on your system
     type: class-toggle
     default: false
 */
@@ -1882,7 +1917,7 @@ settings:
 }
 
 /* Crownwell typography - elegant Cormorant Garamond */
-/* Fonts loaded via combined Google Fonts import at top of file */
+/* Fonts resolve from the local system; see the font policy section at top of file */
 
 .theme-light.ctp-crownwell .markdown-preview-view,
 .theme-light.ctp-crownwell .cm-line,
@@ -2670,11 +2705,12 @@ h2,
    SECTION 7: CONTENT ELEMENTS
    ================================================================================ */
 
-/* ====== Paragraphs & Text ====== */
+/* ====== Paragraphs & Text ======
+   Note: no vertical margins on .cm-line. CodeMirror 6 measures line
+   geometry and margins break cursor/selection placement. */
 .cm-line {
     font-family: var(--arcadia-font-text);
     line-height: 1.7;
-    margin: 0.75em 0;
 }
 
 .cm-strong {
@@ -2694,27 +2730,20 @@ h2,
     text-align: justify !important;
 }
 
-/* Text justification for live preview mode */
-.cm-line:not(.HyperMD-header):not(.cm-codeblock) {
+/* Text justification for live preview mode (skip headings and code) */
+.cm-line:not(.HyperMD-header):not(.HyperMD-codeblock) {
     text-align: justify !important;
 }
 
-/* ====== Blockquotes ====== */
-.cm-blockquote {
+/* ====== Blockquotes (live preview uses HyperMD-quote lines in CM6) ====== */
+.cm-s-obsidian .HyperMD-quote {
     border-left: 3px solid rgba(var(--ctp-accent), 0.4);
     color: rgba(var(--ctp-text), 0.8);
     padding-left: var(--arcadia-space-md);
-    margin: 1em 0;
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
     color: rgb(var(--ctp-accent));
-}
-
-/* ====== Lists ====== */
-.cm-list {
-    padding-left: var(--arcadia-space-lg);
-    margin: 0.75em 0;
 }
 
 
@@ -2722,13 +2751,18 @@ h2,
    SECTION 8: CODE BLOCKS & INLINE CODE
    ================================================================================ */
 
-/* ====== Code blocks ====== */
-.cm-codeBlock {
+/* ====== Code blocks (CM6 live preview lines) ====== */
+.cm-s-obsidian .HyperMD-codeblock {
     background: rgba(var(--ctp-mantle), 0.8);
-    border: 1px solid rgba(var(--ctp-accent), 0.1);
-    border-radius: 6px;
-    padding: var(--arcadia-space-md);
-    margin: 1.25em 0;
+    font-family: var(--arcadia-font-code);
+}
+
+.cm-s-obsidian .HyperMD-codeblock-begin {
+    border-radius: 6px 6px 0 0;
+}
+
+.cm-s-obsidian .HyperMD-codeblock-end {
+    border-radius: 0 0 6px 6px;
 }
 
 /* ====== Inline code ====== */
@@ -2830,18 +2864,25 @@ h2,
    SECTION 10: TABLES & CANVAS
    ================================================================================ */
 
-/* ====== Tables ====== */
-.cm-table {
+/* ====== Tables ======
+   Targets real table elements (reading view and CM6 live preview both
+   render <table> now; the old .cm-table-* classes no longer exist). */
+.markdown-rendered table,
+.markdown-preview-view table {
     border-collapse: collapse;
     margin: 1.5em 0;
 }
 
-.cm-table-header {
+.markdown-rendered thead th,
+.markdown-preview-view thead th {
     background: rgba(var(--ctp-accent), 0.1);
     border-bottom: 2px solid rgba(var(--ctp-accent), 0.3);
 }
 
-.cm-table-cell {
+.markdown-rendered th,
+.markdown-rendered td,
+.markdown-preview-view th,
+.markdown-preview-view td {
     padding: var(--arcadia-space-xs) var(--arcadia-space-sm);
     border: 1px solid rgba(var(--ctp-accent), 0.1);
 }
@@ -3184,15 +3225,6 @@ h2,
    SECTION 19: NAVIGATION SIDEBAR & FILE EXPLORER
    ================================================================================ */
 
-/* ====== Sidebar architecture ====== */
-.workspace-split.mod-root>.workspace-leaf:first-child {
-    --arcadia-nav-width: 280px;
-    width: var(--arcadia-nav-width);
-    min-width: unset;
-    border-right: 1px solid rgba(var(--ctp-accent), 0.1);
-    overflow-x: hidden;
-}
-
 /* ====== File tree structure ====== */
 .nav-folder-children {
     padding-left: var(--arcadia-space-xs);
@@ -3235,15 +3267,8 @@ h2,
     display: none;  /* Hidden in favor of custom book icons */
 }
 
-.nav-folder-children {
-    transition: max-height 0.3s var(--animation-smooth);
-    max-height: 5000px;
-    overflow: hidden;
-}
-
-.nav-folder.is-collapsed .nav-folder-children {
-    max-height: 0;
-}
+/* Obsidian manages folder collapse itself; the previous max-height
+   animation hack clipped folders taller than 5000px. Removed. */
 
 /* ====== Interactive states ====== */
 .nav-folder-title:hover {
@@ -3254,9 +3279,11 @@ h2,
     background: rgba(var(--ctp-accent), 0.05) !important;
 }
 
-/* ====== Rename focus state ====== */
+/* ====== Rename focus state ======
+   Uses the scheme text color (a hardcoded #444 was unreadable on dark
+   backgrounds while renaming files). */
 .tree-item-self.is-being-renamed:focus-within {
-    color: #444 !important;
+    color: rgb(var(--ctp-text)) !important;
 }
 
 
@@ -3290,7 +3317,7 @@ h2,
 
 /* ====== Top-level folder styling ====== */
 .tree-item-self.nav-folder-title[style*="margin-inline-start: 0px"] {
-    font-size: 0.50rem !important;
+    font-size: 0.95rem !important;
     font-weight: normal;
     border-top: 1px solid rgba(120, 120, 120, 0.6) !important;
     margin-top: 8px;
@@ -3862,21 +3889,28 @@ h2,
    ================================================================================ */
 
 @media (max-width: 768px) {
-    .workspace-split.mod-root>.workspace-leaf:first-child {
-        --arcadia-nav-width: 240px;
-        z-index: 100;
-        position: relative;
-        box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1);
-    }
-
     .markdown-source-view,
     .markdown-preview-view {
-        --line-width: 100%;
+        --file-line-width: 100%;
         --content-padding: var(--arcadia-space-sm);
     }
 
     .search-input-container {
         margin: var(--arcadia-space-sm);
+    }
+
+    /* Reading width presets yield to small screens */
+    .reading-width-narrow .markdown-preview-view,
+    .reading-width-normal .markdown-preview-view,
+    .reading-width-wide .markdown-preview-view {
+        max-width: 100%;
+    }
+
+    /* Disable hover-lift effects on touch devices (no hover state,
+       and transforms trigger repaints during scroll momentum) */
+    .markdown-preview-view img:not(.emoji):hover,
+    .markdown-preview-view video:hover {
+        transform: none;
     }
 }
 
@@ -5668,6 +5702,13 @@ a.tag:hover {
     padding: 0;
 }
 
+/* Bordered embeds toggle (Style Settings: embed-borders) */
+.embed-borders .markdown-embed,
+.embed-borders .internal-embed:not(.image-embed) {
+    border: 1px solid rgba(var(--ctp-accent), 0.45);
+    border-left: 4px solid rgb(var(--ctp-accent));
+}
+
 /* Embed link icon */
 .markdown-embed-link {
     position: absolute;
@@ -5878,7 +5919,8 @@ span.progress-bar {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15),
                 0 1px 3px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     max-width: 100%;
     height: auto;
     display: block;
@@ -5951,7 +5993,8 @@ video {
     display: block;
     margin: 1.5rem auto;
     background: rgb(var(--ctp-crust));
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Video hover effect */
@@ -6066,7 +6109,8 @@ audio {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),
                 0 2px 4px rgba(0, 0, 0, 0.1),
                 inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Audio hover effect */

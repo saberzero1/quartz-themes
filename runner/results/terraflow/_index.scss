@@ -45,18 +45,18 @@
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
   --code-comment: #707592 !important;
-  --code-function: #d97756 !important;
+  --code-function: #d36039 !important;
   --code-important: #ae4e36 !important;
-  --code-keyword: #6a97bb !important;
+  --code-keyword: #5387b0 !important;
   --code-normal: var(--text-normal) !important;
   --code-operator: var(--color-red) !important;
   --code-property: #798d5d !important;
   --code-punctuation: rgba(61, 46, 26, 0.7) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: #8f8ca6 !important;
+  --code-string: #85829e !important;
   --code-tag: #c36686 !important;
-  --code-value: #779088 !important;
+  --code-value: #6f8880 !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
@@ -759,19 +759,19 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(217, 119, 86) none 0px;
+    outline: rgb(211, 96, 57) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(217, 119, 86);
+    text-decoration-color: rgb(211, 96, 57);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
-      color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: none;
     user-select: text;
     animation-name: none;
@@ -807,19 +807,19 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(217, 119, 86) none 0px;
+    outline: rgb(211, 96, 57) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(217, 119, 86);
+    text-decoration-color: rgb(211, 96, 57);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
-      color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: none;
     user-select: text;
     animation-name: none;
@@ -854,19 +854,19 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(217, 119, 86) none 0px;
+    outline: rgb(211, 96, 57) none 0px;
     text-decoration: underline oklch(0.653792 0.189218 293.559 / 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
     text-decoration-thickness: var(--link-decoration-thickness);
     transition:
-      color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: none;
     user-select: text;
     animation-name: none;
@@ -1277,8 +1277,8 @@ body {
     text-decoration-line: none;
     text-decoration-style: solid;
     transition:
-      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: none;
     user-select: text;
     animation-name: none;
@@ -1322,8 +1322,8 @@ body {
     transform: none;
     user-select: text;
     animation-name: strike-draw;
-    animation-duration: 0.3s;
-    animation-timing-function: ease;
+    animation-duration: 0.32s;
+    animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
@@ -2451,10 +2451,10 @@ body {
     margin-inline-start: calc(var(--checkbox-size) * -1.5);
     width: var(--checkbox-size);
     transition:
-      transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+      background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     position: relative;
     top: auto;
   }
@@ -2992,7 +2992,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -3975,7 +3975,7 @@ body {
     text-decoration: rgb(34, 34, 34);
     border-left: var(--table-column-first-border-width) solid rgb(228, 228, 228);
     border-right: 1px solid rgb(228, 228, 228);
-    border-top: 0px solid rgb(61, 46, 26);
+    border-top: 1px solid rgba(210, 207, 197, 0.533);
     border-bottom: 1px solid rgb(228, 228, 228);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -4695,6 +4695,7 @@ body {
     padding-inline-end: 12px;
     padding-inline-start: 24px;
     padding: 12px 12px 12px 24px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -5039,14 +5040,17 @@ body {
     --border-thin: 1px;
     --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1);
     --checklist-done-decoration: line-through;
+    --dur-instant: 0.12s;
+    --dur-modal: 0.34s;
+    --dur-quick: 0.22s;
+    --dur-sheet: 0.42s;
+    --ease-apple: cubic-bezier(0.32, 0.72, 0, 1);
     --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8);
     --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5);
     --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2);
     --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2);
     --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3);
-    --editor-max-width: var(--line-width, 64ch);
-    --fast: 0.15s ease;
-    --file-line-width: var(--line-width, 64ch);
+    --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --glass-border: rgba(255, 255, 255, 0.2);
     --heading-bg-opacity: 0.2;
     --heading-pad-x: 0.5em;
@@ -5068,14 +5072,13 @@ body {
     --height-button-sm: 32px;
     --height-input: 38px;
     --layer-status-bar: 1000;
-    --line-normal: var(--editor-line-height, 1.6);
     --line-relaxed: 2;
     --line-tight: 1.5;
     --link-opacity-hover: 0.18;
     --link-opacity-normal: 0.1;
     --link-opacity-unresolved: 0.05;
     --link-opacity-unresolved-hover: 0.12;
-    --normal: 0.25s ease;
+    --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --opacity-active: 0.12;
     --opacity-border: 0.45;
     --opacity-divider: 0.15;
@@ -5089,7 +5092,6 @@ body {
     --r3: 12px;
     --r4: 16px;
     --radius-pill: 100px;
-    --reading-max-width: var(--line-width, 64ch);
     --s1: 4px;
     --s2: 8px;
     --s3: 12px;
@@ -5100,9 +5102,11 @@ body {
     --s8: 32px;
     --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-2: 0 1px 3px rgba(0, 0, 0, 0.08);
-    --shadow-3: 0 6px 18px rgba(0, 0, 0, var(--opacity-divider));
+    --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.1);
     --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12);
-    --slow: 0.3s ease;
+    --shadow-overlay: 0 10px 40px rgba(0, 0, 0, 0.16);
+    --shadow-overlay-dark: 0 12px 48px rgba(0, 0, 0, 0.45);
+    --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --squircle-btn: 40%;
     --squircle-main: 60%;
     --squircle-soft: 80%;
@@ -5111,9 +5115,9 @@ body {
     --tracking-snug: -0.01em;
     --tracking-tight: -0.02em;
     --transition-bounce: 0.3s var(--ease-bounce-md);
-    --transition-callout-link: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s, color 0.18s;
+    --transition-callout-link: transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
     --transition-depth: box-shadow 0.2s var(--ease-bounce-sm), transform 0.2s var(--ease-bounce-sm);
-    --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --weight-bold: 700;
     --weight-medium: 500;
     --weight-normal: 400;
@@ -5122,11 +5126,8 @@ body {
     --whimsy-micro: 0.15s;
     --whimsy-normal: 0.35s;
     --whimsy-scale-emphasis: 1.1;
-    --whimsy-scale-normal: 1.05;
     --whimsy-scale-pop: 1.15;
-    --whimsy-scale-subtle: 1.02;
     --whimsy-slow: 0.5s;
-    --whimsy-stagger-base: 0.03s;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -6035,12 +6036,12 @@ html[saved-theme="dark"] {
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
-        color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform: none;
       user-select: text;
       animation-name: none;
@@ -6083,12 +6084,12 @@ html[saved-theme="dark"] {
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
-        color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform: none;
       user-select: text;
       animation-name: none;
@@ -6130,12 +6131,12 @@ html[saved-theme="dark"] {
       text-decoration-style: var(--link-unresolved-decoration-style);
       text-decoration-thickness: var(--link-decoration-thickness);
       transition:
-        color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        text-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform: none;
       user-select: text;
       animation-name: none;
@@ -6546,8 +6547,8 @@ html[saved-theme="dark"] {
       text-decoration-line: none;
       text-decoration-style: solid;
       transition:
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transform: none;
       user-select: text;
       animation-name: none;
@@ -6591,8 +6592,8 @@ html[saved-theme="dark"] {
       transform: none;
       user-select: text;
       animation-name: strike-draw;
-      animation-duration: 0.3s;
-      animation-timing-function: ease;
+      animation-duration: 0.32s;
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
       animation-delay: 0s;
       animation-iteration-count: 1;
       animation-direction: normal;
@@ -7720,10 +7721,10 @@ html[saved-theme="dark"] {
       margin-inline-start: calc(var(--checkbox-size) * -1.5);
       width: var(--checkbox-size);
       transition:
-        transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       position: relative;
       top: auto;
     }
@@ -8262,7 +8263,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 
@@ -9245,7 +9246,7 @@ html[saved-theme="dark"] {
       text-decoration: rgb(218, 218, 218);
       border-left: var(--table-column-first-border-width) solid rgb(51, 51, 51);
       border-right: 1px solid rgb(51, 51, 51);
-      border-top: 0px solid rgb(232, 220, 198);
+      border-top: 1px solid rgba(74, 71, 62, 0.533);
       border-bottom: 1px solid rgb(51, 51, 51);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -9965,6 +9966,7 @@ html[saved-theme="dark"] {
       padding-inline-end: 12px;
       padding-inline-start: 24px;
       padding: 12px 12px 12px 24px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -10309,14 +10311,17 @@ html[saved-theme="dark"] {
       --border-thin: 1px;
       --bounce: 0.25s cubic-bezier(0.34, 1.15, 0.64, 1);
       --checklist-done-decoration: line-through;
+      --dur-instant: 0.12s;
+      --dur-modal: 0.34s;
+      --dur-quick: 0.22s;
+      --dur-sheet: 0.42s;
+      --ease-apple: cubic-bezier(0.32, 0.72, 0, 1);
       --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8);
       --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5);
       --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2);
       --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2);
       --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3);
-      --editor-max-width: var(--line-width, 64ch);
-      --fast: 0.15s ease;
-      --file-line-width: var(--line-width, 64ch);
+      --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       --glass-border: rgba(255, 255, 255, 0.2);
       --heading-bg-opacity: 0.2;
       --heading-pad-x: 0.5em;
@@ -10338,14 +10343,13 @@ html[saved-theme="dark"] {
       --height-button-sm: 32px;
       --height-input: 38px;
       --layer-status-bar: 1000;
-      --line-normal: var(--editor-line-height, 1.6);
       --line-relaxed: 2;
       --line-tight: 1.5;
       --link-opacity-hover: 0.18;
       --link-opacity-normal: 0.1;
       --link-opacity-unresolved: 0.05;
       --link-opacity-unresolved-hover: 0.12;
-      --normal: 0.25s ease;
+      --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       --opacity-active: 0.12;
       --opacity-border: 0.45;
       --opacity-divider: 0.15;
@@ -10359,7 +10363,6 @@ html[saved-theme="dark"] {
       --r3: 12px;
       --r4: 16px;
       --radius-pill: 100px;
-      --reading-max-width: var(--line-width, 64ch);
       --s1: 4px;
       --s2: 8px;
       --s3: 12px;
@@ -10370,9 +10373,11 @@ html[saved-theme="dark"] {
       --s8: 32px;
       --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.05);
       --shadow-2: 0 1px 3px rgba(0, 0, 0, 0.08);
-      --shadow-3: 0 6px 18px rgba(0, 0, 0, var(--opacity-divider));
+      --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.1);
       --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12);
-      --slow: 0.3s ease;
+      --shadow-overlay: 0 10px 40px rgba(0, 0, 0, 0.16);
+      --shadow-overlay-dark: 0 12px 48px rgba(0, 0, 0, 0.45);
+      --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       --squircle-btn: 40%;
       --squircle-main: 60%;
       --squircle-soft: 80%;
@@ -10381,9 +10386,9 @@ html[saved-theme="dark"] {
       --tracking-snug: -0.01em;
       --tracking-tight: -0.02em;
       --transition-bounce: 0.3s var(--ease-bounce-md);
-      --transition-callout-link: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s, color 0.18s;
+      --transition-callout-link: transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
       --transition-depth: box-shadow 0.2s var(--ease-bounce-sm), transform 0.2s var(--ease-bounce-sm);
-      --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
       --weight-bold: 700;
       --weight-medium: 500;
       --weight-normal: 400;
@@ -10392,11 +10397,8 @@ html[saved-theme="dark"] {
       --whimsy-micro: 0.15s;
       --whimsy-normal: 0.35s;
       --whimsy-scale-emphasis: 1.1;
-      --whimsy-scale-normal: 1.05;
       --whimsy-scale-pop: 1.15;
-      --whimsy-scale-subtle: 1.02;
       --whimsy-slow: 0.5s;
-      --whimsy-stagger-base: 0.03s;
     }
   }
 }

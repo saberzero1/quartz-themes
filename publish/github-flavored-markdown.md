@@ -6,8 +6,8 @@ cssclasses:
 
 > This page is to quickly check how all features are rendered.
 
-- Theme author: <a href="https://github.com/tofrankie" target="_blank" rel="noopener noreferrer">frankie</a>
-- Support the author: Author did not provide funding links in `manifest.json`
+- Theme author: <a href="https://github.com/tofrankie" target="_blank" rel="noopener noreferrer">Frankie</a>
+- Support the author: <a href="https://paypal.me/tofrankie" target="_blank" rel="noopener noreferrer">PayPal</a>
 - <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/github-flavored-markdown/README.md">Install instructions</a>
 
 | Name                       | Modes                     | Compatibility                                                                                   | License                                                                                                                                                         |

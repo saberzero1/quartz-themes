@@ -86,13 +86,13 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --graph-arrow: var(--text-muted) !important;
+  --graph-line-highlight: var(--interactive-accent) !important;
   --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --code-color: var(--text-muted) !important;
   --callout-margin: 4px;
   --graph-circle-fill: var(--def-red) !important;
   --graph-circle-fill-unresolved: gray !important;
   --graph-fill-tag: darkorange !important;
-  --graph-line-highlight: var(--interactive-accent) !important;
   --callout-bg-b: var(--light-blue);
   --callout-bg-g: var(--light-green);
   --callout-bg-m: var(--light-gray);
@@ -239,13 +239,13 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --graph-arrow: var(--text-muted) !important;
+  --graph-line-highlight: var(--interactive-accent) !important;
   --graph-circle-fill-highlight: var(--interactive-accent) !important;
   --code-color: var(--text-muted) !important;
   --callout-margin: 4px;
   --graph-circle-fill: var(--def-red) !important;
   --graph-circle-fill-unresolved: gray !important;
   --graph-fill-tag: darkorange !important;
-  --graph-line-highlight: var(--interactive-accent) !important;
   --callout-bg-b: hsl(214deg 100% 61% / 50%);
   --callout-bg-g: hsl(111deg 42% 45% / 50%);
   --callout-bg-m: var(--dark-gray);
@@ -2819,7 +2819,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -8605,7 +8605,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

@@ -2139,6 +2139,11 @@ mark {
   color: #7cafc2;
   background: transparent;
 }
+/* OHS Workbench tabs  */
+.ohs-workbench-tab {
+  background-color: transparent !important;
+  color: var(--text-normal) !important;
+}
 /* Drop indicators */
 .board-item-drop-target-top {
   border-top: 2px solid #7cafc2 !important;

@@ -2916,7 +2916,7 @@
     "styles": {
       "color": "rgb(184, 171, 168)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgb(51, 41, 43)",
+      "borderColor": "rgb(184, 171, 168)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },
@@ -2943,7 +2943,7 @@
         "styles": {
           "color": "rgb(184, 171, 168)",
           "backgroundColor": "rgba(0, 0, 0, 0)",
-          "borderColor": "rgb(184, 171, 168)",
+          "borderColor": "rgb(184, 171, 168) rgb(184, 171, 168) rgb(58, 43, 46)",
           "fill": "rgb(0, 0, 0)",
           "stroke": "none"
         },
@@ -3008,9 +3008,9 @@
             "classes": ["metadata-properties-title"],
             "attrs": {},
             "styles": {
-              "color": "rgb(240, 232, 229)",
+              "color": "rgb(184, 171, 168)",
               "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(240, 232, 229)",
+              "borderColor": "rgb(184, 171, 168)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -3120,9 +3120,9 @@
                           "aria-label": "cssclass"
                         },
                         "styles": {
-                          "color": "rgb(184, 171, 168)",
+                          "color": "color(srgb 0.862118 0.597804 0.563451)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(184, 171, 168)",
+                          "borderColor": "color(srgb 0.862118 0.597804 0.563451)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
                         },

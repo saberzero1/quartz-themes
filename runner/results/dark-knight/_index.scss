@@ -1542,9 +1542,9 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 32px 0px;
-    margin-block-end: 32px;
-    margin-block-start: 32px;
+    margin: 28.8px 0px 9.6px;
+    margin-block-end: 9.6px;
+    margin-block-start: 28.8px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
   }
@@ -2554,11 +2554,11 @@ body {
     border-end-end-radius: 0px;
     color: var(--dk-bone);
     overflow-x: visible;
-    padding: 0px;
-    padding-block-end: 0px;
-    padding-block-start: 0px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding: 12px 16px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
+    padding-inline-end: 16px;
+    padding-inline-start: 16px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
@@ -3103,9 +3103,9 @@ body {
   }
 
   li.task-list-item input[type="checkbox"] {
-    border-color: rgb(170, 162, 142);
-    border-radius: 3px;
-    border-width: 1px;
+    border-color: rgb(28, 28, 36);
+    border-radius: 0px;
+    border-width: 0px;
     background-color: var(--dk-asphalt);
   }
 
@@ -3200,7 +3200,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7778,9 +7778,9 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 32px 0px;
-      margin-block-end: 32px;
-      margin-block-start: 32px;
+      margin: 28.8px 0px 9.6px;
+      margin-block-end: 9.6px;
+      margin-block-start: 28.8px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
     }
@@ -8790,11 +8790,11 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
       color: var(--dk-bone);
       overflow-x: visible;
-      padding: 0px;
-      padding-block-end: 0px;
-      padding-block-start: 0px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding: 12px 16px;
+      padding-block-end: 12px;
+      padding-block-start: 12px;
+      padding-inline-end: 16px;
+      padding-inline-start: 16px;
       white-space-collapse: preserve;
       text-wrap-mode: nowrap;
     }
@@ -9339,9 +9339,9 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item input[type="checkbox"] {
-      border-color: rgb(58, 58, 72);
-      border-radius: 3px;
-      border-width: 1px;
+      border-color: rgb(212, 212, 220);
+      border-radius: 0px;
+      border-width: 0px;
       background-color: var(--dk-asphalt);
     }
 
@@ -9436,7 +9436,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

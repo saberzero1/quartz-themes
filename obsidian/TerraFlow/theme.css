@@ -5,7 +5,7 @@ id: seasonal-themes
 settings:
     -
         id: seasonal-heading
-        title: 🍂 Seasonal Color Schemes
+        title: 🎨 Color Scheme
         type: heading
         level: 2
         collapsed: false
@@ -44,50 +44,159 @@ settings:
             -
                 label: 🍃 Calm Focus
                 value: calm-focus-theme
-
+            -
+                label: 🏜️ Melange
+                value: melange-theme
     -
-        id: focus-mode-heading
-        title: 🔬 Deep Focus Mode
-        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: focus-mode
-        title: Enable Deep Focus Mode
-        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
+        id: use-custom-accent
+        title: Custom Accent Colour
+        description: Enable to override the seasonal accent with the colour below
         type: class-toggle
         default: false
     -
-        id: focus-mode-dim-paragraphs
-        title: Typewriter Dimming
-        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+        id: custom-accent
+        title: Accent Colour (when override is on)
+        description: The accent colour used when Custom Accent Override is enabled
+        type: variable-color
+        default: "#5E7D6E"
+        opacity: false
+        format: hex
+    -
+        id: enable-monochrome
+        title: Monochrome Mode
+        description: Desaturate the interface to grayscale
         type: class-toggle
         default: false
     -
-        id: focus-mode-hide-sidebars
-        title: Hide Sidebar Panels
-        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+        id: low-contrast
+        title: Low Contrast Mode
+        description: Unify the whole window on the season's deeper panel tone for one calm, rich surface — works with every season
         type: class-toggle
         default: false
     -
-        id: focus-mode-keep-chrome
-        title: Keep Ribbon & Status Bar
-        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
+        id: heading-color-intensity
+        title: Heading Colour Intensity
+        description: Muted blends headings into the text colour (dark, barely noticeable); Vivid lifts them to full palette saturation (funky!)
+        type: class-select
+        allowEmpty: false
+        default: heading-color-default
+        options:
+            -
+                label: Default
+                value: heading-color-default
+            -
+                label: Muted (subtle)
+                value: heading-color-muted
+            -
+                label: Vivid (funky)
+                value: heading-color-vivid
+    -
+        id: tinted-body-text
+        title: Season-Tinted Body Text
+        description: Blend the season's accent colour into body text so the palette shows through — verified readable in every season
         type: class-toggle
         default: false
-
     -
-        id: visual-appearance-heading
-        title: 🎨 Visual & Appearance
-        type: heading
-        level: 2
-        collapsed: true
+        id: body-text-tint
+        title: Body Text Tint Strength
+        description: How much accent to blend in (used when Season-Tinted Body Text is on)
+        type: variable-number-slider
+        default: 20
+        min: 10
+        max: 40
+        step: 5
+        format: "%"
     -
-        id: interface-heading
-        title: Interface
+        id: p3-accents
+        title: P3 Vivid Accents
+        description: On wide-gamut (Display P3) Apple screens, boost the season accent's chroma so it glows — no effect on sRGB displays or the Custom Accent override
+        type: class-toggle
+        default: false
+    -
+        id: custom-heading-colors-heading
+        title: Custom Heading Colours
+        description: Override the season's H1–H6 colours with your own
         type: heading
         level: 3
+        collapsed: true
+    -
+        id: custom-heading-colors
+        title: Enable Custom Heading Colours
+        description: Use the colours below instead of the season palette — composes with Heading Colour Intensity
+        type: class-toggle
+        default: false
+    -
+        id: custom-h1
+        title: H1 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#c77b8b"
+        alt-format:
+            -
+                id: custom-h1-rgb
+                format: rgb-values
+    -
+        id: custom-h2
+        title: H2 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#bc5c00"
+        alt-format:
+            -
+                id: custom-h2-rgb
+                format: rgb-values
+    -
+        id: custom-h3
+        title: H3 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#a08428"
+        alt-format:
+            -
+                id: custom-h3-rgb
+                format: rgb-values
+    -
+        id: custom-h4
+        title: H4 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#6e9b72"
+        alt-format:
+            -
+                id: custom-h4-rgb
+                format: rgb-values
+    -
+        id: custom-h5
+        title: H5 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#7892bd"
+        alt-format:
+            -
+                id: custom-h5-rgb
+                format: rgb-values
+    -
+        id: custom-h6
+        title: H6 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: "#ad6bc0"
+        alt-format:
+            -
+                id: custom-h6-rgb
+                format: rgb-values
+
+    -
+        id: interface-heading
+        title: 🖥️ Interface
+        type: heading
+        level: 2
         collapsed: true
     -
         id: layout-style
@@ -122,30 +231,17 @@ settings:
         type: class-toggle
         default: false
     -
-        id: use-custom-accent
-        title: Custom Accent Colour
-        description: Enable to override the seasonal accent with the colour below
+        id: system-fonts
+        title: System Font (San Francisco)
+        description: Use the native system font stack (SF Pro on Apple platforms) for text and interface
         type: class-toggle
         default: false
-    -
-        id: custom-accent
-        title: Accent Colour (when override is on)
-        description: The accent colour used when Custom Accent Override is enabled
-        type: variable-color
-        default: "#5E7D6E"
-        opacity: false
-        format: hex
-    -
-        id: enable-monochrome
-        title: Monochrome Mode
-        description: Desaturate the interface to grayscale
-        type: class-toggle
-        default: false
+
     -
         id: animations-heading
-        title: Animations
+        title: ✨ Animations
         type: heading
-        level: 3
+        level: 2
         collapsed: true
     -
         id: animation-style
@@ -161,11 +257,12 @@ settings:
             -
                 label: Whimsy (Bouncy)
                 value: animation-style-whimsy
+
     -
         id: content-styles-heading
-        title: Content Styles
+        title: ✍️ Editor & Content
         type: heading
-        level: 3
+        level: 2
         collapsed: true
     -
         id: heading-style-selector
@@ -196,15 +293,6 @@ settings:
             -
                 label: Badge (Pill)
                 value: heading-style-badge
-            -
-                label: Outline
-                value: heading-style-outline
-            -
-                label: 3D Embossed
-                value: heading-style-3d
-            -
-                label: Vibrant Glow
-                value: heading-style-vibrant
     -
         id: heading-alignment
         title: Heading Alignment
@@ -226,6 +314,115 @@ settings:
         type: variable-text
         default: inherit
     -
+        id: heading-case-heading
+        title: Heading Case
+        description: Per-level text case — Title Case capitalizes the first letter of every word
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: h1-case
+        title: H1 Case
+        type: class-select
+        allowEmpty: false
+        default: h1-case-normal
+        options:
+            -
+                label: Normal
+                value: h1-case-normal
+            -
+                label: Title Case
+                value: h1-case-title
+            -
+                label: UPPERCASE
+                value: h1-case-upper
+    -
+        id: h2-case
+        title: H2 Case
+        type: class-select
+        allowEmpty: false
+        default: h2-case-normal
+        options:
+            -
+                label: Normal
+                value: h2-case-normal
+            -
+                label: Title Case
+                value: h2-case-title
+            -
+                label: UPPERCASE
+                value: h2-case-upper
+    -
+        id: h3-case
+        title: H3 Case
+        type: class-select
+        allowEmpty: false
+        default: h3-case-normal
+        options:
+            -
+                label: Normal
+                value: h3-case-normal
+            -
+                label: Title Case
+                value: h3-case-title
+            -
+                label: UPPERCASE
+                value: h3-case-upper
+    -
+        id: h4-case
+        title: H4 Case
+        type: class-select
+        allowEmpty: false
+        default: h4-case-normal
+        options:
+            -
+                label: Normal
+                value: h4-case-normal
+            -
+                label: Title Case
+                value: h4-case-title
+            -
+                label: UPPERCASE
+                value: h4-case-upper
+    -
+        id: h5-case
+        title: H5 Case
+        type: class-select
+        allowEmpty: false
+        default: h5-case-normal
+        options:
+            -
+                label: Normal
+                value: h5-case-normal
+            -
+                label: Title Case
+                value: h5-case-title
+            -
+                label: UPPERCASE
+                value: h5-case-upper
+    -
+        id: h6-case
+        title: H6 Case
+        type: class-select
+        allowEmpty: false
+        default: h6-case-normal
+        options:
+            -
+                label: Normal
+                value: h6-case-normal
+            -
+                label: Title Case
+                value: h6-case-title
+            -
+                label: UPPERCASE
+                value: h6-case-upper
+    -
+        id: heading-tight-tracking
+        title: Tight Heading Tracking
+        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+        type: class-toggle
+        default: false
+    -
         id: link-style-selector
         title: Link Style
         description: Choose a visual style for links in your notes
@@ -245,9 +442,6 @@ settings:
             -
                 label: Neon Glow
                 value: link-style-glow
-            -
-                label: Retro Wavy
-                value: link-style-wavy
     -
         id: highlight-style-selector
         title: Highlight Style
@@ -297,21 +491,12 @@ settings:
                 label: Modern Glass
                 value: callout-style-glass
             -
-                label: Vibrant Glow
-                value: callout-style-vibrant
-            -
                 label: Bold Border
                 value: callout-style-bold
     -
         id: inline-code-accent
         title: Accent Inline Code
         description: Highlight inline code with gradient backgrounds and accent colors
-        type: class-toggle
-        default: false
-    -
-        id: heading-tight-tracking
-        title: Tight Heading Tracking
-        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
         type: class-toggle
         default: false
     -
@@ -327,42 +512,86 @@ settings:
         type: class-toggle
         default: false
     -
-        id: text-appearance-heading
-        title: ✍️ Heading Uppercase
-        description: Customize the typography case for individual heading levels
+        id: alt-checkboxes-heading
+        title: Alternate Checkboxes
+        description: Decorative task states — [/], [-], [>], [?], [!], [*] and more
         type: heading
         level: 3
         collapsed: true
     -
-        id: h1-uppercase
-        title: H1 Uppercase
+        id: alt-checkboxes
+        title: Enable Alternate Checkboxes
+        description: Style extended task states with seasonal colors and glyphs in editor and reading mode
         type: class-toggle
         default: false
     -
-        id: h2-uppercase
-        title: H2 Uppercase
+        id: tables-heading
+        title: Tables
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: table-style
+        title: Table Density
+        description: Cell padding and text sizing for tables
+        type: class-select
+        allowEmpty: false
+        default: table-style-default
+        options:
+            -
+                label: Default
+                value: table-style-default
+            -
+                label: Compact
+                value: table-style-compact
+            -
+                label: Relaxed
+                value: table-style-relaxed
+    -
+        id: table-plain-rows
+        title: Disable Row Striping
+        description: Turn off the alternating row background (striping is on by default)
         type: class-toggle
         default: false
     -
-        id: h3-uppercase
-        title: H3 Uppercase
+        id: table-no-hover
+        title: Disable Row Hover Highlight
+        description: Turn off the accent-tinted row highlight on hover
+        type: class-toggle
+        default: false
+
+    -
+        id: focus-mode-heading
+        title: 🔬 Deep Focus Mode
+        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: focus-mode
+        title: Enable Deep Focus Mode
+        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
         type: class-toggle
         default: false
     -
-        id: h4-uppercase
-        title: H4 Uppercase
+        id: focus-mode-dim-paragraphs
+        title: Typewriter Dimming
+        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
         type: class-toggle
         default: false
     -
-        id: h5-uppercase
-        title: H5 Uppercase
+        id: focus-mode-hide-sidebars
+        title: Hide Sidebar Panels
+        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
         type: class-toggle
         default: false
     -
-        id: h6-uppercase
-        title: H6 Uppercase
+        id: focus-mode-keep-chrome
+        title: Keep Ribbon & Status Bar
+        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
         type: class-toggle
         default: false
+
     -
         id: ui-elements-heading
         title: 🖼️ UI Elements
@@ -393,6 +622,7 @@ settings:
         description: Only show the entire view header (title and buttons) when hovering over the top area.
         type: class-toggle
         default: false
+
     -
         id: layout-heading
         title: 📐 Layout & Spacing
@@ -411,6 +641,38 @@ settings:
         description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
         type: variable-text
         default: "1.6"
+    -
+        id: block-width-heading
+        title: Block Width (cssclasses)
+        description: "Add cssclasses to a note's properties: wide-page, full-page, wide-table, wide-image"
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: wide-block-width
+        title: Wide Block Width
+        description: Maximum width for tables/images in notes using the wide-table or wide-image cssclass
+        type: variable-text
+        default: 110ch
+    -
+        id: banners-cards-heading
+        title: "Banners & Cards (cssclasses)"
+        description: "banner: mark an image ![[img|banner]] as a cover. cards: render Dataview tables as a card grid"
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: banner-height
+        title: Banner Height
+        description: Height of the cover image in notes using the banner cssclass
+        type: variable-text
+        default: 240px
+    -
+        id: cards-min-width
+        title: Card Minimum Width
+        description: Minimum card width in notes using the cards cssclass
+        type: variable-text
+        default: 180px
     -
         id: focus-grid
         title: Focus Dot Grid
@@ -485,23 +747,21 @@ settings:
     --squircle-soft: 80%;
     --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
     --shadow-2: 0 1px 3px rgba(0, 0, 0, .08);
-    --shadow-3: 0 6px 18px rgba(0, 0, 0, var(--opacity-divider));
+    --shadow-3: 0 6px 18px rgba(0, 0, 0, .10);
     --shadow-4: 0 4px 12px rgba(0, 0, 0, .12);
+    --shadow-overlay: 0 10px 40px rgba(0, 0, 0, 0.16);
+    --shadow-overlay-dark: 0 12px 48px rgba(0, 0, 0, 0.45);
     --accent-glow: 0 0 12px rgba(var(--primary-color-rgb), .35);
-    --fast: 0.15s ease;
-    --normal: 0.25s ease;
-    --slow: 0.3s ease;
+    --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --bounce: 0.25s cubic-bezier(.34, 1.15, .64, 1);
     --weight-normal: 400;
     --weight-medium: 500;
     --weight-semibold: 600;
     --weight-bold: 700;
     --line-tight: 1.5;
-    --line-normal: var(--editor-line-height, 1.6);
     --line-relaxed: 2.0;
-    --file-line-width: var(--line-width, 64ch);
-    --editor-max-width: var(--line-width, 64ch);
-    --reading-max-width: var(--line-width, 64ch);
     --link-opacity-normal: .1;
     --link-opacity-hover: .18;
     --link-opacity-unresolved: .05;
@@ -538,9 +798,15 @@ settings:
     --layer-status-bar: 1000;
     --checklist-done-color: var(--emphasis-color);
     --checklist-done-decoration: line-through;
-    --transition-ui: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Apple sheet curve + standard durations (iOS-style overlays) */
+    --ease-apple: cubic-bezier(0.32, 0.72, 0, 1);
+    --dur-instant: 0.12s;
+    --dur-quick: 0.22s;
+    --dur-modal: 0.34s;
+    --dur-sheet: 0.42s;
+    --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --transition-bounce: 0.3s var(--ease-bounce-md);
-    --transition-callout-link: transform 0.18s cubic-bezier(.4, 0, .2, 1), opacity 0.15s cubic-bezier(.4, 0, .2, 1), background-color 0.18s, color 0.18s;
+    --transition-callout-link: transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
     --transition-depth: box-shadow 0.2s var(--ease-bounce-sm), transform 0.2s var(--ease-bounce-sm);
 
     /* ===== WHIMSY ANIMATION TOKENS ===== */
@@ -559,13 +825,8 @@ settings:
     --whimsy-slow: 0.5s;     /* Large containers */
 
     /* Hover Scales */
-    --whimsy-scale-subtle: 1.02;    /* Large elements */
-    --whimsy-scale-normal: 1.05;    /* Links, buttons */
     --whimsy-scale-emphasis: 1.1;   /* Icons, small interactive */
     --whimsy-scale-pop: 1.15;       /* Special attention items */
-
-    /* Stagger Timing */
-    --whimsy-stagger-base: 0.03s;
 
     /* Opacity Tokens */
     --opacity-subtle: 0.1;
@@ -592,8 +853,16 @@ settings:
     /* Glass Surface Tokens */
     --glass-bg: rgba(var(--background-secondary-rgb), 0.6);
     --glass-border: rgba(255, 255, 255, 0.2);
+}
 
-    /* Shared theme defaults */
+/* Width & line-height pipeline — must live on body, not :root:
+   Style Settings injects --line-width / --editor-line-height on body,
+   and Obsidian's own --file-line-width default is body-scoped. */
+body {
+    --line-normal: var(--editor-line-height, 1.6);
+    --file-line-width: var(--line-width, 64ch);
+    --editor-max-width: var(--line-width, 64ch);
+    --reading-max-width: var(--line-width, 64ch);
 }
 
 /* ========================================= */
@@ -608,7 +877,8 @@ settings:
 .theme-light.winter-theme, .theme-dark.winter-theme,
 .theme-light.spring-theme, .theme-dark.spring-theme,
 .theme-light.summer-theme, .theme-dark.summer-theme,
-.theme-light.paper-theme, .theme-dark.paper-theme {
+.theme-light.paper-theme, .theme-dark.paper-theme,
+.theme-light.melange-theme, .theme-dark.melange-theme {
     --setting-items-background: var(--background-secondary);
 }
 
@@ -625,7 +895,7 @@ settings:
     --background-secondary-alt: #443131;
     --text-normal: #C7B3A8;
     --text-normal-rgb: 199, 179, 168;
-    --text-muted: #A88B84;
+    --text-muted: #baa39d;
     --emphasis-color: #a8522d;
     --emphasis-color-light: #C6AD75;
     --primary-color: #C6AD75;
@@ -633,7 +903,7 @@ settings:
     --primary-color-dark: #947E5A;
     --interactive-accent: var(--primary-color);
     --interactive-accent-hover: var(--primary-color-dark);
-    --link-color: #a8522d;
+    --link-color: #d78a68;
     --link-color-hover: #a8522d;
     --link-unresolved-color: var(--primary-color);
     --blockquote-border-color: var(--primary-color);
@@ -653,9 +923,9 @@ settings:
     --code-keyword: #C6AD75;
     --code-property: #C6AD75;
     --code-punctuation: #A88B84;
-    --code-string: #C16119;
-    --code-tag: #947E5A;
-    --code-value: #947E5A;
+    --code-string: #dd6f1d;
+    --code-tag: #a58f6b;
+    --code-value: #a58f6b;
     --heading-primary: #d1968d;
     --heading-secondary: #d4a86a;
     --heading-tertiary: #a8c9a1;
@@ -685,7 +955,7 @@ settings:
     --callout-quote-rgb: 171, 157, 242;
     --callout-success: #88D6A0;
     --callout-success-rgb: 136, 214, 160;
-    --callout-danger: #990000;
+    --callout-danger: #ff2d2d;
     --callout-danger-rgb: 153, 0, 0;
     --callout-cite: #BBADFF;
     --callout-cite-rgb: 187, 173, 255;
@@ -769,9 +1039,9 @@ settings:
     --callout-example-rgb: 50, 111, 149;
     --callout-cite: #573d84;
     --callout-cite-rgb: 87, 61, 132;
-    --callout-video: #57d9eb;
+    --callout-video: #1bc9e1;
     --callout-video-rgb: 87, 217, 235;
-    --callout-quote: #e2eafc;
+    --callout-quote: #b0c5f6;
     --callout-quote-rgb: 226, 234, 252;
     --highlight-bg: #8a9fc2;
     --highlight-bg-rgb: 168, 184, 214;
@@ -813,7 +1083,7 @@ settings:
     --scrollbar-track: rgba(17, 19, 25, .2);
     --code-background: #171826;
     --code-normal: var(--text-normal);
-    --code-comment: #585c76;
+    --code-comment: #656987;
     --code-function: #728eb9;
     --code-important: #8e7ebb;
     --code-keyword: #728eb9;
@@ -850,7 +1120,7 @@ settings:
     --callout-cite-rgb: 162, 155, 254;
     --callout-video: #78dce8;
     --callout-video-rgb: 120, 220, 232;
-    --callout-quote: #1d2033;
+    --callout-quote: #495285;
     --callout-quote-rgb: 29, 32, 51;
     --highlight-bg: #1f2635;
     --highlight-bg-dark: #2a354a;
@@ -899,7 +1169,7 @@ settings:
     --scrollbar-track: rgba(251, 251, 254, .2);
     --code-background: #F3F1F8;
     --code-normal: var(--text-normal);
-    --code-comment: #928EAA;
+    --code-comment: #8883a2;
     --code-function: #7E69AB;
     --code-important: #5A4A81;
     --code-keyword: #8E7BB6;
@@ -920,7 +1190,7 @@ settings:
     --heading-quaternary-rgb: 214, 111, 136;
     --heading-quinary-rgb: 136, 84, 208;
     --heading-senary-rgb: 60, 64, 198;
-    --callout-note: #E9D5A3;
+    --callout-note: #d8b55d;
     --callout-note-rgb: 233, 213, 163;
     --callout-info: #5885AF;
     --callout-info-rgb: 88, 133, 175;
@@ -1052,7 +1322,7 @@ settings:
     --primary-color-dark: #ae4e36;
     --interactive-accent: var(--primary-color);
     --interactive-accent-hover: var(--primary-color-dark);
-    --link-color: var(--primary-color);
+    --link-color: #d36039;
     --link-color-hover: var(--primary-color-dark);
     --link-unresolved-color: var(--primary-color);
     --blockquote-border-color: var(--primary-color);
@@ -1065,14 +1335,14 @@ settings:
     --code-background: #f5efe0;
     --code-normal: var(--text-normal);
     --code-comment: #707592;
-    --code-function: #d97756;
+    --code-function: #d36039;
     --code-important: #ae4e36;
-    --code-keyword: #6a97bb;
+    --code-keyword: #5387b0;
     --code-property: #798d5d;
     --code-punctuation: rgba(61, 46, 26, .7);
-    --code-string: #8f8ca6;
+    --code-string: #85829e;
     --code-tag: #c36686;
-    --code-value: #779088;
+    --code-value: #6f8880;
     --heading-primary: #d97756;
     --heading-secondary: #b8692c;
     --heading-tertiary: #9a863c;
@@ -1382,7 +1652,7 @@ settings:
     --primary-color-dark: #4a6b2e;
     --interactive-accent: var(--primary-color);
     --interactive-accent-hover: var(--primary-color-dark);
-    --link-color: var(--primary-color);
+    --link-color: #6b963f;
     --link-color-hover: var(--primary-color-dark);
     --link-unresolved-color: var(--primary-color);
     --blockquote-border-color: var(--primary-color);
@@ -1400,12 +1670,12 @@ settings:
     --code-keyword: #a05a8b;
     --code-property: #6b8e23;
     --code-punctuation: rgba(31, 46, 26, .7);
-    --code-string: #e07a5f;
+    --code-string: #da6040;
     --code-tag: #2e5a8b;
-    --code-value: #b8860b;
+    --code-value: #ad7e0a;
     --heading-primary: #72a043;
     --heading-secondary: #a05a8b;
-    --heading-tertiary: #ff8b7c;
+    --heading-tertiary: #ff7765;
     --heading-quaternary: #6b8e23;
     --heading-quinary: #2e5a8b;
     --heading-senary: #b8860b;
@@ -1431,7 +1701,7 @@ settings:
     --callout-cite-rgb: 87, 61, 132;
     --callout-video: #7ba3d4;
     --callout-video-rgb: 123, 163, 212;
-    --callout-quote: #b8e994;
+    --callout-quote: #77d531;
     --callout-quote-rgb: 184, 233, 148;
     --highlight-bg: #a8d67a;
     --highlight-bg-rgb: 200, 230, 168;
@@ -1502,7 +1772,7 @@ settings:
     --callout-warning-rgb: 241, 196, 15;
     --callout-success: #2ecc71;
     --callout-success-rgb: 46, 204, 113;
-    --callout-danger: #545454;
+    --callout-danger: #5a5a5a;
     --callout-danger-rgb: 84, 84, 84;
     --callout-example: #f2b399;
     --callout-example-rgb: 242, 179, 153;
@@ -1562,15 +1832,15 @@ settings:
     --code-comment: rgba(61, 26, 46, .6);
     --code-function: #d63384;
     --code-important: #a02659;
-    --code-keyword: #cc8500;
+    --code-keyword: #c07d00;
     --code-property: #8b4513;
     --code-punctuation: rgba(61, 26, 46, .7);
     --code-string: #0c7a93;
     --code-tag: #0a6b5d;
     --code-value: indigo;
     --heading-primary: #ff6b9d;
-    --heading-secondary: #00c9b7;
-    --heading-tertiary: #ff9f43;
+    --heading-secondary: #00b2a2;
+    --heading-tertiary: #fc7b00;
     --heading-quaternary: #f368e0;
     --heading-quinary: #0a6b5d;
     --heading-senary: #4b0082;
@@ -1594,9 +1864,9 @@ settings:
     --callout-example-rgb: 243, 120, 78;
     --callout-cite: #573d84;
     --callout-cite-rgb: 87, 61, 132;
-    --callout-video: #57d9eb;
+    --callout-video: #27cee5;
     --callout-video-rgb: 87, 217, 235;
-    --callout-quote: #fff8dc;
+    --callout-quote: #f2bf00;
     --callout-quote-rgb: 255, 248, 220;
     --highlight-bg: #ff99bb;
     --highlight-bg-rgb: 255, 201, 224;
@@ -1705,7 +1975,7 @@ settings:
 
     --text-normal: #656360;
     --text-normal-rgb: 101, 99, 96;
-    --text-muted: #969491;
+    --text-muted: #7d7b78;
     --text-faint: #C7C5C2;
 
     --bold-color: #D14532;
@@ -1735,7 +2005,7 @@ settings:
 
     --code-background: #E8E7E3;
     --code-normal: #1C1C1E;
-    --code-comment: #8E8E93;
+    --code-comment: #7d7d83;
     --code-function: #555555;
     --code-important: #C96652;
     --code-keyword: #1C1C1E;
@@ -1933,14 +2203,14 @@ settings:
 
     --code-background: #E8E4DE;
     --code-normal: #2E2C29;
-    --code-comment: #A09C96;
+    --code-comment: #7f7a73;
     --code-function: #4A6A5B;
     --code-important: #5E7D6E;
     --code-keyword: #2E2C29;
     --code-property: #4A6A5B;
     --code-punctuation: #A09C96;
     --code-string: #5E7D6E;
-    --code-tag: #7A9D8C;
+    --code-tag: #628575;
     --code-value: #2E2C29;
 
     --heading-primary: #3D5C4F;
@@ -2027,7 +2297,7 @@ settings:
 
     --code-background: #242422;
     --code-normal: #C8C3BC;
-    --code-comment: #6B6762;
+    --code-comment: #726e69;
     --code-function: #88AE99;
     --code-important: #7FA98F;
     --code-keyword: #D5D0C9;
@@ -2082,6 +2352,183 @@ settings:
 
     --tab-bg-inactive: transparent;
     --tab-bg-inactive-hover: rgba(255, 255, 255, 0.04);
+}
+
+/* --- Melange Theme --- */
+/* Palette adapted from Baseline by aaaaalexis (github.com/aaaaalexis/obsidian-baseline),
+   itself derived from melange-nvim. */
+.melange-theme {
+    --accent-h: 29;
+    --accent-s: 100%;
+    --accent-l: 37%;
+}
+
+.theme-light.melange-theme {
+    --background-primary: #f0ecea;
+    --background-primary-rgb: 240, 236, 234;
+    --background-secondary: #e9e1db;
+    --background-secondary-rgb: 233, 225, 219;
+    --background-secondary-alt: #e0d4ca;
+    --text-normal: #54433a;
+    --text-normal-rgb: 84, 67, 58;
+    --text-muted: #7d6658;
+    --text-faint: #a98a78;
+    --emphasis-color: #bc5c00;
+    --emphasis-color-light: #d97708;
+    --primary-color: #bc5c00;
+    --primary-color-rgb: 188, 92, 0;
+    --primary-color-dark: #944800;
+    --interactive-accent: var(--primary-color);
+    --interactive-accent-hover: var(--primary-color-dark);
+    --link-color: var(--primary-color);
+    --link-color-hover: var(--primary-color-dark);
+    --link-unresolved-color: var(--primary-color);
+    --blockquote-border-color: var(--primary-color);
+    --checkbox-color: var(--primary-color);
+    --text-accent: var(--primary-color-dark);
+    --divider-color: #d6c0b388;
+    --text-selection: #eedbc4;
+    --scrollbar-thumb: rgba(176, 155, 143, .45);
+    --scrollbar-track: rgba(240, 236, 234, .2);
+    --code-background: #e9e1db;
+    --code-normal: var(--text-normal);
+    --code-comment: #8f7663;
+    --code-function: #607fb1;
+    --code-important: #bc5c00;
+    --code-keyword: #a65ebb;
+    --code-property: #658686;
+    --code-punctuation: #7d6658;
+    --code-string: #608a64;
+    --code-tag: #bc6074;
+    --code-value: #967c26;
+    /* Baseline colorful-headings order: red, orange, yellow, green, blue,
+       purple — text softened 75/25 toward --text-normal like Baseline does */
+    --heading-primary: color-mix(in srgb, #c77b8b 75%, var(--text-normal));
+    --heading-secondary: color-mix(in srgb, #bc5c00 75%, var(--text-normal));
+    --heading-tertiary: color-mix(in srgb, #a08428 75%, var(--text-normal));
+    --heading-quaternary: color-mix(in srgb, #6e9b72 75%, var(--text-normal));
+    --heading-quinary: color-mix(in srgb, #7892bd 75%, var(--text-normal));
+    --heading-senary: color-mix(in srgb, #ad6bc0 75%, var(--text-normal));
+    --heading-primary-rgb: 199, 123, 139;
+    --heading-secondary-rgb: 188, 92, 0;
+    --heading-tertiary-rgb: 160, 132, 40;
+    --heading-quaternary-rgb: 110, 155, 114;
+    --heading-quinary-rgb: 120, 146, 189;
+    --heading-senary-rgb: 173, 107, 192;
+    --callout-note: #7892bd;
+    --callout-note-rgb: 120, 146, 189;
+    --callout-info: #739797;
+    --callout-info-rgb: 115, 151, 151;
+    --callout-warning: #a08428;
+    --callout-warning-rgb: 160, 132, 40;
+    --callout-success: #6e9b72;
+    --callout-success-rgb: 110, 155, 114;
+    --callout-danger: #c77b8b;
+    --callout-danger-rgb: 199, 123, 139;
+    --callout-example: #bc5c00;
+    --callout-example-rgb: 188, 92, 0;
+    --callout-cite: #ad6bc0;
+    --callout-cite-rgb: 173, 107, 192;
+    --callout-video: #d65cbc;
+    --callout-video-rgb: 214, 92, 188;
+    --callout-quote: #a98a78;
+    --callout-quote-rgb: 169, 138, 120;
+    --highlight-bg: #ecd9a8;
+    --highlight-bg-rgb: 236, 217, 168;
+    --highlight-bg-dark: #e2c98a;
+    --highlight-bg-dark-color: #3a2e26;
+    --surface-accent: #f0ecea;
+    --surface-accent-rgb: 240, 236, 234;
+    --surface-dark: #292522;
+    --surface-dark-rgb: 41, 37, 34;
+    --tab-bg-inactive: rgba(240, 236, 234, .08);
+    --tab-bg-inactive-hover: rgba(240, 236, 234, .12);
+}
+
+.theme-dark.melange-theme {
+    --accent-h: 28;
+    --accent-s: 71%;
+    --accent-l: 63%;
+    --background-primary: #292522;
+    --background-primary-rgb: 41, 37, 34;
+    --background-secondary: #34302c;
+    --background-secondary-rgb: 52, 48, 44;
+    --background-secondary-alt: #403a36;
+    --text-normal: #ece1d7;
+    --text-normal-rgb: 236, 225, 215;
+    --text-muted: #c1a78e;
+    --text-faint: #867462;
+    --emphasis-color: #e49b5d;
+    --emphasis-color-light: #efb178;
+    --primary-color: #e49b5d;
+    --primary-color-rgb: 228, 155, 93;
+    --primary-color-dark: #c97e41;
+    --interactive-accent: var(--primary-color);
+    --interactive-accent-hover: var(--primary-color-dark);
+    --link-color: var(--primary-color);
+    --link-color-hover: var(--primary-color-dark);
+    --link-unresolved-color: var(--primary-color);
+    --blockquote-border-color: var(--primary-color);
+    --checkbox-color: var(--primary-color);
+    --text-accent: var(--primary-color-dark);
+    --divider-color: #63585188;
+    --text-selection: #45382c;
+    --scrollbar-thumb: rgba(228, 155, 93, .35);
+    --scrollbar-track: rgba(41, 37, 34, .2);
+    --code-background: #34302c;
+    --code-normal: var(--text-normal);
+    --code-comment: #8f7c69;
+    --code-function: #7f91b2;
+    --code-important: #e49b5d;
+    --code-keyword: #b380b0;
+    --code-property: #7b9695;
+    --code-punctuation: #c1a78e;
+    --code-string: #78997a;
+    --code-tag: #bd8183;
+    --code-value: #d2be73;
+    /* Baseline colorful-headings order: red, orange, yellow, green, blue,
+       purple — text softened 75/25 toward --text-normal like Baseline does */
+    --heading-primary: color-mix(in srgb, #bd8183 75%, var(--text-normal));
+    --heading-secondary: color-mix(in srgb, #e49b5d 75%, var(--text-normal));
+    --heading-tertiary: color-mix(in srgb, #d2be73 75%, var(--text-normal));
+    --heading-quaternary: color-mix(in srgb, #78997a 75%, var(--text-normal));
+    --heading-quinary: color-mix(in srgb, #7f91b2 75%, var(--text-normal));
+    --heading-senary: color-mix(in srgb, #b380b0 75%, var(--text-normal));
+    --heading-primary-rgb: 189, 129, 131;
+    --heading-secondary-rgb: 228, 155, 93;
+    --heading-tertiary-rgb: 210, 190, 115;
+    --heading-quaternary-rgb: 120, 153, 122;
+    --heading-quinary-rgb: 127, 145, 178;
+    --heading-senary-rgb: 179, 128, 176;
+    --callout-note: #7f91b2;
+    --callout-note-rgb: 127, 145, 178;
+    --callout-info: #7b9695;
+    --callout-info-rgb: 123, 150, 149;
+    --callout-warning: #d2be73;
+    --callout-warning-rgb: 210, 190, 115;
+    --callout-success: #78997a;
+    --callout-success-rgb: 120, 153, 122;
+    --callout-danger: #bd8183;
+    --callout-danger-rgb: 189, 129, 131;
+    --callout-example: #e49b5d;
+    --callout-example-rgb: 228, 155, 93;
+    --callout-cite: #b380b0;
+    --callout-cite-rgb: 179, 128, 176;
+    --callout-video: #c070ae;
+    --callout-video-rgb: 192, 112, 174;
+    --callout-quote: #867462;
+    --callout-quote-rgb: 134, 116, 98;
+    --highlight-bg: #574a33;
+    --highlight-bg-rgb: 210, 190, 115;
+    --highlight-bg-dark: #574a33;
+    --highlight-bg-dark-color: #6b5a3d;
+    --highlight-bg-light-color: #d2be73;
+    --surface-accent: #403a36;
+    --surface-accent-rgb: 64, 58, 54;
+    --surface-dark: #292522;
+    --surface-dark-rgb: 41, 37, 34;
+    --tab-bg-inactive: rgba(41, 37, 34, .15);
+    --tab-bg-inactive-hover: rgba(41, 37, 34, .25);
 }
 
 /* Paper Theme Specific Table Overrides for Readability */
@@ -2723,7 +3170,7 @@ body.focus-mode.focus-mode-hide-sidebars .workspace-split.mod-right-split {
 
 /* Global Transitions */
 body {
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .markdown-source-view.mod-cm6 .cm-content,
@@ -2772,7 +3219,7 @@ body:not(.is-mobile).layout-card .workspace-tab-header {
     transition: background-color var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui), border-radius var(--transition-ui);
 }
 
-/* OPTION 3: Contrast boost (when depth shadows DISABLED) */
+/* Contrast boost (when depth shadows disabled) */
 body:not(.is-mobile):not(.depth-shadows).layout-card .workspace-tab-header {
     background-color: rgba(var(--background-secondary-rgb), .2) !important;
 }
@@ -2787,7 +3234,7 @@ body:not(.is-mobile):not(.depth-shadows).layout-card .workspace-tab-header:not(.
     background-color: rgba(var(--background-secondary-rgb), 0.4);
 }
 
-/* OPTION 1: Elevated active tab (when depth shadows ENABLED) */
+/* Elevated active tab (when depth shadows enabled) */
 body:not(.is-mobile).depth-shadows.layout-card .workspace-tab-header {
     background-color: rgba(var(--background-secondary-rgb), .3);
 }
@@ -2856,6 +3303,10 @@ body.is-focused .workspace-tabs.mod-top {
     contain: layout style;
 }
 
+.nav-files-container {
+    padding-inline: var(--s3) var(--s4) !important;
+}
+
 .vertical-tab-container {
     background-color: var(--background-primary);
     border-radius: var(--r3);
@@ -2915,12 +3366,11 @@ body.is-focused .workspace-tabs.mod-top {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(10px) saturate(150%);
-    -webkit-backdrop-filter: blur(10px) saturate(150%);
 }
 
 .theme-dark .vertical-tab-content {
     border-color: transparent;
+    background-color: rgba(var(--background-secondary-rgb), 0.85);
 }
 
 .theme-light .vertical-tab-content {
@@ -2988,7 +3438,7 @@ body.is-focused .workspace-tabs.mod-top {
     background: transparent;
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-btn);
-    transition: opacity 0.15s cubic-bezier(.4, 0, .2, 1), background-color 0.18s, color 0.18s;
+    transition: opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s, color 0.18s;
     border: none !important;
 }
 
@@ -3120,6 +3570,20 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
     font-size: 1.05em;
 }
 
+/* Suppress <br> artifacts from trailing double-spaces in headings */
+.markdown-preview-view :is(h1, h2, h3, h4, h5, h6) > br {
+    display: none;
+}
+
+/* Suppress trailing-space/hard-break decoration spans in live preview */
+.markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"]:is(.cm-trailing-space-a, .cm-trailing-space-b, .cm-hmd-escape-backslash, .cm-hmd-escape-char) {
+    background: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-image: none !important;
+}
+
 /* Heading Fold Indicator */
 .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
 .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"],
@@ -3159,33 +3623,22 @@ body:not(.is-mobile) .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"
 }
 
 
-/* Text Appearance Toggles */
-body.h1-uppercase :is(h1, .cm-header-1) {
-    text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
+/* Heading Case (per level: Title Case or UPPERCASE) */
+body.h1-case-title :is(h1, .cm-header-1),
+body.h2-case-title :is(h2, .cm-header-2),
+body.h3-case-title :is(h3, .cm-header-3),
+body.h4-case-title :is(h4, .cm-header-4),
+body.h5-case-title :is(h5, .cm-header-5),
+body.h6-case-title :is(h6, .cm-header-6) {
+    text-transform: capitalize !important;
 }
 
-body.h2-uppercase :is(h2, .cm-header-2) {
-    text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
-}
-
-body.h3-uppercase :is(h3, .cm-header-3) {
-    text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
-}
-
-body.h4-uppercase :is(h4, .cm-header-4) {
-    text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
-}
-
-body.h5-uppercase :is(h5, .cm-header-5) {
-    text-transform: uppercase !important;
-    letter-spacing: 0.02em !important;
-}
-
-body.h6-uppercase :is(h6, .cm-header-6) {
+body.h1-case-upper :is(h1, .cm-header-1),
+body.h2-case-upper :is(h2, .cm-header-2),
+body.h3-case-upper :is(h3, .cm-header-3),
+body.h4-case-upper :is(h4, .cm-header-4),
+body.h5-case-upper :is(h5, .cm-header-5),
+body.h6-case-upper :is(h6, .cm-header-6) {
     text-transform: uppercase !important;
     letter-spacing: 0.02em !important;
 }
@@ -3398,327 +3851,6 @@ body.h6-uppercase :is(h6, .cm-header-6) {
     transform: scale(1.02);
 }
 
-/* Outline Style */
-.heading-style-outline .markdown-preview-view h1,
-.heading-style-outline .markdown-preview-view h2,
-.heading-style-outline .markdown-preview-view h3,
-.heading-style-outline .markdown-preview-view h4,
-.heading-style-outline .markdown-preview-view h5,
-.heading-style-outline .markdown-preview-view h6,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
-    background: transparent !important;
-    background-image: none !important;
-    border: var(--border-thick) solid;
-    box-shadow: none;
-}
-
-.heading-style-outline .markdown-preview-view h1,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-1 {
-    border-color: var(--heading-primary);
-    color: var(--heading-primary);
-}
-
-.heading-style-outline .markdown-preview-view h2,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-2 {
-    border-color: var(--heading-secondary);
-    color: var(--heading-secondary);
-}
-
-.heading-style-outline .markdown-preview-view h3,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-3 {
-    border-color: var(--heading-tertiary);
-    color: var(--heading-tertiary);
-}
-
-.heading-style-outline .markdown-preview-view h4,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-4 {
-    border-color: var(--heading-quaternary);
-    color: var(--heading-quaternary);
-}
-
-.heading-style-outline .markdown-preview-view h5,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-5 {
-    border-color: var(--heading-quinary);
-    color: var(--heading-quinary);
-}
-
-.heading-style-outline .markdown-preview-view h6,
-.heading-style-outline .markdown-source-view.mod-cm6 .cm-line .cm-header-6 {
-    border-color: var(--heading-senary);
-    color: var(--heading-senary);
-}
-
-.heading-style-outline :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-line) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
-    transform: translateY(-2px);
-    filter: brightness(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, var(--opacity-divider));
-}
-
-/* 3D Embossed Style */
-.heading-style-3d .markdown-preview-view h1,
-.heading-style-3d .markdown-preview-view h2,
-.heading-style-3d .markdown-preview-view h3,
-.heading-style-3d .markdown-preview-view h4,
-.heading-style-3d .markdown-preview-view h5,
-.heading-style-3d .markdown-preview-view h6,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .25), rgba(255, 255, 255, .05)) !important;
-    background-blend-mode: overlay;
-    border: var(--border-thick) solid;
-    border-block-start-color: rgba(255, 255, 255, 0.4);
-    border-inline-start-color: rgba(255, 255, 255, var(--opacity-light-overlay));
-    border-inline-end-color: rgba(0, 0, 0, var(--opacity-divider));
-    border-block-end-color: rgba(0, 0, 0, var(--opacity-overlay));
-    box-shadow:
-        0 4px 8px rgba(0, 0, 0, var(--opacity-divider)),
-        0 2px 4px rgba(0, 0, 0, var(--opacity-subtle)),
-        inset 0 1px 0 rgba(255, 255, 255, var(--opacity-light-overlay)),
-        inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-subtle));
-    position: relative;
-    padding: .3em .7em;
-}
-
-.heading-style-3d .markdown-preview-view h1,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-1 {
-    background-color: rgba(var(--heading-primary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-primary) h s calc(l * var(--heading-text-multiplier)));
-    border-block-start-color: rgba(255, 255, 255, 0.5);
-    border-inline-start-color: rgba(255, 255, 255, 0.4);
-    box-shadow:
-        0 6px 12px rgba(0, 0, 0, var(--opacity-overlay)),
-        0 3px 6px rgba(0, 0, 0, var(--opacity-divider)),
-        inset 0 2px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -2px 0 rgba(0, 0, 0, var(--opacity-divider));
-}
-
-.heading-style-3d .markdown-preview-view h2,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-2 {
-    background-color: rgba(var(--heading-secondary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-secondary) h s calc(l * var(--heading-text-multiplier)));
-    border-block-start-color: rgba(255, 255, 255, 0.45);
-    border-inline-start-color: rgba(255, 255, 255, 0.35);
-    box-shadow:
-        0 5px 10px rgba(0, 0, 0, 0.18),
-        0 2px 5px rgba(0, 0, 0, var(--opacity-active)),
-        inset 0 1.5px 0 rgba(255, 255, 255, 0.35),
-        inset 0 -1.5px 0 rgba(0, 0, 0, var(--opacity-active));
-}
-
-.heading-style-3d .markdown-preview-view h3,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-3 {
-    background-color: rgba(var(--heading-tertiary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-tertiary) h s calc(l * var(--heading-text-multiplier)));
-    border-block-start-color: rgba(255, 255, 255, 0.4);
-    border-inline-start-color: rgba(255, 255, 255, var(--opacity-light-overlay));
-    box-shadow:
-        0 4px 8px rgba(0, 0, 0, var(--opacity-divider)),
-        0 2px 4px rgba(0, 0, 0, var(--opacity-subtle)),
-        inset 0 1px 0 rgba(255, 255, 255, var(--opacity-light-overlay)),
-        inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-subtle));
-}
-
-.heading-style-3d .markdown-preview-view h4,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-4 {
-    background-color: rgba(var(--heading-quaternary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-quaternary) h s calc(l * var(--heading-text-multiplier)));
-    border-width: 1.5px;
-    border-block-start-color: rgba(255, 255, 255, 0.35);
-    border-inline-start-color: rgba(255, 255, 255, 0.25);
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, var(--opacity-active)),
-        0 1px 3px rgba(0, 0, 0, var(--opacity-hover)),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25),
-        inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-hover));
-}
-
-.heading-style-3d .markdown-preview-view h5,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-5 {
-    background-color: rgba(var(--heading-quinary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-quinary) h s calc(l * var(--heading-text-multiplier)));
-    border-width: 1.5px;
-    border-block-start-color: rgba(255, 255, 255, 0.35);
-    border-inline-start-color: rgba(255, 255, 255, 0.25);
-    box-shadow:
-        0 3px 6px rgba(0, 0, 0, var(--opacity-active)),
-        0 1px 3px rgba(0, 0, 0, var(--opacity-hover)),
-        inset 0 1px 0 rgba(255, 255, 255, 0.25),
-        inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-hover));
-}
-
-.heading-style-3d .markdown-preview-view h6,
-.heading-style-3d .markdown-source-view.mod-cm6 .cm-line .cm-header-6 {
-    background-color: rgba(var(--heading-senary-rgb), var(--heading-bg-opacity));
-    color: hsl(from var(--heading-senary) h s calc(l * var(--heading-text-multiplier)));
-    border-width: var(--border-thin);
-    border-block-start-color: rgba(255, 255, 255, var(--opacity-light-overlay));
-    border-inline-start-color: rgba(255, 255, 255, 0.2);
-    box-shadow:
-        0 2px 4px rgba(0, 0, 0, var(--opacity-subtle)),
-        0 1px 2px rgba(0, 0, 0, 0.06),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.06);
-}
-
-.heading-style-3d :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-line) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
-    transform: translateY(-3px) scale(1.01);
-    filter: brightness(1.08);
-    box-shadow:
-        0 8px 16px rgba(0, 0, 0, var(--opacity-overlay)),
-        0 4px 8px rgba(0, 0, 0, var(--opacity-divider)),
-        inset 0 2px 0 rgba(255, 255, 255, 0.4),
-        inset 0 -2px 0 rgba(0, 0, 0, var(--opacity-divider));
-}
-
-.theme-dark .heading-style-3d .markdown-preview-view h1,
-.theme-dark .heading-style-3d .markdown-preview-view h2,
-.theme-dark .heading-style-3d .markdown-preview-view h3,
-.theme-dark .heading-style-3d .markdown-preview-view h4,
-.theme-dark .heading-style-3d .markdown-preview-view h5,
-.theme-dark .heading-style-3d .markdown-preview-view h6,
-.theme-dark .heading-style-3d .markdown-source-view.mod-cm6 .cm-line [class*="cm-header-"] {
-    border-block-start-color: rgba(255, 255, 255, 0.25);
-    border-inline-start-color: rgba(255, 255, 255, 0.2);
-    border-inline-end-color: rgba(0, 0, 0, 0.3);
-    border-block-end-color: rgba(0, 0, 0, 0.35);
-    box-shadow:
-        0 4px 10px rgba(0, 0, 0, 0.3),
-        0 2px 5px rgba(0, 0, 0, var(--opacity-overlay)),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        inset 0 -1px 0 rgba(0, 0, 0, var(--opacity-overlay));
-}
-
-.theme-dark .heading-style-3d :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-line) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.4),
-        0 4px 10px rgba(0, 0, 0, 0.3),
-        inset 0 2px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -2px 0 rgba(0, 0, 0, 0.25);
-}
-
-/* Vibrant Glow Style - Luminous tinted text on bold colorful backgrounds */
-.heading-style-vibrant :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
-    border-radius: var(--r2);
-    border: var(--border-thin) solid rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.4);
-    position: relative;
-    overflow: visible !important;
-    transition: transform 0.2s cubic-bezier(.34, 1.56, .64, 1), box-shadow var(--transition-ui), filter var(--transition-ui);
-    width: fit-content;
-    max-inline-size: 100%;
-    display: inline-block;
-    line-height: 1.4;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, var(--opacity-overlay)) !important;
-}
-
-/* Compact Hierarchy for Vibrant Style - Matching default sizes with badge padding */
-.heading-style-vibrant :is(h1, .cm-header-1) {
-    padding: calc(var(--heading-pad-y) * 1.25) calc(var(--heading-pad-x) * 1.6);
-    border-radius: var(--r3);
-}
-
-.heading-style-vibrant :is(h2, .cm-header-2) {
-    padding: calc(var(--heading-pad-y) * 1.1) calc(var(--heading-pad-x) * 1.5);
-    border-radius: var(--r3);
-}
-
-.heading-style-vibrant :is(h3, .cm-header-3) {
-    padding: calc(var(--heading-pad-y) * 1.1) calc(var(--heading-pad-x) * 1.5);
-}
-
-.heading-style-vibrant :is(h4, .cm-header-4) {
-    padding: calc(var(--heading-pad-y) * 0.8) calc(var(--heading-pad-x) * 1.2);
-}
-
-.heading-style-vibrant :is(h5, .cm-header-5) {
-    padding: calc(var(--heading-pad-y) * 0.75) calc(var(--heading-pad-x) * 1.2);
-    border-radius: 20px;
-}
-
-.heading-style-vibrant :is(h6, .cm-header-6) {
-    padding: calc(var(--heading-pad-y) * 0.6) calc(var(--heading-pad-x) * 1.1);
-    border-radius: 20px;
-    font-weight: 700;
-}
-
-.heading-style-vibrant :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6):hover {
-    transform: translateY(-3px) scale(1.01);
-    box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5);
-    filter: brightness(1.1);
-}
-
-/* Light Mode - Juicy & Dynamic */
-.theme-light.heading-style-vibrant :is(h1, .cm-header-1) {
-    background: linear-gradient(135deg, var(--heading-primary) 0%, rgba(var(--heading-primary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-primary) h s 96%) !important;
-}
-
-.theme-light.heading-style-vibrant :is(h2, .cm-header-2) {
-    background: linear-gradient(135deg, var(--heading-secondary) 0%, rgba(var(--heading-secondary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-secondary) h s 96%) !important;
-}
-
-.theme-light.heading-style-vibrant :is(h3, .cm-header-3) {
-    background: linear-gradient(135deg, var(--heading-tertiary) 0%, rgba(var(--heading-tertiary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-tertiary) h s 96%) !important;
-}
-
-.theme-light.heading-style-vibrant :is(h4, .cm-header-4) {
-    background: linear-gradient(135deg, var(--heading-quaternary) 0%, rgba(var(--heading-quaternary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-quaternary) h s 96%) !important;
-}
-
-.theme-light.heading-style-vibrant :is(h5, .cm-header-5) {
-    background: linear-gradient(135deg, var(--heading-quinary) 0%, rgba(var(--heading-quinary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-quinary) h s 96%) !important;
-}
-
-.theme-light.heading-style-vibrant :is(h6, .cm-header-6) {
-    background: linear-gradient(135deg, var(--heading-senary) 0%, rgba(var(--heading-senary-rgb), 0.8) 100%) !important;
-    color: hsl(from var(--heading-senary) h s 96%) !important;
-}
-
-/* Dark Mode - Saturated Neon Jewels (Rich, not washed out, not blinding) */
-.theme-dark.heading-style-vibrant :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
-    box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
-    border: var(--border-thin) solid rgba(255, 255, 255, 0.1);
-}
-
-.theme-dark.heading-style-vibrant :is(h1, .cm-header-1) {
-    background: linear-gradient(135deg, hsl(from var(--heading-primary) h 85% 32%) 0%, hsl(from var(--heading-primary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-primary) h s 94%) !important;
-    border-color: rgba(var(--heading-primary-rgb), 0.5);
-}
-
-.theme-dark.heading-style-vibrant :is(h2, .cm-header-2) {
-    background: linear-gradient(135deg, hsl(from var(--heading-secondary) h 85% 32%) 0%, hsl(from var(--heading-secondary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-secondary) h s 94%) !important;
-    border-color: rgba(var(--heading-secondary-rgb), 0.5);
-}
-
-.theme-dark.heading-style-vibrant :is(h3, .cm-header-3) {
-    background: linear-gradient(135deg, hsl(from var(--heading-tertiary) h 85% 32%) 0%, hsl(from var(--heading-tertiary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-tertiary) h s 94%) !important;
-    border-color: rgba(var(--heading-tertiary-rgb), 0.5);
-}
-
-.theme-dark.heading-style-vibrant :is(h4, .cm-header-4) {
-    background: linear-gradient(135deg, hsl(from var(--heading-quaternary) h 85% 32%) 0%, hsl(from var(--heading-quaternary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-quaternary) h s 94%) !important;
-    border-color: rgba(var(--heading-quaternary-rgb), 0.5);
-}
-
-.theme-dark.heading-style-vibrant :is(h5, .cm-header-5) {
-    background: linear-gradient(135deg, hsl(from var(--heading-quinary) h 85% 32%) 0%, hsl(from var(--heading-quinary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-quinary) h s 94%) !important;
-    border-color: rgba(var(--heading-quinary-rgb), 0.5);
-}
-
-.theme-dark.heading-style-vibrant :is(h6, .cm-header-6) {
-    background: linear-gradient(135deg, hsl(from var(--heading-senary) h 85% 32%) 0%, hsl(from var(--heading-senary) h 75% 18%) 100%) !important;
-    color: hsl(from var(--heading-senary) h s 94%) !important;
-    border-color: rgba(var(--heading-senary-rgb), 0.5);
-}
-
 /* Glass Style - Frosted, soft tint per heading level */
 .heading-style-glass :is(.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-content) :is(h1, h2, h3, h4, h5, h6, .cm-header-1, .cm-header-2, .cm-header-3, .cm-header-4, .cm-header-5, .cm-header-6) {
     border-radius: var(--r3);
@@ -3830,7 +3962,7 @@ body.heading-align-center :is(.markdown-preview-view, .markdown-source-view.mod-
 }
 
 /* Ensure the parent line container allows centering in edit mode */
-body.heading-align-center .markdown-source-view.mod-cm6 .cm-line:has([class*="cm-header-"]) {
+body.heading-align-center .markdown-source-view.mod-cm6 .cm-line[class*="HyperMD-header"] {
     display: flex;
     justify-content: center;
 }
@@ -3979,22 +4111,6 @@ body.link-style-glow :is(.markdown-rendered a, .markdown-rendered .internal-link
     transform: translateY(-1px) scale(1.03);
 }
 
-/* 5. Retro Wavy Style */
-body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link, .markdown-rendered .external-link, .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)) {
-    color: var(--link-color);
-    background: transparent !important;
-    padding-block: 0;
-    padding-inline: 1px;
-    text-decoration: none !important;
-}
-
-body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link, .markdown-rendered .external-link, .markdown-source-view.mod-cm6 .cm-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-url:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-internal-link:not(.cm-formatting), .markdown-source-view.mod-cm6 .cm-hmd-external-link:not(.cm-formatting)):hover {
-    color: var(--link-color-hover);
-    text-decoration: wavy underline !important;
-    text-decoration-color: var(--callout-color, var(--primary-color)) !important;
-    text-underline-offset: 4px;
-}
-
 /* Unresolved Links Logic (Stays consistent across styles but adapts background) */
 :is(.markdown-rendered .internal-link.is-unresolved, .markdown-source-view.mod-cm6 .cm-hmd-internal-link.is-unresolved, .markdown-source-view.mod-cm6 .cm-hmd-internal-link.cm-hmd-unresolved) {
     opacity: 0.8;
@@ -4119,7 +4235,7 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 /* Fix: Normal collapse icon animation */
 .collapse-icon svg,
 .nav-folder-collapse-indicator svg {
-    transition: transform 0.3s ease-out;
+    transition: transform 0.28s var(--ease-apple);
 }
 
 .nav-folder-title {
@@ -4246,10 +4362,6 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 
 .theme-dark .nav-file-title:is(:not(.is-active)):hover {
     background-color: rgba(255, 255, 255, var(--link-opacity-unresolved)) !important;
-}
-
-.nav-files-container {
-    padding-inline: var(--s3) var(--s4) !important;
 }
 
 .nav-folder .nav-folder-children .nav-folder {
@@ -4382,6 +4494,12 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
     border-block-end: none;
     color: hsl(from var(--callout-color) h s calc(l * .7));
     text-shadow: 0 1px 2px rgba(var(--callout-color-rgb), .1);
+}
+
+/* Dark mode must LIGHTEN titles, not darken them — the .7 multiplier above
+   is a light-mode readability guard and inverts on dark backgrounds */
+.theme-dark .callout .callout-title {
+    color: hsl(from var(--callout-color) h s calc(min(l * 1.2, 85%)));
 }
 
 .callout .callout-icon {
@@ -4539,10 +4657,6 @@ body.link-style-wavy :is(.markdown-rendered a, .markdown-rendered .internal-link
 
 body.link-style-underline [data-callout] :is(a, .internal-link, .external-link, .cm-url) {
     border-block-end-color: var(--callout-color) !important;
-}
-
-body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-url):hover {
-    text-decoration-color: var(--callout-color) !important;
 }
 
 
@@ -4752,6 +4866,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 /* Modern Glass Style - Deep blur, floating effect */
 .callout-style-glass :is(.callout, .cm-callout) {
     backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
+    -webkit-backdrop-filter: blur(12px) saturate(180%) brightness(1.06) !important;
     border-inline-start: none !important;
     border-radius: var(--r4) !important;
     box-shadow:
@@ -4792,8 +4907,6 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 }
 
 .callout-style-glass .callout:hover {
-    backdrop-filter: blur(20px) saturate(220%) brightness(1.08) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(220%) brightness(1.08) !important;
     transform: translateY(-3px) !important;
     box-shadow:
         0 12px 40px rgba(0, 0, 0, var(--opacity-divider)),
@@ -4854,72 +4967,6 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 .callout-style-bold .callout .callout-title {
     font-weight: var(--weight-bold) !important;
     letter-spacing: 0.02em !important;
-}
-
-/* Vibrant Glow Style - Deep jewel tones, luminous text */
-.callout-style-vibrant .callout {
-    background: linear-gradient(135deg,
-            hsl(from var(--callout-color) h 65% 45%) 0%,
-            hsl(from var(--callout-color) h 55% 32%) 100%) !important;
-    border: var(--border-thin) solid rgba(var(--callout-color-rgb), 0.4) !important;
-    border-inline-start: 5px solid hsl(from var(--callout-color) h 90% 60%) !important;
-    border-radius: var(--r3);
-    box-shadow:
-        0 8px 24px -8px rgba(0, 0, 0, 0.4),
-        0 4px 12px -4px rgba(var(--callout-color-rgb), 0.5),
-        inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
-    overflow: hidden;
-}
-
-.callout-style-vibrant .callout .callout-title {
-    color: hsl(from var(--callout-color) h 85% 95%) !important;
-    font-weight: 700 !important;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
-}
-
-.callout-style-vibrant .callout :is(.callout-icon, .callout-icon svg) {
-    color: hsl(from var(--callout-color) h 95% 85%) !important;
-    filter: drop-shadow(0 0 4px rgba(var(--callout-color-rgb), 0.6)) !important;
-}
-
-.callout-style-vibrant .callout .callout-content {
-    color: hsl(from var(--callout-color) h 40% 90%) !important;
-    opacity: 0.95 !important;
-}
-
-.callout-style-vibrant .callout :is(a, .internal-link, .external-link) {
-    color: hsl(from var(--callout-color) h 90% 85%) !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    text-decoration: underline !important;
-    text-underline-offset: 3px;
-}
-
-.callout-style-vibrant .callout :is(a, .internal-link, .external-link):hover {
-    background: rgba(255, 255, 255, 0.2) !important;
-    color: white !important;
-}
-
-.callout-style-vibrant .callout :is(strong, em) {
-    color: white !important;
-    filter: drop-shadow(0 0 2px rgba(var(--callout-color-rgb), 0.4));
-}
-
-.theme-dark .callout-style-vibrant .callout {
-    background: linear-gradient(135deg,
-            hsl(from var(--callout-color) h 75% 38%) 0%,
-            hsl(from var(--callout-color) h 65% 22%) 100%) !important;
-    box-shadow:
-        0 12px 32px -12px rgba(0, 0, 0, 0.7),
-        0 8px 16px -6px rgba(var(--callout-color-rgb), 0.4),
-        inset 0 1px 1px rgba(255, 255, 255, 0.05) !important;
-}
-
-.callout-style-vibrant .callout:hover {
-    transform: translateY(-2px) !important;
-    box-shadow:
-        0 15px 40px -12px rgba(0, 0, 0, 0.5),
-        0 10px 20px -5px rgba(var(--callout-color-rgb), 0.6) !important;
-    filter: brightness(1.1);
 }
 
 /* Highlight Styling - Shared Properties */
@@ -4985,15 +5032,13 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
     .markdown-preview-view mark,
     .cm-s-obsidian span.cm-highlight
 ) {
-    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.3);
+    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.42);
     color: var(--highlight-bg-dark-color);
     border: 1px solid var(--glass-border);
     border-bottom: 2px solid rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.45);
     box-shadow:
         0 2px 6px rgba(0, 0, 0, 0.12),
         inset 0 1px 0 rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(6px) saturate(140%);
-    -webkit-backdrop-filter: blur(6px) saturate(140%);
 }
 
 .theme-dark.highlight-style-glass :is(
@@ -5002,7 +5047,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
     .markdown-preview-view mark,
     .cm-s-obsidian span.cm-highlight
 ) {
-    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.34);
+    background-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.45);
     color: var(--highlight-bg-light-color);
     border-color: rgba(255, 255, 255, 0.12);
     border-block-end-color: rgba(var(--highlight-bg-rgb, var(--primary-color-rgb)), 0.55);
@@ -5315,13 +5360,6 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
     max-inline-size: 100%;
-    transform: scale(.99);
-    transition: transform var(--transition-ui), filter var(--transition-ui);
-}
-
-:is(.markdown-rendered img, .markdown-source-view.mod-cm6 .cm-content img):hover {
-    transform: scale(1);
-    filter: brightness(1.05);
 }
 
 /* Table Styling */
@@ -5383,7 +5421,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 :is(.markdown-rendered, .markdown-preview-view) table td {
     padding-block: var(--s2);
     padding-inline: var(--s3);
-    border-block-start: var(--border-thin) solid var(--table-border);
+    border-block-start: var(--border-thin) solid var(--divider-color);
 }
 
 .theme-light :is(.markdown-rendered, .markdown-preview-view) table tbody tr:nth-child(even) {
@@ -5412,7 +5450,6 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 
 :is(.markdown-rendered, .markdown-preview-view) table:hover {
     box-shadow: var(--shadow-2);
-    transform: translateY(-2px);
 }
 
 /* Checkbox styling */
@@ -5431,11 +5468,11 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 }
 
 .task-list-item-checkbox:hover {
-    box-shadow: 0 0 8px var(--emphasis-color);
+    box-shadow: 0 0 8px rgba(var(--primary-color-rgb), .45);
 }
 
 :is(input[type="checkbox"], .task-list-item-checkbox):focus {
-    box-shadow: 0 0 0 3px var(--emphasis-color);
+    box-shadow: 0 0 0 3px rgba(var(--primary-color-rgb), .35);
     border-color: var(--emphasis-color);
     outline: none;
 }
@@ -5448,7 +5485,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
 :is(input[type="checkbox"], .task-list-item-checkbox):checked {
     background: var(--emphasis-color);
     border-color: var(--emphasis-color);
-    animation: checkboxPop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation: checkboxPop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .task-list-item-checkbox:checked {
@@ -5464,7 +5501,7 @@ body.link-style-wavy [data-callout] :is(a, .internal-link, .external-link, .cm-u
     color: white;
     font-size: 14px;
     font-weight: bold;
-    animation: checkmarkAppear 0.2s 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    animation: checkmarkAppear 0.22s 0.08s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 /* Unique bullet points per list level (un-ordered lists) */
@@ -5514,40 +5551,26 @@ body.enable-fancy-bullets {
 
 /* Animations */
 @keyframes checkboxPop {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.2);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+    0%   { transform: scale(1); }
+    35%  { transform: scale(0.82); }
+    100% { transform: scale(1); }
 }
 
 @keyframes checkmarkAppear {
-    0% {
-        transform: translate(-50%, -50%) scale(0) rotate(-45deg);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1) rotate(0deg);
-        opacity: 1;
-    }
+    0%   { transform: translate(-50%, -50%) scale(0);    opacity: 0; }
+    70%  { transform: translate(-50%, -50%) scale(1.18); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1);    opacity: 1; }
 }
 
 @keyframes menuPop {
     0% {
         opacity: 0;
-        transform: scale(0.98) translateY(6px);
+        transform: scale(0.97);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1) translateY(0);
+        transform: scale(1);
     }
 }
 
@@ -5556,9 +5579,18 @@ body:not(.disable-ui-animations) .menu,
 body:not(.disable-ui-animations) .modal,
 body:not(.disable-ui-animations) .popover,
 body:not(.disable-ui-animations) .prompt,
-body:not(.disable-ui-animations) .suggestion-container,
+body:not(.disable-ui-animations) .suggestion-container {
+    animation: menuPop var(--dur-quick) var(--ease-apple) forwards;
+}
+
+/* Tooltips: Apple-style instant fade — no scale, just opacity */
 body:not(.disable-ui-animations) .tooltip {
-    animation: menuPop 0.38s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation: tooltipFade var(--dur-instant) ease-out forwards;
+}
+
+@keyframes tooltipFade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 /* ============================================================
@@ -5578,7 +5610,7 @@ body:not(.disable-ui-animations) .tooltip {
 }
 
 body.is-phone:not(.disable-ui-animations) .menu {
-    animation: iosSheetUp 0.42s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+    animation: iosSheetUp var(--dur-sheet) var(--ease-apple) forwards;
     transform-origin: bottom center;
 }
 
@@ -5598,23 +5630,21 @@ body.is-phone:not(.disable-ui-animations) .menu {
 }
 
 body:not(.disable-ui-animations):not(.animation-style-whimsy) .modal {
-    animation: iosModalZoom 0.34s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+    animation: iosModalZoom var(--dur-modal) var(--ease-apple) forwards;
 }
 
 /* iOS-style backdrop blur fade-in for modal background */
 @keyframes iosBackdropFade {
     0% {
         opacity: 0;
-        backdrop-filter: blur(0px);
     }
     100% {
         opacity: 1;
-        backdrop-filter: blur(8px);
     }
 }
 
 body:not(.disable-ui-animations):not(.disable-modal-frost) .modal-bg {
-    animation: iosBackdropFade 0.28s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+    animation: iosBackdropFade 0.28s var(--ease-apple) forwards;
 }
 
 /* iOS-style press feedback: quick scale-down on tap/click — feels tactile */
@@ -5626,7 +5656,7 @@ body:not(.disable-ui-animations) :is(
     .nav-folder-title
 ):active {
     transform: scale(0.97);
-    transition: transform 80ms cubic-bezier(0.32, 0.72, 0, 1);
+    transition: transform 80ms var(--ease-apple);
 }
 
 /* ================================================= ==================================================
@@ -5686,26 +5716,6 @@ body:not(.disable-ui-animations) :is(
     100% {
         opacity: 1;
         transform: translateY(0) scale(1);
-    }
-}
-
-@keyframes whimsy-float {
-
-    0%,
-    100% {
-        transform: translateY(0px) rotate(0deg);
-    }
-
-    25% {
-        transform: translateY(-4px) rotate(-0.5deg);
-    }
-
-    50% {
-        transform: translateY(8px) rotate(0.5deg);
-    }
-
-    75% {
-        transform: translateY(-2px) rotate(-0.3deg);
     }
 }
 
@@ -5774,13 +5784,6 @@ body.animation-style-whimsy:not(.disable-ui-animations) .callout .callout-icon {
     }
 }
 
-/* Loading Screen */
-body.animation-style-whimsy:not(.disable-ui-animations) .progress-bar-message {
-    animation: whimsy-float 2s ease-in-out infinite;
-    display: inline-block;
-    /* Ensure transform works */
-}
-
 /* --- Expanded Whimsy Elements --- */
 
 @keyframes whimsy-checkbox-pop {
@@ -5820,63 +5823,6 @@ body.animation-style-whimsy:not(.disable-ui-animations) .progress-bar-message {
     }
 }
 
-/* Wiggle for attention/error states */
-@keyframes whimsy-wiggle {
-
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    20% {
-        transform: rotate(-3deg);
-    }
-
-    40% {
-        transform: rotate(3deg);
-    }
-
-    60% {
-        transform: rotate(-2deg);
-    }
-
-    80% {
-        transform: rotate(2deg);
-    }
-}
-
-/* Slide-in from side with bounce */
-@keyframes whimsy-slide-in-right {
-    0% {
-        transform: translateX(30px) scale(0.95);
-        opacity: 0;
-    }
-
-    70% {
-        transform: translateX(-5px) scale(1.02);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(0) scale(1);
-    }
-}
-
-/* Gentle pulse for focus states */
-@keyframes whimsy-pulse-soft {
-
-    0%,
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0.4);
-    }
-
-    50% {
-        transform: scale(1.02);
-        box-shadow: 0 0 0 8px rgba(var(--primary-color-rgb), 0);
-    }
-}
-
 /* Heartbeat for important notifications */
 @keyframes whimsy-heartbeat {
 
@@ -5899,21 +5845,6 @@ body.animation-style-whimsy:not(.disable-ui-animations) .progress-bar-message {
 
     56% {
         transform: scale(1);
-    }
-}
-
-/* Reveal animation for content entrance */
-@keyframes whimsy-reveal-up {
-    0% {
-        opacity: 0;
-        transform: translateY(15px);
-        filter: blur(3px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
     }
 }
 
@@ -5950,7 +5881,7 @@ body.animation-style-whimsy .clickable-icon:active {
 
 /* --- Bouncy & Rotaty Buttons --- */
 body.animation-style-whimsy .workspace-tab-header-inner-close-button {
-    transition: transform var(--transition-bounce), opacity var(--transition-ui), width var(--transition-ui);
+    transition: transform var(--transition-bounce), opacity var(--transition-ui);
 }
 
 body.animation-style-whimsy .workspace-tab-header-inner-close-button:hover {
@@ -6016,26 +5947,6 @@ body.animation-style-whimsy .canvas-control-item:hover {
     transform: scale(1.2);
 }
 
-body.animation-style-whimsy .search-input-container input {
-    transition: transform var(--transition-bounce), box-shadow var(--transition-ui);
-}
-
-body.animation-style-whimsy .search-input-container input:focus {
-    transform: scale(var(--whimsy-scale-subtle));
-}
-
-/* --- Whimsy Transitions (Bouncify Everything) --- */
-
-/* Tabs */
-body.animation-style-whimsy .workspace-tab-header,
-body.animation-style-whimsy .workspace-tab-header-inner {
-    transition: transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui);
-}
-
-/* View Headers */
-body.animation-style-whimsy .view-header {
-    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm), background-color var(--transition-ui);
-}
 
 /* Sidebar & Ribbon Icons */
 body.animation-style-whimsy .side-dock-ribbon-action,
@@ -6043,24 +5954,6 @@ body.animation-style-whimsy .workspace-ribbon-collapse-btn,
 body.animation-style-whimsy .view-header-icon,
 body.animation-style-whimsy .modal-close-button {
     transition: color var(--transition-ui), transform 0.4s var(--ease-bounce-md);
-}
-
-/* Metadata Container */
-body.animation-style-whimsy .metadata-container {
-    transition: box-shadow var(--slow), transform 0.4s var(--ease-bounce-sm);
-}
-
-/* File Explorer Items & Outline */
-body.animation-style-whimsy .nav-file-title,
-body.animation-style-whimsy .nav-folder-title,
-body.animation-style-whimsy .tree-item-self {
-    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-sm);
-}
-
-body.animation-style-whimsy .nav-file-title:hover,
-body.animation-style-whimsy .nav-folder-title:hover,
-body.animation-style-whimsy .tree-item-self:hover {
-    transform: translateX(3px);
 }
 
 /* Toggles */
@@ -6081,278 +5974,10 @@ body.animation-style-whimsy input[type=range]::-webkit-slider-thumb:active {
     transform: scale(1.3);
 }
 
-/* Links */
-body.animation-style-whimsy a.internal-link,
-body.animation-style-whimsy a.external-link {
-    transition: transform var(--transition-bounce), color var(--transition-ui), text-shadow var(--transition-ui);
-    display: inline-block;
-    /* Required for transform */
-}
-
-body.animation-style-whimsy a.internal-link:hover,
-body.animation-style-whimsy a.external-link:hover {
-    transform: scale(var(--whimsy-scale-normal));
-}
-
-/* Settings Left Panel (Vertical Nav) */
-body.animation-style-whimsy .vertical-tab-nav-item {
-    transition: background-color var(--transition-ui), transform 0.3s var(--ease-bounce-md);
-}
-
-body.animation-style-whimsy .vertical-tab-nav-item:hover {
-    transform: translateX(6px) scale(var(--whimsy-scale-subtle));
-}
-
-/* Callouts (Obvious Hover) */
-body.animation-style-whimsy .callout {
-    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow);
-}
-
-body.animation-style-whimsy .callout:hover {
-    transform: scale(var(--whimsy-scale-subtle)) translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, var(--opacity-subtle));
-    z-index: 10;
-}
-
-/* Blockquotes (Obvious Hover) */
-body.animation-style-whimsy .markdown-rendered blockquote {
-    transition: transform 0.3s var(--ease-bounce-md), border-left-width var(--transition-ui);
-}
-
-body.animation-style-whimsy .markdown-rendered blockquote:hover {
-    transform: translateX(5px) scale(var(--whimsy-scale-subtle));
-    border-left-width: 6px;
-}
-
-/* Images (Obvious Hover) */
-body.animation-style-whimsy img {
-    transition: transform 0.4s var(--ease-bounce-md);
-}
-
-body.animation-style-whimsy img:hover {
-    transform: scale(1.03) rotate(1deg);
-}
-
-/* Tables (Obvious Hover) */
-body.animation-style-whimsy table {
-    transition: transform var(--slow);
-}
-
-body.animation-style-whimsy table:hover {
-    transform: scale(var(--whimsy-scale-subtle));
-}
-
-/* Headers (Obvious Hover) - Only in reading/preview mode to avoid disrupting editing */
-body.animation-style-whimsy .markdown-preview-view h1,
-body.animation-style-whimsy .markdown-preview-view h2,
-body.animation-style-whimsy .markdown-preview-view h3,
-body.animation-style-whimsy .markdown-preview-view h4,
-body.animation-style-whimsy .markdown-preview-view h5,
-body.animation-style-whimsy .markdown-preview-view h6,
-body.animation-style-whimsy .markdown-reading-view h1,
-body.animation-style-whimsy .markdown-reading-view h2,
-body.animation-style-whimsy .markdown-reading-view h3,
-body.animation-style-whimsy .markdown-reading-view h4,
-body.animation-style-whimsy .markdown-reading-view h5,
-body.animation-style-whimsy .markdown-reading-view h6 {
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4), letter-spacing var(--slow), box-shadow var(--transition-ui);
-}
-
-body.animation-style-whimsy .markdown-preview-view h1:hover,
-body.animation-style-whimsy .markdown-preview-view h2:hover,
-body.animation-style-whimsy .markdown-preview-view h3:hover,
-body.animation-style-whimsy .markdown-preview-view h4:hover,
-body.animation-style-whimsy .markdown-preview-view h5:hover,
-body.animation-style-whimsy .markdown-preview-view h6:hover,
-body.animation-style-whimsy .markdown-reading-view h1:hover,
-body.animation-style-whimsy .markdown-reading-view h2:hover,
-body.animation-style-whimsy .markdown-reading-view h3:hover,
-body.animation-style-whimsy .markdown-reading-view h4:hover,
-body.animation-style-whimsy .markdown-reading-view h5:hover,
-body.animation-style-whimsy .markdown-reading-view h6:hover {
-    transform: translateX(10px) !important;
-    letter-spacing: 0.05em !important;
-}
-
-/* --- Extended Whimsy Elements (New Animations) --- */
-
-/* Metadata Properties - Staggered Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property {
-    animation: whimsy-reveal-up var(--transition-bounce) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(6) {
-    animation-delay: calc(6 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(7) {
-    animation-delay: calc(7 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .metadata-property:nth-child(8) {
-    animation-delay: calc(8 * var(--whimsy-stagger-base));
-}
-
-/* Code Blocks - Hover Lift */
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered pre {
-    transition: transform 0.3s var(--ease-bounce-md), box-shadow var(--slow);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered pre:hover {
-    transform: scale(var(--whimsy-scale-subtle));
-    box-shadow: 0 6px 20px rgba(0, 0, 0, var(--opacity-active));
-}
-
-/* Tab New Button - Jiggle on hover */
-body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header-new-tab {
-    transition: transform var(--transition-bounce);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header-new-tab:hover {
-    animation: whimsy-jelly var(--whimsy-normal) ease-in-out;
-}
-
-/* Ribbon Items - Staggered Entrance */
-/* Stagger Pattern: calc(N * var(--whimsy-stagger-base)) for consistent delays */
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(6) {
-    animation-delay: calc(6 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(7) {
-    animation-delay: calc(7 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .side-dock-ribbon-action:nth-child(8) {
-    animation-delay: calc(8 * var(--whimsy-stagger-base));
-}
-
-/* Error/Warning States - Wiggle */
-body.animation-style-whimsy:not(.disable-ui-animations) .has-error input,
-body.animation-style-whimsy:not(.disable-ui-animations) .is-error,
-body.animation-style-whimsy:not(.disable-ui-animations) .setting-item.is-invalid input {
-    animation: whimsy-wiggle var(--whimsy-normal) ease-in-out;
-}
-
-/* Input Focus - Pulse Glow */
-body.animation-style-whimsy:not(.disable-ui-animations) input:focus,
-body.animation-style-whimsy:not(.disable-ui-animations) textarea:focus {
-    animation: whimsy-pulse-soft 2s ease-in-out infinite;
-}
-
-/* Dropdown/Select Expansion */
-body.animation-style-whimsy:not(.disable-ui-animations) .dropdown {
-    animation: whimsy-slide-in-right var(--transition-bounce);
-}
 
 /* Warning Notices - Heartbeat */
 body.animation-style-whimsy:not(.disable-ui-animations) .notice.mod-warning {
-    animation: whimsy-heartbeat 1.5s ease-in-out infinite;
-}
-
-/* Rendered Headings - Staggered Reveal */
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered h1 {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-sm) backwards;
-    animation-delay: 0.1s;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered h2 {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-sm) backwards;
-    animation-delay: var(--fast);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered h3 {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-sm) backwards;
-    animation-delay: var(--transition-ui);
-}
-
-/* Callouts - Slide Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered .callout {
-    animation: whimsy-slide-in-right var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-/* Table Rows - Hover Slide */
-body.animation-style-whimsy:not(.disable-ui-animations) table tr {
-    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) table tr:hover {
-    transform: translateX(3px);
-    background-color: rgba(var(--primary-color-rgb), 0.05);
-}
-
-/* List Items - Staggered Bounce */
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li,
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-sm) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li:nth-child(1),
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li:nth-child(2),
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li:nth-child(3),
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li:nth-child(4),
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ul>li:nth-child(5),
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-rendered ol>li:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
+    animation: whimsy-heartbeat 1.5s ease-in-out 3;
 }
 
 /* Settings Toggles - Jelly on Click */
@@ -6360,182 +5985,15 @@ body.animation-style-whimsy:not(.disable-ui-animations) .checkbox-container:acti
     animation: whimsy-jelly var(--whimsy-normal) ease-in-out;
 }
 
-/* Scrollbar Thumb - Squish on Hover */
-body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thumb {
-    transition: transform 0.2s var(--ease-bounce-md), background-color var(--transition-ui);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thumb:hover {
-    transform: scaleX(1.2);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) ::-webkit-scrollbar-thumb:active {
-    transform: scaleX(0.9);
-}
-
-/* Breadcrumbs - Float on Hover */
-body.animation-style-whimsy:not(.disable-ui-animations) .view-header-breadcrumb {
-    transition: transform var(--transition-bounce);
-    display: inline-block;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .view-header-breadcrumb:hover {
-    transform: translateY(-2px) scale(var(--whimsy-scale-normal));
-}
-
-/* Graph View Nodes - Pulse on Hover */
-body.animation-style-whimsy:not(.disable-ui-animations) .graph-view.color-fill-node:hover {
-    animation: whimsy-pulse-soft 1s ease-in-out;
-}
-
-/* Outline Items - Slide In */
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .outline-item:nth-child(6) {
-    animation-delay: calc(6 * var(--whimsy-stagger-base));
-}
-
-/* Search Results - Staggered Slide */
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result {
-    animation: whimsy-slide-in-right var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .search-result:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
-}
-
-/* Backlink Items - Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .backlink-pane .search-result-file-title {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-/* Tab Header - Jelly on Active Switch */
-body.animation-style-whimsy:not(.disable-ui-animations) .workspace-tab-header.is-active {
-    animation: whimsy-jelly var(--whimsy-normal) var(--ease-bounce-md);
-}
-
 /* Modal Close Button - Spin on Hover */
 body.animation-style-whimsy:not(.disable-ui-animations) .modal-close-button:hover {
     transform: rotate(90deg) scale(1.2);
 }
 
-/* Color Picker Swatches - Pop on Hover */
-body.animation-style-whimsy:not(.disable-ui-animations) .color-swatch {
-    transition: transform 0.2s var(--ease-bounce-md);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .color-swatch:hover {
-    transform: scale(var(--whimsy-scale-pop)) rotate(-5deg);
-}
-
-/* File Badge (Unread count, etc) - Bounce */
-body.animation-style-whimsy:not(.disable-ui-animations) .nav-file-tag {
-    animation: whimsy-reveal-up var(--transition-bounce) backwards;
-    animation-delay: var(--transition-ui);
-}
-
-/* Embed Containers - Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .markdown-embed {
-    animation: whimsy-slide-in-right var(--whimsy-normal) var(--ease-bounce-md) backwards;
-}
-
-/* PDF Embed - Subtle Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .pdf-embed {
-    animation: whimsy-reveal-up var(--whimsy-normal) var(--ease-bounce-sm) backwards;
-}
-
-/* Suggestion Items - Staggered */
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item {
-    animation: whimsy-reveal-up var(--whimsy-fast) var(--ease-bounce-md) backwards;
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(1) {
-    animation-delay: calc(1 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(2) {
-    animation-delay: calc(2 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(3) {
-    animation-delay: calc(3 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(4) {
-    animation-delay: calc(4 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(5) {
-    animation-delay: calc(5 * var(--whimsy-stagger-base));
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .suggestion-item:nth-child(6) {
-    animation-delay: calc(6 * var(--whimsy-stagger-base));
-}
-
-/* Mermaid Diagrams - Entrance */
-body.animation-style-whimsy:not(.disable-ui-animations) .mermaid {
-    animation: whimsy-reveal-up var(--whimsy-slow) var(--ease-bounce-sm) backwards;
-}
-
-/* Calendar Dates - Hover Pop */
-body.animation-style-whimsy:not(.disable-ui-animations) .day {
-    transition: transform 0.2s var(--ease-bounce-md);
-}
-
-body.animation-style-whimsy:not(.disable-ui-animations) .day:hover {
-    transform: scale(var(--whimsy-scale-pop));
-}
-
-/* Disable input focus animation for Excalidraw only */
-body.animation-style-whimsy:not(.disable-ui-animations) .workspace-leaf-content[data-type="excalidraw"] input:focus,
-body.animation-style-whimsy:not(.disable-ui-animations) .workspace-leaf-content[data-type="excalidraw"] textarea:focus,
-body.animation-style-whimsy:not(.disable-ui-animations) div[class*="excalidraw"] input:focus,
-body.animation-style-whimsy:not(.disable-ui-animations) div[class*="excalidraw"] textarea:focus {
-    animation: none !important;
-}
-
 /* Modal Background Frost */
 body:not(.disable-modal-frost) .modal-bg {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
     background-color: rgba(0, 0, 0, 0.4);
     will-change: opacity;
 }
@@ -6774,7 +6232,6 @@ body:not(.disable-modal-frost) .modal-bg {
     display: flex;
     flex-direction: column;
     transition: box-shadow var(--transition-ui), transform var(--transition-ui), background-color var(--transition-ui);
-    will-change: transform, box-shadow;
     contain: layout;
 }
 
@@ -6838,15 +6295,19 @@ body:not(.is-mobile):not(.disable-status-bar) .status-bar {
     flex-wrap: wrap;
     cursor: default;
     transform-origin: bottom center;
+    /* allow-keywords lets height morph 6px -> auto smoothly (Chromium 129+);
+       without it the height snaps while the width animates */
+    interpolate-size: allow-keywords;
     transition:
-        opacity var(--transition-ui),
-        transform 220ms cubic-bezier(.2, .8, .2, 1),
-        max-width 220ms cubic-bezier(.2, .8, .2, 1),
-        height 220ms cubic-bezier(.2, .8, .2, 1),
-        padding 220ms cubic-bezier(.2, .8, .2, 1),
-        background-color var(--transition-ui),
+        opacity var(--dur-modal) var(--ease-apple),
+        transform var(--dur-modal) cubic-bezier(.34, 1.2, .64, 1),
+        max-width var(--dur-modal) var(--ease-apple),
+        height var(--dur-modal) var(--ease-apple),
+        min-height var(--dur-modal) var(--ease-apple),
+        padding var(--dur-modal) var(--ease-apple),
+        background-color var(--dur-modal) var(--ease-apple),
         border-color var(--transition-ui),
-        box-shadow var(--transition-ui);
+        box-shadow var(--dur-modal) var(--ease-apple);
 }
 
 body:not(.disable-status-bar) .status-bar:not(:hover) {
@@ -6869,7 +6330,12 @@ body:not(.is-mobile):not(.disable-status-bar) .status-bar:not(:hover) {
 body:not(.disable-status-bar) .status-bar>.status-bar-item {
     opacity: 0;
     pointer-events: none;
-    transition: opacity var(--transition-ui);
+    transform: translateY(5px);
+    filter: blur(3px);
+    transition:
+        opacity var(--dur-quick) var(--ease-apple),
+        transform var(--dur-quick) var(--ease-apple),
+        filter var(--dur-quick) var(--ease-apple);
     white-space: normal;
     color: inherit;
     display: flex;
@@ -6877,10 +6343,20 @@ body:not(.disable-status-bar) .status-bar>.status-bar-item {
     margin: 2px 4px;
 }
 
+/* Items rise and de-blur once the pill is mostly open, with a gentle
+   stagger; no delay on the base rule so collapse fades instantly */
 body:not(.disable-status-bar) .status-bar:hover>.status-bar-item {
     opacity: 1;
+    transform: none;
+    filter: none;
     pointer-events: auto;
+    transition-delay: .1s;
 }
+
+body:not(.disable-status-bar) .status-bar:hover>.status-bar-item:nth-child(2) { transition-delay: .14s; }
+body:not(.disable-status-bar) .status-bar:hover>.status-bar-item:nth-child(3) { transition-delay: .18s; }
+body:not(.disable-status-bar) .status-bar:hover>.status-bar-item:nth-child(4) { transition-delay: .22s; }
+body:not(.disable-status-bar) .status-bar:hover>.status-bar-item:nth-child(n+5) { transition-delay: .26s; }
 
 body:not(.disable-status-bar) .status-bar:hover .status-bar-item .clickable-icon:hover,
 body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
@@ -7000,8 +6476,8 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background-color: transparent;
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
@@ -7011,6 +6487,7 @@ body:not(.disable-status-bar) .status-bar:hover .status-bar-item button:hover {
     background-color: var(--scrollbar-thumb);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
+    transition: background-color 0.18s ease-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -7046,7 +6523,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
-    box-shadow: var(--shadow-4), 0 8px 32px rgba(0, 0, 0, .15);
+    box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     overflow: hidden;
@@ -7055,14 +6532,14 @@ body:not(.disable-scrollbars) :is(
 .theme-light .popover {
     background-color: rgba(var(--background-primary-rgb), 0.92);
     border-color: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(6px) saturate(130%);
-    -webkit-backdrop-filter: blur(6px) saturate(130%);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
 }
 
 .theme-dark .popover {
     background-color: var(--glass-bg);
     border-color: var(--glass-border);
-    box-shadow: var(--shadow-4), 0 8px 32px rgba(0, 0, 0, .4);
+    box-shadow: var(--shadow-overlay-dark);
     backdrop-filter: blur(12px) saturate(140%);
     -webkit-backdrop-filter: blur(12px) saturate(140%);
 }
@@ -7077,7 +6554,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r4);
     -electron-corner-smoothing: var(--squircle-main);
-    box-shadow: var(--shadow-4), 0 12px 48px rgba(0, 0, 0, .2);
+    box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(12px) saturate(160%);
     -webkit-backdrop-filter: blur(12px) saturate(160%);
     overflow: hidden;
@@ -7086,14 +6563,14 @@ body:not(.disable-scrollbars) :is(
 .theme-light .prompt {
     background-color: rgba(var(--background-primary-rgb), 0.94);
     border-color: rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(6px) saturate(130%);
-    -webkit-backdrop-filter: blur(6px) saturate(130%);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
 }
 
 .theme-dark .prompt {
     background-color: var(--glass-bg);
     border-color: var(--glass-border);
-    box-shadow: var(--shadow-4), 0 12px 48px rgba(0, 0, 0, .5);
+    box-shadow: var(--shadow-overlay-dark);
     backdrop-filter: blur(14px) saturate(150%);
     -webkit-backdrop-filter: blur(14px) saturate(150%);
 }
@@ -7134,7 +6611,7 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
-    box-shadow: var(--shadow-3), 0 6px 24px rgba(0, 0, 0, .12);
+    box-shadow: var(--shadow-overlay);
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
     overflow: hidden;
@@ -7150,7 +6627,7 @@ body:not(.disable-scrollbars) :is(
 .theme-dark .suggestion-container {
     background-color: var(--glass-bg);
     border-color: var(--glass-border);
-    box-shadow: var(--shadow-3), 0 6px 24px rgba(0, 0, 0, .35);
+    box-shadow: var(--shadow-overlay-dark);
     backdrop-filter: blur(12px) saturate(140%);
     -webkit-backdrop-filter: blur(12px) saturate(140%);
 }
@@ -7205,7 +6682,8 @@ body:not(.disable-scrollbars) :is(
     border: var(--border-thin) solid var(--glass-border);
     border-radius: var(--r2);
     -electron-corner-smoothing: var(--squircle-main);
-    box-shadow: var(--shadow-3), 0 4px 16px rgba(0, 0, 0, .1);
+    box-shadow: var(--shadow-overlay);
+    overflow: hidden;
     padding: 4px;
     backdrop-filter: blur(10px) saturate(150%);
     -webkit-backdrop-filter: blur(10px) saturate(150%);
@@ -7221,7 +6699,7 @@ body:not(.disable-scrollbars) :is(
 .theme-dark .menu {
     background-color: var(--glass-bg);
     border-color: var(--glass-border);
-    box-shadow: var(--shadow-3), 0 4px 16px rgba(0, 0, 0, .4);
+    box-shadow: var(--shadow-overlay-dark);
     backdrop-filter: blur(12px) saturate(140%);
     -webkit-backdrop-filter: blur(12px) saturate(140%);
 }
@@ -7380,9 +6858,8 @@ input[type='number'] {
     padding-inline-start: 25px;
 }
 
-/* Dropdown options/menu */
-.dropdown-menu,
-.menu {
+/* Dropdown options */
+.dropdown-menu {
     border-radius: var(--r3);
     -electron-corner-smoothing: var(--squircle-main);
     overflow: hidden;
@@ -7475,6 +6952,13 @@ input[type='number'] {
     transform: scale(0.95);
 }
 
+/* Universal press feedback — Apple presses every interactive element */
+button:active,
+.clickable-icon:active,
+.mod-cta:active {
+    transform: scale(0.94);
+}
+
 /* Titlebar Buttons */
 .titlebar-button {
     color: var(--text-muted);
@@ -7514,6 +6998,8 @@ body.disable-shadows {
     --shadow-2: none !important;
     --shadow-3: none !important;
     --shadow-4: none !important;
+    --shadow-overlay: none !important;
+    --shadow-overlay-dark: none !important;
 }
 
 /* ============================== */
@@ -7729,7 +7215,7 @@ body:not(.is-mobile).enable-floating-nav .nav-buttons-container {
     padding-inline: 0;
     border-radius: var(--radius-pill);
     background-color: rgba(var(--primary-color-rgb), 0.4);
-    transition: width var(--slow) cubic-bezier(0.4, 0, 0.2, 1), height var(--slow) cubic-bezier(0.4, 0, 0.2, 1), background-color var(--slow) cubic-bezier(0.4, 0, 0.2, 1), box-shadow var(--slow) cubic-bezier(0.4, 0, 0.2, 1), opacity var(--slow) cubic-bezier(0.4, 0, 0.2, 1), gap var(--slow) cubic-bezier(0.4, 0, 0.2, 1), margin-block-start var(--slow) cubic-bezier(0.4, 0, 0.2, 1), margin-block-end var(--slow) cubic-bezier(0.4, 0, 0.2, 1);
+    transition: width 0.32s var(--ease-apple), height 0.32s var(--ease-apple), background-color var(--slow), box-shadow var(--slow), opacity var(--slow);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -7961,7 +7447,6 @@ body.show-header-on-hover .view-header:hover>.clickable-icon {
     transform: translateY(0);
 }
 
-/* Only show border on hover if really needed, but removing background change */
 body.show-header-on-hover .view-header:hover {
     background-color: transparent !important;
     border-block-end: none !important;
@@ -8104,10 +7589,6 @@ body.is-mobile :is(
     will-change: auto !important;
 }
 
-body.is-mobile .metadata-container {
-    transform: none !important;
-}
-
 /* Status bar: let Obsidian's default layout handle it on mobile */
 body.is-mobile .status-bar {
     position: relative;
@@ -8237,6 +7718,7 @@ body.is-mobile .workspace-tab-header-container {
 
 /* === CRITICAL MOBILE OVERRIDE: Force metadata background === */
 body.is-mobile .metadata-container {
+    transform: none !important;
     background: hsl(var(--accent-h), 12%, 15%) !important;
     background-color: hsl(var(--accent-h), 12%, 15%) !important;
 }
@@ -8370,7 +7852,7 @@ body.depth-shadows button:not(.clickable-icon):hover {
 /* Tags in properties - subtle depth */
 body.depth-shadows .multi-select-pill {
     box-shadow: var(--depth-1);
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: box-shadow var(--transition-ui), transform var(--transition-ui);
 }
 
 body.depth-shadows .multi-select-pill:hover {
@@ -8396,7 +7878,7 @@ body.depth-shadows .workspace-tab-header.is-active {
 
 /* Icons - subtle depth on hover (ONLY when standalone, not in pills) */
 body.depth-shadows .clickable-icon:not(.workspace-tab-header-container *):not(.nav-buttons-container *) {
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: box-shadow var(--transition-ui), transform var(--transition-ui);
 }
 
 body.depth-shadows .clickable-icon:not(.workspace-tab-header-container *):not(.nav-buttons-container *):hover {
@@ -8490,8 +7972,8 @@ body.inline-code-accent :not(pre) > code {
     padding: 2px 6px 2px 8px !important;
     border-radius: var(--radius-s);
     font-weight: var(--weight-medium) !important;
-    animation: code-pulse 3s ease infinite !important;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    animation: code-pulse 3s ease 3 !important;
+    transition: background var(--transition-ui), transform var(--transition-ui), box-shadow var(--transition-ui);
     box-shadow: 0 1px 3px rgba(var(--primary-color-rgb), 0.1);
 }
 
@@ -8703,6 +8185,118 @@ body.layout-card .workspace {
 }
 
 /* ============================== */
+/*   LOW CONTRAST MODE            */
+/* ============================== */
+/* Unifies the window on the season's deeper panel tone (Baseline-style
+   "tonal"). Must pair .low-contrast with .theme-* to outrank season
+   selectors; stays on body so var() reads each season's literals.
+   --background-secondary-alt is left alone so table headers and active
+   states keep definition. */
+body.low-contrast.theme-light, body.low-contrast.theme-dark {
+    --background-primary: var(--background-secondary);
+    --background-primary-rgb: var(--background-secondary-rgb);
+    --code-background: var(--background-secondary-alt);
+    --divider-color: color-mix(in srgb, var(--text-normal) 9%, transparent);
+    /* Obsidian's default --hr-color is a neutral gray that collides with
+       some seasons' deeper panel tone (autumn/paper/melange) — make it
+       season-aware so --- rules stay visible */
+    --hr-color: color-mix(in srgb, var(--text-normal) 22%, transparent);
+}
+
+/* Card layout: the card stays on the unified tone — do NOT elevate
+   --card-bg, it only shows through the view-header strip and reads as a
+   pale title bar. Only the active tab pill lifts above the surface. */
+body.low-contrast.theme-light:not(.is-mobile).layout-card .workspace-tab-header.is-active {
+    background-color: color-mix(in srgb, var(--background-primary) 45%, white) !important;
+}
+
+body.low-contrast.theme-dark:not(.is-mobile).layout-card .workspace-tab-header.is-active {
+    background-color: color-mix(in srgb, var(--background-primary) 92%, white) !important;
+}
+
+/* Inactive tabs: quiet text, no chip until hover */
+body.low-contrast:not(.is-mobile).layout-card .workspace-tab-header:not(.is-active) {
+    background-color: transparent !important;
+}
+
+body.low-contrast:not(.is-mobile).layout-card .workspace-tab-header:not(.is-active):hover {
+    background-color: color-mix(in srgb, var(--text-normal) 6%, transparent) !important;
+}
+
+/* Ribbon melts into the unified surface */
+body.low-contrast .workspace-ribbon {
+    background-color: transparent;
+    border-inline-end-color: transparent;
+}
+
+/* ============================== */
+/*   HEADING COLOUR INTENSITY     */
+/* ============================== */
+/* Re-mixes every season's heading text colours from their -rgb triplets,
+   so one rule covers all seasons. Pill/underline backgrounds keep the pure
+   -rgb colours either way. Pairing with .theme-* outranks the season
+   selectors; no self-reference (reads -rgb, writes the colour var). */
+
+/* Custom per-level heading colours (Style Settings pickers). Must come
+   BEFORE the Muted/Vivid rules: equal specificity, so they win the
+   --heading-N cascade later while re-mixing from the custom -rgb set here. */
+body.custom-heading-colors.theme-light, body.custom-heading-colors.theme-dark {
+    --heading-primary: var(--custom-h1, #c77b8b);
+    --heading-secondary: var(--custom-h2, #bc5c00);
+    --heading-tertiary: var(--custom-h3, #a08428);
+    --heading-quaternary: var(--custom-h4, #6e9b72);
+    --heading-quinary: var(--custom-h5, #7892bd);
+    --heading-senary: var(--custom-h6, #ad6bc0);
+    --heading-primary-rgb: var(--custom-h1-rgb, 199, 123, 139);
+    --heading-secondary-rgb: var(--custom-h2-rgb, 188, 92, 0);
+    --heading-tertiary-rgb: var(--custom-h3-rgb, 160, 132, 40);
+    --heading-quaternary-rgb: var(--custom-h4-rgb, 110, 155, 114);
+    --heading-quinary-rgb: var(--custom-h5-rgb, 120, 146, 189);
+    --heading-senary-rgb: var(--custom-h6-rgb, 173, 107, 192);
+}
+
+/* Muted: deep tones a breath away from the text colour */
+body.heading-color-muted.theme-light, body.heading-color-muted.theme-dark {
+    --heading-primary: color-mix(in srgb, rgb(var(--heading-primary-rgb)) 45%, var(--text-normal));
+    --heading-secondary: color-mix(in srgb, rgb(var(--heading-secondary-rgb)) 45%, var(--text-normal));
+    --heading-tertiary: color-mix(in srgb, rgb(var(--heading-tertiary-rgb)) 45%, var(--text-normal));
+    --heading-quaternary: color-mix(in srgb, rgb(var(--heading-quaternary-rgb)) 45%, var(--text-normal));
+    --heading-quinary: color-mix(in srgb, rgb(var(--heading-quinary-rgb)) 45%, var(--text-normal));
+    --heading-senary: color-mix(in srgb, rgb(var(--heading-senary-rgb)) 45%, var(--text-normal));
+}
+
+/* Vivid: full palette saturation — funky */
+body.heading-color-vivid.theme-light, body.heading-color-vivid.theme-dark {
+    --heading-primary: rgb(var(--heading-primary-rgb));
+    --heading-secondary: rgb(var(--heading-secondary-rgb));
+    --heading-tertiary: rgb(var(--heading-tertiary-rgb));
+    --heading-quaternary: rgb(var(--heading-quaternary-rgb));
+    --heading-quinary: rgb(var(--heading-quinary-rgb));
+    --heading-senary: rgb(var(--heading-senary-rgb));
+}
+
+/* ============================== */
+/*   SEASON-TINTED BODY TEXT      */
+/* ============================== */
+/* Blends the season accent into body text. Reads the -rgb twin (no
+   self-reference); the slider sets --body-text-tint on body. Every season
+   holds >= 4.4:1 contrast even at the 40% maximum. */
+body.tinted-body-text.theme-light, body.tinted-body-text.theme-dark {
+    --text-normal: color-mix(in srgb, var(--primary-color) var(--body-text-tint, 20%), rgb(var(--text-normal-rgb)));
+}
+
+/* ============================== */
+/*   SYSTEM FONT (SAN FRANCISCO)  */
+/* ============================== */
+/* On body, not :root — Obsidian layers the user's own font choices
+   above --font-*-theme, so user-set fonts still win. */
+body.system-fonts {
+    --font-text-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --font-interface-theme: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --font-monospace-theme: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ============================== */
 /*   QUIET MODE (RAMS REDUCTION)  */
 /* ============================== */
 
@@ -8904,4 +8498,452 @@ body.tag-chips .cm-line .cm-hashtag-end {
 body.tag-chips .cm-line .cm-hashtag-begin {
     opacity: 0.5;
     font-size: 0.76em;
+}
+
+/* ============================== */
+/*   ALTERNATE CHECKBOXES         */
+/* ============================== */
+/* Task-state styling inspired by Baseline (github.com/aaaaalexis/obsidian-baseline).
+   Colors ride the season palette via --callout-* vars so every season recolors them.
+   Note: Monochrome mode does not desaturate these states. */
+
+/* Replace Obsidian's mask checkmark with a text glyph for alternate states */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line:not([data-task=" "]):not([data-task="x"]):not([data-task="X"]),
+    .markdown-rendered li.task-list-item:not([data-task=" "]):not([data-task="x"]):not([data-task="X"])
+) .task-list-item-checkbox:checked::after {
+    -webkit-mask-image: none;
+    mask-image: none;
+    background-color: transparent;
+    content: var(--task-glyph, "•");
+    color: var(--background-primary);
+    font-size: 12px;
+    line-height: 1;
+}
+
+/* [/] in progress — half fill, no glyph */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"],
+    .markdown-rendered li.task-list-item[data-task="/"]
+) .task-list-item-checkbox:checked {
+    background: linear-gradient(135deg, var(--checkbox-color) 50%, transparent 50%) !important;
+    border-color: var(--checkbox-color) !important;
+}
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="/"],
+    .markdown-rendered li.task-list-item[data-task="/"]
+) .task-list-item-checkbox:checked::after {
+    content: none;
+}
+
+/* [-] cancelled */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"],
+    .markdown-rendered li.task-list-item[data-task="-"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "–";
+    background: var(--text-faint) !important;
+    border-color: var(--text-faint) !important;
+}
+body.alt-checkboxes :is(
+    .markdown-rendered li.task-list-item[data-task="-"],
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="-"]
+) {
+    color: var(--text-faint);
+    text-decoration: line-through;
+    text-decoration-color: var(--text-faint);
+}
+
+/* [>] forwarded */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task=">"],
+    .markdown-rendered li.task-list-item[data-task=">"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "❯";
+    background: var(--callout-info) !important;
+    border-color: var(--callout-info) !important;
+}
+
+/* [<] scheduled */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="<"],
+    .markdown-rendered li.task-list-item[data-task="<"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "❮";
+    background: var(--callout-video) !important;
+    border-color: var(--callout-video) !important;
+}
+
+/* [?] question */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="?"],
+    .markdown-rendered li.task-list-item[data-task="?"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "?";
+    background: var(--callout-warning) !important;
+    border-color: var(--callout-warning) !important;
+}
+
+/* [!] important */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="!"],
+    .markdown-rendered li.task-list-item[data-task="!"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "!";
+    background: var(--callout-danger) !important;
+    border-color: var(--callout-danger) !important;
+}
+
+/* [*] star */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="*"],
+    .markdown-rendered li.task-list-item[data-task="*"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "★";
+    background: var(--callout-warning) !important;
+    border-color: var(--callout-warning) !important;
+}
+
+/* ["] quote */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='"'],
+    .markdown-rendered li.task-list-item[data-task='"']
+) .task-list-item-checkbox:checked {
+    --task-glyph: "❝";
+    background: var(--callout-quote) !important;
+    border-color: var(--callout-quote) !important;
+}
+
+/* [b] bookmark */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="b"],
+    .markdown-rendered li.task-list-item[data-task="b"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "b";
+    background: var(--callout-cite) !important;
+    border-color: var(--callout-cite) !important;
+}
+
+/* [i] information */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="i"],
+    .markdown-rendered li.task-list-item[data-task="i"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "i";
+    background: var(--callout-info) !important;
+    border-color: var(--callout-info) !important;
+}
+
+/* [I] idea */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="I"],
+    .markdown-rendered li.task-list-item[data-task="I"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "I";
+    background: var(--callout-warning) !important;
+    border-color: var(--callout-warning) !important;
+}
+
+/* [p] pro */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="p"],
+    .markdown-rendered li.task-list-item[data-task="p"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "▲";
+    background: var(--callout-success) !important;
+    border-color: var(--callout-success) !important;
+}
+
+/* [c] con */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="c"],
+    .markdown-rendered li.task-list-item[data-task="c"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "▼";
+    background: var(--callout-danger) !important;
+    border-color: var(--callout-danger) !important;
+}
+
+/* [u] up */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="u"],
+    .markdown-rendered li.task-list-item[data-task="u"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "↑";
+    background: var(--callout-success) !important;
+    border-color: var(--callout-success) !important;
+}
+
+/* [d] down */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="d"],
+    .markdown-rendered li.task-list-item[data-task="d"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "↓";
+    background: var(--callout-danger) !important;
+    border-color: var(--callout-danger) !important;
+}
+
+/* [S] savings */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="S"],
+    .markdown-rendered li.task-list-item[data-task="S"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "$";
+    background: var(--callout-success) !important;
+    border-color: var(--callout-success) !important;
+}
+
+/* [k] key */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="k"],
+    .markdown-rendered li.task-list-item[data-task="k"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "k";
+    background: var(--callout-warning) !important;
+    border-color: var(--callout-warning) !important;
+}
+
+/* [f] fire */
+body.alt-checkboxes :is(
+    .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="f"],
+    .markdown-rendered li.task-list-item[data-task="f"]
+) .task-list-item-checkbox:checked {
+    --task-glyph: "f";
+    background: var(--callout-danger) !important;
+    border-color: var(--callout-danger) !important;
+}
+
+/* ============================== */
+/*   ENHANCED TABLES              */
+/* ============================== */
+/* Inspired by Baseline (github.com/aaaaalexis/obsidian-baseline) */
+
+/* Live-preview table widget parity with reading-mode striping/hover */
+.theme-light .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, .03);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, .03);
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), .05);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover {
+    background-color: rgba(var(--primary-color-rgb), .08);
+}
+
+/* Disable row striping */
+body.table-plain-rows :is(.markdown-rendered, .markdown-preview-view) table tbody tr:nth-child(even),
+body.table-plain-rows .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+/* Disable row hover highlight */
+body.table-no-hover :is(.markdown-rendered, .markdown-preview-view) table tbody tr:hover,
+body.table-no-hover.theme-dark :is(.markdown-rendered, .markdown-preview-view) table tbody tr:hover,
+body.table-no-hover .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover,
+body.table-no-hover.theme-dark .markdown-source-view.mod-cm6 .cm-table-widget table tbody tr:hover {
+    background-color: transparent;
+}
+
+/* Table density */
+body.table-style-compact :is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6 .cm-table-widget) table :is(td, th) {
+    padding-block: var(--s1);
+    padding-inline: var(--s2);
+    font-size: 0.92em;
+}
+
+body.table-style-relaxed :is(.markdown-rendered, .markdown-preview-view, .markdown-source-view.mod-cm6 .cm-table-widget) table :is(td, th) {
+    padding-block: var(--s3);
+    padding-inline: var(--s4);
+}
+
+/* ============================== */
+/*   BLOCK WIDTH (CSSCLASSES)     */
+/* ============================== */
+/* Per-note cssclasses: wide-page, full-page, wide-table, wide-image.
+   Inspired by Baseline (github.com/aaaaalexis/obsidian-baseline).
+   --wide-block-width is set by Style Settings on body; consumed with a
+   110ch fallback only — never defined in this file. */
+
+/* Whole-document widening — rides the existing --file-line-width pipeline */
+.markdown-preview-view.wide-page, .markdown-source-view.wide-page {
+    --file-line-width: min(100ch, 92%);
+    --editor-max-width: min(100ch, 92%);
+    --reading-max-width: min(100ch, 92%);
+}
+
+.markdown-preview-view.full-page, .markdown-source-view.full-page {
+    --file-line-width: 96%;
+    --editor-max-width: 96%;
+    --reading-max-width: 96%;
+}
+
+/* Element-level widening, reading mode: widen the sizer, re-cap every block
+   at the normal measure, exempt table/image blocks up to --wide-block-width */
+.markdown-preview-view:is(.wide-table, .wide-image) .markdown-preview-sizer {
+    max-width: 100%;
+}
+
+.markdown-preview-view:is(.wide-table, .wide-image) .markdown-preview-sizer > div:not(.markdown-preview-pusher) {
+    max-width: var(--file-line-width);
+    margin-inline: auto;
+}
+
+.markdown-preview-view.wide-table .markdown-preview-sizer > div:has(> table),
+.markdown-preview-view.wide-image .markdown-preview-sizer > div:has(img) {
+    max-width: min(100%, var(--wide-block-width, 110ch));
+}
+
+/* Element-level widening, live preview: widen cm-sizer, cap lines, exempt widgets */
+.markdown-source-view.mod-cm6:is(.wide-table, .wide-image) .cm-sizer {
+    max-width: 100%;
+}
+
+.markdown-source-view.mod-cm6:is(.wide-table, .wide-image) :is(.cm-line, .inline-title, .metadata-container, .embedded-backlinks) {
+    max-width: var(--file-line-width);
+    margin-inline: auto;
+}
+
+.markdown-source-view.mod-cm6.wide-table .cm-content > .cm-embed-block.cm-table-widget,
+.markdown-source-view.mod-cm6.wide-image .cm-content > .cm-embed-block:has(img) {
+    max-width: min(100%, var(--wide-block-width, 110ch));
+    margin-inline: auto;
+}
+
+/* Mobile: neutralize widening — small screens are already full-bleed */
+body.is-mobile :is(.wide-page, .full-page, .wide-table, .wide-image) {
+    --wide-block-width: 100%;
+}
+
+/* ============================== */
+/*   P3 VIVID ACCENTS             */
+/* ============================== */
+/* Chroma-boosts the season accent on wide-gamut displays via oklch relative
+   color from the -rgb twin (no self-reference). Consumers chained to
+   --primary-color (links, checkboxes, carets) follow automatically; the
+   Custom Accent override still wins via its !important consumers. */
+@media (color-gamut: p3) {
+    body.p3-accents.theme-light, body.p3-accents.theme-dark {
+        --primary-color: oklch(from rgb(var(--primary-color-rgb)) l calc(c * 1.18) h);
+        --emphasis-color: oklch(from rgb(var(--primary-color-rgb)) l calc(c * 1.18) h);
+    }
+}
+
+/* ============================== */
+/*   BANNERS (CSSCLASS: banner)   */
+/* ============================== */
+/* In-flow cover image, Craft-style: add `banner` to a note's cssclasses and
+   tag the image ![[image.jpg|banner]] or ![banner](path). Inspired by
+   Baseline (aaaaalexis); simplified to flow with content instead of
+   absolute-positioning over the view. `banner-fade` adds a bottom fade. */
+:is(.markdown-preview-view.banner, .markdown-source-view.mod-cm6.banner) img[alt="banner"] {
+    display: block;
+    width: 100%;
+    height: var(--banner-height, 240px);
+    object-fit: cover;
+    border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-main);
+}
+
+:is(.markdown-preview-view.banner.banner-fade, .markdown-source-view.mod-cm6.banner.banner-fade) img[alt="banner"] {
+    border-radius: var(--r3) var(--r3) 0 0;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Suppress the image toolbar/resize chrome on banner images in live preview */
+.markdown-source-view.mod-cm6.banner .image-embed[alt="banner"] .image-resize-handle,
+.markdown-source-view.mod-cm6.banner .image-embed[alt="banner"] .image-resize-corner {
+    display: none !important;
+}
+
+/* ============================== */
+/*   DATAVIEW CARDS (CSSCLASS)    */
+/* ============================== */
+/* Add `cards` to a note's cssclasses to render Dataview tables as a card
+   grid. Adapted from the Cards snippet by @kepano (MIT) with TerraFlow
+   tokens. First column reads as the card title. */
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table thead {
+    display: none;
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--cards-min-width, 180px), 1fr));
+    gap: var(--s3);
+    background-color: transparent;
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    border: var(--border-thin) solid var(--divider-color);
+    border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-main);
+    box-shadow: var(--shadow-1);
+    padding: var(--s2);
+    overflow: hidden;
+    transform: none;
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr:hover {
+    box-shadow: var(--shadow-2);
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr > td {
+    border: none;
+    background-color: transparent;
+    padding: var(--s1) var(--s2);
+    white-space: normal;
+    text-wrap: wrap;
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr > td:first-child {
+    font-weight: var(--weight-semibold);
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr > td:not(:first-child) {
+    font-size: var(--font-smaller, 0.92em);
+    color: var(--text-muted);
+}
+
+:is(.markdown-preview-view.cards, .markdown-source-view.mod-cm6.cards) table.dataview.table-view-table tbody > tr > td img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--r2);
+    -electron-corner-smoothing: var(--squircle-main);
+}
+
+/* ============================== */
+/*   BASES POLISH                 */
+/* ============================== */
+/* Season-aware hover + card styling for the native Bases plugin */
+.bases-tbody .bases-tr:hover {
+    background-color: rgba(var(--primary-color-rgb), .05);
+}
+
+.theme-dark .bases-tbody .bases-tr:hover {
+    background-color: rgba(var(--primary-color-rgb), .08);
+}
+
+.bases-cards-item {
+    border-radius: var(--r3);
+    -electron-corner-smoothing: var(--squircle-main);
+    background-color: var(--background-secondary);
+    box-shadow: var(--shadow-1);
+    transition: box-shadow var(--transition-ui);
+}
+
+.bases-cards-item:hover {
+    box-shadow: var(--shadow-2);
+}
+
+.bases-cards-label {
+    color: var(--text-muted);
 }

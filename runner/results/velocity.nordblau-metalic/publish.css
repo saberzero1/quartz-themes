@@ -20,6 +20,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: transparent !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 28px !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
@@ -759,11 +760,7 @@ body.theme-light {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: var(--trans-faint-50) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -857,6 +854,8 @@ body.theme-light {
   --slider-thumb-y: -3px !important;
   --slider-track-background: var(--trans-faint-50) !important;
   --slider-track-height: 20px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: transparent !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1065,6 +1064,7 @@ body.theme-light {
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-low) var(--bhue)) !important;
   --font-ui-larger: 24px !important;
+  --strikethrough-color: var(--text-faint) !important;
   --radius-sm: 10px !important;
   --pill-weight: var(--font-semi-medium) !important;
   --setting-items-padding: calc(var(--vl-layout-padding) + 8px) !important;
@@ -1078,7 +1078,6 @@ body.theme-light {
   --math-color: var(--color-base-100) !important;
   --corner-smoothing: 60% !important;
   --tab-font-weight: var(--font-normal) !important;
-  --strikethrough-color: var(--text-faint) !important;
   --settings-background: color-mix(
     in oklab,
     var(--background-secondary) 70%,
@@ -1290,6 +1289,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: transparent !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 28px !important;
   --input-border-width: 0 !important;
   --input-border-width-focus: 2px !important;
@@ -2023,11 +2023,7 @@ body.theme-dark {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: var(--color-base-35) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2121,6 +2117,8 @@ body.theme-dark {
   --slider-thumb-y: -3px !important;
   --slider-track-background: var(--trans-faint-40) !important;
   --slider-track-height: 20px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: transparent !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2326,6 +2324,7 @@ body.theme-dark {
   --color-base-80: oklch(var(--bl-80) var(--bsat-str) var(--bhue)) !important;
   --color-base-90: oklch(var(--bl-90) var(--bsat-str) var(--bhue)) !important;
   --font-ui-larger: 24px !important;
+  --strikethrough-color: var(--text-faint) !important;
   --radius-sm: 10px !important;
   --pill-weight: var(--font-semi-medium) !important;
   --setting-items-padding: calc(var(--vl-layout-padding) + 8px) !important;
@@ -2339,7 +2338,6 @@ body.theme-dark {
   --math-color: var(--color-base-100) !important;
   --corner-smoothing: 60% !important;
   --tab-font-weight: var(--font-normal) !important;
-  --strikethrough-color: var(--text-faint) !important;
   --settings-background: color-mix(
     in oklab,
     var(--color-base-10) 70%,
@@ -4719,7 +4717,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -8243,7 +8241,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

@@ -85,9 +85,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-definition: #3a6525 !important;
   --code-number: #8f5c18 !important;
   --code-variable: #1f2330 !important;
+  --code-definition: #3a6525 !important;
   --code-foreground: #1f2330 !important;
 
   --font-interface-override: "??";
@@ -175,9 +175,9 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-definition: #8dc776 !important;
   --code-number: #e8a25c !important;
   --code-variable: #e6e4da !important;
+  --code-definition: #8dc776 !important;
   --code-foreground: #e6e4da !important;
 
   --font-interface-override: "??";
@@ -2942,7 +2942,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -7875,7 +7875,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

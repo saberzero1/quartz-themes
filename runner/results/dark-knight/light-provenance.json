@@ -545,6 +545,7 @@
     "--scrollbar-active-thumb-bg": ".theme-light",
     "--scrollbar-bg": ".theme-light",
     "--scrollbar-thumb-bg": ".theme-light",
+    "--scrollbar-native-width": "body",
     "--search-clear-button-color": "body",
     "--search-clear-button-size": "body",
     "--search-icon-color": "body",
@@ -594,6 +595,8 @@
     "--slider-s-thumb-position": "body",
     "--slider-track-background": "body",
     "--slider-track-height": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -1217,6 +1220,8 @@
     "--slider-thumb-border-color": "body",
     "--slider-thumb-radius": "body",
     "--slider-track-background": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -1502,7 +1507,10 @@
   "kbd": { "--focus-ring-color": ":root *" },
   "sup": { "--focus-ring-color": ":root *" },
   ".status-bar": { "--focus-ring-color": ":root *" },
-  ".view-header-title": { "--focus-ring-color": ":root *" },
+  ".view-header-title": {
+    "--focus-ring-color": ":root *",
+    "--scrollbar-native-width": ".view-header-title"
+  },
   ".footnotes": { "--focus-ring-color": ":root *" },
   ".workspace-leaf-content": { "--focus-ring-color": ":root *" },
   "input[type=\"checkbox\"]": { "--focus-ring-color": ":root *" },
@@ -1801,6 +1809,8 @@
     "--slider-thumb-border-color": "body",
     "--slider-thumb-radius": "body",
     "--slider-track-background": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -1989,7 +1999,10 @@
   ".tree-item-children": { "--focus-ring-color": ":root *" },
   ".nav-folder-title-content": { "--focus-ring-color": ":root *" },
   ".nav-files-container": { "--focus-ring-color": ":root *" },
-  ".graph-controls": { "--focus-ring-color": ":root *" },
+  ".graph-controls": {
+    "--focus-ring-color": ":root *",
+    "--scrollbar-native-width": ".graph-controls"
+  },
   ".clickable-icon.graph-controls-button": { "--focus-ring-color": ":root *" },
   ".graph-control-section": { "--focus-ring-color": ":root *" },
   ".clickable-icon.graph-controls-button.mod-reset": {

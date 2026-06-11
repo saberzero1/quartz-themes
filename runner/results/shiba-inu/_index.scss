@@ -86,13 +86,13 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --graph-arrow: rgb(var(--violet)) !important;
+  --graph-line-highlight: var(--interactive-accent) !important;
   --graph-circle-fill-highlight: rgb(var(--blue)) !important;
   --graph-circle-outline: rgb(var(--rose)) !important;
   --graph-circle-fill: rgb(var(--blue)) !important;
   --graph-circle-fill-unresolved: rgb(var(--red)) !important;
   --graph-fill-attachment: rgb(var(--sea)) !important;
   --graph-fill-tag: rgb(var(--orange)) !important;
-  --graph-line-highlight: var(--interactive-accent) !important;
   --callout-gallery-gap: 5px;
 
   --font-text-theme: var(--font-default);
@@ -258,13 +258,13 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --graph-arrow: rgb(var(--rose)) !important;
+  --graph-line-highlight: var(--interactive-accent) !important;
   --graph-circle-fill-highlight: rgb(var(--blue)) !important;
   --graph-circle-outline: rgb(var(--rose)) !important;
   --graph-circle-fill: rgb(var(--blue)) !important;
   --graph-circle-fill-unresolved: #ffa6e5 !important;
   --graph-fill-attachment: rgb(var(--blue)) !important;
   --graph-fill-tag: rgb(var(--orange)) !important;
-  --graph-line-highlight: var(--interactive-accent) !important;
   --callout-gallery-gap: 5px;
 
   --font-text-theme: var(--font-default);
@@ -3353,7 +3353,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 
@@ -9774,7 +9774,7 @@ html[saved-theme="dark"] {
     }
 
     body {
-      scrollbar-width: auto;
+      scrollbar-width: var(--scrollbar-native-width);
       scrollbar-color: auto;
     }
 

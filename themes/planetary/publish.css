@@ -26,6 +26,20 @@
   src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-mono-2.woff2")
     format("woff2");
 }
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-serif.woff2")
+    format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Serif";
+  font-style: italic;
+  font-weight: 100 700;
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/planetary/ibm-plex-serif-1.woff2")
+    format("woff2");
+}
 body.theme-light {
   --bases-table-header-background: var(--background-primary) !important;
   --focus-ring-color: var(--csstools-light-dark-toggle--23, #0df) !important;
@@ -43,6 +57,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -300,8 +315,8 @@ body.theme-light {
   --color-base-50: #ababab !important;
   --color-base-60: #707070 !important;
   --color-base-70: #5c5c5c !important;
-  --color-blue: #d6e9ff !important;
-  --color-blue-rgb: 214, 233, 255 !important;
+  --color-blue: #5ca8ff !important;
+  --color-blue-rgb: 92, 168, 255 !important;
   --color-cyan: #0ecdc9 !important;
   --color-cyan-rgb: 14, 205, 201 !important;
   --color-green: #0cc77c !important;
@@ -310,8 +325,8 @@ body.theme-light {
   --color-orange-rgb: 233, 151, 63 !important;
   --color-pink: #f22c96 !important;
   --color-pink-rgb: 242, 44, 150 !important;
-  --color-purple: #a29bfe !important;
-  --color-purple-rgb: 162, 155, 254 !important;
+  --color-purple: #8b5cf6 !important;
+  --color-purple-rgb: 139, 92, 246 !important;
   --color-red: #f85c51 !important;
   --color-red-rgb: 248, 92, 81 !important;
   --color-yellow: #eacf00 !important;
@@ -410,7 +425,11 @@ body.theme-light {
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme: IBM Plex Sans, sans-serif !important;
+  --font-text-theme: var(
+    --body-font-select,
+    "IBM Plex Sans",
+    sans-serif
+  ) !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -698,7 +717,7 @@ body.theme-light {
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
-  --nav-item-size: var(--font-ui-small) !important;
+  --nav-item-size: 14px !important;
   --nav-item-white-space: nowrap !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: var(--text-faint) !important;
@@ -863,6 +882,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1073,6 +1094,13 @@ body.theme-light {
   --inline-title-color: var(--h1-color) !important;
   --table-header-background-hover: var(--canvas3) !important;
   --vault-name-color: var(--text-normal) !important;
+  --h1-font: "IBM Plex Sans", sans-serif !important;
+  --h2-font: "IBM Plex Sans", sans-serif !important;
+  --h3-font: "IBM Plex Sans", sans-serif !important;
+  --h4-font: "IBM Plex Sans", sans-serif !important;
+  --h5-font: "IBM Plex Sans", sans-serif !important;
+  --h6-font: "IBM Plex Sans", sans-serif !important;
+  --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-cyan) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
@@ -1084,7 +1112,10 @@ body.theme-light {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
+  --nav-item-weight-active: var(--font-semibold) !important;
   --background-code: var(--canvas2) !important;
+  --nav-item-weight: var(--font-semibold) !important;
+  --nav-item-weight-hover: var(--font-semibold) !important;
   --background-code-preview: var(--canvas2) !important;
   --background-preview: var(--canvas1) !important;
   --background-quick: var(--canvas2) !important;
@@ -1103,6 +1134,12 @@ body.theme-light {
   --canvas3: #fdf9f5 !important;
   --canvas4: #d7c3ba !important;
   --color-head: var(--color-accent) !important;
+  --font-body-theme: var(
+    --body-font-select,
+    "IBM Plex Sans",
+    sans-serif
+  ) !important;
+  --nav-item-font: "IBM Plex Serif", serif !important;
 }
 
 body.theme-dark {
@@ -1122,6 +1159,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: 1px !important;
   --input-border-width-focus: 2px !important;
@@ -1489,7 +1527,11 @@ body.theme-dark {
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme: IBM Plex Sans, sans-serif !important;
+  --font-text-theme: var(
+    --body-font-select,
+    "IBM Plex Sans",
+    sans-serif
+  ) !important;
   --font-thin: 100 !important;
   --font-ui-large: 20px !important;
   --font-ui-medium: 15px !important;
@@ -1779,7 +1821,7 @@ body.theme-dark {
     var(--size-4-6) !important;
   --nav-item-parent-padding: var(--nav-item-padding) !important;
   --nav-item-radius: var(--radius-s) !important;
-  --nav-item-size: var(--font-ui-small) !important;
+  --nav-item-size: 14px !important;
   --nav-item-white-space: nowrap !important;
   --nav-tag-background: transparent !important;
   --nav-tag-color: var(--text-faint) !important;
@@ -1938,6 +1980,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2143,6 +2187,13 @@ body.theme-dark {
   --inline-title-color: var(--h1-color) !important;
   --table-header-background-hover: var(--canvas3) !important;
   --vault-name-color: var(--text-normal) !important;
+  --h1-font: "IBM Plex Sans", sans-serif !important;
+  --h2-font: "IBM Plex Sans", sans-serif !important;
+  --h3-font: "IBM Plex Sans", sans-serif !important;
+  --h4-font: "IBM Plex Sans", sans-serif !important;
+  --h5-font: "IBM Plex Sans", sans-serif !important;
+  --h6-font: "IBM Plex Sans", sans-serif !important;
+  --inline-title-font: var(--h1-font) !important;
   --bold-color: var(--color-accent) !important;
   --italic-color: var(--color-cyan) !important;
   --embed-border-left: 2px solid var(--interactive-accent) !important;
@@ -2154,7 +2205,10 @@ body.theme-dark {
   ) !important;
   --vault-name-font-size: var(--font-ui-small) !important;
   --vault-name-font-weight: var(--font-medium) !important;
+  --nav-item-weight-active: var(--font-semibold) !important;
   --background-code: var(--canvas2) !important;
+  --nav-item-weight: var(--font-semibold) !important;
+  --nav-item-weight-hover: var(--font-semibold) !important;
   --background-code-preview: var(--canvas2) !important;
   --background-preview: var(--canvas1) !important;
   --background-quick: var(--canvas2) !important;
@@ -2173,6 +2227,12 @@ body.theme-dark {
   --canvas3: #181716 !important;
   --canvas4: #403938 !important;
   --color-head: var(--color-accent) !important;
+  --font-body-theme: var(
+    --body-font-select,
+    "IBM Plex Sans",
+    sans-serif
+  ) !important;
+  --nav-item-font: "IBM Plex Serif", serif !important;
 }
 
 body {
@@ -3988,7 +4048,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -4015,7 +4075,7 @@ body body.theme-light .callout[data-callout="note"] {
   color: rgb(74, 56, 39);
 }
 body body.theme-light .callout[data-callout="note"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4072,7 +4132,7 @@ body body.theme-light .callout[data-callout="abstract"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="abstract"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4113,7 +4173,7 @@ body body.theme-light .callout[data-callout="info"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="info"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4154,7 +4214,7 @@ body body.theme-light .callout[data-callout="todo"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="todo"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4195,7 +4255,7 @@ body body.theme-light .callout[data-callout="tip"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="tip"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4236,7 +4296,7 @@ body body.theme-light .callout[data-callout="success"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="success"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4277,7 +4337,7 @@ body body.theme-light .callout[data-callout="question"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="question"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4318,7 +4378,7 @@ body body.theme-light .callout[data-callout="warning"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="warning"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4359,7 +4419,7 @@ body body.theme-light .callout[data-callout="danger"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="danger"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4400,7 +4460,7 @@ body body.theme-light .callout[data-callout="failure"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="failure"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4441,7 +4501,7 @@ body body.theme-light .callout[data-callout="bug"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="bug"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4482,7 +4542,7 @@ body body.theme-light .callout[data-callout="example"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="example"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4523,7 +4583,7 @@ body body.theme-light .callout[data-callout="quote"] {
   border-end-end-radius: 0px;
 }
 body body.theme-light .callout[data-callout="quote"] > .callout-title {
-  --callout-color: 214, 233, 255;
+  --callout-color: 92, 168, 255;
   color: var(--callout-color);
   gap: 4px;
   border: 0px rgb(74, 56, 39);
@@ -4919,11 +4979,11 @@ body body.theme-light .internal-embed .markdown-embed {
 body body.theme-light .nav-view-outer .tree-item-self a {
   color: rgb(178, 150, 136);
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 body body.theme-light .nav-view-outer .tree-item-self.mod-active {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
   border-color: rgb(178, 150, 136);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -4940,8 +5000,8 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: var(--nav-item-weight);
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+  font-weight: var(--font-semibold);
 }
 body
   body.theme-light
@@ -4952,8 +5012,8 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: var(--nav-item-weight);
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+  font-weight: var(--font-semibold);
 }
 body body.theme-light .graph-view-container {
   background-color: var(--background-secondary);
@@ -6958,7 +7018,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {
@@ -7889,11 +7949,11 @@ body body.theme-dark .internal-embed .markdown-embed {
 body body.theme-dark .nav-view-outer .tree-item-self a {
   color: rgb(128, 120, 116);
   font-family: "IBM Plex Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
   border-color: rgb(128, 120, 116);
   border-width: 0px;
   border-top-left-radius: 4px;
@@ -7910,8 +7970,8 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: var(--nav-item-weight);
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+  font-weight: var(--font-semibold);
 }
 body
   body.theme-dark
@@ -7922,8 +7982,8 @@ body
   > .tree-item
   > .tree-item-self {
   color: var(--nav-item-color);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-weight: var(--nav-item-weight);
+  font-family: var(--body-font-select, "IBM Plex Sans", sans-serif);
+  font-weight: var(--font-semibold);
 }
 body body.theme-dark .graph-view-container {
   background-color: var(--background-secondary);

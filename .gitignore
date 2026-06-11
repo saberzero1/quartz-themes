@@ -137,7 +137,10 @@ prof
 tsconfig.tsbuildinfo
 .obsidian
 .obsidian-cache
-!runner/vault/.obsidian
+runner/vault/obsidian/themes
+!runner/vault/.obsidian/plugins
+!runner/vault/.obsidian/snippets
+!runner/vault/.obsidian/*.json
 .quartz-cache
 private/
 .replit

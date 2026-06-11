@@ -1,0 +1,46 @@
+{
+  "extractedAt": "2026-06-11T12:29:38.702Z",
+  "sourceTheme": "Zenith",
+  "fonts": [
+    {
+      "family": "Vollkorn",
+      "style": "normal",
+      "weight": "400",
+      "file": "vollkorn.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Vollkorn",
+      "style": "italic",
+      "weight": "400",
+      "file": "vollkorn-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Vollkorn",
+      "style": "normal",
+      "weight": "700",
+      "file": "vollkorn-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Vollkorn",
+      "style": "italic",
+      "weight": "700",
+      "file": "vollkorn-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}

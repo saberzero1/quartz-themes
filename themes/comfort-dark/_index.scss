@@ -86,9 +86,9 @@
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
   --icon-muted: 0.5 !important;
-  --code-bracket: #ffd700 !important;
   --code-number: #b5cea8 !important;
   --code-variable: #8cdcfe !important;
+  --code-bracket: #ffd700 !important;
   --code-class: #4ec9b0 !important;
   --code-define: #569cd6 !important;
   --code-oper: #d4d4d4 !important;
@@ -2793,7 +2793,7 @@ body {
   }
 
   body {
-    scrollbar-width: auto;
+    scrollbar-width: var(--scrollbar-native-width);
     scrollbar-color: auto;
   }
 

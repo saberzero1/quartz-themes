@@ -2916,7 +2916,7 @@
     "styles": {
       "color": "rgba(250, 249, 245, 0.62)",
       "backgroundColor": "rgba(0, 0, 0, 0)",
-      "borderColor": "rgba(250, 249, 245, 0.08)",
+      "borderColor": "rgba(250, 249, 245, 0.08) rgba(250, 249, 245, 0.08) rgb(217, 119, 87)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
     },

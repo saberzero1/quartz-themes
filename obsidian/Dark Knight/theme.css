@@ -481,13 +481,21 @@
   font-size: 0.92em;
 }
 
-/* Code blocks — body prefix bumps specificity over Obsidian defaults */
+/* Code blocks — body prefix bumps specificity over Obsidian defaults.
+   Reading view renders one <pre> per block, so it can carry the border. */
 body:is(.theme-dark, .theme-light) pre,
-body:is(.theme-dark, .theme-light) .markdown-preview-view pre,
-body:is(.theme-dark, .theme-light) .HyperMD-codeblock-bg {
+body:is(.theme-dark, .theme-light) .markdown-preview-view pre {
   background-color: var(--code-background);
   border: 1px solid var(--dk-steel);
   border-radius: var(--radius-m);
+  color: var(--dk-bone);
+}
+
+/* Live Preview applies .HyperMD-codeblock-bg per LINE; a border here would
+   draw a box around every line (see issue #5). Background only. */
+body:is(.theme-dark, .theme-light) .HyperMD-codeblock-bg {
+  background-color: var(--code-background);
+  border: none;
   color: var(--dk-bone);
 }
 
@@ -559,14 +567,27 @@ body:is(.theme-dark, .theme-light) .cm-hmd-internal-link.is-unresolved {
   border-bottom: 1px dashed rgba(var(--dk-red-rgb), 0.5);
 }
 
-/* Horizontal rule */
+/* Horizontal rule — top breathing room, but hug the box that follows
+   (the line reads as belonging to the content below it). */
 :is(.theme-dark, .theme-light) hr,
 :is(.theme-dark, .theme-light) .markdown-preview-view hr {
   border: none;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--dk-gold) 20%, var(--dk-gold) 80%, transparent);
   opacity: 0.55;
-  margin: 2em 0;
+  margin: 1.8em 0 0.6em;
+}
+
+/* Pane & sidebar resize handles — Obsidian tints these with the accent
+   (gold), so they read as solid, asymmetric vertical bars. Give them the
+   same dimmed, end-fading look as the hr, identical on both sides. */
+:is(.theme-dark, .theme-light) .workspace-leaf-resize-handle {
+  background: linear-gradient(180deg, transparent, rgba(var(--dk-gold-rgb), 0.20) 15%, rgba(var(--dk-gold-rgb), 0.20) 85%, transparent);
+  transition: background 120ms ease;
+}
+
+:is(.theme-dark, .theme-light) .workspace-leaf-resize-handle:hover {
+  background: linear-gradient(180deg, transparent, rgba(var(--dk-gold-rgb), 0.50) 15%, rgba(var(--dk-gold-rgb), 0.50) 85%, transparent);
 }
 
 /* Lists */
@@ -579,8 +600,11 @@ body:is(.theme-dark, .theme-light) .cm-hmd-internal-link.is-unresolved {
   font-weight: 600;
 }
 
-/* Checkboxes */
-:is(.theme-dark, .theme-light) input[type="checkbox"] {
+/* Checkboxes — scoped to Markdown task-list items so we don't clobber
+   Obsidian's settings toggle switches, which use a hidden <input> inside
+   .checkbox-container (see issue #4). */
+:is(.theme-dark, .theme-light) .markdown-preview-view input[type="checkbox"],
+:is(.theme-dark, .theme-light) .markdown-source-view input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   width: 16px;
@@ -594,16 +618,19 @@ body:is(.theme-dark, .theme-light) .cm-hmd-internal-link.is-unresolved {
   transition: border-color 120ms ease, background-color 120ms ease;
 }
 
-:is(.theme-dark, .theme-light) input[type="checkbox"]:hover {
+:is(.theme-dark, .theme-light) .markdown-preview-view input[type="checkbox"]:hover,
+:is(.theme-dark, .theme-light) .markdown-source-view input[type="checkbox"]:hover {
   border-color: var(--dk-gold);
 }
 
-:is(.theme-dark, .theme-light) input[type="checkbox"]:checked {
+:is(.theme-dark, .theme-light) .markdown-preview-view input[type="checkbox"]:checked,
+:is(.theme-dark, .theme-light) .markdown-source-view input[type="checkbox"]:checked {
   background-color: var(--dk-gold);
   border-color: var(--dk-gold);
 }
 
-:is(.theme-dark, .theme-light) input[type="checkbox"]:checked::after {
+:is(.theme-dark, .theme-light) .markdown-preview-view input[type="checkbox"]:checked::after,
+:is(.theme-dark, .theme-light) .markdown-source-view input[type="checkbox"]:checked::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -613,6 +640,12 @@ body:is(.theme-dark, .theme-light) .cm-hmd-internal-link.is-unresolved {
   border: solid var(--checkbox-marker-color);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+
+/* Explicit guard: never restyle the input behind a settings toggle switch. */
+:is(.theme-dark, .theme-light) .checkbox-container input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: auto;
 }
 
 /* Tags */

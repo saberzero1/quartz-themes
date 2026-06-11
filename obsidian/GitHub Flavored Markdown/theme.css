@@ -882,6 +882,7 @@ body.colorblind_tritan.theme-light {
   color: var(--fgColor-default);
 }
 
+.theme-light .markdown-source-view,
 .theme-light .markdown-rendered {
   color-scheme: light;
 
@@ -938,6 +939,7 @@ body.colorblind_tritan.theme-light {
   --borderColor-neutral-muted: var(--borderColor-muted);
 }
 
+.theme-dark .markdown-source-view,
 .theme-dark .markdown-rendered {
   color-scheme: dark;
 
@@ -1022,10 +1024,11 @@ body.colorblind_tritan.theme-light {
   color: var(--fgColor-accent);
 }
 
+.markdown-source-view.is-live-preview kbd,
 .markdown-rendered kbd {
   display: inline-block;
   max-width: 100%;
-  padding: var(--base-size-4);
+  padding: var(--base-size-4, 0.25rem);
   font: 11px
     var(
       --fontStack-monospace,
@@ -1545,4 +1548,96 @@ input[type='number']:focus-visible {
 select:focus,
 .dropdown:focus {
   box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
+}
+
+/* ------------- Live Preview Mode ------------------  */
+
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote::before {
+  padding-inline-start: 1em;
+  color: var(--fgColor-muted);
+  border-inline-start: 0.25em solid var(--borderColor-muted);
+}
+
+.cm-s-obsidian span.cm-quote {
+  color: var(--fgColor-muted);
+}
+
+@media (hover: hover) {
+  .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+    border-radius: 0;
+    box-shadow:
+      0 0 0 1px var(--borderColor-muted),
+      inset 0 0 0 1px var(--borderColor-muted);
+  }
+}
+
+.markdown-source-view.is-live-preview .external-link {
+  padding-inline-end: 0;
+  background-image: unset;
+}
+
+.markdown-source-view.mod-cm6 .cm-link .cm-underline,
+.markdown-source-view.mod-cm6 .cm-url .cm-underline {
+  color: var(--fgColor-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+@media (hover: hover) {
+  .markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+  .markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+    color: var(--fgColor-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
+}
+
+@media (hover: hover) {
+  .cm-s-obsidian span.cm-link:hover {
+    text-underline-offset: 0.2rem;
+  }
+}
+
+@media (hover: hover) {
+  a:hover {
+    text-underline-offset: 0.2rem;
+  }
+}
+
+@media (hover: hover) {
+  .cm-s-obsidian span.cm-formatting-link.cm-url:hover,
+  .cm-s-obsidian span.cm-url:hover {
+    color: var(--fgColor-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+  }
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='x'],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task='X'] {
+  color: var(--fgColor-default);
+  text-decoration: initial;
+}
+
+.markdown-source-view.is-live-preview .HyperMD-header-1,
+.markdown-source-view.is-live-preview .HyperMD-header-2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--borderColor-muted);
+}
+
+.markdown-source-view.is-live-preview .HyperMD-header-1,
+.markdown-source-view.is-live-preview .HyperMD-header-2,
+.markdown-source-view.is-live-preview .HyperMD-header-3,
+.markdown-source-view.is-live-preview .HyperMD-header-4,
+.markdown-source-view.is-live-preview .HyperMD-header-5,
+.markdown-source-view.is-live-preview .HyperMD-header-6 {
+  /* margin-block: var(--base-size-24, 1.5rem) var(--base-size-16, 1rem) !important; */
+  color: var(--fgColor-default);
+}
+
+/* ------------- Other Panel ------------------  */
+.external-link {
+  padding-inline-end: 0;
+  text-underline-offset: 0.2rem;
+  background-image: unset;
 }

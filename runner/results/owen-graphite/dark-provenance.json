@@ -644,6 +644,7 @@
     "--scrollbar-active-thumb-bg": ".theme-dark",
     "--scrollbar-bg": ".theme-dark",
     "--scrollbar-thumb-bg": ".theme-dark",
+    "--scrollbar-native-width": "body",
     "--search-clear-button-color": "body",
     "--search-clear-button-size": "body",
     "--search-icon-color": "body",
@@ -693,6 +694,8 @@
     "--slider-s-thumb-position": "body",
     "--slider-track-background": "body",
     "--slider-track-height": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -1427,6 +1430,8 @@
     "--slider-thumb-border-color": "body",
     "--slider-thumb-radius": "body",
     "--slider-track-background": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -1784,7 +1789,10 @@
   "kbd": { "--focus-ring-color": ":root *" },
   "sup": { "--focus-ring-color": ":root *" },
   ".status-bar": { "--focus-ring-color": ":root *" },
-  ".view-header-title": { "--focus-ring-color": ":root *" },
+  ".view-header-title": {
+    "--focus-ring-color": ":root *",
+    "--scrollbar-native-width": ".view-header-title"
+  },
   ".footnotes": { "--focus-ring-color": ":root *" },
   ".workspace-leaf-content": { "--focus-ring-color": ":root *" },
   "input[type=\"checkbox\"]": { "--focus-ring-color": ":root *" },
@@ -2056,6 +2064,8 @@
     "--slider-thumb-border-color": "body",
     "--slider-thumb-radius": "body",
     "--slider-track-background": "body",
+    "--slider-value-font-size": "body",
+    "--slider-value-font-weight": "body",
     "--status-bar-background": "body",
     "--status-bar-border-color": "body",
     "--status-bar-border-width": "body",
@@ -2314,7 +2324,10 @@
     "--nav-item-background-active": "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-files-container",
     "--nav-item-background-selected": "body:not(.is-mobile) .workspace-leaf-content[data-type=\"file-explorer\"] .nav-files-container"
   },
-  ".graph-controls": { "--focus-ring-color": ":root *" },
+  ".graph-controls": {
+    "--focus-ring-color": ":root *",
+    "--scrollbar-native-width": ".graph-controls"
+  },
   ".clickable-icon.graph-controls-button": {
     "--focus-ring-color": ":root *",
     "--ogd-graph-control-border": ".theme-dark .workspace-leaf-content[data-type=\"graph\"] :is(.graph-control-button, .clickable-icon, button)",

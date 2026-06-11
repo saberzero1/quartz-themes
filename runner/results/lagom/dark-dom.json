@@ -3065,7 +3065,7 @@
                     "styles": {
                       "color": "rgb(179, 179, 179)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(179, 179, 179) rgb(179, 179, 179) rgb(255, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -3138,7 +3138,7 @@
                     "styles": {
                       "color": "rgb(179, 179, 179)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(179, 179, 179) rgb(179, 179, 179) rgb(255, 0, 0)",
+                      "borderColor": "rgb(179, 179, 179)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },

@@ -393,6 +393,7 @@ body.theme-light {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -1139,11 +1140,7 @@ body.theme-light {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1245,6 +1242,8 @@ body.theme-light {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -1444,6 +1443,7 @@ body.theme-light {
   --table-row-odd-background: rgba(var(--light3_x), 1) !important;
   --bold-color: var(--green) !important;
   --italic-color: var(--green) !important;
+  --inline-code-background: rgba(var(--yellow_x), 0.14) !important;
   --frost0: rgb(125, 170, 187) !important;
   --frost0_x: 64, 108, 128 !important;
   --frost2: rgb(98, 129, 180) !important;
@@ -1483,7 +1483,6 @@ body.theme-light {
   --frost1_x: 64, 110, 165 !important;
   --frost3: rgb(78, 104, 150) !important;
   --frost3_x: 48, 78, 122 !important;
-  --inline-code-background: rgba(var(--yellow_x), 0.14) !important;
   --inline-code-border: rgba(var(--orange_x), 0.36) !important;
   --light0: rgb(236, 227, 212) !important;
   --light0_x: 236, 227, 212 !important;
@@ -1521,6 +1520,7 @@ body.theme-dark {
   --icon-stroke: var(--icon-m-stroke-width) !important;
   --drag-item-background: var(--background-primary) !important;
   --titlebar-background: var(--background-secondary) !important;
+  --scrollbar-native-width: auto !important;
   --input-height: 30px !important;
   --input-border-width: var(--border-width) !important;
   --input-border-width-focus: 2px !important;
@@ -2261,11 +2261,7 @@ body.theme-dark {
     var(--mono-100) 20%,
     transparent
   ) !important;
-  --scrollbar-bg: color-mix(
-    in oklch,
-    var(--mono-100) 5%,
-    transparent
-  ) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2367,6 +2363,8 @@ body.theme-dark {
   --slider-thumb-y: -6px !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
+  --slider-value-font-size: var(--font-ui-small) !important;
+  --slider-value-font-weight: var(--input-font-weight) !important;
   --spreadHorizontalWrapped-margin-LR: -3.5px !important;
   --status-bar-background: var(--background-secondary) !important;
   --status-bar-border-color: var(--divider-color) !important;
@@ -2561,6 +2559,7 @@ body.theme-dark {
   --table-row-odd-background: rgba(var(--dark3_x), 0.25) !important;
   --bold-color: var(--orange) !important;
   --italic-color: var(--orange) !important;
+  --inline-code-background: rgba(var(--light2_x), 0.09) !important;
   --frost0: rgb(125, 170, 187) !important;
   --frost0_x: 145, 193, 205 !important;
   --frost2: rgb(98, 129, 180) !important;
@@ -2600,7 +2599,6 @@ body.theme-dark {
   --frost1_x: 136, 178, 221 !important;
   --frost3: rgb(78, 104, 150) !important;
   --frost3_x: 110, 140, 190 !important;
-  --inline-code-background: rgba(var(--light2_x), 0.09) !important;
   --inline-code-border: rgba(var(--yellow_x), 0.34) !important;
   --light0: rgb(236, 227, 212) !important;
   --light0_x: 236, 227, 212 !important;
@@ -4585,7 +4583,7 @@ body body.theme-light ::-webkit-scrollbar-corner {
   background-color: rgb(255, 255, 255);
 }
 body body.theme-light body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-light .callout[data-callout="note"] {
@@ -7869,7 +7867,7 @@ body body.theme-dark ::-webkit-scrollbar-corner {
   background-color: rgb(30, 30, 30);
 }
 body body.theme-dark body {
-  scrollbar-width: auto;
+  scrollbar-width: var(--scrollbar-native-width);
   scrollbar-color: auto;
 }
 body body.theme-dark .callout[data-callout="note"] {

@@ -70,6 +70,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["nunito-sans", "courier-prime", "bitter"],
   },
+  "alice-velvet": {
+    name: "alice-velvet",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   alien: { name: "alien", modes: ["dark", "light"], variations: [], fonts: [] },
   allium: {
     name: "allium",
@@ -94,6 +100,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["bricolage-grotesque", "roboto", "montserrat"],
+  },
+  anarchy: {
+    name: "anarchy",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   "antique-flowers": {
     name: "antique-flowers",
@@ -138,6 +150,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["open-sans"],
+  },
+  atelier: {
+    name: "atelier",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   atom: { name: "atom", modes: ["dark", "light"], variations: [], fonts: [] },
   atomus: { name: "atomus", modes: ["dark"], variations: [], fonts: [] },
@@ -328,6 +346,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "buena-vista": {
     name: "buena-vista",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  bumblebee: {
+    name: "bumblebee",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -697,6 +721,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["jetbrains-mono"],
   },
+  deepfield: {
+    name: "deepfield",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   default: {
     name: "default",
     modes: ["dark", "light"],
@@ -945,6 +975,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
   },
   "flexoki-warm": {
     name: "flexoki-warm",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  "flexoki-warmer": {
+    name: "flexoki-warmer",
     modes: ["dark", "light"],
     variations: [],
     fonts: [],
@@ -1603,6 +1639,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: [],
   },
   lorens: { name: "lorens", modes: ["dark"], variations: [], fonts: [] },
+  lucid: { name: "lucid", modes: ["dark", "light"], variations: [], fonts: [] },
   lumen: { name: "lumen", modes: ["dark", "light"], variations: [], fonts: [] },
   lumines: {
     name: "lumines",
@@ -1788,6 +1825,7 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: ["noto-sans-old-persian", "noto-serif-kr"],
   },
+  misty: { name: "misty", modes: ["dark", "light"], variations: [], fonts: [] },
   mistymauve: {
     name: "mistymauve",
     modes: ["dark", "light"],
@@ -2174,6 +2212,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     fonts: ["ibm-plex-mono"],
   },
   omega: { name: "omega", modes: ["dark"], variations: [], fonts: [] },
+  "one-dark-pro": {
+    name: "one-dark-pro",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   "one-oracle-developer": {
     name: "one-oracle-developer",
     modes: ["dark", "light"],
@@ -2492,6 +2536,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark", "light"],
     variations: [],
     fonts: ["arimo"],
+  },
+  praxis: {
+    name: "praxis",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
   primary: {
     name: "primary",
@@ -3997,5 +4047,17 @@ export const themeMetas: Record<string, ThemeMeta> = {
     modes: ["dark"],
     variations: [],
     fonts: ["inconsolata"],
+  },
+  zenith: {
+    name: "zenith",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
+  zocean: {
+    name: "zocean",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
   },
 };
