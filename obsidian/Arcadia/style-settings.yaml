@@ -90,6 +90,21 @@ sections:
     id: arcadia-settings
     collapsed: false
     settings:
+      - id: accent-color
+        title: Accent color override
+        description: Replace the scheme's built-in accent with a fixed color
+        type: class-select
+        allowEmpty: true
+        default: none
+        options:
+          - label: Indigo
+            value: ctp-theme-indigo
+          - label: Emerald
+            value: ctp-theme-emerald
+          - label: Rose
+            value: ctp-theme-rose
+          - label: Teal
+            value: ctp-theme-teal
       - id: border-radius
         title: Border Radius
         type: variable-number
@@ -145,7 +160,7 @@ sections:
         default: false
       - id: dyslexia-friendly
         title: Dyslexia-Friendly Mode
-        description: Use OpenDyslexic font with improved spacing
+        description: Improve letter and word spacing, and use the OpenDyslexic font when it is installed on your system
         type: class-toggle
         default: false
   - name: Arcadia Advanced Features

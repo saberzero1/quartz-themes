@@ -1,0 +1,63 @@
+mode: replace
+sections:
+  - name: Praxis
+    id: praxis
+    collapsed: false
+    settings:
+      - id: praxis-background-style
+        title: Background contrast
+        type: class-select
+        allowEmpty: false
+        default: praxis-contrast-default
+        options:
+          - label: Default
+            value: praxis-contrast-default
+          - label: Low contrast
+            value: praxis-contrast-low
+          - label: High contrast
+            value: praxis-contrast-high
+          - label: True black
+            value: praxis-contrast-black
+      - id: praxis-callout-style
+        title: Callout style
+        type: class-select
+        allowEmpty: false
+        default: praxis-callouts-soft
+        options:
+          - label: Soft
+            value: praxis-callouts-soft
+          - label: Outlined
+            value: praxis-callouts-outlined
+          - label: Minimal
+            value: praxis-callouts-minimal
+      - id: metadata-heading-on
+        title: Show properties heading
+        type: class-toggle
+        default: false
+      - id: metadata-add-property-on
+        title: Show "Add property" button
+        type: class-toggle
+        default: false
+      - id: active-line-off
+        title: Disable active line highlight
+        type: class-toggle
+        default: false
+      - id: praxis-underline-title-off
+        title: Disable title underline
+        description: Remove the divider below the note title and H1 headings
+        type: class-toggle
+        default: false
+      - id: praxis-links-underlined-off
+        title: Disable link underlines
+        type: class-toggle
+        default: false
+      - id: colorful-headings-off
+        title: Disable colorful headings
+        description: Remove unique colors from heading levels H1–H6
+        type: class-toggle
+        default: false
+      - id: praxis-checkboxes-off
+        title: Disable custom task icons
+        description: Turn off Praxis custom icons for task checkboxes. Useful when using a custom CSS snippet for task states.
+        type: class-toggle
+        default: false

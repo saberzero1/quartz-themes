@@ -120,7 +120,7 @@
     "font-family": "\"iA Writer Quattro S\""
   },
   ".canvas-card-menu": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -153,7 +153,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-control-item": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -179,7 +179,7 @@
     "text-decoration-color": "rgb(89, 89, 89)"
   },
   ".canvas-node": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -206,7 +206,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-node-container .markdown-rendered": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -231,7 +231,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-node-container .markdown-rendered::after": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -257,7 +257,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-node-container .markdown-rendered::before": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -283,7 +283,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-node-content": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -310,7 +310,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-node-group": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -337,7 +337,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".canvas-path-label": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -597,7 +597,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".inline-title": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -628,11 +628,11 @@
     "border": "0px none rgb(89, 89, 89)",
     "border-bottom": "0px none rgb(38, 38, 38)",
     "border-bottom-color": "rgb(38, 38, 38)",
-    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(109, 180, 120)",
+    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(172, 140, 248)",
     "border-inline-end": "0px none rgb(38, 38, 38)",
-    "border-inline-start": "2px solid rgb(109, 180, 120)",
-    "border-left": "2px solid rgb(109, 180, 120)",
-    "border-left-color": "rgb(109, 180, 120)",
+    "border-inline-start": "2px solid rgb(172, 140, 248)",
+    "border-left": "2px solid rgb(172, 140, 248)",
+    "border-left-color": "rgb(172, 140, 248)",
     "border-right": "0px none rgb(38, 38, 38)",
     "border-right-color": "rgb(38, 38, 38)",
     "border-top": "0px none rgb(38, 38, 38)",
@@ -652,11 +652,11 @@
     "-webkit-text-stroke-color": "rgb(38, 38, 38)",
     "border-bottom": "0px none rgb(38, 38, 38)",
     "border-bottom-color": "rgb(38, 38, 38)",
-    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(109, 180, 120)",
+    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(172, 140, 248)",
     "border-inline-end": "0px none rgb(38, 38, 38)",
-    "border-inline-start": "2px solid rgb(109, 180, 120)",
-    "border-left": "2px solid rgb(109, 180, 120)",
-    "border-left-color": "rgb(109, 180, 120)",
+    "border-inline-start": "2px solid rgb(172, 140, 248)",
+    "border-left": "2px solid rgb(172, 140, 248)",
+    "border-left-color": "rgb(172, 140, 248)",
     "border-right": "0px none rgb(38, 38, 38)",
     "border-right-color": "rgb(38, 38, 38)",
     "border-top": "0px none rgb(38, 38, 38)",
@@ -670,7 +670,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".markdown-embed": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -697,7 +697,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   ".markdown-preview-view hr": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "border-bottom": "0px none rgb(230, 230, 230)",
     "border-bottom-color": "rgb(230, 230, 230)",
@@ -740,7 +740,7 @@
   },
   ".metadata-container": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -768,7 +768,7 @@
   },
   ".metadata-container .metadata-property": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -797,7 +797,7 @@
   },
   ".metadata-properties": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -826,7 +826,7 @@
   },
   ".metadata-property-key": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -853,7 +853,7 @@
   },
   ".metadata-property-value": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -908,43 +908,36 @@
   },
   ".multi-select-pill": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "background": "oklch(0.706926 0.112375 147.876 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box",
-    "border": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-bottom": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-bottom-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "background": "oklch(0.713962 0.155125 296.077 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-bottom": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-bottom-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-bottom-left-radius": "26.016px",
     "border-bottom-right-radius": "26.016px",
-    "border-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-inline-end": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-inline-start": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-left": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-left-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "border-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-inline-end": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-inline-start": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-left": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-left-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-radius": "26.016px",
-    "border-right": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-right-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-top": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-top-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "border-right": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-right-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-top": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-top-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-top-left-radius": "26.016px",
     "border-top-right-radius": "26.016px",
     "caret-color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(81, 157, 92)",
     "font-family": "\"??\", \"iA Writer Quattro S\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-size": "13.008px",
     "height": "20.5px",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
     "padding": "3.252px 0px",
     "padding-block": "3.252px",
     "padding-block-end": "3.252px",
     "padding-block-start": "3.252px",
     "padding-bottom": "3.252px",
     "padding-top": "3.252px",
-    "text-decoration-color": "rgb(81, 157, 92)",
     "transform-origin": "29.8594px 10.25px",
     "width": "59.7188px"
   },
@@ -1783,29 +1776,10 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "a.external-link[data-tooltip-position=\"top\"]": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "border": "0px none rgb(81, 157, 92)",
-    "border-bottom": "0px none rgb(81, 157, 92)",
-    "border-bottom-color": "rgb(81, 157, 92)",
-    "border-color": "rgb(81, 157, 92)",
-    "border-inline-end": "0px none rgb(81, 157, 92)",
-    "border-inline-start": "0px none rgb(81, 157, 92)",
-    "border-left": "0px none rgb(81, 157, 92)",
-    "border-left-color": "rgb(81, 157, 92)",
-    "border-right": "0px none rgb(81, 157, 92)",
-    "border-right-color": "rgb(81, 157, 92)",
-    "border-top": "0px none rgb(81, 157, 92)",
-    "border-top-color": "rgb(81, 157, 92)",
     "caret-color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(81, 157, 92)",
-    "font-family": "\"iA Writer Quattro S\"",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
-    "text-decoration-color": "rgb(81, 157, 92)"
+    "font-family": "\"iA Writer Quattro S\""
   },
   "a.footnote-backref.footnote-link": {
     "--tab-container-background": "#fcf5e4",
@@ -1837,54 +1811,17 @@
     "width": "6.60938px"
   },
   "a.internal-link.is-unresolved[data-href=\"https://example.com\"][data-tooltip-position=\"top\"]": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "border": "0px none rgb(81, 157, 92)",
-    "border-bottom": "0px none rgb(81, 157, 92)",
-    "border-bottom-color": "rgb(81, 157, 92)",
-    "border-color": "rgb(81, 157, 92)",
-    "border-inline-end": "0px none rgb(81, 157, 92)",
-    "border-inline-start": "0px none rgb(81, 157, 92)",
-    "border-left": "0px none rgb(81, 157, 92)",
-    "border-left-color": "rgb(81, 157, 92)",
-    "border-right": "0px none rgb(81, 157, 92)",
-    "border-right-color": "rgb(81, 157, 92)",
-    "border-top": "0px none rgb(81, 157, 92)",
-    "border-top-color": "rgb(81, 157, 92)",
     "caret-color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(81, 157, 92)",
     "font-family": "\"iA Writer Quattro S\"",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
-    "text-decoration": "oklch(0.706926 0.112375 147.876 / 0.3)"
+    "text-decoration": "oklch(0.713962 0.155125 296.077 / 0.3)"
   },
   "a.internal-link[data-href=\"callouts\"][data-tooltip-position=\"top\"]": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "border": "0px none rgb(81, 157, 92)",
-    "border-bottom": "0px none rgb(81, 157, 92)",
-    "border-bottom-color": "rgb(81, 157, 92)",
-    "border-color": "rgb(81, 157, 92)",
-    "border-inline-end": "0px none rgb(81, 157, 92)",
-    "border-inline-start": "0px none rgb(81, 157, 92)",
-    "border-left": "0px none rgb(81, 157, 92)",
-    "border-left-color": "rgb(81, 157, 92)",
-    "border-right": "0px none rgb(81, 157, 92)",
-    "border-right-color": "rgb(81, 157, 92)",
-    "border-top": "0px none rgb(81, 157, 92)",
-    "border-top-color": "rgb(81, 157, 92)",
     "caret-color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(81, 157, 92)",
-    "font-family": "\"iA Writer Quattro S\"",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
-    "text-decoration-color": "rgb(81, 157, 92)"
+    "font-family": "\"iA Writer Quattro S\""
   },
   "abbr": {
     "--tab-container-background": "#fcf5e4",
@@ -1937,18 +1874,18 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "blockquote": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
     "-webkit-text-stroke-color": "rgb(38, 38, 38)",
     "border-bottom": "0px none rgb(38, 38, 38)",
     "border-bottom-color": "rgb(38, 38, 38)",
-    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(109, 180, 120)",
+    "border-color": "rgb(38, 38, 38) rgb(38, 38, 38) rgb(38, 38, 38) rgb(172, 140, 248)",
     "border-inline-end": "0px none rgb(38, 38, 38)",
-    "border-inline-start": "2px solid rgb(109, 180, 120)",
-    "border-left": "2px solid rgb(109, 180, 120)",
-    "border-left-color": "rgb(109, 180, 120)",
+    "border-inline-start": "2px solid rgb(172, 140, 248)",
+    "border-left": "2px solid rgb(172, 140, 248)",
+    "border-left-color": "rgb(172, 140, 248)",
     "border-right": "0px none rgb(38, 38, 38)",
     "border-right-color": "rgb(38, 38, 38)",
     "border-top": "0px none rgb(38, 38, 38)",
@@ -1983,7 +1920,7 @@
     "--border-width-alt": "1px",
     "--code-background": "#eee8d5",
     "--code-normal": "var(--blue)",
-    "--code-size": "var(--font-normal-size)",
+    "--code-size": "0.85em",
     "--color-accent": "hsl(\n    var(--theme-accent-h),\n    var(--theme-accent-s),\n    var(--theme-accent-l)\n  )",
     "--font-editor": "var(--font-text-theme), var(--font-text-override), var(--font-editor-theme)",
     "--font-editor-theme": "\"iA Writer Mono V\"",
@@ -2049,10 +1986,9 @@
     "--text-normal": "hsl(var(--base-h), var(--base-s), var(--base-d))",
     "--text-on-accent": "#f2f2f2",
     "--text-selection": "rgba(204, 230, 255, 0.99)",
-    "--theme-accent-d": "var(--theme-accent-sel-d, 46.7%)",
-    "--theme-accent-h": "var(--theme-accent-sel-h, 129)",
-    "--theme-accent-l": "var(--theme-accent-sel-l, 46.7%)",
-    "--theme-accent-s": "var(--theme-accent-sel-s, 31.9%)",
+    "--theme-accent-h": "var(--accent-h, 129)",
+    "--theme-accent-l": "var(--accent-l, 46.7%)",
+    "--theme-accent-s": "var(--accent-s, 31.9%)",
     "--vim-cursor": "hsla(\n    var(--theme-accent-h),\n    var(--theme-accent-s),\n    var(--theme-accent-l),\n    0.8\n  )",
     "--yellow": "#e5b567",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
@@ -2089,7 +2025,6 @@
     "--background-transparent": "hsla(\n    var(--base-h),\n    var(--base-s),\n    var(--base-l),\n    0\n  )",
     "--bases-table-font-size": "var(--font-normal-size)",
     "--code-normal": "var(--blue)",
-    "--code-size": "var(--font-normal-size)",
     "--color-accent": "hsl(\n    var(--theme-accent-h),\n    var(--theme-accent-s),\n    var(--theme-accent-l)\n  )",
     "--font-editor": "var(--font-text-theme), var(--font-text-override), var(--font-editor-theme)",
     "--font-interface-theme": "var(--font-text-theme)",
@@ -2108,10 +2043,9 @@
     "--text-faint": "hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 47%))",
     "--text-muted": "hsl(var(--base-h), var(--base-s), calc(var(--base-d) + 20%))",
     "--text-normal": "hsl(var(--base-h), var(--base-s), var(--base-d))",
-    "--theme-accent-d": "var(--theme-accent-sel-d, 46.7%)",
-    "--theme-accent-h": "var(--theme-accent-sel-h, 129)",
-    "--theme-accent-l": "var(--theme-accent-sel-l, 46.7%)",
-    "--theme-accent-s": "var(--theme-accent-sel-s, 31.9%)",
+    "--theme-accent-h": "var(--accent-h, 129)",
+    "--theme-accent-l": "var(--accent-l, 46.7%)",
+    "--theme-accent-s": "var(--accent-s, 31.9%)",
     "--vim-cursor": "hsla(\n    var(--theme-accent-h),\n    var(--theme-accent-s),\n    var(--theme-accent-l),\n    0.8\n  )",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -2140,7 +2074,7 @@
     "--ec-codeBg": "#eee8d5",
     "--ec-codeFg": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-codeFontFml": "'??', '??', \"JetBrains Mono\"",
-    "--ec-codeFontSize": "1em",
+    "--ec-codeFontSize": "0.85em",
     "--ec-codeSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-cs-closedTextCol": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-focusBrd": "hsl(\n    0,\n    0%,\n    calc(96% - 6%)\n  )",
@@ -2163,7 +2097,7 @@
     "--ec-uiSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-uiSelFg": "hsl(0, 0%, 15%)",
     "--header-border-radius": "calc(2px + 0px)",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(108, 153, 187)",
     "-webkit-text-stroke": "0px rgb(108, 153, 187)",
@@ -2188,20 +2122,20 @@
     "border-top-right-radius": "2px",
     "caret-color": "rgb(38, 38, 38)",
     "column-rule-color": "rgb(108, 153, 187)",
-    "line-height": "24px",
+    "line-height": "20.4px",
     "outline": "rgb(108, 153, 187) none 0px",
     "outline-color": "rgb(108, 153, 187)",
-    "padding": "2.4px 4.8px",
-    "padding-block": "2.4px",
-    "padding-block-end": "2.4px",
-    "padding-block-start": "2.4px",
-    "padding-bottom": "2.4px",
-    "padding-inline": "4.8px",
-    "padding-inline-end": "4.8px",
-    "padding-inline-start": "4.8px",
-    "padding-left": "4.8px",
-    "padding-right": "4.8px",
-    "padding-top": "2.4px",
+    "padding": "2.04px 4.08px",
+    "padding-block": "2.04px",
+    "padding-block-end": "2.04px",
+    "padding-block-start": "2.04px",
+    "padding-bottom": "2.04px",
+    "padding-inline": "4.08px",
+    "padding-inline-end": "4.08px",
+    "padding-inline-start": "4.08px",
+    "padding-left": "4.08px",
+    "padding-right": "4.08px",
+    "padding-top": "2.04px",
     "text-decoration-color": "rgb(108, 153, 187)"
   },
   "dd": {
@@ -2230,7 +2164,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "del": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -2592,7 +2526,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "div.inline-title": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -2865,75 +2799,51 @@
   },
   "div.multi-select-pill": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "background": "oklch(0.706926 0.112375 147.876 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box",
-    "border": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-bottom": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-bottom-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "background": "oklch(0.713962 0.155125 296.077 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-bottom": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-bottom-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-bottom-left-radius": "26.016px",
     "border-bottom-right-radius": "26.016px",
-    "border-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-inline-end": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-inline-start": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-left": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-left-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "border-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-inline-end": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-inline-start": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-left": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-left-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-radius": "26.016px",
-    "border-right": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-right-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-top": "0px solid oklch(0.706926 0.112375 147.876 / 0.15)",
-    "border-top-color": "oklch(0.706926 0.112375 147.876 / 0.15)",
+    "border-right": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-right-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-top": "0px solid oklch(0.713962 0.155125 296.077 / 0.15)",
+    "border-top-color": "oklch(0.713962 0.155125 296.077 / 0.15)",
     "border-top-left-radius": "26.016px",
     "border-top-right-radius": "26.016px",
     "caret-color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(81, 157, 92)",
     "font-family": "\"??\", \"iA Writer Quattro S\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-size": "13.008px",
     "height": "20.5px",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
     "padding": "3.252px 0px",
     "padding-block": "3.252px",
     "padding-block-end": "3.252px",
     "padding-block-start": "3.252px",
     "padding-bottom": "3.252px",
     "padding-top": "3.252px",
-    "text-decoration-color": "rgb(81, 157, 92)",
     "transform-origin": "29.8594px 10.25px",
     "width": "59.7188px"
   },
   "div.multi-select-pill-content": {
     "--input-height": "2rem",
-    "--pill-background": "color-mix(in oklch, hsl(\n    129,\n    31.9%,\n    calc(46.7% + 10%)\n  ) 10%, transparent)",
-    "--pill-background-hover": "color-mix(in oklch, hsl(\n    129,\n    31.9%,\n    calc(46.7% + 10%)\n  ) 20%, transparent)",
-    "--pill-border-color": "color-mix(in oklch, hsl(\n    129,\n    31.9%,\n    calc(46.7% + 10%)\n  ) 15%, transparent)",
-    "--pill-border-color-hover": "color-mix(in oklch, hsl(\n    129,\n    31.9%,\n    calc(46.7% + 10%)\n  ) 15%, transparent)",
-    "--pill-color": "hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
-    "--pill-color-hover": "hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
-    "--pill-color-remove": "hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--pill-background": "color-mix(in oklch, hsl(\n    258,\n    88%,\n    calc(66% + 10%)\n  ) 10%, transparent)",
+    "--pill-background-hover": "color-mix(in oklch, hsl(\n    258,\n    88%,\n    calc(66% + 10%)\n  ) 20%, transparent)",
+    "--pill-border-color": "color-mix(in oklch, hsl(\n    258,\n    88%,\n    calc(66% + 10%)\n  ) 15%, transparent)",
+    "--pill-border-color-hover": "color-mix(in oklch, hsl(\n    258,\n    88%,\n    calc(66% + 10%)\n  ) 15%, transparent)",
+    "--pill-color": "hsl(\n    258,\n    88%,\n    66%\n  )",
+    "--pill-color-hover": "hsl(\n    258,\n    88%,\n    66%\n  )",
+    "--pill-color-remove": "hsl(\n    258,\n    88%,\n    66%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(81, 157, 92)",
-    "-webkit-text-stroke": "0px rgb(81, 157, 92)",
-    "-webkit-text-stroke-color": "rgb(81, 157, 92)",
-    "border": "0px none rgb(81, 157, 92)",
-    "border-bottom": "0px none rgb(81, 157, 92)",
-    "border-bottom-color": "rgb(81, 157, 92)",
-    "border-color": "rgb(81, 157, 92)",
-    "border-inline-end": "0px none rgb(81, 157, 92)",
-    "border-inline-start": "0px none rgb(81, 157, 92)",
-    "border-left": "0px none rgb(81, 157, 92)",
-    "border-left-color": "rgb(81, 157, 92)",
-    "border-right": "0px none rgb(81, 157, 92)",
-    "border-right-color": "rgb(81, 157, 92)",
-    "border-top": "0px none rgb(81, 157, 92)",
-    "border-top-color": "rgb(81, 157, 92)",
     "caret-color": "rgb(38, 38, 38)",
-    "color": "rgb(81, 157, 92)",
-    "column-rule-color": "rgb(81, 157, 92)",
     "font-family": "\"??\", \"iA Writer Quattro S\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "font-size": "13.008px",
     "height": "13.0156px",
@@ -2941,9 +2851,6 @@
     "margin": "0px 0px 0px 8.4552px",
     "margin-inline": "8.4552px 0px",
     "margin-left": "8.4552px",
-    "outline": "rgb(81, 157, 92) none 0px",
-    "outline-color": "rgb(81, 157, 92)",
-    "text-decoration-color": "rgb(81, 157, 92)",
     "transform-origin": "14.6328px 6.50781px",
     "width": "29.2656px"
   },
@@ -3053,7 +2960,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "em": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -3082,7 +2989,7 @@
     "--ec-codeBg": "#eee8d5",
     "--ec-codeFg": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-codeFontFml": "'??', '??', \"JetBrains Mono\"",
-    "--ec-codeFontSize": "1em",
+    "--ec-codeFontSize": "0.85em",
     "--ec-codeSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-cs-closedTextCol": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-focusBrd": "hsl(\n    0,\n    0%,\n    calc(96% - 6%)\n  )",
@@ -3137,7 +3044,7 @@
     "--ec-codeBg": "#eee8d5",
     "--ec-codeFg": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-codeFontFml": "'??', '??', \"JetBrains Mono\"",
-    "--ec-codeFontSize": "1em",
+    "--ec-codeFontSize": "0.85em",
     "--ec-codeSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-cs-closedTextCol": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-focusBrd": "hsl(\n    0,\n    0%,\n    calc(96% - 6%)\n  )",
@@ -3373,7 +3280,9 @@
   "input.task-list-item-checkbox[data-line=\"0\"]": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
+    "--checkbox-marker-color": "transparent",
     "--tab-container-background": "#fcf5e4",
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E\")",
     "border": "1px solid rgb(158, 158, 158)",
     "border-bottom": "1px solid rgb(158, 158, 158)",
     "border-bottom-color": "rgb(158, 158, 158)",
@@ -3391,25 +3300,52 @@
     "border-top-color": "rgb(158, 158, 158)",
     "border-top-left-radius": "2px",
     "border-top-right-radius": "2px",
-    "caret-color": "rgb(38, 38, 38)"
+    "caret-color": "rgb(38, 38, 38)",
+    "mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E\")",
+    "mask-size": "var(--checkbox-icon)",
+    "transform": "matrix(0, 1, -1, 0, 0, 0)"
   },
   "input.task-list-item-checkbox[data-line=\"0\"]::after": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
+    "--checkbox-marker-color": "transparent",
     "--tab-container-background": "#fcf5e4",
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
     "-webkit-mask-size": "contain",
+    "-webkit-text-fill-color": "rgb(158, 158, 158)",
+    "-webkit-text-stroke": "0px rgb(158, 158, 158)",
+    "-webkit-text-stroke-color": "rgb(158, 158, 158)",
     "background": "rgb(8, 109, 221) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "0px none rgb(158, 158, 158)",
+    "border-bottom": "0px none rgb(158, 158, 158)",
+    "border-bottom-color": "rgb(158, 158, 158)",
+    "border-color": "rgb(158, 158, 158)",
+    "border-inline-end": "0px none rgb(158, 158, 158)",
+    "border-inline-start": "0px none rgb(158, 158, 158)",
+    "border-left": "0px none rgb(158, 158, 158)",
+    "border-left-color": "rgb(158, 158, 158)",
+    "border-right": "0px none rgb(158, 158, 158)",
+    "border-right-color": "rgb(158, 158, 158)",
+    "border-top": "0px none rgb(158, 158, 158)",
+    "border-top-color": "rgb(158, 158, 158)",
     "caret-color": "rgb(38, 38, 38)",
+    "color": "rgb(158, 158, 158)",
+    "column-rule-color": "rgb(158, 158, 158)",
     "mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
-    "mask-size": "contain"
+    "mask-size": "contain",
+    "outline": "rgb(158, 158, 158) none 0px",
+    "outline-color": "rgb(158, 158, 158)",
+    "text-decoration-color": "rgb(158, 158, 158)"
   },
   "input[data-task=\"_\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"-\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"-\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(158, 158, 158)"
   },
   "input[data-task=\",\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3420,9 +3356,12 @@
   "input[data-task=\":\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"!\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"!\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 64c0-17.7-14.3-32-32-32S32 46.3 32 64V320c0 17.7 14.3 32 32 32s32-14.3 32-32V64zM64 480c22.1 0 40-17.9 40-40s-17.9-40-40-40s-40 17.9-40 40s17.9 40 40 40z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(236, 117, 0)"
   },
   "input[data-task=\"?\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E\")",
@@ -3441,9 +3380,17 @@
   "input[data-task=\"@\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"*\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"*\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(224, 172, 0)"
+    "background-color": "rgb(224, 172, 0)",
+    "color": "rgb(224, 172, 0)"
+  },
+  "input[data-task=\"/\"]::after": {
+    "background-color": "rgb(172, 140, 248)",
+    "content": "\" \""
   },
   "input[data-task=\"&\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3457,19 +3404,30 @@
   "input[data-task=\"`\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"+\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml;charset=utf-8,<svg width=\\\"24\\\" height=\\\"24\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path fill-rule=\\\"evenodd\\\" clip-rule=\\\"evenodd\\\" d=\\\"M3.6 2.25C2.85442 2.25 2.25 2.85441 2.25 3.6V20.4C2.25 21.1456 2.85441 21.75 3.6 21.75H20.4C21.1456 21.75 21.75 21.1456 21.75 20.4V3.6C21.75 2.85442 21.1456 2.25 20.4 2.25H3.6ZM12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9V11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15V12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z\\\" fill=\\\"currentColor\\\"/></svg>\")"
+  },
   "input[data-task=\"+\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(233, 49, 71)"
+  },
+  "input[data-task=\"<\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
   },
   "input[data-task=\"<\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(0, 191, 188)"
+    "background-color": "rgb(0, 191, 188)",
+    "color": "rgb(158, 158, 158)"
   },
   "input[data-task=\"=\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\">\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\">\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(8, 109, 221)"
+    "background-color": "rgb(8, 109, 221)",
+    "color": "rgb(158, 158, 158)"
   },
   "input[data-task=\"|\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3516,26 +3474,45 @@
   "input[data-task=\"A\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"b\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"b\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(233, 49, 71)"
+    "background-color": "rgb(233, 49, 71)",
+    "color": "rgb(236, 117, 0)"
   },
   "input[data-task=\"B\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"c\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E\")"
+  },
+  "input[data-task=\"C\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M18 9.5a1.5 1.5 0 11-3 0v-6a1.5 1.5 0 013 0v6zM14 9.667v-5.43a2 2 0 00-1.105-1.79l-.05-.025A4 4 0 0011.055 2H5.64a2 2 0 00-1.962 1.608l-1.2 6A2 2 0 004.44 12H8v4a2 2 0 002 2 1 1 0 001-1v-.667a4 4 0 01.8-2.4l1.4-1.866a4 4 0 00.8-2.4z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"c\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(233, 49, 71)"
+    "background-color": "rgb(233, 49, 71)",
+    "color": "rgb(236, 117, 0)"
   },
   "input[data-task=\"C\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(236, 117, 0)"
+  },
+  "input[data-task=\"d\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml;charset=utf-8,<svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path d=\\\"M10.6337 11.0555L2.14839 19.5407L4.26971 21.6621L12.755 13.1768\\\" stroke=\\\"currentColor\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M10.6337 11.0555L12.0479 9.64124C12.0479 9.64124 12.4015 6.45926 8.86595 2.92373L9.92661 1.86307L18.4119 7.51992L17.3512 8.58058L18.7654 9.99479L19.8261 8.93413L22.301 11.409L17.3512 16.3588L14.8764 13.8839L15.937 12.8232L14.5228 11.409L12.755 13.1768L10.6337 11.0555Z\\\" stroke=\\\"currentColor\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/></svg>\")"
+  },
+  "input[data-task=\"D\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml;charset=utf-8,<svg width=\\\"18\\\" height=\\\"18\\\" viewBox=\\\"0 0 24 24\\\" stroke-width=\\\"1.5\\\" fill=\\\"none\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><path d=\\\"M10.6337 11.0555L2.14839 19.5407L4.26971 21.6621L12.755 13.1768\\\" stroke=\\\"currentColor\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/><path d=\\\"M10.6337 11.0555L12.0479 9.64124C12.0479 9.64124 12.4015 6.45926 8.86595 2.92373L9.92661 1.86307L18.4119 7.51992L17.3512 8.58058L18.7654 9.99479L19.8261 8.93413L22.301 11.409L17.3512 16.3588L14.8764 13.8839L15.937 12.8232L14.5228 11.409L12.755 13.1768L10.6337 11.0555Z\\\" stroke=\\\"currentColor\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\"/></svg>\")"
   },
   "input[data-task=\"d\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
-    "background-color": "rgb(233, 49, 71)"
+    "background-color": "rgb(233, 49, 71)",
+    "color": "rgb(120, 82, 238)"
   },
   "input[data-task=\"D\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "background-color": "rgb(252, 245, 228)",
+    "color": "rgb(120, 82, 238)"
   },
   "input[data-task=\"e\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3543,9 +3520,13 @@
   "input[data-task=\"E\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"f\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"f\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
-    "background-color": "rgb(233, 49, 71)"
+    "background-color": "rgb(233, 49, 71)",
+    "color": "rgb(233, 49, 71)"
   },
   "input[data-task=\"F\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3562,13 +3543,17 @@
   "input[data-task=\"H\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"I\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"i\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E\")",
     "background-color": "rgb(8, 109, 221)"
   },
   "input[data-task=\"I\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(224, 172, 0)"
+    "background-color": "rgb(224, 172, 0)",
+    "color": "rgb(224, 172, 0)"
   },
   "input[data-task=\"j\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3576,19 +3561,30 @@
   "input[data-task=\"J\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"k\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"k\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
-    "background-color": "rgb(224, 172, 0)"
+    "background-color": "rgb(224, 172, 0)",
+    "color": "rgb(224, 172, 0)"
   },
   "input[data-task=\"K\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"l\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
+  "input[data-task=\"L\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"l\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(120, 82, 238)"
+    "background-color": "rgb(120, 82, 238)",
+    "color": "rgb(233, 49, 71)"
   },
   "input[data-task=\"L\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(233, 49, 71)"
   },
   "input[data-task=\"m\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3609,17 +3605,21 @@
   "input[data-task=\"O\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"p\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E\")"
+  },
+  "input[data-task=\"P\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"p\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E\")",
-    "background-color": "rgb(8, 185, 78)"
+    "background-color": "rgb(8, 185, 78)",
+    "color": "rgb(8, 185, 78)"
   },
   "input[data-task=\"P\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(8, 185, 78)"
   },
   "input[data-task=\"q\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
-  },
-  "input[data-task=\"Q\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
   "input[data-task=\"r\"]::after": {
@@ -3641,9 +3641,13 @@
   "input[data-task=\"T\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"u\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"u\"]::after": {
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E\")",
-    "background-color": "rgb(8, 185, 78)"
+    "background-color": "rgb(8, 185, 78)",
+    "color": "rgb(8, 185, 78)"
   },
   "input[data-task=\"U\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3654,8 +3658,11 @@
   "input[data-task=\"V\"]::after": {
     "background-color": "rgb(252, 245, 228)"
   },
+  "input[data-task=\"w\"]": {
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M6 3a1 1 0 011-1h.01a1 1 0 010 2H7a1 1 0 01-1-1zm2 3a1 1 0 00-2 0v1a2 2 0 00-2 2v1a2 2 0 00-2 2v.683a3.7 3.7 0 011.055.485 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0 3.704 3.704 0 014.11 0 1.704 1.704 0 001.89 0A3.7 3.7 0 0118 12.683V12a2 2 0 00-2-2V9a2 2 0 00-2-2V6a1 1 0 10-2 0v1h-1V6a1 1 0 10-2 0v1H8V6zm10 8.868a3.704 3.704 0 01-4.055-.036 1.704 1.704 0 00-1.89 0 3.704 3.704 0 01-4.11 0 1.704 1.704 0 00-1.89 0A3.704 3.704 0 012 14.868V17a1 1 0 001 1h14a1 1 0 001-1v-2.132zM9 3a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm3 0a1 1 0 011-1h.01a1 1 0 110 2H13a1 1 0 01-1-1z' clip-rule='evenodd' /%3E%3C/svg%3E\")"
+  },
   "input[data-task=\"w\"]::after": {
-    "background-color": "rgb(252, 245, 228)"
+    "color": "rgb(120, 82, 238)"
   },
   "input[data-task=\"W\"]::after": {
     "background-color": "rgb(252, 245, 228)"
@@ -3702,29 +3709,35 @@
   "input[type=\"checkbox\"]:checked": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
+    "--checkbox-marker-color": "transparent",
     "--tab-container-background": "#fcf5e4",
-    "background": "rgb(109, 180, 120) none repeat scroll 0% 0% / auto padding-box border-box",
-    "border": "1px solid rgb(109, 180, 120)",
-    "border-bottom": "1px solid rgb(109, 180, 120)",
-    "border-bottom-color": "rgb(109, 180, 120)",
+    "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E\")",
+    "background": "rgb(172, 140, 248) none repeat scroll 0% 0% / auto padding-box border-box",
+    "border": "1px solid rgb(172, 140, 248)",
+    "border-bottom": "1px solid rgb(172, 140, 248)",
+    "border-bottom-color": "rgb(172, 140, 248)",
     "border-bottom-left-radius": "2px",
     "border-bottom-right-radius": "2px",
-    "border-color": "rgb(109, 180, 120)",
-    "border-inline-end": "1px solid rgb(109, 180, 120)",
-    "border-inline-start": "1px solid rgb(109, 180, 120)",
-    "border-left": "1px solid rgb(109, 180, 120)",
-    "border-left-color": "rgb(109, 180, 120)",
+    "border-color": "rgb(172, 140, 248)",
+    "border-inline-end": "1px solid rgb(172, 140, 248)",
+    "border-inline-start": "1px solid rgb(172, 140, 248)",
+    "border-left": "1px solid rgb(172, 140, 248)",
+    "border-left-color": "rgb(172, 140, 248)",
     "border-radius": "2px",
-    "border-right": "1px solid rgb(109, 180, 120)",
-    "border-right-color": "rgb(109, 180, 120)",
-    "border-top": "1px solid rgb(109, 180, 120)",
-    "border-top-color": "rgb(109, 180, 120)",
+    "border-right": "1px solid rgb(172, 140, 248)",
+    "border-right-color": "rgb(172, 140, 248)",
+    "border-top": "1px solid rgb(172, 140, 248)",
+    "border-top-color": "rgb(172, 140, 248)",
     "border-top-left-radius": "2px",
-    "border-top-right-radius": "2px"
+    "border-top-right-radius": "2px",
+    "mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath d='M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z' /%3E%3C/svg%3E\")",
+    "mask-size": "var(--checkbox-icon)",
+    "transform": "matrix(0, 1, -1, 0, 0, 0)"
   },
   "input[type=\"checkbox\"]:checked::after": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
+    "--checkbox-marker-color": "transparent",
     "--tab-container-background": "#fcf5e4",
     "background": "rgb(252, 245, 228) none repeat scroll 0% 0% / auto padding-box border-box"
   },
@@ -3755,7 +3768,7 @@
   },
   "input[type=\"text\"]": {
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",
     "-webkit-text-stroke": "0px rgb(89, 89, 89)",
@@ -3805,20 +3818,20 @@
     "border-top-right-radius": "2px",
     "caret-color": "rgb(38, 38, 38)",
     "column-rule-color": "rgb(108, 153, 187)",
-    "line-height": "24px",
+    "line-height": "20.4px",
     "outline": "rgb(108, 153, 187) none 0px",
     "outline-color": "rgb(108, 153, 187)",
-    "padding": "1.6px 4px",
-    "padding-block": "1.6px",
-    "padding-block-end": "1.6px",
-    "padding-block-start": "1.6px",
-    "padding-bottom": "1.6px",
-    "padding-inline": "4px",
-    "padding-inline-end": "4px",
-    "padding-inline-start": "4px",
-    "padding-left": "4px",
-    "padding-right": "4px",
-    "padding-top": "1.6px",
+    "padding": "1.36px 3.4px",
+    "padding-block": "1.36px",
+    "padding-block-end": "1.36px",
+    "padding-block-start": "1.36px",
+    "padding-bottom": "1.36px",
+    "padding-inline": "3.4px",
+    "padding-inline-end": "3.4px",
+    "padding-inline-start": "3.4px",
+    "padding-left": "3.4px",
+    "padding-right": "3.4px",
+    "padding-top": "1.36px",
     "text-decoration-color": "rgb(108, 153, 187)",
     "width": "36.6094px"
   },
@@ -3858,32 +3871,35 @@
   },
   "li.task-list-item[data-task=\"-\"]": {
     "--tab-container-background": "#fcf5e4",
-    "-webkit-text-fill-color": "rgb(38, 38, 38)",
-    "-webkit-text-stroke": "0px rgb(38, 38, 38)",
-    "-webkit-text-stroke-color": "rgb(38, 38, 38)",
-    "border": "0px none rgb(38, 38, 38)",
-    "border-bottom": "0px none rgb(38, 38, 38)",
-    "border-bottom-color": "rgb(38, 38, 38)",
-    "border-color": "rgb(38, 38, 38)",
-    "border-inline-end": "0px none rgb(38, 38, 38)",
-    "border-inline-start": "0px none rgb(38, 38, 38)",
-    "border-left": "0px none rgb(38, 38, 38)",
-    "border-left-color": "rgb(38, 38, 38)",
-    "border-right": "0px none rgb(38, 38, 38)",
-    "border-right-color": "rgb(38, 38, 38)",
-    "border-top": "0px none rgb(38, 38, 38)",
-    "border-top-color": "rgb(38, 38, 38)",
+    "-webkit-text-fill-color": "rgb(158, 158, 158)",
+    "-webkit-text-stroke": "0px rgb(158, 158, 158)",
+    "-webkit-text-stroke-color": "rgb(158, 158, 158)",
+    "border": "0px none rgb(158, 158, 158)",
+    "border-bottom": "0px none rgb(158, 158, 158)",
+    "border-bottom-color": "rgb(158, 158, 158)",
+    "border-color": "rgb(158, 158, 158)",
+    "border-inline-end": "0px none rgb(158, 158, 158)",
+    "border-inline-start": "0px none rgb(158, 158, 158)",
+    "border-left": "0px none rgb(158, 158, 158)",
+    "border-left-color": "rgb(158, 158, 158)",
+    "border-right": "0px none rgb(158, 158, 158)",
+    "border-right-color": "rgb(158, 158, 158)",
+    "border-top": "0px none rgb(158, 158, 158)",
+    "border-top-color": "rgb(158, 158, 158)",
     "caret-color": "rgb(38, 38, 38)",
-    "color": "rgb(38, 38, 38)",
-    "column-rule-color": "rgb(38, 38, 38)",
+    "color": "rgb(158, 158, 158)",
+    "column-rule-color": "rgb(158, 158, 158)",
     "font-family": "\"iA Writer Quattro S\"",
     "margin": "0px 0px 0px 28.8001px",
     "margin-inline": "28.8001px 0px",
     "margin-inline-start": "28.8001px",
     "margin-left": "28.8001px",
-    "outline": "rgb(38, 38, 38) none 0px",
-    "outline-color": "rgb(38, 38, 38)",
-    "text-decoration-color": "rgb(38, 38, 38)",
+    "outline": "rgb(158, 158, 158) none 0px",
+    "outline-color": "rgb(158, 158, 158)",
+    "text-decoration": "line-through 1px rgb(158, 158, 158)",
+    "text-decoration-color": "rgb(158, 158, 158)",
+    "text-decoration-line": "line-through",
+    "text-decoration-thickness": "1px",
     "transform-origin": "335.602px 13.1875px",
     "width": "671.203px"
   },
@@ -4616,7 +4632,7 @@
     "color": "rgb(38, 38, 38)"
   },
   "li[data-line=\"0\"]": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4648,7 +4664,7 @@
     "width": "225.203px"
   },
   "mark": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4752,7 +4768,7 @@
     "--ec-codeBg": "#eee8d5",
     "--ec-codeFg": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-codeFontFml": "'??', '??', \"JetBrains Mono\"",
-    "--ec-codeFontSize": "1em",
+    "--ec-codeFontSize": "0.85em",
     "--ec-codeSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-cs-closedTextCol": "hsl(0, 0%, calc(15% + 20%))",
     "--ec-focusBrd": "hsl(\n    0,\n    0%,\n    calc(96% - 6%)\n  )",
@@ -4775,7 +4791,7 @@
     "--ec-uiSelBg": "rgba(204, 230, 255, 0.99)",
     "--ec-uiSelFg": "hsl(0, 0%, 15%)",
     "--header-border-radius": "calc(2px + 0px)",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4801,11 +4817,9 @@
     "caret-color": "rgb(38, 38, 38)",
     "color": "rgb(38, 38, 38)",
     "column-rule-color": "rgb(38, 38, 38)",
-    "height": "49px",
     "outline": "rgb(38, 38, 38) none 0px",
     "outline-color": "rgb(38, 38, 38)",
-    "text-decoration-color": "rgb(38, 38, 38)",
-    "transform-origin": "127px 24.5px"
+    "text-decoration-color": "rgb(38, 38, 38)"
   },
   "pre:has(> code.language-mermaid)": {
     "--tab-container-background": "#fcf5e4",
@@ -4862,7 +4876,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "strong": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4887,7 +4901,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "strong > em": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4962,7 +4976,7 @@
     "text-decoration-color": "rgb(38, 38, 38)"
   },
   "sup": {
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "-webkit-text-fill-color": "rgb(38, 38, 38)",
     "-webkit-text-stroke": "0px rgb(38, 38, 38)",
@@ -4991,7 +5005,7 @@
     "--bases-embed-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
     "--bases-table-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
     "--input-height": "2rem",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "--table-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
     "caret-color": "rgb(38, 38, 38)",
@@ -5040,7 +5054,7 @@
   "svg.lucide-help-circle.svg-icon": {
     "--bases-embed-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
     "--bases-table-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
-    "--shadow-border-accent": "0 0 0 2px hsl(\n    129,\n    31.9%,\n    46.7%\n  )",
+    "--shadow-border-accent": "0 0 0 2px hsl(\n    258,\n    88%,\n    66%\n  )",
     "--tab-container-background": "#fcf5e4",
     "--table-border-color": "color-mix(in oklch, #ec7500 25%, hsl(\n    calc(0 + 44),\n    calc(0% + 79%),\n    calc(96% - 2%)\n  ) 50%)",
     "-webkit-text-fill-color": "rgb(89, 89, 89)",

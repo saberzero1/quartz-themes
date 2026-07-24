@@ -1,9 +1,99 @@
 mode: replace
 sections:
-  - name: Minimal Theme
-    id: minimal-style
+  - name: Slytherin Theme Settings
+    id: slytherin-theme-settings
     collapsed: false
     settings:
+      - id: gradient-settings
+        title: Gradients
+        type: heading
+        level: 1
+        collapsed: false
+      - id: slytherin-heading-gradient
+        title: Heading gradient
+        type: class-select
+        allowEmpty: false
+        default: slytherin-heading-green-snake
+        options:
+          - label: Green Snake
+            value: slytherin-heading-green-snake
+          - label: Midnight Green
+            value: slytherin-heading-midnight-green
+          - label: Inferno
+            value: slytherin-heading-inferno
+          - label: Underwater
+            value: slytherin-heading-underwater
+          - label: Mystic Purple
+            value: slytherin-heading-mystic-purple
+      - id: slytherin-heading-gradient-disable
+        title: Disable heading gradient
+        type: class-toggle
+        class: slytherin-heading-gradient-disabled
+        default: false
+      - id: slytherin-bold-gradient
+        title: Bold gradient
+        type: class-select
+        allowEmpty: false
+        default: slytherin-bold-green-snake
+        options:
+          - label: Green Snake
+            value: slytherin-bold-green-snake
+          - label: Midnight Green
+            value: slytherin-bold-midnight-green
+          - label: Inferno
+            value: slytherin-bold-inferno
+          - label: Underwater
+            value: slytherin-bold-underwater
+          - label: Mystic Purple
+            value: slytherin-bold-mystic-purple
+      - id: slytherin-italic-gradient
+        title: Italic gradient
+        type: class-select
+        allowEmpty: false
+        default: slytherin-italic-green-snake
+        options:
+          - label: Green Snake
+            value: slytherin-italic-green-snake
+          - label: Midnight Green
+            value: slytherin-italic-midnight-green
+          - label: Inferno
+            value: slytherin-italic-inferno
+          - label: Underwater
+            value: slytherin-italic-underwater
+          - label: Mystic Purple
+            value: slytherin-italic-mystic-purple
+      - id: slytherin-wikilink-gradient
+        title: Wikilink gradient
+        type: class-select
+        allowEmpty: false
+        default: slytherin-wikilink-green-snake
+        options:
+          - label: Green Snake
+            value: slytherin-wikilink-green-snake
+          - label: Midnight Green
+            value: slytherin-wikilink-midnight-green
+          - label: Inferno
+            value: slytherin-wikilink-inferno
+          - label: Underwater
+            value: slytherin-wikilink-underwater
+          - label: Mystic Purple
+            value: slytherin-wikilink-mystic-purple
+      - id: slytherin-external-gradient
+        title: External link gradient
+        type: class-select
+        allowEmpty: false
+        default: slytherin-external-green-snake
+        options:
+          - label: Green Snake
+            value: slytherin-external-green-snake
+          - label: Midnight Green
+            value: slytherin-external-midnight-green
+          - label: Inferno
+            value: slytherin-external-inferno
+          - label: Underwater
+            value: slytherin-external-underwater
+          - label: Mystic Purple
+            value: slytherin-external-mystic-purple
       - id: styles
         title: Background styles
         type: heading

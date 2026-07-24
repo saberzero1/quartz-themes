@@ -848,6 +848,14 @@
     "--dropdown-padding-end": "2.4em",
     "--dropdown-padding-start": "0.8em",
     "--dropdown-text-align": "start",
+    "--embed-action-color": "#222222",
+    "--embed-action-radius": "4px",
+    "--embed-actions-background": "color-mix(#00000000 80%, transparent)",
+    "--embed-actions-blur": "blur(6px) saturate(1.5) brightness(1.15)",
+    "--embed-actions-corner-shape": "round",
+    "--embed-actions-padding": "2px",
+    "--embed-actions-radius": "calc(4px + 2px)",
+    "--embed-actions-shadow": "0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05)",
     "--embed-block-shadow-hover": "0 0 0 1px #00000000, inset 0 0 0 1px #00000000",
     "--embed-border-bottom": "none",
     "--embed-border-end": "none",
@@ -994,6 +1002,7 @@
     "--icon-xl-stroke-width": "1.25px",
     "--icon-xs": "14px",
     "--icon-xs-stroke-width": "2px",
+    "--image-radius": "4px",
     "--indent-size": "4",
     "--indent-unit": "0.5625em",
     "--indentation-guide-color": "color-mix(in oklch, black 12%, transparent)",
@@ -1249,7 +1258,7 @@
     "--search-clear-button-color": "#5c5c5c",
     "--search-clear-button-size": "13px",
     "--search-icon-color": "#5c5c5c",
-    "--search-icon-size": "18px",
+    "--search-icon-size": "16px",
     "--search-input-corner-shape": "round",
     "--search-input-radius": "5px",
     "--search-result-background": "#00000000",
@@ -1320,12 +1329,21 @@
     "--size-4-9": "36px",
     "--slider-s-thumb-position": "-5px",
     "--slider-s-thumb-size": "15px",
+    "--slider-thumb-background": "white",
+    "--slider-thumb-background-hover": "white",
     "--slider-thumb-border-color": "#dadada",
-    "--slider-thumb-border-width": "1px",
+    "--slider-thumb-border-width": "0.5px",
     "--slider-thumb-height": "18px",
+    "--slider-thumb-height-active": "18px",
     "--slider-thumb-radius": "18px",
+    "--slider-thumb-shadow": "0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1)",
+    "--slider-thumb-shadow-active": "0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1)",
+    "--slider-thumb-shadow-focus": "0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1), 0 0px 0px 2px rgba(0, 0, 0, 0.1)",
+    "--slider-thumb-shadow-hover": "0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1)",
     "--slider-thumb-width": "18px",
+    "--slider-thumb-width-active": "18px",
     "--slider-thumb-y": "-6px",
+    "--slider-thumb-y-active": "-6px",
     "--slider-track-background": "#dadada",
     "--slider-track-height": "4px",
     "--slider-value-font-size": "13px",
@@ -1462,6 +1480,7 @@
     "--toggle-s-width": "34px",
     "--toggle-thumb-color": "white",
     "--toggle-thumb-height": "18px",
+    "--toggle-thumb-opacity-active": "1",
     "--toggle-thumb-radius": "18px",
     "--toggle-thumb-width": "18px",
     "--toggle-width": "40px",
@@ -2198,7 +2217,9 @@
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "animation-name": "tr-checkbox-pop",
+    "transition": "transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)"
   },
   "input.task-list-item-checkbox[data-line=\"0\"]::after": {
     "--checkbox-color": "transparent",
@@ -2207,9 +2228,15 @@
     "--workspace-drawer-background-color": "#00000000",
     "-webkit-mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
     "-webkit-mask-size": "contain",
+    "animation-duration": "0.4s",
+    "animation-name": "tr-checkmark-pop",
+    "animation-timing-function": "cubic-bezier(0.2, 0.8, 0.2, 1)",
     "background": "rgb(8, 109, 221) none repeat scroll 0% 0% / auto padding-box border-box",
     "mask-image": "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E\")",
-    "mask-size": "contain"
+    "mask-size": "contain",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "transition": "transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s"
   },
   "input[data-task=\"_\"]::after": {
     "background-color": "rgb(28, 46, 40)"
@@ -2487,20 +2514,31 @@
   },
   "input[type=\"checkbox\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "transition": "transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)"
   },
   "input[type=\"checkbox\"]:checked": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "animation-duration": "0.4s",
+    "animation-name": "tr-checkbox-pop",
+    "animation-timing-function": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition": "transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)"
   },
   "input[type=\"checkbox\"]:checked::after": {
     "--checkbox-color": "transparent",
     "--checkbox-color-hover": "transparent",
     "--icon-color": "#000000",
     "--workspace-drawer-background-color": "#00000000",
-    "background": "rgb(28, 46, 40) none repeat scroll 0% 0% / auto padding-box border-box"
+    "animation-duration": "0.4s",
+    "animation-name": "tr-checkmark-pop",
+    "animation-timing-function": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "background": "rgb(28, 46, 40) none repeat scroll 0% 0% / auto padding-box border-box",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "transition": "transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s"
   },
   "input[type=\"search\"]": {
     "--icon-color": "#000000",
@@ -2534,83 +2572,876 @@
   },
   "li.task-list-item[data-line=\"0\"][data-task=\"\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "text-decoration": "line-through rgba(0, 0, 0, 0)",
+    "text-decoration-color": "rgba(0, 0, 0, 0)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"_\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"-\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\",\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\";\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\":\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"!\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
   },
   "li.task-list-item[data-task=\"?\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\".\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"'\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"\"\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"@\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"*\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
   },
   "li.task-list-item[data-task=\"/\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"&\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"#\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"%\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"`\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"+\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"<\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"=\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\">\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"|\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"~\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"$\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"0\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"1\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"2\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"3\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"4\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"5\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"6\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"7\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"8\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"9\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"a\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"A\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"b\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"B\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"c\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"C\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"d\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"D\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"e\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"E\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"f\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"F\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"g\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"G\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"h\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"H\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"i\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
   },
   "li.task-list-item[data-task=\"I\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"j\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"J\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"k\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"K\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"l\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"L\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"m\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"M\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"n\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"N\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"o\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"O\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"p\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"P\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"q\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"Q\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"r\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"R\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"s\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"S\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"t\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"T\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"u\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"U\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"v\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"V\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li.task-list-item[data-task=\"w\"]": {
     "--icon-color": "#000000",
-    "--workspace-drawer-background-color": "#00000000"
+    "--workspace-drawer-background-color": "#00000000",
+    "-webkit-text-fill-color": "rgb(92, 92, 92)",
+    "-webkit-text-stroke": "0px rgb(92, 92, 92)",
+    "-webkit-text-stroke-color": "rgb(92, 92, 92)",
+    "border": "0px none rgb(92, 92, 92)",
+    "border-bottom": "0px none rgb(92, 92, 92)",
+    "border-bottom-color": "rgb(92, 92, 92)",
+    "border-color": "rgb(92, 92, 92)",
+    "border-inline-end": "0px none rgb(92, 92, 92)",
+    "border-inline-start": "0px none rgb(92, 92, 92)",
+    "border-left": "0px none rgb(92, 92, 92)",
+    "border-left-color": "rgb(92, 92, 92)",
+    "border-right": "0px none rgb(92, 92, 92)",
+    "border-right-color": "rgb(92, 92, 92)",
+    "border-top": "0px none rgb(92, 92, 92)",
+    "border-top-color": "rgb(92, 92, 92)",
+    "color": "rgb(92, 92, 92)",
+    "column-rule-color": "rgb(92, 92, 92)",
+    "opacity": "0.6",
+    "outline": "rgb(92, 92, 92) none 0px",
+    "outline-color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-color": "var(--text-muted)",
+    "text-decoration-line": "line-through",
+    "transition": "opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), text-decoration-color 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
+    "transition-delay": "0s, 0s, 0s"
+  },
+  "li.task-list-item[data-task=\"W\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"x\"]": {
+    "text-decoration": "line-through rgb(92, 92, 92)"
+  },
+  "li.task-list-item[data-task=\"X\"]": {
+    "text-decoration": "line-through rgb(92, 92, 92)"
+  },
+  "li.task-list-item[data-task=\"y\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"Y\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"z\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
+  },
+  "li.task-list-item[data-task=\"Z\"]": {
+    "color": "rgb(92, 92, 92)",
+    "text-decoration": "line-through rgb(92, 92, 92)",
+    "text-decoration-line": "line-through"
   },
   "li[data-line=\"0\"]": {
     "--icon-color": "#000000",
     "--workspace-drawer-background-color": "#00000000",
+    "text-decoration": "line-through rgba(0, 0, 0, 0)",
+    "text-decoration-line": "line-through",
     "transform-origin": "112.734px 13.1875px",
     "width": "225.469px"
   },

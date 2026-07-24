@@ -437,16 +437,14 @@ body.theme-dark {
   --background-modifier-cover: var(--bg_dark2) !important;
   --background-modifier-error: var(--red1) !important;
   --background-modifier-error-hover: var(--red) !important;
-  --background-modifier-error-rgb: var(--color-red-rgb) !important;
-  --background-modifier-form-field-hover: var(
-    --background-modifier-form-field
-  ) !important;
-  --background-modifier-hover: var(--accent-s) !important;
+  --background-modifier-error-rgb: 192, 96, 117 !important;
+  --background-modifier-form-field-hover: var(--bg_dark2) !important;
+  --background-modifier-hover: var(--bg_highlight) !important;
   --background-modifier-message: var(--bg_highlight_dark) !important;
   --background-modifier-success: var(--green) !important;
-  --background-modifier-success-rgb: var(--color-green-rgb) !important;
-  --background-modifier-warning: var(--color-orange) !important;
-  --background-modifier-warning-hover: var(--color-orange) !important;
+  --background-modifier-success-rgb: 123, 191, 176 !important;
+  --background-modifier-warning: var(--orange) !important;
+  --background-modifier-warning-hover: var(--orange) !important;
   --background-primary: var(--bg) !important;
   --background-primary-alt: var(--bg) !important;
   --background-secondary: var(--bg_dark2) !important;
@@ -574,15 +572,15 @@ body.theme-dark {
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
   --callout-todo: var(--cyan);
   --callout-warning: var(--orange);
-  --canvas-background: var(--background-primary) !important;
+  --canvas-background: var(--bg_dark2) !important;
   --canvas-card-label-color: var(--text-faint) !important;
   --canvas-color: #7e7e7e !important;
-  --canvas-color-1: var(--color-red) !important;
-  --canvas-color-2: var(--color-orange) !important;
-  --canvas-color-3: var(--color-yellow) !important;
-  --canvas-color-4: var(--color-green) !important;
-  --canvas-color-5: var(--color-cyan) !important;
-  --canvas-color-6: var(--color-purple) !important;
+  --canvas-color-1: var(--red) !important;
+  --canvas-color-2: var(--orange) !important;
+  --canvas-color-3: var(--yellow) !important;
+  --canvas-color-4: var(--green) !important;
+  --canvas-color-5: var(--cyan) !important;
+  --canvas-color-6: var(--magenta) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
@@ -695,12 +693,26 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
-  --embed-border-start: 2px solid var(--interactive-accent) !important;
+  --embed-border-start: 2px solid var(--bg_highlight) !important;
   --embed-border-top: none !important;
   --embed-canvas-max-height: 400px !important;
   --embed-max-height: 4000px !important;
@@ -851,6 +863,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: var(--comment) !important;
@@ -1113,7 +1126,7 @@ body.theme-dark {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -1192,14 +1205,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: 4px !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--bg_highlight) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1256,12 +1281,12 @@ body.theme-dark {
   --tab-switcher-preview-shadow: 0 0 0 1px
     color-mix(in oklch, var(--mono-100) 5%, transparent) !important;
   --tab-switcher-preview-shadow-active: 0 0 0 2px var(--color-accent) !important;
-  --tab-text-color: var(--text-faint) !important;
-  --tab-text-color-active: var(--text-muted) !important;
-  --tab-text-color-focused: var(--text-muted) !important;
+  --tab-text-color: var(--fg_dark) !important;
+  --tab-text-color-active: var(--fg) !important;
+  --tab-text-color-focused: var(--fg) !important;
   --tab-text-color-focused-active: var(--green) !important;
   --tab-text-color-focused-active-current: var(--unknown) !important;
-  --tab-text-color-focused-highlighted: var(--text-accent) !important;
+  --tab-text-color-focused-highlighted: var(--magenta) !important;
   --tab-width: 200px !important;
   --table-add-button-background: transparent !important;
   --table-add-button-border-color: var(--background-modifier-border) !important;
@@ -1305,19 +1330,27 @@ body.theme-dark {
   --table-selection-border-width: 2px !important;
   --table-text-size: var(--font-text-size) !important;
   --table-white-space: break-spaces !important;
-  --tag-background: var(--magenta) !important;
-  --tag-background-hover: var(--cyan) !important;
+  --tag-background: color-mix(
+    in oklch,
+    var(--magenta) 20%,
+    transparent
+  ) !important;
+  --tag-background-hover: color-mix(
+    in oklch,
+    var(--cyan) 20%,
+    transparent
+  ) !important;
   --tag-border-color: color-mix(
     in oklch,
-    var(--interactive-accent) 15%,
+    var(--magenta) 40%,
     transparent
   ) !important;
   --tag-border-color-hover: color-mix(
     in oklch,
-    var(--interactive-accent) 15%,
+    var(--cyan) 40%,
     transparent
   ) !important;
-  --tag-border-width: 0px !important;
+  --tag-border-width: 1px !important;
   --tag-color: var(--magenta) !important;
   --tag-color-hover: var(--cyan) !important;
   --tag-corner-shape: round !important;
@@ -1334,7 +1367,11 @@ body.theme-dark {
   --text-muted: var(--fg_dark) !important;
   --text-on-accent: var(--bg) !important;
   --text-on-accent-inverted: black !important;
-  --text-selection: var(--bg_highlight_dark) !important;
+  --text-selection: color-mix(
+    in oklch,
+    var(--cyan) 25%,
+    transparent
+  ) !important;
   --text-success: var(--color-green) !important;
   --text-warning: var(--color-orange) !important;
   --titlebar-background-focused: var(--background-secondary-alt) !important;
@@ -1352,6 +1389,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: var(--bg) !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 4px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -2235,7 +2273,7 @@ body body.theme-dark div.multi-select-pill {
   line-height: var(--line-height-tight);
   text-decoration: rgb(218, 218, 218);
   margin-inline-start: 0px;
-  border: 0px solid oklch(58.4475% 0.0961854 249.791deg / 0.15);
+  border: 1px solid oklch(77.2362% 0.0669278 337.941deg / 0.4);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -3216,7 +3254,7 @@ body body.theme-dark pre:has(> code.mermaid) {
 body body.theme-dark .tag {
   background-color: var(--pill-background);
   color: var(--pill-color);
-  border: 0px solid oklch(58.4475% 0.0961854 249.791deg / 0.15);
+  border: 1px solid oklch(77.2362% 0.0669278 337.941deg / 0.4);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -4111,7 +4149,7 @@ body body.theme-dark .internal-embed {
   color: rgb(228, 231, 234);
   border-radius: 0px;
   border-color: rgb(228, 231, 234);
-  border-left: 2px solid rgb(77, 128, 179);
+  border-left: 2px solid rgb(37, 39, 46);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;

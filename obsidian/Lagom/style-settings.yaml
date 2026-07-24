@@ -94,6 +94,22 @@ sections:
             value: none
           - label: Show
             value: unset
+      - id: hide-more-menu
+        title: More menu
+        description: Show or hide more menu
+        type: variable-select
+        default: none
+        options:
+          - label: Hide
+            value: none
+          - label: Show
+            value: unset
+      - id: toggle-buttom-distance
+        title: Toggle view buttom
+        description: Move toggle view buttom. Useful to adjust when used with commander or appears off-screen
+        type: variable-number
+        default: 30
+        format: px
       - id: safe-place-position
         title: Move top buttons
         description: 'Note: Only in case the top buttons cover the phone status bar'
@@ -109,9 +125,9 @@ sections:
         type: heading
         level: 2
         collapsed: true
-      - id: default-font-size
+      - id: content-note-font-size
         title: Font size
-        description: Base font size for note content.
+        description: Base font size for note content (read / editor mode).
         type: variable-number
         default: 1.06
         format: em
@@ -163,12 +179,12 @@ sections:
         title: Opacity active line
         description: Opacity of the currently focused line in the editor.
         type: variable-number
-        default: 0.8
+        default: 1
       - id: focus-non-active-line-opacity
         title: Opacity non-active line
         description: Opacity of non-active lines when focus mode is enabled.
         type: variable-number
-        default: 0.65
+        default: 1
       - id: separator-icon
         title: Separator content
         description: Character or symbol used as a visual content separator.
@@ -594,6 +610,12 @@ sections:
             value: dashed
           - label: Solid
             value: solid
+      - id: default-font-size
+        title: Font size
+        description: Base font size for note content.
+        type: variable-number
+        default: 1.06
+        format: em
   - name: Properties & YAML
     id: yaml-values
     collapsed: false
@@ -670,6 +692,16 @@ sections:
         description: Intensity of the blur effect on the navigation bar.
         type: variable-text
         default: 8px
+      - id: light-theme-opacity
+        title: Light mode - Opacity
+        description: Background opacity of the main content area in light mode.
+        type: variable-number
+        default: 1
+      - id: dark-theme-opacity
+        title: Dark mode - Opacity
+        description: Background opacity of the main content area in dark mode.
+        type: variable-number
+        default: 1
       - id: theme-light-opacity
         title: Light mode - Opacity
         description: Background opacity of the main content area in light mode.
@@ -684,25 +716,19 @@ sections:
     id: files-folders
     collapsed: false
     settings:
-      - id: icon-file-indicator
-        title: Icon file
-        description: Character displayed before each file name in the explorer.
-        type: variable-text
-        default: •
-        quotes: true
       - id: enable-icon-file
         title: Enable icon file
         description: Enables or disables the icon shown before file names.
         type: class-toggle
         default: true
-      - id: nav-item-size
-        title: Explorer Font size
-        description: Font size of file and folder names in the explorer.
-        type: variable-number
-        default: 0.99
-        format: em
+      - id: icon-file-indicator
+        title: Icon file symbol
+        description: Character displayed before each file name in the explorer.
+        type: variable-text
+        default: •
+        quotes: true
       - id: icon-file-size
-        title: Icon file
+        title: Icon file size
         description: Size of the icon displayed before each file name.
         type: variable-number
         default: 1.5
@@ -759,6 +785,18 @@ sections:
         type: variable-number
         default: 1.8
         format: px
+      - id: files-explorer-font-size
+        title: Explorer Font size
+        description: Font size of file and folder names in the explorer.
+        type: variable-number
+        default: 0.98
+        format: em
+      - id: nav-item-size
+        title: Explorer Font size
+        description: Font size of file and folder names in the explorer.
+        type: variable-number
+        default: 0.99
+        format: em
       - id: icon-file
         title: Icon file
         type: variable-text

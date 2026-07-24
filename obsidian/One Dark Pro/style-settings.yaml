@@ -1,0 +1,35 @@
+mode: replace
+sections:
+  - name: One Dark Pro
+    id: one-dark-pro
+    collapsed: false
+    settings:
+      - id: odp-palette
+        title: Palette
+        description: Select a One Dark Pro palette variant.
+        type: class-select
+        allowEmpty: false
+        default: odp-default
+        options:
+          - label: One Dark Pro
+            value: odp-default
+          - label: One Dark Pro Darker
+            value: odp-darker
+          - label: One Dark Pro Mix
+            value: odp-mix
+          - label: One Dark Pro Flat
+            value: odp-flat
+          - label: One Dark Pro Night Flat
+            value: odp-night-flat
+      - id: odp-readable-line-length
+        title: Readable line length
+        type: class-toggle
+        default: true
+      - id: odp-colorful-headings
+        title: Colorful headings
+        type: class-toggle
+        default: true
+      - id: odp-compact-tabs
+        title: Compact tabs
+        type: class-toggle
+        default: false

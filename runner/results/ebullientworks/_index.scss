@@ -40,7 +40,7 @@
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: color-mix(in oklch, var(--background-primary) 98%, black) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -140,7 +140,7 @@
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: color-mix(in oklch, var(--background-primary) 90%, black) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
@@ -210,13 +210,13 @@
 html[saved-theme="light"] body {
   --qt-code-header: oklch(0.763 0.095 83.018);
   --qt-code-default: rgb(93, 93, 93);
-  --qt-code-background: rgb(241, 241, 241);
+  --qt-code-background: oklch(0.959541 0.0000477589 none);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {
   --qt-code-header: oklch(0.825 0.102 83.018);
   --qt-code-default: rgb(184, 184, 184);
-  --qt-code-background: rgb(39, 39, 39);
+  --qt-code-background: oklch(0.211527 0.0000105082 none);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 
@@ -239,56 +239,56 @@ html {
   font-family: "Architects Daughter";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/architects-daughter.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/architects-daughter.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 300;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans-1.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans-2.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans-3.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: italic;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans-4.woff2") format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/ibm-plex-sans-5.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/ibm-plex-sans-5.woff2") format("woff2");
 }
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/fira-code.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/fira-code.woff2") format("woff2");
   unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Fira Code";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/ebullientworks/fira-code-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/ebullientworks/fira-code-1.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
@@ -1158,7 +1158,7 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: oklch(0.557 0.067 332.854);
+    color: rgb(168, 93, 113);
   }
 
   .search > .search-button {
@@ -1859,7 +1859,7 @@ body {
 
   h2.page-title::before,
   h2.page-title a::before {
-    border: 0px rgb(34, 34, 34);
+    border: 0px oklch(0.763 0.095 83.018);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1877,9 +1877,10 @@ body {
     height: auto;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    content: normal;
-    display: block;
-    color: rgb(34, 34, 34);
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    content: " § ";
+    display: inline;
+    color: oklch(0.763 0.095 83.018);
   }
 
   .preview-container {
@@ -2572,24 +2573,9 @@ body {
 
   h2.page-title {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Sans",
-      "Helvetica Neue",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Architects Daughter";
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -3908,7 +3894,7 @@ body {
     color: rgb(72, 72, 72);
     border-radius: 12px;
     border-color: rgb(72, 72, 72);
-    border-left: 2px solid oklch(0.557 0.067 332.854);
+    border-left: 1px solid oklch(0.852 0.033 332.854);
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -4051,8 +4037,8 @@ body {
   }
 
   .nav-files-container .tree-item-children {
-    border-left: 1px solid oklch(0 0 none / 0.12);
-    border-inline-start: 1px solid oklch(0 0 none / 0.12);
+    border-left: 1px solid rgba(54, 152, 145, 0.25);
+    border-inline-start: 1px solid rgba(54, 152, 145, 0.25);
   }
 
   .explorer .folder-container > div {
@@ -4303,7 +4289,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
     cursor: var(--cursor);
-    border-color: rgb(93, 93, 93);
+    border-color: rgb(160, 160, 160);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -4312,8 +4298,8 @@ body {
   }
 
   .darkmode svg {
-    stroke: rgb(93, 93, 93);
-    color: rgb(93, 93, 93);
+    stroke: rgb(160, 160, 160);
+    color: rgb(160, 160, 160);
   }
 
   .breadcrumb-container {
@@ -4329,22 +4315,7 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family:
-      "IBM Plex Sans",
-      "Helvetica Neue",
-      ui-sans-serif,
-      -apple-system,
-      BlinkMacSystemFont,
-      system-ui,
-      "Segoe UI",
-      "Google Sans Flex",
-      Roboto,
-      "Inter Variable",
-      Inter,
-      "Apple Color Emoji",
-      "Segoe UI Emoji",
-      "Segoe UI Symbol",
-      sans-serif;
+    font-family: "Architects Daughter";
   }
 
   #stacked-pages-container.binder-active {
@@ -4411,6 +4382,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4465,6 +4437,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4519,6 +4492,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4573,6 +4547,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     margin: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -7917,7 +7892,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: oklch(0.754 0.061 332.854);
+      color: rgb(195, 140, 160);
     }
 
     .search > .search-button {
@@ -8618,7 +8593,7 @@ html[saved-theme="dark"] {
 
     h2.page-title::before,
     h2.page-title a::before {
-      border: 0px rgb(218, 218, 218);
+      border: 0px oklch(0.825 0.102 83.018);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8636,9 +8611,10 @@ html[saved-theme="dark"] {
       height: auto;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      content: normal;
-      display: block;
-      color: rgb(218, 218, 218);
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      content: " § ";
+      display: inline;
+      color: oklch(0.825 0.102 83.018);
     }
 
     .preview-container {
@@ -9331,24 +9307,9 @@ html[saved-theme="dark"] {
 
     h2.page-title {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Sans",
-        "Helvetica Neue",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "Architects Daughter";
       font-size: 13px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -10451,10 +10412,10 @@ html[saved-theme="dark"] {
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
       letter-spacing: normal;
-      border-left: var(--table-column-first-border-width) solid rgb(27, 27, 27);
-      border-right: 1px solid rgb(27, 27, 27);
-      border-top: var(--table-header-border-width) solid rgb(27, 27, 27);
-      border-bottom: 1px solid rgb(27, 27, 27);
+      border-left: var(--table-column-first-border-width) solid oklch(0.655 0.078 332.854);
+      border-right: 1px solid oklch(0.655 0.078 332.854);
+      border-top: var(--table-header-border-width) solid oklch(0.655 0.078 332.854);
+      border-bottom: 1px solid oklch(0.655 0.078 332.854);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -10667,7 +10628,7 @@ html[saved-theme="dark"] {
       color: rgb(205, 205, 205);
       border-radius: 12px;
       border-color: rgb(205, 205, 205);
-      border-left: 2px solid oklch(0.459 0.055 332.854);
+      border-left: 1px solid rgb(47, 47, 47);
       border-right-width: 0px;
       border-top-width: 0px;
       border-bottom-width: 0px;
@@ -10716,7 +10677,7 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container .nav-file-title {
-      color: rgb(184, 184, 184);
+      color: rgb(160, 160, 160);
       font-family:
         "IBM Plex Sans",
         "Helvetica Neue",
@@ -10754,7 +10715,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border-color: rgb(184, 184, 184);
+      border-color: rgb(160, 160, 160);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -10810,12 +10771,12 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container .tree-item-children {
-      border-left: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
-      border-inline-start: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
+      border-left: 1px solid rgba(54, 152, 145, 0.18);
+      border-inline-start: 1px solid rgba(54, 152, 145, 0.18);
     }
 
     .explorer .folder-container > div {
-      color: rgb(184, 184, 184);
+      color: rgb(160, 160, 160);
       font-family:
         "IBM Plex Sans",
         "Helvetica Neue",
@@ -10864,7 +10825,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--table-header-color);
       font-weight: var(--table-header-weight);
-      border-color: rgb(27, 27, 27);
+      border-color: oklch(0.655 0.078 332.854);
     }
 
     .bases-table tbody tr:nth-child(even) {
@@ -10995,7 +10956,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: rgb(184, 184, 184);
+      color: rgb(160, 160, 160);
       font-family:
         "IBM Plex Sans",
         "Helvetica Neue",
@@ -11039,7 +11000,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section .meta {
-      color: rgb(184, 184, 184);
+      color: rgb(160, 160, 160);
       font-family:
         "IBM Plex Sans",
         "Helvetica Neue",
@@ -11062,7 +11023,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
-      border-color: rgb(184, 184, 184);
+      border-color: rgb(160, 160, 160);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -11071,8 +11032,8 @@ html[saved-theme="dark"] {
     }
 
     .darkmode svg {
-      stroke: rgb(184, 184, 184);
-      color: rgb(184, 184, 184);
+      stroke: rgb(160, 160, 160);
+      color: rgb(160, 160, 160);
     }
 
     .breadcrumb-container {
@@ -11088,22 +11049,7 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: var(--text-faint);
-      font-family:
-        "IBM Plex Sans",
-        "Helvetica Neue",
-        ui-sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        system-ui,
-        "Segoe UI",
-        "Google Sans Flex",
-        Roboto,
-        "Inter Variable",
-        Inter,
-        "Apple Color Emoji",
-        "Segoe UI Emoji",
-        "Segoe UI Symbol",
-        sans-serif;
+      font-family: "Architects Daughter";
     }
 
     #stacked-pages-container.binder-active {
@@ -11170,6 +11116,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -11224,6 +11171,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -11278,6 +11226,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -11332,6 +11281,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       margin: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -13420,7 +13370,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-    background-color: oklch(0.756 0.096 24.111);
+    background-color: oklch(0.562 0.149 24.111);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
@@ -13434,7 +13384,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-    background-color: oklch(0.756 0.096 24.111);
+    background-color: oklch(0.562 0.149 24.111);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -13462,7 +13412,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-    background-color: oklch(0.756 0.096 24.111);
+    background-color: oklch(0.562 0.149 24.111);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -13574,7 +13524,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-    background-color: oklch(0.756 0.096 24.111);
+    background-color: oklch(0.562 0.149 24.111);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");

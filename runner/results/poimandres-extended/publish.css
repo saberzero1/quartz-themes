@@ -750,6 +750,20 @@ body.theme-light {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -906,6 +920,7 @@ body.theme-light {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 0px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: var(--comment) !important;
@@ -1175,7 +1190,7 @@ body.theme-light {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -1254,14 +1269,26 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--bg_highlight) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1414,6 +1441,7 @@ body.theme-light {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: var(--bg) !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -1449,7 +1477,6 @@ body.theme-light {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-modifier-form-field-highlighted: var(--bg_dark) !important;
-  --image-radius: 0px !important;
   --table-width: 88cqw !important;
   --raised-shadow: var(--shadow-xs) !important;
   --shadow-edges: 0 0 transparent !important;
@@ -1849,6 +1876,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -2005,6 +2046,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 0px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: var(--comment) !important;
@@ -2268,7 +2310,7 @@ body.theme-dark {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -2347,14 +2389,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--bg_highlight) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -2507,6 +2561,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: var(--bg) !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -2542,7 +2597,6 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --background-modifier-form-field-highlighted: var(--bg_dark) !important;
-  --image-radius: 0px !important;
   --table-width: 88cqw !important;
   --h1-color: var(--blue) !important;
   --h2-color: var(--blue) !important;

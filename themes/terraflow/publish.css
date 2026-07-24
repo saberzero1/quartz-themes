@@ -707,6 +707,20 @@ body.theme-light {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -866,6 +880,7 @@ body.theme-light {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -918,7 +933,7 @@ body.theme-light {
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: var(--line-normal) !important;
   --line-height-tight: 1.3 !important;
   --link-color: #d36039 !important;
   --link-color-hover: var(--primary-color-dark) !important;
@@ -1152,7 +1167,7 @@ body.theme-light {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -1231,14 +1246,26 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1399,6 +1426,7 @@ body.theme-light {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -1443,16 +1471,20 @@ body.theme-light {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: 217, 119, 86;
+  --glass-bg: rgba(
+    var(--background-secondary-rgb),
+    var(--tf-glass-tint, 65%)
+  ) !important;
   --background-primary-rgb: 238, 236, 226 !important;
   --callout-danger: 192, 57, 43;
   --tracking-tight: -0.02em !important;
+  --callout-cite: 87, 61, 132;
   --radius-pill: 100px !important;
   --background-secondary-rgb: 230, 228, 218 !important;
   --text-normal-rgb: 61, 46, 26 !important;
   --primary-color: #d97756 !important;
-  --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  --callout-cite: 87, 61, 132;
+  --fast: 0.15s cubic-bezier(0.32, 0.72, 0, 1) !important;
+  --slow: 0.32s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --scrollbar-thumb: rgba(217, 119, 86, 0.35) !important;
   --highlight-bg: #d6b07b !important;
   --callout-danger-rgb: 192, 57, 43;
@@ -1490,11 +1522,244 @@ body.theme-light {
   --dur-quick: 0.22s !important;
   --dur-sheet: 0.42s !important;
   --ease-apple: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8) !important;
-  --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
-  --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-  --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2) !important;
-  --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3) !important;
+  --ease-overshoot: linear(
+    0,
+    -0.0225 2.1%,
+    -0.0402 4.2%,
+    -0.0493 6.25%,
+    -0.0478 8.3%,
+    -0.036 10.4%,
+    -0.0165 12.5%,
+    0.0032 14.6%,
+    0.0593 16.7%,
+    0.1655 18.75%,
+    0.2996 20.8%,
+    0.4438 22.9%,
+    0.5849 25%,
+    0.7139 27.1%,
+    0.8251 29.2%,
+    0.916 31.25%,
+    0.9861 33.3%,
+    1.037 35.4%,
+    1.069 37.5%,
+    1.088 39.6%,
+    1.095 41.7%,
+    1.093 43.75%,
+    1.085 45.8%,
+    1.073 47.9%,
+    1.06 50%,
+    1.046 52.1%,
+    1.033 54.2%,
+    1.022 56.25%,
+    1.012 58.3%,
+    1.004 60.4%,
+    0.9987 62.5%,
+    0.9948 64.6%,
+    0.9924 66.7%,
+    0.9912 68.75%,
+    0.991 70.8%,
+    0.9915 72.9%,
+    0.9925 75%,
+    0.9937 77.1%,
+    0.995 79.2%,
+    0.9962 81.25%,
+    0.9974 83.3%,
+    0.9984 85.4%,
+    0.9992 87.5%,
+    0.9999 89.6%,
+    1 91.7%,
+    1.001 93.75%,
+    1.001 95.8%,
+    1.001 97.9%,
+    1
+  ) !important;
+  --ease-spring-md: linear(
+    0,
+    0.0381 2.1%,
+    0.1352 4.2%,
+    0.2681 6.25%,
+    0.4175 8.3%,
+    0.5679 10.4%,
+    0.7083 12.5%,
+    0.8313 14.6%,
+    0.9326 16.7%,
+    1.011 18.75%,
+    1.067 20.8%,
+    1.103 22.9%,
+    1.122 25%,
+    1.126 27.1%,
+    1.121 29.2%,
+    1.108 31.25%,
+    1.091 33.3%,
+    1.072 35.4%,
+    1.053 37.5%,
+    1.035 39.6%,
+    1.02 41.7%,
+    1.007 43.75%,
+    0.9977 45.8%,
+    0.9909 47.9%,
+    0.9867 50%,
+    0.9845 52.1%,
+    0.9841 54.2%,
+    0.9849 56.25%,
+    0.9866 58.3%,
+    0.9888 60.4%,
+    0.9912 62.5%,
+    0.9936 64.6%,
+    0.9958 66.7%,
+    0.9977 68.75%,
+    0.9992 70.8%,
+    1.001 75%,
+    1.002 79.2%,
+    1.002 83.3%,
+    1.001 87.5%,
+    1.001 91.7%,
+    1 95.8%,
+    1
+  ) !important;
+  --ease-spring-sm: linear(
+    0,
+    0.0324 2.1%,
+    0.1138 4.2%,
+    0.2241 6.25%,
+    0.3478 8.3%,
+    0.4732 10.4%,
+    0.592 12.5%,
+    0.6991 14.6%,
+    0.7916 16.7%,
+    0.8683 18.75%,
+    0.9294 20.8%,
+    0.9759 22.9%,
+    1.01 25%,
+    1.032 27.1%,
+    1.046 29.2%,
+    1.053 31.25%,
+    1.054 33.3%,
+    1.052 35.4%,
+    1.047 37.5%,
+    1.041 39.6%,
+    1.034 41.7%,
+    1.027 43.75%,
+    1.021 45.8%,
+    1.015 47.9%,
+    1.011 50%,
+    1.006 52.1%,
+    1.003 54.2%,
+    1.001 56.25%,
+    0.9992 58.3%,
+    0.9981 60.4%,
+    0.9974 62.5%,
+    0.9971 64.6%,
+    0.9971 66.7%,
+    0.9975 70.8%,
+    0.9982 75%,
+    0.9989 79.2%,
+    0.9995 83.3%,
+    0.9998 87.5%,
+    1
+  ) !important;
+  --ease-spring-soft: linear(
+    0,
+    0.016 2.1%,
+    0.0585 4.2%,
+    0.1199 6.25%,
+    0.1938 8.3%,
+    0.2749 10.4%,
+    0.3591 12.5%,
+    0.4431 14.6%,
+    0.5243 16.7%,
+    0.601 18.75%,
+    0.6717 20.8%,
+    0.7358 22.9%,
+    0.7928 25%,
+    0.8427 27.1%,
+    0.8857 29.2%,
+    0.922 31.25%,
+    0.9521 33.3%,
+    0.9765 35.4%,
+    0.9959 37.5%,
+    1.011 39.6%,
+    1.022 41.7%,
+    1.03 43.75%,
+    1.035 45.8%,
+    1.037 47.9%,
+    1.038 50%,
+    1.038 52.1%,
+    1.036 54.2%,
+    1.034 56.25%,
+    1.031 58.3%,
+    1.028 60.4%,
+    1.025 62.5%,
+    1.022 64.6%,
+    1.019 66.7%,
+    1.016 68.75%,
+    1.013 70.8%,
+    1.01 72.9%,
+    1.008 75%,
+    1.006 77.1%,
+    1.005 79.2%,
+    1.003 81.25%,
+    1.002 83.3%,
+    1.001 85.4%,
+    1 87.5%,
+    0.9997 89.6%,
+    0.9992 91.7%,
+    0.9989 93.75%,
+    0.9987 95.8%,
+    0.9986 97.9%,
+    1
+  ) !important;
+  --ease-spring-xl: linear(
+    0,
+    0.0503 2.1%,
+    0.1794 4.2%,
+    0.3558 6.25%,
+    0.551 8.3%,
+    0.7417 10.4%,
+    0.9105 12.5%,
+    1.047 14.6%,
+    1.145 16.7%,
+    1.206 18.75%,
+    1.232 20.8%,
+    1.229 22.9%,
+    1.205 25%,
+    1.167 27.1%,
+    1.123 29.2%,
+    1.077 31.25%,
+    1.035 33.3%,
+    1 35.4%,
+    0.9739 37.5%,
+    0.9564 39.6%,
+    0.9473 41.7%,
+    0.9456 43.75%,
+    0.9495 45.8%,
+    0.9572 47.9%,
+    0.9672 50%,
+    0.9779 52.1%,
+    0.9881 54.2%,
+    0.997 56.25%,
+    1.004 58.3%,
+    1.009 60.4%,
+    1.012 62.5%,
+    1.013 64.6%,
+    1.012 66.7%,
+    1.011 68.75%,
+    1.009 70.8%,
+    1.006 72.9%,
+    1.004 75%,
+    1.001 77.1%,
+    0.9996 79.2%,
+    0.9983 81.25%,
+    0.9975 83.3%,
+    0.9971 85.4%,
+    0.9971 87.5%,
+    0.9973 89.6%,
+    0.9978 91.7%,
+    0.9983 93.75%,
+    0.9989 95.8%,
+    0.9995 97.9%,
+    1
+  ) !important;
   --editor-max-width: var(--line-width, 64ch) !important;
   --emphasis-color: #ae4e36 !important;
   --emphasis-color-light: #d97756 !important;
@@ -1539,7 +1804,7 @@ body.theme-light {
   --link-opacity-normal: 0.1 !important;
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
-  --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  --normal: 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --opacity-active: 0.12 !important;
   --opacity-border: 0.45 !important;
   --opacity-divider: 0.15 !important;
@@ -1554,6 +1819,51 @@ body.theme-light {
   --r3: 12px !important;
   --r4: 16px !important;
   --reading-max-width: var(--line-width, 64ch) !important;
+  --rebound-dur: 0.45s !important;
+  --rebound-dur-lg: 0.65s !important;
+  --rebound-ease: linear(
+    0,
+    0.0324 2.1%,
+    0.1138 4.2%,
+    0.2241 6.25%,
+    0.3478 8.3%,
+    0.4732 10.4%,
+    0.592 12.5%,
+    0.6991 14.6%,
+    0.7916 16.7%,
+    0.8683 18.75%,
+    0.9294 20.8%,
+    0.9759 22.9%,
+    1.01 25%,
+    1.032 27.1%,
+    1.046 29.2%,
+    1.053 31.25%,
+    1.054 33.3%,
+    1.052 35.4%,
+    1.047 37.5%,
+    1.041 39.6%,
+    1.034 41.7%,
+    1.027 43.75%,
+    1.021 45.8%,
+    1.015 47.9%,
+    1.011 50%,
+    1.006 52.1%,
+    1.003 54.2%,
+    1.001 56.25%,
+    0.9992 58.3%,
+    0.9981 60.4%,
+    0.9974 62.5%,
+    0.9971 64.6%,
+    0.9971 66.7%,
+    0.9975 70.8%,
+    0.9982 75%,
+    0.9989 79.2%,
+    0.9995 83.3%,
+    0.9998 87.5%,
+    1
+  ) !important;
+  --rebound-scale-y: 0.95 !important;
+  --rebound-slide: 22px !important;
   --s1: 4px !important;
   --s2: 8px !important;
   --s3: 12px !important;
@@ -1577,15 +1887,141 @@ body.theme-light {
   --theme-folder-opacity: 0.12 !important;
   --tracking-normal: 0em !important;
   --tracking-snug: -0.01em !important;
-  --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-bounce: 0.3s
+    linear(
+      0,
+      0.0381 2.1%,
+      0.1352 4.2%,
+      0.2681 6.25%,
+      0.4175 8.3%,
+      0.5679 10.4%,
+      0.7083 12.5%,
+      0.8313 14.6%,
+      0.9326 16.7%,
+      1.011 18.75%,
+      1.067 20.8%,
+      1.103 22.9%,
+      1.122 25%,
+      1.126 27.1%,
+      1.121 29.2%,
+      1.108 31.25%,
+      1.091 33.3%,
+      1.072 35.4%,
+      1.053 37.5%,
+      1.035 39.6%,
+      1.02 41.7%,
+      1.007 43.75%,
+      0.9977 45.8%,
+      0.9909 47.9%,
+      0.9867 50%,
+      0.9845 52.1%,
+      0.9841 54.2%,
+      0.9849 56.25%,
+      0.9866 58.3%,
+      0.9888 60.4%,
+      0.9912 62.5%,
+      0.9936 64.6%,
+      0.9958 66.7%,
+      0.9977 68.75%,
+      0.9992 70.8%,
+      1.001 75%,
+      1.002 79.2%,
+      1.002 83.3%,
+      1.001 87.5%,
+      1.001 91.7%,
+      1 95.8%,
+      1
+    ) !important;
   --transition-callout-link:
-    transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s,
+    transform 0.18s cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.18s,
     color 0.18s !important;
   --transition-depth:
-    box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2),
-    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-  --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    box-shadow 0.2s
+      linear(
+        0,
+        0.0324 2.1%,
+        0.1138 4.2%,
+        0.2241 6.25%,
+        0.3478 8.3%,
+        0.4732 10.4%,
+        0.592 12.5%,
+        0.6991 14.6%,
+        0.7916 16.7%,
+        0.8683 18.75%,
+        0.9294 20.8%,
+        0.9759 22.9%,
+        1.01 25%,
+        1.032 27.1%,
+        1.046 29.2%,
+        1.053 31.25%,
+        1.054 33.3%,
+        1.052 35.4%,
+        1.047 37.5%,
+        1.041 39.6%,
+        1.034 41.7%,
+        1.027 43.75%,
+        1.021 45.8%,
+        1.015 47.9%,
+        1.011 50%,
+        1.006 52.1%,
+        1.003 54.2%,
+        1.001 56.25%,
+        0.9992 58.3%,
+        0.9981 60.4%,
+        0.9974 62.5%,
+        0.9971 64.6%,
+        0.9971 66.7%,
+        0.9975 70.8%,
+        0.9982 75%,
+        0.9989 79.2%,
+        0.9995 83.3%,
+        0.9998 87.5%,
+        1
+      ),
+    transform 0.2s
+      linear(
+        0,
+        0.0324 2.1%,
+        0.1138 4.2%,
+        0.2241 6.25%,
+        0.3478 8.3%,
+        0.4732 10.4%,
+        0.592 12.5%,
+        0.6991 14.6%,
+        0.7916 16.7%,
+        0.8683 18.75%,
+        0.9294 20.8%,
+        0.9759 22.9%,
+        1.01 25%,
+        1.032 27.1%,
+        1.046 29.2%,
+        1.053 31.25%,
+        1.054 33.3%,
+        1.052 35.4%,
+        1.047 37.5%,
+        1.041 39.6%,
+        1.034 41.7%,
+        1.027 43.75%,
+        1.021 45.8%,
+        1.015 47.9%,
+        1.011 50%,
+        1.006 52.1%,
+        1.003 54.2%,
+        1.001 56.25%,
+        0.9992 58.3%,
+        0.9981 60.4%,
+        0.9974 62.5%,
+        0.9971 64.6%,
+        0.9971 66.7%,
+        0.9975 70.8%,
+        0.9982 75%,
+        0.9989 79.2%,
+        0.9995 83.3%,
+        0.9998 87.5%,
+        1
+      ) !important;
+  --transition-ui: 0.22s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --whimsy-fast: 0.25s !important;
   --whimsy-micro: 0.15s !important;
   --whimsy-normal: 0.35s !important;
@@ -1926,6 +2362,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -2085,6 +2535,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -2139,7 +2590,7 @@ body.theme-dark {
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: var(--line-normal) !important;
   --line-height-tight: 1.3 !important;
   --link-color: var(--primary-color) !important;
   --link-color-hover: var(--primary-color-dark) !important;
@@ -2365,7 +2816,7 @@ body.theme-dark {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -2444,14 +2895,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -2612,6 +3075,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -2651,16 +3115,20 @@ body.theme-dark {
   --shadow-3: 0 6px 18px rgba(0, 0, 0, 0.1) !important;
   --shadow-4: 0 4px 12px rgba(0, 0, 0, 0.12) !important;
   --callout-note: 242, 168, 130;
+  --glass-bg: rgba(
+    var(--background-secondary-rgb),
+    var(--tf-glass-tint, 65%)
+  ) !important;
   --background-primary-rgb: 40, 37, 32 !important;
   --callout-danger: 231, 76, 60;
   --tracking-tight: -0.02em !important;
+  --callout-cite: 162, 155, 254;
   --radius-pill: 100px !important;
   --background-secondary-rgb: 50, 48, 42 !important;
   --text-normal-rgb: 232, 220, 198 !important;
   --primary-color: #f0916f !important;
-  --fast: 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  --slow: 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
-  --callout-cite: 162, 155, 254;
+  --fast: 0.15s cubic-bezier(0.32, 0.72, 0, 1) !important;
+  --slow: 0.32s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --scrollbar-thumb: rgba(240, 145, 111, 0.35) !important;
   --highlight-bg: #3a2f20 !important;
   --callout-danger-rgb: 231, 76, 60;
@@ -2698,11 +3166,244 @@ body.theme-dark {
   --dur-quick: 0.22s !important;
   --dur-sheet: 0.42s !important;
   --ease-apple: cubic-bezier(0.32, 0.72, 0, 1) !important;
-  --ease-bounce-lg: cubic-bezier(0.175, 0.885, 0.32, 1.8) !important;
-  --ease-bounce-md: cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
-  --ease-bounce-sm: cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-  --ease-bounce-xl: cubic-bezier(0.175, 0.885, 0.32, 2.2) !important;
-  --ease-overshoot: cubic-bezier(0.68, -0.3, 0.32, 1.3) !important;
+  --ease-overshoot: linear(
+    0,
+    -0.0225 2.1%,
+    -0.0402 4.2%,
+    -0.0493 6.25%,
+    -0.0478 8.3%,
+    -0.036 10.4%,
+    -0.0165 12.5%,
+    0.0032 14.6%,
+    0.0593 16.7%,
+    0.1655 18.75%,
+    0.2996 20.8%,
+    0.4438 22.9%,
+    0.5849 25%,
+    0.7139 27.1%,
+    0.8251 29.2%,
+    0.916 31.25%,
+    0.9861 33.3%,
+    1.037 35.4%,
+    1.069 37.5%,
+    1.088 39.6%,
+    1.095 41.7%,
+    1.093 43.75%,
+    1.085 45.8%,
+    1.073 47.9%,
+    1.06 50%,
+    1.046 52.1%,
+    1.033 54.2%,
+    1.022 56.25%,
+    1.012 58.3%,
+    1.004 60.4%,
+    0.9987 62.5%,
+    0.9948 64.6%,
+    0.9924 66.7%,
+    0.9912 68.75%,
+    0.991 70.8%,
+    0.9915 72.9%,
+    0.9925 75%,
+    0.9937 77.1%,
+    0.995 79.2%,
+    0.9962 81.25%,
+    0.9974 83.3%,
+    0.9984 85.4%,
+    0.9992 87.5%,
+    0.9999 89.6%,
+    1 91.7%,
+    1.001 93.75%,
+    1.001 95.8%,
+    1.001 97.9%,
+    1
+  ) !important;
+  --ease-spring-md: linear(
+    0,
+    0.0381 2.1%,
+    0.1352 4.2%,
+    0.2681 6.25%,
+    0.4175 8.3%,
+    0.5679 10.4%,
+    0.7083 12.5%,
+    0.8313 14.6%,
+    0.9326 16.7%,
+    1.011 18.75%,
+    1.067 20.8%,
+    1.103 22.9%,
+    1.122 25%,
+    1.126 27.1%,
+    1.121 29.2%,
+    1.108 31.25%,
+    1.091 33.3%,
+    1.072 35.4%,
+    1.053 37.5%,
+    1.035 39.6%,
+    1.02 41.7%,
+    1.007 43.75%,
+    0.9977 45.8%,
+    0.9909 47.9%,
+    0.9867 50%,
+    0.9845 52.1%,
+    0.9841 54.2%,
+    0.9849 56.25%,
+    0.9866 58.3%,
+    0.9888 60.4%,
+    0.9912 62.5%,
+    0.9936 64.6%,
+    0.9958 66.7%,
+    0.9977 68.75%,
+    0.9992 70.8%,
+    1.001 75%,
+    1.002 79.2%,
+    1.002 83.3%,
+    1.001 87.5%,
+    1.001 91.7%,
+    1 95.8%,
+    1
+  ) !important;
+  --ease-spring-sm: linear(
+    0,
+    0.0324 2.1%,
+    0.1138 4.2%,
+    0.2241 6.25%,
+    0.3478 8.3%,
+    0.4732 10.4%,
+    0.592 12.5%,
+    0.6991 14.6%,
+    0.7916 16.7%,
+    0.8683 18.75%,
+    0.9294 20.8%,
+    0.9759 22.9%,
+    1.01 25%,
+    1.032 27.1%,
+    1.046 29.2%,
+    1.053 31.25%,
+    1.054 33.3%,
+    1.052 35.4%,
+    1.047 37.5%,
+    1.041 39.6%,
+    1.034 41.7%,
+    1.027 43.75%,
+    1.021 45.8%,
+    1.015 47.9%,
+    1.011 50%,
+    1.006 52.1%,
+    1.003 54.2%,
+    1.001 56.25%,
+    0.9992 58.3%,
+    0.9981 60.4%,
+    0.9974 62.5%,
+    0.9971 64.6%,
+    0.9971 66.7%,
+    0.9975 70.8%,
+    0.9982 75%,
+    0.9989 79.2%,
+    0.9995 83.3%,
+    0.9998 87.5%,
+    1
+  ) !important;
+  --ease-spring-soft: linear(
+    0,
+    0.016 2.1%,
+    0.0585 4.2%,
+    0.1199 6.25%,
+    0.1938 8.3%,
+    0.2749 10.4%,
+    0.3591 12.5%,
+    0.4431 14.6%,
+    0.5243 16.7%,
+    0.601 18.75%,
+    0.6717 20.8%,
+    0.7358 22.9%,
+    0.7928 25%,
+    0.8427 27.1%,
+    0.8857 29.2%,
+    0.922 31.25%,
+    0.9521 33.3%,
+    0.9765 35.4%,
+    0.9959 37.5%,
+    1.011 39.6%,
+    1.022 41.7%,
+    1.03 43.75%,
+    1.035 45.8%,
+    1.037 47.9%,
+    1.038 50%,
+    1.038 52.1%,
+    1.036 54.2%,
+    1.034 56.25%,
+    1.031 58.3%,
+    1.028 60.4%,
+    1.025 62.5%,
+    1.022 64.6%,
+    1.019 66.7%,
+    1.016 68.75%,
+    1.013 70.8%,
+    1.01 72.9%,
+    1.008 75%,
+    1.006 77.1%,
+    1.005 79.2%,
+    1.003 81.25%,
+    1.002 83.3%,
+    1.001 85.4%,
+    1 87.5%,
+    0.9997 89.6%,
+    0.9992 91.7%,
+    0.9989 93.75%,
+    0.9987 95.8%,
+    0.9986 97.9%,
+    1
+  ) !important;
+  --ease-spring-xl: linear(
+    0,
+    0.0503 2.1%,
+    0.1794 4.2%,
+    0.3558 6.25%,
+    0.551 8.3%,
+    0.7417 10.4%,
+    0.9105 12.5%,
+    1.047 14.6%,
+    1.145 16.7%,
+    1.206 18.75%,
+    1.232 20.8%,
+    1.229 22.9%,
+    1.205 25%,
+    1.167 27.1%,
+    1.123 29.2%,
+    1.077 31.25%,
+    1.035 33.3%,
+    1 35.4%,
+    0.9739 37.5%,
+    0.9564 39.6%,
+    0.9473 41.7%,
+    0.9456 43.75%,
+    0.9495 45.8%,
+    0.9572 47.9%,
+    0.9672 50%,
+    0.9779 52.1%,
+    0.9881 54.2%,
+    0.997 56.25%,
+    1.004 58.3%,
+    1.009 60.4%,
+    1.012 62.5%,
+    1.013 64.6%,
+    1.012 66.7%,
+    1.011 68.75%,
+    1.009 70.8%,
+    1.006 72.9%,
+    1.004 75%,
+    1.001 77.1%,
+    0.9996 79.2%,
+    0.9983 81.25%,
+    0.9975 83.3%,
+    0.9971 85.4%,
+    0.9971 87.5%,
+    0.9973 89.6%,
+    0.9978 91.7%,
+    0.9983 93.75%,
+    0.9989 95.8%,
+    0.9995 97.9%,
+    1
+  ) !important;
   --editor-max-width: var(--line-width, 64ch) !important;
   --emphasis-color: #e27a5a !important;
   --emphasis-color-light: #f2a882 !important;
@@ -2748,7 +3449,7 @@ body.theme-dark {
   --link-opacity-normal: 0.1 !important;
   --link-opacity-unresolved: 0.05 !important;
   --link-opacity-unresolved-hover: 0.12 !important;
-  --normal: 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  --normal: 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --opacity-active: 0.12 !important;
   --opacity-border: 0.45 !important;
   --opacity-divider: 0.15 !important;
@@ -2763,6 +3464,51 @@ body.theme-dark {
   --r3: 12px !important;
   --r4: 16px !important;
   --reading-max-width: var(--line-width, 64ch) !important;
+  --rebound-dur: 0.45s !important;
+  --rebound-dur-lg: 0.65s !important;
+  --rebound-ease: linear(
+    0,
+    0.0324 2.1%,
+    0.1138 4.2%,
+    0.2241 6.25%,
+    0.3478 8.3%,
+    0.4732 10.4%,
+    0.592 12.5%,
+    0.6991 14.6%,
+    0.7916 16.7%,
+    0.8683 18.75%,
+    0.9294 20.8%,
+    0.9759 22.9%,
+    1.01 25%,
+    1.032 27.1%,
+    1.046 29.2%,
+    1.053 31.25%,
+    1.054 33.3%,
+    1.052 35.4%,
+    1.047 37.5%,
+    1.041 39.6%,
+    1.034 41.7%,
+    1.027 43.75%,
+    1.021 45.8%,
+    1.015 47.9%,
+    1.011 50%,
+    1.006 52.1%,
+    1.003 54.2%,
+    1.001 56.25%,
+    0.9992 58.3%,
+    0.9981 60.4%,
+    0.9974 62.5%,
+    0.9971 64.6%,
+    0.9971 66.7%,
+    0.9975 70.8%,
+    0.9982 75%,
+    0.9989 79.2%,
+    0.9995 83.3%,
+    0.9998 87.5%,
+    1
+  ) !important;
+  --rebound-scale-y: 0.95 !important;
+  --rebound-slide: 22px !important;
   --s1: 4px !important;
   --s2: 8px !important;
   --s3: 12px !important;
@@ -2786,15 +3532,141 @@ body.theme-dark {
   --theme-folder-opacity: 0.12 !important;
   --tracking-normal: 0em !important;
   --tracking-snug: -0.01em !important;
-  --transition-bounce: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.5) !important;
+  --transition-bounce: 0.3s
+    linear(
+      0,
+      0.0381 2.1%,
+      0.1352 4.2%,
+      0.2681 6.25%,
+      0.4175 8.3%,
+      0.5679 10.4%,
+      0.7083 12.5%,
+      0.8313 14.6%,
+      0.9326 16.7%,
+      1.011 18.75%,
+      1.067 20.8%,
+      1.103 22.9%,
+      1.122 25%,
+      1.126 27.1%,
+      1.121 29.2%,
+      1.108 31.25%,
+      1.091 33.3%,
+      1.072 35.4%,
+      1.053 37.5%,
+      1.035 39.6%,
+      1.02 41.7%,
+      1.007 43.75%,
+      0.9977 45.8%,
+      0.9909 47.9%,
+      0.9867 50%,
+      0.9845 52.1%,
+      0.9841 54.2%,
+      0.9849 56.25%,
+      0.9866 58.3%,
+      0.9888 60.4%,
+      0.9912 62.5%,
+      0.9936 64.6%,
+      0.9958 66.7%,
+      0.9977 68.75%,
+      0.9992 70.8%,
+      1.001 75%,
+      1.002 79.2%,
+      1.002 83.3%,
+      1.001 87.5%,
+      1.001 91.7%,
+      1 95.8%,
+      1
+    ) !important;
   --transition-callout-link:
-    transform 0.18s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    opacity 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.18s,
+    transform 0.18s cubic-bezier(0.32, 0.72, 0, 1),
+    opacity 0.15s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.18s,
     color 0.18s !important;
   --transition-depth:
-    box-shadow 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2),
-    transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.2) !important;
-  --transition-ui: 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+    box-shadow 0.2s
+      linear(
+        0,
+        0.0324 2.1%,
+        0.1138 4.2%,
+        0.2241 6.25%,
+        0.3478 8.3%,
+        0.4732 10.4%,
+        0.592 12.5%,
+        0.6991 14.6%,
+        0.7916 16.7%,
+        0.8683 18.75%,
+        0.9294 20.8%,
+        0.9759 22.9%,
+        1.01 25%,
+        1.032 27.1%,
+        1.046 29.2%,
+        1.053 31.25%,
+        1.054 33.3%,
+        1.052 35.4%,
+        1.047 37.5%,
+        1.041 39.6%,
+        1.034 41.7%,
+        1.027 43.75%,
+        1.021 45.8%,
+        1.015 47.9%,
+        1.011 50%,
+        1.006 52.1%,
+        1.003 54.2%,
+        1.001 56.25%,
+        0.9992 58.3%,
+        0.9981 60.4%,
+        0.9974 62.5%,
+        0.9971 64.6%,
+        0.9971 66.7%,
+        0.9975 70.8%,
+        0.9982 75%,
+        0.9989 79.2%,
+        0.9995 83.3%,
+        0.9998 87.5%,
+        1
+      ),
+    transform 0.2s
+      linear(
+        0,
+        0.0324 2.1%,
+        0.1138 4.2%,
+        0.2241 6.25%,
+        0.3478 8.3%,
+        0.4732 10.4%,
+        0.592 12.5%,
+        0.6991 14.6%,
+        0.7916 16.7%,
+        0.8683 18.75%,
+        0.9294 20.8%,
+        0.9759 22.9%,
+        1.01 25%,
+        1.032 27.1%,
+        1.046 29.2%,
+        1.053 31.25%,
+        1.054 33.3%,
+        1.052 35.4%,
+        1.047 37.5%,
+        1.041 39.6%,
+        1.034 41.7%,
+        1.027 43.75%,
+        1.021 45.8%,
+        1.015 47.9%,
+        1.011 50%,
+        1.006 52.1%,
+        1.003 54.2%,
+        1.001 56.25%,
+        0.9992 58.3%,
+        0.9981 60.4%,
+        0.9974 62.5%,
+        0.9971 64.6%,
+        0.9971 66.7%,
+        0.9975 70.8%,
+        0.9982 75%,
+        0.9989 79.2%,
+        0.9995 83.3%,
+        0.9998 87.5%,
+        1
+      ) !important;
+  --transition-ui: 0.22s cubic-bezier(0.32, 0.72, 0, 1) !important;
   --whimsy-fast: 0.25s !important;
   --whimsy-micro: 0.15s !important;
   --whimsy-normal: 0.35s !important;
@@ -3005,12 +3877,12 @@ body body.theme-light .markdown-rendered a.external-link {
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -3051,12 +3923,12 @@ body body.theme-light .markdown-rendered a.internal-link {
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -3097,12 +3969,12 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -3490,8 +4362,8 @@ body body.theme-light .markdown-rendered mark {
   text-decoration-line: none;
   text-decoration-style: solid;
   transition:
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -3535,7 +4407,7 @@ body body.theme-light del {
   user-select: text;
   animation-name: strike-draw;
   animation-duration: 0.32s;
-  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-direction: normal;
@@ -3574,20 +4446,18 @@ body body.theme-light div.suggestion-item {
   color: rgb(61, 46, 26);
 }
 body body.theme-light .markdown-rendered hr {
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top: 2px solid;
-  border-color: rgb(228, 228, 228);
-  border-bottom-width: 0px;
+  border-top: solid;
+  border-width: 0px;
+  border-color: rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 32px 0px;
+  margin: 32px 64px;
   margin-block-end: 32px;
   margin-block-start: 32px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
+  margin-inline-end: 64px;
+  margin-inline-start: 64px;
 }
 body body.theme-light div.multi-select-pill {
   align-items: normal;
@@ -4197,10 +5067,10 @@ body
   margin-inline-start: calc(var(--checkbox-size) * -1.5);
   width: var(--checkbox-size);
   transition:
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   position: relative;
   top: auto;
 }
@@ -4332,7 +5202,7 @@ body body.theme-light .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 21.6px;
+  line-height: 23.04px;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-inline-start: var(--size-4-6);
@@ -4461,25 +5331,25 @@ body body.theme-light details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-light kbd {
-  background-color: var(--code-background);
-  box-shadow: none;
-  color: var(--code-normal);
+  background-color: var(--background-secondary);
+  box-shadow: inset 0 -1.5px 0 var(--background-modifier-border);
+  color: var(--text-normal);
   font-family: var(--font-monospace);
   font-size: var(--code-size);
-  border: 0px solid rgb(61, 46, 26);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 1px solid rgb(228, 228, 228);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 4px;
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
-  padding-block-end: 1.4px;
-  padding-block-start: 1.4px;
-  padding-inline-end: 3.5px;
-  padding-inline-start: 3.5px;
+  padding: 1px 5px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 5px;
+  padding-inline-start: 5px;
 }
 body body.theme-light sub {
   color: rgb(61, 46, 26);
@@ -5722,7 +6592,7 @@ body body.theme-light .markdown-rendered figure {
   padding-inline-start: 0px;
 }
 body body.theme-light .markdown-rendered figcaption {
-  color: rgb(61, 46, 26);
+  color: var(--text-muted);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -5737,12 +6607,12 @@ body body.theme-light .markdown-rendered figcaption {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: 16px;
+  font-size: 13.6px;
   font-style: normal;
-  text-align: start;
-  margin: 0px;
+  text-align: center;
+  margin: 6px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-start: 6px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;
@@ -6394,12 +7264,12 @@ body body.theme-dark .markdown-rendered a.external-link {
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -6440,12 +7310,12 @@ body body.theme-dark .markdown-rendered a.internal-link {
   text-decoration-style: solid;
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -6486,12 +7356,12 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   text-decoration-style: var(--link-unresolved-decoration-style);
   text-decoration-thickness: var(--link-decoration-thickness);
   transition:
-    color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    text-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    text-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -6879,8 +7749,8 @@ body body.theme-dark .markdown-rendered mark {
   text-decoration-line: none;
   text-decoration-style: solid;
   transition:
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   transform: none;
   user-select: text;
   animation-name: none;
@@ -6924,7 +7794,7 @@ body body.theme-dark del {
   user-select: text;
   animation-name: strike-draw;
   animation-duration: 0.32s;
-  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-direction: normal;
@@ -6963,20 +7833,18 @@ body body.theme-dark div.suggestion-item {
   color: rgb(232, 220, 198);
 }
 body body.theme-dark .markdown-rendered hr {
-  border-left-width: 0px;
-  border-right-width: 0px;
-  border-top: 2px solid;
-  border-color: rgb(51, 51, 51);
-  border-bottom-width: 0px;
+  border-top: solid;
+  border-width: 0px;
+  border-color: rgb(128, 128, 128);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 32px 0px;
+  margin: 32px 64px;
   margin-block-end: 32px;
   margin-block-start: 32px;
-  margin-inline-end: 0px;
-  margin-inline-start: 0px;
+  margin-inline-end: 64px;
+  margin-inline-start: 64px;
 }
 body body.theme-dark div.multi-select-pill {
   align-items: normal;
@@ -7586,10 +8454,10 @@ body
   margin-inline-start: calc(var(--checkbox-size) * -1.5);
   width: var(--checkbox-size);
   transition:
-    transform 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    border-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    box-shadow 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-    background-color 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    border-color 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    box-shadow 0.22s cubic-bezier(0.32, 0.72, 0, 1),
+    background-color 0.22s cubic-bezier(0.32, 0.72, 0, 1);
   position: relative;
   top: auto;
 }
@@ -7721,7 +8589,7 @@ body body.theme-dark .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 21.6px;
+  line-height: 23.04px;
   padding-bottom: 5px;
   padding-top: 5px;
   padding-inline-start: var(--size-4-6);
@@ -7850,25 +8718,25 @@ body body.theme-dark details[open] {
   padding-inline-start: 0px;
 }
 body body.theme-dark kbd {
-  background-color: var(--code-background);
-  box-shadow: none;
-  color: var(--code-normal);
+  background-color: var(--background-secondary);
+  box-shadow: inset 0 -1.5px 0 var(--background-modifier-border);
+  color: var(--text-normal);
   font-family: var(--font-monospace);
   font-size: var(--code-size);
-  border: 0px solid rgb(232, 220, 198);
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border: 1px solid rgb(51, 51, 51);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 4px;
   border-start-end-radius: 4px;
   border-end-start-radius: 4px;
   border-end-end-radius: 4px;
-  padding: 1.4px 3.5px;
-  padding-block-end: 1.4px;
-  padding-block-start: 1.4px;
-  padding-inline-end: 3.5px;
-  padding-inline-start: 3.5px;
+  padding: 1px 5px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
+  padding-inline-end: 5px;
+  padding-inline-start: 5px;
 }
 body body.theme-dark sub {
   color: rgb(232, 220, 198);
@@ -9112,7 +9980,7 @@ body body.theme-dark .markdown-rendered figure {
   padding-inline-start: 0px;
 }
 body body.theme-dark .markdown-rendered figcaption {
-  color: rgb(232, 220, 198);
+  color: var(--text-muted);
   font-family:
     ui-sans-serif,
     -apple-system,
@@ -9127,12 +9995,12 @@ body body.theme-dark .markdown-rendered figcaption {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     sans-serif;
-  font-size: 16px;
+  font-size: 13.6px;
   font-style: normal;
-  text-align: start;
-  margin: 0px;
+  text-align: center;
+  margin: 6px 0px 0px;
   margin-block-end: 0px;
-  margin-block-start: 0px;
+  margin-block-start: 6px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
   padding: 0px;

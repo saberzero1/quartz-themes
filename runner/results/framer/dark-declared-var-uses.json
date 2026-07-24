@@ -165,6 +165,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -182,6 +183,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -1148,12 +1150,10 @@
   },
   "svg.lucide-info.svg-icon": {
     "caret-color": "var(--caret-color)",
-    "color": "var(--bases-table-header-color)",
-    "cursor": "var(--cursor)",
+    "color": "var(--callout-color)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--bases-table-font-size)",
-    "font-weight": "var(--bases-table-header-weight)",
-    "line-height": "var(--line-height-normal)",
+    "font-size": "var(--callout-title-size)",
+    "line-height": "var(--line-height-tight)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",

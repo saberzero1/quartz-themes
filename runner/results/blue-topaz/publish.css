@@ -3,14 +3,14 @@
   font-family: "Lucida Handwriting";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/blue-topaz/lucida-handwriting.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/blue-topaz/lucida-handwriting.woff2")
     format("woff2");
 }
 @font-face {
   font-family: "boxicons";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/blue-topaz/boxicons.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/blue-topaz/boxicons.woff2")
     format("woff2");
 }
 body.theme-light {
@@ -367,6 +367,20 @@ body.theme-light {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -528,6 +542,7 @@ body.theme-light {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -802,7 +817,7 @@ body.theme-light {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -881,14 +896,26 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1054,6 +1081,7 @@ body.theme-light {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -1141,6 +1169,34 @@ body.theme-light {
   --aqua: var(--nord8) !important;
   --font-size-code: 0.825em !important;
   --text-search-highlight-bg: #ffd1dd !important;
+  --nn-theme-file-border-radius: var(--radius-m) !important;
+  --nn-theme-file-tag-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 7%,
+    transparent
+  ) !important;
+  --nn-theme-file-tag-color: var(--text-muted) !important;
+  --nn-theme-list-bg: var(--background-primary) !important;
+  --nn-theme-mobile-list-header-link-color: var(--text-accent) !important;
+  --nn-theme-mobile-toolbar-button-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-mobile-toolbar-button-active-icon-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-mobile-toolbar-button-icon-color: var(--text-muted) !important;
+  --nn-theme-nav-bg: var(--background-secondary-alt) !important;
+  --nn-theme-navitem-border-radius: var(--radius-s) !important;
+  --nn-theme-navitem-selected-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    var(--background-secondary-alt)
+  ) !important;
+  --nn-theme-navitem-selected-inactive-bg: var(
+    --background-modifier-hover
+  ) !important;
   --accent-em: #099d4e !important;
   --accent-l-alt: calc(var(--accent-l) * 0.9) !important;
   --activeline-background: var(--theme-color-translucent-005) !important;
@@ -1194,6 +1250,13 @@ body.theme-light {
   --background-yellow: #fbf3db !important;
   --bases-card-line-hover: var(--background-primary-alt) !important;
   --bases-card-shadow: var(--background-modifier-box-shadow) !important;
+  --bases-list-separator-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.75
+  ) !important;
+  --bases-list-separator-font-weight: bold !important;
   --bases-table-stripe-color: hsla(
     var(--accent-h),
     var(--accent-s),
@@ -1524,6 +1587,280 @@ body.theme-light {
   --mermaid-seq-dia-color: #76c8ff !important;
   --mjx-inline-math-color: var(--text-normal) !important;
   --mjx-math-color: var(--text-normal) !important;
+  --nn-theme-calendar-day-active-border-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-calendar-day-active-border-width: 2px !important;
+  --nn-theme-calendar-day-in-month-color: var(--text-normal) !important;
+  --nn-theme-calendar-day-outside-month-color: var(--text-faint) !important;
+  --nn-theme-calendar-day-today-bg: var(--interactive-accent) !important;
+  --nn-theme-calendar-day-today-color: var(--text-on-accent) !important;
+  --nn-theme-calendar-feature-image-overlay-color: rgb(0 0 0 / 0.08) !important;
+  --nn-theme-calendar-feature-image-text-color: var(
+    --text-on-accent
+  ) !important;
+  --nn-theme-calendar-header-color: var(--text-normal) !important;
+  --nn-theme-calendar-hover-bg: var(--background-modifier-hover) !important;
+  --nn-theme-calendar-note-indicator-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-calendar-unfinished-task-indicator-color: var(
+    --text-error
+  ) !important;
+  --nn-theme-calendar-week-color: var(--text-faint) !important;
+  --nn-theme-calendar-weekday-color: var(--text-muted) !important;
+  --nn-theme-calendar-weekend-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 7%,
+    transparent
+  ) !important;
+  --nn-theme-divider-border-color: var(--background-modifier-border) !important;
+  --nn-theme-divider-resize-handle-hover-bg: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-file-border-width: 1px !important;
+  --nn-theme-file-compact-name-font-weight: 400 !important;
+  --nn-theme-file-date-color: var(--text-faint) !important;
+  --nn-theme-file-date-font-weight: 400 !important;
+  --nn-theme-file-feature-border-radius: var(--radius-s) !important;
+  --nn-theme-file-name-color: var(--text-normal) !important;
+  --nn-theme-file-name-font-weight: 600 !important;
+  --nn-theme-file-parent-color: var(--text-muted) !important;
+  --nn-theme-file-parent-font-weight: 400 !important;
+  --nn-theme-file-pill-border-width: 1px !important;
+  --nn-theme-file-preview-color: var(--text-muted) !important;
+  --nn-theme-file-preview-font-weight: 400 !important;
+  --nn-theme-file-property-bg: color-mix(
+    in srgb,
+    var(--background-primary-alt) 70%,
+    transparent
+  ) !important;
+  --nn-theme-file-property-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-file-property-border-radius: var(--radius-s) !important;
+  --nn-theme-file-property-color: var(--text-muted) !important;
+  --nn-theme-file-selected-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    var(--background-primary)
+  ) !important;
+  --nn-theme-file-selected-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 30%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-date-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-bg: var(
+    --background-modifier-hover
+  ) !important;
+  --nn-theme-file-selected-inactive-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-file-selected-inactive-date-color: var(--text-faint) !important;
+  --nn-theme-file-selected-inactive-name-color: var(--text-normal) !important;
+  --nn-theme-file-selected-inactive-parent-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-preview-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-property-bg: var(
+    --nn-theme-file-property-bg
+  ) !important;
+  --nn-theme-file-selected-inactive-property-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-file-selected-inactive-tag-bg: var(
+    --nn-theme-file-tag-bg
+  ) !important;
+  --nn-theme-file-selected-inactive-tag-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-word-count-color: var(
+    --text-faint
+  ) !important;
+  --nn-theme-file-selected-name-color: var(--text-normal) !important;
+  --nn-theme-file-selected-parent-color: var(--text-normal) !important;
+  --nn-theme-file-selected-preview-color: var(--text-muted) !important;
+  --nn-theme-file-selected-property-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 12%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-property-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 28%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-property-color: var(--text-normal) !important;
+  --nn-theme-file-selected-tag-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-tag-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 32%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-tag-color: var(--text-normal) !important;
+  --nn-theme-file-selected-word-count-color: var(--text-muted) !important;
+  --nn-theme-file-tag-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 22%,
+    transparent
+  ) !important;
+  --nn-theme-file-tag-border-radius: var(--radius-s) !important;
+  --nn-theme-file-tag-custom-color-text-color: var(--text-on-accent) !important;
+  --nn-theme-file-tag-font-weight: 400 !important;
+  --nn-theme-file-task-icon-color: var(--interactive-accent) !important;
+  --nn-theme-file-word-count-color: var(--text-faint) !important;
+  --nn-theme-file-word-count-font-weight: 400 !important;
+  --nn-theme-foreground: var(--text-normal) !important;
+  --nn-theme-foreground-faded: var(--text-faint) !important;
+  --nn-theme-foreground-faint: color-mix(
+    in srgb,
+    var(--text-faint) 28%,
+    transparent
+  ) !important;
+  --nn-theme-foreground-muted: var(--text-muted) !important;
+  --nn-theme-header-button-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-header-button-active-icon-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-header-button-disabled-icon-color: var(--text-faint) !important;
+  --nn-theme-header-button-hover-bg: var(
+    --background-modifier-hover
+  ) !important;
+  --nn-theme-header-button-icon-color: var(--text-muted) !important;
+  --nn-theme-list-group-header-color: var(--text-muted) !important;
+  --nn-theme-list-group-header-font-weight: 600 !important;
+  --nn-theme-list-header-breadcrumb-color: var(--text-muted) !important;
+  --nn-theme-list-header-breadcrumb-font-weight: 600 !important;
+  --nn-theme-list-header-icon-color: var(--text-muted) !important;
+  --nn-theme-list-heading-color: var(--text-normal) !important;
+  --nn-theme-list-heading-font-weight: 600 !important;
+  --nn-theme-list-search-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 14%,
+    transparent
+  ) !important;
+  --nn-theme-list-search-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-list-separator-color: var(--background-modifier-border) !important;
+  --nn-theme-mobile-bg: var(--background-mobile-drawer-1) !important;
+  --nn-theme-mobile-list-header-breadcrumb-color: var(--text-normal) !important;
+  --nn-theme-mobile-list-header-breadcrumb-font-weight: 600 !important;
+  --nn-theme-mobile-toolbar-bg: var(--background-secondary-alt) !important;
+  --nn-theme-mobile-toolbar-glass-bg: var(--background-primary) !important;
+  --nn-theme-nav-indent-guide-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-nav-leader-color: var(--text-faint) !important;
+  --nn-theme-nav-separator-background: linear-gradient(
+    90deg,
+    transparent,
+    var(--nn-theme-nav-separator-color) 18%,
+    var(--nn-theme-nav-separator-color) 82%,
+    transparent
+  ) !important;
+  --nn-theme-nav-separator-color: var(--background-modifier-border) !important;
+  --nn-theme-nav-separator-height: 1px !important;
+  --nn-theme-nav-separator-opacity: 0.72 !important;
+  --nn-theme-navitem-border-width: 1px !important;
+  --nn-theme-navitem-chevron-color: var(--text-muted) !important;
+  --nn-theme-navitem-count-bg: color-mix(
+    in srgb,
+    var(--background-primary-alt) 62%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-count-border-color: transparent !important;
+  --nn-theme-navitem-count-border-radius: var(--radius-xs) !important;
+  --nn-theme-navitem-count-border-width: 0 !important;
+  --nn-theme-navitem-count-color: var(--text-muted) !important;
+  --nn-theme-navitem-count-font-weight: 400 !important;
+  --nn-theme-navitem-custom-border-color: transparent !important;
+  --nn-theme-navitem-custom-color-file-name-font-weight: 600 !important;
+  --nn-theme-navitem-custom-color-name-font-weight: 600 !important;
+  --nn-theme-navitem-file-name-color: var(--text-normal) !important;
+  --nn-theme-navitem-file-name-font-weight: 400 !important;
+  --nn-theme-navitem-folder-note-name-decoration: underline dotted !important;
+  --nn-theme-navitem-folder-note-name-font-weight: 500 !important;
+  --nn-theme-navitem-folder-note-name-hover-decoration: underline !important;
+  --nn-theme-navitem-hover-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 10%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-hover-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-icon-color: var(--text-muted) !important;
+  --nn-theme-navitem-name-color: var(--text-normal) !important;
+  --nn-theme-navitem-name-font-weight: 400 !important;
+  --nn-theme-navitem-selected-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 32%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-selected-chevron-color: var(--text-normal) !important;
+  --nn-theme-navitem-selected-count-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 20%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-selected-count-border-color: transparent !important;
+  --nn-theme-navitem-selected-count-color: var(--text-normal) !important;
+  --nn-theme-navitem-selected-icon-color: var(--interactive-accent) !important;
+  --nn-theme-navitem-selected-inactive-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-navitem-selected-inactive-chevron-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-navitem-selected-inactive-count-bg: var(
+    --nn-theme-navitem-count-bg
+  ) !important;
+  --nn-theme-navitem-selected-inactive-count-border-color: transparent !important;
+  --nn-theme-navitem-selected-inactive-count-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-navitem-selected-inactive-icon-color: var(--text-muted) !important;
+  --nn-theme-navitem-selected-inactive-name-color: var(
+    --text-normal
+  ) !important;
+  --nn-theme-navitem-selected-name-color: var(--text-normal) !important;
+  --nn-theme-pinned-shortcut-shadow-color: color-mix(
+    in srgb,
+    var(--background-secondary-alt) 72%,
+    transparent
+  ) !important;
+  --nn-theme-quick-actions-bg: color-mix(
+    in srgb,
+    var(--background-primary) 94%,
+    transparent
+  ) !important;
+  --nn-theme-quick-actions-border: var(--background-modifier-border) !important;
+  --nn-theme-quick-actions-border-radius: var(--radius-s) !important;
+  --nn-theme-quick-actions-icon-color: var(--text-muted) !important;
+  --nn-theme-quick-actions-icon-hover-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-quick-actions-separator-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-tag-negative-bg: color-mix(
+    in srgb,
+    var(--text-error) 20%,
+    transparent
+  ) !important;
+  --nn-theme-tag-positive-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    transparent
+  ) !important;
   --nord0: #2e3440 !important;
   --nord1: #3b4252 !important;
   --nord1-1: #3b425251 !important;
@@ -2072,6 +2409,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -2233,6 +2584,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -2501,7 +2853,7 @@ body.theme-dark {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -2580,14 +2932,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -2753,6 +3117,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -2834,6 +3199,34 @@ body.theme-dark {
   --aqua: #35bed0 !important;
   --font-size-code: 0.825em !important;
   --text-search-highlight-bg: #bb4361 !important;
+  --nn-theme-file-border-radius: var(--radius-m) !important;
+  --nn-theme-file-tag-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 7%,
+    transparent
+  ) !important;
+  --nn-theme-file-tag-color: var(--text-muted) !important;
+  --nn-theme-list-bg: var(--background-primary) !important;
+  --nn-theme-mobile-list-header-link-color: var(--text-accent) !important;
+  --nn-theme-mobile-toolbar-button-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-mobile-toolbar-button-active-icon-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-mobile-toolbar-button-icon-color: var(--text-muted) !important;
+  --nn-theme-nav-bg: var(--background-secondary-alt) !important;
+  --nn-theme-navitem-border-radius: var(--radius-s) !important;
+  --nn-theme-navitem-selected-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    var(--background-secondary-alt)
+  ) !important;
+  --nn-theme-navitem-selected-inactive-bg: var(
+    --background-modifier-hover
+  ) !important;
   --accent-em: #a4ca8e !important;
   --accent-l-alt: calc(var(--accent-l) * 1.05) !important;
   --activeline-background: var(--theme-color-translucent-005) !important;
@@ -2887,6 +3280,13 @@ body.theme-dark {
   --background-yellow: #585536 !important;
   --bases-card-line-hover: var(--background-primary-alt) !important;
   --bases-card-shadow: var(--background-modifier-box-shadow) !important;
+  --bases-list-separator-color: hsla(
+    var(--accent-h),
+    var(--accent-s),
+    var(--accent-l),
+    0.75
+  ) !important;
+  --bases-list-separator-font-weight: bold !important;
   --bases-table-stripe-color: hsla(
     var(--accent-h),
     var(--accent-s),
@@ -3224,6 +3624,276 @@ body.theme-dark {
   --mermaid-seq-dia-color: #1371be !important;
   --mjx-inline-math-color: var(--text-normal) !important;
   --mjx-math-color: var(--text-normal) !important;
+  --nn-theme-calendar-day-active-border-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-calendar-day-active-border-width: 2px !important;
+  --nn-theme-calendar-day-in-month-color: var(--text-normal) !important;
+  --nn-theme-calendar-day-outside-month-color: var(--text-faint) !important;
+  --nn-theme-calendar-day-today-bg: var(--interactive-accent) !important;
+  --nn-theme-calendar-day-today-color: var(--text-on-accent) !important;
+  --nn-theme-calendar-feature-image-overlay-color: rgb(0 0 0 / 0.32) !important;
+  --nn-theme-calendar-feature-image-text-color: var(
+    --text-on-accent
+  ) !important;
+  --nn-theme-calendar-header-color: var(--text-normal) !important;
+  --nn-theme-calendar-hover-bg: var(--background-modifier-hover) !important;
+  --nn-theme-calendar-note-indicator-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-calendar-unfinished-task-indicator-color: var(
+    --text-error
+  ) !important;
+  --nn-theme-calendar-week-color: var(--text-faint) !important;
+  --nn-theme-calendar-weekday-color: var(--text-muted) !important;
+  --nn-theme-calendar-weekend-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 7%,
+    transparent
+  ) !important;
+  --nn-theme-divider-border-color: var(--background-modifier-border) !important;
+  --nn-theme-divider-resize-handle-hover-bg: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-file-border-width: 1px !important;
+  --nn-theme-file-compact-name-font-weight: 400 !important;
+  --nn-theme-file-date-color: var(--text-faint) !important;
+  --nn-theme-file-date-font-weight: 400 !important;
+  --nn-theme-file-feature-border-radius: var(--radius-s) !important;
+  --nn-theme-file-name-color: var(--text-normal) !important;
+  --nn-theme-file-name-font-weight: 600 !important;
+  --nn-theme-file-parent-color: var(--text-muted) !important;
+  --nn-theme-file-parent-font-weight: 400 !important;
+  --nn-theme-file-pill-border-width: 1px !important;
+  --nn-theme-file-preview-color: var(--text-muted) !important;
+  --nn-theme-file-preview-font-weight: 400 !important;
+  --nn-theme-file-property-bg: color-mix(
+    in srgb,
+    var(--background-primary-alt) 70%,
+    transparent
+  ) !important;
+  --nn-theme-file-property-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-file-property-border-radius: var(--radius-s) !important;
+  --nn-theme-file-property-color: var(--text-muted) !important;
+  --nn-theme-file-selected-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    var(--background-primary)
+  ) !important;
+  --nn-theme-file-selected-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 30%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-date-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-bg: var(
+    --background-modifier-hover
+  ) !important;
+  --nn-theme-file-selected-inactive-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-file-selected-inactive-date-color: var(--text-faint) !important;
+  --nn-theme-file-selected-inactive-name-color: var(--text-normal) !important;
+  --nn-theme-file-selected-inactive-parent-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-preview-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-property-bg: var(
+    --nn-theme-file-property-bg
+  ) !important;
+  --nn-theme-file-selected-inactive-property-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-file-selected-inactive-tag-bg: var(
+    --nn-theme-file-tag-bg
+  ) !important;
+  --nn-theme-file-selected-inactive-tag-color: var(--text-muted) !important;
+  --nn-theme-file-selected-inactive-word-count-color: var(
+    --text-faint
+  ) !important;
+  --nn-theme-file-selected-name-color: var(--text-normal) !important;
+  --nn-theme-file-selected-parent-color: var(--text-normal) !important;
+  --nn-theme-file-selected-preview-color: var(--text-muted) !important;
+  --nn-theme-file-selected-property-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 12%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-property-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 28%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-property-color: var(--text-normal) !important;
+  --nn-theme-file-selected-tag-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-tag-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 32%,
+    transparent
+  ) !important;
+  --nn-theme-file-selected-tag-color: var(--text-normal) !important;
+  --nn-theme-file-selected-word-count-color: var(--text-muted) !important;
+  --nn-theme-file-tag-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 22%,
+    transparent
+  ) !important;
+  --nn-theme-file-tag-border-radius: var(--radius-s) !important;
+  --nn-theme-file-tag-custom-color-text-color: var(--text-on-accent) !important;
+  --nn-theme-file-tag-font-weight: 400 !important;
+  --nn-theme-file-task-icon-color: var(--interactive-accent) !important;
+  --nn-theme-file-word-count-color: var(--text-faint) !important;
+  --nn-theme-file-word-count-font-weight: 400 !important;
+  --nn-theme-foreground: var(--text-normal) !important;
+  --nn-theme-foreground-faded: var(--text-faint) !important;
+  --nn-theme-foreground-faint: color-mix(
+    in srgb,
+    var(--text-faint) 28%,
+    transparent
+  ) !important;
+  --nn-theme-foreground-muted: var(--text-muted) !important;
+  --nn-theme-header-button-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 16%,
+    transparent
+  ) !important;
+  --nn-theme-header-button-active-icon-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-header-button-disabled-icon-color: var(--text-faint) !important;
+  --nn-theme-header-button-hover-bg: var(
+    --background-modifier-hover
+  ) !important;
+  --nn-theme-header-button-icon-color: var(--text-muted) !important;
+  --nn-theme-list-group-header-color: var(--text-muted) !important;
+  --nn-theme-list-group-header-font-weight: 600 !important;
+  --nn-theme-list-header-breadcrumb-color: var(--text-muted) !important;
+  --nn-theme-list-header-breadcrumb-font-weight: 600 !important;
+  --nn-theme-list-header-icon-color: var(--text-muted) !important;
+  --nn-theme-list-heading-color: var(--text-normal) !important;
+  --nn-theme-list-heading-font-weight: 600 !important;
+  --nn-theme-list-search-active-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 14%,
+    transparent
+  ) !important;
+  --nn-theme-list-search-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-list-separator-color: var(--background-modifier-border) !important;
+  --nn-theme-mobile-bg: var(--background-mobile-drawer-1) !important;
+  --nn-theme-mobile-list-header-breadcrumb-color: var(--text-normal) !important;
+  --nn-theme-mobile-list-header-breadcrumb-font-weight: 600 !important;
+  --nn-theme-mobile-toolbar-bg: var(--background-secondary-alt) !important;
+  --nn-theme-mobile-toolbar-glass-bg: var(--background-primary) !important;
+  --nn-theme-nav-indent-guide-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-nav-leader-color: var(--text-faint) !important;
+  --nn-theme-nav-separator-background: linear-gradient(
+    90deg,
+    transparent,
+    var(--nn-theme-nav-separator-color) 18%,
+    var(--nn-theme-nav-separator-color) 82%,
+    transparent
+  ) !important;
+  --nn-theme-nav-separator-color: var(--background-modifier-border) !important;
+  --nn-theme-nav-separator-height: 1px !important;
+  --nn-theme-nav-separator-opacity: 0.72 !important;
+  --nn-theme-navitem-border-width: 1px !important;
+  --nn-theme-navitem-chevron-color: var(--text-muted) !important;
+  --nn-theme-navitem-count-bg: color-mix(
+    in srgb,
+    var(--background-primary-alt) 62%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-count-border-color: transparent !important;
+  --nn-theme-navitem-count-border-radius: var(--radius-xs) !important;
+  --nn-theme-navitem-count-border-width: 0 !important;
+  --nn-theme-navitem-count-color: var(--text-muted) !important;
+  --nn-theme-navitem-count-font-weight: 400 !important;
+  --nn-theme-navitem-custom-border-color: transparent !important;
+  --nn-theme-navitem-custom-color-file-name-font-weight: 600 !important;
+  --nn-theme-navitem-custom-color-name-font-weight: 600 !important;
+  --nn-theme-navitem-file-name-color: var(--text-normal) !important;
+  --nn-theme-navitem-file-name-font-weight: 400 !important;
+  --nn-theme-navitem-folder-note-name-decoration: underline dotted !important;
+  --nn-theme-navitem-folder-note-name-font-weight: 500 !important;
+  --nn-theme-navitem-folder-note-name-hover-decoration: underline !important;
+  --nn-theme-navitem-hover-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 10%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-hover-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-icon-color: var(--text-muted) !important;
+  --nn-theme-navitem-name-color: var(--text-normal) !important;
+  --nn-theme-navitem-name-font-weight: 400 !important;
+  --nn-theme-navitem-selected-border-color: color-mix(
+    in srgb,
+    var(--interactive-accent) 32%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-selected-chevron-color: var(--text-normal) !important;
+  --nn-theme-navitem-selected-count-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 20%,
+    transparent
+  ) !important;
+  --nn-theme-navitem-selected-count-border-color: transparent !important;
+  --nn-theme-navitem-selected-count-color: var(--text-normal) !important;
+  --nn-theme-navitem-selected-icon-color: var(--interactive-accent) !important;
+  --nn-theme-navitem-selected-inactive-border-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-navitem-selected-inactive-chevron-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-navitem-selected-inactive-count-bg: var(
+    --nn-theme-navitem-count-bg
+  ) !important;
+  --nn-theme-navitem-selected-inactive-count-border-color: transparent !important;
+  --nn-theme-navitem-selected-inactive-count-color: var(
+    --text-muted
+  ) !important;
+  --nn-theme-navitem-selected-inactive-icon-color: var(--text-muted) !important;
+  --nn-theme-navitem-selected-inactive-name-color: var(
+    --text-normal
+  ) !important;
+  --nn-theme-navitem-selected-name-color: var(--text-normal) !important;
+  --nn-theme-pinned-shortcut-shadow-color: rgb(0 0 0 / 0.22) !important;
+  --nn-theme-quick-actions-bg: color-mix(
+    in srgb,
+    var(--background-primary) 94%,
+    transparent
+  ) !important;
+  --nn-theme-quick-actions-border: var(--background-modifier-border) !important;
+  --nn-theme-quick-actions-border-radius: var(--radius-s) !important;
+  --nn-theme-quick-actions-icon-color: var(--text-muted) !important;
+  --nn-theme-quick-actions-icon-hover-color: var(
+    --interactive-accent
+  ) !important;
+  --nn-theme-quick-actions-separator-color: var(
+    --background-modifier-border
+  ) !important;
+  --nn-theme-tag-negative-bg: color-mix(
+    in srgb,
+    var(--text-error) 20%,
+    transparent
+  ) !important;
+  --nn-theme-tag-positive-bg: color-mix(
+    in srgb,
+    var(--interactive-accent) 18%,
+    transparent
+  ) !important;
   --nord0: #2e3440 !important;
   --nord1: #3b4252 !important;
   --nord1-1: #3b425251 !important;

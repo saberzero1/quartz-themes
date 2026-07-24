@@ -5,7 +5,7 @@ sections:
     collapsed: false
     settings:
       - id: seasonal-heading
-        title: 🍂 Seasonal Color Schemes
+        title: 🎨 Color Scheme
         type: heading
         level: 2
         collapsed: false
@@ -34,41 +34,132 @@ sections:
             value: paper-theme
           - label: 🍃 Calm Focus
             value: calm-focus-theme
-      - id: focus-mode-heading
-        title: 🔬 Deep Focus Mode
-        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
-        type: heading
-        level: 2
-        collapsed: true
-      - id: focus-mode
-        title: Enable Deep Focus Mode
-        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
+          - label: 🏜️ Melange
+            value: melange-theme
+      - id: use-custom-accent
+        title: Custom Accent Colour
+        description: Enable to override the seasonal accent with the colour below
         type: class-toggle
         default: false
-      - id: focus-mode-dim-paragraphs
-        title: Typewriter Dimming
-        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
+      - id: custom-accent
+        title: Accent Colour (when override is on)
+        description: The accent colour used when Custom Accent Override is enabled
+        type: variable-color
+        default: '#5E7D6E'
+        opacity: false
+        format: hex
+        alt-format: []
+      - id: enable-monochrome
+        title: Monochrome Mode
+        description: Desaturate the interface to grayscale
         type: class-toggle
         default: false
-      - id: focus-mode-hide-sidebars
-        title: Hide Sidebar Panels
-        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+      - id: low-contrast
+        title: Low Contrast Mode
+        description: Unify the whole window on the season's deeper panel tone for one calm, rich surface — works with every season
         type: class-toggle
         default: false
-      - id: focus-mode-keep-chrome
-        title: Keep Ribbon & Status Bar
-        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
+      - id: heading-color-intensity
+        title: Heading Colour Intensity
+        description: Muted blends headings into the text colour (dark, barely noticeable); Vivid lifts them to full palette saturation (funky!)
+        type: class-select
+        allowEmpty: false
+        default: heading-color-default
+        options:
+          - label: Default
+            value: heading-color-default
+          - label: Muted (subtle)
+            value: heading-color-muted
+          - label: Vivid (funky)
+            value: heading-color-vivid
+      - id: tinted-body-text
+        title: Season-Tinted Body Text
+        description: Blend the season's accent colour into body text so the palette shows through — verified readable in every season
         type: class-toggle
         default: false
-      - id: visual-appearance-heading
-        title: 🎨 Visual & Appearance
-        type: heading
-        level: 2
-        collapsed: true
-      - id: interface-heading
-        title: Interface
+      - id: body-text-tint
+        title: Body Text Tint Strength
+        description: How much accent to blend in (used when Season-Tinted Body Text is on)
+        type: variable-number-slider
+        default: 20
+        min: 10
+        max: 40
+        step: 5
+        format: '%'
+      - id: p3-accents
+        title: P3 Vivid Accents
+        description: On wide-gamut (Display P3) Apple screens, boost the season accent's chroma so it glows — no effect on sRGB displays or the Custom Accent override
+        type: class-toggle
+        default: false
+      - id: custom-heading-colors-heading
+        title: Custom Heading Colours
+        description: Override the season's H1–H6 colours with your own
         type: heading
         level: 3
+        collapsed: true
+      - id: custom-heading-colors
+        title: Enable Custom Heading Colours
+        description: Use the colours below instead of the season palette — composes with Heading Colour Intensity
+        type: class-toggle
+        default: false
+      - id: custom-h1
+        title: H1 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#c77b8b'
+        alt-format:
+          - id: custom-h1-rgb
+            format: rgb-values
+      - id: custom-h2
+        title: H2 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#bc5c00'
+        alt-format:
+          - id: custom-h2-rgb
+            format: rgb-values
+      - id: custom-h3
+        title: H3 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#a08428'
+        alt-format:
+          - id: custom-h3-rgb
+            format: rgb-values
+      - id: custom-h4
+        title: H4 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#6e9b72'
+        alt-format:
+          - id: custom-h4-rgb
+            format: rgb-values
+      - id: custom-h5
+        title: H5 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#7892bd'
+        alt-format:
+          - id: custom-h5-rgb
+            format: rgb-values
+      - id: custom-h6
+        title: H6 Colour
+        type: variable-color
+        format: hex
+        opacity: false
+        default: '#ad6bc0'
+        alt-format:
+          - id: custom-h6-rgb
+            format: rgb-values
+      - id: interface-heading
+        title: 🖥️ Interface
+        type: heading
+        level: 2
         collapsed: true
       - id: layout-style
         title: Interface Layout
@@ -96,28 +187,15 @@ sections:
         description: Soften hover lifts, mute accent backgrounds, remove link glow — a calmer, less expressive interface
         type: class-toggle
         default: false
-      - id: use-custom-accent
-        title: Custom Accent Colour
-        description: Enable to override the seasonal accent with the colour below
-        type: class-toggle
-        default: false
-      - id: custom-accent
-        title: Accent Colour (when override is on)
-        description: The accent colour used when Custom Accent Override is enabled
-        type: variable-color
-        default: '#5E7D6E'
-        opacity: false
-        format: hex
-        alt-format: []
-      - id: enable-monochrome
-        title: Monochrome Mode
-        description: Desaturate the interface to grayscale
+      - id: system-fonts
+        title: System Font (San Francisco)
+        description: Use the native system font stack (SF Pro on Apple platforms) for text and interface
         type: class-toggle
         default: false
       - id: animations-heading
-        title: Animations
+        title: ✨ Animations
         type: heading
-        level: 3
+        level: 2
         collapsed: true
       - id: animation-style
         title: Animation Style
@@ -131,9 +209,9 @@ sections:
           - label: Whimsy (Bouncy)
             value: animation-style-whimsy
       - id: content-styles-heading
-        title: Content Styles
+        title: ✍️ Editor & Content
         type: heading
-        level: 3
+        level: 2
         collapsed: true
       - id: heading-style-selector
         title: Heading Style
@@ -156,12 +234,6 @@ sections:
             value: heading-style-glass
           - label: Badge (Pill)
             value: heading-style-badge
-          - label: Outline
-            value: heading-style-outline
-          - label: 3D Embossed
-            value: heading-style-3d
-          - label: Vibrant Glow
-            value: heading-style-vibrant
       - id: heading-alignment
         title: Heading Alignment
         description: Choose the alignment for headings
@@ -178,6 +250,89 @@ sections:
         description: Enter the name of a font installed on your system to use for headings (leave as 'inherit' to use the default theme font)
         type: variable-text
         default: inherit
+      - id: heading-case-heading
+        title: Heading Case
+        description: Per-level text case — Title Case capitalizes the first letter of every word
+        type: heading
+        level: 3
+        collapsed: true
+      - id: h1-case
+        title: H1 Case
+        type: class-select
+        allowEmpty: false
+        default: h1-case-normal
+        options:
+          - label: Normal
+            value: h1-case-normal
+          - label: Title Case
+            value: h1-case-title
+          - label: UPPERCASE
+            value: h1-case-upper
+      - id: h2-case
+        title: H2 Case
+        type: class-select
+        allowEmpty: false
+        default: h2-case-normal
+        options:
+          - label: Normal
+            value: h2-case-normal
+          - label: Title Case
+            value: h2-case-title
+          - label: UPPERCASE
+            value: h2-case-upper
+      - id: h3-case
+        title: H3 Case
+        type: class-select
+        allowEmpty: false
+        default: h3-case-normal
+        options:
+          - label: Normal
+            value: h3-case-normal
+          - label: Title Case
+            value: h3-case-title
+          - label: UPPERCASE
+            value: h3-case-upper
+      - id: h4-case
+        title: H4 Case
+        type: class-select
+        allowEmpty: false
+        default: h4-case-normal
+        options:
+          - label: Normal
+            value: h4-case-normal
+          - label: Title Case
+            value: h4-case-title
+          - label: UPPERCASE
+            value: h4-case-upper
+      - id: h5-case
+        title: H5 Case
+        type: class-select
+        allowEmpty: false
+        default: h5-case-normal
+        options:
+          - label: Normal
+            value: h5-case-normal
+          - label: Title Case
+            value: h5-case-title
+          - label: UPPERCASE
+            value: h5-case-upper
+      - id: h6-case
+        title: H6 Case
+        type: class-select
+        allowEmpty: false
+        default: h6-case-normal
+        options:
+          - label: Normal
+            value: h6-case-normal
+          - label: Title Case
+            value: h6-case-title
+          - label: UPPERCASE
+            value: h6-case-upper
+      - id: heading-tight-tracking
+        title: Tight Heading Tracking
+        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
+        type: class-toggle
+        default: false
       - id: link-style-selector
         title: Link Style
         description: Choose a visual style for links in your notes
@@ -193,8 +348,6 @@ sections:
             value: link-style-underline
           - label: Neon Glow
             value: link-style-glow
-          - label: Retro Wavy
-            value: link-style-wavy
       - id: highlight-style-selector
         title: Highlight Style
         description: Choose a visual style for text highlights
@@ -232,18 +385,11 @@ sections:
             value: callout-style-vintage
           - label: Modern Glass
             value: callout-style-glass
-          - label: Vibrant Glow
-            value: callout-style-vibrant
           - label: Bold Border
             value: callout-style-bold
       - id: inline-code-accent
         title: Accent Inline Code
         description: Highlight inline code with gradient backgrounds and accent colors
-        type: class-toggle
-        default: false
-      - id: heading-tight-tracking
-        title: Tight Heading Tracking
-        description: Apply negative letter-spacing to H1/H2 for Apple-style optical display tightening
         type: class-toggle
         default: false
       - id: tabular-numerics
@@ -256,34 +402,69 @@ sections:
         description: Colour the cursor caret and text-selection with the accent colour (visionOS-style)
         type: class-toggle
         default: false
-      - id: text-appearance-heading
-        title: ✍️ Heading Uppercase
-        description: Customize the typography case for individual heading levels
+      - id: alt-checkboxes-heading
+        title: Alternate Checkboxes
+        description: Decorative task states — [/], [-], [>], [?], [!], [*] and more
         type: heading
         level: 3
         collapsed: true
-      - id: h1-uppercase
-        title: H1 Uppercase
+      - id: alt-checkboxes
+        title: Enable Alternate Checkboxes
+        description: Style extended task states with seasonal colors and glyphs in editor and reading mode
         type: class-toggle
         default: false
-      - id: h2-uppercase
-        title: H2 Uppercase
+      - id: tables-heading
+        title: Tables
+        type: heading
+        level: 3
+        collapsed: true
+      - id: table-style
+        title: Table Density
+        description: Cell padding and text sizing for tables
+        type: class-select
+        allowEmpty: false
+        default: table-style-default
+        options:
+          - label: Default
+            value: table-style-default
+          - label: Compact
+            value: table-style-compact
+          - label: Relaxed
+            value: table-style-relaxed
+      - id: table-plain-rows
+        title: Disable Row Striping
+        description: Turn off the alternating row background (striping is on by default)
         type: class-toggle
         default: false
-      - id: h3-uppercase
-        title: H3 Uppercase
+      - id: table-no-hover
+        title: Disable Row Hover Highlight
+        description: Turn off the accent-tinted row highlight on hover
         type: class-toggle
         default: false
-      - id: h4-uppercase
-        title: H4 Uppercase
+      - id: focus-mode-heading
+        title: 🔬 Deep Focus Mode
+        description: Science-backed single-switch mode — sepia/warm-dark palette, neutral headings, flattened chrome, 68ch measure. Overrides any active season palette.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: focus-mode
+        title: Enable Deep Focus Mode
+        description: Activates warm sepia (light) or warm dark (dark) palette, collapses heading colour hierarchy, kills decorative backgrounds and animations, and hides the ribbon and status bar. Overrides whatever season is active.
         type: class-toggle
         default: false
-      - id: h5-uppercase
-        title: H5 Uppercase
+      - id: focus-mode-dim-paragraphs
+        title: Typewriter Dimming
+        description: Fade non-active lines to ~50% opacity in live-preview (iA Writer style). Reading mode dims all paragraphs until hovered.
         type: class-toggle
         default: false
-      - id: h6-uppercase
-        title: H6 Uppercase
+      - id: focus-mode-hide-sidebars
+        title: Hide Sidebar Panels
+        description: Collapse the left and right sidebar content panels so only the editor canvas is visible.
+        type: class-toggle
+        default: false
+      - id: focus-mode-keep-chrome
+        title: Keep Ribbon & Status Bar
+        description: Escape hatch — show ribbon and status bar even in Focus Mode. Palette and heading neutralisation remain active.
         type: class-toggle
         default: false
       - id: ui-elements-heading
@@ -326,6 +507,33 @@ sections:
         description: Line height for editor text (e.g. 1.4, 1.6, 1.8)
         type: variable-text
         default: '1.6'
+      - id: block-width-heading
+        title: Block Width (cssclasses)
+        description: 'Add cssclasses to a note''s properties: wide-page, full-page, wide-table, wide-image'
+        type: heading
+        level: 3
+        collapsed: true
+      - id: wide-block-width
+        title: Wide Block Width
+        description: Maximum width for tables/images in notes using the wide-table or wide-image cssclass
+        type: variable-text
+        default: 110ch
+      - id: banners-cards-heading
+        title: Banners & Cards (cssclasses)
+        description: 'banner: mark an image ![[img|banner]] as a cover. cards: render Dataview tables as a card grid'
+        type: heading
+        level: 3
+        collapsed: true
+      - id: banner-height
+        title: Banner Height
+        description: Height of the cover image in notes using the banner cssclass
+        type: variable-text
+        default: 240px
+      - id: cards-min-width
+        title: Card Minimum Width
+        description: Minimum card width in notes using the cards cssclass
+        type: variable-text
+        default: 180px
       - id: focus-grid
         title: Focus Dot Grid
         description: Faint Bauhaus-style 24px dot grid behind the editor — tactile, barely perceptible
@@ -364,5 +572,40 @@ sections:
       - id: disable-status-bar
         title: Disable Status Bar Styling
         description: Disable the status bar style
+        type: class-toggle
+        default: false
+      - id: visual-appearance-heading
+        title: 🎨 Visual & Appearance
+        type: heading
+        level: 2
+        collapsed: true
+      - id: text-appearance-heading
+        title: ✍️ Heading Uppercase
+        description: Customize the typography case for individual heading levels
+        type: heading
+        level: 3
+        collapsed: true
+      - id: h1-uppercase
+        title: H1 Uppercase
+        type: class-toggle
+        default: false
+      - id: h2-uppercase
+        title: H2 Uppercase
+        type: class-toggle
+        default: false
+      - id: h3-uppercase
+        title: H3 Uppercase
+        type: class-toggle
+        default: false
+      - id: h4-uppercase
+        title: H4 Uppercase
+        type: class-toggle
+        default: false
+      - id: h5-uppercase
+        title: H5 Uppercase
+        type: class-toggle
+        default: false
+      - id: h6-uppercase
+        title: H6 Uppercase
         type: class-toggle
         default: false

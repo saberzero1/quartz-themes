@@ -1,0 +1,20 @@
+mode: replace
+sections:
+  - name: Planetary
+    id: planetary
+    collapsed: false
+    settings:
+      - id: body-font-select
+        title: Body Font
+        description: Switch between Serif and Sans-Serif
+        type: variable-select
+        default: '''IBM Plex Sans'', sans-serif'
+        options:
+          - label: Sans Serif
+            value: '''IBM Plex Sans'', sans-serif'
+          - label: Serif
+            value: '''IBM Plex Serif'', serif'
+      - id: rainbow-headers
+        title: Rainbow Header Colors
+        description: Use vibrant palette colors for Headings instead of primary accent variations
+        type: class-toggle

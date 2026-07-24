@@ -235,7 +235,7 @@ html {
   font-family: "number-font";
   font-style: normal;
   font-weight: 100;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/zen/number-font.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/zen/number-font.woff") format("woff");
 }
 
 body {
@@ -4741,15 +4741,11 @@ body {
     border-bottom-right-radius: 20px;
     border-inline-end: 0px none rgb(34, 34, 34);
     border-inline-start: 0px none rgb(34, 34, 34);
-    border-left-color: rgb(34, 34, 34);
     border-top-right-radius: 20px;
-    margin-block: 0px;
-    margin-block-end: 0px;
-    margin-block-start: 0px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 18px 40px 0px;
-    border-bottom: 0px rgb(34, 34, 34);
-    border-right: 0px rgb(34, 34, 34);
-    border-top: 0px rgb(34, 34, 34);
+    border-color: rgb(34, 34, 34) currentcolor rgb(34, 34, 34) rgb(34, 34, 34);
+    border-right: rgb(34, 34, 34);
+    border-width: 0px;
     -webkit-background-clip: border-box;
     -webkit-box-decoration-break: slice;
     background-color: rgba(0, 0, 0, 0);
@@ -4757,7 +4753,6 @@ body {
     background-repeat: repeat;
     border-bottom-left-radius: 0px;
     border-image-slice: 100%;
-    border-left-width: 0px;
     border-top-left-radius: 0px;
     box-decoration-break: slice;
     color: rgb(34, 34, 34);
@@ -4778,6 +4773,9 @@ body {
       sans-serif;
     font-size: 15px;
     line-height: 19.5px;
+    margin-block: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -9941,15 +9939,11 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 20px;
       border-inline-end: 0px none rgb(218, 218, 218);
       border-inline-start: 0px none rgb(218, 218, 218);
-      border-left-color: rgb(218, 218, 218);
       border-top-right-radius: 20px;
-      margin-block: 0px;
-      margin-block-end: 0px;
-      margin-block-start: 0px;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 18px 40px 0px;
-      border-bottom: 0px rgb(218, 218, 218);
-      border-right: 0px rgb(218, 218, 218);
-      border-top: 0px rgb(218, 218, 218);
+      border-color: rgb(218, 218, 218) currentcolor rgb(218, 218, 218) rgb(218, 218, 218);
+      border-right: rgb(218, 218, 218);
+      border-width: 0px;
       -webkit-background-clip: border-box;
       -webkit-box-decoration-break: slice;
       background-color: rgba(0, 0, 0, 0);
@@ -9957,7 +9951,6 @@ html[saved-theme="dark"] {
       background-repeat: repeat;
       border-bottom-left-radius: 0px;
       border-image-slice: 100%;
-      border-left-width: 0px;
       border-top-left-radius: 0px;
       box-decoration-break: slice;
       color: rgb(218, 218, 218);
@@ -9978,6 +9971,9 @@ html[saved-theme="dark"] {
         sans-serif;
       font-size: 15px;
       line-height: 19.5px;
+      margin-block: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
       margin-inline: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;

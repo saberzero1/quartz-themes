@@ -146,6 +146,7 @@ private/
 .replit
 replit.nix
 .sisyphus/
+.playwright-mcp/
 
 runner/quartz/public
 runner/quartz/quartz/.quartz-cache

@@ -164,6 +164,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -180,6 +181,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -1318,40 +1320,6 @@
     "stroke-width": "var(--icon-stroke)",
     "height": "var(--icon-size)",
     "width": "var(--icon-size)"
-  },
-  "mjx-container.MathJax": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "mjx-math.MJX-TEX": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".math-block": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "pre:has(> code.language-mermaid)": {
-    "background-color": "var(--code-background)",
-    "box-shadow": "0 8px 24px var(--odp-shadow)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "dl": {
     "caret-color": "var(--caret-color)",

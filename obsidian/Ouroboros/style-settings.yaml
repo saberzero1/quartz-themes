@@ -29,6 +29,11 @@ sections:
         id: fancy-code
         type: class-toggle
         default: false
+      - title: Code block language labels
+        description: Show a small language badge on fenced code blocks in Reading View (fades on hover so the copy button stays reachable)
+        id: code-language-label
+        type: class-toggle
+        default: true
       - title: Fancy highlighting
         description: Enable fancy highlight styles with highlight underlines
         id: fancy-highlight
@@ -44,6 +49,48 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - id: style-packs
+        title: Style packs
+        description: Whole-theme atmosphere presets. Pick ONE pack only — these are not mutually exclusive in the UI, so if you enable several, the pack lowest in this list wins (deterministic, but not what you usually want). Accent presets below can still override only the accent color on top of your chosen pack.
+        type: heading
+        level: 3
+        collapsed: true
+      - title: Classic Paper style pack
+        description: Quiet paper, ink contrast, restrained blue/cyan accents for everyday vault use.
+        id: preset-classic-paper
+        type: class-toggle
+        default: false
+      - title: Things Warm style pack
+        description: Warmer task-planning surface with amber accent and soft cream UI.
+        id: preset-things-warm
+        type: class-toggle
+        default: false
+      - title: Research Desk style pack
+        description: Wider, cooler, evidence-friendly palette for citations, tables, and source-heavy notes.
+        id: preset-research-desk
+        type: class-toggle
+        default: false
+      - title: Longform Book style pack
+        description: Book-like serif reading surface for essays, chapters, and manuscript work.
+        id: preset-longform-book
+        type: class-toggle
+        default: false
+      - title: Night Ink style pack
+        description: Cool ink dark-room palette with clearer dark-mode chroma and a restrained light fallback.
+        id: preset-night-ink
+        type: class-toggle
+        default: false
+      - title: Low Contrast Calm style pack
+        description: Softer contrast and sage accent for long low-fatigue sessions.
+        id: preset-low-contrast-calm
+        type: class-toggle
+        default: false
+      - id: accent-presets
+        title: Accent presets
+        description: Accent-only overrides. Pick ONE accent — if you enable several (moss / amber / sage / ink-blue / clay / slate), the one lowest in this list wins. Can be combined with one style pack.
+        type: heading
+        level: 3
+        collapsed: true
       - title: Moss accent preset
         description: Switch accents to a quieter green palette
         id: accent-moss
@@ -52,6 +99,42 @@ sections:
       - title: Amber accent preset
         description: Switch accents to a warmer amber palette
         id: accent-amber
+        type: class-toggle
+        default: false
+      - title: Sage accent preset
+        description: Switch accents to a calm sage green palette
+        id: accent-sage
+        type: class-toggle
+        default: false
+      - title: Ink Blue accent preset
+        description: Switch accents to a deep, restrained ink-blue palette
+        id: accent-ink-blue
+        type: class-toggle
+        default: false
+      - title: Clay accent preset
+        description: Switch accents to a warm terracotta clay palette
+        id: accent-clay
+        type: class-toggle
+        default: false
+      - title: Slate accent preset
+        description: Switch accents to a cool grey-blue slate palette
+        id: accent-slate
+        type: class-toggle
+        default: false
+      - id: paper-temperature
+        title: Paper temperature
+        description: Shift the paper surfaces warmer or cooler. Pick ONE — if both are enabled, Cool wins.
+        type: heading
+        level: 3
+        collapsed: true
+      - title: Warm paper
+        description: Warmer, creamier paper surfaces (light and dark)
+        id: paper-warm
+        type: class-toggle
+        default: false
+      - title: Cool paper
+        description: Cooler, more neutral paper surfaces (light and dark)
+        id: paper-cool
         type: class-toggle
         default: false
       - title: Compact UI density
@@ -64,6 +147,26 @@ sections:
         id: airy-reading
         type: class-toggle
         default: false
+      - id: reading-width
+        title: Reading width
+        description: Width of the readable line column. Requires Obsidian's "Readable line length" enabled. Reading modes and style packs override these.
+        type: heading
+        level: 3
+        collapsed: true
+      - id: line-width-tier
+        title: Reading column width
+        description: Pick a comfortable line width for body text.
+        type: variable-select
+        default: 42rem
+        options:
+          - label: Narrow (36rem)
+            value: 36rem
+          - label: Standard (42rem)
+            value: 42rem
+          - label: Relaxed (46rem)
+            value: 46rem
+          - label: Wide (52rem)
+            value: 52rem
       - id: link-decoration
         title: Underline internal links
         description: Show underlines on internal links
@@ -89,6 +192,20 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - id: reading-font
+        title: Reading font
+        description: Body and editor reading font. The interface chrome stays system sans. CJK mode and style packs override this.
+        type: variable-select
+        default: var(--font-system-ui)
+        options:
+          - label: System sans (default)
+            value: var(--font-system-ui)
+          - label: Serif (Iowan / Palatino)
+            value: var(--font-western-serif)
+          - label: Modern serif (Georgia)
+            value: var(--font-western-modern)
+          - label: Humanist sans (Inter)
+            value: var(--font-western-humanist)
       - id: default-font-color
         title: Default font colors
         description: Use the default font color styling for bold, italics, and quotes
@@ -158,7 +275,7 @@ sections:
         title: Tag font color (Dark mode)
         type: variable-color
         format: hex
-        default: '#FFFFFF'
+        default: '#FFFCF0'
         alt-format: []
       - id: progress-color
         title: Progress colorful mode switcher
@@ -205,6 +322,11 @@ sections:
         type: heading
         level: 2
         collapsed: true
+      - title: Numbered headings
+        description: Add automatic outline numbers (1, 1.1, 1.1.1) to H1–H4 for a chapter-like feel. Works in Reading View and Live Preview.
+        id: numbered-headings
+        type: class-toggle
+        default: false
       - id: level-1-headings
         title: Level 1 Headings
         type: heading
@@ -224,7 +346,7 @@ sections:
         title: H1 color
         type: variable-color
         format: hex
-        default: '#'
+        default: '#100F0F'
         alt-format: []
       - id: level-2-headings
         title: Level 2 Headings
@@ -245,7 +367,7 @@ sections:
         title: H2 color
         type: variable-color
         format: hex
-        default: '#2E80F2'
+        default: '#100F0F'
         alt-format: []
       - id: h2-underline
         title: H2 underline
@@ -271,7 +393,7 @@ sections:
         title: H3 color
         type: variable-color
         format: hex
-        default: '#2E80F2'
+        default: '#100F0F'
         alt-format: []
       - id: level-4-headings
         title: Level 4 Headings
@@ -292,7 +414,7 @@ sections:
         title: H4 color
         type: variable-color
         format: hex
-        default: '#E5B567'
+        default: '#100F0F'
         alt-format: []
       - id: h4-transform
         title: H4 transform
@@ -323,7 +445,7 @@ sections:
         title: H5 color
         type: variable-color
         format: hex
-        default: '#E83E3E'
+        default: '#100F0F'
         alt-format: []
       - id: level-6-headings
         title: Level 6 Headings
@@ -344,21 +466,61 @@ sections:
         title: H6 color
         type: variable-color
         format: hex
-        default: '#'
+        default: '#6F6E69'
         alt-format: []
       - id: new-features
         title: New Features
         type: heading
         level: 2
         collapsed: true
-      - title: Sage accent preset
-        description: Switch accents to a calm sage green palette
-        id: accent-sage
+      - title: Bullet threading
+        description: Draw a rounded accent thread from ancestor bullets down to the active list line (Logseq-style outline cue). Editor only — Reading View has no cursor. Covers 6 indent levels; assumes Obsidian's default tab size.
+        id: bullet-threading
+        type: class-toggle
+        default: true
+      - title: Clean embeds
+        description: Strip the card chrome from embedded notes so transclusions read as part of the host note, with a quiet accent rail on hover. Also available per note via cssclasses 'embed-clean'. Opt-in.
+        id: embed-clean
+        type: class-toggle
+        default: false
+      - title: Active path emphasis
+        description: Give the current note a warm low-noise cue — active tab title and top rail, the active pane's view-header title, and a quieter breadcrumb path. Only the current item is emphasized.
+        id: active-path-emphasis
+        type: class-toggle
+        default: true
+      - title: Task priority palette
+        description: Map Tasks-plugin priorities (highest…lowest) to the warm progress 5-color ramp as a quiet left rail, with a warm due chip. Urgency reads warm-to-cool; date proximity needs a JS plugin. Opt-in.
+        id: task-priority-palette
+        type: class-toggle
+        default: false
+      - title: Paper panes
+        description: Give each editor tab group a thin border, soft shadow, and rounded corners so panes read as raised paper sheets. The active pane lifts a little more with a quiet accent edge. Editor area only; sidebars stay flat. Opt-in.
+        id: paper-panes
+        type: class-toggle
+        default: false
+      - title: Typewriter focus
+        description: A Focus mode sub-toggle. While editing, inactive lines dim and the active line stays sharp, with generous vertical room so you can keep the current line near the screen center. Live Preview / source only. Requires Focus mode on; a true scroll-locked typewriter needs a plugin.
+        id: typewriter-focus
         type: class-toggle
         default: false
       - title: Focus mode
-        description: Hide sidebar and ribbon — hover to reveal ribbon temporarily
+        description: Dim sidebars, ribbon, and status bar while keeping hover/tab recovery rails visible
         id: focus-mode
+        type: class-toggle
+        default: false
+      - title: Keyboard mode
+        description: Strengthen keyboard focus rings and add command/switcher navigation hints for keyboard-first vault work
+        id: keyboard-mode
+        type: class-toggle
+        default: false
+      - title: Research reading mode
+        description: Add citation, footnote, quote, table, and annotation polish for research-heavy notes
+        id: research-reading
+        type: class-toggle
+        default: false
+      - title: Longform reading mode
+        description: Add chapter-like spacing, centered headings, scene breaks, and calmer prose rhythm for long essays and drafts
+        id: longform-reading
         type: class-toggle
         default: false
       - title: CJK typography mode

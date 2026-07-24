@@ -88,40 +88,64 @@
 
   --bu-accent: var(--bu-control);
   --bu-accent-custom: #e23b2c;
+  --bu-text-dark: #f1efea;
+  --bu-text-light: #1e1a14;
+  --bu-black-level: #0c0b0a;
+  --bu-white-level: #e7e0cd;
   --bu-glow-intensity: 13;
   --bu-glow-reach: 95;
   --bu-grain-opacity: 0.05;
+  --bu-shadow-strength: 50;
   --bu-panel-grain-amount: 0.38;
-  --bu-vignette-amount: 0.65;
+  --bu-vignette-amount: 0.5;
+  --bu-halo-intensity: 20;
+  --bu-scanline-strength: 0.34;
   --bu-scanline-period: 3;
   --bu-glow-text: 55;
   --bu-focus-dim: 0.4;
   --bu-card-gap-n: 12;
   --bu-card-radius-n: 12;
   --bu-card-shadow: 0.55;
+  --bu-card-shadow-blur: 12;
+  --bu-card-shadow-spread: 0;
+  --bu-line-width-n: 800;
+  --bu-line-height: 1.5;
+  --bu-p-spacing-n: 16;
+  --bu-pill-editor-border-color: #564c3e;
+  --bu-pill-editor-radius-n: 12;
+  --bu-stacked-pill-top-n: 44;
+  --bu-wallpaper-url: none;
+  --bu-wallpaper-dim: 30;
+  --bu-new-tab-image: url(" ");
+  --bu-new-tab-image-size: 360;
   --bu-anim-speed: 600;
   --bu-scan-bright: 0.2;
   --bu-scan-interval: 7;
   --bu-scan-dip: 0;
+  --bu-handle-color: #2a2620;
+  --bu-scrollbar-fade-delay-n: 1500;
+  --bu-scrollbar-width-n: 12;
+  --bu-scrollbar-color: #5f594e;
+  --bu-scrollbar-grip: #968d7e;
   --bu-sun-pri: #9e6b86;
+  --bu-mon-pri: #5b7a9e;
+  --bu-tue-pri: #5e8d86;
+  --bu-wed-pri: #836fa0;
+  --bu-thu-pri: #7c8597;
+  --bu-fri-pri: #4f9a9a;
+  --bu-sat-pri: #8c5a7e;
   --bu-sun-hl: #c6a3b5;
   --bu-sun-bg: #161114;
-  --bu-mon-pri: #5b7a9e;
   --bu-mon-hl: #a6b6c8;
   --bu-mon-bg: #0f131a;
-  --bu-tue-pri: #5e8d86;
   --bu-tue-hl: #a4c2bc;
   --bu-tue-bg: #0e1413;
-  --bu-wed-pri: #836fa0;
   --bu-wed-hl: #b6a9c9;
   --bu-wed-bg: #131019;
-  --bu-thu-pri: #7c8597;
   --bu-thu-hl: #b2b8c4;
   --bu-thu-bg: #101216;
-  --bu-fri-pri: #4f9a9a;
   --bu-fri-hl: #9ec8c8;
   --bu-fri-bg: #0c1515;
-  --bu-sat-pri: #8c5a7e;
   --bu-sat-hl: #c0a0b6;
   --bu-sat-bg: #151013;
   --font-interface-override: var(--bu-font-body);
@@ -212,40 +236,64 @@
 
   --bu-accent: var(--bu-control);
   --bu-accent-custom: #e23b2c;
+  --bu-text-dark: #f1efea;
+  --bu-text-light: #1e1a14;
+  --bu-black-level: #0c0b0a;
+  --bu-white-level: #e7e0cd;
   --bu-glow-intensity: 13;
   --bu-glow-reach: 95;
   --bu-grain-opacity: 0.05;
+  --bu-shadow-strength: 50;
   --bu-panel-grain-amount: 0.38;
-  --bu-vignette-amount: 0.65;
+  --bu-vignette-amount: 0.5;
+  --bu-halo-intensity: 20;
+  --bu-scanline-strength: 0.34;
   --bu-scanline-period: 3;
   --bu-glow-text: 55;
   --bu-focus-dim: 0.4;
   --bu-card-gap-n: 12;
   --bu-card-radius-n: 12;
   --bu-card-shadow: 0.55;
+  --bu-card-shadow-blur: 12;
+  --bu-card-shadow-spread: 0;
+  --bu-line-width-n: 800;
+  --bu-line-height: 1.5;
+  --bu-p-spacing-n: 16;
+  --bu-pill-editor-border-color: #564c3e;
+  --bu-pill-editor-radius-n: 12;
+  --bu-stacked-pill-top-n: 44;
+  --bu-wallpaper-url: none;
+  --bu-wallpaper-dim: 30;
+  --bu-new-tab-image: url(" ");
+  --bu-new-tab-image-size: 360;
   --bu-anim-speed: 600;
   --bu-scan-bright: 0.2;
   --bu-scan-interval: 7;
   --bu-scan-dip: 0;
+  --bu-handle-color: #2a2620;
+  --bu-scrollbar-fade-delay-n: 1500;
+  --bu-scrollbar-width-n: 12;
+  --bu-scrollbar-color: #5f594e;
+  --bu-scrollbar-grip: #968d7e;
   --bu-sun-pri: #9e6b86;
+  --bu-mon-pri: #5b7a9e;
+  --bu-tue-pri: #5e8d86;
+  --bu-wed-pri: #836fa0;
+  --bu-thu-pri: #7c8597;
+  --bu-fri-pri: #4f9a9a;
+  --bu-sat-pri: #8c5a7e;
   --bu-sun-hl: #c6a3b5;
   --bu-sun-bg: #161114;
-  --bu-mon-pri: #5b7a9e;
   --bu-mon-hl: #a6b6c8;
   --bu-mon-bg: #0f131a;
-  --bu-tue-pri: #5e8d86;
   --bu-tue-hl: #a4c2bc;
   --bu-tue-bg: #0e1413;
-  --bu-wed-pri: #836fa0;
   --bu-wed-hl: #b6a9c9;
   --bu-wed-bg: #131019;
-  --bu-thu-pri: #7c8597;
   --bu-thu-hl: #b2b8c4;
   --bu-thu-bg: #101216;
-  --bu-fri-pri: #4f9a9a;
   --bu-fri-hl: #9ec8c8;
   --bu-fri-bg: #0c1515;
-  --bu-sat-pri: #8c5a7e;
   --bu-sat-hl: #c0a0b6;
   --bu-sat-bg: #151013;
   --font-interface-override: var(--bu-font-body);
@@ -287,98 +335,98 @@ html {
   font-family: "Courier Prime";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Courier Prime";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime-1.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime-2.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime-3.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime-4.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Courier Prime";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/courier-prime-5.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/courier-prime-5.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-1.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-2.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-3.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-4.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-5.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-5.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-6.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-6.woff2") format("woff2");
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 @font-face {
   font-family: "Urbanist";
   font-style: normal;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/bureau/urbanist-7.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/bureau/urbanist-7.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 

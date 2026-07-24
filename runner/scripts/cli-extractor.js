@@ -5,7 +5,7 @@
  * Strategy: Extract ALL computed styles, deduplicate against default Obsidian baseline.
  */
 
-import { execSync } from "child_process";
+import { execSync, spawn } from "child_process";
 import { createHash } from "crypto";
 import {
   existsSync,
@@ -230,6 +230,7 @@ class ObsidianCLI {
       const result = execSync(fullCommand, {
         encoding: "utf-8",
         timeout,
+        killSignal: "SIGKILL",
         maxBuffer: 50 * 1024 * 1024, // 50MB buffer for large extraction outputs
         cwd: this.vaultPath,
         stdio: ["pipe", "pipe", "pipe"],
@@ -243,9 +244,47 @@ class ObsidianCLI {
     }
   }
 
+  /**
+   * Fire-and-forget: spawn the CLI command without waiting for stdout.
+   * Used for eval calls where the result is written to a file instead
+   * of returned via stdout. The spawned process is killed after the
+   * timeout to prevent hung CLI processes from blocking the pipeline.
+   */
+  execDetached(command, options = {}) {
+    const timeout = options.timeout || CLI_TIMEOUT;
+    const child = spawn("sh", ["-c", `obsidian ${command}`], {
+      cwd: this.vaultPath,
+      stdio: ["ignore", "ignore", "ignore"],
+      detached: false,
+    });
+
+    // Kill the child after timeout to avoid indefinite hangs
+    const killTimer = setTimeout(() => {
+      try {
+        child.kill("SIGKILL");
+      } catch {
+        // Process may have already exited
+      }
+    }, timeout);
+
+    child.on("exit", () => clearTimeout(killTimer));
+    child.on("error", () => clearTimeout(killTimer));
+    child.unref();
+  }
+
   async eval(code) {
     const escapedCode = code.replace(/'/g, "'\\''");
-    let result = this.exec(`eval code='${escapedCode}'`);
+    let result;
+    try {
+      result = this.exec(`eval code='${escapedCode}'`, { timeout: 30000 });
+    } catch (error) {
+      // If eval timed out, return empty string instead of crashing
+      // the entire pipeline — callers handle empty/missing results
+      if (error.message.includes("timeout")) {
+        return "";
+      }
+      throw error;
+    }
 
     if (result.startsWith("=> ")) {
       result = result.slice(3);
@@ -256,6 +295,19 @@ class ObsidianCLI {
     } catch {
       return result;
     }
+  }
+
+  /**
+   * Fire-and-forget eval: triggers code execution inside Obsidian
+   * without waiting for the eval response. Use when the eval writes
+   * its results to a file (e.g. the extraction script).
+   *
+   * This avoids the obsidian-cli eval timeout bug where long-running
+   * or setTimeout-using evals hang the CLI process indefinitely.
+   */
+  evalDetached(code) {
+    const escapedCode = code.replace(/'/g, "'\\''");
+    this.execDetached(`eval code='${escapedCode}'`);
   }
 
   async setTheme(themeName) {
@@ -279,7 +331,8 @@ class ObsidianCLI {
   }
 
   async openFile(filePath) {
-    this.exec(`open file="${filePath}"`);
+    const param = filePath.includes("/") ? "path" : "file";
+    this.exec(`open ${param}="${filePath}"`);
     await this.sleep(300);
   }
 
@@ -1741,11 +1794,13 @@ async function extractFull(cli, selectors, retries = 2) {
           } catch (e) {}
         }
       `;
-      await cli.eval(loadAndRun);
+      // Fire-and-forget: spawn eval without blocking on stdout.
+      // The extraction script writes results to TEMP_RESULT_FILE;
+      // we poll for that file below instead of relying on eval return.
+      cli.evalDetached(loadAndRun);
 
-      // Poll for result or error file — obsidian eval may return before script completes
-      const pollTimeout = 5000;
-      const pollInterval = 200;
+      const pollTimeout = CLI_TIMEOUT;
+      const pollInterval = 500;
       const pollStart = Date.now();
       while (Date.now() - pollStart < pollTimeout) {
         if (existsSync(TEMP_RESULT_FILE) || existsSync(TEMP_ERROR_FILE)) break;

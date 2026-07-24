@@ -1,0 +1,576 @@
+mode: replace
+sections:
+  - name: Atelier
+    id: anthropic-touch
+    collapsed: false
+    settings:
+      - id: at-info
+        title: Atelier
+        description: Warm cream paper + coral accent, inspired by the open-design.ai community page. Colors, fonts, layout and the per-element style variants below drive the whole theme.
+        type: info-text
+        markdown: false
+      - id: at-colors-heading
+        title: 🎨 Colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: at-accent
+        title: Primary accent
+        description: Coral by default. Drives links, labels, active states.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d8552f'
+        default-dark: '#e8714c'
+        alt-format: []
+      - id: at-accent-2
+        title: Secondary accent
+        description: Deeper terracotta. Used in gradients and hover links.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b8442a'
+        default-dark: '#d2603f'
+        alt-format: []
+      - id: at-gold
+        title: Folder / highlight gold
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+        alt-format: []
+      - id: at-danger
+        title: Danger / close
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c0392b'
+        default-dark: '#e0623f'
+        alt-format: []
+      - id: at-bg-0
+        title: App background (deepest)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ece3d0'
+        default-dark: '#14110c'
+        alt-format: []
+      - id: at-editor
+        title: Editor / note background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f7f1e4'
+        default-dark: '#14110c'
+        alt-format: []
+      - id: at-pane
+        title: Sidebar background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#efe7d6'
+        default-dark: '#1a160f'
+        alt-format: []
+      - id: at-pane-2
+        title: Card / raised panel background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f6f1e6'
+        default-dark: '#211c14'
+        alt-format: []
+      - id: at-dark-surface
+        title: Dark card surface (honor / CTA cards)
+        description: Used by card v4 / v5; intentionally dark in both light and dark mode.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1a1510'
+        default-dark: '#231d14'
+        alt-format: []
+      - id: at-text
+        title: Body text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3a352c'
+        default-dark: '#e7ddc8'
+        alt-format: []
+      - id: at-text-strong
+        title: Headings / strong text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f1b14'
+        default-dark: '#f5efe1'
+        alt-format: []
+      - id: at-muted
+        title: Muted text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#8a7f6d'
+        default-dark: '#a99e87'
+        alt-format: []
+      - id: at-type-heading
+        title: 🔤 Fonts & typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: at-system-fonts
+        title: Use system fonts
+        description: Skip the bundled Google fonts (faster / offline / mobile).
+        type: class-toggle
+        addCommand: true
+      - id: at-font-body
+        title: Body & interface font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''Inter'', system-ui, sans-serif'
+        options:
+          - label: System default (sans)
+            value: system-ui, -apple-system, 'Segoe UI', sans-serif
+          - label: Segoe UI
+            value: '''Segoe UI'', system-ui, sans-serif'
+          - label: Segoe UI Variable
+            value: '''Segoe UI Variable Display'', ''Segoe UI'', system-ui, sans-serif'
+          - label: Inter
+            value: '''Inter'', system-ui, sans-serif'
+          - label: Roboto
+            value: '''Roboto'', system-ui, sans-serif'
+          - label: Open Sans
+            value: '''Open Sans'', system-ui, sans-serif'
+          - label: Lato
+            value: '''Lato'', system-ui, sans-serif'
+          - label: Montserrat
+            value: '''Montserrat'', system-ui, sans-serif'
+          - label: Poppins
+            value: '''Poppins'', system-ui, sans-serif'
+          - label: Nunito
+            value: '''Nunito'', system-ui, sans-serif'
+          - label: Nunito Sans
+            value: '''Nunito Sans'', system-ui, sans-serif'
+          - label: Source Sans
+            value: '''Source Sans 3'', ''Source Sans Pro'', system-ui, sans-serif'
+          - label: Work Sans
+            value: '''Work Sans'', system-ui, sans-serif'
+          - label: Fira Sans
+            value: '''Fira Sans'', system-ui, sans-serif'
+          - label: Ubuntu
+            value: '''Ubuntu'', system-ui, sans-serif'
+          - label: Noto Sans
+            value: '''Noto Sans'', system-ui, sans-serif'
+          - label: Helvetica Neue
+            value: '''Helvetica Neue'', Helvetica, Arial, sans-serif'
+          - label: Arial
+            value: Arial, Helvetica, sans-serif
+          - label: Calibri
+            value: Calibri, system-ui, sans-serif
+          - label: Candara
+            value: Candara, system-ui, sans-serif
+          - label: Corbel
+            value: Corbel, system-ui, sans-serif
+          - label: Verdana
+            value: Verdana, Geneva, sans-serif
+          - label: Tahoma
+            value: Tahoma, Geneva, sans-serif
+          - label: Trebuchet MS
+            value: '''Trebuchet MS'', Tahoma, sans-serif'
+          - label: Franklin Gothic
+            value: '''Franklin Gothic'', ''Franklin Gothic Medium'', sans-serif'
+          - label: Century Gothic
+            value: '''Century Gothic'', sans-serif'
+          - label: Gill Sans
+            value: '''Gill Sans'', ''Gill Sans MT'', sans-serif'
+          - label: Optima
+            value: Optima, Candara, sans-serif
+          - label: Avenir Next
+            value: '''Avenir Next'', Avenir, sans-serif'
+          - label: Georgia (serif)
+            value: Georgia, 'Times New Roman', serif
+          - label: Times New Roman (serif)
+            value: '''Times New Roman'', Times, serif'
+          - label: Cambria (serif)
+            value: Cambria, Georgia, serif
+          - label: Constantia (serif)
+            value: Constantia, Georgia, serif
+          - label: Garamond (serif)
+            value: Garamond, 'EB Garamond', Georgia, serif
+          - label: Palatino (serif)
+            value: '''Palatino Linotype'', Palatino, ''Book Antiqua'', serif'
+          - label: Book Antiqua (serif)
+            value: '''Book Antiqua'', Palatino, serif'
+          - label: Baskerville (serif)
+            value: Baskerville, Georgia, serif
+          - label: Newsreader (serif)
+            value: '''Newsreader'', Georgia, serif'
+          - label: Source Serif (serif)
+            value: '''Source Serif 4'', Georgia, serif'
+          - label: Merriweather (serif)
+            value: '''Merriweather'', Georgia, serif'
+          - label: Lora (serif)
+            value: '''Lora'', Georgia, serif'
+          - label: Playfair Display (serif)
+            value: '''Playfair Display'', Georgia, serif'
+      - id: at-font-heading
+        title: Heading / display font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''Newsreader'', Georgia, serif'
+        options:
+          - label: System default (sans)
+            value: system-ui, -apple-system, 'Segoe UI', sans-serif
+          - label: Segoe UI
+            value: '''Segoe UI'', system-ui, sans-serif'
+          - label: Segoe UI Variable
+            value: '''Segoe UI Variable Display'', ''Segoe UI'', system-ui, sans-serif'
+          - label: Inter
+            value: '''Inter'', system-ui, sans-serif'
+          - label: Roboto
+            value: '''Roboto'', system-ui, sans-serif'
+          - label: Open Sans
+            value: '''Open Sans'', system-ui, sans-serif'
+          - label: Lato
+            value: '''Lato'', system-ui, sans-serif'
+          - label: Montserrat
+            value: '''Montserrat'', system-ui, sans-serif'
+          - label: Poppins
+            value: '''Poppins'', system-ui, sans-serif'
+          - label: Nunito
+            value: '''Nunito'', system-ui, sans-serif'
+          - label: Nunito Sans
+            value: '''Nunito Sans'', system-ui, sans-serif'
+          - label: Source Sans
+            value: '''Source Sans 3'', ''Source Sans Pro'', system-ui, sans-serif'
+          - label: Work Sans
+            value: '''Work Sans'', system-ui, sans-serif'
+          - label: Fira Sans
+            value: '''Fira Sans'', system-ui, sans-serif'
+          - label: Ubuntu
+            value: '''Ubuntu'', system-ui, sans-serif'
+          - label: Noto Sans
+            value: '''Noto Sans'', system-ui, sans-serif'
+          - label: Helvetica Neue
+            value: '''Helvetica Neue'', Helvetica, Arial, sans-serif'
+          - label: Arial
+            value: Arial, Helvetica, sans-serif
+          - label: Calibri
+            value: Calibri, system-ui, sans-serif
+          - label: Candara
+            value: Candara, system-ui, sans-serif
+          - label: Corbel
+            value: Corbel, system-ui, sans-serif
+          - label: Verdana
+            value: Verdana, Geneva, sans-serif
+          - label: Tahoma
+            value: Tahoma, Geneva, sans-serif
+          - label: Trebuchet MS
+            value: '''Trebuchet MS'', Tahoma, sans-serif'
+          - label: Franklin Gothic
+            value: '''Franklin Gothic'', ''Franklin Gothic Medium'', sans-serif'
+          - label: Century Gothic
+            value: '''Century Gothic'', sans-serif'
+          - label: Gill Sans
+            value: '''Gill Sans'', ''Gill Sans MT'', sans-serif'
+          - label: Optima
+            value: Optima, Candara, sans-serif
+          - label: Avenir Next
+            value: '''Avenir Next'', Avenir, sans-serif'
+          - label: Georgia (serif)
+            value: Georgia, 'Times New Roman', serif
+          - label: Times New Roman (serif)
+            value: '''Times New Roman'', Times, serif'
+          - label: Cambria (serif)
+            value: Cambria, Georgia, serif
+          - label: Constantia (serif)
+            value: Constantia, Georgia, serif
+          - label: Garamond (serif)
+            value: Garamond, 'EB Garamond', Georgia, serif
+          - label: Palatino (serif)
+            value: '''Palatino Linotype'', Palatino, ''Book Antiqua'', serif'
+          - label: Book Antiqua (serif)
+            value: '''Book Antiqua'', Palatino, serif'
+          - label: Baskerville (serif)
+            value: Baskerville, Georgia, serif
+          - label: Newsreader (serif)
+            value: '''Newsreader'', Georgia, serif'
+          - label: Source Serif (serif)
+            value: '''Source Serif 4'', Georgia, serif'
+          - label: Merriweather (serif)
+            value: '''Merriweather'', Georgia, serif'
+          - label: Lora (serif)
+            value: '''Lora'', Georgia, serif'
+          - label: Playfair Display (serif)
+            value: '''Playfair Display'', Georgia, serif'
+      - id: at-font-mono
+        title: Monospace / label font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''JetBrains Mono'', ui-monospace, monospace'
+        options:
+          - label: JetBrains Mono
+            value: '''JetBrains Mono'', ui-monospace, monospace'
+          - label: Cascadia Code
+            value: '''Cascadia Code'', ui-monospace, monospace'
+          - label: Cascadia Mono
+            value: '''Cascadia Mono'', ui-monospace, monospace'
+          - label: Consolas
+            value: Consolas, ui-monospace, monospace
+          - label: SF Mono / system
+            value: ui-monospace, SFMono-Regular, Menlo, monospace
+          - label: Menlo
+            value: Menlo, Monaco, monospace
+          - label: Monaco
+            value: Monaco, Menlo, monospace
+          - label: Fira Code
+            value: '''Fira Code'', ui-monospace, monospace'
+          - label: Fira Mono
+            value: '''Fira Mono'', ui-monospace, monospace'
+          - label: Source Code Pro
+            value: '''Source Code Pro'', ui-monospace, monospace'
+          - label: IBM Plex Mono
+            value: '''IBM Plex Mono'', ui-monospace, monospace'
+          - label: Roboto Mono
+            value: '''Roboto Mono'', ui-monospace, monospace'
+          - label: Courier New
+            value: '''Courier New'', Courier, monospace'
+          - label: Lucida Console
+            value: '''Lucida Console'', Monaco, monospace'
+      - id: file-line-width
+        title: Note width (readable line length)
+        type: variable-number-slider
+        default: 760
+        min: 500
+        max: 1600
+        step: 20
+        format: px
+      - id: font-text-size
+        title: Body font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 22
+        step: 1
+        format: px
+      - id: line-height-normal
+        title: Line height
+        type: variable-number-slider
+        default: 1.6
+        min: 1.2
+        max: 2.2
+        step: 0.05
+      - id: bold-weight
+        title: Bold weight
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 900
+        step: 100
+      - id: nav-item-size
+        title: Sidebar font size
+        type: variable-number-slider
+        default: 14
+        min: 11
+        max: 18
+        step: 1
+        format: px
+      - id: inline-title-size
+        title: Inline title size
+        type: variable-number-slider
+        default: 42
+        min: 24
+        max: 64
+        step: 1
+        format: px
+      - id: h1-size
+        title: H1 size
+        type: variable-number-slider
+        default: 2
+        min: 1.2
+        max: 3
+        step: 0.05
+        format: em
+      - id: h2-size
+        title: H2 size
+        type: variable-number-slider
+        default: 1.55
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+      - id: h3-size
+        title: H3 size
+        type: variable-number-slider
+        default: 1.3
+        min: 1
+        max: 2
+        step: 0.05
+        format: em
+      - id: at-variants-heading
+        title: 🧩 Element style variants
+        type: heading
+        level: 1
+        collapsed: true
+      - id: at-card-default
+        title: Default card style
+        description: Style for a bare > [!card]. Override any card inline, e.g. > [!card|profile] or > [!card|honor]. Combine surfaces (dark / accent) and spans (span2 / spanfull). Wrap cards in > [!grid] to flow them into columns.
+        type: class-select
+        allowEmpty: false
+        default: at-card-plain
+        options:
+          - label: Plain card
+            value: at-card-plain
+          - label: Skill / numbered steps
+            value: at-card-skill
+          - label: Section (roman column)
+            value: at-card-section
+          - label: Step
+            value: at-card-step
+          - label: Profile
+            value: at-card-profile
+          - label: Honor (dark)
+            value: at-card-honor
+          - label: Channels (dark)
+            value: at-card-channels
+          - label: Hero / CTA
+            value: at-card-hero
+      - id: at-card-min
+        title: Card grid — min card width
+        description: Cards inside > [!grid] flow into as many columns as fit at this minimum width.
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 480
+        step: 10
+        format: px
+      - id: at-infobox-default
+        title: Default infobox style
+        description: Style for a bare > [!infobox]. Override inline with |v1 … |v3. Add |left to float left.
+        type: class-select
+        allowEmpty: false
+        default: at-ib-v1
+        options:
+          - label: v1 — Floated cream card
+            value: at-ib-v1
+          - label: v2 — Dark honor card
+            value: at-ib-v2
+          - label: v3 — Flat bordered
+            value: at-ib-v3
+      - id: at-tag-style
+        title: Tag style
+        description: How
+        type: class-select
+        allowEmpty: false
+        default: at-tag-pill
+        options:
+          - label: Pill
+            value: at-tag-pill
+          - label: Outline
+            value: at-tag-outline
+          - label: Mono caps
+            value: at-tag-mono
+          - label: Underline
+            value: at-tag-underline
+      - id: at-heading-style
+        title: Heading style
+        description: Decoration for h1–h3. Italic words inside headings always show the coral emphasis.
+        type: class-select
+        allowEmpty: false
+        default: at-head-serif
+        options:
+          - label: Serif display (thin coral rule)
+            value: at-head-serif
+          - label: Mono caps labels
+            value: at-head-mono
+          - label: Underlined
+            value: at-head-underline
+          - label: Plain
+            value: at-head-plain
+      - id: at-editorial-heading
+        title: ✒️ Editorial & polish
+        type: heading
+        level: 1
+        collapsed: true
+      - id: at-heading-letter-spacing
+        title: Heading letter spacing
+        type: variable-number-slider
+        default: -0.01
+        min: -0.05
+        max: 0.1
+        step: 0.005
+        format: em
+      - id: at-para-spacing
+        title: Paragraph spacing
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 28
+        step: 1
+        format: px
+      - id: at-radius
+        title: Corner radius
+        type: variable-number-slider
+        default: 12
+        min: 0
+        max: 24
+        step: 1
+        format: px
+      - id: at-heading-align
+        title: Default heading alignment
+        description: Per-heading "#center /
+        type: class-select
+        allowEmpty: false
+        default: at-halign-left
+        options:
+          - label: Left
+            value: at-halign-left
+          - label: Center
+            value: at-halign-center
+          - label: Right
+            value: at-halign-right
+      - id: at-features-heading
+        title: ⚙️ Features & motion
+        type: heading
+        level: 1
+        collapsed: true
+      - id: at-no-anim
+        title: Disable animations
+        description: Turn off entrance + hover motion (also respects OS reduced-motion).
+        type: class-toggle
+        addCommand: true
+      - id: at-scroll-reveal
+        title: Scroll reveal
+        description: Headings, callouts and quotes fade-rise as they scroll into view.
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: at-active-line
+        title: Highlight active line (editor)
+        type: class-toggle
+        addCommand: true
+      - id: at-infobox-width
+        title: Infobox width
+        type: variable-number-slider
+        default: 300
+        min: 200
+        max: 460
+        step: 10
+        format: px
+      - id: callout-min-width
+        title: Multi-column — min sub-callout width
+        type: variable-number-slider
+        default: 200
+        min: 100
+        max: 500
+        step: 20
+        format: px
+      - id: at-grad-color
+        title: Gradient-text color (.at-gradient)
+        description: The .at-gradient class is a single accent colour here (it's a gradient in MyWiki Glass). Use <span class="at-gradient">…</span>.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d8552f'
+        default-dark: '#e8714c'
+        alt-format: []

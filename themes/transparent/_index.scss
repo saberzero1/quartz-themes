@@ -2422,7 +2422,7 @@ body {
     margin-inline-end: 8px;
     margin-inline-start: calc(var(--checkbox-size) * -1.5);
     width: var(--checkbox-size);
-    transition: box-shadow 0.15s ease-in-out;
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
     position: relative;
     top: auto;
   }
@@ -2444,111 +2444,111 @@ body {
   }
 
   li.task-list-item[data-task="-"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task=">"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="/"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="?"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="!"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="*"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="l"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="b"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="i"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="S"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="I"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="p"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="c"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="f"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="k"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="u"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="d"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   li.task-list-item[data-task="w"] {
-    color: rgb(34, 34, 34);
-    text-decoration: none;
-    text-decoration-color: rgb(34, 34, 34);
+    color: rgb(92, 92, 92);
+    text-decoration: line-through rgb(92, 92, 92);
+    text-decoration-color: var(--text-muted);
   }
 
   blockquote {
@@ -4516,6 +4516,341 @@ body {
 
   .binder-tab.binder-tab-active {
     border-color: rgb(34, 34, 34);
+  }
+
+  li.task-list-item[data-task="_"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task=","] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task=";"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task=":"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="."] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="'"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="@"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="&"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="#"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="%"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="`"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="+"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="<"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="="] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="|"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="~"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="$"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="0"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="1"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="2"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="3"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="4"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="5"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="6"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="7"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="8"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="9"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="a"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="A"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="B"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="C"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="D"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="e"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="E"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="F"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="g"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="G"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="h"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="H"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="j"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="J"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="K"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="L"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="m"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="M"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="n"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="N"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="o"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="O"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="P"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="q"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="Q"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="r"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="R"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="s"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="t"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="T"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="U"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="v"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="V"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="W"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="x"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="X"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="y"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="Y"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="z"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
+  }
+
+  li.task-list-item[data-task="Z"] {
+    text-decoration-line: line-through;
+    color: rgb(92, 92, 92);
   }
 
   html {
@@ -7103,7 +7438,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 8px;
       margin-inline-start: calc(var(--checkbox-size) * -1.5);
       width: var(--checkbox-size);
-      transition: box-shadow 0.15s ease-in-out;
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
       position: relative;
       top: auto;
     }
@@ -7125,111 +7460,111 @@ html[saved-theme="dark"] {
     }
 
     li.task-list-item[data-task="-"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task=">"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="/"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="?"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="!"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="*"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="l"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="b"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="i"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="S"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="I"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="p"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="c"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="f"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="k"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="u"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="d"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     li.task-list-item[data-task="w"] {
-      color: rgb(218, 218, 218);
-      text-decoration: none;
-      text-decoration-color: rgb(218, 218, 218);
+      color: rgb(179, 179, 179);
+      text-decoration: line-through rgb(179, 179, 179);
+      text-decoration-color: var(--text-muted);
     }
 
     blockquote {
@@ -9197,6 +9532,341 @@ html[saved-theme="dark"] {
 
     .binder-tab.binder-tab-active {
       border-color: rgb(218, 218, 218);
+    }
+
+    li.task-list-item[data-task="_"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task=","] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task=";"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task=":"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="."] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="'"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="@"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="&"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="#"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="%"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="`"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="+"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="<"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="="] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="|"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="~"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="$"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="0"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="1"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="2"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="3"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="4"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="5"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="6"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="7"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="8"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="9"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="a"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="A"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="B"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="C"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="D"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="e"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="E"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="F"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="g"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="G"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="h"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="H"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="j"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="J"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="K"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="L"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="m"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="M"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="n"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="N"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="o"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="O"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="P"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="q"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="Q"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="r"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="R"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="s"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="t"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="T"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="U"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="v"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="V"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="W"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="x"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="X"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="y"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="Y"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="z"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
+    }
+
+    li.task-list-item[data-task="Z"] {
+      text-decoration-line: line-through;
+      color: rgb(179, 179, 179);
     }
 
     html {

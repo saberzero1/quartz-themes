@@ -12,66 +12,66 @@
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: var(--color-red);
+  --callout-bug: var(--everforest-light-red);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: var(--color-blue);
-  --callout-error: var(--color-red);
-  --callout-example: var(--color-purple);
-  --callout-fail: var(--color-red);
-  --callout-important: var(--color-cyan);
-  --callout-info: var(--color-blue);
+  --callout-default: var(--everforest-light-blue);
+  --callout-error: var(--everforest-light-red);
+  --callout-example: var(--everforest-light-purple);
+  --callout-fail: var(--everforest-light-red);
+  --callout-important: var(--everforest-light-purple);
+  --callout-info: var(--everforest-light-blue);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange);
-  --callout-quote: 158, 158, 158;
+  --callout-question: var(--everforest-light-dim-aqua);
+  --callout-quote: var(--everforest-grey2-light);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green);
-  --callout-summary: var(--color-cyan);
-  --callout-tip: var(--color-cyan);
+  --callout-success: var(--everforest-light-green);
+  --callout-summary: var(--everforest-light-blue);
+  --callout-tip: var(--everforest-light-aqua);
   --callout-title-padding: 0;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue);
-  --callout-warning: var(--color-orange);
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --callout-todo: var(--everforest-grey1-light);
+  --callout-warning: var(--everforest-light-yellow);
+  --checkbox-border-color: var(--everforest-light-blue) !important;
+  --checkbox-border-color-hover: var(--everforest-light-dim-aqua) !important;
+  --checkbox-color: var(--everforest-light-blue) !important;
+  --checkbox-color-hover: var(--everforest-light-dim-aqua) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--everforest-bg1-light) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted) !important;
+  --code-comment: var(--everforest-grey1-light) !important;
+  --code-function: var(--everforest-light-blue) !important;
+  --code-important: var(--everforest-light-orange) !important;
+  --code-keyword: var(--everforest-light-purple) !important;
+  --code-normal: var(--everforest-fg-light) !important;
+  --code-operator: var(--everforest-light-aqua) !important;
+  --code-property: var(--everforest-light-green) !important;
+  --code-punctuation: var(--everforest-grey2-light) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
+  --code-string: var(--everforest-light-dim-green) !important;
+  --code-tag: var(--everforest-light-red) !important;
+  --code-value: var(--everforest-light-yellow) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal) !important;
-  --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent) !important;
+  --graph-line: var(--everforest-bg5-light) !important;
+  --graph-node: var(--everforest-light-aqua) !important;
+  --graph-node-attachment: var(--everforest-light-purple) !important;
+  --graph-node-focused: var(--everforest-light-green) !important;
+  --graph-node-tag: var(--everforest-light-yellow) !important;
+  --graph-node-unresolved: var(--everforest-light-blue) !important;
+  --graph-text: var(--everforest-light-dim-aqua) !important;
+  --icon-color: var(--everforest-grey2-light) !important;
+  --icon-color-active: var(--everforest-light-aqua) !important;
   --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: var(--text-muted) !important;
+  --icon-color-hover: var(--everforest-light-dim-aqua) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -85,7 +85,8 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-block: var(--fg-light) !important;
+  --callout-note: var(--everforest-light-blue);
+  --callout-caution: var(--everforest-light-orange);
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -99,66 +100,66 @@
   --callout-blend-mode: var(--highlight-mix-blend-mode);
   --callout-border-opacity: 0.25;
   --callout-border-width: 0px;
-  --callout-bug: var(--color-red);
+  --callout-bug: var(--everforest-dim-red);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
-  --callout-default: var(--color-blue);
-  --callout-error: var(--color-red);
-  --callout-example: var(--color-purple);
-  --callout-fail: var(--color-red);
-  --callout-important: var(--color-cyan);
-  --callout-info: var(--color-blue);
+  --callout-default: var(--everforest-dim-blue);
+  --callout-error: var(--everforest-dim-red);
+  --callout-example: var(--everforest-dim-purple);
+  --callout-fail: var(--everforest-dim-red);
+  --callout-important: var(--everforest-dim-purple);
+  --callout-info: var(--everforest-dim-blue);
   --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-  --callout-question: var(--color-orange);
-  --callout-quote: 158, 158, 158;
+  --callout-question: var(--everforest-faded-aqua);
+  --callout-quote: var(--everforest-grey2-dark);
   --callout-radius: var(--radius-s);
-  --callout-success: var(--color-green);
-  --callout-summary: var(--color-cyan);
-  --callout-tip: var(--color-cyan);
+  --callout-success: var(--everforest-dim-green);
+  --callout-summary: var(--everforest-dim-blue);
+  --callout-tip: var(--everforest-dim-aqua);
   --callout-title-padding: 0;
   --callout-title-weight: calc(var(--font-weight) + var(--bold-modifier));
-  --callout-todo: var(--color-blue);
-  --callout-warning: var(--color-orange);
-  --checkbox-border-color: var(--text-faint) !important;
-  --checkbox-border-color-hover: var(--text-muted) !important;
-  --checkbox-color: var(--interactive-accent) !important;
-  --checkbox-color-hover: var(--interactive-accent-hover) !important;
+  --callout-todo: var(--everforest-grey1-dark);
+  --callout-warning: var(--everforest-dim-yellow);
+  --checkbox-border-color: var(--everforest-faded-blue) !important;
+  --checkbox-border-color-hover: var(--everforest-faded-aqua) !important;
+  --checkbox-color: var(--everforest-faded-blue) !important;
+  --checkbox-color-hover: var(--everforest-faded-aqua) !important;
   --checkbox-margin-inline-start: 0.85em !important;
   --checkbox-marker-color: var(--background-primary) !important;
   --checkbox-radius: var(--radius-s) !important;
   --checkbox-size: var(--font-text-size) !important;
-  --code-background: var(--background-primary-alt) !important;
+  --code-background: var(--everforest-bg1-dark) !important;
   --code-border-color: var(--background-modifier-border) !important;
   --code-border-width: 0px !important;
   --code-bracket-background: var(--background-modifier-hover) !important;
-  --code-comment: var(--text-faint) !important;
-  --code-function: var(--color-yellow) !important;
-  --code-important: var(--color-orange) !important;
-  --code-keyword: var(--color-pink) !important;
-  --code-normal: var(--text-normal) !important;
-  --code-operator: var(--color-red) !important;
-  --code-property: var(--color-cyan) !important;
-  --code-punctuation: var(--text-muted) !important;
+  --code-comment: var(--everforest-grey1-dark) !important;
+  --code-function: var(--everforest-faded-blue) !important;
+  --code-important: var(--everforest-faded-orange) !important;
+  --code-keyword: var(--everforest-faded-purple) !important;
+  --code-normal: var(--everforest-fg-dark) !important;
+  --code-operator: var(--everforest-faded-aqua) !important;
+  --code-property: var(--everforest-faded-green) !important;
+  --code-punctuation: var(--everforest-grey2-dark) !important;
   --code-radius: var(--radius-s) !important;
   --code-size: var(--font-smaller) !important;
-  --code-string: var(--color-green) !important;
-  --code-tag: var(--color-red) !important;
-  --code-value: var(--color-purple) !important;
+  --code-string: var(--everforest-faded-green) !important;
+  --code-tag: var(--everforest-dim-red) !important;
+  --code-value: var(--everforest-faded-yellow) !important;
   --code-white-space: pre-wrap !important;
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
-  --graph-node: var(--text-muted) !important;
-  --graph-node-attachment: var(--color-yellow) !important;
-  --graph-node-focused: var(--text-accent) !important;
-  --graph-node-tag: var(--color-green) !important;
-  --graph-node-unresolved: var(--text-faint) !important;
-  --graph-text: var(--text-normal) !important;
-  --icon-color: var(--text-muted) !important;
-  --icon-color-active: var(--text-accent) !important;
+  --graph-line: var(--everforest-bg5-dark) !important;
+  --graph-node: var(--everforest-dim-aqua) !important;
+  --graph-node-attachment: var(--everforest-dim-purple) !important;
+  --graph-node-focused: var(--everforest-faded-green) !important;
+  --graph-node-tag: var(--everforest-dim-yellow) !important;
+  --graph-node-unresolved: var(--everforest-faded-blue) !important;
+  --graph-text: var(--everforest-faded-aqua) !important;
+  --icon-color: var(--everforest-grey2-dark) !important;
+  --icon-color-active: var(--everforest-faded-aqua) !important;
   --icon-color-focused: var(--text-normal) !important;
-  --icon-color-hover: var(--text-muted) !important;
+  --icon-color-hover: var(--everforest-dim-aqua) !important;
   --icon-l: 18px !important;
   --icon-l-stroke-width: 1.75px !important;
   --icon-m: 18px !important;
@@ -172,7 +173,8 @@
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
-  --code-block: var(--fg-dark) !important;
+  --callout-note: var(--everforest-dim-blue);
+  --callout-caution: var(--everforest-dim-orange);
 
   --font-interface-override: "??";
   --font-text-override: "??";
@@ -183,14 +185,14 @@
 
 html[saved-theme="light"] body {
   --qt-code-header: rgb(248, 85, 82);
-  --qt-code-default: rgb(92, 92, 92);
-  --qt-code-background: rgb(253, 246, 227);
+  --qt-code-default: rgb(135, 150, 134);
+  --qt-code-background: rgb(246, 241, 221);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 html[saved-theme="dark"] body {
   --qt-code-header: rgb(218, 99, 98);
-  --qt-code-default: rgb(179, 179, 179);
-  --qt-code-background: rgb(47, 56, 62);
+  --qt-code-default: rgb(154, 167, 157);
+  --qt-code-background: rgb(39, 47, 52);
   --qt-code-border-color: rgba(0, 0, 0, 0);
 }
 
@@ -434,6 +436,14 @@ html {
   src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Monaco"),
+    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
+}
 
 @font-face {
   font-family: "Cascadia Mono";
@@ -491,14 +501,6 @@ html {
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Monaco";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Monaco"),
-    url("https://fonts.cdnfonts.com/s/14106/Monaco.woff") format("woff");
 }
 
 body {
@@ -608,7 +610,7 @@ body {
 
   .note-properties-table {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -623,7 +625,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -643,7 +645,7 @@ body {
 
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -658,7 +660,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -678,14 +680,14 @@ body {
   }
 
   .metadata-property-key {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family: var(--metadata-label-font);
     font-size: 16px;
     font-weight: 400;
   }
 
   .metadata-property-value {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family: var(--metadata-input-font);
     font-size: 16px;
   }
@@ -697,26 +699,26 @@ body {
   }
 
   .note-properties-key {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-weight: 400;
   }
 
   .note-properties-value {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
   }
 
   .note-properties-link {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
   }
 
   .note-properties-tags {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border-radius: 28px;
+    border-radius: 8px;
   }
 
   .note-properties-row {
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
   }
 
   ol.overflow {
@@ -751,9 +753,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(164, 187, 74) none 0px;
+    outline: rgb(90, 147, 162) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(164, 187, 74);
+    text-decoration-color: rgb(90, 147, 162);
     text-decoration-line: var(--link-external-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -793,9 +795,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(164, 187, 74) none 0px;
+    outline: rgb(108, 179, 198) none 0px;
     text-decoration: underline;
-    text-decoration-color: rgb(164, 187, 74);
+    text-decoration-color: rgb(108, 179, 198);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -834,8 +836,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: var(--link-weight);
-    outline: rgb(164, 187, 74) none 0px;
-    text-decoration: underline oklch(0.889446 0.0258559 97.0519 / 0.3);
+    outline: rgb(90, 147, 162) none 0px;
+    text-decoration: underline oklch(0.751404 0.104627 160.375 / 0.3);
     text-decoration-color: var(--link-unresolved-decoration-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: var(--link-unresolved-decoration-style);
@@ -931,9 +933,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 400;
-    outline: rgb(92, 92, 92) none 0px;
+    outline: rgb(135, 150, 134) none 0px;
     text-decoration: rgb(34, 34, 34);
-    text-decoration-color: rgb(92, 92, 92);
+    text-decoration-color: rgb(135, 150, 134);
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
@@ -1382,11 +1384,11 @@ body {
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
-    border: 0px solid oklch(0.889446 0.0258559 97.0519 / 0.15);
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
+    border: 0px solid rgb(110, 195, 152);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -1394,11 +1396,11 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: rgb(164, 187, 74);
+    color: rgb(108, 179, 198);
   }
 
   .search > .search-button {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 239, 218);
     border: 1px solid rgb(223, 219, 200);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1436,7 +1438,7 @@ body {
   }
 
   .search > .search-container > .search-space > input {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 239, 218);
     border: 1px solid rgb(223, 219, 200);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -1522,7 +1524,7 @@ body {
   }
 
   .search > .search-container > .search-space > .search-layout > .preview-container {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
   }
@@ -1539,7 +1541,7 @@ body {
   }
 
   h1 {
-    color: var(--text-title-h1);
+    color: var(--h1-color);
     font-family: var(--h1-font);
     font-size: var(--h1-size);
     font-weight: var(--font-weight);
@@ -1573,7 +1575,7 @@ body {
   }
 
   h2 {
-    color: var(--text-title-h2);
+    color: var(--h2-color);
     font-family: var(--h2-font);
     font-size: var(--h2-size);
     font-weight: var(--font-weight);
@@ -1607,7 +1609,7 @@ body {
   }
 
   h3 {
-    color: var(--text-title-h3);
+    color: var(--h3-color);
     font-family: var(--h3-font);
     font-size: var(--h3-size);
     font-weight: var(--font-weight);
@@ -1641,7 +1643,7 @@ body {
   }
 
   h4 {
-    color: var(--text-title-h4);
+    color: var(--h4-color);
     font-family: var(--h4-font);
     font-size: var(--h4-size);
     font-weight: var(--font-weight);
@@ -1675,7 +1677,7 @@ body {
   }
 
   h5 {
-    color: var(--text-title-h5);
+    color: var(--h5-color);
     font-family: var(--h5-font);
     font-size: var(--h5-size);
     font-weight: var(--font-weight);
@@ -1709,7 +1711,7 @@ body {
   }
 
   h6 {
-    color: var(--text-title-h6);
+    color: var(--h6-color);
     font-family: var(--h6-font);
     font-size: var(--h6-size);
     font-weight: var(--font-weight);
@@ -1751,7 +1753,7 @@ body {
     line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: -0.38832px;
+    letter-spacing: -0.51px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1760,7 +1762,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 12.944px;
+    margin: 0px 0px 17px;
     margin-block-end: var(--inline-title-margin-bottom);
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2115,7 +2117,7 @@ body {
   }
 
   .preview-container {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-weight: 400;
     background-color: rgba(0, 0, 0, 0);
   }
@@ -2307,7 +2309,7 @@ body {
   }
 
   code {
-    background-color: var(--pre-code);
+    background-color: var(--code-background);
     border: 0px solid rgb(223, 219, 200);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -2317,19 +2319,19 @@ body {
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--inline-code);
+    color: var(--code-normal);
     font-family: var(--font-monospace);
-    padding: 2.16px 4.32px;
-    padding-block-end: 2.16px;
-    padding-block-start: 2.16px;
-    padding-inline-end: 4.32px;
-    padding-inline-start: 4.32px;
+    padding: 2.1px 4.2px;
+    padding-block-end: 2.1px;
+    padding-block-start: 2.1px;
+    padding-inline-end: 4.2px;
+    padding-inline-start: 4.2px;
   }
 
   pre > code,
   pre:has(> code) {
     background-color: var(--code-background);
-    border: 0px solid rgb(223, 219, 200);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2340,18 +2342,18 @@ body {
     border-end-end-radius: 0px;
     color: rgb(92, 106, 114);
     overflow-x: visible;
-    padding: 12px 16px;
-    padding-block-end: 12px;
-    padding-block-start: 12px;
-    padding-inline-end: 16px;
-    padding-inline-start: 16px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   figure[data-rehype-pretty-code-figure] {
     background-color: var(--code-background);
-    border: 0px solid rgb(223, 219, 200);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2366,7 +2368,7 @@ body {
     background-color: var(--code-background);
     color: rgb(92, 106, 114);
     font-family: monospace;
-    border: 0px solid rgb(223, 219, 200);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2379,17 +2381,17 @@ body {
 
   pre > code > [data-line] {
     background-color: var(--code-background);
-    border-left: 0px solid rgb(223, 219, 200);
+    border-left: 0px solid rgba(0, 0, 0, 0);
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: var(--code-background);
-    border-left-color: rgb(223, 219, 200);
+    border-left-color: rgba(0, 0, 0, 0);
   }
 
   pre > code [data-highlighted-chars] {
     background-color: var(--code-background);
-    border: 0px solid rgb(223, 219, 200);
+    border: 0px solid rgba(0, 0, 0, 0);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2402,7 +2404,7 @@ body {
 
   input[type="checkbox"] {
     appearance: auto;
-    border: 1px solid rgb(127, 187, 179);
+    border: 1px solid rgb(90, 147, 162);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2553,7 +2555,7 @@ body {
 
   blockquote {
     background-color: var(--blockquote-background-color);
-    border-inline-start: 2px solid rgb(223, 219, 200);
+    border-inline-start: 2px solid rgb(90, 147, 162);
     color: var(--blockquote-color);
     font-family:
       ui-sans-serif,
@@ -2632,7 +2634,7 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(92, 92, 92);
+    border: 0px solid rgb(135, 150, 134);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -2807,7 +2809,7 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -2859,15 +2861,15 @@ body {
   ul.tags > li {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border: 0px solid oklch(0.889446 0.0258559 97.0519 / 0.15);
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    border-bottom-left-radius: 28px;
-    border-bottom-right-radius: 28px;
+    border: 0px solid rgb(110, 195, 152);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
   li.task-list-item input[type="checkbox"] {
-    border-color: rgb(147, 159, 145);
+    border-color: rgb(90, 147, 162);
     border-radius: 4px;
     border-width: 1px;
     background-color: rgba(0, 0, 0, 0);
@@ -2875,7 +2877,7 @@ body {
 
   li.task-list-item input[type="checkbox"]:checked {
     background-color: var(--checkbox-color);
-    border-color: rgb(223, 219, 200);
+    border-color: rgb(90, 147, 162);
   }
 
   footer {
@@ -2966,7 +2968,7 @@ body {
 
   .callout {
     --callout-color: var(--callout-default);
-    border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -2984,10 +2986,10 @@ body {
   }
 
   .callout .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3027,10 +3029,10 @@ body {
     --callout-color: var(--callout-default);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3042,10 +3044,10 @@ body {
   }
 
   .callout[data-callout="note"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3085,10 +3087,10 @@ body {
     --callout-color: var(--callout-summary);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.727476 0.124634 192.763 / 0.25);
+    border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3100,10 +3102,10 @@ body {
   }
 
   .callout[data-callout="abstract"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3143,10 +3145,10 @@ body {
     --callout-color: var(--callout-info);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3158,10 +3160,10 @@ body {
   }
 
   .callout[data-callout="info"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3201,10 +3203,10 @@ body {
     --callout-color: var(--callout-todo);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.550587 0.189745 256.787 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.688777 0.024328 141.134 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.550587 0.189745 256.787 / 0.25);
+    border: 0px solid oklch(0.688777 0.024328 141.134 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3216,10 +3218,10 @@ body {
   }
 
   .callout[data-callout="todo"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3259,10 +3261,10 @@ body {
     --callout-color: var(--callout-tip);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.727476 0.124634 192.763 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.639073 0.0908375 160.202 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.727476 0.124634 192.763 / 0.25);
+    border: 0px solid oklch(0.639073 0.0908375 160.202 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3274,10 +3276,10 @@ body {
   }
 
   .callout[data-callout="tip"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3317,10 +3319,10 @@ body {
     --callout-color: var(--callout-success);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.686205 0.194562 148.477 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.658344 0.119895 119.593 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.686205 0.194562 148.477 / 0.25);
+    border: 0px solid oklch(0.658344 0.119895 119.593 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3332,10 +3334,10 @@ body {
   }
 
   .callout[data-callout="success"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3375,10 +3377,10 @@ body {
     --callout-color: var(--callout-question);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.751404 0.104627 160.375 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.688771 0.175867 52.5446 / 0.25);
+    border: 0px solid oklch(0.751404 0.104627 160.375 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3390,10 +3392,10 @@ body {
   }
 
   .callout[data-callout="question"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3433,10 +3435,10 @@ body {
     --callout-color: var(--callout-warning);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.688771 0.175867 52.5446 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.698899 0.117187 85.3719 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.688771 0.175867 52.5446 / 0.25);
+    border: 0px solid oklch(0.698899 0.117187 85.3719 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3448,10 +3450,10 @@ body {
   }
 
   .callout[data-callout="warning"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3491,10 +3493,10 @@ body {
     --callout-color: var(--callout-error);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.670677 0.199637 25.2058 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border: 0px solid oklch(0.670677 0.199637 25.2058 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3506,10 +3508,10 @@ body {
   }
 
   .callout[data-callout="danger"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3549,10 +3551,10 @@ body {
     --callout-color: var(--callout-fail);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.670677 0.199637 25.2058 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border: 0px solid oklch(0.670677 0.199637 25.2058 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3564,10 +3566,10 @@ body {
   }
 
   .callout[data-callout="failure"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3607,10 +3609,10 @@ body {
     --callout-color: var(--callout-bug);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.611475 0.216957 20.8417 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.670677 0.199637 25.2058 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.611475 0.216957 20.8417 / 0.25);
+    border: 0px solid oklch(0.670677 0.199637 25.2058 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3622,10 +3624,10 @@ body {
   }
 
   .callout[data-callout="bug"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3665,10 +3667,10 @@ body {
     --callout-color: var(--callout-example);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.567895 0.221884 288.456 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.655947 0.0878998 345.297 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.567895 0.221884 288.456 / 0.25);
+    border: 0px solid oklch(0.655947 0.0878998 345.297 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3680,10 +3682,10 @@ body {
   }
 
   .callout[data-callout="example"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3723,10 +3725,10 @@ body {
     --callout-color: var(--callout-quote);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: oklch(0.656372 0.0289769 143.463 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(92, 106, 114);
     mix-blend-mode: normal;
-    border: 0px solid oklch(0.699256 0.0000347234 none / 0.25);
+    border: 0px solid oklch(0.656372 0.0289769 143.463 / 0.25);
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -3738,10 +3740,10 @@ body {
   }
 
   .callout[data-callout="quote"] .callout-title {
-    --callout-color: #086ddd;
+    --callout-color: #5a93a2;
     color: var(--callout-color);
     gap: 4px;
-    border: 0px rgb(8, 109, 221);
+    border: 0px rgb(90, 147, 162);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3836,7 +3838,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     border: 0px rgb(128, 128, 128);
-    border-bottom: 2px solid rgb(223, 219, 200);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3937,7 +3938,6 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     border: 0px rgb(128, 128, 128);
-    border-bottom: 0px rgb(223, 219, 200);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4088,7 +4088,7 @@ body {
     color: rgb(92, 106, 114);
     border-radius: 0px;
     border-color: rgb(92, 106, 114);
-    border-left: 2px solid rgb(223, 219, 200);
+    border-left: 2px solid rgb(110, 195, 152);
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;
@@ -4101,11 +4101,11 @@ body {
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 0px 10px;
+    padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
-    padding-inline-end: 10px;
-    padding-inline-start: 10px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   .transclude-inner {
@@ -4119,11 +4119,11 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 0px 10px;
+    margin: 0px;
     margin-block-end: 0px;
     margin-block-start: 0px;
-    margin-inline-end: 10px;
-    margin-inline-start: 10px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -4132,12 +4132,12 @@ body {
   }
 
   .transclude ul {
-    padding-left: 10px;
+    padding-left: 0px;
     color: rgb(92, 106, 114);
   }
 
   .nav-files-container .nav-file-title {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4171,12 +4171,12 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
   }
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
@@ -4223,12 +4223,12 @@ body {
   }
 
   .nav-files-container .tree-item-children {
-    border-left: 1px solid oklch(0 0 none / 0.12);
-    border-inline-start: 1px solid oklch(0 0 none / 0.12);
+    border-left: 1px solid rgb(90, 147, 162);
+    border-inline-start: 1px solid rgb(90, 147, 162);
   }
 
   .explorer .folder-container > div {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4282,7 +4282,7 @@ body {
 
   .bases-card {
     background-color: rgba(0, 0, 0, 0);
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-radius: 0px;
   }
 
@@ -4314,7 +4314,7 @@ body {
 
   .canvas-controls button {
     background-color: var(--background-primary);
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     color: var(--text-muted);
   }
 
@@ -4344,7 +4344,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
     cursor: var(--cursor);
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -4362,7 +4362,7 @@ body {
   }
 
   footer ul li a {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-size: 12px;
     font-weight: 400;
   }
@@ -4402,7 +4402,7 @@ body {
   }
 
   .recent-notes > ul.recent-ul > li .section > .meta {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4444,7 +4444,7 @@ body {
   }
 
   li.section-li > .section .meta {
-    color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
     font-family:
       ui-sans-serif,
       -apple-system,
@@ -4465,7 +4465,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--icon-color);
     cursor: var(--cursor);
-    border-color: rgb(92, 92, 92);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -4474,14 +4474,14 @@ body {
   }
 
   .darkmode svg {
-    stroke: rgb(92, 92, 92);
-    color: rgb(92, 92, 92);
+    stroke: rgb(135, 150, 134);
+    color: rgb(135, 150, 134);
   }
 
   .breadcrumb-container {
     background-color: rgba(0, 0, 0, 0);
-    color: rgb(92, 92, 92);
-    border-color: rgb(92, 92, 92);
+    color: rgb(135, 150, 134);
+    border-color: rgb(135, 150, 134);
     border-width: 0px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -4764,6 +4764,14 @@ body {
     color: rgb(92, 106, 114);
   }
 
+  li.task-list-item[data-task="x"] {
+    color: rgb(135, 150, 134);
+  }
+
+  li.task-list-item[data-task="X"] {
+    color: rgb(135, 150, 134);
+  }
+
   li.task-list-item[data-task="y"] {
     color: rgb(92, 106, 114);
   }
@@ -4781,68 +4789,68 @@ body {
   }
 
   html {
-    --bg_blue: #394f5a;
-    --bg_blue_light: #e9f0e9;
-    --bg_green: #404d44;
-    --bg_green_light: #f0f1d2;
-    --bg_red: #4e3e43;
-    --bg_red_light: #fbe3da;
-    --bg_visual: #503946;
-    --bg_visual_light: #eaedc8;
-    --bg_yellow: #4a4940;
-    --bg_yellow_light: #faedcd;
-    --bg-dark: #2f383e;
-    --bg-light: #fdf6e3;
-    --bg0-dark: #22282c;
-    --bg0-light: #f0edd8;
-    --bg1-dark: #272f34;
-    --bg1-light: #f6f1dd;
-    --bg2-dark: #374247;
-    --bg2-light: #f3efda;
-    --bg3-dark: #404c51;
-    --bg3-light: #edead5;
-    --bg4-dark: #4a555b;
-    --bg4-light: #e4e1cd;
-    --bg5-dark: #525c62;
-    --bg5-light: #dfdbc8;
-    --dim-aqua: #569d79;
-    --dim-blue: #5a93a2;
-    --dim-green: #899c40;
-    --dim-orange: #d77f48;
-    --dim-purple: #b87b9d;
-    --dim-red: #da6362;
-    --dim-yellow: #bf983d;
-    --faded-aqua: #83c092;
-    --faded-blue: #7fbbb3;
-    --faded-green: #a7c080;
-    --faded-orange: #e69875;
-    --faded-purple: #d699b6;
-    --faded-red: #e67e80;
-    --faded-yellow: #dbbc7f;
-    --fg-dark: #d3c6aa;
-    --fg-light: #5c6a72;
-    --grey0-dark: #7f897d;
-    --grey0-light: #a4ad9e;
-    --grey1-dark: #859289;
-    --grey1-light: #939f91;
-    --grey2-dark: #9aa79d;
-    --grey2-light: #879686;
-    --light-aqua: #569d79;
-    --light-blue: #5a93a2;
-    --light-dim-aqua: #6ec398;
-    --light-dim-blue: #6cb3c6;
-    --light-dim-green: #a4bb4a;
-    --light-dim-orange: #f39459;
-    --light-dim-purple: #e092be;
-    --light-dim-red: #f1706f;
-    --light-dim-yellow: #e4b649;
-    --light-green: #899c40;
-    --light-orange: #f57d26;
-    --light-purple: #b87b9d;
-    --light-red: #f85552;
-    --light-yellow: #bf983d;
-    --shadow: #00000070;
-    --shadow-light: #3c474d20;
+    --everforest-bg-blue-dark: #394f5a;
+    --everforest-bg-blue-light: #e9f0e9;
+    --everforest-bg-dark: #2f383e;
+    --everforest-bg-green-dark: #404d44;
+    --everforest-bg-green-light: #f0f1d2;
+    --everforest-bg-light: #fdf6e3;
+    --everforest-bg-red-dark: #4e3e43;
+    --everforest-bg-red-light: #fbe3da;
+    --everforest-bg-visual-dark: #503946;
+    --everforest-bg-visual-light: #eaedc8;
+    --everforest-bg-yellow-dark: #4a4940;
+    --everforest-bg-yellow-light: #faedcd;
+    --everforest-bg0-dark: #22282c;
+    --everforest-bg0-light: #f0edd8;
+    --everforest-bg1-dark: #272f34;
+    --everforest-bg1-light: #f6f1dd;
+    --everforest-bg2-dark: #374247;
+    --everforest-bg2-light: #f3efda;
+    --everforest-bg3-dark: #404c51;
+    --everforest-bg3-light: #edead5;
+    --everforest-bg4-dark: #4a555b;
+    --everforest-bg4-light: #e4e1cd;
+    --everforest-bg5-dark: #525c62;
+    --everforest-bg5-light: #dfdbc8;
+    --everforest-dim-aqua: #569d79;
+    --everforest-dim-blue: #5a93a2;
+    --everforest-dim-green: #899c40;
+    --everforest-dim-orange: #d77f48;
+    --everforest-dim-purple: #b87b9d;
+    --everforest-dim-red: #da6362;
+    --everforest-dim-yellow: #bf983d;
+    --everforest-faded-aqua: #83c092;
+    --everforest-faded-blue: #7fbbb3;
+    --everforest-faded-green: #a7c080;
+    --everforest-faded-orange: #e69875;
+    --everforest-faded-purple: #d699b6;
+    --everforest-faded-red: #e67e80;
+    --everforest-faded-yellow: #dbbc7f;
+    --everforest-fg-dark: #d3c6aa;
+    --everforest-fg-light: #5c6a72;
+    --everforest-grey0-dark: #7f897d;
+    --everforest-grey0-light: #a4ad9e;
+    --everforest-grey1-dark: #859289;
+    --everforest-grey1-light: #939f91;
+    --everforest-grey2-dark: #9aa79d;
+    --everforest-grey2-light: #879686;
+    --everforest-light-aqua: #569d79;
+    --everforest-light-blue: #5a93a2;
+    --everforest-light-dim-aqua: #6ec398;
+    --everforest-light-dim-blue: #6cb3c6;
+    --everforest-light-dim-green: #a4bb4a;
+    --everforest-light-dim-orange: #f39459;
+    --everforest-light-dim-purple: #e092be;
+    --everforest-light-dim-red: #f1706f;
+    --everforest-light-dim-yellow: #e4b649;
+    --everforest-light-green: #899c40;
+    --everforest-light-orange: #f57d26;
+    --everforest-light-purple: #b87b9d;
+    --everforest-light-red: #f85552;
+    --everforest-light-yellow: #bf983d;
+    --everforest-shadow-dark: #00000070;
+    --everforest-shadow-light: #3c474d20;
   }
 
   --current-page-slug: attr(data-slug raw-string);
@@ -4891,7 +4899,7 @@ li.task-list-item[data-task="!"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-  background-color: rgb(236, 117, 0);
+  background-color: rgb(245, 125, 38);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
@@ -4912,7 +4920,7 @@ li.task-list-item[data-task="'"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task=""] input[type="checkbox"]::after {
-  background-color: rgb(171, 171, 171);
+  background-color: rgb(164, 173, 158);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
@@ -4926,7 +4934,7 @@ li.task-list-item[data-task="@"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="*"] input[type="checkbox"]::after {
-  background-color: rgb(224, 172, 0);
+  background-color: rgb(191, 152, 61);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
@@ -4975,7 +4983,7 @@ li.task-list-item[data-task="+"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="<"] input[type="checkbox"]::after {
-  background-color: rgb(0, 191, 188);
+  background-color: rgb(86, 157, 121);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
@@ -4989,7 +4997,7 @@ li.task-list-item[data-task="="] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task=">"] input[type="checkbox"]::after {
-  background-color: rgb(8, 109, 221);
+  background-color: rgb(90, 147, 162);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
@@ -5101,7 +5109,7 @@ li.task-list-item[data-task="A"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-  background-color: rgb(233, 49, 71);
+  background-color: rgb(248, 85, 82);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
@@ -5115,7 +5123,7 @@ li.task-list-item[data-task="B"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-  background-color: rgb(233, 49, 71);
+  background-color: rgb(248, 85, 82);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
@@ -5129,7 +5137,7 @@ li.task-list-item[data-task="C"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-  background-color: rgb(233, 49, 71);
+  background-color: rgb(248, 85, 82);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -5157,7 +5165,7 @@ li.task-list-item[data-task="E"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-  background-color: rgb(233, 49, 71);
+  background-color: rgb(248, 85, 82);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -5199,14 +5207,14 @@ li.task-list-item[data-task="H"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-  background-color: rgb(8, 109, 221);
+  background-color: rgb(90, 147, 162);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
 }
 
 li.task-list-item[data-task="I"] input[type="checkbox"]::after {
-  background-color: rgb(224, 172, 0);
+  background-color: rgb(191, 152, 61);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
@@ -5227,7 +5235,7 @@ li.task-list-item[data-task="J"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-  background-color: rgb(224, 172, 0);
+  background-color: rgb(191, 152, 61);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -5241,7 +5249,7 @@ li.task-list-item[data-task="K"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-  background-color: rgb(120, 82, 238);
+  background-color: rgb(184, 123, 157);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
@@ -5269,7 +5277,7 @@ li.task-list-item[data-task="M"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-  background-color: rgb(233, 49, 71);
+  background-color: rgb(248, 85, 82);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
@@ -5297,7 +5305,7 @@ li.task-list-item[data-task="O"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-  background-color: rgb(8, 185, 78);
+  background-color: rgb(137, 156, 64);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
@@ -5346,7 +5354,7 @@ li.task-list-item[data-task="s"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-  background-color: rgb(8, 185, 78);
+  background-color: rgb(137, 156, 64);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
@@ -5367,7 +5375,7 @@ li.task-list-item[data-task="T"] input[type="checkbox"]::after {
 }
 
 li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-  background-color: rgb(8, 185, 78);
+  background-color: rgb(137, 156, 64);
   color: rgb(0, 0, 0);
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -5598,7 +5606,7 @@ html[saved-theme="dark"] {
 
     .note-properties-table {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -5613,7 +5621,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -5633,7 +5641,7 @@ html[saved-theme="dark"] {
 
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -5648,7 +5656,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -5668,14 +5676,14 @@ html[saved-theme="dark"] {
     }
 
     .metadata-property-key {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family: var(--metadata-label-font);
       font-size: 16px;
       font-weight: 400;
     }
 
     .metadata-property-value {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family: var(--metadata-input-font);
       font-size: 16px;
     }
@@ -5687,26 +5695,26 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-key {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-weight: 400;
     }
 
     .note-properties-value {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
     }
 
     .note-properties-link {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
     }
 
     .note-properties-tags {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border-radius: 28px;
+      border-radius: 8px;
     }
 
     .note-properties-row {
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
     }
 
     ol.overflow {
@@ -5741,9 +5749,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: var(--link-weight);
-      outline: rgb(90, 147, 162) none 0px;
+      outline: rgb(127, 187, 179) none 0px;
       text-decoration: underline;
-      text-decoration-color: rgb(90, 147, 162);
+      text-decoration-color: rgb(127, 187, 179);
       text-decoration-line: var(--link-external-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -5783,9 +5791,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: var(--link-weight);
-      outline: rgb(90, 147, 162) none 0px;
+      outline: rgb(86, 157, 121) none 0px;
       text-decoration: underline;
-      text-decoration-color: rgb(90, 147, 162);
+      text-decoration-color: rgb(86, 157, 121);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -5824,7 +5832,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: var(--link-weight);
-      outline: rgb(90, 147, 162) none 0px;
+      outline: rgb(127, 187, 179) none 0px;
       text-decoration: underline oklch(0.639073 0.0908375 160.202 / 0.3);
       text-decoration-color: var(--link-unresolved-decoration-color);
       text-decoration-line: var(--link-decoration);
@@ -5921,9 +5929,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 400;
-      outline: rgb(179, 179, 179) none 0px;
+      outline: rgb(154, 167, 157) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: rgb(179, 179, 179);
+      text-decoration-color: rgb(154, 167, 157);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6372,11 +6380,11 @@ html[saved-theme="dark"] {
       line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
-      border: 0px solid oklch(0.639073 0.0908375 160.202 / 0.15);
-      border-top-left-radius: 28px;
-      border-top-right-radius: 28px;
-      border-bottom-left-radius: 28px;
-      border-bottom-right-radius: 28px;
+      border: 0px solid rgb(86, 157, 121);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -6384,11 +6392,11 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: rgb(90, 147, 162);
+      color: rgb(86, 157, 121);
     }
 
     .search > .search-button {
-      background-color: rgb(46, 46, 46);
+      background-color: rgb(55, 66, 71);
       border: 1px solid rgb(82, 92, 98);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -6426,7 +6434,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > input {
-      background-color: rgb(46, 46, 46);
+      background-color: rgb(55, 66, 71);
       border: 1px solid rgb(82, 92, 98);
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
@@ -6512,7 +6520,7 @@ html[saved-theme="dark"] {
     }
 
     .search > .search-container > .search-space > .search-layout > .preview-container {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       background-color: rgba(0, 0, 0, 0);
       font-weight: 400;
     }
@@ -6529,7 +6537,7 @@ html[saved-theme="dark"] {
     }
 
     h1 {
-      color: var(--text-title-h1);
+      color: var(--h1-color);
       font-family: var(--h1-font);
       font-size: var(--h1-size);
       font-weight: var(--font-weight);
@@ -6563,7 +6571,7 @@ html[saved-theme="dark"] {
     }
 
     h2 {
-      color: var(--text-title-h2);
+      color: var(--h2-color);
       font-family: var(--h2-font);
       font-size: var(--h2-size);
       font-weight: var(--font-weight);
@@ -6597,7 +6605,7 @@ html[saved-theme="dark"] {
     }
 
     h3 {
-      color: var(--text-title-h3);
+      color: var(--h3-color);
       font-family: var(--h3-font);
       font-size: var(--h3-size);
       font-weight: var(--font-weight);
@@ -6631,7 +6639,7 @@ html[saved-theme="dark"] {
     }
 
     h4 {
-      color: var(--text-title-h4);
+      color: var(--h4-color);
       font-family: var(--h4-font);
       font-size: var(--h4-size);
       font-weight: var(--font-weight);
@@ -6665,7 +6673,7 @@ html[saved-theme="dark"] {
     }
 
     h5 {
-      color: var(--text-title-h5);
+      color: var(--h5-color);
       font-family: var(--h5-font);
       font-size: var(--h5-size);
       font-weight: var(--font-weight);
@@ -6699,7 +6707,7 @@ html[saved-theme="dark"] {
     }
 
     h6 {
-      color: var(--text-title-h6);
+      color: var(--h6-color);
       font-family: var(--h6-font);
       font-size: var(--h6-size);
       font-weight: var(--font-weight);
@@ -6741,7 +6749,7 @@ html[saved-theme="dark"] {
       line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: -0.38832px;
+      letter-spacing: -0.51px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6750,7 +6758,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 12.944px;
+      margin: 0px 0px 17px;
       margin-block-end: var(--inline-title-margin-bottom);
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -7105,7 +7113,7 @@ html[saved-theme="dark"] {
     }
 
     .preview-container {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-weight: 400;
       background-color: rgba(0, 0, 0, 0);
     }
@@ -7297,7 +7305,7 @@ html[saved-theme="dark"] {
     }
 
     code {
-      background-color: var(--pre-code);
+      background-color: var(--code-background);
       border: 0px solid rgb(82, 92, 98);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -7307,19 +7315,19 @@ html[saved-theme="dark"] {
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--inline-code);
+      color: var(--code-normal);
       font-family: var(--font-monospace);
-      padding: 2.16px 4.32px;
-      padding-block-end: 2.16px;
-      padding-block-start: 2.16px;
-      padding-inline-end: 4.32px;
-      padding-inline-start: 4.32px;
+      padding: 2.1px 4.2px;
+      padding-block-end: 2.1px;
+      padding-block-start: 2.1px;
+      padding-inline-end: 4.2px;
+      padding-inline-start: 4.2px;
     }
 
     pre > code,
     pre:has(> code) {
       background-color: var(--code-background);
-      border: 0px solid rgb(82, 92, 98);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -7330,18 +7338,18 @@ html[saved-theme="dark"] {
       border-end-end-radius: 0px;
       color: rgb(211, 198, 170);
       overflow-x: visible;
-      padding: 12px 16px;
-      padding-block-end: 12px;
-      padding-block-start: 12px;
-      padding-inline-end: 16px;
-      padding-inline-start: 16px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       white-space-collapse: preserve;
       text-wrap-mode: nowrap;
     }
 
     figure[data-rehype-pretty-code-figure] {
       background-color: var(--code-background);
-      border: 0px solid rgb(82, 92, 98);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -7356,7 +7364,7 @@ html[saved-theme="dark"] {
       background-color: var(--code-background);
       color: rgb(211, 198, 170);
       font-family: monospace;
-      border: 0px solid rgb(82, 92, 98);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -7369,17 +7377,17 @@ html[saved-theme="dark"] {
 
     pre > code > [data-line] {
       background-color: var(--code-background);
-      border-left: 0px solid rgb(82, 92, 98);
+      border-left: 0px solid rgba(0, 0, 0, 0);
     }
 
     pre > code > [data-line][data-highlighted-line] {
       background-color: var(--code-background);
-      border-left-color: rgb(82, 92, 98);
+      border-left-color: rgba(0, 0, 0, 0);
     }
 
     pre > code [data-highlighted-chars] {
       background-color: var(--code-background);
-      border: 0px solid rgb(82, 92, 98);
+      border: 0px solid rgba(0, 0, 0, 0);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -7543,7 +7551,7 @@ html[saved-theme="dark"] {
 
     blockquote {
       background-color: var(--blockquote-background-color);
-      border-inline-start: 2px solid rgb(86, 157, 121);
+      border-inline-start: 2px solid rgb(90, 147, 162);
       color: var(--blockquote-color);
       font-family:
         ui-sans-serif,
@@ -7622,7 +7630,7 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(179, 179, 179);
+      border: 0px solid rgb(154, 167, 157);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -7797,7 +7805,7 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -7849,15 +7857,15 @@ html[saved-theme="dark"] {
     ul.tags > li {
       background-color: var(--pill-background);
       color: var(--pill-color);
-      border: 0px solid oklch(0.639073 0.0908375 160.202 / 0.15);
-      border-top-left-radius: 28px;
-      border-top-right-radius: 28px;
-      border-bottom-left-radius: 28px;
-      border-bottom-right-radius: 28px;
+      border: 0px solid rgb(86, 157, 121);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
     }
 
     li.task-list-item input[type="checkbox"] {
-      border-color: rgb(133, 146, 137);
+      border-color: rgb(127, 187, 179);
       border-radius: 4px;
       border-width: 1px;
       background-color: rgba(0, 0, 0, 0);
@@ -7865,7 +7873,7 @@ html[saved-theme="dark"] {
 
     li.task-list-item input[type="checkbox"]:checked {
       background-color: var(--checkbox-color);
-      border-color: rgb(86, 157, 121);
+      border-color: rgb(127, 187, 179);
     }
 
     footer {
@@ -7956,7 +7964,7 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: var(--callout-default);
-      border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -7974,10 +7982,10 @@ html[saved-theme="dark"] {
     }
 
     .callout .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8017,10 +8025,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8032,10 +8040,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="note"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8075,10 +8083,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.828615 0.118893 193.752 / 0.25);
+      border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8090,10 +8098,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="abstract"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8133,10 +8141,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.629647 0.0637796 216.415 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border: 0px solid oklch(0.629647 0.0637796 216.415 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8148,10 +8156,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="info"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8191,10 +8199,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.602893 0.217554 257.503 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.646707 0.0199696 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.602893 0.217554 257.503 / 0.25);
+      border: 0px solid oklch(0.646707 0.0199696 none / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8206,10 +8214,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="todo"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8249,10 +8257,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.828615 0.118893 193.752 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.639073 0.0908375 160.202 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.828615 0.118893 193.752 / 0.25);
+      border: 0px solid oklch(0.639073 0.0908375 160.202 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8264,10 +8272,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="tip"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8307,10 +8315,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.757772 0.180999 149.614 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.658344 0.119895 119.593 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.757772 0.180999 149.614 / 0.25);
+      border: 0px solid oklch(0.658344 0.119895 119.593 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8322,10 +8330,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="success"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8365,10 +8373,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.753624 0.0912219 151.431 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.744355 0.140765 64.0894 / 0.25);
+      border: 0px solid oklch(0.753624 0.0912219 151.431 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8380,10 +8388,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="question"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8423,10 +8431,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.744355 0.140765 64.0894 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.698899 0.117187 85.3719 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.744355 0.140765 64.0894 / 0.25);
+      border: 0px solid oklch(0.698899 0.117187 85.3719 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8438,10 +8446,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="warning"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8481,10 +8489,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.645431 0.150188 22.6719 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border: 0px solid oklch(0.645431 0.150188 22.6719 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8496,10 +8504,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="danger"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8539,10 +8547,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.645431 0.150188 22.6719 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border: 0px solid oklch(0.645431 0.150188 22.6719 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8554,10 +8562,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="failure"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8597,10 +8605,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.659737 0.216875 23.8105 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.645431 0.150188 22.6719 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.659737 0.216875 23.8105 / 0.25);
+      border: 0px solid oklch(0.645431 0.150188 22.6719 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8612,10 +8620,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="bug"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8655,10 +8663,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.697304 0.17906 295.405 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.655947 0.0878998 345.297 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.697305 0.17906 295.405 / 0.25);
+      border: 0px solid oklch(0.655947 0.0878998 345.297 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8670,10 +8678,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="example"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8713,10 +8721,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: oklch(0.699256 0.0000347234 none / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: oklch(0.715108 0.0204553 152.595 / 0.1) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(211, 198, 170);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.699256 0.0000347234 none / 0.25);
+      border: 0px solid oklch(0.715108 0.0204553 152.595 / 0.25);
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -8728,10 +8736,10 @@ html[saved-theme="dark"] {
     }
 
     .callout[data-callout="quote"] .callout-title {
-      --callout-color: #027aff;
+      --callout-color: #5a93a2;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(2, 122, 255);
+      border: 0px rgb(90, 147, 162);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8826,7 +8834,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       border: 0px rgb(128, 128, 128);
-      border-bottom: 2px solid rgb(82, 92, 98);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8927,7 +8934,6 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       border: 0px rgb(128, 128, 128);
-      border-bottom: 0px rgb(82, 92, 98);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9091,11 +9097,11 @@ html[saved-theme="dark"] {
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 0px 10px;
+      padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
-      padding-inline-end: 10px;
-      padding-inline-start: 10px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     .transclude-inner {
@@ -9109,11 +9115,11 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 0px 10px;
+      margin: 0px;
       margin-block-end: 0px;
       margin-block-start: 0px;
-      margin-inline-end: 10px;
-      margin-inline-start: 10px;
+      margin-inline-end: 0px;
+      margin-inline-start: 0px;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -9122,12 +9128,12 @@ html[saved-theme="dark"] {
     }
 
     .transclude ul {
-      padding-left: 10px;
+      padding-left: 0px;
       color: rgb(211, 198, 170);
     }
 
     .nav-files-container .nav-file-title {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9161,12 +9167,12 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
     }
 
     .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
@@ -9213,12 +9219,12 @@ html[saved-theme="dark"] {
     }
 
     .nav-files-container .tree-item-children {
-      border-left: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
-      border-inline-start: 1px solid oklch(0.999994 0.0000497986 none / 0.12);
+      border-left: 1px solid rgb(90, 147, 162);
+      border-inline-start: 1px solid rgb(90, 147, 162);
     }
 
     .explorer .folder-container > div {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9272,7 +9278,7 @@ html[saved-theme="dark"] {
 
     .bases-card {
       background-color: rgba(0, 0, 0, 0);
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-radius: 0px;
     }
 
@@ -9304,7 +9310,7 @@ html[saved-theme="dark"] {
 
     .canvas-controls button {
       background-color: var(--background-primary);
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       color: var(--text-muted);
     }
 
@@ -9334,7 +9340,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9352,7 +9358,7 @@ html[saved-theme="dark"] {
     }
 
     footer ul li a {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-size: 12px;
       font-weight: 400;
     }
@@ -9392,7 +9398,7 @@ html[saved-theme="dark"] {
     }
 
     .recent-notes > ul.recent-ul > li .section > .meta {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9434,7 +9440,7 @@ html[saved-theme="dark"] {
     }
 
     li.section-li > .section .meta {
-      color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
       font-family:
         ui-sans-serif,
         -apple-system,
@@ -9455,7 +9461,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--icon-color);
       cursor: var(--cursor);
-      border-color: rgb(179, 179, 179);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9464,14 +9470,14 @@ html[saved-theme="dark"] {
     }
 
     .darkmode svg {
-      stroke: rgb(179, 179, 179);
-      color: rgb(179, 179, 179);
+      stroke: rgb(154, 167, 157);
+      color: rgb(154, 167, 157);
     }
 
     .breadcrumb-container {
       background-color: rgba(0, 0, 0, 0);
-      color: rgb(179, 179, 179);
-      border-color: rgb(179, 179, 179);
+      color: rgb(154, 167, 157);
+      border-color: rgb(154, 167, 157);
       border-width: 0px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -9754,6 +9760,14 @@ html[saved-theme="dark"] {
       color: rgb(211, 198, 170);
     }
 
+    li.task-list-item[data-task="x"] {
+      color: rgb(154, 167, 157);
+    }
+
+    li.task-list-item[data-task="X"] {
+      color: rgb(154, 167, 157);
+    }
+
     li.task-list-item[data-task="y"] {
       color: rgb(211, 198, 170);
     }
@@ -9771,68 +9785,68 @@ html[saved-theme="dark"] {
     }
 
     html {
-      --bg_blue: #394f5a;
-      --bg_blue_light: #e9f0e9;
-      --bg_green: #404d44;
-      --bg_green_light: #f0f1d2;
-      --bg_red: #4e3e43;
-      --bg_red_light: #fbe3da;
-      --bg_visual: #503946;
-      --bg_visual_light: #eaedc8;
-      --bg_yellow: #4a4940;
-      --bg_yellow_light: #faedcd;
-      --bg-dark: #2f383e;
-      --bg-light: #fdf6e3;
-      --bg0-dark: #22282c;
-      --bg0-light: #f0edd8;
-      --bg1-dark: #272f34;
-      --bg1-light: #f6f1dd;
-      --bg2-dark: #374247;
-      --bg2-light: #f3efda;
-      --bg3-dark: #404c51;
-      --bg3-light: #edead5;
-      --bg4-dark: #4a555b;
-      --bg4-light: #e4e1cd;
-      --bg5-dark: #525c62;
-      --bg5-light: #dfdbc8;
-      --dim-aqua: #569d79;
-      --dim-blue: #5a93a2;
-      --dim-green: #899c40;
-      --dim-orange: #d77f48;
-      --dim-purple: #b87b9d;
-      --dim-red: #da6362;
-      --dim-yellow: #bf983d;
-      --faded-aqua: #83c092;
-      --faded-blue: #7fbbb3;
-      --faded-green: #a7c080;
-      --faded-orange: #e69875;
-      --faded-purple: #d699b6;
-      --faded-red: #e67e80;
-      --faded-yellow: #dbbc7f;
-      --fg-dark: #d3c6aa;
-      --fg-light: #5c6a72;
-      --grey0-dark: #7f897d;
-      --grey0-light: #a4ad9e;
-      --grey1-dark: #859289;
-      --grey1-light: #939f91;
-      --grey2-dark: #9aa79d;
-      --grey2-light: #879686;
-      --light-aqua: #569d79;
-      --light-blue: #5a93a2;
-      --light-dim-aqua: #6ec398;
-      --light-dim-blue: #6cb3c6;
-      --light-dim-green: #a4bb4a;
-      --light-dim-orange: #f39459;
-      --light-dim-purple: #e092be;
-      --light-dim-red: #f1706f;
-      --light-dim-yellow: #e4b649;
-      --light-green: #899c40;
-      --light-orange: #f57d26;
-      --light-purple: #b87b9d;
-      --light-red: #f85552;
-      --light-yellow: #bf983d;
-      --shadow: #00000070;
-      --shadow-light: #3c474d20;
+      --everforest-bg-blue-dark: #394f5a;
+      --everforest-bg-blue-light: #e9f0e9;
+      --everforest-bg-dark: #2f383e;
+      --everforest-bg-green-dark: #404d44;
+      --everforest-bg-green-light: #f0f1d2;
+      --everforest-bg-light: #fdf6e3;
+      --everforest-bg-red-dark: #4e3e43;
+      --everforest-bg-red-light: #fbe3da;
+      --everforest-bg-visual-dark: #503946;
+      --everforest-bg-visual-light: #eaedc8;
+      --everforest-bg-yellow-dark: #4a4940;
+      --everforest-bg-yellow-light: #faedcd;
+      --everforest-bg0-dark: #22282c;
+      --everforest-bg0-light: #f0edd8;
+      --everforest-bg1-dark: #272f34;
+      --everforest-bg1-light: #f6f1dd;
+      --everforest-bg2-dark: #374247;
+      --everforest-bg2-light: #f3efda;
+      --everforest-bg3-dark: #404c51;
+      --everforest-bg3-light: #edead5;
+      --everforest-bg4-dark: #4a555b;
+      --everforest-bg4-light: #e4e1cd;
+      --everforest-bg5-dark: #525c62;
+      --everforest-bg5-light: #dfdbc8;
+      --everforest-dim-aqua: #569d79;
+      --everforest-dim-blue: #5a93a2;
+      --everforest-dim-green: #899c40;
+      --everforest-dim-orange: #d77f48;
+      --everforest-dim-purple: #b87b9d;
+      --everforest-dim-red: #da6362;
+      --everforest-dim-yellow: #bf983d;
+      --everforest-faded-aqua: #83c092;
+      --everforest-faded-blue: #7fbbb3;
+      --everforest-faded-green: #a7c080;
+      --everforest-faded-orange: #e69875;
+      --everforest-faded-purple: #d699b6;
+      --everforest-faded-red: #e67e80;
+      --everforest-faded-yellow: #dbbc7f;
+      --everforest-fg-dark: #d3c6aa;
+      --everforest-fg-light: #5c6a72;
+      --everforest-grey0-dark: #7f897d;
+      --everforest-grey0-light: #a4ad9e;
+      --everforest-grey1-dark: #859289;
+      --everforest-grey1-light: #939f91;
+      --everforest-grey2-dark: #9aa79d;
+      --everforest-grey2-light: #879686;
+      --everforest-light-aqua: #569d79;
+      --everforest-light-blue: #5a93a2;
+      --everforest-light-dim-aqua: #6ec398;
+      --everforest-light-dim-blue: #6cb3c6;
+      --everforest-light-dim-green: #a4bb4a;
+      --everforest-light-dim-orange: #f39459;
+      --everforest-light-dim-purple: #e092be;
+      --everforest-light-dim-red: #f1706f;
+      --everforest-light-dim-yellow: #e4b649;
+      --everforest-light-green: #899c40;
+      --everforest-light-orange: #f57d26;
+      --everforest-light-purple: #b87b9d;
+      --everforest-light-red: #f85552;
+      --everforest-light-yellow: #bf983d;
+      --everforest-shadow-dark: #00000070;
+      --everforest-shadow-light: #3c474d20;
     }
   }
 }
@@ -9881,7 +9895,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="?"] input[type="checkbox"]::after {
-    background-color: rgb(233, 151, 63);
+    background-color: rgb(230, 152, 117);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM288 352c0 17.7-14.3 32-32 32s-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32z'/%3E%3C/svg%3E");
@@ -9902,7 +9916,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task=""] input[type="checkbox"]::after {
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(127, 137, 125);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z'/%3E%3C/svg%3E");
@@ -9916,7 +9930,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="*"] input[type="checkbox"]::after {
-    background-color: rgb(224, 222, 113);
+    background-color: rgb(219, 188, 127);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z'/%3E%3C/svg%3E");
@@ -9965,7 +9979,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="<"] input[type="checkbox"]::after {
-    background-color: rgb(83, 223, 221);
+    background-color: rgb(131, 192, 146);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M96 32V64H48C21.5 64 0 85.5 0 112v48H448V112c0-26.5-21.5-48-48-48H352V32c0-17.7-14.3-32-32-32s-32 14.3-32 32V64H160V32c0-17.7-14.3-32-32-32S96 14.3 96 32zM448 192H0V464c0 26.5 21.5 48 48 48H400c26.5 0 48-21.5 48-48V192z'/%3E%3C/svg%3E");
@@ -9979,7 +9993,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task=">"] input[type="checkbox"]::after {
-    background-color: rgb(2, 122, 255);
+    background-color: rgb(127, 187, 179);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M307 34.8c-11.5 5.1-19 16.6-19 29.2v64H176C78.8 128 0 206.8 0 304C0 417.3 81.5 467.9 100.2 478.1c2.5 1.4 5.3 1.9 8.1 1.9c10.9 0 19.7-8.9 19.7-19.7c0-7.5-4.3-14.4-9.8-19.5C108.8 431.9 96 414.4 96 384c0-53 43-96 96-96h96v64c0 12.6 7.4 24.1 19 29.2s25 3 34.4-5.4l160-144c6.7-6.1 10.6-14.7 10.6-23.8s-3.8-17.7-10.6-23.8l-160-144c-9.4-8.5-22.9-10.6-34.4-5.4z'/%3E%3C/svg%3E");
@@ -10091,7 +10105,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="b"] input[type="checkbox"]::after {
-    background-color: rgb(251, 70, 76);
+    background-color: rgb(230, 126, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z'/%3E%3C/svg%3E");
@@ -10105,7 +10119,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="c"] input[type="checkbox"]::after {
-    background-color: rgb(251, 70, 76);
+    background-color: rgb(230, 126, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 479.1c26-5.2 42.9-30.5 37.7-56.5l-2.3-11.4c-5.3-26.7-15.1-52.1-28.8-75.2H464c26.5 0 48-21.5 48-48c0-25.3-19.5-46-44.3-47.9c7.7-8.5 12.3-19.8 12.3-32.1c0-23.4-16.8-42.9-38.9-47.1c4.4-7.3 6.9-15.8 6.9-24.9c0-21.3-13.9-39.4-33.1-45.6c.7-3.3 1.1-6.8 1.1-10.4c0-26.5-21.5-48-48-48H294.5c-19 0-37.5 5.6-53.3 16.1L202.7 73.8C176 91.6 160 121.6 160 153.7V192v48 24.9c0 29.2 13.3 56.7 36 75l7.4 5.9c26.5 21.2 44.6 51 51.2 84.2l2.3 11.4c5.2 26 30.5 42.9 56.5 37.7zM32 320H96c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64V288c0 17.7 14.3 32 32 32z'/%3E%3C/svg%3E");
@@ -10119,7 +10133,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="d"] input[type="checkbox"]::after {
-    background-color: rgb(251, 70, 76);
+    background-color: rgb(230, 126, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 13a1 1 0 100 2h5a1 1 0 001-1V9a1 1 0 10-2 0v2.586l-4.293-4.293a1 1 0 00-1.414 0L8 9.586 3.707 5.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0L11 9.414 14.586 13H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -10147,7 +10161,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="f"] input[type="checkbox"]::after {
-    background-color: rgb(251, 70, 76);
+    background-color: rgb(230, 126, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -10189,14 +10203,14 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="i"] input[type="checkbox"]::after {
-    background-color: rgb(2, 122, 255);
+    background-color: rgb(127, 187, 179);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-144c-17.7 0-32-14.3-32-32s14.3-32 32-32s32 14.3 32 32s-14.3 32-32 32z'/%3E%3C/svg%3E");
   }
 
   li.task-list-item[data-task="I"] input[type="checkbox"]::after {
-    background-color: rgb(224, 222, 113);
+    background-color: rgb(219, 188, 127);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z'/%3E%3C/svg%3E");
@@ -10217,7 +10231,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="k"] input[type="checkbox"]::after {
-    background-color: rgb(224, 222, 113);
+    background-color: rgb(219, 188, 127);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z' clip-rule='evenodd' /%3E%3C/svg%3E");
@@ -10231,7 +10245,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="l"] input[type="checkbox"]::after {
-    background-color: rgb(168, 130, 255);
+    background-color: rgb(214, 153, 182);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z'/%3E%3C/svg%3E");
@@ -10259,7 +10273,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="n"] input[type="checkbox"]::after {
-    background-color: rgb(251, 70, 76);
+    background-color: rgb(230, 126, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M32 32C32 14.3 46.3 0 64 0H320c17.7 0 32 14.3 32 32s-14.3 32-32 32H290.5l11.4 148.2c36.7 19.9 65.7 53.2 79.5 94.7l1 3c3.3 9.8 1.6 20.5-4.4 28.8s-15.7 13.3-26 13.3H32c-10.3 0-19.9-4.9-26-13.3s-7.7-19.1-4.4-28.8l1-3c13.8-41.5 42.8-74.8 79.5-94.7L93.5 64H64C46.3 64 32 49.7 32 32zM160 384h64v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V384z'/%3E%3C/svg%3E");
@@ -10287,7 +10301,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="p"] input[type="checkbox"]::after {
-    background-color: rgb(68, 207, 110);
+    background-color: rgb(167, 192, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 25.3-19.5 46-44.3 47.9c7.7 8.5 12.3 19.8 12.3 32.1c0 23.4-16.8 42.9-38.9 47.1c4.4 7.2 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z'/%3E%3C/svg%3E");
@@ -10336,7 +10350,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="S"] input[type="checkbox"]::after {
-    background-color: rgb(68, 207, 110);
+    background-color: rgb(167, 192, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84.1 96c0-11.1-9-20.1-20.1-20.1s-20.1 9-20.1 20.1v6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.8 4.1c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9l0 0 0 0 0 0 0 0c-2.2-.8-4.3-1.5-6.3-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1V416c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1v-5.5c5.4-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4V224z'/%3E%3C/svg%3E");
@@ -10357,7 +10371,7 @@ html[saved-theme="dark"] {
   }
 
   li.task-list-item[data-task="u"] input[type="checkbox"]::after {
-    background-color: rgb(68, 207, 110);
+    background-color: rgb(167, 192, 128);
     color: rgb(255, 255, 255);
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");
     -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'%3E%3Cpath fill-rule='evenodd' d='M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z' clip-rule='evenodd' /%3E%3C/svg%3E");

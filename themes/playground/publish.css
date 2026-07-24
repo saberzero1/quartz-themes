@@ -2,7 +2,7 @@
   font-family: "Bricolage Grotesque";
   font-style: normal italic;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/playground/bricolage-grotesque.woff2")
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/playground/bricolage-grotesque.woff2")
     format("woff2");
 }
 body.theme-dark {
@@ -217,13 +217,13 @@ body.theme-dark {
   --callout-warning: var(--orange-300);
   --canvas-background: var(--background-primary) !important;
   --canvas-card-label-color: var(--text-faint) !important;
-  --canvas-color: var(--gray-rgb) !important;
-  --canvas-color-1: var(--red-rgb) !important;
-  --canvas-color-2: var(--orange-rgb) !important;
-  --canvas-color-3: var(--yellow-rgb) !important;
-  --canvas-color-4: var(--green-rgb) !important;
-  --canvas-color-5: var(--sea-green-rgb) !important;
-  --canvas-color-6: var(--blue-rgb) !important;
+  --canvas-color: #7e7e7e !important;
+  --canvas-color-1: var(--color-red) !important;
+  --canvas-color-2: var(--color-orange) !important;
+  --canvas-color-3: var(--color-yellow) !important;
+  --canvas-color-4: var(--color-green) !important;
+  --canvas-color-5: var(--color-cyan) !important;
+  --canvas-color-6: var(--color-purple) !important;
   --canvas-controls-icon-size: var(--icon-s) !important;
   --canvas-controls-icon-stroke: var(--icon-s-stroke-width) !important;
   --canvas-controls-radius: var(--radius-s) !important;
@@ -289,22 +289,22 @@ body.theme-dark {
   --color-base-50: #666666 !important;
   --color-base-60: #999999 !important;
   --color-base-70: #b3b3b3 !important;
-  --color-blue: #027aff !important;
-  --color-blue-rgb: 2, 122, 255 !important;
+  --color-blue: var(--blue) !important;
+  --color-blue-rgb: 42, 113, 235 !important;
   --color-cyan: #53dfdd !important;
   --color-cyan-rgb: 83, 223, 221 !important;
-  --color-green: #44cf6e !important;
-  --color-green-rgb: 68, 207, 110 !important;
-  --color-orange: #e9973f !important;
-  --color-orange-rgb: 233, 151, 63 !important;
-  --color-pink: #fa99cd !important;
-  --color-pink-rgb: 250, 153, 205 !important;
-  --color-purple: #a882ff !important;
-  --color-purple-rgb: 168, 130, 255 !important;
-  --color-red: #fb464c !important;
-  --color-red-rgb: 251, 70, 76 !important;
-  --color-yellow: #e0de71 !important;
-  --color-yellow-rgb: 224, 222, 113 !important;
+  --color-green: var(--green) !important;
+  --color-green-rgb: 78, 205, 43 !important;
+  --color-orange: var(--orange) !important;
+  --color-orange-rgb: 255, 116, 23 !important;
+  --color-pink: var(--pink) !important;
+  --color-pink-rgb: 242, 66, 255 !important;
+  --color-purple: var(--purple) !important;
+  --color-purple-rgb: 45, 36, 141 !important;
+  --color-red: var(--red) !important;
+  --color-red-rgb: 218, 1, 77 !important;
+  --color-yellow: var(--yellow) !important;
+  --color-yellow-rgb: 242, 208, 3 !important;
   --corner-shape: round !important;
   --cursor: default !important;
   --cursor-link: pointer !important;
@@ -336,6 +336,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover: 0 !important;
   --embed-border-bottom: none !important;
   --embed-border-end: none !important;
@@ -493,6 +507,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -762,7 +777,7 @@ body.theme-dark {
   --search-clear-button-color: var(--text-muted) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--text-muted) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
   --search-input-radius: var(--input-radius) !important;
   --search-result-background: var(--background-primary) !important;
@@ -841,14 +856,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border-hover) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1005,6 +1032,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -1060,14 +1088,8 @@ body.theme-dark {
   --yellow: rgb(242, 208, 3) !important;
   --blue: rgb(42, 113, 235) !important;
   --pink: rgb(242, 66, 255) !important;
+  --color-gray-rgb: 90, 93, 117 !important;
   --gray: rgb(90, 93, 117) !important;
-  --blue-rgb: 42, 113, 235 !important;
-  --green-rgb: 78, 205, 43 !important;
-  --orange-rgb: 255, 116, 23 !important;
-  --pink-rgb: 242, 66, 255 !important;
-  --purple-rgb: 45, 36, 141 !important;
-  --red-rgb: 218, 1, 77 !important;
-  --yellow-rgb: 242, 208, 3 !important;
   --callout-title-color: var(--blue-400);
   --ease-out: cubic-bezier(0.33, 1, 0.68, 1) !important;
   --blue-100: oklch(25.5% 0.091 260.58) !important;
@@ -1150,7 +1172,6 @@ body.theme-dark {
   --red-600: oklch(84.5% 0.079 13.65) !important;
   --yellow-400: oklch(61.5% 0.126 97.11) !important;
   --yellow-600: oklch(84.5% 0.174 97.11) !important;
-  --gray-rgb: 90, 93, 117 !important;
   --blue-25: oklch(12% 0.038 260.58) !important;
   --blue-75: oklch(18% 0.061 260.58) !important;
   --callout-content: var(--blue-600);
@@ -1159,6 +1180,7 @@ body.theme-dark {
   --checklist-orange-color: var(--orange-400) !important;
   --checklist-red-color: var(--red-400) !important;
   --checklist-yellow-color: var(--yellow-500) !important;
+  --color-sea-green-rgb: 33, 255, 177 !important;
   --gray-25: oklch(12% 0.009 279.29) !important;
   --gray-75: oklch(18% 0.014 279.29) !important;
   --green-25: oklch(12% 0.032 140.09) !important;
@@ -1186,7 +1208,6 @@ body.theme-dark {
   --sea-green-75: oklch(18% 0.039 161.65) !important;
   --sea-green-800: oklch(96.5% 0.041 161.65) !important;
   --sea-green-900: oklch(98% 0.021 161.65) !important;
-  --sea-green-rgb: 33, 255, 177 !important;
   --semibold-modifier: 200 !important;
   --text-inverse: var(--gray-25) !important;
   --yellow-25: oklch(12% 0.024 97.11) !important;

@@ -1281,8 +1281,8 @@
     "font-family": "\"??\", \"Recursive S\", \"??\", ui-sans-serif, -apple-system, BlinkMacSystemFont, system-ui, \"Segoe UI\", \"Google Sans Flex\", Roboto, \"Inter Variable\", Inter, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", sans-serif",
     "outline": "rgb(195, 200, 223) none 0px",
     "outline-color": "rgb(195, 200, 223)",
-    "padding": "4px 28px 4px 36px",
-    "padding-inline": "36px 28px",
+    "padding": "4px 28px 4px 30px",
+    "padding-inline": "30px 28px",
     "padding-inline-end": "28px",
     "padding-right": "28px",
     "text-decoration-color": "rgb(195, 200, 223)"

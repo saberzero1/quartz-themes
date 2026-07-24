@@ -196,12 +196,6 @@
     "border-top-width": "2px",
     "border-width": "2px",
     "line-height": "25.2px",
-    "margin": "4px 0px",
-    "margin-block": "4px",
-    "margin-block-end": "4px",
-    "margin-block-start": "4px",
-    "margin-bottom": "4px",
-    "margin-top": "4px",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))",
     "transition": "border-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
   },
@@ -295,12 +289,6 @@
     "border-top-width": "2px",
     "border-width": "2px",
     "line-height": "28.8px",
-    "margin": "4px 0px",
-    "margin-block": "4px",
-    "margin-block-end": "4px",
-    "margin-block-start": "4px",
-    "margin-bottom": "4px",
-    "margin-top": "4px",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))",
     "transition": "border-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
   },
@@ -333,12 +321,6 @@
     "border-top-width": "2px",
     "border-width": "2px",
     "line-height": "28.8px",
-    "margin": "4px 0px",
-    "margin-block": "4px",
-    "margin-block-end": "4px",
-    "margin-block-start": "4px",
-    "margin-bottom": "4px",
-    "margin-top": "4px",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))",
     "transition": "border-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95), background-color 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
   },
@@ -507,12 +489,6 @@
     "border-top-left-radius": "8px",
     "border-top-right-radius": "8px",
     "line-height": "28.8px",
-    "margin": "4px 0px",
-    "margin-block": "4px",
-    "margin-block-end": "4px",
-    "margin-block-start": "4px",
-    "margin-bottom": "4px",
-    "margin-top": "4px",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))",
     "transition": "box-shadow 0.25s cubic-bezier(0.45, 0.05, 0.55, 0.95)"
   },
@@ -817,7 +793,6 @@
     "border-top-right-radius": "6px",
     "padding": "4px 56px 4px 32px",
     "padding-inline": "32px 56px",
-    "padding-inline-start": "32px",
     "padding-left": "32px"
   },
   ".search-result-container .tree-item.search-result": {
@@ -4362,7 +4337,6 @@
     "padding": "4px 4px 4px 32px",
     "padding-inline": "32px 4px",
     "padding-inline-end": "4px",
-    "padding-inline-start": "32px",
     "padding-left": "32px",
     "padding-right": "4px"
   },

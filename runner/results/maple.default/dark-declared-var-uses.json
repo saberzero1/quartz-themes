@@ -175,6 +175,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -191,6 +192,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -1657,35 +1659,6 @@
     "font-family": "var(--font-text)",
     "font-size": "var(--font-text-size)",
     "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)",
-    "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"
-  },
-  "video": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--setting-text-normal, var(--text-normal))",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "letter-spacing": "var(--setting-editor-letter-spacing, 0)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)",
-    "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"
-  },
-  "audio": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--setting-text-normal, var(--text-normal))",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)",
-    "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"
-  },
-  ".file-embed": {
-    "background-color": "var(--background-primary-alt)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-muted)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-smaller)",
     "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"

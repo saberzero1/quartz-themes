@@ -2915,7 +2915,7 @@
     "attrs": { "tabindex": "-1", "data-property-count": "1" },
     "styles": {
       "color": "rgb(108, 102, 75)",
-      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "backgroundColor": "rgb(237, 233, 218)",
       "borderColor": "rgb(237, 233, 218)",
       "fill": "rgb(0, 0, 0)",
       "stroke": "none"
@@ -3063,9 +3063,9 @@
                     "classes": ["metadata-property-key"],
                     "attrs": {},
                     "styles": {
-                      "color": "rgb(108, 102, 75)",
+                      "color": "rgb(188, 186, 179)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(108, 102, 75) rgb(108, 102, 75) rgb(237, 233, 218)",
+                      "borderColor": "rgb(188, 186, 179)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -3121,7 +3121,7 @@
                         },
                         "styles": {
                           "color": "rgb(108, 102, 75)",
-                          "backgroundColor": "rgb(222, 219, 204)",
+                          "backgroundColor": "rgba(0, 0, 0, 0)",
                           "borderColor": "rgb(108, 102, 75)",
                           "fill": "rgb(0, 0, 0)",
                           "stroke": "none"
@@ -3138,7 +3138,7 @@
                     "styles": {
                       "color": "rgb(108, 102, 75)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(108, 102, 75) rgb(108, 102, 75) rgb(237, 233, 218)",
+                      "borderColor": "rgb(108, 102, 75)",
                       "fill": "rgb(0, 0, 0)",
                       "stroke": "none"
                     },
@@ -3261,9 +3261,9 @@
             "classes": ["metadata-add-button", "text-icon-button"],
             "attrs": { "tabindex": "0" },
             "styles": {
-              "color": "rgb(108, 102, 75)",
-              "backgroundColor": "rgba(0, 0, 0, 0)",
-              "borderColor": "rgb(108, 102, 75)",
+              "color": "rgb(138, 92, 245)",
+              "backgroundColor": "color(srgb 0.54032 0.3608 0.9592 / 0.1)",
+              "borderColor": "color(srgb 0.54032 0.3608 0.9592 / 0.2)",
               "fill": "rgb(0, 0, 0)",
               "stroke": "none"
             },
@@ -3274,9 +3274,9 @@
                 "classes": ["text-button-icon"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(108, 102, 75)",
+                  "color": "rgb(138, 92, 245)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(108, 102, 75)",
+                  "borderColor": "rgb(138, 92, 245)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },
@@ -3297,11 +3297,11 @@
                       "stroke-linejoin": "round"
                     },
                     "styles": {
-                      "color": "rgb(108, 102, 75)",
+                      "color": "rgb(138, 92, 245)",
                       "backgroundColor": "rgba(0, 0, 0, 0)",
-                      "borderColor": "rgb(108, 102, 75)",
+                      "borderColor": "rgb(138, 92, 245)",
                       "fill": "none",
-                      "stroke": "rgb(108, 102, 75)"
+                      "stroke": "rgb(138, 92, 245)"
                     },
                     "childCount": 2,
                     "children": [
@@ -3310,11 +3310,11 @@
                         "classes": [],
                         "attrs": { "d": "M5 12h14" },
                         "styles": {
-                          "color": "rgb(108, 102, 75)",
+                          "color": "rgb(138, 92, 245)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(108, 102, 75)",
+                          "borderColor": "rgb(138, 92, 245)",
                           "fill": "none",
-                          "stroke": "rgb(108, 102, 75)"
+                          "stroke": "rgb(138, 92, 245)"
                         },
                         "childCount": 0,
                         "children": []
@@ -3324,11 +3324,11 @@
                         "classes": [],
                         "attrs": { "d": "M12 5v14" },
                         "styles": {
-                          "color": "rgb(108, 102, 75)",
+                          "color": "rgb(138, 92, 245)",
                           "backgroundColor": "rgba(0, 0, 0, 0)",
-                          "borderColor": "rgb(108, 102, 75)",
+                          "borderColor": "rgb(138, 92, 245)",
                           "fill": "none",
-                          "stroke": "rgb(108, 102, 75)"
+                          "stroke": "rgb(138, 92, 245)"
                         },
                         "childCount": 0,
                         "children": []
@@ -3342,9 +3342,9 @@
                 "classes": ["text-button-label"],
                 "attrs": {},
                 "styles": {
-                  "color": "rgb(108, 102, 75)",
+                  "color": "rgb(138, 92, 245)",
                   "backgroundColor": "rgba(0, 0, 0, 0)",
-                  "borderColor": "rgb(108, 102, 75)",
+                  "borderColor": "rgb(138, 92, 245)",
                   "fill": "rgb(0, 0, 0)",
                   "stroke": "none"
                 },

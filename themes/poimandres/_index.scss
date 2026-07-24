@@ -1260,7 +1260,7 @@ body {
     line-height: var(--line-height-tight);
     text-decoration: rgb(218, 218, 218);
     margin-inline-start: 0px;
-    border: 0px solid oklch(0.584475 0.0961854 249.791 / 0.15);
+    border: 1px solid oklch(0.772362 0.0669278 337.941 / 0.4);
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -2737,7 +2737,7 @@ body {
   ul.tags > li {
     background-color: var(--pill-background);
     color: var(--pill-color);
-    border: 0px solid oklch(0.584475 0.0961854 249.791 / 0.15);
+    border: 1px solid oklch(0.772362 0.0669278 337.941 / 0.4);
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -3964,7 +3964,7 @@ body {
     color: rgb(228, 231, 234);
     border-radius: 0px;
     border-color: rgb(228, 231, 234);
-    border-left: 2px solid rgb(77, 128, 179);
+    border-left: 2px solid rgb(37, 39, 46);
     border-right-width: 0px;
     border-top-width: 0px;
     border-bottom-width: 0px;

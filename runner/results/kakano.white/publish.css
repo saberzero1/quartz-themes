@@ -395,7 +395,7 @@ body.theme-light {
   --input-height: 30px !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
+  --input-radius: var(--radius-s) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --background-modifier-border: var(--theme-color-baseLightened25) !important;
   --background-modifier-form-field: var(--color-base-00) !important;
@@ -434,7 +434,9 @@ body.theme-light {
   --background-modifier-border-focus: var(--theme-color-base) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-cover: rgba(220, 220, 220, 0.4) !important;
+  --background-modifier-cover: var(
+    --theme-color-darkenTransparent25
+  ) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -600,7 +602,7 @@ body.theme-light {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 0.25rem !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: light-dark(
     var(--theme-color-darkenTransparent06),
     var(--theme-color-lightenTransparent06)
@@ -687,7 +689,7 @@ body.theme-light {
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
   --drag-item-shadow: 0 2px 8px var(--background-modifier-box-shadow) !important;
-  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background: var(--theme-color-controlBg) !important;
   --dropdown-background-blend-mode: hard-light, normal !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
@@ -703,6 +705,20 @@ body.theme-light {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -870,6 +886,7 @@ body.theme-light {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -1035,10 +1052,10 @@ body.theme-light {
     100vw - var(--safe-area-inset-left) - var(--safe-area-inset-right) - 2em
   ) !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: var(--radius-l) !important;
+  --modal-radius: var(--radius-m) !important;
   --modal-shadow: none !important;
   --modal-sidebar-background: var(--modal-background) !important;
-  --modal-width: 65rem !important;
+  --modal-width: 90vw !important;
   --mono-0: white !important;
   --mono-100: black !important;
   --mono-rgb-0: 255, 255, 255 !important;
@@ -1113,10 +1130,10 @@ body.theme-light {
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 0.75rem !important;
-  --radius-m: 0.5rem !important;
-  --radius-s: 0.25rem !important;
-  --radius-xl: 1rem !important;
+  --radius-l: calc(var(--theme-setting-baseRadius) * 1.5) !important;
+  --radius-m: var(--theme-setting-baseRadius) !important;
+  --radius-s: calc(var(--theme-setting-baseRadius) * 0.5) !important;
+  --radius-xl: calc(var(--theme-setting-baseRadius) * 2) !important;
   --raised-background: var(--theme-color-baseLightened80) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
@@ -1158,9 +1175,9 @@ body.theme-light {
   --search-clear-button-color: var(--theme-color-base) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--theme-color-base) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
-  --search-input-radius: var(--input-radius) !important;
+  --search-input-radius: var(--radius-s) !important;
   --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
@@ -1250,14 +1267,26 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--theme-color-baseTransparent50) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1287,14 +1316,14 @@ body.theme-light {
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: var(--background-primary) !important;
-  --tab-curve: calc(var(--tab-radius) * 0.5) !important;
+  --tab-curve: var(--radius-xs) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
   --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 0.25em !important;
-  --tab-radius-active: 0.25em !important;
+  --tab-radius: var(--radius-s) !important;
+  --tab-radius-active: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: var(--header-height) !important;
@@ -1423,14 +1452,15 @@ body.theme-light {
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
-  --toggle-radius: 18px !important;
+  --toggle-radius: var(--radius-l) !important;
   --toggle-s-border-width: 2px !important;
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
-  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
+  --toggle-thumb-radius: var(--radius-l) !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --touch-radius-l: var(--touch-size-l) !important;
@@ -1454,7 +1484,7 @@ body.theme-light {
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
   --vault-profile-order: 2 !important;
-  --vault-profile-radius: var(--radius-s) !important;
+  --vault-profile-radius: var(--radius-m) !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: color-mix(
     in oklch,
@@ -1478,6 +1508,7 @@ body.theme-light {
   --embed-background: var(--theme-color-baseTransparent12) !important;
   --setting-items-padding: 0 !important;
   --tag-weight: 400 !important;
+  --radius-xs: calc(var(--theme-setting-baseRadius) * 0.25) !important;
   --r-background-color: var(--background-primary) !important;
   --r-heading-color: var(--text-normal) !important;
   --r-heading-margin: 0.67em 0 0 0 !important;
@@ -1924,13 +1955,16 @@ body.theme-light {
   --theme-length-collapseIndicatorSize: 1.5rem !important;
   --theme-length-controlSetSpacing: 0.5rem !important;
   --theme-length-fullBorderRadius: 9999px !important;
-  --theme-length-radiusXS: 0.125rem !important;
   --theme-length-statusBarHeight: 2rem !important;
   --theme-padding-block: var(--theme-padding-blockVertical)
     var(--theme-padding-blockHorizontal) !important;
   --theme-padding-blockHorizontal: 1.5em !important;
   --theme-padding-blockVertical: 0.75em !important;
+  --theme-setting-baseRadius: calc(
+    1rem * var(--theme-setting-roundness)
+  ) !important;
   --theme-setting-lineWidth: 60 !important;
+  --theme-setting-roundness: 0.5 !important;
   --theme-shadow-control: 0 1px 2px
     hsl(
       var(--base-h),
@@ -2013,7 +2047,7 @@ body.theme-dark {
   --input-height: 30px !important;
   --input-border-width: 2px !important;
   --input-border-width-focus: 2px !important;
-  --input-radius: 5px !important;
+  --input-radius: var(--radius-s) !important;
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --background-modifier-border: var(--theme-color-baseDarkened25) !important;
   --background-modifier-form-field: var(--color-base-25) !important;
@@ -2054,7 +2088,9 @@ body.theme-dark {
   ) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: rgba(10, 10, 10, 0.4) !important;
+  --background-modifier-cover: var(
+    --theme-color-darkenTransparent50
+  ) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -2224,7 +2260,7 @@ body.theme-dark {
   --checkbox-size: var(--font-text-size) !important;
   --checklist-done-color: var(--text-muted) !important;
   --checklist-done-decoration: line-through !important;
-  --clickable-icon-radius: 0.25rem !important;
+  --clickable-icon-radius: var(--radius-s) !important;
   --code-background: light-dark(
     var(--theme-color-darkenTransparent06),
     var(--theme-color-lightenTransparent06)
@@ -2311,7 +2347,7 @@ body.theme-dark {
   --drag-ghost-background: rgba(0, 0, 0, 0.85) !important;
   --drag-ghost-text-color: #fff !important;
   --drag-item-shadow: 0 2px 8px var(--background-modifier-box-shadow) !important;
-  --dropdown-background: var(--interactive-normal) !important;
+  --dropdown-background: var(--theme-color-controlBg) !important;
   --dropdown-background-blend-mode: hard-light, normal !important;
   --dropdown-background-hover: var(--interactive-hover) !important;
   --dropdown-background-position:
@@ -2327,6 +2363,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -2494,6 +2544,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: color-mix(
@@ -2660,10 +2711,10 @@ body.theme-dark {
     100vw - var(--safe-area-inset-left) - var(--safe-area-inset-right) - 2em
   ) !important;
   --modal-max-width-narrow: 800px !important;
-  --modal-radius: var(--radius-l) !important;
+  --modal-radius: var(--radius-m) !important;
   --modal-shadow: none !important;
   --modal-sidebar-background: var(--modal-background) !important;
-  --modal-width: 65rem !important;
+  --modal-width: 90vw !important;
   --mono-0: black !important;
   --mono-100: white !important;
   --mono-rgb-0: 0, 0, 0 !important;
@@ -2736,10 +2787,10 @@ body.theme-dark {
   --prompt-max-height: 70vh !important;
   --prompt-max-width: 80vw !important;
   --prompt-width: 700px !important;
-  --radius-l: 0.75rem !important;
-  --radius-m: 0.5rem !important;
-  --radius-s: 0.25rem !important;
-  --radius-xl: 1rem !important;
+  --radius-l: calc(var(--theme-setting-baseRadius) * 1.5) !important;
+  --radius-m: var(--theme-setting-baseRadius) !important;
+  --radius-s: calc(var(--theme-setting-baseRadius) * 0.5) !important;
+  --radius-xl: calc(var(--theme-setting-baseRadius) * 2) !important;
   --raised-background: var(--theme-color-baseDarkened80) !important;
   --raised-blur: var(--blur-s) !important;
   --raised-mask:
@@ -2775,9 +2826,9 @@ body.theme-dark {
   --search-clear-button-color: var(--theme-color-base) !important;
   --search-clear-button-size: 13px !important;
   --search-icon-color: var(--theme-color-base) !important;
-  --search-icon-size: 18px !important;
+  --search-icon-size: 16px !important;
   --search-input-corner-shape: var(--input-corner-shape) !important;
-  --search-input-radius: var(--input-radius) !important;
+  --search-input-radius: var(--radius-s) !important;
   --search-result-background: var(--background-primary) !important;
   --setting-group-heading-color: var(--text-normal) !important;
   --setting-group-heading-size: var(--font-ui-medium) !important;
@@ -2867,14 +2918,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
-  --slider-thumb-border-width: var(--border-width) !important;
+  --slider-thumb-border-width: 0.5px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: var(--slider-thumb-height) !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--theme-color-baseTransparent50) !important;
   --slider-track-height: 4px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -2904,14 +2967,14 @@ body.theme-dark {
   --sync-avatar-color-8: var(--color-pink) !important;
   --sync-avatar-color-current-user: transparent !important;
   --tab-background-active: var(--background-primary) !important;
-  --tab-curve: calc(var(--tab-radius) * 0.5) !important;
+  --tab-curve: var(--radius-xs) !important;
   --tab-divider-color: var(--background-modifier-border-hover) !important;
   --tab-font-size: var(--font-ui-small) !important;
   --tab-max-width: 320px !important;
   --tab-outline-color: var(--divider-color) !important;
   --tab-outline-width: 0 !important;
-  --tab-radius: 0.25em !important;
-  --tab-radius-active: 0.25em !important;
+  --tab-radius: var(--radius-s) !important;
+  --tab-radius-active: var(--radius-s) !important;
   --tab-stacked-font-size: var(--font-ui-small) !important;
   --tab-stacked-font-weight: 400 !important;
   --tab-stacked-header-width: var(--header-height) !important;
@@ -3042,14 +3105,15 @@ body.theme-dark {
   --titlebar-text-color-focused: var(--text-normal) !important;
   --titlebar-text-weight: var(--font-bold) !important;
   --toggle-border-width: 2px !important;
-  --toggle-radius: 18px !important;
+  --toggle-radius: var(--radius-l) !important;
   --toggle-s-border-width: 2px !important;
   --toggle-s-thumb-height: 15px !important;
   --toggle-s-thumb-width: 15px !important;
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
-  --toggle-thumb-radius: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
+  --toggle-thumb-radius: var(--radius-l) !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
   --touch-radius-l: var(--touch-size-l) !important;
@@ -3073,7 +3137,7 @@ body.theme-dark {
   --vault-profile-font-size: var(--font-ui-small) !important;
   --vault-profile-font-weight: var(--font-medium) !important;
   --vault-profile-order: 2 !important;
-  --vault-profile-radius: var(--radius-s) !important;
+  --vault-profile-radius: var(--radius-m) !important;
   --viewer-container-height: 0 !important;
   --workspace-background-translucent: color-mix(
     in oklch,
@@ -3092,6 +3156,7 @@ body.theme-dark {
   --embed-background: var(--theme-color-baseTransparent12) !important;
   --setting-items-padding: 0 !important;
   --tag-weight: 400 !important;
+  --radius-xs: calc(var(--theme-setting-baseRadius) * 0.25) !important;
   --r-background-color: var(--background-primary) !important;
   --r-heading-color: var(--text-normal) !important;
   --r-heading-margin: 0.67em 0 0 0 !important;
@@ -3535,13 +3600,16 @@ body.theme-dark {
   --theme-length-collapseIndicatorSize: 1.5rem !important;
   --theme-length-controlSetSpacing: 0.5rem !important;
   --theme-length-fullBorderRadius: 9999px !important;
-  --theme-length-radiusXS: 0.125rem !important;
   --theme-length-statusBarHeight: 2rem !important;
   --theme-padding-block: var(--theme-padding-blockVertical)
     var(--theme-padding-blockHorizontal) !important;
   --theme-padding-blockHorizontal: 1.5em !important;
   --theme-padding-blockVertical: 0.75em !important;
+  --theme-setting-baseRadius: calc(
+    1rem * var(--theme-setting-roundness)
+  ) !important;
   --theme-setting-lineWidth: 60 !important;
+  --theme-setting-roundness: 0.5 !important;
   --theme-shadow-control: 0px 1px 2px
     hsl(
       var(--base-h),

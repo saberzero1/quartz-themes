@@ -164,6 +164,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--mwg-font-body)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -180,6 +181,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--mwg-font-body)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -738,10 +740,9 @@
     "background-color": "var(--code-background)",
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
-    "font-family": "var(--ec-uiFontFml)",
-    "font-size": "var(--ec-uiFontSize)",
-    "font-weight": "var(--ec-uiFontWg)",
-    "line-height": "var(--ec-uiLineHt)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "input.task-list-item-checkbox[data-line=\"0\"]": {
@@ -848,22 +849,19 @@
     "width": "var(--checkbox-size)"
   },
   "figure": {
-    "box-shadow": "var(--ec-frm-frameBoxShdCssVal)",
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
-    "font-family": "var(--ec-uiFontFml)",
-    "font-size": "var(--ec-uiFontSize)",
-    "font-weight": "var(--ec-uiFontWg)",
-    "line-height": "var(--ec-uiLineHt)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "figcaption": {
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
-    "font-family": "var(--ec-uiFontFml)",
-    "font-size": "var(--ec-uiFontSize)",
-    "font-weight": "var(--ec-uiFontWg)",
-    "line-height": "var(--ec-uiLineHt)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "li.task-list-item[data-task=\"x\"]": {

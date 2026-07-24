@@ -4022,6 +4022,7 @@ body {
     padding-block-start: 0px;
     padding-inline-start: 0px;
     padding: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -4062,6 +4063,7 @@ body {
     padding-block-start: 0px;
     padding-inline-start: 0px;
     padding: 0px;
+    scrollbar-width: var(--scrollbar-native-width);
     stroke-width: 1px;
   }
 
@@ -9581,6 +9583,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-start: 0px;
       padding: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 
@@ -9621,6 +9624,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-start: 0px;
       padding: 0px;
+      scrollbar-width: var(--scrollbar-native-width);
       stroke-width: 1px;
     }
 

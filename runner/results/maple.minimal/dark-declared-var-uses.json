@@ -175,6 +175,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -191,6 +192,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-interface)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -1629,12 +1631,11 @@
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"
   },
   ".internal-embed": {
-    "background-color": "var(--embed-background)",
+    "background-color": "var(--background-primary-alt)",
     "caret-color": "var(--caret-color)",
-    "color": "var(--setting-text-normal, var(--text-normal))",
+    "color": "var(--text-muted)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "font-style": "var(--embed-font-style)",
+    "font-size": "var(--font-smaller)",
     "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "text-underline-offset": "var(--setting-underline-offset, var(--size-2-1))"

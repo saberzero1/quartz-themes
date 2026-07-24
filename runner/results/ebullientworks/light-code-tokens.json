@@ -4,7 +4,7 @@
     "color": "rgb(93, 93, 93)"
   },
   "_preBlock": {
-    "backgroundColor": "rgb(241, 241, 241)",
+    "backgroundColor": "oklch(0.959541 0.0000477589 none)",
     "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {

@@ -112,7 +112,7 @@
   --setting-layout-opacity-dark: 0.6;
   --setting-color-dirs: hsl(46, 81%, 45%);
   --setting-outline-width: 2px;
-  --setting-modal-header-title: Maple 1.4.15;
+  --setting-modal-header-title: Maple 1.5.0;
   --setting-tab-stack-header-width: 40px;
   --setting-editor-bg-grid-spacing: 20px;
   --setting-editor-p-spacing: 8px;
@@ -255,7 +255,7 @@
   --setting-layout-opacity-dark: 0.6;
   --setting-color-dirs: hsl(46, 81%, 45%);
   --setting-outline-width: 2px;
-  --setting-modal-header-title: Maple 1.4.15;
+  --setting-modal-header-title: Maple 1.5.0;
   --setting-tab-stack-header-width: 40px;
   --setting-editor-bg-grid-spacing: 20px;
   --setting-editor-p-spacing: 8px;
@@ -325,13 +325,13 @@ html {
   font-family: "maplemono";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/maple.minimal/maplemono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/maple.minimal/maplemono.woff2") format("woff2");
 }
 @font-face {
   font-family: "maplemono";
   font-style: italic;
   font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/maple.minimal/maplemono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/maple.minimal/maplemono-1.woff2") format("woff2");
 }
 
 body {
@@ -3866,9 +3866,9 @@ body {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    margin: 4px 0px;
-    margin-block-end: 4px;
-    margin-block-start: 4px;
+    margin: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     padding: 0px;
@@ -9309,9 +9309,9 @@ html[saved-theme="dark"] {
       border-top-right-radius: 8px;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 8px;
-      margin: 4px 0px;
-      margin-block-end: 4px;
-      margin-block-start: 4px;
+      margin: 0px;
+      margin-block-end: 0px;
+      margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       padding: 0px;

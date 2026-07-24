@@ -1,0 +1,53 @@
+mode: replace
+sections:
+  - name: Deepfield
+    id: deepfield
+    collapsed: false
+    settings:
+      - id: color-palette
+        title: Color Palette
+        description: Choose a color scheme
+        type: class-select
+        allowEmpty: false
+        default: deepfield-electric
+        options:
+          - label: Electric
+            value: deepfield-electric
+          - label: Steel
+            value: deepfield-steel
+          - label: Slate
+            value: deepfield-slate
+          - label: Midnight
+            value: deepfield-midnight
+          - label: Mercury
+            value: deepfield-mercury
+          - label: Venus
+            value: deepfield-venus
+          - label: Earth
+            value: deepfield-earth
+          - label: Mars
+            value: deepfield-mars
+          - label: Jupiter
+            value: deepfield-jupiter
+          - label: Saturn
+            value: deepfield-saturn
+          - label: Uranus
+            value: deepfield-uranus
+          - label: Neptune
+            value: deepfield-neptune
+          - label: Event Horizon
+            value: deepfield-event-horizon
+          - label: Galactic Noir
+            value: deepfield-galactic-noir
+          - label: Midnight Orbit
+            value: deepfield-midnight-orbit
+          - label: Ion Trail
+            value: deepfield-ion-trail
+          - label: Aurora Nebula
+            value: deepfield-aurora-nebula
+          - label: Magnetic Field
+            value: deepfield-magnetic-field
+          - label: Retro Galaxy
+            value: deepfield-retro-galaxy
+          - label: Vintage Cosmos
+            value: deepfield-vintage-cosmos

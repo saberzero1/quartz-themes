@@ -3,12 +3,24 @@
     "height": "600px",
     "transform-origin": "150px 300px"
   },
+  ".backlink-pane .tree-item": {
+    "height": "68.5781px",
+    "transform-origin": "137px 34.2891px"
+  },
   ".backlink-pane .tree-item-self": {
     "border-bottom-left-radius": "7px",
     "border-bottom-right-radius": "7px",
     "border-radius": "7px",
     "border-top-left-radius": "7px",
-    "border-top-right-radius": "7px"
+    "border-top-right-radius": "7px",
+    "height": "32.8906px",
+    "padding": "8px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
+    "padding-top": "8px",
+    "transform-origin": "138px 16.4453px"
   },
   ".callout[data-callout=\"note\"] > .callout-title > .callout-icon > svg.svg-icon": {
     "--callout-color": "#027aff",
@@ -105,23 +117,30 @@
     "border-radius": "7px",
     "border-top-left-radius": "7px",
     "border-top-right-radius": "7px",
+    "height": "32.8906px",
     "margin": "0px 0px 2px -32px",
     "margin-inline": "-32px 0px",
     "margin-inline-start": "-32px",
     "margin-left": "-32px",
-    "padding": "4px 8px 4px 56px",
+    "padding": "8px 8px 8px 56px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
     "padding-inline": "56px 8px",
     "padding-inline-start": "56px",
     "padding-left": "56px",
-    "transform-origin": "135.5px 12.4453px",
+    "padding-top": "8px",
+    "transform-origin": "135.5px 16.4453px",
     "width": "271px"
   },
   ".nav-files-container": {
-    "height": "600px",
-    "transform-origin": "150px 300px"
+    "height": "579.047px",
+    "transform-origin": "150px 289.523px"
   },
   ".nav-files-container .tree-item": {
-    "transform-origin": "135.5px 106.75px",
+    "height": "277.5px",
+    "transform-origin": "135.5px 138.75px",
     "width": "271px"
   },
   ".nav-header": {
@@ -143,7 +162,8 @@
     "border-width": "0px"
   },
   ".search-result-container .tree-item.search-result": {
-    "transform-origin": "135.5px 30.2891px",
+    "height": "68.5781px",
+    "transform-origin": "135.5px 34.2891px",
     "width": "271px"
   },
   ".search-result-file-match": {
@@ -156,13 +176,20 @@
     "border-radius": "7px",
     "border-top-left-radius": "7px",
     "border-top-right-radius": "7px",
-    "transform-origin": "135.5px 12.4453px",
+    "height": "32.8906px",
+    "padding": "8px 8px 8px 24px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
+    "padding-top": "8px",
+    "transform-origin": "135.5px 16.4453px",
     "width": "271px"
   },
   ".search-results-children": {
-    "height": "1260.77px",
-    "min-height": "1260.77px",
-    "transform-origin": "135.5px 630.383px",
+    "height": "1316.77px",
+    "min-height": "1316.77px",
+    "transform-origin": "135.5px 658.383px",
     "width": "271px"
   },
   ".status-bar": {
@@ -202,11 +229,13 @@
     "border-left": "0px solid oklch(0.999994 0.0000497986 none / 0.12)",
     "border-left-width": "0px",
     "border-width": "0px",
-    "transform-origin": "129.5px 93.3047px",
+    "height": "242.609px",
+    "transform-origin": "129.5px 121.305px",
     "width": "259px"
   },
   ".tree-item.search-result": {
-    "transform-origin": "135.5px 30.2891px",
+    "height": "68.5781px",
+    "transform-origin": "135.5px 34.2891px",
     "width": "271px"
   },
   ".view-content": {
@@ -222,16 +251,16 @@
   },
   ".workspace-leaf": {
     "background": "rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box",
-    "height": "642px",
-    "transform-origin": "150px 321px"
+    "height": "621.047px",
+    "transform-origin": "150px 310.523px"
   },
   ".workspace-leaf-content": {
-    "height": "642px",
-    "transform-origin": "150px 321px"
+    "height": "621.047px",
+    "transform-origin": "150px 310.523px"
   },
   ".workspace-leaf-content[data-type=\"search\"]": {
-    "height": "642px",
-    "transform-origin": "150px 321px"
+    "height": "621.062px",
+    "transform-origin": "150px 310.531px"
   },
   ".workspace-leaf.mod-active": {
     "height": "1332px",
@@ -430,7 +459,14 @@
     "border-radius": "7px",
     "border-top-left-radius": "7px",
     "border-top-right-radius": "7px",
-    "transform-origin": "135.5px 12.4453px",
+    "height": "32.8906px",
+    "padding": "8px 8px 8px 24px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
+    "padding-top": "8px",
+    "transform-origin": "135.5px 16.4453px",
     "width": "271px"
   },
   "div.is-clickable.mod-collapsible.nav-folder-title.tree-item-self[data-path=\"folder/collapsed\"]": {
@@ -439,15 +475,21 @@
     "border-radius": "7px",
     "border-top-left-radius": "7px",
     "border-top-right-radius": "7px",
+    "height": "32.8906px",
     "margin": "0px 0px 2px -16px",
     "margin-inline": "-16px 0px",
     "margin-inline-start": "-16px",
     "margin-left": "-16px",
-    "padding": "4px 8px 4px 40px",
+    "padding": "8px 8px 8px 40px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
     "padding-inline": "40px 8px",
     "padding-inline-start": "40px",
     "padding-left": "40px",
-    "transform-origin": "135.5px 12.4453px",
+    "padding-top": "8px",
+    "transform-origin": "135.5px 16.4453px",
     "width": "271px"
   },
   "div.is-clickable.mod-collapsible.tree-item-self": {
@@ -456,7 +498,14 @@
     "border-radius": "7px",
     "border-top-left-radius": "7px",
     "border-top-right-radius": "7px",
-    "transform-origin": "135.5px 12.4453px",
+    "height": "32.8906px",
+    "padding": "8px 8px 8px 24px",
+    "padding-block": "8px",
+    "padding-block-end": "8px",
+    "padding-block-start": "8px",
+    "padding-bottom": "8px",
+    "padding-top": "8px",
+    "transform-origin": "135.5px 16.4453px",
     "width": "271px"
   },
   "div.mod-active.workspace-leaf": {
@@ -472,8 +521,8 @@
   },
   "div.workspace-leaf": {
     "background": "rgb(28, 28, 28) none repeat scroll 0% 0% / auto padding-box border-box",
-    "height": "642px",
-    "transform-origin": "150px 321px"
+    "height": "621.047px",
+    "transform-origin": "150px 310.523px"
   },
   "figcaption": {
     "--ec-brdRad": "7px",

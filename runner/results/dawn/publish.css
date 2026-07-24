@@ -291,6 +291,123 @@
     U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
     U+2215, U+FEFF, U+FFFD;
 }
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Thin.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Thin.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Thin.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraLight.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraLight.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraLight.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Light.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Regular.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Medium.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-SemiBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-SemiBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-SemiBold.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Bold.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-ExtraBold.otf")
+      format("opentype");
+}
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Black.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Black.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Pretendard/Pretendard-Black.otf")
+      format("opentype");
+}
 
 @font-face {
   font-family: "Cascadia Mono";
@@ -437,7 +554,7 @@ body.theme-light {
   --background-modifier-border-focus: var(--color-ash-600) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: var(--static-alpha-balck-700) !important;
+  --background-modifier-cover: var(--static-alpha-black-700) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -550,12 +667,12 @@ body.theme-light {
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: var(--font-semibold) !important;
-  --border-width: 0.75x !important;
+  --border-width: 1px !important;
   --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-border-opacity: 0.2;
-  --callout-border-width: 0px;
+  --callout-border-opacity: 0.3;
+  --callout-border-width: 1px;
   --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
@@ -698,6 +815,20 @@ body.theme-light {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -716,7 +847,7 @@ body.theme-light {
   --file-header-font-size: var(--font-ui-small) !important;
   --file-header-font-weight: 500 !important;
   --file-header-justify: center !important;
-  --file-line-width: 640px !important;
+  --file-line-width: 760px !important;
   --file-margins: var(--size-4-8) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
@@ -735,7 +866,8 @@ body.theme-light {
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme: "??" !important;
+  --font-interface-theme:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: var(--font-text) !important;
@@ -761,7 +893,8 @@ body.theme-light {
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme: "??" !important;
+  --font-text-theme:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: var(--scale-dimension-font-size-400) !important;
   --font-ui-medium: var(--scale-dimension-font-size-200) !important;
@@ -803,42 +936,46 @@ body.theme-light {
   --h1-size: 1.375rem !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 600 !important;
+  --h1-weight: var(--font-semibold) !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.25rem !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: var(--font-semibold) !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.125rem !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: var(--font-semibold) !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1rem !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: var(--font-semibold) !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h5-size: 0.875rem !important;
   --h5-style: small-caps !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: var(--font-semibold) !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: var(--line-height-normal) !important;
   --h6-size: 0.813rem !important;
   --h6-style: small-caps !important;
   --h6-variant: normal !important;
-  --h6-weight: 600 !important;
+  --h6-weight: var(--font-semibold) !important;
   --header-height: 42px !important;
   --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: darken !important;
-  --hr-color: var(--background-modifier-border) !important;
+  --hr-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 16%
+  ) !important;
   --hr-thickness: 1px !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
@@ -857,6 +994,7 @@ body.theme-light {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.1) !important;
@@ -897,7 +1035,7 @@ body.theme-light {
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
   --link-color: var(--text-accent) !important;
   --link-color-hover: var(--text-accent-hover) !important;
@@ -1108,7 +1246,7 @@ body.theme-light {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -1196,14 +1334,26 @@ body.theme-light {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: 50% !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -1348,6 +1498,7 @@ body.theme-light {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -1384,7 +1535,8 @@ body.theme-light {
   --shadow-xs:
     0 1px 6px rgba(0, 0, 0, 0.015), 0 4px 24px rgba(0, 0, 0, 0.065),
     var(--shadow-edges) !important;
-  --default-font: "Inter", sans-serif !important;
+  --default-font:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --vault-name-color: var(--text-normal) !important;
   --callout-title-size: var(--font-ui-medium);
   --embed-border-left: 2px solid var(--interactive-accent) !important;
@@ -1400,7 +1552,10 @@ body.theme-light {
   --alpha-500: 0.5 !important;
   --background-modifier-border-row: var(--color-ash-500) !important;
   --background-primary-low: var(--color-ash-100) !important;
-  --bold-background: var(--static-alpha-balck-150) !important;
+  --bold-background: var(--static-alpha-black-150) !important;
+  --callout-bar-opacity: 0.7;
+  --callout-bar-width: 3px;
+  --callout-tint-opacity: 0.09;
   --color-ash-100: #f9f8f6 !important;
   --color-ash-1000: #bebaa7 !important;
   --color-ash-200: #f2f1ed !important;
@@ -1473,8 +1628,14 @@ body.theme-light {
   --color-yellow-alpha-200: rgba(255, 232, 23, 0.3) !important;
   --color-yellow-alpha-50: rgba(255, 232, 23, 0.05) !important;
   --cursor-action: pointer !important;
-  --line-height-large: 1.6 !important;
+  --line-height-large: 1.7 !important;
   --radius-full: var(--scale-dimension-size-max) !important;
+  --rule-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 3%
+  ) !important;
+  --rule-height: 2em !important;
   --scale-dimension-font-size-10: 10px !important;
   --scale-dimension-font-size-100: 14px !important;
   --scale-dimension-font-size-1000: 48px !important;
@@ -1523,11 +1684,11 @@ body.theme-light {
   --scale-radius-5: 16px !important;
   --scale-radius-6: 24px !important;
   --scale-radius-9999: 24px !important;
-  --static-alpha-balck-100: rgba(0, 0, 0, 0.06) !important;
-  --static-alpha-balck-150: rgba(0, 0, 0, 0.1) !important;
-  --static-alpha-balck-200: rgba(0, 0, 0, 0.2) !important;
-  --static-alpha-balck-500: rgba(0, 0, 0, 0.5) !important;
-  --static-alpha-balck-700: rgba(0, 0, 0, 0.7) !important;
+  --static-alpha-black-100: rgba(0, 0, 0, 0.06) !important;
+  --static-alpha-black-150: rgba(0, 0, 0, 0.1) !important;
+  --static-alpha-black-200: rgba(0, 0, 0, 0.2) !important;
+  --static-alpha-black-500: rgba(0, 0, 0, 0.5) !important;
+  --static-alpha-black-700: rgba(0, 0, 0, 0.7) !important;
   --static-alpha-white-200: rgba(255, 255, 255, 0.2) !important;
   --static-alpha-white-500: rgba(255, 255, 255, 0.5) !important;
   --static-black: #000000 !important;
@@ -1600,7 +1761,7 @@ body.theme-dark {
   --background-modifier-border-focus: var(--color-base-25) !important;
   --background-modifier-border-hover: var(--color-base-35) !important;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3) !important;
-  --background-modifier-cover: var(--static-alpha-balck-700) !important;
+  --background-modifier-cover: var(--static-alpha-black-700) !important;
   --background-modifier-error: var(--color-red) !important;
   --background-modifier-error-hover: var(--color-red) !important;
   --background-modifier-error-rgb: var(--color-red-rgb) !important;
@@ -1713,12 +1874,12 @@ body.theme-dark {
   --blur-saturation: 1.5 !important;
   --bold-modifier: 200 !important;
   --bold-weight: var(--font-semibold) !important;
-  --border-width: 0.75x !important;
+  --border-width: 1px !important;
   --button-corner-shape: var(--corner-shape) !important;
   --button-radius: var(--input-radius) !important;
   --callout-blend-mode: var(--highlight-mix-blend-mode);
-  --callout-border-opacity: 0.2;
-  --callout-border-width: 0px;
+  --callout-border-opacity: 0.3;
+  --callout-border-width: 1px;
   --callout-bug: var(--color-red-rgb);
   --callout-content-background: transparent;
   --callout-content-padding: 0;
@@ -1861,6 +2022,20 @@ body.theme-dark {
   --dropdown-padding-end: 2.4em !important;
   --dropdown-padding-start: 0.8em !important;
   --dropdown-text-align: start !important;
+  --embed-action-color: var(--text-normal) !important;
+  --embed-action-radius: var(--clickable-icon-radius) !important;
+  --embed-actions-background: color-mix(
+    var(--background-primary) 80%,
+    transparent
+  ) !important;
+  --embed-actions-blur: var(--blur-s) !important;
+  --embed-actions-corner-shape: var(--corner-shape) !important;
+  --embed-actions-padding: var(--size-2-1) !important;
+  --embed-actions-radius: calc(
+    var(--embed-action-radius) + var(--embed-actions-padding)
+  ) !important;
+  --embed-actions-shadow:
+    0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 0 6px 0 rgba(0, 0, 0, 0.05) !important;
   --embed-block-shadow-hover:
     0 0 0 1px var(--background-modifier-border),
     inset 0 0 0 1px var(--background-modifier-border) !important;
@@ -1879,7 +2054,7 @@ body.theme-dark {
   --file-header-font-size: var(--font-ui-small) !important;
   --file-header-font-weight: 500 !important;
   --file-header-justify: center !important;
-  --file-line-width: 640px !important;
+  --file-line-width: 760px !important;
   --file-margins: var(--size-4-8) !important;
   --file-margins-x: var(--size-4-8) !important;
   --file-margins-y: var(--size-4-8) !important;
@@ -1898,7 +2073,8 @@ body.theme-dark {
     var(--font-interface-override), var(--font-interface-theme),
     var(--default-font, "??"), var(--font-default) !important;
   --font-interface-override: "??" !important;
-  --font-interface-theme: "??" !important;
+  --font-interface-theme:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --font-light: 300 !important;
   --font-medium: 500 !important;
   --font-mermaid: var(--font-text) !important;
@@ -1924,7 +2100,8 @@ body.theme-dark {
     var(--font-text-override), var(--font-text-theme), var(--font-default) !important;
   --font-text-override: "??" !important;
   --font-text-size: 16px !important;
-  --font-text-theme: "??" !important;
+  --font-text-theme:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --font-thin: 100 !important;
   --font-ui-large: var(--scale-dimension-font-size-400) !important;
   --font-ui-medium: var(--scale-dimension-font-size-200) !important;
@@ -1966,42 +2143,46 @@ body.theme-dark {
   --h1-size: 1.375rem !important;
   --h1-style: normal !important;
   --h1-variant: normal !important;
-  --h1-weight: 600 !important;
+  --h1-weight: var(--font-semibold) !important;
   --h2-letter-spacing: -0.011em !important;
   --h2-line-height: 1.2 !important;
   --h2-size: 1.25rem !important;
   --h2-style: normal !important;
   --h2-variant: normal !important;
-  --h2-weight: 600 !important;
+  --h2-weight: var(--font-semibold) !important;
   --h3-letter-spacing: -0.008em !important;
   --h3-line-height: 1.3 !important;
   --h3-size: 1.125rem !important;
   --h3-style: normal !important;
   --h3-variant: normal !important;
-  --h3-weight: 600 !important;
+  --h3-weight: var(--font-semibold) !important;
   --h4-letter-spacing: -0.005em !important;
   --h4-line-height: 1.4 !important;
   --h4-size: 1rem !important;
   --h4-style: normal !important;
   --h4-variant: normal !important;
-  --h4-weight: 600 !important;
+  --h4-weight: var(--font-semibold) !important;
   --h5-letter-spacing: -0.002em !important;
   --h5-line-height: var(--line-height-normal) !important;
   --h5-size: 0.875rem !important;
   --h5-style: small-caps !important;
   --h5-variant: normal !important;
-  --h5-weight: 600 !important;
+  --h5-weight: var(--font-semibold) !important;
   --h6-letter-spacing: 0em !important;
   --h6-line-height: var(--line-height-normal) !important;
   --h6-size: 0.813rem !important;
   --h6-style: small-caps !important;
   --h6-variant: normal !important;
-  --h6-weight: 600 !important;
+  --h6-weight: var(--font-semibold) !important;
   --header-height: 42px !important;
   --heading-formatting: var(--text-faint) !important;
   --heading-spacing: calc(var(--p-spacing) * 2.5) !important;
   --highlight-mix-blend-mode: lighten !important;
-  --hr-color: var(--background-modifier-border) !important;
+  --hr-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 16%
+  ) !important;
   --hr-thickness: 1px !important;
   --icon-color: var(--text-muted) !important;
   --icon-color-active: var(--text-accent) !important;
@@ -2020,6 +2201,7 @@ body.theme-dark {
   --icon-xl-stroke-width: 1.25px !important;
   --icon-xs: 14px !important;
   --icon-xs-stroke-width: 2px !important;
+  --image-radius: 4px !important;
   --indent-size: 4 !important;
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: rgba(var(--mono-rgb-100), 0.1) !important;
@@ -2060,7 +2242,7 @@ body.theme-dark {
   --layer-slides: 45 !important;
   --layer-status-bar: 15 !important;
   --layer-tooltip: 70 !important;
-  --line-height-normal: 1.5 !important;
+  --line-height-normal: 1.6 !important;
   --line-height-tight: 1.3 !important;
   --link-color: var(--text-accent) !important;
   --link-color-hover: var(--text-accent-hover) !important;
@@ -2263,7 +2445,7 @@ body.theme-dark {
   --safe-area-inset-right: 0px !important;
   --safe-area-inset-top: 0px !important;
   --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.2) !important;
-  --scrollbar-bg: rgba(var(--mono-rgb-100), 0.05) !important;
+  --scrollbar-bg: transparent !important;
   --scrollbar-border-width: 3px 3px 3px 2px !important;
   --scrollbar-height: 12px !important;
   --scrollbar-radius: var(--radius-l) !important;
@@ -2351,14 +2533,26 @@ body.theme-dark {
   --size-4-9: 36px !important;
   --slider-s-thumb-position: -5px !important;
   --slider-s-thumb-size: 15px !important;
+  --slider-thumb-background: white !important;
+  --slider-thumb-background-hover: white !important;
   --slider-thumb-border-color: var(
     --background-modifier-border-hover
   ) !important;
   --slider-thumb-border-width: 1px !important;
   --slider-thumb-height: 18px !important;
+  --slider-thumb-height-active: var(--slider-thumb-height) !important;
   --slider-thumb-radius: 50% !important;
+  --slider-thumb-shadow:
+    0 0px 2px 0px rgba(0, 0, 0, 0.1), 0 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+  --slider-thumb-shadow-active: var(--slider-thumb-shadow) !important;
+  --slider-thumb-shadow-focus:
+    var(--slider-thumb-shadow-active),
+    0 0px 0px 2px var(--background-modifier-border-focus) !important;
+  --slider-thumb-shadow-hover: var(--slider-thumb-shadow) !important;
   --slider-thumb-width: 18px !important;
+  --slider-thumb-width-active: var(--slider-thumb-width) !important;
   --slider-thumb-y: -6px !important;
+  --slider-thumb-y-active: var(--slider-thumb-y) !important;
   --slider-track-background: var(--background-modifier-border) !important;
   --slider-track-height: 3px !important;
   --slider-value-font-size: var(--font-ui-small) !important;
@@ -2503,6 +2697,7 @@ body.theme-dark {
   --toggle-s-width: 34px !important;
   --toggle-thumb-color: white !important;
   --toggle-thumb-height: 18px !important;
+  --toggle-thumb-opacity-active: 1 !important;
   --toggle-thumb-radius: 18px !important;
   --toggle-thumb-width: 18px !important;
   --toggle-width: 40px !important;
@@ -2534,7 +2729,8 @@ body.theme-dark {
   --xfa-unfocused-field-background: url("data:image/svg+xml,%3Csvg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' style='fill:rgba(0, 54, 255, 0.13);'/%3E%3C/svg%3E") !important;
   --zoom-factor: 1 !important;
   --text-highlight-bg-active: var(--color-yellow-alpha-50) !important;
-  --default-font: "Inter", sans-serif !important;
+  --default-font:
+    "Pretendard Variable", "Pretendard", "Inter", sans-serif !important;
   --vault-name-color: var(--text-normal) !important;
   --callout-title-size: var(--font-ui-medium);
   --embed-border-left: 2px solid var(--interactive-accent) !important;
@@ -2550,7 +2746,10 @@ body.theme-dark {
   --alpha-500: 0.5 !important;
   --background-modifier-border-row: var(--color-base-10) !important;
   --background-primary-low: var(--color-base-05) !important;
-  --bold-background: var(--static-alpha-balck-150) !important;
+  --bold-background: var(--static-alpha-black-150) !important;
+  --callout-bar-opacity: 0.7;
+  --callout-bar-width: 3px;
+  --callout-tint-opacity: 0.09;
   --color-ash-100: #131311 !important;
   --color-ash-1000: #bebaa7 !important;
   --color-ash-200: #262521 !important;
@@ -2623,8 +2822,14 @@ body.theme-dark {
   --color-yellow-alpha-200: rgba(255, 227, 78, 0.3) !important;
   --color-yellow-alpha-50: rgba(255, 227, 78, 0.1) !important;
   --cursor-action: pointer !important;
-  --line-height-large: 1.6 !important;
+  --line-height-large: 1.7 !important;
   --radius-full: var(--scale-dimension-size-max) !important;
+  --rule-color: color-mix(
+    in srgb,
+    var(--background-modifier-border),
+    rgb(var(--mono-rgb-100)) 3%
+  ) !important;
+  --rule-height: 2em !important;
   --scale-dimension-font-size-10: 10px !important;
   --scale-dimension-font-size-100: 14px !important;
   --scale-dimension-font-size-1000: 48px !important;
@@ -2673,11 +2878,11 @@ body.theme-dark {
   --scale-radius-5: 16px !important;
   --scale-radius-6: 24px !important;
   --scale-radius-9999: 24px !important;
-  --static-alpha-balck-100: rgba(0, 0, 0, 0.06) !important;
-  --static-alpha-balck-150: rgba(0, 0, 0, 0.1) !important;
-  --static-alpha-balck-200: rgba(0, 0, 0, 0.2) !important;
-  --static-alpha-balck-500: rgba(0, 0, 0, 0.5) !important;
-  --static-alpha-balck-700: rgba(0, 0, 0, 0.7) !important;
+  --static-alpha-black-100: rgba(0, 0, 0, 0.06) !important;
+  --static-alpha-black-150: rgba(0, 0, 0, 0.1) !important;
+  --static-alpha-black-200: rgba(0, 0, 0, 0.2) !important;
+  --static-alpha-black-500: rgba(0, 0, 0, 0.5) !important;
+  --static-alpha-black-700: rgba(0, 0, 0, 0.7) !important;
   --static-alpha-white-200: rgba(255, 255, 255, 0.2) !important;
   --static-alpha-white-500: rgba(255, 255, 255, 0.5) !important;
   --static-black: #000000 !important;
@@ -2709,9 +2914,13 @@ body {
   --nav-collapse-icon-color-collapsed: var(--text-faint);
 }
 body body.theme-light .frontmatter-container {
-  background-color: var(--metadata-background);
+  background-color: var(--color-ash-300);
   color: var(--text-muted);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2726,25 +2935,29 @@ body body.theme-light .frontmatter-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid rgb(229, 227, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   margin: 0px 0px 32px;
   margin-block-end: 32px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  padding: 8px 0px;
-  padding-block-end: 8px;
-  padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-light .metadata-container {
-  background-color: var(--metadata-background);
+  background-color: var(--color-ash-300);
   color: var(--text-muted);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2759,25 +2972,29 @@ body body.theme-light .metadata-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid rgb(229, 227, 220);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   margin: 0px 0px 32px;
   margin-block-end: 32px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  padding: 8px 0px;
-  padding-block-end: 8px;
-  padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-light .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(52, 58, 64);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2812,6 +3029,10 @@ body body.theme-light .metadata-container .metadata-property {
   background-color: var(--metadata-property-background);
   color: rgb(52, 58, 64);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2870,6 +3091,10 @@ body body.theme-light .markdown-rendered a.external-link {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2910,6 +3135,10 @@ body body.theme-light .markdown-rendered a.internal-link {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -2950,6 +3179,10 @@ body body.theme-light .markdown-rendered a.internal-link.is-unresolved {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3039,6 +3272,12 @@ body body.theme-light .markdown-rendered p {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -3080,6 +3319,10 @@ body body.theme-light strong {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3119,6 +3362,10 @@ body body.theme-light b {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3158,6 +3405,10 @@ body body.theme-light em {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3197,6 +3448,10 @@ body body.theme-light i {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3307,6 +3562,10 @@ body body.theme-light strong > em {
   color: var(--italic-color);
   cursor: grab;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3340,6 +3599,10 @@ body body.theme-light .markdown-rendered mark {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3379,6 +3642,10 @@ body body.theme-light del {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3442,18 +3709,19 @@ body body.theme-light div.suggestion-item {
   color: rgb(33, 37, 41);
 }
 body body.theme-light .markdown-rendered hr {
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top: 1px solid;
-  border-color: rgb(229, 227, 220);
-  border-bottom-width: 0px;
+  border-top: 0px solid rgb(128, 128, 128);
+  border-bottom: 1px solid color(srgb 0.754353 0.747765 0.724706);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 32px 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -3463,6 +3731,12 @@ body body.theme-light div.multi-select-pill {
   color: var(--pill-color);
   display: flex;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -3509,6 +3783,12 @@ body body.theme-light .site-body-left-column input.search-bar {
   border-end-end-radius: 0px;
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -3538,6 +3818,12 @@ body body.theme-light .search-results > * {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -3770,15 +4056,18 @@ body body.theme-light .published-container .markdown-rendered h6 {
   color: rgb(34, 34, 34);
   font-family: var(--h6-font);
   font-size: var(--h6-size);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-semibold);
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(34, 34, 34);
   letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
-  padding: 0px;
-  padding-block-end: 0px;
+  padding-top: 0px;
+  padding-bottom: var(--size-2-2);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 4px;
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
@@ -3813,9 +4102,9 @@ body body.theme-light .markdown-rendered ul > li {
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   margin-top: 0px;
-  margin-bottom: 1.92px;
+  margin-bottom: 0px;
   margin-right: 0px;
-  margin-block-end: 1.92px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
 }
@@ -3846,9 +4135,9 @@ body body.theme-light .markdown-rendered ol > li {
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   margin-top: 0px;
-  margin-bottom: 1.92px;
+  margin-bottom: 0px;
   margin-right: 0px;
-  margin-block-end: 1.92px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
 }
@@ -3890,6 +4179,10 @@ body body.theme-light dt {
   margin-inline-start: 0px;
   font-size: 16px;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3922,6 +4215,10 @@ body body.theme-light dd {
   color: rgb(33, 37, 41);
   font-size: 16px;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -3976,32 +4273,32 @@ body body.theme-light .markdown-rendered code {
 }
 body body.theme-light .markdown-rendered pre > code {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgb(229, 227, 220);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(33, 37, 41);
   overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body body.theme-light figure[data-rehype-pretty-code-figure] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgb(229, 227, 220);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4014,11 +4311,11 @@ body
   background-color: var(--code-background);
   color: rgb(33, 37, 41);
   font-family: monospace;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgb(229, 227, 220);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4026,19 +4323,19 @@ body
 }
 body body.theme-light pre > code [data-line] {
   background-color: var(--code-background);
-  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-left: 0px solid rgb(229, 227, 220);
 }
 body body.theme-light pre > code [data-highlighted-line] {
   background-color: var(--code-background);
-  border-left-color: rgba(0, 0, 0, 0);
+  border-left-color: rgb(229, 227, 220);
 }
 body body.theme-light pre > code [data-highlighted-chars] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgb(229, 227, 220);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -4187,6 +4484,10 @@ body body.theme-light .markdown-rendered blockquote {
   border-inline-start: 1px solid rgb(74, 125, 255);
   color: var(--color-base-50);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -4202,7 +4503,7 @@ body body.theme-light .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 24px;
+  line-height: 25.6px;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: var(--size-4-6);
@@ -4246,6 +4547,12 @@ body body.theme-light input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -4375,6 +4682,10 @@ body body.theme-light .math-block > mjx-container.MathJax {
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -4391,6 +4702,10 @@ body body.theme-light .math-block > mjx-container.MathJax {
 }
 body body.theme-light div.math-block > mjx-container.MathJax {
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -4411,6 +4726,12 @@ body body.theme-light .math-inline > mjx-container.MathJax > mjx-math {
 body body.theme-light .page-header .page-title {
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -4454,10 +4775,10 @@ body body.theme-light .math-block {
   color: rgb(33, 37, 41);
   border-color: rgb(33, 37, 41);
   border-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 body body.theme-light .footnotes {
   background-color: rgba(0, 0, 0, 0);
@@ -4520,7 +4841,9 @@ body body.theme-light body {
 }
 body body.theme-light .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4535,9 +4858,9 @@ body body.theme-light .callout[data-callout="note"] {
   padding-block-start: 8px;
   padding-inline-end: 20px;
   padding-inline-start: 20px;
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+  background: rgba(0, 0, 0, 0.09) none repeat scroll 0% 0% / auto padding-box
     border-box;
   color: rgb(33, 37, 41);
 }
@@ -4554,9 +4877,9 @@ body body.theme-light .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4582,13 +4905,15 @@ body body.theme-light .callout > .callout-content {
 }
 body body.theme-light .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+  background: rgba(0, 0, 0, 0.09) none repeat scroll 0% 0% / auto padding-box
     border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4611,9 +4936,9 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4623,13 +4948,15 @@ body body.theme-light .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(3, 105, 224, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(3, 105, 224, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4652,9 +4979,9 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4664,13 +4991,15 @@ body body.theme-light .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(3, 105, 224, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(3, 105, 224, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4693,9 +5022,9 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4705,13 +5034,15 @@ body body.theme-light .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(40, 173, 202, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(40, 173, 202, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4734,9 +5065,9 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4746,13 +5077,15 @@ body body.theme-light .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+  background: rgba(8, 185, 78, 0.09) none repeat scroll 0% 0% / auto padding-box
     border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(8, 185, 78, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4775,9 +5108,9 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4787,13 +5120,15 @@ body body.theme-light .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(245, 162, 0, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(245, 162, 0, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4816,9 +5151,9 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4828,13 +5163,15 @@ body body.theme-light .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(253, 126, 20, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(253, 126, 20, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4857,9 +5194,9 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4869,13 +5206,15 @@ body body.theme-light .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4898,9 +5237,9 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4910,13 +5249,15 @@ body body.theme-light .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4939,9 +5280,9 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4951,13 +5292,15 @@ body body.theme-light .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -4980,9 +5323,9 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -4992,13 +5335,15 @@ body body.theme-light .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(121, 80, 242, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(121, 80, 242, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -5021,9 +5366,9 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -5033,13 +5378,15 @@ body body.theme-light .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-light .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(158, 158, 158, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(33, 37, 41);
   mix-blend-mode: normal;
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(158, 158, 158, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -5062,9 +5409,9 @@ body body.theme-light .callout[data-callout="quote"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -5077,6 +5424,10 @@ body body.theme-light .markdown-rendered table {
   border-collapse: separate;
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5119,6 +5470,10 @@ body body.theme-light .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5146,6 +5501,10 @@ body body.theme-light .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5181,14 +5540,11 @@ body body.theme-light .markdown-rendered th {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: var(--size-4-3);
-  padding-bottom: var(--size-4-3);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-light .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -5208,19 +5564,20 @@ body body.theme-light .markdown-rendered td {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: var(--size-4-3);
-  padding-bottom: var(--size-4-3);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-light .markdown-rendered tr {
   background-color: var(--table-header-background);
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5306,6 +5663,12 @@ body body.theme-light .markdown-rendered figure {
 body body.theme-light .markdown-rendered figcaption {
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5376,16 +5739,16 @@ body body.theme-light .markdown-rendered audio {
 body body.theme-light .internal-embed {
   background-color: var(--embed-background);
   color: rgb(33, 37, 41);
-  border-radius: 2px;
+  border-radius: 6px;
   border-color: rgb(33, 37, 41);
   border-left: 2px solid rgb(74, 125, 255);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -5422,13 +5785,13 @@ body body.theme-light .markdown-embed {
 body body.theme-light .file-embed {
   background-color: var(--background-primary-alt);
   color: var(--text-muted);
-  border-radius: 2px;
+  border-radius: 6px;
   border-color: rgb(52, 58, 64);
   border-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -5447,6 +5810,12 @@ body body.theme-light .internal-embed .markdown-embed {
 body body.theme-light .nav-view-outer .tree-item-self a {
   color: rgb(52, 58, 64);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5467,6 +5836,12 @@ body body.theme-light .nav-view-outer .tree-item-self a {
 body body.theme-light .nav-view-outer .tree-item-self.mod-active {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5499,6 +5874,12 @@ body
   > .tree-item-self {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5526,6 +5907,12 @@ body
   > .tree-item-self {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5546,7 +5933,7 @@ body
 body body.theme-light .graph-view-container {
   background-color: var(--background-secondary);
   color: rgb(33, 37, 41);
-  border: 0px solid rgb(33, 37, 41);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -5644,12 +6031,13 @@ body body.theme-light h5 {
   border-end-end-radius: 0px;
 }
 body body.theme-light h6 {
-  color: var(--h6-color);
+  color: var(--text-faint);
   font-family: var(--h6-font);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-semibold);
   text-decoration: rgb(34, 34, 34);
-  text-transform: none;
-  border: 0px rgb(33, 37, 41);
+  text-transform: uppercase;
+  border: 0px rgb(73, 80, 87);
+  border-bottom: 1px solid rgb(229, 227, 220);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -5663,6 +6051,12 @@ body body.theme-light .site-footer {
   background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5697,6 +6091,12 @@ body body.theme-light .site-footer a {
 body body.theme-light .nav-header {
   color: rgb(33, 37, 41);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5730,6 +6130,12 @@ body body.theme-light .nav-file-title {
 body body.theme-light .nav-file-title-content {
   color: rgb(52, 58, 64);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5783,6 +6189,12 @@ body body.theme-light .view-header-breadcrumb {
 body body.theme-light .view-header-breadcrumb-separator {
   color: var(--text-faint);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -5800,9 +6212,13 @@ body body.theme-light .view-header-breadcrumb-separator {
     sans-serif;
 }
 body body.theme-dark .frontmatter-container {
-  background-color: var(--metadata-background);
+  background-color: var(--color-base-20);
   color: var(--text-muted);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5817,25 +6233,29 @@ body body.theme-dark .frontmatter-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid rgba(255, 255, 255, 0.05);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   margin: 0px 0px 32px;
   margin-block-end: 32px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  padding: 8px 0px;
-  padding-block-end: 8px;
-  padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-dark .metadata-container {
-  background-color: var(--metadata-background);
+  background-color: var(--color-base-20);
   color: var(--text-muted);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5850,25 +6270,29 @@ body body.theme-dark .metadata-container {
     "Segoe UI Symbol",
     sans-serif;
   border: 0px solid rgba(255, 255, 255, 0.05);
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   margin: 0px 0px 32px;
   margin-block-end: 32px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
-  padding: 8px 0px;
-  padding-block-end: 8px;
-  padding-block-start: 8px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-dark .metadata-properties {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(222, 226, 230);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5903,6 +6327,10 @@ body body.theme-dark .metadata-container .metadata-property {
   background-color: var(--metadata-property-background);
   color: rgb(222, 226, 230);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -5961,6 +6389,10 @@ body body.theme-dark .markdown-rendered a.external-link {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6001,6 +6433,10 @@ body body.theme-dark .markdown-rendered a.internal-link {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6041,6 +6477,10 @@ body body.theme-dark .markdown-rendered a.internal-link.is-unresolved {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6130,6 +6570,12 @@ body body.theme-dark .markdown-rendered p {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -6171,6 +6617,10 @@ body body.theme-dark strong {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6210,6 +6660,10 @@ body body.theme-dark b {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6249,6 +6703,10 @@ body body.theme-dark em {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6288,6 +6746,10 @@ body body.theme-dark i {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6398,6 +6860,10 @@ body body.theme-dark strong > em {
   color: var(--italic-color);
   cursor: grab;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6431,6 +6897,10 @@ body body.theme-dark .markdown-rendered mark {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6470,6 +6940,10 @@ body body.theme-dark del {
   backdrop-filter: none;
   box-shadow: none;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -6533,18 +7007,19 @@ body body.theme-dark div.suggestion-item {
   color: rgb(241, 243, 245);
 }
 body body.theme-dark .markdown-rendered hr {
+  border-left-color: rgb(128, 128, 128);
+  border-right-color: rgb(128, 128, 128);
   border-left-width: 0px;
   border-right-width: 0px;
-  border-top: 1px solid;
-  border-color: rgba(255, 255, 255, 0.05);
-  border-bottom-width: 0px;
+  border-top: 0px solid rgb(128, 128, 128);
+  border-bottom: 1px solid color(srgb 1 1 1 / 0.202824);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
-  margin: 32px 0px;
-  margin-block-end: 32px;
-  margin-block-start: 32px;
+  margin: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
   margin-inline-end: 0px;
   margin-inline-start: 0px;
 }
@@ -6554,6 +7029,12 @@ body body.theme-dark div.multi-select-pill {
   color: var(--pill-color);
   display: flex;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -6600,6 +7081,12 @@ body body.theme-dark .site-body-left-column input.search-bar {
   border-end-end-radius: 0px;
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -6629,6 +7116,12 @@ body body.theme-dark .search-results > * {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -6861,15 +7354,18 @@ body body.theme-dark .published-container .markdown-rendered h6 {
   color: rgb(218, 218, 218);
   font-family: var(--h6-font);
   font-size: var(--h6-size);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-semibold);
   line-height: var(--h6-line-height);
   text-shadow: none;
   text-decoration: rgb(218, 218, 218);
   letter-spacing: var(--h6-letter-spacing);
   background-color: rgba(0, 0, 0, 0);
   background-image: none;
-  padding: 0px;
-  padding-block-end: 0px;
+  padding-top: 0px;
+  padding-bottom: var(--size-2-2);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-block-end: 4px;
   padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
@@ -6904,9 +7400,9 @@ body body.theme-dark .markdown-rendered ul > li {
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   margin-top: 0px;
-  margin-bottom: 1.92px;
+  margin-bottom: 0px;
   margin-right: 0px;
-  margin-block-end: 1.92px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
 }
@@ -6937,9 +7433,9 @@ body body.theme-dark .markdown-rendered ol > li {
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   margin-top: 0px;
-  margin-bottom: 1.92px;
+  margin-bottom: 0px;
   margin-right: 0px;
-  margin-block-end: 1.92px;
+  margin-block-end: 0px;
   margin-block-start: 0px;
   margin-inline-end: 0px;
 }
@@ -6981,6 +7477,10 @@ body body.theme-dark dt {
   margin-inline-start: 0px;
   font-size: 16px;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -7013,6 +7513,10 @@ body body.theme-dark dd {
   color: rgb(241, 243, 245);
   font-size: 16px;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -7067,32 +7571,32 @@ body body.theme-dark .markdown-rendered code {
 }
 body body.theme-dark .markdown-rendered pre > code {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
   color: rgb(241, 243, 245);
   overflow-x: visible;
-  padding: 0px;
-  padding-block-end: 0px;
-  padding-block-start: 0px;
-  padding-inline-end: 0px;
-  padding-inline-start: 0px;
+  padding: 16px;
+  padding-block-end: 16px;
+  padding-block-start: 16px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
   white-space-collapse: preserve;
   text-wrap-mode: nowrap;
 }
 body body.theme-dark figure[data-rehype-pretty-code-figure] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7105,11 +7609,11 @@ body
   background-color: var(--code-background);
   color: rgb(241, 243, 245);
   font-family: monospace;
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7117,19 +7621,19 @@ body
 }
 body body.theme-dark pre > code [data-line] {
   background-color: var(--code-background);
-  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-left: 0px solid rgba(255, 255, 255, 0.05);
 }
 body body.theme-dark pre > code [data-highlighted-line] {
   background-color: var(--code-background);
-  border-left-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(255, 255, 255, 0.05);
 }
 body body.theme-dark pre > code [data-highlighted-chars] {
   background-color: var(--code-background);
-  border: 0px solid rgba(0, 0, 0, 0);
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border: 0px solid rgba(255, 255, 255, 0.05);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   border-start-start-radius: 0px;
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
@@ -7278,6 +7782,10 @@ body body.theme-dark .markdown-rendered blockquote {
   border-inline-start: 1px solid rgb(61, 116, 255);
   color: var(--color-base-50);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -7293,7 +7801,7 @@ body body.theme-dark .markdown-rendered blockquote {
     sans-serif;
   font-weight: 400;
   font-style: var(--blockquote-font-style);
-  line-height: 24px;
+  line-height: 25.6px;
   padding-bottom: 0px;
   padding-top: 0px;
   padding-inline-start: var(--size-4-6);
@@ -7337,6 +7845,12 @@ body body.theme-dark input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -7466,6 +7980,10 @@ body body.theme-dark .math-block > mjx-container.MathJax {
   white-space-collapse: collapse;
   text-wrap-mode: wrap;
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -7482,6 +8000,10 @@ body body.theme-dark .math-block > mjx-container.MathJax {
 }
 body body.theme-dark div.math-block > mjx-container.MathJax {
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -7502,6 +8024,12 @@ body body.theme-dark .math-inline > mjx-container.MathJax > mjx-math {
 body body.theme-dark .page-header .page-title {
   color: var(--text-normal);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -7545,10 +8073,10 @@ body body.theme-dark .math-block {
   color: rgb(241, 243, 245);
   border-color: rgb(241, 243, 245);
   border-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 body body.theme-dark .footnotes {
   background-color: rgba(0, 0, 0, 0);
@@ -7611,7 +8139,9 @@ body body.theme-dark body {
 }
 body body.theme-dark .callout[data-callout="note"] {
   --callout-color: var(--callout-default);
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7626,10 +8156,10 @@ body body.theme-dark .callout[data-callout="note"] {
   padding-block-start: 8px;
   padding-inline-end: 20px;
   padding-inline-start: 20px;
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(255, 255, 255, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
 }
 body body.theme-dark .callout[data-callout="note"] > .callout-title {
@@ -7645,9 +8175,9 @@ body body.theme-dark .callout[data-callout="note"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7673,13 +8203,15 @@ body body.theme-dark .callout > .callout-content {
 }
 body body.theme-dark .callout[data-callout="abstract"] {
   --callout-color: var(--callout-summary);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(255, 255, 255, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7702,9 +8234,9 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7714,13 +8246,15 @@ body body.theme-dark .callout[data-callout="abstract"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="info"] {
   --callout-color: var(--callout-info);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(2, 122, 255, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(2, 122, 255, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7743,9 +8277,9 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7755,13 +8289,15 @@ body body.theme-dark .callout[data-callout="info"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="todo"] {
   --callout-color: var(--callout-todo);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(2, 122, 255, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(2, 122, 255, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7784,9 +8320,9 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7796,13 +8332,15 @@ body body.theme-dark .callout[data-callout="todo"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="tip"] {
   --callout-color: var(--callout-tip);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(83, 223, 221, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(83, 223, 221, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7825,9 +8363,9 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7837,13 +8375,15 @@ body body.theme-dark .callout[data-callout="tip"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="success"] {
   --callout-color: var(--callout-success);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(105, 219, 124, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(105, 219, 124, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7866,9 +8406,9 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7878,13 +8418,15 @@ body body.theme-dark .callout[data-callout="success"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="question"] {
   --callout-color: var(--callout-question);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(255, 228, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(255, 228, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7907,9 +8449,9 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7919,13 +8461,15 @@ body body.theme-dark .callout[data-callout="question"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="warning"] {
   --callout-color: var(--callout-warning);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(255, 154, 103, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(255, 154, 103, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7948,9 +8492,9 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -7960,13 +8504,15 @@ body body.theme-dark .callout[data-callout="warning"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="danger"] {
   --callout-color: var(--callout-error);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -7989,9 +8535,9 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -8001,13 +8547,15 @@ body body.theme-dark .callout[data-callout="danger"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="failure"] {
   --callout-color: var(--callout-fail);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -8030,9 +8578,9 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -8042,13 +8590,15 @@ body body.theme-dark .callout[data-callout="failure"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="bug"] {
   --callout-color: var(--callout-bug);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(250, 82, 82, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(250, 82, 82, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -8071,9 +8621,9 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -8083,13 +8633,15 @@ body body.theme-dark .callout[data-callout="bug"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="example"] {
   --callout-color: var(--callout-example);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(168, 130, 255, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(168, 130, 255, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -8112,9 +8664,9 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -8124,13 +8676,15 @@ body body.theme-dark .callout[data-callout="example"] > .callout-title {
 }
 body body.theme-dark .callout[data-callout="quote"] {
   --callout-color: var(--callout-quote);
-  background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
+  background-color: rgba(var(--callout-color), var(--callout-tint-opacity));
   background-image: none;
-  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-    border-box;
+  background: rgba(158, 158, 158, 0.09) none repeat scroll 0% 0% / auto
+    padding-box border-box;
   color: rgb(241, 243, 245);
   mix-blend-mode: normal;
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(158, 158, 158, 0.3);
+  border-left: var(--callout-bar-width) solid
+    rgba(var(--callout-color), var(--callout-bar-opacity));
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -8153,9 +8707,9 @@ body body.theme-dark .callout[data-callout="quote"] > .callout-title {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding: 12px 0px;
-  padding-block-end: 12px;
-  padding-block-start: 12px;
+  padding: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
   padding-inline-end: 0px;
   padding-inline-start: 0px;
   background-color: rgba(0, 0, 0, 0);
@@ -8168,6 +8722,10 @@ body body.theme-dark .markdown-rendered table {
   border-collapse: separate;
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -8210,6 +8768,10 @@ body body.theme-dark .markdown-rendered thead {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -8237,6 +8799,10 @@ body body.theme-dark .markdown-rendered tbody {
   background-color: rgba(0, 0, 0, 0);
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -8272,14 +8838,11 @@ body body.theme-dark .markdown-rendered th {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: var(--size-4-3);
-  padding-bottom: var(--size-4-3);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-dark .markdown-rendered td {
   background-color: rgba(0, 0, 0, 0);
@@ -8299,19 +8862,20 @@ body body.theme-dark .markdown-rendered td {
   border-start-end-radius: 0px;
   border-end-start-radius: 0px;
   border-end-end-radius: 0px;
-  padding-top: var(--size-4-3);
-  padding-bottom: var(--size-4-3);
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 12px 16px;
   padding-block-end: 12px;
   padding-block-start: 12px;
-  padding-inline-end: 8px;
-  padding-inline-start: 8px;
+  padding-inline-end: 16px;
+  padding-inline-start: 16px;
 }
 body body.theme-dark .markdown-rendered tr {
   background-color: var(--table-header-background);
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
     ui-sans-serif,
     -apple-system,
     BlinkMacSystemFont,
@@ -8397,6 +8961,12 @@ body body.theme-dark .markdown-rendered figure {
 body body.theme-dark .markdown-rendered figcaption {
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8467,16 +9037,16 @@ body body.theme-dark .markdown-rendered audio {
 body body.theme-dark .internal-embed {
   background-color: var(--embed-background);
   color: rgb(241, 243, 245);
-  border-radius: 2px;
+  border-radius: 6px;
   border-color: rgb(241, 243, 245);
   border-left: 2px solid rgb(61, 116, 255);
   border-right-width: 0px;
   border-top-width: 0px;
   border-bottom-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -8513,13 +9083,13 @@ body body.theme-dark .markdown-embed {
 body body.theme-dark .file-embed {
   background-color: var(--background-primary-alt);
   color: var(--text-muted);
-  border-radius: 2px;
+  border-radius: 6px;
   border-color: rgb(222, 226, 230);
   border-width: 0px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   margin: 0px;
   margin-block-end: 0px;
   margin-block-start: 0px;
@@ -8538,6 +9108,12 @@ body body.theme-dark .internal-embed .markdown-embed {
 body body.theme-dark .nav-view-outer .tree-item-self a {
   color: rgb(222, 226, 230);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8558,6 +9134,12 @@ body body.theme-dark .nav-view-outer .tree-item-self a {
 body body.theme-dark .nav-view-outer .tree-item-self.mod-active {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8590,6 +9172,12 @@ body
   > .tree-item-self {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8617,6 +9205,12 @@ body
   > .tree-item-self {
   color: var(--nav-item-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8637,7 +9231,7 @@ body
 body body.theme-dark .graph-view-container {
   background-color: var(--background-secondary);
   color: rgb(241, 243, 245);
-  border: 0px solid rgb(241, 243, 245);
+  border: 1px solid rgba(0, 0, 0, 0);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -8735,12 +9329,13 @@ body body.theme-dark h5 {
   border-end-end-radius: 0px;
 }
 body body.theme-dark h6 {
-  color: var(--h6-color);
+  color: var(--text-faint);
   font-family: var(--h6-font);
-  font-weight: var(--font-weight);
+  font-weight: var(--font-semibold);
   text-decoration: rgb(218, 218, 218);
-  text-transform: none;
-  border: 0px rgb(241, 243, 245);
+  text-transform: uppercase;
+  border: 0px rgb(173, 181, 189);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
@@ -8754,6 +9349,12 @@ body body.theme-dark .site-footer {
   background-color: var(--status-bar-background);
   color: var(--status-bar-text-color);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8788,6 +9389,12 @@ body body.theme-dark .site-footer a {
 body body.theme-dark .nav-header {
   color: rgb(241, 243, 245);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8821,6 +9428,12 @@ body body.theme-dark .nav-file-title {
 body body.theme-dark .nav-file-title-content {
   color: rgb(222, 226, 230);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,
@@ -8874,6 +9487,12 @@ body body.theme-dark .view-header-breadcrumb {
 body body.theme-dark .view-header-breadcrumb-separator {
   color: var(--text-faint);
   font-family:
+    "Pretendard Variable",
+    Pretendard,
+    Inter,
+    sans-serif,
+    "Pretendard Variable",
+    Pretendard,
     Inter,
     sans-serif,
     ui-sans-serif,

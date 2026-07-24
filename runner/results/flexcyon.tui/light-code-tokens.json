@@ -1,14 +1,14 @@
 {
   "_codeBlock": {
     "backgroundColor": "rgba(0, 0, 0, 0)",
-    "color": "oklch(0.29593 0.00924516 265.685 / 0.8)"
+    "color": "oklch(0.29593 0.00924516 324.697 / 0.8)"
   },
   "_preBlock": {
-    "backgroundColor": "oklch(0.965356 0.0102416 none)",
+    "backgroundColor": "oklch(0.964736 0.0105337 1)",
     "borderColor": "rgba(0, 0, 0, 0)"
   },
   "header": {
-    "color": "rgb(92, 159, 228)",
+    "color": "oklch(0.610087 0.155807 252.597)",
     "fontStyle": "normal",
     "fontWeight": "700",
     "textDecoration": "none"

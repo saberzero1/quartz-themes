@@ -979,8 +979,8 @@
     "padding-left": "5px",
     "padding-right": "5px",
     "text-decoration-color": "rgb(30, 125, 88)",
-    "transform-origin": "20.625px 10.5px",
-    "width": "41.25px"
+    "transform-origin": "28.125px 10.5px",
+    "width": "56.25px"
   },
   ".nav-file-title": {
     "--bases-table-header-background": "#f5f6f8",
@@ -1974,7 +1974,6 @@
     "--blockquote-background-color": "rgba(128,128,128,0.07)",
     "--border-width": "0.5px",
     "--button-radius": "var(--radius-l)",
-    "--callout-padding": "12px 0px 0px 12px",
     "--checkbox-border-color": "rgba(128,128,128,0.3)",
     "--checkbox-color": "var(--color-accent)",
     "--checklist-done-color": "#82868a",
@@ -2390,15 +2389,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"bug\"]": {
@@ -2428,15 +2418,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"danger\"]": {
@@ -2466,15 +2447,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"example\"]": {
@@ -2491,15 +2463,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"failure\"]": {
@@ -2529,15 +2492,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"info\"]": {
@@ -2567,15 +2521,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"note\"]": {
@@ -2605,15 +2550,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"question\"]": {
@@ -2630,15 +2566,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"quote\"]": {
@@ -2655,20 +2582,9 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "height": "88.7969px",
     "outline": "rgb(55, 58, 62) none 0px",
     "outline-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
-    "text-decoration-color": "rgb(55, 58, 62)",
-    "transform-origin": "350px 44.3984px"
+    "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"success\"]": {
     "--callout-color": "var(--callout-success)",
@@ -2684,15 +2600,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"tip\"]": {
@@ -2722,15 +2629,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"todo\"]": {
@@ -2760,15 +2658,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.callout[data-callout-fold=\"\"][data-callout-metadata=\"\"][data-callout=\"warning\"]": {
@@ -2785,15 +2674,6 @@
     "caret-color": "rgb(55, 58, 62)",
     "color": "rgb(55, 58, 62)",
     "column-rule-color": "rgb(55, 58, 62)",
-    "padding": "12px 0px 0px 12px",
-    "padding-block": "12px 0px",
-    "padding-block-end": "0px",
-    "padding-bottom": "0px",
-    "padding-inline": "12px 0px",
-    "padding-inline-end": "0px",
-    "padding-inline-start": "12px",
-    "padding-left": "12px",
-    "padding-right": "0px",
     "text-decoration-color": "rgb(55, 58, 62)"
   },
   "div.inline-title": {
@@ -3120,8 +3000,8 @@
     "padding-left": "5px",
     "padding-right": "5px",
     "text-decoration-color": "rgb(30, 125, 88)",
-    "transform-origin": "20.625px 10.5px",
-    "width": "41.25px"
+    "transform-origin": "28.125px 10.5px",
+    "width": "56.25px"
   },
   "div.multi-select-pill-content": {
     "--pill-background": "#c3e1d3",

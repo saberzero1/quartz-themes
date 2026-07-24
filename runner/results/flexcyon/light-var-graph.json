@@ -352,6 +352,9 @@
     ".dialog .mainContainer .messageBar": ["--csstools-color-scheme--dark"],
     ".dialog .mainContainer .messageBar *": ["--csstools-color-scheme--dark"]
   },
+  "--highlight-bg-color": {
+    "body.theme-dark .textLayer .highlight": ["--text-highlight-bg"]
+  },
   "--highlight-backdrop-filter": {
     ".textLayer .highlight": ["--hcm-highlight-filter"]
   },
@@ -464,7 +467,7 @@
   },
   "--bases-cards-shadow": { "body": ["--background-modifier-border"] },
   "--blockquote-border-color": { "body": ["--interactive-accent"] },
-  "--bold-color": { "body": ["--flexcyon-red-salmon"] },
+  "--bold-color": { "body.theme-dark": ["--color-red"] },
   "--bold-weight": { "body": ["--font-weight", "--bold-modifier"] },
   "--border-width": {
     ".expressive-code .ec-section summary": ["--ec-cs-closedBrdWd"],
@@ -512,22 +515,41 @@
   "--callout-error": { "body": ["--color-red"] },
   "--callout-example": { "body": ["--color-purple"] },
   "--callout-fail": { "body": ["--color-red"] },
-  "--callout-important": { "body": ["--color-cyan"] },
+  "--callout-important": { "body": ["--color-purple"] },
   "--callout-info": { "body": ["--color-blue"] },
-  "--callout-question": { "body": ["--color-orange"] },
+  "--callout-question": { "body": ["--color-green"] },
   "--callout-success": { "body": ["--color-green"] },
   "--callout-summary": { "body": ["--color-cyan"] },
   "--callout-tip": { "body": ["--color-cyan"] },
   "--callout-todo": { "body": ["--color-blue"] },
   "--callout-warning": { "body": ["--color-orange"] },
+  "--callout-quote": { "body": ["--color-green"] },
   "--canvas-background": { "body": ["--background-primary"] },
   "--canvas-card-label-color": { "body": ["--text-faint"] },
-  "--canvas-color-1": { "body": ["--color-red"] },
-  "--canvas-color-2": { "body": ["--color-orange"] },
-  "--canvas-color-3": { "body": ["--color-yellow"] },
-  "--canvas-color-4": { "body": ["--color-green"] },
-  "--canvas-color-5": { "body": ["--color-cyan"] },
-  "--canvas-color-6": { "body": ["--color-purple"] },
+  "--canvas-color-1": {
+    "body": ["--color-red"],
+    "body.theme-dark": ["--color-red"]
+  },
+  "--canvas-color-2": {
+    "body": ["--color-orange"],
+    "body.theme-dark": ["--color-orange"]
+  },
+  "--canvas-color-3": {
+    "body": ["--color-yellow"],
+    "body.theme-dark": ["--color-yellow"]
+  },
+  "--canvas-color-4": {
+    "body": ["--color-green"],
+    "body.theme-dark": ["--color-green"]
+  },
+  "--canvas-color-5": {
+    "body": ["--color-cyan"],
+    "body.theme-dark": ["--color-cyan"]
+  },
+  "--canvas-color-6": {
+    "body": ["--color-purple"],
+    "body.theme-dark": ["--color-purple"]
+  },
   "--canvas-controls-radius": {
     "body": ["--radius-s"],
     ".is-mobile": ["--touch-radius-s"]
@@ -555,7 +577,7 @@
     ".attachments-gallery .download-attachment-item": ["--text-on-accent"]
   },
   "--checkbox-color": {
-    "body": ["--flexcyon-purple-lilac"],
+    "body": ["--color-purple"],
     "[data-task=\"/\"]:checked": ["--color-base-50"]
   },
   "--checkbox-color-hover": {
@@ -564,7 +586,7 @@
     "[data-task=\"-\"]:checked": ["--color-red"],
     "[data-task=\"/\"]:checked": ["--color-base-50"]
   },
-  "--checkbox-border-color": { "body": ["--flexcyon-blue"] },
+  "--checkbox-border-color": { "body": ["--color-blue"] },
   "--checkbox-border-color-hover": {
     "body": ["--flexcyon-palette-lilac-hover"]
   },
@@ -577,11 +599,11 @@
     "body": ["--background-primary-alt"],
     ".expressive-code .frame": ["--ec-frm-edBg"],
     ".expressive-code .frame.is-terminal": ["--ec-frm-trmBg"],
-    "body.theme-dark": ["--flexcyon-base-01"],
-    "body.theme-light": ["--flexcyon-base-01-02-mix"]
+    "body.theme-dark": ["--color-base-00"],
+    "body.theme-light": ["--color-base-05"]
   },
   "--code-normal": {
-    "body": ["--flexcyon-cyan"],
+    "body": ["--color-cyan"],
     "body.flexcyon-syntax-catppuccin": ["--text-normal"],
     "body.flexcyon-syntax-lego": ["--text-normal"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
@@ -618,31 +640,31 @@
   },
   "--code-property": {
     "body": ["--text-muted"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-cyan"],
+    "body.flexcyon-syntax-catppuccin": ["--color-cyan"],
     "body.flexcyon-syntax-lego": ["--text-normal"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
   "--code-punctuation": {
-    "body": ["--flexcyon-purple-lilac"],
-    "body.flexcyon-syntax-catppuccin": ["--color-red-rgb", "--dimmed"],
+    "body": ["--color-purple"],
+    "body.flexcyon-syntax-catppuccin": ["--color-red", "--dimmed"],
     "body.flexcyon-syntax-lego": ["--text-normal"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
   "--code-string": {
-    "body": ["--flexcyon-lime-green"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-lime-green"],
-    "body.flexcyon-syntax-lego": ["--flexcyon-cyan"],
+    "body": ["--color-green"],
+    "body.flexcyon-syntax-catppuccin": ["--color-green"],
+    "body.flexcyon-syntax-lego": ["--color-cyan"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
   "--code-tag": {
-    "body": ["--flexcyon-base-grey-dark"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-base-grey-dark"],
-    "body.flexcyon-syntax-lego": ["--flexcyon-base-grey-dark"],
-    "body.flexcyon-syntax-monochrome": ["--flexcyon-base-grey-dark"]
+    "body": ["--flexcyon-grey-dark-wrapper"],
+    "body.flexcyon-syntax-catppuccin": ["--flexcyon-grey-dark-wrapper"],
+    "body.flexcyon-syntax-lego": ["--flexcyon-grey-dark-wrapper"],
+    "body.flexcyon-syntax-monochrome": ["--flexcyon-grey-dark-wrapper"]
   },
   "--code-value": {
     "body": ["--color-purple"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-yellow"],
+    "body.flexcyon-syntax-catppuccin": ["--color-yellow"],
     "body.flexcyon-syntax-lego": ["--text-normal"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
@@ -664,13 +686,21 @@
   "--divider-color": { "body": ["--background-modifier-border"] },
   "--divider-color-hover": { "body": ["--interactive-accent"] },
   "--divider-vertical-height": { "body": ["--header-height"] },
-  "--drag-ghost-background": { "body": ["--flexcyon-base-03"] },
+  "--drag-ghost-background": { "body": ["--color-base-25"] },
   "--drag-ghost-text-color": { "body": ["--interactive-accent"] },
   "--drag-item-background": {
     "body": ["--background-primary"],
     ".workspace-ribbon": ["--ribbon-background"]
   },
   "--drag-item-shadow": { "body": ["--background-modifier-box-shadow"] },
+  "--dropdown-background": {
+    "body": ["--interactive-normal"],
+    ".is-mobile .menu": ["--interactive-normal"]
+  },
+  "--dropdown-background-hover": {
+    "body": ["--interactive-hover"],
+    ".mod-macos:not(.is-mobile) .mod-settings": ["--interactive-hover"]
+  },
   "--dropdown-background-position": {
     "body": ["--inset-end", "--dropdown-icon-inset", "--inset-end"]
   },
@@ -689,6 +719,19 @@
   "--dropdown-padding-end": { ".is-mobile": ["--size-4-8"] },
   "--embed-border-start": { "body": ["--interactive-accent"] },
   "--embed-padding": { "body": ["--size-4-6"], ".mod-rtl": ["--size-4-6"] },
+  "--embed-actions-background": { "body": ["--background-primary"] },
+  "--embed-actions-blur": { "body": ["--blur-s"] },
+  "--embed-actions-corner-shape": { "body": ["--corner-shape"] },
+  "--embed-actions-padding": { "body": ["--size-2-1"] },
+  "--embed-actions-radius": {
+    "body": ["--embed-action-radius", "--embed-actions-padding"],
+    ".is-mobile": ["--touch-size-l"]
+  },
+  "--embed-action-color": { "body": ["--text-normal"] },
+  "--embed-action-radius": {
+    "body": ["--clickable-icon-radius"],
+    ".is-mobile": ["--touch-size-l"]
+  },
   "--embed-block-shadow-hover": {
     "body": ["--background-modifier-border", "--background-modifier-border"]
   },
@@ -763,11 +806,11 @@
   "--footnote-radius": { "body": ["--radius-s"] },
   "--footnote-size": { "body": ["--font-smaller"] },
   "--graph-text": { "body": ["--text-normal"] },
-  "--graph-line": { "body": ["--flexcyon-base-03"] },
+  "--graph-line": { "body": ["--text-faint"] },
   "--graph-node": { "body": ["--text-muted"] },
-  "--graph-node-unresolved": { "body": ["--flexcyon-red-salmon"] },
+  "--graph-node-unresolved": { "body": ["--color-red"] },
   "--graph-node-focused": { "body": ["--text-accent"] },
-  "--graph-node-tag": { "body": ["--flexcyon-purple-lilac"] },
+  "--graph-node-tag": { "body": ["--color-purple"] },
   "--graph-node-attachment": { "body": ["--color-yellow"] },
   "--heading-formatting": { "body": ["--text-faint"] },
   "--heading-spacing": { "body": ["--p-spacing"] },
@@ -792,7 +835,7 @@
     ],
     ".loader-spinner": ["--icon-xl"],
     ".setting-item-chevron": ["--icon-s"],
-    ".font-warning-icon": ["--icon-xs"],
+    ".setting-item-status": ["--icon-s"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs"
     ],
@@ -831,6 +874,7 @@
     ],
     ".popupMeta": ["--font-ui-small"],
     ".markdown-embed-link": ["--icon-s"],
+    ".is-mobile .cm-content .image-embed .embed-action": ["--icon-l"],
     ".metadata-property-warning-icon": ["--icon-s"],
     ".metadata-property-value .clickable-icon": ["--icon-xs"],
     ".metadata-link-flair": ["--icon-xs"],
@@ -915,6 +959,7 @@
     ],
     ".loader-spinner": ["--icon-l-stroke-width"],
     ".setting-item-chevron": ["--icon-s-stroke-width"],
+    ".setting-item-status": ["--icon-s-stroke-width"],
     ".search-input-container.mod-hotkey .input-right-decorator.mod-active-hotkey-filter .hotkey-filter-clear": [
       "--icon-xs-stroke-width"
     ],
@@ -937,6 +982,7 @@
     ".clickable-icon.side-dock-ribbon-action .svg-icon": [
       "--icon-l-stroke-width"
     ],
+    ".lightbox .modal-close-button": ["--icon-s-stroke-width"],
     ".multi-select-pill": ["--icon-xs-stroke-width"],
     ".multi-select-pill-remove-button": ["--icon-xs-stroke-width"],
     ".is-phone .suggestion-item.mod-toggle": ["--icon-l-stroke-width"],
@@ -1118,7 +1164,7 @@
     ".mod-macos": ["--size-4-2"],
     ".is-mobile": ["--size-4-2"]
   },
-  "--italic-color": { "body": ["--flexcyon-accent"] },
+  "--italic-color": { "body.theme-dark": ["--text-accent"] },
   "--link-color": {
     "body": ["--flexcyon-link-color"],
     ".setting-item-description": ["--text-muted"],
@@ -1197,8 +1243,8 @@
     "body.flexcyon-rainbow-bullet-points .HyperMD-list-line:nth-of-type(8n+7) .list-bullet::after": [
       "--color-red"
     ],
-    "body.theme-dark": ["--flexcyon-purple-lilac"],
-    "body.theme-light": ["--flexcyon-cyan"]
+    "body.theme-dark": ["--color-purple"],
+    "body.theme-light": ["--color-cyan"]
   },
   "--list-marker-color-hover": {
     "body": ["--text-muted"],
@@ -1207,8 +1253,8 @@
   },
   "--list-marker-color-collapsed": {
     "body": ["--text-accent"],
-    "body.theme-dark": ["--flexcyon-lime-green"],
-    "body.theme-light": ["--flexcyon-lime-green"]
+    "body.theme-dark": ["--color-green"],
+    "body.theme-light": ["--color-green"]
   },
   "--list-numbered-style": { "body": ["--flexcyon-default-ol-style"] },
   "--nav-item-size": {
@@ -1226,11 +1272,11 @@
   },
   "--nav-item-color-hover": { "body": ["--text-normal"] },
   "--nav-item-color-active": { "body": ["--interactive-accent"] },
-  "--nav-item-color-selected": { "body": ["--flexcyon-orange"] },
+  "--nav-item-color-selected": { "body": ["--color-orange"] },
   "--nav-item-color-highlighted": { "body": ["--text-accent"] },
   "--nav-item-background-hover": { "body": ["--background-modifier-hover"] },
   "--nav-item-background-active": { "body": ["--background-modifier-hover"] },
-  "--nav-item-background-selected": { "body": ["--flexcyon-base-03"] },
+  "--nav-item-background-selected": { "body": ["--color-base-25"] },
   "--nav-item-padding": {
     "body": ["--size-4-1", "--size-4-2", "--size-4-1", "--size-4-6"],
     ".mod-rtl": ["--size-4-1", "--size-4-6", "--size-4-1", "--size-4-2"],
@@ -1323,7 +1369,7 @@
       "--metadata-sidebar-label-font-size"
     ]
   },
-  "--metadata-label-text-color": { "body": ["--flexcyon-purple-lilac"] },
+  "--metadata-label-text-color": { "body": ["--color-purple"] },
   "--metadata-label-text-color-hover": {
     "body": ["--flexcyon-palette-lilac-hover"]
   },
@@ -1355,7 +1401,13 @@
     "body.is-mobile.theme-dark": ["--color-base-05"]
   },
   "--modal-sidebar-background": {
-    "body": ["--modal-background"],
+    "body": [
+      "--color-base-05",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ],
     ".is-phone.theme-dark": ["--background-primary"]
   },
   "--modal-header-height": {
@@ -1368,7 +1420,7 @@
     ".is-phone .modal-container": ["--safe-area-inset-top"]
   },
   "--modal-border-width": { "body": ["--border-width"] },
-  "--modal-border-color": { "body": ["--flexcyon-base-02"] },
+  "--modal-border-color": { "body": ["--color-base-10"] },
   "--modal-radius": {
     "body": ["--radius-l"],
     ".mod-macos": ["--radius-xl"],
@@ -1488,7 +1540,7 @@
   "--prompt-backdrop-filter": { ".is-mobile": ["--blur-m"] },
   "--prompt-input-height": { ".is-mobile": ["--touch-size-l"] },
   "--prompt-border-width": { "body": ["--border-width"] },
-  "--prompt-border-color": { "body": ["--flexcyon-base-02-03-mix"] },
+  "--prompt-border-color": { "body": ["--color-base-20"] },
   "--raised-background": {
     "body": ["--blur-background"],
     ".is-phone:not(.is-floating-nav) .mobile-navbar": ["--background-primary"]
@@ -1501,11 +1553,10 @@
   "--ribbon-padding": { "body": ["--size-4-2", "--size-4-1", "--size-4-3"] },
   "--scrollbar-radius": { "body": ["--radius-l"] },
   "--scrollbar-active-thumb-bg": { "body": ["--mono-100"] },
-  "--scrollbar-bg": { "body": ["--mono-100"] },
   "--scrollbar-thumb-bg": { "body": ["--mono-100"] },
-  "--search-clear-button-color": { "body": ["--flexcyon-red-salmon"] },
+  "--search-clear-button-color": { "body": ["--color-red"] },
   "--search-icon-color": {
-    "body": ["--flexcyon-accent"],
+    "body": ["--color-accent"],
     ".combobox .search-input-container": ["--text-faint"],
     ".bases-toolbar-menu-container .search-input-container": ["--text-faint"]
   },
@@ -1529,8 +1580,10 @@
   },
   "--setting-items-background": {
     "body": ["--background-primary-alt"],
-    ".is-mobile": ["--background-primary"],
-    ".is-mobile.theme-dark": ["--background-secondary"],
+    ".is-mobile": ["--background-secondary"],
+    ".is-mobile .mod-settings": ["--background-primary"],
+    ".is-mobile.theme-dark": ["--background-secondary-alt"],
+    ".is-mobile.theme-dark .mod-settings": ["--background-secondary"],
     "body.is-mobile.theme-dark": ["--color-base-10"]
   },
   "--setting-items-padding-x": {
@@ -1562,14 +1615,35 @@
       "--sidebar-right-toggle-inner-width-open"
     ]
   },
-  "--slider-thumb-border-width": { "body": ["--border-width"] },
   "--slider-thumb-border-color": {
     "body": ["--background-modifier-border-hover"]
   },
+  "--slider-thumb-height-active": {
+    "body": ["--slider-thumb-height"],
+    ".mod-macos": ["--slider-thumb-height"]
+  },
+  "--slider-thumb-width-active": {
+    "body": ["--slider-thumb-width"],
+    ".mod-macos": ["--slider-thumb-width"]
+  },
+  "--slider-thumb-y-active": {
+    "body": ["--slider-thumb-y"],
+    ".mod-macos": ["--slider-thumb-y"]
+  },
   "--slider-thumb-radius": { "body": ["--slider-thumb-height"] },
+  "--slider-thumb-shadow-hover": { "body": ["--slider-thumb-shadow"] },
+  "--slider-thumb-shadow-active": { "body": ["--slider-thumb-shadow"] },
+  "--slider-thumb-shadow-focus": {
+    "body": [
+      "--slider-thumb-shadow-active",
+      "--background-modifier-border-focus"
+    ]
+  },
   "--slider-track-background": {
     "body": ["--background-modifier-border-hover"]
   },
+  "--slider-value-font-size": { "body": ["--font-ui-small"] },
+  "--slider-value-font-weight": { "body": ["--input-font-weight"] },
   "--status-bar-background": { "body": ["--background-secondary"] },
   "--status-bar-border-color": { "body": ["--divider-color"] },
   "--status-bar-border-width": { "body": ["--border-width", "--border-width"] },
@@ -1594,9 +1668,9 @@
   "--swatch-width": { ".is-mobile": ["--touch-size-s"] },
   "--swatch-shadow": { "body": ["--mono-100"] },
   "--tab-background-active": { "body": ["--background-primary"] },
-  "--tab-text-color": { "body": ["--flexcyon-base-05"] },
+  "--tab-text-color": { "body": ["--color-base-50"] },
   "--tab-text-color-active": { "body": ["--text-accent"] },
-  "--tab-text-color-focused": { "body": ["--flexcyon-base-05"] },
+  "--tab-text-color-focused": { "body": ["--color-base-50"] },
   "--tab-text-color-focused-active": { "body": ["--text-accent"] },
   "--tab-text-color-focused-highlighted": { "body": ["--text-accent"] },
   "--tab-text-color-focused-active-current": { "body": ["--text-accent"] },
@@ -1675,8 +1749,14 @@
     "body": ["--interactive-accent"],
     "body.is-mobile": ["--tag-color-hover"]
   },
-  "--tag-border-color": { "body": ["--interactive-accent"] },
-  "--tag-border-color-hover": { "body": ["--interactive-accent"] },
+  "--tag-border-color": {
+    "body": ["--interactive-accent"],
+    "body.is-mobile": ["--tag-color-hover"]
+  },
+  "--tag-border-color-hover": {
+    "body": ["--interactive-accent"],
+    "body.is-mobile": ["--tag-color-hover"]
+  },
   "--traffic-lights-offset-x": { "body": ["--header-height"] },
   "--traffic-lights-offset-y": { "body": ["--header-height"] },
   "--titlebar-background": {
@@ -1710,92 +1790,202 @@
     ".mod-macos": ["--radius-m"]
   },
   "--workspace-background-translucent": { "body": ["--mono-0"] },
-  "--accent-h": { "body": ["--flexcyon-accent-h"] },
-  "--accent-s": { "body": ["--flexcyon-accent-s"] },
-  "--accent-l": { "body": ["--flexcyon-accent-l"] },
   "--background-primary": {
-    "body": ["--color-base-00"],
-    "body.is-mobile.theme-dark": ["--color-base-10"],
-    "body:is(.theme-light)": ["--color-base-00"]
+    "body": [
+      "--color-base-10",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-primary-alt": {
-    "body": ["--color-base-10"],
-    "body.is-mobile.theme-dark": ["--color-base-25"],
-    "body:is(.theme-light)": ["--color-base-10"]
+    "body": [
+      "--color-base-20",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-secondary": {
-    "body": ["--color-base-20"],
-    "body.is-mobile.theme-dark": ["--color-base-00"],
-    "body:is(.theme-light)": ["--color-base-05"]
+    "body": [
+      "--color-base-00",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-hover": {
-    "body": ["--mono-100"],
-    ".is-mobile.theme-dark": ["--mono-100"],
-    "body.is-mobile.theme-dark": ["--color-base-20"],
-    "body:is(.theme-light)": ["--color-base-10"]
+    "body": [
+      "--color-base-25",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ],
+    ".is-mobile.theme-dark": ["--mono-100"]
   },
   "--background-modifier-active-hover": {
-    "body": ["--interactive-accent"],
-    "body:is(.theme-dark)": ["--color-base-25"]
+    "body": [
+      "--color-base-25",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-border": {
-    "body": ["--color-base-30"],
-    "body:is(.theme-dark)": ["--color-base-20"]
+    "body": [
+      "--color-base-20",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-border-hover": { "body": ["--color-base-35"] },
   "--background-modifier-border-focus": {
-    "body": ["--color-base-40"],
-    ".pdf-findbar .mod-not-found": ["--background-modifier-error-rgb"],
-    "body:is(.theme-dark)": ["--color-base-30"]
+    "body": [
+      "--color-base-30",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ],
+    ".pdf-findbar .mod-not-found": ["--background-modifier-error-rgb"]
   },
   "--background-modifier-error": {
-    "body": ["--color-red"],
-    "body:is(.theme-dark)": ["--color-red-rgb", "--dimmed"]
+    "body": [
+      "--color-red",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-warning": { "body": ["--color-orange"] },
-  "--background-modifier-error-hover": { "body": ["--color-red"] },
+  "--background-modifier-error-hover": {
+    "body": [
+      "--flexcyon-bg-modifier-hover-error-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
   "--background-modifier-warning-hover": { "body": ["--color-orange"] },
   "--background-modifier-success": { "body": ["--color-green"] },
   "--background-modifier-message": {
     ".is-mobile.theme-dark": ["--background-secondary"],
-    "body.is-mobile.theme-dark": ["--color-base-20"],
-    "body:is(.theme-light)": ["--color-base-70"],
-    "body:is(.theme-dark)": ["--color-base-20"]
+    "body": [
+      "--color-base-20",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-form-field": {
-    "body": ["--color-base-00"],
+    "body": [
+      "--color-base-20",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ],
     ".theme-dark": ["--color-base-25"],
     ".modal-sidebar": ["--background-primary"],
     ".pdf-findbar .mod-not-found": ["--background-modifier-error-rgb"],
     ".is-mobile": ["--interactive-normal"],
     ".is-mobile.theme-dark": ["--background-modifier-border"],
     ".is-phone .search-input-container.mod-raised": ["--background-primary"],
-    ".is-mobile .menu": ["--interactive-normal"],
-    "body.is-mobile.theme-dark": ["--color-base-20"]
+    ".is-mobile .menu": ["--interactive-normal"]
   },
   "--background-modifier-form-field-hover": {
     "body": ["--background-modifier-form-field"],
     ".is-mobile": ["--interactive-hover"]
   },
-  "--text-normal": { "body": ["--color-base-100"] },
-  "--text-muted": { "body": ["--flexcyon-text-muted", "--text-normal"] },
-  "--text-faint": { "body": ["--flexcyon-text-muted"] },
-  "--text-on-accent": { "body": ["--flexcyon-base-03"] },
-  "--text-error": { "body": ["--flexcyon-red-salmon"] },
-  "--text-warning": { "body": ["--flexcyon-red-salmon"] },
-  "--text-success": { "body": ["--flexcyon-lime-green"] },
+  "--text-normal": {
+    "body": ["--color-base-100"],
+    "body.theme-dark": [
+      "--text-normal-col",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ],
+    "body.theme-light": [
+      "--text-normal-col",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--text-muted": {
+    "body": ["--color-base-70"],
+    "body.theme-dark": [
+      "--text-muted-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--text-faint": {
+    "body": ["--color-base-50"],
+    "body.theme-dark": ["--text-muted"]
+  },
+  "--text-on-accent": {
+    "body.theme-dark": [
+      "--text-on-accent-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--text-on-accent-inverted": { "body": ["--text-normal"] },
+  "--text-error": {
+    "body": ["--color-red"],
+    "body.theme-dark": ["--color-red"]
+  },
+  "--text-warning": {
+    "body": ["--color-orange"],
+    "body.theme-dark": ["--color-red"]
+  },
+  "--text-success": {
+    "body": ["--color-green"],
+    "body.theme-dark": ["--color-green"]
+  },
   "--text-selection": {
-    "body": ["--flexcyon-base-04"],
-    ".theme-dark": ["--interactive-accent"]
+    "body": ["--interactive-accent"],
+    ".theme-dark": ["--interactive-accent"],
+    "body.theme-dark": [
+      "--text-sel-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--text-highlight-bg": {
-    "body": ["--flexcyon-highlight-colour", "--flexcyon-highlight-opacity"]
+    "body.theme-dark": [
+      "--flexcyon-highlight-colour",
+      "--flexcyon-highlight-opacity"
+    ]
   },
   "--text-accent": {
-    "body": ["--flexcyon-accent"],
-    ".theme-dark": ["--color-accent-1"]
+    "body": ["--color-accent"],
+    ".theme-dark": ["--color-accent-1"],
+    "body.theme-dark": ["--color-accent"]
   },
-  "--text-accent-hover": { "body": ["--flexcyon-accent-hover"] },
+  "--text-accent-hover": {
+    "body": ["--color-accent-2"],
+    "body.theme-dark": ["--flexcyon-accent-hover"]
+  },
   "--interactive-normal": {
     "body": ["--color-base-00"],
     ".theme-dark": ["--color-base-30"],
@@ -1822,113 +2012,246 @@
   "--interactive-accent-hover": {
     "body": ["--color-accent-2"],
     ".theme-dark": ["--color-accent-1"],
-    "body.is-mobile.theme-dark": ["--flexcyon-accent"]
+    "body.is-mobile.theme-dark": ["--text-accent"]
   },
   "--interactive-accent-hsl": {
     "body": ["--color-accent-hsl"],
-    "body.is-mobile.theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    "body.is-mobile.theme-dark": ["--interactive-accent"]
   },
   "--background-modifier-error-rgb": { "body": ["--color-red-rgb"] },
   "--background-modifier-success-rgb": { "body": ["--color-green-rgb"] },
-  "--dropdown-background": {
-    ".theme-light": ["--interactive-normal"],
-    ".is-mobile .menu": ["--interactive-normal"]
+  "--color-red": {
+    "body.theme-light": [
+      "--flexcyon-red-salmon",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
-  "--dropdown-background-hover": {
-    ".theme-light": ["--interactive-hover"],
-    ".mod-macos:not(.is-mobile) .mod-settings": ["--interactive-hover"]
+  "--color-orange": {
+    "body.theme-light": [
+      "--flexcyon-orange",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
-  "--color-red": { "body.theme-light": ["--flexcyon-red-salmon"] },
-  "--color-orange": { "body.theme-light": ["--flexcyon-orange"] },
-  "--color-yellow": { "body.theme-light": ["--flexcyon-yellow"] },
-  "--color-green": { "body.theme-light": ["--flexcyon-lime-green"] },
-  "--color-cyan": { "body.theme-light": ["--flexcyon-cyan"] },
-  "--color-blue": { "body.theme-light": ["--flexcyon-blue"] },
-  "--color-purple": { "body.theme-light": ["--flexcyon-purple-lilac"] },
-  "--color-pink": { "body.theme-light": ["--flexcyon-pink"] },
+  "--color-yellow": {
+    "body.theme-light": [
+      "--flexcyon-yellow",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-green": {
+    "body.theme-light": [
+      "--flexcyon-lime-green",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-cyan": {
+    "body.theme-light": [
+      "--flexcyon-cyan",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-blue": {
+    "body.theme-light": [
+      "--flexcyon-blue",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-purple": {
+    "body.theme-light": [
+      "--flexcyon-purple-lilac",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-pink": {
+    "body.theme-light": [
+      "--flexcyon-pink",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
   "--color-base-00": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-01"
+      "--flexcyon-base-01",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-05": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-01-02-mix"
+      "--flexcyon-base-01-02-mix",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-10": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-02"
+      "--flexcyon-base-02",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-20": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-02-03-mix"
+      "--flexcyon-base-02-03-mix",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-25": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-03"
+      "--flexcyon-base-03",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-30": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-03-04-mix"
+      "--flexcyon-base-03-04-mix",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-35": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-04"
+      "--flexcyon-base-04",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-40": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-04-05-mix"
+      "--flexcyon-base-04-05-mix",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-50": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-05"
+      "--flexcyon-base-05",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-60": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-grey-dark"
+      "--flexcyon-base-grey-dark",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-70": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-grey-mix"
+      "--flexcyon-base-grey-mix",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-base-100": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
-      "--flexcyon-base-grey-light"
+      "--flexcyon-base-grey-light",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
     ]
   },
   "--color-accent": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    "body": ["--accent-h", "--accent-s", "--accent-l", "--dimmed"]
+    "body.theme-dark": [
+      "--flexcyon-accent",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--color-accent-1": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    "body.theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    "body.theme-dark": [
+      "--color-accent-1-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--color-accent-2": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
     ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
-    "body.theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    "body.theme-dark": [
+      "--color-accent-2-wrapper",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-secondary-alt": {
     ".theme-light": ["--color-base-05"],
     ".theme-dark": ["--color-base-30"],
-    "body.is-mobile.theme-dark": ["--color-base-20"],
-    "body:is(.theme-light)": ["--color-base-10"]
+    "body": [
+      "--color-base-25",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--background-modifier-cover": {
-    "body.is-mobile.theme-dark": ["--color-base-15"]
+    "body": [
+      "--color-base-15",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--shadow-xs": {
     ".theme-light": ["--shadow-edges"],
@@ -1936,7 +2259,14 @@
   },
   "--color-accent-hsl": {
     ".theme-light": ["--accent-h", "--accent-s", "--accent-l"],
-    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"]
+    ".theme-dark": ["--accent-h", "--accent-s", "--accent-l"],
+    "body.theme-dark": [
+      "--flexcyon-accent",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--font-interface": {
     "body": [
@@ -1977,6 +2307,14 @@
     "button.mod-destructive": ["--text-error"],
     "button.mod-destructive.mod-cta": ["--text-on-accent"]
   },
+  "--modal-sidebar-inset": {
+    ".modal-sidebar-inner": ["--size-4-2"],
+    ".is-mobile .modal-sidebar-inner": [
+      "--size-4-5",
+      "--safe-area-inset-left",
+      "--safe-area-inset-right"
+    ]
+  },
   "--callout-color": {
     ".callout": ["--callout-default"],
     ".callout[data-callout=\"abstract\"]": ["--callout-summary"],
@@ -1992,7 +2330,21 @@
     ".callout[data-callout=\"bug\"]": ["--callout-bug"],
     ".callout[data-callout=\"example\"]": ["--callout-example"],
     ".callout[data-callout=\"quote\"]": ["--callout-quote"],
-    "body.flexcyon-tui-callouts .callout:not(:is([data-callout*=\"vertical\"], [data-callout*=\"plain\"], [data-callout-metadata*=\"vertical\"], [data-callout-metadata*=\"plain\"]))": [
+    "body .callout[data-callout*=\"bug\"]": ["--callout-bug"],
+    "body .callout[data-callout*=\"error\"]": ["--callout-error"],
+    "body .callout[data-callout*=\"fail\"]": ["--callout-fail"],
+    "body .callout[data-callout*=\"info\"]": ["--callout-info"],
+    "body .callout[data-callout*=\"todo\"]": ["--callout-todo"],
+    "body .callout[data-callout*=\"summary\"]": ["--callout-summary"],
+    "body .callout[data-callout*=\"tip\"]": ["--callout-tip"],
+    "body .callout[data-callout*=\"example\"]": ["--callout-example"],
+    "body .callout[data-callout*=\"important\"]": ["--callout-important"],
+    "body .callout[data-callout*=\"warning\"]": ["--callout-warning"],
+    "body .callout[data-callout*=\"question\"]": ["--callout-question"],
+    "body .callout[data-callout*=\"success\"]": ["--callout-success"],
+    "body .callout[data-callout*=\"cite\"]": ["--callout-cite"],
+    "body .callout[data-callout*=\"quote\"]": ["--callout-quote"],
+    "body.flexcyon-tui-callouts:not(:is([data-callout*=\"vertical\"], [data-callout*=\"plain\"], [data-callout-metadata*=\"vertical\"], [data-callout-metadata*=\"plain\"]))": [
       "--text-faint"
     ]
   },
@@ -2042,12 +2394,26 @@
     ".mod-canvas-color-3": ["--canvas-color-3"],
     ".mod-canvas-color-4": ["--canvas-color-4"],
     ".mod-canvas-color-5": ["--canvas-color-5"],
-    ".mod-canvas-color-6": ["--canvas-color-6"]
+    ".mod-canvas-color-6": ["--canvas-color-6"],
+    "body.theme-dark": ["--text-normal"],
+    "body .workspace-leaf.mod-active .workspace-leaf-content[data-type=\"canvas\"] .canvas-edges g.is-themed.mod-canvas-color-custom": [
+      "--text-normal"
+    ]
   },
   "--shadow-drag": { ".canvas-wrapper": ["--shadow-l"] },
   "--shadow-border-accent": { ".canvas-wrapper": ["--color-accent"] },
-  "--shadow-border-themed-inset": { ".canvas-node": ["--canvas-color"] },
-  "--shadow-border-themed": { ".canvas-node": ["--canvas-color"] },
+  "--shadow-border-themed-inset": {
+    ".canvas-node": ["--canvas-color"],
+    "body .workspace-leaf.mod-active .workspace-leaf-content[data-type=\"canvas\"] .canvas-node": [
+      "--canvas-color"
+    ]
+  },
+  "--shadow-border-themed": {
+    ".canvas-node": ["--canvas-color"],
+    "body .workspace-leaf.mod-active .workspace-leaf-content[data-type=\"canvas\"] .canvas-node": [
+      "--canvas-color"
+    ]
+  },
   "--view-header-height": {
     ".is-mobile": ["--touch-size-l"],
     ".is-phone": ["--touch-size-m"]
@@ -2244,560 +2610,504 @@
   "--color-red-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-blue"]
   },
-  "--color-red-blue-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-blue",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-blue-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-red"]
   },
+  "--color-red-blue-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-blue-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-blue-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-red",
+      "--color-blue-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-orange"]
   },
-  "--color-red-orange-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-orange",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-orange-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-red"]
   },
+  "--color-red-orange-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-orange-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-orange-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-red",
+      "--color-orange-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-yellow"]
   },
-  "--color-red-yellow-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-yellow",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-yellow-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-red"]
   },
+  "--color-red-yellow-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-yellow-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-yellow-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-red",
+      "--color-yellow-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-green"]
   },
-  "--color-red-green-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-green",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-green-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-red"]
   },
+  "--color-red-green-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-green-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-green-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-red",
+      "--color-green-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-cyan"]
   },
-  "--color-red-cyan-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-cyan",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-cyan-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-red"]
   },
+  "--color-red-cyan-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-cyan-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-cyan-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-red",
+      "--color-cyan-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-purple"]
   },
-  "--color-red-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-red"]
   },
+  "--color-red-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-red",
+      "--color-purple-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-red-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-red", "--color-pink"]
   },
-  "--color-red-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-red",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-red-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-red"]
   },
+  "--color-red-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-red-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-red-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-red",
+      "--color-pink-red-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-yellow"]
   },
-  "--color-orange-yellow-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-yellow",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-yellow-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-orange"]
   },
+  "--color-orange-yellow-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-yellow-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-yellow-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-orange",
+      "--color-yellow-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-green"]
   },
-  "--color-orange-green-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-green",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-green-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-orange"]
   },
+  "--color-orange-green-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-green-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-green-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-orange",
+      "--color-green-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-cyan"]
   },
-  "--color-orange-cyan-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-cyan",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-cyan-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-orange"]
   },
+  "--color-orange-cyan-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-cyan-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-cyan-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-orange",
+      "--color-cyan-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-blue"]
   },
-  "--color-orange-blue-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-blue",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-blue-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-orange"]
   },
+  "--color-orange-blue-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-blue-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-blue-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-orange",
+      "--color-blue-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-purple"]
   },
-  "--color-orange-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-orange"]
   },
+  "--color-orange-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-orange",
+      "--color-purple-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-orange-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-orange", "--color-pink"]
   },
-  "--color-orange-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-orange",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-orange-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-orange"]
   },
+  "--color-orange-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-orange-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-orange-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-orange",
+      "--color-pink-orange-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-yellow-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-green"]
   },
-  "--color-yellow-green-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-green",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-green-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-yellow"]
   },
+  "--color-yellow-green-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-yellow-green-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-green-yellow-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-yellow",
+      "--color-green-yellow-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-yellow-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-cyan"]
   },
-  "--color-yellow-cyan-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-cyan",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-cyan-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-yellow"]
   },
+  "--color-yellow-cyan-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-yellow-cyan-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-cyan-yellow-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-yellow",
+      "--color-cyan-yellow-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-yellow-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-blue"]
   },
-  "--color-yellow-blue-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-blue",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-blue-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-yellow"]
   },
+  "--color-yellow-blue-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-yellow-blue-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-blue-yellow-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-yellow",
+      "--color-blue-yellow-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-yellow-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-purple"]
   },
-  "--color-yellow-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-yellow"]
   },
+  "--color-yellow-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-yellow-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-yellow-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-yellow",
+      "--color-purple-yellow-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-yellow-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-yellow", "--color-pink"]
   },
-  "--color-yellow-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-yellow",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-yellow-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-yellow"]
   },
+  "--color-yellow-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-yellow-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-yellow-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-yellow",
+      "--color-pink-yellow-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-green-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-cyan"]
   },
-  "--color-green-cyan-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-cyan",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-cyan-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-green"]
   },
+  "--color-green-cyan-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-green-cyan-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-cyan-green-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-green",
+      "--color-cyan-green-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-green-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-blue"]
   },
-  "--color-green-blue-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-blue",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-blue-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-green"]
   },
+  "--color-green-blue-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-green-blue-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-blue-green-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-green",
+      "--color-blue-green-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-green-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-purple"]
   },
-  "--color-green-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-green"]
   },
+  "--color-green-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-green-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-green-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-green",
+      "--color-purple-green-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-green-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-green", "--color-pink"]
   },
-  "--color-green-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-green",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-green-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-green"]
   },
+  "--color-green-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-green-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-green-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-green",
+      "--color-pink-green-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-cyan-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-blue"]
   },
-  "--color-cyan-blue-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-blue",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-blue-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-cyan"]
   },
+  "--color-cyan-blue-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-cyan-blue-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-blue-cyan-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-cyan",
+      "--color-blue-cyan-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-cyan-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-purple"]
   },
-  "--color-cyan-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-cyan"]
   },
+  "--color-cyan-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-cyan-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-cyan-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-cyan",
+      "--color-purple-cyan-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-cyan-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-cyan", "--color-pink"]
   },
-  "--color-cyan-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-cyan",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-cyan-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-cyan"]
   },
+  "--color-cyan-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-cyan-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-cyan-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-cyan",
+      "--color-pink-cyan-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-blue-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-purple"]
   },
-  "--color-blue-purple-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-purple",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-purple-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-blue"]
   },
+  "--color-blue-purple-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-blue-purple-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-purple-blue-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-blue",
+      "--color-purple-blue-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-blue-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-blue", "--color-pink"]
   },
-  "--color-blue-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-blue",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-blue-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-blue"]
   },
+  "--color-blue-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-blue-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-blue-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-blue",
+      "--color-pink-blue-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
   "--color-purple-pink-mix": {
     "body.flexcyon-flex-max-mode": ["--color-purple", "--color-pink"]
   },
-  "--color-purple-pink-mix-bg": {
-    "body.flexcyon-flex-max-mode": [
-      "--color-purple",
-      "--color-pink",
-      "--flexcyon-callout-bg-opacity"
-    ]
-  },
   "--color-pink-purple-mix": {
     "body.flexcyon-flex-max-mode": ["--color-pink", "--color-purple"]
   },
+  "--color-purple-pink-mix-bg": {
+    "body.flexcyon-flex-max-mode": [
+      "--color-purple-pink-mix",
+      "--flexcyon-callout-bg-opacity"
+    ]
+  },
   "--color-pink-purple-mix-bg": {
     "body.flexcyon-flex-max-mode": [
-      "--color-pink",
-      "--color-purple",
+      "--color-pink-purple-mix",
       "--flexcyon-callout-bg-opacity"
     ]
   },
@@ -2805,8 +3115,7 @@
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
       "--flexcyon-base-01",
       "--flexcyon-base-02"
-    ],
-    "body:is(.theme-light)": ["--flexcyon-base-01", "--flexcyon-base-02"]
+    ]
   },
   "--flexcyon-base-02-03-mix": {
     "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
@@ -2832,79 +3141,223 @@
       "--flexcyon-base-grey-dark"
     ]
   },
+  "--flexcyon-grey-dark-wrapper": {
+    "body:is(.is-mobile, .is-phone):is(.theme-light, .theme-dark)": [
+      "--flexcyon-base-grey-dark",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--color-accent-1-wrapper": { "body.theme-dark": ["--flexcyon-accent"] },
+  "--color-accent-2-wrapper": { "body.theme-dark": ["--flexcyon-accent"] },
   "--flexcyon-h1-color": { "body": ["--color-blue"] },
   "--flexcyon-h2-color": { "body": ["--color-purple"] },
   "--flexcyon-h3-color": { "body": ["--color-cyan"] },
   "--flexcyon-h4-color": { "body": ["--color-pink"] },
   "--flexcyon-h5-color": { "body": ["--color-green"] },
   "--flexcyon-h6-color": { "body": ["--color-yellow"] },
-  "--flexcyon-accent-hover": { "body": ["--flexcyon-green"] },
+  "--flexcyon-accent-hover": { "body": ["--color-green"] },
   "--flexcyon-palette-lilac-hover": {
-    "body": ["--flexcyon-purple-lilac", "--flexcyon-base-grey-dark"]
+    "body": ["--color-purple", "--flexcyon-grey-dark-wrapper"]
   },
   "--flexcyon-palette-cyan-hover": {
-    "body": ["--flexcyon-cyan", "--flexcyon-base-grey-dark"]
+    "body": ["--color-cyan", "--flexcyon-grey-dark-wrapper"]
   },
   "--flexcyon-code-variable": {
     "body": ["--flexcyon-base-grey-dark"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-cyan"],
+    "body.flexcyon-syntax-catppuccin": ["--color-cyan"],
     "body.flexcyon-syntax-lego": ["--text-normal"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
   "--flexcyon-code-function": {
-    "body": ["--flexcyon-yellow"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-yellow"],
+    "body": ["--color-yellow"],
+    "body.flexcyon-syntax-catppuccin": ["--color-yellow"],
     "body.flexcyon-syntax-lego": ["--text-accent"],
     "body.flexcyon-syntax-monochrome": ["--text-muted"]
   },
   "--flexcyon-code-operator": {
-    "body": ["--flexcyon-orange"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-blue"],
-    "body.flexcyon-syntax-lego": ["--flexcyon-pink"],
+    "body": ["--color-orange"],
+    "body.flexcyon-syntax-catppuccin": ["--color-blue"],
+    "body.flexcyon-syntax-lego": ["--color-pink"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
   "--flexcyon-code-error": {
-    "body": ["--flexcyon-red-salmon"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-red-salmon"],
-    "body.flexcyon-syntax-lego": ["--flexcyon-orange"],
+    "body": ["--color-red"],
+    "body.flexcyon-syntax-catppuccin": ["--color-red"],
+    "body.flexcyon-syntax-lego": ["--color-orange"],
     "body.flexcyon-syntax-monochrome": ["--text-muted"]
   },
   "--flexcyon-code-keyword": {
-    "body": ["--flexcyon-purple-lilac"],
-    "body.flexcyon-syntax-catppuccin": ["--flexcyon-cyan"],
-    "body.flexcyon-syntax-lego": ["--flexcyon-red-salmon"],
+    "body": ["--color-purple"],
+    "body.flexcyon-syntax-catppuccin": ["--color-cyan"],
+    "body.flexcyon-syntax-lego": ["--color-red"],
     "body.flexcyon-syntax-monochrome": ["--text-normal"]
   },
+  "--toggle-thumb-active-opacity": { "body": ["--dimmed"] },
+  "--flexcyon-editor-bg-col-def": {
+    "body": ["--color-base-05", "--color-base-10"]
+  },
   "--flexcyon-editor-bg-color": {
-    "body": ["--color-base-05", "--color-base-10"],
-    "body.theme-light": ["--color-base-05", "--color-base-10"]
+    "body": [
+      "--flexcyon-editor-bg-col-def",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
   },
   "--flexcyon-editor-bg-color-2": { "body": ["--color-base-20"] },
+  "--flexcyon-bg-modifier-hover-error-wrapper": {
+    "body": ["--color-red", "--dimmed"]
+  },
   "--flexcyon-link-hover": {
     "body": ["--flexcyon-link-color", "--flexcyon-base-grey-dark"]
   },
   "--flexcyon-external-link-hover": {
     "body": ["--flexcyon-external-link-color", "--flexcyon-base-grey-dark"]
   },
-  "--flexcyon-highlight-colour": { "body": ["--color-cyan"] },
+  "--flexcyon-highlight-colour": { "body.theme-dark": ["--color-cyan"] },
   "--oz-fta-file-font-size": { "body.theme-light": ["--font-ui-medium"] },
   "--oz-fta-folder-font-size": { "body.theme-light": ["--font-ui-medium"] },
+  "--text-muted-wrapper": {
+    "body.theme-dark": ["--flexcyon-text-muted", "--text-normal"]
+  },
+  "--text-on-accent-wrapper": { "body.theme-dark": ["--text-normal"] },
+  "--text-sel-wrapper": { "body.theme-dark": ["--color-accent"] },
+  "--callout-cite": { "body": ["--color-green"] },
   "--w": { ":root": ["--w-raw"] },
   "--h": { ":root": ["--h-raw"] },
-  "--cm-panel-bg": {
-    "body.theme-dark": ["--color-base-00"],
-    "body.theme-light": ["--color-base-05", "--color-base-10"]
-  },
+  "--cm-panel-bg": { "body": ["--color-base-00"] },
   "--cm-font-size": { "body": ["--font-ui-small"] },
   "--flexcyon-new-tab-bg-wrapper": {
-    "body.theme-dark": ["--text-accent", "--color-blue", "--color-cyan"],
-    "body.theme-light": ["--text-accent", "--color-pink", "--color-green"]
+    "body.theme-dark": ["--text-accent", "--color-purple"],
+    "body.theme-light": ["--color-green", "--text-accent"]
   },
   "--flexcyon-new-tab-font-group": { "body": ["--font-monospace"] },
   "--vault-name-color": { "body": ["--interactive-accent"] },
+  "--flexcyon-hltr-wrapper-pink": {
+    "body :is(.hltr-pink, mark.hltr-pink, .markdown-preview-view mark.hltr-pink)": [
+      "--color-pink"
+    ]
+  },
+  "--flexcyon-hltr-pink": {
+    "body :is(.hltr-pink, mark.hltr-pink, .markdown-preview-view mark.hltr-pink)": [
+      "--flexcyon-hltr-wrapper-pink",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-red": {
+    "body :is(.hltr-red, mark.hltr-red, .markdown-preview-view mark.hltr-red)": [
+      "--color-red"
+    ]
+  },
+  "--flexcyon-hltr-red": {
+    "body :is(.hltr-red, mark.hltr-red, .markdown-preview-view mark.hltr-red)": [
+      "--flexcyon-hltr-wrapper-red",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-orange": {
+    "body :is(.hltr-orange, mark.hltr-orange, .markdown-preview-view mark.hltr-orange)": [
+      "--color-orange"
+    ]
+  },
+  "--flexcyon-hltr-orange": {
+    "body :is(.hltr-orange, mark.hltr-orange, .markdown-preview-view mark.hltr-orange)": [
+      "--flexcyon-hltr-wrapper-orange",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-yellow": {
+    "body :is(.hltr-yellow, mark.hltr-yellow, .markdown-preview-view mark.hltr-yellow)": [
+      "--color-yellow"
+    ]
+  },
+  "--flexcyon-hltr-yellow": {
+    "body :is(.hltr-yellow, mark.hltr-yellow, .markdown-preview-view mark.hltr-yellow)": [
+      "--flexcyon-hltr-wrapper-yellow",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-green": {
+    "body :is(.hltr-green, mark.hltr-green, .markdown-preview-view mark.hltr-green)": [
+      "--color-green"
+    ]
+  },
+  "--flexcyon-hltr-green": {
+    "body :is(.hltr-green, mark.hltr-green, .markdown-preview-view mark.hltr-green)": [
+      "--flexcyon-hltr-wrapper-green",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-cyan": {
+    "body :is(.hltr-cyan, mark.hltr-cyan, .markdown-preview-view mark.hltr-cyan)": [
+      "--color-cyan"
+    ]
+  },
+  "--flexcyon-hltr-cyan": {
+    "body :is(.hltr-cyan, mark.hltr-cyan, .markdown-preview-view mark.hltr-cyan)": [
+      "--flexcyon-hltr-wrapper-cyan",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-blue": {
+    "body :is(.hltr-blue, mark.hltr-blue, .markdown-preview-view mark.hltr-blue)": [
+      "--color-blue"
+    ]
+  },
+  "--flexcyon-hltr-blue": {
+    "body :is(.hltr-blue, mark.hltr-blue, .markdown-preview-view mark.hltr-blue)": [
+      "--flexcyon-hltr-wrapper-blue",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
+  "--flexcyon-hltr-wrapper-purple": {
+    "body :is(.hltr-purple, mark.hltr-purple, .markdown-preview-view mark.hltr-purple)": [
+      "--color-purple"
+    ]
+  },
+  "--flexcyon-hltr-purple": {
+    "body :is(.hltr-purple, mark.hltr-purple, .markdown-preview-view mark.hltr-purple)": [
+      "--flexcyon-hltr-wrapper-purple",
+      "--flexcyon-theme-brightness-ratio",
+      "--flexcyon-theme-contrast-offset",
+      "--flexcyon-theme-saturation-ratio",
+      "--flexcyon-theme-warmth-offset"
+    ]
+  },
   "--lowlight-background": {
     "body.highlightr-lowlight :is(mark, span.cm-highlight, .markdown-preview-view mark)": [
       "--background-primary"
+    ]
+  },
+  "--mono-oklch-0": {
+    "body.highlightr-lowlight :is(mark, span.cm-highlight, .markdown-preview-view mark)": [
+      "--lowlight-background",
+      "--lowlight-background"
     ]
   },
   "--floating-background": {

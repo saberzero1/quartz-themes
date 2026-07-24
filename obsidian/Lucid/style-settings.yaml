@@ -1,0 +1,968 @@
+mode: replace
+sections:
+  - name: Lucid
+    id: mywiki-glass
+    collapsed: false
+    settings:
+      - id: mwg-info
+        title: Lucid
+        description: Obsidian Glass palette (violet + teal). All colors, fonts and layout below drive the whole theme and its custom features.
+        type: info-text
+        markdown: false
+      - id: mwg-colors-heading
+        title: 🎨 Colors
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-accent
+        title: Primary accent
+        description: Blue by default. Drives links, active states, glows.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a5fd6'
+        default-dark: '#3d8fe6'
+        alt-format: []
+      - id: mwg-accent-2
+        title: Secondary accent
+        description: Teal by default. Used in gradients and hover links.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d82d0'
+        default-dark: '#5ad0c0'
+        alt-format: []
+      - id: mwg-gold
+        title: Folder / highlight gold
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+        alt-format: []
+      - id: mwg-danger
+        title: Danger / close
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c34a26'
+        default-dark: '#e0623f'
+        alt-format: []
+      - id: mwg-bg-0
+        title: App background (deepest)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f7f8fb'
+        default-dark: '#0a0a0b'
+        alt-format: []
+      - id: mwg-editor
+        title: Editor / note background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ffffff'
+        default-dark: '#0a0a0b'
+        alt-format: []
+      - id: mwg-pane
+        title: Sidebar background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#f2f4f9'
+        default-dark: '#0e0e10'
+        alt-format: []
+      - id: mwg-pane-2
+        title: Card / raised panel background
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#eaedf4'
+        default-dark: '#161618'
+        alt-format: []
+      - id: mwg-text
+        title: Body text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1a1a1a'
+        default-dark: '#ececec'
+        alt-format: []
+      - id: mwg-text-strong
+        title: Headings / strong text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+        alt-format: []
+      - id: mwg-muted
+        title: Muted text
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5c5a55'
+        default-dark: '#a3a2a0'
+        alt-format: []
+      - id: mwg-faint
+        title: Faint text / icons
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#8a8780'
+        default-dark: '#6e6d6b'
+        alt-format: []
+      - id: mwg-code-fg
+        title: Inline code color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#1f5fd0'
+        default-dark: '#9ccbff'
+        alt-format: []
+      - id: mwg-tag-graph-sub
+        title: Tag & graph colors
+        type: heading
+        level: 2
+        collapsed: true
+      - id: mwg-tag-blue
+        title: Tag tint — blue (cloud / platform)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5b9bd5'
+        default-dark: '#5b9bd5'
+        alt-format: []
+      - id: mwg-tag-green
+        title: Tag tint — green (data / pipeline)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#4cb782'
+        default-dark: '#4cb782'
+        alt-format: []
+      - id: mwg-tag-amber
+        title: Tag tint — amber (storage / db)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#d9a441'
+        default-dark: '#d9a441'
+        alt-format: []
+      - id: mwg-tag-rose
+        title: Tag tint — rose (people / meta)
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#e0708a'
+        default-dark: '#e0708a'
+        alt-format: []
+      - id: mwg-graph
+        title: Graph node color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a2733'
+        default-dark: '#ccc9e8'
+        alt-format: []
+      - id: mwg-graph-line
+        title: Graph edge color
+        type: variable-themed-color
+        format: rgb
+        opacity: true
+        default-light: rgba(20, 18, 14, 0.18)
+        default-dark: rgba(236, 236, 236, 0.16)
+        alt-format: []
+      - id: mwg-type-heading
+        title: ✒️ Typography
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-system-fonts
+        title: Use system fonts
+        description: Skip the bundled Google fonts (faster / offline / mobile).
+        type: class-toggle
+        addCommand: true
+      - id: mwg-font-body
+        title: Body & interface font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''Segoe UI'', system-ui, sans-serif'
+        options:
+          - label: System default (sans)
+            value: system-ui, -apple-system, 'Segoe UI', sans-serif
+          - label: Segoe UI
+            value: '''Segoe UI'', system-ui, sans-serif'
+          - label: Segoe UI Variable
+            value: '''Segoe UI Variable Display'', ''Segoe UI'', system-ui, sans-serif'
+          - label: Inter
+            value: '''Inter'', system-ui, sans-serif'
+          - label: Roboto
+            value: '''Roboto'', system-ui, sans-serif'
+          - label: Open Sans
+            value: '''Open Sans'', system-ui, sans-serif'
+          - label: Lato
+            value: '''Lato'', system-ui, sans-serif'
+          - label: Montserrat
+            value: '''Montserrat'', system-ui, sans-serif'
+          - label: Poppins
+            value: '''Poppins'', system-ui, sans-serif'
+          - label: Nunito
+            value: '''Nunito'', system-ui, sans-serif'
+          - label: Nunito Sans
+            value: '''Nunito Sans'', system-ui, sans-serif'
+          - label: Source Sans
+            value: '''Source Sans 3'', ''Source Sans Pro'', system-ui, sans-serif'
+          - label: Work Sans
+            value: '''Work Sans'', system-ui, sans-serif'
+          - label: Fira Sans
+            value: '''Fira Sans'', system-ui, sans-serif'
+          - label: Ubuntu
+            value: '''Ubuntu'', system-ui, sans-serif'
+          - label: Noto Sans
+            value: '''Noto Sans'', system-ui, sans-serif'
+          - label: Helvetica Neue
+            value: '''Helvetica Neue'', Helvetica, Arial, sans-serif'
+          - label: Arial
+            value: Arial, Helvetica, sans-serif
+          - label: Calibri
+            value: Calibri, system-ui, sans-serif
+          - label: Candara
+            value: Candara, system-ui, sans-serif
+          - label: Corbel
+            value: Corbel, system-ui, sans-serif
+          - label: Verdana
+            value: Verdana, Geneva, sans-serif
+          - label: Tahoma
+            value: Tahoma, Geneva, sans-serif
+          - label: Trebuchet MS
+            value: '''Trebuchet MS'', Tahoma, sans-serif'
+          - label: Franklin Gothic
+            value: '''Franklin Gothic'', ''Franklin Gothic Medium'', sans-serif'
+          - label: Century Gothic
+            value: '''Century Gothic'', sans-serif'
+          - label: Gill Sans
+            value: '''Gill Sans'', ''Gill Sans MT'', sans-serif'
+          - label: Optima
+            value: Optima, Candara, sans-serif
+          - label: Avenir Next
+            value: '''Avenir Next'', Avenir, sans-serif'
+          - label: Georgia (serif)
+            value: Georgia, 'Times New Roman', serif
+          - label: Times New Roman (serif)
+            value: '''Times New Roman'', Times, serif'
+          - label: Cambria (serif)
+            value: Cambria, Georgia, serif
+          - label: Constantia (serif)
+            value: Constantia, Georgia, serif
+          - label: Garamond (serif)
+            value: Garamond, 'EB Garamond', Georgia, serif
+          - label: Palatino (serif)
+            value: '''Palatino Linotype'', Palatino, ''Book Antiqua'', serif'
+          - label: Book Antiqua (serif)
+            value: '''Book Antiqua'', Palatino, serif'
+          - label: Baskerville (serif)
+            value: Baskerville, Georgia, serif
+          - label: Newsreader (serif)
+            value: '''Newsreader'', Georgia, serif'
+          - label: Source Serif (serif)
+            value: '''Source Serif 4'', Georgia, serif'
+          - label: Merriweather (serif)
+            value: '''Merriweather'', Georgia, serif'
+          - label: Lora (serif)
+            value: '''Lora'', Georgia, serif'
+          - label: Playfair Display (serif)
+            value: '''Playfair Display'', Georgia, serif'
+      - id: mwg-font-heading
+        title: Heading / display font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''Segoe UI Variable Display'', ''Segoe UI'', system-ui, sans-serif'
+        options:
+          - label: System default (sans)
+            value: system-ui, -apple-system, 'Segoe UI', sans-serif
+          - label: Segoe UI
+            value: '''Segoe UI'', system-ui, sans-serif'
+          - label: Segoe UI Variable
+            value: '''Segoe UI Variable Display'', ''Segoe UI'', system-ui, sans-serif'
+          - label: Inter
+            value: '''Inter'', system-ui, sans-serif'
+          - label: Roboto
+            value: '''Roboto'', system-ui, sans-serif'
+          - label: Open Sans
+            value: '''Open Sans'', system-ui, sans-serif'
+          - label: Lato
+            value: '''Lato'', system-ui, sans-serif'
+          - label: Montserrat
+            value: '''Montserrat'', system-ui, sans-serif'
+          - label: Poppins
+            value: '''Poppins'', system-ui, sans-serif'
+          - label: Nunito
+            value: '''Nunito'', system-ui, sans-serif'
+          - label: Nunito Sans
+            value: '''Nunito Sans'', system-ui, sans-serif'
+          - label: Source Sans
+            value: '''Source Sans 3'', ''Source Sans Pro'', system-ui, sans-serif'
+          - label: Work Sans
+            value: '''Work Sans'', system-ui, sans-serif'
+          - label: Fira Sans
+            value: '''Fira Sans'', system-ui, sans-serif'
+          - label: Ubuntu
+            value: '''Ubuntu'', system-ui, sans-serif'
+          - label: Noto Sans
+            value: '''Noto Sans'', system-ui, sans-serif'
+          - label: Helvetica Neue
+            value: '''Helvetica Neue'', Helvetica, Arial, sans-serif'
+          - label: Arial
+            value: Arial, Helvetica, sans-serif
+          - label: Calibri
+            value: Calibri, system-ui, sans-serif
+          - label: Candara
+            value: Candara, system-ui, sans-serif
+          - label: Corbel
+            value: Corbel, system-ui, sans-serif
+          - label: Verdana
+            value: Verdana, Geneva, sans-serif
+          - label: Tahoma
+            value: Tahoma, Geneva, sans-serif
+          - label: Trebuchet MS
+            value: '''Trebuchet MS'', Tahoma, sans-serif'
+          - label: Franklin Gothic
+            value: '''Franklin Gothic'', ''Franklin Gothic Medium'', sans-serif'
+          - label: Century Gothic
+            value: '''Century Gothic'', sans-serif'
+          - label: Gill Sans
+            value: '''Gill Sans'', ''Gill Sans MT'', sans-serif'
+          - label: Optima
+            value: Optima, Candara, sans-serif
+          - label: Avenir Next
+            value: '''Avenir Next'', Avenir, sans-serif'
+          - label: Georgia (serif)
+            value: Georgia, 'Times New Roman', serif
+          - label: Times New Roman (serif)
+            value: '''Times New Roman'', Times, serif'
+          - label: Cambria (serif)
+            value: Cambria, Georgia, serif
+          - label: Constantia (serif)
+            value: Constantia, Georgia, serif
+          - label: Garamond (serif)
+            value: Garamond, 'EB Garamond', Georgia, serif
+          - label: Palatino (serif)
+            value: '''Palatino Linotype'', Palatino, ''Book Antiqua'', serif'
+          - label: Book Antiqua (serif)
+            value: '''Book Antiqua'', Palatino, serif'
+          - label: Baskerville (serif)
+            value: Baskerville, Georgia, serif
+          - label: Newsreader (serif)
+            value: '''Newsreader'', Georgia, serif'
+          - label: Source Serif (serif)
+            value: '''Source Serif 4'', Georgia, serif'
+          - label: Merriweather (serif)
+            value: '''Merriweather'', Georgia, serif'
+          - label: Lora (serif)
+            value: '''Lora'', Georgia, serif'
+          - label: Playfair Display (serif)
+            value: '''Playfair Display'', Georgia, serif'
+      - id: mwg-font-mono
+        title: Monospace / label font
+        description: Pick from common system fonts.
+        type: variable-select
+        default: '''JetBrains Mono'', ui-monospace, monospace'
+        options:
+          - label: JetBrains Mono
+            value: '''JetBrains Mono'', ui-monospace, monospace'
+          - label: Cascadia Code
+            value: '''Cascadia Code'', ui-monospace, monospace'
+          - label: Cascadia Mono
+            value: '''Cascadia Mono'', ui-monospace, monospace'
+          - label: Consolas
+            value: Consolas, ui-monospace, monospace
+          - label: SF Mono / system
+            value: ui-monospace, SFMono-Regular, Menlo, monospace
+          - label: Menlo
+            value: Menlo, Monaco, monospace
+          - label: Monaco
+            value: Monaco, Menlo, monospace
+          - label: Fira Code
+            value: '''Fira Code'', ui-monospace, monospace'
+          - label: Fira Mono
+            value: '''Fira Mono'', ui-monospace, monospace'
+          - label: Source Code Pro
+            value: '''Source Code Pro'', ui-monospace, monospace'
+          - label: IBM Plex Mono
+            value: '''IBM Plex Mono'', ui-monospace, monospace'
+          - label: Roboto Mono
+            value: '''Roboto Mono'', ui-monospace, monospace'
+          - label: Courier New
+            value: '''Courier New'', Courier, monospace'
+          - label: Lucida Console
+            value: '''Lucida Console'', Monaco, monospace'
+      - id: file-line-width
+        title: Note width (readable line length)
+        type: variable-number-slider
+        default: 760
+        min: 500
+        max: 1600
+        step: 20
+        format: px
+      - id: font-text-size
+        title: Body font size
+        type: variable-number-slider
+        default: 16
+        min: 12
+        max: 22
+        step: 1
+        format: px
+      - id: line-height-normal
+        title: Line height
+        type: variable-number-slider
+        default: 1.55
+        min: 1.2
+        max: 2.2
+        step: 0.05
+      - id: bold-weight
+        title: Bold weight
+        type: variable-number-slider
+        default: 700
+        min: 400
+        max: 900
+        step: 100
+      - id: nav-item-size
+        title: Sidebar font size
+        type: variable-number-slider
+        default: 14
+        min: 11
+        max: 18
+        step: 1
+        format: px
+      - id: mwg-heading-sizes
+        title: Heading sizes & weight
+        type: heading
+        level: 2
+        collapsed: true
+      - id: inline-title-size
+        title: Inline title size
+        type: variable-number-slider
+        default: 40
+        min: 24
+        max: 64
+        step: 1
+        format: px
+      - id: h1-size
+        title: H1 size
+        type: variable-number-slider
+        default: 1.9
+        min: 1.2
+        max: 3
+        step: 0.05
+        format: em
+      - id: h2-size
+        title: H2 size
+        type: variable-number-slider
+        default: 1.5
+        min: 1.1
+        max: 2.5
+        step: 0.05
+        format: em
+      - id: h3-size
+        title: H3 size
+        type: variable-number-slider
+        default: 1.28
+        min: 1
+        max: 2
+        step: 0.05
+        format: em
+      - id: h4-size
+        title: H4 size
+        type: variable-number-slider
+        default: 1.1
+        min: 0.9
+        max: 1.8
+        step: 0.05
+        format: em
+      - id: h5-size
+        title: H5 size
+        type: variable-number-slider
+        default: 1
+        min: 0.8
+        max: 1.6
+        step: 0.05
+        format: em
+      - id: h6-size
+        title: H6 size
+        type: variable-number-slider
+        default: 0.9
+        min: 0.7
+        max: 1.4
+        step: 0.05
+        format: em
+      - id: mwg-heading-weight
+        title: Heading weight
+        type: variable-number-slider
+        default: 500
+        min: 300
+        max: 800
+        step: 100
+      - id: mwg-head-colors
+        title: Heading colors (H1–H6)
+        description: Color-coded headings, like the vault snippet.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: mwg-h1
+        title: H1 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+        alt-format: []
+      - id: mwg-h2
+        title: H2 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+        alt-format: []
+      - id: mwg-h3
+        title: H3 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a2d34'
+        default-dark: '#eaedf5'
+        alt-format: []
+      - id: mwg-h4
+        title: H4 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3a3d44'
+        default-dark: '#ececec'
+        alt-format: []
+      - id: mwg-h5
+        title: H5 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#4a4d54'
+        default-dark: '#ececec'
+        alt-format: []
+      - id: mwg-h6
+        title: H6 color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5a5d64'
+        default-dark: '#a3a2a0'
+        alt-format: []
+      - id: mwg-format-colors
+        title: Text format colors
+        description: Bold / italic / strikethrough.
+        type: heading
+        level: 2
+        collapsed: true
+      - id: mwg-bold-color
+        title: Bold color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#14120e'
+        default-dark: '#fbfbfa'
+        alt-format: []
+      - id: mwg-italic-color
+        title: Italic / emphasis color
+        description: Teal by default — different from the blue accent. Also colors *em* in headings & cards.
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0d7d72'
+        default-dark: '#4fd0bf'
+        alt-format: []
+      - id: mwg-bold-italic-color
+        title: Bold + italic color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#0d7d72'
+        default-dark: '#4fd0bf'
+        alt-format: []
+      - id: mwg-strikethrough-color
+        title: Strikethrough color
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#5c5a55'
+        default-dark: '#a3a2a0'
+        alt-format: []
+      - id: mwg-callouts-heading
+        title: 🗨️ Callout colors
+        description: 'One accent per callout type. Same syntax as ITS: > [!tip], > [!warning], etc.'
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-callout-note
+        title: Note / info / summary / abstract
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#2a5fd6'
+        default-dark: '#3d8fe6'
+        alt-format: []
+      - id: mwg-callout-tip
+        title: Tip / success / important / done
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d82d0'
+        default-dark: '#5ad0c0'
+        alt-format: []
+      - id: mwg-callout-warning
+        title: Warning / caution / attention
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+        alt-format: []
+      - id: mwg-callout-question
+        title: Question / help / FAQ
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#b07d20'
+        default-dark: '#d9a441'
+        alt-format: []
+      - id: mwg-callout-danger
+        title: Failure / danger / error / bug
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#c34a26'
+        default-dark: '#e0623f'
+        alt-format: []
+      - id: mwg-callout-example
+        title: Example
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7a6a8e'
+        default-dark: '#a890be'
+        alt-format: []
+      - id: mwg-callout-quote
+        title: Quote / cite
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7a6a8e'
+        default-dark: '#a890be'
+        alt-format: []
+      - id: mwg-shape-heading
+        title: 🟦 Shape & motion
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-radius
+        title: Roundness
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 16
+        step: 1
+        format: px
+      - id: mwg-scrollbar
+        title: Scrollbar width
+        type: variable-number-slider
+        default: 6
+        min: 3
+        max: 16
+        step: 1
+        format: px
+      - id: mwg-no-anim
+        title: Disable animations
+        description: Turn off entrance + hover motion (also respects OS reduced-motion).
+        type: class-toggle
+        addCommand: true
+      - id: mwg-head-underline-width
+        title: Heading underline width
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 6
+        step: 1
+        format: px
+      - id: mwg-no-head-underline
+        title: Disable heading underline
+        type: class-toggle
+      - id: mwg-bg-glow
+        title: Accent background glow (Glass wash)
+        description: Re-adds the soft violet glow behind the app. Off = flat near-black like the reference.
+        type: class-toggle
+        addCommand: true
+      - id: mwg-editorial-heading
+        title: ✒️ Editorial & polish
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-drop-cap
+        title: Editorial drop cap
+        description: Large serif initial on the first paragraph of a note (reading view + live preview).
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: mwg-drop-cap-size
+        title: Drop cap size
+        type: variable-number-slider
+        default: 3.1
+        min: 2
+        max: 6
+        step: 0.1
+        format: em
+      - id: mwg-drop-cap-solid
+        title: Solid drop cap (no gradient)
+        description: Fill the drop cap with a flat accent color instead of the violet→teal gradient.
+        type: class-toggle
+      - id: mwg-quote-mark-opacity
+        title: Quote mark opacity
+        description: Strength of the oversized quotation mark behind blockquotes.
+        type: variable-number-slider
+        default: 0.1
+        min: 0
+        max: 0.4
+        step: 0.01
+      - id: mwg-hr-gem-size
+        title: Divider gem size
+        description: Size of the diamond ornament in the center of "---" dividers.
+        type: variable-number-slider
+        default: 7
+        min: 0
+        max: 16
+        step: 1
+        format: px
+      - id: mwg-heading-letter-spacing
+        title: Heading letter spacing
+        type: variable-number-slider
+        default: -0.01
+        min: -0.05
+        max: 0.1
+        step: 0.005
+        format: em
+      - id: mwg-para-spacing
+        title: Paragraph spacing
+        description: Vertical gap below each paragraph.
+        type: variable-number-slider
+        default: 11
+        min: 0
+        max: 28
+        step: 1
+        format: px
+      - id: mwg-heading-align
+        title: Default heading alignment
+        description: Aligns all headings (both views). Per-heading "#center /
+        type: class-select
+        allowEmpty: false
+        default: mwg-halign-left
+        options:
+          - label: Left
+            value: mwg-halign-left
+          - label: Center
+            value: mwg-halign-center
+          - label: Right
+            value: mwg-halign-right
+      - id: mwg-active-line
+        title: Highlight active line (editor)
+        description: Faint accent wash behind the line your cursor is on, in live preview / source.
+        type: class-toggle
+        addCommand: true
+      - id: mwg-scroll-reveal
+        title: Scroll reveal
+        description: Headings, callouts, tables and quotes fade-rise as they scroll into view (native, no JS).
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: mwg-quote-mark
+        title: Decorative quote mark
+        description: Oversized serif quotation mark behind blockquotes and pull quotes.
+        type: class-toggle
+        default: true
+        addCommand: true
+      - id: mwg-hr-plain
+        title: Plain dividers (no gem)
+        description: Removes the center diamond ornament from "---" dividers, leaving just the fading line.
+        type: class-toggle
+      - id: mwg-heading-underline-fit
+        title: Heading underline fits text
+        description: Heading boxes (and their underline) shrink to the text width instead of spanning the full column. Off = full-width underline.
+        type: class-toggle
+        default: true
+      - id: mwg-features-heading
+        title: 🧩 Custom features
+        type: heading
+        level: 1
+        collapsed: true
+      - id: callout-min-width
+        title: Multi-column — min sub-callout width
+        type: variable-number-slider
+        default: 200
+        min: 100
+        max: 500
+        step: 20
+        format: px
+      - id: callout-gap
+        title: Multi-column — gap
+        type: variable-text
+        default: 1em
+        quotes: false
+      - id: float-small-width
+        title: Float callout width — small
+        type: variable-number-slider
+        default: 300
+        min: 200
+        max: 450
+        step: 10
+        format: px
+      - id: float-medium-width
+        title: Float callout width — medium
+        type: variable-number-slider
+        default: 400
+        min: 300
+        max: 550
+        step: 10
+        format: px
+      - id: float-large-width
+        title: Float callout width — large
+        type: variable-number-slider
+        default: 600
+        min: 500
+        max: 750
+        step: 10
+        format: px
+      - id: img-border-radius
+        title: Image border radius
+        type: variable-text
+        default: 14px
+        quotes: false
+      - id: img-max-height
+        title: Gallery image max height
+        type: variable-text
+        default: 300px
+        quotes: false
+      - id: img-max-width
+        title: Gallery image max width
+        type: variable-text
+        default: 350px
+        quotes: false
+      - id: callout-gallery-gap
+        title: Gallery gap
+        type: variable-text
+        default: 5px
+        quotes: false
+      - id: mcl-banner-height-normal
+        title: Banner height — normal
+        type: variable-text
+        default: 200px
+        quotes: false
+      - id: mcl-banner-height-tall
+        title: Banner height — tall
+        type: variable-text
+        default: 300px
+        quotes: false
+      - id: image-zoom
+        title: Enable image zoom via CSS
+        type: class-toggle
+      - id: list-image-control-off
+        title: Disable image sizing inside lists
+        type: class-toggle
+      - id: mwg-cards-heading
+        title: 🃏 Cards (shared with Atelier)
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-card-default
+        title: Default card style
+        description: Style for a bare > [!card]. Override inline e.g. > [!card|profile] or > [!card|honor]. Add surfaces (dark / accent) and spans (span2 / spanfull). Wrap in > [!grid] to flow into columns.
+        type: class-select
+        allowEmpty: false
+        default: at-card-plain
+        options:
+          - label: Plain card
+            value: at-card-plain
+          - label: Skill / numbered steps
+            value: at-card-skill
+          - label: Section (roman column)
+            value: at-card-section
+          - label: Step
+            value: at-card-step
+          - label: Profile
+            value: at-card-profile
+          - label: Honor (dark)
+            value: at-card-honor
+          - label: Channels (dark)
+            value: at-card-channels
+          - label: Hero / CTA
+            value: at-card-hero
+      - id: mwg-card-min
+        title: Card grid — min card width
+        description: Cards inside > [!grid] flow into as many columns as fit at this minimum width.
+        type: variable-number-slider
+        default: 260
+        min: 160
+        max: 480
+        step: 10
+        format: px
+      - id: mwg-card-blur
+        title: Card glass blur
+        description: Backdrop-blur strength on frosted cards & infobox (0 = flat / opaque-ish).
+        type: variable-number-slider
+        default: 24
+        min: 0
+        max: 48
+        step: 2
+        format: px
+      - id: mwg-gradient-heading
+        title: 🌈 Gradient text (.at-gradient)
+        description: Colors for the Apple-style gradient text class. Use <span class="at-gradient">…</span>.
+        type: heading
+        level: 1
+        collapsed: true
+      - id: mwg-grad-1
+        title: Gradient stop 1
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#3d8fe6'
+        default-dark: '#3d8fe6'
+        alt-format: []
+      - id: mwg-grad-2
+        title: Gradient stop 2
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#7b6cff'
+        default-dark: '#7b6cff'
+        alt-format: []
+      - id: mwg-grad-3
+        title: Gradient stop 3
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ff6aa0'
+        default-dark: '#ff6aa0'
+        alt-format: []
+      - id: mwg-grad-4
+        title: Gradient stop 4
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#ff8a3d'
+        default-dark: '#ff8a3d'
+        alt-format: []
+      - id: mwg-grad-angle
+        title: Gradient angle
+        type: variable-number-slider
+        default: 100
+        min: 0
+        max: 360
+        step: 5
+        format: deg

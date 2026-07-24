@@ -529,21 +529,21 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid rgb(237, 233, 218);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     margin: 0px 0px 32px;
     margin-block-end: 32px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
-    padding-block-start: 8px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding: 20px 24px;
+    padding-block-end: 20px;
+    padding-block-start: 20px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
   }
 
   .metadata-container {
@@ -563,21 +563,21 @@ body {
       "Segoe UI Emoji",
       "Segoe UI Symbol",
       sans-serif;
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border: 1px solid rgb(237, 233, 218);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     margin: 0px 0px 32px;
     margin-block-end: 32px;
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    padding: 8px 0px;
-    padding-block-end: 8px;
-    padding-block-start: 8px;
-    padding-inline-end: 0px;
-    padding-inline-start: 0px;
+    padding: 20px 24px;
+    padding-block-end: 20px;
+    padding-block-start: 20px;
+    padding-inline-end: 24px;
+    padding-inline-start: 24px;
   }
 
   .note-properties-table {
@@ -652,10 +652,10 @@ body {
   }
 
   .metadata-property-key {
-    color: rgb(108, 102, 75);
+    color: var(--drx-color-deactivate);
     font-family: var(--metadata-label-font);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .metadata-property-value {
@@ -667,12 +667,12 @@ body {
   .note-properties {
     background-color: var(--metadata-background);
     border-color: rgb(237, 233, 218);
-    border-radius: 0px;
+    border-radius: 16px;
   }
 
   .note-properties-key {
-    color: rgb(108, 102, 75);
-    font-weight: 400;
+    color: var(--drx-color-deactivate);
+    font-weight: 500;
   }
 
   .note-properties-value {
@@ -684,8 +684,8 @@ body {
   }
 
   .note-properties-tags {
-    background-color: var(--pill-background);
-    color: var(--pill-color);
+    background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+    color: var(--drx-color-yellow-2);
     border-radius: 28px;
   }
 
@@ -946,9 +946,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
-    outline: rgb(138, 92, 245) none 0px;
+    outline: rgb(31, 31, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
-    text-decoration-color: rgb(138, 92, 245);
+    text-decoration-color: rgb(31, 31, 31);
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
@@ -987,9 +987,9 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
-    outline: rgb(138, 92, 245) none 0px;
+    outline: rgb(31, 31, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
-    text-decoration-color: rgb(138, 92, 245);
+    text-decoration-color: rgb(31, 31, 31);
     text-decoration-line: none;
     text-decoration-style: solid;
     transition: all;
@@ -1185,8 +1185,8 @@ body {
       "Segoe UI Symbol",
       sans-serif;
     font-weight: 600;
-    outline: rgb(138, 92, 245) none 0px;
-    text-decoration-color: rgb(138, 92, 245);
+    outline: rgb(31, 31, 31) none 0px;
+    text-decoration-color: rgb(31, 31, 31);
     text-decoration-style: solid;
     transition: all;
     user-select: text;
@@ -1315,27 +1315,27 @@ body {
   }
 
   hr {
+    border-color: rgb(128, 128, 128);
     border-left-width: 0px;
     border-right-width: 0px;
-    border-color: currentcolor rgb(188, 186, 179) rgb(188, 186, 179);
-    border-top: 2px solid rgb(188, 186, 179);
+    border-top: 1px solid rgb(188, 186, 179);
     border-bottom-width: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    margin: 32px 0px;
-    margin-block-end: 32px;
-    margin-block-start: 32px;
-    margin-inline-end: 0px;
-    margin-inline-start: 0px;
+    margin: 56px 88.9062px;
+    margin-block-end: 56px;
+    margin-block-start: 56px;
+    margin-inline-end: 88.9062px;
+    margin-inline-start: 88.9062px;
   }
 
   a.internal-link.tag-link,
   .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
-    background-color: var(--pill-background);
-    color: var(--pill-color);
+    background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+    color: var(--drx-color-yellow-2);
     display: flex;
     font-family:
       ui-sans-serif,
@@ -1356,7 +1356,7 @@ body {
     line-height: var(--line-height-tight);
     text-decoration: rgb(34, 34, 34);
     margin-inline-start: 0px;
-    border: 0px solid oklch(0.653792 0.189218 293.559 / 0.15);
+    border: 1px solid color(srgb 0.517647 0.431373 0.0823529 / 0.3);
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -1368,7 +1368,7 @@ body {
   }
 
   a.internal-link.tag-link::before {
-    color: rgb(138, 92, 245);
+    color: rgb(132, 110, 21);
   }
 
   .search > .search-button {
@@ -1524,18 +1524,18 @@ body {
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-    padding: 0px 0px 7.68px;
-    padding-block-end: 7.68px;
+    padding: 0px 0px 7.2px;
+    padding-block-end: 7.2px;
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 51.2px 0px 12.8px;
+    margin: 51.84px 0px 14.4px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
-    border: 0px rgb(138, 92, 245);
-    border-bottom: 3px solid rgb(138, 92, 245);
+    border: 0px rgb(31, 31, 31);
+    border-bottom: 1px solid rgb(188, 186, 179);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -1564,7 +1564,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 44.8px 0px 11.2px;
+    margin: 41.76px 0px 11.6px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1598,7 +1598,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 40px 0px 10px;
+    margin: 36px 0px 10px;
     margin-block-end: var(--p-spacing);
     margin-block-start: var(--p-spacing);
     margin-inline-end: 0px;
@@ -1726,7 +1726,7 @@ body {
     line-height: var(--inline-title-line-height);
     text-shadow: none;
     text-decoration: rgb(34, 34, 34);
-    letter-spacing: -0.384px;
+    letter-spacing: -0.432px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
     background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -1735,7 +1735,7 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 12.8px;
+    margin: 0px 0px 14.4px;
     margin-block-end: var(--inline-title-margin-bottom);
     margin-block-start: 0px;
     margin-inline-end: 0px;
@@ -2283,54 +2283,54 @@ body {
 
   code {
     background-color: var(--code-background);
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgb(108, 102, 75);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
-    color: var(--code-normal);
-    font-family: var(--font-monospace);
-    padding: 2.1px 4.2px;
-    padding-block-end: 2.1px;
-    padding-block-start: 2.1px;
-    padding-inline-end: 4.2px;
-    padding-inline-start: 4.2px;
+    color: var(--ec-codeFg);
+    font-family: var(--ec-codeFontFml);
+    padding: 12px 0px;
+    padding-block-end: 12px;
+    padding-block-start: 12px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
   }
 
   pre > code,
   pre:has(> code) {
     background-color: var(--code-background);
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
     border-end-end-radius: 0px;
     color: rgb(31, 31, 31);
     overflow-x: visible;
-    padding: 12px 16px;
-    padding-block-end: 12px;
-    padding-block-start: 12px;
-    padding-inline-end: 16px;
-    padding-inline-start: 16px;
+    padding: 0px;
+    padding-block-end: 0px;
+    padding-block-start: 0px;
+    padding-inline-end: 0px;
+    padding-inline-start: 0px;
     white-space-collapse: preserve;
     text-wrap-mode: nowrap;
   }
 
   figure[data-rehype-pretty-code-figure] {
     background-color: var(--code-background);
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2341,11 +2341,11 @@ body {
     background-color: var(--code-background);
     color: rgb(31, 31, 31);
     font-family: monospace;
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2354,21 +2354,21 @@ body {
 
   pre > code > [data-line] {
     background-color: var(--code-background);
-    border-left: 0px solid rgb(237, 233, 218);
+    border-left: 0px solid rgba(0, 0, 0, 0);
   }
 
   pre > code > [data-line][data-highlighted-line] {
     background-color: var(--code-background);
-    border-left-color: rgb(237, 233, 218);
+    border-left-color: rgba(0, 0, 0, 0);
   }
 
   pre > code [data-highlighted-chars] {
     background-color: var(--code-background);
-    border: 0px solid rgb(237, 233, 218);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-start-start-radius: 0px;
     border-start-end-radius: 0px;
     border-end-start-radius: 0px;
@@ -2546,7 +2546,7 @@ body {
       sans-serif;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
-    line-height: 24px;
+    line-height: 25.6px;
     padding-bottom: 0px;
     padding-top: 0px;
     padding-inline-start: var(--size-4-6);
@@ -2591,7 +2591,7 @@ body {
   }
 
   input[type="text"] {
-    background-color: rgb(222, 219, 204);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--text-normal);
     font-family:
       ui-sans-serif,
@@ -2832,9 +2832,9 @@ body {
   }
 
   ul.tags > li {
-    background-color: var(--pill-background);
-    color: var(--pill-color);
-    border: 0px solid oklch(0.653792 0.189218 293.559 / 0.15);
+    background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+    color: var(--drx-color-yellow-2);
+    border: 1px solid color(srgb 0.517647 0.431373 0.0823529 / 0.3);
     border-top-left-radius: 28px;
     border-top-right-radius: 28px;
     border-bottom-left-radius: 28px;
@@ -2941,7 +2941,7 @@ body {
 
   .callout {
     --callout-color: var(--callout-default);
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -2962,7 +2962,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3002,10 +3002,10 @@ body {
     --callout-color: var(--callout-default);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(98, 114, 164, 0.247) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.423529 0.4 0.294118 / 0.25) none repeat scroll 0% 0% / auto padding-box padding-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3020,7 +3020,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3060,10 +3060,10 @@ body {
     --callout-color: var(--callout-summary);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(98, 114, 164, 0.247) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.423529 0.4 0.294118 / 0.25) none repeat scroll 0% 0% / auto padding-box padding-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3078,7 +3078,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3118,10 +3118,10 @@ body {
     --callout-color: var(--callout-info);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(98, 114, 164, 0.247) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.423529 0.4 0.294118 / 0.25) none repeat scroll 0% 0% / auto padding-box padding-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3136,7 +3136,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3179,7 +3179,7 @@ body {
     background: rgb(203, 58, 42) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(255, 255, 255);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid oklch(0.999994 0.0000497986 none / 0.25);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3194,7 +3194,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3234,10 +3234,10 @@ body {
     --callout-color: var(--callout-tip);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(3, 106, 150, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(3, 106, 150) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3252,7 +3252,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3292,10 +3292,10 @@ body {
     --callout-color: var(--callout-success);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(20, 113, 10, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(20, 113, 10) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3310,7 +3310,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3350,10 +3350,10 @@ body {
     --callout-color: var(--callout-question);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(175, 58, 3, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(132, 110, 21) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3368,7 +3368,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3408,10 +3408,10 @@ body {
     --callout-color: var(--callout-warning);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(175, 58, 3, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(132, 110, 21) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3426,7 +3426,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3466,10 +3466,10 @@ body {
     --callout-color: var(--callout-error);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(98, 114, 164, 0.247) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.423529 0.4 0.294118 / 0.25) none repeat scroll 0% 0% / auto padding-box padding-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3484,7 +3484,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3524,10 +3524,10 @@ body {
     --callout-color: var(--callout-fail);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(98, 114, 164, 0.247) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: color(srgb 0.423529 0.4 0.294118 / 0.25) none repeat scroll 0% 0% / auto padding-box padding-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3542,7 +3542,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3582,10 +3582,10 @@ body {
     --callout-color: var(--callout-bug);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(163, 20, 77, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(203, 58, 42) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3600,7 +3600,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3640,10 +3640,10 @@ body {
     --callout-color: var(--callout-example);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(163, 20, 77, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(163, 20, 77) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3658,7 +3658,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -3698,10 +3698,10 @@ body {
     --callout-color: var(--callout-quote);
     background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
     background-image: none;
-    background: rgba(100, 74, 201, 0.31) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(100, 74, 201) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(31, 31, 31);
     mix-blend-mode: normal;
-    border: 1px solid rgb(206, 204, 192);
+    border: 0px solid rgb(31, 31, 31);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -3716,7 +3716,7 @@ body {
     --callout-color: 98, 114, 164;
     color: var(--callout-color);
     gap: 10px;
-    border: 0px rgb(31, 31, 31);
+    border: 0px rgb(255, 255, 255);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
@@ -4495,336 +4495,537 @@ body {
 
   li.task-list-item[data-task="_"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=","] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=";"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task=":"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="."] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="'"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="@"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="&"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="#"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="%"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="`"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="+"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="<"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="="] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="|"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="~"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="$"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="0"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="1"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="2"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="3"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="4"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="5"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="6"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="7"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="8"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="9"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="a"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="A"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="B"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="C"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="D"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="e"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="E"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="F"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="g"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="G"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="h"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="H"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="j"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="J"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="K"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="L"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="m"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="M"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="n"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="N"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="o"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="O"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="P"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="q"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Q"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="r"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="R"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="s"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="t"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="T"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="U"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="v"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="V"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="W"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="x"] {
     color: rgb(108, 102, 75);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="X"] {
     color: rgb(108, 102, 75);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="y"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Y"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="z"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
   li.task-list-item[data-task="Z"] {
     color: rgb(31, 31, 31);
+    line-height: 1.3;
+    margin-block-end: 0px;
+    margin-bottom: 0px;
     text-decoration-line: none;
   }
 
@@ -5534,21 +5735,21 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border: 1px solid rgb(25, 26, 33);
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
       margin: 0px 0px 32px;
       margin-block-end: 32px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
-      padding-block-start: 8px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding: 20px 24px;
+      padding-block-end: 20px;
+      padding-block-start: 20px;
+      padding-inline-end: 24px;
+      padding-inline-start: 24px;
     }
 
     .metadata-container {
@@ -5568,21 +5769,21 @@ html[saved-theme="dark"] {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         sans-serif;
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
+      border: 1px solid rgb(25, 26, 33);
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
       margin: 0px 0px 32px;
       margin-block-end: 32px;
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      padding: 8px 0px;
-      padding-block-end: 8px;
-      padding-block-start: 8px;
-      padding-inline-end: 0px;
-      padding-inline-start: 0px;
+      padding: 20px 24px;
+      padding-block-end: 20px;
+      padding-block-start: 20px;
+      padding-inline-end: 24px;
+      padding-inline-start: 24px;
     }
 
     .note-properties-table {
@@ -5657,10 +5858,10 @@ html[saved-theme="dark"] {
     }
 
     .metadata-property-key {
-      color: rgb(186, 188, 201);
+      color: var(--drx-color-deactivate);
       font-family: var(--metadata-label-font);
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 500;
     }
 
     .metadata-property-value {
@@ -5672,12 +5873,12 @@ html[saved-theme="dark"] {
     .note-properties {
       background-color: var(--metadata-background);
       border-color: rgb(25, 26, 33);
-      border-radius: 0px;
+      border-radius: 16px;
     }
 
     .note-properties-key {
-      color: rgb(186, 188, 201);
-      font-weight: 400;
+      color: var(--drx-color-deactivate);
+      font-weight: 500;
     }
 
     .note-properties-value {
@@ -5689,8 +5890,8 @@ html[saved-theme="dark"] {
     }
 
     .note-properties-tags {
-      background-color: var(--pill-background);
-      color: var(--pill-color);
+      background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+      color: var(--drx-color-yellow-2);
       border-radius: 28px;
     }
 
@@ -5951,9 +6152,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
-      outline: rgb(138, 92, 245) none 0px;
+      outline: rgb(248, 248, 242) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: rgb(138, 92, 245);
+      text-decoration-color: rgb(248, 248, 242);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -5992,9 +6193,9 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
-      outline: rgb(138, 92, 245) none 0px;
+      outline: rgb(248, 248, 242) none 0px;
       text-decoration: rgb(218, 218, 218);
-      text-decoration-color: rgb(138, 92, 245);
+      text-decoration-color: rgb(248, 248, 242);
       text-decoration-line: none;
       text-decoration-style: solid;
       transition: all;
@@ -6190,8 +6391,8 @@ html[saved-theme="dark"] {
         "Segoe UI Symbol",
         sans-serif;
       font-weight: 600;
-      outline: rgb(138, 92, 245) none 0px;
-      text-decoration-color: rgb(138, 92, 245);
+      outline: rgb(248, 248, 242) none 0px;
+      text-decoration-color: rgb(248, 248, 242);
       text-decoration-style: solid;
       transition: all;
       user-select: text;
@@ -6320,27 +6521,27 @@ html[saved-theme="dark"] {
     }
 
     hr {
+      border-color: rgb(128, 128, 128);
       border-left-width: 0px;
       border-right-width: 0px;
-      border-color: currentcolor rgb(112, 116, 135) rgb(112, 116, 135);
-      border-top: 2px solid rgb(112, 116, 135);
+      border-top: 1px solid rgb(112, 116, 135);
       border-bottom-width: 0px;
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      margin: 32px 0px;
-      margin-block-end: 32px;
-      margin-block-start: 32px;
-      margin-inline-end: 0px;
-      margin-inline-start: 0px;
+      margin: 56px 88.9062px;
+      margin-block-end: 56px;
+      margin-block-start: 56px;
+      margin-inline-end: 88.9062px;
+      margin-inline-start: 88.9062px;
     }
 
     a.internal-link.tag-link,
     .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
-      background-color: var(--pill-background);
-      color: var(--pill-color);
+      background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+      color: var(--drx-color-yellow-2);
       display: flex;
       font-family:
         ui-sans-serif,
@@ -6361,7 +6562,7 @@ html[saved-theme="dark"] {
       line-height: var(--line-height-tight);
       text-decoration: rgb(218, 218, 218);
       margin-inline-start: 0px;
-      border: 0px solid oklch(0.603458 0.21722 292.49 / 0.15);
+      border: 1px solid color(srgb 0.945098 0.980392 0.54902 / 0.3);
       border-top-left-radius: 28px;
       border-top-right-radius: 28px;
       border-bottom-left-radius: 28px;
@@ -6373,7 +6574,7 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link::before {
-      color: rgb(138, 92, 245);
+      color: rgb(241, 250, 140);
     }
 
     .search > .search-button {
@@ -6529,18 +6730,18 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
-      padding: 0px 0px 7.68px;
-      padding-block-end: 7.68px;
+      padding: 0px 0px 7.2px;
+      padding-block-end: 7.2px;
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 51.2px 0px 12.8px;
+      margin: 51.84px 0px 14.4px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
-      border: 0px rgb(138, 92, 245);
-      border-bottom: 3px solid rgb(138, 92, 245);
+      border: 0px rgb(248, 248, 242);
+      border-bottom: 1px solid rgb(112, 116, 135);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -6569,7 +6770,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 44.8px 0px 11.2px;
+      margin: 41.76px 0px 11.6px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -6603,7 +6804,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 40px 0px 10px;
+      margin: 36px 0px 10px;
       margin-block-end: var(--p-spacing);
       margin-block-start: var(--p-spacing);
       margin-inline-end: 0px;
@@ -6731,7 +6932,7 @@ html[saved-theme="dark"] {
       line-height: var(--inline-title-line-height);
       text-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      letter-spacing: -0.384px;
+      letter-spacing: -0.432px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
       background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
@@ -6740,7 +6941,7 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 12.8px;
+      margin: 0px 0px 14.4px;
       margin-block-end: var(--inline-title-margin-bottom);
       margin-block-start: 0px;
       margin-inline-end: 0px;
@@ -7288,54 +7489,54 @@ html[saved-theme="dark"] {
 
     code {
       background-color: var(--code-background);
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgb(186, 188, 201);
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
-      color: var(--code-normal);
-      font-family: var(--font-monospace);
-      padding: 2.1px 4.2px;
-      padding-block-end: 2.1px;
-      padding-block-start: 2.1px;
-      padding-inline-end: 4.2px;
-      padding-inline-start: 4.2px;
+      color: var(--ec-codeFg);
+      font-family: var(--ec-codeFontFml);
+      padding: 12px 0px;
+      padding-block-end: 12px;
+      padding-block-start: 12px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
     }
 
     pre > code,
     pre:has(> code) {
       background-color: var(--code-background);
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
       border-end-end-radius: 0px;
       color: rgb(248, 248, 242);
       overflow-x: visible;
-      padding: 12px 16px;
-      padding-block-end: 12px;
-      padding-block-start: 12px;
-      padding-inline-end: 16px;
-      padding-inline-start: 16px;
+      padding: 0px;
+      padding-block-end: 0px;
+      padding-block-start: 0px;
+      padding-inline-end: 0px;
+      padding-inline-start: 0px;
       white-space-collapse: preserve;
       text-wrap-mode: nowrap;
     }
 
     figure[data-rehype-pretty-code-figure] {
       background-color: var(--code-background);
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -7346,11 +7547,11 @@ html[saved-theme="dark"] {
       background-color: var(--code-background);
       color: rgb(248, 248, 242);
       font-family: monospace;
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -7359,21 +7560,21 @@ html[saved-theme="dark"] {
 
     pre > code > [data-line] {
       background-color: var(--code-background);
-      border-left: 0px solid rgb(25, 26, 33);
+      border-left: 0px solid rgba(0, 0, 0, 0);
     }
 
     pre > code > [data-line][data-highlighted-line] {
       background-color: var(--code-background);
-      border-left-color: rgb(25, 26, 33);
+      border-left-color: rgba(0, 0, 0, 0);
     }
 
     pre > code [data-highlighted-chars] {
       background-color: var(--code-background);
-      border: 0px solid rgb(25, 26, 33);
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
+      border: 0px solid rgba(0, 0, 0, 0);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       border-start-start-radius: 0px;
       border-start-end-radius: 0px;
       border-end-start-radius: 0px;
@@ -7551,7 +7752,7 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: 400;
       font-style: var(--blockquote-font-style);
-      line-height: 24px;
+      line-height: 25.6px;
       padding-bottom: 0px;
       padding-top: 0px;
       padding-inline-start: var(--size-4-6);
@@ -7596,7 +7797,7 @@ html[saved-theme="dark"] {
     }
 
     input[type="text"] {
-      background-color: rgb(25, 26, 33);
+      background-color: rgba(0, 0, 0, 0);
       color: var(--text-normal);
       font-family:
         ui-sans-serif,
@@ -7837,9 +8038,9 @@ html[saved-theme="dark"] {
     }
 
     ul.tags > li {
-      background-color: var(--pill-background);
-      color: var(--pill-color);
-      border: 0px solid oklch(0.603458 0.21722 292.49 / 0.15);
+      background-color: color-mix(in srgb, var(--drx-color-yellow-2) 15%, transparent);
+      color: var(--drx-color-yellow-2);
+      border: 1px solid color(srgb 0.945098 0.980392 0.54902 / 0.3);
       border-top-left-radius: 28px;
       border-top-right-radius: 28px;
       border-bottom-left-radius: 28px;
@@ -7946,7 +8147,7 @@ html[saved-theme="dark"] {
 
     .callout {
       --callout-color: var(--callout-default);
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.507451 0.557647 0.71451);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -7967,7 +8168,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8007,10 +8208,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(98, 114, 164, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.507451 0.557647 0.71451);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8025,7 +8226,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8065,10 +8266,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(114, 208, 228, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.557647 0.852549 0.915294);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8083,7 +8284,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8123,10 +8324,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(98, 114, 164, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.507451 0.557647 0.71451);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8141,7 +8342,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8184,7 +8385,7 @@ html[saved-theme="dark"] {
       background: rgb(255, 85, 85) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid oklch(0.999994 0.0000497986 none / 0.25);
+      border: 0px solid rgb(248, 248, 242);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8199,7 +8400,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8239,10 +8440,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(114, 208, 228, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.557647 0.852549 0.915294);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8257,7 +8458,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8297,10 +8498,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(55, 235, 98, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.372549 0.937255 0.507451);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8315,7 +8516,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8355,10 +8556,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 184, 108, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.777255 0.538824);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8373,7 +8574,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8413,10 +8614,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 184, 108, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.777255 0.538824);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8431,7 +8632,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8471,10 +8672,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 85, 85, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.466667 0.466667);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8489,7 +8690,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8529,10 +8730,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 85, 85, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.466667 0.466667);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8547,7 +8748,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8587,10 +8788,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 85, 85, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.466667 0.466667);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8605,7 +8806,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8645,10 +8846,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(255, 121, 198, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 1 0.579608 0.821176);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8663,7 +8864,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -8703,10 +8904,10 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: color-mix(in oklch, var(--callout-color) 10%, transparent);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(189, 147, 249, 0.1) none repeat scroll 0% 0% / auto padding-box padding-box;
       color: rgb(248, 248, 242);
       mix-blend-mode: normal;
-      border: 0px solid rgb(248, 248, 242);
+      border: 1px solid color(srgb 0.792941 0.661177 0.981176);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 10px;
@@ -8721,7 +8922,7 @@ html[saved-theme="dark"] {
       --callout-color: 98, 114, 164;
       color: var(--callout-color);
       gap: 4px;
-      border: 0px rgb(248, 248, 242);
+      border: 0px color(srgb 0.599804 0.640588 0.768039);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
@@ -9500,336 +9701,537 @@ html[saved-theme="dark"] {
 
     li.task-list-item[data-task="_"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task=","] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task=";"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task=":"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="."] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="'"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="@"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="&"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="#"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="%"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="`"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="+"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="<"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="="] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="|"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="~"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="$"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="0"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="1"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="2"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="3"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="4"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="5"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="6"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="7"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="8"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="9"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="a"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="A"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="B"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="C"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="D"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="e"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="E"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="F"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="g"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="G"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="h"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="H"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="j"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="J"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="K"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="L"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="m"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="M"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="n"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="N"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="o"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="O"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="P"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="q"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="Q"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="r"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="R"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="s"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="t"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="T"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="U"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="v"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="V"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="W"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="x"] {
       color: rgb(186, 188, 201);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="X"] {
       color: rgb(186, 188, 201);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="y"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="Y"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="z"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 
     li.task-list-item[data-task="Z"] {
       color: rgb(248, 248, 242);
+      line-height: 1.3;
+      margin-block-end: 0px;
+      margin-bottom: 0px;
       text-decoration-line: none;
     }
 

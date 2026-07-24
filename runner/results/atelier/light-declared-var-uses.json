@@ -164,6 +164,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--at-font-body)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -180,6 +181,7 @@
     "color": "var(--text-normal)",
     "font-family": "var(--at-font-body)",
     "font-size": "var(--font-ui-small)",
+    "padding-inline-start": "calc(var(--search-icon-size) * 2 - 2px)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "height": "var(--input-height)"
   },
@@ -642,18 +644,17 @@
     "caret-color": "var(--caret-color)",
     "color": "var(--bold-color)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
+    "font-size": "var(--table-text-size)",
     "font-weight": "var(--bold-weight)",
-    "line-height": "var(--line-height-normal, 1.6)",
+    "line-height": "var(--table-line-height)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "em": {
     "caret-color": "var(--caret-color)",
     "color": "var(--italic-color)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-normal, 1.6)",
+    "font-size": "var(--table-text-size)",
+    "line-height": "var(--table-line-height)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "strong > em": {
@@ -661,7 +662,6 @@
     "color": "var(--italic-color)",
     "font-family": "var(--font-text)",
     "font-size": "var(--font-text-size)",
-    "font-style": "var(--embed-font-style)",
     "font-weight": "var(--bold-weight)",
     "line-height": "var(--line-height-normal, 1.6)",
     "scrollbar-width": "var(--scrollbar-native-width)"
@@ -671,16 +671,16 @@
     "caret-color": "var(--caret-color)",
     "color": "var(--at-text-strong)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
+    "font-size": "var(--table-text-size)",
+    "line-height": "var(--table-line-height)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "del": {
     "caret-color": "var(--caret-color)",
     "color": "var(--strikethrough-color)",
     "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
+    "font-size": "var(--table-text-size)",
+    "line-height": "var(--table-line-height)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   ".markdown-preview-view hr": {
@@ -727,10 +727,11 @@
   "code": {
     "background-color": "var(--code-background)",
     "caret-color": "var(--caret-color)",
-    "color": "var(--at-code-fg)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
+    "color": "var(--at-on-dark)",
+    "font-family": "var(--ec-codeFontFml)",
+    "font-size": "var(--ec-codeFontSize)",
+    "font-weight": "var(--ec-codeFontWg)",
+    "line-height": "var(--ec-codeLineHt)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
   "pre": {
@@ -814,8 +815,9 @@
     "background-color": "var(--code-background)",
     "caret-color": "var(--caret-color)",
     "color": "var(--code-normal)",
-    "font-family": "var(--font-monospace)",
-    "font-size": "var(--code-size)",
+    "cursor": "var(--cursor)",
+    "font-family": "var(--font-interface)",
+    "font-size": "var(--font-ui-smaller)",
     "line-height": "var(--line-height-normal, 1.6)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
@@ -1226,10 +1228,9 @@
   },
   "svg.lucide-help-circle.svg-icon": {
     "caret-color": "var(--caret-color)",
-    "color": "var(--text-muted)",
-    "cursor": "var(--cursor)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
+    "color": "var(--cc)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--callout-title-size)",
     "line-height": "var(--line-height-tight)",
     "scrollbar-width": "var(--scrollbar-native-width)",
     "stroke-width": "var(--icon-stroke)",
@@ -1356,108 +1357,6 @@
     "line-height": "var(--line-height-normal, 1.6)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
-  "dl": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "dt": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "dd": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "progress": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "details": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "summary": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "sub": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "abbr": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  "details summary": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".internal-embed": {
-    "background-color": "var(--embed-background)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".internal-embed.is-loaded.markdown-embed": {
-    "background-color": "var(--embed-background)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-normal)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
   "video": {
     "caret-color": "var(--caret-color)",
     "color": "var(--text-normal)",
@@ -1471,6 +1370,15 @@
     "color": "var(--text-normal)",
     "font-family": "var(--font-text)",
     "font-size": "var(--font-text-size)",
+    "line-height": "var(--line-height-normal)",
+    "scrollbar-width": "var(--scrollbar-native-width)"
+  },
+  ".internal-embed": {
+    "background-color": "var(--background-primary-alt)",
+    "caret-color": "var(--caret-color)",
+    "color": "var(--text-muted)",
+    "font-family": "var(--font-text)",
+    "font-size": "var(--font-smaller)",
     "line-height": "var(--line-height-normal)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   },
@@ -1717,70 +1625,6 @@
     "font-family": "var(--metadata-input-font)",
     "font-size": "var(--font-text-size)",
     "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-node": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-node-content": {
-    "background-color": "var(--embed-background)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "font-style": "var(--embed-font-style)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-node-container .markdown-rendered": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--font-text)",
-    "font-size": "var(--font-text-size)",
-    "line-height": "var(--line-height-normal, 1.6)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-path-label": {
-    "background-color": "var(--background-primary)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "calc(var(--font-ui-large) * var(--zoom-multiplier))",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)",
-    "max-width": "calc(17em * var(--zoom-multiplier))"
-  },
-  ".canvas-control-item": {
-    "background-color": "var(--background-primary)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-muted)",
-    "cursor": "var(--cursor)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-card-menu": {
-    "background-color": "var(--background-primary)",
-    "box-shadow": "var(--input-shadow)",
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "line-height": "var(--line-height-tight)",
-    "scrollbar-width": "var(--scrollbar-native-width)"
-  },
-  ".canvas-node-group": {
-    "caret-color": "var(--caret-color)",
-    "color": "var(--text-normal)",
-    "font-family": "var(--at-font-body)",
-    "font-size": "var(--font-ui-medium)",
-    "line-height": "var(--line-height-tight)",
     "scrollbar-width": "var(--scrollbar-native-width)"
   }
 }

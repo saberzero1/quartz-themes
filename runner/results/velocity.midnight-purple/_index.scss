@@ -227,7 +227,7 @@ html {
   font-family: "Raveo";
   font-style: normal;
   font-weight: 100 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/velocity.midnight-purple/raveo.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/velocity.midnight-purple/raveo.woff2") format("woff2");
 }
 
 body {
@@ -595,8 +595,8 @@ body {
       sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(10, 124, 255) none 0px;
-    text-decoration: underline;
-    text-decoration-color: rgb(10, 124, 255);
+    text-decoration: oklch(0 0 0 / 0.092);
+    text-decoration-color: var(--hr-color);
     text-decoration-line: var(--link-decoration);
     text-decoration-style: solid;
     text-decoration-thickness: var(--link-decoration-thickness);
@@ -1498,8 +1498,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 16px;
-    margin-block-end: var(--inline-title-margin-bottom);
+    margin: 0px 0px 18px;
+    margin-block-end: var(--p-spacing);
     margin-block-start: round(nearest, var(--heading-margin-start), 2px);
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -1703,8 +1703,8 @@ body {
     padding-block-start: 0px;
     padding-inline-end: 0px;
     padding-inline-start: 0px;
-    margin: 0px 0px 18px;
-    margin-block-end: var(--p-spacing);
+    margin: 0px 0px 16px;
+    margin-block-end: var(--inline-title-margin-bottom);
     margin-block-start: 0px;
     margin-inline-end: 0px;
     margin-inline-start: 0px;
@@ -7691,8 +7691,8 @@ html[saved-theme="dark"] {
         sans-serif;
       font-weight: var(--link-weight);
       outline: oklab(0.725479 0.0468805 -0.125265) none 0px;
-      text-decoration: underline;
-      text-decoration-color: oklab(0.725479 0.0468805 -0.125265);
+      text-decoration: oklch(1 0.09375 318 / 0.1);
+      text-decoration-color: var(--hr-color);
       text-decoration-line: var(--link-decoration);
       text-decoration-style: solid;
       text-decoration-thickness: var(--link-decoration-thickness);
@@ -8594,8 +8594,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 16px;
-      margin-block-end: var(--inline-title-margin-bottom);
+      margin: 0px 0px 18px;
+      margin-block-end: var(--p-spacing);
       margin-block-start: round(nearest, var(--heading-margin-start), 2px);
       margin-inline-end: 0px;
       margin-inline-start: 0px;
@@ -8799,8 +8799,8 @@ html[saved-theme="dark"] {
       padding-block-start: 0px;
       padding-inline-end: 0px;
       padding-inline-start: 0px;
-      margin: 0px 0px 18px;
-      margin-block-end: var(--p-spacing);
+      margin: 0px 0px 16px;
+      margin-block-end: var(--inline-title-margin-bottom);
       margin-block-start: 0px;
       margin-inline-end: 0px;
       margin-inline-start: 0px;

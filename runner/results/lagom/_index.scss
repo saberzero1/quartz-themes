@@ -100,16 +100,18 @@
   --files-bookmarks-search-bar: none;
   --show-vault-name: none;
   --scrollbars: none;
+  --hide-more-menu: none;
+  --toggle-buttom-distance: 30px;
   --safe-place-position: 35px;
-  --default-font-size: 1.06em;
+  --content-note-font-size: 1.06em;
   --p-spacing: 24px;
   --padding-default-note-style: 50px;
   --list-indent: 17px;
   --letter-spacing-note: 0.03px;
   --line-height-note: 24.5px;
   --text-note-align: justify;
-  --focus-active-line-opacity: 0.8;
-  --focus-non-active-line-opacity: 0.65;
+  --focus-active-line-opacity: 1;
+  --focus-non-active-line-opacity: 1;
   --separator-icon: o0o;
   --separator-icon-color: #6c6c6c6b;
   --active-line-indicator: —;
@@ -152,6 +154,7 @@
   --hide-icon-link-embed-notes: var(--background-modifier-border);
   --opacity-grayscale-images: 0.9;
   --internal-link-border-style: dotted;
+  --default-font-size: 1.06em;
   --hide-empty-properties: none;
   --hide-add-button: none;
   --properties-icon-size: 1em;
@@ -160,15 +163,18 @@
   --radius-s: 11.2px;
   --icon-ui-opacity: 1;
   --navbar_blur_level: 8px;
+  --light-theme-opacity: 1;
+  --dark-theme-opacity: 1;
   --theme-light-opacity: 1;
   --theme-dark-opacity: 0.75;
   --icon-file-indicator: •;
-  --nav-item-size: 0.99em;
   --icon-file-size: 1.5em;
   --multiline-files-explorer: justify;
   --folder-border-color: #6c6c6c6b;
   --filename-separator-style: dotted;
   --filename-line-thickness: 1.8px;
+  --files-explorer-font-size: 0.98em;
+  --nav-item-size: 0.99em;
   --icon-file: ·;
   --tabs-height: 300px;
   --font-interface-override: "??";
@@ -271,16 +277,18 @@
   --files-bookmarks-search-bar: none;
   --show-vault-name: none;
   --scrollbars: none;
+  --hide-more-menu: none;
+  --toggle-buttom-distance: 30px;
   --safe-place-position: 35px;
-  --default-font-size: 1.06em;
+  --content-note-font-size: 1.06em;
   --p-spacing: 24px;
   --padding-default-note-style: 50px;
   --list-indent: 17px;
   --letter-spacing-note: 0.03px;
   --line-height-note: 24.5px;
   --text-note-align: justify;
-  --focus-active-line-opacity: 0.8;
-  --focus-non-active-line-opacity: 0.65;
+  --focus-active-line-opacity: 1;
+  --focus-non-active-line-opacity: 1;
   --separator-icon: o0o;
   --separator-icon-color: #6c6c6c6b;
   --active-line-indicator: —;
@@ -323,6 +331,7 @@
   --hide-icon-link-embed-notes: var(--background-modifier-border);
   --opacity-grayscale-images: 0.9;
   --internal-link-border-style: dotted;
+  --default-font-size: 1.06em;
   --hide-empty-properties: none;
   --hide-add-button: none;
   --properties-icon-size: 1em;
@@ -331,15 +340,18 @@
   --radius-s: 11.2px;
   --icon-ui-opacity: 1;
   --navbar_blur_level: 8px;
+  --light-theme-opacity: 1;
+  --dark-theme-opacity: 1;
   --theme-light-opacity: 1;
   --theme-dark-opacity: 0.75;
   --icon-file-indicator: •;
-  --nav-item-size: 0.99em;
   --icon-file-size: 1.5em;
   --multiline-files-explorer: justify;
   --folder-border-color: #6c6c6c6b;
   --filename-separator-style: dotted;
   --filename-line-thickness: 1.8px;
+  --files-explorer-font-size: 0.98em;
+  --nav-item-size: 0.99em;
   --icon-file: ·;
   --tabs-height: 300px;
   --font-interface-override: "??";
@@ -381,7 +393,7 @@ html {
   font-family: "Formular";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.11/fonts/lagom/formular.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/lagom/formular.woff") format("woff");
 }
 
 body {

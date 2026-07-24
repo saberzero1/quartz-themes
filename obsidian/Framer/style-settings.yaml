@@ -28,8 +28,10 @@ sections:
         title: Accent Style
         type: class-select
         allowEmpty: false
-        default: accent-blue
+        default: accent-pink
         options:
+          - label: Pink / Rose Gold
+            value: accent-pink
           - label: Classic Blue
             value: accent-blue
           - label: Vibrant Cyan
@@ -51,26 +53,41 @@ sections:
         type: heading
         level: 2
         collapsed: false
-      - id: framer-tabs
-        title: Framed Tab Headers
-        description: Add subtle border around tab headers
-        type: class-toggle
-        default: true
-      - id: framer-section-highlight
-        title: Section Highlights
-        description: Show colored left border on active sections in settings
-        type: class-toggle
-        default: true
       - id: framer-quick-actions
         title: Quick Actions Style
         description: Enhanced command palette with Framer Quick Actions look
         type: class-toggle
         default: true
-      - id: framer-heading-gradient
-        title: Heading Blue (需要 Style Settings 插件)
-        description: 取消勾选可恢复默认白色标题（当前为默认启用，已在 .theme-dark 中内置）
+      - id: framer-plain-headings
+        title: Plain Headings (需要 Style Settings 插件)
+        description: 勾选后将彩色标题恢复为正文色
         type: class-toggle
-        default: true
+        default: false
+      - id: maintenance
+        title: Maintenance Controls
+        type: heading
+        level: 2
+        collapsed: true
+      - id: framer-native-borders
+        title: Use Native Borders
+        description: Disable Framer's broad borderless UI patch when an Obsidian or plugin update makes boundaries unclear.
+        type: class-toggle
+        default: false
+      - id: framer-simple-motion
+        title: Simple Motion
+        description: Keep basic transitions but disable the richer tab, modal, icon, and folder animations.
+        type: class-toggle
+        default: false
+      - id: framer-docked-statusbar
+        title: Dock Status Bar
+        description: Disable the floating status bar behavior and use Obsidian's native status bar placement.
+        type: class-toggle
+        default: false
+      - id: framer-no-editing-toolbar-fix
+        title: Disable Editing Toolbar Patch
+        description: Turn off Framer's Editing Toolbar compatibility patch if the plugin changes its CSS.
+        type: class-toggle
+        default: false
       - id: plugins
         title: Plugins
         type: heading
@@ -99,6 +116,61 @@ sections:
       - id: framer-mobile
         title: Mobile Adaptation
         description: Apply 13px panel text and 44px touch targets on mobile
+        type: class-toggle
+        default: true
+      - id: editor
+        title: Editor
+        type: heading
+        level: 2
+        collapsed: false
+      - id: framer-reading
+        title: Reading Mode Prose
+        description: Optimize reading mode with max-width and comfortable spacing
+        type: class-toggle
+        default: true
+      - id: framer-line-nums
+        title: Code Panel Line Numbers
+        description: Style editor line numbers like Framer code panel
+        type: class-toggle
+        default: true
+      - id: snippets
+        title: Snippets
+        type: heading
+        level: 2
+        collapsed: false
+      - id: framer-bold-pink
+        title: Bold Pink
+        description: Make bold text pink (#FF69B4) in reading and live preview. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-immersive-red
+        title: Immersive Translate Red Gradient
+        description: Apply red gradient to Immersive Translate plugin results. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-table-minimal
+        title: Minimal Tables
+        description: Full-width tables with auto layout and minimal borders. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-floating-statusbar
+        title: Floating Status Bar
+        description: Status bar slides in from the right on hover. Built-in, always active.
+        type: info-text
+        markdown: true
+      - id: framer-tabs
+        title: Framed Tab Headers
+        description: Add subtle border around tab headers
+        type: class-toggle
+        default: true
+      - id: framer-section-highlight
+        title: Section Highlights
+        description: Show colored left border on active sections in settings
+        type: class-toggle
+        default: true
+      - id: framer-heading-gradient
+        title: Heading Blue (需要 Style Settings 插件)
+        description: 取消勾选可恢复默认白色标题（当前为默认启用，已在 .theme-dark 中内置）
         type: class-toggle
         default: true
       - id: canvas
@@ -161,38 +233,3 @@ sections:
         description: Display tags as Framer-style chip badges
         type: class-toggle
         default: true
-      - id: framer-reading
-        title: Reading Mode Prose
-        description: Optimize reading mode with max-width and comfortable spacing
-        type: class-toggle
-        default: true
-      - id: framer-line-nums
-        title: Code Panel Line Numbers
-        description: Style editor line numbers like Framer code panel
-        type: class-toggle
-        default: true
-      - id: snippets
-        title: Snippets
-        type: heading
-        level: 2
-        collapsed: false
-      - id: framer-bold-pink
-        title: Bold Pink
-        description: Make bold text pink (#FF69B4) in reading and live preview. Built-in, always active.
-        type: info-text
-        markdown: true
-      - id: framer-immersive-red
-        title: Immersive Translate Red Gradient
-        description: Apply red gradient to Immersive Translate plugin results. Built-in, always active.
-        type: info-text
-        markdown: true
-      - id: framer-table-minimal
-        title: Minimal Tables
-        description: Full-width tables with auto layout and minimal borders. Built-in, always active.
-        type: info-text
-        markdown: true
-      - id: framer-floating-statusbar
-        title: Floating Status Bar
-        description: Status bar slides in from the right on hover. Built-in, always active.
-        type: info-text
-        markdown: true

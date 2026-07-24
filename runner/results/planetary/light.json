@@ -1081,6 +1081,9 @@
     "font-family": "\"IBM Plex Sans\", sans-serif",
     "outline": "rgb(74, 56, 39) none 0px",
     "outline-color": "rgb(74, 56, 39)",
+    "padding": "4px 56px 4px 34px",
+    "padding-inline": "34px 56px",
+    "padding-left": "34px",
     "text-decoration-color": "rgb(74, 56, 39)"
   },
   ".search-result-container .tree-item.search-result": {
@@ -1947,6 +1950,7 @@
     "--scrollbar-active-thumb-bg": "rgba(var(--mono-rgb-100), 0.2)",
     "--scrollbar-bg": "var(--canvas2)",
     "--scrollbar-thumb-bg": "rgba(var(--mono-rgb-100), 0.1)",
+    "--search-icon-size": "18px",
     "--slider-thumb-border-width": "1px",
     "--slider-thumb-radius": "50%",
     "--slider-track-background": "var(--background-modifier-border)",
@@ -3814,6 +3818,9 @@
     "font-family": "\"IBM Plex Sans\", sans-serif",
     "outline": "rgb(74, 56, 39) none 0px",
     "outline-color": "rgb(74, 56, 39)",
+    "padding": "4px 8px 4px 34px",
+    "padding-inline": "34px 8px",
+    "padding-left": "34px",
     "text-decoration-color": "rgb(74, 56, 39)"
   },
   "input[type=\"text\"]": {
