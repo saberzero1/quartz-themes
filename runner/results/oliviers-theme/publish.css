@@ -823,10 +823,10 @@ body.theme-light {
   --font-text-size: var(--OT-readingMode-text-size) !important;
   --font-text-theme: "??" !important;
   --font-thin: 100 !important;
-  --font-ui-large: calc(var(--font-ui-medium)/15 * 20) !important;
+  --font-ui-large: calc(var(--font-ui-medium) / 15 * 20) !important;
   --font-ui-medium: var(--OT-UI-font-size) !important;
-  --font-ui-small: calc(var(--font-ui-medium)/15 * 13) !important;
-  --font-ui-smaller: calc(var(--font-ui-medium)/15 * 12) !important;
+  --font-ui-small: calc(var(--font-ui-medium) / 15 * 13) !important;
+  --font-ui-smaller: calc(var(--font-ui-medium) / 15 * 12) !important;
   --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
@@ -1415,8 +1415,8 @@ body.theme-light {
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: calc(
-    var(--OT-readingMode-text-size) *
-      var(--OT-readingMode-tableText-percent)/100
+    var(--OT-readingMode-text-size) * var(--OT-readingMode-tableText-percent) /
+      100
   ) !important;
   --table-white-space: break-spaces !important;
   --tag-background: var(--OT-pill-background) !important;
@@ -2442,10 +2442,10 @@ body.theme-dark {
   --font-text-size: var(--OT-readingMode-text-size) !important;
   --font-text-theme: "??" !important;
   --font-thin: 100 !important;
-  --font-ui-large: calc(var(--font-ui-medium)/15 * 20) !important;
+  --font-ui-large: calc(var(--font-ui-medium) / 15 * 20) !important;
   --font-ui-medium: var(--OT-UI-font-size) !important;
-  --font-ui-small: calc(var(--font-ui-medium)/15 * 13) !important;
-  --font-ui-smaller: calc(var(--font-ui-medium)/15 * 12) !important;
+  --font-ui-small: calc(var(--font-ui-medium) / 15 * 13) !important;
+  --font-ui-smaller: calc(var(--font-ui-medium) / 15 * 12) !important;
   --footnote-divider-color: var(--metadata-divider-color) !important;
   --footnote-divider-color-active: var(
     --metadata-divider-color-focus
@@ -3028,8 +3028,8 @@ body.theme-dark {
   --table-selection-border-radius: 4px !important;
   --table-selection-border-width: 2px !important;
   --table-text-size: calc(
-    var(--OT-readingMode-text-size) *
-      var(--OT-readingMode-tableText-percent)/100
+    var(--OT-readingMode-text-size) * var(--OT-readingMode-tableText-percent) /
+      100
   ) !important;
   --table-white-space: break-spaces !important;
   --tag-background: var(--OT-pill-background) !important;

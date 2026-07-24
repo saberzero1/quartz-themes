@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: mulfok
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/viridian/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/viridian`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/viridian/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `viridian` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/viridian/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name       | Modes                     | Compatibility                                                                                     | Install                         | License                                                                                                                                                 |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `viridian` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/viridian` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/viridian/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

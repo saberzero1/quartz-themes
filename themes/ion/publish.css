@@ -1472,7 +1472,7 @@ body.theme-dark {
     var(--bloom) * (var(--ion-l-p) - var(--ion-threshold))
   ) !important;
   --bloom-size-m: calc(var(--bloom-size) * 0.75) !important;
-  --bloom-size-s: calc(var(--bloom-size)/3) !important;
+  --bloom-size-s: calc(var(--bloom-size) / 3) !important;
   --border-bloom: var(--bloom-box), var(--bloom-box) inset !important;
   --icon-bloom: var(--bloom-drop) var(--bloom-drop) !important;
   --ion-color: hsl(var(--ion-h), var(--ion-s), var(--ion-l)) !important;

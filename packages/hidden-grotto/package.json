@@ -1,0 +1,51 @@
+{
+  "name": "@quartz-themes/hidden-grotto",
+  "version": "1.0.0",
+  "description": "Hidden Grotto theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./absol": "./variants/absol.json",
+    "./aegislash": "./variants/aegislash.json",
+    "./aggron": "./variants/aggron.json",
+    "./arcanine": "./variants/arcanine.json",
+    "./aromatisse": "./variants/aromatisse.json",
+    "./calyrex": "./variants/calyrex.json",
+    "./cryogonal": "./variants/cryogonal.json",
+    "./darkrai": "./variants/darkrai.json",
+    "./diancie": "./variants/diancie.json",
+    "./hisuian-typhlosion": "./variants/hisuian-typhlosion.json",
+    "./manectric": "./variants/manectric.json",
+    "./mareep": "./variants/mareep.json",
+    "./mega-lucario": "./variants/mega-lucario.json",
+    "./meloetta": "./variants/meloetta.json",
+    "./necrozma": "./variants/necrozma.json",
+    "./pirouette-meloetta": "./variants/pirouette-meloetta.json",
+    "./poltchageist": "./variants/poltchageist.json",
+    "./scolipede": "./variants/scolipede.json",
+    "./swampert": "./variants/swampert.json",
+    "./ursaluna": "./variants/ursaluna.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "hidden-grotto"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/hidden-grotto.git"
+  },
+  "homepage": "https://quartz-themes.github.io/hidden-grotto"
+}

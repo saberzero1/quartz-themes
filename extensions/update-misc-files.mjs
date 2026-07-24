@@ -96,8 +96,9 @@ export default function updateMiscFiles(manifestCollection, themeCollection) {
     compatibilityArray.forEach((compatibility) => {
       compatibilityString += `<img src="media/${compatibility}.svg" alt="${compatibility.toUpperCase()}"/> `;
     });
+    const npmInstall = `\`npm i @quartz-themes/${themeName.theme}\``;
     compatibilityTableLines.push(
-      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | [live preview](https://quartz-themes.github.io/${themeName.theme}) | ${licenseString} |`,
+      `\n| <img src="media/${mode}.svg" alt="${mode.toUpperCase()}"/> | \`${themeName.theme}\` | ${compatibilityString.trim()} | ${npmInstall} | [live preview](https://quartz-themes.github.io/${themeName.theme}) | ${licenseString} |`,
     );
 
     // Publish README.md for each theme to the publish folder
@@ -114,17 +115,18 @@ ${cssClassesPublishString}
 
 - Theme author: ${authorString}
 ${fundingString}
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.name}/README.md">Install instructions</a>
+- Install: \`npm install @quartz-themes/core @quartz-themes/${themeName.theme}\`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/${themeName.name}/README.md">Full install instructions</a>
 
-| Name | Modes | Compatibility | License |
-| --- | --- | --- | --- |
-| \`${themeName.theme}\` | ![[media/${mode}.svg\\|${mode.toUpperCase()}]] | ${compatibilityString.trim()} | ${licensePublishString} |
+| Name | Modes | Compatibility | Install | License |
+| --- | --- | --- | --- | --- |
+| \`${themeName.theme}\` | ![[media/${mode}.svg\\|${mode.toUpperCase()}]] | ${compatibilityString.trim()} | \`npm i @quartz-themes/${themeName.theme}\` | ${licensePublishString} |
 `,
     );
   });
 
   const compatibilityTable =
-    "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Live Preview | Theme License |\n| --- | --- | --- | --- | --- |".concat(
+    "| Supported Modes | Obsidian Theme Name | Theme Compatibility Status | Install | Live Preview | Theme License |\n| --- | --- | --- | --- | --- | --- |".concat(
       ...compatibilityTableLines,
     );
 

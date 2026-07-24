@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://cattho.de" target="_blank" rel="noopener noreferrer">Catthode</a>
 - Support the author: <a href="https://github.com/catthode" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catthode/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/catthode`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catthode/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                  | License                                                                                                                                         |
-| ---------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `catthode` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catthode/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name       | Modes                     | Compatibility                                  | Install                         | License                                                                                                                                         |
+| ---------- | ------------------------- | ---------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `catthode` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/catthode` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catthode/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

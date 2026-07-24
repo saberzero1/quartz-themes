@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/bsbbera" target="_blank" rel="noopener noreferrer">Subhadip</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lucid/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/lucid`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/lucid/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                                                                   | License                                                                                                                                      |
-| ------- | ------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `lucid` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lucid/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                     | Compatibility                                                                                   | Install                      | License                                                                                                                                      |
+| ------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `lucid` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/lucid` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/lucid/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

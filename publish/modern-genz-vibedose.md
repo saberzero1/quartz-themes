@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/omkar-4" target="_blank" rel="noopener noreferrer">Omkar Iyer</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/modern-genz-vibedose`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/modern-genz-vibedose/README.md">Full install instructions</a>
 
-| Name                   | Modes                     | Compatibility                                  | License                                                                                                                                                               |
-| ---------------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `modern-genz-vibedose` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/modern-genz-vibedose/LICENSE.md"><img src="media/license/agpl-3.0.svg" alt="AGPL-3.0"/></a> |
+| Name                   | Modes                     | Compatibility                                  | Install                                     | License                                                                                                                                                               |
+| ---------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `modern-genz-vibedose` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/modern-genz-vibedose` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/modern-genz-vibedose/LICENSE.md"><img src="media/license/agpl-3.0.svg" alt="AGPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

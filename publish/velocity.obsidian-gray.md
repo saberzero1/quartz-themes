@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: Floodlight
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velocity.obsidian-gray/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/velocity.obsidian-gray`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velocity.obsidian-gray/README.md">Full install instructions</a>
 
-| Name                     | Modes                     | Compatibility                                                                                   | License                                                                                                                                                               |
-| ------------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `velocity.obsidian-gray` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/velocity.obsidian-gray/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name                     | Modes                     | Compatibility                                                                                   | Install                                       | License                                                                                                                                                               |
+| ------------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `velocity.obsidian-gray` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/velocity.obsidian-gray` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/velocity.obsidian-gray/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -804,62 +804,62 @@ body.theme-light {
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
   --color-base-00: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     98%
   ) !important;
   --color-base-05: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     95%
   ) !important;
   --color-base-10: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     90%
   ) !important;
   --color-base-100: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     20%
   ) !important;
   --color-base-20: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     85%
   ) !important;
   --color-base-25: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     80%
   ) !important;
   --color-base-30: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     75%
   ) !important;
   --color-base-35: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     70%
   ) !important;
   --color-base-40: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     65%
   ) !important;
   --color-base-50: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     60%
   ) !important;
   --color-base-60: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     40%
   ) !important;
   --color-base-70: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     30%
   ) !important;
   --color-blue: hsl(var(--blue-h), var(--accent-s), var(--accent-l)) !important;
@@ -1972,62 +1972,62 @@ body.theme-dark {
     var(--accent-h), var(--accent-s), var(--accent-l) !important;
   --color-base-00: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     10%
   ) !important;
   --color-base-05: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     15%
   ) !important;
   --color-base-10: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     20%
   ) !important;
   --color-base-100: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     80%
   ) !important;
   --color-base-20: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     25%
   ) !important;
   --color-base-25: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     30%
   ) !important;
   --color-base-30: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     35%
   ) !important;
   --color-base-35: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     40%
   ) !important;
   --color-base-40: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     45%
   ) !important;
   --color-base-50: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     50%
   ) !important;
   --color-base-60: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     60%
   ) !important;
   --color-base-70: hsl(
     var(--accent-h),
-    calc(var(--accent-s)/3),
+    calc(var(--accent-s) / 3),
     70%
   ) !important;
   --color-blue: hsl(var(--blue-h), var(--accent-s), var(--accent-l)) !important;

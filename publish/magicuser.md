@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://www.github.com/drbap" target="_blank" rel="noopener noreferrer">Bernardo Pires</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/magicuser/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/magicuser`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/magicuser/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
-| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `magicuser` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/magicuser/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name        | Modes                     | Compatibility                                                                                     | Install                          | License                                                                                                                                          |
+| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `magicuser` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/magicuser` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/magicuser/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: bernardo_v
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/dark-graphite`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dark-graphite/README.md">Full install instructions</a>
 
-| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                                        |
-| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `dark-graphite` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dark-graphite/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+| Name            | Modes                     | Compatibility                                  | Install                              | License                                                                                                                                                                        |
+| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `dark-graphite` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/dark-graphite` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dark-graphite/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

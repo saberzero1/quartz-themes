@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: No author provided
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/friendly/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/friendly`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/friendly/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                               | License                                                                                                                                                 |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `friendly` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/friendly/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
+| Name       | Modes                     | Compatibility                                                                               | Install                         | License                                                                                                                                                 |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `friendly` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/friendly` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/friendly/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

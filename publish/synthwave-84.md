@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: George Jose
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/synthwave-84`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/synthwave-84/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
-| -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `synthwave-84` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/synthwave-84/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                  | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `synthwave-84` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/synthwave-84` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/synthwave-84/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

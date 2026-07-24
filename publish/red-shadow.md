@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/DKLiberty" target="_blank" rel="noopener noreferrer">@dkliberty</a>
 - Support the author: <a href="https://www.buymeacoffee.com/dkliberty" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/red-shadow`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/red-shadow/README.md">Full install instructions</a>
 
-| Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
-| ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `red-shadow` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/red-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name         | Modes                     | Compatibility                                  | Install                           | License                                                                                                                                           |
+| ------------ | ------------------------- | ---------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `red-shadow` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/red-shadow` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/red-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

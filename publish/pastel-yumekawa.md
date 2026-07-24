@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: noi8282
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/pastel-yumekawa/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/pastel-yumekawa`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/pastel-yumekawa/README.md">Full install instructions</a>
 
-| Name              | Modes                       | Compatibility                                  | License                                                                                                                                                |
-| ----------------- | --------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `pastel-yumekawa` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/pastel-yumekawa/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name              | Modes                       | Compatibility                                  | Install                                | License                                                                                                                                                |
+| ----------------- | --------------------------- | ---------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `pastel-yumekawa` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/pastel-yumekawa` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/pastel-yumekawa/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

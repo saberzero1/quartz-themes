@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/kevinlangleyjr" target="_blank" rel="noopener noreferrer">Kevin Langley Jr</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/slatewave/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/slatewave`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/slatewave/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                  | License                                                                                                                                              |
-| ----------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `slatewave` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/slatewave/LICENSE.md"><img src="media/license/wtfpl.svg" alt="WTFPL"/></a> |
+| Name        | Modes                     | Compatibility                                  | Install                          | License                                                                                                                                              |
+| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `slatewave` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/slatewave` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/slatewave/LICENSE.md"><img src="media/license/wtfpl.svg" alt="WTFPL"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

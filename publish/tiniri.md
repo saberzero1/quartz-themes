@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://tiniri.vlad.studio" target="_blank" rel="noopener noreferrer">Vlad Gerasimov</a>
 - Support the author: <a href="https://vlad.studio/signup" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/tiniri`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tiniri/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
-| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `tiniri` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tiniri/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tiniri` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/tiniri` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tiniri/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

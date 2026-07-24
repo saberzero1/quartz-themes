@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/vscode-dark-modern",
+  "version": "1.0.0",
+  "description": "Vscode Dark Modern theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "vscode-dark-modern"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/vscode-dark-modern.git"
+  },
+  "homepage": "https://quartz-themes.github.io/vscode-dark-modern"
+}

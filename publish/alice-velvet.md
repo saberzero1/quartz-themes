@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/kaymade" target="_blank" rel="noopener noreferrer">kaymade</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/alice-velvet/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/alice-velvet`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/alice-velvet/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                | License                                                                                                                                             |
-| -------------- | ------------------------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `alice-velvet` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/alice-velvet/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | -------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `alice-velvet` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | `npm i @quartz-themes/alice-velvet` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/alice-velvet/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

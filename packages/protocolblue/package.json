@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/protocolblue",
+  "version": "1.0.0",
+  "description": "Protocolblue theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "protocolblue"
+  ],
+  "license": "BSD 3-Clause",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/protocolblue.git"
+  },
+  "homepage": "https://quartz-themes.github.io/protocolblue"
+}

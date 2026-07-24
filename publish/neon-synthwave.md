@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/grjsmith" target="_blank" rel="noopener noreferrer">Grant Smith</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neon-synthwave/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/neon-synthwave`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neon-synthwave/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                  | License                                                                                                                                                       |
-| ---------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `neon-synthwave` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neon-synthwave/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
+| Name             | Modes                     | Compatibility                                  | Install                               | License                                                                                                                                                       |
+| ---------------- | ------------------------- | ---------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `neon-synthwave` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/neon-synthwave` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neon-synthwave/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

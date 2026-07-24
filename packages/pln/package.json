@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/pln",
+  "version": "1.0.0",
+  "description": "Pln theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "pln"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/pln.git"
+  },
+  "homepage": "https://quartz-themes.github.io/pln"
+}

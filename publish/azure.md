@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/annagracedev/" target="_blank" rel="noopener noreferrer">Anna Grace</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/azure/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/azure`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/azure/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                  | License                                                                                                                                      |
-| ------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `azure` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/azure/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                     | Compatibility                                  | Install                      | License                                                                                                                                      |
+| ------- | ------------------------- | ---------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `azure` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/azure` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/azure/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

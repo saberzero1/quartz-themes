@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/material-3",
+  "version": "1.0.0",
+  "description": "Material 3 theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "material-3"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/material-3.git"
+  },
+  "homepage": "https://quartz-themes.github.io/material-3"
+}

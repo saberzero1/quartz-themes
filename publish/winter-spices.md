@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/incantatem2" target="_blank" rel="noopener noreferrer">incantatem2</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/winter-spices/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/winter-spices`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/winter-spices/README.md">Full install instructions</a>
 
-| Name            | Modes                       | Compatibility                                  | License                                                                                                                                              |
-| --------------- | --------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `winter-spices` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/winter-spices/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name            | Modes                       | Compatibility                                  | Install                              | License                                                                                                                                              |
+| --------------- | --------------------------- | ---------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `winter-spices` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/winter-spices` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/winter-spices/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

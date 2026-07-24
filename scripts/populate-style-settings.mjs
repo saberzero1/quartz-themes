@@ -44,8 +44,9 @@ const require = createRequire(import.meta.url);
 // Use StyleSettingsCore so generated themes.json metadata includes canonical
 // schema effects from buildSchemaEffects (consumed by plugin/scripts/generate.js
 // for Quartz selector-impact graph generation) in addition to parser output.
-const parserEntryPoint =
-  require.resolve("obsidian-style-settings/src/StyleSettingsCore.ts");
+const parserEntryPoint = require.resolve(
+  "obsidian-style-settings/src/StyleSettingsCore.ts",
+);
 mkdirSync(TEMP_PARSER_DIR, { recursive: true });
 
 await build({

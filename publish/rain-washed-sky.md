@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/RobertttBS" target="_blank" rel="noopener noreferrer">RobertttBS</a>
 - Support the author: <a href="https://buymeacoffee.com/robertttbs" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rain-washed-sky/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/rain-washed-sky`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rain-washed-sky/README.md">Full install instructions</a>
 
-| Name              | Modes                     | Compatibility                                  | License                                                                                                                                                |
-| ----------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `rain-washed-sky` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rain-washed-sky/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name              | Modes                     | Compatibility                                  | Install                                | License                                                                                                                                                |
+| ----------------- | ------------------------- | ---------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `rain-washed-sky` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/rain-washed-sky` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rain-washed-sky/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

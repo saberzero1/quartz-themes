@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://monoooki.net" target="_blank" rel="noopener noreferrer">monoooki</a>
 - Support the author: <a href="https://ko-fi.com/monoooki" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/planetz-roller/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/planetz-roller`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/planetz-roller/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                  | License                                                                                                                                               |
-| ---------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `planetz-roller` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/planetz-roller/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name             | Modes                     | Compatibility                                  | Install                               | License                                                                                                                                               |
+| ---------------- | ------------------------- | ---------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `planetz-roller` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/planetz-roller` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/planetz-roller/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

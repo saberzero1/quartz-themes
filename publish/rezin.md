@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/NicolasGHS" target="_blank" rel="noopener noreferrer">NicolasGHS</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rezin/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/rezin`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rezin/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                  | License                                                                                                                                      |
-| ------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `rezin` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rezin/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                     | Compatibility                                  | Install                      | License                                                                                                                                      |
+| ------- | ------------------------- | ---------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rezin` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/rezin` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rezin/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://www.lukokaravan.cz/" target="_blank" rel="noopener noreferrer">Luko Karavan</a>
 - Support the author: <a href="https://ko-fi.com/karavan" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/karadigm/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/karadigm`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/karadigm/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                         |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `karadigm` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/karadigm/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name       | Modes                     | Compatibility                                                                                     | Install                         | License                                                                                                                                         |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `karadigm` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/karadigm` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/karadigm/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://twitter.com/kepano" target="_blank" rel="noopener noreferrer">@kepano</a>
 - Support the author: <a href="https://www.buymeacoffee.com/kepano" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/minimal`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal/README.md">Full install instructions</a>
 
-| Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                        |
-| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `minimal` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name      | Modes                     | Compatibility                                                                                     | Install                        | License                                                                                                                                        |
+| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `minimal` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/minimal` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

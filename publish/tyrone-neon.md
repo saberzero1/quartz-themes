@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/tyronejosee" target="_blank" rel="noopener noreferrer">Tyrone Jose</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tyrone-neon/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/tyrone-neon`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/tyrone-neon/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
-| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `tyrone-neon` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tyrone-neon/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                  | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ---------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tyrone-neon` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/tyrone-neon` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/tyrone-neon/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

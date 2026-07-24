@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/emarpiee" target="_blank" rel="noopener noreferrer">emarpiee</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/retroma.split-complementary-reversed/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/retroma.split-complementary-reversed`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/retroma.split-complementary-reversed/README.md">Full install instructions</a>
 
-| Name                                   | Modes                     | Compatibility                                                                                   | License                                                                                                                                                                     |
-| -------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `retroma.split-complementary-reversed` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/retroma.split-complementary-reversed/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                                   | Modes                     | Compatibility                                                                                   | Install                                                     | License                                                                                                                                                                     |
+| -------------------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `retroma.split-complementary-reversed` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/retroma.split-complementary-reversed` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/retroma.split-complementary-reversed/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

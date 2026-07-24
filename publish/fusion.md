@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/zamsyt" target="_blank" rel="noopener noreferrer">zamsyt</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/fusion/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/fusion`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/fusion/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                                   |
-| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `fusion` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/fusion/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name     | Modes                     | Compatibility                                                                                     | Install                       | License                                                                                                                                                   |
+| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `fusion` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/fusion` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/fusion/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

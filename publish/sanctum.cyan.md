@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/jdanielmourao/" target="_blank" rel="noopener noreferrer">@jdanielmourao</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sanctum.cyan/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/sanctum.cyan`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sanctum.cyan/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                                                                   | License                                                                                                                                             |
-| -------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sanctum.cyan` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/sanctum.cyan/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                                                                   | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sanctum.cyan` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/sanctum.cyan` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/sanctum.cyan/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

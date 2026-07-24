@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: Effort Mastery LLC
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/emrald/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/emrald`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/emrald/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                   | License                                                                                                                                       |
-| -------- | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `emrald` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/emrald/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                                                                   | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `emrald` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/emrald` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/emrald/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/serenity",
+  "version": "1.0.0",
+  "description": "Serenity theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "serenity"
+  ],
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/serenity.git"
+  },
+  "homepage": "https://quartz-themes.github.io/serenity"
+}

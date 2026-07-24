@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: JoanGen
 - Support the author: <a href="https://ko-fi.com/joangen" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-3-expressive/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/material-3-expressive`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-3-expressive/README.md">Full install instructions</a>
 
-| Name                    | Modes                     | Compatibility                                  | License                                                                                                                                                      |
-| ----------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `material-3-expressive` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/material-3-expressive/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                    | Modes                     | Compatibility                                  | Install                                      | License                                                                                                                                                      |
+| ----------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `material-3-expressive` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/material-3-expressive` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/material-3-expressive/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

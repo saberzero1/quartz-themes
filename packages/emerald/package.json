@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/emerald",
+  "version": "1.0.0",
+  "description": "Emerald theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "emerald"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/emerald.git"
+  },
+  "homepage": "https://quartz-themes.github.io/emerald"
+}

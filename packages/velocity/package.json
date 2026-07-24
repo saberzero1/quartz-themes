@@ -1,0 +1,37 @@
+{
+  "name": "@quartz-themes/velocity",
+  "version": "1.0.0",
+  "description": "Velocity theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./british-racing-green": "./variants/british-racing-green.json",
+    "./jet-black-matte": "./variants/jet-black-matte.json",
+    "./midnight-purple": "./variants/midnight-purple.json",
+    "./nordblau-metalic": "./variants/nordblau-metalic.json",
+    "./obsidian-gray": "./variants/obsidian-gray.json",
+    "./touring-bronze": "./variants/touring-bronze.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "velocity"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/velocity.git"
+  },
+  "homepage": "https://quartz-themes.github.io/velocity"
+}

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Possibly-Matt/obsidian-aura-theme" target="_blank" rel="noopener noreferrer">ProbablyNot</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/aura-dark/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/aura-dark`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/aura-dark/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                          |
-| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `aura-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/aura-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name        | Modes                     | Compatibility                                                                                     | Install                          | License                                                                                                                                          |
+| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `aura-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/aura-dark` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/aura-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

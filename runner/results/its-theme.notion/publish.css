@@ -501,12 +501,12 @@ body.theme-light {
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: var(--lines) !important;
   --indentation-guide-color-active: var(--accent) !important;
-  --indentation-guide-editing-indent: calc(var(--checkbox-size)/3) !important;
+  --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3) !important;
   --indentation-guide-reading-indent: calc(
     var(--checkbox-size) * -1 + 2px
   ) !important;
   --indentation-guide-source-indent: calc(
-    var(--checkbox-size)/3 * -1 + var(--checkbox-size)/2.5
+    var(--checkbox-size) / 3 * -1 + var(--checkbox-size) / 2.5
   ) !important;
   --indentation-guide-width: 2px !important;
   --indentation-guide-width-active: var(--indentation-guide-width) !important;
@@ -567,7 +567,7 @@ body.theme-light {
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: var(--radius-h) !important;
-  --list-bullet-size: calc(var(--font-text-size)/2.5) !important;
+  --list-bullet-size: calc(var(--font-text-size) / 2.5) !important;
   --list-bullet-transform: rotate(45deg) !important;
   --list-indent: 25px !important;
   --list-indent-editing: 0.75em !important;
@@ -1406,7 +1406,7 @@ body.theme-light {
   --progress-bg: var(--bg) !important;
   --r-heading-font-weight: var(--header-weight) !important;
   --r-progress-color: var(--lite-accent) !important;
-  --radius-h: calc(var(--radius-s)/0.5) !important;
+  --radius-h: calc(var(--radius-s) / 0.5) !important;
   --rainbow-1: #dd3c3c !important;
   --rainbow-2: #f1ab27 !important;
   --rainbow-3: #118811 !important;
@@ -2016,12 +2016,12 @@ body.theme-dark {
   --indent-unit: 0.5625em !important;
   --indentation-guide-color: var(--lines) !important;
   --indentation-guide-color-active: var(--accent) !important;
-  --indentation-guide-editing-indent: calc(var(--checkbox-size)/3) !important;
+  --indentation-guide-editing-indent: calc(var(--checkbox-size) / 3) !important;
   --indentation-guide-reading-indent: calc(
     var(--checkbox-size) * -1 + 2px
   ) !important;
   --indentation-guide-source-indent: calc(
-    var(--checkbox-size)/3 * -1 + var(--checkbox-size)/2.5
+    var(--checkbox-size) / 3 * -1 + var(--checkbox-size) / 2.5
   ) !important;
   --indentation-guide-width: 2px !important;
   --indentation-guide-width-active: var(--indentation-guide-width) !important;
@@ -2082,7 +2082,7 @@ body.theme-dark {
   --list-bullet-border: none !important;
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: var(--radius-h) !important;
-  --list-bullet-size: calc(var(--font-text-size)/2.5) !important;
+  --list-bullet-size: calc(var(--font-text-size) / 2.5) !important;
   --list-bullet-transform: rotate(45deg) !important;
   --list-indent: 25px !important;
   --list-indent-editing: 0.75em !important;
@@ -2908,7 +2908,7 @@ body.theme-dark {
   --progress-bg: var(--bg) !important;
   --r-heading-font-weight: var(--header-weight) !important;
   --r-progress-color: var(--lite-accent) !important;
-  --radius-h: calc(var(--radius-s)/0.5) !important;
+  --radius-h: calc(var(--radius-s) / 0.5) !important;
   --rainbow-1: #b03a3a !important;
   --rainbow-2: #d59929 !important;
   --rainbow-3: #207a20 !important;

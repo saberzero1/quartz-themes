@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/jonsnow231" target="_blank" rel="noopener noreferrer">jonsnow231</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-resources/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/minimal-resources`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimal-resources/README.md">Full install instructions</a>
 
-| Name                | Modes                     | Compatibility                                                                               | License                                                                                                                                                                            |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `minimal-resources` | ![[media/dark.svg\|DARK]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-resources/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+| Name                | Modes                     | Compatibility                                                                               | Install                                  | License                                                                                                                                                                            |
+| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `minimal-resources` | ![[media/dark.svg\|DARK]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/minimal-resources` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimal-resources/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

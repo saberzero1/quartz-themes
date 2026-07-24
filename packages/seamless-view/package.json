@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/seamless-view",
+  "version": "1.0.0",
+  "description": "Seamless View theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "seamless-view"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/seamless-view.git"
+  },
+  "homepage": "https://quartz-themes.github.io/seamless-view"
+}

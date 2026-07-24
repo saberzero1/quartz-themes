@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/gitsidian",
+  "version": "1.0.0",
+  "description": "Gitsidian theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "gitsidian"
+  ],
+  "license": "No SPDX ID Found",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/gitsidian.git"
+  },
+  "homepage": "https://quartz-themes.github.io/gitsidian"
+}

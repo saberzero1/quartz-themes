@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/JTrenerry" target="_blank" rel="noopener noreferrer">rose-pine</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/rose-pine-2`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rose-pine-2/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                            |
-| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `rose-pine-2` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rose-pine-2/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                                                                     | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rose-pine-2` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/rose-pine-2` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rose-pine-2/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

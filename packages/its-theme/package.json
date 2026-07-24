@@ -1,0 +1,45 @@
+{
+  "name": "@quartz-themes/its-theme",
+  "version": "1.0.0",
+  "description": "Its Theme theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./blue": "./variants/blue.json",
+    "./drowned": "./variants/drowned.json",
+    "./gray": "./variants/gray.json",
+    "./its-dark": "./variants/its-dark.json",
+    "./minimalist": "./variants/minimalist.json",
+    "./nord": "./variants/nord.json",
+    "./notion": "./variants/notion.json",
+    "./rainbow": "./variants/rainbow.json",
+    "./school-days": "./variants/school-days.json",
+    "./tangerine-dunes": "./variants/tangerine-dunes.json",
+    "./ttrpg-dnd": "./variants/ttrpg-dnd.json",
+    "./ttrpg-pathfinder": "./variants/ttrpg-pathfinder.json",
+    "./ttrpg-pathfinder-remastered": "./variants/ttrpg-pathfinder-remastered.json",
+    "./ttrpg-wotc": "./variants/ttrpg-wotc.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "its-theme"
+  ],
+  "license": "GPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/its-theme.git"
+  },
+  "homepage": "https://quartz-themes.github.io/its-theme"
+}

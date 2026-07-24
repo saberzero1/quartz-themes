@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/schrunchee" target="_blank" rel="noopener noreferrer">schrunchee</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/covert/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/covert`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/covert/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
-| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `covert` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/covert/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `covert` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/covert` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/covert/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

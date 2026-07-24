@@ -1651,7 +1651,7 @@ body.theme-light {
     var(--elements-padding) * 2 + var(--status-bar-min-height-intermediary)
   ) !important;
   --status-bar-min-height-intermediary: calc(
-    var(--line-height-tight) * var(--font-text-size)/1.5
+    var(--line-height-tight) * var(--font-text-size) / 1.5
   ) !important;
   --status-bar-shift-workspace-padding-bottom: calc(
     var(--status-bar-min-height) + var(--status-bar-padding) +
@@ -3343,7 +3343,7 @@ body.theme-dark {
     var(--elements-padding) * 2 + var(--status-bar-min-height-intermediary)
   ) !important;
   --status-bar-min-height-intermediary: calc(
-    var(--line-height-tight) * var(--font-text-size)/1.5
+    var(--line-height-tight) * var(--font-text-size) / 1.5
   ) !important;
   --status-bar-shift-workspace-padding-bottom: calc(
     var(--status-bar-min-height) + var(--status-bar-padding) +

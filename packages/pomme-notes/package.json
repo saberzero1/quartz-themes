@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/pomme-notes",
+  "version": "1.0.0",
+  "description": "Pomme Notes theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "pomme-notes"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/pomme-notes.git"
+  },
+  "homepage": "https://quartz-themes.github.io/pomme-notes"
+}

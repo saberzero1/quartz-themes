@@ -1,0 +1,46 @@
+{
+  "name": "@quartz-themes/origami",
+  "version": "1.0.0",
+  "description": "Origami theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./abaddon": "./variants/abaddon.json",
+    "./dracula": "./variants/dracula.json",
+    "./eidolon": "./variants/eidolon.json",
+    "./gruvbox": "./variants/gruvbox.json",
+    "./heckhound": "./variants/heckhound.json",
+    "./linking-your-thinking": "./variants/linking-your-thinking.json",
+    "./minimum": "./variants/minimum.json",
+    "./nano": "./variants/nano.json",
+    "./shadow": "./variants/shadow.json",
+    "./shark-time": "./variants/shark-time.json",
+    "./siren": "./variants/siren.json",
+    "./soft": "./variants/soft.json",
+    "./solarized": "./variants/solarized.json",
+    "./sorcery": "./variants/sorcery.json",
+    "./umbra": "./variants/umbra.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "origami"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/origami.git"
+  },
+  "homepage": "https://quartz-themes.github.io/origami"
+}

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="ed.toomwn.xyz" target="_blank" rel="noopener noreferrer">EddieTheEd</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/prussian-blue`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/prussian-blue/README.md">Full install instructions</a>
 
-| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                                |
-| --------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `prussian-blue` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/prussian-blue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a> |
+| Name            | Modes                     | Compatibility                                  | Install                              | License                                                                                                                                                                |
+| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `prussian-blue` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/prussian-blue` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/prussian-blue/LICENSE.md"><img src="media/license/bsd 3-clause.svg" alt="BSD 3-CLAUSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

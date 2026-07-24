@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://monoooki.net" target="_blank" rel="noopener noreferrer">monoooki</a>
 - Support the author: <a href="https://ko-fi.com/monoooki" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hydra-pressure/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/hydra-pressure`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hydra-pressure/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                  | License                                                                                                                                               |
-| ---------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hydra-pressure` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hydra-pressure/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name             | Modes                     | Compatibility                                  | Install                               | License                                                                                                                                               |
+| ---------------- | ------------------------- | ---------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hydra-pressure` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/hydra-pressure` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hydra-pressure/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

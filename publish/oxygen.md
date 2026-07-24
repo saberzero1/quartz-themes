@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://davidvkimball.com" target="_blank" rel="noopener noreferrer">David V. Kimball</a>
 - Support the author: <a href="https://patreon.com/davidvkimball" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oxygen/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/oxygen`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/oxygen/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                       |
-| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `oxygen` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/oxygen/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                                                                     | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `oxygen` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/oxygen` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/oxygen/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

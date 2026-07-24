@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/yin-and-yang",
+  "version": "1.0.0",
+  "description": "Yin And Yang theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "yin-and-yang"
+  ],
+  "license": "MPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/yin-and-yang.git"
+  },
+  "homepage": "https://quartz-themes.github.io/yin-and-yang"
+}

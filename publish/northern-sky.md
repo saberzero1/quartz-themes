@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/northern-sky/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/northern-sky`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/northern-sky/README.md">Full install instructions</a>
 
-| Name           | Modes                       | Compatibility                                  | License                                                                                                                                             |
-| -------------- | --------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `northern-sky` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/northern-sky/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                       | Compatibility                                  | Install                             | License                                                                                                                                             |
+| -------------- | --------------------------- | ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `northern-sky` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/northern-sky` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/northern-sky/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

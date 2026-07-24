@@ -1,0 +1,38 @@
+{
+  "name": "@quartz-themes/retroma",
+  "version": "1.0.0",
+  "description": "Retroma theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./analogous-reversed": "./variants/analogous-reversed.json",
+    "./monochromatic": "./variants/monochromatic.json",
+    "./monochromatic-reversed": "./variants/monochromatic-reversed.json",
+    "./split-complementary": "./variants/split-complementary.json",
+    "./split-complementary-reversed": "./variants/split-complementary-reversed.json",
+    "./triadic": "./variants/triadic.json",
+    "./triadic-reversed": "./variants/triadic-reversed.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "retroma"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/retroma.git"
+  },
+  "homepage": "https://quartz-themes.github.io/retroma"
+}

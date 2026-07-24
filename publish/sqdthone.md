@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://www.keithlerner.net" target="_blank" rel="noopener noreferrer">Keith 'Sqdth' Lerner</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sqdthone/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/sqdthone`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/sqdthone/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `sqdthone` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/sqdthone/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name       | Modes                     | Compatibility                                                                                     | Install                         | License                                                                                                                                                 |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `sqdthone` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/sqdthone` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/sqdthone/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

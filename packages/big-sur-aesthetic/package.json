@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/big-sur-aesthetic",
+  "version": "1.0.0",
+  "description": "Big Sur Aesthetic theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "big-sur-aesthetic"
+  ],
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/big-sur-aesthetic.git"
+  },
+  "homepage": "https://quartz-themes.github.io/big-sur-aesthetic"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@quartz-themes/maple",
+  "version": "1.0.0",
+  "description": "Maple theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./default": "./variants/default.json",
+    "./minimal": "./variants/minimal.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "maple"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/maple.git"
+  },
+  "homepage": "https://quartz-themes.github.io/maple"
+}

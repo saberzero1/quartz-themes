@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Carrie999" target="_blank" rel="noopener noreferrer">carrie999</a>
 - Support the author: <a href="https://www.buymeacoffee.com/pangyajingD" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a> | <a href="https://github.com/Carrie999/wechat" target="_blank" rel="noopener noreferrer">wechat pay</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/comfort`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort/README.md">Full install instructions</a>
 
-| Name      | Modes                       | Compatibility                                                                                   | License                                                                                                                                                    |
-| --------- | --------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `comfort` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name      | Modes                       | Compatibility                                                                                   | Install                        | License                                                                                                                                                    |
+| --------- | --------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `comfort` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/comfort` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

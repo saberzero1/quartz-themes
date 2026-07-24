@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: Luke Ruokaismaki
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rmaki/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/rmaki`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/rmaki/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                  | License                                                                                                                                              |
-| ------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `rmaki` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rmaki/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name    | Modes                     | Compatibility                                  | Install                      | License                                                                                                                                              |
+| ------- | ------------------------- | ---------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `rmaki` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/rmaki` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/rmaki/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

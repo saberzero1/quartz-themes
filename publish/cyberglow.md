@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/DevM0nk3y" target="_blank" rel="noopener noreferrer">DevM0nk3y</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cyberglow/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/cyberglow`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cyberglow/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                                                                     | License                                                                                                                                                  |
-| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `cyberglow` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cyberglow/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name        | Modes                     | Compatibility                                                                                     | Install                          | License                                                                                                                                                  |
+| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cyberglow` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/cyberglow` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cyberglow/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

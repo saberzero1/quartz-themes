@@ -1,0 +1,28 @@
+# Vintage Theme
+
+Obsidian theme adapted for [Quartz](https://github.com/jackyzha0/quartz).
+
+**Modes**: dark
+**License**: MIT
+
+## Installation
+
+```bash
+npm install @quartz-themes/core @quartz-themes/vintage-theme
+```
+
+## Usage
+
+```yaml
+# quartz.config.yaml
+plugins:
+  transformers:
+    - name: "@quartz-themes/core"
+      options:
+        theme: "vintage-theme"
+        mode: "dark"
+```
+
+## Preview
+
+[Live preview](https://quartz-themes.github.io/vintage-theme)

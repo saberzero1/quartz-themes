@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: dogwaddle
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gastown/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/gastown`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gastown/README.md">Full install instructions</a>
 
-| Name      | Modes                       | Compatibility                                  | License                                                                                                                                                                  |
-| --------- | --------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `gastown` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/gastown/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+| Name      | Modes                       | Compatibility                                  | Install                        | License                                                                                                                                                                  |
+| --------- | --------------------------- | ---------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `gastown` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/gastown` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/gastown/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

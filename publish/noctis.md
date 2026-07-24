@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/konnta0" target="_blank" rel="noopener noreferrer">konnta0</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/noctis/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/noctis`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/noctis/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
-| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `noctis` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/noctis/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `noctis` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/noctis` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/noctis/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

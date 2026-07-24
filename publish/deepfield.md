@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/nbost130" target="_blank" rel="noopener noreferrer">Nathan Bost</a>
 - Support the author: <a href="https://github.com/sponsors/nbost130" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/deepfield/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/deepfield`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/deepfield/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                                                                   | License                                                                                                                                          |
-| ----------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `deepfield` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/deepfield/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name        | Modes                     | Compatibility                                                                                   | Install                          | License                                                                                                                                          |
+| ----------- | ------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `deepfield` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/deepfield` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/deepfield/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

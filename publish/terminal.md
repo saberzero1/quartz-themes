@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/zcysxy" target="_blank" rel="noopener noreferrer">@Atlas</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/terminal/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/terminal`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/terminal/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                         |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `terminal` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/terminal/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name       | Modes                     | Compatibility                                                                                     | Install                         | License                                                                                                                                         |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `terminal` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/terminal` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/terminal/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

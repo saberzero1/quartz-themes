@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Mukhil-G" target="_blank" rel="noopener noreferrer">Mukhil-G</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vision/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/vision`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vision/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
-| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `vision` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vision/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vision` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/vision` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vision/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

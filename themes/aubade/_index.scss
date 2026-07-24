@@ -21,7 +21,8 @@
   --callout-fail: 186, 84, 78;
   --callout-important: var(--color-cyan);
   --callout-info: 74, 130, 148;
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 136, 136, 136;
   --callout-radius: 0;
@@ -61,7 +62,10 @@
   --collapse-icon-color: var(--raw-text-primary) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--raw-text-primary) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -126,7 +130,8 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
+    var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: 0;
@@ -166,7 +171,10 @@
   --collapse-icon-color: var(--raw-text-primary) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
+  --graph-line: var(
+    --color-base-35,
+    var(--background-modifier-border-focus)
+  ) !important;
   --graph-node: var(--raw-text-primary) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -248,235 +256,274 @@ html {
   font-family: "Lora";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Lora";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Lora";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/lora-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Serif";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ibm-plex-serif-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Space Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Space Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/space-mono-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Sen";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/sen.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/sen.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Sen";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/sen-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/sen-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/montserrat-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Marcellus";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/marcellus.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/marcellus.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Duo S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-duo-s-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Mono S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-mono-s-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "iA Writer Quattro S";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/ia-writer-quattro-s-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Azeret Mono";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Azeret Mono";
   font-style: italic;
   font-weight: 900;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Azeret Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Azeret Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-3.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "Azeret Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-4.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/azeret-mono-4.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: bold;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-1.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-1.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-2.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-2.woff2")
+    format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: italic;
   font-weight: normal;
-  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-3.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/saberzero1/quartz-themes@v4.0.12/fonts/aubade/jetbrains-mono-3.woff2")
+    format("woff2");
 }
 
 body {
@@ -1100,9 +1147,24 @@ body {
     border-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1111,7 +1173,18 @@ body {
     color: var(--nav-item-color-active);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card:has(
+      ~ .result-card.focus:not(
+          :has(~ .result-card:hover, ~ .result-card:focus)
+        ),
+      ~ .result-card:focus,
+      ~ .result-card:hover
+    ) {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(50, 50, 50);
     border-width: 0px;
@@ -1140,7 +1213,15 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card
+    > ul
+    > li
+    > .match-tag {
     align-items: normal;
     background-color: var(--background-secondary);
     color: var(--text-normal);
@@ -1198,7 +1279,8 @@ body {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus)
+      var(--background-modifier-border-focus);
   }
 
   .search > .search-container > .search-space > * {
@@ -1226,11 +1308,20 @@ body {
     border-bottom-right-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container {
     color: rgb(50, 50, 50);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    .result-card {
     border-color: rgb(50, 50, 50);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -1247,30 +1338,90 @@ body {
     border-radius: 0px;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: var(--nav-item-color-active);
     font-weight: var(--nav-item-weight);
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:focus
+    .card-description,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-title,
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+    .card-description {
     color: var(--nav-item-color-active);
   }
 
-  .search > .search-container > .search-space > .search-layout > .preview-container {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .preview-container {
     color: rgb(34, 34, 34);
     background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
   }
 
-  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
+  .search
+    > .search-container
+    > .search-space
+    > .search-layout
+    > .results-container
+    > .result-card:hover {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(50, 50, 50);
     border-color: rgb(50, 50, 50);
@@ -1292,7 +1443,8 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1326,7 +1478,8 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1360,7 +1513,8 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1394,7 +1548,8 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1428,7 +1583,8 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1462,7 +1618,8 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1497,7 +1654,8 @@ body {
     letter-spacing: -0.72px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1870,7 +2028,8 @@ body {
 
   input:focus {
     border-color: rgb(50, 50, 50);
-    box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+    box-shadow: 0 0 0 var(--input-border-width-focus)
+      var(--background-modifier-border-focus);
   }
 
   h1.article-title {
@@ -2464,7 +2623,8 @@ body {
     font-weight: 700;
     line-height: 16.9px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2645,7 +2805,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2656,7 +2825,8 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2669,7 +2839,8 @@ body {
     --callout-color: 8, 109, 221;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2704,7 +2875,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -2715,7 +2895,8 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2728,7 +2909,8 @@ body {
     --callout-color: var(--callout-summary);
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2763,7 +2945,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -2774,7 +2965,8 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2787,7 +2979,8 @@ body {
     --callout-color: 8, 109, 221;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2822,7 +3015,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -2833,7 +3035,8 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2846,7 +3049,8 @@ body {
     --callout-color: 8, 109, 221;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2881,7 +3085,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -2892,7 +3105,8 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2905,7 +3119,8 @@ body {
     --callout-color: 0, 191, 188;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2940,7 +3155,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -2951,7 +3175,8 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -2964,7 +3189,8 @@ body {
     --callout-color: 8, 185, 78;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -2999,7 +3225,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -3010,7 +3245,8 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3023,7 +3259,8 @@ body {
     --callout-color: 236, 163, 0;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3058,7 +3295,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3069,7 +3315,8 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3082,7 +3329,8 @@ body {
     --callout-color: 236, 163, 0;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3117,7 +3365,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3128,7 +3385,8 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3141,7 +3399,8 @@ body {
     --callout-color: 233, 49, 71;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3176,7 +3435,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3187,7 +3455,8 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3200,7 +3469,8 @@ body {
     --callout-color: 233, 49, 71;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3235,7 +3505,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3246,7 +3525,8 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3259,7 +3539,8 @@ body {
     --callout-color: 233, 49, 71;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3294,7 +3575,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3305,7 +3595,8 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3318,7 +3609,8 @@ body {
     --callout-color: 120, 82, 238;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3353,7 +3645,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3364,7 +3665,8 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -3377,7 +3679,8 @@ body {
     --callout-color: 158, 158, 158;
     background-color: var(--background-primary);
     background-image: none;
-    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgb(191, 200, 207) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     mix-blend-mode: normal;
     border: 2px solid rgb(50, 50, 50);
@@ -3412,7 +3715,16 @@ body {
     padding-inline-start: 10px;
     background-color: rgba(var(--callout-color), 0.15);
     background-image: var(--top-pattern-img);
-    background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(50, 50, 50) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(50, 50, 50) 180deg, rgb(50, 50, 50) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+    background: rgba(8, 109, 221, 0.15)
+      conic-gradient(
+        rgb(50, 50, 50) 90deg,
+        rgba(0, 0, 0, 0) 90deg,
+        rgba(0, 0, 0, 0) 180deg,
+        rgb(50, 50, 50) 180deg,
+        rgb(50, 50, 50) 270deg,
+        rgba(0, 0, 0, 0) 270deg
+      )
+      repeat scroll 0px 0px / 4px 4px padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3423,7 +3735,8 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+      border-box;
     color: rgb(50, 50, 50);
     padding: 10px 20px;
     padding-block-end: 10px;
@@ -6675,9 +6988,24 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6686,7 +7014,18 @@ html[saved-theme="dark"] {
       color: var(--nav-item-color-active);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card:has(
+        ~ .result-card.focus:not(
+            :has(~ .result-card:hover, ~ .result-card:focus)
+          ),
+        ~ .result-card:focus,
+        ~ .result-card:hover
+      ) {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgb(179, 179, 179);
       border-width: 0px;
@@ -6715,7 +7054,15 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card
+      > ul
+      > li
+      > .match-tag {
       align-items: normal;
       background-color: var(--background-secondary);
       color: var(--text-normal);
@@ -6773,7 +7120,8 @@ html[saved-theme="dark"] {
       border-top-right-radius: 0px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+      box-shadow: 0 0 0 var(--input-border-width-focus)
+        var(--background-modifier-border-focus);
     }
 
     .search > .search-container > .search-space > * {
@@ -6801,11 +7149,20 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container {
       color: rgb(179, 179, 179);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      .result-card {
       border-color: rgb(179, 179, 179);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -6822,30 +7179,92 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(
+        :has(~ .result-card:hover, ~ .result-card:focus)
+      ) {
       color: var(--nav-item-color-active);
       font-weight: var(--nav-item-weight);
       background-color: rgba(0, 0, 0, 0);
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:focus
+      .card-description,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-title,
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
+      .card-description {
       color: var(--nav-item-color-active);
     }
 
-    .search > .search-container > .search-space > .search-layout > .preview-container {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .preview-container {
       color: rgb(179, 179, 179);
       background-color: rgba(0, 0, 0, 0);
       font-weight: 400;
     }
 
-    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
+    .search
+      > .search-container
+      > .search-space
+      > .search-layout
+      > .results-container
+      > .result-card:hover {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(179, 179, 179);
       border-color: rgb(179, 179, 179);
@@ -6867,7 +7286,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6901,7 +7321,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6935,7 +7356,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -6969,7 +7391,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7003,7 +7426,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7037,7 +7461,8 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7072,7 +7497,8 @@ html[saved-theme="dark"] {
       letter-spacing: -0.72px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7445,7 +7871,8 @@ html[saved-theme="dark"] {
 
     input:focus {
       border-color: rgb(74, 88, 105);
-      box-shadow: 0 0 0 var(--input-border-width-focus) var(--background-modifier-border-focus);
+      box-shadow: 0 0 0 var(--input-border-width-focus)
+        var(--background-modifier-border-focus);
     }
 
     h1.article-title {
@@ -8039,7 +8466,8 @@ html[saved-theme="dark"] {
       font-weight: 400;
       line-height: 16.9px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8220,7 +8648,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -8231,7 +8668,8 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8244,7 +8682,8 @@ html[saved-theme="dark"] {
       --callout-color: 8, 109, 221;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8279,7 +8718,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -8290,7 +8738,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8303,7 +8752,8 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8338,10 +8788,22 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
-    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="abstract"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -8349,7 +8811,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8362,7 +8825,8 @@ html[saved-theme="dark"] {
       --callout-color: 8, 109, 221;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8397,7 +8861,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -8408,7 +8881,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8421,7 +8895,8 @@ html[saved-theme="dark"] {
       --callout-color: 8, 109, 221;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8456,7 +8931,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -8467,7 +8951,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8480,7 +8965,8 @@ html[saved-theme="dark"] {
       --callout-color: 0, 191, 188;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8515,7 +9001,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -8526,7 +9021,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8539,7 +9035,8 @@ html[saved-theme="dark"] {
       --callout-color: 8, 185, 78;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8574,7 +9071,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -8585,7 +9091,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8598,7 +9105,8 @@ html[saved-theme="dark"] {
       --callout-color: 236, 163, 0;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8633,10 +9141,22 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
-    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
+    .callout[data-callout="question"]
+      .callout-title
+      > .callout-title-inner
+      > p {
       color: var(--callout-title-color);
       font-weight: var(--font-weight);
     }
@@ -8644,7 +9164,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8657,7 +9178,8 @@ html[saved-theme="dark"] {
       --callout-color: 236, 163, 0;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8692,7 +9214,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -8703,7 +9234,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8716,7 +9248,8 @@ html[saved-theme="dark"] {
       --callout-color: 233, 49, 71;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8751,7 +9284,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -8762,7 +9304,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8775,7 +9318,8 @@ html[saved-theme="dark"] {
       --callout-color: 233, 49, 71;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8810,7 +9354,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -8821,7 +9374,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8834,7 +9388,8 @@ html[saved-theme="dark"] {
       --callout-color: 233, 49, 71;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8869,7 +9424,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -8880,7 +9444,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8893,7 +9458,8 @@ html[saved-theme="dark"] {
       --callout-color: 120, 82, 238;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8928,7 +9494,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -8939,7 +9514,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -8952,7 +9528,8 @@ html[saved-theme="dark"] {
       --callout-color: 158, 158, 158;
       background-color: var(--background-primary);
       background-image: none;
-      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgb(48, 56, 65) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       mix-blend-mode: normal;
       border: 2px solid rgb(74, 88, 105);
@@ -8987,7 +9564,16 @@ html[saved-theme="dark"] {
       padding-inline-start: 10px;
       background-color: rgba(var(--callout-color), 0.15);
       background-image: var(--top-pattern-img);
-      background: rgba(8, 109, 221, 0.15) conic-gradient(rgb(74, 88, 105) 90deg, rgba(0, 0, 0, 0) 90deg, rgba(0, 0, 0, 0) 180deg, rgb(74, 88, 105) 180deg, rgb(74, 88, 105) 270deg, rgba(0, 0, 0, 0) 270deg) repeat scroll 0px 0px / 4px 4px padding-box border-box;
+      background: rgba(8, 109, 221, 0.15)
+        conic-gradient(
+          rgb(74, 88, 105) 90deg,
+          rgba(0, 0, 0, 0) 90deg,
+          rgba(0, 0, 0, 0) 180deg,
+          rgb(74, 88, 105) 180deg,
+          rgb(74, 88, 105) 270deg,
+          rgba(0, 0, 0, 0) 270deg
+        )
+        repeat scroll 0px 0px / 4px 4px padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -8998,7 +9584,8 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
+        border-box;
       color: rgb(179, 179, 179);
       padding: 10px 20px;
       padding-block-end: 10px;
@@ -9316,7 +9903,9 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
     }
 
-    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
+    .nav-files-container
+      li:has(> .folder-outer:not(.open))
+      > .nav-folder-title {
       color: var(--nav-item-color);
       font-family: "Space Mono", monospace;
       font-weight: var(--nav-item-weight);
@@ -11735,7 +12324,10 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
+      background: var(
+        --collapse-icon-color-collapsed,
+        var(--quartz-icon-color)
+      );
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

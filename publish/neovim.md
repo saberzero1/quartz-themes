@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://slavamak.com" target="_blank" rel="noopener noreferrer">slavamak</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neovim/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/neovim`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neovim/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                       |
-| -------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `neovim` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neovim/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `neovim` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/neovim` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neovim/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

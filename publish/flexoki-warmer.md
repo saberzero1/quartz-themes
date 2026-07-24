@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/sajalverma17" target="_blank" rel="noopener noreferrer">sajalverma17</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki-warmer/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/flexoki-warmer`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/flexoki-warmer/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                | License                                                                                                                                               |
-| ---------------- | ------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `flexoki-warmer` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/flexoki-warmer/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name             | Modes                     | Compatibility                                | Install                               | License                                                                                                                                               |
+| ---------------- | ------------------------- | -------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `flexoki-warmer` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | `npm i @quartz-themes/flexoki-warmer` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/flexoki-warmer/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

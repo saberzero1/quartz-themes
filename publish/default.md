@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer">Obsidian Core Team</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/default/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/default`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/default/README.md">Full install instructions</a>
 
-| Name      | Modes                     | Compatibility                                  | License                                                                                                                                                                  |
-| --------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `default` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/default/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+| Name      | Modes                     | Compatibility                                  | Install                        | License                                                                                                                                                                  |
+| --------- | ------------------------- | ---------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `default` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/default` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/default/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

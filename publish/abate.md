@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/ricedev10" target="_blank" rel="noopener noreferrer">ricedev10</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/abate/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/abate`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/abate/README.md">Full install instructions</a>
 
-| Name    | Modes                       | Compatibility                                | License                                                                                                                                      |
-| ------- | --------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `abate` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                       | Compatibility                                | Install                      | License                                                                                                                                      |
+| ------- | --------------------------- | -------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `abate` | ![[media/light.svg\|LIGHT]] | <img src="media/partial.svg" alt="PARTIAL"/> | `npm i @quartz-themes/abate` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/abate/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

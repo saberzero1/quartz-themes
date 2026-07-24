@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/LennZone" target="_blank" rel="noopener noreferrer">LennZone</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/enhanced-file-explorer-tree/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/enhanced-file-explorer-tree`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/enhanced-file-explorer-tree/README.md">Full install instructions</a>
 
-| Name                          | Modes                     | Compatibility                                  | License                                                                                                                                                                        |
-| ----------------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `enhanced-file-explorer-tree` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/enhanced-file-explorer-tree/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name                          | Modes                     | Compatibility                                  | Install                                            | License                                                                                                                                                                        |
+| ----------------------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `enhanced-file-explorer-tree` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/enhanced-file-explorer-tree` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/enhanced-file-explorer-tree/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

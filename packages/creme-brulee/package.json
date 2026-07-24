@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/creme-brulee",
+  "version": "1.0.0",
+  "description": "Creme Brulee theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "creme-brulee"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/creme-brulee.git"
+  },
+  "homepage": "https://quartz-themes.github.io/creme-brulee"
+}

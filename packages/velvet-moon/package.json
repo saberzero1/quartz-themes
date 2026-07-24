@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/velvet-moon",
+  "version": "1.0.0",
+  "description": "Velvet Moon theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "velvet-moon"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/velvet-moon.git"
+  },
+  "homepage": "https://quartz-themes.github.io/velvet-moon"
+}

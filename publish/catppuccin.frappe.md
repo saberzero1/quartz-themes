@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/catppuccin/obsidian" target="_blank" rel="noopener noreferrer">Catppuccin</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.frappe/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/catppuccin.frappe`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/catppuccin.frappe/README.md">Full install instructions</a>
 
-| Name                | Modes                     | Compatibility                                                                                     | License                                                                                                                                                  |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `catppuccin.frappe` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catppuccin.frappe/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                | Modes                     | Compatibility                                                                                     | Install                                  | License                                                                                                                                                  |
+| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `catppuccin.frappe` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/catppuccin.frappe` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/catppuccin.frappe/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

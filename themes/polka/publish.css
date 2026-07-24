@@ -843,7 +843,7 @@ body.theme-light {
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: calc(var(--line-height-normal)/5) !important;
+  --list-spacing: calc(var(--line-height-normal) / 5) !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: var(--background-secondary) !important;
@@ -1973,7 +1973,7 @@ body.theme-dark {
   --list-marker-color-collapsed: var(--text-accent) !important;
   --list-marker-color-hover: var(--text-muted) !important;
   --list-numbered-style: decimal !important;
-  --list-spacing: calc(var(--line-height-normal)/5) !important;
+  --list-spacing: calc(var(--line-height-normal) / 5) !important;
   --loading-icon-delay: 400ms !important;
   --menu-backdrop-filter: none !important;
   --menu-background: var(--background-secondary) !important;

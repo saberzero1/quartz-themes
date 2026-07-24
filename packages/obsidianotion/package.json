@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/obsidianotion",
+  "version": "1.0.0",
+  "description": "Obsidianotion theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "obsidianotion"
+  ],
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/obsidianotion.git"
+  },
+  "homepage": "https://quartz-themes.github.io/obsidianotion"
+}

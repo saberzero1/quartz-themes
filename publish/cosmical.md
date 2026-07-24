@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/M-Torrus" target="_blank" rel="noopener noreferrer">M-Torrus</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cosmical/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/cosmical`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cosmical/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                                                                     | License                                                                                                                                                       |
-| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `cosmical` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cosmical/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a> |
+| Name       | Modes                     | Compatibility                                                                                     | Install                         | License                                                                                                                                                       |
+| ---------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cosmical` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/cosmical` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cosmical/LICENSE.md"><img src="media/license/apache-2.0.svg" alt="APACHE-2.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

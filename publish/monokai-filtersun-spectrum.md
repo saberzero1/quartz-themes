@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://soldaini.net" target="_blank" rel="noopener noreferrer">Luca Soldini</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai-filtersun-spectrum/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/monokai-filtersun-spectrum`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai-filtersun-spectrum/README.md">Full install instructions</a>
 
-| Name                         | Modes                     | Compatibility                                  | License                                                                                                                                                                       |
-| ---------------------------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `monokai-filtersun-spectrum` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monokai-filtersun-spectrum/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name                         | Modes                     | Compatibility                                  | Install                                           | License                                                                                                                                                                       |
+| ---------------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `monokai-filtersun-spectrum` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/monokai-filtersun-spectrum` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monokai-filtersun-spectrum/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

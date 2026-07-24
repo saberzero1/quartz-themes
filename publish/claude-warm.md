@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: Amo
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/claude-warm/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/claude-warm`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/claude-warm/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
-| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `claude-warm` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/claude-warm/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                  | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ---------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `claude-warm` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/claude-warm` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/claude-warm/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

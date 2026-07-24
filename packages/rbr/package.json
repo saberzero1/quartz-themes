@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/rbr",
+  "version": "1.0.0",
+  "description": "Rbr theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "rbr"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/rbr.git"
+  },
+  "homepage": "https://quartz-themes.github.io/rbr"
+}

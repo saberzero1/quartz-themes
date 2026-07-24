@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: David Troyer
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimalist-studio/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/minimalist-studio`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/minimalist-studio/README.md">Full install instructions</a>
 
-| Name                | Modes                     | Compatibility                                                                                     | License                                                                                                                                                  |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `minimalist-studio` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimalist-studio/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                | Modes                     | Compatibility                                                                                     | Install                                  | License                                                                                                                                                  |
+| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `minimalist-studio` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/minimalist-studio` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/minimalist-studio/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

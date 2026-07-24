@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: Ish Gunacar
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gitsidian/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/gitsidian`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/gitsidian/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                  | License                                                                                                                                                                    |
-| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `gitsidian` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/gitsidian/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
+| Name        | Modes                     | Compatibility                                  | Install                          | License                                                                                                                                                                    |
+| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `gitsidian` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/gitsidian` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/gitsidian/LICENSE.md"><img src="media/license/no spdx id found.svg" alt="NO SPDX ID FOUND"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

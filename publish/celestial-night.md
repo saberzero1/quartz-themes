@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/celestial-night/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/celestial-night`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/celestial-night/README.md">Full install instructions</a>
 
-| Name              | Modes                     | Compatibility                                                                                     | License                                                                                                                                                            |
-| ----------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `celestial-night` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/celestial-night/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name              | Modes                     | Compatibility                                                                                     | Install                                | License                                                                                                                                                            |
+| ----------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `celestial-night` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/celestial-night` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/celestial-night/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

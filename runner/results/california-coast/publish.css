@@ -1546,7 +1546,7 @@ body.theme-light {
   --editor-line-height: 1.88889 !important;
   --editor-line-height-rem: calc(var(--editor-line-height) * 1rem) !important;
   --editor-line-height-small: calc(
-    var(--editor-line-height) * var(--scale-small)/100
+    var(--editor-line-height) * var(--scale-small) / 100
   ) !important;
   --editor-line-height-small-rem: calc(
     var(--editor-line-height-small) * 1rem
@@ -1570,7 +1570,7 @@ body.theme-light {
   --h6-margin-top: 1.5 !important;
   --header-editor-font: var(--font-text) !important;
   --hr-spacing-bottom: calc(var(--editor-line-height-rem) * 1.5) !important;
-  --hr-spacing-top: calc(var(--editor-line-height-rem)/2) !important;
+  --hr-spacing-top: calc(var(--editor-line-height-rem) / 2) !important;
   --indigo-rgb: 88, 86, 214 !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;
@@ -2780,7 +2780,7 @@ body.theme-dark {
   --editor-line-height: 1.88889 !important;
   --editor-line-height-rem: calc(var(--editor-line-height) * 1rem) !important;
   --editor-line-height-small: calc(
-    var(--editor-line-height) * var(--scale-small)/100
+    var(--editor-line-height) * var(--scale-small) / 100
   ) !important;
   --editor-line-height-small-rem: calc(
     var(--editor-line-height-small) * 1rem
@@ -2804,7 +2804,7 @@ body.theme-dark {
   --h6-margin-top: 1.5 !important;
   --header-editor-font: var(--font-text) !important;
   --hr-spacing-bottom: calc(var(--editor-line-height-rem) * 1.5) !important;
-  --hr-spacing-top: calc(var(--editor-line-height-rem)/2) !important;
+  --hr-spacing-top: calc(var(--editor-line-height-rem) / 2) !important;
   --indigo-rgb: 94, 92, 230 !important;
   --med-small: 400px !important;
   --med-tall: 600px !important;

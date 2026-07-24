@@ -1,3 +1,9 @@
+console.warn(
+  "[quartz-themes] This package is deprecated. Install per-theme packages instead:\n" +
+    "  npm install @quartz-themes/core @quartz-themes/<your-theme>\n" +
+    "  See: https://github.com/quartz-themes/core#migration",
+);
+
 export { QuartzTheme } from "./transformer";
 export { QuartzTheme as QuartzThemes } from "./transformer";
 export { QuartzTheme as quartzThemes } from "./transformer";

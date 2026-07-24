@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer">Alonso</a>
 - Support the author: <a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/universitario/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/universitario`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/universitario/README.md">Full install instructions</a>
 
-| Name            | Modes                     | Compatibility                                  | License                                                                                                                                                      |
-| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `universitario` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/universitario/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name            | Modes                     | Compatibility                                  | Install                              | License                                                                                                                                                      |
+| --------------- | ------------------------- | ---------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `universitario` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/universitario` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/universitario/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

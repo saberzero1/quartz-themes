@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/dune",
+  "version": "1.0.0",
+  "description": "Dune theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "dune"
+  ],
+  "license": "GPL-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/dune.git"
+  },
+  "homepage": "https://quartz-themes.github.io/dune"
+}

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Pierry" target="_blank" rel="noopener noreferrer">Pierry Borges</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cloud-dancer/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/cloud-dancer`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/cloud-dancer/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
-| -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `cloud-dancer` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cloud-dancer/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                  | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cloud-dancer` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/cloud-dancer` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/cloud-dancer/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

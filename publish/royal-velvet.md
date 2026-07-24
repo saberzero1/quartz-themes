@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/caro401" target="_blank" rel="noopener noreferrer">@caro401</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/royal-velvet`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/royal-velvet/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                                                                     | License                                                                                                                                             |
-| -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `royal-velvet` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/royal-velvet/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                                                                     | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `royal-velvet` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/royal-velvet` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/royal-velvet/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: xRyul
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-lyt/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/dracula-lyt`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/dracula-lyt/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                  | License                                                                                                                                            |
-| ------------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `dracula-lyt` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dracula-lyt/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                  | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ---------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `dracula-lyt` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/dracula-lyt` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/dracula-lyt/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

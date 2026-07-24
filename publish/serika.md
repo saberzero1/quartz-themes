@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Warrobot10" target="_blank" rel="noopener noreferrer">Warrobot10</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/serika/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/serika`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/serika/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                  | License                                                                                                                                               |
-| -------- | ------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `serika` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/serika/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name     | Modes                     | Compatibility                                  | Install                       | License                                                                                                                                               |
+| -------- | ------------------------- | ---------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `serika` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/serika` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/serika/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

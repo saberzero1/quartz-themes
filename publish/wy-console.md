@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://www.buymeacoffee.com/Satchelmouth" target="_blank" rel="noopener noreferrer">Satchelmouth</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/wy-console/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/wy-console`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/wy-console/README.md">Full install instructions</a>
 
-| Name         | Modes                     | Compatibility                                | License                                                                                                                                           |
-| ------------ | ------------------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `wy-console` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/wy-console/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name         | Modes                     | Compatibility                                | Install                           | License                                                                                                                                           |
+| ------------ | ------------------------- | -------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `wy-console` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> | `npm i @quartz-themes/wy-console` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/wy-console/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

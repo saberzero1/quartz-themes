@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: No author provided
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/california-coast/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/california-coast`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/california-coast/README.md">Full install instructions</a>
 
-| Name               | Modes                     | Compatibility                                                                                                                                  | License                                                                                                                                                         |
-| ------------------ | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `california-coast` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/california-coast/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name               | Modes                     | Compatibility                                                                                                                                  | Install                                 | License                                                                                                                                                         |
+| ------------------ | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `california-coast` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/california-coast` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/california-coast/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

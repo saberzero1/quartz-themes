@@ -1,0 +1,61 @@
+{
+  "name": "@quartz-themes/ultra-lobster",
+  "version": "1.0.0",
+  "description": "Ultra Lobster theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./abaddon": "./variants/abaddon.json",
+    "./abaddon-glass": "./variants/abaddon-glass.json",
+    "./architect": "./variants/architect.json",
+    "./blahaj": "./variants/blahaj.json",
+    "./blueprint": "./variants/blueprint.json",
+    "./bunny": "./variants/bunny.json",
+    "./chameleon": "./variants/chameleon.json",
+    "./control": "./variants/control.json",
+    "./creation": "./variants/creation.json",
+    "./cyan": "./variants/cyan.json",
+    "./demon-queen": "./variants/demon-queen.json",
+    "./dracula": "./variants/dracula.json",
+    "./eidolon": "./variants/eidolon.json",
+    "./green": "./variants/green.json",
+    "./gruvbox": "./variants/gruvbox.json",
+    "./linking-your-thinking": "./variants/linking-your-thinking.json",
+    "./lobster-time": "./variants/lobster-time.json",
+    "./orange": "./variants/orange.json",
+    "./pink": "./variants/pink.json",
+    "./purple": "./variants/purple.json",
+    "./red": "./variants/red.json",
+    "./shadow": "./variants/shadow.json",
+    "./soft": "./variants/soft.json",
+    "./solarized": "./variants/solarized.json",
+    "./sorcery": "./variants/sorcery.json",
+    "./succubus": "./variants/succubus.json",
+    "./timberwolf": "./variants/timberwolf.json",
+    "./umbra": "./variants/umbra.json",
+    "./white": "./variants/white.json",
+    "./yellow": "./variants/yellow.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "ultra-lobster"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/ultra-lobster.git"
+  },
+  "homepage": "https://quartz-themes.github.io/ultra-lobster"
+}

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/GodlyMan-bit" target="_blank" rel="noopener noreferrer">agodlyman</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/serif/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/serif`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/serif/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                  | License                                                                                                                                                  |
-| ------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `serif` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/serif/LICENSE.md"><img src="media/license/cc-by-4.0.svg" alt="CC-BY-4.0"/></a> |
+| Name    | Modes                     | Compatibility                                  | Install                      | License                                                                                                                                                  |
+| ------- | ------------------------- | ---------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `serif` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/serif` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/serif/LICENSE.md"><img src="media/license/cc-by-4.0.svg" alt="CC-BY-4.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

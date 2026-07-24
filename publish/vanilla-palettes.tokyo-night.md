@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/GnRlLeclerc" target="_blank" rel="noopener noreferrer">Thibaut de Saivre</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-palettes.tokyo-night/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/vanilla-palettes.tokyo-night`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vanilla-palettes.tokyo-night/README.md">Full install instructions</a>
 
-| Name                           | Modes                     | Compatibility                                                                                   | License                                                                                                                                                             |
-| ------------------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `vanilla-palettes.tokyo-night` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vanilla-palettes.tokyo-night/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                           | Modes                     | Compatibility                                                                                   | Install                                             | License                                                                                                                                                             |
+| ------------------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vanilla-palettes.tokyo-night` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/vanilla-palettes.tokyo-night` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vanilla-palettes.tokyo-night/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

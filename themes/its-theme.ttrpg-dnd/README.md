@@ -11,7 +11,23 @@
 
 ## Usage (Quartz)
 
-### GitHub Actions
+### npm package (Recommended)
+
+```bash
+npm install @quartz-themes/core @quartz-themes/its-theme.ttrpg-dnd
+```
+
+Then add the plugin to your `quartz.config.yaml`:
+
+```yaml
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "its-theme.ttrpg-dnd"
+      mode: "both"
+```
+
+### GitHub Actions (Legacy)
 
 ```yaml
 env:
@@ -23,15 +39,7 @@ env:
   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
 ```
 
-### Automatic install into Quartz repository
-
-```bash
-curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
-
-./action.sh its-theme.ttrpg-dnd
-```
-
-### Manual install
+### Manual install (Legacy)
 
 Copy [\_index.scss](./_index.scss) into your Quartz repository's `quartz/styles/themes/` directory. (Create the `themes` directory if it does not exist.)
 
@@ -43,11 +51,6 @@ Then, add the following to your `quartz/styles/custom.scss` file after the `@use
 
 > [!IMPORTANT]
 > For dark-only or light-only themes, remember to remove `Component.Darkmode()` from your `quartz.config.ts` file.
-
-### Quartz Syncer
-
-> [!IMPORTANT]
-> This setup method is not yet available. It is currently being tested and will be released in the future.
 
 ## Usage (Publish)
 

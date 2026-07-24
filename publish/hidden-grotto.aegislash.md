@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: HotAndCold
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hidden-grotto.aegislash/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/hidden-grotto.aegislash`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/hidden-grotto.aegislash/README.md">Full install instructions</a>
 
-| Name                      | Modes                     | Compatibility                                                                                   | License                                                                                                                                                        |
-| ------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hidden-grotto.aegislash` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hidden-grotto.aegislash/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                      | Modes                     | Compatibility                                                                                   | Install                                        | License                                                                                                                                                        |
+| ------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hidden-grotto.aegislash` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/hidden-grotto.aegislash` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/hidden-grotto.aegislash/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

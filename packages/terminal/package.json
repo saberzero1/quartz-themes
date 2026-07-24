@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/terminal",
+  "version": "1.0.0",
+  "description": "Terminal theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "terminal"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/terminal.git"
+  },
+  "homepage": "https://quartz-themes.github.io/terminal"
+}

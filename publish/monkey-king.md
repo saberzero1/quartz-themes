@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/LeapSurge" target="_blank" rel="noopener noreferrer">LeapSurge</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monkey-king/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/monkey-king`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monkey-king/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                            |
-| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `monkey-king` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monkey-king/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                                                                     | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `monkey-king` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/monkey-king` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monkey-king/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

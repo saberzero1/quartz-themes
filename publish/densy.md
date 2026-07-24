@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/eugenesvk" target="_blank" rel="noopener noreferrer">eugenesvk</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/densy/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/densy`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/densy/README.md">Full install instructions</a>
 
-| Name    | Modes                       | Compatibility                                  | License                                                                                                                                      |
-| ------- | --------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `densy` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/densy/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                       | Compatibility                                  | Install                      | License                                                                                                                                      |
+| ------- | --------------------------- | ---------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `densy` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/densy` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/densy/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

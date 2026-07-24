@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/kraasch" target="_blank" rel="noopener noreferrer">Alex Kraasch</a>
 - Support the author: <a href="https://ko-fi.com/kraasch" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/true-black/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/true-black`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/true-black/README.md">Full install instructions</a>
 
-| Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
-| ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `true-black` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/true-black/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name         | Modes                     | Compatibility                                  | Install                           | License                                                                                                                                           |
+| ------------ | ------------------------- | ---------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `true-black` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/true-black` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/true-black/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

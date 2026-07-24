@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/green-holiday",
+  "version": "1.0.0",
+  "description": "Green Holiday theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "green-holiday"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/green-holiday.git"
+  },
+  "homepage": "https://quartz-themes.github.io/green-holiday"
+}

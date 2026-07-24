@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/AllJavi" target="_blank" rel="noopener noreferrer">AllJavi</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-gruvbox/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/material-gruvbox`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/material-gruvbox/README.md">Full install instructions</a>
 
-| Name               | Modes                     | Compatibility                                                                                     | License                                                                                                                                                 |
-| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `material-gruvbox` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/material-gruvbox/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name               | Modes                     | Compatibility                                                                                     | Install                                 | License                                                                                                                                                 |
+| ------------------ | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `material-gruvbox` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/material-gruvbox` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/material-gruvbox/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

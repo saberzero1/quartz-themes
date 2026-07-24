@@ -78,11 +78,11 @@ body.theme-dark {
   --accent-h: 258 !important;
   --accent-l: 66% !important;
   --accent-s: 88% !important;
-  --anim-duration-fast: calc(150ms/var(--anim-speed)) !important;
-  --anim-duration-moderate: calc(300ms/var(--anim-speed)) !important;
+  --anim-duration-fast: calc(150ms / var(--anim-speed)) !important;
+  --anim-duration-moderate: calc(300ms / var(--anim-speed)) !important;
   --anim-duration-none: 0 !important;
-  --anim-duration-slow: calc(600ms/var(--anim-speed)) !important;
-  --anim-duration-superfast: calc(75ms/var(--anim-speed)) !important;
+  --anim-duration-slow: calc(600ms / var(--anim-speed)) !important;
+  --anim-duration-superfast: calc(75ms / var(--anim-speed)) !important;
   --anim-motion-delay: cubic-bezier(0.65, 0.05, 0.36, 1) !important;
   --anim-motion-jumpy: cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
   --anim-motion-smooth: cubic-bezier(0.45, 0.05, 0.55, 0.95) !important;

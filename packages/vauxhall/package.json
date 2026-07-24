@@ -1,0 +1,37 @@
+{
+  "name": "@quartz-themes/vauxhall",
+  "version": "1.0.0",
+  "description": "Vauxhall theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./blue": "./variants/blue.json",
+    "./magenta": "./variants/magenta.json",
+    "./purple": "./variants/purple.json",
+    "./red": "./variants/red.json",
+    "./teal": "./variants/teal.json",
+    "./white": "./variants/white.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "vauxhall"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/vauxhall.git"
+  },
+  "homepage": "https://quartz-themes.github.io/vauxhall"
+}

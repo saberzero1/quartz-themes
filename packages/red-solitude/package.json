@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/red-solitude",
+  "version": "1.0.0",
+  "description": "Red Solitude theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "red-solitude"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/red-solitude.git"
+  },
+  "homepage": "https://quartz-themes.github.io/red-solitude"
+}

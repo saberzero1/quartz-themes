@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/tofrankie" target="_blank" rel="noopener noreferrer">Frankie</a>
 - Support the author: <a href="https://paypal.me/tofrankie" target="_blank" rel="noopener noreferrer">PayPal</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/github-flavored-markdown/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/github-flavored-markdown`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/github-flavored-markdown/README.md">Full install instructions</a>
 
-| Name                       | Modes                     | Compatibility                                                                                   | License                                                                                                                                                         |
-| -------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `github-flavored-markdown` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/github-flavored-markdown/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                       | Modes                     | Compatibility                                                                                   | Install                                         | License                                                                                                                                                         |
+| -------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `github-flavored-markdown` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/github-flavored-markdown` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/github-flavored-markdown/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

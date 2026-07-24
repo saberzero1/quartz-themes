@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Fro-Q" target="_blank" rel="noopener noreferrer">Fro-Q</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/qlean/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/qlean`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/qlean/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                      |
-| ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `qlean` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/qlean/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name    | Modes                     | Compatibility                                                                                     | Install                      | License                                                                                                                                      |
+| ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `qlean` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/qlean` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/qlean/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

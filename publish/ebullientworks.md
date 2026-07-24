@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/ebullient" target="_blank" rel="noopener noreferrer">Ebullientworks</a>
 - Support the author: <a href="https://www.buymeacoffee.com/ebullient" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/ebullientworks`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ebullientworks/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                                                                     | License                                                                                                                                                       |
-| ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ebullientworks` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ebullientworks/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
+| Name             | Modes                     | Compatibility                                                                                     | Install                               | License                                                                                                                                                       |
+| ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ebullientworks` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/ebullientworks` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ebullientworks/LICENSE.md"><img src="media/license/cc0-1.0.svg" alt="CC0-1.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

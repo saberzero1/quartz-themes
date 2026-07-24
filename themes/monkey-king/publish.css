@@ -1455,7 +1455,7 @@ body.theme-light {
   --button-shadow: none !important;
   --text-highlight: var(--res-bg0) !important;
   --prompt-shadow: none !important;
-  --gap-unit: calc(var(--font-text-size)/8) !important;
+  --gap-unit: calc(var(--font-text-size) / 8) !important;
   --mkk-font-stack-em:
     var(--res-font-em-west), var(--res-font-em-zh) !important;
   --mkk-font-stack-headings:
@@ -2910,7 +2910,7 @@ body.theme-dark {
   --button-shadow: none !important;
   --text-highlight: var(--res-bg0) !important;
   --prompt-shadow: none !important;
-  --gap-unit: calc(var(--font-text-size)/8) !important;
+  --gap-unit: calc(var(--font-text-size) / 8) !important;
   --mkk-font-stack-em:
     var(--res-font-em-west), var(--res-font-em-zh) !important;
   --mkk-font-stack-headings:

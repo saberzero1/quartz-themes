@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/wrongvibe/" target="_blank" rel="noopener noreferrer">Emma</a>
 - Support the author: <a href="https://buymeacoffee.com/wrongvibe/" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/colours/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/colours`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/colours/README.md">Full install instructions</a>
 
-| Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                                |
-| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `colours` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/colours/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name      | Modes                     | Compatibility                                                                                     | Install                        | License                                                                                                                                                |
+| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `colours` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/colours` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/colours/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

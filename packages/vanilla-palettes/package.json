@@ -1,0 +1,48 @@
+{
+  "name": "@quartz-themes/vanilla-palettes",
+  "version": "1.0.0",
+  "description": "Vanilla Palettes theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./atom-one": "./variants/atom-one.json",
+    "./catppuccin-frappe": "./variants/catppuccin-frappe.json",
+    "./catppuccin-macchiato": "./variants/catppuccin-macchiato.json",
+    "./catppuccin-mocha": "./variants/catppuccin-mocha.json",
+    "./dracula": "./variants/dracula.json",
+    "./dracula-soft": "./variants/dracula-soft.json",
+    "./gruvbox-hard": "./variants/gruvbox-hard.json",
+    "./gruvbox-medium": "./variants/gruvbox-medium.json",
+    "./gruvbox-soft": "./variants/gruvbox-soft.json",
+    "./horizon": "./variants/horizon.json",
+    "./kanagawa-dragon": "./variants/kanagawa-dragon.json",
+    "./kanagawa-wave": "./variants/kanagawa-wave.json",
+    "./rose-pine": "./variants/rose-pine.json",
+    "./rose-pine-moon": "./variants/rose-pine-moon.json",
+    "./tokyo-night": "./variants/tokyo-night.json",
+    "./tokyo-night-moon": "./variants/tokyo-night-moon.json",
+    "./tokyo-night-storm": "./variants/tokyo-night-storm.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "vanilla-palettes"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/vanilla-palettes.git"
+  },
+  "homepage": "https://quartz-themes.github.io/vanilla-palettes"
+}

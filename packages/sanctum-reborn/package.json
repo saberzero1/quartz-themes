@@ -1,0 +1,41 @@
+{
+  "name": "@quartz-themes/sanctum-reborn",
+  "version": "1.0.0",
+  "description": "Sanctum Reborn theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./blue": "./variants/blue.json",
+    "./cyan": "./variants/cyan.json",
+    "./green": "./variants/green.json",
+    "./lavender": "./variants/lavender.json",
+    "./orange": "./variants/orange.json",
+    "./pink": "./variants/pink.json",
+    "./pistachio": "./variants/pistachio.json",
+    "./red": "./variants/red.json",
+    "./viridian": "./variants/viridian.json",
+    "./yellow": "./variants/yellow.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "sanctum-reborn"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/sanctum-reborn.git"
+  },
+  "homepage": "https://quartz-themes.github.io/sanctum-reborn"
+}

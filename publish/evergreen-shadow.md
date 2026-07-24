@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://quinta0.github.io/" target="_blank" rel="noopener noreferrer">Quintavalle Pietro</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/evergreen-shadow/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/evergreen-shadow`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/evergreen-shadow/README.md">Full install instructions</a>
 
-| Name               | Modes                     | Compatibility                                  | License                                                                                                                                                 |
-| ------------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `evergreen-shadow` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/evergreen-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name               | Modes                     | Compatibility                                  | Install                                 | License                                                                                                                                                 |
+| ------------------ | ------------------------- | ---------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `evergreen-shadow` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/evergreen-shadow` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/evergreen-shadow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: lat3ncy
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai-syntax/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/monokai-syntax`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/monokai-syntax/README.md">Full install instructions</a>
 
-| Name             | Modes                     | Compatibility                                                                                     | License                                                                                                                                               |
-| ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `monokai-syntax` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monokai-syntax/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name             | Modes                     | Compatibility                                                                                     | Install                               | License                                                                                                                                               |
+| ---------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `monokai-syntax` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/monokai-syntax` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/monokai-syntax/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

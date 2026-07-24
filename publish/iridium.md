@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/kyffa" target="_blank" rel="noopener noreferrer">kyffa</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/iridium/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/iridium`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/iridium/README.md">Full install instructions</a>
 
-| Name      | Modes                     | Compatibility                                                                                     | License                                                                                                                                        |
-| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `iridium` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/iridium/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name      | Modes                     | Compatibility                                                                                     | Install                        | License                                                                                                                                        |
+| --------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `iridium` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/iridium` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/iridium/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

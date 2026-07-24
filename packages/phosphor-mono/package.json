@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/phosphor-mono",
+  "version": "1.0.0",
+  "description": "Phosphor Mono theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "phosphor-mono"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/phosphor-mono.git"
+  },
+  "homepage": "https://quartz-themes.github.io/phosphor-mono"
+}

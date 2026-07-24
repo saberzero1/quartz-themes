@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://isaac.freeman.org.nz" target="_blank" rel="noopener noreferrer">Isaac Freeman</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/kakano.yellow/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/kakano.yellow`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/kakano.yellow/README.md">Full install instructions</a>
 
-| Name            | Modes                     | Compatibility                                                                                   | License                                                                                                                                              |
-| --------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `kakano.yellow` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/kakano.yellow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name            | Modes                     | Compatibility                                                                                   | Install                              | License                                                                                                                                              |
+| --------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kakano.yellow` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/kakano.yellow` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/kakano.yellow/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

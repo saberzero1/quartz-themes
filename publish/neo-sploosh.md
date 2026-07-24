@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://monoooki.net" target="_blank" rel="noopener noreferrer">monoooki</a>
 - Support the author: <a href="https://ko-fi.com/monoooki" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neo-sploosh/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/neo-sploosh`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/neo-sploosh/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                            |
-| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `neo-sploosh` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neo-sploosh/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name          | Modes                     | Compatibility                                                                                     | Install                            | License                                                                                                                                            |
+| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `neo-sploosh` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/neo-sploosh` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/neo-sploosh/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

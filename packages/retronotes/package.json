@@ -1,0 +1,36 @@
+{
+  "name": "@quartz-themes/retronotes",
+  "version": "1.0.0",
+  "description": "Retronotes theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./blueprint": "./variants/blueprint.json",
+    "./carbon-ink": "./variants/carbon-ink.json",
+    "./forest-green": "./variants/forest-green.json",
+    "./misty-mirage": "./variants/misty-mirage.json",
+    "./pinot-noir": "./variants/pinot-noir.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "retronotes"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/retronotes.git"
+  },
+  "homepage": "https://quartz-themes.github.io/retronotes"
+}

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: Ooopz
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort-dark/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/comfort-dark`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/comfort-dark/README.md">Full install instructions</a>
 
-| Name           | Modes                     | Compatibility                                  | License                                                                                                                                             |
-| -------------- | ------------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `comfort-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name           | Modes                     | Compatibility                                  | Install                             | License                                                                                                                                             |
+| -------------- | ------------------------- | ---------------------------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `comfort-dark` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/comfort-dark` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/comfort-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

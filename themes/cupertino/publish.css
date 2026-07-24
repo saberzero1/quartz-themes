@@ -1161,7 +1161,7 @@ body.theme-light {
     transparent
   ) !important;
   --nav-item-children-margin-start: calc(
-    20px - var(--nav-indentation-guide-width)/2
+    20px - var(--nav-indentation-guide-width) / 2
   ) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;
@@ -2360,7 +2360,7 @@ body.theme-dark {
     transparent
   ) !important;
   --nav-item-children-margin-start: calc(
-    20px - var(--nav-indentation-guide-width)/2
+    20px - var(--nav-indentation-guide-width) / 2
   ) !important;
   --nav-item-children-padding-start: var(--size-2-2) !important;
   --nav-item-color: var(--text-muted) !important;

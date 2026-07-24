@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/coffee",
+  "version": "1.0.0",
+  "description": "Coffee theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "coffee"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/coffee.git"
+  },
+  "homepage": "https://quartz-themes.github.io/coffee"
+}

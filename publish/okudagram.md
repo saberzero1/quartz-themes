@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://jalad.ncc-1701.enterprises" target="_blank" rel="noopener noreferrer">Jalad</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/okudagram/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/okudagram`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/okudagram/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                  | License                                                                                                                                                  |
-| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `okudagram` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/okudagram/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name        | Modes                     | Compatibility                                  | Install                          | License                                                                                                                                                  |
+| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `okudagram` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/okudagram` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/okudagram/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

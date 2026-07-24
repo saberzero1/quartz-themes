@@ -1,0 +1,28 @@
+# Cybertron Shifted
+
+Obsidian theme adapted for [Quartz](https://github.com/jackyzha0/quartz).
+
+**Modes**: dark
+**License**: MIT
+
+## Installation
+
+```bash
+npm install @quartz-themes/core @quartz-themes/cybertron-shifted
+```
+
+## Usage
+
+```yaml
+# quartz.config.yaml
+plugins:
+  transformers:
+    - name: "@quartz-themes/core"
+      options:
+        theme: "cybertron-shifted"
+        mode: "dark"
+```
+
+## Preview
+
+[Live preview](https://quartz-themes.github.io/cybertron-shifted)

@@ -24,16 +24,70 @@ Add goals:
 - [Quartz Themes](#quartz-themes)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
-    - [GitHub Actions (Recommended)](#github-actions-recommended)
-    - [Automatic install into Quartz repository](#automatic-install-into-quartz-repository)
-    - [Manual install](#manual-install)
-    - [Quartz Syncer](#quartz-syncer)
+    - [npm package (Recommended)](#npm-package-recommended)
+    - [GitHub Actions (Legacy)](#github-actions-legacy)
+    - [Manual install (Legacy)](#manual-install-legacy)
   - [Supported Themes](#supported-themes)
   - [Licenses](#licenses)
 
 ## Installation
 
-### GitHub Actions (Recommended)
+### npm package (Recommended)
+
+Install the core plugin and your chosen theme:
+
+```bash
+npm install @quartz-themes/core @quartz-themes/<THEME-NAME>
+```
+
+Then add the plugin to your `quartz.config.yaml`:
+
+```yaml
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "<THEME-NAME>"
+      mode: "both"
+```
+
+> [!TIP]
+> Example for Tokyo Night:
+>
+> ```bash
+> npm install @quartz-themes/core @quartz-themes/tokyo-night
+> ```
+>
+> ```yaml
+> plugins:
+>   - source: "@quartz-themes/core"
+>     options:
+>       theme: "tokyo-night"
+>       mode: "both"
+> ```
+
+> [!TIP]
+> For themes with variants (e.g. Catppuccin), specify the variation:
+>
+> ```bash
+> npm install @quartz-themes/core @quartz-themes/catppuccin
+> ```
+>
+> ```yaml
+> plugins:
+>   - source: "@quartz-themes/core"
+>     options:
+>       theme: "catppuccin"
+>       variation: "frappe"
+>       mode: "both"
+> ```
+
+> [!IMPORTANT]
+> For dark-only or light-only themes, set `mode` to `"dark"` or `"light"` instead of `"both"`.
+
+### GitHub Actions (Legacy)
+
+> [!NOTE]
+> This method is for Quartz v4 or users who prefer not to use npm packages.
 
 Add the following lines to your `deploy.yml` before the `permissions` section:
 
@@ -52,120 +106,10 @@ And add the following lines to your `deploy.yml` before the `build` step:
 > [!IMPORTANT]
 > Replace `<THEME-NAME>` with your desired theme name. See [Compatibility List](#supported-themes)
 
-> [!TIP]
-> Example for Tokyo Night:
->
-> ```yaml
-> env:
->   THEME_NAME: tokyo-night
-> ```
-
-> [!TIP]
-> To use an older iteration of Quartz Themes, please use the `action_v*.sh` script instead. For example, to use version 1, use:
->
-> ```yaml
-> - name: Fetch Quartz Theme
->   run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action_v1.sh | bash -s -- $THEME_NAME
-> ```
-
-The full script would look like this:
-
-```yaml
-name: Deploy Quartz site to GitHub Pages
-
-on:
-  push:
-    branches:
-      - v4
-
-env:
-  THEME_NAME: <THEME-NAME>
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-22.04
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Fetch all history for git info
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Install Dependencies
-        run: npm ci
-      - name: Fetch Quartz Theme
-        run: curl -s -S https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh | bash -s -- $THEME_NAME
-      - name: Build Quartz
-        run: npx quartz build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: public
-
-  deploy:
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-```
-
-### Automatic install into Quartz repository
-
-> [!TIP]
-> This installation method is recommended for users who want to install themes into their Quartz repository directly. This method is also recommended for user who cannot fetch dependencies during compilation.
-
-Download the latest version of the [action.sh](https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh) script or run the following to download it:
-
-```bash
-curl -s -S -o action.sh https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.sh
-```
+### Manual install (Legacy)
 
 > [!NOTE]
-> Windows users should use `action.bat` instead, unless they also access to the bash shell (git-bash, etc.) or WSL.
->
-> ```bash
-> curl -s -S -o action.bat https://raw.githubusercontent.com/saberzero1/quartz-themes/master/action.bat
->
-> action.bat tokyo-night
-> ```
-
-Then run the `action.sh` script with the desired theme to install it into your Quartz repository:
-
-```bash
-# Example: installing Tokyo Night...
-./action.sh tokyo-night
-
-# ...should output:
-# Quartz root succesfully detected...
-# Input theme: tokyo-night
-# Parsing input theme...
-# Theme tokyo-night parsed to tokyo-night
-# Validating theme...
-# Cleaning theme directory...
-# Creating theme directory...
-# Fetching theme files...
-# Installing theme files...
-# Applying patches...
-# Verifying setup...
-# Added import line to custom.scss...
-# Finished fetching and applying theme 'tokyo-night'.
-```
-
-### Manual install
+> This method is for Quartz v4 or users who prefer not to use npm packages.
 
 Manually download the `_index.scss` file from the [themes directory of your choice](./themes/) in this repository, and place it in your Quartz repository's at `quartz/styles/themes/_index.scss`. (Create the `themes` directory if it doesn't exist.)
 
@@ -177,11 +121,6 @@ Then, add the following line to your `src/styles/custom.scss` file **after** the
 
 > [!IMPORTANT]
 > For dark-only or light-only themes, remember to remove `Component.Darkmode()` from your `quartz.config.ts` file.
-
-### Quartz Syncer
-
-> [!IMPORTANT]
-> This setup method is not yet available. It is currently being tested and will be released in the future.
 
 ## Supported Themes
 

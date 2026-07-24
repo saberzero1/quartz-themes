@@ -160,6 +160,16 @@ themeCollection.forEach((theme) => {
     result,
   );
 });
+themeCollection.forEach((theme) => {
+  const modes = themes[theme.name]?.modes || ["dark", "light"];
+  const mode =
+    modes.length === 2 ? "both" : modes.includes("dark") ? "dark" : "light";
+  replaceInFile(
+    `./themes/${theme.name}/README.md`,
+    "%OBSIDIAN_THEME_MODE%",
+    mode,
+  );
+});
 themeCollection.forEach((manifest) => {
   const readmePath = `./themes/${manifest.name}/README.md`;
   const content = fs.readFileSync(readmePath, "utf8");

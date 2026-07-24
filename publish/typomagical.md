@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/hungsu/" target="_blank" rel="noopener noreferrer">Hung-Su</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typomagical/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/typomagical`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typomagical/README.md">Full install instructions</a>
 
-| Name          | Modes                     | Compatibility                                                                                     | License                                                                                                                                                    |
-| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `typomagical` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/typomagical/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name          | Modes                     | Compatibility                                                                                     | Install                            | License                                                                                                                                                    |
+| ------------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `typomagical` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/typomagical` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/typomagical/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

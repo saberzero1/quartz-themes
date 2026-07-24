@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/harmtemolder" target="_blank" rel="noopener noreferrer">harmtemolder</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ink/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/ink`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ink/README.md">Full install instructions</a>
 
-| Name  | Modes                       | Compatibility                                  | License                                                                                                                                            |
-| ----- | --------------------------- | ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ink` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ink/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name  | Modes                       | Compatibility                                  | Install                    | License                                                                                                                                            |
+| ----- | --------------------------- | ---------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ink` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/ink` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ink/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -1,0 +1,36 @@
+{
+  "name": "@quartz-themes/ukiyo",
+  "version": "1.0.0",
+  "description": "Ukiyo theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./alchemy": "./variants/alchemy.json",
+    "./golden-book": "./variants/golden-book.json",
+    "./golden-coffee": "./variants/golden-coffee.json",
+    "./rose-shadow": "./variants/rose-shadow.json",
+    "./ukiyo": "./variants/ukiyo.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "ukiyo"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/ukiyo.git"
+  },
+  "homepage": "https://quartz-themes.github.io/ukiyo"
+}

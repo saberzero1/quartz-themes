@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://flowing-abyss.com/" target="_blank" rel="noopener noreferrer">flowing-abyss</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16-default-dark/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/base16-default-dark`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16-default-dark/README.md">Full install instructions</a>
 
-| Name                  | Modes                     | Compatibility                                  | License                                                                                                                                                    |
-| --------------------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `base16-default-dark` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/base16-default-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                  | Modes                     | Compatibility                                  | Install                                    | License                                                                                                                                                    |
+| --------------------- | ------------------------- | ---------------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `base16-default-dark` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/base16-default-dark` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/base16-default-dark/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

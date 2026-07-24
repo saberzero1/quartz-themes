@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/monokai-filtersun-spectrum",
+  "version": "1.0.0",
+  "description": "Monokai Filtersun Spectrum theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "monokai-filtersun-spectrum"
+  ],
+  "license": "Unlicense",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/monokai-filtersun-spectrum.git"
+  },
+  "homepage": "https://quartz-themes.github.io/monokai-filtersun-spectrum"
+}

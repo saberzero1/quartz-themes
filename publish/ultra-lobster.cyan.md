@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: kneecaps
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ultra-lobster.cyan/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/ultra-lobster.cyan`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ultra-lobster.cyan/README.md">Full install instructions</a>
 
-| Name                 | Modes                     | Compatibility                                                                                   | License                                                                                                                                                   |
-| -------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ultra-lobster.cyan` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ultra-lobster.cyan/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name                 | Modes                     | Compatibility                                                                                   | Install                                   | License                                                                                                                                                   |
+| -------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `ultra-lobster.cyan` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/ultra-lobster.cyan` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ultra-lobster.cyan/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

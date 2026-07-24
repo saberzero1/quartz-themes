@@ -1,0 +1,33 @@
+{
+  "name": "@quartz-themes/catppuccin",
+  "version": "1.0.0",
+  "description": "Catppuccin theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json",
+    "./frappe": "./variants/frappe.json",
+    "./macchiato": "./variants/macchiato.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE",
+    "variants/"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "catppuccin"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/catppuccin.git"
+  },
+  "homepage": "https://quartz-themes.github.io/catppuccin"
+}

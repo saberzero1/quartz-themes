@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: Josh Kasap
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/faded/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/faded`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/faded/README.md">Full install instructions</a>
 
-| Name    | Modes                     | Compatibility                                                                                     | License                                                                                                                                              |
-| ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `faded` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/faded/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
+| Name    | Modes                     | Compatibility                                                                                     | Install                      | License                                                                                                                                              |
+| ------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `faded` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/faded` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/faded/LICENSE.md"><img src="media/license/gpl-2.0.svg" alt="GPL-2.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

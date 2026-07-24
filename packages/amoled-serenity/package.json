@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/amoled-serenity",
+  "version": "1.0.0",
+  "description": "Amoled Serenity theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "amoled-serenity"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/amoled-serenity.git"
+  },
+  "homepage": "https://quartz-themes.github.io/amoled-serenity"
+}

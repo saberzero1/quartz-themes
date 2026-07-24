@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/glass-robo",
+  "version": "1.0.0",
+  "description": "Glass Robo theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "glass-robo"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/glass-robo.git"
+  },
+  "homepage": "https://quartz-themes.github.io/glass-robo"
+}

@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://georgeazma.github.io" target="_blank" rel="noopener noreferrer">GeorgeAzma</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/transient/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/transient`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/transient/README.md">Full install instructions</a>
 
-| Name        | Modes                     | Compatibility                                  | License                                                                                                                                          |
-| ----------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `transient` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/transient/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name        | Modes                     | Compatibility                                  | Install                          | License                                                                                                                                          |
+| ----------- | ------------------------- | ---------------------------------------------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `transient` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/transient` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/transient/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/davidgolding" target="_blank" rel="noopener noreferrer">David Golding</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/big-sur-aesthetic/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/big-sur-aesthetic`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/big-sur-aesthetic/README.md">Full install instructions</a>
 
-| Name                | Modes                     | Compatibility                                                                               | License                                                                                                                                                              |
-| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `big-sur-aesthetic` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/big-sur-aesthetic/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name                | Modes                     | Compatibility                                                                               | Install                                  | License                                                                                                                                                              |
+| ------------------- | ------------------------- | ------------------------------------------------------------------------------------------- | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `big-sur-aesthetic` | ![[media/both.svg\|BOTH]] | <img src="media/removed.svg" alt="REMOVED"/> <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/big-sur-aesthetic` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/big-sur-aesthetic/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

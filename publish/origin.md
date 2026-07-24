@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/Bluemoondragon07" target="_blank" rel="noopener noreferrer">Ha'ani Whitlock</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/origin/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/origin`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/origin/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                                   |
-| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `origin` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/origin/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name     | Modes                     | Compatibility                                                                                     | Install                       | License                                                                                                                                                   |
+| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `origin` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/origin` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/origin/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

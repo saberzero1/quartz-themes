@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/noctis-family",
+  "version": "1.0.0",
+  "description": "Noctis Family theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "noctis-family"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/noctis-family.git"
+  },
+  "homepage": "https://quartz-themes.github.io/noctis-family"
+}

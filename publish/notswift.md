@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/davidjroos" target="_blank" rel="noopener noreferrer">David Roos</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/notswift/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/notswift`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/notswift/README.md">Full install instructions</a>
 
-| Name       | Modes                     | Compatibility                                  | License                                                                                                                                                 |
-| ---------- | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `notswift` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/notswift/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name       | Modes                     | Compatibility                                  | Install                         | License                                                                                                                                                 |
+| ---------- | ------------------------- | ---------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `notswift` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/notswift` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/notswift/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

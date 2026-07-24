@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/default",
+  "version": "1.0.0",
+  "description": "Default theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "default"
+  ],
+  "license": "No SPDX ID Found",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/default.git"
+  },
+  "homepage": "https://quartz-themes.github.io/default"
+}

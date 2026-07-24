@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: Floodlight
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velocity.nordblau-metalic/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/velocity.nordblau-metalic`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/velocity.nordblau-metalic/README.md">Full install instructions</a>
 
-| Name                        | Modes                     | Compatibility                                                                                   | License                                                                                                                                                                  |
-| --------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `velocity.nordblau-metalic` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/velocity.nordblau-metalic/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name                        | Modes                     | Compatibility                                                                                   | Install                                          | License                                                                                                                                                                  |
+| --------------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `velocity.nordblau-metalic` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/velocity.nordblau-metalic` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/velocity.nordblau-metalic/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

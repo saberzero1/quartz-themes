@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://we-crafted.com" target="_blank" rel="noopener noreferrer">Seyhun Akyurek</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/crafted/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/crafted`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/crafted/README.md">Full install instructions</a>
 
-| Name      | Modes                     | Compatibility                                  | License                                                                                                                                        |
-| --------- | ------------------------- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| `crafted` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/crafted/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name      | Modes                     | Compatibility                                  | Install                        | License                                                                                                                                        |
+| --------- | ------------------------- | ---------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `crafted` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/crafted` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/crafted/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

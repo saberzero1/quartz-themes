@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: fabdub
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/matrix/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/matrix`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/matrix/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                       |
-| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| `matrix` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/matrix/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name     | Modes                     | Compatibility                                                                                     | Install                       | License                                                                                                                                       |
+| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `matrix` | ![[media/dark.svg\|DARK]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/matrix` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/matrix/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

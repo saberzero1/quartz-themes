@@ -1500,8 +1500,8 @@ body.theme-light {
   --content-line-width: min(var(--line-width), var(--max-width)) !important;
   --content-margin: auto !important;
   --content-margin-start: max(
-    calc(50% - var(--line-width)/2),
-    calc(50% - var(--max-width)/2)
+    calc(50% - var(--line-width) / 2),
+    calc(50% - var(--max-width) / 2)
   ) !important;
   --dark: #1a1a1a !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;
@@ -2779,8 +2779,8 @@ body.theme-dark {
   --content-line-width: min(var(--line-width), var(--max-width)) !important;
   --content-margin: auto !important;
   --content-margin-start: max(
-    calc(50% - var(--line-width)/2),
-    calc(50% - var(--max-width)/2)
+    calc(50% - var(--line-width) / 2),
+    calc(50% - var(--max-width) / 2)
   ) !important;
   --dark: #f2f2f7 !important;
   --embed-decoration-color: var(--background-modifier-border-hover) !important;

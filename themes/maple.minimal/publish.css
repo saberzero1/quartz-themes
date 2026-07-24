@@ -38,7 +38,7 @@ body.theme-light {
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --background-modifier-border: hsla(
     var(--theme-accent-inactive-h),
-    calc(var(--theme-accent-inactive-s)/2),
+    calc(var(--theme-accent-inactive-s) / 2),
     var(--theme-accent-inactive-l),
     75%
   ) !important;
@@ -650,7 +650,7 @@ body.theme-light {
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: calc(
-    var(--font-text-size)/3 + var(--size-2-1)
+    var(--font-text-size) / 3 + var(--size-2-1)
   ) !important;
   --list-bullet-transform: none !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
@@ -1212,7 +1212,7 @@ body.theme-light {
   ) !important;
   --animation-delay: calc(var(--animation-dur) * 4) !important;
   --animation-dur: var(--setting-animation-time, 250ms) !important;
-  --animation-fast: calc(var(--animation-dur)/2) var(--anim-motion-smooth) !important;
+  --animation-fast: calc(var(--animation-dur) / 2) var(--anim-motion-smooth) !important;
   --animation-slow: calc(var(--animation-dur) * 2) var(--anim-motion-smooth) !important;
   --app-layout-spacing: var(
     --setting-app-layout-spacing,
@@ -1350,7 +1350,7 @@ body.theme-dark {
   --input-padding: var(--size-4-1) var(--size-4-2) !important;
   --background-modifier-border: hsla(
     var(--theme-accent-inactive-h),
-    calc(var(--theme-accent-inactive-s)/2),
+    calc(var(--theme-accent-inactive-s) / 2),
     var(--theme-accent-inactive-l),
     75%
   ) !important;
@@ -1962,7 +1962,7 @@ body.theme-dark {
   --list-bullet-end-padding: 1.3rem !important;
   --list-bullet-radius: 50% !important;
   --list-bullet-size: calc(
-    var(--font-text-size)/3 + var(--size-2-1)
+    var(--font-text-size) / 3 + var(--size-2-1)
   ) !important;
   --list-bullet-transform: none !important;
   --list-indent: calc(var(--indent-unit) * var(--indent-size)) !important;
@@ -2511,7 +2511,7 @@ body.theme-dark {
   ) !important;
   --animation-delay: calc(var(--animation-dur) * 4) !important;
   --animation-dur: var(--setting-animation-time, 250ms) !important;
-  --animation-fast: calc(var(--animation-dur)/2) var(--anim-motion-smooth) !important;
+  --animation-fast: calc(var(--animation-dur) / 2) var(--anim-motion-smooth) !important;
   --animation-slow: calc(var(--animation-dur) * 2) var(--anim-motion-smooth) !important;
   --app-layout-spacing: var(
     --setting-app-layout-spacing,
@@ -2519,10 +2519,10 @@ body.theme-dark {
   ) !important;
   --background-primary-alt-hsl: var(--base-accent-h), 8%, 13.5% !important;
   --background-primary-hsl:
-    var(--base-accent-h), calc(5% + var(--bg-delta-dark)/2),
+    var(--base-accent-h), calc(5% + var(--bg-delta-dark) / 2),
     calc(11% + var(--bg-delta-dark)) !important;
   --background-secondary-hsl:
-    calc(var(--base-accent-h) - 18), calc(6% + var(--bg-delta-dark)/2),
+    calc(var(--base-accent-h) - 18), calc(6% + var(--bg-delta-dark) / 2),
     calc(12% + var(--bg-delta-dark)) !important;
   --base-accent-h: var(--setting-accent-h-dark, 207) !important;
   --bg-delta-dark: var(--setting-bg-delta-dark, 0%) !important;

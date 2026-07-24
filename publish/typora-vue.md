@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/ZekunC" target="_blank" rel="noopener noreferrer">ZekunC</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typora-vue/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/typora-vue`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/typora-vue/README.md">Full install instructions</a>
 
-| Name         | Modes                     | Compatibility                                  | License                                                                                                                                           |
-| ------------ | ------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `typora-vue` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/typora-vue/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name         | Modes                     | Compatibility                                  | Install                           | License                                                                                                                                           |
+| ------------ | ------------------------- | ---------------------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `typora-vue` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> | `npm i @quartz-themes/typora-vue` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/typora-vue/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https//github.com/CyanVoxel" target="_blank" rel="noopener noreferrer">CyanVoxel</a>
 - Support the author: Author did not provide funding links in `manifest.json`
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vauxhall.magenta/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/vauxhall.magenta`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/vauxhall.magenta/README.md">Full install instructions</a>
 
-| Name               | Modes                     | Compatibility                                                                                   | License                                                                                                                                                 |
-| ------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `vauxhall.magenta` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vauxhall.magenta/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
+| Name               | Modes                     | Compatibility                                                                                   | Install                                 | License                                                                                                                                                 |
+| ------------------ | ------------------------- | ----------------------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `vauxhall.magenta` | ![[media/both.svg\|BOTH]] | <img src="media/partial.svg" alt="PARTIAL"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/vauxhall.magenta` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/vauxhall.magenta/LICENSE.md"><img src="media/license/mit.svg" alt="MIT"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

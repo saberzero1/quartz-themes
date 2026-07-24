@@ -8,11 +8,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/snelling-a" target="_blank" rel="noopener noreferrer">snelling-a</a>
 - Support the author: <a href="https://github.com/sponsors/snelling-a" target="_blank" rel="noopener noreferrer">Donate</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/base16`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/base16/README.md">Full install instructions</a>
 
-| Name     | Modes                     | Compatibility                                                                                     | License                                                                                                                                                   |
-| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `base16` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/base16/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
+| Name     | Modes                     | Compatibility                                                                                     | Install                       | License                                                                                                                                                   |
+| -------- | ------------------------- | ------------------------------------------------------------------------------------------------- | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `base16` | ![[media/both.svg\|BOTH]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/base16` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/base16/LICENSE.md"><img src="media/license/unlicense.svg" alt="UNLICENSE"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 

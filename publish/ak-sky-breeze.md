@@ -7,11 +7,12 @@ cssclasses:
 
 - Theme author: <a href="https://github.com/alokinkal" target="_blank" rel="noopener noreferrer">Alokin Kal</a>
 - Support the author: <a href="https://ko-fi.com/alokinkal" target="_blank" rel="noopener noreferrer">Kofi</a> | <a href="https://paypal.me/alokinkal" target="_blank" rel="noopener noreferrer">Paypalme</a>
-- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ak-sky-breeze/README.md">Install instructions</a>
+- Install: `npm install @quartz-themes/core @quartz-themes/ak-sky-breeze`
+- <a href="https://github.com/saberzero1/quartz-themes/tree/master/themes/ak-sky-breeze/README.md">Full install instructions</a>
 
-| Name            | Modes                       | Compatibility                                                                                     | License                                                                                                                                                      |
-| --------------- | --------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `ak-sky-breeze` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ak-sky-breeze/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
+| Name            | Modes                       | Compatibility                                                                                     | Install                              | License                                                                                                                                                      |
+| --------------- | --------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `ak-sky-breeze` | ![[media/light.svg\|LIGHT]] | <img src="media/checking.svg" alt="CHECKING"/> <img src="media/collection.svg" alt="COLLECTION"/> | `npm i @quartz-themes/ak-sky-breeze` | <a href="https://github.com/saberzero1/quartz-themes/tree/master/obsidian/ak-sky-breeze/LICENSE.md"><img src="media/license/gpl-3.0.svg" alt="GPL-3.0"/></a> |
 
 # Markdown Formatting Guide for Obsidian
 
