@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/silence
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "silence"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "silence"
+      mode: "dark"
 ```
 
 ## Preview

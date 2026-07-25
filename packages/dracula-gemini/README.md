@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dracula-gemini
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dracula-gemini"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dracula-gemini"
+      mode: "dark"
 ```
 
 ## Preview

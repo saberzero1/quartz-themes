@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/flamingo-noir
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "flamingo-noir"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "flamingo-noir"
+      mode: "both"
 ```
 
 ## Preview

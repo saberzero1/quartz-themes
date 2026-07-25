@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/everforest-spruce
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "everforest-spruce"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "everforest-spruce"
+      mode: "both"
 ```
 
 ## Preview

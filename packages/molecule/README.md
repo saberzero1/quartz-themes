@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/molecule
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "molecule"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "molecule"
+      mode: "dark"
 ```
 
 ## Preview

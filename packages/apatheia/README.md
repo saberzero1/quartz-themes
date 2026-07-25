@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/apatheia
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "apatheia"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "apatheia"
+      mode: "dark"
 ```
 
 ## Preview

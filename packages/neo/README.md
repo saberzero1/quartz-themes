@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/neo
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "neo"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "neo"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/material-flat
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "material-flat"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "material-flat"
+      mode: "both"
 ```
 
 ## Preview

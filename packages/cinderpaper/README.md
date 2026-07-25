@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cinderpaper
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cinderpaper"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cinderpaper"
+      mode: "both"
 ```
 
 ## Preview

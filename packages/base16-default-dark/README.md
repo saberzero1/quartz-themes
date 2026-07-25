@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/base16-default-dark
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "base16-default-dark"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "base16-default-dark"
+      mode: "both"
 ```
 
 ## Preview

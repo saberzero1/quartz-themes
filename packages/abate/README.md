@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/abate
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "abate"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "abate"
+      mode: "light"
 ```
 
 ## Preview

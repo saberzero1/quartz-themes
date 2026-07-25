@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/grounded-tierra
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "grounded-tierra"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "grounded-tierra"
+      mode: "both"
 ```
 
 ## Preview

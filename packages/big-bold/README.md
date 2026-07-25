@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/big-bold
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "big-bold"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "big-bold"
+      mode: "both"
 ```
 
 ## Preview

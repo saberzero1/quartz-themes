@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/wiselight
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "wiselight"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "wiselight"
+      mode: "light"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/friendly
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "friendly"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "friendly"
+      mode: "both"
 ```
 
 ## Preview

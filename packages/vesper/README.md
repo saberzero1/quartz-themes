@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vesper
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vesper"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vesper"
+      mode: "both"
 ```
 
 ## Preview

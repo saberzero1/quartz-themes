@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/seamless-view
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "seamless-view"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "seamless-view"
+      mode: "dark"
 ```
 
 ## Preview

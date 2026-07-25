@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/anarchy
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "anarchy"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "anarchy"
+      mode: "both"
 ```
 
 ## Preview

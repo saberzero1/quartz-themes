@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/sacred-geometry-systems
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "sacred-geometry-systems"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sacred-geometry-systems"
+      mode: "both"
 ```
 
 ## Preview

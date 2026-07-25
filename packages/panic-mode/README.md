@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/panic-mode
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "panic-mode"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "panic-mode"
+      mode: "dark"
 ```
 
 ## Preview

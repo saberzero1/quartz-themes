@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/transient
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "transient"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "transient"
+      mode: "dark"
 ```
 
 ## Preview

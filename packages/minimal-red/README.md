@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/minimal-red
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "minimal-red"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "minimal-red"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cyber-glow
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cyber-glow"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cyber-glow"
+      mode: "both"
 ```
 
 ## Preview

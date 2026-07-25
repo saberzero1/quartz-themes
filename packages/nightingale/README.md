@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nightingale
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nightingale"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nightingale"
+      mode: "dark"
 ```
 
 ## Preview

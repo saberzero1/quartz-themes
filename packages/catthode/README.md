@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/catthode
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "catthode"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "catthode"
+      mode: "dark"
 ```
 
 ## Preview

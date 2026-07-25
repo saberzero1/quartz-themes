@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vileplume
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vileplume"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vileplume"
+      mode: "both"
 ```
 
 ## Preview

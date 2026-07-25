@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/sea-glass
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "sea-glass"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sea-glass"
+      mode: "dark"
 ```
 
 ## Preview

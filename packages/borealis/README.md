@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/borealis
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "borealis"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "borealis"
+      mode: "both"
 ```
 
 ## Preview

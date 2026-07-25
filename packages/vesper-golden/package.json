@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/vesper-golden",
+  "version": "1.0.0",
+  "description": "Vesper Golden theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "vesper-golden"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/vesper-golden.git"
+  },
+  "homepage": "https://quartz-themes.github.io/vesper-golden"
+}

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/covert
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "covert"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "covert"
+      mode: "dark"
 ```
 
 ## Preview

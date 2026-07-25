@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/latsidian
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "latsidian"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "latsidian"
+      mode: "both"
 ```
 
 ## Preview

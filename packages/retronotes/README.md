@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/retronotes
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "retronotes"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retronotes"
+      mode: "both"
 ```
 
 ## Variants
@@ -32,9 +31,12 @@ plugins:
 - `retronotes.pinot-noir`
 
 ```yaml
-options:
-  theme: "retronotes"
-  variation: "blueprint"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retronotes"
+      variation: "blueprint"
+      mode: "both"
 ```
 
 ## Preview

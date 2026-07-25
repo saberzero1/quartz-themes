@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dracula-plus
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dracula-plus"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dracula-plus"
+      mode: "dark"
 ```
 
 ## Preview

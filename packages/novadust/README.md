@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/novadust
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "novadust"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "novadust"
+      mode: "dark"
 ```
 
 ## Preview

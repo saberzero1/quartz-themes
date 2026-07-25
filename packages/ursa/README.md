@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ursa
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ursa"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ursa"
+      mode: "both"
 ```
 
 ## Preview

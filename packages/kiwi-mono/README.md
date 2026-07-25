@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/kiwi-mono
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "kiwi-mono"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "kiwi-mono"
+      mode: "both"
 ```
 
 ## Preview

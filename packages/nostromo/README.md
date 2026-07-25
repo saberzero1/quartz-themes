@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nostromo
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nostromo"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nostromo"
+      mode: "dark"
 ```
 
 ## Preview

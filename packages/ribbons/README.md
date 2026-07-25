@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ribbons
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ribbons"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ribbons"
+      mode: "both"
 ```
 
 ## Preview

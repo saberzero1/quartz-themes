@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/lavender-mist
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "lavender-mist"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "lavender-mist"
+      mode: "light"
 ```
 
 ## Preview

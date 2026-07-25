@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pink-muted-rose
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pink-muted-rose"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pink-muted-rose"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/sei
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "sei"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sei"
+      mode: "both"
 ```
 
 ## Preview

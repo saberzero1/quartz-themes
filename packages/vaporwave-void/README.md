@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vaporwave-void
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vaporwave-void"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vaporwave-void"
+      mode: "dark"
 ```
 
 ## Preview

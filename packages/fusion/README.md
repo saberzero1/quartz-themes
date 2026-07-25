@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/fusion
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "fusion"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "fusion"
+      mode: "light"
 ```
 
 ## Preview

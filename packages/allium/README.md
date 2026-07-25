@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/allium
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "allium"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "allium"
+      mode: "both"
 ```
 
 ## Preview

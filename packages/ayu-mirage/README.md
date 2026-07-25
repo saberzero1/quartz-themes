@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ayu-mirage
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ayu-mirage"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ayu-mirage"
+      mode: "dark"
 ```
 
 ## Preview

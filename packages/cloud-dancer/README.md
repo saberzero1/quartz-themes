@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cloud-dancer
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cloud-dancer"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cloud-dancer"
+      mode: "both"
 ```
 
 ## Preview

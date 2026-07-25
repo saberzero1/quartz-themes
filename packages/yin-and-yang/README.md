@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/yin-and-yang
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "yin-and-yang"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "yin-and-yang"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsdn-dark-rmx
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsdn-dark-rmx"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsdn-dark-rmx"
+      mode: "dark"
 ```
 
 ## Preview

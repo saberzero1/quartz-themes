@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nichneumor
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nichneumor"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nichneumor"
+      mode: "both"
 ```
 
 ## Preview

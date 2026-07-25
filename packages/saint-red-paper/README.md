@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/saint-red-paper
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "saint-red-paper"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "saint-red-paper"
+      mode: "both"
 ```
 
 ## Preview

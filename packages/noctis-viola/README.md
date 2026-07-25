@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/noctis-viola
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "noctis-viola"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "noctis-viola"
+      mode: "both"
 ```
 
 ## Preview

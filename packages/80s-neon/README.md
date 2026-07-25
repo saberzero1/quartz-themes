@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/80s-neon
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "80s-neon"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "80s-neon"
+      mode: "dark"
 ```
 
 ## Preview

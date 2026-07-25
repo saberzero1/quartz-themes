@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsidianite
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsidianite"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsidianite"
+      mode: "dark"
 ```
 
 ## Preview

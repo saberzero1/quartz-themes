@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/notation
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "notation"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "notation"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/soothe
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "soothe"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "soothe"
+      mode: "both"
 ```
 
 ## Preview

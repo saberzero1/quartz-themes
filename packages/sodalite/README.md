@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/sodalite
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "sodalite"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sodalite"
+      mode: "dark"
 ```
 
 ## Preview

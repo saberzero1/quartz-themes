@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/protocolblue
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "protocolblue"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "protocolblue"
+      mode: "dark"
 ```
 
 ## Preview

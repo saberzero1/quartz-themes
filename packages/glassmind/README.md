@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/glassmind
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "glassmind"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "glassmind"
+      mode: "both"
 ```
 
 ## Preview

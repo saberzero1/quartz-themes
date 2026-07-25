@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pine-forest-berry
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pine-forest-berry"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pine-forest-berry"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/milk-tea
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "milk-tea"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "milk-tea"
+      mode: "both"
 ```
 
 ## Preview

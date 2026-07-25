@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/rezin
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "rezin"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "rezin"
+      mode: "dark"
 ```
 
 ## Preview

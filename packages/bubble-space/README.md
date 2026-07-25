@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/bubble-space
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "bubble-space"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "bubble-space"
+      mode: "both"
 ```
 
 ## Preview

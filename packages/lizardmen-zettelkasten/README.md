@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/lizardmen-zettelkasten
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "lizardmen-zettelkasten"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "lizardmen-zettelkasten"
+      mode: "dark"
 ```
 
 ## Preview

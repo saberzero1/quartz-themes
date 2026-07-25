@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/spring
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "spring"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "spring"
+      mode: "both"
 ```
 
 ## Preview

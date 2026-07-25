@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/california-coast
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "california-coast"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "california-coast"
+      mode: "both"
 ```
 
 ## Preview

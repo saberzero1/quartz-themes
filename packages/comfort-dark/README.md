@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/comfort-dark
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "comfort-dark"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "comfort-dark"
+      mode: "dark"
 ```
 
 ## Preview

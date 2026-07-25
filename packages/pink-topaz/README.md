@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pink-topaz
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pink-topaz"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pink-topaz"
+      mode: "both"
 ```
 
 ## Preview

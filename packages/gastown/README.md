@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/gastown
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "gastown"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "gastown"
+      mode: "light"
 ```
 
 ## Preview

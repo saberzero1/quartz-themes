@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/glass-robo
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "glass-robo"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "glass-robo"
+      mode: "dark"
 ```
 
 ## Preview

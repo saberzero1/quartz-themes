@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/willemstad
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "willemstad"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "willemstad"
+      mode: "both"
 ```
 
 ## Preview

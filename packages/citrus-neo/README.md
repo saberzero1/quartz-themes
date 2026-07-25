@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/citrus-neo
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "citrus-neo"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "citrus-neo"
+      mode: "both"
 ```
 
 ## Preview

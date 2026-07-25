@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/old-world
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "old-world"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "old-world"
+      mode: "dark"
 ```
 
 ## Preview

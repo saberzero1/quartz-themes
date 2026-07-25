@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/bureau
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "bureau"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "bureau"
+      mode: "both"
 ```
 
 ## Preview

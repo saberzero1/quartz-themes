@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nightly-wolf
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nightly-wolf"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nightly-wolf"
+      mode: "both"
 ```
 
 ## Preview

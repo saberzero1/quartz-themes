@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/moonlight
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "moonlight"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "moonlight"
+      mode: "both"
 ```
 
 ## Preview

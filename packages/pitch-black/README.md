@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pitch-black
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pitch-black"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pitch-black"
+      mode: "dark"
 ```
 
 ## Preview

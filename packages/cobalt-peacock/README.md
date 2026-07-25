@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cobalt-peacock
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cobalt-peacock"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cobalt-peacock"
+      mode: "dark"
 ```
 
 ## Preview

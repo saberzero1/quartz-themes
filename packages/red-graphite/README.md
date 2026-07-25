@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/red-graphite
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "red-graphite"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "red-graphite"
+      mode: "both"
 ```
 
 ## Preview

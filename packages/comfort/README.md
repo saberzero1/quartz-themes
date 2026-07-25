@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/comfort
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "comfort"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "comfort"
+      mode: "light"
 ```
 
 ## Preview

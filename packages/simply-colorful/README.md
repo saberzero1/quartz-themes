@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/simply-colorful
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "simply-colorful"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "simply-colorful"
+      mode: "both"
 ```
 
 ## Preview

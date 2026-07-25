@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/neuborder
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "neuborder"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "neuborder"
+      mode: "light"
 ```
 
 ## Preview

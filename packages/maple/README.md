@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/maple
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "maple"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "maple"
+      mode: "both"
 ```
 
 ## Variants
@@ -29,9 +28,12 @@ plugins:
 - `maple.minimal`
 
 ```yaml
-options:
-  theme: "maple"
-  variation: "default"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "maple"
+      variation: "default"
+      mode: "both"
 ```
 
 ## Preview

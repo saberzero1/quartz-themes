@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/everblush
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "everblush"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "everblush"
+      mode: "dark"
 ```
 
 ## Preview

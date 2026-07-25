@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vintage-theme
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vintage-theme"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vintage-theme"
+      mode: "dark"
 ```
 
 ## Preview

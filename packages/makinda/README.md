@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/makinda
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "makinda"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "makinda"
+      mode: "both"
 ```
 
 ## Preview

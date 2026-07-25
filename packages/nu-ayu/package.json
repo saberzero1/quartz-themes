@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/nu-ayu",
+  "version": "1.0.0",
+  "description": "Nu Ayu theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "nu-ayu"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/nu-ayu.git"
+  },
+  "homepage": "https://quartz-themes.github.io/nu-ayu"
+}

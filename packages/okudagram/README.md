@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/okudagram
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "okudagram"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "okudagram"
+      mode: "both"
 ```
 
 ## Preview

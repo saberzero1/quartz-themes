@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/sanctum-reborn
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "sanctum-reborn"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sanctum-reborn"
+      mode: "both"
 ```
 
 ## Variants
@@ -37,9 +36,12 @@ plugins:
 - `sanctum-reborn.yellow`
 
 ```yaml
-options:
-  theme: "sanctum-reborn"
-  variation: "blue"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "sanctum-reborn"
+      variation: "blue"
+      mode: "both"
 ```
 
 ## Preview

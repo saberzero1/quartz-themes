@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsidian-you
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsidian-you"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsidian-you"
+      mode: "both"
 ```
 
 ## Preview

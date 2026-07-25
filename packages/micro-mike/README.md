@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/micro-mike
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "micro-mike"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "micro-mike"
+      mode: "dark"
 ```
 
 ## Preview

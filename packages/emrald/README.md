@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/emrald
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "emrald"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "emrald"
+      mode: "both"
 ```
 
 ## Preview

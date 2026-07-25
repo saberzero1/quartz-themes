@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/kakano
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "kakano"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "kakano"
+      mode: "both"
 ```
 
 ## Variants
@@ -37,9 +36,12 @@ plugins:
 - `kakano.yellow`
 
 ```yaml
-options:
-  theme: "kakano"
-  variation: "black"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "kakano"
+      variation: "black"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pensea
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pensea"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pensea"
+      mode: "both"
 ```
 
 ## Preview

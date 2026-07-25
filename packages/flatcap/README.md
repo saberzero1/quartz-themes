@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/flatcap
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "flatcap"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "flatcap"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/zenburn
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "zenburn"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "zenburn"
+      mode: "dark"
 ```
 
 ## Preview

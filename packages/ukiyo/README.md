@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ukiyo
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ukiyo"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ukiyo"
+      mode: "both"
 ```
 
 ## Variants
@@ -32,9 +31,12 @@ plugins:
 - `ukiyo.ukiyo`
 
 ```yaml
-options:
-  theme: "ukiyo"
-  variation: "alchemy"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ukiyo"
+      variation: "alchemy"
+      mode: "both"
 ```
 
 ## Preview

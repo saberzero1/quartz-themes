@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ultra-lobster
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ultra-lobster"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ultra-lobster"
+      mode: "both"
 ```
 
 ## Variants
@@ -57,9 +56,12 @@ plugins:
 - `ultra-lobster.yellow`
 
 ```yaml
-options:
-  theme: "ultra-lobster"
-  variation: "abaddon"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ultra-lobster"
+      variation: "abaddon"
+      mode: "both"
 ```
 
 ## Preview

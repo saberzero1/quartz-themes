@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vicious
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vicious"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vicious"
+      mode: "both"
 ```
 
 ## Preview

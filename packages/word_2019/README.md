@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/word_2019
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "word_2019"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "word_2019"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dawn
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dawn"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dawn"
+      mode: "both"
 ```
 
 ## Preview

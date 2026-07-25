@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/silver
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "silver"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "silver"
+      mode: "both"
 ```
 
 ## Preview

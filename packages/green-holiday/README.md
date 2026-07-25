@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/green-holiday
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "green-holiday"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "green-holiday"
+      mode: "both"
 ```
 
 ## Preview

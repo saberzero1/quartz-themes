@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dolch
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dolch"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dolch"
+      mode: "dark"
 ```
 
 ## Preview

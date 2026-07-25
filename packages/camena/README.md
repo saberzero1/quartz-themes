@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/camena
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "camena"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "camena"
+      mode: "both"
 ```
 
 ## Preview

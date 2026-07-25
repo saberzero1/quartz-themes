@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cybertron
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cybertron"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cybertron"
+      mode: "dark"
 ```
 
 ## Preview

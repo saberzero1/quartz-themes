@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/quietus
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "quietus"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "quietus"
+      mode: "both"
 ```
 
 ## Preview

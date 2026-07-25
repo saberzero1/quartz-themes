@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nyan
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nyan"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nyan"
+      mode: "both"
 ```
 
 ## Preview

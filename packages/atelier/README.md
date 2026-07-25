@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/atelier
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "atelier"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "atelier"
+      mode: "both"
 ```
 
 ## Preview

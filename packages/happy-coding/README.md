@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/happy-coding
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "happy-coding"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "happy-coding"
+      mode: "both"
 ```
 
 ## Preview

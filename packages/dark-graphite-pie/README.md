@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dark-graphite-pie
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dark-graphite-pie"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dark-graphite-pie"
+      mode: "both"
 ```
 
 ## Preview

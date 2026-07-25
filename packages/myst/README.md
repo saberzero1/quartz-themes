@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/myst
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "myst"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "myst"
+      mode: "both"
 ```
 
 ## Preview

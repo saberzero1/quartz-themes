@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/utility-materials
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "utility-materials"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "utility-materials"
+      mode: "both"
 ```
 
 ## Preview

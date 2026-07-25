@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/noctis-family
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "noctis-family"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "noctis-family"
+      mode: "both"
 ```
 
 ## Preview

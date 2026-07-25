@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nebula
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nebula"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nebula"
+      mode: "dark"
 ```
 
 ## Preview

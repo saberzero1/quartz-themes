@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/wilcoxone
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "wilcoxone"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "wilcoxone"
+      mode: "dark"
 ```
 
 ## Preview

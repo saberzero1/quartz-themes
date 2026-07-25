@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pxld
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pxld"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pxld"
+      mode: "both"
 ```
 
 ## Preview

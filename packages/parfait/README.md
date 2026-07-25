@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/parfait
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "parfait"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "parfait"
+      mode: "light"
 ```
 
 ## Preview

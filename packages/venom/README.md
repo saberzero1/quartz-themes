@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/venom
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "venom"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "venom"
+      mode: "dark"
 ```
 
 ## Preview

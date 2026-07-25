@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/kanagawa-paper
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "kanagawa-paper"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "kanagawa-paper"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/autotape
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "autotape"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "autotape"
+      mode: "both"
 ```
 
 ## Preview

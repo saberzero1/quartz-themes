@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsidian-boom
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsidian-boom"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsidian-boom"
+      mode: "light"
 ```
 
 ## Preview

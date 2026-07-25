@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cardstock
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cardstock"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cardstock"
+      mode: "both"
 ```
 
 ## Preview

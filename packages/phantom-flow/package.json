@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/phantom-flow",
+  "version": "1.0.0",
+  "description": "Phantom Flow theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "phantom-flow"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/phantom-flow.git"
+  },
+  "homepage": "https://quartz-themes.github.io/phantom-flow"
+}

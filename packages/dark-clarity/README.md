@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dark-clarity
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dark-clarity"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dark-clarity"
+      mode: "both"
 ```
 
 ## Preview

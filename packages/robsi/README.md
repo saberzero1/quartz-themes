@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/robsi
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "robsi"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "robsi"
+      mode: "both"
 ```
 
 ## Preview

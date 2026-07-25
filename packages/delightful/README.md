@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/delightful
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "delightful"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "delightful"
+      mode: "both"
 ```
 
 ## Preview

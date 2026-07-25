@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/minimal-dark-coder
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "minimal-dark-coder"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "minimal-dark-coder"
+      mode: "dark"
 ```
 
 ## Preview

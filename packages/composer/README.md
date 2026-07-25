@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/composer
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "composer"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "composer"
+      mode: "both"
 ```
 
 ## Preview

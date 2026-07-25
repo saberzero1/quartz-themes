@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/macos
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "macos"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "macos"
+      mode: "both"
 ```
 
 ## Preview

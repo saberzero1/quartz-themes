@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/material-3-expressive
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "material-3-expressive"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "material-3-expressive"
+      mode: "both"
 ```
 
 ## Preview

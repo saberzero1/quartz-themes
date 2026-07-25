@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/terraflow
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "terraflow"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "terraflow"
+      mode: "both"
 ```
 
 ## Preview

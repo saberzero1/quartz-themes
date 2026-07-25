@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/toms-theme
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "toms-theme"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "toms-theme"
+      mode: "both"
 ```
 
 ## Preview

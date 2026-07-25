@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/kanagawa-hokusai",
+  "version": "1.0.0",
+  "description": "Kanagawa Hokusai theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "kanagawa-hokusai"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/kanagawa-hokusai.git"
+  },
+  "homepage": "https://quartz-themes.github.io/kanagawa-hokusai"
+}

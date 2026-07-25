@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/fancy-a-story
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "fancy-a-story"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "fancy-a-story"
+      mode: "both"
 ```
 
 ## Preview

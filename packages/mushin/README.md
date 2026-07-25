@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/mushin
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "mushin"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "mushin"
+      mode: "both"
 ```
 
 ## Preview

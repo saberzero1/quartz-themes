@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/abyssal
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "abyssal"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "abyssal"
+      mode: "both"
 ```
 
 ## Preview

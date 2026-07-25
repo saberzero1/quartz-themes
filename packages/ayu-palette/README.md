@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ayu-palette
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ayu-palette"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ayu-palette"
+      mode: "both"
 ```
 
 ## Preview

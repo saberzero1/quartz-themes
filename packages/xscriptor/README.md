@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/xscriptor
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "xscriptor"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "xscriptor"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/azure
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "azure"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "azure"
+      mode: "both"
 ```
 
 ## Preview

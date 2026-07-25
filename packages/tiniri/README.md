@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/tiniri
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "tiniri"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "tiniri"
+      mode: "both"
 ```
 
 ## Preview

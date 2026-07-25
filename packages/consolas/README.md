@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/consolas
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "consolas"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "consolas"
+      mode: "dark"
 ```
 
 ## Preview

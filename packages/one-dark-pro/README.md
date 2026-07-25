@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/one-dark-pro
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "one-dark-pro"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "one-dark-pro"
+      mode: "both"
 ```
 
 ## Preview

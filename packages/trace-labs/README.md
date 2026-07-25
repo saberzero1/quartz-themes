@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/trace-labs
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "trace-labs"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "trace-labs"
+      mode: "dark"
 ```
 
 ## Preview

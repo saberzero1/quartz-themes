@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/nord
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "nord"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "nord"
+      mode: "both"
 ```
 
 ## Preview

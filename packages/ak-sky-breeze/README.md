@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ak-sky-breeze
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ak-sky-breeze"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ak-sky-breeze"
+      mode: "light"
 ```
 
 ## Preview

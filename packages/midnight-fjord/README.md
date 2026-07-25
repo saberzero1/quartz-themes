@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/midnight-fjord
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "midnight-fjord"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "midnight-fjord"
+      mode: "dark"
 ```
 
 ## Preview

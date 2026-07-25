@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/terminal2k
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "terminal2k"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "terminal2k"
+      mode: "both"
 ```
 
 ## Preview

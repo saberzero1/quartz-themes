@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/subtlegold
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "subtlegold"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "subtlegold"
+      mode: "both"
 ```
 
 ## Preview

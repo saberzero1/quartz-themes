@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/framer
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "framer"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "framer"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/biggs
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "biggs"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "biggs"
+      mode: "both"
 ```
 
 ## Preview

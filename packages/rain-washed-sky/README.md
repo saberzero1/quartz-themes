@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/rain-washed-sky
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "rain-washed-sky"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "rain-washed-sky"
+      mode: "both"
 ```
 
 ## Preview

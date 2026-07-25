@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/faded
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "faded"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "faded"
+      mode: "dark"
 ```
 
 ## Preview

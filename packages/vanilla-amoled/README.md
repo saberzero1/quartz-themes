@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vanilla-amoled
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vanilla-amoled"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vanilla-amoled"
+      mode: "dark"
 ```
 
 ## Preview

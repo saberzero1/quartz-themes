@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/elegance
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "elegance"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "elegance"
+      mode: "both"
 ```
 
 ## Preview

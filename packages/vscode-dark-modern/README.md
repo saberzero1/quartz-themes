@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vscode-dark-modern
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vscode-dark-modern"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vscode-dark-modern"
+      mode: "dark"
 ```
 
 ## Preview

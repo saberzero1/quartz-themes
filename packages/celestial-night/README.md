@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/celestial-night
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "celestial-night"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "celestial-night"
+      mode: "dark"
 ```
 
 ## Preview

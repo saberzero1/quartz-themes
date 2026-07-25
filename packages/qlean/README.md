@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/qlean
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "qlean"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "qlean"
+      mode: "both"
 ```
 
 ## Preview

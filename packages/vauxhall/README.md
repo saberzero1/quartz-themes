@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vauxhall
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vauxhall"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vauxhall"
+      mode: "both"
 ```
 
 ## Variants
@@ -33,9 +32,12 @@ plugins:
 - `vauxhall.white`
 
 ```yaml
-options:
-  theme: "vauxhall"
-  variation: "blue"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vauxhall"
+      variation: "blue"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/hojicha
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "hojicha"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "hojicha"
+      mode: "dark"
 ```
 
 ## Preview

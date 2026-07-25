@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsidian-nord-enhanced
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsidian-nord-enhanced"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsidian-nord-enhanced"
+      mode: "dark"
 ```
 
 ## Preview

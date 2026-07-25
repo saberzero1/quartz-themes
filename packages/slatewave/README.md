@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/slatewave
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "slatewave"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "slatewave"
+      mode: "dark"
 ```
 
 ## Preview

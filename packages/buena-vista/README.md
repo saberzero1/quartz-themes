@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/buena-vista
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "buena-vista"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "buena-vista"
+      mode: "both"
 ```
 
 ## Preview

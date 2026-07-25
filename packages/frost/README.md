@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/frost
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "frost"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "frost"
+      mode: "both"
 ```
 
 ## Preview

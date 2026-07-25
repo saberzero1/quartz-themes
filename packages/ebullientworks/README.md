@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/ebullientworks
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "ebullientworks"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "ebullientworks"
+      mode: "both"
 ```
 
 ## Preview

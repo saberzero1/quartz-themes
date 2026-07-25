@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/lumines
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "lumines"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "lumines"
+      mode: "both"
 ```
 
 ## Preview

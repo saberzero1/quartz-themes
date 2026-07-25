@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/flexoki-warm
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "flexoki-warm"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "flexoki-warm"
+      mode: "both"
 ```
 
 ## Preview

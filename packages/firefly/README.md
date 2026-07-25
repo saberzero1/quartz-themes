@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/firefly
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "firefly"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "firefly"
+      mode: "dark"
 ```
 
 ## Preview

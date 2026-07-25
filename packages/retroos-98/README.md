@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/retroos-98
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "retroos-98"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retroos-98"
+      mode: "both"
 ```
 
 ## Preview

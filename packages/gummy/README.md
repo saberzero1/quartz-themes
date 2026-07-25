@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/gummy
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "gummy"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "gummy"
+      mode: "dark"
 ```
 
 ## Preview

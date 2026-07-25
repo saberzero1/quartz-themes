@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/lyt-mode
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "lyt-mode"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "lyt-mode"
+      mode: "dark"
 ```
 
 ## Preview

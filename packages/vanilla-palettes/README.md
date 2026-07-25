@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vanilla-palettes
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vanilla-palettes"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vanilla-palettes"
+      mode: "both"
 ```
 
 ## Variants
@@ -44,9 +43,12 @@ plugins:
 - `vanilla-palettes.tokyo-night-storm`
 
 ```yaml
-options:
-  theme: "vanilla-palettes"
-  variation: "atom-one"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vanilla-palettes"
+      variation: "atom-one"
+      mode: "both"
 ```
 
 ## Preview

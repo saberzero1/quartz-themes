@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/anuppuccin
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "anuppuccin"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "anuppuccin"
+      mode: "both"
 ```
 
 ## Preview

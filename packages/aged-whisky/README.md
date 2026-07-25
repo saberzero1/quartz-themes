@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/aged-whisky
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "aged-whisky"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "aged-whisky"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/lemons-theme
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "lemons-theme"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "lemons-theme"
+      mode: "dark"
 ```
 
 ## Preview

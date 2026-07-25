@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/jolly-holly
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "jolly-holly"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "jolly-holly"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/material-gruvbox
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "material-gruvbox"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "material-gruvbox"
+      mode: "both"
 ```
 
 ## Preview

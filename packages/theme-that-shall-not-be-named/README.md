@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/theme-that-shall-not-be-named
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "theme-that-shall-not-be-named"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "theme-that-shall-not-be-named"
+      mode: "dark"
 ```
 
 ## Preview

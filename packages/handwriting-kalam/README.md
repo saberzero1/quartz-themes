@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/handwriting-kalam
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "handwriting-kalam"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "handwriting-kalam"
+      mode: "light"
 ```
 
 ## Preview

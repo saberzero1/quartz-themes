@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/powered-by-lancer-retouched
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "powered-by-lancer-retouched"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "powered-by-lancer-retouched"
+      mode: "both"
 ```
 
 ## Preview

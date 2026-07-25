@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/karadigm
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "karadigm"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "karadigm"
+      mode: "both"
 ```
 
 ## Preview

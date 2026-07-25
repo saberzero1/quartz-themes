@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/vellum
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "vellum"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "vellum"
+      mode: "both"
 ```
 
 ## Preview

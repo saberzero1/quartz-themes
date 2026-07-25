@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/velocity
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "velocity"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "velocity"
+      mode: "both"
 ```
 
 ## Variants
@@ -33,9 +32,12 @@ plugins:
 - `velocity.touring-bronze`
 
 ```yaml
-options:
-  theme: "velocity"
-  variation: "british-racing-green"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "velocity"
+      variation: "british-racing-green"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/viridian
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "viridian"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "viridian"
+      mode: "both"
 ```
 
 ## Preview

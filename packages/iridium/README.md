@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/iridium
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "iridium"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "iridium"
+      mode: "both"
 ```
 
 ## Preview

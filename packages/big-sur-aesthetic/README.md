@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/big-sur-aesthetic
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "big-sur-aesthetic"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "big-sur-aesthetic"
+      mode: "both"
 ```
 
 ## Preview

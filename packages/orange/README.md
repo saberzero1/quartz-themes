@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/orange
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "orange"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "orange"
+      mode: "both"
 ```
 
 ## Preview

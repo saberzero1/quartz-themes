@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cognia-noir
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cognia-noir"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cognia-noir"
+      mode: "both"
 ```
 
 ## Preview

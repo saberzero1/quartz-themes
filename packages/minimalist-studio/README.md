@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/minimalist-studio
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "minimalist-studio"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "minimalist-studio"
+      mode: "both"
 ```
 
 ## Preview

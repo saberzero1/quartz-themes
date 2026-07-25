@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/catppuccin
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "catppuccin"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "catppuccin"
+      mode: "both"
 ```
 
 ## Variants
@@ -29,9 +28,12 @@ plugins:
 - `catppuccin.macchiato`
 
 ```yaml
-options:
-  theme: "catppuccin"
-  variation: "frappe"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "catppuccin"
+      variation: "frappe"
+      mode: "both"
 ```
 
 ## Preview

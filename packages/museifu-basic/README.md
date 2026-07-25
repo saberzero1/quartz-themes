@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/museifu-basic
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "museifu-basic"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "museifu-basic"
+      mode: "both"
 ```
 
 ## Preview

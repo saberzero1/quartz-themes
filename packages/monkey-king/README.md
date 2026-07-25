@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/monkey-king
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "monkey-king"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "monkey-king"
+      mode: "both"
 ```
 
 ## Preview

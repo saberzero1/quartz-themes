@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/obsidian-windows-98-edition
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "obsidian-windows-98-edition"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "obsidian-windows-98-edition"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/flexcyon
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "flexcyon"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "flexcyon"
+      mode: "both"
 ```
 
 ## Variants
@@ -28,9 +27,12 @@ plugins:
 - `flexcyon.tui`
 
 ```yaml
-options:
-  theme: "flexcyon"
-  variation: "tui"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "flexcyon"
+      variation: "tui"
+      mode: "both"
 ```
 
 ## Preview

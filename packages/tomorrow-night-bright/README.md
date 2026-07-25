@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/tomorrow-night-bright
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "tomorrow-night-bright"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "tomorrow-night-bright"
+      mode: "dark"
 ```
 
 ## Preview

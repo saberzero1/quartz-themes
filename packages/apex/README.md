@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/apex
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "apex"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "apex"
+      mode: "both"
 ```
 
 ## Preview

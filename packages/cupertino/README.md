@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cupertino
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cupertino"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cupertino"
+      mode: "both"
 ```
 
 ## Preview

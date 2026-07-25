@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/oliviers-theme
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "oliviers-theme"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "oliviers-theme"
+      mode: "both"
 ```
 
 ## Preview

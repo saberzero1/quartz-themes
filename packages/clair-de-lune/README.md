@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/clair-de-lune
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "clair-de-lune"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "clair-de-lune"
+      mode: "dark"
 ```
 
 ## Preview

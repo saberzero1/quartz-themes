@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/primary-simplified",
+  "version": "1.0.0",
+  "description": "Primary Simplified theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "primary-simplified"
+  ],
+  "license": "GPL-3.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/primary-simplified.git"
+  },
+  "homepage": "https://quartz-themes.github.io/primary-simplified"
+}

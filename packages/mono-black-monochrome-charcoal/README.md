@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/mono-black-monochrome-charcoal
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "mono-black-monochrome-charcoal"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "mono-black-monochrome-charcoal"
+      mode: "dark"
 ```
 
 ## Preview

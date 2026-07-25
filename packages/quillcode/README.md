@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/quillcode
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "quillcode"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "quillcode"
+      mode: "both"
 ```
 
 ## Preview

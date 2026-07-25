@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/gdct
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "gdct"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "gdct"
+      mode: "light"
 ```
 
 ## Preview

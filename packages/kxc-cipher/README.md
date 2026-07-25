@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/kxc-cipher
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "kxc-cipher"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "kxc-cipher"
+      mode: "dark"
 ```
 
 ## Preview

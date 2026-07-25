@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/blackbird
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "blackbird"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "blackbird"
+      mode: "dark"
 ```
 
 ## Preview

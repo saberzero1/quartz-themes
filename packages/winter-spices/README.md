@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/winter-spices
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "winter-spices"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "winter-spices"
+      mode: "light"
 ```
 
 ## Preview

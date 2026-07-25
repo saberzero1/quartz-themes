@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/wombat
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "wombat"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "wombat"
+      mode: "dark"
 ```
 
 ## Preview

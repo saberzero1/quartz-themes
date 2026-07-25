@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/carbon
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "carbon"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "carbon"
+      mode: "both"
 ```
 
 ## Preview

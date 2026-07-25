@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/abecedarium
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "abecedarium"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "abecedarium"
+      mode: "both"
 ```
 
 ## Preview

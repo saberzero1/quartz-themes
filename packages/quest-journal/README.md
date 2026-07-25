@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/quest-journal
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "quest-journal"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "quest-journal"
+      mode: "both"
 ```
 
 ## Preview

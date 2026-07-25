@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/antique-flowers
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "antique-flowers"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "antique-flowers"
+      mode: "both"
 ```
 
 ## Preview

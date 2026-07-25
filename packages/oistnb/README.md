@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/oistnb
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "oistnb"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "oistnb"
+      mode: "both"
 ```
 
 ## Preview

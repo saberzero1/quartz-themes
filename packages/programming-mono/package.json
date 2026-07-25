@@ -1,0 +1,30 @@
+{
+  "name": "@quartz-themes/programming-mono",
+  "version": "1.0.0",
+  "description": "Programming Mono theme for Quartz",
+  "main": "./theme.json",
+  "exports": {
+    ".": "./theme.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "theme.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "quartz",
+    "quartz-theme",
+    "obsidian",
+    "programming-mono"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quartz-themes/programming-mono.git"
+  },
+  "homepage": "https://quartz-themes.github.io/programming-mono"
+}

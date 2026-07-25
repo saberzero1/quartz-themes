@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/mado-11
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "mado-11"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "mado-11"
+      mode: "both"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/poimandres-extended
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "poimandres-extended"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "poimandres-extended"
+      mode: "both"
 ```
 
 ## Preview

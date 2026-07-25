@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/amber-cathode
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "amber-cathode"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "amber-cathode"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/zario
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "zario"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "zario"
+      mode: "both"
 ```
 
 ## Preview

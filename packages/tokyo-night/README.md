@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/tokyo-night
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "tokyo-night"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "tokyo-night"
+      mode: "both"
 ```
 
 ## Preview

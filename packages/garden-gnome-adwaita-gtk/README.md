@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/garden-gnome-adwaita-gtk
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "garden-gnome-adwaita-gtk"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "garden-gnome-adwaita-gtk"
+      mode: "both"
 ```
 
 ## Preview

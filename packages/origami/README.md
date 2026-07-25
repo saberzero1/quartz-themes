@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/origami
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "origami"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "origami"
+      mode: "both"
 ```
 
 ## Variants
@@ -42,9 +41,12 @@ plugins:
 - `origami.umbra`
 
 ```yaml
-options:
-  theme: "origami"
-  variation: "abaddon"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "origami"
+      variation: "abaddon"
+      mode: "both"
 ```
 
 ## Preview

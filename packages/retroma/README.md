@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/retroma
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "retroma"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retroma"
+      mode: "both"
 ```
 
 ## Variants
@@ -34,9 +33,12 @@ plugins:
 - `retroma.triadic-reversed`
 
 ```yaml
-options:
-  theme: "retroma"
-  variation: "analogous-reversed"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retroma"
+      variation: "analogous-reversed"
+      mode: "both"
 ```
 
 ## Preview

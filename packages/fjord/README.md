@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/fjord
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "fjord"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "fjord"
+      mode: "both"
 ```
 
 ## Preview

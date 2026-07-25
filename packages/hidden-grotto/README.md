@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/hidden-grotto
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "hidden-grotto"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "hidden-grotto"
+      mode: "both"
 ```
 
 ## Variants
@@ -47,9 +46,12 @@ plugins:
 - `hidden-grotto.ursaluna`
 
 ```yaml
-options:
-  theme: "hidden-grotto"
-  variation: "absol"
+plugins:
+  - source: "@quartz-themes/core"
+    options:
+      theme: "hidden-grotto"
+      variation: "absol"
+      mode: "both"
 ```
 
 ## Preview

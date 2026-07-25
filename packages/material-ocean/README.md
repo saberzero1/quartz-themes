@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/material-ocean
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "material-ocean"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "material-ocean"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pomme-notes
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pomme-notes"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pomme-notes"
+      mode: "both"
 ```
 
 ## Preview

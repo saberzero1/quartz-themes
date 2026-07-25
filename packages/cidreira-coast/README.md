@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/cidreira-coast
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "cidreira-coast"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "cidreira-coast"
+      mode: "light"
 ```
 
 ## Preview

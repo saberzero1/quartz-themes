@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/rose-pine-moon
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "rose-pine-moon"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "rose-pine-moon"
+      mode: "dark"
 ```
 
 ## Preview

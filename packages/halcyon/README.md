@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/halcyon
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "halcyon"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "halcyon"
+      mode: "dark"
 ```
 
 ## Preview

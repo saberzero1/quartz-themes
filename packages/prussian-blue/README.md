@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/prussian-blue
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "prussian-blue"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "prussian-blue"
+      mode: "dark"
 ```
 
 ## Preview

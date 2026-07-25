@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/dust
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "dust"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "dust"
+      mode: "dark"
 ```
 
 ## Preview

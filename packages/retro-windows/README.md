@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/retro-windows
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "retro-windows"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "retro-windows"
+      mode: "both"
 ```
 
 ## Preview

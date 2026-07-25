@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/agora
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "agora"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "agora"
+      mode: "dark"
 ```
 
 ## Preview

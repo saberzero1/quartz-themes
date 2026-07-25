@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/starlit-abyss
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "starlit-abyss"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "starlit-abyss"
+      mode: "both"
 ```
 
 ## Preview

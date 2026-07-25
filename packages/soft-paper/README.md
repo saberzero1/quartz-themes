@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/soft-paper
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "soft-paper"
-        mode: "both"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "soft-paper"
+      mode: "both"
 ```
 
 ## Preview

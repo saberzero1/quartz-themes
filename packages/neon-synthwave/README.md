@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/neon-synthwave
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "neon-synthwave"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "neon-synthwave"
+      mode: "dark"
 ```
 
 ## Preview

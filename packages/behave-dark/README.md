@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/behave-dark
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "behave-dark"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "behave-dark"
+      mode: "dark"
 ```
 
 ## Preview

@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/pastel-yumekawa
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "pastel-yumekawa"
-        mode: "light"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "pastel-yumekawa"
+      mode: "light"
 ```
 
 ## Preview

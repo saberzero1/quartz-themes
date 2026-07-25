@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/carpe-noctem
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "carpe-noctem"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "carpe-noctem"
+      mode: "dark"
 ```
 
 ## Preview

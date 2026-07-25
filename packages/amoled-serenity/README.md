@@ -16,11 +16,10 @@ npm install @quartz-themes/core @quartz-themes/amoled-serenity
 ```yaml
 # quartz.config.yaml
 plugins:
-  transformers:
-    - name: "@quartz-themes/core"
-      options:
-        theme: "amoled-serenity"
-        mode: "dark"
+  - source: "@quartz-themes/core"
+    options:
+      theme: "amoled-serenity"
+      mode: "dark"
 ```
 
 ## Preview
