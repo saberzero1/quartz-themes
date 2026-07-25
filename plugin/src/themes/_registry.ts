@@ -4365,6 +4365,12 @@ export const themeMetas: Record<string, ThemeMeta> = {
     variations: [],
     fonts: [],
   },
+  vitela: {
+    name: "vitela",
+    modes: ["dark", "light"],
+    variations: [],
+    fonts: [],
+  },
   void: { name: "void", modes: ["dark"], variations: [], fonts: [] },
   vortex: {
     name: "vortex",

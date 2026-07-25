@@ -21,8 +21,7 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -62,10 +61,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -123,8 +119,7 @@
   --callout-fail: var(--color-red);
   --callout-important: var(--color-cyan);
   --callout-info: var(--color-blue);
-  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3)
-    var(--size-4-6);
+  --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
   --callout-question: var(--color-orange);
   --callout-quote: 158, 158, 158;
   --callout-radius: var(--radius-s);
@@ -164,10 +159,7 @@
   --collapse-icon-color: var(--text-faint) !important;
   --collapse-icon-color-collapsed: var(--text-accent) !important;
   --graph-controls-width: 240px !important;
-  --graph-line: var(
-    --color-base-35,
-    var(--background-modifier-border-focus)
-  ) !important;
+  --graph-line: var(--color-base-35, var(--background-modifier-border-focus)) !important;
   --graph-node: var(--text-muted) !important;
   --graph-node-attachment: var(--color-yellow) !important;
   --graph-node-focused: var(--text-accent) !important;
@@ -245,26 +237,22 @@ html {
   font-weight: 400;
   src:
     local("Avenir"),
-    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff")
-      format("woff");
+    url("https://fonts.cdnfonts.com/s/71748/avenir_roman_12.woff") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZJhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZthiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -272,8 +260,7 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZNhiJ-Ek-_EeAmM.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -281,64 +268,47 @@ html {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZxhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZBhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZFhiJ-Ek-_EeAmM.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMRrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM1rTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -346,8 +316,7 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMVrTFcZZJmOpwVS.woff2) format("woff2");
   unicode-range: U+1F00-1FFF;
 }
 
@@ -355,64 +324,47 @@ html {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMprTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMZrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMdrTFcZZJmOpwVS.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Source Code Pro";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/sourcecodepro/v23/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTFcZZJmOpw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -420,54 +372,39 @@ html {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/ibmplexmono/v19/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTN1OVk6OThhvAWV8.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTN1OVk6OThhvAWV8.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVk6OThhvAWV8.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPlOVk6OThhvAWV8.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -475,46 +412,32 @@ html {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOVOVk6OThhvAWV8.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOVOVk6OThhvAWV8.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNVOVk6OThhvAWV8.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNVOVk6OThhvAWV8.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNFOVk6OThhvAWV8.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTNFOVk6OThhvAWV8.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOVk6OThhvA.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTOlOVk6OThhvA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
   font-family: "Monaco";
@@ -531,28 +454,23 @@ html {
   font-display: swap;
   font-weight: 400;
   src:
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff")
-      format("woff");
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff2") format("woff2"),
+    url("https://cdn.jsdelivr.net/npm/@fontsource/cascadia-mono@4.2.1/files/cascadia-mono-latin-ext-400-normal.woff") format("woff");
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4AJi8SJQtQ4Y.woff2) format("woff2");
   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
@@ -560,46 +478,32 @@ html {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
-    U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329,
-    U+1EA0-1EF9, U+20AB;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2)
-    format("woff2");
-  unicode-range:
-    U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304,
-    U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB,
-    U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4AJi8SJQtQ4Y.woff2) format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 @font-face {
   font-family: "Roboto Mono";
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2)
-    format("woff2");
-  unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
-    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
-    U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4AJi8SJQt.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 body {
@@ -642,11 +546,7 @@ body {
   .note-properties.metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border: 0px solid rgb(110, 110, 115);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -667,11 +567,7 @@ body {
   .metadata-container {
     background-color: var(--metadata-background);
     color: var(--text-muted);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border: 0px solid rgb(110, 110, 115);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -692,11 +588,7 @@ body {
   .note-properties-table {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(110, 110, 115);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border-color: rgb(110, 110, 115);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -718,11 +610,7 @@ body {
   .metadata-container .metadata-property {
     background-color: var(--metadata-property-background);
     color: rgb(110, 110, 115);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border-color: rgb(110, 110, 115);
     border-width: 0px;
     border-top-left-radius: 6px;
@@ -801,11 +689,7 @@ body {
     filter: var(--link-external-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: underline 1px rgba(0, 0, 0, 0.22);
@@ -834,11 +718,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: underline 1px rgba(0, 0, 0, 0.22);
@@ -866,11 +746,7 @@ body {
     filter: var(--link-unresolved-filter);
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--link-weight);
     outline: rgb(110, 110, 115) none 0px;
     text-decoration: underline 1px oklch(0.602745 0.217695 257.428 / 0.3);
@@ -954,11 +830,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(110, 110, 115) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -986,11 +858,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1018,11 +886,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: calc(var(--font-weight) + var(--bold-modifier));
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1050,11 +914,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1082,11 +942,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: rgb(34, 34, 34);
@@ -1189,11 +1045,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     color: var(--italic-color);
     cursor: grab;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 700;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration-color: rgb(29, 29, 31);
@@ -1214,11 +1066,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: rgb(0, 0, 0);
@@ -1245,11 +1093,7 @@ body {
     filter: none;
     backdrop-filter: none;
     box-shadow: none;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration: line-through;
@@ -1284,24 +1128,9 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     background-color: rgba(0, 0, 0, 0);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
@@ -1310,18 +1139,7 @@ body {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card:has(
-      ~ .result-card.focus:not(
-          :has(~ .result-card:hover, ~ .result-card:focus)
-        ),
-      ~ .result-card:focus,
-      ~ .result-card:hover
-    ) {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
     background-color: rgba(0, 0, 0, 0);
     border-color: rgb(29, 29, 31);
     border-width: 0px;
@@ -1350,24 +1168,12 @@ body {
   }
 
   a.internal-link.tag-link,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card
-    > ul
-    > li
-    > .match-tag {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
     align-items: normal;
     background-color: var(--tag-background);
     color: var(--pill-color);
     display: flex;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-size: 11.2px;
     font-weight: var(--pill-weight);
     line-height: var(--line-height-tight);
@@ -1426,11 +1232,7 @@ body {
   .search > .search-container > .search-space > * {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     outline: rgb(29, 29, 31) none 0px;
     text-decoration-color: rgb(29, 29, 31);
@@ -1452,20 +1254,11 @@ body {
     border-bottom-right-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container {
+  .search > .search-container > .search-space > .search-layout > .results-container {
     color: rgb(29, 29, 31);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    .result-card {
+  .search > .search-container > .search-space > .search-layout > .results-container .result-card {
     border-color: rgb(29, 29, 31);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -1482,90 +1275,30 @@ body {
     border-radius: 0px;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
     color: var(--nav-item-color-active);
     font-weight: var(--nav-item-weight);
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:focus
-    .card-description,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-title,
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-    .card-description {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
     color: var(--nav-item-color-active);
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .preview-container {
+  .search > .search-container > .search-space > .search-layout > .preview-container {
     color: rgb(110, 110, 115);
     background-color: rgba(0, 0, 0, 0);
     font-weight: 400;
   }
 
-  .search
-    > .search-container
-    > .search-space
-    > .search-layout
-    > .results-container
-    > .result-card:hover {
+  .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(29, 29, 31);
     border-color: rgb(29, 29, 31);
@@ -1587,8 +1320,7 @@ body {
     letter-spacing: var(--h1-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1622,8 +1354,7 @@ body {
     letter-spacing: var(--h2-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1657,8 +1388,7 @@ body {
     letter-spacing: var(--h3-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1692,8 +1422,7 @@ body {
     letter-spacing: var(--h4-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1727,8 +1456,7 @@ body {
     letter-spacing: var(--h5-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1762,8 +1490,7 @@ body {
     letter-spacing: var(--h6-letter-spacing);
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -1798,8 +1525,7 @@ body {
     letter-spacing: -0.38832px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2274,11 +2000,7 @@ body {
     margin-inline-end: 0px;
     margin-inline-start: 0px;
     font-size: 16px;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2298,11 +2020,7 @@ body {
   dd {
     color: rgb(29, 29, 31);
     font-size: 16px;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     margin: 0px 0px 0px 40px;
     margin-block-end: 0px;
     margin-block-start: 0px;
@@ -2582,11 +2300,7 @@ body {
     background-color: var(--blockquote-background-color);
     border-inline-start: 1px solid rgb(110, 110, 115);
     color: var(--text-muted);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
     font-style: var(--blockquote-font-style);
     line-height: 24px;
@@ -2758,19 +2472,11 @@ body {
     text-align: center;
     white-space-collapse: collapse;
     text-wrap-mode: wrap;
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   .katex-display > .katex > .katex-html {
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   .katex > .katex-html {
@@ -2779,17 +2485,12 @@ body {
 
   h2.page-title {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 22.1px;
     background-color: rgba(0, 0, 0, 0);
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     padding: 0px;
     padding-block-end: 0px;
     padding-block-start: 0px;
@@ -2861,11 +2562,7 @@ body {
     opacity: 1;
     background-color: var(--status-chip-background);
     color: var(--text-muted);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-size: var(--status-bar-font-size);
     text-align: start;
     padding-top: 2px;
@@ -2974,8 +2671,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout .callout-title > .callout-title-inner > p {
@@ -2986,8 +2682,7 @@ body {
   .callout > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3000,8 +2695,7 @@ body {
     --callout-color: var(--callout-default);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3036,8 +2730,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -3048,8 +2741,7 @@ body {
   .callout[data-callout="note"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3062,8 +2754,7 @@ body {
     --callout-color: var(--callout-summary);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3098,8 +2789,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
@@ -3110,8 +2800,7 @@ body {
   .callout[data-callout="abstract"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3124,8 +2813,7 @@ body {
     --callout-color: var(--callout-info);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3160,8 +2848,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -3172,8 +2859,7 @@ body {
   .callout[data-callout="info"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3186,8 +2872,7 @@ body {
     --callout-color: var(--callout-todo);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3222,8 +2907,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -3234,8 +2918,7 @@ body {
   .callout[data-callout="todo"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3248,8 +2931,7 @@ body {
     --callout-color: var(--callout-tip);
     background-color: var(--callout-tip-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3284,8 +2966,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -3296,8 +2977,7 @@ body {
   .callout[data-callout="tip"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3310,8 +2990,7 @@ body {
     --callout-color: var(--callout-success);
     background-color: var(--callout-success-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3346,8 +3025,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -3358,8 +3036,7 @@ body {
   .callout[data-callout="success"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3372,8 +3049,7 @@ body {
     --callout-color: var(--callout-question);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3408,8 +3084,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
@@ -3420,8 +3095,7 @@ body {
   .callout[data-callout="question"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3434,8 +3108,7 @@ body {
     --callout-color: var(--callout-warning);
     background-color: var(--callout-warning-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3470,8 +3143,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -3482,8 +3154,7 @@ body {
   .callout[data-callout="warning"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3496,8 +3167,7 @@ body {
     --callout-color: var(--callout-error);
     background-color: var(--callout-error-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3532,8 +3202,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -3544,8 +3213,7 @@ body {
   .callout[data-callout="danger"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3558,8 +3226,7 @@ body {
     --callout-color: var(--callout-fail);
     background-color: var(--callout-error-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3594,8 +3261,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -3606,8 +3272,7 @@ body {
   .callout[data-callout="failure"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3620,8 +3285,7 @@ body {
     --callout-color: var(--callout-bug);
     background-color: var(--callout-error-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3656,8 +3320,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -3668,8 +3331,7 @@ body {
   .callout[data-callout="bug"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3682,8 +3344,7 @@ body {
     --callout-color: var(--callout-example);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3718,8 +3379,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -3730,8 +3390,7 @@ body {
   .callout[data-callout="example"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3744,8 +3403,7 @@ body {
     --callout-color: var(--callout-quote);
     background-color: var(--callout-info-bg);
     background-image: none;
-    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0% 0% / auto padding-box border-box;
     color: rgb(29, 29, 31);
     mix-blend-mode: normal;
     border: 0px solid rgb(29, 29, 31);
@@ -3780,8 +3438,7 @@ body {
     padding-inline-start: 0px;
     background-color: rgba(0, 0, 0, 0);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
   }
 
   .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -3792,8 +3449,7 @@ body {
   .callout[data-callout="quote"] > .callout-content {
     background-color: var(--callout-content-background);
     background-image: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-      border-box;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     color: var(--text-normal);
     padding: 0px;
     padding-block-end: 0px;
@@ -3806,11 +3462,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border-collapse: separate;
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     table-layout: auto;
     text-align: start;
     border: 0px rgb(29, 29, 31);
@@ -3837,11 +3489,7 @@ body {
   thead {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border: 0px rgb(29, 29, 31);
     border-bottom: 1px solid rgb(210, 210, 215);
     border-top-left-radius: 0px;
@@ -3857,11 +3505,7 @@ body {
   tbody {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   th {
@@ -3922,11 +3566,7 @@ body {
   tr {
     background-color: var(--table-header-background);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border: 0px rgb(29, 29, 31);
     border-bottom: 0px rgb(210, 210, 215);
     border-top-left-radius: 0px;
@@ -4005,11 +3645,7 @@ body {
 
   figcaption {
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-size: 16px;
     font-style: normal;
     text-align: start;
@@ -4120,21 +3756,13 @@ body {
 
   .nav-files-container .nav-file-title {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
   }
 
   .nav-files-container .nav-file-title.is-active {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     border-color: rgb(29, 29, 31);
     border-width: 0px;
     border-top-left-radius: 0px;
@@ -4145,21 +3773,13 @@ body {
 
   .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--nav-item-weight);
   }
 
   .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: var(--nav-item-weight);
   }
 
@@ -4175,22 +3795,14 @@ body {
 
   .explorer .folder-container > div {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 500;
   }
 
   .nav-files-container {
     background-color: rgba(0, 0, 0, 0);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   .bases-table {
@@ -4297,11 +3909,7 @@ body {
 
   .recent-notes > h3 {
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     font-weight: 400;
   }
 
@@ -4322,11 +3930,7 @@ body {
 
   .recent-notes > ul.recent-ul > li .section > .meta {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   ul.section-ul {
@@ -4355,11 +3959,7 @@ body {
 
   li.section-li > .section .meta {
     color: var(--text-normal);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   .darkmode {
@@ -4392,11 +3992,7 @@ body {
 
   .breadcrumb-element p {
     color: var(--text-faint);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   }
 
   #stacked-pages-container.binder-active {
@@ -6028,11 +5624,7 @@ body {
     border-inline-end: 0px none rgb(29, 29, 31);
     border-inline-start: 0px none rgb(29, 29, 31);
     color: rgb(29, 29, 31);
-    font-family:
-      "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-      SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-      monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei",
-      sans-serif;
+    font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     line-height: 25.5px;
     -webkit-background-clip: border-box;
     -webkit-box-decoration-break: slice;
@@ -6931,11 +6523,7 @@ html[saved-theme="dark"] {
     .note-properties.metadata-container {
       background-color: var(--metadata-background);
       color: var(--text-muted);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border: 0px solid rgb(161, 161, 166);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6956,11 +6544,7 @@ html[saved-theme="dark"] {
     .metadata-container {
       background-color: var(--metadata-background);
       color: var(--text-muted);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border: 0px solid rgb(161, 161, 166);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -6981,11 +6565,7 @@ html[saved-theme="dark"] {
     .note-properties-table {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(161, 161, 166);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border-color: rgb(161, 161, 166);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -7007,11 +6587,7 @@ html[saved-theme="dark"] {
     .metadata-container .metadata-property {
       background-color: var(--metadata-property-background);
       color: rgb(161, 161, 166);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border-color: rgb(161, 161, 166);
       border-width: 0px;
       border-top-left-radius: 6px;
@@ -7090,11 +6666,7 @@ html[saved-theme="dark"] {
       filter: var(--link-external-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: underline 1px rgba(255, 255, 255, 0.28);
@@ -7123,11 +6695,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: underline 1px rgba(255, 255, 255, 0.28);
@@ -7155,11 +6723,7 @@ html[saved-theme="dark"] {
       filter: var(--link-unresolved-filter);
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--link-weight);
       outline: rgb(161, 161, 166) none 0px;
       text-decoration: underline 1px oklch(0.602745 0.217695 257.428 / 0.3);
@@ -7243,11 +6807,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(161, 161, 166) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7275,11 +6835,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7307,11 +6863,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: calc(var(--font-weight) + var(--bold-modifier));
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7339,11 +6891,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7371,11 +6919,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(218, 218, 218);
@@ -7478,11 +7022,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       color: var(--italic-color);
       cursor: grab;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 700;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration-color: rgb(255, 255, 255);
@@ -7503,11 +7043,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: rgb(0, 0, 0);
@@ -7534,11 +7070,7 @@ html[saved-theme="dark"] {
       filter: none;
       backdrop-filter: none;
       box-shadow: none;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration: line-through;
@@ -7573,24 +7105,9 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       background-color: rgba(0, 0, 0, 0);
       border-top-left-radius: 0px;
       border-top-right-radius: 0px;
@@ -7599,18 +7116,7 @@ html[saved-theme="dark"] {
       color: var(--nav-item-color-active);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card:has(
-        ~ .result-card.focus:not(
-            :has(~ .result-card:hover, ~ .result-card:focus)
-          ),
-        ~ .result-card:focus,
-        ~ .result-card:hover
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card:has(~ .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)), ~ .result-card:focus, ~ .result-card:hover) {
       background-color: rgba(0, 0, 0, 0);
       border-color: rgb(255, 255, 255);
       border-width: 0px;
@@ -7639,24 +7145,12 @@ html[saved-theme="dark"] {
     }
 
     a.internal-link.tag-link,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card
-      > ul
-      > li
-      > .match-tag {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card > ul > li > .match-tag {
       align-items: normal;
       background-color: var(--tag-background);
       color: var(--pill-color);
       display: flex;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-size: 11.2px;
       font-weight: var(--pill-weight);
       line-height: var(--line-height-tight);
@@ -7715,11 +7209,7 @@ html[saved-theme="dark"] {
     .search > .search-container > .search-space > * {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       outline: rgb(255, 255, 255) none 0px;
       text-decoration-color: rgb(255, 255, 255);
@@ -7741,20 +7231,11 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container {
+    .search > .search-container > .search-space > .search-layout > .results-container {
       color: rgb(255, 255, 255);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      .result-card {
+    .search > .search-container > .search-space > .search-layout > .results-container .result-card {
       border-color: rgb(255, 255, 255);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -7771,92 +7252,30 @@ html[saved-theme="dark"] {
       border-radius: 0px;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(
-        :has(~ .result-card:hover, ~ .result-card:focus)
-      ) {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) {
       color: var(--nav-item-color-active);
       font-weight: var(--nav-item-weight);
       background-color: rgba(0, 0, 0, 0);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:focus
-      .card-description,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-title,
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus))
-      .card-description {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:focus .card-description,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-title,
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card.focus:not(:has(~ .result-card:hover, ~ .result-card:focus)) .card-description {
       color: var(--nav-item-color-active);
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .preview-container {
+    .search > .search-container > .search-space > .search-layout > .preview-container {
       color: rgb(161, 161, 166);
       background-color: rgba(0, 0, 0, 0);
       font-weight: 400;
     }
 
-    .search
-      > .search-container
-      > .search-space
-      > .search-layout
-      > .results-container
-      > .result-card:hover {
+    .search > .search-container > .search-space > .search-layout > .results-container > .result-card:hover {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
       border-color: rgb(255, 255, 255);
@@ -7878,8 +7297,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h1-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7913,8 +7331,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h2-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7948,8 +7365,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h3-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -7983,8 +7399,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h4-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8018,8 +7433,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h5-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8053,8 +7467,7 @@ html[saved-theme="dark"] {
       letter-spacing: var(--h6-letter-spacing);
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8089,8 +7502,7 @@ html[saved-theme="dark"] {
       letter-spacing: -0.38832px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8565,11 +7977,7 @@ html[saved-theme="dark"] {
       margin-inline-end: 0px;
       margin-inline-start: 0px;
       font-size: 16px;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -8589,11 +7997,7 @@ html[saved-theme="dark"] {
     dd {
       color: rgb(255, 255, 255);
       font-size: 16px;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       margin: 0px 0px 0px 40px;
       margin-block-end: 0px;
       margin-block-start: 0px;
@@ -8873,11 +8277,7 @@ html[saved-theme="dark"] {
       background-color: var(--blockquote-background-color);
       border-inline-start: 1px solid rgb(161, 161, 166);
       color: var(--text-muted);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
       font-style: var(--blockquote-font-style);
       line-height: 24px;
@@ -9049,19 +8449,11 @@ html[saved-theme="dark"] {
       text-align: center;
       white-space-collapse: collapse;
       text-wrap-mode: wrap;
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     .katex-display > .katex > .katex-html {
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     .katex > .katex-html {
@@ -9070,17 +8462,12 @@ html[saved-theme="dark"] {
 
     h2.page-title {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-size: 13px;
       font-weight: 500;
       line-height: 22.1px;
       background-color: rgba(0, 0, 0, 0);
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       padding: 0px;
       padding-block-end: 0px;
       padding-block-start: 0px;
@@ -9152,11 +8539,7 @@ html[saved-theme="dark"] {
       opacity: 1;
       background-color: var(--status-chip-background);
       color: var(--text-muted);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-size: var(--status-bar-font-size);
       text-align: start;
       padding-top: 2px;
@@ -9265,8 +8648,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout .callout-title > .callout-title-inner > p {
@@ -9277,8 +8659,7 @@ html[saved-theme="dark"] {
     .callout > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9291,8 +8672,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-default);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9327,8 +8707,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="note"] .callout-title > .callout-title-inner > p {
@@ -9339,8 +8718,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="note"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9353,8 +8731,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-summary);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9389,14 +8766,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="abstract"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="abstract"] .callout-title > .callout-title-inner > p {
       color: var(--oc-callout-color);
       font-weight: var(--font-weight);
     }
@@ -9404,8 +8777,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="abstract"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9418,8 +8790,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-info);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9454,8 +8825,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="info"] .callout-title > .callout-title-inner > p {
@@ -9466,8 +8836,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="info"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9480,8 +8849,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-todo);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9516,8 +8884,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="todo"] .callout-title > .callout-title-inner > p {
@@ -9528,8 +8895,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="todo"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9542,8 +8908,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-tip);
       background-color: var(--callout-tip-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9578,8 +8943,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="tip"] .callout-title > .callout-title-inner > p {
@@ -9590,8 +8954,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="tip"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9604,8 +8967,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-success);
       background-color: var(--callout-success-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9640,8 +9002,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="success"] .callout-title > .callout-title-inner > p {
@@ -9652,8 +9013,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="success"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9666,8 +9026,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-question);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9702,14 +9061,10 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
-    .callout[data-callout="question"]
-      .callout-title
-      > .callout-title-inner
-      > p {
+    .callout[data-callout="question"] .callout-title > .callout-title-inner > p {
       color: var(--oc-callout-color);
       font-weight: var(--font-weight);
     }
@@ -9717,8 +9072,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="question"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9731,8 +9085,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-warning);
       background-color: var(--callout-warning-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9767,8 +9120,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="warning"] .callout-title > .callout-title-inner > p {
@@ -9779,8 +9131,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="warning"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9793,8 +9144,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-error);
       background-color: var(--callout-error-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9829,8 +9179,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="danger"] .callout-title > .callout-title-inner > p {
@@ -9841,8 +9190,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="danger"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9855,8 +9203,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-fail);
       background-color: var(--callout-error-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9891,8 +9238,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="failure"] .callout-title > .callout-title-inner > p {
@@ -9903,8 +9249,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="failure"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9917,8 +9262,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-bug);
       background-color: var(--callout-error-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -9953,8 +9297,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="bug"] .callout-title > .callout-title-inner > p {
@@ -9965,8 +9308,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="bug"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -9979,8 +9321,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-example);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -10015,8 +9356,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="example"] .callout-title > .callout-title-inner > p {
@@ -10027,8 +9367,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="example"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -10041,8 +9380,7 @@ html[saved-theme="dark"] {
       --callout-color: var(--callout-quote);
       background-color: var(--callout-info-bg);
       background-image: none;
-      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto
-        padding-box border-box;
+      background: rgba(255, 255, 255, 0.027) none repeat scroll 0% 0% / auto padding-box border-box;
       color: rgb(255, 255, 255);
       mix-blend-mode: normal;
       border: 0px solid rgb(255, 255, 255);
@@ -10077,8 +9415,7 @@ html[saved-theme="dark"] {
       padding-inline-start: 0px;
       background-color: rgba(0, 0, 0, 0);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 
     .callout[data-callout="quote"] .callout-title > .callout-title-inner > p {
@@ -10089,8 +9426,7 @@ html[saved-theme="dark"] {
     .callout[data-callout="quote"] > .callout-content {
       background-color: var(--callout-content-background);
       background-image: none;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box
-        border-box;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box;
       color: var(--text-normal);
       padding: 0px;
       padding-block-end: 0px;
@@ -10103,11 +9439,7 @@ html[saved-theme="dark"] {
       background-color: rgba(0, 0, 0, 0);
       border-collapse: separate;
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       table-layout: auto;
       text-align: start;
       border: 0px rgb(255, 255, 255);
@@ -10134,11 +9466,7 @@ html[saved-theme="dark"] {
     thead {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border: 0px rgb(255, 255, 255);
       border-bottom: 1px solid rgb(56, 56, 58);
       border-top-left-radius: 0px;
@@ -10154,11 +9482,7 @@ html[saved-theme="dark"] {
     tbody {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     th {
@@ -10197,8 +9521,7 @@ html[saved-theme="dark"] {
       vertical-align: var(--table-cell-vertical-alignment);
       box-shadow: none;
       text-decoration: rgb(218, 218, 218);
-      border-left: var(--table-column-first-border-width) solid
-        rgb(255, 255, 255);
+      border-left: var(--table-column-first-border-width) solid rgb(255, 255, 255);
       border-right: 0px solid rgb(255, 255, 255);
       border-top: 0px solid rgb(255, 255, 255);
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -10220,11 +9543,7 @@ html[saved-theme="dark"] {
     tr {
       background-color: var(--table-header-background);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border: 0px rgb(255, 255, 255);
       border-bottom: 0px rgb(56, 56, 58);
       border-top-left-radius: 0px;
@@ -10303,11 +9622,7 @@ html[saved-theme="dark"] {
 
     figcaption {
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-size: 16px;
       font-style: normal;
       text-align: start;
@@ -10418,21 +9733,13 @@ html[saved-theme="dark"] {
 
     .nav-files-container .nav-file-title {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
     }
 
     .nav-files-container .nav-file-title.is-active {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       border-color: rgb(255, 255, 255);
       border-width: 0px;
       border-top-left-radius: 0px;
@@ -10441,25 +9748,15 @@ html[saved-theme="dark"] {
       border-bottom-right-radius: 0px;
     }
 
-    .nav-files-container
-      li:has(> .folder-outer:not(.open))
-      > .nav-folder-title {
+    .nav-files-container li:has(> .folder-outer:not(.open)) > .nav-folder-title {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--nav-item-weight);
     }
 
     .nav-files-container li:has(> .folder-outer.open) > .nav-folder-title {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: var(--nav-item-weight);
     }
 
@@ -10475,22 +9772,14 @@ html[saved-theme="dark"] {
 
     .explorer .folder-container > div {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 500;
     }
 
     .nav-files-container {
       background-color: rgba(0, 0, 0, 0);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     .bases-table {
@@ -10597,11 +9886,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > h3 {
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       font-weight: 400;
     }
 
@@ -10622,11 +9907,7 @@ html[saved-theme="dark"] {
 
     .recent-notes > ul.recent-ul > li .section > .meta {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     ul.section-ul {
@@ -10655,11 +9936,7 @@ html[saved-theme="dark"] {
 
     li.section-li > .section .meta {
       color: var(--text-normal);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     .darkmode {
@@ -10692,11 +9969,7 @@ html[saved-theme="dark"] {
 
     .breadcrumb-element p {
       color: var(--text-faint);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
     }
 
     #stacked-pages-container.binder-active {
@@ -12328,11 +11601,7 @@ html[saved-theme="dark"] {
       border-inline-end: 0px none rgb(255, 255, 255);
       border-inline-start: 0px none rgb(255, 255, 255);
       color: rgb(255, 255, 255);
-      font-family:
-        "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace,
-        SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace, "Source Han Sans SC", "PingFang SC",
-        "Microsoft YaHei", sans-serif;
+      font-family: "IBM Plex Mono", "Berkeley Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
       line-height: 25.5px;
       -webkit-background-clip: border-box;
       -webkit-box-decoration-break: slice;
@@ -13297,10 +12566,7 @@ html[saved-theme="dark"] {
       }
     }
     li:has(> .folder-outer:not(.open)) > .folder-container:before {
-      background: var(
-        --collapse-icon-color-collapsed,
-        var(--quartz-icon-color)
-      );
+      background: var(--collapse-icon-color-collapsed, var(--quartz-icon-color));
       mask-image: var(--folder-closed-icon);
       -webkit-mask-image: var(--folder-closed-icon);
     }

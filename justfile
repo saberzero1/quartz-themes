@@ -289,14 +289,28 @@ publish-package themeName:
 publish-packages-dry:
   node scripts/publish-all.mjs --mode=tag --dry-run
 
-[group('npm'), doc('Full npm pipeline: generate → push → publish')]
+[group('npm'), doc('Sync theme registry to @quartz-themes/core and publish')]
+update-core:
+  node scripts/update-core-registry.mjs
+
+[group('npm'), doc('Sync core registry without publishing')]
+update-core-no-publish:
+  node scripts/update-core-registry.mjs --no-publish
+
+[group('npm'), doc('Preview core registry sync')]
+update-core-dry:
+  node scripts/update-core-registry.mjs --dry-run
+
+[group('npm'), doc('Full npm pipeline: update core → generate → push → publish')]
 npm-release:
+  just update-core
   just generate-packages
   just push-packages
   just publish-packages
 
-[group('npm'), doc('Single theme npm pipeline: generate → push → publish')]
+[group('npm'), doc('Single theme npm pipeline: update core → generate → push → publish')]
 npm-release-theme themeName:
+  just update-core
   just generate-package {{themeName}}
   just push-package {{themeName}}
   just publish-package {{themeName}}

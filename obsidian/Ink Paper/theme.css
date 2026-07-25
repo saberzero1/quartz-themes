@@ -1,0 +1,2420 @@
+/* @settings
+name: Workspace Layout (Cards & Panels)
+id: workspace-layout-settings
+settings:
+    -
+        id: layout-select
+        title: Select Workspace Layout
+        description: Choose between Default (flush) or Card (floating) layout.
+        type: class-select
+        allowEmpty: false
+        default: layout-default
+        options:
+            - label: Default Layout
+              value: layout-default
+            - label: Card Layout
+              value: layout-card
+    -
+        id: toggle-left-panel
+        title: Enable Custom Left Panel Background
+        description: Adjust color and corner radius for the left sidebar.
+        type: class-toggle
+        default: false
+    -
+        id: color-left-panel
+        title: Left Panel Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#F2F0E5'
+        default-dark: '#1C1B1A'
+    -
+        id: left-panel-radius-top-left
+        title: Top Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: left-panel-radius-top-right
+        title: Top Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: left-panel-radius-bottom-left
+        title: Bottom Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: left-panel-radius-bottom-right
+        title: Bottom Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: toggle-middle-panel
+        title: Enable Custom Middle Panel Background
+        description: Adjust color and corner radius for the main editor.
+        type: class-toggle
+        default: false
+    -
+        id: color-middle-panel
+        title: Middle Panel Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#F2F0E5'
+        default-dark: '#1C1B1A'
+    -
+        id: middle-panel-radius-top-left
+        title: Top Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: middle-panel-radius-top-right
+        title: Top Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: middle-panel-radius-bottom-left
+        title: Bottom Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: middle-panel-radius-bottom-right
+        title: Bottom Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: toggle-right-panel
+        title: Enable Custom Right Panel Background
+        description: Adjust color and corner radius for the right sidebar.
+        type: class-toggle
+        default: false
+    -
+        id: color-right-panel
+        title: Right Panel Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#F2F0E5'
+        default-dark: '#1C1B1A'
+    -
+        id: right-panel-radius-top-left
+        title: Top Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: right-panel-radius-top-right
+        title: Top Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: right-panel-radius-bottom-left
+        title: Bottom Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: right-panel-radius-bottom-right
+        title: Bottom Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: toggle-active-tab
+        title: Enable Custom Active Tab Background
+        type: class-toggle
+        default: false
+    -
+        id: color-active-tab
+        title: Active Tab Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#ffffff'
+        default-dark: '#262626'
+    -
+        id: toggle-vault-profile
+        title: Enable Custom Vault Profile Background
+        description: Adjust color and corner radius for the vault profile.
+        type: class-toggle
+        default: false
+    -
+        id: color-vault-profile
+        title: Vault Profile Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#E6E4D9'
+        default-dark: '#343331'
+    -
+        id: vault-profile-radius-top-left
+        title: Top Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: vault-profile-radius-top-right
+        title: Top Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: vault-profile-radius-bottom-left
+        title: Bottom Left Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: vault-profile-radius-bottom-right
+        title: Bottom Right Corner Radius
+        type: variable-number-slider
+        default: 8
+        min: 0
+        max: 30
+        step: 1
+        format: px
+    -
+        id: toggle-panel-borders
+        title: Enable Panel Borders
+        description: Apply custom borders to the Left, Middle, Right, and Vault Profile panels.
+        type: class-toggle
+        default: false
+    -
+        id: panel-border-width
+        title: Panel Border Thickness
+        type: variable-text
+        default: 1px
+    -
+        id: panel-border-color
+        title: Panel Border Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#d4d4d4'
+        default-dark: '#3f3f3f'
+    -
+        id: panel-border-style
+        title: Panel Border Style
+        type: variable-select
+        default: solid
+        options:
+            - solid
+            - dashed
+            - dotted
+    -
+        id: panel-border-radius
+        title: Panel Border Radius
+        type: variable-text
+        default: 8px
+    -
+        id: layout-gap-middle
+        title: Inner Panel Gap
+        description: Spacing BETWEEN the left, middle, and right panels.
+        type: variable-text
+        default: 5px
+    -
+        id: layout-gap-right
+        title: Right Edge Gap
+        description: Spacing on the far RIGHT edge of the window.
+        type: variable-text
+        default: 5px
+    -
+        id: layout-gap-bottom
+        title: Bottom Edge Gap
+        description: Spacing on the far BOTTOM edge of the window.
+        type: variable-text
+        default: 5px
+    -
+        id: toggle-card-bg
+        title: Enable Custom Card Background
+        description: Override the default background color and opacity for Card Layout.
+        type: class-toggle
+        default: false
+    -
+        id: card-bg-color
+        title: Card Background Color
+        type: variable-themed-color
+        opacity: true
+        format: hex
+        default-light: '#F2F0E5'
+        default-dark: '#1C1B1A'
+*/
+
+/* @settings
+name: Paper Texture Engine
+id: paper-texture-engine
+settings:
+    -
+        id: bg-textures-light
+        title: Light Mode Background
+        type: heading
+        collapsed: false
+        level: 3
+    -
+        id: paper-bg-color-opacity-light
+        title: Base Background Opacity (Light)
+        type: variable-number-slider
+        default: 0.50
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: textures-light
+        title: ""
+        description: "<h3 style='text-align: center;'>Texture</h3>"
+        type: info-text
+        markdown: true
+    -
+        id: paper-bg-image-light
+        title: Texture URL (Light)
+        description: 'Ensure you wrap the link in url("...")'
+        type: variable-text
+        default: ''
+    -
+        id: paper-bg-image-opacity-light
+        title: Texture Opacity (Light)
+        type: variable-number-slider
+        default: 0.5
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: paper-bg-blend-light
+        title: Texture Blend Mode (Light)
+        type: variable-select
+        default: normal
+        options:
+            - normal
+            - darken
+            - multiply
+            - color-burn
+            - lighten
+            - screen
+            - color-dodge
+            - overlay
+            - soft-light
+            - hard-light
+            - difference
+            - exclusion
+            - hue
+            - saturation
+            - color
+            - luminosity
+            - plus-lighter
+            - plus-darker
+    -
+        id: tint-light
+        title: ""
+        description: "<h3 style='text-align: center;'>Tint</h3>"
+        type: info-text
+        markdown: true
+    -
+        id: paper-tint-color-light
+        title: Tint Color (Light)
+        type: variable-color
+        format: hex
+        default: '#FFFCF0'
+    -
+        id: paper-tint-opacity-light
+        title: Tint Opacity (Light)
+        type: variable-number-slider
+        default: 0.50
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: paper-tint-blend-light
+        title: Tint Blend Mode (Light)
+        type: variable-select
+        default: multiply
+        options:
+            - normal
+            - darken
+            - multiply
+            - color-burn
+            - lighten
+            - screen
+            - color-dodge
+            - overlay
+            - soft-light
+            - hard-light
+            - difference
+            - exclusion
+            - hue
+            - saturation
+            - color
+            - luminosity
+            - plus-lighter
+            - plus-darker
+    -
+        id: bg-textures-dark
+        title: Dark Mode Background
+        type: heading
+        collapsed: false
+        level: 3
+    -
+        id: paper-bg-color-opacity-dark
+        title: Base Background Opacity (Dark)
+        type: variable-number-slider
+        default: 0.50
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: textures-dark
+        title: ""
+        description: "<h3 style='text-align: center;'>Texture</h3>"
+        type: info-text
+        markdown: true
+    -
+        id: paper-bg-image-dark
+        title: Texture URL (Dark)
+        description: 'Ensure you wrap the link in url("...")'
+        type: variable-text
+        default: ''
+    -
+        id: paper-bg-image-opacity-dark
+        title: Texture Opacity (Dark)
+        type: variable-number-slider
+        default: 0.50
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: paper-bg-blend-dark
+        title: Texture Blend Mode (Dark)
+        type: variable-select
+        default: normal
+        options:
+            - normal
+            - darken
+            - multiply
+            - color-burn
+            - lighten
+            - screen
+            - color-dodge
+            - overlay
+            - soft-light
+            - hard-light
+            - difference
+            - exclusion
+            - hue
+            - saturation
+            - color
+            - luminosity
+            - plus-lighter
+            - plus-darker
+    -
+        id: tint-dark
+        title: ""
+        description: "<h3 style='text-align: center;'>Tint</h3>"
+        type: info-text
+        markdown: true
+    -
+        id: paper-tint-color-dark
+        title: Tint Color (Dark)
+        type: variable-color
+        format: hex
+        default: '#100F0F'
+    -
+        id: paper-tint-opacity-dark
+        title: Tint Opacity (Dark)
+        type: variable-number-slider
+        default: 0.50
+        min: 0.0
+        max: 1.0
+        step: 0.05
+    -
+        id: paper-tint-blend-dark
+        title: Tint Blend Mode (Dark)
+        type: variable-select
+        default: overlay
+        options:
+            - normal
+            - darken
+            - multiply
+            - color-burn
+            - lighten
+            - screen
+            - color-dodge
+            - overlay
+            - soft-light
+            - hard-light
+            - difference
+            - exclusion
+            - hue
+            - saturation
+            - color
+            - luminosity
+            - plus-lighter
+            - plus-darker
+*/
+
+/* ==========================================================
+   1. LIGHT MODE COLOR PALETTE
+   ========================================================== */
+.theme-light {
+  --color-red-rgb: 175, 48, 41;
+  --color-orange-rgb: 188, 82, 21;
+  --color-yellow-rgb: 173, 131, 1;
+  --color-green-rgb: 102, 128, 11;
+  --color-cyan-rgb: 36, 131, 123;
+  --color-blue-rgb: 32, 94, 166;
+  --color-purple-rgb: 94, 64, 157;
+  --color-pink-rgb: 160, 47, 111;
+
+  --color-red: #AF3029;
+  --color-orange: #BC5215;
+  --color-yellow: #AD8301;
+  --color-green: #66800B;
+  --color-cyan: #24837B;
+  --color-blue: #205EA6;
+  --color-purple: #5E409D;
+  --color-pink: #A02F6F;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  --color-base-00: #FFFCF0;
+  --color-base-05: #FFFCF0;
+  --color-base-10: #F2F0E5;
+  --color-base-20: #F2F0E5;
+  --color-base-25: #E6E4D9;
+  --color-base-30: #E6E4D9;
+  --color-base-35: #DAD8CE;
+  --color-base-40: #CECDC3;
+  --color-base-50: #B7B5AC;
+  --color-base-60: #878580;
+  --color-base-70: #6F6E69;
+  --color-base-100: #100F0F;
+
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --icon-color: var(--color-base-70);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-10);
+  --background-secondary-alt: var(--color-base-00);
+  --background-tertiary: var(--color-base-40);
+
+  --background-modifier-hover: rgba(16, 15, 15, 0.07);
+  --background-modifier-border: var(--color-base-35);
+  --background-modifier-border-hover: var(--color-base-40);
+  --background-modifier-border-focus: var(--color-base-50);
+
+  --background-card: var(--color-base-30);
+
+  --radius-s: 6px;
+  --divider-color: transparent;
+
+  --input-shadow: var(--input-shadow-light);
+  --input-shadow-light: 0px 4px 8px -4px rgba(0, 0, 0, 0.16), inset 0px -1px 0px rgba(0, 0, 0, 0.04), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.12), inset 0px 2px 0.75px rgba(255, 255, 255, 0.4), inset 0px -3px 0.75px rgba(0, 0, 0, 0.04);
+}
+
+/* ==========================================================
+   2. DARK MODE COLOR PALETTE
+   ========================================================== */
+.theme-dark {
+  --color-red-rgb: 209, 77, 65;
+  --color-orange-rgb: 218, 112, 44;
+  --color-yellow-rgb: 208, 162, 21;
+  --color-green-rgb: 135, 154, 57;
+  --color-cyan-rgb: 58, 169, 159;
+  --color-blue-rgb: 67, 133, 190;
+  --color-purple-rgb: 139, 126, 200;
+  --color-pink-rgb: 206, 93, 151;
+
+  --color-red: #D14D41;
+  --color-orange: #DA702C;
+  --color-yellow: #D0A215;
+  --color-green: #879A39;
+  --color-cyan: #3AA99F;
+  --color-blue: #4385BE;
+  --color-purple: #8B7EC8;
+  --color-pink: #CE5D97;
+
+  --accent-h: 175;
+  --accent-s: 57%;
+  --accent-l: 33%;
+
+  --color-base-00: #100F0F;
+  --color-base-05: #100F0F;
+  --color-base-10: #1C1B1A;
+  --color-base-20: #1C1B1A;
+  --color-base-25: #282726;
+  --color-base-30: #282726;
+  --color-base-35: #343331;
+  --color-base-40: #403E3C;
+  --color-base-50: #575653;
+  --color-base-60: #6F6E69;
+  --color-base-70: #878580;
+  --color-base-100: #CECDC3;
+
+  --text-normal: var(--color-base-100);
+  --text-muted: var(--color-base-70);
+  --text-faint: var(--color-base-50);
+  --icon-color: var(--color-base-70);
+
+  --background-primary: var(--color-base-00);
+  --background-primary-alt: var(--color-base-10);
+  --background-secondary: var(--color-base-10);
+  --background-secondary-alt: var(--color-base-00);
+  --background-tertiary: var(--color-base-40);
+
+  --background-card: var(--color-base-30);
+
+  --background-modifier-hover: rgba(206, 205, 195, 0.08);
+  --background-modifier-border: var(--color-base-35);
+  --background-modifier-border-hover: var(--color-base-40);
+  --background-modifier-border-focus: var(--color-base-50);
+
+  --radius-s: 6px;
+  --divider-color: transparent;
+
+  --input-shadow: var(--input-shadow-dark);
+  --input-shadow-dark: 0px 4px 8px -4px rgba(0, 0, 0, 0.32), 0px 1px 2px rgba(0, 0, 0, 0.32), 0px 0px 0px 1px rgba(0, 0, 0, 0.32), 0px 0px 1px 1px rgba(0, 0, 0, 0.12), inset 0px 1px 0.75px rgba(255, 255, 255, 0.24), inset 0px -2px 0.75px rgba(0, 0, 0, 0.16);
+}
+
+/* ==========================================================
+   03. SHARED GLOBAL VARIABLES & UI ANCHORS
+   ========================================================== */
+body {
+  --card-border-color: hsla(var(--interactive-accent-hsl), 0.55);
+}
+
+/* ZERO SPECIFICITY FALLBACKS
+   These provide defaults for the UI, but wrapping them in :where() means
+   they have 0,0,0 specificity. This guarantees that when Style Settings
+   adds custom colors to the <body> tag, it successfully overrides them! */
+
+:where(body.theme-light) {
+  /* UI Layout Color Anchors */
+  --color-left-panel: #ffffff;
+  --color-middle-panel: #ffffff;
+  --color-right-panel: #ffffff;
+  --color-active-tab: #ffffff;
+  --color-vault-profile: #e3e3e3;
+  --card-bg-color: #ffffff;
+
+  /* Paper Engine Color Anchors */
+  --paper-bg-image-light: url("data:image/png;base64,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");
+  --paper-bg-image-opacity-light: 1;
+  --paper-bg-blend-light: normal;
+  --paper-tint-color-light: #FFFCF0;
+  --paper-tint-opacity-light: 0.50;
+  --paper-tint-blend-light: multiply;
+}
+
+:where(body.theme-dark) {
+  /* UI Layout Color Anchors */
+  --color-left-panel: #2c2c2c;
+  --color-middle-panel: #2c2c2c;
+  --color-right-panel: #2c2c2c;
+  --color-active-tab: #262626;
+  --color-vault-profile: #363636;
+  --card-bg-color: #2c2c2c;
+
+  /* Paper Engine Color Anchors */
+  --paper-bg-image-dark: url("data:image/png;base64,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");
+  --paper-bg-image-opacity-dark: 0.50;
+  --paper-bg-blend-dark: normal;
+  --paper-tint-color-dark: #100F0F;
+  --paper-tint-opacity-dark: 0.50;
+  --paper-tint-blend-dark: overlay;
+}
+
+/* ==========================================================
+   04. STYLE SETTINGS — CONDITIONAL HIDING
+   ========================================================== */
+
+/* Panel-specific controls */
+body:not(.toggle-left-panel) .setting-item:is(
+    [data-id$="color-left-panel"],
+    [data-id$="left-panel-radius-top-left"],
+    [data-id$="left-panel-radius-top-right"],
+    [data-id$="left-panel-radius-bottom-left"],
+    [data-id$="left-panel-radius-bottom-right"]
+),
+body:not(.toggle-middle-panel) .setting-item:is(
+    [data-id$="color-middle-panel"],
+    [data-id$="middle-panel-radius-top-left"],
+    [data-id$="middle-panel-radius-top-right"],
+    [data-id$="middle-panel-radius-bottom-left"],
+    [data-id$="middle-panel-radius-bottom-right"]
+),
+body:not(.toggle-right-panel) .setting-item:is(
+    [data-id$="color-right-panel"],
+    [data-id$="right-panel-radius-top-left"],
+    [data-id$="right-panel-radius-top-right"],
+    [data-id$="right-panel-radius-bottom-left"],
+    [data-id$="right-panel-radius-bottom-right"]
+),
+body:not(.toggle-active-tab) .setting-item[data-id$="color-active-tab"],
+body:not(.toggle-vault-profile) .setting-item:is(
+    [data-id$="color-vault-profile"],
+    [data-id$="vault-profile-radius-top-left"],
+    [data-id$="vault-profile-radius-top-right"],
+    [data-id$="vault-profile-radius-bottom-left"],
+    [data-id$="vault-profile-radius-bottom-right"]
+),
+body:not(.toggle-panel-borders) .setting-item:is(
+    [data-id$="panel-border-width"],
+    [data-id$="panel-border-color"],
+    [data-id$="panel-border-style"],
+    [data-id$="panel-border-radius"]
+) {
+    display: none !important;
+}
+
+/* Card background toggle exists only in Card Layout */
+body:not(.layout-card) .setting-item:is(
+    [data-id$="toggle-card-bg"],
+    [data-id$="card-bg-color"]
+),
+body.layout-card:not(.toggle-card-bg) .setting-item[data-id$="card-bg-color"] {
+    display: none !important;
+}
+
+/* Gap controls are useful whenever Card Layout OR Panel Borders is active. */
+body:not(.layout-card):not(.toggle-panel-borders) .setting-item:is(
+    [data-id$="layout-gap-middle"],
+    [data-id$="layout-gap-right"],
+    [data-id$="layout-gap-bottom"]
+) {
+    display: none !important;
+}
+
+/* ==========================================================
+   05. THE PAPER ENGINE (BACKGROUND COMPOSITING)
+   ========================================================== */
+
+/* Base Background Logic using color-mix */
+body.theme-light {
+  background-color: color-mix(in srgb, #FFFFFF calc(var(--paper-bg-color-opacity-light, 1) * 100%), transparent) !important;
+  background-image: none !important;
+}
+
+body.theme-dark {
+  background-color: color-mix(in srgb, #000000 calc(var(--paper-bg-color-opacity-dark, 1) * 100%), transparent) !important;
+  background-image: none !important;
+}
+
+/* Texture & Tint Layer Positioning */
+body.theme-light::before, body.theme-dark::before,
+body.theme-light::after, body.theme-dark::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Texture Layer */
+body.theme-light::before {
+  background-image: var(--paper-bg-image-light);
+  mix-blend-mode: var(--paper-bg-blend-light);
+  opacity: var(--paper-bg-image-opacity-light);
+}
+
+body.theme-dark::before {
+  background-image: var(--paper-bg-image-dark);
+  mix-blend-mode: var(--paper-bg-blend-dark);
+  opacity: var(--paper-bg-image-opacity-dark);
+}
+
+/* Tint Layer Logic using color-mix */
+body.theme-light::after {
+  background-color: color-mix(in srgb, var(--paper-tint-color-light, #FFFFFF) calc(var(--paper-tint-opacity-light, 0) * 100%), transparent);
+  mix-blend-mode: var(--paper-tint-blend-light);
+}
+
+body.theme-dark::after {
+  background-color: color-mix(in srgb, var(--paper-tint-color-dark, #000000) calc(var(--paper-tint-opacity-dark, 0) * 100%), transparent);
+  mix-blend-mode: var(--paper-tint-blend-dark);
+}
+
+/* Swatch Shield */
+.setting-item-control .color-picker-swatch,
+.setting-item-control input[type="color"],
+.style-settings-container .setting-item-control div[style*="background-color"] {
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+  background-blend-mode: normal !important;
+  filter: none !important;
+  isolation: isolate !important;
+}
+
+/* ==========================================================
+   06. WORKSPACE TRANSPARENCY & DEFAULT APP CHROME
+   ========================================================== */
+
+/* Strips default */
+body .app-container,
+body .workspace,
+body .workspace-split,
+body .workspace-tab-container,
+body .workspace-leaf,
+body .workspace-leaf-content,
+body .view-content,
+body .view-header,
+body .workspace-tab-header-container,
+body .workspace-tabs,
+body .workspace-ribbon,
+body .titlebar,
+body .titlebar-inner,
+body .titlebar-button-container,
+body .sidebar-toggle-button,
+body .workspace-tabs.mod-top-right-space {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Active tab transparency logic */
+body .workspace-tabs .workspace-tab-header.is-active,
+body:not(.is-mobile) .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active,
+body .workspace-tabs .workspace-tab-header.is-active .workspace-tab-header-inner {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 6px !important;
+  position: relative;
+}
+
+/* Active tab underline */
+body .workspace-tabs .workspace-tab-header.is-active .workspace-tab-header-inner::before {
+  content: "" !important;
+  width: calc(100% - 14px) !important;
+  height: 2px !important;
+  background-color: var(--interactive-accent) !important;
+  position: absolute !important;
+  top: auto !important;
+  bottom: 3px !important;
+  border-radius: 2px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 auto !important;
+}
+
+/* Clean up borders and split lines */
+body .workspace-leaf-resize-handle {
+  border-color: var(--background-modifier-border) !important;
+  border-width: 1px !important;
+}
+
+body .workspace-tab-header::before,
+body .workspace-tab-header::after,
+body .workspace-tab-header.is-active::before,
+body .workspace-tab-header.is-active::after {
+  display: none !important;
+}
+
+/* Clean up Left Ribbon lines */
+body .workspace-ribbon.mod-left {
+    border-right: none !important;
+}
+body .workspace-ribbon.mod-left::before,
+body .workspace-ribbon.mod-left::after {
+    display: none !important;
+}
+
+/* View Header Layout */
+body:not(.is-mobile) .view-header {
+    padding: 0 6px;
+    border: 0;
+}
+
+body:not(.is-mobile) .view-header>* {
+    padding-top: var(--size-2-3);
+    padding-bottom: var(--size-2-1);
+    --icon-size: var(--icon-m);
+    --icon-stroke: var(--icon-m-stroke-width);
+}
+
+/* ==========================================================
+   07. WORKSPACE LAYOUT & PANEL STYLE SETTINGS
+   ========================================================== */
+
+/* --- Panel Toggles & Custom Colors --- */
+body.toggle-left-panel .workspace-split.mod-left-split .workspace-tab-container {
+    background-color: var(--color-left-panel) !important;
+    border-radius:
+        var(--left-panel-radius-top-left, 8px)
+        var(--left-panel-radius-top-right, 8px)
+        var(--left-panel-radius-bottom-right, 8px)
+        var(--left-panel-radius-bottom-left, 8px);
+}
+
+body.toggle-middle-panel .workspace-split.mod-root .workspace-tab-container {
+    background-color: var(--color-middle-panel) !important;
+    border-radius:
+        var(--middle-panel-radius-top-left, 8px)
+        var(--middle-panel-radius-top-right, 8px)
+        var(--middle-panel-radius-bottom-right, 8px)
+        var(--middle-panel-radius-bottom-left, 8px);
+}
+
+body.toggle-right-panel .workspace-split.mod-right-split .workspace-tab-container {
+    background-color: var(--color-right-panel) !important;
+    border-radius:
+        var(--right-panel-radius-top-left, 8px)
+        var(--right-panel-radius-top-right, 8px)
+        var(--right-panel-radius-bottom-right, 8px)
+        var(--right-panel-radius-bottom-left, 8px);
+}
+
+body.toggle-active-tab .workspace-tab-header.is-active .workspace-tab-header-inner {
+    background-color: var(--color-active-tab) !important;
+}
+
+/* --- Border System --- */
+body.toggle-panel-borders:not(.is-mobile) .workspace-split.mod-left-split .workspace-tab-container,
+body.toggle-panel-borders:not(.is-mobile) .workspace-split.mod-root .workspace-tab-container,
+body.toggle-panel-borders:not(.is-mobile) .workspace-split.mod-right-split .workspace-tab-container {
+    border: var(--panel-border-width, 1px) var(--panel-border-style, solid) var(--card-border-color, var(--color-accent)) !important;
+    border-radius: var(--panel-border-radius, 8px) !important;
+    overflow: hidden !important;
+}
+
+/* --- Panel Gaps --- */
+body.toggle-panel-borders:not(.layout-card):not(.is-mobile) .workspace.is-left-sidedock-open .workspace-split.mod-horizontal.mod-left-split {
+    margin-right: var(--layout-gap-middle, 5px) !important;
+}
+body.toggle-panel-borders:not(.layout-card):not(.is-mobile) .workspace.is-right-sidedock-open .workspace-split.mod-horizontal.mod-right-split {
+    margin-left: var(--layout-gap-middle, 5px) !important;
+}
+body.toggle-panel-borders:not(.layout-card):not(.is-mobile) .workspace-split.mod-vertical {
+    gap: var(--layout-gap-middle, 5px) !important;
+}
+
+/* Outer Gaps */
+body.toggle-panel-borders:not(.layout-card):not(.is-mobile) .workspace {
+    padding-right: var(--layout-gap-right, 5px) !important;
+    padding-bottom: var(--layout-gap-bottom, 5px) !important;
+}
+
+/* Native Box Shadow Cleanup */
+body.toggle-panel-borders:not(.is-mobile) .workspace-tabs:not(.mod-top) .workspace-tab-container > .workspace-leaf {
+    box-shadow: none !important;
+}
+
+/* Global Resize Handle Hide (Borders/Cards) */
+body.toggle-panel-borders:not(.is-mobile) .workspace-leaf-resize-handle,
+body.layout-card:not(.is-mobile) .workspace-leaf-resize-handle {
+    opacity: 0 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+body.toggle-panel-borders:not(.is-mobile) .workspace-leaf-resize-handle::before,
+body.toggle-panel-borders:not(.is-mobile) .workspace-leaf-resize-handle::after,
+body.layout-card:not(.is-mobile) .workspace-leaf-resize-handle::before,
+body.layout-card:not(.is-mobile) .workspace-leaf-resize-handle::after {
+    display: none !important;
+}
+
+/* Vertical Dividers (Default Layout, Borders OFF) */
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+    height: 75% !important;
+    width: 2px !important;
+    top: calc((100% - 75%) / 2) !important;
+    background-color: var(--background-modifier-border) !important;
+    border: none !important;
+    transition: background-color 0.2s ease;
+    opacity: 1 !important;
+}
+
+/* Hover Accent for Default Layout */
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-leaf-resize-handle:hover,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-leaf-resize-handle:active,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-leaf-resize-handle.is-grabbing,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-left-split > .workspace-leaf-resize-handle:hover,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle:hover,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-left-split > .workspace-leaf-resize-handle:active,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle:active,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-left-split > .workspace-leaf-resize-handle.is-grabbing,
+body:not(.layout-card):not(.toggle-panel-borders):not(.is-mobile) .workspace-split.mod-right-split > .workspace-leaf-resize-handle.is-grabbing {
+    background-color: var(--color-accent) !important;
+    opacity: 1 !important;
+    transition: background-color 0.15s ease-in-out !important;
+}
+
+/* --- Card Layout --- */
+body.layout-card:not(.is-mobile) .workspace::before {
+    display: none !important;
+}
+
+body.layout-card:not(.is-mobile) .workspace-split.mod-vertical {
+    gap: var(--layout-gap-middle, 8px) !important;
+}
+body.layout-card:not(.is-mobile) .workspace.is-left-sidedock-open .workspace-split.mod-horizontal.mod-left-split {
+    margin-right: var(--layout-gap-middle, 8px) !important;
+}
+body.layout-card:not(.is-mobile) .workspace.is-right-sidedock-open .workspace-split.mod-horizontal.mod-right-split {
+    margin-left: var(--layout-gap-middle, 8px) !important;
+}
+
+body.layout-card:not(.is-mobile) .workspace {
+    padding-right: var(--layout-gap-right, 8px) !important;
+    padding-bottom: var(--layout-gap-bottom, 8px) !important;
+    margin-right: 0px !important;
+}
+
+body.layout-card:not(.is-mobile) .workspace-tab-container {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+body.layout-card:not(.toggle-left-panel) .workspace-split.mod-left-split .workspace-tab-container,
+body.layout-card:not(.toggle-middle-panel) .workspace-split.mod-root .workspace-tab-container,
+body.layout-card:not(.toggle-right-panel) .workspace-split.mod-right-split .workspace-tab-container {
+    background-color: var(--background-card) !important;
+}
+
+body.layout-card:not(.is-mobile) .workspace-tabs,
+body.layout-card:not(.is-mobile) .workspace-split {
+    overflow: visible !important;
+    background-color: transparent !important;
+}
+
+body.layout-card.toggle-card-bg:not(.is-mobile) .workspace-split.mod-left-split .workspace-tab-container,
+body.layout-card.toggle-card-bg:not(.is-mobile) .workspace-split.mod-root .workspace-tab-container,
+body.layout-card.toggle-card-bg:not(.is-mobile) .workspace-split.mod-right-split .workspace-tab-container {
+    background-color: var(--card-bg-color) !important;
+}
+
+
+/* ==========================================================
+   08. VAULT PROFILE STATE MACHINE & POSITIONING
+   ========================================================== */
+
+/* Positioning */
+body:not(.is-mobile) .workspace-split.mod-left-split {
+    position: relative;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-tabs:last-of-type .workspace-tab-container {
+    padding-bottom: 44px;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    padding: 6px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    height: 44px;
+}
+
+/* Hide vault profile border/shadow defaults */
+body .workspace-sidedock-vault-profile,
+body .workspace-drawer-vault-profile,
+body .side-dock-settings {
+  border-top: none !important;
+  box-shadow: none !important;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher {
+    height: 32px;
+    cursor: pointer;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile .workspace-drawer-vault-actions {
+    gap: var(--size-2-1);
+}
+
+/* --- Border State Machine --- */
+/* BASE */
+body:not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+/* CARD LAYOUT + VAULT PROFILE OFF */
+body.layout-card:not(.toggle-vault-profile):not(.toggle-panel-borders):not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: none !important;
+    border-top: var(--panel-border-width, 1px) var(--panel-border-style, solid) var(--panel-border-color, var(--card-border-color, var(--color-accent))) !important;
+    border-radius: 0 !important;
+}
+
+/* CARD LAYOUT + VAULT PROFILE ON */
+body.layout-card.toggle-vault-profile:not(.toggle-panel-borders):not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: none !important;
+    border-top: var(--panel-border-width, 1px) var(--panel-border-style, solid) var(--panel-border-color, var(--card-border-color, var(--color-accent))) !important;
+    border-radius:
+        var(--vault-profile-radius-top-left, 8px)
+        var(--vault-profile-radius-top-right, 8px)
+        var(--vault-profile-radius-bottom-right, 8px)
+        var(--vault-profile-radius-bottom-left, 8px) !important;
+    overflow: hidden !important;
+}
+
+body:not(.layout-card).toggle-left-panel:not(.toggle-vault-profile):not(.toggle-panel-borders):not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: none !important;
+
+    border-top:
+        var(--panel-border-width, 1px)
+        var(--panel-border-style, solid)
+        var(--panel-border-color,
+            var(--card-border-color, var(--color-accent)))
+        !important;
+
+    border-radius:
+        0
+        0
+        var(--left-panel-radius-bottom-right, 8px)
+        var(--left-panel-radius-bottom-left, 8px)
+        !important;
+
+    overflow: hidden !important;
+}
+
+
+/* DEFAULT LAYOUT + CUSTOM LEFT PANEL + VAULT PROFILE ON */
+body:not(.layout-card).toggle-left-panel.toggle-vault-profile:not(.toggle-panel-borders):not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: none !important;
+
+    border-top:
+        var(--panel-border-width, 1px)
+        var(--panel-border-style, solid)
+        var(--panel-border-color,
+            var(--card-border-color, var(--color-accent)))
+        !important;
+
+    border-radius:
+        var(--vault-profile-radius-top-left, 8px)
+        var(--vault-profile-radius-top-right, 8px)
+        var(--vault-profile-radius-bottom-right, 8px)
+        var(--vault-profile-radius-bottom-left, 8px)
+        !important;
+
+    overflow: hidden !important;
+}
+
+/* PANEL BORDERS — FINAL OVERRIDE */
+body.toggle-panel-borders:not(.is-mobile)
+.workspace-split.mod-left-split
+.workspace-sidedock-vault-profile {
+    border: var(--panel-border-width, 1px) var(--panel-border-style, solid) var(--panel-border-color, var(--card-border-color, var(--color-accent))) !important;
+    border-radius: var(--panel-border-radius, 8px) !important;
+    overflow: hidden !important;
+}
+
+/* --- Color Toggle Override --- */
+body.toggle-vault-profile .workspace-split.mod-left-split .workspace-sidedock-vault-profile,
+body.toggle-vault-profile .workspace-split.mod-left-split .workspace-drawer-vault-profile {
+    background-color: var(--color-vault-profile) !important;
+    border-radius:
+        var(--vault-profile-radius-top-left, 8px)
+        var(--vault-profile-radius-top-right, 8px)
+        var(--vault-profile-radius-bottom-right, 8px)
+        var(--vault-profile-radius-bottom-left, 8px) !important;
+    overflow: hidden;
+}
+
+body.toggle-vault-profile .workspace-sidedock-vault-profile *,
+body.toggle-vault-profile .workspace-drawer-vault-profile * {
+    background-color: transparent !important;
+}
+
+/* ==========================================================
+   09. FILE EXPLORER & NAVIGATION
+   ========================================================== */
+
+.theme-light {
+    --border-radius-activated-file-light: var(--radius-s);
+    --color-activated-file-light: var(--nav-item-color-active);
+    --background-activated-file-light: var(--nav-item-background-active);
+    --shadow-activated-file-light: none;
+}
+
+.theme-dark {
+    --border-radius-activated-file-dark: var(--radius-s);
+    --color-activated-file-dark: var(--nav-item-color-active);
+    --background-activated-file-dark: var(--nav-item-background-active);
+    --shadow-activated-file-dark: none;
+}
+
+.activated-file-default-light.theme-light {
+    --border-radius-activated-file-light: var(--radius-s) !important;
+    --color-activated-file-light: var(--nav-item-color-active) !important;
+    --background-activated-file-light: var(--nav-item-background-active) !important;
+    --shadow-activated-file-light: none !important;
+}
+
+.activated-file-default-dark.theme-dark {
+    --border-radius-activated-file-dark: var(--radius-s) !important;
+    --color-activated-file-dark: var(--nav-item-color-active) !important;
+    --background-activated-file-dark: var(--nav-item-background-active) !important;
+    --shadow-activated-file-dark: none !important;
+}
+
+.activated-file-accent-light.theme-light {
+    --border-radius-activated-file-light: var(--radius-s) !important;
+    --color-activated-file-light: var(--text-on-accent) !important;
+    --background-activated-file-light: var(--color-accent) !important;
+    --shadow-activated-file-light: none !important;
+}
+
+.activated-file-accent-dark.theme-dark {
+    --border-radius-activated-file-dark: var(--radius-s) !important;
+    --color-activated-file-dark: var(--text-on-accent) !important;
+    --background-activated-file-dark: var(--color-accent) !important;
+    --shadow-activated-file-dark: none !important;
+}
+
+.activated-file-accent-light.theme-light .nav-file-title.is-active .nav-file-tag,
+.activated-file-accent-dark.theme-dark .nav-file-title.is-active .nav-file-tag,
+.activated-file-accent-light.theme-light .tree-item-self.is-active svg,
+.activated-file-accent-dark.theme-dark .tree-item-self.is-active svg {
+    color: var(--text-on-accent) !important;
+}
+
+.activated-file-tab-style-light.theme-light {
+    --border-radius-activated-file-light: var(--border-radius-activated-tab-header-light) !important;
+    --color-activated-file-light: var(--color-activated-tab-header-light) !important;
+    --background-activated-file-light: var(--background-activated-tab-header-light) !important;
+    --shadow-activated-file-light: var(--shadow-activated-tab-header-light) !important;
+}
+
+.activated-file-tab-style-dark.theme-dark {
+    --border-radius-activated-file-dark: var(--border-radius-activated-tab-header-dark) !important;
+    --color-activated-file-dark: var(--color-activated-tab-header-dark) !important;
+    --background-activated-file-dark: var(--background-activated-tab-header-dark) !important;
+    --shadow-activated-file-dark: var(--shadow-activated-tab-header-dark) !important;
+}
+
+.activated-file-tab-style-light.theme-light .nav-file-title.is-active .nav-file-tag,
+.activated-file-tab-style-light.theme-light .tree-item-self.is-active svg {
+    color: var(--color-activated-file-light) !important;
+}
+
+.activated-file-tab-style-dark.theme-dark .nav-file-title.is-active .nav-file-tag,
+.activated-file-tab-style-dark.theme-dark .tree-item-self.is-active svg {
+    color: var(--color-activated-file-dark) !important;
+}
+
+.activated-file-customize-light {
+    --border-radius-activated-file-light: 4px;
+    --color-activated-file-light: var(--nav-item-color-active);
+    --background-activated-file-light: rgba(0, 0, 0, 0.05);
+    --shadow-activated-file-light: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.activated-file-customize-dark {
+    --border-radius-activated-file-dark: 4px;
+    --color-activated-file-light: var(--nav-item-color-active);
+    --background-activated-file-dark: rgba(255, 255, 255, 0.075);
+    --shadow-activated-file-dark: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+.activated-file-customize-light.theme-light .nav-file-title.is-active .nav-file-tag,
+.activated-file-customize-light.theme-light .tree-item-self.is-active svg {
+    color: var(--color-activated-file-light) !important;
+}
+
+.activated-file-customize-dark.theme-dark .nav-file-title.is-active .nav-file-tag,
+.activated-file-customize-dark.theme-dark .tree-item-self.is-active svg {
+    color: var(--color-activated-file-dark) !important;
+}
+
+.theme-light:not(.is-grabbing) .workspace-leaf-content[data-type="bookmarks"] .tree-item-self.is-active:hover,
+.theme-light .workspace-leaf-content[data-type="bookmarks"] .tree-item-self.is-active,
+.theme-light .mk-tree-item.nav-folder-title.is-active.is-selected,
+.theme-light .mk-tree-item.nav-file-title.is-active.is-selected,
+.theme-light:not(.is-grabbing) .nav-file-title.is-active:hover,
+.theme-light:not(.is-grabbing) .nav-folder-title.is-active:hover,
+.theme-light .nav-file-title.is-active:not(.is-being-dragged),
+.theme-light .nav-folder-title.is-active:not(.is-being-dragged) {
+    --nav-item-color-active: var(--color-activated-file-light);
+    --nav-item-color-selected: var(--color-activated-file-light);
+    border-radius: var(--border-radius-activated-file-light);
+    background: var(--background-activated-file-light) !important;
+    box-shadow: var(--shadow-activated-file-light);
+}
+
+.theme-dark:not(.is-grabbing) .workspace-leaf-content[data-type="bookmarks"] .tree-item-self.is-active:hover,
+.theme-dark .workspace-leaf-content[data-type="bookmarks"] .tree-item-self.is-active,
+.theme-dark .mk-tree-item.nav-folder-title.is-active.is-selected,
+.theme-dark .mk-tree-item.nav-file-title.is-active.is-selected,
+.theme-dark:not(.is-grabbing) .nav-file-title.is-active:hover,
+.theme-dark:not(.is-grabbing) .nav-folder-title.is-active:hover,
+.theme-dark .nav-file-title.is-active:not(.is-being-dragged),
+.theme-dark .nav-folder-title.is-active:not(.is-being-dragged) {
+    --nav-item-color-active: var(--color-activated-file-dark);
+    --nav-item-color-selected: var(--color-activated-file-dark);
+    border-radius: var(--border-radius-activated-file-dark);
+    background: var(--background-activated-file-dark) !important;
+    box-shadow: var(--shadow-activated-file-dark);
+}
+
+/* File Layout & Styling */
+.workspace-leaf-content .tree-item-self {
+    margin-bottom: var(--size-2-2);
+    position: relative;
+    border-radius: var(--border-radius-activated-file-light);
+    align-items: center;
+}
+
+.theme-dark .workspace-leaf-content .tree-item-self {
+    border-radius: var(--border-radius-activated-file-dark);
+}
+
+.workspace-leaf-content .tree-item-self :is(.tree-item-flair, .tree-item-inner) {
+    line-height: 20px;
+}
+
+/* File Tags */
+.nav-file-tag {
+    background-color: transparent;
+    color: var(--text-faint);
+    margin-left: 4px;
+}
+
+/* Padding Fix */
+.workspace-leaf-content .nav-header~.node-insert-event {
+    padding-top: var(--size-4-1);
+}
+
+/* Folder & File Icons */
+.tree-item-self .tree-item-icon {
+    height: var(--size-4-4);
+    --icon-color: currentColor;
+}
+
+.tree-item-self .tree-item-icon .svg-icon:not(.right-triangle) {
+    --icon-size: var(--icon-s);
+    --icon-stroke: var(--icon-s-stroke-width);
+}
+
+.workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon svg.svg-icon,
+.workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon svg.svg-icon {
+    color: transparent;
+}
+
+.workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon,
+.workspace-leaf-content:is([data-type="bookmarks"], [data-type="file-explorer"]) .tree-item-icon.collapse-icon {
+    background-color: currentColor;
+    opacity: var(--icon-opacity);
+}
+
+.workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon)):before,
+.workspace-leaf-content[data-type="file-explorer"] :is(.nav-file-title, .nav-folder.mod-root>.nav-folder-title)::before {
+    content: " ";
+    position: absolute;
+    margin-left: calc(-1 * var(--size-4-5));
+    width: var(--size-4-4);
+    height: var(--size-4-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: var(--icon-opacity);
+    background-color: currentColor;
+    flex: 0 0 auto;
+}
+
+/* Custom Icon Masking */
+.workspace-leaf-content[data-type="file-explorer"] .nav-folder.mod-root>.nav-folder-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M14 12.8V3.2c0-.884-.264-1.2-1-1.2H3c-.736 0-1 .316-1 1.2v9.6c0 .884.264 1.2 1 1.2h10c.736 0 1-.316 1-1.2Z'/%3e%3cpath d='M9.978 7.04a2 2 0 1 1-3.956.587 2 2 0 0 1 3.956-.587ZM8 9.333v2m6-6.666h1m-1 6h1'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .tree-item-icon.collapse-icon,
+.workspace-leaf-content[data-type="bookmarks"] .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M4 9.333 4.967 7.4a1.333 1.333 0 0 1 1.193-.733h7.173m0 0a1.333 1.333 0 0 1 1.294 1.666l-1.034 4a1.333 1.333 0 0 1-1.293 1H2.667A1.333 1.333 0 0 1 1.333 12V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6H12a1.333 1.333 0 0 1 1.333 1.333v1.334Z'/%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .is-collapsed .tree-item-icon.collapse-icon,
+.workspace-leaf-content[data-type="bookmarks"] .is-collapsed .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M2.667 13.333h10.666A1.333 1.333 0 0 0 14.667 12V5.333A1.333 1.333 0 0 0 13.333 4H8.047a1.333 1.333 0 0 1-1.107-.6l-.547-.8A1.333 1.333 0 0 0 5.287 2h-2.62a1.333 1.333 0 0 0-1.334 1.333V12c0 .733.6 1.333 1.334 1.333Z'/%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".canvas"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M6 2H2.667A.667.667 0 0 0 2 2.667v4.666c0 .369.298.667.667.667H6a.667.667 0 0 0 .667-.667V2.667A.667.667 0 0 0 6 2Zm7.333 0H10a.667.667 0 0 0-.667.667v2c0 .368.299.667.667.667h3.333A.667.667 0 0 0 14 4.667v-2A.667.667 0 0 0 13.333 2Zm0 6H10a.667.667 0 0 0-.667.667v4.666c0 .368.299.667.667.667h3.333a.667.667 0 0 0 .667-.667V8.667A.667.667 0 0 0 13.333 8ZM6 10.667H2.667a.667.667 0 0 0-.667.666v2c0 .368.298.667.667.667H6a.667.667 0 0 0 .667-.667v-2A.667.667 0 0 0 6 10.667Z'/%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".base"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M6 2H2.667A.667.667 0 0 0 2 2.667V6c0 .368.298.667.667.667H6A.667.667 0 0 0 6.667 6V2.667A.667.667 0 0 0 6 2Zm0 7.333H2.667A.667.667 0 0 0 2 10v3.333c0 .368.298.667.667.667H6a.667.667 0 0 0 .667-.667V10A.667.667 0 0 0 6 9.333Zm3.333-6.666H14M9.333 6H14m-4.667 4H14m-4.667 3.333H14'/%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M6.667 6.867c.133-.267.333-.534.6-.667A1.4 1.4 0 0 1 9 6.467c.2.266.333.533.333.866C9.333 8.2 8 8.667 8 8.667m0 2.666h.007'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .is-unsupported.nav-file-title:is([data-path$=".zip"], [data-path$=".7z"])::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667v-12c0-.334.133-.667.4-.934.266-.266.6-.4.933-.4h5.667L13.333 5v8.333c0 .334-.133.667-.4.934-.266.266-.6.4-.933.4h-1.333'/%3e%3cpath d='M9.333 1.333v4h4m-6.666 9.334a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Zm0-10V4m0 4v-.667m0 4.667v-1.333'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".webm"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M2.667 14.667H12a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v2'/%3e%3cpath d='M9.333 1.333v4h4M4.667 6.667 2.667 8H1.333v2.667h1.334l2 1.333V6.667Zm2.666.666c.427.534.667 1.247.667 2 0 .754-.24 1.467-.667 2'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M12.667 2H3.333C2.597 2 2 2.597 2 3.333v9.334C2 13.403 2.597 14 3.333 14h9.334c.736 0 1.333-.597 1.333-1.333V3.333C14 2.597 13.403 2 12.667 2Z'/%3e%3cpath d='M6 7.333a1.333 1.333 0 1 0 0-2.666 1.333 1.333 0 0 0 0 2.666ZM14 10l-2.057-2.057a1.333 1.333 0 0 0-1.886 0L4 14'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".pdf"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M9.667 1.333H4a1.333 1.333 0 0 0-1.333 1.334v10.666A1.333 1.333 0 0 0 4 14.667h8a1.333 1.333 0 0 0 1.333-1.334V5L9.667 1.333Z'/%3e%3cpath d='M9.333 1.333v4h4m-2.666 3.334H5.333m5.334 2.666H5.333M6.667 6H5.333'/%3e%3c/g%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".excalidraw.md"]::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' clip-path='url(%23a)'%3e%3cpath d='M8 12.667 12.667 8l2 2L10 14.667l-2-2Z'/%3e%3cpath d='m12 8.667-1-5-9.667-2.334L3.667 11l5 1L12 8.667ZM1.333 1.333l5.058 5.058'/%3e%3cpath d='M7.333 8.667a1.333 1.333 0 1 0 0-2.667 1.333 1.333 0 0 0 0 2.667Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="tag"] .tree-item:not(:hover) .tree-item-icon.collapse-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' clip-path='url(%23a)'%3e%3cpath d='M8.781 1.333c.354 0 .693.14.943.391l4.473 4.473a1.6 1.6 0 0 1 0 2.272l-3.061 3.062a1.6 1.6 0 0 1-2.272 0L4.391 7.057A1.329 1.329 0 0 1 4 6.115V2a.667.667 0 0 1 .667-.667H8.78ZM1.333 4.667V8.78c0 .354.14.693.391.943l4.473 4.473a1.6 1.6 0 0 0 2.128.129'/%3e%3cpath d='M7 4.667A.333.333 0 1 0 7 4a.333.333 0 0 0 0 .667Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="tag"] .tree-item-self:not(:has(>.tree-item-icon.collapse-icon))::before {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M8 1.333H1.333V8l6.194 6.193a1.617 1.617 0 0 0 2.28 0l4.386-4.386a1.617 1.617 0 0 0 0-2.28L8 1.333ZM4.667 4.667h.006'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+.workspace-leaf-content[data-type="bookmarks"] svg.lucide-folder {
+    background-color: currentColor;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333'%3e%3cpath d='M1.333 6V3.333C1.333 2.6 1.933 2 2.667 2h2.62a1.333 1.333 0 0 1 1.106.6l.547.8a1.333 1.333 0 0 0 1.107.6h5.286a1.333 1.333 0 0 1 1.334 1.333V12a1.333 1.333 0 0 1-1.334 1.333h-12'/%3e%3cpath d='m5.333 10.667 2-2-2-2'/%3e%3cpath d='M1.333 10.667V10a1.333 1.333 0 0 1 1.334-1.333h4'/%3e%3c/g%3e%3c/svg%3e");
+}
+
+
+/* ==========================================================
+   10. SETTINGS MODAL
+   ========================================================== */
+
+body {
+    --modal-border-color: var(--background-modifier-border);
+}
+
+.modal-sidebar {
+    --background-modifier-form-field: transparent;
+}
+
+.settings-search-container.vertical-tab-header-group {
+    padding-top: 2px;
+}
+
+body:not(.is-phone) .vertical-tab-header-group .vertical-tab-header-group-title {
+    display: flex;
+    align-items: center;
+}
+
+body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(3) .vertical-tab-header-group-title::before {
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-color: currentColor;
+    margin-right: 8px;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='black' d='m14.476 6.987-1.49-.445a5.177 5.177 0 0 0-.422-1.035l.73-1.365a.27.27 0 0 0-.05-.32l-1.062-1.066a.271.271 0 0 0-.32-.05l-1.355.725a5.165 5.165 0 0 0-1.05-.444l-.444-1.471a.271.271 0 0 0-.262-.183H7.25a.271.271 0 0 0-.258.191l-.444 1.467a5.169 5.169 0 0 0-1.058.445l-1.333-.72a.271.271 0 0 0-.32.048l-1.08 1.054a.271.271 0 0 0-.05.32l.72 1.333a5.169 5.169 0 0 0-.444 1.053l-1.47.445a.271.271 0 0 0-.192.258v1.502a.271.271 0 0 0 .191.258l1.48.444c.11.36.26.708.445 1.036l-.73 1.395a.271.271 0 0 0 .05.32l1.062 1.062a.271.271 0 0 0 .32.05l1.373-.734a5.25 5.25 0 0 0 1.022.418l.445 1.498a.27.27 0 0 0 .258.19h1.502a.271.271 0 0 0 .258-.19l.444-1.503a5.17 5.17 0 0 0 1.013-.417l1.383.737a.27.27 0 0 0 .32-.049l1.062-1.062a.27.27 0 0 0 .049-.32l-.738-1.378a5.17 5.17 0 0 0 .422-1.017l1.498-.445a.271.271 0 0 0 .191-.258V7.25a.271.271 0 0 0-.164-.262ZM8 10.444a2.444 2.444 0 1 1 0-4.888 2.444 2.444 0 0 1 0 4.888Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(2) .vertical-tab-header-group-title::before {
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-color: currentColor;
+    margin-right: 8px;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='black' d='M13.249 7.111h-.36V3.924A.889.889 0 0 0 12 3.036H9.333A2.284 2.284 0 0 0 7.338.889a2.222 2.222 0 0 0-2.45 2.147h-3.11a.889.889 0 0 0-.89.888v3.632h1.25A1.391 1.391 0 0 1 3.556 8.75a1.333 1.333 0 0 1-.347 1.027 1.334 1.334 0 0 1-.987.444H.89v3.925a.889.889 0 0 0 .889.889H12a.889.889 0 0 0 .889-.89v-2.59h.444a2.223 2.223 0 0 0 2.223-2.45 2.29 2.29 0 0 0-2.307-1.995Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+body:not(.is-phone) .vertical-tab-header-group:nth-last-of-type(1) .vertical-tab-header-group-title::before {
+    content: " ";
+    width: 16px;
+    height: 16px;
+    background-color: currentColor;
+    margin-right: 8px;
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg fill='black' clip-path='url(%23a)'%3e%3cpath d='M13.249 7.111h-.36v-.267H9.88a1.636 1.636 0 0 1-1.436-2.448l.89-1.467A2.276 2.276 0 0 0 7.337.889a2.222 2.222 0 0 0-2.45 2.147h-3.11a.889.889 0 0 0-.89.888v3.632h1.25A1.391 1.391 0 0 1 3.556 8.75a1.333 1.333 0 0 1-.347 1.027 1.334 1.334 0 0 1-.987.444H.89v3.925a.889.889 0 0 0 .889.889H12a.889.889 0 0 0 .889-.89v-2.59h.444a2.223 2.223 0 0 0 2.223-2.45 2.29 2.29 0 0 0-2.307-1.995Z'/%3e%3cpath d='M11.933.507 9.391 4.889a.569.569 0 0 0 .489.889h5.089a.569.569 0 0 0 .489-.89L12.916.508a.57.57 0 0 0-.983 0Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--nav-item-color-active);
+    background-color: var(--nav-item-background-active);
+}
+
+.theme-dark .community-item,
+.theme-dark .setting-hotkey {
+    box-shadow: inset 0 1px 0 0 var(--background-modifier-border-focus);
+}
+
+/* ==========================================================
+   11. SCROLLBARS
+   ========================================================== */
+body {
+    /* Scrollbars */
+    --scrollbar-bg: rgba(var(--mono-rgb-100), 0);
+    --scrollbar-thumb-bg: rgba(var(--mono-rgb-100), 0.1);
+    --scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100), 0.15);
+}
+
+
+/* Keep the 14px physical width so your mouse can still easily grab it */
+::-webkit-scrollbar {
+    width: 14px !important;
+    height: 14px !important;
+    background-color: transparent !important;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+/* 1. Default State: Invisible with a heavier mask */
+::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+    border-radius: 99px !important;
+    background-clip: padding-box !important;
+    /* A 5px mask leaves only a 4px sleek visible line in the center */
+    border: 5px solid transparent !important;
+}
+
+/* 2. Show the thin line when hovering anywhere in the pane */
+.workspace-leaf:hover ::-webkit-scrollbar-thumb,
+.workspace-drawer:hover ::-webkit-scrollbar-thumb,
+.modal:hover ::-webkit-scrollbar-thumb,
+.menu:hover ::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg) !important;
+}
+
+/* 3. Direct Hover: Thicken slightly when grabbed */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-active-thumb-bg) !important;
+    /* Shrinking the mask to 4px makes the visible bar 6px thick */
+    border-width: 4px !important;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent !important;
+}
+
+
+/* ==========================================================
+   12. EDITOR COMPONENTS — TABLES
+   ========================================================== */
+
+body {
+    --table-header-background-light: var(--background-alt-light);
+    --table-header-background-dark: var(--background-alt-dark);
+    --table-radius: var(--radius-s);
+}
+
+/* Table width */
+.markdown-source-view.mod-cm6 .cm-table-widget .table-wrapper,
+:is(.markdown-rendered, .markdown-source-view.mod-cm6.is-live-preview) table {
+    width: 100% !important;
+}
+
+/* Header background */
+.theme-light :is(.markdown-rendered, .cm-table-widget) thead tr {
+    background: var(--table-header-background-light);
+}
+
+.theme-dark :is(.markdown-rendered, .cm-table-widget) thead tr {
+    background: var(--table-header-background-dark);
+}
+
+/* Table + rounded corners */
+:is(.markdown-rendered, .cm-table-widget) table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: var(--table-radius);
+    overflow: hidden;
+}
+
+:is(.markdown-rendered, .cm-table-widget) {
+    & th:first-child { border-top-left-radius: var(--table-radius); }
+    & th:last-child { border-top-right-radius: var(--table-radius); }
+    & tr:last-child td:first-child { border-bottom-left-radius: var(--table-radius); }
+    & tr:last-child td:last-child { border-bottom-right-radius: var(--table-radius); }
+}
+
+/* --- Editor Components: Tags --- */
+body {
+    /* Tags */
+    --tag-size: var(--font-smaller);
+    --tag-color: var(--text-accent);
+    --tag-color-hover: var(--text-accent);
+    --tag-decoration: none;
+    --tag-decoration-hover: none;
+    --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+    --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
+    --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+    --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
+    --tag-border-width: 1px;
+    --tag-padding-x: 0.65em;
+    --tag-padding-y: 0.25em;
+    --tag-radius: 2em;
+}
+
+@media (hover: hover) {
+
+    .cm-hashtag-end:hover,
+    .cm-hashtag-begin:has(+.cm-hashtag-end:hover),
+    .cm-hashtag-begin:hover,
+    .cm-hashtag-begin:hover+.cm-hashtag-end {
+        background-color: var(--tag-background-hover);
+        border-color: var(--tag-border-color-hover);
+        color: var(--tag-color-hover);
+        text-decoration: var(--tag-decoration-hover);
+    }
+}
+
+/* --- Editor Components: Highlights --- */
+/* Reading view */
+.markdown-rendered mark {
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+/* Live Preview / Source mode */
+.cm-highlight {
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+
+/* --- Editor Components: Links --- */
+body {
+    /* Links */
+    --link-external-color: var(--color-blue);
+    --link-external-color-hover: var(--color-blue);
+}
+
+.cm-s-obsidian span:is(.cm-link, .cm-url) a {
+    color: var(--link-external-color);
+}
+
+a:not(.tag, .raindrop-tag, .clickable-icon, :has(img:not(.link-favicon))):hover,
+.cm-s-obsidian .cm-line:not(.cm-active) span.cm-hmd-internal-link:hover,
+.external-link:not(:has(img:not(.link-favicon))):hover,
+.cm-s-obsidian .cm-line:not(.cm-active) span:is(.cm-link, .cm-url):hover {
+    border-radius: var(--radius-s);
+    background-color: var(--background-modifier-hover);
+    transition: background-color var(--anim-duration-fast) var(--anim-motion-smooth);
+}
+
+
+/* --- Editor Components: Hover Indicators --- */
+/*general*/
+.line-hover-indicator .workspace-leaf-content[data-type="markdown"] .markdown-source-view .cm-content>div::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    width: 3px;
+    height: 0;
+    border-radius: 10px;
+    background: var(--hover-indicator-color);
+    --hover-indicator-color: var(--text-faint);
+    opacity: 1;
+}
+
+.line-hover-indicator .workspace-leaf-content[data-type="markdown"] .markdown-source-view .cm-content>.HyperMD-quote::after {
+    left: calc(-20px - var(--blockquote-padding));
+}
+
+.line-hover-indicator .workspace-leaf-content[data-type="markdown"] .markdown-source-view .cm-content>div:hover::after {
+    height: calc(100% - 6px);
+}
+
+/* num */
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line:after,
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::after {
+    background: unset !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -20px !important;
+    top: 0px !important;
+    height: 100% !important;
+    width: 3px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: var(--hover-indicator-color);
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line:hover::after,
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):hover:after {
+    opacity: 1 !important;
+    --hover-indicator-color: var(--text-faint);
+}
+
+/* code */
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer,
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-codeblock-end {
+    counter-reset: code-line;
+}
+
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end)::after {
+    counter-increment: code-line;
+    content: counter(code-line) !important;
+}
+
+/* list */
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line:after {
+    content: "";
+    text-indent: 0px !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-1::after {
+    content: "1" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-2::after {
+    content: "2" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-3::after {
+    content: "3" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-4::after {
+    content: "4" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-5::after {
+    content: "5" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-6::after {
+    content: "6" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-7::after {
+    content: "7" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-8::after {
+    content: "8" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-9::after {
+    content: "9" !important;
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-line.HyperMD-list-line.HyperMD-list-line-10::after {
+    content: "10" !important;
+}
+
+/* active line */
+.line-hover-indicator .workspace-leaf-content[data-type="markdown"] .markdown-source-view .cm-content>.cm-active::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    width: 3px;
+    height: calc(100% - 6px);
+    border-radius: 10px;
+    background: var(--hover-indicator-color);
+    --hover-indicator-color: var(--color-accent) !important;
+    opacity: 1;
+}
+
+.line-hover-indicator .workspace-leaf-content[data-type="markdown"] .markdown-source-view .cm-content>.cm-active.HyperMD-quote::after {
+    left: calc(-20px - var(--blockquote-padding));
+}
+
+.line-hover-indicator.focus-indicator-list-level .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-active.HyperMD-list-line::after,
+.line-hover-indicator.focus-indicator-codeblock-line-number .workspace-leaf-content[data-type="markdown"] .cm-contentContainer .cm-active.HyperMD-codeblock:not(.HyperMD-codeblock-begin):not(.HyperMD-codeblock-end):after {
+    opacity: 1 !important;
+    --hover-indicator-color: var(--color-accent) !important;
+}
+
+/* Cursor */
+body {
+    --cursor: pointer;
+    --cursor-link: pointer;
+}
+
+/* --- Editor Components: Callouts --- */
+body {
+    /* Callouts */
+    --callout-border-width: 0px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --callout-content-background: transparent;
+    --callout-content-radius: 0px;
+}
+
+.theme-light .callout:is([data-callout-metadata*="style-1"], [data-callout*=style-1]),
+.callout-style-1.theme-light {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #FFFFFFBF;
+    --callout-content-radius: 0px;
+}
+
+.theme-dark .callout:is([data-callout-metadata*="style-1"], [data-callout*=style-1]),
+.callout-style-1.theme-dark {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 0px;
+}
+
+.theme-light .callout:is([data-callout-metadata*="style-2"], [data-callout*=style-2]),
+.callout-style-2.theme-light {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: 0 6px 6px;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #FFFFFFBF;
+    --callout-content-radius: 4px;
+}
+
+.theme-dark .callout:is([data-callout-metadata*="style-2"], [data-callout*=style-2]),
+.callout-style-2.theme-dark {
+    --callout-border-width: 1px;
+    --callout-border-opacity: 0.25;
+    --callout-padding: 0 6px 6px;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 4px;
+}
+
+body:is(.theme-light, .theme-dark) .callout:is([data-callout-metadata*="style-3"], [data-callout*=style-3]),
+.callout-style-3:is(.theme-light, .theme-dark) {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 0;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0;
+    --callout-content-background: transparent;
+    --callout-content-radius: 0px;
+}
+
+.theme-light .callout:is([data-callout-metadata*="style-4"], [data-callout*=style-4]),
+.callout-style-4.theme-light {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #FFFFFFBF;
+    --callout-content-radius: 0px;
+}
+
+.theme-dark .callout:is([data-callout-metadata*="style-4"], [data-callout*=style-4]),
+.callout-style-4.theme-dark {
+    --callout-border-width: 0 0 0 4px;
+    --callout-border-opacity: 1;
+    --callout-padding: 0;
+    --callout-radius: var(--radius-s);
+    --callout-title-color: inherit;
+    --callout-title-padding: 8px 16px;
+    --callout-title-size: inherit;
+    --callout-content-padding: 0px 16px;
+    --callout-content-background: #00000040;
+    --callout-content-radius: 0px;
+}
+
+.callout-content {
+    border-radius: var(--callout-content-radius);
+}
+
+/* --- Editor Components: Blockquotes --- */
+body {
+    --background-alt-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    --background-alt-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ffffff' fill-opacity='0.12' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+body {
+    /* Blockquotes */
+    --blockquote-border-thickness: 3px;
+    --blockquote-border-color: var(--interactive-accent);
+    --blockquote-font-style: normal;
+    --blockquote-color: inherit;
+    --blockquote-background-color: transparent;
+    --blockquote-background-light: var(--background-alt-light);
+    --blockquote-background-dark: var(--background-alt-dark);
+    --blockquote-padding: 8px;
+}
+
+.theme-light .markdown-source-view .cm-scroller .cm-line.HyperMD-quote,
+.theme-light .markdown-rendered blockquote {
+    border-radius: var(--radius-s);
+    background: var(--blockquote-background-light);
+}
+
+.theme-dark .markdown-source-view .cm-scroller .cm-line.HyperMD-quote,
+.theme-dark .markdown-rendered blockquote {
+    border-radius: var(--radius-s);
+    background: var(--blockquote-background-dark);
+}
+
+.markdown-rendered blockquote {
+    position: relative;
+    border-radius: var(--radius-s);
+    border-inline-start: none;
+    padding-inline: calc(16px + var(--blockquote-border-thickness) + var(--blockquote-padding)) var(--blockquote-padding);
+    padding-block: var(--blockquote-padding);
+}
+
+.markdown-rendered blockquote>blockquote {
+    padding-inline-start: calc(16px + var(--blockquote-border-thickness));
+    padding-block: 0 !important;
+}
+
+.markdown-rendered blockquote>blockquote::before {
+    top: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+}
+
+.markdown-rendered blockquote::before {
+    position: absolute;
+    top: var(--blockquote-padding);
+    bottom: var(--blockquote-padding);
+    inset-inline-start: var(--blockquote-padding);
+    border-radius: var(--radius-s);
+    background-color: var(--blockquote-border-color);
+    width: var(--blockquote-border-thickness);
+    pointer-events: none;
+    content: "";
+}
+
+.HyperMD-quote {
+    border: solid transparent;
+    border-width: 0 var(--blockquote-padding) 0 var(--blockquote-padding);
+    background-color: var(--blockquote-background-color);
+}
+
+.HyperMD-quote::before {
+    width: 0 !important;
+}
+
+.HyperMD-quote:first-child,
+.cm-sizer>div>div>*:not(.HyperMD-quote)+.HyperMD-quote {
+    border-top-width: var(--blockquote-padding);
+    border-start-start-radius: var(--radius-s);
+    border-start-end-radius: var(--radius-s);
+}
+
+.HyperMD-quote:first-child::before,
+.cm-sizer>div>div>*:not(.HyperMD-quote)+.HyperMD-quote::before {
+    border-start-start-radius: var(--radius-s);
+    border-start-end-radius: var(--radius-s);
+}
+
+.HyperMD-quote:last-child,
+.cm-sizer>div>div>.HyperMD-quote:has(+ *:not(.HyperMD-quote)) {
+    border-bottom-width: var(--blockquote-padding);
+    border-end-start-radius: var(--radius-s);
+    border-end-end-radius: var(--radius-s);
+}
+
+.HyperMD-quote:last-child::before,
+.cm-sizer>div>div>.HyperMD-quote:has(+ *:not(.HyperMD-quote))::before {
+    border-end-start-radius: var(--radius-s);
+    border-end-end-radius: var(--radius-s);
+}
+
+/* --- Editor Components: Code & KBD --- */
+kbd {
+    background-color: var(--background-modifier-hover);
+    color: var(--text-muted);
+}
+
+/*inline code*/
+body {
+    --inline-code-normal: var(--color-pink);
+    --inline-code-background-light: var(--background-alt-light);
+    --inline-code-background-dark: var(--background-alt-dark);
+}
+
+.markdown-rendered :not(pre)>code,
+.cm-s-obsidian span.cm-inline-code {
+    color: var(--inline-code-normal)
+}
+
+.theme-light .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.theme-light .cm-s-obsidian span.cm-inline-code,
+.theme-light :not(pre)>code {
+    background: var(--inline-code-background-light);
+}
+
+.theme-dark .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code):not(.obsidian-search-match-highlight),
+.theme-dark .cm-s-obsidian span.cm-inline-code,
+.theme-dark :not(pre)>code {
+    background: var(--inline-code-background-dark);
+}
+
+.theme-light .cm-s-obsidian span.cm-inline-code span.cm-inline-code.cm-hmd-indented-code,
+.theme-dark .cm-s-obsidian span.cm-inline-code span.cm-inline-code.cm-hmd-indented-code {
+    background: unset;
+}
+
+/*codeblock*/
+body {
+    /* Code */
+    --code-white-space: pre-wrap;
+    --code-radius: var(--radius-s);
+    --code-size: var(--font-smaller);
+    --code-background-light: var(--background-alt-light);
+    --code-background-dark: var(--background-alt-dark);
+    --code-border-light: 1px dashed var(--background-modifier-border);
+    --code-border-dark: 1px dashed var(--background-modifier-border);
+    --code-normal: var(--text-muted);
+    --code-comment: var(--text-faint);
+    --code-function: var(--color-yellow);
+    --code-important: var(--color-orange);
+    --code-keyword: var(--color-pink);
+    --code-operator: var(--color-red);
+    --code-property: var(--color-cyan);
+    --code-punctuation: var(--text-muted);
+    --code-string: var(--color-green);
+    --code-tag: var(--color-red);
+    --code-value: var(--color-purple);
+}
+
+.theme-light {
+    --code-background: var(--code-background-light);
+    --code-border: var(--code-border-light);
+}
+
+.theme-dark {
+    --code-background: var(--code-background-dark);
+    --code-border: var(--code-border-dark);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg,
+.cm-s-obsidian div.HyperMD-codeblock-end-bg,
+.cm-s-obsidian div.HyperMD-codeblock-bg,
+.markdown-rendered pre {
+    background: var(--code-background);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+    border-top: var(--code-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+    border-bottom: var(--code-border);
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+    border-left: var(--code-border);
+    border-right: var(--code-border);
+}
+
+.markdown-rendered pre {
+    border: var(--code-border);
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+    caret-color: auto;
+}
+
+.markdown-source-view.mod-cm6 .code-block-flair,
+.markdown-rendered button.copy-code-button {
+    color: var(--code-normal);
+}
+
+/* --- Editor Components: Embeds --- */
+body {
+    /* Embeds */
+    --embed-border-radius: 0px;
+}
+
+.seamless-embeds {
+    --embed-border-left: none;
+}
+
+.seamless-embeds .markdown-embed {
+    --embed-border-start: none;
+}
+
+.markdown-embed {
+    border-radius: var(--embed-border-radius);
+}
+
+
+/* --- Editor Components: Checkboxes --- */
+body {
+    /* Checkboxes */
+    --checkbox-radius: 6px;
+    --checkbox-size: var(--font-text-size);
+    --checkbox-marker-color: var(--background-primary);
+    --checkbox-color: var(--color-green);
+    --checkbox-color-hover: var(--color-green);
+    --checkbox-border-color: var(--text-faint);
+    --checkbox-border-color-hover: var(--text-faint);
+    --checklist-done-decoration: line-through;
+    --checklist-done-color: var(--text-faint);
+}
+
+@media (hover: hover) {
+    input[type=checkbox]:checked:hover {
+        filter: brightness(1.075);
+    }
+
+
+    input[type=checkbox]:hover {
+        outline-offset: 2px;
+        outline: 2px solid var(--background-modifier-border-hover);
+    }
+}
+
+input[type=checkbox] {
+    transition: box-shadow var(--anim-duration-moderate) var(--anim-motion-swing), filter var(--anim-duration-moderate) var(--anim-motion-smooth);
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked:after {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='black' d='M15.53 2.41a1.5 1.5 0 0 1 .06 2.12l-8.5 9a1.501 1.501 0 0 1-2.15.03l-4.5-4.5a1.5 1.5 0 0 1 2.12-2.12l3.41 3.408 7.44-7.878a1.5 1.5 0 0 1 2.12-.06Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h16v16H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+/* Alternate Checkboxes */
+input[data-task="<"]:checked,
+li[data-task="<"]>input:checked,
+li[data-task="<"]>p>input:checked,
+input[data-task=">"]:checked,
+li[data-task=">"]>input:checked,
+li[data-task=">"]>p>input:checked,
+input[data-task="d"]:checked,
+li[data-task="d"]>input:checked,
+li[data-task="d"]>p>input:checked,
+input[data-task="u"]:checked,
+li[data-task="u"]>input:checked,
+li[data-task="u"]>p>input:checked,
+input[data-task="S"]:checked,
+li[data-task="S"]>input:checked,
+li[data-task="S"]>p>input:checked,
+input[data-task="“"]:checked,
+li[data-task="“"]>input:checked,
+li[data-task="“"]>p>input:checked,
+input[data-task="\""]:checked,
+li[data-task="\""]>input:checked,
+li[data-task="\""]>p>input:checked,
+input[data-task="c"]:checked,
+li[data-task="c"]>input:checked,
+li[data-task="c"]>p>input:checked,
+input[data-task="p"]:checked,
+li[data-task="p"]>input:checked,
+li[data-task="p"]>p>input:checked,
+input[data-task="n"]:checked,
+li[data-task="n"]>input:checked,
+li[data-task="n"]>p>input:checked,
+input[data-task="b"]:checked,
+li[data-task="b"]>input:checked,
+li[data-task="b"]>p>input:checked,
+input[data-task="l"]:checked,
+li[data-task="l"]>input:checked,
+li[data-task="l"]>p>input:checked,
+input[data-task="I"]:checked,
+li[data-task="I"]>input:checked,
+li[data-task="I"]>p>input:checked,
+input[data-task="*"]:checked,
+li[data-task="*"]>input:checked,
+li[data-task="*"]>p>input:checked {
+    --checkbox-marker-color: transparent;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: currentColor;
+    -webkit-mask-size: var(--checkbox-icon);
+    -webkit-mask-position: 50% 50%
+}
+
+input[data-task="!"]:checked,
+li[data-task="!"]>input:checked,
+li[data-task="!"]>p>input:checked {
+    --checkbox-color: var(--color-orange);
+    --checkbox-color-hover: var(--color-orange);
+}
+
+input[data-task="!"]:checked:after,
+li[data-task="!"]>input:checked:after,
+li[data-task="!"]>p>input:checked:after {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='black' fill-rule='evenodd' d='M8 0a2.463 2.463 0 0 0-2.43 2.864v.002L6.686 9.55a1.334 1.334 0 0 0 2.63 0l1.114-6.685v-.002A2.463 2.463 0 0 0 8 0Zm0 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+input[data-task="?"]:checked,
+li[data-task="?"]>input:checked,
+li[data-task="?"]>p>input:checked {
+    --checkbox-color: var(--color-pink);
+    --checkbox-color-hover: var(--color-pink);
+}
+
+input[data-task="?"]:checked:after,
+li[data-task="?"]>input:checked:after,
+li[data-task="?"]>p>input:checked:after {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='black' d='M12.871 3.692c0 3.56-3.956 3.319-3.956 5.78v.014c0 .284-.23.514-.514.514H6.243a.514.514 0 0 1-.515-.514V9.34c0-3.803 3.473-3.56 3.473-5.341 0-.77-.571-1.23-1.517-1.23-.768 0-1.554.335-2.268 1.022a.512.512 0 0 1-.67.031l-1.419-1.11a.513.513 0 0 1-.056-.76C4.457.731 5.997 0 8.036 0c3.23 0 4.835 1.736 4.835 3.692ZM9.355 14c0 1.099-.88 2-2 2-1.1 0-2-.901-2-2s.9-2 2-2c1.12 0 2 .901 2 2Z'/%3e%3c/svg%3e");
+}
+
+input[data-task="*"]:checked,
+li[data-task="*"]>input:checked,
+li[data-task="*"]>p>input:checked {
+    --checkbox-color-hover: var(--color-yellow);
+    color: var(--color-yellow);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M8.91,.58c-.08-.17-.21-.32-.37-.42C8.38,.05,8.19,0,8,0s-.38,.05-.54,.16c-.16,.1-.29,.25-.37,.42l-1.93,4.12L.85,5.36c-.18,.03-.35,.1-.49,.22-.14,.12-.25,.27-.3,.45-.06,.17-.07,.36-.03,.54,.04,.18,.13,.34,.26,.48l3.15,3.23-.75,4.57c-.03,.19,0,.38,.06,.55,.07,.17,.19,.32,.35,.43,.15,.11,.33,.17,.52,.18,.19,0,.37-.03,.54-.12l3.84-2.13,3.84,2.13c.16,.09,.35,.13,.54,.12,.19-.01,.37-.07,.52-.18,.15-.11,.27-.26,.35-.43,.07-.17,.09-.36,.06-.55l-.75-4.57,3.15-3.23c.13-.13,.22-.3,.26-.48,.04-.18,.03-.37-.03-.54-.06-.17-.16-.33-.31-.45-.14-.12-.31-.2-.49-.22l-4.31-.66L8.91,.58Z"/></svg>');
+}
+
+input[data-task="i"]:checked,
+li[data-task="i"]>input:checked,
+li[data-task="i"]>p>input:checked {
+    --checkbox-color: var(--color-cyan);
+    --checkbox-color-hover: var(--color-cyan);
+}
+
+input[data-task="i"]:checked:after,
+li[data-task="i"]>input:checked:after,
+li[data-task="i"]>p>input:checked:after {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='black' d='M10.34 14.025c-.007.002-.56.186-1.04.186-.265 0-.372-.055-.406-.08-.168-.116-.48-.335.054-1.4l1-1.993c.593-1.184.681-2.33.245-3.226-.356-.733-1.039-1.236-1.92-1.416A5 5 0 0 0 7.315 6C5.466 6 4.221 7.08 4.17 7.125a.5.5 0 0 0 .493.848c.005-.002.559-.187 1.04-.187.262 0 .368.055.401.078.17.119.482.34-.05 1.403l-1.001 1.995c-.594 1.185-.681 2.33-.245 3.225.356.733 1.038 1.236 1.921 1.416.314.063.636.097.954.097 1.85 0 3.096-1.08 3.148-1.126a.5.5 0 0 0-.49-.85ZM9.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z'/%3e%3c/svg%3e");
+}
+
+input[data-task="/"]:checked,
+li[data-task="/"]>input:checked,
+li[data-task="/"]>p>input:checked {
+    --checkbox-color-hover: var(--color-yellow);
+    --checkbox-color: var(--color-yellow);
+    border: 2px var(--color-yellow) solid;
+    background: conic-gradient(var(--color-yellow) 0% 37.5%, transparent 37.5% 100%);
+}
+
+input[data-task="/"]:checked:hover,
+li[data-task="/"]>input:checked:hover,
+li[data-task="/"]>p>input:checked:hover {
+    background: conic-gradient(var(--color-yellow) 0% 37.5%, transparent 37.5% 100%);
+}
+
+input[data-task="/"]:checked:after,
+li[data-task="/"]>input:checked:after,
+li[data-task="/"]>p>input:checked:after {
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-mask-image: none;
+}
+
+input[data-task="I"]:checked,
+li[data-task="I"]>input:checked,
+li[data-task="I"]>p>input:checked {
+    --checkbox-color-hover: var(--color-orange);
+    color: var(--color-orange);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><g><rect class="cls-1" width="16" height="16"/><path d="M9,1c0-.27-.11-.52-.29-.71-.19-.19-.44-.29-.71-.29s-.52,.11-.71,.29c-.19,.19-.29,.44-.29,.71v1c0,.27,.11,.52,.29,.71,.19,.19,.44,.29,.71,.29s.52-.11,.71-.29c.19-.19,.29-.44,.29-.71V1Zm4.66,2.76c.18-.19,.28-.44,.28-.7,0-.26-.11-.51-.29-.7s-.44-.29-.7-.29c-.26,0-.51,.1-.7,.28l-.71,.71c-.18,.19-.28,.44-.28,.7,0,.26,.11,.51,.29,.7s.44,.29,.7,.29c.26,0,.51-.1,.7-.28l.71-.71Zm2.34,4.24c0,.27-.11,.52-.29,.71-.19,.19-.44,.29-.71,.29h-1c-.27,0-.52-.11-.71-.29-.19-.19-.29-.44-.29-.71s.11-.52,.29-.71c.19-.19,.44-.29,.71-.29h1c.27,0,.52,.11,.71,.29,.19,.19,.29,.44,.29,.71ZM3.05,4.46c.09,.1,.2,.17,.32,.22,.12,.05,.25,.08,.39,.08,.13,0,.26-.02,.39-.07,.12-.05,.23-.12,.33-.22,.09-.09,.17-.21,.22-.33,.05-.12,.08-.25,.07-.39,0-.13-.03-.26-.08-.39-.05-.12-.13-.23-.22-.32l-.71-.71c-.19-.18-.44-.28-.7-.28-.26,0-.51,.11-.7,.29s-.29,.44-.29,.7c0,.26,.1,.51,.28,.7l.71,.71Zm-.05,3.54c0,.27-.11,.52-.29,.71-.19,.19-.44,.29-.71,.29H1c-.27,0-.52-.11-.71-.29-.19-.19-.29-.44-.29-.71s.11-.52,.29-.71c.19-.19,.44-.29,.71-.29h1c.27,0,.52,.11,.71,.29,.19,.19,.29,.44,.29,.71Zm3,6v-1h4v1c0,.53-.21,1.04-.59,1.41-.38,.38-.88,.59-1.41,.59s-1.04-.21-1.41-.59c-.38-.38-.59-.88-.59-1.41Zm4-2c.02-.34,.21-.65,.48-.86,.65-.51,1.13-1.22,1.36-2.02,.23-.8,.21-1.65-.06-2.43-.27-.79-.78-1.47-1.46-1.95-.68-.48-1.49-.74-2.32-.74s-1.64,.26-2.32,.74c-.68,.48-1.19,1.16-1.46,1.95-.27,.79-.29,1.64-.06,2.43,.23,.8,.71,1.5,1.36,2.02,.27,.21,.46,.52,.48,.86h4Z"/></g></svg>');
+}
+
+input[data-task="l"]:checked,
+li[data-task="l"]>input:checked,
+li[data-task="l"]>p>input:checked {
+    --checkbox-color-hover: var(--color-red);
+    color: var(--color-red);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8"?><svg id="svg0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><defs><style>.cls-1{fill:none;}</style></defs><rect class="cls-1" width="16" height="16"/><path d="M8,.12c-1.64,0-3.21,.65-4.37,1.81-1.16,1.16-1.81,2.73-1.81,4.37,0,1.34,.44,2.64,1.25,3.71,0,0,.17,.22,.2,.25l4.74,5.6,4.75-5.6s.19-.25,.19-.25h0c.81-1.07,1.25-2.37,1.25-3.71,0-1.64-.65-3.21-1.81-4.37C11.21,.78,9.64,.13,8,.12Zm0,8.44c-.45,0-.88-.13-1.25-.38-.37-.25-.66-.6-.83-1.01-.17-.41-.21-.86-.13-1.3,.09-.44,.3-.84,.62-1.15,.31-.31,.72-.53,1.15-.62,.44-.09,.89-.04,1.3,.13,.41,.17,.76,.46,1.01,.83,.25,.37,.38,.81,.38,1.25,0,.6-.24,1.17-.66,1.59-.42,.42-.99,.66-1.59,.66Z"/></svg>');
+}
+
+input[data-task="-"]:checked,
+li[data-task="-"]>input:checked,
+li[data-task="-"]>p>input:checked {
+    --checkbox-color: var(--text-faint);
+    --checkbox-color-hover: var(--text-faint);
+}
+
+input[data-task="-"]:checked:after,
+li[data-task="-"]>input:checked:after,
+li[data-task="-"]>p>input:checked:after {
+    -webkit-mask-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' viewBox='0 0 16 16'%3e%3cpath fill='black' fill-rule='evenodd' d='M0 8a1.5 1.5 0 0 1 1.5-1.5h13a1.5 1.5 0 0 1 0 3h-13A1.5 1.5 0 0 1 0 8Z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+
+body:not(.disable-alternative-checkboxes):not(.tasks) .markdown-preview-view ul li[data-task="-"].task-list-item.is-checked,
+body:not(.disable-alternative-checkboxes):not(.tasks) .markdown-source-view.mod-cm6 .HyperMD-task-line[data-task]:is([data-task="-"]),
+body:not(.disable-alternative-checkboxes):not(.tasks) li[data-task="-"].task-list-item.is-checked {
+    color: var(--text-faint);
+    text-decoration: line-through solid var(--text-faint) 1px
+}
+
+/* ==========================================================
+   13. EDITOR COMPONENTS — IMAGES
+   ========================================================== */
+
+/*  image center align */
+.img-center-align .print :is(.markdown-preview-view, .markdown-rendered) img:not([class]),
+.img-center-align .markdown-preview-view img:not([class]),
+.img-center-align .markdown-source-view img:not([class]) {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.img-center-align .print :is(.markdown-preview-view, .markdown-rendered) img:is([class=""], .image-ready-resize, .image-ready-click-view),
+.img-center-align .markdown-preview-view img:is([class=""], .image-ready-resize, .image-ready-click-view),
+.img-center-align .markdown-source-view img:is([class=""], .image-ready-resize, .image-ready-click-view) {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/*  image hover effect */
+.theme-dark.img-darken .markdown-preview-view img,
+.theme-dark.img-darken .markdown-source-view img {
+    opacity: 0.75;
+    transition: opacity var(--anim-duration-fast) linear;
+}
+
+.theme-dark.img-darken .markdown-preview-view img:hover,
+.theme-dark.img-darken .markdown-source-view img:hover {
+    opacity: 1;
+    transition: opacity var(--anim-duration-fast) linear;
+}
+
+/* Floating Status Bar */
+
+body:not(.is-mobile) .status-bar {
+    position: absolute !important;
+    bottom: 5px !important;
+    right: 5px !important;
+    left: auto !important;
+    width: 30px !important;
+    max-width: 30px !important;
+    height: 30px !important;
+    border-radius: 50px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    opacity: 0.7;
+
+    background-color: var(--background-secondary) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid var(--background-modifier-border);
+
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 !important;
+    transition: all 0.3s ease-out;
+}
+
+body:not(.is-mobile) .status-bar:hover {
+    opacity: 1;
+    max-width: 600px !important;
+    width: auto !important;
+    border-radius: 50px !important;
+    padding: 0 6px !important;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.25);
+}
+
+body:not(.is-mobile) .status-bar .status-bar-item:has(svg) {
+    border-radius: 50% !important;
+    height: 25px !important;
+    width: 25px !important;
+    min-width: 25px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 2px !important;
+    flex-shrink: 0;
+}
+
+body:not(.is-mobile) .status-bar .status-bar-item:not(:has(svg)) {
+    border-radius: 10px !important;
+    height: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 8px !important;
+    margin: 0 2px !important;
+    flex-shrink: 0;
+}
+
+body:not(.is-mobile) .status-bar > .status-bar-item:last-child {
+    margin: 0 2.5px 0 0 !important;
+}
+
+body:not(.is-mobile) .status-bar:hover > .status-bar-item:last-child {
+    margin: 0 2px !important;
+}
+
+body:not(.is-mobile) .horizontal-main-container,
+body:not(.is-mobile) > .app-container > .horizontal-main-container:has(~.status-bar:hover) {
+    padding-bottom: 0px !important;
+    transition: none !important;
+}

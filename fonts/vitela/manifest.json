@@ -1,0 +1,96 @@
+{
+  "extractedAt": "2026-07-25T09:52:21.738Z",
+  "sourceTheme": "Vitela",
+  "fonts": [
+    {
+      "family": "Lora",
+      "style": "normal",
+      "weight": "400 700",
+      "file": "lora.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "Lora",
+      "style": "italic",
+      "weight": "400 700",
+      "file": "lora-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "EB Garamond",
+      "style": "normal",
+      "weight": "400 800",
+      "file": "eb-garamond.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "EB Garamond",
+      "style": "italic",
+      "weight": "400 800",
+      "file": "eb-garamond-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "400",
+      "file": "ibm-plex-mono.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "500",
+      "file": "ibm-plex-mono-1.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "600",
+      "file": "ibm-plex-mono-2.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "normal",
+      "weight": "700",
+      "file": "ibm-plex-mono-3.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    },
+    {
+      "family": "IBM Plex Mono",
+      "style": "italic",
+      "weight": "400",
+      "file": "ibm-plex-mono-4.woff2",
+      "format": "woff2",
+      "unicodeRange": null,
+      "sourceType": "base64",
+      "sourceUrl": null
+    }
+  ]
+}
